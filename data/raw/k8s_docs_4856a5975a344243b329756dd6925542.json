@@ -1,0 +1,7 @@
+{
+  "id": "4856a5975a344243b329756dd6925542",
+  "source": "k8s_docs",
+  "title": "NodeSelectorTerm",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/node-selector-term-v1/",
+  "text": "NodeSelectorTerm\nA null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.\napiVersion: v1\nimport \"k8s.io/api/core/v1\"\nNodeSelectorTerm\nA null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.\nField\nDescription\nmatchExpressions\nNodeSelectorRequirement array\nA list of node selector requirements by node's labels.\nmatchFields\nNodeSelectorRequirement array\nA list of node selector requirements by node's fields.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 13, 2026 at 6:59 PM PST:\nswitch kubernetes-api content to gen-apidocs markdown backend (7dffa41ae2)\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

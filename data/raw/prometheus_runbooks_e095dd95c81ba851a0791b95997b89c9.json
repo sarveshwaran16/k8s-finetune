@@ -1,0 +1,7 @@
+{
+  "id": "e095dd95c81ba851a0791b95997b89c9",
+  "source": "prometheus_runbooks",
+  "title": "TargetDown#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/general/targetdown/",
+  "text": "Target Down\nTargetDown\n#\nMeaning\n#\nThe alert means that one or more prometheus scrape targets are down. It fires when at least 10% of scrape targets in a Service are unreachable.\nFull context\nPrometheus works by sending an HTTP GET request to all of its “targets” every few seconds. So TargetDown really means that Prometheus just can’t access your service, which may or may not mean it’s actually down. If your service appears to be running fine, a common cause could be a misconfigured ServiceMonitor (maybe the port or path is incorrect), a misconfigured NetworkPolicy, or Service with incorrect labelSelectors that isn’t selecting any Pods.\nImpact\n#\nMetrics from a particular target cannot be scraped as such there is no data for this target in Prometheus and alerting can be hindered.\nDiagnosis\n#\n/targets\npage in Prometheus UI can be used to check the scrape error for the particular target.\nup == 0\nquery can be used to check the trend over time.\nMitigation\n#\nMitigation depends on the error reported by prometheus and there is no generic one."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "f68b278882e4ce1062cdadececb2b334",
+  "source": "prometheus_runbooks",
+  "title": "KubeletPlegDurationHigh#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeletplegdurationhigh/",
+  "text": "Kubelet Pod Lifecycle Event Generator Duration High\nKubeletPlegDurationHigh\n#\nMeaning\n#\nThe Kubelet Pod Lifecycle Event Generator has a 99th percentile duration of\nXX seconds on node.\nImpact\n#\nTODO\nDiagnosis\n#\nTODO\nMitigation\n#\nTODO"
+}

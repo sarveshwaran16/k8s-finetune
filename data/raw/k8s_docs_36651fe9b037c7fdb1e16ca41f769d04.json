@@ -1,0 +1,7 @@
+{
+  "id": "36651fe9b037c7fdb1e16ca41f769d04",
+  "source": "k8s_docs",
+  "title": "Storagemigration",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storagemigration/",
+  "text": "Storagemigration\nStorageVersionMigration\nStorageVersionMigration represents a migration of stored data to the latest storage version.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 13, 2026 at 6:59 PM PST:\nswitch kubernetes-api content to gen-apidocs markdown backend (7dffa41ae2)\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

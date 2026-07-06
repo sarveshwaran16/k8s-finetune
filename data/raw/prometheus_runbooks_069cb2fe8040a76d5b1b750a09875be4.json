@@ -1,0 +1,7 @@
+{
+  "id": "069cb2fe8040a76d5b1b750a09875be4",
+  "source": "prometheus_runbooks",
+  "title": "KubeAggregatedAPIErrors#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeaggregatedapierrors/",
+  "text": "Kube Aggregated API Errors\nKubeAggregatedAPIErrors\n#\nMeaning\n#\nKubernetes aggregated API has reported errors.\nIt has appeared unavailable over 4 times averaged over the past 10m.\nImpact\n#\nFrom minor such as inability to see cluster metrics to more severe such as\nunable to use custom metrics to scale or even unable to use cluster.\nDiagnosis\n#\nCheck networking on the node.\nCheck firewall on the node.\nInvestigate additional API logs.\nInvestigate NetworkPolicies if kubeApi - additional API was not filtered out.\nInvestigate NetworkPolicies if prometheus/additional API was not filtered out.\nMitigation\n#\nTODO\nSee\nAPIServer aggregation"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "9f4d664124f8a9cb2a751363da2bdd52",
+  "source": "k8s_docs",
+  "title": "Time",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/time-v1-meta/",
+  "text": "Time\nTime is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.\napiVersion: meta/v1\nimport \"k8s.io/apimachinery/pkg/apis/meta/v1\"\nTime\nTime is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 13, 2026 at 6:59 PM PST:\nswitch kubernetes-api content to gen-apidocs markdown backend (7dffa41ae2)\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

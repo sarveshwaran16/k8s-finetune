@@ -1,0 +1,7 @@
+{
+  "id": "6a208f4af31ed08eabdbdcce99d05320",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusBadConfig#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheusbadconfig/",
+  "text": "Prometheus Bad Config\nPrometheusBadConfig\n#\nMeaning\n#\nAlert fires when Prometheus cannot successfully reload the configuration file\ndue to the file having incorrect content.\nImpact\n#\nConfiguration cannot be reloaded and prometheus operates with last known good\nconfiguration.\nConfiguration changes in any of Prometheus, Probe, PodMonitor,\nor ServiceMonitor objects may not be picked up by prometheus server.\nDiagnosis\n#\nCheck prometheus container logs for an explanation of which part of the\nconfiguration is problematic.\nUsually this can occur when ServiceMonitors or\nPodMonitors share the same job label.\nMitigation\n#\nRemove conflicting configuration option."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7f9cc3ff006ac5ca6e1da1e36df6944b",
+  "source": "prometheus_runbooks",
+  "title": "AlertmanagerClusterDown#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerclusterdown/",
+  "text": "Alertmanager Cluster Down\nAlertmanagerClusterDown\n#\nMeaning\n#\nHalf or more of the Alertmanager instances within the same cluster are down.\nImpact\n#\nYou have an unstable cluster, if everything goes wrong you will lose the whole cluster.\nDiagnosis\n#\nVerify why pods are not running.\nYou can get a big picture with\nevents\n.\n$ kubectl get events --field-selector involvedObject.kind\n=\nPod | grep alertmanager\nMitigation\n#\nThere are no cheap options to mitigate this risk.\nVerifying any new changes in preprod before production environment should improve stability."
+}

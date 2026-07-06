@@ -1,0 +1,7 @@
+{
+  "id": "4c27412be522c7cea0f54ab1b0c3f4d9",
+  "source": "k8s_docs",
+  "title": "RoleRef",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/role-ref-v1-rbac/",
+  "text": "RoleRef\nRoleRef contains information that points to the role being used\napiVersion: rbac.authorization.k8s.io/v1\nimport \"k8s.io/api/rbac/v1\"\nRoleRef\nRoleRef contains information that points to the role being used\nField\nDescription\napiGroup\nstring\nAPIGroup is the group for the resource being referenced\nkind\n*\nstring\nKind is the type of resource being referenced\nname\n*\nstring\nName is the name of resource being referenced\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 13, 2026 at 6:59 PM PST:\nswitch kubernetes-api content to gen-apidocs markdown backend (7dffa41ae2)\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

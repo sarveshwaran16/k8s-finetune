@@ -1,0 +1,7 @@
+{
+  "id": "aa160785c63cceb464e87b321c739292",
+  "source": "k8s_docs",
+  "title": "",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_version/",
+  "text": "Synopsis\nPrint the version of kubeadm\nkubeadm version [flags]\nOptions\n-h, --help\nhelp for version\n-o, --output string\nOutput format; available options are 'yaml', 'json' and 'short'\nOptions inherited from parent commands\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified September 04, 2025 at 3:32 PM PST:\nUpdate kubeadm reference for v1.34 (02f1b512e4)"
+}

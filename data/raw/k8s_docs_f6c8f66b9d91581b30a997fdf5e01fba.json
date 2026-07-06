@@ -1,0 +1,7 @@
+{
+  "id": "f6c8f66b9d91581b30a997fdf5e01fba",
+  "source": "k8s_docs",
+  "title": "Enable Or Disable A Kubernetes API",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/enable-disable-api/",
+  "text": "Enable Or Disable A Kubernetes API\nThis page shows how to enable or disable an API version from your cluster's\ncontrol plane\n.\nSpecific API versions can be turned on or off by passing\n--runtime-config=api/<version>\nas a\ncommand line argument to the API server. The values for this argument are a comma-separated\nlist of API versions. Later values override earlier values.\nThe\nruntime-config\ncommand line argument also supports 2 special keys:\napi/all\n, representing all known APIs\napi/legacy\n, representing only legacy APIs. Legacy APIs are any APIs that have been\nexplicitly\ndeprecated\n.\nFor example, to turn off all API versions except v1, pass\n--runtime-config=api/all=false,api/v1=true\nto the\nkube-apiserver\n.\nWhat's next\nRead the\nfull documentation\nfor the\nkube-apiserver\ncomponent.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 11, 2023 at 11:12 AM PST:\nUpdate page weights in /tasks/administer-cluster section (b1202c78ff)"
+}

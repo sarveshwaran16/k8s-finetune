@@ -1,0 +1,7 @@
+{
+  "id": "3edab40d7dd3dee51bcfd046039a458a",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusOperatorNotReady#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus-operator/prometheusoperatornotready/",
+  "text": "Prometheus Operator NotReady\nPrometheusOperatorNotReady\n#\nMeaning\n#\nPrometheus operator is not ready.\nImpact\n#\nPrometheus Operator is not able to perform any operation.\nDiagnosis\n#\nCheck Prometheus Operator Deployment configuration.\nCheck logs of Prometheus Operator pod.\nCheck service account tokens.\nMitigation\n#\nTODO"
+}

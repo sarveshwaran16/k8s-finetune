@@ -1,0 +1,7 @@
+{
+  "id": "163c4ffc3a5b823ce6bc7ba5c1e373f2",
+  "source": "k8s_docs",
+  "title": "Debug a StatefulSet",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-statefulset/",
+  "text": "Debug a StatefulSet\nThis task shows you how to debug a StatefulSet.\nBefore you begin\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster.\nYou should have a StatefulSet running that you want to investigate.\nDebugging a StatefulSet\nIn order to list all the pods which belong to a StatefulSet, which have a label\napp.kubernetes.io/name=MyApp\nset on them,\nyou can use the following:\nkubectl get pods -l app.kubernetes.io/name\n=\nMyApp\nIf you find that any Pods listed are in\nUnknown\nor\nTerminating\nstate for an extended period of time,\nrefer to the\nDeleting StatefulSet Pods\ntask for\ninstructions on how to deal with them.\nYou can debug individual Pods in a StatefulSet using the\nDebugging Pods\nguide.\nWhat's next\nLearn more about\ndebugging an init-container\n.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified July 11, 2022 at 8:41 AM PST:\n[en] update en docs to use recommended labels (f9ebc90ff7)"
+}

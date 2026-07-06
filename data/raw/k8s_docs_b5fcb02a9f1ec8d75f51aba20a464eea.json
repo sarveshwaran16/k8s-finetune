@@ -1,0 +1,7 @@
+{
+  "id": "b5fcb02a9f1ec8d75f51aba20a464eea",
+  "source": "k8s_docs",
+  "title": "Scale Your App",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/",
+  "text": "Scale Your App\nRunning Multiple Instances of Your App\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 15, 2018 at 3:29 PM PST:\nFix up Tutorials landing page and Tutorials left nav. (#8557) (21fd86ed4b)"
+}

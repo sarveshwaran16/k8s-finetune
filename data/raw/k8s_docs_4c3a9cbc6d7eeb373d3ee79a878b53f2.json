@@ -1,0 +1,7 @@
+{
+  "id": "4c3a9cbc6d7eeb373d3ee79a878b53f2",
+  "source": "k8s_docs",
+  "title": "",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_config/kubeadm_config_print/",
+  "text": "Print configuration\nSynopsis\nThis command prints configurations for subcommands provided.\nFor details, see:\nhttps://pkg.go.dev/k8s.io/kubernetes/cmd/kubeadm/app/apis/kubeadm#section-directories\nkubeadm config print [flags]\nOptions\n-h, --help\nhelp for print\nOptions inherited from parent commands\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified August 17, 2024 at 3:44 PM PST:\nupdate kubeadm reference for v1.31 (88f0080504)"
+}

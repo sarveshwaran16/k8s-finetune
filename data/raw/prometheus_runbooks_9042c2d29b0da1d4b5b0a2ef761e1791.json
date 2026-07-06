@@ -1,0 +1,7 @@
+{
+  "id": "9042c2d29b0da1d4b5b0a2ef761e1791",
+  "source": "prometheus_runbooks",
+  "title": "KubeControllerManagerDown#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubecontrollermanagerdown/",
+  "text": "Kube Controller Manager Down\nKubeControllerManagerDown\n#\nMeaning\n#\nKubeControllerManager has disappeared from Prometheus target discovery.\nImpact\n#\nThe cluster is not functional and Kubernetes resources cannot be reconciled.\nFull context\nMore about kube-controller-manager function can be found at\nhttps://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/\nDiagnosis\n#\nTODO\nMitigation\n#\nSee old CoreOS docs in\nWeb Archive"
+}

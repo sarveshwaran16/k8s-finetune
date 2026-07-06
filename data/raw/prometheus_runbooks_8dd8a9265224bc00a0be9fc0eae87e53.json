@@ -1,0 +1,7 @@
+{
+  "id": "8dd8a9265224bc00a0be9fc0eae87e53",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusOperatorWatchErrors#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus-operator/prometheusoperatorwatcherrors/",
+  "text": "Prometheus Operator Watch Errors\nPrometheusOperatorWatchErrors\n#\nMeaning\n#\nErrors while performing watch operations in controller.\nImpact\n#\nPrometheus Operator will not be able to manage Prometheuses/Alertmanagers.\nDiagnosis\n#\nCheck logs of Prometheus Operator pod.\nCheck service account tokens.\nMitigation\n#"
+}

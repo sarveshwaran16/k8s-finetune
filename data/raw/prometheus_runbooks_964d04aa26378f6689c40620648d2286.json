@@ -1,0 +1,7 @@
+{
+  "id": "964d04aa26378f6689c40620648d2286",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusRuleFailures#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheusrulefailures/",
+  "text": "Prometheus Rule Failures\nPrometheusRuleFailures\n#\nMeaning\n#\nPrometheus is failing rule evaluations.\nPrometheus rules are incorrect or failed to calculate.\nImpact\n#\nMetrics and alerts may be missing or inaccurate.\nDiagnosis\n#\nYour best starting point is the rules page of the Prometheus UI (:9090/rules).\nIt will show the error.\nYou can also evaluate the rule expression yourself, using the UI, or maybe\nusing PromLens to help debug expression issues.\nMitigation\n#\nFix rules."
+}

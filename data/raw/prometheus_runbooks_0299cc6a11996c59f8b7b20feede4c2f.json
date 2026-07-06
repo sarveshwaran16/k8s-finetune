@@ -1,0 +1,7 @@
+{
+  "id": "0299cc6a11996c59f8b7b20feede4c2f",
+  "source": "prometheus_runbooks",
+  "title": "KubeClientErrors#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeclienterrors/",
+  "text": "Kube Client Errors\nKubeClientErrors\n#\nMeaning\n#\nKubernetes API server client is experiencing over 1% error rate in the last 15 minutes.\nImpact\n#\nSpecific kubernetes client may malfunction. Service degradation.\nDiagnosis\n#\nUsual issues:\nnetworking errors\ntoo low resources to perform given API calls (usually too low CPU/memory requests)\nwrong api client (old libraries)\ninvestigate if the app does not request more data than it really requires\nfrom kubernetes API, for example it has too wide permissions and scans for\nresources in all namespaces.\nCheck logs from client side (sometimes app logs).\nMitigation\n#\nTODO"
+}

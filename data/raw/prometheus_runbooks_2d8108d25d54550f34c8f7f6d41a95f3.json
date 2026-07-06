@@ -1,0 +1,7 @@
+{
+  "id": "2d8108d25d54550f34c8f7f6d41a95f3",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusTargetLimitHit#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheustargetlimithit/",
+  "text": "Prometheus Target Limit Hit\nPrometheusTargetLimitHit\n#\nMeaning\n#\nPrometheus has dropped targets because some scrape configs have exceeded the targets limit.\nImpact\n#\nMetrics and alerts may be missing or inaccurate.\nDiagnosis\n#\nMitigation\n#\nStart thinking about sharding prometheus.\nIncrease scrape times to perform it less frequently."
+}

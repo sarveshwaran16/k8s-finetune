@@ -1,0 +1,7 @@
+{
+  "id": "aed9160ed0f80607278d310dc5898adb",
+  "source": "k8s_docs",
+  "title": "Certificates",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/certificates/",
+  "text": "Certificates\nTo learn how to generate certificates for your cluster, see\nCertificates\n.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 16, 2021 at 7:16 PM PST:\nMigrate https://kubernetes.io/docs/concepts/cluster-administration/certificates/ to tasks section (41220636ec)"
+}

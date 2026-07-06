@@ -1,0 +1,7 @@
+{
+  "id": "dd24548d02f5bb400e43db654596c7a4",
+  "source": "prometheus_runbooks",
+  "title": "KubeQuotaExceeded#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubequotaexceeded/",
+  "text": "Kube Quota Exceeded\nKubeQuotaExceeded\n#\nMeaning\n#\nCluster reaches to the allowed hard limits for given namespace.\nImpact\n#\nInability to create resources in kubernetes.\nDiagnosis\n#\nCheck resource usage for the namespace in given time span\nMitigation\n#\nReview existing quota for given namespace and adjust it accordingly.\nReview resources used by the quota and fine tune them.\nContinue with standard capacity planning procedures.\nSee\nQuotas"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "fc38f5736eb300524da35cc46a5e1437",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusNotificationQueueRunningFull#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheusnotificationqueuerunningfull/",
+  "text": "Prometheus Notification Queue Running Full\nPrometheusNotificationQueueRunningFull\n#\nMeaning\n#\nPrometheus alert notification queue predicted to run full in less than 30m.\nImpact\n#\nFail to send alerts.\nDiagnosis\n#\nCheck prometheus container logs for an explanation of which part of the\nconfiguration is problematic.\nMitigation\n#\nRemove conflicting configuration option.\nCheck if there is an option to decrease number of alerts firing,\nfor example by sharding prometheus."
+}

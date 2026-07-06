@@ -1,0 +1,7 @@
+{
+  "id": "40843dca15212f23be314a2e94372529",
+  "source": "prometheus_runbooks",
+  "title": "KubeletTooManyPods#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubelettoomanypods/",
+  "text": "Kubelet Too Many Pods\nKubeletTooManyPods\n#\nMeaning\n#\nThe alert fires when a specific node is running >95% of its capacity of pods\n(110 by default).\nFull context\nKubelets have a configuration that limits how many Pods they can run.\nThe default value of this is 110 Pods per Kubelet, but it is configurable\n(and this alert takes that configuration into account with the\nkube_node_status_capacity_pods\nmetric).\nImpact\n#\nRunning many pods (more than 110) on a single node places a strain on the\nContainer Runtime Interface (CRI), Container Network Interface (CNI),\nand the operating system itself. Approaching that limit may affect performance\nand availability of that node.\nDiagnosis\n#\nCheck the number of pods on a given node by running:\nkubectl get pods --all-namespaces --field-selector spec.nodeName\n=\n<node>\nMitigation\n#\nSince Kubernetes only officially supports\n110 pods per node\n,\nyou should preferably move pods onto other nodes or expand your cluster with more worker nodes.\nIf you’re certain the node can handle more pods, you can raise the max pods\nper node limit by changing\nmaxPods\nin your\nKubeletConfiguration\n(for kubeadm-based clusters) or changing the setting in your cloud provider’s\ndashboard (if supported)."
+}

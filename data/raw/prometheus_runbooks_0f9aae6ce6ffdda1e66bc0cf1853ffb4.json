@@ -1,0 +1,7 @@
+{
+  "id": "0f9aae6ce6ffdda1e66bc0cf1853ffb4",
+  "source": "prometheus_runbooks",
+  "title": "KubeletPodStartUpLatencyHigh#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeletpodstartuplatencyhigh/",
+  "text": "Kubelet Pod Start Up Latency High\nKubeletPodStartUpLatencyHigh\n#\nMeaning\n#\nKubelet Pod startup 99th percentile latency is XX seconds on node.\nImpact\n#\nSlow pod starts.\nDiagnosis\n#\nUsually exhaused IOPS for node storage.\nMitigation\n#\nCordon and drain node\nand delete it.\nIf issue persists look into the node logs."
+}

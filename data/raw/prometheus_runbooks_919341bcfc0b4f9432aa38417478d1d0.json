@@ -1,0 +1,7 @@
+{
+  "id": "919341bcfc0b4f9432aa38417478d1d0",
+  "source": "prometheus_runbooks",
+  "title": "NodeFileDescriptorLimit#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/node/nodefiledescriptorlimit/",
+  "text": "Node File Descriptor Limit\nNodeFileDescriptorLimit\n#\nMeaning\n#\nThis alert is triggered when a node’s kernel is found to be running out of\navailable file descriptors – a\nwarning\nlevel alert at greater than 70% usage\nand a\ncritical\nlevel alert at greater than 90% usage.\nImpact\n#\nApplications on the node may no longer be able to open and operate on\nfiles. This is likely to have severe consequences for anything scheduled on this\nnode.\nDiagnosis\n#\nYou can open a shell on the node and use the standard Linux utilities to\ndiagnose the issue:\n$ NODE_NAME\n=\n'<value of instance label from alert>'\n$ oc debug\n\"node/\n$NODE_NAME\n\"\n# sysctl -a | grep 'fs.file-'\nfs.file-max\n=\n1597016\nfs.file-nr\n=\n7104\n0\n1597016\n# lsof -n\nMitigation\n#\nReduce the number of files opened simultaneously by either adjusting application\nconfiguration or by moving some applications to other nodes."
+}

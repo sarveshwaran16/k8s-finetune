@@ -1,0 +1,7 @@
+{
+  "id": "1f9729e061a2e23e6481661286162034",
+  "source": "k8s_docs",
+  "title": "WatchEvent",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/watch-event-v1-meta/",
+  "text": "WatchEvent\nEvent represents a single event to a watched resource.\napiVersion: meta/v1\nimport \"k8s.io/apimachinery/pkg/apis/meta/v1\"\nWatchEvent\nEvent represents a single event to a watched resource.\nField\nDescription\nobject\n*\nObject is: * If Type is Added or Modified: the new state of the object. * If Type is Deleted: the state of the object immediately before deletion. * If Type is Error: *Status is recommended; other types may make sense depending on context.\ntype\n*\nstring\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 13, 2026 at 6:59 PM PST:\nswitch kubernetes-api content to gen-apidocs markdown backend (7dffa41ae2)\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

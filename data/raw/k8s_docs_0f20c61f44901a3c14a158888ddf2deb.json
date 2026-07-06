@@ -1,0 +1,7 @@
+{
+  "id": "0f20c61f44901a3c14a158888ddf2deb",
+  "source": "k8s_docs",
+  "title": "",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_certs/kubeadm_certs_renew_all/",
+  "text": "Renew all available certificates\nSynopsis\nRenew all known certificates necessary to run the control plane. Renewals are run unconditionally, regardless of expiration date. Renewals can also be run individually for more control.\nkubeadm certs renew all [flags]\nOptions\n--cert-dir string     Default: \"/etc/kubernetes/pki\"\nThe path where to save the certificates\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for all\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nOptions inherited from parent commands\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified August 17, 2024 at 3:44 PM PST:\nupdate kubeadm reference for v1.31 (88f0080504)"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "56b7abc9d7275c5dfc67f8072ca0e8ce",
+  "source": "prometheus_runbooks",
+  "title": "KubeletDown#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeletdown/",
+  "text": "Kubelet Down\nKubeletDown\n#\nMeaning\n#\nThis alert is triggered when the monitoring system has not been able to reach\nany of the cluster’s Kubelets for more than 15 minutes.\nImpact\n#\nThis alert represents a critical threat to the cluster’s stability. Excluding\nthe possibility of a network issue preventing the monitoring system from\nscraping Kubelet metrics, multiple nodes in the cluster are likely unable to\nrespond to configuration changes for pods and other resources, and some\ndebugging tools are likely not functional, e.g.\nkubectl exec\nand\nkubectl logs\n.\nDiagnosis\n#\nCheck the status of nodes and for recent events on\nNode\nobjects, or for recent\nevents in general:\n$ kubectl get nodes\n$ kubectl describe node $NODE_NAME\n$ kubectl get events --field-selector\n'involvedObject.kind=Node'\n$ kubectl get events\nIf you have SSH access to the nodes, access the logs for the Kubelet directly:\n$ journalctl -b -f -u kubelet.service\nMitigation\n#\nThe mitigation depends on what is causing the Kubelets to become\nunresponsive. Check for wide-spread networking issues, or node level\nconfiguration issues.\nSee\nKubernetes Docs - kubelet"
+}

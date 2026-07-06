@@ -1,0 +1,7 @@
+{
+  "id": "0aa4a83b68f8fbc514c7ff80ad24f9c8",
+  "source": "k8s_docs",
+  "title": "ServiceReference",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/service-reference-v1-admissionregistration/",
+  "text": "ServiceReference\nServiceReference holds a reference to Service.legacy.k8s.io\napiVersion: admissionregistration.k8s.io/v1\nimport \"k8s.io/api/admissionregistration/v1\"\nServiceReference\nServiceReference holds a reference to Service.legacy.k8s.io\nField\nDescription\nname\n*\nstring\nname is the name of the service. Required\nnamespace\n*\nstring\nnamespace is the namespace of the service. Required\npath\nstring\npath is an optional URL path which will be sent in any request to this service.\nport\ninteger\nport is the port on the service that hosts the webhook. Default to 443 for backward compatibility. `port` should be a valid port number (1-65535, inclusive).\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 13, 2026 at 6:59 PM PST:\nswitch kubernetes-api content to gen-apidocs markdown backend (7dffa41ae2)\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

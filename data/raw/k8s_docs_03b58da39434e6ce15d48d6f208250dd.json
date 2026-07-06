@@ -1,0 +1,7 @@
+{
+  "id": "03b58da39434e6ce15d48d6f208250dd",
+  "source": "k8s_docs",
+  "title": "Managing Secrets",
+  "source_url": "https://kubernetes.io/docs/tasks/configmap-secret/",
+  "text": "Managing Secrets\nManaging confidential settings data using Secrets.\nManaging Secrets using kubectl\nCreating Secret objects using kubectl command line.\nManaging Secrets using Configuration File\nCreating Secret objects using resource configuration file.\nManaging Secrets using Kustomize\nCreating Secret objects using kustomization.yaml file.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 13, 2023 at 11:05 AM PST:\nUpdate page weights in /tasks/access-application-cluster, /configure-pod-container, /configmap-secret (97693ff044)"
+}

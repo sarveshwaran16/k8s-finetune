@@ -1,0 +1,7 @@
+{
+  "id": "233fba29f441c60db535d34932f64b96",
+  "source": "prometheus_runbooks",
+  "title": "KubeStateMetricsShardsMissing#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kube-state-metrics/kubestatemetricsshardsmissing/",
+  "text": "Kube State Metrics Shards Missing\nKubeStateMetricsShardsMissing\n#\nMeaning\n#\nkube-state-metrics shards are missing.\nImpact\n#\nUnable to get metrics for certain resources.\nSome metrics can be unavailable.\nDiagnosis\n#\nCheck kube-state-metric container logs for each shard.\nCheck if certain pods were forcefully evicted.\nCheck service account token.\nCheck networking rules and network policies.\nMitigation\n#\nTODO"
+}

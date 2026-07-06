@@ -1,0 +1,7 @@
+{
+  "id": "ccfdc1ce2e3d74fa8354e39757380d14",
+  "source": "k8s_docs",
+  "title": "Storage",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/",
+  "text": "Storage\nWays to provide both long-term and temporary storage to Pods in your cluster.\nVolumes\nPersistent Volumes\nProjected Volumes\nEphemeral Volumes\nStorage Classes\nVolume Attributes Classes\nDynamic Volume Provisioning\nVolume Snapshots\nVolume Snapshot Classes\nCSI Volume Cloning\nVolume Populators and Data Sources\nStorage Capacity\nNode-specific Volume Limits\nLocal ephemeral storage\nVolume Health Monitoring\nWindows Storage\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified June 16, 2021 at 5:57 PM PST:\nRemove exec permission on markdown files (e9703497a1)"
+}

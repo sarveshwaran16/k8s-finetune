@@ -1,0 +1,7 @@
+{
+  "id": "5d354d0d95ca20e9b0f785f0f53dda05",
+  "source": "prometheus_runbooks",
+  "title": "AlertmanagerFailedToSendAlerts#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerfailedtosendalerts/",
+  "text": "Alertmanager Failed To Send Alerts\nAlertmanagerFailedToSendAlerts\n#\nMeaning\n#\nAt least one instance is unable to routed alert to the corresponding integration.\nImpact\n#\nNo impact since another instance should be able to send the notification,\nunless\nAlertmanagerClusterFailedToSendAlerts\nis also triggerd for the same integration.\nDiagnosis\n#\nVerify the amount of failed notification per alert-manager-[instance] for\na specific integration.\nYou can look metrics exposed in prometheus console using promQL.\nFor exemple the following query will display the number of failed\nnotifications per instance for pager duty integration.\nWe have 3 instances involved in the example bellow.\nrate\n(\nalertmanager_notifications_total{integration\n=\n\"\npagerduty\n\"}[\n5m\n]\n)\nMitigation\n#\nDepending on the integration, you can have a look to alert-manager logs and act (network, authorization token, firewall…)\nDepending on the integration, you can have a look to alert-manager logs\nand act (network, authorization token, firewall…)\nkubectl -n monitoring logs -l\n'alertmanager=main'\n-c alertmanager"
+}

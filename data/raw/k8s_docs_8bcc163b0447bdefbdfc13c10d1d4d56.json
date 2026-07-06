@@ -1,0 +1,7 @@
+{
+  "id": "8bcc163b0447bdefbdfc13c10d1d4d56",
+  "source": "k8s_docs",
+  "title": "",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_config/kubeadm_config_print_join-defaults/",
+  "text": "Print default join configuration, that can be used for 'kubeadm join'\nSynopsis\nThis command prints objects such as the default join configuration that is used for 'kubeadm join'.\nNote that sensitive values like the Bootstrap Token fields are replaced with placeholder values like \"abcdef.0123456789abcdef\" in order to pass validation but\nnot perform the real computation for creating a token.\nkubeadm config print join-defaults [flags]\nOptions\n-h, --help\nhelp for join-defaults\nOptions inherited from parent commands\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified August 17, 2024 at 3:44 PM PST:\nupdate kubeadm reference for v1.31 (88f0080504)"
+}

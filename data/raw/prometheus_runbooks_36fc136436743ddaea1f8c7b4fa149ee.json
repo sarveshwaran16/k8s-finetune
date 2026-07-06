@@ -1,0 +1,7 @@
+{
+  "id": "36fc136436743ddaea1f8c7b4fa149ee",
+  "source": "prometheus_runbooks",
+  "title": "KubeletServerCertificateRenewalErrors#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeletservercertificaterenewalerrors/",
+  "text": "Kubelet Server Certificate Renewal Errors\nKubeletServerCertificateRenewalErrors\n#\nMeaning\n#\nKubelet on node  has failed to renew its server certificate\n(XX errors in the last 5 minutes)\nImpact\n#\nCritical\n- Cluster will be in inoperable state.\nDiagnosis\n#\nCheck when certificate was issued and when it expires.\nMitigation\n#\nUpdate certificates in the cluster control nodes and the worker nodes.\nRefer to the documentation of the tool used to create cluster.\nAnother option is to delete node if it affects only one,\nIn extreme situations recreate cluster."
+}

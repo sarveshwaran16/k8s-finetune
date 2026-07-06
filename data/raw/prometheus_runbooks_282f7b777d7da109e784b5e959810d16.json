@@ -1,0 +1,7 @@
+{
+  "id": "282f7b777d7da109e784b5e959810d16",
+  "source": "prometheus_runbooks",
+  "title": "NodeClockSkewDetected#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/node/nodeclockskewdetected/",
+  "text": "Node Clock Skew Detected\nNodeClockSkewDetected\n#\nMeaning\n#\nClock skew detected.\nImpact\n#\nTime is skewed on the node. This can cause issues with handling TLS as well as problems with other time-sensitive applications.\nDiagnosis\n#\nTODO\nMitigation\n#\nEnsure time synchronization service is running.\nSet proper time servers.\nEsure to sync time on server start, especially when using\nlow power mode or hibernation.\nSome resource consuming process can cause issues on given hardware,\nso move it to different servers.\nOn physical servers check if on-board battery requires replacement.\nCheck for hardware errors.\nCheck for firmware updates.\nEnsure to use newer hardware (like server mainboard and so on)."
+}

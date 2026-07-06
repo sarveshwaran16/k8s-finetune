@@ -1,0 +1,7 @@
+{
+  "id": "af4f1fba68fa414a54b2c0df30cffcd3",
+  "source": "prometheus_runbooks",
+  "title": "KubeStatefulSetUpdateNotRolledOut#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubestatefulsetupdatenotrolledout/",
+  "text": "Kube StatefulSet Update Not RolledOut\nKubeStatefulSetUpdateNotRolledOut\n#\nMeaning\n#\nStatefulSet update has not been rolled out.\nImpact\n#\nService degradation or unavailability.\nDiagnosis\n#\nCheck statefulset via\nkubectl -n $NAMESPACE describe statefulset $NAME\n.\nCheck if statefuls update was not paused manually (see status)\nCheck how many replicas are there declared.\nCheck the status of the pods which belong to the replica sets under the\nstatefulset.\nCheck pod template parameters such as:\npod priority - maybe it was evicted by other more importand pods\nresources - maybe it tries to use unavailabe resource, such as GPU but\nthere is limited number of nodes with GPU\naffinity rules - maybe due to affinities and not enough nodes it is\nnot possible to schedule pods\npod termination grace period - if too long then pods may be for too long\nin terminating state\nCheck if there are issues with attaching disks to statefulset - for example\ndisk was in Zone A, but pod is scheduled in Zone B.\nCheck if Horizontal Pod Autoscaler (HPA) is not triggered due to untested\nvalues (requests values).\nCheck if cluster-autoscaler is able to create new nodes - see its logs or\ncluster-autoscaler status configmap.\nMitigation\n#\nTODO\nSee\nDebugging Pods"
+}

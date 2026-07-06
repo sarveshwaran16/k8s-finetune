@@ -1,0 +1,7 @@
+{
+  "id": "e4b085033e17bfe8ee11f332638ff79d",
+  "source": "k8s_docs",
+  "title": "kubeadm alpha",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-alpha/",
+  "text": "kubeadm alpha\nCaution:\nkubeadm alpha\nprovides a preview of a set of features made available for gathering feedback\nfrom the community. Please try it out and give us feedback!\nCurrently there are no experimental commands under\nkubeadm alpha\n.\nWhat's next\nkubeadm init\nto bootstrap a Kubernetes control-plane node\nkubeadm join\nto connect a node to the cluster\nkubeadm reset\nto revert any changes made to this host by\nkubeadm init\nor\nkubeadm join\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 04, 2021 at 3:39 PM PST:\ndeprecate kubeadm alpha kubeconfig in 1.21 (e4ac283321)"
+}

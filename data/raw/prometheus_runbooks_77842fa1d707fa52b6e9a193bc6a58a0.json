@@ -1,0 +1,7 @@
+{
+  "id": "77842fa1d707fa52b6e9a193bc6a58a0",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusOperatorNodeLookupErrors#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus-operator/prometheusoperatornodelookuperrors/",
+  "text": "Prometheus Operator Node Lookup Errors\nPrometheusOperatorNodeLookupErrors\n#\nMeaning\n#\nErrors while reconciling information about kubernetes nodes.\nImpact\n#\nPrometheus Operator is not able to configure Prometheus scrape configuration.\nDiagnosis\n#\nCheck logs of Prometheus Operator pod.\nCheck kubelet Service managed by Prometheus Operator\n$ kubelet describe Service -n kube-system -l app.kubernetes.io/managed-by\n=\nprometheus-operator\n## Mitigation\nTODO"
+}

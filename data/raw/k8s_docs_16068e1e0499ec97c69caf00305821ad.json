@@ -1,0 +1,7 @@
+{
+  "id": "16068e1e0499ec97c69caf00305821ad",
+  "source": "k8s_docs",
+  "title": "Component tools",
+  "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/",
+  "text": "Component tools\nFeature Gates\nFeature Gates (removed)\nkube-apiserver\nkube-controller-manager\nkube-proxy\nkube-scheduler\nkubelet\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified November 04, 2022 at 11:37 AM PST:\nUpdates page weights in reference docs section (98f310ab58)"
+}

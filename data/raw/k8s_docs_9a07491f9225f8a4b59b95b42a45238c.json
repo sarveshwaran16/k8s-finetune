@@ -1,0 +1,7 @@
+{
+  "id": "9a07491f9225f8a4b59b95b42a45238c",
+  "source": "k8s_docs",
+  "title": "API Access Control",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/",
+  "text": "API Access Control\nFor an introduction to how Kubernetes implements and controls API access,\nread\nControlling Access to the Kubernetes API\n.\nReference documentation:\nAuthenticating\nAuthenticating with Bootstrap Tokens\nAdmission Controllers\nDynamic Admission Control\nManifest-Based Admission Control\nAuthorization\nRole Based Access Control\nAttribute Based Access Control\nNode Authorization\nWebhook Authorization\nCertificate Signing Requests\nincluding\nCSR approval\nand\ncertificate signing\nService accounts\nDeveloper guide\nAdministration\nKubelet Authentication & Authorization\nincluding kubelet\nTLS bootstrapping\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified March 24, 2026 at 5:44 PM PST:\ndocs(kep-5793): add manifest-based admission control alpha docs (0d1c9fba5a)"
+}

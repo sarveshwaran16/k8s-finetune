@@ -1,0 +1,7 @@
+{
+  "id": "d3fb44b56f3bf6ecd4fa7178918be00f",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusTSDBCompactionsFailing#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheustsdbcompactionsfailing/",
+  "text": "Prometheus TSDB Compactions Failing\nPrometheusTSDBCompactionsFailing\n#\nMeaning\n#\nPrometheus has issues compacting blocks.\nImpact\n#\nMetrics and alerts may be missing or inaccurate.\nDiagnosis\n#\nCheck storage used by the pod.\nThis can happen if there is a lot of going on in the cluster and\nprometheus did not manage to compact data.\nMitigation\n#\nAt first just wait, it may fix itself after some time.\nIncrease Prometheus pod memory so that it caches more from disk.\nTry expanding volumes if they are too small or too slow.\nChange PVC storageClass to a more performant one."
+}

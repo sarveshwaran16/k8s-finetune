@@ -1,0 +1,7 @@
+{
+  "id": "e8e9db028faaada2a711d7ed72e97ebb",
+  "source": "k8s_docs",
+  "title": "Romana for NetworkPolicy",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/romana-network-policy/",
+  "text": "Romana for NetworkPolicy\nThis page shows how to use Romana for NetworkPolicy.\nBefore you begin\nComplete steps 1, 2, and 3 of the\nkubeadm getting started guide\n.\nInstalling Romana with kubeadm\nFollow the\ncontainerized installation guide\nfor kubeadm.\nApplying network policies\nTo apply network policies use one of the following:\nRomana network policies\n.\nExample of Romana network policy\n.\nThe NetworkPolicy API.\nWhat's next\nOnce you have installed Romana, you can follow the\nDeclare Network Policy\nto try out Kubernetes NetworkPolicy.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 11, 2023 at 11:12 AM PST:\nUpdate page weights in /tasks/administer-cluster section (b1202c78ff)"
+}

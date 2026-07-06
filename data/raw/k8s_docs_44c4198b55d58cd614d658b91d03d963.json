@@ -1,0 +1,7 @@
+{
+  "id": "44c4198b55d58cd614d658b91d03d963",
+  "source": "k8s_docs",
+  "title": "Configuration APIs",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/",
+  "text": "Configuration APIs\nClient Authentication (v1)\nClient Authentication (v1beta1)\nEvent Rate Limit Configuration (v1alpha1)\nImage Policy API (v1alpha1)\nkube-apiserver Admission (v1)\nkube-apiserver Audit Configuration (v1)\nkube-apiserver Configuration (v1)\nkube-apiserver Configuration (v1alpha1)\nkube-apiserver Configuration (v1beta1)\nkube-controller-manager Configuration (v1alpha1)\nkube-proxy Configuration (v1alpha1)\nkube-scheduler Configuration (v1)\nkubeadm Configuration (v1beta3)\nkubeadm Configuration (v1beta4)\nkubeconfig (v1)\nKubelet Configuration (v1)\nKubelet Configuration (v1alpha1)\nKubelet Configuration (v1beta1)\nKubelet CredentialProvider (v1)\nkuberc (v1alpha1)\nkuberc (v1beta1)\nWebhookAdmission Configuration (v1)\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified December 13, 2022 at 10:12 AM PST:\nConfig API update for 1.26 (6989fc3c5b)"
+}

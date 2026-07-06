@@ -1,0 +1,7 @@
+{
+  "id": "e2139ebb96990bf217f6981208d5fe1c",
+  "source": "prometheus_runbooks",
+  "title": "KubeNodeUnreachable#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubenodeunreachable/",
+  "text": "Kube Node Unreachable\nKubeNodeUnreachable\n#\nMeaning\n#\nKubernetes node is unreachable and some workloads may be rescheduled.\nImpact\n#\nThe performance of the cluster deployments is affected, depending on the overall\nworkload and the type of the node.\nDiagnosis\n#\nThe notification details should list the node that’s not reachable. For Example:\n- alertname = KubeNodeUnreachable\n...\n - node = node1.example.com\n...\nLogin to the cluster. Check the status of that node:\n$ kubectl get node $NODE -o yaml\nThe output should describe why the node is not reachable.\nCommon failure scenarios:\ndisruptive software upgrades\nnetwork patitioning due to hardware failures\nfirewall rules\nvirtual machines suspended due to storage area network problems\nsystem crashes / freezes due to software or hardware malfunctions\nMitigation\n#\nIn case of maintenance ensure to\ncordon and drain node\n.\nIn other cases ensure storage and networking redundancy if applicable.\nSee\nKubeNode\nSee\nnode problem detector\nSee\nWatchdog timer"
+}

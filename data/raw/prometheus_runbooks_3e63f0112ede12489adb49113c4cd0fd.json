@@ -1,0 +1,7 @@
+{
+  "id": "3e63f0112ede12489adb49113c4cd0fd",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusRemoteStorageFailures#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheusremotestoragefailures/",
+  "text": "Prometheus Remote Storage Failures\nPrometheusRemoteStorageFailures\n#\nMeaning\n#\nPrometheus fails to send samples to remote storage.\nImpact\n#\nMetrics and alerts may be missing or inaccurate.\nDiagnosis\n#\nCheck prometheus logs and remote storage logs.\nInvestigate network issues.\nCheck configs and credentials.\nMitigation\n#\nTODO"
+}

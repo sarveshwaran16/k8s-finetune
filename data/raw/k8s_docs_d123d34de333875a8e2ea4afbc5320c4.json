@@ -1,0 +1,7 @@
+{
+  "id": "d123d34de333875a8e2ea4afbc5320c4",
+  "source": "k8s_docs",
+  "title": "Install a Network Policy Provider",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/",
+  "text": "Install a Network Policy Provider\nUse Antrea for NetworkPolicy\nUse Calico for NetworkPolicy\nUse Cilium for NetworkPolicy\nUse Kube-router for NetworkPolicy\nRomana for NetworkPolicy\nWeave Net for NetworkPolicy\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 11, 2023 at 11:12 AM PST:\nUpdate page weights in /tasks/administer-cluster section (b1202c78ff)"
+}

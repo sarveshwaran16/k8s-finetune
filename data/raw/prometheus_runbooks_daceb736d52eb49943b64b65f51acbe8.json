@@ -1,0 +1,7 @@
+{
+  "id": "daceb736d52eb49943b64b65f51acbe8",
+  "source": "prometheus_runbooks",
+  "title": "NodeClockNotSynchronising#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/node/nodeclocknotsynchronising/",
+  "text": "Node Clock Not Synchronising\nNodeClockNotSynchronising\n#\nMeaning\n#\nClock not synchronising.\nImpact\n#\nTime is not automatically synchronizing on the node. This can cause issues with handling TLS as well as problems with other time-sensitive applications.\nDiagnosis\n#\nTODO\nMitigation\n#\nSee\nNode Clok Skew Detected\nfor mitigation steps."
+}

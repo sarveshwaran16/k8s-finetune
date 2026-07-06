@@ -1,0 +1,7 @@
+{
+  "id": "908f1da798f25f2b5a0931be01886f5b",
+  "source": "k8s_docs",
+  "title": "Logging in Kubernetes",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/logging/",
+  "text": "Logging in Kubernetes\nLogging architecture and system logs.\nThis page provides resources that describe logging in Kubernetes. You can learn how to collect, access, and analyze logs using built-in tools and popular logging stacks:\nLogging Architecture\nSystem Logs\nA Practical Guide to Kubernetes Logging\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified August 09, 2025 at 2:51 PM PST:\nUpdating doc with Logging and Monitoring information (f5d051a432)"
+}

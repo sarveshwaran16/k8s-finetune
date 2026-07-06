@@ -1,0 +1,7 @@
+{
+  "id": "9b6aa09e690fc5c3ea64652ded275723",
+  "source": "prometheus_runbooks",
+  "title": "PrometheusOperatorSyncFailed#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus-operator/prometheusoperatorsyncfailed/",
+  "text": "Prometheus Operator Sync Failed\nPrometheusOperatorSyncFailed\n#\nMeaning\n#\nLast controller reconciliation failed\nImpact\n#\nPrometheus Operator will not be able to manage Prometheuses/Alertmanagers.\nDiagnosis\n#\nCheck logs of Prometheus Operator pod.\nCheck service account tokens.\nMitigation\n#"
+}

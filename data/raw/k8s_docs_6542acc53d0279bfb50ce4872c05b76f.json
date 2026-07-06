@@ -1,0 +1,7 @@
+{
+  "id": "6542acc53d0279bfb50ce4872c05b76f",
+  "source": "k8s_docs",
+  "title": "Access Applications in a Cluster",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/",
+  "text": "Access Applications in a Cluster\nConfigure load balancing, port forwarding, or setup firewall or DNS configurations to access applications in a cluster.\nDeploy and Access the Kubernetes Dashboard\nDeploy the web UI (Kubernetes Dashboard) and access it.\nAccessing Clusters\nConfigure Access to Multiple Clusters\nUse Port Forwarding to Access Applications in a Cluster\nUse a Service to Access an Application in a Cluster\nConnect a Frontend to a Backend Using Services\nCreate an External Load Balancer\nList All Container Images Running in a Cluster\nCommunicate Between Containers in the Same Pod Using a Shared Volume\nConfigure DNS for a Cluster\nAccess Services Running on Clusters\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 13, 2023 at 11:05 AM PST:\nUpdate page weights in /tasks/access-application-cluster, /configure-pod-container, /configmap-secret (97693ff044)"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a0c3ca04459acc38097014b5ce7e4bb0",
+  "source": "prometheus_runbooks",
+  "title": "KubeAPIDown#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeapidown/",
+  "text": "Kube API Down\nKubeAPIDown\n#\nMeaning\n#\nThe\nKubeAPIDown\nalert is triggered when all Kubernetes API servers have not\nbeen reachable by the monitoring system for more than 15 minutes.\nImpact\n#\nThis is a critical alert. The Kubernetes API is not responding. The\ncluster may partially or fully non-functional.\nApplications, which do not use kubernetes API directly, will continue to work. Changing kubernetes resources is not possible.\nin the cluster.\nServices using Kubernetes API directly will start to behave erratically.\nDiagnosis\n#\nCheck the status of the API server targets in the Prometheus UI.\nThen, confirm whether the API is also unresponsive for you:\n$ kubectl cluster-info\nIf you can still reach the API server, there may be a network issue between the\nPrometheus instances and the API server pods. Check the status of the API server\npods.\n$ kubectl -n kube-system get pods\n$ kubectl -n kube-system logs -l\n'component=kube-apiserver'\nCheck networking on the node.\nCheck firewall on the node.\nInvestigate kube proxy logs.\nInvestigate NetworkPolicies if prometheus/kubeApi was not filtered out.\nMitigation\n#\nIf you can still reach the API server intermittently, you may be able treat this\nlike any other failing deployment. If not, it’s possible you may have to refer\nto the disaster recovery documentation."
+}

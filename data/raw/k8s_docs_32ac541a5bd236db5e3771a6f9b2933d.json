@@ -1,0 +1,7 @@
+{
+  "id": "32ac541a5bd236db5e3771a6f9b2933d",
+  "source": "k8s_docs",
+  "title": "",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_upload-config_all/",
+  "text": "Synopsis\nUpload all configuration to a config map\nkubeadm init phase upload-config all [flags]\nOptions\n--config string\nPath to a kubeadm configuration file.\n--cri-socket string\nPath to the CRI socket to connect. If empty kubeadm will try to auto-detect this value; use this option only if you have more than one CRI installed or if you have non-standard CRI socket.\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for all\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nOptions inherited from parent commands\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified September 04, 2025 at 3:32 PM PST:\nUpdate kubeadm reference for v1.34 (02f1b512e4)"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "abb2276bb01812836b7a3c0b8ce0482c",
+  "source": "k8s_docs",
+  "title": "",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_certs_front-proxy-ca/",
+  "text": "Synopsis\nGenerate the self-signed CA to provision identities for front proxy, and save them into front-proxy-ca.crt and front-proxy-ca.key files.\nIf both files already exist, kubeadm skips the generation step and existing files will be used.\nkubeadm init phase certs front-proxy-ca [flags]\nOptions\n--cert-dir string     Default: \"/etc/kubernetes/pki\"\nThe path where to save and store the certificates.\n--config string\nPath to a kubeadm configuration file.\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for front-proxy-ca\n--kubernetes-version string     Default: \"stable-1\"\nChoose a specific Kubernetes version for the control plane.\nOptions inherited from parent commands\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified September 04, 2025 at 3:32 PM PST:\nUpdate kubeadm reference for v1.34 (02f1b512e4)"
+}

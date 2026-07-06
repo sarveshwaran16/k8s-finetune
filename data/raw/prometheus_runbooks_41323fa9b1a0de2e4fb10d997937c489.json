@@ -1,0 +1,7 @@
+{
+  "id": "41323fa9b1a0de2e4fb10d997937c489",
+  "source": "prometheus_runbooks",
+  "title": "NodeNetworkReceiveErrs#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/node/nodenetworkreceiveerrs/",
+  "text": "Node Network Receive Errors\nNodeNetworkReceiveErrs\n#\nMeaning\n#\nNetwork interface is reporting many receive errors.\nImpact\n#\nApplications on the node may no longer be able to operate with other services.\nNetwork attached storage performance issues or even data loss.\nDiagnosis\n#\nInvestigate networking issues on the node and to connected hardware.\nCheck physical cables, check networking firewall rules and so on.\nMitigation\n#\nIn general mitigation landscape is quite vast, some suggestions:\nEnsure some node capacity is left unallocated (cpu/memory) for handling\nnetworking.\nIncrease TX queue length\nSpread services to other nodes/pods.\nReplace physical cables, change ports.\nLook into introducting Quality of Service or other\nTCP congestion avoidance algorithms"
+}

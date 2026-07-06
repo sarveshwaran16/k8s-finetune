@@ -1,0 +1,7 @@
+{
+  "id": "ab395508a3da7f6a2a2404e400b79716",
+  "source": "prometheus_runbooks",
+  "title": "KubeletClientCertificateExpiration#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeletclientcertificateexpiration/",
+  "text": "Kubelet Client Certificate Expiration\nKubeletClientCertificateExpiration\n#\nMeaning\n#\nClient certificate for Kubelet on node expires soon or already expired.\nImpact\n#\nNode will not be able to be used within the cluster.\nDiagnosis\n#\nCheck when certificate was issued and when it expires.\nMitigation\n#\nUpdate certificates in the cluster control nodes and the worker nodes.\nRefer to the documentation of the tool used to create cluster.\nAnother option is to delete node if it affects only one,\nIn extreme situations recreate cluster."
+}

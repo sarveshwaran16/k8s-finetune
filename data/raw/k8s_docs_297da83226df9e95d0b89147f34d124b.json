@@ -1,0 +1,7 @@
+{
+  "id": "297da83226df9e95d0b89147f34d124b",
+  "source": "k8s_docs",
+  "title": "Setup tools",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/",
+  "text": "Setup tools\nKubeadm\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified November 04, 2022 at 11:37 AM PST:\nUpdates page weights in reference docs section (98f310ab58)"
+}

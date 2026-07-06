@@ -1,0 +1,7 @@
+{
+  "id": "31119513d2c2aead24d53eb4de284dc0",
+  "source": "k8s_docs",
+  "title": "Bootstrapping clusters with kubeadm",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/",
+  "text": "Bootstrapping clusters with kubeadm\nInstalling kubeadm\nTroubleshooting kubeadm\nCreating a cluster with kubeadm\nCustomizing components with the kubeadm API\nOptions for Highly Available Topology\nCreating Highly Available Clusters with kubeadm\nSet up a High Availability etcd Cluster with kubeadm\nConfiguring each kubelet in your cluster using kubeadm\nDual-stack support with kubeadm\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified June 12, 2019 at 5:27 PM PST:\nRestructure the left navigation pane of setup (#14826) (55ac801bc4)"
+}

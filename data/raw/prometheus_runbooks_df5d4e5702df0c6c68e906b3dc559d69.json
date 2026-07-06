@@ -1,0 +1,7 @@
+{
+  "id": "df5d4e5702df0c6c68e906b3dc559d69",
+  "source": "prometheus_runbooks",
+  "title": "NodeTextFileCollectorScrapeError#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/node/nodetextfilecollectorscrapeerror/",
+  "text": "Node Text File Collector Scrape Error\nNodeTextFileCollectorScrapeError\n#\nMeaning\n#\nNode Exporter text file collector failed to scrape.\nImpact\n#\nMissing metrics from additional scripts.\nDiagnosis\n#\nCheck node_exporter logs\nCheck script supervisor (like systemd or cron) for more information about failed script execution\nMitigation\n#\nCheck if provided configuration is valid, if files were not renamed during upgrades."
+}

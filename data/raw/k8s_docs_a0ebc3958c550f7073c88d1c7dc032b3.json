@@ -1,0 +1,7 @@
+{
+  "id": "a0ebc3958c550f7073c88d1c7dc032b3",
+  "source": "k8s_docs",
+  "title": "Installing Kubernetes with deployment tools",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/",
+  "text": "Installing Kubernetes with deployment tools\nThere are many methods and tools for setting up your own production Kubernetes cluster.\nFor example:\nkubeadm\nCluster API\n: A Kubernetes sub-project focused on\nproviding declarative APIs and tooling to simplify provisioning, upgrading, and operating\nmultiple Kubernetes clusters.\nkops\n: An automated cluster provisioning tool.\nFor tutorials, best practices, configuration options and information on\nreaching out to the community, please check the\nkOps\nwebsite\nfor details.\nkubespray\n:\nA composition of\nAnsible\nplaybooks,\ninventory\n,\nprovisioning tools, and domain knowledge for generic OS/Kubernetes clusters configuration\nmanagement tasks. You can reach out to the community on Slack channel\n#kubespray\n.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified December 09, 2024 at 11:46 PM PST:\nUpdate Link of Inventory in Install k8s doc (7692020f50)"
+}

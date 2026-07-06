@@ -1,0 +1,7 @@
+{
+  "id": "06dff22e83575648e84fbb67b93e7931",
+  "source": "k8s_docs",
+  "title": "Encodings",
+  "source_url": "https://kubernetes.io/docs/reference/encodings/",
+  "text": "Encodings\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified November 20, 2025 at 7:58 PM PST:\nnit: fixes on kyaml reference (c81b4d637f)"
+}

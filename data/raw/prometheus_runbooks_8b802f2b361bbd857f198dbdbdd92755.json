@@ -1,0 +1,7 @@
+{
+  "id": "8b802f2b361bbd857f198dbdbdd92755",
+  "source": "prometheus_runbooks",
+  "title": "KubeDaemonSetMisScheduled#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubedaemonsetmisscheduled/",
+  "text": "Kube DaemonSet MisScheduled\nKubeDaemonSetMisScheduled\n#\nMeaning\n#\nA number of pods of daemonset are running where they are not supposed to run.\nImpact\n#\nService degradation or unavailability.\nExcessive resource usage where they could be used by other apps.\nDiagnosis\n#\nUsually happens when specifying wrong pod nodeSelector/taints/affinities or\nnode (node pools) were tainted and existing pods were not scheduled for eviction.\nCheck daemonset status via\nkubectl -n $NAMESPACE describe daemonset $NAME\n.\nCheck\nDaemonSet update strategy\nCheck the status of the pods which belong to the replica sets under the deployment.\nCheck pod template parameters such as:\npod priority - maybe it was evicted by other more important pods\naffinity rules - maybe due to affinities and not enough nodes it is not\npossible to schedule pods\nCheck node taints and labels\nCheck logs for\nnode-feature-discovery\nand other supporting tools such as gpu-feature-discovery\nMitigation\n#\nUpdate DaemonSet and apply change, delete pods manually."
+}

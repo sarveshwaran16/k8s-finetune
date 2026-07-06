@@ -1,0 +1,7 @@
+{
+  "id": "dfdfe30ac4f6e24f0e641aa5e4bde291",
+  "source": "k8s_docs",
+  "title": "Kubeadm Generated",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/",
+  "text": "Kubeadm Generated\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 05, 2018 at 6:00 PM PST:\nConvert site to Hugo (#8316) (7f3b633aa0)"
+}

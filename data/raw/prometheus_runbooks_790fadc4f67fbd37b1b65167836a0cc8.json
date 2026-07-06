@@ -1,0 +1,7 @@
+{
+  "id": "790fadc4f67fbd37b1b65167836a0cc8",
+  "source": "prometheus_runbooks",
+  "title": "NodeFilesystemAlmostOutOfFiles#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/node/nodefilesystemalmostoutoffiles/",
+  "text": "Node Filesystem Almost Out Of Files\nNodeFilesystemAlmostOutOfFiles\n#\nMeaning\n#\nThis alert is similar to the NodeFilesystemSpaceFillingUp alert, but rather\nthan being based on a prediction that a filesystem will run out of inodes in a\ncertain amount of time, it uses simple static thresholds. The alert will fire as\nat a\nwarning\nlevel at 5% of available inodes left, and at a\ncritical\nlevel\nwith 3% of available inodes left.\nImpact\n#\nA node’s filesystem becoming full can have a far reaching impact, as it may\ncause any or all of the applications scheduled to that node to experience\nanything from performance degradation to full inoperability. Depending on the\nnode and filesystem involved, this could pose a critical threat to the stability\nof the cluster.\nDiagnosis\n#\nMitigation\n#\nSee\nNode Filesystem FilesFilling Up"
+}

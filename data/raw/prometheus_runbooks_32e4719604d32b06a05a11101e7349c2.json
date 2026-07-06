@@ -1,0 +1,7 @@
+{
+  "id": "32e4719604d32b06a05a11101e7349c2",
+  "source": "prometheus_runbooks",
+  "title": "KubeNodeNotReady#",
+  "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubenodenotready/",
+  "text": "Kube Node Not Ready\nKubeNodeNotReady\n#\nMeaning\n#\nKubeNodeNotReady alert is fired when a Kubernetes node is not in\nReady\nstate for a certain period. In this case, the node is not able to host any new\npods as described [here][KubeNode].\nImpact\n#\nThe performance of the cluster deployments is affected, depending on the overall\nworkload and the type of the node.\nDiagnosis\n#\nThe notification details should list the node that’s not ready. For Example:\n- alertname = KubeNodeNotReady\n...\n - node = node1.example.com\n...\nLogin to the cluster. Check the status of that node:\n$ kubectl get node $NODE -o yaml\nThe output should describe why the node isn’t ready (e.g.: timeouts reaching the\nAPI or kubelet).\nMitigation\n#\nOnce, the problem was resolved that prevented node from being replaced,\nthe instance should be terminated.\nSee\nKubeNode\nSee\nnode problem detector"
+}

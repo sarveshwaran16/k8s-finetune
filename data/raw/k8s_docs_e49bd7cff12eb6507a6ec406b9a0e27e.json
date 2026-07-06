@@ -1,0 +1,7 @@
+{
+  "id": "e49bd7cff12eb6507a6ec406b9a0e27e",
+  "source": "k8s_docs",
+  "title": "Turnkey Cloud Solutions",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/turnkey-solutions/",
+  "text": "Turnkey Cloud Solutions\nThis page provides a list of Kubernetes certified solution providers. From each\nprovider page, you can learn how to install and setup production\nready clusters.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 18, 2024 at 10:32 AM PST:\nUpdate references to CNCF landscape (v2) (26e760da6e)"
+}
