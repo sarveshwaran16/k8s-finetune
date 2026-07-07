@@ -58,7 +58,7 @@ def run():
         print(f"[{source_name}] Done — {count} documents saved")
         total += count
 
-    print(f"\n✅ Ingestion complete — {total} total documents saved to data/raw/")
+    print(f"\n Ingestion complete — {total} total documents saved to data/raw/")
 
 
 if __name__ == "__main__":
