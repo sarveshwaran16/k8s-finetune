@@ -1,0 +1,7 @@
+{
+  "id": "e235cf2fd7c77f13e2e44248f3883606",
+  "source": "k8s_docs",
+  "title": "Horizontal Manual Scaling for a Deployment — Scaling up a Deployment",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/scale-deployment/#scaling-up-a-deployment",
+  "text": "There are several different ways you can change the replica count for an\nexisting Deployment.\n\nUse\nkubectl scale\nto set the replica count:\nkubectl scale deployment/nginx-deployment --replicas\n=\n4\nThe output is similar to:\ndeployment.apps/nginx-deployment scaled\nVerify that the Deployment has four Pods:\nkubectl get deployment nginx-deployment\nThe output is similar to:\nNAME               READY   UP-TO-DATE   AVAILABLE   AGE\nnginx-deployment   4/4     4            4           1m"
+}

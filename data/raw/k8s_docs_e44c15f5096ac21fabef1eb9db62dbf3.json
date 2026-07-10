@@ -1,0 +1,7 @@
+{
+  "id": "e44c15f5096ac21fabef1eb9db62dbf3",
+  "source": "k8s_docs",
+  "title": "APIService — APIServiceCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiregistration/api-service-v1/#APIServiceCondition",
+  "text": "APIServiceCondition describes the state of an APIService at a particular point\nField\nDescription\nlastTransitionTime\nTime\nLast time the condition transitioned from one status to another.\nmessage\nstring\nHuman-readable message indicating details about last transition.\nreason\nstring\nUnique, one-word, CamelCase reason for the condition's last transition.\nstatus\n*\nstring\nStatus is the status of the condition. Can be True, False, Unknown.\ntype\n*\nstring\nType is the type of the condition."
+}

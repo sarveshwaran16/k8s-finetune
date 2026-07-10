@@ -1,0 +1,7 @@
+{
+  "id": "bcdf064e70f6597dc059aa547688e0ca",
+  "source": "k8s_docs",
+  "title": "Cloud Controller Manager — Others",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/cloud-controller/#authorization-miscellaneous",
+  "text": "The implementation of the core of the cloud controller manager requires access to create Event\nobjects, and to ensure secure operation, it requires access to create ServiceAccounts.\nv1/Event\n:\ncreate\npatch\nupdate\nv1/ServiceAccount\n:\ncreate\nThe\nRBAC\nClusterRole for the cloud\ncontroller manager looks like:\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\ncloud-controller-manager\nrules\n:\n-\napiGroups\n:\n-\n\"\"\nresources\n:\n-\nevents\nverbs\n:\n-\ncreate\n-\npatch\n-\nupdate\n-\napiGroups\n:\n-\n\"\"\nresources\n:\n-\nnodes\nverbs\n:\n-\n'*'\n-\napiGroups\n:\n-\n\"\"\nresources\n:\n-\nnodes/status\nverbs\n:\n-\npatch\n-\napiGroups\n:\n-\n\"\"\nresources\n:\n-\nservices\nverbs\n:\n-\nlist\n-\nwatch\n-\napiGroups\n:\n-\n\"\"\nresources\n:\n-\nservices/status\nverbs\n:\n-\npatch\n-\nupdate\n-\napiGroups\n:\n-\n\"\"\nresources\n:\n-\nserviceaccounts\nverbs\n:\n-\ncreate\n-\napiGroups\n:\n-\n\"\"\nresources\n:\n-\npersistentvolumes\nverbs\n:\n-\nget\n-\nlist\n-\nupdate\n-\nwatch"
+}

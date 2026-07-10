@@ -1,0 +1,7 @@
+{
+  "id": "f811807eaa878a02282596b713334a1b",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_version/#synopsis",
+  "text": "Print the version of kubeadm\nkubeadm version [flags]\n\n-h, --help\nhelp for version\n-o, --output string\nOutput format; available options are 'yaml', 'json' and 'short'\nhelp for version\nOutput format; available options are 'yaml', 'json' and 'short'\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

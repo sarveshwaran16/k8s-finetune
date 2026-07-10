@@ -1,0 +1,7 @@
+{
+  "id": "436a21950cc2e31ebea61a4acbdb55cc",
+  "source": "k8s_docs",
+  "title": "Linux Kernel Version Requirements — kube proxynftablesproxy mode",
+  "source_url": "https://kubernetes.io/docs/reference/node/kernel-version-requirements/#kube-proxy-nftables-proxy-mode",
+  "text": "For Kubernetes 1.36, the\nnftables\nmode\nof kube-proxy requires\nversion 1.0.1 or later\nof the nft command-line tool, as well as kernel 5.13 or later.\nFor testing/development purposes, you can use older kernels, as far back as 5.4 if you set the\nnftables.skipKernelVersionCheck\noption in the kube-proxy config.\nBut this is not recommended in production since it may cause problems with other nftables\nusers on the system."
+}

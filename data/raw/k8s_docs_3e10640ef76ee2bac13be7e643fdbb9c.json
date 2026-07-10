@@ -1,0 +1,7 @@
+{
+  "id": "3e10640ef76ee2bac13be7e643fdbb9c",
+  "source": "k8s_docs",
+  "title": "kubectl — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

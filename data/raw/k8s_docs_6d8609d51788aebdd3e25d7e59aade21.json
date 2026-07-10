@@ -1,0 +1,7 @@
+{
+  "id": "6d8609d51788aebdd3e25d7e59aade21",
+  "source": "k8s_docs",
+  "title": " — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_control-plane/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

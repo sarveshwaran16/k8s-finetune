@@ -1,0 +1,7 @@
+{
+  "id": "da1806d07194af234381b4054f3758d5",
+  "source": "k8s_docs",
+  "title": "kubeadm upgrade phases — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade-phase/#synopsis",
+  "text": "Run pre-flight checks for kubeadm upgrade node.\nkubeadm upgrade node phase preflight [flags]\n\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for preflight\n--ignore-preflight-errors strings\nA list of checks whose errors will be shown as warnings. Example: 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks.\nPath to a kubeadm configuration file.\nhelp for preflight\nA list of checks whose errors will be shown as warnings. Example: 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks."
+}

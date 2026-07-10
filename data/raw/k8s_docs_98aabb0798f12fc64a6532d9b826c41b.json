@@ -1,0 +1,7 @@
+{
+  "id": "98aabb0798f12fc64a6532d9b826c41b",
+  "source": "k8s_docs",
+  "title": "Creating a cluster with kubeadm — Troubleshooting",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#troubleshooting",
+  "text": "If you are running into difficulties with kubeadm, please consult our\ntroubleshooting docs\n.\n\nVerify that your cluster is running properly with\nSonobuoy\nSee\nUpgrading kubeadm clusters\nfor details about upgrading your cluster using\nkubeadm\n.\nLearn about advanced\nkubeadm\nusage in the\nkubeadm reference documentation\nLearn more about Kubernetes\nconcepts\nand\nkubectl\n.\nSee the\nCluster Networking\npage for a bigger list\nof Pod network add-ons.\nSee the\nlist of add-ons\nto\nexplore other add-ons, including tools for logging, monitoring, network policy, visualization &\ncontrol of your Kubernetes cluster.\nConfigure how your cluster handles logs for cluster events and from\napplications running in Pods.\nSee\nLogging Architecture\nfor\nan overview of what is involved."
+}

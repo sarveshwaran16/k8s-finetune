@@ -1,0 +1,7 @@
+{
+  "id": "859952b708c5d4239ecd6b3b861a5296",
+  "source": "k8s_docs",
+  "title": "Configure a Pod to Use a Volume for Storage — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/#what-s-next",
+  "text": "See\nVolume\n.\nSee\nPod\n.\nIn addition to the local disk storage provided by\nemptyDir\n, Kubernetes\nsupports many different network-attached storage solutions, including PD on\nGCE and EBS on EC2, which are preferred for critical data and will handle\ndetails such as mounting and unmounting the devices on the nodes. See\nVolumes\nfor more details.\nSee\nVolume\n.\nSee\nPod\n.\nIn addition to the local disk storage provided by\nemptyDir\n, Kubernetes\nsupports many different network-attached storage solutions, including PD on\nGCE and EBS on EC2, which are preferred for critical data and will handle\ndetails such as mounting and unmounting the devices on the nodes. See\nVolumes\nfor more details."
+}

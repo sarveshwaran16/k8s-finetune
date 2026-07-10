@@ -1,0 +1,7 @@
+{
+  "id": "cab2ca9ed4bc574561438ce13bcfa93d",
+  "source": "k8s_docs",
+  "title": "Network Policies — Allow all ingress traffic",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/#allow-all-ingress-traffic",
+  "text": "If you want to allow all incoming connections to all pods in a namespace, you can create a policy\nthat explicitly allows that.\n---\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nNetworkPolicy\nmetadata\n:\nname\n:\nallow-all-ingress\nspec\n:\npodSelector\n:\n{}\ningress\n:\n- {}\npolicyTypes\n:\n-\nIngress\nWith this policy in place, no additional policy or policies can cause any incoming connection to\nthose pods to be denied. This policy has no effect on isolation for egress from any pod."
+}

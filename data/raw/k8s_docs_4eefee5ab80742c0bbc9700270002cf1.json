@@ -1,0 +1,7 @@
+{
+  "id": "4eefee5ab80742c0bbc9700270002cf1",
+  "source": "k8s_docs",
+  "title": "kubectl apply view-last-applied — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_apply/kubectl_apply_view-last-applied/#synopsis",
+  "text": "View the latest last-applied-configuration annotations by type/name or file.\nThe default output will be printed to stdout in YAML format. You can use the -o option to change the output format.\nkubectl apply view-last-applied (TYPE [NAME | -l label] | TYPE/NAME | -f FILENAME)\n\n# View the last-applied-configuration annotations by type/name in YAML\n  kubectl apply view-last-applied deployment/nginx\n  \n  # View the last-applied-configuration annotations by file in JSON\n  kubectl apply view-last-applied -f deploy.yaml -o json"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "83873818ab01425a52e852fd39d0554f",
+  "source": "k8s_docs",
+  "title": "StatefulSets — Replicas",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#replicas",
+  "text": ".spec.replicas\nis an optional field that specifies the number of desired Pods. It defaults to 1.\nShould you manually scale a StatefulSet, via\nkubectl scale statefulset statefulset --replicas=X\n, and then you update that StatefulSet\nbased on a manifest (for example: by running\nkubectl apply -f statefulset.yaml\n), then applying that manifest overwrites the manual scaling\nthat you previously did.\nIf a\nHorizontalPodAutoscaler\n(or any similar API for horizontal scaling) is managing scaling for a\nStatefulset, don't set\n.spec.replicas\n. Instead, allow the Kubernetes\ncontrol plane\nto manage\nthe\n.spec.replicas\nfield automatically."
+}

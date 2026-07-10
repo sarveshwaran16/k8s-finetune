@@ -1,0 +1,7 @@
+{
+  "id": "9154c31c633a8f3fe2fbbee1f355fd0a",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — PersistentVolumeClaimResize",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#persistentvolumeclaimresize",
+  "text": "Type\n: Validating.\nThis admission controller implements additional validations for checking incoming\nPersistentVolumeClaim\nresize requests.\nEnabling the\nPersistentVolumeClaimResize\nadmission controller is recommended.\nThis admission controller prevents resizing of all claims by default unless a claim's\nStorageClass\nexplicitly enables resizing by setting\nallowVolumeExpansion\nto\ntrue\n.\nFor example: all\nPersistentVolumeClaim\ns created from the following\nStorageClass\nsupport volume expansion:\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nStorageClass\nmetadata\n:\nname\n:\ngluster-vol-default\nprovisioner\n:\nkubernetes.io/glusterfs\nparameters\n:\nresturl\n:\n\"http://192.168.10.100:8080\"\nrestuser\n:\n\"\"\nsecretNamespace\n:\n\"\"\nsecretName\n:\n\"\"\nallowVolumeExpansion\n:\ntrue\nFor more information about persistent volume claims, see\nPersistentVolumeClaims\n."
+}

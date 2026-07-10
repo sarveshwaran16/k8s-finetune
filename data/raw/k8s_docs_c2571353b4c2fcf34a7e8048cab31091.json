@@ -1,0 +1,7 @@
+{
+  "id": "c2571353b4c2fcf34a7e8048cab31091",
+  "source": "k8s_docs",
+  "title": "Downward API — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/downward-api/#what-s-next",
+  "text": "You can read about\ndownwardAPI\nvolumes\n.\nYou can try using the downward API to expose container- or Pod-level information:\nas\nenvironment variables\nas\nfiles in\ndownwardAPI\nvolume\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

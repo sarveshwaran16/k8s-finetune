@@ -1,0 +1,7 @@
+{
+  "id": "3c2564625fbeeab34d0483d8aef85f7e",
+  "source": "k8s_docs",
+  "title": "Pod Security Standards — Restricted Pod Security Standard changes",
+  "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted-pod-security-standard-changes",
+  "text": "Another important change, made in Kubernetes v1.25 is that the\nRestricted\npolicy\nhas been updated to use the\npod.spec.os.name\nfield. Based on the OS name, certain policies that are specific\nto a particular OS can be relaxed for the other OS.\nRestrictions on the following controls are only required if\n.spec.os.name\nis not\nwindows\n:\nPrivilege Escalation\nSeccomp\nLinux Capabilities"
+}

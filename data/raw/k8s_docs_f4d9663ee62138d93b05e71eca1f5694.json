@@ -1,0 +1,7 @@
+{
+  "id": "f4d9663ee62138d93b05e71eca1f5694",
+  "source": "k8s_docs",
+  "title": "Coarse Parallel Processing Using a Work Queue — Fill the queue with tasks",
+  "source_url": "https://kubernetes.io/docs/tasks/job/coarse-parallel-processing-work-queue/#fill-the-queue-with-tasks",
+  "text": "Now, fill the queue with some simulated tasks. In this example, the tasks are strings to be\nprinted.\nIn a practice, the content of the messages might be:\nnames of files to that need to be processed\nextra flags to the program\nranges of keys in a database table\nconfiguration parameters to a simulation\nframe numbers of a scene to be rendered\nIf there is large data that is needed in a read-only mode by all pods\nof the Job, you typically put that in a shared file system like NFS and mount\nthat readonly on all the pods, or write the program in the pod so that it can natively read\ndata from a cluster file system (for example: HDFS).\nFor this example, you will create the queue and fill it using the AMQP command line tools.\nIn practice, you might write a program to fill the queue using an AMQP client library.\n# Run this on your computer, not in the Pod\n/usr/bin/amqp-declare-queue --url\n=\n$BROKER_URL\n-q job1  -d\njob1\nAdd items to the queue:\nfor\nf in apple banana cherry date fig grape lemon melon\ndo\n/usr/bin/amqp-publish --url\n=\n$BROKER_URL\n-r job1 -p -b\n$f\ndone\nYou added 8 messages to the queue."
+}

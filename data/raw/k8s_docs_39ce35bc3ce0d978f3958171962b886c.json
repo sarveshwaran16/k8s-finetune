@@ -1,0 +1,7 @@
+{
+  "id": "39ce35bc3ce0d978f3958171962b886c",
+  "source": "k8s_docs",
+  "title": "Troubleshooting Clusters — Listing your cluster",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/#listing-your-cluster",
+  "text": "The first thing to debug in your cluster is if your nodes are all registered correctly.\nRun the following command:\nkubectl get nodes\nAnd verify that all of the nodes you expect to see are present and that they are all in the\nReady\nstate.\nTo get detailed information about the overall health of your cluster, you can run:\nkubectl cluster-info dump"
+}

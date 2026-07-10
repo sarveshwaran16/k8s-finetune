@@ -1,0 +1,7 @@
+{
+  "id": "8ae399b10d36bb18f0f59702236b171a",
+  "source": "k8s_docs",
+  "title": "StatefulSet — StatefulSetCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apps/stateful-set-v1/#StatefulSetCondition",
+  "text": "StatefulSetCondition describes the state of a statefulset at a certain point.\nField\nDescription\nlastTransitionTime\nTime\nLast time the condition transitioned from one status to another.\nmessage\nstring\nA human readable message indicating details about the transition.\nreason\nstring\nThe reason for the condition's last transition.\nstatus\n*\nstring\nStatus of the condition, one of True, False, Unknown.\ntype\n*\nstring\nType of statefulset condition."
+}

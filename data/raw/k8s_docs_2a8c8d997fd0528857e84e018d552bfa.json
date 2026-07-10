@@ -1,0 +1,7 @@
+{
+  "id": "2a8c8d997fd0528857e84e018d552bfa",
+  "source": "k8s_docs",
+  "title": "Adding Linux worker nodes",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-linux-nodes/#adding-linux-worker-nodes",
+  "text": "To add new Linux worker nodes to your cluster do the following for each machine:\nConnect to the machine by using SSH or another method.\nRun the command that was output by\nkubeadm init\n. For example:\nsudo kubeadm join --token <token> <control-plane-host>:<control-plane-port> --discovery-token-ca-cert-hash sha256:<hash>"
+}

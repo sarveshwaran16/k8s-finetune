@@ -1,0 +1,7 @@
+{
+  "id": "2559f3a0c42ee7fe199a43f63bf5d7f5",
+  "source": "k8s_docs",
+  "title": "ReplicationController — Labels on the ReplicationController",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#labels-on-the-replicationcontroller",
+  "text": "The ReplicationController can itself have labels (\n.metadata.labels\n). Typically, you\nwould set these the same as the\n.spec.template.metadata.labels\n; if\n.metadata.labels\nis not specified\nthen it defaults to\n.spec.template.metadata.labels\n. However, they are allowed to be\ndifferent, and the\n.metadata.labels\ndo not affect the behavior of the ReplicationController."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ba08e2fd44db38e793686b44894731d2",
+  "source": "k8s_docs",
+  "title": "Topology-Aware Workload Scheduling — Topology constraint",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/topology-aware-scheduling/#topology-constraint",
+  "text": "To define a topology constraint for a PodGroup you need to set a\nkey\n, which corresponds to\na Kubernetes node label, representing the target topology domain (for example, a rack or a zone).\nThe scheduler strictly enforces that all pods within the PodGroup are placed onto nodes that share\nthe exact same value for this specified label.\nHere is an example of a PodGroup configured with a topology constraint:\napiVersion\n:\nscheduling.k8s.io/v1alpha2\nkind\n:\nPodGroup\nmetadata\n:\nname\n:\nexample-podgroup\nspec\n:\nschedulingPolicy\n:\ngang\n:\nminCount\n:\n4\nschedulingConstraints\n:\ntopology\n:\n-\nkey\n:\ntopology.example.com/rack"
+}

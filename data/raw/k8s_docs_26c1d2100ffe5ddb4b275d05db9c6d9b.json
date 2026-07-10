@@ -1,0 +1,7 @@
+{
+  "id": "26c1d2100ffe5ddb4b275d05db9c6d9b",
+  "source": "k8s_docs",
+  "title": "Create a Windows HostProcess Pod — Limitations",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/#limitations",
+  "text": "These limitations are relevant for Kubernetes v1.36:\nHostProcess containers require containerd 1.6 or higher\ncontainer runtime\nand\ncontainerd 1.7 is recommended.\nHostProcess pods can only contain HostProcess containers. This is a current limitation\nof the Windows OS; non-privileged Windows containers cannot share a vNIC with the host IP namespace.\nHostProcess containers run as a process on the host and do not have any degree of\nisolation other than resource constraints imposed on the HostProcess user account. Neither\nfilesystem or Hyper-V isolation are supported for HostProcess containers.\nVolume mounts are supported and are mounted under the container volume. See\nVolume Mounts\nA limited set of host user accounts are available for HostProcess containers by default.\nSee\nChoosing a User Account\n.\nResource limits (disk, memory, cpu count) are supported in the same fashion as processes\non the host.\nBoth Named pipe mounts and Unix domain sockets are\nnot\nsupported and should instead\nbe accessed via their path on the host (e.g. \\\\.\\pipe\\*)"
+}

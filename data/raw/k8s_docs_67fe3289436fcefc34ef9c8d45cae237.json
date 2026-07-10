@@ -1,0 +1,7 @@
+{
+  "id": "67fe3289436fcefc34ef9c8d45cae237",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_join/kubeadm_join_phase/#synopsis",
+  "text": "Use this command to invoke single phase of the \"join\" workflow\nkubeadm join phase [flags]\n\n-h, --help\nhelp for phase\nhelp for phase\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

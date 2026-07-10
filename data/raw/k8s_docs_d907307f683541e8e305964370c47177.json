@@ -1,0 +1,7 @@
+{
+  "id": "d907307f683541e8e305964370c47177",
+  "source": "k8s_docs",
+  "title": "Upgrade A Cluster — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

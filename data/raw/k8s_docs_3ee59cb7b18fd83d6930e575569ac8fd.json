@@ -1,0 +1,7 @@
+{
+  "id": "3ee59cb7b18fd83d6930e575569ac8fd",
+  "source": "k8s_docs",
+  "title": "ResourceSlice — DeviceAttribute",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-slice-v1/#DeviceAttribute",
+  "text": "DeviceAttribute must have exactly one field set.\nField\nDescription\nbool\nboolean\nBoolValue is a true/false value.\nbools\nboolean array\nBoolValues is a non-empty list of true/false values.\nint\ninteger\nIntValue is a number.\nints\ninteger array\nIntValues is a non-empty list of numbers. This is an alpha field and requires enabling the DRAListTypeAttributes feature gate.\nstring\nstring\nStringValue is a string. Must not be longer than 64 characters.\nstrings\nstring array\nStringValues is a non-empty list of strings. Each string must not be longer than 64 characters. This is an alpha field and requires enabling the DRAListTypeAttributes feature gate.\nversion\nstring\nVersionValue is a semantic version according to semver.org spec 2.0.0. Must not be longer than 64 characters.\nversions\nstring array\nVersionValues is a non-empty list of semantic versions according to semver.org spec 2.0.0. Each version string must not be longer than 64 characters. This is an alpha field and requires enabling the DRAListTypeAttributes feature gate."
+}

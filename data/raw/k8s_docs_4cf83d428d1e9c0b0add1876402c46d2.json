@@ -1,0 +1,7 @@
+{
+  "id": "4cf83d428d1e9c0b0add1876402c46d2",
+  "source": "k8s_docs",
+  "title": "Configure Default CPU Requests and Limits for a Namespace — Clean up",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/#clean-up",
+  "text": "Delete your namespace:\nkubectl delete namespace default-cpu-example\n\nConfigure Default Memory Requests and Limits for a Namespace\nConfigure Minimum and Maximum Memory Constraints for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nConfigure Memory and CPU Quotas for a Namespace\nConfigure a Pod Quota for a Namespace\nConfigure Quotas for API Objects\nConfigure Default Memory Requests and Limits for a Namespace\nConfigure Minimum and Maximum Memory Constraints for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nConfigure Memory and CPU Quotas for a Namespace\nConfigure a Pod Quota for a Namespace\nConfigure Quotas for API Objects"
+}

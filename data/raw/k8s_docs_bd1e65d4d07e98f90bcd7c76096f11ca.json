@@ -1,0 +1,7 @@
+{
+  "id": "bd1e65d4d07e98f90bcd7c76096f11ca",
+  "source": "k8s_docs",
+  "title": "ConfigMaps — Motivation",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/configmap/#motivation",
+  "text": "Use a ConfigMap for setting configuration data separately from application code.\nFor example, imagine that you are developing an application that you can run on your\nown computer (for development) and in the cloud (to handle real traffic).\nYou write the code to look in an environment variable named\nDATABASE_HOST\n.\nLocally, you set that variable to\nlocalhost\n. In the cloud, you set it to\nrefer to a Kubernetes\nService\nthat exposes the database component to your cluster.\nThis lets you fetch a container image running in the cloud and\ndebug the exact same code locally if needed."
+}

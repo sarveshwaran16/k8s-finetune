@@ -1,0 +1,7 @@
+{
+  "id": "8f2a1e21bd407d9540f3caa2b7c64ce9",
+  "source": "k8s_docs",
+  "title": "Ingress — Prerequisites",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#prerequisites",
+  "text": "You must have an\nIngress controller\nto satisfy an Ingress. Only creating an Ingress resource has no effect.\nYou can choose from a number of\nIngress controllers\n.\nIdeally, all Ingress controllers should fit the reference specification. In reality, the various Ingress\ncontrollers operate slightly differently."
+}

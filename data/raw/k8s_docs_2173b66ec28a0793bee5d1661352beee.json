@@ -1,0 +1,7 @@
+{
+  "id": "2173b66ec28a0793bee5d1661352beee",
+  "source": "k8s_docs",
+  "title": "Namespaces Walkthrough — Prerequisites",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/namespaces-walkthrough/#prerequisites",
+  "text": "This example assumes the following:\nYou have an\nexisting Kubernetes cluster\n.\nYou have a basic understanding of Kubernetes\nPods\n,\nServices\n, and\nDeployments\n.\n\nBy default, a Kubernetes cluster will instantiate a default namespace when provisioning the cluster to hold the default set of Pods,\nServices, and Deployments used by the cluster.\nAssuming you have a fresh cluster, you can inspect the available namespaces by doing the following:\nkubectl get namespaces\nNAME      STATUS    AGE\ndefault   Active    13m"
+}

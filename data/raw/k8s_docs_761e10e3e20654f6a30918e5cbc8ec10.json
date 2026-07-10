@@ -1,0 +1,7 @@
+{
+  "id": "761e10e3e20654f6a30918e5cbc8ec10",
+  "source": "k8s_docs",
+  "title": "ResourceQuota — ResourceQuotaSpec",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/resource-quota-v1/#ResourceQuotaSpec",
+  "text": "ResourceQuotaSpec defines the desired hard limits to enforce for Quota.\nField\nDescription\nhard\nobject\nhard is the set of desired hard limits for each named resource. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/\nscopeSelector\nScopeSelector\nscopeSelector is also a collection of filters like scopes that must match each object tracked by a quota but expressed using ScopeSelectorOperator in combination with possible values. For a resource to match, both scopes AND scopeSelector (if specified in spec), must be matched.\nscopes\nstring array\nA collection of filters that must match each object tracked by a quota. If not specified, the quota matches all objects."
+}

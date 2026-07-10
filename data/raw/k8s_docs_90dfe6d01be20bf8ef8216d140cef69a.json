@@ -1,0 +1,7 @@
+{
+  "id": "90dfe6d01be20bf8ef8216d140cef69a",
+  "source": "k8s_docs",
+  "title": "Kubeadm — How to install",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/#how-to-install",
+  "text": "To install kubeadm, see the\ninstallation guide\n.\n\nkubeadm init\nto bootstrap a Kubernetes control-plane node\nkubeadm join\nto bootstrap a Kubernetes worker node and join it to the cluster\nkubeadm upgrade\nto upgrade a Kubernetes cluster to a newer version\nkubeadm config\nif you initialized your cluster using kubeadm v1.7.x or lower, to configure your cluster for\nkubeadm upgrade\nkubeadm token\nto manage tokens for\nkubeadm join\nkubeadm reset\nto revert any changes made to this host by\nkubeadm init\nor\nkubeadm join\nkubeadm certs\nto manage Kubernetes certificates\nkubeadm kubeconfig\nto manage kubeconfig files\nkubeadm version\nto print the kubeadm version\nkubeadm alpha\nto preview a set of features made available for gathering feedback from the community"
+}

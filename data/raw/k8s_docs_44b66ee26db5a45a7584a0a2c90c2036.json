@@ -1,0 +1,7 @@
+{
+  "id": "44b66ee26db5a45a7584a0a2c90c2036",
+  "source": "k8s_docs",
+  "title": "Running ZooKeeper, A Distributed System Coordinator — Cleaning up",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/zookeeper/#cleaning-up",
+  "text": "Use\nkubectl uncordon\nto uncordon all the nodes in your cluster.\nYou must delete the persistent storage media for the PersistentVolumes used in this tutorial.\nFollow the necessary steps, based on your environment, storage configuration,\nand provisioning method, to ensure that all storage is reclaimed."
+}

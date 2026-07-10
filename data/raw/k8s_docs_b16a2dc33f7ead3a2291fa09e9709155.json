@@ -1,0 +1,7 @@
+{
+  "id": "b16a2dc33f7ead3a2291fa09e9709155",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1) — AdmissionPluginConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-AdmissionPluginConfiguration",
+  "text": "Appears in:\nAdmissionConfiguration\nAdmissionPluginConfiguration provides the configuration for a single plug-in.\nField\nDescription\nname\n[Required]\nstring\nName is the name of the admission controller.\nIt must match the registered admission plugin name.\npath\nstring\nPath is the path to a configuration file that contains the plugin's\nconfiguration\nconfiguration\nk8s.io/apimachinery/pkg/runtime.Unknown\nConfiguration is an embedded configuration object to be used as the plugin's\nconfiguration. If present, it will be used instead of the path to the configuration file.\nName is the name of the admission controller.\nIt must match the registered admission plugin name.\nPath is the path to a configuration file that contains the plugin's\nconfiguration\nConfiguration is an embedded configuration object to be used as the plugin's\nconfiguration. If present, it will be used instead of the path to the configuration file."
+}

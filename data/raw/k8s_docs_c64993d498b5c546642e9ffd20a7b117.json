@@ -1,0 +1,7 @@
+{
+  "id": "c64993d498b5c546642e9ffd20a7b117",
+  "source": "k8s_docs",
+  "title": "Migrating telemetry and security agents from dockershim — Identify DaemonSets that depend on Docker Engine",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/migrating-telemetry-and-security-agents/#identify-docker-dependency",
+  "text": "If a pod wants to make calls to the\ndockerd\nrunning on the node, the pod must either:\nmount the filesystem containing the Docker daemon's privileged socket, as a\nvolume\n; or\nmount the specific path of the Docker daemon's privileged socket directly, also as a volume.\nFor example: on COS images, Docker exposes its Unix domain socket at\n/var/run/docker.sock\nThis means that the pod spec will include a\nhostPath\nvolume mount of\n/var/run/docker.sock\n.\nHere's a sample shell script to find Pods that have a mount directly mapping the\nDocker socket. This script outputs the namespace and name of the pod. You can\nremove the\ngrep '/var/run/docker.sock'\nto review other mounts.\nkubectl get pods --all-namespaces\n\\\n-o\n=\njsonpath\n=\n'{range .items[*]}{\"\\n\"}{.metadata.namespace}{\":\\t\"}{.metadata.name}{\":\\t\"}{range .spec.volumes[*]}{.hostPath.path}{\", \"}{end}{end}'\n\\\n|\nsort\n\\\n|\ngrep\n'/var/run/docker.sock'"
+}

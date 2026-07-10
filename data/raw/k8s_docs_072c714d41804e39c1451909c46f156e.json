@@ -1,0 +1,7 @@
+{
+  "id": "072c714d41804e39c1451909c46f156e",
+  "source": "k8s_docs",
+  "title": "Workloads — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/#what-s-next",
+  "text": "As well as reading about each API kind for workload management, you can read how to\ndo specific tasks:\nRun a stateless application using a Deployment\nRun a stateful application either as a\nsingle instance\nor as a\nreplicated set\nRun automated tasks with a CronJob\nTo learn about Kubernetes' mechanisms for separating code from configuration,\nvisit\nConfiguration\n.\nThere are two supporting concepts that provide backgrounds about how Kubernetes manages pods\nfor applications:\nGarbage collection\ntidies up objects\nfrom your cluster after their\nowning resource\nhas been removed.\nThe\ntime-to-live after finished\ncontroller\nremoves Jobs once a defined time has passed since they completed.\nOnce your application is running, you might want to make it available on the internet as\na\nService\nor, for web application only,\nusing an\nIngress\n."
+}

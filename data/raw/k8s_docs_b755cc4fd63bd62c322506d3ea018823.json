@@ -1,0 +1,7 @@
+{
+  "id": "b755cc4fd63bd62c322506d3ea018823",
+  "source": "k8s_docs",
+  "title": "Advertise Extended Resources for a Node — For application developers",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/extended-resource-node/#for-application-developers",
+  "text": "Assign Extended Resources to a Container\nExtended Resource allocation by DRA\n\nConfigure Minimum and Maximum Memory Constraints for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nExtended Resource allocation by DRA\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

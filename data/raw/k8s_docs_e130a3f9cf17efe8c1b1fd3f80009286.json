@@ -1,0 +1,7 @@
+{
+  "id": "e130a3f9cf17efe8c1b1fd3f80009286",
+  "source": "k8s_docs",
+  "title": "StatefulSets — Partitioned rolling updates",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#partitions",
+  "text": "The\nRollingUpdate\nupdate strategy can be partitioned, by specifying a\n.spec.updateStrategy.rollingUpdate.partition\n. If a partition is specified, all Pods with an\nordinal that is greater than or equal to the partition will be updated when the StatefulSet's\n.spec.template\nis updated. All Pods with an ordinal that is less than the partition will not\nbe updated, and, even if they are deleted, they will be recreated at the previous version. If a\nStatefulSet's\n.spec.updateStrategy.rollingUpdate.partition\nis greater than its\n.spec.replicas\n,\nupdates to its\n.spec.template\nwill not be propagated to its Pods.\nIn most cases you will not need to use a partition, but they are useful if you want to stage an\nupdate, roll out a canary, or perform a phased roll out."
+}

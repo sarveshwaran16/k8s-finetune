@@ -1,0 +1,7 @@
+{
+  "id": "13aeb1aa79b6ff0f990cfbbeb40cbd01",
+  "source": "k8s_docs",
+  "title": "Create an External Load Balancer — External load balancer providers",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/#external-load-balancer-providers",
+  "text": "It is important to note that the datapath for this functionality is provided by a load balancer external to the Kubernetes cluster.\nWhen the Service\ntype\nis set to LoadBalancer, Kubernetes provides functionality equivalent to\ntype\nequals ClusterIP to pods\nwithin the cluster and extends it by programming the (external to Kubernetes) load balancer with entries for the nodes\nhosting the relevant Kubernetes pods. The Kubernetes control plane automates the creation of the external load balancer,\nhealth checks (if needed), and packet filtering rules (if needed). Once the cloud provider allocates an IP address for the load\nbalancer, the control plane looks up that external IP address and populates it into the Service object."
+}

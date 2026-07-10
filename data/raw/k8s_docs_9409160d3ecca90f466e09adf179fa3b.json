@@ -1,0 +1,7 @@
+{
+  "id": "9409160d3ecca90f466e09adf179fa3b",
+  "source": "k8s_docs",
+  "title": "Custom Resources — Storage",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#storage",
+  "text": "Custom resources consume storage space in the same way that ConfigMaps do. Creating too many\ncustom resources may overload your API server's storage space.\nCustom resources are placed into storage based upon the the current storage\nversion of the resource, defined in the CRD spec. Any update to a custom\nresource will use the currently defined storage version to store the resource.\nAll other versions either need to have all the fields of that version or define\nconversions to work properly.\nAggregated API servers may use the same storage as the main API server, in which case the same\nwarning applies."
+}

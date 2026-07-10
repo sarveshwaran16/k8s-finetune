@@ -1,0 +1,7 @@
+{
+  "id": "02c60e48be4d99190e1502f6eb0a6052",
+  "source": "k8s_docs",
+  "title": "Extending Kubernetes — Changing built-in resources",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#changing-built-in-resources",
+  "text": "When you extend the Kubernetes API by adding custom resources, the added resources always fall\ninto a new API Groups. You cannot replace or change existing API groups.\nAdding an API does not directly let you affect the behavior of existing APIs (such as Pods), whereas\nAPI Access Extensions\ndo.\n\nWhen a request reaches the Kubernetes API Server, it is first\nauthenticated\n, then\nauthorized\n,\nand is then subject to various types of\nadmission control\n(some requests are in fact not\nauthenticated, and get special treatment). See\nControlling Access to the Kubernetes API\nfor more on this flow.\nEach of the steps in the Kubernetes authentication / authorization flow offers extension points."
+}

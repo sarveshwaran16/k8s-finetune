@@ -1,0 +1,7 @@
+{
+  "id": "86f290352c08842d2d0ad386beaa3af5",
+  "source": "k8s_docs",
+  "title": "Ingress — DefaultBackend",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#default-backend",
+  "text": "An Ingress with no rules sends all traffic to a single default backend and\n.spec.defaultBackend\nis the backend that should handle requests in that case.\nThe\ndefaultBackend\nis conventionally a configuration option of the\nIngress controller\nand\nis not specified in your Ingress resources.\nIf no\n.spec.rules\nare specified,\n.spec.defaultBackend\nmust be specified.\nIf\ndefaultBackend\nis not set, the handling of requests that do not match any of the rules will be up to the\ningress controller (consult the documentation for your ingress controller to find out how it handles this case).\nIf none of the hosts or paths match the HTTP request in the Ingress objects, the traffic is\nrouted to your default backend."
+}

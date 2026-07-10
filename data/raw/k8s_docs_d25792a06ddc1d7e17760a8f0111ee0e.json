@@ -1,0 +1,7 @@
+{
+  "id": "d25792a06ddc1d7e17760a8f0111ee0e",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:optional",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-optional",
+  "text": "Description:\nIndicates that a field is optional to clients.\nStability Level:\nStable\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:optional\nMyField\nstring\n`json:\"myField\"`\n}\nIn this example,\nMyField\nis not required to be provided when creating or updating\nMyStruct\n.\n\nDescription:\nIndicates that a field must be specified by clients.\nStability Level:\nStable\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:required\nMyField\nstring\n`json:\"myField\"`\n}\nIn this example,\nMyField\nmust be provided when creating or updating\nMyStruct\n."
+}

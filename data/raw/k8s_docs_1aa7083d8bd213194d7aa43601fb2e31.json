@@ -1,0 +1,7 @@
+{
+  "id": "1aa7083d8bd213194d7aa43601fb2e31",
+  "source": "k8s_docs",
+  "title": "Other Tools — kind",
+  "source_url": "https://kubernetes.io/docs/reference/tools/#kind",
+  "text": "kind\nis a tool for running local Kubernetes\nclusters using Docker container nodes. kind is primarily designed for testing\nKubernetes itself, but may also be used for local development or CI.\n\nKompose\nis a tool to help Docker Compose users move to Kubernetes.\nUse Kompose to:\nTranslate a Docker Compose file into Kubernetes objects\nGo from local Docker development to managing your application via Kubernetes\nConvert v1 or v2 Docker Compose\nyaml\nfiles or\nDistributed Application Bundles"
+}

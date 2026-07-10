@@ -1,0 +1,7 @@
+{
+  "id": "6b64b63164d1b21ec64a4aebd2917e6e",
+  "source": "k8s_docs",
+  "title": "Kubernetes Object Management — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#what-s-next",
+  "text": "Managing Kubernetes Objects Using Imperative Commands\nImperative Management of Kubernetes Objects Using Configuration Files\nDeclarative Management of Kubernetes Objects Using Configuration Files\nDeclarative Management of Kubernetes Objects Using Kustomize\nKubectl Command Reference\nKubectl Book\nKubernetes API Reference"
+}

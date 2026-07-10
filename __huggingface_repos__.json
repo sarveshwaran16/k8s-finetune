@@ -1,0 +1,1 @@
+{"repos": [{"repoId": "TinyLlama/TinyLlama-1.1B-Chat-v1.0", "repoType": "model", "commitHash": "fe8a4ea1ffedaf415f4da2f062534de366a451e6", "filePaths": ["generation_config.json", "tokenizer.json", "tokenizer_config.json", "special_tokens_map.json", "config.json", "tokenizer.model", "model.safetensors"]}]}

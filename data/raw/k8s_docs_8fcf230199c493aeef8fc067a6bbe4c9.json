@@ -1,0 +1,7 @@
+{
+  "id": "8fcf230199c493aeef8fc067a6bbe4c9",
+  "source": "k8s_docs",
+  "title": "PodGroup API — Creating a PodGroup",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/podgroup-api/#creating-a-podgroup",
+  "text": "A PodGroup API resource is part of the\nscheduling.k8s.io/v1alpha2\nAPI group\n.\n(and your cluster must have that API group enabled, as well as the\nGenericWorkload\nfeature gate\n,\nbefore you can use this API).\nThe following manifest creates a PodGroup with a gang scheduling policy that requires\nat least 4 Pods to be schedulable simultaneously:\napiVersion\n:\nscheduling.k8s.io/v1alpha2\nkind\n:\nPodGroup\nmetadata\n:\nname\n:\ntraining-worker-0\nnamespace\n:\ndefault\nspec\n:\nschedulingPolicy\n:\ngang\n:\nminCount\n:\n4\nYou can inspect PodGroups in your cluster:\nkubectl get podgroups\nTo see the full status including scheduling conditions:\nkubectl describe podgroup training-worker-0"
+}

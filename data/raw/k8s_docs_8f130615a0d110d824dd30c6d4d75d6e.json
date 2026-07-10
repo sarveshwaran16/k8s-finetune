@@ -1,0 +1,7 @@
+{
+  "id": "8f130615a0d110d824dd30c6d4d75d6e",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_show-join-command/#synopsis",
+  "text": "Show the join command for control-plane and worker node\nkubeadm init phase show-join-command [flags]\n\n-h, --help\nhelp for show-join-command\nhelp for show-join-command\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

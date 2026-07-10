@@ -1,0 +1,7 @@
+{
+  "id": "2a189abacc61e4ed7ca1a2176de6fa1b",
+  "source": "k8s_docs",
+  "title": "StatefulSet Basics — Scaling down",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#scaling-down",
+  "text": "Scaling down means reducing the number of replicas. For example, you\nmight do this because the level of traffic to a service has decreased,\nand at the current scale there are idle resources.\nIn one terminal, watch the StatefulSet's Pods:\n# End this watch when there are only 3 Pods for the StatefulSet\nkubectl get pod --watch -l\napp\n=\nnginx\nIn another terminal, use\nkubectl patch\nto scale the StatefulSet back down to\nthree replicas:\nkubectl patch sts web -p\n'{\"spec\":{\"replicas\":3}}'\nstatefulset.apps/web patched\nWait for\nweb-4\nand\nweb-3\nto transition to Terminating.\n# This should already be running\nkubectl get pods --watch -l\napp\n=\nnginx\nNAME      READY     STATUS              RESTARTS   AGE\nweb-0     1/1       Running             0          3h\nweb-1     1/1       Running             0          3h\nweb-2     1/1       Running             0          55s\nweb-3     1/1       Running             0          36s\nweb-4     0/1       ContainerCreating   0          18s\nNAME      READY     STATUS    RESTARTS   AGE\nweb-4     1/1       Running   0          19s\nweb-4     1/1       Terminating   0         24s\nweb-4     1/1       Terminating   0         24s\nweb-3     1/1       Terminating   0         42s\nweb-3     1/1       Terminating   0         42s"
+}

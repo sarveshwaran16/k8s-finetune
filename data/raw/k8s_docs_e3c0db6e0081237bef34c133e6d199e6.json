@@ -1,0 +1,7 @@
+{
+  "id": "e3c0db6e0081237bef34c133e6d199e6",
+  "source": "k8s_docs",
+  "title": "kubectl proxy — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_proxy/#synopsis",
+  "text": "Creates a proxy server or application-level gateway between localhost and the Kubernetes API server. It also allows serving static content over specified HTTP path. All incoming data enters through one port and gets forwarded to the remote Kubernetes API server port, except for the path matching the static content path.\nkubectl proxy [--port=PORT] [--www=static-dir] [--www-prefix=prefix] [--api-prefix=prefix]"
+}

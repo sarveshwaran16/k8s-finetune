@@ -1,0 +1,7 @@
+{
+  "id": "191252db4244f06b2ccc01780362b534",
+  "source": "k8s_docs",
+  "title": "Configuring swap memory on Kubernetes nodes — Feedback",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/provision-swap-memory/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

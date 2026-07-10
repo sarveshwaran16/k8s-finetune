@@ -1,0 +1,7 @@
+{
+  "id": "6f3e7b3cceb5ce87583640c9ab443cad",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — kubeadm node initialization",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#kubeadm-node-initialization",
+  "text": "Once CSR files have been signed and required certificates are in place on the hosts\nyou want to use as nodes, you can use the commands\nkubeadm init\nand\nkubeadm join\nto create a Kubernetes cluster from these nodes. During\ninit\nand\njoin\n, kubeadm\nuses existing certificates, encryption keys and kubeconfig files that it finds in the\n/etc/kubernetes\ntree on the host's local filesystem."
+}

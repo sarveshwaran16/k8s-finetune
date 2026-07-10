@@ -1,0 +1,7 @@
+{
+  "id": "099192421e8287e9717c8dd2ca6d576d",
+  "source": "k8s_docs",
+  "title": "Debugging Kubernetes nodes with crictl — Execute a command in a running container",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/#execute-a-command-in-a-running-container",
+  "text": "crictl\nexec\n-i -t 1f73f2d81bf98 ls\nThe output is similar to this:\nbin   dev   etc   home  proc  root  sys   tmp   usr   var\n\nGet all container logs:\ncrictl logs 87d3992f84f74\nThe output is similar to this:\n10.240.0.96 - - [06/Jun/2018:02:45:49 +0000] \"GET / HTTP/1.1\" 200 612 \"-\" \"curl/7.47.0\" \"-\"\n10.240.0.96 - - [06/Jun/2018:02:45:50 +0000] \"GET / HTTP/1.1\" 200 612 \"-\" \"curl/7.47.0\" \"-\"\n10.240.0.96 - - [06/Jun/2018:02:45:51 +0000] \"GET / HTTP/1.1\" 200 612 \"-\" \"curl/7.47.0\" \"-\"\nGet only the latest\nN\nlines of logs:\ncrictl logs --tail\n=\n1\n87d3992f84f74\nThe output is similar to this:\n10.240.0.96 - - [06/Jun/2018:02:45:51 +0000] \"GET / HTTP/1.1\" 200 612 \"-\" \"curl/7.47.0\" \"-\""
+}

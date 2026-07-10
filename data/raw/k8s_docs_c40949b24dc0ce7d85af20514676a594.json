@@ -1,0 +1,7 @@
+{
+  "id": "c40949b24dc0ce7d85af20514676a594",
+  "source": "k8s_docs",
+  "title": "Monitoring, Logging, and Debugging — Getting help",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/#getting-help",
+  "text": "If your problem isn't answered by any of the guides above, there are variety of\nways for you to get help from the Kubernetes community.\n\nThe documentation on this site has been structured to provide answers to a wide\nrange of questions.\nConcepts\nexplain the Kubernetes\narchitecture and how each component works, while\nSetup\nprovides\npractical instructions for getting started.\nTasks\nshow how to\naccomplish commonly used tasks, and\nTutorials\nare more\ncomprehensive walkthroughs of real-world, industry-specific, or end-to-end\ndevelopment scenarios. The\nReference\nsection provides\ndetailed documentation on the\nKubernetes API\nand command-line interfaces (CLIs), such as\nkubectl\n."
+}

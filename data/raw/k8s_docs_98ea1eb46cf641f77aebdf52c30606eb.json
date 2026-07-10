@@ -1,0 +1,7 @@
+{
+  "id": "98ea1eb46cf641f77aebdf52c30606eb",
+  "source": "k8s_docs",
+  "title": "Install and Set Up kubectl on macOS — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#before-you-begin",
+  "text": "You must use a kubectl version that is within one minor version difference of\nyour cluster. For example, a v1.36 client can communicate\nwith v1.35, v1.36,\nand v1.37 control planes.\nUsing the latest compatible version of kubectl helps avoid unforeseen issues.\n\nThe following methods exist for installing kubectl on macOS:\nInstall kubectl on macOS\nInstall kubectl binary with curl on macOS\nInstall with Homebrew on macOS\nInstall with Macports on macOS\nVerify kubectl configuration\nOptional kubectl configurations and plugins\nEnable shell autocompletion\nInstall\nkubectl convert\nplugin\nInstall kubectl binary with curl on macOS\nInstall with Homebrew on macOS\nInstall with Macports on macOS\nEnable shell autocompletion\nInstall\nkubectl convert\nplugin"
+}

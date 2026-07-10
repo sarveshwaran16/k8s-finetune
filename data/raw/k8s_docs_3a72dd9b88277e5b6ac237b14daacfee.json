@@ -1,0 +1,7 @@
+{
+  "id": "3a72dd9b88277e5b6ac237b14daacfee",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubeadm — kubeadm resetunmounts/var/lib/kubelet",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/#kubeadm-reset-unmounts-var-lib-kubelet",
+  "text": "If\n/var/lib/kubelet\nis being mounted, performing a\nkubeadm reset\nwill effectively unmount it.\nTo workaround the issue, re-mount the\n/var/lib/kubelet\ndirectory after performing the\nkubeadm reset\noperation.\nThis is a regression introduced in kubeadm 1.15. The issue is fixed in 1.20.\n\nIn a kubeadm cluster, the\nmetrics-server\ncan be used insecurely by passing the\n--kubelet-insecure-tls\nto it. This is not recommended for production clusters.\nIf you want to use TLS between the metrics-server and the kubelet there is a problem,\nsince kubeadm deploys a self-signed serving certificate for the kubelet. This can cause the following errors\non the side of the metrics-server:\nx509: certificate signed by unknown authority\nx509: certificate is valid for IP-foo not IP-bar\nSee\nEnabling signed kubelet serving certificates\nto understand how to configure the kubelets in a kubeadm cluster to have properly signed serving certificates.\nAlso see\nHow to run the metrics-server securely\n."
+}

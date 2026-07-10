@@ -1,0 +1,7 @@
+{
+  "id": "715bb7994a3876915d954f67107024ec",
+  "source": "k8s_docs",
+  "title": "CertificateSigningRequest — CertificateSigningRequestList",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/certificates/certificate-signing-request-v1/#CertificateSigningRequestList",
+  "text": "CertificateSigningRequestList is a collection of CertificateSigningRequest objects\nField\nDescription\napiVersion\nstring\nAPIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources\nitems\n*\nCertificateSigningRequest array\nitems is a collection of CertificateSigningRequest objects\nkind\nstring\nKind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nmetadata\nListMeta"
+}

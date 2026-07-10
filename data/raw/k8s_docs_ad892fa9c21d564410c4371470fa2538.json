@@ -1,0 +1,7 @@
+{
+  "id": "ad892fa9c21d564410c4371470fa2538",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1alpha1) — Connection",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1alpha1/#apiserver-k8s-io-v1alpha1-Connection",
+  "text": "Appears in:\nEgressSelection\nConnection provides the configuration for a single egress selection client.\nField\nDescription\nproxyProtocol\n[Required]\nProtocolType\nProtocol is the protocol used to connect from client to the konnectivity server.\ntransport\nTransport\nTransport defines the transport configurations we use to dial to the konnectivity server.\nThis is required if ProxyProtocol is HTTPConnect or GRPC.\nProtocol is the protocol used to connect from client to the konnectivity server.\nTransport defines the transport configurations we use to dial to the konnectivity server.\nThis is required if ProxyProtocol is HTTPConnect or GRPC."
+}

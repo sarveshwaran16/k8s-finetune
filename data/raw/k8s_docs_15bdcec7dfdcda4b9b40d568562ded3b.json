@@ -1,0 +1,7 @@
+{
+  "id": "15bdcec7dfdcda4b9b40d568562ded3b",
+  "source": "k8s_docs",
+  "title": "Reference — Officially supported client libraries",
+  "source_url": "https://kubernetes.io/docs/reference/#officially-supported-client-libraries",
+  "text": "To call the Kubernetes API from a programming language, you can use\nclient libraries\n. Officially supported\nclient libraries:\nKubernetes Go client library\nKubernetes Python client library\nKubernetes Java client library\nKubernetes JavaScript client library\nKubernetes C# client library\nKubernetes Haskell client library"
+}

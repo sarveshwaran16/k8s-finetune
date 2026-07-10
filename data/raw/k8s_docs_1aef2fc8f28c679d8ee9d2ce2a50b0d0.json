@@ -1,0 +1,7 @@
+{
+  "id": "1aef2fc8f28c679d8ee9d2ce2a50b0d0",
+  "source": "k8s_docs",
+  "title": "DNS for Services and Pods — DNS search domain list limits",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#dns-search-domain-list-limits",
+  "text": "Kubernetes itself does not limit the DNS Config until the length of the search\ndomain list exceeds 32 or the total length of all search domains exceeds 2048.\nThis limit applies to the node's resolver configuration file, the Pod's DNS\nConfig, and the merged DNS Config respectively.\nSome container runtimes of earlier versions may have their own restrictions on\nthe number of DNS search domains. Depending on the container runtime\nenvironment, the pods with a large number of DNS search domains may get stuck in\nthe pending state.\nIt is known that containerd v1.5.5 or earlier and CRI-O v1.21 or earlier have\nthis problem."
+}

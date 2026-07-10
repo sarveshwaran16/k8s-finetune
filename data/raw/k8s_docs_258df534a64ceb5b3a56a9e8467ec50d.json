@@ -1,0 +1,7 @@
+{
+  "id": "258df534a64ceb5b3a56a9e8467ec50d",
+  "source": "k8s_docs",
+  "title": "Protocols for Services — TCP",
+  "source_url": "https://kubernetes.io/docs/reference/networking/service-protocols/#protocol-tcp",
+  "text": "You can use TCP for any kind of Service, and it's the default network protocol.\n\nYou can use UDP for most Services. For\ntype: LoadBalancer\nServices,\nUDP support depends on the cloud provider offering this facility.\n\nIf your cloud provider supports it, you can use a Service in LoadBalancer mode to\nconfigure a load balancer outside of your Kubernetes cluster, in a special mode\nwhere your cloud provider's load balancer implements HTTP / HTTPS reverse proxying,\nwith traffic forwarded to the backend endpoints for that Service.\nTypically, you set the protocol for the Service to\nTCP\nand add an\nannotation\n(usually specific to your cloud provider) that configures the load balancer\nto handle traffic at the HTTP level.\nThis configuration might also include serving HTTPS (HTTP over TLS) and\nreverse-proxying plain HTTP to your workload.\nYou might additionally want to specify that the\napplication protocol\nof the connection is\nhttp\nor\nhttps\n. Use\nhttp\nif the session from the\nload balancer to your workload is HTTP without TLS, and use\nhttps\nif the\nsession from the load balancer to your workload uses TLS encryption."
+}

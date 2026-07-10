@@ -1,0 +1,7 @@
+{
+  "id": "985edb064a439d465ef3b78a8139fffc",
+  "source": "k8s_docs",
+  "title": "Update Your App — Feedback",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/update/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

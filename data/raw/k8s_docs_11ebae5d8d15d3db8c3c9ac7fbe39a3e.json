@@ -1,0 +1,7 @@
+{
+  "id": "11ebae5d8d15d3db8c3c9ac7fbe39a3e",
+  "source": "k8s_docs",
+  "title": "StorageClass — TopologySelectorLabelRequirement",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/storage-class-v1/#TopologySelectorLabelRequirement",
+  "text": "A topology selector requirement is a selector that matches given label. This is an alpha feature and may change in the future.\nField\nDescription\nkey\n*\nstring\nThe label key that the selector applies to.\nvalues\n*\nstring array\nAn array of string values. One value must match the label to be selected. Each entry in Values is ORed."
+}

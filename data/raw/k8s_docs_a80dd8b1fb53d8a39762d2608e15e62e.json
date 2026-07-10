@@ -1,0 +1,7 @@
+{
+  "id": "a80dd8b1fb53d8a39762d2608e15e62e",
+  "source": "k8s_docs",
+  "title": "Authorization — Escalation paths",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authorization/#escalation-paths",
+  "text": "There are different ways that an attacker or untrustworthy user could gain additional\nprivilege within a namespace, if you allow them to run arbitrary Pods in that namespace:\nMounting arbitrary Secrets in that namespace\nCan be used to access confidential information meant for other workloads\nCan be used to obtain a more privileged ServiceAccount's service account token\nUsing arbitrary ServiceAccounts in that namespace\nCan perform Kubernetes API actions as another workload (impersonation)\nCan perform any privileged actions that ServiceAccount has\nMounting or using ConfigMaps meant for other workloads in that namespace\nCan be used to obtain information meant for other workloads, such as database host names.\nMounting volumes meant for other workloads in that namespace\nCan be used to obtain information meant for other workloads, and change it.\nCan be used to access confidential information meant for other workloads\nCan be used to obtain a more privileged ServiceAccount's service account token\nCan perform Kubernetes API actions as another workload (impersonation)\nCan perform any privileged actions that ServiceAccount has\nCan be used to obtain information meant for other workloads, such as database host names.\nCan be used to obtain information meant for other workloads, and change it."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "e8ab2c79b11bb762d5c564ff6953b5c9",
+  "source": "k8s_docs",
+  "title": "Organizing Cluster Access Using kubeconfig Files — Context",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#context",
+  "text": "A\ncontext\nelement in a kubeconfig file is used to group access parameters\nunder a convenient name. Each context has three parameters: cluster, namespace, and user.\nBy default, the\nkubectl\ncommand-line tool uses parameters from\nthe\ncurrent context\nto communicate with the cluster.\nTo choose the current context:\nkubectl config use-context"
+}

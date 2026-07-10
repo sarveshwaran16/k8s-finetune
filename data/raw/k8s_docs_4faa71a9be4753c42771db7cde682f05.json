@@ -1,0 +1,7 @@
+{
+  "id": "4faa71a9be4753c42771db7cde682f05",
+  "source": "k8s_docs",
+  "title": "DaemonSet — Running Pods on select Nodes",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#running-pods-on-select-nodes",
+  "text": "If you specify a\n.spec.template.spec.nodeSelector\n, then the DaemonSet controller will\ncreate Pods on nodes which match that\nnode selector\n.\nLikewise if you specify a\n.spec.template.spec.affinity\n,\nthen DaemonSet controller will create Pods on nodes which match that\nnode affinity\n.\nIf you do not specify either, then the DaemonSet controller will create Pods on all nodes."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "dc955246bdc3fbd9812b35604abd494f",
+  "source": "k8s_docs",
+  "title": "ReplicationController — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-s-next",
+  "text": "Learn about\nPods\n.\nLearn about\nDeployment\n, the replacement\nfor ReplicationController.\nReplicationController\nis part of the Kubernetes REST API.\nRead the\nReplicationController\nobject definition to understand the API for replication controllers.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

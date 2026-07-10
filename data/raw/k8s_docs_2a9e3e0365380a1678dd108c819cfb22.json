@@ -1,0 +1,7 @@
+{
+  "id": "2a9e3e0365380a1678dd108c819cfb22",
+  "source": "k8s_docs",
+  "title": "Resource metrics pipeline — CPU",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/#cpu",
+  "text": "CPU is reported as the average core usage measured in cpu units. One cpu, in Kubernetes, is\nequivalent to 1 vCPU/Core for cloud providers, and 1 hyper-thread on bare-metal Intel processors.\nThis value is derived by taking a rate over a cumulative CPU counter provided by the kernel (in\nboth Linux and Windows kernels). The time window used to calculate CPU is shown under window field\nin Metrics API.\nTo learn more about how Kubernetes allocates and measures CPU resources, see\nmeaning of CPU\n."
+}

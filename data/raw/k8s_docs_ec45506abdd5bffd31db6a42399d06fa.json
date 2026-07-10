@@ -1,0 +1,7 @@
+{
+  "id": "ec45506abdd5bffd31db6a42399d06fa",
+  "source": "k8s_docs",
+  "title": "Running in multiple zones — Control plane behavior",
+  "source_url": "https://kubernetes.io/docs/setup/best-practices/multiple-zones/#control-plane-behavior",
+  "text": "All\ncontrol plane components\nsupport running as a pool of interchangeable resources, replicated per\ncomponent.\nWhen you deploy a cluster control plane, place replicas of\ncontrol plane components across multiple failure zones. If availability is\nan important concern, select at least three failure zones and replicate\neach individual control plane component (API server, scheduler, etcd,\ncluster controller manager) across at least three failure zones.\nIf you are running a cloud controller manager then you should\nalso replicate this across all the failure zones you selected."
+}

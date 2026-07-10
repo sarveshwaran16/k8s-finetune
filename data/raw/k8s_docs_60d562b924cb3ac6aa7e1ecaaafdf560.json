@@ -1,0 +1,7 @@
+{
+  "id": "60d562b924cb3ac6aa7e1ecaaafdf560",
+  "source": "k8s_docs",
+  "title": "Extending Kubernetes — Client extensions",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#client-extensions",
+  "text": "Plugins for kubectl are separate binaries that add or replace the behavior of specific subcommands.\nThe\nkubectl\ntool can also integrate with\ncredential plugins\nThese extensions only affect a individual user's local environment, and so cannot enforce site-wide policies.\nIf you want to extend the\nkubectl\ntool, read\nExtend kubectl with plugins\n."
+}

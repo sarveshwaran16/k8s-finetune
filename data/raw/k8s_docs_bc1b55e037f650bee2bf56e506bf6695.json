@@ -1,0 +1,7 @@
+{
+  "id": "bc1b55e037f650bee2bf56e506bf6695",
+  "source": "k8s_docs",
+  "title": "Pod Lifecycle — Container probes",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes",
+  "text": "Kubernetes lets you define\nprobes\nto continuously monitor the health\nof containers in a Pod. A probe is a diagnostic performed periodically\nby the\nkubelet\non a container.\nTo perform a diagnostic, the kubelet either executes code within\nthe container or makes a network request.\nBased on the probe results, Kubernetes can restart unhealthy containers\nor stop sending traffic to containers that are not ready.\nThe kubelet can optionally perform and react to three kinds of probes on running\ncontainers, each serving a different purpose. For probe mechanisms (\nexec\n,\ngrpc\n,\nhttpGet\n,\ntcpSocket\n), configuration fields, and detailed usage\nguidance, see\nLiveness, Readiness, and Startup Probes\n."
+}

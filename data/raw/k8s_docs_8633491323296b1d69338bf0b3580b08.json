@@ -1,0 +1,7 @@
+{
+  "id": "8633491323296b1d69338bf0b3580b08",
+  "source": "k8s_docs",
+  "title": "Certificates and Certificate Signing Requests — Cluster trust bundles",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#cluster-trust-bundles",
+  "text": "A ClusterTrustBundles is a cluster-scoped object for distributing X.509 trust\nanchors (root certificates) to workloads within the cluster. They're designed\nto work well with the\nsigner\nconcept from CertificateSigningRequests.\nClusterTrustBundles can be used in two modes:\nsigner-linked\nand\nsigner-unlinked\n."
+}

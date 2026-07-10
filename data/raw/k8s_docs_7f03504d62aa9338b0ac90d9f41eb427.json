@@ -1,0 +1,7 @@
+{
+  "id": "7f03504d62aa9338b0ac90d9f41eb427",
+  "source": "k8s_docs",
+  "title": "Kubectl user preferences (kuberc) — appendArgs",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kuberc/#appendargs",
+  "text": "This next example, will introduce a mechanism similar to prepending arguments,\nthis time, though, we will append arguments to the end of the kubectl command.\napiVersion\n:\nkubectl.config.k8s.io/v1beta1\nkind\n:\nPreference\naliases\n:\n-\nname\n:\nrunx\ncommand\n:\nrun\noptions\n:\n-\nname\n:\nimage\ndefault\n:\nbusybox\n-\nname\n:\nnamespace\ndefault\n:\ntest-ns\nappendArgs\n:\n- --\n-\ncustom-arg\nIn this example, the following settings were used:\nname\n- Alias name must not collide with the built-in commands.\ncommand\n- Specify the underlying built-in command that your alias will execute.\nThis includes support for subcommands like\ncreate role\n.\noptions\n- Specify default values for options. If you explicitly specify an option\nwhen you run\nkubectl\n, the value you provide takes precedence over the default\none defined in\nkuberc\n.\nappendArgs\n- Specify explicit arguments that will be placed at the end of the\ncommand. Here, this will be translated to\nkubectl run test-pod --namespace test-ns --image busybox -- custom-arg\n."
+}

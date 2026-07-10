@@ -1,0 +1,52 @@
+[
+  {
+    "query": "Why is my pod in CrashLoopBackOff?",
+    "answer": "The container in the Pod is in a CrashLoopBackOff state.",
+    "response_time_sec": 9.6
+  },
+  {
+    "query": "What causes OOMKilled errors?",
+    "answer": "The container is running out of memory.",
+    "response_time_sec": 5.6
+  },
+  {
+    "query": "How do I troubleshoot NodeNotReady?",
+    "answer": "Check the status of the node using kubectl get nodes, and ensure that the node is not in the 'NotReady' state.",
+    "response_time_sec": 13.3
+  },
+  {
+    "query": "Why is my PVC stuck in Pending?",
+    "answer": "The PVC is stuck in Pending because the storage class you specified is not compatible with the volume you are trying to mount.",
+    "response_time_sec": 12.2
+  },
+  {
+    "query": "How do I diagnose Kubernetes DNS failures?",
+    "answer": "Check the logs of the kubelet, kube-proxy, and kube-controller-manager.",
+    "response_time_sec": 11.5
+  },
+  {
+    "query": "Why is my deployment continuously restarting?",
+    "answer": "The deployment is continuously restarting because it is in a 'Running' state.",
+    "response_time_sec": 9.3
+  },
+  {
+    "query": "How can I investigate CPU throttling?",
+    "answer": "To investigate CPU throttling, you can use the `top` command with the `-i` flag to show the CPU usage of all processes, and then filter for the specific process that is running on a specific node.",
+    "response_time_sec": 20.0
+  },
+  {
+    "query": "What are common causes of 5XX errors in Kubernetes?",
+    "answer": "Common causes include network issues, misconfigurations, and resource exhaustion.",
+    "response_time_sec": 9.4
+  },
+  {
+    "query": "How do I debug image pull failures?",
+    "answer": "To debug image pull failures, you can use the `kubectl` command-line tool with the `debug` option.",
+    "response_time_sec": 13.5
+  },
+  {
+    "query": "What should I check when a service is unreachable?",
+    "answer": "Check the logs of the pod that is running the service, check the network settings of the node hosting the pod, and ensure that the service is properly configured.",
+    "response_time_sec": 15.2
+  }
+]

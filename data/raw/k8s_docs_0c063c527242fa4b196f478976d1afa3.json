@@ -1,0 +1,7 @@
+{
+  "id": "0c063c527242fa4b196f478976d1afa3",
+  "source": "k8s_docs",
+  "title": "StorageVersionMigration — getRead Status",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storagemigration/storage-version-migration-v1beta1/#get-read-status",
+  "text": "GET /apis/storagemigration.k8s.io/v1beta1/storageversionmigrations/{name}/status\nName\nType\nDescription\nname\nstring\nname of the StorageVersionMigration\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nStorageVersionMigration"
+}

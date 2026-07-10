@@ -1,0 +1,7 @@
+{
+  "id": "4e408c90805e442def49a4334b8366c1",
+  "source": "k8s_docs",
+  "title": "Assigning Pods to Nodes — Pod topology spread constraints",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#pod-topology-spread-constraints",
+  "text": "You can use\ntopology spread constraints\nto control how\nPods\nare spread across your cluster among failure-domains such as regions, zones, nodes, or among any other\ntopology domains that you define. You might do this to improve performance, expected availability, or\noverall utilization.\nRead\nPod topology spread constraints\nto learn more about how these work."
+}

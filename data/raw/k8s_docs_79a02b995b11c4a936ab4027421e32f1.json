@@ -1,0 +1,7 @@
+{
+  "id": "79a02b995b11c4a936ab4027421e32f1",
+  "source": "k8s_docs",
+  "title": "Resize CPU and Memory Resources assigned to Pods — Clean up",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-pod-resources/#clean-up",
+  "text": "Delete the pod:\nkubectl delete pod pod-level-resize-demo\n\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources"
+}

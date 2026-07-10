@@ -1,0 +1,7 @@
+{
+  "id": "8962aa0d9ff2e145c61d94d5f5938291",
+  "source": "k8s_docs",
+  "title": "Declare Network Policy — Test the service by accessing it from another Pod",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/#test-the-service-by-accessing-it-from-another-pod",
+  "text": "You should be able to access the new\nnginx\nservice from other Pods. To access the\nnginx\nService from another Pod in the\ndefault\nnamespace, start a busybox container:\nkubectl run busybox --rm -ti --image=busybox -- /bin/sh\nIn your shell, run the following command:\nwget --spider --timeout\n=\n1\nnginx\nConnecting to nginx (10.100.0.16:80)\nremote file exists"
+}

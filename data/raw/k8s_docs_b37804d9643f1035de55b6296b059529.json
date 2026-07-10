@@ -1,0 +1,7 @@
+{
+  "id": "b37804d9643f1035de55b6296b059529",
+  "source": "k8s_docs",
+  "title": "Pod — PodCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#PodCondition",
+  "text": "PodCondition contains details for the current condition of this pod.\nField\nDescription\nlastProbeTime\nTime\nLast time we probed the condition.\nlastTransitionTime\nTime\nLast time the condition transitioned from one status to another.\nmessage\nstring\nHuman-readable message indicating details about last transition.\nobservedGeneration\ninteger\nIf set, this represents the .metadata.generation that the pod condition was set based upon.\nreason\nstring\nUnique, one-word, CamelCase reason for the condition's last transition.\nstatus\n*\nstring\nStatus is the status of the condition. Can be True, False, Unknown. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions\ntype\n*\nstring\nType is the type of the condition. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions"
+}

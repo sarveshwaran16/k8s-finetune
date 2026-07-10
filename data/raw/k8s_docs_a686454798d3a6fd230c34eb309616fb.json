@@ -1,0 +1,7 @@
+{
+  "id": "a686454798d3a6fd230c34eb309616fb",
+  "source": "k8s_docs",
+  "title": "Assign Memory Resources to Containers and Pods — Memory units",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#memory-units",
+  "text": "The memory resource is measured in bytes. You can express memory as a plain integer or a\nfixed-point integer with one of these suffixes: E, P, T, G, M, K, Ei, Pi, Ti, Gi, Mi, Ki.\nFor example, the following represent approximately the same value:\n128974848, 129e6, 129M, 123Mi\nDelete your Pod:\nkubectl delete pod memory-demo-3 --namespace\n=\nmem-example"
+}

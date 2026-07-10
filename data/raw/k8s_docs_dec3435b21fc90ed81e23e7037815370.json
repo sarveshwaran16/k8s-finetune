@@ -1,0 +1,7 @@
+{
+  "id": "dec3435b21fc90ed81e23e7037815370",
+  "source": "k8s_docs",
+  "title": "Pod Conditions — Status for Pod readiness",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-condition/#status-for-pod-readiness",
+  "text": "To set these\nstatus.conditions\nfor the Pod, applications and\noperators\nshould use\nthe\nPATCH\naction on the Pod's status subresource. You can use\nkubectl patch\nwith\n--subresource=status\n, or a\nKubernetes client library\nto write\ncode that sets custom Pod conditions for Pod readiness.\nFor a Pod that uses custom conditions, that Pod is evaluated to be ready\nonly\nwhen both the following statements apply:\nAll containers in the Pod are ready.\nAll conditions specified in\nreadinessGates\nare\nTrue\n.\nWhen a Pod's containers are Ready but at least one custom condition is missing or\nFalse\n,\nthe kubelet sets the Pod's\nReady\ncondition to\nstatus: \"False\"\nwith\nreason: ReadinessGatesNotReady\n."
+}

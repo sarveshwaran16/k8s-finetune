@@ -1,0 +1,7 @@
+{
+  "id": "5175e7ee795c810156cc954b28d576c9",
+  "source": "k8s_docs",
+  "title": "API Priority and Fairness — Seats Occupied by a Request",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/flow-control/#seats-occupied-by-a-request",
+  "text": "The above description of concurrency management is the baseline story.\nRequests have different durations but are counted equally at any given\nmoment when comparing against a priority level's concurrency limit. In\nthe baseline story, each request occupies one unit of concurrency. The\nword \"seat\" is used to mean one unit of concurrency, inspired by the\nway each passenger on a train or aircraft takes up one of the fixed\nsupply of seats.\nBut some requests take up more than one seat. Some of these are\nlist\nrequests that the server estimates will return a large number of\nobjects. These have been found to put an exceptionally heavy burden\non the server. For this reason, the server estimates the number of objects\nthat will be returned and considers the request to take a number of seats\nthat is proportional to that estimated number."
+}

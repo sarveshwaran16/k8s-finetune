@@ -1,0 +1,7 @@
+{
+  "id": "02ae6fd434292c26f928178339219964",
+  "source": "k8s_docs",
+  "title": "Security Checklist — Authentication & Authorization",
+  "source_url": "https://kubernetes.io/docs/concepts/security/security-checklist/#authentication-authorization",
+  "text": "system:masters\ngroup is not used for user or component authentication after bootstrapping.\nThe kube-controller-manager is running with\n--use-service-account-credentials\nenabled.\nThe root certificate is protected (either an offline CA, or a managed\nonline CA with effective access controls).\nIntermediate and leaf certificates have an expiry date no more than 3\nyears in the future.\nA process exists for periodic access review, and reviews occur no more\nthan 24 months apart.\nThe\nRole Based Access Control Good Practices\nare followed for guidance related to authentication and authorization.\nAfter bootstrapping, neither users nor components should authenticate to the\nKubernetes API as\nsystem:masters\n. Similarly, running all of\nkube-controller-manager as\nsystem:masters\nshould be avoided. In fact,\nsystem:masters\nshould only be used as a break-glass mechanism, as opposed to\nan admin user."
+}

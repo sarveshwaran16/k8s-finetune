@@ -1,0 +1,7 @@
+{
+  "id": "1a5675ea9a82034571cb7da8a014460a",
+  "source": "k8s_docs",
+  "title": "IPv4/IPv6 dual-stack — Egress traffic",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/dual-stack/#egress-traffic",
+  "text": "If you want to enable egress traffic in order to reach off-cluster destinations (eg. the public\nInternet) from a Pod that uses non-publicly routable IPv6 addresses, you need to enable the Pod to\nuse a publicly routed IPv6 address via a mechanism such as transparent proxying or IP\nmasquerading. The\nip-masq-agent\nproject\nsupports IP masquerading on dual-stack clusters."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7104ac5c707d26f511f0ac17ef9aeedf",
+  "source": "k8s_docs",
+  "title": "Using sysctls in a Kubernetes Cluster — Listing all Sysctl Parameters",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/#listing-all-sysctl-parameters",
+  "text": "In Linux, the sysctl interface allows an administrator to modify kernel\nparameters at runtime. Parameters are available via the\n/proc/sys/\nvirtual\nprocess file system. The parameters cover various subsystems such as:\nkernel (common prefix:\nkernel.\n)\nnetworking (common prefix:\nnet.\n)\nvirtual memory (common prefix:\nvm.\n)\nMDADM (common prefix:\ndev.\n)\nMore subsystems are described in\nKernel docs\n.\nTo get a list of all parameters, you can run\nsudo sysctl -a"
+}

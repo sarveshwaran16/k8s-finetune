@@ -1,0 +1,7 @@
+{
+  "id": "aeb0eb0a897d30879cb4defdc8485563",
+  "source": "k8s_docs",
+  "title": "Controlling Access to the Kubernetes API — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/security/controlling-access/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

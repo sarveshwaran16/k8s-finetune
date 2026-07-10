@@ -1,0 +1,7 @@
+{
+  "id": "c5f2c4aad59197a29c8490de82a90fff",
+  "source": "k8s_docs",
+  "title": "CronJob — Unsupported TimeZone specification",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#unsupported-timezone-specification",
+  "text": "Specifying a timezone using\nCRON_TZ\nor\nTZ\nvariables inside\n.spec.schedule\nis\nnot officially supported\n(and never has been). If you try to set a schedule\nthat includes\nTZ\nor\nCRON_TZ\ntimezone specification, Kubernetes will fail to\ncreate or update the resource with a validation error. You should specify time zones\nusing the\ntime zone field\n, instead."
+}

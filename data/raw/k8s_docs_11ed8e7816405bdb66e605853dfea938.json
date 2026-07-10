@@ -1,0 +1,7 @@
+{
+  "id": "11ed8e7816405bdb66e605853dfea938",
+  "source": "k8s_docs",
+  "title": "kubeadm upgrade phases — Options inherited from parent commands",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade-phase/#options-inherited-from-parent-commands",
+  "text": "--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\n\nkubeadm init\nto bootstrap a Kubernetes control-plane node\nkubeadm join\nto connect a node to the cluster\nkubeadm reset\nto revert any changes made to this host by\nkubeadm init\nor\nkubeadm join\nkubeadm upgrade\nto upgrade a kubeadm node\nkubeadm alpha\nto try experimental functionality"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "62f841362ebca5ac50764a23b7dc3e4c",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — deployment",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-deployment-em-",
+  "text": "Create a deployment named my-dep that runs the busybox image\nkubectl create deployment\nmy\n-dep\n--image=busybox\nCreate a deployment with a command\nkubectl create deployment\nmy\n-dep\n--image=busybox -- date\nCreate a deployment named my-dep that runs the nginx image with 3 replicas\nkubectl create deployment my-dep\n--image\n=nginx\n--replicas\n=3\nCreate a deployment named my-dep that runs the busybox image and expose port 5701\nkubectl create deployment my-dep\n--image\n=busybox\n--port\n=5701\nCreate a deployment with the specified name."
+}

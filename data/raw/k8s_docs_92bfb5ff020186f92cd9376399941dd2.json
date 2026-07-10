@@ -1,0 +1,7 @@
+{
+  "id": "92bfb5ff020186f92cd9376399941dd2",
+  "source": "k8s_docs",
+  "title": "kubeadm reset — What's next",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-reset/#what-s-next",
+  "text": "kubeadm init\nto bootstrap a Kubernetes control-plane node\nkubeadm join\nto bootstrap a Kubernetes worker node and join it to the cluster\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

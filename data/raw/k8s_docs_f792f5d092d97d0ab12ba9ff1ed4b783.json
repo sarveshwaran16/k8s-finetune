@@ -1,0 +1,7 @@
+{
+  "id": "f792f5d092d97d0ab12ba9ff1ed4b783",
+  "source": "k8s_docs",
+  "title": "Pod — ResourceFieldSelector",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ResourceFieldSelector",
+  "text": "ResourceFieldSelector represents container resources (cpu, memory) and their output format\nField\nDescription\ncontainerName\nstring\nContainer name: required for volumes, optional for env vars\ndivisor\nQuantity\nSpecifies the output format of the exposed resources, defaults to \"1\"\nresource\n*\nstring\nRequired: resource to select"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "8219ca2c342e23ee62088809027d0736",
+  "source": "k8s_docs",
+  "title": "Introduction to kubectl — Porcelain",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/introduction/#porcelain",
+  "text": "Users may find using resource configuration overly verbose for\ndevelopment\nand prefer to work with\nthe cluster\nimperatively\nwith a shell-like workflow. kubectl offers porcelain commands for\ngenerating and modifying resources.\nGenerating + creating resources such as Deployments, StatefulSets, Services, ConfigMaps, etc.\nSetting fields on resources\nEditing (live) resources in a text editor"
+}

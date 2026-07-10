@@ -1,0 +1,7 @@
+{
+  "id": "bec2ce05638bbee3b4610bd0f55a6856",
+  "source": "k8s_docs",
+  "title": "Resource Quotas — VolumeAttributesClass scope",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#quota-scope-volume-attributes-class",
+  "text": "This scope only tracks quota consumed by PersistentVolumeClaims.\nPersistentVolumeClaims can be created with a specific\nVolumeAttributesClass\n, and might be modified after creation.\nYou can control a PVC's consumption of storage resources based on the associated\nVolumeAttributesClasses, by using the\nscopeSelector\nfield in the quota spec.\nThe PVC references the associated VolumeAttributesClass by the following fields:\nspec.volumeAttributesClassName\nstatus.currentVolumeAttributesClassName\nstatus.modifyVolumeStatus.targetVolumeAttributesClassName\nA relevant ResourceQuota is matched and consumed only if the ResourceQuota has a\nscopeSelector\nthat selects the PVC.\nWhen the quota is scoped for the volume attributes class using the\nscopeSelector\nfield, the quota object is restricted to track only the following resources:\npersistentvolumeclaims\nrequests.storage\nRead\nLimit Storage Consumption\nto learn more about this."
+}

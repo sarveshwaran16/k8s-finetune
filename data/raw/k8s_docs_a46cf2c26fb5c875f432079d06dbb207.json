@@ -1,0 +1,7 @@
+{
+  "id": "a46cf2c26fb5c875f432079d06dbb207",
+  "source": "k8s_docs",
+  "title": "Security Checklist — Admission controllers",
+  "source_url": "https://kubernetes.io/docs/concepts/security/security-checklist/#admission-controllers",
+  "text": "An appropriate selection of admission controllers is enabled.\nA pod security policy is enforced by the Pod Security Admission or/and a\nwebhook admission controller.\nThe admission chain plugins and webhooks are securely configured.\nAdmission controllers can help improve the security of the cluster. However,\nthey can present risks themselves as they extend the API server and\nshould be properly secured\n.\nThe following lists present a number of admission controllers that could be\nconsidered to enhance the security posture of your cluster and application. It\nincludes controllers that may be referenced in other parts of this document.\nThis first group of admission controllers includes plugins\nenabled by default\n,\nconsider to leave them enabled unless you know what you are doing:\nThe second group includes plugins that are not enabled by default but are in general\navailability state and are recommended to improve your security posture:\nThe third group includes plugins that are not enabled by default but could be\nconsidered for certain use cases:"
+}

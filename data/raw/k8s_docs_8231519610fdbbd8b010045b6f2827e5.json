@@ -1,0 +1,7 @@
+{
+  "id": "8231519610fdbbd8b010045b6f2827e5",
+  "source": "k8s_docs",
+  "title": "Configure Minimum and Maximum Memory Constraints for a Namespace — Clean up",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-constraint-namespace/#clean-up",
+  "text": "Delete your namespace:\nkubectl delete namespace constraints-mem-example\n\nConfigure Default Memory Requests and Limits for a Namespace\nConfigure Default CPU Requests and Limits for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nConfigure Memory and CPU Quotas for a Namespace\nConfigure a Pod Quota for a Namespace\nConfigure Quotas for API Objects\nConfigure Default Memory Requests and Limits for a Namespace\nConfigure Default CPU Requests and Limits for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nConfigure Memory and CPU Quotas for a Namespace\nConfigure a Pod Quota for a Namespace\nConfigure Quotas for API Objects"
+}

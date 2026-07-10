@@ -1,0 +1,7 @@
+{
+  "id": "8cd815bd3b0ed90fa679873ea8eb59af",
+  "source": "k8s_docs",
+  "title": "Kubernetes External Metrics (v1beta1) — ExternalMetricValueList",
+  "source_url": "https://kubernetes.io/docs/reference/external-api/external-metrics.v1beta1/#external-metrics-k8s-io-v1beta1-ExternalMetricValueList",
+  "text": "ExternalMetricValueList is a list of values for a given metric for some set labels\nField\nDescription\napiVersion\nstring\nexternal.metrics.k8s.io/v1beta1\nkind\nstring\nExternalMetricValueList\nmetadata\n[Required]\nmeta/v1.ListMeta\nNo description provided.\nitems\n[Required]\n[]ExternalMetricValue\nvalue of the metric matching a given set of labels\nvalue of the metric matching a given set of labels"
+}

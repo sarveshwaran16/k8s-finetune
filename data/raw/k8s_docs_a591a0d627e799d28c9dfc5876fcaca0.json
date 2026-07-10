@@ -1,0 +1,7 @@
+{
+  "id": "a591a0d627e799d28c9dfc5876fcaca0",
+  "source": "k8s_docs",
+  "title": "Role Based Access Control Good Practices — Object creation denial-of-service",
+  "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#object-creation-dos",
+  "text": "Users who have rights to create objects in a cluster may be able to create sufficient large\nobjects to create a denial of service condition either based on the size or number of objects, as discussed in\netcd used by Kubernetes is vulnerable to OOM attack\n. This may be\nspecifically relevant in multi-tenant clusters if semi-trusted or untrusted users\nare allowed limited access to a system.\nOne option for mitigation of this issue would be to use\nresource quotas\nto limit the quantity of objects which can be created."
+}

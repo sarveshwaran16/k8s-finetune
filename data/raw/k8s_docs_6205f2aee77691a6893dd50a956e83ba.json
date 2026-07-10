@@ -1,0 +1,7 @@
+{
+  "id": "6205f2aee77691a6893dd50a956e83ba",
+  "source": "k8s_docs",
+  "title": "Topology Aware Routing — How It Works",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/topology-aware-routing/#how-it-works",
+  "text": "The \"Auto\" heuristic attempts to proportionally allocate a number of endpoints\nto each zone. Note that this heuristic works best for Services that have a\nsignificant number of endpoints.\n\nThe EndpointSlice controller is responsible for setting hints on EndpointSlices\nwhen this heuristic is enabled. The controller allocates a proportional amount of\nendpoints to each zone. This proportion is based on the\nallocatable\nCPU cores for nodes running in that zone. For example, if one zone had 2 CPU\ncores and another zone only had 1 CPU core, the controller would allocate twice\nas many endpoints to the zone with 2 CPU cores.\nThe following example shows what an EndpointSlice looks like when hints have\nbeen populated:\napiVersion\n:\ndiscovery.k8s.io/v1\nkind\n:\nEndpointSlice\nmetadata\n:\nname\n:\nexample-hints\nlabels\n:\nkubernetes.io/service-name\n:\nexample-svc\naddressType\n:\nIPv4\nports\n:\n-\nname\n:\nhttp\nprotocol\n:\nTCP\nport\n:\n80\nendpoints\n:\n-\naddresses\n:\n-\n\"10.1.2.3\"\nconditions\n:\nready\n:\ntrue\nhostname\n:\npod-1\nzone\n:\nzone-a\nhints\n:\nforZones\n:\n-\nname\n:\n\"zone-a\""
+}

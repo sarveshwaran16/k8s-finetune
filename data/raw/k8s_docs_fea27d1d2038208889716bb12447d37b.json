@@ -1,0 +1,7 @@
+{
+  "id": "fea27d1d2038208889716bb12447d37b",
+  "source": "k8s_docs",
+  "title": "Implementation details — kubeadm upgrade node",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#kubeadm-upgrade-node",
+  "text": "kubeadm upgrade node\nupgrades a single control plane or worker node after the cluster upgrade has\nstarted (by running\nkubeadm upgrade apply\n). The command detects if the node is a control plane node by checking\nif the file\n/etc/kubernetes/manifests/kube-apiserver.yaml\nexists. On finding that file, the kubeadm tool\ninfers that there is a running kube-apiserver Pod on this node.\nRuns preflight checks similarly to\nkubeadm upgrade apply\n.\nFor control plane nodes, upgrades the control plane manifest files on disk in\n/etc/kubernetes/manifests\nand waits for the kubelet to restart the components if the files have changed.\nWrites updated kubelet configuration for this node in\n/var/lib/kubelet/config.yaml\n,\nand read the node's\n/var/lib/kubelet/instance-config.yaml\nfile and\npatch fields like\ncontainerRuntimeEndpoint\nfrom this instance configuration into\n/var/lib/kubelet/config.yaml\n.\n(For control plane nodes) upgrades the kube-proxy and CoreDNS\naddons\nconditionally, provided that all existing\nAPI servers in the cluster have already been upgraded to the target version.\nPerforms any post-upgrade tasks, such as cleaning up deprecated features which are release specific."
+}

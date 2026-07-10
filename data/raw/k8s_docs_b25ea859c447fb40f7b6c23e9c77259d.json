@@ -1,0 +1,7 @@
+{
+  "id": "b25ea859c447fb40f7b6c23e9c77259d",
+  "source": "k8s_docs",
+  "title": "Controllers — Desired versus current state",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/controller/#desired-vs-current",
+  "text": "Kubernetes takes a cloud-native view of systems, and is able to handle\nconstant change.\nYour cluster could be changing at any point as work happens and\ncontrol loops automatically fix failures. This means that,\npotentially, your cluster never reaches a stable state.\nAs long as the controllers for your cluster are running and able to make\nuseful changes, it doesn't matter if the overall state is stable or not."
+}

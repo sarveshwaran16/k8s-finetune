@@ -1,0 +1,7 @@
+{
+  "id": "5df7ee51bde56774b5e47934cfe2149e",
+  "source": "k8s_docs",
+  "title": "DeviceTaintRule",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/device-taint-rule-v1beta2/#DeviceTaintRule",
+  "text": "DeviceTaintRule adds one taint to all devices which match the selector. This has the same effect as if the taint was specified directly in the ResourceSlice by the DRA driver.\nField\nDescription\napiVersion\nstring\nAPIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources\nkind\nstring\nKind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nmetadata\nObjectMeta\nStandard object metadata\nspec\n*\nDeviceTaintRuleSpec\nSpec specifies the selector and one taint. Changing the spec automatically increments the metadata.generation number.\nstatus\nDeviceTaintRuleStatus\nStatus provides information about what was requested in the spec."
+}

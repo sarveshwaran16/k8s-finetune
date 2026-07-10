@@ -1,0 +1,7 @@
+{
+  "id": "626557c6c8e922cd69cd1ed0b9284062",
+  "source": "k8s_docs",
+  "title": "Ingress — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/networking/ingress-v1/#get-read",
+  "text": "GET /apis/networking.k8s.io/v1/namespaces/{namespace}/ingresses/{name}\nName\nType\nDescription\nname\nstring\nname of the Ingress\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nIngress"
+}

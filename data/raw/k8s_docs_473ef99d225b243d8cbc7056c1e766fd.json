@@ -1,0 +1,7 @@
+{
+  "id": "473ef99d225b243d8cbc7056c1e766fd",
+  "source": "k8s_docs",
+  "title": "kubectl config set-cluster — Options",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_set-cluster/#options",
+  "text": "--certificate-authority string\nPath to certificate-authority file for the cluster entry in kubeconfig\n--embed-certs tristate[=true]\nembed-certs for the cluster entry in kubeconfig\n-h, --help\nhelp for set-cluster\n--insecure-skip-tls-verify tristate[=true]\ninsecure-skip-tls-verify for the cluster entry in kubeconfig\n--proxy-url string\nproxy-url for the cluster entry in kubeconfig\n--server string\nserver for the cluster entry in kubeconfig\n--tls-server-name string\ntls-server-name for the cluster entry in kubeconfig\nPath to certificate-authority file for the cluster entry in kubeconfig\nembed-certs for the cluster entry in kubeconfig\nhelp for set-cluster\ninsecure-skip-tls-verify for the cluster entry in kubeconfig\nproxy-url for the cluster entry in kubeconfig\nserver for the cluster entry in kubeconfig\ntls-server-name for the cluster entry in kubeconfig"
+}

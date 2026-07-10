@@ -1,0 +1,7 @@
+{
+  "id": "6b6c668b9c009c57c4db9e6a640119c7",
+  "source": "k8s_docs",
+  "title": "Deployments — Scaling a Deployment",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#scaling-a-deployment",
+  "text": "You can scale a Deployment by using the following command:\nkubectl scale deployment/nginx-deployment --replicas\n=\n10\nThe output is similar to this:\ndeployment.apps/nginx-deployment scaled\nAssuming\nhorizontal Pod autoscaling\nis enabled\nin your cluster, you can set up an autoscaler for your Deployment and choose the minimum and maximum number of\nPods you want to run based on the CPU utilization of your existing Pods.\nkubectl autoscale deployment/nginx-deployment --min\n=\n10\n--max\n=\n15\n--cpu-percent\n=\n80%\nThe output is similar to this:\ndeployment.apps/nginx-deployment scaled"
+}

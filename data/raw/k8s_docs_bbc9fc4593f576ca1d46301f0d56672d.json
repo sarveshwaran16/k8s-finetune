@@ -1,0 +1,7 @@
+{
+  "id": "bbc9fc4593f576ca1d46301f0d56672d",
+  "source": "k8s_docs",
+  "title": "kubelet — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/#synopsis",
+  "text": "The kubelet is the primary \"node agent\" that runs on each\nnode. It can register the node with the apiserver using one of: the hostname; a flag to\noverride the hostname; or specific logic for a cloud provider.\nThe kubelet works in terms of a PodSpec. A PodSpec is a YAML or JSON object\nthat describes a pod. The kubelet takes a set of PodSpecs that are provided through\nvarious mechanisms (primarily through the apiserver) and ensures that the containers\ndescribed in those PodSpecs are running and healthy. The kubelet doesn't manage\ncontainers which were not created by Kubernetes.\nOther than from an PodSpec from the apiserver, there are two ways that a container\nmanifest can be provided to the Kubelet.\nFile: Path passed as a flag on the command line. Files under this path will be monitored\nperiodically for updates. The monitoring period is 20s by default and is configurable\nvia a flag.\nHTTP endpoint: HTTP endpoint passed as a parameter on the command line. This endpoint\nis checked every 20 seconds (also configurable with a flag).\nkubelet [flags]"
+}

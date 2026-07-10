@@ -1,0 +1,7 @@
+{
+  "id": "4bc9cadd57076a93352b702ad2f70508",
+  "source": "k8s_docs",
+  "title": "About cgroup v2 — What is cgroup v2?",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/cgroups/#cgroup-v2",
+  "text": "cgroup v2 is the next version of the Linux\ncgroup\nAPI. cgroup v2 provides a\nunified control system with enhanced resource management\ncapabilities.\ncgroup v2 offers several improvements over cgroup v1, such as the following:\nSingle unified hierarchy design in API\nSafer sub-tree delegation to containers\nNewer features like\nPressure Stall Information\nEnhanced resource allocation management and isolation across multiple resources\nUnified accounting for different types of memory allocations (network memory, kernel memory, etc)\nAccounting for non-immediate resource changes such as page cache write backs\nUnified accounting for different types of memory allocations (network memory, kernel memory, etc)\nAccounting for non-immediate resource changes such as page cache write backs\nSome Kubernetes features exclusively use cgroup v2 for enhanced resource\nmanagement and isolation. For example, the\nMemoryQoS\nfeature improves memory QoS\nand relies on cgroup v2 primitives."
+}

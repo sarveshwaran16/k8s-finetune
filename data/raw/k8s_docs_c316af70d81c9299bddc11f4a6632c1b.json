@@ -1,0 +1,7 @@
+{
+  "id": "c316af70d81c9299bddc11f4a6632c1b",
+  "source": "k8s_docs",
+  "title": "Weave Net for NetworkPolicy — Test the installation",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/weave-network-policy/#test-the-installation",
+  "text": "Verify that the weave works.\nEnter the following command:\nkubectl get pods -n kube-system -o wide\nThe output is similar to this:\nNAME                                    READY     STATUS    RESTARTS   AGE       IP              NODE\nweave-net-1t1qg                         2/2       Running   0          9d        192.168.2.10    worknode3\nweave-net-231d7                         2/2       Running   1          7d        10.2.0.17       worknodegpu\nweave-net-7nmwt                         2/2       Running   3          9d        192.168.2.131   masternode\nweave-net-pmw8w                         2/2       Running   0          9d        192.168.2.216   worknode2\nEach Node has a weave Pod, and all Pods are\nRunning\nand\n2/2 READY\n. (\n2/2\nmeans that each Pod has\nweave\nand\nweave-npc\n.)"
+}

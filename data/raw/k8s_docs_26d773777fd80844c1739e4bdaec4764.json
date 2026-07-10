@@ -1,0 +1,7 @@
+{
+  "id": "26d773777fd80844c1739e4bdaec4764",
+  "source": "k8s_docs",
+  "title": "Encrypting Confidential Data at Rest — Configure automatic reloading",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#configure-automatic-reloading",
+  "text": "You can configure automatic reloading of encryption provider configuration.\nThat setting determines whether the\nAPI server\nshould\nload the file you specify for\n--encryption-provider-config\nonly once at\nstartup, or automatically whenever you change that file. Enabling this option\nallows you to change the keys for encryption at rest without restarting the\nAPI server.\nTo allow automatic reloading, configure the API server to run with:\n--encryption-provider-config-automatic-reload=true\n.\nWhen enabled, file changes are polled every minute to observe the modifications.\nThe\napiserver_encryption_config_controller_automatic_reload_last_timestamp_seconds\nmetric identifies when the new config becomes effective. This allows\nencryption keys to be rotated without restarting the API server."
+}

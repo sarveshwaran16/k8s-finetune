@@ -1,0 +1,7 @@
+{
+  "id": "aa6e78c6e76665cce0b788b29a8fd62c",
+  "source": "k8s_docs",
+  "title": "CustomResourceDefinition — CustomResourceSubresources",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiextensions/custom-resource-definition-v1/#CustomResourceSubresources",
+  "text": "CustomResourceSubresources defines the status and scale subresources for CustomResources.\nField\nDescription\nscale\nCustomResourceSubresourceScale\nscale indicates the custom resource should serve a `/scale` subresource that returns an `autoscaling/v1` Scale object.\nstatus\nCustomResourceSubresourceStatus\nstatus indicates the custom resource should serve a `/status` subresource. When enabled: 1. requests to the custom resource primary endpoint ignore changes to the `status` stanza of the object. 2. requests to the custom resource `/status` subresource ignore changes to anything other than the `status` stanza of the object."
+}

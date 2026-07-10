@@ -1,0 +1,7 @@
+{
+  "id": "1b5aaf4f67ab7b5742518ef974311019",
+  "source": "k8s_docs",
+  "title": "Scheduler Performance Tuning — Default threshold",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduler-perf-tuning/#default-threshold",
+  "text": "If you don't specify a threshold, Kubernetes calculates a figure using a\nlinear formula that yields 50% for a 100-node cluster and yields 10%\nfor a 5000-node cluster. The lower bound for the automatic value is 5%.\nThis means that the kube-scheduler always scores at least 5% of your cluster no\nmatter how large the cluster is, unless you have explicitly set\npercentageOfNodesToScore\nto be smaller than 5.\nIf you want the scheduler to score all nodes in your cluster, set\npercentageOfNodesToScore\nto 100."
+}

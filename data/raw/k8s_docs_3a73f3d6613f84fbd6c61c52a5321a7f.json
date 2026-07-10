@@ -1,0 +1,7 @@
+{
+  "id": "3a73f3d6613f84fbd6c61c52a5321a7f",
+  "source": "k8s_docs",
+  "title": "kubeadm init phase — kubeadm init phase upload-config",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init-phase/#cmd-phase-upload-config",
+  "text": "You can use this command to upload the kubeadm configuration to your cluster.\nAlternatively, you can use\nkubeadm config\n.\nupload-config\nall\nkubeadm\nkubelet\n\nUpload the kubeadm and kubelet configuration to a ConfigMap\nkubeadm init phase upload-config [flags]\n\n-h, --help\nhelp for upload-config\nhelp for upload-config"
+}

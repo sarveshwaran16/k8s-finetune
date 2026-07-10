@@ -1,0 +1,7 @@
+{
+  "id": "26b5e0716eb5340174c75517ecce415b",
+  "source": "k8s_docs",
+  "title": "IPv4/IPv6 dual-stack — Headless Services without selector",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/dual-stack/#headless-services-without-selector",
+  "text": "For\nHeadless Services without selectors\nand without\n.spec.ipFamilyPolicy\nexplicitly set, the\n.spec.ipFamilyPolicy\nfield defaults to\nRequireDualStack\n.\n\nTo provision a dual-stack load balancer for your Service:\nSet the\n.spec.type\nfield to\nLoadBalancer\nSet\n.spec.ipFamilyPolicy\nfield to\nPreferDualStack\nor\nRequireDualStack"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "830782af815d90b1537e1a5318f7d709",
+  "source": "k8s_docs",
+  "title": "Garbage Collection — Orphaned dependents",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/garbage-collection/#orphaned-dependents",
+  "text": "When Kubernetes deletes an owner object, the dependents left behind are called\norphan\nobjects. By default, Kubernetes deletes dependent objects. To learn how\nto override this behaviour, see\nDelete owner objects and orphan dependents\n.\n\nThe\nkubelet\nperforms garbage\ncollection on unused images every five minutes and on unused containers every\nminute. You should avoid using external garbage collection tools, as these can\nbreak the kubelet behavior and remove containers that should exist.\nTo configure options for unused container and image garbage collection, tune the\nkubelet using a\nconfiguration file\nand change the parameters related to garbage collection using the\nKubeletConfiguration\nresource type."
+}

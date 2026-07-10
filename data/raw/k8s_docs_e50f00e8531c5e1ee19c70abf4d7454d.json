@@ -1,0 +1,7 @@
+{
+  "id": "e50f00e8531c5e1ee19c70abf4d7454d",
+  "source": "k8s_docs",
+  "title": "Configure Multiple Schedulers — Enable leader election",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/#enable-leader-election",
+  "text": "To run multiple-scheduler with leader election enabled, you must do the following:\nUpdate the following fields for the KubeSchedulerConfiguration in the\nmy-scheduler-config\nConfigMap in your YAML file:\nleaderElection.leaderElect\nto\ntrue\nleaderElection.resourceNamespace\nto\n<lock-object-namespace>\nleaderElection.resourceName\nto\n<lock-object-name>\nIf RBAC is enabled on your cluster, you must update the\nsystem:kube-scheduler\ncluster role.\nAdd your scheduler name to the resourceNames of the rule applied for\nendpoints\nand\nleases\nresources, as in the following example:\nkubectl edit clusterrole system:kube-scheduler\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nannotations\n:\nrbac.authorization.kubernetes.io/autoupdate\n:\n\"true\"\nlabels\n:\nkubernetes.io/bootstrapping\n:\nrbac-defaults\nname\n:\nsystem:kube-scheduler\nrules\n:\n-\napiGroups\n:\n-\ncoordination.k8s.io\nresources\n:\n-\nleases\nverbs\n:\n-\ncreate\n-\napiGroups\n:\n-\ncoordination.k8s.io\nresourceNames\n:\n-\nkube-scheduler\n-\nmy-scheduler\nresources\n:\n-\nleases\nverbs\n:\n-\nget\n-\nupdate\n-\napiGroups\n:\n-\n\"\"\nresourceNames\n:\n-\nkube-scheduler\n-\nmy-scheduler\nresources\n:\n-\nendpoints\nverbs\n:\n-\ndelete\n-\nget\n-\npatch\n-\nupdate"
+}

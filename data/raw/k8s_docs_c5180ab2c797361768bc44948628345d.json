@@ -1,0 +1,7 @@
+{
+  "id": "c5180ab2c797361768bc44948628345d",
+  "source": "k8s_docs",
+  "title": "Configuring a cgroup driver — Update the cgroup driver on all nodes",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/#update-the-cgroup-driver-on-all-nodes",
+  "text": "For each node in the cluster:\nDrain the node\nusing\nkubectl drain <node-name> --ignore-daemonsets\nStop the kubelet using\nsystemctl stop kubelet\nStop the container runtime\nModify the container runtime cgroup driver to\nsystemd\nSet\ncgroupDriver: systemd\nin\n/var/lib/kubelet/config.yaml\nStart the container runtime\nStart the kubelet using\nsystemctl start kubelet\nUncordon the node\nusing\nkubectl uncordon <node-name>\nExecute these steps on nodes one at a time to ensure workloads\nhave sufficient time to schedule on different nodes.\nOnce the process is complete ensure that all nodes and workloads are healthy."
+}

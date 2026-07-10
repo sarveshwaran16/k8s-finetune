@@ -1,0 +1,7 @@
+{
+  "id": "6d377e41453d9e85a755ce6e2b6e6bd9",
+  "source": "k8s_docs",
+  "title": "kuberc (v1beta1) — CredentialPluginPolicy",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kuberc.v1beta1/#kubectl-config-k8s-io-v1beta1-CredentialPluginPolicy",
+  "text": "(Alias of\nstring\n)\nAppears in:\nPreference\nCredentialPluginPolicy specifies the policy governing which, if any, client-go\ncredential plugins may be executed. It MUST be one of { \"\", \"AllowAll\", \"DenyAll\", \"Allowlist\" }.\nIf the policy is \"\", then it falls back to \"AllowAll\" (this is required\nto maintain backward compatibility). If the policy is DenyAll, no\ncredential plugins may run. If the policy is Allowlist, only those\nplugins meeting the criteria specified in the\ncredentialPluginAllowlist\nfield may run. If the policy is not\nAllowlist\nbut one is provided, it\nis considered a configuration error."
+}

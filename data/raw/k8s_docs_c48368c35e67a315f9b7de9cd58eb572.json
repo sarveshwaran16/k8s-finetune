@@ -1,0 +1,7 @@
+{
+  "id": "c48368c35e67a315f9b7de9cd58eb572",
+  "source": "k8s_docs",
+  "title": "kubectl Quick Reference — ZSH",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/quick-reference/#zsh",
+  "text": "source\n<\n(\nkubectl completion zsh\n)\n# set up autocomplete in zsh into the current shell\necho\n'[[ $commands[kubectl] ]] && source <(kubectl completion zsh)'\n>> ~/.zshrc\n# add autocomplete permanently to your zsh shell\n\necho\n'kubectl completion fish | source'\n> ~/.config/fish/completions/kubectl.fish\n&&\nsource\n~/.config/fish/completions/kubectl.fish"
+}

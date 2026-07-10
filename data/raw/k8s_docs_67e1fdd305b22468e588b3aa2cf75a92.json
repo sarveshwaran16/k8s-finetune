@@ -1,0 +1,7 @@
+{
+  "id": "67e1fdd305b22468e588b3aa2cf75a92",
+  "source": "k8s_docs",
+  "title": "Good practices for Kubernetes Secrets — Protect Secret data after reading",
+  "source_url": "https://kubernetes.io/docs/concepts/security/secrets-good-practices/#protect-secret-data-after-reading",
+  "text": "Applications still need to protect the value of confidential information after\nreading it from an environment variable or volume. For example, your\napplication must avoid logging the secret data in the clear or transmitting it\nto an untrusted party.\n\nIf you configure a Secret through a\nmanifest\n, with the secret\ndata encoded as base64, sharing this file or checking it in to a source\nrepository means the secret is available to everyone who can read the manifest."
+}

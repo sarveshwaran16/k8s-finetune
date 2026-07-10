@@ -1,0 +1,7 @@
+{
+  "id": "7badaf5295b4a39c93a80ae3a4e780f0",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Limit the scope of each webhook",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#webhook-limit-scope",
+  "text": "Admission webhooks are only called when an API request matches the corresponding\nwebhook configuration. Limit the scope of each webhook to reduce unnecessary\ncalls to the webhook server. Consider the following scope limitations:\nAvoid matching objects in the\nkube-system\nnamespace. If you run your own\nPods in the\nkube-system\nnamespace, use an\nobjectSelector\nto avoid mutating a critical workload.\nDon't mutate node leases, which exist as Lease objects in the\nkube-node-lease\nsystem namespace. Mutating node leases might result in\nfailed node upgrades. Only apply validation controls to Lease objects in this\nnamespace if you're confident that the controls won't put your cluster at\nrisk.\nDon't mutate TokenReview or SubjectAccessReview objects. These are always\nread-only requests. Modifying these objects might break your cluster.\nLimit each webhook to a specific namespace by using a\nnamespaceSelector\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "b68dfc1a95a77c2bb31a353ac11285c5",
+  "source": "k8s_docs",
+  "title": "Communication between Nodes and the Control Plane — API server to nodes, pods, and services",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/control-plane-node-communication/#api-server-to-nodes-pods-and-services",
+  "text": "The connections from the API server to a node, pod, or service default to plain HTTP connections\nand are therefore neither authenticated nor encrypted. They can be run over a secure HTTPS\nconnection by prefixing\nhttps:\nto the node, pod, or service name in the API URL, but they will\nnot validate the certificate provided by the HTTPS endpoint nor provide client credentials. So\nwhile the connection will be encrypted, it will not provide any guarantees of integrity. These\nconnections\nare not currently safe\nto run over untrusted or public networks."
+}

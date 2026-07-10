@@ -1,0 +1,7 @@
+{
+  "id": "25e6cd45e200a25acb9ae3e44318e49d",
+  "source": "k8s_docs",
+  "title": "ReplicationController — Job",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#job",
+  "text": "Use a\nJob\ninstead of a ReplicationController for pods that are expected to terminate on their own\n(that is, batch jobs).\n\nUse a\nDaemonSet\ninstead of a ReplicationController for pods that provide a\nmachine-level function, such as machine monitoring or machine logging. These pods have a lifetime that is tied\nto a machine lifetime: the pod needs to be running on the machine before other pods start, and are\nsafe to terminate when the machine is otherwise ready to be rebooted/shutdown."
+}

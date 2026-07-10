@@ -1,0 +1,7 @@
+{
+  "id": "6e9f1fb88c406e81c3e79cd5e7c2e29f",
+  "source": "k8s_docs",
+  "title": "Virtual IPs and Service Proxies — What's next",
+  "source_url": "https://kubernetes.io/docs/reference/networking/virtual-ips/#what-s-next",
+  "text": "To learn more about Services,\nread\nConnecting Applications with Services\n.\nYou can also:\nRead about\nServices\nas a concept\nRead about\nIngresses\nas a concept\nRead the\nAPI reference\nfor the Service API\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

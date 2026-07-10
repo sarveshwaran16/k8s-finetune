@@ -1,0 +1,7 @@
+{
+  "id": "8d454c8d955623ae144a707337e38d54",
+  "source": "k8s_docs",
+  "title": "Pod — CSIVolumeSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#CSIVolumeSource",
+  "text": "Represents a source location of a volume to mount, managed by an external CSI driver\nField\nDescription\ndriver\n*\nstring\ndriver is the name of the CSI driver that handles this volume. Consult with your admin for the correct name as registered in the cluster.\nfsType\nstring\nfsType to mount. Ex. \"ext4\", \"xfs\", \"ntfs\". If not provided, the empty value is passed to the associated CSI driver which will determine the default filesystem to apply.\nnodePublishSecretRef\nLocalObjectReference\nnodePublishSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI NodePublishVolume and NodeUnpublishVolume calls. This field is optional, and may be empty if no secret is required. If the secret object contains more than one secret, all secret references are passed.\nreadOnly\nboolean\nreadOnly specifies a read-only configuration for the volume. Defaults to false (read/write).\nvolumeAttributes\nobject\nvolumeAttributes stores driver-specific properties that are passed to the CSI driver. Consult your driver's documentation for supported values."
+}

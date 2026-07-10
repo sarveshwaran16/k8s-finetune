@@ -1,0 +1,7 @@
+{
+  "id": "77324f6e059da475a86f256a8882674a",
+  "source": "k8s_docs",
+  "title": "Gateway API — HTTPRoute",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/gateway/#api-kind-httproute",
+  "text": "The HTTPRoute kind specifies routing behavior of HTTP requests from a Gateway listener to backend network\nendpoints. For a Service backend, an implementation may represent the backend network endpoint as a Service\nIP or the backing EndpointSlices of the Service. An HTTPRoute represents configuration that is applied to the\nunderlying Gateway implementation. For example, defining a new HTTPRoute may result in configuring additional\ntraffic routes in a cloud load balancer or in-cluster proxy server.\nA typical HTTPRoute example:\napiVersion\n:\ngateway.networking.k8s.io/v1\nkind\n:\nHTTPRoute\nmetadata\n:\nname\n:\nexample-httproute\nspec\n:\nparentRefs\n:\n-\nname\n:\nexample-gateway\nhostnames\n:\n-\n\"www.example.com\"\nrules\n:\n-\nmatches\n:\n-\npath\n:\ntype\n:\nPathPrefix\nvalue\n:\n/login\nbackendRefs\n:\n-\nname\n:\nexample-svc\nport\n:\n8080\nIn this example, HTTP traffic from Gateway\nexample-gateway\nwith the Host: header set to\nwww.example.com\nand the request path specified as\n/login\nwill be routed to Service\nexample-svc\non port\n8080\n.\nSee the\nHTTPRoute\nreference for a full definition of this API kind."
+}

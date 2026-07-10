@@ -1,0 +1,7 @@
+{
+  "id": "ffed04b8bb39f951cb0918cdc77ca3e7",
+  "source": "k8s_docs",
+  "title": "Labels and Selectors — Updating labels",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#updating-labels",
+  "text": "Sometimes you may want to relabel existing pods and other resources before creating\nnew resources. This can be done with\nkubectl label\n.\nFor example, if you want to label all your NGINX Pods as frontend tier, run:\nkubectl label pods -l\napp\n=\nnginx\ntier\n=\nfe\npod/my-nginx-2035384211-j5fhi labeled\npod/my-nginx-2035384211-u2c7e labeled\npod/my-nginx-2035384211-u3t6x labeled\nThis first filters all pods with the label \"app=nginx\", and then labels them with the \"tier=fe\".\nTo see the pods you labeled, run:\nkubectl get pods -l\napp\n=\nnginx -L tier\nNAME                        READY     STATUS    RESTARTS   AGE       TIER\nmy-nginx-2035384211-j5fhi   1/1       Running   0          23m       fe\nmy-nginx-2035384211-u2c7e   1/1       Running   0          23m       fe\nmy-nginx-2035384211-u3t6x   1/1       Running   0          23m       fe\nThis outputs all \"app=nginx\" pods, with an additional label column of pods' tier\n(specified with\n-L\nor\n--label-columns\n).\nFor more information, please see\nkubectl label\n."
+}

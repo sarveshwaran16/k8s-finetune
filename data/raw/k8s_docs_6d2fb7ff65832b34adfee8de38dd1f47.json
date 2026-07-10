@@ -1,0 +1,7 @@
+{
+  "id": "6d2fb7ff65832b34adfee8de38dd1f47",
+  "source": "k8s_docs",
+  "title": "Safely Drain a Node — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

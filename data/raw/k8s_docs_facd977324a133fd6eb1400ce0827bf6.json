@@ -1,0 +1,7 @@
+{
+  "id": "facd977324a133fd6eb1400ce0827bf6",
+  "source": "k8s_docs",
+  "title": "Resource Management for Pods and Containers — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#what-s-next",
+  "text": "Get hands-on experience\nassigning Memory resources to containers and Pods\n.\nGet hands-on experience\nassigning CPU resources to containers and Pods\n.\nRead how the API reference defines a\ncontainer\nand its\nresource requirements\nRead more about the\nlocal ephemeral storage\nRead more about the\nkube-scheduler configuration reference (v1)\nRead more about\nQuality of Service classes for Pods\nRead more about\nExtended Resource allocation by DRA"
+}

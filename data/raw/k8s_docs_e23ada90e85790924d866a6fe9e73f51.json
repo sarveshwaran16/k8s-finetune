@@ -1,0 +1,7 @@
+{
+  "id": "e23ada90e85790924d866a6fe9e73f51",
+  "source": "k8s_docs",
+  "title": "Service Accounts — How to use service accounts",
+  "source_url": "https://kubernetes.io/docs/concepts/security/service-accounts/#how-to-use",
+  "text": "To use a Kubernetes service account, you do the following:\nCreate a ServiceAccount object using a Kubernetes\nclient like\nkubectl\nor a manifest that defines the object.\nGrant permissions to the ServiceAccount object using an authorization\nmechanism such as\nRBAC\n.\nAssign the ServiceAccount object to Pods during Pod creation.\nIf you're using the identity from an external service,\nretrieve the ServiceAccount token\nand use it from that\nservice instead.\nCreate a ServiceAccount object using a Kubernetes\nclient like\nkubectl\nor a manifest that defines the object.\nGrant permissions to the ServiceAccount object using an authorization\nmechanism such as\nRBAC\n.\nAssign the ServiceAccount object to Pods during Pod creation.\nIf you're using the identity from an external service,\nretrieve the ServiceAccount token\nand use it from that\nservice instead.\nFor instructions, refer to\nConfigure Service Accounts for Pods\n."
+}

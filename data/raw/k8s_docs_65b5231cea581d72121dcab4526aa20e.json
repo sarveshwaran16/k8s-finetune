@@ -1,0 +1,7 @@
+{
+  "id": "65b5231cea581d72121dcab4526aa20e",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Server Bypass Risks — Container runtime socket",
+  "source_url": "https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/#runtime-socket",
+  "text": "On each node in a Kubernetes cluster, access to interact with containers is controlled\nby the container runtime (or runtimes, if you have configured more than one). Typically,\nthe container runtime exposes a Unix socket that the kubelet can access. An attacker with\naccess to this socket can launch new containers or interact with running containers.\nAt the cluster level, the impact of this access depends on whether the containers that\nrun on the compromised node have access to Secrets or other confidential\ndata that an attacker could use to escalate privileges to other worker nodes or to\ncontrol plane components."
+}

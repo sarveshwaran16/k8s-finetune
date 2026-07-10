@@ -1,0 +1,7 @@
+{
+  "id": "ec7d4124910235f41bcd56a965f191c2",
+  "source": "k8s_docs",
+  "title": "Resource Management for Windows nodes — CPU management",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/windows-resource-management/#resource-management-cpu",
+  "text": "Windows can limit the amount of CPU time allocated for different processes but cannot\nguarantee a minimum amount of CPU time.\nOn Windows, the kubelet supports a command-line flag to set the\nscheduling priority\nof the\nkubelet process:\n--windows-priorityclass\n. This flag allows the kubelet process to get\nmore CPU time slices when compared to other processes running on the Windows host.\nMore information on the allowable values and their meaning is available at\nWindows Priority Classes\n.\nTo ensure that running Pods do not starve the kubelet of CPU cycles, set this flag to\nABOVE_NORMAL_PRIORITY_CLASS\nor above."
+}

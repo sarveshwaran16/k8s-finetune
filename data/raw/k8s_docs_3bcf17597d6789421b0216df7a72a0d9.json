@@ -1,0 +1,7 @@
+{
+  "id": "3bcf17597d6789421b0216df7a72a0d9",
+  "source": "k8s_docs",
+  "title": "Managing Workloads — Bulk operations in kubectl",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#bulk-operations-in-kubectl",
+  "text": "Resource creation isn't the only operation that\nkubectl\ncan perform in bulk. It can also extract\nresource names from configuration files in order to perform other operations, in particular to\ndelete the same resources you created:\nkubectl delete -f https://k8s.io/examples/application/nginx-app.yaml\ndeployment.apps \"my-nginx\" deleted\nservice \"my-nginx-svc\" deleted\nIn the case of two resources, you can specify both resources on the command line using the\nresource/name syntax:\nkubectl delete deployments/my-nginx services/my-nginx-svc\nFor larger numbers of resources, you'll find it easier to specify the selector (label query)\nspecified using\n-l\nor\n--selector\n, to filter resources by their labels:\nkubectl delete deployment,services -l\napp\n=\nnginx\ndeployment.apps \"my-nginx\" deleted\nservice \"my-nginx-svc\" deleted"
+}

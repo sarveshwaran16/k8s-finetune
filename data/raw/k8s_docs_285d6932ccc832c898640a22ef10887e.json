@@ -1,0 +1,7 @@
+{
+  "id": "285d6932ccc832c898640a22ef10887e",
+  "source": "k8s_docs",
+  "title": "Storage Classes — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

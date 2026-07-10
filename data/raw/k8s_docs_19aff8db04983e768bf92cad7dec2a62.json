@@ -1,0 +1,7 @@
+{
+  "id": "19aff8db04983e768bf92cad7dec2a62",
+  "source": "k8s_docs",
+  "title": "Cluster Architecture — kube-apiserver",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/#kube-apiserver",
+  "text": "The API server is a component of the Kubernetes\ncontrol plane\nthat exposes the Kubernetes API.\nThe API server is the front end for the Kubernetes control plane.\nThe main implementation of a Kubernetes API server is\nkube-apiserver\n.\nkube-apiserver is designed to scale horizontally—that is, it scales by deploying more instances.\nYou can run several instances of kube-apiserver and balance traffic between those instances."
+}

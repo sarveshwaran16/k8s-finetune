@@ -1,0 +1,7 @@
+{
+  "id": "37e1cbe43c57f75f6fd22016d24f4678",
+  "source": "k8s_docs",
+  "title": "Horizontal Manual Scaling for a Deployment — Cleaning up",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/scale-deployment/#cleaning-up",
+  "text": "Delete the Deployment:\nkubectl delete deployment nginx-deployment\n\nLearn more about\nDeployments\n.\nWalk through\nHorizontal Pod Autoscaling\n.\nLearn how to\nscale a StatefulSet\n.\nRead about\nmanaging resources\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

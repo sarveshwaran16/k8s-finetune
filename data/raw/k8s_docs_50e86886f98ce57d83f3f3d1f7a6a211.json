@@ -1,0 +1,7 @@
+{
+  "id": "50e86886f98ce57d83f3f3d1f7a6a211",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Mutating webhook ordering and idempotence",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#ordering-idempotence",
+  "text": "This section provides recommendations for webhook order and designing idempotent\nwebhooks. In summary, these are as follows:\nDon't rely on a specific order of execution.\nValidate mutations before admission.\nCheck for mutations being overwritten by other controllers.\nEnsure that the set of mutating webhooks is idempotent, not just the\nindividual webhooks."
+}

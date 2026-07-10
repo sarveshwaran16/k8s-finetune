@@ -1,0 +1,7 @@
+{
+  "id": "e4ff8ca33ee76c3875fe11ae96a5b3cc",
+  "source": "k8s_docs",
+  "title": "FieldSelectorAttributes — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/field-selector-attributes-v1-authorization/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

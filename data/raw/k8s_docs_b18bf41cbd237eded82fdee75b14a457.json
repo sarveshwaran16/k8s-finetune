@@ -1,0 +1,7 @@
+{
+  "id": "b18bf41cbd237eded82fdee75b14a457",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Isolating Pods from a ReplicaSet",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#isolating-pods-from-a-replicaset",
+  "text": "You can remove Pods from a ReplicaSet by changing their labels. This technique may be used to remove Pods\nfrom service for debugging, data recovery, etc. Pods that are removed in this way will be replaced automatically (\nassuming that the number of replicas is not also changed).\n\nA ReplicaSet can be easily scaled up or down by simply updating the\n.spec.replicas\nfield. The ReplicaSet controller\nensures that a desired number of Pods with a matching label selector are available and operational.\nWhen scaling down, the ReplicaSet controller chooses which pods to delete by sorting the available pods to\nprioritize scaling down pods based on the following general algorithm:\nPending (and unschedulable) pods are scaled down first\nIf\ncontroller.kubernetes.io/pod-deletion-cost\nannotation is set, then\nthe pod with the lower value will come first.\nPods on nodes with more replicas come before pods on nodes with fewer replicas.\nIf the pods' creation times differ, the pod that was created more recently\ncomes before the older pod (the creation times are bucketed on an integer log scale).\nIf all of the above match, then selection is random."
+}

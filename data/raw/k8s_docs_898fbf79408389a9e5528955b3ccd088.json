@@ -1,0 +1,7 @@
+{
+  "id": "898fbf79408389a9e5528955b3ccd088",
+  "source": "k8s_docs",
+  "title": "Managing Workloads — kubectl edit",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#kubectl-edit",
+  "text": "Alternatively, you may also update resources with\nkubectl edit\n:\nkubectl edit deployment/my-nginx\nThis is equivalent to first\nget\nthe resource, edit it in text editor, and then\napply\nthe\nresource with the updated version:\nkubectl get deployment my-nginx -o yaml > /tmp/nginx.yaml\nvi /tmp/nginx.yaml\n# do some edit, and then save the file\nkubectl apply -f /tmp/nginx.yaml\ndeployment.apps/my-nginx configured\nrm /tmp/nginx.yaml\nThis allows you to do more significant changes more easily. Note that you can specify the editor\nwith your\nEDITOR\nor\nKUBE_EDITOR\nenvironment variables.\nFor more information, please see\nkubectl edit\n."
+}

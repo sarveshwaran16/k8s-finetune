@@ -1,0 +1,7 @@
+{
+  "id": "c86427e9097402089b9de5cf79c7a4d6",
+  "source": "k8s_docs",
+  "title": "ReplicationController — Writing programs for Replication",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#writing-programs-for-replication",
+  "text": "Pods created by a ReplicationController are intended to be fungible and semantically identical, though their configurations may become heterogeneous over time. This is an obvious fit for replicated stateless servers, but ReplicationControllers can also be used to maintain availability of master-elected, sharded, and worker-pool applications. Such applications should use dynamic work assignment mechanisms, such as the\nRabbitMQ work queues\n, as opposed to static/one-time customization of the configuration of each pod, which is considered an anti-pattern. Any pod customization performed, such as vertical auto-sizing of resources (for example, cpu or memory), should be performed by another online controller process, not unlike the ReplicationController itself."
+}

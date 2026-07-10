@@ -1,0 +1,7 @@
+{
+  "id": "26d6b6c36e01b13466dcfbb5fa031233",
+  "source": "k8s_docs",
+  "title": "Configure Minimum and Maximum Memory Constraints for a Namespace — For app developers",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-constraint-namespace/#for-app-developers",
+  "text": "Assign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods"
+}

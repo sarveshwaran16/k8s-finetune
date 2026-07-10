@@ -1,0 +1,7 @@
+{
+  "id": "cc37bd8f0cd6e0bc10a13e035e31bc8b",
+  "source": "k8s_docs",
+  "title": "Security — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/security/#what-s-next",
+  "text": "Learn about related Kubernetes security topics:\nSecuring your cluster\nKnown vulnerabilities\nin Kubernetes (and links to further information)\nData encryption in transit\nfor the control plane\nData encryption at rest\nControlling Access to the Kubernetes API\nNetwork policies\nfor Pods\nSecrets in Kubernetes\nPod security standards\nRuntimeClasses\nLearn the context:\nCloud Native Security and Kubernetes\nGet certified:\nCertified Kubernetes Security Specialist\ncertification and official training course.\nRead more in this section:\nPod Security Standards\nPod Security Admission\nService Accounts\nPod Security Policies\nSecurity For Linux Nodes\nSecurity For Windows Nodes\nControlling Access to the Kubernetes API\nRole Based Access Control Good Practices\nGood practices for Kubernetes Secrets\nMulti-tenancy\nHardening Guide - Authentication Mechanisms\nHardening Guide - Dynamic Resource Allocation\nHardening Guide - Scheduler Configuration\nKubernetes API Server Bypass Risks\nLinux kernel security constraints for Pods and containers\nSecurity Checklist\nApplication Security Checklist"
+}

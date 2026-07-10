@@ -1,0 +1,7 @@
+{
+  "id": "2b16b4565cd07fc099f213df81f8e3f4",
+  "source": "k8s_docs",
+  "title": "Install and Set Up kubectl on macOS — Enable shell autocompletion",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#enable-shell-autocompletion",
+  "text": "kubectl provides autocompletion support for Bash, Zsh, Fish, and PowerShell\nwhich can save you a lot of typing.\nBelow are the procedures to set up autocompletion for Bash, Fish, and Zsh.\nBash\nFish\nZsh\n\nThe kubectl completion script for Bash can be generated with\nkubectl completion bash\n.\nSourcing this script in your shell enables kubectl completion.\nHowever, the kubectl completion script depends on\nbash-completion\nwhich you thus have to previously install."
+}

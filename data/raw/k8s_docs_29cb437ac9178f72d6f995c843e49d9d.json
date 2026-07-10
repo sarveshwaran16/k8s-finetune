@@ -1,0 +1,7 @@
+{
+  "id": "29cb437ac9178f72d6f995c843e49d9d",
+  "source": "k8s_docs",
+  "title": "System Logs — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-logs/#what-s-next",
+  "text": "Read about the\nKubernetes Logging Architecture\nRead about\nStructured Logging\nRead about\nContextual Logging\nRead about\ndeprecation of klog flags\nRead about the\nConventions for logging severity\nRead about\nLog Query\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "35124af08edbdf29a10d657d5ca819a4",
+  "source": "k8s_docs",
+  "title": "Node-pressure Eviction — Self healing behavior",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/#self-healing-behavior",
+  "text": "The kubelet attempts to\nreclaim node-level resources\nbefore it terminates end-user pods. For example, it removes unused container\nimages when disk resources are starved.\nIf the pods are managed by a\nworkload\nmanagement object (such as\nStatefulSet\nor\nDeployment\n) that\nreplaces failed pods, the control plane (\nkube-controller-manager\n) creates new\npods in place of the evicted pods."
+}

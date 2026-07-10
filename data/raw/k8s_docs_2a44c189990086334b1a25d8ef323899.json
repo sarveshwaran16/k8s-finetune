@@ -1,0 +1,7 @@
+{
+  "id": "2a44c189990086334b1a25d8ef323899",
+  "source": "k8s_docs",
+  "title": "Customizing components with the kubeadm API — Scheduler flags",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/control-plane-flags/#scheduler-flags",
+  "text": "For details, see the\nreference documentation for kube-scheduler\n.\nExample usage:\napiVersion\n:\nkubeadm.k8s.io/v1beta4\nkind\n:\nClusterConfiguration\nkubernetesVersion\n:\nv1.16.0\nscheduler\n:\nextraArgs\n:\n-\nname\n:\n\"config\"\nvalue\n:\n\"/etc/kubernetes/scheduler-config.yaml\"\nextraVolumes\n:\n-\nname\n:\nschedulerconfig\nhostPath\n:\n/home/johndoe/schedconfig.yaml\nmountPath\n:\n/etc/kubernetes/scheduler-config.yaml\nreadOnly\n:\ntrue\npathType\n:\n\"File\""
+}

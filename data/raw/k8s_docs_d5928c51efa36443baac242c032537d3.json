@@ -1,0 +1,7 @@
+{
+  "id": "d5928c51efa36443baac242c032537d3",
+  "source": "k8s_docs",
+  "title": "Kubernetes Custom Metrics (v1beta2) — MetricValue",
+  "source_url": "https://kubernetes.io/docs/reference/external-api/custom-metrics.v1beta2/#custom-metrics-k8s-io-v1beta2-MetricValue",
+  "text": "Appears in:\nMetricValueList\nMetricValue is the metric value for some object\nField\nDescription\napiVersion\nstring\ncustom.metrics.k8s.io/v1beta2\nkind\nstring\nMetricValue\ndescribedObject\n[Required]\ncore/v1.ObjectReference\na reference to the described object\nmetric\n[Required]\nMetricIdentifier\nNo description provided.\ntimestamp\n[Required]\nmeta/v1.Time\nindicates the time at which the metrics were produced\nwindowSeconds\n[Required]\nint64\nindicates the window ([Timestamp-Window, Timestamp]) from\nwhich these metrics were calculated, when returning rate\nmetrics calculated from cumulative metrics (or zero for\nnon-calculated instantaneous metrics).\nvalue\n[Required]\nk8s.io/apimachinery/pkg/api/resource.Quantity\nthe value of the metric for this\na reference to the described object\nindicates the time at which the metrics were produced\nindicates the window ([Timestamp-Window, Timestamp]) from\nwhich these metrics were calculated, when returning rate\nmetrics calculated from cumulative metrics (or zero for\nnon-calculated instantaneous metrics).\nthe value of the metric for this"
+}

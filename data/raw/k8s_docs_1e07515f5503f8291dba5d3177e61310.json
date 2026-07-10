@@ -1,0 +1,7 @@
+{
+  "id": "1e07515f5503f8291dba5d3177e61310",
+  "source": "k8s_docs",
+  "title": "Security — Kubernetes security mechanisms",
+  "source_url": "https://kubernetes.io/docs/concepts/security/#security-mechanisms",
+  "text": "Kubernetes includes several APIs and security controls, as well as ways to\ndefine\npolicies\nthat can form part of how you manage information security.\n\nA key security mechanism for any Kubernetes cluster is to\ncontrol access to the Kubernetes API\n.\nKubernetes expects you to configure and use TLS to provide\ndata encryption in transit\nwithin the control plane, and between the control plane and its clients.\nYou can also enable\nencryption at rest\nfor the data stored within Kubernetes control plane; this is separate from using\nencryption at rest for your own workloads' data, which might also be a good idea."
+}

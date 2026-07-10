@@ -1,0 +1,7 @@
+{
+  "id": "6ff1fd961c263613b2b91eae12f3f763",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kube-scheduler-simulator.sigs.k8s.io/prescore-result",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kube-scheduler-simulator-sigs-k8s-io-prescore-result",
+  "text": "Type: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/prescore-result\n:\n>-\n{\"InterPodAffinity\":\"success\",\"NodeAffinity\":\"success\",\"NodeNumber\":\"success\",\"PodTopologySpread\":\"success\",\"TaintToleration\":\"success\"}\nUsed on: Pod\nThis annotation records the result of prefilter scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n."
+}

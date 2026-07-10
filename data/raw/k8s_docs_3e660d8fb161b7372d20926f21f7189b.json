@@ -1,0 +1,7 @@
+{
+  "id": "3e660d8fb161b7372d20926f21f7189b",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — applyset.kubernetes.io/tooling (alpha)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#applyset-kubernetes-io-tooling",
+  "text": "Type: Annotation\nExample:\napplyset.kubernetes.io/tooling: \"kubectl/v1.36\"\nUsed on: Objects being used as ApplySet parents.\nUse of this annotation is Alpha.\nFor Kubernetes version 1.36, you can use this annotation on Secrets,\nConfigMaps, or custom resources if the CustomResourceDefinitiondefining them has the\napplyset.kubernetes.io/is-parent-type\nlabel.\nPart of the specification used to implement\nApplySet-based pruning in kubectl\n.\nThis annotation is applied to the parent object used to track an ApplySet to indicate which\ntooling manages that ApplySet. Tooling should refuse to mutate ApplySets belonging to other tools.\nThe value must be in the format\n<toolname>/<semver>\n."
+}

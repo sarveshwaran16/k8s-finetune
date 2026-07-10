@@ -1,0 +1,7 @@
+{
+  "id": "b3c54b5c4a3805722db3b353a1f38e93",
+  "source": "k8s_docs",
+  "title": "Debugging DNS Resolution — Check the local DNS configuration first",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/#check-the-local-dns-configuration-first",
+  "text": "Take a look inside the resolv.conf file.\n(See\nCustomizing DNS Service\nand\nKnown issues\nbelow for more information)\nkubectl\nexec\n-ti dnsutils -- cat /etc/resolv.conf\nVerify that the search path and name server are set up like the following\n(note that search path may vary for different cloud providers):\nsearch default.svc.cluster.local svc.cluster.local cluster.local google.internal c.gce_project_id.internal\nnameserver 10.0.0.10\noptions ndots:5\nErrors such as the following indicate a problem with the CoreDNS (or kube-dns)\nadd-on or with associated Services:\nkubectl\nexec\n-i -t dnsutils -- nslookup kubernetes.default\nServer:    10.0.0.10\nAddress 1: 10.0.0.10\n\nnslookup: can't resolve 'kubernetes.default'\nor\nkubectl\nexec\n-i -t dnsutils -- nslookup kubernetes.default\nServer:    10.0.0.10\nAddress 1: 10.0.0.10 kube-dns.kube-system.svc.cluster.local\n\nnslookup: can't resolve 'kubernetes.default'"
+}

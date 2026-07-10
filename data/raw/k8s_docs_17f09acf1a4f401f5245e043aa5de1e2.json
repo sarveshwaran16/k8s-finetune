@@ -1,0 +1,7 @@
+{
+  "id": "17f09acf1a4f401f5245e043aa5de1e2",
+  "source": "k8s_docs",
+  "title": "Declarative Management of Kubernetes Objects Using Configuration Files — How to clear server-defaulted fields or fields set by other writers",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#how-to-clear-server-defaulted-fields-or-fields-set-by-other-writers",
+  "text": "Fields that do not appear in the configuration file can be cleared by\nsetting their values to\nnull\nand then applying the configuration file.\nFor fields defaulted by the server, this triggers re-defaulting\nthe values.\n\nThese are the only methods you should use to change an individual object field:\nUse\nkubectl apply\n.\nWrite directly to the live configuration without modifying the configuration file:\nfor example, use\nkubectl scale\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ce96bd341ae7b05867ef6440eef3a7e4",
+  "source": "k8s_docs",
+  "title": "kubectl drain — Examples",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_drain/#examples",
+  "text": "# Drain node \"foo\", even if there are pods not managed by a replication controller, replica set, job, daemon set, or stateful set on it\n  kubectl drain foo --force\n  \n  # As above, but abort if there are pods not managed by a replication controller, replica set, job, daemon set, or stateful set, and use a grace period of 15 minutes\n  kubectl drain foo --grace-period=900"
+}

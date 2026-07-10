@@ -1,0 +1,7 @@
+{
+  "id": "49890b51692e732bb058540f41f1273a",
+  "source": "k8s_docs",
+  "title": "Resize CPU and Memory Resources assigned to Pods — For cluster administrators",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-pod-resources/#for-cluster-administrators",
+  "text": "Configure Default Memory Requests and Limits for a Namespace\nConfigure Default CPU Requests and Limits for a Namespace\nConfigure Minimum and Maximum Memory Constraints for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nConfigure Memory and CPU Quotas for a Namespace\nConfigure Default Memory Requests and Limits for a Namespace\nConfigure Default CPU Requests and Limits for a Namespace\nConfigure Minimum and Maximum Memory Constraints for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nConfigure Memory and CPU Quotas for a Namespace"
+}

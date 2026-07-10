@@ -1,0 +1,7 @@
+{
+  "id": "cd8e2ca731c4bd19474f821283159e39",
+  "source": "k8s_docs",
+  "title": "Upgrading Windows nodes — Uncordon the node",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/upgrading-windows-nodes/#uncordon-the-node",
+  "text": "From a machine with access to the Kubernetes API,\nbring the node back online by marking it schedulable:\n# replace <node-to-drain> with the name of your node\nkubectl uncordon <node-to-drain>\nFrom a machine with access to the Kubernetes API,\nbring the node back online by marking it schedulable:\n# replace <node-to-drain> with the name of your node\nkubectl uncordon <node-to-drain>"
+}

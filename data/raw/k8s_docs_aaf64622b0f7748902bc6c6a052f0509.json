@@ -1,0 +1,7 @@
+{
+  "id": "aaf64622b0f7748902bc6c6a052f0509",
+  "source": "k8s_docs",
+  "title": "Garbage Collection — Container image lifecycle",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/garbage-collection/#container-image-lifecycle",
+  "text": "Kubernetes manages the lifecycle of all images through its\nimage manager\n,\nwhich is part of the kubelet, with the cooperation of\ncadvisor\n. The kubelet\nconsiders the following disk usage limits when making garbage collection\ndecisions:\nHighThresholdPercent\nLowThresholdPercent\nDisk usage above the configured\nHighThresholdPercent\nvalue triggers garbage\ncollection, which deletes images in order based on the last time they were used,\nstarting with the oldest first. The kubelet deletes images\nuntil disk usage reaches the\nLowThresholdPercent\nvalue.\nYou can specify the maximum time a local image can be unused for,\nregardless of disk usage. This is a kubelet setting that you configure for each node.\nTo configure the setting, you need to set a value for the\nimageMaximumGCAge\nfield in the kubelet configuration file.\nThe value is specified as a Kubernetes\nduration\n.\nSee\nduration\nin the glossary\nfor more details.\nFor example, you can set the configuration field to\n12h45m\n,\nwhich means 12 hours and 45 minutes."
+}

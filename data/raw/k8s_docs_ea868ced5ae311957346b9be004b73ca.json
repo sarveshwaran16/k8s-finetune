@@ -1,0 +1,7 @@
+{
+  "id": "ea868ced5ae311957346b9be004b73ca",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-subnets (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-subnets",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-subnets: \"private-a,private-b\"\nKubernetes' official integration with AWS uses this annotation to configure a\nload balancer and determine in which AWS availability zones to deploy the managed\nload balancing service. The value is either a comma separated list of subnet names, or a\ncomma separated list of subnet IDs."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "56a78da4c75d8a37ea4a8e11402aec2a",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — Generated values",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#generated-values",
+  "text": "Some values of an object are typically generated before the object is persisted. It\nis important not to rely upon the values of these fields set by a dry-run request,\nsince these values will likely be different in dry-run mode from when the real\nrequest is made. Some of these fields are:\nname\n: if\ngenerateName\nis set,\nname\nwill have a unique random name\ncreationTimestamp\n/\ndeletionTimestamp\n: records the time of creation/deletion\nUID\n:\nuniquely identifies\nthe object and is randomly generated (non-deterministic)\nresourceVersion\n: tracks the persisted version of the object\nAny field set by a mutating admission controller\nFor the\nService\nresource: Ports or IP addresses that the kube-apiserver assigns to Service objects"
+}

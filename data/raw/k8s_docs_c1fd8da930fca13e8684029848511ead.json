@@ -1,0 +1,7 @@
+{
+  "id": "c1fd8da930fca13e8684029848511ead",
+  "source": "k8s_docs",
+  "title": "Implementation details — kubeadm reset workflow internal design",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#kubeadm-reset-workflow-internal-design",
+  "text": "You can use the\nkubeadm reset\nsubcommand on a node where kubeadm commands previously executed.\nThis subcommand performs a\nbest-effort\ncleanup of the node.\nIf certain actions fail you must intervene and perform manual cleanup.\nThe command supports phases.\nSee\nkubeadm reset phase\nfor more details.\nThe command supports a configuration file.\nAdditionally:\nIPVS, iptables and nftables rules are\nnot\ncleaned up.\nCNI (network plugin) configuration is\nnot\ncleaned up.\n.kube/\nin the user's home directory is\nnot\ncleaned up.\nThe command has the following stages:\nRuns preflight checks on the node to determine if its healthy.\nFor control plane nodes, removes any local etcd member data.\nStops the kubelet.\nStops running containers.\nUnmounts any mounted directories in\n/var/lib/kubelet\n.\nDeletes any files and directories managed by kubeadm in\n/var/lib/kubelet\nand\n/etc/kubernetes\n."
+}

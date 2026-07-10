@@ -1,0 +1,7 @@
+{
+  "id": "c5abf15989958992fb667913c241fd95",
+  "source": "k8s_docs",
+  "title": "Configure Memory and CPU Quotas for a Namespace — Attempt to create a second Pod",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/quota-memory-cpu-namespace/#attempt-to-create-a-second-pod",
+  "text": "Here is a manifest for a second Pod:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nquota-mem-cpu-demo-2\nspec\n:\ncontainers\n:\n-\nname\n:\nquota-mem-cpu-demo-2-ctr\nimage\n:\nredis\nresources\n:\nlimits\n:\nmemory\n:\n\"1Gi\"\ncpu\n:\n\"800m\"\nrequests\n:\nmemory\n:\n\"700Mi\"\ncpu\n:\n\"400m\"\nIn the manifest, you can see that the Pod has a memory request of 700 MiB.\nNotice that the sum of the used memory request and this new memory\nrequest exceeds the memory request quota: 600 MiB + 700 MiB > 1 GiB.\nAttempt to create the Pod:\nkubectl apply -f https://k8s.io/examples/admin/resource/quota-mem-cpu-pod-2.yaml --namespace\n=\nquota-mem-cpu-example\nThe second Pod does not get created. The output shows that creating the second Pod\nwould cause the memory request total to exceed the memory request quota.\nError from server (Forbidden): error when creating \"examples/admin/resource/quota-mem-cpu-pod-2.yaml\":\npods \"quota-mem-cpu-demo-2\" is forbidden: exceeded quota: mem-cpu-demo,\nrequested: requests.memory=700Mi,used: requests.memory=600Mi, limited: requests.memory=1Gi"
+}

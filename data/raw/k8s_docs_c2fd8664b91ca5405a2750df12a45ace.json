@@ -1,7 +1,0 @@
-{
-  "id": "c2fd8664b91ca5405a2750df12a45ace",
-  "source": "k8s_docs",
-  "title": "",
-  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_kubelet-finalize_all/",
-  "text": "Synopsis\nRun all kubelet-finalize phases\nkubeadm init phase kubelet-finalize all [flags]\nExamples\n# Updates settings relevant to the kubelet after TLS bootstrap\n  kubeadm init phase kubelet-finalize all --config\nOptions\n--cert-dir string     Default: \"/etc/kubernetes/pki\"\nThe path where to save and store the certificates.\n--config string\nPath to a kubeadm configuration file.\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for all\nOptions inherited from parent commands\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified April 23, 2026 at 6:20 PM PST:\nUpdate kubeadm reference for v1.36.0 (46cbaf6ebd)"
-}

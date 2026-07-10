@@ -1,0 +1,7 @@
+{
+  "id": "dda55ea7dd3b39e721dc7635b0025ceb",
+  "source": "k8s_docs",
+  "title": "Node — putReplace Connect Proxy",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/node-v1/#put-replace-connect-proxy",
+  "text": "PUT /api/v1/nodes/{name}/proxy\nName\nType\nDescription\nname\nstring\nname of the NodeProxyOptions\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to node.\nStatus\nDescription\nResponse\n200\nOK\nstring\n\nPUT /api/v1/nodes/{name}/proxy/{path}\nName\nType\nDescription\nname\nstring\nname of the NodeProxyOptions\npath\nstring\npath to the resource\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to node.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

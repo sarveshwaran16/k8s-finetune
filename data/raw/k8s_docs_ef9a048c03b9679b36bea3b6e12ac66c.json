@@ -1,0 +1,7 @@
+{
+  "id": "ef9a048c03b9679b36bea3b6e12ac66c",
+  "source": "k8s_docs",
+  "title": "Custom Resources — Preparing to install a custom resource",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#preparing-to-install-a-custom-resource",
+  "text": "There are several points to be aware of before adding a custom resource to your cluster.\n\nWhile creating a CRD does not automatically add any new points of failure (for example, by causing\nthird party code to run on your API server), packages (for example, Charts) or other installation\nbundles often include CRDs as well as a Deployment of third-party code that implements the\nbusiness logic for a new custom resource.\nInstalling an Aggregated API server always involves running a new Deployment."
+}

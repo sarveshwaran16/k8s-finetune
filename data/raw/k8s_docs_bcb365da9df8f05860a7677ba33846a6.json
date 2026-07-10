@@ -1,0 +1,7 @@
+{
+  "id": "bcb365da9df8f05860a7677ba33846a6",
+  "source": "k8s_docs",
+  "title": "Assign CPU Resources to Containers and Pods — If you do not specify a CPU limit",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-cpu-resource/#if-you-do-not-specify-a-cpu-limit",
+  "text": "If you do not specify a CPU limit for a Container, then one of these situations applies:\nThe Container has no upper bound on the CPU resources it can use. The Container\ncould use all of the CPU resources available on the Node where it is running.\nThe Container is running in a namespace that has a default CPU limit, and the\nContainer is automatically assigned the default limit. Cluster administrators can use a\nLimitRange\nto specify a default value for the CPU limit.\nThe Container has no upper bound on the CPU resources it can use. The Container\ncould use all of the CPU resources available on the Node where it is running.\nThe Container is running in a namespace that has a default CPU limit, and the\nContainer is automatically assigned the default limit. Cluster administrators can use a\nLimitRange\nto specify a default value for the CPU limit."
+}

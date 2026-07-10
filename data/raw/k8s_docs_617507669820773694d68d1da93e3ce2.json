@@ -1,0 +1,7 @@
+{
+  "id": "617507669820773694d68d1da93e3ce2",
+  "source": "k8s_docs",
+  "title": "Controllers — Ways of running controllers",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/controller/#running-controllers",
+  "text": "Kubernetes comes with a set of built-in controllers that run inside\nthe\nkube-controller-manager\n. These\nbuilt-in controllers provide important core behaviors.\nThe Deployment controller and Job controller are examples of controllers that\ncome as part of Kubernetes itself (\"built-in\" controllers).\nKubernetes lets you run a resilient control plane, so that if any of the built-in\ncontrollers were to fail, another part of the control plane will take over the work.\nYou can find controllers that run outside the control plane, to extend Kubernetes.\nOr, if you want, you can write a new controller yourself.\nYou can run your own controller as a set of Pods,\nor externally to Kubernetes. What fits best will depend on what that particular\ncontroller does."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "668bb0dfc6bc1d1da81a931407ed85f5",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Terminating Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#terminating-pods",
+  "text": "You can enable this feature by setting the\nDeploymentReplicaSetTerminatingReplicas\nfeature gate\non the\nAPI server\nand on the\nkube-controller-manager\nPods that become terminating due to deletion or scale down may take a long time to terminate, and may consume\nadditional resources during that period. As a result, the total number of all pods can temporarily exceed\n.spec.replicas\n. Terminating pods can be tracked using the\n.status.terminatingReplicas\nfield of the ReplicaSet."
+}

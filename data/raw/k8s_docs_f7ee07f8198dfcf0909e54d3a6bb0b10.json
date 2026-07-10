@@ -1,0 +1,7 @@
+{
+  "id": "f7ee07f8198dfcf0909e54d3a6bb0b10",
+  "source": "k8s_docs",
+  "title": "Audit Annotations — apiserver.latency.k8s.io/decode-response-object",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/#apiserver-latency-k8s-io-decode-response-object",
+  "text": "Example:\napiserver.latency.k8s.io/decode-response-object: \"450.6649ns\"\nThis annotation records the time taken to decode the response received from the storage layer (etcd)\n\nExample:\napiserver.latency.k8s.io/apf-queue-wait: \"100ns\"\nThis annotation records the time that a request spent queued due to API server priorities.\nSee\nAPI Priority and Fairness\n(APF)\nfor more information about this mechanism."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "382dcfe3e792c030af6285ae765076ff",
+  "source": "k8s_docs",
+  "title": "Common Expression Language in Kubernetes — Escaping",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/cel/#escaping",
+  "text": "Only Kubernetes resource property names of the form\n[a-zA-Z_.-/][a-zA-Z0-9_.-/]*\nare accessible from CEL. Accessible property\nnames are escaped according to the following rules when accessed in the\nexpression:\nTable of CEL identifier escaping rules\nescape sequence\nproperty name equivalent\n__underscores__\n__\n__dot__\n.\n__dash__\n-\n__slash__\n/\n__{keyword}__\nCEL\nRESERVED\nkeyword\nWhen you escape any of CEL's\nRESERVED\nkeywords you need to match the exact property name\nuse the underscore escaping\n(for example,\nint\nin the word\nsprint\nwould not be escaped and nor would it need to be).\nExamples on escaping:\nExamples escaped CEL identifiers\nproperty name\nrule with escaped property name\nnamespace\nself.__namespace__ > 0\nx-prop\nself.x__dash__prop > 0\nredact_d\nself.redact__underscores__d > 0\nstring\nself.startsWith('kube')"
+}

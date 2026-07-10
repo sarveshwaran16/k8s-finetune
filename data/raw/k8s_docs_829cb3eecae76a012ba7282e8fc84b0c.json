@@ -1,0 +1,7 @@
+{
+  "id": "829cb3eecae76a012ba7282e8fc84b0c",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — top",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#top",
+  "text": "Display Resource (CPU/Memory) usage.\nThe top command allows you to see the resource consumption for nodes or pods.\nThis command requires Metrics Server to be correctly configured and working on the server.\n\n$ kubectl top\n\nShow metrics for all nodes\nkubectl top\nnode\nShow metrics for a given node\nkubectl top\nnode\nNODE_NAME\nDisplay resource (CPU/memory) usage of nodes.\nThe top-node command allows you to see the resource consumption of nodes."
+}

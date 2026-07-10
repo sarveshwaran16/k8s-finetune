@@ -1,0 +1,7 @@
+{
+  "id": "b7b8b6dc35c78ae22fac8f46bdf543f3",
+  "source": "k8s_docs",
+  "title": "kubectl kuberc view — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_kuberc/kubectl_kuberc_view/#synopsis",
+  "text": "Display the contents of the kuberc file in the specified output format.\nkubectl kuberc view\n\n# View kuberc configuration in YAML format (default)\n  kubectl kuberc view\n  \n  # View kuberc configuration in JSON format\n  kubectl kuberc view --output json\n  \n  # View a specific kuberc file\n  kubectl kuberc view --kuberc /path/to/kuberc"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "4b4d0b35a0396ff9b8a1ef89f4025276",
+  "source": "k8s_docs",
+  "title": "Storage Capacity — Limitations",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/storage-capacity/#limitations",
+  "text": "Storage capacity tracking increases the chance that scheduling works\non the first try, but cannot guarantee this because the scheduler has\nto decide based on potentially out-dated information. Usually, the\nsame retry mechanism as for scheduling without any storage capacity\ninformation handles scheduling failures.\nOne situation where scheduling can fail permanently is when a Pod uses\nmultiple volumes: one volume might have been created already in a\ntopology segment which then does not have enough capacity left for\nanother volume. Manual intervention is necessary to recover from this,\nfor example by increasing capacity or deleting the volume that was\nalready created."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a05089dad545115ea45aa7c1c1b6d46b",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — Priority",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#priority",
+  "text": "Type\n: Mutating and Validating.\nThe priority admission controller uses the\npriorityClassName\nfield and populates the integer\nvalue of the priority.\nIf the priority class is not found, the Pod is rejected.\n\nType\n: Validating.\nThis admission controller will observe the incoming request and ensure that it does not violate\nany of the constraints enumerated in the\nResourceQuota\nobject in a\nNamespace\n. If you are\nusing\nResourceQuota\nobjects in your Kubernetes deployment, you MUST use this admission\ncontroller to enforce quota constraints.\nSee the\nResourceQuota API reference\nand the\nexample of Resource Quota\nfor more details."
+}

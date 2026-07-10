@@ -1,0 +1,7 @@
+{
+  "id": "8138bb12f6e34cb155b9a030bad1c6fc",
+  "source": "k8s_docs",
+  "title": "Validating Admission Policy — Failure Policy",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/#failure-policy",
+  "text": "failurePolicy\ndefines how mis-configurations and CEL expressions evaluating to error from the\nadmission policy are handled. Allowed values are\nIgnore\nor\nFail\n.\nIgnore\nmeans that an error calling the ValidatingAdmissionPolicy is ignored and the API\nrequest is allowed to continue.\nFail\nmeans that an error calling the ValidatingAdmissionPolicy causes the admission to fail\nand the API request to be rejected.\nNote that the\nfailurePolicy\nis defined inside\nValidatingAdmissionPolicy\n:\napiVersion\n:\nadmissionregistration.k8s.io/v1\nkind\n:\nValidatingAdmissionPolicy\nspec\n:\n...\nfailurePolicy\n:\nIgnore\n# The default is \"Fail\"\nvalidations\n:\n-\nexpression\n:\n\"object.spec.xyz == params.x\""
+}

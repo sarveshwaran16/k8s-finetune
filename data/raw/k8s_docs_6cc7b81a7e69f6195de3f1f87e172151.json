@@ -1,0 +1,7 @@
+{
+  "id": "6cc7b81a7e69f6195de3f1f87e172151",
+  "source": "k8s_docs",
+  "title": "Swap memory management — Container runtime integration",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/swap-memory-management/#container-runtime-integration",
+  "text": "The kubelet uses the container runtime API, and directs the container runtime to\napply specific configuration (for example, in the cgroup v2 case,\nmemory.swap.max\n) in a manner that will\nenable the desired swap configuration for a container. For runtimes that use control groups, or cgroups,\nthe container runtime is then responsible for writing these settings to the container-level cgroup."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "9aaa91fc39b913c28da2e5337eeda4d5",
+  "source": "k8s_docs",
+  "title": "Use Cilium for NetworkPolicy — Deploying Cilium for Production Use",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/cilium-network-policy/#deploying-cilium-for-production-use",
+  "text": "For detailed instructions around deploying Cilium for production, see:\nCilium Kubernetes Installation Guide\nThis documentation includes detailed requirements, instructions and example\nproduction DaemonSet files.\n\nDeploying a cluster with Cilium adds Pods to the\nkube-system\nnamespace. To see\nthis list of Pods run:\nkubectl get pods --namespace\n=\nkube-system -l k8s-app\n=\ncilium\nYou'll see a list of Pods similar to this:\nNAME           READY   STATUS    RESTARTS   AGE\ncilium-kkdhz   1/1     Running   0          3m23s\n...\nA\ncilium\nPod runs on each node in your cluster and enforces network policy\non the traffic to/from Pods on that node using Linux BPF."
+}

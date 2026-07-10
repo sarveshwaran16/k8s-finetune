@@ -1,0 +1,7 @@
+{
+  "id": "b872302c80b65a97e00d06b555acbc94",
+  "source": "k8s_docs",
+  "title": "Dynamic Resource Allocation — Granular status authorization",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#granular-status-authorization",
+  "text": "Starting in Kubernetes v1.36, DRA enforces fine-grained authorization checks for updates\nto\nResourceClaim\nstatus by using synthetic subresources and node-aware verbs.\nFor security hardening guidance, including RBAC examples for scheduler and DRA\ndrivers, see\nHardening Guide - Dynamic Resource Allocation\n.\nFor a step-by-step cluster administrator procedure, see\nHarden Dynamic Resource Allocation in Your Cluster\n."
+}

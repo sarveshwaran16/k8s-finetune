@@ -1,0 +1,7 @@
+{
+  "id": "127a79e36e20bbbc4299062d9ada6d26",
+  "source": "k8s_docs",
+  "title": "Securing a Cluster — Controlling the capabilities of a workload or user at runtime",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#controlling-the-capabilities-of-a-workload-or-user-at-runtime",
+  "text": "Authorization in Kubernetes is intentionally high level, focused on coarse actions on resources.\nMore powerful controls exist as\npolicies\nto limit by use case how those objects act on the\ncluster, themselves, and other resources.\n\nResource quota\nlimits the number or capacity of\nresources granted to a namespace. This is most often used to limit the amount of CPU, memory,\nor persistent disk a namespace can allocate, but can also control how many pods, services, or\nvolumes exist in each namespace.\nLimit ranges\nrestrict the maximum or minimum size of some of the\nresources above, to prevent users from requesting unreasonably high or low values for commonly\nreserved resources like memory, or to provide default limits when none are specified."
+}

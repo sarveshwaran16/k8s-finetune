@@ -1,0 +1,7 @@
+{
+  "id": "41f42f377bf0f533fe44353c1c6e6f57",
+  "source": "k8s_docs",
+  "title": "Installing kubeadm — Check network adapters",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#check-network-adapters",
+  "text": "If you have more than one network adapter, and your Kubernetes components are not reachable on the default\nroute, we recommend you add IP route(s) so Kubernetes cluster addresses go via the appropriate adapter.\n\nThese\nrequired ports\nneed to be open in order for Kubernetes components to communicate with each other.\nYou can use tools like\nnetcat\nto check if a port is open. For example:\nnc 127.0.0.1\n6443\n-zv -w\n2\nThe pod network plugin you use may also require certain ports to be\nopen. Since this differs with each pod network plugin, please see the\ndocumentation for the plugins about what port(s) those need."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6c02940718cf0176f332a6a014ba1d98",
+  "source": "k8s_docs",
+  "title": "kube-controller-manager Configuration (v1alpha1) — WebhookConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#cloudcontrollermanager-config-k8s-io-v1alpha1-WebhookConfiguration",
+  "text": "Appears in:\nCloudControllerManagerConfiguration\nWebhookConfiguration contains configuration related to\ncloud-controller-manager hosted webhooks\nField\nDescription\nWebhooks\n[Required]\n[]string\nWebhooks is the list of webhooks to enable or disable\n'*' means \"all enabled by default webhooks\"\n'foo' means \"enable 'foo'\"\n'-foo' means \"disable 'foo'\"\nfirst item for a particular name wins\nWebhooks is the list of webhooks to enable or disable\n'*' means \"all enabled by default webhooks\"\n'foo' means \"enable 'foo'\"\n'-foo' means \"disable 'foo'\"\nfirst item for a particular name wins"
+}

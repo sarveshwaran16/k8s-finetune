@@ -1,0 +1,7 @@
+{
+  "id": "e95aa048d5cef0de7a16b7491dca3b40",
+  "source": "k8s_docs",
+  "title": "Swap memory management — Disable swap for system-critical daemons",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/swap-memory-management/#disable-swap-for-system-critical-daemons",
+  "text": "During the testing phase and based on user feedback, it was observed that the performance\nof system-critical daemons and services might degrade.\nThis implies that system daemons, including the kubelet, could operate slower than usual.\nIf this issue is encountered, it is advisable to configure the cgroup of the system slice\nto prevent swapping (i.e., set\nmemory.swap.max=0\n)."
+}

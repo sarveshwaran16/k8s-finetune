@@ -1,0 +1,7 @@
+{
+  "id": "f09c94afdf9e6388b59dee4102a87fc3",
+  "source": "k8s_docs",
+  "title": "kubeadm kubeconfig — Options",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-kubeconfig/#options",
+  "text": "--client-name string\nThe name of user. It will be used as the CN if client certificates are created\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for user\n--org strings\nThe organizations of the client certificate. It will be used as the O if client certificates are created\n--token string\nThe token that should be used as the authentication mechanism for this kubeconfig, instead of client certificates\n--validity-period duration     Default: 8760h0m0s\nThe validity period of the client certificate. It is an offset from the current time.\nThe name of user. It will be used as the CN if client certificates are created\nPath to a kubeadm configuration file.\nhelp for user\nThe organizations of the client certificate. It will be used as the O if client certificates are created\nThe token that should be used as the authentication mechanism for this kubeconfig, instead of client certificates\nThe validity period of the client certificate. It is an offset from the current time."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "5dc076b1aba411a8d08cfd3e41ce69c5",
+  "source": "k8s_docs",
+  "title": "Labels and Selectors — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#what-s-next",
+  "text": "Learn how to\nadd a label to a node\nFind\nWell-known labels, Annotations and Taints\nSee\nRecommended labels\nEnforce Pod Security Standards with Namespace Labels\nRead a blog on\nWriting a Controller for Pod Labels\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

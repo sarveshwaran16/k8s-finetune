@@ -1,0 +1,7 @@
+{
+  "id": "8cba189138b6554914cc1ffcf0a89ae7",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1alpha1) — ImagePullServiceAccount",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1alpha1/#kubelet-config-k8s-io-v1alpha1-ImagePullServiceAccount",
+  "text": "Appears in:\nImagePullCredentials\nImagePullServiceAccount is a representation of a Kubernetes service account object coordinates\nfor which the kubelet sent service account token to the credential provider plugin for image pull credentials.\nField\nDescription\nuid\n[Required]\nstring\nNo description provided.\nnamespace\n[Required]\nstring\nNo description provided.\nname\n[Required]\nstring\nNo description provided."
+}

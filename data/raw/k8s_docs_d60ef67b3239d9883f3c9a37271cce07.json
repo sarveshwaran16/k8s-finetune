@@ -1,0 +1,7 @@
+{
+  "id": "d60ef67b3239d9883f3c9a37271cce07",
+  "source": "k8s_docs",
+  "title": "Configure Liveness, Readiness and Startup Probes — Define readiness probes",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-readiness-probes",
+  "text": "Sometimes, applications are temporarily unable to serve traffic.\nFor example, an application might need to load large data or configuration\nfiles during startup, or depend on external services after startup.\nIn such cases, you don't want to kill the application,\nbut you don't want to send it requests either. Kubernetes provides\nreadiness probes to detect and mitigate these situations. A pod with containers\nreporting that they are not ready does not receive traffic through Kubernetes\nServices.\nReadiness probes are configured similarly to liveness probes. The only difference\nis that you use the\nreadinessProbe\nfield instead of the\nlivenessProbe\nfield.\nreadinessProbe\n:\nexec\n:\ncommand\n:\n-\ncat\n-\n/tmp/healthy\ninitialDelaySeconds\n:\n5\nperiodSeconds\n:\n5\nConfiguration for HTTP and TCP readiness probes also remains identical to\nliveness probes.\nReadiness and liveness probes can be used in parallel for the same container.\nUsing both can ensure that traffic does not reach a container that is not ready\nfor it, and that containers are restarted when they fail."
+}

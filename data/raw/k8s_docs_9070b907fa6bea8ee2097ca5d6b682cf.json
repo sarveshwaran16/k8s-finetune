@@ -1,0 +1,7 @@
+{
+  "id": "9070b907fa6bea8ee2097ca5d6b682cf",
+  "source": "k8s_docs",
+  "title": "Service — postCreate Connect Proxy Path",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/service-v1/#post-create-connect-proxy-path",
+  "text": "POST /api/v1/namespaces/{namespace}/services/{name}/proxy/{path}\nName\nType\nDescription\nname\nstring\nname of the ServiceProxyOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\npath\nstring\npath to the resource\nName\nType\nDescription\npath\nstring\nPath is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

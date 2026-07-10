@@ -1,0 +1,7 @@
+{
+  "id": "cf69f51375ed084d7e0f44c1567fcffb",
+  "source": "k8s_docs",
+  "title": "Client Libraries — Officially-supported Kubernetes client libraries",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/client-libraries/#officially-supported-kubernetes-client-libraries",
+  "text": "The following client libraries are officially maintained by\nKubernetes SIG API Machinery\n.\nLanguage\nClient Library\nSample Programs\nC\ngithub.com/kubernetes-client/c\nbrowse\ndotnet\ngithub.com/kubernetes-client/csharp\nbrowse\nGo\ngithub.com/kubernetes/client-go/\nbrowse\nHaskell\ngithub.com/kubernetes-client/haskell\nbrowse\nJava\ngithub.com/kubernetes-client/java\nbrowse\nJavaScript\ngithub.com/kubernetes-client/javascript\nbrowse\nPerl\ngithub.com/kubernetes-client/perl/\nbrowse\nPython\ngithub.com/kubernetes-client/python/\nbrowse\nRuby\ngithub.com/kubernetes-client/ruby/\nbrowse"
+}

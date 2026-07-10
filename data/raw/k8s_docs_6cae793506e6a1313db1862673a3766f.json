@@ -1,0 +1,7 @@
+{
+  "id": "6cae793506e6a1313db1862673a3766f",
+  "source": "k8s_docs",
+  "title": "Debugging DNS Resolution — Is DNS service up?",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/#is-dns-service-up",
+  "text": "Verify that the DNS service is up by using the\nkubectl get service\ncommand.\nkubectl get svc --namespace\n=\nkube-system\nNAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)             AGE\n...\nkube-dns     ClusterIP   10.0.0.10      <none>        53/UDP,53/TCP        1h\n...\nIf you have created the Service or in the case it should be created by default\nbut it does not appear, see\ndebugging Services\nfor\nmore information."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "00ae5233782d7d0d96fbf5e9aa370d1e",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — autoscaling.alpha.kubernetes.io/behavior (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#autoscaling-alpha-kubernetes-io-behavior",
+  "text": "Type: Annotation\nUsed on: HorizontalPodAutoscaler\nThis annotation was used to configure the scaling behavior for a HorizontalPodAutoscaler (HPA) in earlier Kubernetes versions.\nIt allowed you to specify how the HPA should scale pods up or down, including setting stabilization windows and scaling policies.\nSetting this annotation has no effect in any supported release of Kubernetes."
+}

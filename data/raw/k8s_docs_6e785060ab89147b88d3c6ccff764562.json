@@ -1,0 +1,7 @@
+{
+  "id": "6e785060ab89147b88d3c6ccff764562",
+  "source": "k8s_docs",
+  "title": "Declarative Management of Kubernetes Objects Using Configuration Files — Merging changes to primitive fields",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#merging-changes-to-primitive-fields",
+  "text": "Primitive fields are replaced or cleared.\nField in object configuration file\nField in live object configuration\nField in last-applied-configuration\nAction\nYes\nYes\n-\nSet live to configuration file value.\nYes\nNo\n-\nSet live to local configuration.\nNo\n-\nYes\nClear from live configuration.\nNo\n-\nNo\nDo nothing. Keep live value."
+}

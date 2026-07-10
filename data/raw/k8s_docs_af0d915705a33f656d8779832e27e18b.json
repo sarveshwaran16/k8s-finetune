@@ -1,0 +1,7 @@
+{
+  "id": "af0d915705a33f656d8779832e27e18b",
+  "source": "k8s_docs",
+  "title": "Configure the Aggregation Layer — Extension Apiserver Executes",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-aggregation-layer/#extension-apiserver-executes",
+  "text": "If the\nSubjectAccessReview\npasses, the extension apiserver executes the request.\n\nEnable the aggregation layer via the following\nkube-apiserver\nflags.\nThey may have already been taken care of by your provider.\n--requestheader-client-ca-file=<path to aggregator CA cert>\n--requestheader-allowed-names=front-proxy-client\n--requestheader-extra-headers-prefix=X-Remote-Extra-\n--requestheader-group-headers=X-Remote-Group\n--requestheader-username-headers=X-Remote-User\n--proxy-client-cert-file=<path to aggregator proxy cert>\n--proxy-client-key-file=<path to aggregator proxy key>"
+}

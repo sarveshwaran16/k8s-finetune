@@ -1,0 +1,7 @@
+{
+  "id": "1233e32c9f87975ee22b0d50a07be8ee",
+  "source": "k8s_docs",
+  "title": "Running ZooKeeper, A Distributed System Coordinator — Objectives",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/zookeeper/#objectives",
+  "text": "After this tutorial, you will know the following.\nHow to deploy a ZooKeeper ensemble using StatefulSet.\nHow to consistently configure the ensemble.\nHow to spread the deployment of ZooKeeper servers in the ensemble.\nHow to use PodDisruptionBudgets to ensure service availability during planned maintenance."
+}

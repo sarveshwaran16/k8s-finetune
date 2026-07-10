@@ -1,0 +1,7 @@
+{
+  "id": "ecff1a10d51a6ffc645c8113a54597fe",
+  "source": "k8s_docs",
+  "title": "kubectl kuberc set — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_kuberc/kubectl_kuberc_set/#synopsis",
+  "text": "Set values in the kuberc configuration file.\nUse --section to specify whether to set defaults or aliases.\nFor defaults: Sets default flag values for kubectl commands. The --command flag should specify only the command (e.g., \"get\", \"create\", \"set env\"), not resources.\nFor aliases: Creates command aliases with optional default flag values and arguments. Use --prependarg and --appendarg to include resources or other arguments.\nkubectl kuberc set --section (defaults|aliases) --command COMMAND"
+}

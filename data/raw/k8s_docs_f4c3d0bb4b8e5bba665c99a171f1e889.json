@@ -1,0 +1,7 @@
+{
+  "id": "f4c3d0bb4b8e5bba665c99a171f1e889",
+  "source": "k8s_docs",
+  "title": "Kubernetes Deprecation Policy — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/deprecation-policy/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

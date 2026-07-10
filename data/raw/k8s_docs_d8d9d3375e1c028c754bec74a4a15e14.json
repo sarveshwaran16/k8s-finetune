@@ -1,0 +1,7 @@
+{
+  "id": "d8d9d3375e1c028c754bec74a4a15e14",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — internal.config.kubernetes.io/path",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#internal-config-kubernetes-io-path",
+  "text": "Type: Annotation\nExample:\ninternal.config.kubernetes.io/path: \"relative/file/path.yaml\"\nUsed on: All objects\nThis annotation records the slash-delimited, OS-agnostic, relative path to the manifest file the\nobject was loaded from. The path is relative to a fixed location on the filesystem, determined by\nthe orchestrator tool.\nThis annotation is part of the Kubernetes Resource Model (KRM) Functions Specification, which is\nused by Kustomize and similar third-party tools.\nA KRM Function\nshould not\nmodify this annotation on input objects unless it is modifying the\nreferenced files. A KRM Function\nmay\ninclude this annotation on objects it generates."
+}

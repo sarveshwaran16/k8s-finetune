@@ -1,0 +1,7 @@
+{
+  "id": "983572f3d5be41d10e0ece87ad14840e",
+  "source": "k8s_docs",
+  "title": "Change the Access Mode of a PersistentVolume to ReadWriteOncePod — Why should I useReadWriteOncePod?",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/change-pv-access-mode-readwriteoncepod/#why-should-i-use-readwriteoncepod",
+  "text": "Prior to Kubernetes v1.22, the\nReadWriteOnce\naccess mode was commonly used to\nrestrict PersistentVolume access for workloads that required single-writer\naccess to storage. However, this access mode had a limitation: it restricted\nvolume access to a single\nnode\n, allowing multiple pods on the same node to\nread from and write to the same volume simultaneously. This could pose a risk\nfor applications that demand strict single-writer access for data safety.\nIf ensuring single-writer access is critical for your workloads, consider\nmigrating your volumes to\nReadWriteOncePod\n."
+}

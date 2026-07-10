@@ -1,0 +1,7 @@
+{
+  "id": "ffccb9a4a7a63299a9ef397743725bec",
+  "source": "k8s_docs",
+  "title": "Pod Quality of Service Classes — Configuring memory reservation",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/#configuring-memory-reservation",
+  "text": "Memory reservation is controlled via the kubelet configuration field\nmemoryReservationPolicy\n:\nNone\n(default): the kubelet does not set\nmemory.min\nor\nmemory.low\nfor\ncontainers and pods. No memory is hard-locked by the kernel.\nTieredReservation\n: the kubelet sets tiered memory protection based on the\nPod's QoS class:\nGuaranteed\npods:\nmemory.min\nis set to memory requests. The kernel\nwill not reclaim this memory under any circumstances.\nBurstable\npods:\nmemory.low\nis set to memory requests. The kernel\npreferentially retains this memory but may reclaim it under extreme pressure.\nBestEffort\npods: no memory protection is set.\nGuaranteed\npods:\nmemory.min\nis set to memory requests. The kernel\nwill not reclaim this memory under any circumstances.\nBurstable\npods:\nmemory.low\nis set to memory requests. The kernel\npreferentially retains this memory but may reclaim it under extreme pressure.\nBestEffort\npods: no memory protection is set."
+}

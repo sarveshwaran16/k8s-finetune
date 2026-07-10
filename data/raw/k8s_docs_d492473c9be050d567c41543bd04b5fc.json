@@ -1,0 +1,7 @@
+{
+  "id": "d492473c9be050d567c41543bd04b5fc",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node.cloudprovider.kubernetes.io/shutdown",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-cloudprovider-kubernetes-io-shutdown",
+  "text": "Type: Taint\nExample:\nnode.cloudprovider.kubernetes.io/shutdown: \"NoSchedule\"\nUsed on: Node\nIf a Node is in a cloud provider specified shutdown state, the Node gets tainted accordingly\nwith\nnode.cloudprovider.kubernetes.io/shutdown\nand the taint effect of\nNoSchedule\n.\n\nType: Label\nExample:\nfeature.node.kubernetes.io/network-sriov.capable: \"true\"\nUsed on: Node\nThese labels are used by the Node Feature Discovery (NFD) component to advertise\nfeatures on a node. All built-in labels use the\nfeature.node.kubernetes.io\nlabel\nnamespace and have the format\nfeature.node.kubernetes.io/<feature-name>: \"true\"\n.\nNFD has many extension points for creating vendor and application-specific labels.\nFor details, see the\ncustomization guide\n."
+}

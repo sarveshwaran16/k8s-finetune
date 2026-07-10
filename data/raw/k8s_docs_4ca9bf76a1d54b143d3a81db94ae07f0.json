@@ -1,0 +1,7 @@
+{
+  "id": "4ca9bf76a1d54b143d3a81db94ae07f0",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubectl.kubernetes.io/last-applied-configuration",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubectl-kubernetes-io-last-applied-configuration",
+  "text": "Type: Annotation\nExample:\nsee following snippet\nkubectl.kubernetes.io/last-applied-configuration\n:\n>\n{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{},\"name\":\"example\",\"namespace\":\"default\"},\"spec\":{\"selector\":{\"matchLabels\":{\"app.kubernetes.io/name\":foo}},\"template\":{\"metadata\":{\"labels\":{\"app.kubernetes.io/name\":\"foo\"}},\"spec\":{\"containers\":[{\"image\":\"container-registry.example/foo-bar:1.42\",\"name\":\"foo-bar\",\"ports\":[{\"containerPort\":42}]}]}}}}\nUsed on: all objects\nThe kubectl command line tool uses this annotation as a legacy mechanism\nto track changes. That mechanism has been superseded by\nServer-side apply\n."
+}

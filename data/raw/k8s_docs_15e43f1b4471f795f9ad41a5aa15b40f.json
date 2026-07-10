@@ -1,0 +1,7 @@
+{
+  "id": "15e43f1b4471f795f9ad41a5aa15b40f",
+  "source": "k8s_docs",
+  "title": "kube-controller-manager Configuration (v1alpha1) — LegacySATokenCleanerConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#kubecontrollermanager-config-k8s-io-v1alpha1-LegacySATokenCleanerConfiguration",
+  "text": "Appears in:\nKubeControllerManagerConfiguration\nLegacySATokenCleanerConfiguration contains elements describing LegacySATokenCleaner\nField\nDescription\nCleanUpPeriod\n[Required]\nmeta/v1.Duration\nCleanUpPeriod is the period of time since the last usage of an\nauto-generated service account token before it can be deleted.\nCleanUpPeriod is the period of time since the last usage of an\nauto-generated service account token before it can be deleted."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "bbe21a5a677b8945f9e33f7aceb80f4e",
+  "source": "k8s_docs",
+  "title": "Using kubectl to Create a Deployment — Kubernetes Deployments",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/#kubernetes-deployments",
+  "text": "Once you have a\nrunning Kubernetes cluster\n,\nyou can deploy your containerized applications on top of it. To do so, you create a\nKubernetes\nDeployment\n. The Deployment instructs Kubernetes how to create and\nupdate instances of your application. Once you've created a Deployment, the Kubernetes\ncontrol plane schedules the application instances included in that Deployment to run\non individual Nodes in the cluster.\nOnce the application instances are created, a Kubernetes Deployment controller continuously\nmonitors those instances. If the Node hosting an instance goes down or is deleted,\nthe Deployment controller replaces the instance with an instance on another Node\nin the cluster.\nThis provides a self-healing mechanism to address machine failure\nor maintenance.\nIn a pre-orchestration world, installation scripts would often be used to start\napplications, but they did not allow recovery from machine failure. By both creating\nyour application instances and keeping them running across Nodes, Kubernetes Deployments\nprovide a fundamentally different approach to application management."
+}

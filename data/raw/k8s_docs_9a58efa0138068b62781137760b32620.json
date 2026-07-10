@@ -1,0 +1,7 @@
+{
+  "id": "9a58efa0138068b62781137760b32620",
+  "source": "k8s_docs",
+  "title": "Overview — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/#what-s-next",
+  "text": "Take a look at the\nKubernetes Components\nTake a look at the\nKubernetes API\nTake a look at\nkubectl\n: the primary CLI for Kubernetes\nTake a look at the\nCluster Architecture\nReady to\nGet Started\n?\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

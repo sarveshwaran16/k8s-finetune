@@ -1,0 +1,7 @@
+{
+  "id": "516e45f74614ab678affe32079f0d3b8",
+  "source": "k8s_docs",
+  "title": "Using a KMS provider for data encryption — KMS v2",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#kms-v2",
+  "text": "Your cluster must use etcd v3 or later\n\nThe KMS encryption provider uses an envelope encryption scheme to encrypt data in etcd.\nThe data is encrypted using a data encryption key (DEK).\nThe DEKs are encrypted with a key encryption key (KEK) that is stored and managed in a remote KMS.\nIf you use the (deprecated) v1 implementation of KMS, a new DEK is generated for each encryption.\nWith KMS v2, a new DEK is generated\nper encryption\n: the API server uses a\nkey derivation function\nto generate single use data encryption keys from a secret seed\ncombined with some random data.\nThe seed is rotated whenever the KEK is rotated\n(see the\nUnderstanding key_id and Key Rotation\nsection below for more details).\nThe KMS provider uses gRPC to communicate with a specific KMS plugin over a UNIX domain socket.\nThe KMS plugin, which is implemented as a gRPC server and deployed on the same host(s)\nas the Kubernetes control plane, is responsible for all communication with the remote KMS."
+}

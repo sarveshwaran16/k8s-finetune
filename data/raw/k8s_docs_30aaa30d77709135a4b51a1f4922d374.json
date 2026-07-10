@@ -1,0 +1,7 @@
+{
+  "id": "30aaa30d77709135a4b51a1f4922d374",
+  "source": "k8s_docs",
+  "title": "Run a Replicated Stateful Application — Starting replication",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/#starting-replication",
+  "text": "After the init containers complete successfully, the regular containers run.\nThe MySQL Pods consist of a\nmysql\ncontainer that runs the actual\nmysqld\nserver, and an\nxtrabackup\ncontainer that acts as a\nsidecar\n.\nThe\nxtrabackup\nsidecar looks at the cloned data files and determines if\nit's necessary to initialize MySQL replication on the replica.\nIf so, it waits for\nmysqld\nto be ready and then executes the\nCHANGE MASTER TO\nand\nSTART SLAVE\ncommands with replication parameters\nextracted from the XtraBackup clone files.\nOnce a replica begins replication, it remembers its primary MySQL server and\nreconnects automatically if the server restarts or the connection dies.\nAlso, because replicas look for the primary server at its stable DNS name\n(\nmysql-0.mysql\n), they automatically find the primary server even if it gets a new\nPod IP due to being rescheduled.\nLastly, after starting replication, the\nxtrabackup\ncontainer listens for\nconnections from other Pods requesting a data clone.\nThis server remains up indefinitely in case the StatefulSet scales up, or in\ncase the next Pod loses its PersistentVolumeClaim and needs to redo the clone."
+}

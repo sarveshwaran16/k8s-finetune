@@ -1,0 +1,7 @@
+{
+  "id": "e081db078af6747979de6570430c83f6",
+  "source": "k8s_docs",
+  "title": "Performing a Rolling Update — Update the version of the app",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/#update-the-version-of-the-app",
+  "text": "To list your Deployments, run the\nget deployments\nsubcommand:\nkubectl get deployments\nTo list the running Pods, run the\nget pods\nsubcommand:\nkubectl get pods\nTo view the current image version of the app, run the\ndescribe pods\nsubcommand\nand look for the\nImage\nfield:\nkubectl describe pods\nTo update the image of the application to version 2, use the\nset image\nsubcommand,\nfollowed by the deployment name and the new image version:\nkubectl\nset\nimage deployments/kubernetes-bootcamp kubernetes-bootcamp\n=\ndocker.io/jocatalin/kubernetes-bootcamp:v2\nThe command notified the Deployment to use a different image for your app and initiated\na rolling update. Check the status of the new Pods, and view the old one terminating\nwith the\nget pods\nsubcommand:\nkubectl get pods"
+}

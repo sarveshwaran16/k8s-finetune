@@ -1,0 +1,7 @@
+{
+  "id": "12439e3076f7e96d9f326bfcdb140184",
+  "source": "k8s_docs",
+  "title": "Extend Service IP Ranges",
+  "source_url": "https://kubernetes.io/docs/tasks/network/extend-service-ip-ranges/#extend-service-ip-ranges",
+  "text": "Kubernetes clusters with kube-apiservers that have enabled the\nMultiCIDRServiceAllocator\nfeature gate\nand have the\nnetworking.k8s.io/v1\nAPI group active, will create a ServiceCIDR object that takes\nthe well-known name\nkubernetes\n, and that specifies an IP address range\nbased on the value of the\n--service-cluster-ip-range\ncommand line argument to kube-apiserver.\nkubectl get servicecidr\nNAME         CIDRS          AGE\nkubernetes   10.96.0.0/28   17d\nThe well-known\nkubernetes\nService, that exposes the kube-apiserver endpoint to the Pods, calculates\nthe first IP address from the default ServiceCIDR range and uses that IP address as its\ncluster IP address.\nkubectl get service kubernetes\nNAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE\nkubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   17d\nThe default Service, in this case, uses the ClusterIP 10.96.0.1, that has the corresponding IPAddress object.\nkubectl get ipaddress 10.96.0.1\nNAME        PARENTREF\n10.96.0.1   services/default/kubernetes\nThe ServiceCIDRs are protected with\nfinalizers\n,\nto avoid leaving Service ClusterIPs orphans; the finalizer is only removed if there is another subnet\nthat contains the existing IPAddresses or there are no IPAddresses belonging to the subnet."
+}

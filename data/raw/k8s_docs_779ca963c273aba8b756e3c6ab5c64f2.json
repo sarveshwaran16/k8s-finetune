@@ -1,0 +1,7 @@
+{
+  "id": "779ca963c273aba8b756e3c6ab5c64f2",
+  "source": "k8s_docs",
+  "title": "Pod — SecretKeySelector",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#SecretKeySelector",
+  "text": "SecretKeySelector selects a key of a Secret.\nField\nDescription\nkey\n*\nstring\nThe key of the secret to select from. Must be a valid secret key.\nname\nstring\nName of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\noptional\nboolean\nSpecify whether the Secret or its key must be defined"
+}

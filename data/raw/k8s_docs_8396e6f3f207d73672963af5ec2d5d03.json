@@ -1,0 +1,7 @@
+{
+  "id": "8396e6f3f207d73672963af5ec2d5d03",
+  "source": "k8s_docs",
+  "title": "Extend the Kubernetes API with CustomResourceDefinitions — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#what-s-next",
+  "text": "Read about\ncustom resources\n.\nSee\nCustomResourceDefinition\n.\nServe\nmultiple versions\nof a\nCustomResourceDefinition.\nRead about\ncustom resources\n.\nSee\nCustomResourceDefinition\n.\nServe\nmultiple versions\nof a\nCustomResourceDefinition.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

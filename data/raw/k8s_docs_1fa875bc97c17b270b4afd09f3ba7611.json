@@ -1,0 +1,7 @@
+{
+  "id": "1fa875bc97c17b270b4afd09f3ba7611",
+  "source": "k8s_docs",
+  "title": "kubectl rollout status — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/kubectl_rollout_status/#synopsis",
+  "text": "Show the status of the rollout.\nBy default 'rollout status' will watch the status of the latest rollout until it's done. If you don't want to wait for the rollout to finish then you can use --watch=false. Note that if a new rollout starts in-between, then 'rollout status' will continue watching the latest revision. If you want to pin to a specific revision and abort if it is rolled over by another revision, use --revision=N where N is the revision you need to watch for.\nkubectl rollout status (TYPE NAME | TYPE/NAME) [flags]"
+}

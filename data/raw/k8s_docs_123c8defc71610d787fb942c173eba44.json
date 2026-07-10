@@ -1,0 +1,7 @@
+{
+  "id": "123c8defc71610d787fb942c173eba44",
+  "source": "k8s_docs",
+  "title": "Managing Workloads — kubectl patch",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#kubectl-patch",
+  "text": "You can use\nkubectl patch\nto update API objects in place.\nThis subcommand supports JSON patch,\nJSON merge patch, and strategic merge patch.\nSee\nUpdate API Objects in Place Using kubectl patch\nfor more details.\n\nIn some cases, you may need to update resource fields that cannot be updated once initialized, or\nyou may want to make a recursive change immediately, such as to fix broken pods created by a\nDeployment. To change such fields, use\nreplace --force\n, which deletes and re-creates the\nresource. In this case, you can modify your original configuration file:\nkubectl replace -f https://k8s.io/examples/application/nginx/nginx-deployment.yaml --force\ndeployment.apps/my-nginx deleted\ndeployment.apps/my-nginx replaced"
+}

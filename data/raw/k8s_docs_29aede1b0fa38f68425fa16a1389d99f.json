@@ -1,0 +1,7 @@
+{
+  "id": "29aede1b0fa38f68425fa16a1389d99f",
+  "source": "k8s_docs",
+  "title": "Declarative Management of Kubernetes Objects Using Configuration Files — How to delete objects",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#how-to-delete-objects",
+  "text": "There are two approaches to delete objects managed by\nkubectl apply\n.\n\nManually deleting objects using the imperative command is the recommended\napproach, as it is more explicit about what is being deleted, and less likely\nto result in the user deleting something unintentionally:\nkubectl delete -f <filename>"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "e91808897c710174fadad42191a2208f",
+  "source": "k8s_docs",
+  "title": "Set Up DRA in a Cluster — Optional: enable additional DRA API groups",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/set-up-dra-cluster/#enable-dra",
+  "text": "DRA overall is a stable feature in Kubernetes; however, aspects of it may still be alpha or beta.\nIf you want to use any aspect of DRA that is not yet stable,\nand the associated feature relies on a dedicated API kind,\nthen you must enable the associated alpha or beta API groups.\nSome older DRA drivers or workloads might still need the\nv1beta1 API from Kubernetes 1.30 or v1beta2 from Kubernetes 1.32.\nIf and only if support for those is desired, then enable the following\nAPI groups\n:\n* `resource.k8s.io/v1beta1`\n* `resource.k8s.io/v1beta2`\nAlpha features with separate API types need:\nresource.k8s.io/v1alpha3\nFor more information, see\nEnabling or disabling API groups\n."
+}

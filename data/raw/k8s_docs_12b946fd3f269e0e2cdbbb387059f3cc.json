@@ -1,0 +1,7 @@
+{
+  "id": "12b946fd3f269e0e2cdbbb387059f3cc",
+  "source": "k8s_docs",
+  "title": "Connect a Frontend to a Backend Using Services — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/connecting-frontend-backend/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

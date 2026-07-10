@@ -1,0 +1,7 @@
+{
+  "id": "01abd58541630284ffee1c34740e4c13",
+  "source": "k8s_docs",
+  "title": "Install Drivers and Allocate Devices with DRA — Install an example DRA driver",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/install-use-dra/#install-example-driver",
+  "text": "DRA drivers are third-party applications that run on each node of your cluster\nto interface with the hardware of that node and Kubernetes' built-in DRA\ncomponents. The installation procedure depends on the driver you choose, but is\nlikely deployed as a\nDaemonSet\nto all or a\nselection of the nodes (using\nselectors\nor similar mechanisms) in your cluster.\nCheck your driver's documentation for specific installation instructions, which\nmight include a Helm chart, a set of manifests, or other deployment tooling.\nThis tutorial uses an example driver which can be found in the\nkubernetes-sigs/dra-example-driver\nrepository to demonstrate driver installation. This example driver advertises\nsimulated GPUs to Kubernetes for your Pods to interact with."
+}

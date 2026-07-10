@@ -1,0 +1,7 @@
+{
+  "id": "0108e9da12e535a09246dfbf233a1ad6",
+  "source": "k8s_docs",
+  "title": "Certificates and Certificate Signing Requests — Custom signers",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#custom-signers",
+  "text": "You can also introduce your own custom signer, which should have a similar prefixed name but using your\nown domain name. For example, if you represent an open source project that uses the domain\nopen-fictional.example\nthen you might use\nissuer.open-fictional.example/service-mesh\nas a signer name.\nA custom signer uses the Kubernetes API to issue a certificate. See\nAPI-based signers\n."
+}

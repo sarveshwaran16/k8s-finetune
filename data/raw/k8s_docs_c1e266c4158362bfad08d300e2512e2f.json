@@ -1,0 +1,7 @@
+{
+  "id": "c1e266c4158362bfad08d300e2512e2f",
+  "source": "k8s_docs",
+  "title": "Kubernetes Component SLI Metrics — Using this data",
+  "source_url": "https://kubernetes.io/docs/reference/instrumentation/slis/#using-this-data",
+  "text": "The component SLIs metrics endpoint is intended to be scraped at a high frequency. Scraping\nat a high frequency means that you end up with greater granularity of the gauge's signal, which\ncan be then used to calculate SLOs. The\n/metrics/slis\nendpoint provides the raw data necessary\nto calculate an availability SLO for the respective Kubernetes component."
+}

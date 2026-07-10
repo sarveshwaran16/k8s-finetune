@@ -1,0 +1,7 @@
+{
+  "id": "eb044b2b038fed1eaf368d4656853baf",
+  "source": "k8s_docs",
+  "title": "Command line tool (kubectl) — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

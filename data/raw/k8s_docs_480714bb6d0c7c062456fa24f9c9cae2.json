@@ -1,0 +1,7 @@
+{
+  "id": "480714bb6d0c7c062456fa24f9c9cae2",
+  "source": "k8s_docs",
+  "title": "Configure a kubelet image credential provider — Installing Plugins on Nodes",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-credential-provider/#installing-plugins-on-nodes",
+  "text": "A credential provider plugin is an executable binary that will be run by the kubelet. Ensure that the plugin binary exists on\nevery node in your cluster and stored in a known directory. The directory will be required later when configuring kubelet flags.\n\nIn order to use this feature, the kubelet expects two flags to be set:\n--image-credential-provider-config\n- the path to the credential provider plugin config file.\n--image-credential-provider-bin-dir\n- the path to the directory where credential provider plugin binaries are located."
+}

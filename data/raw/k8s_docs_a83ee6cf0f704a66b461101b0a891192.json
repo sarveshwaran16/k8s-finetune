@@ -1,0 +1,7 @@
+{
+  "id": "a83ee6cf0f704a66b461101b0a891192",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:subfield",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-subfield",
+  "text": "Description:\nDeclares a validation for a subfield of a struct.\nStability Level:\nBeta\nArguments:\n<field-json-name>\n(string, required): The JSON name of the subfield.\nPayload:\n<validation-tag>\n: The tag to evaluate for the subfield.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:subfield(\"mySubfield\")=+k8s:required\nMyStruct\nMyStruct\n`json:\"MyStruct\"`\n}\ntype\nMyStruct\nstruct\n{\nMySubfield\nstring\n`json:\"mySubfield\"`\n}\nIn this example,\nMySubfield\nwithin\nMyStruct\nis required."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "5a4f2d83e836cbeea7c989f8530c4892",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — rolebinding",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-rolebinding-em-",
+  "text": "Create a role binding for user1, user2, and group1 using the admin cluster role\nkubectl create rolebinding admin\n--clusterrole\n=admin\n--user\n=user1\n--user\n=user2\n--group\n=group1\nCreate a role binding for a particular role or cluster role.\n\n$ kubectl create rolebinding NAME --clusterrole=NAME|--role=NAME [--user=username] [--group=groupname] [--serviceaccount=namespace:serviceaccountname] [--dry-run=server|client|none]"
+}

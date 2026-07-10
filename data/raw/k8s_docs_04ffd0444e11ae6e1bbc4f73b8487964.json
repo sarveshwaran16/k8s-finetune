@@ -1,0 +1,7 @@
+{
+  "id": "04ffd0444e11ae6e1bbc4f73b8487964",
+  "source": "k8s_docs",
+  "title": "ClusterRoleBinding — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/rbac/cluster-role-binding-v1/#get-read",
+  "text": "GET /apis/rbac.authorization.k8s.io/v1/clusterrolebindings/{name}\nName\nType\nDescription\nname\nstring\nname of the ClusterRoleBinding\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nClusterRoleBinding"
+}

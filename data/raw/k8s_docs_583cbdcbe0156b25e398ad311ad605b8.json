@@ -1,0 +1,7 @@
+{
+  "id": "583cbdcbe0156b25e398ad311ad605b8",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — ServiceAccount",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#serviceaccount",
+  "text": "Type\n: Mutating and Validating.\nThis admission controller implements automation for\nserviceAccounts\n.\nThe Kubernetes project strongly recommends enabling this admission controller.\nYou should enable this admission controller if you intend to make any use of Kubernetes\nServiceAccount\nobjects.\nTo enhance the security measures around Secrets, use separate namespaces to isolate access to mounted secrets."
+}

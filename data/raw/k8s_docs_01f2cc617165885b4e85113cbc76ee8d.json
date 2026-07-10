@@ -1,0 +1,7 @@
+{
+  "id": "01f2cc617165885b4e85113cbc76ee8d",
+  "source": "k8s_docs",
+  "title": "Autoscaling Workloads — Event driven Autoscaling",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/#event-driven-autoscaling",
+  "text": "It is also possible to scale workloads based on events, for example using the\nKubernetes Event Driven Autoscaler\n(\nKEDA\n)\n.\nKEDA is a CNCF-graduated project enabling you to scale your workloads based on the number\nof events to be processed, for example the amount of messages in a queue. There exists\na wide range of adapters for different event sources to choose from."
+}

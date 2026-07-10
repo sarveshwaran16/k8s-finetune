@@ -1,0 +1,7 @@
+{
+  "id": "aafa23585e3ebc3be9dda000b546df85",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:listMapKey",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-listMapKey",
+  "text": "Description:\nDeclares a named sub-field of a list's value-type to be part of the list-map key. This tag is required when\n+k8s:listType=map\nis used. Multiple\n+k8s:listMapKey\ntags can be used on a list-map to specify that it is keyed off of multiple fields.\nStability Level:\nStable\nPayload:\n<field-json-name>\n: The JSON name of the field to be used as the key.\nUsage Example:\n// +k8s:listType=map\n// +k8s:listMapKey=keyFieldOne\n// +k8s:listMapKey=keyFieldTwo\ntype\nMyList\n[]\nMyStruct\ntype\nMyStruct\nstruct\n{\nkeyFieldOne\nstring\n`json:\"keyFieldOne\"`\nkeyFieldTwo\nstring\n`json:\"keyFieldTwo\"`\nvalueField\nstring\n`json:\"valueField\"`\n}\nIn this example,\nlistMapKey\nis used to specify that the\nkeyField\nof\nMyStruct\nshould be used as the key for the list-map."
+}

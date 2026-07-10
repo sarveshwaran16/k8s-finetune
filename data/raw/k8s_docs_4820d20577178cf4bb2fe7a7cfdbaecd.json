@@ -1,0 +1,7 @@
+{
+  "id": "4820d20577178cf4bb2fe7a7cfdbaecd",
+  "source": "k8s_docs",
+  "title": "EndpointSlices — Management",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#management",
+  "text": "Most often, the control plane (specifically, the endpoint slice\ncontroller\n) creates and\nmanages EndpointSlice objects. There are a variety of other use cases for\nEndpointSlices, such as service mesh implementations, that could result in other\nentities or controllers managing additional sets of EndpointSlices.\nTo ensure that multiple entities can manage EndpointSlices without interfering\nwith each other, Kubernetes defines the\nlabel\nendpointslice.kubernetes.io/managed-by\n, which indicates the entity managing\nan EndpointSlice.\nThe endpoint slice controller sets\nendpointslice-controller.k8s.io\nas the value\nfor this label on all EndpointSlices it manages. Other entities managing\nEndpointSlices should also set a unique value for this label."
+}

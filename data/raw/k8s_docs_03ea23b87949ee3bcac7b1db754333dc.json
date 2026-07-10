@@ -1,0 +1,7 @@
+{
+  "id": "03ea23b87949ee3bcac7b1db754333dc",
+  "source": "k8s_docs",
+  "title": "ResourceQuota — ResourceQuotaStatus",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/resource-quota-v1/#ResourceQuotaStatus",
+  "text": "ResourceQuotaStatus defines the enforced hard limits and observed use.\nField\nDescription\nhard\nobject\nHard is the set of enforced hard limits for each named resource. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/\nused\nobject\nUsed is the current observed total usage of the resource in the namespace."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "df1c37ccf7ba30e65fc5f36cff637d09",
+  "source": "k8s_docs",
+  "title": "Configure Quotas for API Objects — Clean up",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/quota-api-object/#clean-up",
+  "text": "Delete your namespace:\nkubectl delete namespace quota-object-example\n\nConfigure Default Memory Requests and Limits for a Namespace\nConfigure Default CPU Requests and Limits for a Namespace\nConfigure Minimum and Maximum Memory Constraints for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nConfigure Memory and CPU Quotas for a Namespace\nConfigure a Pod Quota for a Namespace\nConfigure Default Memory Requests and Limits for a Namespace\nConfigure Default CPU Requests and Limits for a Namespace\nConfigure Minimum and Maximum Memory Constraints for a Namespace\nConfigure Minimum and Maximum CPU Constraints for a Namespace\nConfigure Memory and CPU Quotas for a Namespace\nConfigure a Pod Quota for a Namespace"
+}

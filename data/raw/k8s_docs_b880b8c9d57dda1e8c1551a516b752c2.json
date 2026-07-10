@@ -1,0 +1,7 @@
+{
+  "id": "b880b8c9d57dda1e8c1551a516b752c2",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_upload-config_kubeadm/#synopsis",
+  "text": "Upload the kubeadm ClusterConfiguration to a ConfigMap called kubeadm-config in the kube-system namespace. This enables correct configuration of system components and a seamless user experience when upgrading.\nAlternatively, you can use kubeadm config.\nkubeadm init phase upload-config kubeadm [flags]"
+}

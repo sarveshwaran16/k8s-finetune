@@ -1,0 +1,7 @@
+{
+  "id": "8194f17bf102acf6652871bb091fa5f6",
+  "source": "k8s_docs",
+  "title": "Hardening Guide - Authentication Mechanisms — TokenRequest API tokens",
+  "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/authentication-mechanisms/#tokenrequest-api-tokens",
+  "text": "The TokenRequest API is a useful tool for generating short-lived credentials for service\nauthentication to the API server or third-party systems. However, it is not generally recommended\nfor user authentication as there is no revocation method available, and distributing credentials\nto users in a secure manner can be challenging.\nWhen using TokenRequest tokens for service authentication, it is recommended to implement a short\nlifespan to reduce the impact of compromised tokens."
+}

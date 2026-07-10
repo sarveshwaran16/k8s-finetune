@@ -1,0 +1,7 @@
+{
+  "id": "4d4894c8a3bcb96dd2cc43e9d66ca09a",
+  "source": "k8s_docs",
+  "title": "Common Expression Language in Kubernetes — Estimated cost limits",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/cel/#estimated-cost-limits",
+  "text": "For some Kubernetes resources, the API server may also check if worst case\nestimated running time of CEL expressions would be prohibitively expensive to\nexecute. If so, the API server prevent the CEL expression from being written to\nAPI resources by rejecting create or update operations containing the CEL\nexpression to the API resources. This feature offers a stronger assurance that\nCEL expressions written to the API resource will be evaluated at runtime without\nexceeding the runtime cost budget."
+}

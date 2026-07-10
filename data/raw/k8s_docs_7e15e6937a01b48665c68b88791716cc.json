@@ -1,0 +1,7 @@
+{
+  "id": "7e15e6937a01b48665c68b88791716cc",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — Resource Types",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#resource-types",
+  "text": "CredentialProviderConfig\nImagePullIntent\nImagePulledRecord\nKubeletConfiguration\nSerializedNodeConfigSource\n\nAppears in:\nLoggingConfiguration\nFormatOptions contains options for the different logging formats.\nField\nDescription\ntext\n[Required]\nTextOptions\n[Alpha] Text contains options for logging format \"text\".\nOnly available when the LoggingAlphaOptions feature gate is enabled.\njson\n[Required]\nJSONOptions\n[Alpha] JSON contains options for logging format \"json\".\nOnly available when the LoggingAlphaOptions feature gate is enabled.\n[Alpha] Text contains options for logging format \"text\".\nOnly available when the LoggingAlphaOptions feature gate is enabled.\n[Alpha] JSON contains options for logging format \"json\".\nOnly available when the LoggingAlphaOptions feature gate is enabled."
+}

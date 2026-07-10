@@ -1,0 +1,7 @@
+{
+  "id": "06300bd3ebdc3a2fe9f0ad90e52c27e0",
+  "source": "k8s_docs",
+  "title": "kubeadm Configuration (v1beta3) — JoinControlPlane",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta3/#kubeadm-k8s-io-v1beta3-JoinControlPlane",
+  "text": "Appears in:\nJoinConfiguration\nJoinControlPlane contains elements describing an additional control plane instance\nto be deployed on the joining node.\nField\nDescription\nlocalAPIEndpoint\nAPIEndpoint\nlocalAPIEndpoint\nrepresents the endpoint of the API server instance to be\ndeployed on this node.\ncertificateKey\nstring\ncertificateKey\nis the key that is used for decryption of certificates after\nthey are downloaded from the secret upon joining a new control plane node.\nThe corresponding encryption key is in the InitConfiguration.\nThe certificate key is a hex encoded string that is an AES key of size 32 bytes.\nlocalAPIEndpoint\nrepresents the endpoint of the API server instance to be\ndeployed on this node.\ncertificateKey\nis the key that is used for decryption of certificates after\nthey are downloaded from the secret upon joining a new control plane node.\nThe corresponding encryption key is in the InitConfiguration.\nThe certificate key is a hex encoded string that is an AES key of size 32 bytes."
+}

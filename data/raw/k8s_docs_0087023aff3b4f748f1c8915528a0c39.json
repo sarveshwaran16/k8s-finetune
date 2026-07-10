@@ -1,0 +1,7 @@
+{
+  "id": "0087023aff3b4f748f1c8915528a0c39",
+  "source": "k8s_docs",
+  "title": "Configure a Pod to Use a ConfigMap — Use ConfigMap-defined environment variables in Pod commands",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#use-configmap-defined-environment-variables-in-pod-commands",
+  "text": "You can use ConfigMap-defined environment variables in the\ncommand\nand\nargs\nof a container\nusing the\n$(VAR_NAME)\nKubernetes substitution syntax.\nFor example, the following Pod manifest:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\ndapi-test-pod\nspec\n:\ncontainers\n:\n-\nname\n:\ntest-container\nimage\n:\nregistry.k8s.io/busybox:1.27.2\ncommand\n:\n[\n\"/bin/echo\"\n,\n\"$(SPECIAL_LEVEL_KEY) $(SPECIAL_TYPE_KEY)\"\n]\nenv\n:\n-\nname\n:\nSPECIAL_LEVEL_KEY\nvalueFrom\n:\nconfigMapKeyRef\n:\nname\n:\nspecial-config\nkey\n:\nSPECIAL_LEVEL\n-\nname\n:\nSPECIAL_TYPE_KEY\nvalueFrom\n:\nconfigMapKeyRef\n:\nname\n:\nspecial-config\nkey\n:\nSPECIAL_TYPE\nrestartPolicy\n:\nNever\nCreate that Pod, by running:\nkubectl create -f https://kubernetes.io/examples/pods/pod-configmap-env-var-valueFrom.yaml\nThat pod produces the following output from the\ntest-container\ncontainer:\nkubectl logs dapi-test-pod\nvery charm\nOnce you're happy to move on, delete that Pod:\nkubectl delete pod dapi-test-pod --now"
+}

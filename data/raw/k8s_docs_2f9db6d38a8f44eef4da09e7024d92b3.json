@@ -1,0 +1,7 @@
+{
+  "id": "2f9db6d38a8f44eef4da09e7024d92b3",
+  "source": "k8s_docs",
+  "title": "FlowSchema — GroupSubject",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/flowcontrol/flow-schema-v1/#GroupSubject",
+  "text": "GroupSubject holds detailed information for group-kind subject.\nField\nDescription\nname\n*\nstring\nname is the user group that matches, or \"*\" to match all user groups. See https://github.com/kubernetes/apiserver/blob/master/pkg/authentication/user/user.go for some well-known group names. Required.\n\nNonResourcePolicyRule is a predicate that matches non-resource requests according to their verb and the target non-resource URL. A NonResourcePolicyRule matches a request if and only if both (a) at least one member of verbs matches the request and (b) at least one member of nonResourceURLs matches the request.\nField\nDescription\nnonResourceURLs\n*\nstring array\n`nonResourceURLs` is a set of url prefixes that a user should have access to and may not be empty. For example: - \"/healthz\" is legal - \"/hea*\" is illegal - \"/hea\" is legal but matches nothing - \"/hea/*\" also matches nothing - \"/healthz/*\" matches all per-component health checks. \"*\" matches all non-resource urls. if it is present, it must be the only entry. Required.\nverbs\n*\nstring array\n`verbs` is a list of matching verbs and may not be empty. \"*\" matches all verbs. If it is present, it must be the only entry. Required."
+}

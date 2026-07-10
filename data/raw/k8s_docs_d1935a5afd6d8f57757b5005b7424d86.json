@@ -1,0 +1,7 @@
+{
+  "id": "d1935a5afd6d8f57757b5005b7424d86",
+  "source": "k8s_docs",
+  "title": "System Logs — Klog output",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-logs/#klog-output",
+  "text": "An example of the traditional klog native format:\nI1025 00:15:15.525108       1 httplog.go:79] GET /api/v1/namespaces/kube-system/pods/metrics-server-v0.3.1-57c75779f-9p8wg: (1.512ms) 200 [pod_nanny/v0.0.0 (linux/amd64) kubernetes/$Format 10.56.1.19:51756]\nThe message string may contain line breaks:\nI1025 00:15:15.525108       1 example.go:79] This is a message\nwhich has a line break."
+}

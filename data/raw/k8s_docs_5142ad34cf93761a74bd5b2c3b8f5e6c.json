@@ -1,0 +1,7 @@
+{
+  "id": "5142ad34cf93761a74bd5b2c3b8f5e6c",
+  "source": "k8s_docs",
+  "title": "CustomResourceDefinition — CustomResourceDefinitionCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiextensions/custom-resource-definition-v1/#CustomResourceDefinitionCondition",
+  "text": "CustomResourceDefinitionCondition contains details for the current condition of this pod.\nField\nDescription\nlastTransitionTime\nTime\nlastTransitionTime last time the condition transitioned from one status to another.\nmessage\nstring\nmessage is a human-readable message indicating details about last transition.\nobservedGeneration\ninteger\nobservedGeneration represents the .metadata.generation that the condition was set based upon. For instance, if .metadata.generation is currently 12, but the .status.conditions[x].observedGeneration is 9, the condition is out of date with respect to the current state of the instance.\nreason\nstring\nreason is a unique, one-word, CamelCase reason for the condition's last transition.\nstatus\n*\nstring\nstatus is the status of the condition. Can be True, False, Unknown.\ntype\n*\nstring\ntype is the type of the condition. Types include Established, NamesAccepted and Terminating."
+}

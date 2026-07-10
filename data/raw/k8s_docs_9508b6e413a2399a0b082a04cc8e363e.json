@@ -1,0 +1,7 @@
+{
+  "id": "9508b6e413a2399a0b082a04cc8e363e",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:maxLength",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-maxLength",
+  "text": "Description:\nIndicates that a string field has a limit on its length.\nStability Level:\nStable\nPayload:\n<non-negative integer>\n: This field must be no more than X characters long.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:maxLength=10\nMyString\nstring\n`json:\"myString\"`\n}\nIn this example,\nMyString\ncannot be longer than 10 characters."
+}

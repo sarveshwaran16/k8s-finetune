@@ -1,0 +1,7 @@
+{
+  "id": "14aa0591dad09fb5662a32170f7b7f9e",
+  "source": "k8s_docs",
+  "title": "Kubernetes Scheduler — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/#what-s-next",
+  "text": "Read about\nscheduler performance tuning\nRead about\nPod topology spread constraints\nRead the\nreference documentation\nfor kube-scheduler\nRead the\nkube-scheduler config (v1)\nreference\nLearn about\nconfiguring multiple schedulers\nLearn about\ntopology management policies\nLearn about\nPod Overhead\nLearn about scheduling of Pods that use volumes in:\nVolume Topology Support\nStorage Capacity Tracking\nNode-specific Volume Limits\nVolume Topology Support\nStorage Capacity Tracking\nNode-specific Volume Limits"
+}

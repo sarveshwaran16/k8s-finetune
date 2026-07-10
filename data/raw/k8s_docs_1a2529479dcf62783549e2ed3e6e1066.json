@@ -1,0 +1,7 @@
+{
+  "id": "1a2529479dcf62783549e2ed3e6e1066",
+  "source": "k8s_docs",
+  "title": "Service ClusterIP allocation — Example 3",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/#allocation-example-3",
+  "text": "This example uses the IP address range: 10.96.0.0/16 (CIDR notation) for the IP addresses\nof Services.\nRange Size: 2\n16\n- 2 = 65534\nBand Offset:\nmin(max(16, 65536/16), 256)\n=\nmin(4096, 256)\n= 256\nStatic band start: 10.96.0.1\nStatic band ends: 10.96.1.0\nRange end: 10.96.255.254\npie showData\n    title 10.96.0.0/16\n    \"Static\" : 256\n    \"Dynamic\" : 65278"
+}

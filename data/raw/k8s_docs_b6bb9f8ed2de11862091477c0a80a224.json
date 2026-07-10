@@ -1,0 +1,7 @@
+{
+  "id": "b6bb9f8ed2de11862091477c0a80a224",
+  "source": "k8s_docs",
+  "title": "Secrets — Using Secrets with static Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/secret/#restriction-static-pod",
+  "text": "You cannot use ConfigMaps or Secrets with\nstatic Pods\n.\n\nKubernetes lets you mark specific Secrets (and ConfigMaps) as\nimmutable\n.\nPreventing changes to the data of an existing Secret has the following benefits:\nprotects you from accidental (or unwanted) updates that could cause applications outages\n(for clusters that extensively use Secrets - at least tens of thousands of unique Secret\nto Pod mounts), switching to immutable Secrets improves the performance of your cluster\nby significantly reducing load on kube-apiserver. The kubelet does not need to maintain\na [watch] on any Secrets that are marked as immutable."
+}

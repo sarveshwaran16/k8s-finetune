@@ -1,0 +1,7 @@
+{
+  "id": "f0d47153cab765c7b4005ad10a029d63",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:ifDisabled",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-ifDisabled",
+  "text": "Description:\nDeclares a validation that only applies when an option is disabled.\nStability Level:\nAlpha\nArguments:\n<option>\n(string, required): The name of the option.\nPayload:\n<validation-tag>\n: This validation tag will be evaluated only if the validation option is disabled.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:ifDisabled(\"my-feature\")=+k8s:required\nMyField\nstring\n`json:\"myField\"`\n}\nIn this example,\nMyField\nis required only if the \"my-feature\" option is disabled."
+}

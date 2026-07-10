@@ -1,0 +1,7 @@
+{
+  "id": "fc4ea2a4353ed8d798f4dda9fb508b56",
+  "source": "k8s_docs",
+  "title": "Horizontal Pod Autoscaling — Configurable scaling behavior",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#configurable-scaling-behavior",
+  "text": "(the\nautoscaling/v2beta2\nAPI version previously provided this ability as a beta feature)\nIf you use the\nv2\nHorizontalPodAutoscaler API, you can use the\nbehavior\nfield\n(see the\nAPI reference\n)\nto configure separate scale-up and scale-down behaviors.\nYou specify these behaviors by setting\nscaleUp\nand / or\nscaleDown\nunder the\nbehavior\nfield.\nScaling policies let you control the rate of change of replicas while scaling.\nAlso two settings can be used to prevent\nflapping\n: you can specify a\nstabilization window\nfor smoothing replica counts, and a tolerance to ignore\nminor metric fluctuations below a specified threshold."
+}

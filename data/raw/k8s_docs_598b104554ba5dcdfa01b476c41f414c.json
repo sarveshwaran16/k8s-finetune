@@ -1,0 +1,7 @@
+{
+  "id": "598b104554ba5dcdfa01b476c41f414c",
+  "source": "k8s_docs",
+  "title": "Set Kubelet Parameters Via A Configuration File — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/#what-s-next",
+  "text": "Learn more about kubelet configuration by checking the\nKubeletConfiguration\nreference.\nLearn more about kubelet configuration merging in the\nreference document\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

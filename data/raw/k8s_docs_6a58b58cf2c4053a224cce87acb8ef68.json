@@ -1,0 +1,7 @@
+{
+  "id": "6a58b58cf2c4053a224cce87acb8ef68",
+  "source": "k8s_docs",
+  "title": "DeviceClass — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/device-class-v1/#get-read",
+  "text": "GET /apis/resource.k8s.io/v1/deviceclasses/{name}\nName\nType\nDescription\nname\nstring\nname of the DeviceClass\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nDeviceClass"
+}

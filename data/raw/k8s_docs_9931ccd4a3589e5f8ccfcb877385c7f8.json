@@ -1,0 +1,7 @@
+{
+  "id": "9931ccd4a3589e5f8ccfcb877385c7f8",
+  "source": "k8s_docs",
+  "title": "kubectl create job — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_job/#synopsis",
+  "text": "Create a job with the specified name.\nkubectl create job NAME --image=image [--from=cronjob/name] -- [COMMAND] [args...]\n\n# Create a job\n  kubectl create job my-job --image=busybox\n  \n  # Create a job with a command\n  kubectl create job my-job --image=busybox -- date\n  \n  # Create a job from a cron job named \"a-cronjob\"\n  kubectl create job test-job --from=cronjob/a-cronjob"
+}

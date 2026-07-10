@@ -1,0 +1,7 @@
+{
+  "id": "224e0f2cd91a6f7e70ba0cdfd345082d",
+  "source": "k8s_docs",
+  "title": "Guide for Running Windows Containers in Kubernetes — Capturing logs from workloads",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/user-guide/#capturing-logs-from-workloads",
+  "text": "Logs are an important element of observability; they enable users to gain insights\ninto the operational aspect of workloads and are a key ingredient to troubleshooting issues.\nBecause Windows containers and workloads inside Windows containers behave differently from Linux containers,\nusers had a hard time collecting logs, limiting operational visibility.\nWindows workloads for example are usually configured to log to ETW (Event Tracing for Windows)\nor push entries to the application event log.\nLogMonitor\n, an open source tool by Microsoft,\nis the recommended way to monitor configured log sources inside a Windows container.\nLogMonitor supports monitoring event logs, ETW providers, and custom application logs,\npiping them to STDOUT for consumption by\nkubectl logs <pod>\n.\nFollow the instructions in the LogMonitor GitHub page to copy its binaries and configuration files\nto all your containers and add the necessary entrypoints for LogMonitor to push your logs to STDOUT."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "4c3d07366f6d475de332a48f80cb29d5",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — batch.kubernetes.io/controller-uid",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#batchkubernetesio-controller-uid",
+  "text": "Type: Label\nExample:\nbatch.kubernetes.io/controller-uid: \"$UID\"\nUsed on: Jobs and Pods controlled by Jobs\nThis label is used as a programmatic way to get all Pods corresponding to a Job.\nThe\ncontroller-uid\nis a unique identifier that gets set in the\nselector\nfield so the Job\ncontroller can get all the corresponding Pods."
+}

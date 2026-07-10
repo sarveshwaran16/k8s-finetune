@@ -1,0 +1,7 @@
+{
+  "id": "03d2f008fe6a69e5b3cc69b41808ffef",
+  "source": "k8s_docs",
+  "title": "Control CPU Management Policies on the Node — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cpu-management-policies/#before-you-begin",
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYour Kubernetes server must be at or later than version v1.26.\nTo check the version, enter\nkubectl version\n.\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nTo check the version, enter\nkubectl version\n.\nIf you are running an older version of Kubernetes, please look at the documentation for the version you are actually running."
+}

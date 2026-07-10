@@ -1,0 +1,7 @@
+{
+  "id": "23452b4108dabfd4ebbc523e1d8a054c",
+  "source": "k8s_docs",
+  "title": "Perform a Rollback on a DaemonSet — Step 2: Roll back to a specific revision",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/rollback-daemon-set/#step-2-roll-back-to-a-specific-revision",
+  "text": "# Specify the revision number you get from Step 1 in --to-revision\nkubectl rollout undo daemonset <daemonset-name> --to-revision\n=\n<revision>\nIf it succeeds, the command returns:\ndaemonset \"<daemonset-name>\" rolled back\n\nkubectl rollout undo daemonset\ntells the server to start rolling back the\nDaemonSet. The real rollback is done asynchronously inside the cluster\ncontrol plane\n.\nTo watch the progress of the rollback:\nkubectl rollout status ds/<daemonset-name>\nWhen the rollback is complete, the output is similar to:\ndaemonset \"<daemonset-name>\" successfully rolled out"
+}

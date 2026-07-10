@@ -1,0 +1,7 @@
+{
+  "id": "6d393319d0eadc3c6181cab9826dfcf9",
+  "source": "k8s_docs",
+  "title": "Enable Or Disable Feature Gates — Check via /flagz endpoint",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-feature-gates/#check-via-flagz-endpoint",
+  "text": "If you have access to a component's debugging endpoints, and the\nComponentFlagz\nfeature gate is enabled for that component, you can inspect the command-line flags\nthat were used to start the component by visiting the\n/flagz\nendpoint. Feature\ngates configured using command-line flags appear in this output.\nThe\n/flagz\nendpoint is part of Kubernetes\nz-pages\n, which provide human-readable\nruntime debugging information for core components.\nFor more information, see the\nz-pages documentation\n."
+}

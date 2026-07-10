@@ -1,0 +1,7 @@
+{
+  "id": "d5bfcc724279097fcb2b9d8abd75b2b1",
+  "source": "k8s_docs",
+  "title": "Pod — ContainerRestartRuleOnExitCodes",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ContainerRestartRuleOnExitCodes",
+  "text": "ContainerRestartRuleOnExitCodes describes the condition for handling an exited container based on its exit codes.\nField\nDescription\noperator\n*\nstring\nRepresents the relationship between the container exit code(s) and the specified values. Possible values are: - In: the requirement is satisfied if the container exit code is in the set of specified values. - NotIn: the requirement is satisfied if the container exit code is not in the set of specified values.\nvalues\ninteger array\nSpecifies the set of values to check for container exit codes. At most 255 elements are allowed."
+}

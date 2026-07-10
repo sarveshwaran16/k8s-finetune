@@ -1,0 +1,7 @@
+{
+  "id": "250000bab1281c8cd0e743655adda2f4",
+  "source": "k8s_docs",
+  "title": "Automatic Cleanup for Finished Jobs — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/#what-s-next",
+  "text": "Read\nClean up Jobs automatically\nRefer to the\nKubernetes Enhancement Proposal\n(KEP) for adding this mechanism.\nRead\nClean up Jobs automatically\nRefer to the\nKubernetes Enhancement Proposal\n(KEP) for adding this mechanism.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

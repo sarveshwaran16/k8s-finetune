@@ -1,0 +1,7 @@
+{
+  "id": "e4519532727e89c2e91a1d311fcb420f",
+  "source": "k8s_docs",
+  "title": "Safely Drain a Node — Draining multiple nodes in parallel",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/#draining-multiple-nodes-in-parallel",
+  "text": "The\nkubectl drain\ncommand should only be issued to a single node at a\ntime. However, you can run multiple\nkubectl drain\ncommands for\ndifferent nodes in parallel, in different terminals or in the\nbackground. Multiple drain commands running concurrently will still\nrespect the PodDisruptionBudget you specify.\nFor example, if you have a StatefulSet with three replicas and have\nset a PodDisruptionBudget for that set specifying\nminAvailable: 2\n,\nkubectl drain\nonly evicts a pod from the StatefulSet if all three\nreplicas pods are\nhealthy\n;\nif then you issue multiple drain commands in parallel,\nKubernetes respects the PodDisruptionBudget and ensures that\nonly 1 (calculated as\nreplicas - minAvailable\n) Pod is unavailable\nat any given time. Any drains that would cause the number of\nhealthy\nreplicas to fall below the specified budget are blocked."
+}

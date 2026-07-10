@@ -1,0 +1,7 @@
+{
+  "id": "e961f75605cc3000d2fb09cee2566c8b",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubectl.kubernetes.io/default-container",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubectl-kubernetes-io-default-container",
+  "text": "Type: Annotation\nExample:\nkubectl.kubernetes.io/default-container: \"front-end-app\"\nThe value of the annotation is the container name that is default for this Pod.\nFor example,\nkubectl logs\nor\nkubectl exec\nwithout\n-c\nor\n--container\nflag\nwill use this default container.\n\nType: Annotation\nExample:\nkubectl.kubernetes.io/default-logs-container: \"front-end-app\"\nThe value of the annotation is the container name that is the default logging container for this\nPod. For example,\nkubectl logs\nwithout\n-c\nor\n--container\nflag will use this default\ncontainer."
+}

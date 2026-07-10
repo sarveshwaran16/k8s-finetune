@@ -1,0 +1,7 @@
+{
+  "id": "fc41ec76a408c808284180981da5e431",
+  "source": "k8s_docs",
+  "title": "Common Expression Language in Kubernetes — Kubernetes URL library",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/cel/#kubernetes-url-library",
+  "text": "To make it easier and safer to process URLs, the following functions have been added:\nisURL(string)\nchecks if a string is a valid URL according to the\nGo's net/url\npackage. The string must be an\nabsolute URL.\nurl(string) URL\nconverts a string to a URL or results in an error if the\nstring is not a valid URL.\nOnce parsed via the\nurl\nfunction, the resulting URL object has\ngetScheme\n,\ngetHost\n,\ngetHostname\n,\ngetPort\n,\ngetEscapedPath\nand\ngetQuery\naccessors.\nExamples:\nExamples of CEL expressions using URL library functions\nCEL Expression\nPurpose\nurl('https://example.com:80/').getHost()\nGets the 'example.com:80' host part of the URL\nurl('https://example.com/path with spaces/').getEscapedPath()\nReturns '/path%20with%20spaces/'\nSee the\nKubernetes URL library\ngodoc for more information."
+}

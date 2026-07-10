@@ -1,0 +1,7 @@
+{
+  "id": "467d989e8e471e0c80c18fdc81e7342d",
+  "source": "k8s_docs",
+  "title": "kubeconfig (v1) — Preferences",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeconfig.v1/#Preferences",
+  "text": "Appears in:\nConfig\nDeprecated: this structure is deprecated in v1.34. It is not used by any of the Kubernetes components.\nField\nDescription\ncolors\nbool\nNo description provided.\nextensions\n[]NamedExtension\nExtensions holds additional information. This is useful for extenders so that reads and writes don't clobber unknown fields\nExtensions holds additional information. This is useful for extenders so that reads and writes don't clobber unknown fields"
+}

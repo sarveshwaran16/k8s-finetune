@@ -1,0 +1,7 @@
+{
+  "id": "6ef388c7004dc932c1c271ea6378c71d",
+  "source": "k8s_docs",
+  "title": "Windows containers in Kubernetes — Hardware recommendations and considerations",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/intro/#windows-hardware-recommendations",
+  "text": "64-bit processor 4 CPU cores or more, capable of supporting virtualization\n8GB or more of RAM\n50GB or more of free disk space\nRefer to\nHardware requirements for Windows Server Microsoft documentation\nfor the most up-to-date information on minimum hardware requirements. For guidance on deciding on resources for\nproduction worker nodes refer to\nProduction worker nodes Kubernetes documentation\n.\nTo optimize system resources, if a graphical user interface is not required,\nit may be preferable to use a Windows Server OS installation that excludes\nthe\nWindows Desktop Experience\ninstallation option, as this configuration typically frees up more system\nresources.\nIn assessing disk space for Windows worker nodes, take note that Windows container images are typically larger than\nLinux container images, with container image sizes ranging\nfrom\n300MB to over 10GB\nfor a single image. Additionally, take note that the\nC:\ndrive in Windows containers represents a virtual free size of\n20GB by default, which is not the actual consumed space, but rather the disk size for which a single container can grow\nto occupy when using local storage on the host.\nSee\nContainers on Windows - Container Storage Documentation\nfor more detail."
+}

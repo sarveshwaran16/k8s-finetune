@@ -1,0 +1,7 @@
+{
+  "id": "fb79fdd740a113ce3d474a4a4cd3b56a",
+  "source": "k8s_docs",
+  "title": "Feature Gates — Feature gates in Kubernetes v1.36",
+  "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/#list-of-gates",
+  "text": "The following tables are a summary of the feature gates that you can set on\ndifferent Kubernetes components.\nThe \"Since\" column contains the Kubernetes release when a feature is introduced\nor its release stage is changed.\nThe \"Until\" column, if not empty, contains the last Kubernetes release in which\nyou can still use a feature gate.\nIf a feature is in the Alpha or Beta state, you can find the feature listed\nin the\nAlpha/Beta feature gate table\n.\nIf a feature is stable you can find all stages for that feature listed in the\nGraduated/Deprecated feature gate table\n.\nThe\nGraduated/Deprecated feature gate table\nalso lists deprecated and withdrawn features."
+}

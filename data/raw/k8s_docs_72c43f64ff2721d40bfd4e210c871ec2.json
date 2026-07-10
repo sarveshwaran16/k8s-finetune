@@ -1,0 +1,7 @@
+{
+  "id": "72c43f64ff2721d40bfd4e210c871ec2",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — MemorySwapConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-MemorySwapConfiguration",
+  "text": "Appears in:\nKubeletConfiguration\nField\nDescription\nswapBehavior\nstring\nswapBehavior configures swap memory available to container workloads. May be one of\n\"\", \"NoSwap\": workloads can not use swap, default option.\n\"LimitedSwap\": workload swap usage is limited. The swap limit is proportionate to the container's memory request.\nswapBehavior configures swap memory available to container workloads. May be one of\n\"\", \"NoSwap\": workloads can not use swap, default option.\n\"LimitedSwap\": workload swap usage is limited. The swap limit is proportionate to the container's memory request."
+}

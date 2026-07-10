@@ -1,0 +1,7 @@
+{
+  "id": "aff9eef4123a4e50001cc110ca9305d5",
+  "source": "k8s_docs",
+  "title": "Update a Deployment Without Downtime — Updating only the container image",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/#updating-only-the-container-image",
+  "text": "To update the container image without editing a manifest file, use\nkubectl set image\n:\nkubectl\nset\nimage deployment/nginx-deployment\nnginx\n=\nnginx:1.16.1\nThe output is similar to:\ndeployment.apps/nginx-deployment image updated\nVerify the image was updated:\nkubectl get deployment nginx-deployment -o\njsonpath\n=\n'{.spec.template.spec.containers[0].image}'\nThe output is similar to:\nnginx:1.16.1"
+}

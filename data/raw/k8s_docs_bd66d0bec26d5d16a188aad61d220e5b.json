@@ -1,0 +1,7 @@
+{
+  "id": "bd66d0bec26d5d16a188aad61d220e5b",
+  "source": "k8s_docs",
+  "title": "Encrypting Confidential Data at Rest — Reconfigure other control plane hosts",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#api-server-config-update-more",
+  "text": "If you have multiple API servers in your cluster, you should deploy the\nchanges in turn to each API server.\nFor cluster configurations with two or more control plane nodes, the encryption configuration\nshould be identical across each control plane node.\nIf there is a difference in the encryption provider configuration between control plane\nnodes, this difference may mean that the kube-apiserver can't decrypt data.\nWhen you are planning to update the encryption configuration of your cluster, plan this\nso that the API servers in your control plane can always decrypt the stored data\n(even part way through rolling out the change).\nMake sure that you use the\nsame\nencryption configuration on each\ncontrol plane host."
+}

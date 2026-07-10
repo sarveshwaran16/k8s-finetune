@@ -1,0 +1,7 @@
+{
+  "id": "3517570d7cfc463f5cca4fc0defa8588",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kube-scheduler-simulator.sigs.k8s.io/postfilter-result",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kube-scheduler-simulator-sigs-k8s-io-postfilter-result",
+  "text": "Type: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/postfilter-result: '{\"DefaultPreemption\":\"success\"}'\nUsed on: Pod\nThis annotation records the result of postfilter scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n.\n\nType: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/prebind-result: '{\"VolumeBinding\":\"success\"}'\nUsed on: Pod\nThis annotation records the result of prebind scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n."
+}

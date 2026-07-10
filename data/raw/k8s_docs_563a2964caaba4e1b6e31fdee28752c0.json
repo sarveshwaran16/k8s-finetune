@@ -1,0 +1,7 @@
+{
+  "id": "563a2964caaba4e1b6e31fdee28752c0",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1) — TracingConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-TracingConfiguration",
+  "text": "TracingConfiguration provides versioned configuration for tracing clients.\nField\nDescription\napiVersion\nstring\napiserver.config.k8s.io/v1\nkind\nstring\nTracingConfiguration\nTracingConfiguration\n[Required]\nTracingConfiguration\n(Members of\nTracingConfiguration\nare embedded into this type.)\nEmbed the component config tracing configuration struct\nEmbed the component config tracing configuration struct"
+}

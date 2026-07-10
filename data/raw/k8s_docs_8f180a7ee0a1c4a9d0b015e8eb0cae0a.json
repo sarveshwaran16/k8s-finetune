@@ -1,0 +1,7 @@
+{
+  "id": "8f180a7ee0a1c4a9d0b015e8eb0cae0a",
+  "source": "k8s_docs",
+  "title": "Upgrading kubeadm clusters — Uncordon the node",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/#uncordon-the-node",
+  "text": "Bring the node back online by marking it schedulable:\n# replace <node-to-uncordon> with the name of your node\nkubectl uncordon <node-to-uncordon>\n\nThe upgrade procedure on worker nodes should be executed one node at a time or few nodes at a time,\nwithout compromising the minimum required capacity for running your workloads.\nThe following pages show how to upgrade Linux and Windows worker nodes:\nUpgrade Linux nodes\nUpgrade Windows nodes"
+}

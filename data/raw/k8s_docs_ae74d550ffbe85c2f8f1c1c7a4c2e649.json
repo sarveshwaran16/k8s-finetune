@@ -1,0 +1,7 @@
+{
+  "id": "ae74d550ffbe85c2f8f1c1c7a4c2e649",
+  "source": "k8s_docs",
+  "title": "Running Kubernetes Node Components as a Non-root User — Manually deploy a node that runs the kubelet in a user namespace",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/#userns-the-hard-way",
+  "text": "This section provides hints for running Kubernetes in a user namespace manually.\n\nThe first step is to create a\nuser namespace\n.\nIf you are trying to run Kubernetes in a user-namespaced container such as\nRootless Docker/Podman or LXC/LXD, you are all set, and you can go to the next subsection.\nOtherwise you have to create a user namespace by yourself, by calling\nunshare(2)\nwith\nCLONE_NEWUSER\n.\nA user namespace can be also unshared by using command line tools such as:\nunshare(1)\nRootlessKit\nbecome-root\nAfter unsharing the user namespace, you will also have to unshare other namespaces such as mount namespace.\nYou do\nnot\nneed to call\nchroot()\nnor\npivot_root()\nafter unsharing the mount namespace,\nhowever, you have to mount writable filesystems on several directories\nin\nthe namespace.\nAt least, the following directories need to be writable\nin\nthe namespace (not\noutside\nthe namespace):\n/etc\n/run\n/var/logs\n/var/lib/kubelet\n/var/lib/cni\n/var/lib/containerd\n(for containerd)\n/var/lib/containers\n(for CRI-O)"
+}

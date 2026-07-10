@@ -1,0 +1,7 @@
+{
+  "id": "d5d3843a020197243827ba63168ec635",
+  "source": "k8s_docs",
+  "title": "Configure Certificate Rotation for the Kubelet — Enabling client certificate rotation",
+  "source_url": "https://kubernetes.io/docs/tasks/tls/certificate-rotation/#enabling-client-certificate-rotation",
+  "text": "The\nkubelet\nprocess accepts an argument\n--rotate-certificates\nthat controls\nif the kubelet will automatically request a new certificate as the expiration of\nthe certificate currently in use approaches.\nThe\nkube-controller-manager\nprocess accepts an argument\n--cluster-signing-duration\n(\n--experimental-cluster-signing-duration\nprior to 1.19)\nthat controls how long certificates will be issued for."
+}

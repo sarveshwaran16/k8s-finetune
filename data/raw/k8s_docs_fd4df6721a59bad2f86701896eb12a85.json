@@ -1,0 +1,7 @@
+{
+  "id": "fd4df6721a59bad2f86701896eb12a85",
+  "source": "k8s_docs",
+  "title": "kube-proxy Configuration (v1alpha1) — DetectLocalConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-proxy-config.v1alpha1/#kubeproxy-config-k8s-io-v1alpha1-DetectLocalConfiguration",
+  "text": "Appears in:\nKubeProxyConfiguration\nDetectLocalConfiguration contains optional settings related to DetectLocalMode option\nField\nDescription\nbridgeInterface\n[Required]\nstring\nbridgeInterface is a bridge interface name. When DetectLocalMode is set to\nLocalModeBridgeInterface, kube-proxy will consider traffic to be local if\nit originates from this bridge.\ninterfaceNamePrefix\n[Required]\nstring\ninterfaceNamePrefix is an interface name prefix. When DetectLocalMode is set to\nLocalModeInterfaceNamePrefix, kube-proxy will consider traffic to be local if\nit originates from any interface whose name begins with this prefix.\nbridgeInterface is a bridge interface name. When DetectLocalMode is set to\nLocalModeBridgeInterface, kube-proxy will consider traffic to be local if\nit originates from this bridge.\ninterfaceNamePrefix is an interface name prefix. When DetectLocalMode is set to\nLocalModeInterfaceNamePrefix, kube-proxy will consider traffic to be local if\nit originates from any interface whose name begins with this prefix."
+}

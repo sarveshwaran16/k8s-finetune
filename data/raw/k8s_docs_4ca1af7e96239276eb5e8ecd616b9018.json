@@ -1,0 +1,7 @@
+{
+  "id": "4ca1af7e96239276eb5e8ecd616b9018",
+  "source": "k8s_docs",
+  "title": "Downward API — Information available viaresourceFieldRef",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/downward-api/#downwardapi-resourceFieldRef",
+  "text": "These container-level fields allow you to provide information about\nrequests and limits\nfor resources such as CPU and memory.\nContainer CPU and memory resources can be resized while the container is running.\nIf this happens, a downward API volume will be updated,\nbut environment variables will not be updated unless the container restarts.\nSee\nResize CPU and Memory Resources assigned to Containers\nfor more details.\nIf CPU and memory limits are not specified for a container, and you use the\ndownward API to try to expose that information, then the\nkubelet defaults to exposing the maximum allocatable value for CPU and memory\nbased on the\nnode allocatable\ncalculation."
+}

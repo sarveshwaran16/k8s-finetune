@@ -1,0 +1,7 @@
+{
+  "id": "f47857c12b5fb3cce8d08617942b3fda",
+  "source": "k8s_docs",
+  "title": "kubeadm upgrade — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade/#synopsis",
+  "text": "Check which versions are available to upgrade to and validate whether your current cluster is upgradeable. This command can only run on the control plane nodes where the kubeconfig file \"admin.conf\" exists. To skip the internet check, pass in the optional [version] parameter.\nkubeadm upgrade plan [version] [flags]"
+}

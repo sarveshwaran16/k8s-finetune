@@ -1,0 +1,7 @@
+{
+  "id": "a38135108639d699b728ece31280a13c",
+  "source": "k8s_docs",
+  "title": "PriorityLevelConfiguration — LimitResponse",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/flowcontrol/priority-level-configuration-v1/#LimitResponse",
+  "text": "LimitResponse defines how to handle requests that can not be executed right now.\nField\nDescription\nqueuing\nQueuingConfiguration\n`queuing` holds the configuration parameters for queuing. This field may be non-empty only if `type` is `\"Queue\"`.\ntype\n*\nstring\n`type` is \"Queue\" or \"Reject\". \"Queue\" means that requests that can not be executed upon arrival are held in a queue until they can be executed or a queuing limit is reached. \"Reject\" means that requests that can not be executed upon arrival are rejected. Required."
+}

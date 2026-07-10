@@ -1,0 +1,7 @@
+{
+  "id": "27733774fd856c386a530329d39d08b7",
+  "source": "k8s_docs",
+  "title": "Upgrading Linux nodes — Call \"kubeadm upgrade\"",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/upgrading-linux-nodes/#call-kubeadm-upgrade",
+  "text": "For worker nodes this upgrades the local kubelet configuration:\nsudo kubeadm upgrade node\n\nPrepare the node for maintenance by marking it unschedulable and evicting the workloads:\n# execute this command on a control plane node\n# replace <node-to-drain> with the name of your node you are draining\nkubectl drain <node-to-drain> --ignore-daemonsets"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "180a23097f39cfd342da723f5996eef6",
+  "source": "k8s_docs",
+  "title": "Windows containers in Kubernetes — Command line options for the kubelet",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/intro/#kubelet-compatibility",
+  "text": "Some kubelet command line options behave differently on Windows, as described below:\nThe\n--windows-priorityclass\nlets you set the scheduling priority of the kubelet process\n(see\nCPU resource management\n)\nThe\n--kube-reserved\n,\n--system-reserved\n, and\n--eviction-hard\nflags update\nNodeAllocatable\nEviction by using\n--enforce-node-allocable\nis not implemented\nWhen running on a Windows node the kubelet does not have memory or CPU\nrestrictions.\n--kube-reserved\nand\n--system-reserved\nonly subtract from\nNodeAllocatable\nand do not guarantee resource provided for workloads.\nSee\nResource Management for Windows nodes\nfor more information.\nThe\nPIDPressure\nCondition is not implemented\nThe kubelet does not take OOM eviction actions"
+}

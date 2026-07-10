@@ -1,0 +1,7 @@
+{
+  "id": "b21cfdefef4729d04ef89eca97dc3bd7",
+  "source": "k8s_docs",
+  "title": "Container Lifecycle Hooks — Hook handler implementations",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#hook-handler-implementations",
+  "text": "Containers can access a hook by implementing and registering a handler for that hook.\nThere are three types of hook handlers that can be implemented for Containers:\nExec - Executes a specific command, such as\npre-stop.sh\n, inside the cgroups and namespaces of the Container.\nResources consumed by the command are counted against the Container.\nHTTP - Executes an HTTP request against a specific endpoint on the Container.\nSleep - Pauses the container for a specified duration."
+}

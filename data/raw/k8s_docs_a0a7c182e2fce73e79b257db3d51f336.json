@@ -1,0 +1,7 @@
+{
+  "id": "a0a7c182e2fce73e79b257db3d51f336",
+  "source": "k8s_docs",
+  "title": "Resource Quotas — Quota for extended resources",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#quota-for-extended-resources",
+  "text": "In addition to the resources mentioned above, in release 1.10, quota support for\nextended resources\nis added.\nAs overcommit is not allowed for extended resources, it makes no sense to specify both\nrequests\nand\nlimits\nfor the same extended resource in a quota. So for extended resources, only quota items\nwith prefix\nrequests.\nare allowed.\nTake the GPU resource as an example, if the resource name is\nnvidia.com/gpu\n, and you want to\nlimit the total number of GPUs requested in a namespace to 4, you can define a quota as follows:\nrequests.nvidia.com/gpu: 4\nSee\nViewing and Setting Quotas\nfor more details."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ff290bd534de111f0525c164688c1031",
+  "source": "k8s_docs",
+  "title": "Pod Security Admission — Metrics",
+  "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-admission/#metrics",
+  "text": "Here are the Prometheus metrics exposed by kube-apiserver:\npod_security_errors_total\n: This metric indicates the number of errors preventing normal evaluation.\nNon-fatal errors may result in the latest restricted profile being used for enforcement.\npod_security_evaluations_total\n: This metric indicates the number of policy evaluations that have occurred,\nnot counting ignored or exempt requests during exporting.\npod_security_exemptions_total\n: This metric indicates the number of exempt requests, not counting ignored\nor out of scope requests."
+}

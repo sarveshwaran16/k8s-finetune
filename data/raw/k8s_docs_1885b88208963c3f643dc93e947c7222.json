@@ -1,0 +1,7 @@
+{
+  "id": "1885b88208963c3f643dc93e947c7222",
+  "source": "k8s_docs",
+  "title": "Labels and Selectors — LIST and WATCH filtering",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#list-and-watch-filtering",
+  "text": "For\nlist\nand\nwatch\noperations, you can specify label selectors to filter the sets of objects\nreturned; you specify the filter using a query parameter.\n(To learn in detail about watches in Kubernetes, read\nefficient detection of changes\n).\nBoth requirements are permitted\n(presented here as they would appear in a URL query string):\nequality-based\nrequirements:\n?labelSelector=environment%3Dproduction,tier%3Dfrontend\nset-based\nrequirements:\n?labelSelector=environment+in+%28production%2Cqa%29%2Ctier+in+%28frontend%29\nBoth label selector styles can be used to list or watch resources via a REST client.\nFor example, targeting\napiserver\nwith\nkubectl\nand using\nequality-based\none may write:\nkubectl get pods -l\nenvironment\n=\nproduction,tier\n=\nfrontend\nor using\nset-based\nrequirements:\nkubectl get pods -l\n'environment in (production),tier in (frontend)'\nAs already mentioned\nset-based\nrequirements are more expressive.\nFor instance, they can implement the\nOR\noperator on values:\nkubectl get pods -l\n'environment in (production, qa)'\nor restricting negative matching via\nnotin\noperator:\nkubectl get pods -l\n'environment,environment notin (frontend)'"
+}

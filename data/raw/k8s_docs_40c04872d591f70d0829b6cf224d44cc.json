@@ -1,0 +1,7 @@
+{
+  "id": "40c04872d591f70d0829b6cf224d44cc",
+  "source": "k8s_docs",
+  "title": "The Kubernetes API — API Extension",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/#api-extension",
+  "text": "The Kubernetes API can be extended in one of two ways:\nCustom resources\nlet you declaratively define how the API server should provide your chosen resource API.\nYou can also extend the Kubernetes API by implementing an\naggregation layer\n.\n\nLearn how to extend the Kubernetes API by adding your own\nCustomResourceDefinition\n.\nControlling Access To The Kubernetes API\ndescribes\nhow the cluster manages authentication and authorization for API access.\nLearn about API endpoints, resource types and samples by reading\nAPI Reference\n.\nLearn about what constitutes a compatible change, and how to change the API, from\nAPI changes\n."
+}

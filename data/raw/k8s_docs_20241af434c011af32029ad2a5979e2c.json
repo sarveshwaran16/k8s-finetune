@@ -1,0 +1,7 @@
+{
+  "id": "20241af434c011af32029ad2a5979e2c",
+  "source": "k8s_docs",
+  "title": "Network Policies — Targeting multiple namespaces by label",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/#targeting-multiple-namespaces-by-label",
+  "text": "In this scenario, your\nEgress\nNetworkPolicy targets more than one namespace using their\nlabel names. For this to work, you need to label the target namespaces. For example:\nkubectl label namespace frontend\nnamespace\n=\nfrontend\nkubectl label namespace backend\nnamespace\n=\nbackend\nAdd the labels under\nnamespaceSelector\nin your NetworkPolicy document. For example:\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nNetworkPolicy\nmetadata\n:\nname\n:\negress-namespaces\nspec\n:\npodSelector\n:\nmatchLabels\n:\napp\n:\nmyapp\npolicyTypes\n:\n-\nEgress\negress\n:\n-\nto\n:\n-\nnamespaceSelector\n:\nmatchExpressions\n:\n-\nkey\n:\nnamespace\noperator\n:\nIn\nvalues\n:\n[\n\"frontend\"\n,\n\"backend\"\n]"
+}

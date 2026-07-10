@@ -1,0 +1,7 @@
+{
+  "id": "587cdb98198cf827938f1739ee879cf1",
+  "source": "k8s_docs",
+  "title": "Role Based Access Control Good Practices — Impersonate verb",
+  "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#impersonate-verb",
+  "text": "This verb allows users to impersonate and gain the rights of other users in the cluster.\nCare should be taken when granting it, to ensure that excessive permissions cannot be gained\nvia one of the impersonated accounts.\n\nThe CSR API allows for users with\ncreate\nrights to CSRs and\nupdate\nrights on\ncertificatesigningrequests/approval\nwhere the signer is\nkubernetes.io/kube-apiserver-client\nto create new client certificates\nwhich allow users to authenticate to the cluster. Those client certificates can have arbitrary\nnames including duplicates of Kubernetes system components. This will effectively allow for privilege escalation."
+}

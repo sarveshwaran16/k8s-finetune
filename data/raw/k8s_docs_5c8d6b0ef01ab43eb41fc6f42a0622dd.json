@@ -1,0 +1,7 @@
+{
+  "id": "5c8d6b0ef01ab43eb41fc6f42a0622dd",
+  "source": "k8s_docs",
+  "title": "Horizontal Manual Scaling for a Deployment — Declarative scaling usingkubectl apply",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/scale-deployment/#declarative-scaling-using-kubectl-apply",
+  "text": "Instead of running an imperative command, you can update the manifest file and\napply it. This approach fits well with version-controlled configuration\nworkflows.\nSave the current Deployment configuration to a local file:\nkubectl get deployment nginx-deployment -o yaml > /tmp/nginx-deployment.yaml\nEdit\n/tmp/nginx-deployment.yaml\nand change\n.spec.replicas\nto\n4\n.\nBefore applying, compare your local changes against the cluster state:\nkubectl diff -f /tmp/nginx-deployment.yaml\nApply the edited manifest:\nkubectl apply -f /tmp/nginx-deployment.yaml"
+}

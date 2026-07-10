@@ -1,0 +1,7 @@
+{
+  "id": "896a560e72051ea7ab8e7bfae3911664",
+  "source": "k8s_docs",
+  "title": "Update a Deployment Without Downtime — Rolling back to a previous revision",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/#rollback",
+  "text": "If a new version introduces issues, you can roll back to a previous revision.\n\nkubectl rollout\nhistory\ndeployment/nginx-deployment\nThe output is similar to:\ndeployment.apps/nginx-deployment\nREVISION  CHANGE-CAUSE\n1         <none>\n2         <none>\n\nkubectl rollout undo deployment/nginx-deployment\nThe output is similar to:\ndeployment.apps/nginx-deployment rolled back"
+}

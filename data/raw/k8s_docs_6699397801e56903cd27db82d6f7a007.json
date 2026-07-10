@@ -1,0 +1,7 @@
+{
+  "id": "6699397801e56903cd27db82d6f7a007",
+  "source": "k8s_docs",
+  "title": "Debug Services — Does any Service work by DNS name?",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/#does-any-service-exist-in-dns",
+  "text": "If the above still fails, DNS lookups are not working for your Service. You\ncan take a step back and see what else is not working. The Kubernetes master\nService should always work. From within a Pod:\nnslookup kubernetes.default\nServer:    10.0.0.10\nAddress 1: 10.0.0.10 kube-dns.kube-system.svc.cluster.local\n\nName:      kubernetes.default\nAddress 1: 10.0.0.1 kubernetes.default.svc.cluster.local\nIf this fails, please see the\nkube-proxy\nsection\nof this document, or even go back to the top of this document and start over,\nbut instead of debugging your own Service, debug the DNS Service."
+}

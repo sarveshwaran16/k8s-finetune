@@ -1,0 +1,7 @@
+{
+  "id": "a350b759f76e908bbfa0f84c36b86d3a",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1alpha1) — ProtocolType",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1alpha1/#apiserver-k8s-io-v1alpha1-ProtocolType",
+  "text": "(Alias of\nstring\n)\nAppears in:\nConnection\nProtocolType is a set of valid values for Connection.ProtocolType\n\nAppears in:\nTransport\nTCPTransport provides the information to connect to konnectivity server via TCP\nField\nDescription\nurl\n[Required]\nstring\nURL is the location of the konnectivity server to connect to.\nAs an example it might be \"https://127.0.0.1:8131\"\ntlsConfig\nTLSConfig\nTLSConfig is the config needed to use TLS when connecting to konnectivity server\nURL is the location of the konnectivity server to connect to.\nAs an example it might be \"https://127.0.0.1:8131\"\nTLSConfig is the config needed to use TLS when connecting to konnectivity server"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "f4aaf7d121e889de32cb292ec4206039",
+  "source": "k8s_docs",
+  "title": "Configure Quotas for API Objects — Create a PersistentVolumeClaim",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/quota-api-object/#create-a-persistentvolumeclaim",
+  "text": "Here is the configuration file for a PersistentVolumeClaim object:\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\npvc-quota-demo\nspec\n:\nstorageClassName\n:\nmanual\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n3Gi\nCreate the PersistentVolumeClaim:\nkubectl apply -f https://k8s.io/examples/admin/resource/quota-objects-pvc.yaml --namespace\n=\nquota-object-example\nVerify that the PersistentVolumeClaim was created:\nkubectl get persistentvolumeclaims --namespace\n=\nquota-object-example\nThe output shows that the PersistentVolumeClaim exists and has status Pending:\nNAME             STATUS\npvc-quota-demo   Pending"
+}

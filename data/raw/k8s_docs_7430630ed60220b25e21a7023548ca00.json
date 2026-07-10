@@ -1,0 +1,7 @@
+{
+  "id": "7430630ed60220b25e21a7023548ca00",
+  "source": "k8s_docs",
+  "title": "Configure Pod Initialization — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-initialization/#what-s-next",
+  "text": "Learn more about\ncommunicating between Containers running in the same Pod\n.\nLearn more about\nInit Containers\n.\nLearn more about\nVolumes\n.\nLearn more about\nDebugging Init Containers\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

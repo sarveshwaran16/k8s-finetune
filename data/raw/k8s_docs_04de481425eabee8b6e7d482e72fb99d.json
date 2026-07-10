@@ -1,0 +1,7 @@
+{
+  "id": "04de481425eabee8b6e7d482e72fb99d",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubeadm.alpha.kubernetes.io/cri-socket (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubeadm-alpha-kubernetes-io-cri-socket",
+  "text": "Type: Annotation\nExample:\nkubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/container.sock\nUsed on: Node\n\nType: Annotation\nExample:\nkubeadm.kubernetes.io/etcd.advertise-client-urls: https://172.17.0.18:2379\nUsed on: Pod\nAnnotation that kubeadm places on locally managed etcd Pods to keep track of\na list of URLs where etcd clients should connect to.\nThis is used mainly for etcd cluster health check purposes."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "d9228dae4faa4ad4e42a1af0e638b481",
+  "source": "k8s_docs",
+  "title": "PodGroup — WorkloadPodGroupTemplateReference",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/scheduling/pod-group-v1alpha2/#WorkloadPodGroupTemplateReference",
+  "text": "WorkloadPodGroupTemplateReference references the PodGroupTemplate within the Workload object.\nField\nDescription\npodGroupTemplateName\n*\nstring\nPodGroupTemplateName defines the PodGroupTemplate name within the Workload object.\nworkloadName\n*\nstring\nWorkloadName defines the name of the Workload object."
+}

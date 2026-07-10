@@ -1,0 +1,7 @@
+{
+  "id": "9220a907eb5426bfe452c5e03ef2a3fc",
+  "source": "k8s_docs",
+  "title": "kube-scheduler Configuration (v1) — PluginConfig",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-scheduler-config.v1/#kubescheduler-config-k8s-io-v1-PluginConfig",
+  "text": "Appears in:\nKubeSchedulerProfile\nPluginConfig specifies arguments that should be passed to a plugin at the time of initialization.\nA plugin that is invoked at multiple extension points is initialized once. Args can have arbitrary structure.\nIt is up to the plugin to process these Args.\nField\nDescription\nname\n[Required]\nstring\nName defines the name of plugin being configured\nargs\n[Required]\nk8s.io/apimachinery/pkg/runtime.RawExtension\nArgs defines the arguments passed to the plugins at the time of initialization. Args can have arbitrary structure.\nName defines the name of plugin being configured\nArgs defines the arguments passed to the plugins at the time of initialization. Args can have arbitrary structure."
+}

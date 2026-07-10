@@ -1,0 +1,7 @@
+{
+  "id": "b1c3cefb8813b587778f90d6c0bdb5b8",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — KubeletAnonymousAuthentication",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-KubeletAnonymousAuthentication",
+  "text": "Appears in:\nKubeletAuthentication\nField\nDescription\nenabled\nbool\nenabled allows anonymous requests to the kubelet server.\nRequests that are not rejected by another authentication method are treated as\nanonymous requests.\nAnonymous requests have a username of\nsystem:anonymous\n, and a group name of\nsystem:unauthenticated\n.\nenabled allows anonymous requests to the kubelet server.\nRequests that are not rejected by another authentication method are treated as\nanonymous requests.\nAnonymous requests have a username of\nsystem:anonymous\n, and a group name of\nsystem:unauthenticated\n."
+}

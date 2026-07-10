@@ -1,0 +1,7 @@
+{
+  "id": "122d0b4b9a5f35a9665a5bd4cf6d2ac8",
+  "source": "k8s_docs",
+  "title": "Volume Attributes Classes — Provisioner",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/#provisioner",
+  "text": "Each VolumeAttributesClass has a provisioner that determines what volume plugin is used for\nprovisioning PVs. The field\ndriverName\nmust be specified.\nThe feature support for VolumeAttributesClass is implemented in\nkubernetes-csi/external-provisioner\n.\nYou are not restricted to specifying the\nkubernetes-csi/external-provisioner\n.\nYou can also run and specify external provisioners,\nwhich are independent programs that follow a specification defined by Kubernetes.\nAuthors of external provisioners have full discretion over where their code lives, how\nthe provisioner is shipped, how it needs to be run, what volume plugin it uses, etc.\nTo understand how the provisioner works with VolumeAttributesClass, refer to\nthe\nCSI external-provisioner documentation\n."
+}

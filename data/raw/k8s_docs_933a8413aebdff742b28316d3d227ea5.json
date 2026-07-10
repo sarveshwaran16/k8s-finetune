@@ -1,0 +1,7 @@
+{
+  "id": "933a8413aebdff742b28316d3d227ea5",
+  "source": "k8s_docs",
+  "title": " — Examples",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_upload-config_kubeadm/#examples",
+  "text": "# upload the configuration of your cluster\n  kubeadm init phase upload-config kubeadm --config=myConfig.yaml\n\n--config string\nPath to a kubeadm configuration file.\n--cri-socket string\nPath to the CRI socket to connect. If empty kubeadm will try to auto-detect this value; use this option only if you have more than one CRI installed or if you have non-standard CRI socket.\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for kubeadm\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nPath to a kubeadm configuration file.\nPath to the CRI socket to connect. If empty kubeadm will try to auto-detect this value; use this option only if you have more than one CRI installed or if you have non-standard CRI socket.\nDon't apply any changes; just output what would be done.\nhelp for kubeadm\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "20fe587ab6a865ad8fa68f828a030730",
+  "source": "k8s_docs",
+  "title": "Metrics For Kubernetes System Components — kube-controller-manager metrics",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-metrics/#kube-controller-manager-metrics",
+  "text": "Controller manager metrics provide important insight into the performance and health of the\ncontroller manager. These metrics include common Go language runtime metrics such as go_routine\ncount and controller specific metrics such as etcd request latencies or Cloudprovider (AWS, GCE,\nOpenStack) API latencies that can be used to gauge the health of a cluster.\nStarting from Kubernetes 1.7, detailed Cloudprovider metrics are available for storage operations\nfor GCE, AWS, Vsphere and OpenStack.\nThese metrics can be used to monitor health of persistent volume operations.\nFor example, for GCE these metrics are called:\ncloudprovider_gce_api_request_duration_seconds { request = \"instance_list\"}\ncloudprovider_gce_api_request_duration_seconds { request = \"disk_insert\"}\ncloudprovider_gce_api_request_duration_seconds { request = \"disk_delete\"}\ncloudprovider_gce_api_request_duration_seconds { request = \"attach_disk\"}\ncloudprovider_gce_api_request_duration_seconds { request = \"detach_disk\"}\ncloudprovider_gce_api_request_duration_seconds { request = \"list_disk\"}"
+}

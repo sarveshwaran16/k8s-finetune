@@ -1,0 +1,7 @@
+{
+  "id": "8def2166ebec92426a53c2ff3e339cc4",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — control-plane.alpha.kubernetes.io/leader (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#control-plane-alpha-kubernetes-io-leader",
+  "text": "Type: Annotation\nExample:\ncontrol-plane.alpha.kubernetes.io/leader={\"holderIdentity\":\"controller-0\",\"leaseDurationSeconds\":15,\"acquireTime\":\"2023-01-19T13:12:57Z\",\"renewTime\":\"2023-01-19T13:13:54Z\",\"leaderTransitions\":1}\nUsed on: Endpoints\nThe\ncontrol plane\npreviously used\nan\nEndpoints\nobject to\ncoordinate leader assignment for the Kubernetes control plane. This Endpoints\nobject included an annotation with the following detail:\nWho is the current leader.\nThe time when the current leadership was acquired.\nThe duration of the lease (of the leadership) in seconds.\nThe time the current lease (the current leadership) should be renewed.\nThe number of leadership transitions that happened in the past.\nKubernetes now uses\nLeases\nto\nmanage leader assignment for the Kubernetes control plane."
+}

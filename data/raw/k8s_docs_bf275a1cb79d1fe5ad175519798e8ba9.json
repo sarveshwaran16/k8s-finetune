@@ -1,0 +1,7 @@
+{
+  "id": "bf275a1cb79d1fe5ad175519798e8ba9",
+  "source": "k8s_docs",
+  "title": "DaemonSet — DaemonSetCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apps/daemon-set-v1/#DaemonSetCondition",
+  "text": "DaemonSetCondition describes the state of a DaemonSet at a certain point.\nField\nDescription\nlastTransitionTime\nTime\nLast time the condition transitioned from one status to another.\nmessage\nstring\nA human readable message indicating details about the transition.\nreason\nstring\nThe reason for the condition's last transition.\nstatus\n*\nstring\nStatus of the condition, one of True, False, Unknown.\ntype\n*\nstring\nType of DaemonSet condition."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a59c7c38a37316d1b8f99eb1312cb6d1",
+  "source": "k8s_docs",
+  "title": "Object Names and IDs — RFC 1035 Label Names",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#rfc-1035-label-names",
+  "text": "Some resource types require their names to follow the DNS\nlabel standard as defined in\nRFC 1035\n.\nThis means the name must:\ncontain at most 63 characters\ncontain only lowercase alphanumeric characters or '-'\nstart with an alphabetic character\nend with an alphanumeric character\n\nSome resource types require their names to be able to be safely encoded as a\npath segment. In other words, the name may not be \".\" or \"..\" and the name may\nnot contain \"/\" or \"%\".\nHere's an example manifest for a Pod named\nnginx-demo\n.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nnginx-demo\nspec\n:\ncontainers\n:\n-\nname\n:\nnginx\nimage\n:\nnginx:1.14.2\nports\n:\n-\ncontainerPort\n:\n80"
+}

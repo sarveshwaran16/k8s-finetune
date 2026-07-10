@@ -1,0 +1,7 @@
+{
+  "id": "e0ceb9ffa648733d455d04fa9141e9e6",
+  "source": "k8s_docs",
+  "title": "Ingress Controllers — Using multiple Ingress controllers",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/#using-multiple-ingress-controllers",
+  "text": "You may deploy any number of ingress controllers using\ningress class\nwithin a cluster. Note the\n.metadata.name\nof your ingress class resource. When you create an ingress you would need that name to specify the\ningressClassName\nfield on your Ingress object (refer to\nIngressSpec v1 reference\n).\ningressClassName\nis a replacement of the older\nannotation method\n.\nIf you do not specify an IngressClass for an Ingress, and your cluster has exactly one IngressClass marked as default, then Kubernetes\napplies\nthe cluster's default IngressClass to the Ingress.\nYou mark an IngressClass as default by setting the\ningressclass.kubernetes.io/is-default-class\nannotation\non that IngressClass, with the string value\n\"true\"\n.\nIdeally, all ingress controllers should fulfill this specification, but the various ingress\ncontrollers operate slightly differently."
+}

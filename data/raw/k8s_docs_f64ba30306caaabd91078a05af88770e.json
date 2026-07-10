@@ -1,0 +1,7 @@
+{
+  "id": "f64ba30306caaabd91078a05af88770e",
+  "source": "k8s_docs",
+  "title": "Coarse Parallel Processing Using a Work Queue — Alternatives",
+  "source_url": "https://kubernetes.io/docs/tasks/job/coarse-parallel-processing-work-queue/#alternatives",
+  "text": "This approach has the advantage that you do not need to modify your \"worker\" program to be\naware that there is a work queue. You can include the worker program unmodified in your container\nimage.\nUsing this approach does require that you run a message queue service.\nIf running a queue service is inconvenient, you may\nwant to consider one of the other\njob patterns\n.\nThis approach creates a pod for every work item. If your work items only take a few seconds,\nthough, creating a Pod for every work item may add a lot of overhead. Consider another\ndesign, such as in the\nfine parallel work queue example\n,\nthat executes multiple work items per Pod.\nIn this example, you used the\namqp-consume\nutility to read the message\nfrom the queue and run the actual program. This has the advantage that you\ndo not need to modify your program to be aware of the queue.\nThe\nfine parallel work queue example\nshows how to communicate with the work queue using a client library."
+}

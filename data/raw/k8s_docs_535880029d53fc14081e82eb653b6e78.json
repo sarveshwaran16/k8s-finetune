@@ -1,0 +1,7 @@
+{
+  "id": "535880029d53fc14081e82eb653b6e78",
+  "source": "k8s_docs",
+  "title": "Example: Deploying PHP Guestbook application with Redis — Viewing the Frontend Service viaLoadBalancer",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateless-application/guestbook/#viewing-the-frontend-service-via-loadbalancer",
+  "text": "If you deployed the\nfrontend-service.yaml\nmanifest with type:\nLoadBalancer\nyou need to find the IP address to view your Guestbook.\nRun the following command to get the IP address for the frontend Service.\nkubectl get service frontend\nThe response should be similar to this:\nNAME       TYPE           CLUSTER-IP      EXTERNAL-IP        PORT(S)        AGE\nfrontend   LoadBalancer   10.51.242.136   109.197.92.229     80:32372/TCP   1m\nCopy the external IP address, and load the page in your browser to view your guestbook.\nRun the following command to get the IP address for the frontend Service.\nkubectl get service frontend\nThe response should be similar to this:\nNAME       TYPE           CLUSTER-IP      EXTERNAL-IP        PORT(S)        AGE\nfrontend   LoadBalancer   10.51.242.136   109.197.92.229     80:32372/TCP   1m\nCopy the external IP address, and load the page in your browser to view your guestbook."
+}

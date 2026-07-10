@@ -1,0 +1,7 @@
+{
+  "id": "34fab95894bca9536549c2098b6ab0d4",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Don't change immutable objects",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#dont-change-immutable-objects",
+  "text": "Some Kubernetes objects in the API server can't change. For example, when you\ndeploy a\nstatic Pod\n, the\nkubelet on the node creates a\nmirror Pod\nin the API\nserver to track the static Pod. However, changes to the mirror Pod don't\npropagate to the static Pod.\nDon't attempt to mutate these objects during admission. All mirror Pods have the\nkubernetes.io/config.mirror\nannotation. To exclude mirror Pods while reducing\nthe security risk of ignoring an annotation, allow static Pods to only run in\nspecific namespaces."
+}

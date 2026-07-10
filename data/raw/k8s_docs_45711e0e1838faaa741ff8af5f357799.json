@@ -1,0 +1,7 @@
+{
+  "id": "45711e0e1838faaa741ff8af5f357799",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#before-you-begin",
+  "text": "You should be familiar with\nPKI certificates and requirements in Kubernetes\n.\nYou should be familiar with how to pass a\nconfiguration\nfile to the kubeadm commands.\nThis guide covers the usage of the\nopenssl\ncommand (used for manual certificate signing,\nif you choose that approach), but you can use your preferred tools.\nSome of the steps here use\nsudo\nfor administrator access. You can use any equivalent tool."
+}

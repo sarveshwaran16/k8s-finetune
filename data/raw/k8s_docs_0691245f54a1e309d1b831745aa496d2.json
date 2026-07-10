@@ -1,0 +1,7 @@
+{
+  "id": "0691245f54a1e309d1b831745aa496d2",
+  "source": "k8s_docs",
+  "title": "kubeadm token — kubeadm token create",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/#cmd-token-create",
+  "text": "Create bootstrap tokens on the server\n\nThis command will create a bootstrap token for you.\nYou can specify the usages for this token, the \"time to live\" and an optional human friendly description.\nThe [token] is the actual token to write.\nThis should be a securely generated random token of the form \"[a-z0-9]{6}.[a-z0-9]{16}\".\nIf no [token] is given, kubeadm will generate a random token instead.\nkubeadm token create [token]"
+}

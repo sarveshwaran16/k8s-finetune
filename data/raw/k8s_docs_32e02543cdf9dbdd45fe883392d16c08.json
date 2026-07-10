@@ -1,0 +1,7 @@
+{
+  "id": "32e02543cdf9dbdd45fe883392d16c08",
+  "source": "k8s_docs",
+  "title": "Hardening Guide - Authentication Mechanisms — ServiceAccount secret tokens",
+  "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/authentication-mechanisms/#serviceaccount-secret-tokens",
+  "text": "Service account secrets\nare available as an option to allow workloads running in the cluster to authenticate to the\nAPI server. In Kubernetes < 1.23, these were the default option, however, they are being replaced\nwith TokenRequest API tokens. While these secrets could be used for user authentication, they are\ngenerally unsuitable for a number of reasons:\nThey cannot be set with an expiry and will remain valid until the associated service account is deleted.\nThe authentication tokens are visible to any cluster user who can read secrets in the namespace\nthat they are defined in.\nService accounts cannot be added to arbitrary groups complicating RBAC management where they are used."
+}

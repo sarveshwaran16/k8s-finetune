@@ -1,0 +1,7 @@
+{
+  "id": "5e6ff1dcad2961d3ebe9e49f4df8bf86",
+  "source": "k8s_docs",
+  "title": "Local Files And Paths Used By The Kubelet — Graceful node shutdown",
+  "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#graceful-node-shutdown",
+  "text": "Graceful node shutdown\nstores state locally at\n/var/lib/kubelet/graceful_node_shutdown_state\n.\n\nThe kubelet stores records of attempted and successful image pulls, and uses it\nto verify that the image was previously successfully pulled with the same credentials.\nThese records are cached as files in the\nimage_registry\ndirectory within\nthe kubelet base directory. On a typical Linux node, this means\n/var/lib/kubelet/image_manager\n.\nThere are two subdirectories to\nimage_manager\n:\npulling\n- stores records about images the Kubelet is attempting to pull.\npulled\n- stores records about images that were successfully pulled by the Kubelet,\nalong with metadata about the credentials used for the pulls.\nSee\nEnsure Image Pull Credential Verification\nfor details."
+}

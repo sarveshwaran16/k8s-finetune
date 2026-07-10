@@ -1,0 +1,7 @@
+{
+  "id": "85f59ec03f75272fd0a5ca00734b8131",
+  "source": "k8s_docs",
+  "title": "Troubleshooting Clusters — Looking at logs",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/#looking-at-logs",
+  "text": "For now, digging deeper into the cluster requires logging into the relevant machines. Here are the locations\nof the relevant log files. On systemd-based systems, you may need to use\njournalctl\ninstead of examining log files.\n\n/var/log/kube-apiserver.log\n- API Server, responsible for serving the API\n/var/log/kube-scheduler.log\n- Scheduler, responsible for making scheduling decisions\n/var/log/kube-controller-manager.log\n- a component that runs most Kubernetes built-in\ncontrollers\n, with the notable exception of scheduling\n(the kube-scheduler handles scheduling)."
+}

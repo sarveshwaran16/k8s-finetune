@@ -1,0 +1,7 @@
+{
+  "id": "3e32902265d00d82c6661088ccc5cd55",
+  "source": "k8s_docs",
+  "title": "Installing kubeadm — Installing a container runtime",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-runtime",
+  "text": "To run containers in Pods, Kubernetes uses a\ncontainer runtime\n.\nBy default, Kubernetes uses the\nContainer Runtime Interface\n(CRI)\nto interface with your chosen container runtime.\nIf you don't specify a runtime, kubeadm automatically tries to detect an installed\ncontainer runtime by scanning through a list of known endpoints.\nIf multiple or no container runtimes are detected kubeadm will throw an error\nand will request that you specify which one you want to use.\nSee\ncontainer runtimes\nfor more information.\nThe tables below include the known endpoints for supported operating systems:\nLinux\nWindows\nLinux container runtimes\nRuntime\nPath to Unix domain socket\ncontainerd\nunix:///var/run/containerd/containerd.sock\nCRI-O\nunix:///var/run/crio/crio.sock\nDocker Engine (using cri-dockerd)\nunix:///var/run/cri-dockerd.sock\nWindows container runtimes\nRuntime\nPath to Windows named pipe\ncontainerd\nnpipe:////./pipe/containerd-containerd\nDocker Engine (using cri-dockerd)\nnpipe:////./pipe/cri-dockerd"
+}

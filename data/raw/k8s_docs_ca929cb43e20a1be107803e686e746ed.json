@@ -1,0 +1,7 @@
+{
+  "id": "ca929cb43e20a1be107803e686e746ed",
+  "source": "k8s_docs",
+  "title": "Gateway API — GatewayClass",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/gateway/#api-kind-gateway-class",
+  "text": "Gateways can be implemented by different controllers, often with different configurations. A Gateway\nmust reference a GatewayClass that contains the name of the controller that implements the\nclass.\nA minimal GatewayClass example:\napiVersion\n:\ngateway.networking.k8s.io/v1\nkind\n:\nGatewayClass\nmetadata\n:\nname\n:\nexample-class\nspec\n:\ncontrollerName\n:\nexample.com/gateway-controller\nIn this example, a controller that has implemented Gateway API is configured to manage GatewayClasses\nwith the controller name\nexample.com/gateway-controller\n. Gateways of this class will be managed by\nthe implementation's controller.\nSee the\nGatewayClass\nreference for a full definition of this API kind."
+}

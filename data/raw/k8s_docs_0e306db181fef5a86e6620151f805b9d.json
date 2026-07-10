@@ -1,0 +1,7 @@
+{
+  "id": "0e306db181fef5a86e6620151f805b9d",
+  "source": "k8s_docs",
+  "title": "Authenticating — Configuration via configuration file",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#api-server-authn-config-file",
+  "text": "When you specify the\n--authentication-config\ncommand line argument to the kube-apiserver, the API server\nloads a file at the path you specify, and uses the contents of that file to configure authentication.\nThe contents of that file can be changed while the API server is running and, if you do that, the API server re-reads the file afterwards.\nHere is an example of a Kubernetes (structured) authentication configuration file:\n---\n#\n# CAUTION: this is an example configuration.\n#          Check and amend this before you use it in your own cluster!\n#\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nAuthenticationConfiguration\nanonymous\n:\nenabled\n:\nfalse"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "717b25f25a731ae88e6a6b3f69bb0191",
+  "source": "k8s_docs",
+  "title": "Autoscale the DNS Service in a Cluster — Disable DNS horizontal autoscaling",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-horizontal-autoscaling/#disable-dns-horizontal-autoscaling",
+  "text": "There are a few options for tuning DNS horizontal autoscaling. Which option to\nuse depends on different conditions.\n\nThis option works for all situations. Enter this command:\nkubectl scale deployment --replicas\n=\n0\nkube-dns-autoscaler --namespace\n=\nkube-system\nThe output is:\ndeployment.apps/kube-dns-autoscaler scaled\nVerify that the replica count is zero:\nkubectl get rs --namespace\n=\nkube-system\nThe output displays 0 in the DESIRED and CURRENT columns:\nNAME                                  DESIRED   CURRENT   READY   AGE\n...\nkube-dns-autoscaler-6b59789fc8        0         0         0       ...\n..."
+}

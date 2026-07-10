@@ -1,0 +1,7 @@
+{
+  "id": "e4f0c37c7a7b2fe56d24c146c4151f8b",
+  "source": "k8s_docs",
+  "title": "Running Kubelet in Standalone Mode — Objectives",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#objectives",
+  "text": "Install\ncri-o\n, and\nkubelet\non a Linux system and run them as\nsystemd\nservices.\nLaunch a Pod running\nnginx\nthat listens to requests on TCP port 80 on the Pod's IP address.\nLearn how the different components of the solution interact among themselves.\n\nAdmin (\nroot\n) access to a Linux system that uses\nsystemd\nand\niptables\n(or nftables with\niptables\nemulation).\nAccess to the Internet to download the components needed for the tutorial, such as:\nA\ncontainer runtime\nthat implements the Kubernetes\n(CRI)\n.\nNetwork plugins (these are often known as\nContainer Networking Interface (CNI)\n)\nRequired CLI tools:\ncurl\n,\ntar\n,\njq\n.\nA\ncontainer runtime\nthat implements the Kubernetes\n(CRI)\n.\nNetwork plugins (these are often known as\nContainer Networking Interface (CNI)\n)\nRequired CLI tools:\ncurl\n,\ntar\n,\njq\n."
+}

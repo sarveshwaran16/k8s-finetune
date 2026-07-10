@@ -1,0 +1,7 @@
+{
+  "id": "5939ecc0d20e5ceb23bb0cda3e026994",
+  "source": "k8s_docs",
+  "title": "StorageVersionMigration — StorageVersionMigrationSpec",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storagemigration/storage-version-migration-v1beta1/#StorageVersionMigrationSpec",
+  "text": "Spec of the storage version migration.\nField\nDescription\nresource\n*\nGroupResource\nThe resource that is being migrated. The migrator sends requests to the endpoint serving the resource. Immutable.\n\nStatus of the storage version migration.\nField\nDescription\nconditions\nCondition array\npatch strategy: merge on key\ntype\nThe latest available observations of the migration's current state.\nresourceVersion\nstring\nResourceVersion to compare with the GC cache for performing the migration. This is the current resource version of given group, version and resource when kube-controller-manager first observes this StorageVersionMigration resource."
+}

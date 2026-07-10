@@ -1,0 +1,7 @@
+{
+  "id": "c8141ca3bb2e26441b5279c1114b8e39",
+  "source": "k8s_docs",
+  "title": "Storage Capacity — API",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/storage-capacity/#api",
+  "text": "There are two API extensions for this feature:\nCSIStorageCapacity\nobjects:\nthese get produced by a CSI driver in the namespace\nwhere the driver is installed. Each object contains capacity\ninformation for one storage class and defines which nodes have\naccess to that storage.\nThe\nCSIDriverSpec.StorageCapacity\nfield\n:\nwhen set to\ntrue\n, the Kubernetes scheduler will consider storage\ncapacity for volumes that use the CSI driver."
+}

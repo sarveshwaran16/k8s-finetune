@@ -1,0 +1,7 @@
+{
+  "id": "9131be8ccb7f4d06f0fea6755c6035f2",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_kubelet-finalize_all/#synopsis",
+  "text": "Run all kubelet-finalize phases\nkubeadm init phase kubelet-finalize all [flags]\n\n# Updates settings relevant to the kubelet after TLS bootstrap\n  kubeadm init phase kubelet-finalize all --config\n\n--cert-dir string     Default: \"/etc/kubernetes/pki\"\nThe path where to save and store the certificates.\n--config string\nPath to a kubeadm configuration file.\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for all\nThe path where to save and store the certificates.\nPath to a kubeadm configuration file.\nDon't apply any changes; just output what would be done.\nhelp for all"
+}

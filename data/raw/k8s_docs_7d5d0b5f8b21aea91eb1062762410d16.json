@@ -1,0 +1,7 @@
+{
+  "id": "7d5d0b5f8b21aea91eb1062762410d16",
+  "source": "k8s_docs",
+  "title": "Kubectl user preferences (kuberc) — defaults",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kuberc/#defaults",
+  "text": "Within a\nkuberc\nconfiguration,\ndefaults\nsection lets you specify default values\nfor command line arguments.\nThis next example makes the interactive removal the default mode for invoking\nkubectl delete\n:\napiVersion\n:\nkubectl.config.k8s.io/v1beta1\nkind\n:\nPreference\ndefaults\n:\n-\ncommand\n:\ndelete\noptions\n:\n-\nname\n:\ninteractive\ndefault\n:\n\"true\"\nIn this example, the following settings were used:\ncommand\n- Built-in command, this includes support for subcommands like\ncreate role\n.\noptions\n- Specify default values for options. If you explicitly specify an option\nwhen you run\nkubectl\n, the value you provide takes precedence over the default\none defined in\nkuberc\n.\nWith this setting, running\nkubectl delete pod/test-pod\nwill default to prompting for confirmation.\nHowever,\nkubectl delete pod/test-pod --interactive=false\nwill bypass the confirmation."
+}

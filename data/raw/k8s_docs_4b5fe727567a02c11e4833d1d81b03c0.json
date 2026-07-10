@@ -1,0 +1,7 @@
+{
+  "id": "4b5fe727567a02c11e4833d1d81b03c0",
+  "source": "k8s_docs",
+  "title": "Volumes — persistentVolumeClaim",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/#persistentvolumeclaim",
+  "text": "A\npersistentVolumeClaim\nvolume is used to mount a\nPersistentVolume\ninto a Pod. PersistentVolumeClaims\nare a way for users to \"claim\" durable storage (such as an iSCSI volume)\nwithout knowing the details of the particular cloud environment.\nSee the information about\nPersistentVolumes\nfor more\ndetails."
+}

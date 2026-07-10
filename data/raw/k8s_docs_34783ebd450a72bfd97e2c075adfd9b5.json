@@ -1,0 +1,7 @@
+{
+  "id": "34783ebd450a72bfd97e2c075adfd9b5",
+  "source": "k8s_docs",
+  "title": "Adopting Sidecar Containers — Objectives",
+  "source_url": "https://kubernetes.io/docs/tutorials/configuration/pod-sidecar-containers/#objectives",
+  "text": "Understand the need for sidecar containers\nBe able to troubleshoot issues with the sidecar containers\nUnderstand options to universally \"inject\" sidecar containers to any workload\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYour Kubernetes server must be at or later than version 1.29.\nTo check the version, enter\nkubectl version\n.\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nTo check the version, enter\nkubectl version\n."
+}

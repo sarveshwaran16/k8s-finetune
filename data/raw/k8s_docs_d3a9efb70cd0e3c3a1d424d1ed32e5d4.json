@@ -1,0 +1,7 @@
+{
+  "id": "d3a9efb70cd0e3c3a1d424d1ed32e5d4",
+  "source": "k8s_docs",
+  "title": "Parallel Processing using Expansions — Clean up",
+  "source_url": "https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/#cleanup-2",
+  "text": "# Remove the Jobs you created\n# Your cluster automatically cleans up their Pods\nkubectl delete job -l\njobgroup\n=\njobexample\n\nIn a real use case, each Job performs some substantial computation, such as rendering a frame\nof a movie, or processing a range of rows in a database. If you were rendering a movie\nyou would set\n$ITEM\nto the frame number. If you were processing rows from a database\ntable, you would set\n$ITEM\nto represent the range of database rows to process.\nIn the task, you ran a command to collect the output from Pods by fetching\ntheir logs. In a real use case, each Pod for a Job writes its output to\ndurable storage before completing. You can use a PersistentVolume for each Job,\nor an external storage service. For example, if you are rendering frames for a movie,\nuse HTTP to\nPUT\nthe rendered frame data to a URL, using a different URL for each\nframe."
+}

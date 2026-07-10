@@ -1,0 +1,7 @@
+{
+  "id": "785c944ac8888aa30685460794aff07d",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — ImagePullIntent",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-ImagePullIntent",
+  "text": "ImagePullIntent is a record of the kubelet attempting to pull an image.\nField\nDescription\napiVersion\nstring\nkubelet.config.k8s.io/v1beta1\nkind\nstring\nImagePullIntent\nimage\n[Required]\nstring\nImage is the image spec from a Container's\nimage\nfield.\nThe filename is a SHA-256 hash of this value. This is to avoid filename-unsafe\ncharacters like ':' and '/'.\nImage is the image spec from a Container's\nimage\nfield.\nThe filename is a SHA-256 hash of this value. This is to avoid filename-unsafe\ncharacters like ':' and '/'."
+}

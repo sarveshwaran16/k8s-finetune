@@ -1,0 +1,7 @@
+{
+  "id": "8d73fe3bd9bec6e20f42c5446623bd2b",
+  "source": "k8s_docs",
+  "title": "Install Drivers and Allocate Devices with DRA — Prepare your cluster for driver installation",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/install-use-dra/#prepare-cluster-driver",
+  "text": "To simplify cleanup, create a namespace named dra-tutorial:\nCreate the namespace:\nkubectl create namespace dra-tutorial\nCreate the namespace:\nkubectl create namespace dra-tutorial\nIn a production environment, you would likely be using a previously released or\nqualified image from the driver vendor or your own organization, and your nodes\nwould need to have access to the image registry where the driver image is\nhosted. In this tutorial, you will use a publicly released image of the\ndra-example-driver to simulate access to a DRA driver image.\nConfirm your nodes have access to the image by running the following\nfrom within one of your cluster's nodes:\ndocker pull registry.k8s.io/dra-example-driver/dra-example-driver:v0.2.0\nConfirm your nodes have access to the image by running the following\nfrom within one of your cluster's nodes:\ndocker pull registry.k8s.io/dra-example-driver/dra-example-driver:v0.2.0"
+}

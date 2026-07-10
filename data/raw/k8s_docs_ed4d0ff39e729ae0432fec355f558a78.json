@@ -1,0 +1,7 @@
+{
+  "id": "ed4d0ff39e729ae0432fec355f558a78",
+  "source": "k8s_docs",
+  "title": "Node Autoscaling — Horizontal workload autoscaling",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/#horizontal-workload-autoscaling",
+  "text": "Node autoscaling usually works in response to Pods—it provisions new Nodes to accommodate\nunschedulable Pods, and then consolidates the Nodes once they're no longer needed.\nHorizontal workload autoscaling\nautomatically scales the number of workload replicas to maintain a desired average resource\nutilization across the replicas. In other words, it automatically creates new Pods in response to\napplication load, and then removes the Pods once the load decreases.\nYou can use Node autoscaling together with horizontal workload autoscaling to autoscale the Nodes in\nyour cluster based on the average real resource utilization of your Pods.\nIf the application load increases, the average utilization of its Pods should also increase,\nprompting workload autoscaling to create new Pods. Node autoscaling should then provision new Nodes\nto accommodate the new Pods.\nOnce the application load decreases, workload autoscaling should remove unnecessary Pods. Node\nautoscaling should, in turn, consolidate the Nodes that are no longer needed.\nIf configured correctly, this pattern ensures that your application always has the Node capacity to\nhandle load spikes if needed, but you don't have to pay for the capacity when it's not needed."
+}

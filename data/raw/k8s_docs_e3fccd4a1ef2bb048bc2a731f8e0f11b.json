@@ -1,0 +1,7 @@
+{
+  "id": "e3fccd4a1ef2bb048bc2a731f8e0f11b",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Plan for future updates to fields",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#plan-future-field-updates",
+  "text": "In general, design your webhooks under the assumption that Kubernetes APIs might\nchange in a later version. Don't write a server that takes the stability of an\nAPI for granted. For example, the release of sidecar containers in Kubernetes\nadded a\nrestartPolicy\nfield to the Pod API.\n\nMutating webhooks that respond to a broad range of API requests might\nunintentionally trigger themselves. For example, consider a webhook that\nresponds to all requests in the cluster. If you configure the webhook to create\nEvent objects for every mutation, it'll respond to its own Event object\ncreation requests.\nTo avoid this, consider setting a unique label in any resources that your\nwebhook creates. Exclude this label from your webhook match conditions."
+}

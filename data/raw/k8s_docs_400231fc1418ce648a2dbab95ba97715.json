@@ -1,0 +1,7 @@
+{
+  "id": "400231fc1418ce648a2dbab95ba97715",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — Choosing certificate validity period",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#choosing-cert-validity-period",
+  "text": "kubeadm allows you to choose the validity period of CA and leaf certificates.\nThat can be done by using the\ncertificateValidityPeriod\nand\ncaCertificateValidityPeriod\nfields of the kubeadm configuration:\napiVersion\n:\nkubeadm.k8s.io/v1beta4\nkind\n:\nClusterConfiguration\ncertificateValidityPeriod: 8760h # Default\n:\n365\ndays × 24 hours = 1 year\ncaCertificateValidityPeriod: 87600h # Default\n:\n365\ndays × 24 hours * 10 = 10 years\nThe values of the fields follow the accepted format for\nGo's\ntime.Duration\nvalues\n, with the longest supported\nunit being\nh\n(hours)."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "3a639758f08f88628c650e807e26c42e",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_kubeconfig/#synopsis",
+  "text": "Kubeconfig file utilities.\n\n-h, --help\nhelp for kubeconfig\nhelp for kubeconfig\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

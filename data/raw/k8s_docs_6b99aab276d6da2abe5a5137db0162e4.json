@@ -1,0 +1,7 @@
+{
+  "id": "6b99aab276d6da2abe5a5137db0162e4",
+  "source": "k8s_docs",
+  "title": "Deployments — Progress Deadline Seconds",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#progress-deadline-seconds",
+  "text": ".spec.progressDeadlineSeconds\nis an optional field that specifies the number of seconds you want\nto wait for your Deployment to progress before the system reports back that the Deployment has\nfailed progressing\n- surfaced as a condition with\ntype: Progressing\n,\nstatus: \"False\"\n.\nand\nreason: ProgressDeadlineExceeded\nin the status of the resource. The Deployment controller will keep\nretrying the Deployment. This defaults to 600.\nIf specified, this field needs to be greater than\n.spec.minReadySeconds\n."
+}

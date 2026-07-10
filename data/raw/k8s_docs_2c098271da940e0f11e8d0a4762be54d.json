@@ -1,0 +1,7 @@
+{
+  "id": "2c098271da940e0f11e8d0a4762be54d",
+  "source": "k8s_docs",
+  "title": "Pod Lifecycle — Startup probe",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#startup-probe",
+  "text": "Startup probes verify whether the application within a container is started.\nIf a startup probe is configured, Kubernetes does not execute liveness or\nreadiness probes until the startup probe succeeds, allowing the application\ntime to finish its initialization.\nThis type of probe is only executed at startup, unlike liveness and readiness\nprobes, which are run periodically.\nIf the startup probe fails, the kubelet kills the container, and the container\nis subjected to its\nrestart policy\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7761cb3b47e48255b5749803eff940b1",
+  "source": "k8s_docs",
+  "title": "Role Based Access Control Good Practices — Persistent volume creation",
+  "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#persistent-volume-creation",
+  "text": "If someone - or some application - is allowed to create arbitrary PersistentVolumes, that access\nincludes the creation of\nhostPath\nvolumes, which then means that a Pod would get access\nto the underlying host filesystem(s) on the associated node. Granting that ability is a security risk.\nThere are many ways a container with unrestricted access to the host filesystem can escalate privileges, including\nreading data from other containers, and abusing the credentials of system services, such as Kubelet.\nYou should only allow access to create PersistentVolume objects for:\nUsers (cluster operators) that need this access for their work, and who you trust.\nThe Kubernetes control plane components which creates PersistentVolumes based on PersistentVolumeClaims\nthat are configured for automatic provisioning.\nThis is usually setup by the Kubernetes provider or by the operator when installing a CSI driver.\nWhere access to persistent storage is required trusted administrators should create\nPersistentVolumes, and constrained users should use PersistentVolumeClaims to access that storage."
+}

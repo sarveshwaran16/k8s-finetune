@@ -1,0 +1,7 @@
+{
+  "id": "a92b47b1422667308cbfcc439f6e41c0",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — volume.kubernetes.io/selected-node",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#volume-kubernetes-io-selected-node",
+  "text": "Type: Annotation\nUsed on: PersistentVolumeClaim\nThis annotation is added to a PVC that is triggered by a scheduler to be\ndynamically provisioned. Its value is the name of the selected node.\n\nType: Annotation\nUsed on: Node\nIf a node has the annotation\nvolumes.kubernetes.io/controller-managed-attach-detach\n,\nits storage attach and detach operations are being managed by the\nvolume attach/detach\ncontroller\n.\nThe value of the annotation isn't important."
+}

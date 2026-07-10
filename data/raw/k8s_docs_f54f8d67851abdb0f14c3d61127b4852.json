@@ -1,0 +1,7 @@
+{
+  "id": "f54f8d67851abdb0f14c3d61127b4852",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node.kubernetes.io/disk-pressure",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-kubernetes-io-disk-pressure",
+  "text": "Type: Taint\nExample:\nnode.kubernetes.io/disk-pressure :\"NoSchedule\"\nUsed on: Node\nThe kubelet detects disk pressure based on\nimagefs.available\n,\nimagefs.inodesFree\n,\nnodefs.available\nand\nnodefs.inodesFree\n(Linux only) observed on a Node.\nThe observed values are then compared to the corresponding thresholds that can be set on the\nkubelet to determine if the Node condition and taint should be added/removed."
+}

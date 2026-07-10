@@ -1,0 +1,7 @@
+{
+  "id": "9aff9949a1a817feef9ed725fc8d392f",
+  "source": "k8s_docs",
+  "title": "Upgrading kubeadm clusters — How it works",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/#how-it-works",
+  "text": "kubeadm upgrade apply\ndoes the following:\nChecks that your cluster is in an upgradeable state:\nThe API server is reachable\nAll nodes are in the\nReady\nstate\nThe control plane is healthy\nEnforces the version skew policies.\nMakes sure the control plane images are available or available to pull to the machine.\nGenerates replacements and/or uses user supplied overwrites if component configs require version upgrades.\nUpgrades the control plane components or rollbacks if any of them fails to come up.\nApplies the new\nCoreDNS\nand\nkube-proxy\nmanifests and makes sure that all necessary RBAC rules are created.\nCreates new certificate and key files of the API server and backs up old files if they're about to expire in 180 days.\nThe API server is reachable\nAll nodes are in the\nReady\nstate\nThe control plane is healthy\nkubeadm upgrade node\ndoes the following on additional control plane nodes:\nFetches the kubeadm\nClusterConfiguration\nfrom the cluster.\nOptionally backups the kube-apiserver certificate.\nUpgrades the static Pod manifests for the control plane components.\nUpgrades the kubelet configuration for this node.\nkubeadm upgrade node\ndoes the following on worker nodes:\nFetches the kubeadm\nClusterConfiguration\nfrom the cluster.\nUpgrades the kubelet configuration for this node."
+}

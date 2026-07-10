@@ -1,0 +1,7 @@
+{
+  "id": "050107c4c2d7efa050cd5cf8250fcf10",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node.kubernetes.io/pid-pressure",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-kubernetes-io-pid-pressure",
+  "text": "Type: Taint\nExample:\nnode.kubernetes.io/pid-pressure: \"NoSchedule\"\nUsed on: Node\nThe kubelet checks D-value of the size of\n/proc/sys/kernel/pid_max\nand the PIDs consumed by\nKubernetes on a node to get the number of available PIDs that referred to as the\npid.available\nmetric. The metric is then compared to the corresponding threshold that can be set on the kubelet\nto determine if the node condition and taint should be added/removed."
+}

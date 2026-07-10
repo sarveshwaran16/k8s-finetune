@@ -1,0 +1,7 @@
+{
+  "id": "4938009dfd5de1d249d059232663f175",
+  "source": "k8s_docs",
+  "title": "kubectl create service clusterip — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_service_clusterip/#synopsis",
+  "text": "Create a ClusterIP service with the specified name.\nkubectl create service clusterip NAME [--tcp=<port>:<targetPort>] [--dry-run=server|client|none]\n\n# Create a new ClusterIP service named my-cs\n  kubectl create service clusterip my-cs --tcp=5678:8080\n  \n  # Create a new ClusterIP service named my-cs (in headless mode)\n  kubectl create service clusterip my-cs --clusterip=\"None\""
+}

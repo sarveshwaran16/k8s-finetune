@@ -1,0 +1,7 @@
+{
+  "id": "c6b210dbb4dc15167d1d8fbcf9020763",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_mark-control-plane/#synopsis",
+  "text": "Mark a node as a control-plane\nkubeadm init phase mark-control-plane [flags]\n\n# Applies control-plane label and taint to the current node, functionally equivalent to what executed by kubeadm init.\n  kubeadm init phase mark-control-plane --config config.yaml\n  \n  # Applies control-plane label and taint to a specific node\n  kubeadm init phase mark-control-plane --node-name myNode"
+}

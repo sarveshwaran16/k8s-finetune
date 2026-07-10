@@ -1,0 +1,7 @@
+{
+  "id": "f1bb0167ac54dd8b85ed19e9eb13b164",
+  "source": "k8s_docs",
+  "title": "Kubelet Pod Info gRPC API — Field selection",
+  "source_url": "https://kubernetes.io/docs/reference/node/kubelet-pod-info-grpc-api/#field-selection",
+  "text": "The API supports\ngoogle.protobuf.FieldMask\nto allow clients to request only the specific fields they need (e.g.,\nstatus.phase\n,\nstatus.podIPs\n). This enables lean and efficient data transfer. If no field mask is provided, the full\nv1.Pod\nobject is returned.\n\nThe API serves the most up-to-date information known locally by the kubelet, derived from its internal cache and reconciliation with the container runtime. It remains available even if the node loses connectivity to the Kubernetes control plane.\nIf the kubelet has recently restarted and its internal state is not yet fully initialized, the API returns a gRPC\nFAILED_PRECONDITION\nerror."
+}

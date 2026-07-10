@@ -1,0 +1,7 @@
+{
+  "id": "9e0aa02feb36529a1249251d2ee7da2d",
+  "source": "k8s_docs",
+  "title": "kubectl for Docker Users — docker info",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/#docker-info",
+  "text": "To get miscellaneous information about the environment and configuration, see\nkubectl cluster-info\n.\ndocker:\ndocker info\nContainers: 40\nImages: 168\nStorage Driver: aufs\n Root Dir: /usr/local/google/docker/aufs\n Backing Filesystem: extfs\n Dirs: 248\n Dirperm1 Supported: false\nExecution Driver: native-0.2\nLogging Driver: json-file\nKernel Version: 3.13.0-53-generic\nOperating System: Ubuntu 14.04.2 LTS\nCPUs: 12\nTotal Memory: 31.32 GiB\nName: k8s-is-fun.mtv.corp.google.com\nID: ADUV:GCYR:B3VJ:HMPO:LNPQ:KD5S:YKFQ:76VN:IANZ:7TFV:ZBF4:BYJO\nWARNING: No swap limit support\nkubectl:\nkubectl cluster-info\nKubernetes master is running at https://203.0.113.141\nKubeDNS is running at https://203.0.113.141/api/v1/namespaces/kube-system/services/kube-dns/proxy\nkubernetes-dashboard is running at https://203.0.113.141/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy\nGrafana is running at https://203.0.113.141/api/v1/namespaces/kube-system/services/monitoring-grafana/proxy\nHeapster is running at https://203.0.113.141/api/v1/namespaces/kube-system/services/monitoring-heapster/proxy\nInfluxDB is running at https://203.0.113.141/api/v1/namespaces/kube-system/services/monitoring-influxdb/proxy"
+}

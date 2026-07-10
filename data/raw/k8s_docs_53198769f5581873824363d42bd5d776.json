@@ -1,0 +1,7 @@
+{
+  "id": "53198769f5581873824363d42bd5d776",
+  "source": "k8s_docs",
+  "title": "PodGroup Scheduling — DisruptionTarget",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/podgroup-scheduling/#disruptiontarget",
+  "text": "When the scheduler preempts a PodGroup to make room for higher-priority PodGroups or\nPods, it sets this condition to\nTrue\nwith reason\nPreemptionByScheduler\n.\nYou can check conditions with:\nkubectl get podgroup <name> -o\njsonpath\n=\n'{.status.conditions}'\n\nLearn about the\nWorkload API\n.\nSee how to\nreference a Workload\nin a Pod.\nRead about\ngang scheduling\n."
+}

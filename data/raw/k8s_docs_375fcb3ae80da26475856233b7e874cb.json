@@ -1,0 +1,7 @@
+{
+  "id": "375fcb3ae80da26475856233b7e874cb",
+  "source": "k8s_docs",
+  "title": "Safely Drain a Node — (Optional) Configure a disruption budget",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/#configure-poddisruptionbudget",
+  "text": "To ensure that your workloads remain available during maintenance, you can\nconfigure a\nPodDisruptionBudget\n.\nIf availability is important for any applications that run or could run on the node(s)\nthat you are draining,\nconfigure a PodDisruptionBudgets\nfirst and then continue following this guide.\nIt is recommended to set\nAlwaysAllow\nUnhealthy Pod Eviction Policy\nto your PodDisruptionBudgets to support eviction of misbehaving applications during a node drain.\nThe default behavior is to wait for the application pods to become\nhealthy\nbefore the drain can proceed."
+}

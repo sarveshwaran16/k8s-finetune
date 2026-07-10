@@ -1,0 +1,7 @@
+{
+  "id": "6e13d63fc2a9b92e5557a9b75d32a1d4",
+  "source": "k8s_docs",
+  "title": "Logging Architecture — How nodes handle container logs",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/logging/#how-nodes-handle-container-logs",
+  "text": "A container runtime handles and redirects any output generated to a containerized\napplication's\nstdout\nand\nstderr\nstreams.\nDifferent container runtimes implement this in different ways; however, the integration\nwith the kubelet is standardized as the\nCRI logging format\n.\nBy default, if a container restarts, the kubelet keeps one terminated container with its logs.\nIf a pod is evicted from the node, all corresponding containers are also evicted, along with their logs.\nThe kubelet makes logs available to clients via a special feature of the Kubernetes API.\nThe usual way to access this is by running\nkubectl logs\n."
+}

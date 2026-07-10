@@ -1,0 +1,7 @@
+{
+  "id": "0b5c3e006df580a092c637756df7f4be",
+  "source": "k8s_docs",
+  "title": "Secrets — Configure least-privilege access to Secrets",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/secret/#configure-least-privilege-access-to-secrets",
+  "text": "To enhance the security measures around Secrets, use separate namespaces to isolate access to mounted secrets.\n\nFor guidelines to manage and improve the security of your Secrets, refer to\nGood practices for Kubernetes Secrets\n.\nLearn how to\nmanage Secrets using\nkubectl\nLearn how to\nmanage Secrets using config file\nLearn how to\nmanage Secrets using kustomize\nRead the\nAPI reference\nfor\nSecret"
+}

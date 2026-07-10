@@ -1,0 +1,7 @@
+{
+  "id": "807645bf992544e52b7bd7fcbef687b5",
+  "source": "k8s_docs",
+  "title": "kube-scheduler — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/#synopsis",
+  "text": "The Kubernetes scheduler is a control plane process which assigns\nPods to Nodes. The scheduler determines which Nodes are valid placements for\neach Pod in the scheduling queue according to constraints and available\nresources. The scheduler then ranks each valid Node and binds the Pod to a\nsuitable Node. Multiple different schedulers may be used within a cluster;\nkube-scheduler is the reference implementation.\nSee\nscheduling\nfor more information about scheduling and the kube-scheduler component.\nkube-scheduler [flags]"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "c582e7a0d17af57937feb03ed979c076",
+  "source": "k8s_docs",
+  "title": "Pod — deleteDelete Connect Proxy Path",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#delete-delete-connect-proxy-path",
+  "text": "DELETE /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}\nName\nType\nDescription\nname\nstring\nname of the PodProxyOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\npath\nstring\npath to the resource\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to pod.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "eddfdd35bfd185978aef4b1a8f39eb54",
+  "source": "k8s_docs",
+  "title": "Decrypt Confidential Data that is Already Encrypted at Rest — Configure the API server to decrypt objects",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/decrypt-data/#configure-the-api-server-to-decrypt-objects",
+  "text": "To disable encryption at rest, place the\nidentity\nprovider as the first\nentry in your encryption configuration file.\nFor example, if your existing EncryptionConfiguration file reads:\n---\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nEncryptionConfiguration\nresources\n:\n-\nresources\n:\n-\nsecrets\nproviders\n:\n-\naescbc\n:\nkeys\n:\n# Do not use this (invalid) example key for encryption\n-\nname\n:\nexample\nsecret\n:\n2KfZgdiq2K0g2YrYpyDYs9mF2LPZhQ==\nthen change it to:\n---\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nEncryptionConfiguration\nresources\n:\n-\nresources\n:\n-\nsecrets\nproviders\n:\n-\nidentity\n:\n{}\n# add this line\n-\naescbc\n:\nkeys\n:\n-\nname\n:\nexample\nsecret\n:\n2KfZgdiq2K0g2YrYpyDYs9mF2LPZhQ==\nand restart the kube-apiserver Pod on this node."
+}

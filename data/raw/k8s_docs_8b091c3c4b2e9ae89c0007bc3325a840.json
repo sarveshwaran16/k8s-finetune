@@ -1,0 +1,7 @@
+{
+  "id": "8b091c3c4b2e9ae89c0007bc3325a840",
+  "source": "k8s_docs",
+  "title": "Pod Group Disruption and Priority — Pod group priority",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/disruption-and-priority/#pod-group-priority",
+  "text": "PodGroup uses the same concept of\nPriorityClass\nas single Pods.\nOnce you have created one or more PriorityClasses,\nyou can create a PodGroup that specifies one of those PriorityClass names in its specification.\nThe priority admission controller uses the\npriorityClassName\nfield and populates the integer value of the priority.\nIf the priority class is not found, the PodGroup is rejected.\nWhen\npriorityClassName\nis not set for a PodGroup, Kubernetes looks for a default (a PriorityClass with\nglobalDefault\nset true)\nIf there is no PriorityClass with\nglobalDefault\nset true, a PodGroup with no\npriorityClassName\nhas priority zero.\nThe priority of the PodGroup is an authoritative priority for all pods in the group during\nworkload-aware preemption\nevents, even when priorities of individual pods forming this PodGroup differ.\nThe following YAML is an example of a PodGroup configuration that uses the\nhigh-priority\nPriorityClass,\nwhich maps to the integer priority value of 1000000.\nThe priority admission controller checks the specification and resolves the priority of the PodGroup to 1000000.\napiVersion\n:\nscheduling.k8s.io/v1alpha2\nkind\n:\nPodGroup\nmetadata\n:\nnamespace\n:\nns-1\nname\n:\njob-1\nspec\n:\npriorityClassName\n:\nhigh-priority"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "b7bb395c7ca9d7f39dbc0ee845558c88",
+  "source": "k8s_docs",
+  "title": "Native Histogram Support for Kubernetes Metrics — Before you begin",
+  "source_url": "https://kubernetes.io/docs/reference/instrumentation/native-histograms/#before-you-begin",
+  "text": "To use native histograms, you need:\nKubernetes v1.36 or later\nwith the\nNativeHistograms\nfeature gate\nenabled.\nPrometheus 2.40 or later\nto scrape and store native histograms.\nPrometheus 3.0+ is recommended for per-job configuration.\n\nClassic Prometheus histograms use fixed bucket boundaries (for example,\n[0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10]\nseconds).\nEach bucket creates a separate time series (\n_bucket\n,\n_count\n,\n_sum\n),\nwhich can lead to:\nHigh storage costs\nat scale, because each histogram generates many time series.\nAccuracy issues\n, because data points within a wide bucket range are\nindistinguishable. For example, a request completing in 1µs and one completing\nin 4ms both fall into the same\nle=\"0.005\"\nbucket.\nNative histograms\naddress these limitations by using exponential bucket boundaries\nthat automatically adjust to the data distribution. Benefits include:\n~10x reduction in time series count\nper histogram metric, significantly\nreducing Prometheus storage and improving query performance.\nFiner-grained resolution\nfor detecting performance regressions and setting\nprecise SLO thresholds."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "49219c3679c70c40afb618f81b168173",
+  "source": "k8s_docs",
+  "title": "User Impersonation — Impersonation modes",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/user-impersonation/#impersonation-modes",
+  "text": "Constrained impersonation defines three distinct modes, each with its own set of verbs:\nUse this mode to impersonate generic users (not service accounts or nodes). This mode applies when\nthe\nImpersonate-User\nheader value:\nDoes\nnot\nstart with\nsystem:serviceaccount:\nDoes\nnot\nstart with\nsystem:node:\nVerbs:\nimpersonate:user-info\n- Permission to impersonate a specific user, group, UID, or extra field\nimpersonate-on:user-info:<verb>\n- Permission to perform\n<verb>\nwhen impersonating a generic user\nUse this mode to impersonate ServiceAccounts.\nVerbs:\nimpersonate:serviceaccount\n- Permission to impersonate a specific service account\nimpersonate-on:serviceaccount:<verb>\n- Permission to perform\n<verb>\nwhen impersonating a service account\nUse these modes to impersonate nodes. This mode applies when the\nImpersonate-User\nheader value\nstarts with\nsystem:node:\n.\nVerbs:\nimpersonate:arbitrary-node\n- Permission to impersonate any specified node\nimpersonate:associated-node\n- Permission to impersonate only the node to which the impersonator is bound\nimpersonate-on:arbitrary-node:<verb>\n- Permission to perform\n<verb>\nwhen impersonating any node\nimpersonate-on:associated-node:<verb>\n- Permission to perform\n<verb>\nwhen impersonating the associated node"
+}

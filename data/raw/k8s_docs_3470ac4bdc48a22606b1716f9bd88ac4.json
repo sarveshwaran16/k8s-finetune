@@ -1,0 +1,7 @@
+{
+  "id": "3470ac4bdc48a22606b1716f9bd88ac4",
+  "source": "k8s_docs",
+  "title": "Liveness, Readiness, and Startup Probes — When should you use a readiness probe?",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#when-should-you-use-a-readiness-probe",
+  "text": "To start sending traffic to a Pod only when a probe succeeds, specify a\nreadiness probe. The readiness probe might be the same as the liveness probe,\nbut the existence of the readiness probe in the spec means that the Pod will\nstart without receiving any traffic and only start receiving traffic after the\nprobe starts succeeding.\nYou can also use a readiness probe to let a container take itself down for\nmaintenance, by checking an endpoint specific to readiness that is different\nfrom the liveness probe.\nWhen your app has a strict dependency on back-end services, you can implement\nboth a liveness and a readiness probe. The liveness probe passes when the app\nitself is healthy, but the readiness probe additionally checks that each\nrequired back-end service is available. This helps you avoid directing traffic\nto Pods that can only respond with error messages.\nFor containers that need to work on loading large data, configuration files, or\nmigrations during startup, consider using a\nstartup probe\n.\nHowever, if you want to detect the difference between an app that has failed\nand an app that is still processing its startup data, you might prefer a readiness probe."
+}

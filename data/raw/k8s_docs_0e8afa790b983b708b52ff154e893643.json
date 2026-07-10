@@ -1,0 +1,7 @@
+{
+  "id": "0e8afa790b983b708b52ff154e893643",
+  "source": "k8s_docs",
+  "title": "Storage Classes — Provisioner",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/#provisioner",
+  "text": "Each StorageClass has a provisioner that determines what volume plugin is used\nfor provisioning PVs. This field must be specified.\nVolume Plugin\nInternal Provisioner\nConfig Example\nAzureFile\n✓\nAzure File\nCephFS\n-\n-\nFC\n-\n-\nFlexVolume\n-\n-\niSCSI\n-\n-\nLocal\n-\nLocal\nNFS\n-\nNFS\nPortworxVolume\n✓\nPortworx Volume\nRBD\n-\nCeph RBD\nVsphereVolume\n✓\nvSphere\nYou are not restricted to specifying the \"internal\" provisioners\nlisted here (whose names are prefixed with \"kubernetes.io\" and shipped\nalongside Kubernetes). You can also run and specify external provisioners,\nwhich are independent programs that follow a\nspecification\ndefined by Kubernetes. Authors of external provisioners have full discretion\nover where their code lives, how the provisioner is shipped, how it needs to be\nrun, what volume plugin it uses (including Flex), etc. The repository\nkubernetes-sigs/sig-storage-lib-external-provisioner\nhouses a library for writing external provisioners that implements the bulk of\nthe specification. Some external provisioners are listed under the repository\nkubernetes-sigs/sig-storage-lib-external-provisioner\n.\nFor example, NFS doesn't provide an internal provisioner, but an external\nprovisioner can be used. There are also cases when 3rd party storage\nvendors provide their own external provisioner."
+}

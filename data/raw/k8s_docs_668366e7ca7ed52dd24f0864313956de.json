@@ -1,0 +1,7 @@
+{
+  "id": "668366e7ca7ed52dd24f0864313956de",
+  "source": "k8s_docs",
+  "title": "Deploy and Access the Kubernetes Dashboard — Deploying containerized applications",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#deploying-containerized-applications",
+  "text": "Dashboard lets you create and deploy a containerized application as a Deployment and optional Service with a simple wizard.\nYou can either manually specify application details, or upload a YAML or JSON\nmanifest\nfile containing application configuration.\nClick the\nCREATE\nbutton in the upper right corner of any page to begin."
+}

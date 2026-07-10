@@ -1,0 +1,7 @@
+{
+  "id": "5f9160a73f61f5c4ac2ce914665d688c",
+  "source": "k8s_docs",
+  "title": "Reference — Config API for kubeadm",
+  "source_url": "https://kubernetes.io/docs/reference/#config-api-for-kubeadm",
+  "text": "v1beta3\nv1beta4\n\nThese are the APIs defined by the Kubernetes project, but are not implemented\nby the core project:\nMetrics API (v1beta1)\nCustom Metrics API (v1beta2)\nExternal Metrics API (v1beta1)\n\nAn archive of the design docs for Kubernetes functionality. Good starting points are\nKubernetes Architecture\nand\nKubernetes Design Overview\n."
+}

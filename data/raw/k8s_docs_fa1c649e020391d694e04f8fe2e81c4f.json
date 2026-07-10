@@ -1,0 +1,7 @@
+{
+  "id": "fa1c649e020391d694e04f8fe2e81c4f",
+  "source": "k8s_docs",
+  "title": "Runtime Class — CRI Configuration",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/runtime-class/#cri-configuration",
+  "text": "For more details on setting up CRI runtimes, see\nCRI installation\n.\nRuntime handlers are configured through containerd's configuration at\n/etc/containerd/config.toml\n. Valid handlers are configured under the runtimes section:\n[plugins.\"io.containerd.grpc.v1.cri\".containerd.runtimes.${HANDLER_NAME}]\nSee containerd's\nconfig documentation\nfor more details:\nRuntime handlers are configured through CRI-O's configuration at\n/etc/crio/crio.conf\n. Valid\nhandlers are configured under the\ncrio.runtime table\n:\n[crio.runtime.runtimes.${HANDLER_NAME}]\n  runtime_path = \"${PATH_TO_BINARY}\"\nSee CRI-O's\nconfig documentation\nfor more details."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "3d6d494586f32b9483a894b0741a389c",
+  "source": "k8s_docs",
+  "title": "Vertical Pod Autoscaling — Initial",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/#updateMode-Initial",
+  "text": "In\nInitial\nmode, VPA only sets resource requests when Pods are first created. It does not update resources for already running Pods, even if recommendations change over time. The recommendations apply only during Pod creation.\n\nIn\nRecreate\nmode, VPA actively manages Pod resources by evicting Pods when their current\nresource requests differ significantly from recommendations. When a Pod is evicted, the workload\ncontroller (managing a Deployment, StatefulSet, etc) creates a replacement Pod, and the VPA admission\ncontroller applies the updated resource requests to the new Pod."
+}

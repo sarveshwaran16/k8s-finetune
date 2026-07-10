@@ -1,0 +1,7 @@
+{
+  "id": "48ef9e48cc91a842f27b4033da52a5e5",
+  "source": "k8s_docs",
+  "title": "Pod Conditions — Enhanced Pod readiness",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-condition/#enhanced-pod-readiness",
+  "text": "Your application can inject extra feedback or signals into the Pod's\n.status\n;\nthis is known as\nenhanced Pod readiness\n.\nTo use this, set\nreadinessGates\nin the Pod's\nspec\nto specify a list of additional\nconditions that the kubelet evaluates for Pod readiness.\nYou then implement, or install, a controller that manages these custom conditions,\nand the kubelet uses that as an extra input to decide if the Pod is ready.\nReadiness gates are determined by the current state of\nstatus.condition\nfields for the Pod.\nIf Kubernetes cannot find such a condition in the\nstatus.conditions\nfield of a Pod, the status of the condition is defaulted to \"\nFalse\n\".\nkind\n:\nPod\n...\nspec\n:\nreadinessGates\n:\n-\nconditionType\n:\n\"www.example.com/feature-1\"\nstatus\n:\nconditions\n:\n-\ntype\n:\nReady\n# a built-in PodCondition\nstatus\n:\n\"False\"\nlastProbeTime\n:\nnull\nlastTransitionTime\n:\n2018-01-01T00:00:00Z\n-\ntype\n:\n\"www.example.com/feature-1\"\n# an extra PodCondition\nstatus\n:\n\"False\"\nlastProbeTime\n:\nnull\nlastTransitionTime\n:\n2018-01-01T00:00:00Z\ncontainerStatuses\n:\n-\ncontainerID\n:\ndocker://abcd...\nready\n:\ntrue\n...\nThe Pod conditions you add must have names that meet the Kubernetes\nlabel key format\n."
+}

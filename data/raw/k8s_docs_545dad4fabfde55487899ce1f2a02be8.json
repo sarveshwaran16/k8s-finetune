@@ -1,0 +1,7 @@
+{
+  "id": "545dad4fabfde55487899ce1f2a02be8",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — CredentialProviderConfig",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-CredentialProviderConfig",
+  "text": "CredentialProviderConfig is the configuration containing information about\neach exec credential provider. Kubelet reads this configuration from disk and enables\neach provider as specified by the CredentialProvider type.\nField\nDescription\napiVersion\nstring\nkubelet.config.k8s.io/v1beta1\nkind\nstring\nCredentialProviderConfig\nproviders\n[Required]\n[]CredentialProvider\nproviders is a list of credential provider plugins that will be enabled by the kubelet.\nMultiple providers may match against a single image, in which case credentials\nfrom all providers will be returned to the kubelet. If multiple providers are called\nfor a single image, the results are combined. If providers return overlapping\nauth keys, the value from the provider earlier in this list is attempted first.\nproviders is a list of credential provider plugins that will be enabled by the kubelet.\nMultiple providers may match against a single image, in which case credentials\nfrom all providers will be returned to the kubelet. If multiple providers are called\nfor a single image, the results are combined. If providers return overlapping\nauth keys, the value from the provider earlier in this list is attempted first."
+}

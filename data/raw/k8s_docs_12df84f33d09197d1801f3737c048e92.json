@@ -1,0 +1,7 @@
+{
+  "id": "12df84f33d09197d1801f3737c048e92",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node.kubernetes.io/windows-build",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#nodekubernetesiowindows-build",
+  "text": "Type: Label\nExample:\nnode.kubernetes.io/windows-build: \"10.0.17763\"\nUsed on: Node\nWhen the kubelet is running on Microsoft Windows, it automatically labels its Node\nto record the version of Windows Server in use.\nThe label's value is in the format \"MajorVersion.MinorVersion.BuildNumber\".\n\nType: Annotation\nExample:\nstorage.alpha.kubernetes.io/migrated-plugins: \"kubernetes.io/cinder\"\nUsed on: CSINode (an extension API)\nThis annotation is automatically added for the CSINode object that maps to a node that\ninstalls CSIDriver. This annotation shows the in-tree plugin name of the migrated plugin. Its\nvalue depends on your cluster's in-tree cloud provider storage type.\nFor example, if the in-tree cloud provider storage type is\nCSIMigrationvSphere\n, the CSINodes instance for the node should be updated with:\nstorage.alpha.kubernetes.io/migrated-plugins: \"kubernetes.io/vsphere-volume\""
+}

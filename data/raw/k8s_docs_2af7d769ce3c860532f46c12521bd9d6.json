@@ -1,0 +1,7 @@
+{
+  "id": "2af7d769ce3c860532f46c12521bd9d6",
+  "source": "k8s_docs",
+  "title": "Node — deleteDelete Connect Proxy",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/node-v1/#delete-delete-connect-proxy",
+  "text": "DELETE /api/v1/nodes/{name}/proxy\nName\nType\nDescription\nname\nstring\nname of the NodeProxyOptions\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to node.\nStatus\nDescription\nResponse\n200\nOK\nstring\n\nDELETE /api/v1/nodes/{name}/proxy/{path}\nName\nType\nDescription\nname\nstring\nname of the NodeProxyOptions\npath\nstring\npath to the resource\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to node.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

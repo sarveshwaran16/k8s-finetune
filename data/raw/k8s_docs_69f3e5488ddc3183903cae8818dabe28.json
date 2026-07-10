@@ -1,0 +1,7 @@
+{
+  "id": "69f3e5488ddc3183903cae8818dabe28",
+  "source": "k8s_docs",
+  "title": "ReplicationController — Using ReplicationControllers with Services",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#using-replicationcontrollers-with-services",
+  "text": "Multiple ReplicationControllers can sit behind a single service, so that, for example, some traffic\ngoes to the old version, and some goes to the new version.\nA ReplicationController will never terminate on its own, but it isn't expected to be as long-lived as services. Services may be composed of pods controlled by multiple ReplicationControllers, and it is expected that many ReplicationControllers may be created and destroyed over the lifetime of a service (for instance, to perform an update of pods that run the service). Both services themselves and their clients should remain oblivious to the ReplicationControllers that maintain the pods of the services."
+}

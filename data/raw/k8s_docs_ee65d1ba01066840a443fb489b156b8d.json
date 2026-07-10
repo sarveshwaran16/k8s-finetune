@@ -1,0 +1,7 @@
+{
+  "id": "ee65d1ba01066840a443fb489b156b8d",
+  "source": "k8s_docs",
+  "title": "Operating etcd clusters for Kubernetes — Limiting access of etcd clusters",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#limiting-access-of-etcd-clusters",
+  "text": "After configuring secure communication, restrict the access of the etcd cluster to\nonly the Kubernetes API servers using TLS authentication.\nFor example, consider key pairs\nk8sclient.key\nand\nk8sclient.cert\nthat are\ntrusted by the CA\netcd.ca\n. When etcd is configured with\n--client-cert-auth\nalong with TLS, it verifies the certificates from clients by using system CAs\nor the CA passed in by\n--trusted-ca-file\nflag. Specifying flags\n--client-cert-auth=true\nand\n--trusted-ca-file=etcd.ca\nwill restrict the\naccess to clients with the certificate\nk8sclient.cert\n.\nOnce etcd is configured correctly, only clients with valid certificates can\naccess it. To give Kubernetes API servers the access, configure them with the\nflags\n--etcd-certfile=k8sclient.cert\n,\n--etcd-keyfile=k8sclient.key\nand\n--etcd-cafile=ca.cert\n."
+}

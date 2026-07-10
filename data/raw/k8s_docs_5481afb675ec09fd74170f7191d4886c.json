@@ -1,0 +1,7 @@
+{
+  "id": "5481afb675ec09fd74170f7191d4886c",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Admission (v1) — Resource Types",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-admission.v1/#resource-types",
+  "text": "AdmissionReview\n\nAdmissionReview describes an admission review request/response.\nField\nDescription\napiVersion\nstring\nadmission.k8s.io/v1\nkind\nstring\nAdmissionReview\nrequest\nAdmissionRequest\nrequest describes the attributes for the admission request.\nresponse\nAdmissionResponse\nresponse describes the attributes for the admission response.\nrequest describes the attributes for the admission request.\nresponse describes the attributes for the admission response."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "2c9f352c0e1fe87fcc27646785625c9a",
+  "source": "k8s_docs",
+  "title": "Hardening Guide - Authentication Mechanisms — Static token file",
+  "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/authentication-mechanisms/#static-token-file",
+  "text": "Although Kubernetes allows you to load credentials from a\nstatic token file\nlocated\non the control plane node disks, this approach is not recommended for production servers due to\nseveral reasons:\nCredentials are stored in clear text on control plane node disks, which can be a security risk.\nChanging any credential requires a restart of the API server process to take effect, which can\nimpact availability.\nThere is no mechanism available to allow users to rotate their credentials. To rotate a\ncredential, a cluster administrator must modify the token on disk and distribute it to the users.\nThere is no lockout mechanism available to prevent brute-force attacks."
+}

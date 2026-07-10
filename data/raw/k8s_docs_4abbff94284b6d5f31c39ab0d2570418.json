@@ -1,0 +1,7 @@
+{
+  "id": "4abbff94284b6d5f31c39ab0d2570418",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — resources",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-resources-em-",
+  "text": "Set a deployments nginx container cpu limits to \"200m\" and memory to \"512Mi\"\nkubectl\nset\nresources deployment nginx\n-c\n=nginx\n--limits\n=cpu=200m,memory=512Mi\nSet the resource request and limits for all containers in nginx\nkubectl\nset\nresources deployment nginx\n--limits\n=cpu=200m,memory=512Mi\n--requests\n=cpu=100m,memory=256Mi\nRemove the resource requests for resources on containers in nginx\nkubectl\nset\nresources deployment nginx\n--limits\n=cpu=0,memory=0\n--requests\n=cpu=0,memory=0\nPrint the result (in yaml format) of updating nginx container limits from a local, without hitting the server\nkubectl\nset\nresources -f path/\nto\n/file.yaml\n--limits\n=cpu=200m,memory=512Mi --local -o yaml\nSpecify compute resource requirements (CPU, memory) for any resource that defines a pod template.  If a pod is successfully scheduled, it is guaranteed the amount of resource requested, but may burst up to its specified limits.\nFor each compute resource, if a limit is specified and a request is omitted, the request will default to the limit.\nPossible resources include (case insensitive): Use \"kubectl api-resources\" for a complete list of supported resources.."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ac7d8b7ef5e1d0ce09bea1a5bfe18c1b",
+  "source": "k8s_docs",
+  "title": "kubectl cordon — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_cordon/#synopsis",
+  "text": "Mark node as unschedulable.\nkubectl cordon NODE\n\n# Mark node \"foo\" as unschedulable\n  kubectl cordon foo\n\n--dry-run string[=\"unchanged\"]     Default: \"none\"\nMust be \"none\", \"server\", or \"client\". If client strategy, only print the object that would be sent, without sending it. If server strategy, submit server-side request without persisting the resource.\n-h, --help\nhelp for cordon\n-l, --selector string\nSelector (label query) to filter on, supports '=', '==', '!=', 'in', 'notin'.(e.g. -l key1=value1,key2=value2,key3 in (value3)). Matching objects must satisfy all of the specified label constraints.\nMust be \"none\", \"server\", or \"client\". If client strategy, only print the object that would be sent, without sending it. If server strategy, submit server-side request without persisting the resource.\nhelp for cordon\nSelector (label query) to filter on, supports '=', '==', '!=', 'in', 'notin'.(e.g. -l key1=value1,key2=value2,key3 in (value3)). Matching objects must satisfy all of the specified label constraints."
+}

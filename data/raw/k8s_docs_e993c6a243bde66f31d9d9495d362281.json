@@ -1,0 +1,7 @@
+{
+  "id": "e993c6a243bde66f31d9d9495d362281",
+  "source": "k8s_docs",
+  "title": "Deployments — Replicas",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#replicas",
+  "text": ".spec.replicas\nis an optional field that specifies the number of desired Pods. It defaults to 1.\nShould you manually scale a Deployment, example via\nkubectl scale deployment deployment --replicas=X\n, and then you update that Deployment based on a manifest\n(for example: by running\nkubectl apply -f deployment.yaml\n),\nthen applying that manifest overwrites the manual scaling that you previously did.\nIf a\nHorizontalPodAutoscaler\n(or any\nsimilar API for horizontal scaling) is managing scaling for a Deployment, don't set\n.spec.replicas\n.\nInstead, allow the Kubernetes\ncontrol plane\nto manage the\n.spec.replicas\nfield automatically."
+}

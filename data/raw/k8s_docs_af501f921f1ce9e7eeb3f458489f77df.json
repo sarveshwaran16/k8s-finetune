@@ -1,0 +1,7 @@
+{
+  "id": "af501f921f1ce9e7eeb3f458489f77df",
+  "source": "k8s_docs",
+  "title": "Encrypting Confidential Data at Rest — Rotate a decryption key",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#rotating-a-decryption-key",
+  "text": "Changing an encryption key for Kubernetes without incurring downtime requires a multi-step operation,\nespecially in the presence of a highly-available deployment where multiple\nkube-apiserver\nprocesses\nare running.\nGenerate a new key and add it as the second key entry for the current provider on all\ncontrol plane nodes.\nRestart\nall\nkube-apiserver\nprocesses, to ensure each server can decrypt\nany data that are encrypted with the new key.\nMake a secure backup of the new encryption key. If you lose all copies of this key you would\nneed to delete all the resources were encrypted under the lost key, and workloads may not\noperate as expected during the time that at-rest encryption is broken.\nMake the new key the first entry in the\nkeys\narray so that it is used for encryption-at-rest\nfor new writes\nRestart all\nkube-apiserver\nprocesses to ensure each control plane host now encrypts using the new key\nAs a privileged user, run\nkubectl get secrets --all-namespaces -o json | kubectl replace -f -\nto encrypt all existing Secrets with the new key\nAfter you have updated all existing Secrets to use the new key and have made a secure backup of the\nnew key, remove the old decryption key from the configuration."
+}

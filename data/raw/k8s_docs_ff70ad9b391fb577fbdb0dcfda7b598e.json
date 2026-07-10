@@ -1,0 +1,7 @@
+{
+  "id": "ff70ad9b391fb577fbdb0dcfda7b598e",
+  "source": "k8s_docs",
+  "title": "JSONPath Support — Regular expressions in JSONPath",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/jsonpath/#regular-expressions-in-jsonpath",
+  "text": "JSONPath regular expressions are not supported. If you want to match using regular expressions, you can use a tool such as\njq\n.\n# kubectl does not support regular expressions for JSONpath output\n# The following command does not work\nkubectl get pods -o\njsonpath\n=\n'{.items[?(@.metadata.name=~/^test$/)].metadata.name}'\n# The following command achieves the desired result\nkubectl get pods -o json\n|\njq -r\n'.items[] | select(.metadata.name | test(\"test-\")).metadata.name'"
+}

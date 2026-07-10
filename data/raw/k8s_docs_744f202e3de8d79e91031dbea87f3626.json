@@ -1,0 +1,7 @@
+{
+  "id": "744f202e3de8d79e91031dbea87f3626",
+  "source": "k8s_docs",
+  "title": "Linux kernel security constraints for Pods and containers — Kernel-level security features and privileged containers",
+  "source_url": "https://kubernetes.io/docs/concepts/security/linux-kernel-security-constraints/#kernel-security-features-privileged-containers",
+  "text": "Kubernetes lets you specify that some trusted containers can run in\nprivileged\nmode. Any container in a Pod can run in privileged mode to use\noperating system administrative capabilities that would otherwise be\ninaccessible. This is available for both Windows and Linux.\nPrivileged containers explicitly override some of the Linux kernel constraints\nthat you might use in your workloads, as follows:\nseccomp\n: Privileged containers run as the\nUnconfined\nseccomp profile,\noverriding any seccomp profile that you specified in your manifest.\nAppArmor\n: Privileged containers ignore any applied AppArmor profiles.\nSELinux\n: Privileged containers run as the\nunconfined_t\ndomain."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "55e902822d2d36d11f3a373552696cb4",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — events",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#events",
+  "text": "List recent events in the default namespace.\nkubectl events\nList recent events in all namespaces.\nkubectl events\n--all-namespaces\nList recent events for the specified pod, then wait for more events and list them as they arrive.\nkubectl\nevents\n--\nfor\npod/web\n-\npod\n-\n13je7\n--\nwatch\nList recent events in given format. Supported ones, apart from default, are json and yaml.\nkubectl events -oyaml\nList recent only events in given event types\nkubectl events\n--types\n=Warning,Normal\nDisplay events\nPrints a table of the most important information about events. You can request events for a namespace, for all namespace, or filtered to only those pertaining to a specified resource."
+}

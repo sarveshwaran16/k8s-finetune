@@ -1,0 +1,7 @@
+{
+  "id": "2f0d669a76c2e1c51de9d526a46a526d",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler — HorizontalPodAutoscalerCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#HorizontalPodAutoscalerCondition",
+  "text": "HorizontalPodAutoscalerCondition describes the state of a HorizontalPodAutoscaler at a certain point.\nField\nDescription\nlastTransitionTime\nTime\nlastTransitionTime is the last time the condition transitioned from one status to another\nmessage\nstring\nmessage is a human-readable explanation containing details about the transition\nreason\nstring\nreason is the reason for the condition's last transition.\nstatus\n*\nstring\nstatus is the status of the condition (True, False, Unknown)\ntype\n*\nstring\ntype describes the current condition"
+}

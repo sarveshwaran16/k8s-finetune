@@ -1,0 +1,7 @@
+{
+  "id": "a1050fc45feb83ad4fbaccb425ae41e3",
+  "source": "k8s_docs",
+  "title": "Resource Quotas — Quota for infrastructure resources",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#compute-resource-quota",
+  "text": "You can limit the total sum of\ncompute resources\nthat can be requested in a given namespace.\nThe following resource types are supported:\nResource Name\nDescription\nlimits.cpu\nAcross all pods in a non-terminal state, the sum of CPU limits cannot exceed this value.\nlimits.memory\nAcross all pods in a non-terminal state, the sum of memory limits cannot exceed this value.\nrequests.cpu\nAcross all pods in a non-terminal state, the sum of CPU requests cannot exceed this value.\nrequests.memory\nAcross all pods in a non-terminal state, the sum of memory requests cannot exceed this value.\nhugepages-<size>\nAcross all pods in a non-terminal state, the number of huge page requests of the specified size cannot exceed this value.\ncpu\nSame as\nrequests.cpu\nmemory\nSame as\nrequests.memory"
+}

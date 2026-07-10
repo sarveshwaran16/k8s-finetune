@@ -1,0 +1,7 @@
+{
+  "id": "08eccce8ee2534bae2e6ebd77b09fddc",
+  "source": "k8s_docs",
+  "title": "TLS bootstrapping — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

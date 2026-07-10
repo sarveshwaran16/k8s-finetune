@@ -1,0 +1,7 @@
+{
+  "id": "6d734263df4f3f083d0190c179cfe074",
+  "source": "k8s_docs",
+  "title": "kubectl apply — See Also",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_apply/#see-also",
+  "text": "kubectl\n- kubectl controls the Kubernetes cluster manager\nkubectl apply edit-last-applied\n- Edit latest last-applied-configuration annotations of a resource/object\nkubectl apply set-last-applied\n- Set the last-applied-configuration annotation on a live object to match the contents of a file\nkubectl apply view-last-applied\n- View the latest last-applied-configuration annotations of a resource/object"
+}

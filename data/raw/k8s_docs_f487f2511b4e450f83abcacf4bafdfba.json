@@ -1,0 +1,7 @@
+{
+  "id": "f487f2511b4e450f83abcacf4bafdfba",
+  "source": "k8s_docs",
+  "title": "Ingress — Failing across availability zones",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#failing-across-availability-zones",
+  "text": "Techniques for spreading traffic across failure domains differ between cloud providers.\nPlease check the documentation of the relevant\nIngress controller\nfor details.\n\nYou can expose a Service in multiple ways that don't directly involve the Ingress resource:\nUse\nService.Type=LoadBalancer\nUse\nService.Type=NodePort"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6f177129a18186b4c35bd8a3bab4f129",
+  "source": "k8s_docs",
+  "title": "CSIDriver — TokenRequest",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/csi-driver-v1/#TokenRequest",
+  "text": "TokenRequest contains parameters of a service account token.\nField\nDescription\naudience\n*\nstring\naudience is the intended audience of the token in \"TokenRequestSpec\". It will default to the audiences of kube apiserver.\nexpirationSeconds\ninteger\nexpirationSeconds is the duration of validity of the token in \"TokenRequestSpec\". It has the same default value of \"ExpirationSeconds\" in \"TokenRequestSpec\"."
+}

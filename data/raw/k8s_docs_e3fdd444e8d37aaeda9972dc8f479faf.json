@@ -1,0 +1,7 @@
+{
+  "id": "e3fdd444e8d37aaeda9972dc8f479faf",
+  "source": "k8s_docs",
+  "title": "CSINode — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/csi-node-v1/#get-read",
+  "text": "GET /apis/storage.k8s.io/v1/csinodes/{name}\nName\nType\nDescription\nname\nstring\nname of the CSINode\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nCSINode"
+}

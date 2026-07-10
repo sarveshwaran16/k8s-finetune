@@ -1,0 +1,7 @@
+{
+  "id": "1e3d296b9ffa5101fe43ae361ab4b474",
+  "source": "k8s_docs",
+  "title": "Configure a Security Context for a Pod or Container — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#before-you-begin",
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nTo check the version, enter\nkubectl version\n.\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nTo check the version, enter\nkubectl version\n."
+}

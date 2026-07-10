@@ -1,0 +1,7 @@
+{
+  "id": "d9d7f49c98c96e7fd3d0fa50b733e9e2",
+  "source": "k8s_docs",
+  "title": "Debug Services — Does the Service work by IP?",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/#does-the-service-work-by-ip",
+  "text": "Assuming you have confirmed that DNS works, the next thing to test is whether your\nService works by its IP address. From a Pod in your cluster, access the\nService's IP (from\nkubectl get\nabove).\nfor\ni in\n$(\nseq\n1\n3\n)\n;\ndo\nwget -qO- 10.0.1.175:80\ndone\nThis should produce something like:\nhostnames-632524106-bbpiw\nhostnames-632524106-ly40y\nhostnames-632524106-tlaok\nIf your Service is working, you should get correct responses. If not, there\nare a number of things that could be going wrong. Read on."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "eb86cb585794b2bd3c93e7a2de3f6b91",
+  "source": "k8s_docs",
+  "title": "PodTemplate — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-template-v1/#get-read",
+  "text": "GET /api/v1/namespaces/{namespace}/podtemplates/{name}\nName\nType\nDescription\nname\nstring\nname of the PodTemplate\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nPodTemplate"
+}

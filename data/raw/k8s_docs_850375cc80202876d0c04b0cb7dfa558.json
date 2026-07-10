@@ -1,0 +1,7 @@
+{
+  "id": "850375cc80202876d0c04b0cb7dfa558",
+  "source": "k8s_docs",
+  "title": "Manifest-Based Admission Control — Configuring manifest-based admission control",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/#configuration",
+  "text": "To enable manifest-based admission control, you need:\nThe\nManifestBasedAdmissionControlConfig\nfeature gate enabled on the\nkube-apiserver.\nAn\nAdmissionConfiguration\nfile with\nstaticManifestsDir\nfields pointing\nto directories containing your manifest files.\nThe manifest files themselves on disk, accessible to the kube-apiserver\nprocess."
+}

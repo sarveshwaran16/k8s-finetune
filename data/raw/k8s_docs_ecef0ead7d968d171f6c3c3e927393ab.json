@@ -1,0 +1,7 @@
+{
+  "id": "ecef0ead7d968d171f6c3c3e927393ab",
+  "source": "k8s_docs",
+  "title": "Dual-stack support with kubeadm — Create a single-stack cluster",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/dual-stack-support/#create-a-single-stack-cluster",
+  "text": "To make things more clear, here is an example kubeadm\nconfiguration file\nkubeadm-config.yaml\nfor the single-stack control plane node.\napiVersion\n:\nkubeadm.k8s.io/v1beta4\nkind\n:\nClusterConfiguration\nnetworking\n:\npodSubnet\n:\n10.244.0.0\n/16\nserviceSubnet\n:\n10.96.0.0\n/16\n\nValidate IPv4/IPv6 dual-stack\nnetworking\nRead about\nDual-stack\ncluster networking\nLearn more about the kubeadm\nconfiguration format"
+}

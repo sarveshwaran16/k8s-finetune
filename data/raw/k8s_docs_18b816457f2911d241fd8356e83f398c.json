@@ -1,0 +1,7 @@
+{
+  "id": "18b816457f2911d241fd8356e83f398c",
+  "source": "k8s_docs",
+  "title": "Windows containers in Kubernetes — Validating the Windows cluster operability",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/intro/#validating-the-windows-cluster-operability",
+  "text": "The Kubernetes project provides a\nWindows Operational Readiness\nspecification,\naccompanied by a structured test suite. This suite is split into two sets of tests,\ncore and extended, each containing categories aimed at testing specific areas.\nIt can be used to validate all the functionalities of a Windows and hybrid system\n(mixed with Linux nodes) with full coverage.\nTo set up the project on a newly created cluster, refer to the instructions in the\nproject guide\n."
+}

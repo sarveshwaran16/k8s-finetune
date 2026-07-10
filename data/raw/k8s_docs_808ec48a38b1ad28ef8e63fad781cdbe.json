@@ -1,0 +1,7 @@
+{
+  "id": "808ec48a38b1ad28ef8e63fad781cdbe",
+  "source": "k8s_docs",
+  "title": "Storage Classes — Reclaim policy",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/#reclaim-policy",
+  "text": "PersistentVolumes that are dynamically created by a StorageClass will have the\nreclaim policy\nspecified in the\nreclaimPolicy\nfield of the class, which can be\neither\nDelete\nor\nRetain\n. If no\nreclaimPolicy\nis specified when a\nStorageClass object is created, it will default to\nDelete\n.\nPersistentVolumes that are created manually and managed via a StorageClass will have\nwhatever reclaim policy they were assigned at creation."
+}

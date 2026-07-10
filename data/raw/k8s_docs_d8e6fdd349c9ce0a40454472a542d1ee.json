@@ -1,0 +1,7 @@
+{
+  "id": "d8e6fdd349c9ce0a40454472a542d1ee",
+  "source": "k8s_docs",
+  "title": "Protocols for Services — TLS",
+  "source_url": "https://kubernetes.io/docs/reference/networking/service-protocols/#protocol-tls-special",
+  "text": "If your cloud provider supports it, you can use a Service set to\ntype: LoadBalancer\nas\na way to set up external reverse proxying, where the connection from client to load\nbalancer is TLS encrypted and the load balancer is the TLS server peer.\nThe connection from the load balancer to your workload can also be TLS,\nor might be plain text. The exact options available to you depend on your\ncloud provider or custom Service implementation.\nTypically, you set the protocol to\nTCP\nand set an annotation\n(usually specific to your cloud provider) that configures the load balancer\nto act as a TLS server. You would configure the TLS identity (as server,\nand possibly also as a client that connects to your workload) using\nmechanisms that are specific to your cloud provider."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "55a68eb908c643662ed03279a9d473a1",
+  "source": "k8s_docs",
+  "title": "Gateway API — Migrating from Ingress",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/gateway/#migrating-from-ingress",
+  "text": "Gateway API is the successor to the\nIngress\nAPI.\nHowever, it does not include the Ingress kind. As a result, a one-time conversion from your existing\nIngress resources to Gateway API resources is necessary.\nRefer to the\ningress migration\nguide for details on migrating Ingress resources to Gateway API resources."
+}

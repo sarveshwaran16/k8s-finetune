@@ -1,0 +1,7 @@
+{
+  "id": "b034c659c4e9de00abc6eea35a2d971a",
+  "source": "k8s_docs",
+  "title": "Observability — Metrics",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/observability/#metrics",
+  "text": "Kubernetes components emit metrics in\nPrometheus format\nfrom their\n/metrics\nendpoints, including:\nkube-controller-manager\nkube-proxy\nkube-apiserver\nkube-scheduler\nkubelet\nThe kubelet also exposes metrics at\n/metrics/cadvisor\n,\n/metrics/resource\n, and\n/metrics/probes\n, and add-ons such as\nkube-state-metrics\nenrich those control plane signals with Kubernetes object status.\nA typical Kubernetes metrics pipeline periodically scrapes these endpoints and stores the samples in a time series database (for example with Prometheus).\nSee the\nsystem metrics guide\nfor details and configuration options.\nFigure 2 outlines a common Kubernetes metrics pipeline.\nflowchart LR\n    C[Cluster components] --> P[Prometheus scraper]\n    P --> TS[(Time series storage)]\n    TS --> D[Dashboards and alerts]\n    TS --> A[Automated actions]\nFigure 2. Components of a typical Kubernetes metrics pipeline.\nFor multi-cluster or multi-cloud visibility, distributed time series databases (for example Thanos or Cortex) can complement Prometheus.\nSee\nCommon observability tools - metrics tools\nfor metrics scrapers and time series databases.\nSystem metrics for Kubernetes components\nResource usage monitoring with metrics-server\nkube-state-metrics concept\nResource metrics pipeline overview"
+}

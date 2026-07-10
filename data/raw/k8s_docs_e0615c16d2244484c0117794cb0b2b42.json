@@ -1,0 +1,7 @@
+{
+  "id": "e0615c16d2244484c0117794cb0b2b42",
+  "source": "k8s_docs",
+  "title": "kube-scheduler Configuration (v1) — DebuggingConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-scheduler-config.v1/#DebuggingConfiguration",
+  "text": "Appears in:\nKubeSchedulerConfiguration\nDebuggingConfiguration holds configuration for Debugging related features.\nField\nDescription\nenableProfiling\n[Required]\nbool\nenableProfiling enables profiling via web interface host:port/debug/pprof/\nenableContentionProfiling\n[Required]\nbool\nenableContentionProfiling enables block profiling, if\nenableProfiling is true.\nenableProfiling enables profiling via web interface host:port/debug/pprof/\nenableContentionProfiling enables block profiling, if\nenableProfiling is true."
+}

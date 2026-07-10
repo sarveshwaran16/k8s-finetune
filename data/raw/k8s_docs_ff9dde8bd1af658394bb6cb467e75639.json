@@ -1,0 +1,7 @@
+{
+  "id": "ff9dde8bd1af658394bb6cb467e75639",
+  "source": "k8s_docs",
+  "title": "EndpointSlices — Duplicate endpoints",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#duplicate-endpoints",
+  "text": "Due to the nature of EndpointSlice changes, endpoints may be represented in more\nthan one EndpointSlice at the same time. This naturally occurs as changes to\ndifferent EndpointSlice objects can arrive at the Kubernetes client watch / cache\nat different times.\nClients of the EndpointSlice API must iterate through all the existing EndpointSlices\nassociated to a Service and build a complete list of unique network endpoints. It is\nimportant to mention that endpoints may be duplicated in different EndpointSlices.\nYou can find a reference implementation for how to perform this endpoint aggregation\nand deduplication as part of the\nEndpointSliceCache\ncode within\nkube-proxy\n."
+}

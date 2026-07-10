@@ -1,0 +1,7 @@
+{
+  "id": "63d93c840e7c4d3b44802f7c6857093d",
+  "source": "k8s_docs",
+  "title": "Developing Cloud Controller Manager — Background",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/developing-cloud-controller-manager/#background",
+  "text": "Since cloud providers develop and release at a different pace compared to the Kubernetes project, abstracting the provider-specific code to the\ncloud-controller-manager\nbinary allows cloud vendors to evolve independently from the core Kubernetes code.\nThe Kubernetes project provides skeleton cloud-controller-manager code with Go interfaces to allow you (or your cloud provider) to plug in your own implementations. This means that a cloud provider can implement a cloud-controller-manager by importing packages from Kubernetes core; each cloudprovider will register their own code by calling\ncloudprovider.RegisterCloudProvider\nto update a global variable of available cloud providers."
+}

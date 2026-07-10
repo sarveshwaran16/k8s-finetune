@@ -1,0 +1,7 @@
+{
+  "id": "1864416ecee5c0280991c7ebb988ed9d",
+  "source": "k8s_docs",
+  "title": "User Namespaces — ID count for each of Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/user-namespaces/#id-count-for-each-of-pods",
+  "text": "Starting with Kubernetes v1.33, the ID count for each of Pods can be set in\nKubeletConfiguration\n.\napiVersion\n:\nkubelet.config.k8s.io/v1beta1\nkind\n:\nKubeletConfiguration\nuserNamespaces\n:\nidsPerPod\n:\n1048576\nThe value of\nidsPerPod\n(uint32) must be a multiple of 65536.\nThe default value is 65536.\nThis value only applies to containers created after the kubelet was started with\nthis\nKubeletConfiguration\n.\nRunning containers are not affected by this config.\nIn Kubernetes prior to v1.33, the ID count for each of Pods was hard-coded to\n65536."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "e442e5d978182b5d48899360a607343a",
+  "source": "k8s_docs",
+  "title": "Deployment — DeploymentCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apps/deployment-v1/#DeploymentCondition",
+  "text": "DeploymentCondition describes the state of a deployment at a certain point.\nField\nDescription\nlastTransitionTime\nTime\nLast time the condition transitioned from one status to another.\nlastUpdateTime\nTime\nThe last time this condition was updated.\nmessage\nstring\nA human readable message indicating details about the transition.\nreason\nstring\nThe reason for the condition's last transition.\nstatus\n*\nstring\nStatus of the condition, one of True, False, Unknown.\ntype\n*\nstring\nType of deployment condition."
+}

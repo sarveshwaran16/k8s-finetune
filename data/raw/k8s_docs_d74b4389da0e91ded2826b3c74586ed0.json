@@ -1,0 +1,7 @@
+{
+  "id": "d74b4389da0e91ded2826b3c74586ed0",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kube-scheduler-simulator.sigs.k8s.io/finalscore-result",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kube-scheduler-simulator-sigs-k8s-io-finalscore-result",
+  "text": "Type: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/finalscore-result\n:\n>-\n{\"node-282x7\":{\"ImageLocality\":\"0\",\"InterPodAffinity\":\"0\",\"NodeAffinity\":\"0\",\"NodeNumber\":\"0\",\"NodeResourcesBalancedAllocation\":\"76\",\"NodeResourcesFit\":\"73\",\"PodTopologySpread\":\"200\",\"TaintToleration\":\"300\",\"VolumeBinding\":\"0\"},\"node-gp9t4\":{\"ImageLocality\":\"0\",\"InterPodAffinity\":\"0\",\"NodeAffinity\":\"0\",\"NodeNumber\":\"0\",\"NodeResourcesBalancedAllocation\":\"76\",\"NodeResourcesFit\":\"73\",\"PodTopologySpread\":\"200\",\"TaintToleration\":\"300\",\"VolumeBinding\":\"0\"}}\nUsed on: Pod\nThis annotation records the final scores that the scheduler calculates from the scores from score scheduler plugins,\nused by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n."
+}

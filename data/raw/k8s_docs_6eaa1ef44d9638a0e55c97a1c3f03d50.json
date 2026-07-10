@@ -1,0 +1,7 @@
+{
+  "id": "6eaa1ef44d9638a0e55c97a1c3f03d50",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubectl — TLS problems",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/troubleshoot-kubectl/#tls-problems",
+  "text": "Additional tools required -\nbase64\nand\nopenssl\nversion 3.0 or above.\nThe Kubernetes API server only serves HTTPS requests by default. In that case TLS problems\nmay occur due to various reasons, such as certificate expiry or chain of trust validity.\nYou can find the TLS certificate in the kubeconfig file, located in the\n~/.kube/config\ndirectory. The\ncertificate-authority\nattribute contains the CA certificate and the\nclient-certificate\nattribute contains the client certificate.\nVerify the expiry of these certificates:\nkubectl config view --flatten --output\n'jsonpath={.clusters[0].cluster.certificate-authority-data}'\n|\nbase64 -d\n|\nopenssl x509 -noout -dates\noutput:\nnotBefore=Feb 13 05:57:47 2024 GMT\nnotAfter=Feb 10 06:02:47 2034 GMT\nkubectl config view --flatten --output\n'jsonpath={.users[0].user.client-certificate-data}'\n|\nbase64 -d\n|\nopenssl x509 -noout -dates\noutput:\nnotBefore=Feb 13 05:57:47 2024 GMT\nnotAfter=Feb 12 06:02:50 2025 GMT"
+}

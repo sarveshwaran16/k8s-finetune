@@ -1,0 +1,7 @@
+{
+  "id": "ae2d66298f1fef2956116dc21d6e8a22",
+  "source": "k8s_docs",
+  "title": "Liveness, Readiness, and Startup Probes — Configuration fields",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#configure-probes",
+  "text": "Probes\nhave a number of fields that you can use to more precisely control the behavior of startup,\nliveness and readiness checks. For example:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nprobe-example\nspec\n:\ncontainers\n:\n-\nname\n:\napp\nimage\n:\nregistry.k8s.io/e2e-test-images/agnhost:2.40\nports\n:\n-\ncontainerPort\n:\n8080\nstartupProbe\n:\nhttpGet\n:\npath\n:\n/healthz\nport\n:\n8080\nfailureThreshold\n:\n30\nperiodSeconds\n:\n10\nlivenessProbe\n:\nhttpGet\n:\npath\n:\n/healthz\nport\n:\n8080\ninitialDelaySeconds\n:\n10\nperiodSeconds\n:\n5\ntimeoutSeconds\n:\n3\nfailureThreshold\n:\n3\nreadinessProbe\n:\nhttpGet\n:\npath\n:\n/ready\nport\n:\n8080\nperiodSeconds\n:\n5"
+}

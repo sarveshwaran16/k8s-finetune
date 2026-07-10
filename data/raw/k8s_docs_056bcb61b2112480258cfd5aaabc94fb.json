@@ -1,0 +1,7 @@
+{
+  "id": "056bcb61b2112480258cfd5aaabc94fb",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — Considerations for downgrade and rollback",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#considerations-for-downgrade-and-rollback",
+  "text": "Disabling the\nDeclarativeValidationBeta\nfeature gate acts as a safety mechanism. However, be aware of a potential edge case (considered unlikely due to extensive testing): If a bug in declarative validation (when\nDeclarativeValidationBeta=true\n)\nincorrectly allowed\nan invalid object to be persisted, disabling the feature gate might then cause subsequent updates to that specific object to be blocked by the now-authoritative (and correct) hand-written validation. Resolving this might require manual correction of the stored object, potentially via direct etcd modification in rare cases.\nFor details on managing feature gates, see\nFeature Gates\n."
+}

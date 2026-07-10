@@ -1,0 +1,7 @@
+{
+  "id": "0f1300e4bd1e6bf9f567f7497017751b",
+  "source": "k8s_docs",
+  "title": "Updating Configuration via a ConfigMap — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tutorials/configuration/updating-configuration-via-a-configmap/#before-you-begin",
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYou need to have the\ncurl\ncommand-line tool for making HTTP requests from\nthe terminal or command prompt. If you do not have\ncurl\navailable, you can install it. Check the\ndocumentation for your local operating system."
+}

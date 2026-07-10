@@ -1,0 +1,7 @@
+{
+  "id": "64a43d9590115e38e742106c12ed8a35",
+  "source": "k8s_docs",
+  "title": "Horizontal Manual Scaling for a Deployment — Scaling down a Deployment",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/scale-deployment/#scaling-down-a-deployment",
+  "text": "To reduce the number of Pods, set\n--replicas\nto a lower value:\nkubectl scale deployment/nginx-deployment --replicas\n=\n2\nKubernetes gracefully terminates the excess Pods, respecting each Pod's\nterminationGracePeriodSeconds\nsetting.\nVerify that the Deployment has two Pods:\nkubectl get pods -l\napp\n=\nnginx\nThe output is similar to:\nNAME                                READY   STATUS    RESTARTS   AGE\nnginx-deployment-66b6c48dd5-7gl6h   1/1     Running   0          2m\nnginx-deployment-66b6c48dd5-v8mkd   1/1     Running   0          2m"
+}

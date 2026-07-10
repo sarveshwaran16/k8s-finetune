@@ -1,0 +1,7 @@
+{
+  "id": "09bdde868146fcf9de4446c306f7b0f5",
+  "source": "k8s_docs",
+  "title": "kubectl Usage Conventions — kubectl proxy",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/conventions/#kubectl-proxy",
+  "text": "Browsing untrusted pod or service endpoints through\nkubectl proxy\nis dangerous,\nas the served content has implicit access to the Kubernetes API using the proxy's\ncredentials. Use caution and avoid accessing untrusted endpoints while using\nprivileged credentials.\nTo reduce risk:\nAvoid browsing to untrusted pods or services through\nkubectl proxy\n.\nUse\n--reject-methods='POST,PUT,PATCH,DELETE'\nto restrict the proxy to\nread-only operations when you only need to view resources.\nUse\n--reject-paths\nto limit which API paths the proxy exposes.\nDo not run\nkubectl proxy\nwith cluster-admin credentials unless necessary."
+}

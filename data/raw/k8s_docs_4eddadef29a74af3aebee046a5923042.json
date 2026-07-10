@@ -1,0 +1,7 @@
+{
+  "id": "4eddadef29a74af3aebee046a5923042",
+  "source": "k8s_docs",
+  "title": "Manage TLS Certificates in a Cluster — Upload the signed certificate",
+  "source_url": "https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/#upload-the-signed-certificate",
+  "text": "Finally, populate the signed certificate in the API object's status:\nkubectl get csr my-svc.my-namespace -o json\n|\n\\\njq\n'.status.certificate = \"'\n$(\nbase64 ca-signed-server.pem\n|\ntr -d\n'\\n'\n)\n'\"'\n|\n\\\nkubectl replace --raw /apis/certificates.k8s.io/v1/certificatesigningrequests/my-svc.my-namespace/status -f -\nOnce the CSR is approved and the signed certificate is uploaded, run:\nkubectl get csr\nThe output is similar to:\nNAME                  AGE   SIGNERNAME            REQUESTOR              REQUESTEDDURATION   CONDITION\nmy-svc.my-namespace   20m   example.com/serving   yourname@example.com   <none>              Approved,Issued"
+}

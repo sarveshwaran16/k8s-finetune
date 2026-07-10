@@ -1,7 +1,0 @@
-{
-  "id": "74582d70d169183bc40590a86ad56af4",
-  "source": "k8s_docs",
-  "title": "Configuration",
-  "source_url": "https://kubernetes.io/docs/tutorials/configuration/",
-  "text": "Configuration\nUpdating Configuration via a ConfigMap\nConfiguring Redis using a ConfigMap\nAdopting Sidecar Containers\nConfigure a Pod to Use a PersistentVolume for Storage\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified June 16, 2021 at 5:57 PM PST:\nRemove exec permission on markdown files (e9703497a1)"
-}

@@ -1,0 +1,7 @@
+{
+  "id": "f17d2de0e5acfb192b95af9b059b5655",
+  "source": "k8s_docs",
+  "title": "Use Cilium for NetworkPolicy — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/cilium-network-policy/#what-s-next",
+  "text": "Once your cluster is running, you can follow the\nDeclare Network Policy\nto try out Kubernetes NetworkPolicy with Cilium.\nHave fun, and if you have questions, contact us using the\nCilium Slack Channel\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

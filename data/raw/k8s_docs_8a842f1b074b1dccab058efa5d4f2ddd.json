@@ -1,0 +1,7 @@
+{
+  "id": "8a842f1b074b1dccab058efa5d4f2ddd",
+  "source": "k8s_docs",
+  "title": "Securing a Cluster — API Authentication",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#api-authentication",
+  "text": "Choose an authentication mechanism for the API servers to use that matches the common access patterns\nwhen you install a cluster. For instance, small, single-user clusters may wish to use a simple certificate\nor static Bearer token approach. Larger clusters may wish to integrate an existing OIDC or LDAP server that\nallow users to be subdivided into groups.\nAll API clients must be authenticated, even those that are part of the infrastructure like nodes,\nproxies, the scheduler, and volume plugins. These clients are typically\nservice accounts\nor use x509 client certificates, and they are created automatically at cluster startup or are setup as part of the cluster installation.\nConsult the\nauthentication reference document\nfor more information."
+}

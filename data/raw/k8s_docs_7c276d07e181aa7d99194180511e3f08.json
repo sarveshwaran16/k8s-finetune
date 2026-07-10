@@ -1,0 +1,7 @@
+{
+  "id": "7c276d07e181aa7d99194180511e3f08",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node-role.kubernetes.io/control-plane",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-role-kubernetes-io-control-plane",
+  "text": "Type: Label\nUsed on: Node\nA marker label to indicate that the node is used to run control plane components.\nThe kubeadm tool applies this label to the control plane nodes that it manages.\nOther cluster management tools typically also set this taint.\nYou can label control plane nodes with this label to make it easier to schedule Pods\nonly onto these nodes, or to avoid running Pods on the control plane.\nIf this label is set, the\nEndpointSlice controller\nignores that node while calculating Topology Aware Hints."
+}

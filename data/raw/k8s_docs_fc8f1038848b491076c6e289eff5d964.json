@@ -1,0 +1,7 @@
+{
+  "id": "fc8f1038848b491076c6e289eff5d964",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — unset",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-unset-em-",
+  "text": "Unset the current-context\nkubectl\nconfig\nunset current-context\nUnset namespace in foo context\nkubectl\nconfig\nunset contexts.foo.namespace\nUnset an individual value in a kubeconfig file.\nPROPERTY_NAME is a dot delimited name where each token represents either an attribute name or a map key.  Map keys may not contain dots."
+}

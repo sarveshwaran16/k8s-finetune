@@ -1,0 +1,7 @@
+{
+  "id": "efc68a5e67a6ba09099eaa0b69c63b62",
+  "source": "k8s_docs",
+  "title": "Debugging DNS Resolution — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/#what-s-next",
+  "text": "See\nAutoscaling the DNS Service in a Cluster\n.\nRead\nDNS for Services and Pods\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

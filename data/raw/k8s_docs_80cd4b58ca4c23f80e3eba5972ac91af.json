@@ -1,0 +1,7 @@
+{
+  "id": "80cd4b58ca4c23f80e3eba5972ac91af",
+  "source": "k8s_docs",
+  "title": "ReplicationController — Writing a ReplicationController Manifest",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#writing-a-replicationcontroller-manifest",
+  "text": "As with all other Kubernetes config, a ReplicationController needs\napiVersion\n,\nkind\n, and\nmetadata\nfields.\nWhen the control plane creates new Pods for a ReplicationController, the\n.metadata.name\nof the\nReplicationController is part of the basis for naming those Pods. The name of a ReplicationController must be a valid\nDNS subdomain\nvalue, but this can produce unexpected results for the Pod hostnames. For best compatibility,\nthe name should follow the more restrictive rules for a\nDNS label\n.\nFor general information about working with configuration files, see\nobject management\n.\nA ReplicationController also needs a\n.spec\nsection\n."
+}

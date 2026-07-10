@@ -1,0 +1,7 @@
+{
+  "id": "7866b19757b9f6c9a3476886cf9b7b2e",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubectl — Verify contexts",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/troubleshoot-kubectl/#verify-contexts",
+  "text": "Kubernetes supports\nmultiple clusters and contexts\n.\nEnsure that you are using the correct context to interact with your cluster.\nList available contexts:\nkubectl config get-contexts\nSwitch to the appropriate context:\nkubectl config use-context <context-name>\n\nThe\nkube-apiserver\nserver is the\ncentral component of a Kubernetes cluster. If the API server or the load balancer that\nruns in front of your API servers is not reachable or not responding, you won't be able\nto interact with the cluster.\nCheck the if the API server's host is reachable by using\nping\ncommand. Check cluster's\nnetwork connectivity and firewall. If your are using a cloud provider for deploying\nthe cluster, check your cloud provider's health check status for the cluster's\nAPI server.\nVerify the status of the load balancer (if used) to ensure it is healthy and forwarding\ntraffic to the API server."
+}

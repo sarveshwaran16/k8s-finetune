@@ -1,0 +1,7 @@
+{
+  "id": "e2c2f82d9c49992e7d3a6420157993ce",
+  "source": "k8s_docs",
+  "title": "Enforce Pod Security Standards by Configuring the Built-in Admission Controller — Configure the Admission Controller",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/enforce-standards-admission-controller/#configure-the-admission-controller",
+  "text": "apiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nAdmissionConfiguration\nplugins\n:\n-\nname\n:\nPodSecurity\nconfiguration\n:\napiVersion\n:\npod-security.admission.config.k8s.io/v1\n# see compatibility note\nkind\n:\nPodSecurityConfiguration\n# Defaults applied when a mode label is not set.\n#\n# Level label values must be one of:\n# - \"privileged\" (default)\n# - \"baseline\"\n# - \"restricted\"\n#\n# Version label values must be one of:\n# - \"latest\" (default)\n# - specific version like \"v1.36\"\ndefaults\n:\nenforce\n:\n\"privileged\"\nenforce-version\n:\n\"latest\"\naudit\n:\n\"privileged\"\naudit-version\n:\n\"latest\"\nwarn\n:\n\"privileged\"\nwarn-version\n:\n\"latest\"\nexemptions\n:\n# Array of authenticated usernames to exempt.\nusernames\n:\n[]\n# Array of runtime class names to exempt.\nruntimeClasses\n:\n[]\n# Array of namespaces to exempt.\nnamespaces\n:\n[]"
+}

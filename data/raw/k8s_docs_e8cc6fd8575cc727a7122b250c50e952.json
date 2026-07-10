@@ -1,0 +1,7 @@
+{
+  "id": "e8cc6fd8575cc727a7122b250c50e952",
+  "source": "k8s_docs",
+  "title": "Kubernetes Issues and Security — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/issues-security/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

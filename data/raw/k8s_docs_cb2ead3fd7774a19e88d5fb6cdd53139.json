@@ -1,0 +1,7 @@
+{
+  "id": "cb2ead3fd7774a19e88d5fb6cdd53139",
+  "source": "k8s_docs",
+  "title": "kubectl rollout resume — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/kubectl_rollout_resume/#synopsis",
+  "text": "Resume a paused resource.\nPaused resources will not be reconciled by a controller. By resuming a resource, we allow it to be reconciled again. Currently only deployments support being resumed.\nkubectl rollout resume RESOURCE\n\n# Resume an already paused deployment\n  kubectl rollout resume deployment/nginx"
+}

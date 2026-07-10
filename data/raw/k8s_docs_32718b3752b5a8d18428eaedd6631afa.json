@@ -1,0 +1,7 @@
+{
+  "id": "32718b3752b5a8d18428eaedd6631afa",
+  "source": "k8s_docs",
+  "title": "Introduction to kubectl — Debugging Workloads",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/introduction/#debugging-workloads",
+  "text": "kubectl supports debugging by providing commands for:\nPrinting Container logs\nPrinting cluster events\nExec or attaching to a Container\nCopying files from Containers in the cluster to a user's filesystem\n\nOn occasion, users may need to perform operations to the Nodes of cluster. kubectl supports\ncommands to drain workloads from a Node so that it can be decommissioned or debugged."
+}

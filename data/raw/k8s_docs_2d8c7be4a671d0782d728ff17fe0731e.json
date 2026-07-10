@@ -1,0 +1,7 @@
+{
+  "id": "2d8c7be4a671d0782d728ff17fe0731e",
+  "source": "k8s_docs",
+  "title": "PodCertificateRequest — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/certificates/pod-certificate-request-v1beta1/#get-read",
+  "text": "GET /apis/certificates.k8s.io/v1beta1/namespaces/{namespace}/podcertificaterequests/{name}\nName\nType\nDescription\nname\nstring\nname of the PodCertificateRequest\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nPodCertificateRequest"
+}

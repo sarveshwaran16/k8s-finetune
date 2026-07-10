@@ -1,0 +1,7 @@
+{
+  "id": "e6cd9af9faacf026a7704348154025be",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — deployment.kubernetes.io/revision",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#deployment-kubernetes-io-revision",
+  "text": "Type: Annotation\nExample:\ndeployment.kubernetes.io/revision: \"2\"\nUsed on: ReplicaSet\nThis annotation is set by the Deployment controller on ReplicaSets it manages.\nThe value represents the revision number of the Deployment. Each time the Deployment's\nPod template (\n.spec.template\n) is changed, the revision number is incremented.\nThis annotation is used to track the rollout history and enables rollback to previous\nrevisions using\nkubectl rollout undo\n.\nThe revision number is also visible when running\nkubectl rollout history deployment/<name>\n.\nThis is an internal annotation used by the Deployment controller and should not be\nmodified manually."
+}

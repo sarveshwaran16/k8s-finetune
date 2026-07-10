@@ -1,0 +1,7 @@
+{
+  "id": "4cbd29f6c7db6f5699a8cd50957f115b",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — ResourceChangeDetectionStrategy",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-ResourceChangeDetectionStrategy",
+  "text": "(Alias of\nstring\n)\nAppears in:\nKubeletConfiguration\nResourceChangeDetectionStrategy denotes a mode in which internal\nmanagers (secret, configmap) are discovering object changes.\n\nAppears in:\nKubeletConfiguration\nShutdownGracePeriodByPodPriority specifies the shutdown grace period for Pods based on their associated priority class value\nField\nDescription\npriority\n[Required]\nint32\npriority is the priority value associated with the shutdown grace period\nshutdownGracePeriodSeconds\n[Required]\nint64\nshutdownGracePeriodSeconds is the shutdown grace period in seconds\npriority is the priority value associated with the shutdown grace period\nshutdownGracePeriodSeconds is the shutdown grace period in seconds"
+}

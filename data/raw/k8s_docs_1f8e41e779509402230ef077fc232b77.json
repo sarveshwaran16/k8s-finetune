@@ -1,0 +1,7 @@
+{
+  "id": "1f8e41e779509402230ef077fc232b77",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — MemoryReservation",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-MemoryReservation",
+  "text": "Appears in:\nKubeletConfiguration\nMemoryReservation specifies the memory reservation of different types for each NUMA node\nField\nDescription\nnumaNode\n[Required]\nint32\nNo description provided.\nlimits\n[Required]\ncore/v1.ResourceList\nNo description provided.\n\n(Alias of\nstring\n)\nAppears in:\nKubeletConfiguration\nMemoryReservationPolicy defines how the kubelet applies cgroup v2 memory protection."
+}

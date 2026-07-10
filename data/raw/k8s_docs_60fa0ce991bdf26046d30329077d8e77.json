@@ -1,0 +1,7 @@
+{
+  "id": "60fa0ce991bdf26046d30329077d8e77",
+  "source": "k8s_docs",
+  "title": "Server-Side Apply — Field managers",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/server-side-apply/#managers",
+  "text": "Managers identify distinct workflows that are modifying the object (especially\nuseful on conflicts!), and can be specified through the\nfieldManager\nquery parameter as part of a modifying request. When you Apply to a resource,\nthe\nfieldManager\nparameter is required.\nFor other updates, the API server infers a field manager identity from the\n\"User-Agent:\" HTTP header (if present).\nWhen you use the\nkubectl\ntool to perform a Server-Side Apply operation,\nkubectl\nsets the manager identity to\n\"kubectl\"\nby default."
+}

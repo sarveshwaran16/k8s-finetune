@@ -1,0 +1,7 @@
+{
+  "id": "ca22f5ad766fd64c0b307f687e834d23",
+  "source": "k8s_docs",
+  "title": "CronJob — Schedule suspension",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#schedule-suspension",
+  "text": "You can suspend execution of Jobs for a CronJob, by setting the optional\n.spec.suspend\nfield\nto true. The field defaults to false.\nThis setting does\nnot\naffect Jobs that the CronJob has already started.\nIf you do set that field to true, all subsequent executions are suspended (they remain\nscheduled, but the CronJob controller does not start the Jobs to run the tasks) until\nyou unsuspend the CronJob."
+}

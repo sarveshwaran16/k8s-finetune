@@ -1,0 +1,7 @@
+{
+  "id": "892dc92d69f4557d7248635f72feccd8",
+  "source": "k8s_docs",
+  "title": "Field Selectors — Supported operators",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/#supported-operators",
+  "text": "You can use the\n=\n,\n==\n, and\n!=\noperators with field selectors (\n=\nand\n==\nmean the same thing). This\nkubectl\ncommand, for example, selects all Kubernetes Services that aren't in the\ndefault\nnamespace:\nkubectl get services  --all-namespaces --field-selector metadata.namespace!\n=\ndefault\n\nAs with\nlabel\nand other selectors, field selectors can be chained together as a comma-separated list. This\nkubectl\ncommand selects all Pods for which the\nstatus.phase\ndoes not equal\nRunning\nand the\nspec.restartPolicy\nfield equals\nAlways\n:\nkubectl get pods --field-selector\n=\nstatus.phase!\n=\nRunning,spec.restartPolicy\n=\nAlways"
+}

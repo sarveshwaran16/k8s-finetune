@@ -1,0 +1,7 @@
+{
+  "id": "168d9b2544e587c1ae93ce15d93421d4",
+  "source": "k8s_docs",
+  "title": "Ephemeral Volumes — Generic ephemeral volumes",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/ephemeral-volumes/#generic-ephemeral-volumes",
+  "text": "Generic ephemeral volumes are similar to\nemptyDir\nvolumes in the\nsense that they provide a per-pod directory for scratch data that is\nusually empty after provisioning. But they may also have additional\nfeatures:\nStorage can be local or network-attached.\nVolumes can have a fixed size that Pods are not able to exceed.\nVolumes may have some initial data, depending on the driver and\nparameters.\nTypical operations on volumes are supported assuming that the driver\nsupports them, including\nsnapshotting\n,\ncloning\n,\nresizing\n,\nand\nstorage capacity tracking\n.\nExample:\nkind\n:\nPod\napiVersion\n:\nv1\nmetadata\n:\nname\n:\nmy-app\nspec\n:\ncontainers\n:\n-\nname\n:\nmy-frontend\nimage\n:\nbusybox:1.28\nvolumeMounts\n:\n-\nmountPath\n:\n\"/scratch\"\nname\n:\nscratch-volume\ncommand\n:\n[\n\"sleep\"\n,\n\"1000000\"\n]\nvolumes\n:\n-\nname\n:\nscratch-volume\nephemeral\n:\nvolumeClaimTemplate\n:\nmetadata\n:\nlabels\n:\ntype\n:\nmy-frontend-volume\nspec\n:\naccessModes\n:\n[\n\"ReadWriteOnce\"\n]\nstorageClassName\n:\n\"scratch-storage-class\"\nresources\n:\nrequests\n:\nstorage\n:\n1Gi"
+}

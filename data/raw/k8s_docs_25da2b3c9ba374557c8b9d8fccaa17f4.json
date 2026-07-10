@@ -1,0 +1,7 @@
+{
+  "id": "25da2b3c9ba374557c8b9d8fccaa17f4",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_certs/#synopsis",
+  "text": "Certificate generation\nkubeadm init phase certs [flags]\n\n-h, --help\nhelp for certs\nhelp for certs\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "db62d424757b7aa0257d1bc64231f66d",
+  "source": "k8s_docs",
+  "title": "TLS bootstrapping — Authorize kubelet to create CSR",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/#authorize-kubelet-to-create-csr",
+  "text": "Now that the bootstrapping node is\nauthenticated\nas part of the\nsystem:bootstrappers\ngroup, it needs to be\nauthorized\nto create a\ncertificate signing request (CSR) as well as retrieve it when done.\nFortunately, Kubernetes ships with a\nClusterRole\nwith precisely these (and\nonly these) permissions,\nsystem:node-bootstrapper\n.\nTo do this, you only need to create a\nClusterRoleBinding\nthat binds the\nsystem:bootstrappers\ngroup to the cluster role\nsystem:node-bootstrapper\n.\n# enable bootstrapping nodes to create CSR\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRoleBinding\nmetadata\n:\nname\n:\ncreate-csrs-for-bootstrapping\nsubjects\n:\n-\nkind\n:\nGroup\nname\n:\nsystem:bootstrappers\napiGroup\n:\nrbac.authorization.k8s.io\nroleRef\n:\nkind\n:\nClusterRole\nname\n:\nsystem:node-bootstrapper\napiGroup\n:\nrbac.authorization.k8s.io"
+}

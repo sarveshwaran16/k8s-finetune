@@ -1,0 +1,7 @@
+{
+  "id": "b06dfe393309f894bd10df6c1707caa8",
+  "source": "k8s_docs",
+  "title": "Kubernetes Metrics (v1beta1) — ContainerMetrics",
+  "source_url": "https://kubernetes.io/docs/reference/external-api/metrics.v1beta1/#metrics-k8s-io-v1beta1-ContainerMetrics",
+  "text": "Appears in:\nPodMetrics\nContainerMetrics sets resource usage metrics of a container.\nField\nDescription\nname\n[Required]\nstring\nContainer name corresponding to the one from pod.spec.containers.\nusage\n[Required]\ncore/v1.ResourceList\nThe memory usage is the memory working set.\nContainer name corresponding to the one from pod.spec.containers.\nThe memory usage is the memory working set."
+}

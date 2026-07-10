@@ -1,0 +1,7 @@
+{
+  "id": "468180d0ce7bfab272972b876a358146",
+  "source": "k8s_docs",
+  "title": "kubectl cluster-info dump — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_cluster-info/kubectl_cluster-info_dump/#synopsis",
+  "text": "Dump cluster information out suitable for debugging and diagnosing cluster problems. By default, dumps everything to stdout. You can optionally specify a directory with --output-directory. If you specify a directory, Kubernetes will build a set of files in that directory. By default, only dumps things in the current namespace and 'kube-system' namespace, but you can switch to a different namespace with the --namespaces flag, or specify --all-namespaces to dump all namespaces.\nThe command also dumps the logs of all of the pods in the cluster; these logs are dumped into different directories based on namespace and pod name.\nkubectl cluster-info dump [flags]"
+}

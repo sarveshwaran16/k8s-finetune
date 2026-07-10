@@ -1,0 +1,7 @@
+{
+  "id": "acbcaea8134c34605ffc15ec889952ed",
+  "source": "k8s_docs",
+  "title": "Using a KMS provider for data encryption — Ensuring all secrets are encrypted",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#ensuring-all-secrets-are-encrypted",
+  "text": "When encryption at rest is correctly configured, resources are encrypted on write.\nThus we can perform an in-place no-op update to ensure that data is encrypted.\nThe following command reads all secrets and then updates them to apply server side encryption.\nIf an error occurs due to a conflicting write, retry the command.\nFor larger clusters, you may wish to subdivide the secrets by namespace or script an update.\nkubectl get secrets --all-namespaces -o json\n|\nkubectl replace -f -"
+}

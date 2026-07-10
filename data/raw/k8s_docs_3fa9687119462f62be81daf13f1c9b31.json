@@ -1,0 +1,7 @@
+{
+  "id": "3fa9687119462f62be81daf13f1c9b31",
+  "source": "k8s_docs",
+  "title": "Deploy and Access the Kubernetes Dashboard — Uploading a YAML or JSON file",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#uploading-a-yaml-or-json-file",
+  "text": "Kubernetes supports declarative configuration.\nIn this style, all configuration is stored in manifests (YAML or JSON configuration files).\nThe manifests use Kubernetes\nAPI\nresource schemas.\nAs an alternative to specifying application details in the deploy wizard,\nyou can define your application in one or more manifests, and upload the files using Dashboard."
+}

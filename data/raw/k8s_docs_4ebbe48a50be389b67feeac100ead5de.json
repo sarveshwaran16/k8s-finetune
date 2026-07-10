@@ -1,0 +1,7 @@
+{
+  "id": "4ebbe48a50be389b67feeac100ead5de",
+  "source": "k8s_docs",
+  "title": "Manifest-Based Admission Control — What's next",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/#what-s-next",
+  "text": "Learn about\nValidatingAdmissionPolicy\nfor CEL-based validation policies.\nLearn about\nMutatingAdmissionPolicy\nfor CEL-based mutation policies.\nLearn about\nDynamic Admission Control\nfor webhook-based admission control.\nRead the\nKEP-5793\ndesign document.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

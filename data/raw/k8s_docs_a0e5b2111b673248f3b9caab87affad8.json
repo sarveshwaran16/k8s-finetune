@@ -1,7 +1,0 @@
-{
-  "id": "a0e5b2111b673248f3b9caab87affad8",
-  "source": "k8s_docs",
-  "title": "Run Applications",
-  "source_url": "https://kubernetes.io/docs/tasks/run-application/",
-  "text": "Run Applications\nRun and manage both stateless and stateful applications.\nRun a Stateless Application Using a Deployment\nHorizontal Manual Scaling for a Deployment\nUpdate a Deployment Without Downtime\nRun a Single-Instance Stateful Application\nRun a Replicated Stateful Application\nScale a StatefulSet\nDelete a StatefulSet\nForce Delete StatefulSet Pods\nHorizontalPodAutoscaler Walkthrough\nSpecifying a Disruption Budget for your Application\nAccessing the Kubernetes API from a Pod\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 17, 2023 at 9:14 AM PST:\nInclude index files (c4b70832dd)"
-}

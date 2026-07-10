@@ -1,0 +1,7 @@
+{
+  "id": "ba93538579ea5c6000fee2c0052fe708",
+  "source": "k8s_docs",
+  "title": "Pod Lifecycle — Running",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-state-running",
+  "text": "The\nRunning\nstatus indicates that a container is executing without issues. If there\nwas a\npostStart\nhook configured, it has already executed and finished. When you use\nkubectl\nto query a Pod with a container that is\nRunning\n, you also see information\nabout when the container entered the\nRunning\nstate."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "67f04fee33b1d1cec55cf2da567ad918",
+  "source": "k8s_docs",
+  "title": "Kubernetes Security and Disclosure Information — When Should I NOT Report a Vulnerability?",
+  "source_url": "https://kubernetes.io/docs/reference/issues-security/security/#when-should-i-not-report-a-vulnerability",
+  "text": "You need help tuning Kubernetes components for security\nYou need help applying security related updates\nYour issue is not security related\n\nEach report is acknowledged and analyzed by Security Response Committee members within 3 working days.\nThis will set off the\nSecurity Release Process\n.\nAny vulnerability information shared with Security Response Committee stays within Kubernetes project\nand will not be disseminated to other projects unless it is necessary to get the issue fixed.\nAs the security issue moves from triage, to identified fix, to release planning we will keep the reporter updated."
+}

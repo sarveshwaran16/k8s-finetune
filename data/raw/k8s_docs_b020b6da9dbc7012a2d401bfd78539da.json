@@ -1,0 +1,7 @@
+{
+  "id": "b020b6da9dbc7012a2d401bfd78539da",
+  "source": "k8s_docs",
+  "title": "Kubelet Systemd Watchdog — Configuration",
+  "source_url": "https://kubernetes.io/docs/reference/node/systemd-watchdog/#configuration",
+  "text": "Using the systemd watchdog requires configuring the\nWatchdogSec\nparameter\nin the\n[Service]\nsection of the kubelet service unit file:\n[Service]\nWatchdogSec=30s\nSetting\nWatchdogSec=30s\nindicates a service watchdog timeout of 30 seconds.\nWithin the kubelet, the\nsd_notify()\nfunction is invoked, at intervals of \\( WatchdogSec \\div 2\\). to send\nWATCHDOG=1\n(a keep-alive message). If the watchdog is not fed\nwithin the timeout period, the kubelet will be killed. Setting\nRestart\nto \"always\", \"on-failure\", \"on-watchdog\", or \"on-abnormal\" will ensure that the service\nis automatically restarted.\nSome details about the systemd configuration:\nIf you set the systemd value for\nWatchdogSec\nto 0, or omit setting it, the systemd watchdog is not\nenabled for this unit.\nThe kubelet supports a minimum watchdog period of 1.0 seconds; this is to prevent the kubelet\nfrom being killed unexpectedly. You can set the value of\nWatchdogSec\nin a systemd unit definition\nto a period shorter than 1 second, but Kubernetes does not support any shorter interval.\nThe timeout does not have to be a whole integer number of seconds.\nThe Kubernetes project suggests setting\nWatchdogSec\nto approximately a 15s period.\nPeriods longer than 10 minutes are supported but explicitly\nnot\nrecommended."
+}

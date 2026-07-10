@@ -1,0 +1,7 @@
+{
+  "id": "813c73b1bf8252222bce016206ec82f4",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-ssl-negotiation-policy (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-ssl-negotiation-policy",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-ssl-negotiation-policy: ELBSecurityPolicy-TLS-1-2-2017-01\nThe official integration with AWS elastic load balancing configures TLS for a Service of\ntype: LoadBalancer\nbased on this annotation. The value of the annotation is the name\nof an AWS policy for negotiating TLS with a client peer."
+}

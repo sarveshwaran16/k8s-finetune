@@ -1,0 +1,7 @@
+{
+  "id": "d6f0e691cb86aa0e9476944dde54d870",
+  "source": "k8s_docs",
+  "title": "Extend the Kubernetes API with CustomResourceDefinitions — RawExtension",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#rawextension",
+  "text": "RawExtensions (as in\nruntime.RawExtension\n)\nholds complete Kubernetes objects, i.e. with\napiVersion\nand\nkind\nfields.\nIt is possible to specify those embedded objects (both completely without constraints or partially specified)\nby setting\nx-kubernetes-embedded-resource: true\n. For example:\ntype\n:\nobject\nproperties\n:\nfoo\n:\nx-kubernetes-embedded-resource\n:\ntrue\nx-kubernetes-preserve-unknown-fields\n:\ntrue\nHere, the field\nfoo\nholds a complete object, e.g.:\nfoo\n:\napiVersion\n:\nv1\nkind\n:\nPod\nspec\n:\n# ...\nBecause\nx-kubernetes-preserve-unknown-fields: true\nis specified alongside, nothing is pruned.\nThe use of\nx-kubernetes-preserve-unknown-fields: true\nis optional though.\nWith\nx-kubernetes-embedded-resource: true\n, the\napiVersion\n,\nkind\nand\nmetadata\nare implicitly specified and validated."
+}

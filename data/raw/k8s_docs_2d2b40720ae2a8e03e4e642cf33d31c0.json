@@ -1,0 +1,7 @@
+{
+  "id": "2d2b40720ae2a8e03e4e642cf33d31c0",
+  "source": "k8s_docs",
+  "title": "Use Kube-router for NetworkPolicy — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/kube-router-network-policy/#what-s-next",
+  "text": "Once you have installed the Kube-router addon, you can follow the\nDeclare Network Policy\nto try out Kubernetes NetworkPolicy.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

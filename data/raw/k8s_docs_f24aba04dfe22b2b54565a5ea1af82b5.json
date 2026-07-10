@@ -1,7 +1,0 @@
-{
-  "id": "f24aba04dfe22b2b54565a5ea1af82b5",
-  "source": "k8s_docs",
-  "title": "Configuration",
-  "source_url": "https://kubernetes.io/docs/concepts/configuration/",
-  "text": "Configuration\nResources that Kubernetes provides for configuring Pods.\nConfigMaps\nSecrets\nResource Management for Pods and Containers\nOrganizing Cluster Access Using kubeconfig Files\nResource Management for Windows nodes\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified June 16, 2021 at 5:57 PM PST:\nRemove exec permission on markdown files (e9703497a1)"
-}

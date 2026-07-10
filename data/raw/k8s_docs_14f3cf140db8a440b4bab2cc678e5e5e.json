@@ -1,0 +1,7 @@
+{
+  "id": "14f3cf140db8a440b4bab2cc678e5e5e",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_apply_phase_upload-config/#synopsis",
+  "text": "Upload the kubeadm and kubelet configurations to ConfigMaps\nkubeadm upgrade apply phase upload-config [flags]\n\n-h, --help\nhelp for upload-config\nhelp for upload-config\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

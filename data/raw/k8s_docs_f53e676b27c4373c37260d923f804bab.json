@@ -1,0 +1,7 @@
+{
+  "id": "f53e676b27c4373c37260d923f804bab",
+  "source": "k8s_docs",
+  "title": "Resource Management for Windows nodes — Resource reservation",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/windows-resource-management/#resource-reservation",
+  "text": "To account for memory and CPU used by the operating system, the container runtime, and by\nKubernetes host processes such as the kubelet, you can (and should) reserve\nmemory and CPU resources with the\n--kube-reserved\nand/or\n--system-reserved\nkubelet flags.\nOn Windows these values are only used to calculate the node's\nallocatable\nresources.\nAs you deploy workloads, set resource memory and CPU limits on containers.\nThis also subtracts from\nNodeAllocatable\nand helps the cluster-wide scheduler in determining which pods to place on which nodes.\nScheduling pods without limits may over-provision the Windows nodes and in extreme\ncases can cause the nodes to become unhealthy.\nOn Windows, a good practice is to reserve at least 2GiB of memory.\nTo determine how much CPU to reserve,\nidentify the maximum pod density for each node and monitor the CPU usage of\nthe system services running there, then choose a value that meets your workload needs."
+}

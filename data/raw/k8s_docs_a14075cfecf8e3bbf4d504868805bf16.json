@@ -1,0 +1,7 @@
+{
+  "id": "a14075cfecf8e3bbf4d504868805bf16",
+  "source": "k8s_docs",
+  "title": "Accessing Clusters — Accessing the API from a Pod",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/access-cluster/#accessing-the-api-from-a-pod",
+  "text": "When accessing the API from a pod, locating and authenticating\nto the API server are somewhat different.\nPlease check\nAccessing the API from within a Pod\nfor more details.\n\nThe previous section describes how to connect to the Kubernetes API server.\nFor information about connecting to other services running on a Kubernetes cluster, see\nAccess Cluster Services\n."
+}

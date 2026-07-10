@@ -1,0 +1,7 @@
+{
+  "id": "291edd732bcf4266237a5ec79c30882c",
+  "source": "k8s_docs",
+  "title": "Linux Kernel Version Requirements — Pod sysctls",
+  "source_url": "https://kubernetes.io/docs/reference/node/kernel-version-requirements/#pod-sysctls",
+  "text": "On Linux, the\nsysctl()\nsystem call configures kernel parameters at run time. There is a command\nline tool named\nsysctl\nthat you can use to configure these parameters, and many are exposed via\nthe\nproc\nfilesystem.\nSome sysctls are only available if you have a modern enough kernel.\nThe following sysctls have a minimal kernel version requirement,\nand are supported in the\nsafe set\n:\nnet.ipv4.ip_local_reserved_ports\n(since Kubernetes 1.27, needs kernel 3.16+);\nnet.ipv4.tcp_keepalive_time\n(since Kubernetes 1.29, needs kernel 4.5+);\nnet.ipv4.tcp_fin_timeout\n(since Kubernetes 1.29, needs kernel 4.6+);\nnet.ipv4.tcp_keepalive_intvl\n(since Kubernetes 1.29, needs kernel 4.5+);\nnet.ipv4.tcp_keepalive_probes\n(since Kubernetes 1.29, needs kernel 4.5+);\nnet.ipv4.tcp_syncookies\n(namespaced since kernel 4.6+).\nnet.ipv4.tcp_rmem\n(since Kubernetes 1.32, needs kernel 4.15+).\nnet.ipv4.tcp_wmem\n(since Kubernetes 1.32, needs kernel 4.15+).\nnet.ipv4.vs.conn_reuse_mode\n(used in\nipvs\nproxy mode, needs kernel 4.1+);"
+}

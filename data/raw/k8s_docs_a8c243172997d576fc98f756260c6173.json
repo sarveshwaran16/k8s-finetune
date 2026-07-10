@@ -1,0 +1,7 @@
+{
+  "id": "a8c243172997d576fc98f756260c6173",
+  "source": "k8s_docs",
+  "title": "Secrets — Container image pull Secrets",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/secret/#using-imagepullsecrets",
+  "text": "If you want to fetch container images from a private repository, you need a way for\nthe kubelet on each node to authenticate to that repository. You can configure\nimage pull Secrets\nto make this possible. These Secrets are configured at the Pod\nlevel.\nThe\nimagePullSecrets\nfield is a list of references to Secrets in the same namespace.\nYou can use an\nimagePullSecrets\nto pass a Secret that contains a Docker (or other) image registry\npassword to the kubelet. The kubelet uses this information to pull a private image on behalf of your Pod.\nSee the\nPodSpec API\nfor more information about the\nimagePullSecrets\nfield.\nYou can learn how to specify\nimagePullSecrets\nfrom the\ncontainer images\ndocumentation.\nYou can manually create\nimagePullSecrets\n, and reference these from a ServiceAccount. Any Pods\ncreated with that ServiceAccount or created with that ServiceAccount by default, will get their\nimagePullSecrets\nfield set to that of the service account.\nSee\nAdd ImagePullSecrets to a service account\nfor a detailed explanation of that process."
+}

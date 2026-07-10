@@ -1,0 +1,7 @@
+{
+  "id": "52cc5ecc84ea5e4e07729098d563d018",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — nfd.node.kubernetes.io/extended-resources",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#nfd-node-kubernetes-io-extended-resources",
+  "text": "Type: Annotation\nExample:\nnfd.node.kubernetes.io/extended-resources: \"accelerator.acme.example/q500,example.com/coprocessor-fx5\"\nUsed on: Nodes\nThis annotation records a comma-separated list of\nextended resources\nmanaged by\nNode Feature Discovery\n(NFD).\nNFD uses this for an internal mechanism. You should not edit this annotation yourself."
+}

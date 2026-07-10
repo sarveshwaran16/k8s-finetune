@@ -1,0 +1,7 @@
+{
+  "id": "45082193216e5c177e7a9744b40aea70",
+  "source": "k8s_docs",
+  "title": "Create static Pods — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/#what-s-next",
+  "text": "Static Pods\nGenerate static Pod manifests for control plane components\nGenerate static Pod manifest for local etcd\nDebugging Kubernetes nodes with\ncrictl\nLearn more about\ncrictl\nSet up etcd instances as static pods managed by a kubelet\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

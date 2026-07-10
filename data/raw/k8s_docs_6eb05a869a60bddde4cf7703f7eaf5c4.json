@@ -1,0 +1,7 @@
+{
+  "id": "6eb05a869a60bddde4cf7703f7eaf5c4",
+  "source": "k8s_docs",
+  "title": "Certificates and Certificate Signing Requests — Approval or rejection",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#approval-rejection",
+  "text": "Before a\nsigner\nissues a certificate based on a CertificateSigningRequest,\nthe signer typically checks that the issuance for that CSR has been\napproved\n.\n\nThe kube-controller-manager ships with a built-in approver for certificates with\na signerName of\nkubernetes.io/kube-apiserver-client-kubelet\nthat delegates various\npermissions on CSRs for node credentials to authorization.\nThe kube-controller-manager POSTs SubjectAccessReview resources to the API server\nin order to check authorization for certificate approval."
+}

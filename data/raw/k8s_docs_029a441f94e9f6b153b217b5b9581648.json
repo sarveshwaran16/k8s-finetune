@@ -1,0 +1,7 @@
+{
+  "id": "029a441f94e9f6b153b217b5b9581648",
+  "source": "k8s_docs",
+  "title": "kube-controller-manager Configuration (v1alpha1) — PersistentVolumeBinderControllerConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#kubecontrollermanager-config-k8s-io-v1alpha1-PersistentVolumeBinderControllerConfiguration",
+  "text": "Appears in:\nKubeControllerManagerConfiguration\nPersistentVolumeBinderControllerConfiguration contains elements describing\nPersistentVolumeBinderController.\nField\nDescription\nPVClaimBinderSyncPeriod\n[Required]\nmeta/v1.Duration\npvClaimBinderSyncPeriod is the period for syncing persistent volumes\nand persistent volume claims.\nVolumeConfiguration\n[Required]\nVolumeConfiguration\nvolumeConfiguration holds configuration for volume related features.\npvClaimBinderSyncPeriod is the period for syncing persistent volumes\nand persistent volume claims.\nvolumeConfiguration holds configuration for volume related features."
+}

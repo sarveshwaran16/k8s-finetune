@@ -1,0 +1,7 @@
+{
+  "id": "b1ac98405d5a1374f454c64638cf74ab",
+  "source": "k8s_docs",
+  "title": "Get a Shell to a Running Container — Writing the root page for nginx",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/#writing-the-root-page-for-nginx",
+  "text": "Look again at the configuration file for your Pod. The Pod\nhas an\nemptyDir\nvolume, and the container mounts the volume\nat\n/usr/share/nginx/html\n.\nIn your shell, create an\nindex.html\nfile in the\n/usr/share/nginx/html\ndirectory:\n# Run this inside the container\necho\n'Hello shell demo'\n> /usr/share/nginx/html/index.html\nIn your shell, send a GET request to the nginx server:\n# Run this in the shell inside your container\napt-get update\napt-get install curl\ncurl http://localhost/\nThe output shows the text that you wrote to the\nindex.html\nfile:\nHello shell demo\nWhen you are finished with your shell, enter\nexit\n.\nexit\n# To quit the shell in the container"
+}

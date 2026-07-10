@@ -1,0 +1,7 @@
+{
+  "id": "cd2104a183c56268a4f47962f2686f06",
+  "source": "k8s_docs",
+  "title": "Using RBAC Authorization — Upgrading from ABAC",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/#upgrading-from-abac",
+  "text": "Clusters that originally ran older Kubernetes versions often used\npermissive ABAC policies, including granting full API access to all\nservice accounts.\nDefault RBAC policies grant scoped permissions to control-plane components, nodes,\nand controllers, but grant\nno permissions\nto service accounts outside the\nkube-system\nnamespace\n(beyond the permissions given by\nAPI discovery roles\n).\nWhile far more secure, this can be disruptive to existing workloads expecting to automatically receive API permissions.\nHere are two approaches for managing this transition:"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "013a0b08f07d7f62245f934ae5cce159",
+  "source": "k8s_docs",
+  "title": "Managing Workloads — Scaling your application",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#scaling-your-application",
+  "text": "When load on your application grows or shrinks, use\nkubectl\nto scale your application.\nFor instance, to decrease the number of nginx replicas from 3 to 1, do:\nkubectl scale deployment/my-nginx --replicas\n=\n1\ndeployment.apps/my-nginx scaled\nNow you only have one pod managed by the deployment.\nkubectl get pods -l\napp\n=\nmy-nginx\nNAME                        READY     STATUS    RESTARTS   AGE\nmy-nginx-2035384211-j5fhi   1/1       Running   0          30m\nTo have the system automatically choose the number of nginx replicas as needed,\nranging from 1 to 3, do:\n# This requires an existing source of container and Pod metrics\nkubectl autoscale deployment/my-nginx --min\n=\n1\n--max\n=\n3\nhorizontalpodautoscaler.autoscaling/my-nginx autoscaled\nNow your nginx replicas will be scaled up and down as needed, automatically.\nFor more information, please see\nkubectl scale\n,\nkubectl autoscale\nand\nhorizontal pod autoscaler\ndocument."
+}

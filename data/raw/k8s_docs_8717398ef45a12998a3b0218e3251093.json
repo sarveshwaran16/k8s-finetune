@@ -1,0 +1,7 @@
+{
+  "id": "8717398ef45a12998a3b0218e3251093",
+  "source": "k8s_docs",
+  "title": "TLS bootstrapping — Access to key and certificate",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/#access-to-key-and-certificate",
+  "text": "As described earlier, you need to create a Kubernetes CA key and certificate, and distribute it to the control plane nodes.\nThese will be used by the controller-manager to sign the kubelet certificates.\nSince these signed certificates will, in turn, be used by the kubelet to authenticate as a regular kubelet\nto kube-apiserver, it is important that the CA provided to the controller-manager at this stage also be\ntrusted by kube-apiserver for authentication. This is provided to kube-apiserver with the flag\n--client-ca-file=FILENAME\n(for example,\n--client-ca-file=/var/lib/kubernetes/ca.pem\n), as described in the kube-apiserver configuration section.\nTo provide the Kubernetes CA key and certificate to kube-controller-manager, use the following flags:\n--cluster-signing-cert-file\n=\n\"/etc/path/to/kubernetes/ca/ca.crt\"\n--cluster-signing-key-file\n=\n\"/etc/path/to/kubernetes/ca/ca.key\"\nFor example:\n--cluster-signing-cert-file\n=\n\"/var/lib/kubernetes/ca.pem\"\n--cluster-signing-key-file\n=\n\"/var/lib/kubernetes/ca-key.pem\"\nThe validity duration of signed certificates can be configured with flag:\n--cluster-signing-duration"
+}

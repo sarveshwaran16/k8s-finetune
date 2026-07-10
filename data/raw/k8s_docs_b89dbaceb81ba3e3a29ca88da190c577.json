@@ -1,0 +1,7 @@
+{
+  "id": "b89dbaceb81ba3e3a29ca88da190c577",
+  "source": "k8s_docs",
+  "title": "Control Memory Management Policies on a Node — Configurations to avoid",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/memory-manager/#reserved-memory-configurations-to-avoid",
+  "text": "Avoid the following configurations:\nduplicates: the same NUMA node or memory type, but with a different value;\nsetting a zero limit for any of memory types;\nNUMA node IDs that do not exist in the machine hardware;\nmemory type names different than\nmemory\nor\nhugepages-<size>\n(hugepages of particular\n<size>\nshould also exist)."
+}

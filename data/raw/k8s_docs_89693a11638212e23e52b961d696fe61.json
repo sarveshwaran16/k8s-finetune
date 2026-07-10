@@ -1,0 +1,7 @@
+{
+  "id": "89693a11638212e23e52b961d696fe61",
+  "source": "k8s_docs",
+  "title": "Good practices for Dynamic Resource Allocation as a Cluster Admin — DRA driver deployment and maintenance",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/dra/#dra-driver-deployment-and-maintenance",
+  "text": "DRA drivers are third-party applications that run on each node of your cluster\nto interface with the hardware of that node and Kubernetes' native DRA\ncomponents. The installation procedure depends on the driver you choose, but is\nlikely deployed as a DaemonSet to all or a selection of the nodes (using node\nselectors or similar mechanisms) in your cluster."
+}

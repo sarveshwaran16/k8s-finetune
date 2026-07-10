@@ -1,0 +1,7 @@
+{
+  "id": "6cbbd183b82be714f92f24f33f9e647d",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — rollout",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#rollout",
+  "text": "Rollback to the previous deployment\nkubectl rollout\nundo\ndeployment/\nabc\nCheck the rollout status of a daemonset\nkubectl rollout\nstatus\ndaemonset/foo\nRestart a deployment\nkubectl rollout\nrestart\ndeployment/abc\nRestart deployments with the app=nginx label\nkubectl rollout\nrestart\ndeployment\n--selector=app=nginx\nManage the rollout of one or many resources.\nValid resource types include:\ndeployments\ndaemonsets\n*  statefulsets"
+}

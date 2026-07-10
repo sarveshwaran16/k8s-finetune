@@ -1,0 +1,7 @@
+{
+  "id": "1df36ace21549f943f61157ad1e7ec00",
+  "source": "k8s_docs",
+  "title": "Device Plugins — Device plugin deployment",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/#device-plugin-deployment",
+  "text": "You can deploy a device plugin as a DaemonSet, as a package for your node's operating system,\nor manually.\nThe canonical directory\n/var/lib/kubelet/device-plugins\n(which is hardcoded on the kubelet) requires privileged access,\nso a device plugin must run in a privileged security context.\nIf you're deploying a device plugin as a DaemonSet,\n/var/lib/kubelet/device-plugins\nmust be mounted as a\nVolume\nin the plugin's\nPodSpec\n.\nIf you choose the DaemonSet approach you can rely on Kubernetes to: place the device plugin's\nPod onto Nodes, to restart the daemon Pod after failure, and to help automate upgrades."
+}

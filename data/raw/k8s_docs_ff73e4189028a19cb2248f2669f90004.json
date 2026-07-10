@@ -1,0 +1,7 @@
+{
+  "id": "ff73e4189028a19cb2248f2669f90004",
+  "source": "k8s_docs",
+  "title": "Monitor Node Health — Adding support for other log format",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/monitor-node-health/#support-other-log-format",
+  "text": "The system log monitor currently supports file-based logs, journald, and kmsg.\nAdditional sources can be added by implementing a new\nlog watcher\n.\n\nYou can extend the Node Problem Detector to execute any monitor scripts written in any language by\ndeveloping a custom plugin. The monitor scripts must conform to the plugin protocol in exit code\nand standard output. For more information, please refer to the\nplugin interface proposal\n."
+}

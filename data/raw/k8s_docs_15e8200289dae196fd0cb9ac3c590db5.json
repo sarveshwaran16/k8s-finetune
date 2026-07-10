@@ -1,0 +1,7 @@
+{
+  "id": "15e8200289dae196fd0cb9ac3c590db5",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Audit Configuration (v1) — PolicyList",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-audit.v1/#audit-k8s-io-v1-PolicyList",
+  "text": "PolicyList is a list of audit Policies.\nField\nDescription\napiVersion\nstring\naudit.k8s.io/v1\nkind\nstring\nPolicyList\nmetadata\nmeta/v1.ListMeta\nNo description provided.\nitems\n[Required]\n[]Policy\nNo description provided.\n\nAppears in:\nEvent\nField\nDescription\nimpersonationConstraint\nstring\nImpersonationConstraint is the verb associated with the constrained impersonation mode that was used to authorize\nthe ImpersonatedUser associated with this audit event. It is only set when constrained impersonation was used.\nImpersonationConstraint is the verb associated with the constrained impersonation mode that was used to authorize\nthe ImpersonatedUser associated with this audit event. It is only set when constrained impersonation was used."
+}

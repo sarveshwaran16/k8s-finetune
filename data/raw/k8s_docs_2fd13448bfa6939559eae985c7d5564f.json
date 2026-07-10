@@ -1,0 +1,7 @@
+{
+  "id": "2fd13448bfa6939559eae985c7d5564f",
+  "source": "k8s_docs",
+  "title": "kubeadm Configuration (v1beta4) — APIServer",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta4/#kubeadm-k8s-io-v1beta4-APIServer",
+  "text": "Appears in:\nClusterConfiguration\nAPIServer holds settings necessary for API server deployments in the cluster\nField\nDescription\nControlPlaneComponent\n[Required]\nControlPlaneComponent\n(Members of\nControlPlaneComponent\nare embedded into this type.)\nNo description provided.\ncertSANs\n[]string\ncertSANs\nsets extra Subject Alternative Names (SANs) for the API Server signing\ncertificate.\ncertSANs\nsets extra Subject Alternative Names (SANs) for the API Server signing\ncertificate."
+}

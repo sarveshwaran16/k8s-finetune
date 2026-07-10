@@ -1,0 +1,7 @@
+{
+  "id": "68a3218f65f5ab8cd42c9aa55191a382",
+  "source": "k8s_docs",
+  "title": "Pod Conditions — Built-in Pod conditions",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-condition/#built-in-pod-conditions",
+  "text": "Kubernetes manages the following Pod conditions:\nLifecycle conditions\n: set as a Pod progresses through its lifecycle, roughly in this order:\nPodScheduled\n,\nPodReadyToStartContainers\n,\nInitialized\n,\nContainersReady\n,\nReady\n.\nOther conditions\n: set in response to specific operations or events:\nDisruptionTarget\n,\nPodResizePending\n,\nPodResizeInProgress\n.\nIn addition to the built-in conditions above, you can define custom conditions\nusing\nPod readiness gates\n."
+}

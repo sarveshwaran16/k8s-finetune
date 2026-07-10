@@ -1,0 +1,7 @@
+{
+  "id": "0834b683b33d5f28f594feabfcb33165",
+  "source": "k8s_docs",
+  "title": "Pod — postCreate Connect Portforward",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#post-create-connect-portforward",
+  "text": "POST /api/v1/namespaces/{namespace}/pods/{name}/portforward\nName\nType\nDescription\nname\nstring\nname of the PodPortForwardOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\nports\ninteger\nList of ports to forward Required when using WebSockets\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

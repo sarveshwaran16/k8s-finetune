@@ -1,0 +1,7 @@
+{
+  "id": "10c76632e5241823f0ec14a05c5253c8",
+  "source": "k8s_docs",
+  "title": " — Options",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_certs/kubeadm_certs_renew_apiserver/#options",
+  "text": "--cert-dir string     Default: \"/etc/kubernetes/pki\"\nThe path where to save the certificates\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for apiserver\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nThe path where to save the certificates\nPath to a kubeadm configuration file.\nhelp for apiserver\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file."
+}

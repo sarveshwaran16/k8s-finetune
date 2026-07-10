@@ -1,0 +1,7 @@
+{
+  "id": "ae5c4cd7e7aab97fbf98c90f1144289b",
+  "source": "k8s_docs",
+  "title": "About cgroup v2 — Using cgroup v2",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/cgroups/#using-cgroupv2",
+  "text": "The recommended way to use cgroup v2 is to use a Linux distribution that\nenables and uses cgroup v2 by default.\nTo check if your distribution uses cgroup v2, refer to\nIdentify cgroup version on Linux nodes\n.\n\ncgroup v2 has the following requirements:\nOS distribution enables cgroup v2\nLinux Kernel version is 5.8 or later\nContainer runtime supports cgroup v2. For example:\ncontainerd\nv1.4 and later\ncri-o\nv1.20 and later\nThe kubelet and the container runtime are configured to use the\nsystemd cgroup driver\ncontainerd\nv1.4 and later\ncri-o\nv1.20 and later"
+}

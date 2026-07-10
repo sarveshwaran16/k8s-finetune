@@ -1,0 +1,7 @@
+{
+  "id": "d5cdfcee034f4764edc4af8f38cb7ee1",
+  "source": "k8s_docs",
+  "title": "Node — NodeAddress",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/node-v1/#NodeAddress",
+  "text": "NodeAddress contains information for the node's address.\nField\nDescription\naddress\n*\nstring\nThe node address.\ntype\n*\nstring\nNode address type, one of Hostname, ExternalIP or InternalIP.\n\nNodeCondition contains condition information for a node.\nField\nDescription\nlastHeartbeatTime\nTime\nLast time we got an update on a given condition.\nlastTransitionTime\nTime\nLast time the condition transit from one status to another.\nmessage\nstring\nHuman readable message indicating details about last transition.\nreason\nstring\n(brief) reason for the condition's last transition.\nstatus\n*\nstring\nStatus of the condition, one of True, False, Unknown.\ntype\n*\nstring\nType of node condition."
+}

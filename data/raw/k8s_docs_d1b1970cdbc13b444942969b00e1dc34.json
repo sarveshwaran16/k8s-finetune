@@ -1,0 +1,7 @@
+{
+  "id": "d1b1970cdbc13b444942969b00e1dc34",
+  "source": "k8s_docs",
+  "title": "DaemonSet — How Daemon Pods are scheduled",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#how-daemon-pods-are-scheduled",
+  "text": "A DaemonSet can be used to ensure that all eligible nodes run a copy of a Pod.\nThe DaemonSet controller creates a Pod for each eligible node and adds the\nspec.affinity.nodeAffinity\nfield of the Pod to match the target host. After\nthe Pod is created, the default scheduler typically takes over and then binds\nthe Pod to the target host by setting the\n.spec.nodeName\nfield. If the new\nPod cannot fit on the node, the default scheduler may preempt (evict) some of\nthe existing Pods based on the\npriority\nof the new Pod.\nThe user can specify a different scheduler for the Pods of the DaemonSet, by\nsetting the\n.spec.template.spec.schedulerName\nfield of the DaemonSet.\nThe original node affinity specified at the\n.spec.template.spec.affinity.nodeAffinity\nfield (if specified) is taken into\nconsideration by the DaemonSet controller when evaluating the eligible nodes,\nbut is replaced on the created Pod with the node affinity that matches the name\nof the eligible node.\nnodeAffinity\n:\nrequiredDuringSchedulingIgnoredDuringExecution\n:\nnodeSelectorTerms\n:\n-\nmatchFields\n:\n-\nkey\n:\nmetadata.name\noperator\n:\nIn\nvalues\n:\n-\ntarget-host-name"
+}

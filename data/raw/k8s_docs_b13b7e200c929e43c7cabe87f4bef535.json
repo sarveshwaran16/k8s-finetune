@@ -1,0 +1,7 @@
+{
+  "id": "b13b7e200c929e43c7cabe87f4bef535",
+  "source": "k8s_docs",
+  "title": "Pod Topology Spread Constraints — Comparison with podAffinity and podAntiAffinity",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/#comparison-with-podaffinity-podantiaffinity",
+  "text": "In Kubernetes,\ninter-Pod affinity and anti-affinity\ncontrol how Pods are scheduled in relation to one another - either more packed\nor more scattered.\nFor finer control, you can specify topology spread constraints to distribute\nPods across different topology domains - to achieve either high availability or\ncost-saving. This can also help on rolling update workloads and scaling out\nreplicas smoothly.\nFor more context, see the\nMotivation\nsection of the enhancement proposal about Pod topology spread constraints."
+}

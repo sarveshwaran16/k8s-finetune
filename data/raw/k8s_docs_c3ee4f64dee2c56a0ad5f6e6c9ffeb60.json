@@ -1,0 +1,7 @@
+{
+  "id": "c3ee4f64dee2c56a0ad5f6e6c9ffeb60",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler Walkthrough — Stop generating load",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#stop-load",
+  "text": "To finish the example, stop sending the load.\nIn the terminal where you created the Pod that runs a\nbusybox\nimage, terminate\nthe load generation by typing\n<Ctrl> + C\n.\nThen verify the result state (after a minute or so):\n# type Ctrl+C to end the watch when you're ready\nkubectl get hpa php-apache --watch\nThe output is similar to:\nNAME         REFERENCE                     TARGET       MINPODS   MAXPODS   REPLICAS   AGE\nphp-apache   Deployment/php-apache/scale   0% / 50%     1         10        1          11m\nand the Deployment also shows that it has scaled down:\nkubectl get deployment php-apache\nNAME         READY   UP-TO-DATE   AVAILABLE   AGE\nphp-apache   1/1     1            1           27m\nOnce CPU utilization dropped to 0, the HPA automatically scaled the number of replicas back down to 1.\nAutoscaling the replicas may take a few minutes."
+}

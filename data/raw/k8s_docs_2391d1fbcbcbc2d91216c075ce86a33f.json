@@ -1,0 +1,7 @@
+{
+  "id": "2391d1fbcbcbc2d91216c075ce86a33f",
+  "source": "k8s_docs",
+  "title": "User Impersonation — Constrained Impersonation",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/user-impersonation/#constrained-impersonation",
+  "text": "With the\nimpersonate\nverb, impersonation cannot be limited or scoped.\nIt either grants full impersonation or none at all. Once granted permission to\nimpersonate a user, you can perform any action that user can perform across all\nresources and namespaces.\nWith constrained impersonation, an impersonator can be limited to impersonate another\nuser only for specific actions on specific resources, rather than being able to perform all actions\nthat the impersonated user can perform.\nThis feature is enabled by setting the\nConstrainedImpersonation\nfeature gate\n."
+}

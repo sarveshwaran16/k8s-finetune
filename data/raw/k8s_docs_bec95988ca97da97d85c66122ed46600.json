@@ -1,0 +1,7 @@
+{
+  "id": "bec95988ca97da97d85c66122ed46600",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — SerializedNodeConfigSource",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-SerializedNodeConfigSource",
+  "text": "SerializedNodeConfigSource allows us to serialize v1.NodeConfigSource.\nThis type is used internally by the Kubelet for tracking checkpointed dynamic configs.\nIt exists in the kubeletconfig API group because it is classified as a versioned input to the Kubelet.\nField\nDescription\napiVersion\nstring\nkubelet.config.k8s.io/v1beta1\nkind\nstring\nSerializedNodeConfigSource\nsource\ncore/v1.NodeConfigSource\nsource is the source that we are serializing.\nsource is the source that we are serializing."
+}

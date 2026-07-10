@@ -1,0 +1,7 @@
+{
+  "id": "c80c20d6a56fcd888bd69b4fed85a208",
+  "source": "k8s_docs",
+  "title": "Volume Snapshots — VolumeSnapshots",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/#volumesnapshots",
+  "text": "Each VolumeSnapshot contains a spec and a status.\napiVersion\n:\nsnapshot.storage.k8s.io/v1\nkind\n:\nVolumeSnapshot\nmetadata\n:\nname\n:\nnew-snapshot-test\nspec\n:\nvolumeSnapshotClassName\n:\ncsi-hostpath-snapclass\nsource\n:\npersistentVolumeClaimName\n:\npvc-test\npersistentVolumeClaimName\nis the name of the PersistentVolumeClaim data source\nfor the snapshot. This field is required for dynamically provisioning a snapshot.\nA volume snapshot can request a particular class by specifying the name of a\nVolumeSnapshotClass\nusing the attribute\nvolumeSnapshotClassName\n. If nothing is set, then the\ndefault class is used if available.\nFor pre-provisioned snapshots, you need to specify a\nvolumeSnapshotContentName\nas the source for the snapshot as shown in the following example. The\nvolumeSnapshotContentName\nsource field is required for pre-provisioned snapshots.\napiVersion\n:\nsnapshot.storage.k8s.io/v1\nkind\n:\nVolumeSnapshot\nmetadata\n:\nname\n:\ntest-snapshot\nspec\n:\nsource\n:\nvolumeSnapshotContentName\n:\ntest-content"
+}

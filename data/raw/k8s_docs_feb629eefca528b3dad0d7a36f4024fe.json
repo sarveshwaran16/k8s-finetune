@@ -1,0 +1,7 @@
+{
+  "id": "feb629eefca528b3dad0d7a36f4024fe",
+  "source": "k8s_docs",
+  "title": "Horizontal Pod Autoscaling — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#what-s-next",
+  "text": "If you configure autoscaling in your cluster, you may also want to consider using\nnode autoscaling\nto ensure you are running the right number of nodes.\nYou can also read more about\nvertical\nPod autoscaling\n.\nFor more information on HorizontalPodAutoscaler:\nRead a\nwalkthrough example\nfor horizontal pod autoscaling.\nRead documentation for\nkubectl autoscale\n.\nIf you would like to write your own custom metrics adapter, check out the\nboilerplate\nto get started.\nRead the\nAPI reference\nfor HorizontalPodAutoscaler."
+}

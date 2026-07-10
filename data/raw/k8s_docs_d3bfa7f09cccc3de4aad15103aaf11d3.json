@@ -1,0 +1,7 @@
+{
+  "id": "d3bfa7f09cccc3de4aad15103aaf11d3",
+  "source": "k8s_docs",
+  "title": "Using RBAC Authorization — API discovery roles",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/#discovery-roles",
+  "text": "Default cluster role bindings authorize unauthenticated and authenticated users to read API information\nthat is deemed safe to be publicly accessible (including CustomResourceDefinitions).\nTo disable anonymous unauthenticated access, add\n--anonymous-auth=false\nflag to\nthe API server configuration.\nTo view the configuration of these roles via\nkubectl\nrun:\nkubectl get clusterroles system:discovery -o yaml\nKubernetes RBAC API discovery roles\nDefault ClusterRole\nDefault ClusterRoleBinding\nDescription\nsystem:basic-user\nsystem:authenticated\ngroup\nAllows a user read-only access to basic information about themselves. Prior to v1.14, this role was also bound to\nsystem:unauthenticated\nby default.\nsystem:discovery\nsystem:authenticated\ngroup\nAllows read-only access to API discovery endpoints needed to discover and negotiate an API level. Prior to v1.14, this role was also bound to\nsystem:unauthenticated\nby default.\nsystem:public-info-viewer\nsystem:authenticated\nand\nsystem:unauthenticated\ngroups\nAllows read-only access to non-sensitive information about the cluster. Introduced in Kubernetes v1.14."
+}

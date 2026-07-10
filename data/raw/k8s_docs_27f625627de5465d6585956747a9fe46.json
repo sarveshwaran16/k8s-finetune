@@ -1,0 +1,7 @@
+{
+  "id": "27f625627de5465d6585956747a9fe46",
+  "source": "k8s_docs",
+  "title": "Running in multiple zones — Distributing nodes across zones",
+  "source_url": "https://kubernetes.io/docs/setup/best-practices/multiple-zones/#distributing-nodes-across-zones",
+  "text": "Kubernetes' core does not create nodes for you; you need to do that yourself,\nor use a tool such as the\nCluster API\nto\nmanage nodes on your behalf.\nUsing tools such as the Cluster API you can define sets of machines to run as\nworker nodes for your cluster across multiple failure domains, and rules to\nautomatically heal the cluster in case of whole-zone service disruption."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "94cf5542e3476f23797a676b0ae93752",
+  "source": "k8s_docs",
+  "title": "Enforce Pod Security Standards with Namespace Labels — Add labels to existing namespaces withkubectl label",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/enforce-standards-namespace-labels/#add-labels-to-existing-namespaces-with-kubectl-label",
+  "text": "It is helpful to apply the\n--dry-run\nflag when initially evaluating security profile changes for\nnamespaces. The Pod Security Standard checks will still be run in\ndry run\nmode, giving you\ninformation about how the new policy would treat existing pods, without actually updating a policy.\nkubectl label --dry-run\n=\nserver --overwrite ns --all\n\\\npod-security.kubernetes.io/enforce\n=\nbaseline"
+}

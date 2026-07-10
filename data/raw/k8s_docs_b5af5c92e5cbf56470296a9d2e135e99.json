@@ -1,0 +1,7 @@
+{
+  "id": "b5af5c92e5cbf56470296a9d2e135e99",
+  "source": "k8s_docs",
+  "title": "Install Drivers and Allocate Devices with DRA — Claim resources and deploy a Pod",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/install-use-dra/#claim-resources-pod",
+  "text": "To request resources using DRA, you create ResourceClaims or\nResourceClaimTemplates that define the resources that your Pods need. In the\nexample driver, a memory capacity attribute is exposed for mock GPU devices.\nThis section shows you how to use\nCommon Expression Language\nto\nexpress your requirements in a ResourceClaim, select that ResourceClaim in a Pod\nspecification, and observe the resource allocation.\nThis tutorial showcases only one basic example of a DRA ResourceClaim. Read\nDynamic Resource\nAllocation\nto\nlearn more about ResourceClaims."
+}

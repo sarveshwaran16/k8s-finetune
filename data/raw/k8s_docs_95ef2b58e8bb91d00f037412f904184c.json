@@ -1,0 +1,7 @@
+{
+  "id": "95ef2b58e8bb91d00f037412f904184c",
+  "source": "k8s_docs",
+  "title": "Vertical Pod Autoscaling — Off",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/#updateMode-Off",
+  "text": "In the\nOff\nupdate mode, the VPA recommender still analyzes resource usage and generates\nrecommendations, but these recommendations are not automatically applied to Pods.\nThe recommendations are only stored in the VPA object's\n.status\nfield.\nYou can use a tool such as\nkubectl\nto view the\n.status\nand the recommendations in it."
+}

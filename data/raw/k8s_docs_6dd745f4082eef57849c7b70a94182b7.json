@@ -1,0 +1,7 @@
+{
+  "id": "6dd745f4082eef57849c7b70a94182b7",
+  "source": "k8s_docs",
+  "title": "Service — deleteDelete Connect Proxy",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/service-v1/#delete-delete-connect-proxy",
+  "text": "DELETE /api/v1/namespaces/{namespace}/services/{name}/proxy\nName\nType\nDescription\nname\nstring\nname of the ServiceProxyOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npath\nstring\nPath is the part of URLs that include service endpoints, suffixes, and parameters to use for the current proxy request to service. For example, the whole request URL is http://localhost/api/v1/namespaces/kube-system/services/elasticsearch-logging/_search?q=user:kimchy. Path is _search?q=user:kimchy.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

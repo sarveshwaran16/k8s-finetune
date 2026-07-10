@@ -1,0 +1,7 @@
+{
+  "id": "d7e2741795531afed16b32698b19d754",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — endpoints.kubernetes.io/managed-by (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#endpoints-kubernetes-io-managed-by",
+  "text": "Type: Label\nExample:\nendpoints.kubernetes.io/managed-by: endpoint-controller\nUsed on: Endpoints\nThis label is used internally to mark Endpoints objects that were created by\nKubernetes (as opposed to Endpoints created by users or external controllers).\n\nType: Label\nExample:\nendpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io\nUsed on: EndpointSlices\nThe label is used to indicate the controller or entity that manages the EndpointSlice. This label\naims to enable different EndpointSlice objects to be managed by different controllers or entities\nwithin the same cluster. The value\nendpointslice-controller.k8s.io\nindicates an\nEndpointSlice object that was created automatically by Kubernetes for a Service with a\nselectors\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "68c016135319080bf402e565b08f9fe3",
+  "source": "k8s_docs",
+  "title": "Operating etcd clusters for Kubernetes — Starting etcd clusters",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#starting-etcd-clusters",
+  "text": "This section covers starting a single-node and multi-node etcd cluster.\nThis guide assumes that\netcd\nis already installed.\n\nUse a single-node etcd cluster only for testing purposes.\nRun the following:\netcd --listen-client-urls\n=\nhttp://\n$PRIVATE_IP\n:2379\n\\\n--advertise-client-urls\n=\nhttp://\n$PRIVATE_IP\n:2379\nStart the Kubernetes API server with the flag\n--etcd-servers=$PRIVATE_IP:2379\n.\nMake sure\nPRIVATE_IP\nis set to your etcd client IP.\nRun the following:\netcd --listen-client-urls\n=\nhttp://\n$PRIVATE_IP\n:2379\n\\\n--advertise-client-urls\n=\nhttp://\n$PRIVATE_IP\n:2379\nStart the Kubernetes API server with the flag\n--etcd-servers=$PRIVATE_IP:2379\n.\nMake sure\nPRIVATE_IP\nis set to your etcd client IP."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "386ac95bdf69269907d55d284c4af673",
+  "source": "k8s_docs",
+  "title": "Using RBAC Authorization — Parallel authorizers",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/#parallel-authorizers",
+  "text": "Run both the RBAC and ABAC authorizers, and specify a policy file that contains\nthe\nlegacy ABAC policy\n:\n--authorization-mode\n=\n...,RBAC,ABAC --authorization-policy-file\n=\nmypolicy.json\nTo explain that first command line option in detail: if earlier authorizers, such as Node,\ndeny a request, then the RBAC authorizer attempts to authorize the API request. If RBAC\nalso denies that API request, the ABAC authorizer is then run. This means that any request\nallowed by\neither\nthe RBAC or ABAC policies is allowed.\nWhen the kube-apiserver is run with a log level of 5 or higher for the RBAC component\n(\n--vmodule=rbac*=5\nor\n--v=5\n), you can see RBAC denials in the API server log\n(prefixed with\nRBAC\n).\nYou can use that information to determine which roles need to be granted to which users, groups, or service accounts.\nOnce you have\ngranted roles to service accounts\nand workloads\nare running with no RBAC denial messages in the server logs, you can remove the ABAC authorizer."
+}

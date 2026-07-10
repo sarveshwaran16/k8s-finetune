@@ -1,0 +1,7 @@
+{
+  "id": "95f93aa6737ecc09e1dff44bd36d0bd7",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — api-versions",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#api-versions",
+  "text": "Print the supported API versions\nkubectl api-versions\nPrint the supported API versions on the server, in the form of \"group/version\".\n\n$ kubectl api-versions\n\nPrint the supported API resources\nkubectl api-resources\nPrint the supported API resources with more information\nkubectl api-resources -o wide\nPrint the supported API resources sorted by a column\nkubectl api-\nresources\n--\nsort\n-by=\nname\nPrint the supported namespaced resources\nkubectl\napi-resources --namespaced=\ntrue\nPrint the supported non-namespaced resources\nkubectl\napi-resources --namespaced=\nfalse\nPrint the supported API resources with a specific APIGroup\nkubectl api-resources\n--api-group\n=rbac.authorization.k8s.io\nPrint the supported API resources on the server."
+}

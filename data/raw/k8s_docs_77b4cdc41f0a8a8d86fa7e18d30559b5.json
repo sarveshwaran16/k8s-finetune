@@ -1,0 +1,7 @@
+{
+  "id": "77b4cdc41f0a8a8d86fa7e18d30559b5",
+  "source": "k8s_docs",
+  "title": "Parallel Processing using Expansions — Create Jobs based on a template",
+  "source_url": "https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/#create-jobs-based-on-a-template",
+  "text": "First, download the following template of a Job to a file called\njob-tmpl.yaml\n.\nHere's what you'll download:\napiVersion\n:\nbatch/v1\nkind\n:\nJob\nmetadata\n:\nname\n:\nprocess-item-$ITEM\nlabels\n:\njobgroup\n:\njobexample\nspec\n:\ntemplate\n:\nmetadata\n:\nname\n:\njobexample\nlabels\n:\njobgroup\n:\njobexample\nspec\n:\ncontainers\n:\n-\nname\n:\nc\nimage\n:\nbusybox:1.28\ncommand\n:\n[\n\"sh\"\n,\n\"-c\"\n,\n\"echo Processing item $ITEM && sleep 5\"\n]\nrestartPolicy\n:\nNever\n# Use curl to download job-tmpl.yaml\ncurl -L -s -O https://k8s.io/examples/application/job/job-tmpl.yaml\nThe file you downloaded is not yet a valid Kubernetes\nmanifest\n.\nInstead that template is a YAML representation of a Job object with some placeholders\nthat need to be filled in before it can be used. The\n$ITEM\nsyntax is not meaningful to Kubernetes."
+}

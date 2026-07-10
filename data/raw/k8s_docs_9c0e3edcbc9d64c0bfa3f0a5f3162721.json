@@ -1,0 +1,7 @@
+{
+  "id": "9c0e3edcbc9d64c0bfa3f0a5f3162721",
+  "source": "k8s_docs",
+  "title": "Debug Running Pods — Capturing and analyzing Node/Pod traffic",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#capturing-and-analyzing-node-pod-traffic",
+  "text": "When debugging networking issues, capturing and analyzing network traffic from Nodes/Pods can provide valuable insights\ninto connectivity problems, DNS resolution failures, or unexpected network behavior.\nYou can use\nkubectl debug\nwith the\n--profile=sysadmin\nflag to run network capture tools on a node.\nFirst, create a debugging session on the node where your Pod is running:\nkubectl debug --profile\n=\nsysadmin node/\n${\nNODE_NAME\n}\n-it --image\n=\nubuntu:latest\nOnce inside the debug container, install tcpdump and capture traffic on the node's network interfaces:\napt-get update\n&&\napt-get install -y tcpdump\ntcpdump -i any -n\nDon't forget to clean up the debugging Pod when you're finished with it:\nkubectl delete pod node-debugger-mynode-pdx84\nYou can also capture traffic from a specific Pod:\nkubectl debug --profile\n=\nsysadmin pod/\n${\nPOD_NAME\n}\n-n\n${\nNAMESPACE\n}\n-it --image\n=\nubuntu:latest\nAnd then perform the same\ntcpdump\ncommand inside the debug container to capture traffic from the Pod's network namespace."
+}

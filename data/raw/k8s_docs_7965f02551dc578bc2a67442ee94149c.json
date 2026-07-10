@@ -1,0 +1,7 @@
+{
+  "id": "7965f02551dc578bc2a67442ee94149c",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Filter for specific requests by using match conditions",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#filter-match-conditions",
+  "text": "Admission controllers support multiple fields that you can use to match requests\nthat meet specific criteria. For example, you can use a\nnamespaceSelector\nto\nfilter for requests that target a specific namespace.\nFor more fine-grained request filtering, use the\nmatchConditions\nfield in your\nwebhook configuration. This field lets you write multiple CEL expressions that\nmust evaluate to\ntrue\nfor a request to trigger your admission webhook. Using\nmatchConditions\nmight significantly reduce the number of calls to your webhook\nserver.\nFor details, see\nMatching requests:\nmatchConditions\n."
+}

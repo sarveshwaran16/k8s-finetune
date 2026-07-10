@@ -1,0 +1,7 @@
+{
+  "id": "ab531629976836b519870eab958c68bb",
+  "source": "k8s_docs",
+  "title": "Managing Kubernetes Objects Using Imperative Commands — How to delete objects",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-command/#how-to-delete-objects",
+  "text": "You can use the\ndelete\ncommand to delete an object from a cluster:\ndelete <type>/<name>\nkubectl delete deployment/nginx\n\nThere are several commands for printing information about an object:\nget\n: Prints basic information about matching objects. Use\nget -h\nto see a list of options.\ndescribe\n: Prints aggregated detailed information about matching objects.\nlogs\n: Prints the stdout and stderr for a container running in a Pod."
+}

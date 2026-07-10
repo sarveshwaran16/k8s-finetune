@@ -1,0 +1,7 @@
+{
+  "id": "dd8370d5599ae479acb972fb39ff33a7",
+  "source": "k8s_docs",
+  "title": "Image Policy API (v1alpha1) — ImageReviewStatus",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/imagepolicy.v1alpha1/#imagepolicy-k8s-io-v1alpha1-ImageReviewStatus",
+  "text": "Appears in:\nImageReview\nImageReviewStatus is the result of the review for the pod creation request.\nField\nDescription\nallowed\nbool\nAllowed indicates that all images were allowed to be run.\nreason\nstring\nReason should be empty unless Allowed is false in which case it\nmay contain a short description of what is wrong. Kubernetes\nmay truncate excessively long errors when displaying to the user.\nauditAnnotations\nmap[string]string\nAuditAnnotations will be added to the attributes object of the\nadmission controller request using 'AddAnnotation'. The keys should\nbe prefix-less (i.e., the admission controller will add an\nappropriate prefix).\nAllowed indicates that all images were allowed to be run.\nReason should be empty unless Allowed is false in which case it\nmay contain a short description of what is wrong. Kubernetes\nmay truncate excessively long errors when displaying to the user.\nAuditAnnotations will be added to the attributes object of the\nadmission controller request using 'AddAnnotation'. The keys should\nbe prefix-less (i.e., the admission controller will add an\nappropriate prefix)."
+}

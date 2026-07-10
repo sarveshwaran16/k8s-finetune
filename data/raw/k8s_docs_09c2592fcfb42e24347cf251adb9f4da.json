@@ -1,0 +1,7 @@
+{
+  "id": "09c2592fcfb42e24347cf251adb9f4da",
+  "source": "k8s_docs",
+  "title": "kubeadm init — What's next",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/#what-s-next",
+  "text": "kubeadm init phase\nto understand more about\nkubeadm init\nphases\nkubeadm join\nto bootstrap a Kubernetes\nworker node and join it to the cluster\nkubeadm upgrade\nto upgrade a Kubernetes\ncluster to a newer version\nkubeadm reset\nto revert any changes made\nto this host by\nkubeadm init\nor\nkubeadm join\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

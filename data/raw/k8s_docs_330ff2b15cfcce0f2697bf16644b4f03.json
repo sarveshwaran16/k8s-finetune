@@ -1,0 +1,7 @@
+{
+  "id": "330ff2b15cfcce0f2697bf16644b4f03",
+  "source": "k8s_docs",
+  "title": "Restrict a Container's Access to Resources with AppArmor — Securing a Pod",
+  "source_url": "https://kubernetes.io/docs/tutorials/security/apparmor/#securing-a-pod",
+  "text": "AppArmor profiles can be specified at the pod level or container level. The container AppArmor\nprofile takes precedence over the pod profile.\nsecurityContext\n:\nappArmorProfile\n:\ntype\n:\n<profile_type>\nWhere\n<profile_type>\nis one of:\nRuntimeDefault\nto use the runtime's default profile\nLocalhost\nto use a profile loaded on the host (see below)\nUnconfined\nto run without AppArmor\nSee\nSpecifying AppArmor Confinement\nfor full details on the AppArmor profile API.\nTo verify that the profile was applied, you can check that the container's root process is\nrunning with the correct profile by examining its proc attr:\nkubectl\nexec\n<pod_name> -- cat /proc/1/attr/current\nThe output should look something like this:\ncri-containerd.apparmor.d (enforce)"
+}

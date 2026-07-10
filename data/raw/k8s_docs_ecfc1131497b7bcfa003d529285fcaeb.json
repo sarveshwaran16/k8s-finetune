@@ -1,0 +1,7 @@
+{
+  "id": "ecfc1131497b7bcfa003d529285fcaeb",
+  "source": "k8s_docs",
+  "title": "PodGroup — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/scheduling/pod-group-v1alpha2/#get-read",
+  "text": "GET /apis/scheduling.k8s.io/v1alpha2/namespaces/{namespace}/podgroups/{name}\nName\nType\nDescription\nname\nstring\nname of the PodGroup\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nPodGroup"
+}

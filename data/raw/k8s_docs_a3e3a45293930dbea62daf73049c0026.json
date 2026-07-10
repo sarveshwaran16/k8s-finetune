@@ -1,0 +1,7 @@
+{
+  "id": "a3e3a45293930dbea62daf73049c0026",
+  "source": "k8s_docs",
+  "title": "Volumes — flexVolume (deprecated)",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/#flexvolume",
+  "text": "FlexVolume is an out-of-tree plugin interface that uses an exec-based model to interface\nwith storage drivers. The FlexVolume driver binaries must be installed in a pre-defined\nvolume plugin path on each node, and in some cases, the control plane nodes as well.\nPods interact with FlexVolume drivers through the\nflexVolume\nin-tree volume plugin.\nThe following FlexVolume\nplugins\n,\ndeployed as PowerShell scripts on the host, support Windows nodes:\nSMB\niSCSI\nFlexVolume is deprecated. Using an out-of-tree CSI driver is the recommended way to integrate external storage with Kubernetes.\nMaintainers of the FlexVolume driver should implement a CSI Driver and help migrate users of FlexVolume drivers to CSI.\nUsers of FlexVolume should move their workloads to use the equivalent CSI Driver."
+}

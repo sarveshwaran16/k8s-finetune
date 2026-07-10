@@ -1,0 +1,7 @@
+{
+  "id": "8d818166aa81dee5878b5267d7d5335c",
+  "source": "k8s_docs",
+  "title": "Upgrade A Cluster — Update manifests",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/#update-manifests",
+  "text": "Upgrading to a new Kubernetes version can provide new APIs.\nYou can use\nkubectl convert\ncommand to convert manifests between different API versions.\nFor example:\nkubectl convert -f pod.yaml --output-version v1\nThe\nkubectl\ntool replaces the contents of\npod.yaml\nwith a manifest that sets\nkind\nto\nPod (unchanged), but with a revised\napiVersion\n."
+}

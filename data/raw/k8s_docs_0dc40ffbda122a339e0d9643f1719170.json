@@ -1,0 +1,7 @@
+{
+  "id": "0dc40ffbda122a339e0d9643f1719170",
+  "source": "k8s_docs",
+  "title": "Volumes — fc (fibre channel)",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/#fc",
+  "text": "An\nfc\nvolume type allows an existing fibre channel block storage volume\nto be mounted in a Pod. You can specify single or multiple target world wide names (WWNs)\nusing the parameter\ntargetWWNs\nin your Volume configuration. If multiple WWNs are specified,\ntargetWWNs expect that those WWNs are from multi-path connections."
+}

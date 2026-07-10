@@ -1,0 +1,7 @@
+{
+  "id": "24cb71479921cf535cfbbb80782797a0",
+  "source": "k8s_docs",
+  "title": "Webhook Mode — Configuration File Format",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/webhook/#configuration-file-format",
+  "text": "Mode\nWebhook\nrequires a file for HTTP configuration, specify by the\n--authorization-webhook-config-file=SOME_FILENAME\nflag.\nThe configuration file uses the\nkubeconfig\nfile format. Within the file \"users\" refers to the API Server webhook and\n\"clusters\" refers to the remote service.\nA configuration example which uses HTTPS client auth:\n# Kubernetes API version\napiVersion\n:\nv1\n# kind of the API object\nkind\n:\nConfig\n# clusters refers to the remote service.\nclusters\n:\n-\nname\n:\nname-of-remote-authz-service\ncluster\n:\n# CA for verifying the remote service.\ncertificate-authority\n:\n/path/to/ca.pem\n# URL of remote service to query. Must use 'https'. May not include parameters.\nserver\n:\nhttps://authz.example.com/authorize\n# users refers to the API Server's webhook configuration.\nusers\n:\n-\nname\n:\nname-of-api-server\nuser\n:\nclient-certificate\n:\n/path/to/cert.pem\n# cert for the webhook plugin to use\nclient-key\n:\n/path/to/key.pem\n# key matching the cert\n# kubeconfig files require a context. Provide one for the API Server.\ncurrent-context\n:\nwebhook\ncontexts\n:\n-\ncontext\n:\ncluster\n:\nname-of-remote-authz-service\nuser\n:\nname-of-api-server\nname\n:\nwebhook"
+}

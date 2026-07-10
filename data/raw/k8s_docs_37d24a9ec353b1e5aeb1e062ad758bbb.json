@@ -1,0 +1,7 @@
+{
+  "id": "37d24a9ec353b1e5aeb1e062ad758bbb",
+  "source": "k8s_docs",
+  "title": "Update a Deployment Without Downtime — Detecting a stalled rollout",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/#detecting-a-stalled-rollout",
+  "text": "If a rollout does not make progress within the time specified by\n.spec.progressDeadlineSeconds\n(default: 600 seconds), Kubernetes marks the Deployment condition\nProgressing\nas\nFalse\n. You can check for this condition by describing the Deployment:\nkubectl describe deployment nginx-deployment\nLook for the\nProgressing\ncondition in the\nConditions\nsection of the output. A stalled rollout usually indicates that new Pods are failing to start. The\nEvents\nsection of the output can help diagnose the issue."
+}

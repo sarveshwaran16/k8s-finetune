@@ -1,0 +1,7 @@
+{
+  "id": "ec0a6f23291c4b258fb33709b7931f0a",
+  "source": "k8s_docs",
+  "title": "Pod — PreferredSchedulingTerm",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#PreferredSchedulingTerm",
+  "text": "An empty preferred scheduling term matches all objects with implicit weight 0 (i.e. it's a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).\nField\nDescription\npreference\n*\nNodeSelectorTerm\nA node selector term, associated with the corresponding weight.\nweight\n*\ninteger\nWeight associated with matching the corresponding nodeSelectorTerm, in the range 1-100."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "d983b4e325c0938c5e9bf3e1ba0fd7fd",
+  "source": "k8s_docs",
+  "title": "Gateway API — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/gateway/#what-s-next",
+  "text": "Instead of Gateway API resources being natively implemented by Kubernetes, the specifications\nare defined as\nCustom Resources\nsupported by a wide range of\nimplementations\n.\nInstall\nthe Gateway API CRDs or\nfollow the installation instructions of your selected implementation. After installing an\nimplementation, use the\nGetting Started\nguide to help\nyou quickly start working with Gateway API.\nRefer to the\nAPI specification\nfor additional\ndetails of all Gateway API kinds."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "11cfea26f17876363fea2f3c94f2ce39",
+  "source": "k8s_docs",
+  "title": "Event — EventSeries",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/events/event-v1/#EventSeries",
+  "text": "EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time. How often to update the EventSeries is up to the event reporters. The default event reporter in \"k8s.io/client-go/tools/events/event_broadcaster.go\" shows how this struct is updated on heartbeats and can guide customized reporter implementations.\nField\nDescription\ncount\n*\ninteger\ncount is the number of occurrences in this series up to the last heartbeat time.\nlastObservedTime\n*\nMicroTime\nlastObservedTime is the time when last Event from the series was seen before last heartbeat."
+}

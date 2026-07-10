@@ -1,0 +1,7 @@
+{
+  "id": "efd22cf683db06e0300d6b5f838d95c2",
+  "source": "k8s_docs",
+  "title": "PersistentVolume — HostPathVolumeSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-v1/#HostPathVolumeSource",
+  "text": "Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling.\nField\nDescription\npath\n*\nstring\npath of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath\ntype\nstring\ntype for HostPath Volume Defaults to \"\" More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath\nPossible enum values:\n- `\"\"` For backwards compatible, leave it empty if unset\n- `\"BlockDevice\"` A block device must exist at the given path\n- `\"CharDevice\"` A character device must exist at the given path\n- `\"Directory\"` A directory must exist at the given path\n- `\"DirectoryOrCreate\"` If nothing exists at the given path, an empty directory will be created there as needed with file mode 0755, having the same group and ownership with Kubelet.\n- `\"File\"` A file must exist at the given path\n- `\"FileOrCreate\"` If nothing exists at the given path, an empty file will be created there as needed with file mode 0644, having the same group and ownership with Kubelet.\n- `\"Socket\"` A UNIX socket must exist at the given path"
+}

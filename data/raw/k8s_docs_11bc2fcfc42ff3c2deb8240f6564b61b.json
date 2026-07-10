@@ -1,0 +1,7 @@
+{
+  "id": "11bc2fcfc42ff3c2deb8240f6564b61b",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler — MetricIdentifier",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#MetricIdentifier",
+  "text": "MetricIdentifier defines the name and optionally selector for a metric\nField\nDescription\nname\n*\nstring\nname is the name of the given metric\nselector\nLabelSelector\nselector is the string-encoded form of a standard kubernetes label selector for the given metric When set, it is passed as an additional parameter to the metrics server for more specific metrics scoping. When unset, just the metricName will be used to gather metrics."
+}

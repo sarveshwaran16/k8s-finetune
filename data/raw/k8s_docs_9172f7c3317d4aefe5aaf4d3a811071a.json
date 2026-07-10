@@ -1,0 +1,7 @@
+{
+  "id": "9172f7c3317d4aefe5aaf4d3a811071a",
+  "source": "k8s_docs",
+  "title": "ComponentStatus — ComponentCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/component-status-v1/#ComponentCondition",
+  "text": "Information about the condition of a component.\nField\nDescription\nerror\nstring\nCondition error code for a component. For example, a health check error code.\nmessage\nstring\nMessage about the condition for a component. For example, information about a health check.\nstatus\n*\nstring\nStatus of the condition for a component. Valid values for \"Healthy\": \"True\", \"False\", or \"Unknown\".\ntype\n*\nstring\nType of condition for a component. Valid value: \"Healthy\""
+}

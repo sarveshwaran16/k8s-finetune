@@ -1,0 +1,7 @@
+{
+  "id": "85bac5592fe2386018f52bf0fcc642c2",
+  "source": "k8s_docs",
+  "title": "Autoscaling Workloads — Scaling workloads automatically",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/#scaling-workloads-automatically",
+  "text": "Kubernetes also supports\nautomatic scaling\nof workloads, which is the focus of this page.\nThe concept of\nAutoscaling\nin Kubernetes refers to the ability to automatically update an\nobject that manages a set of Pods (for example a\nDeployment\n).\n\nIn Kubernetes, you can automatically scale a workload horizontally using a\nHorizontalPodAutoscaler\n(HPA).\nIt is implemented as a Kubernetes API resource and a\ncontroller\nand periodically adjusts the number of\nreplicas\nin a workload to match observed resource utilization such as CPU or memory usage.\nThere is a\nwalkthrough tutorial\nof configuring a HorizontalPodAutoscaler for a Deployment."
+}

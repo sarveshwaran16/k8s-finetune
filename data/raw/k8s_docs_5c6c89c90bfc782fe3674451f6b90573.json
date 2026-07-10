@@ -1,0 +1,7 @@
+{
+  "id": "5c6c89c90bfc782fe3674451f6b90573",
+  "source": "k8s_docs",
+  "title": "Extend kubectl with plugins — Native / platform specific package management",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/#distributing-native",
+  "text": "Alternatively, you can use traditional package managers such as,\napt\nor\nyum\non Linux, Chocolatey on Windows, and Homebrew on macOS. Any package\nmanager will be suitable if it can place new executables placed somewhere\nin the user's\nPATH\n.\nAs a plugin author, if you pick this option then you also have the burden\nof updating your kubectl plugin's distribution package across multiple\nplatforms for each release."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "4c469bb5cdffaa403f3fed3e4871a453",
+  "source": "k8s_docs",
+  "title": "ResourceSlice — Counter",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-slice-v1/#Counter",
+  "text": "Counter describes a quantity associated with a device.\nField\nDescription\nvalue\n*\nQuantity\nValue defines how much of a certain device counter is available.\n\nCounterSet defines a named set of counters that are available to be used by devices defined in the ResourcePool.\nThe counters are not allocatable by themselves, but can be referenced by devices. When a device is allocated, the portion of counters it uses will no longer be available for use by other devices.\nField\nDescription\ncounters\n*\nobject\nCounters defines the set of counters for this CounterSet The name of each counter must be unique in that set and must be a DNS label. The maximum number of counters is 32.\nname\n*\nstring\nName defines the name of the counter set. It must be a DNS label."
+}

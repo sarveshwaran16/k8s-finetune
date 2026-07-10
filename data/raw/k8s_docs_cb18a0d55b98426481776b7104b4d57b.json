@@ -1,0 +1,7 @@
+{
+  "id": "cb18a0d55b98426481776b7104b4d57b",
+  "source": "k8s_docs",
+  "title": "Enable Or Disable Feature Gates — Check control plane component manifests",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-feature-gates/#check-control-plane-component-manifests",
+  "text": "View the feature gates configured in the static pod manifest:\nkubectl -n kube-system get pod kube-apiserver-<node-name> -o yaml\n|\ngrep feature-gates\n\nUse the kubelet's configz endpoint:\nkubectl proxy --port\n=\n8001\n&\ncurl -sSL\n\"http://localhost:8001/api/v1/nodes/<node-name>/proxy/configz\"\n|\ngrep featureGates -A\n5\nOr check the configuration file directly on the node:\ncat /var/lib/kubelet/config.yaml\n|\ngrep -A\n10\nfeatureGates"
+}

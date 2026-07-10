@@ -1,0 +1,7 @@
+{
+  "id": "e852a6b670fa55ab96acff993f07754b",
+  "source": "k8s_docs",
+  "title": "Protocols for Services — PROXY protocol",
+  "source_url": "https://kubernetes.io/docs/reference/networking/service-protocols/#protocol-proxy-special",
+  "text": "If your cloud provider supports it, you can use a Service set to\ntype: LoadBalancer\nto configure a load balancer outside of Kubernetes itself, that will forward connections\nwrapped with the\nPROXY protocol\n.\nThe load balancer then sends an initial series of octets describing the\nincoming connection, similar to this example (PROXY protocol v1):\nPROXY TCP4 192.0.2.202 10.0.42.7 12345 7\\r\\n\nThe data after the proxy protocol preamble are the original\ndata from the client. When either side closes the connection,\nthe load balancer also triggers a connection close and sends\nany remaining data where feasible.\nTypically, you define a Service with the protocol to\nTCP\n.\nYou also set an annotation, specific to your\ncloud provider, that configures the load balancer to wrap each incoming connection in the PROXY protocol."
+}

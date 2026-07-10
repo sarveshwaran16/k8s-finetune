@@ -1,0 +1,7 @@
+{
+  "id": "4f7051785648ab65c17fc8aa468d984f",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — Resource deletion",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#resource-deletion",
+  "text": "When you\ndelete\na resource this takes place in two phases.\nfinalization\nremoval\n{\n\"kind\":\n\"ConfigMap\"\n,\n\"apiVersion\":\n\"v1\"\n,\n\"metadata\":\n{\n\"finalizers\":\n[\n\"url.io/neat-finalization\"\n,\n\"other-url.io/my-finalizer\"\n],\n\"deletionTimestamp\":\nnil,\n}\n}\nWhen a client first sends a\ndelete\nto request the removal of a resource,\nthe\n.metadata.deletionTimestamp\nis set to the current time.\nOnce the\n.metadata.deletionTimestamp\nis set, external controllers that act on finalizers\nmay start performing their cleanup work at any time, in any order.\nOrder is\nnot\nenforced between finalizers because it would introduce significant\nrisk of stuck\n.metadata.finalizers\n.\nThe\n.metadata.finalizers\nfield is shared: any actor with permission can reorder it.\nIf the finalizer list were processed in order, then this might lead to a situation\nin which the component responsible for the first finalizer in the list is\nwaiting for some signal (field value, external system, or other) produced by a\ncomponent responsible for a finalizer later in the list, resulting in a deadlock.\nWithout enforced ordering, finalizers are free to order amongst themselves and are\nnot vulnerable to ordering changes in the list.\nOnce the last finalizer is removed, the resource is actually removed from etcd."
+}

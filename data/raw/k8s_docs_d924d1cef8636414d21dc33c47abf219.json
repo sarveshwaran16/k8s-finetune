@@ -1,0 +1,7 @@
+{
+  "id": "d924d1cef8636414d21dc33c47abf219",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler Walkthrough — Run and expose php-apache server",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#run-and-expose-php-apache-server",
+  "text": "To demonstrate a HorizontalPodAutoscaler, you will first start a Deployment that runs a container using the\nhpa-example\nimage, and expose it as a\nService\nusing the following manifest:\napiVersion\n:\napps/v1\nkind\n:\nDeployment\nmetadata\n:\nname\n:\nphp-apache\nspec\n:\nselector\n:\nmatchLabels\n:\nrun\n:\nphp-apache\ntemplate\n:\nmetadata\n:\nlabels\n:\nrun\n:\nphp-apache\nspec\n:\ncontainers\n:\n-\nname\n:\nphp-apache\nimage\n:\nregistry.k8s.io/hpa-example\nports\n:\n-\ncontainerPort\n:\n80\nresources\n:\nlimits\n:\ncpu\n:\n500m\nrequests\n:\ncpu\n:\n200m\n---\napiVersion\n:\nv1\nkind\n:\nService\nmetadata\n:\nname\n:\nphp-apache\nlabels\n:\nrun\n:\nphp-apache\nspec\n:\nports\n:\n-\nport\n:\n80\nselector\n:\nrun\n:\nphp-apache\nTo do so, run the following command:\nkubectl apply -f https://k8s.io/examples/application/php-apache.yaml\ndeployment.apps/php-apache created\nservice/php-apache created"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7dc4bd1301e6ed53d8185450d64aef5f",
+  "source": "k8s_docs",
+  "title": "kubectl auth can-i — Options",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_auth/kubectl_auth_can-i/#options",
+  "text": "-A, --all-namespaces\nIf true, check the specified action in all namespaces.\n-h, --help\nhelp for can-i\n--list\nIf true, prints all allowed actions.\n--no-headers\nIf true, prints allowed actions without headers\n-q, --quiet\nIf true, suppress output and just return the exit code.\n--subresource string\nSubResource such as pod/log or deployment/scale\nIf true, check the specified action in all namespaces.\nhelp for can-i\nIf true, prints all allowed actions.\nIf true, prints allowed actions without headers\nIf true, suppress output and just return the exit code.\nSubResource such as pod/log or deployment/scale"
+}

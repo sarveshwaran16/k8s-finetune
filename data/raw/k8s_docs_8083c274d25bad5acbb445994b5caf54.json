@@ -1,0 +1,7 @@
+{
+  "id": "8083c274d25bad5acbb445994b5caf54",
+  "source": "k8s_docs",
+  "title": "Volume Snapshot Classes — Driver",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshot-classes/#driver",
+  "text": "Volume snapshot classes have a driver that determines what CSI volume plugin is\nused for provisioning VolumeSnapshots. This field must be specified.\n\nVolume snapshot classes have a\ndeletionPolicy\n.\nIt enables you to configure what happens to a VolumeSnapshotContent when the VolumeSnapshot\nobject it is bound to is to be deleted. The deletionPolicy of a volume snapshot class can\neither be\nRetain\nor\nDelete\n. This field must be specified.\nIf the deletionPolicy is\nDelete\n, then the underlying storage snapshot will be\ndeleted along with the VolumeSnapshotContent object. If the deletionPolicy is\nRetain\n,\nthen both the underlying snapshot and VolumeSnapshotContent remain."
+}

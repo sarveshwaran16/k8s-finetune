@@ -1,0 +1,7 @@
+{
+  "id": "e82c145d3794f9ea6fef10df317f37eb",
+  "source": "k8s_docs",
+  "title": "Configure a Pod Quota for a Namespace — Choice of resource",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/quota-pod-namespace/#choice-of-resource",
+  "text": "In this task you have defined a ResourceQuota that limited the total number of Pods, but\nyou could also limit the total number of other kinds of object. For example, you\nmight decide to limit how many\nCronJobs\nthat can live in a single namespace.\n\nDelete your namespace:\nkubectl delete namespace quota-pod-example"
+}

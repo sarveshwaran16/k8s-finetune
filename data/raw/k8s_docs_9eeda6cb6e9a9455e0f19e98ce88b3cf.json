@@ -1,0 +1,7 @@
+{
+  "id": "9eeda6cb6e9a9455e0f19e98ce88b3cf",
+  "source": "k8s_docs",
+  "title": "Adopting Sidecar Containers — Ensure the feature gate is enabled",
+  "source_url": "https://kubernetes.io/docs/tutorials/configuration/pod-sidecar-containers/#ensure-the-feature-gate-is-enabled",
+  "text": "As a very first step, make sure that both API server and Nodes are at Kubernetes version v1.29 or\nlater. The feature will break on clusters where Nodes are running earlier versions where it is not enabled.\nYou should ensure that the feature gate is enabled for the API server(s) within the control plane\nand\nfor all nodes.\nOne of the ways to check the feature gate enablement is to run a command like this:\nFor API Server:\nkubectl get --raw /metrics\n|\ngrep kubernetes_feature_enabled\n|\ngrep SidecarContainers\nFor the individual node:\nkubectl get --raw /api/v1/nodes/<node-name>/proxy/metrics\n|\ngrep kubernetes_feature_enabled\n|\ngrep SidecarContainers\nFor API Server:\nkubectl get --raw /metrics\n|\ngrep kubernetes_feature_enabled\n|\ngrep SidecarContainers\nFor the individual node:\nkubectl get --raw /api/v1/nodes/<node-name>/proxy/metrics\n|\ngrep kubernetes_feature_enabled\n|\ngrep SidecarContainers\nIf you see something like this:\nkubernetes_feature_enabled{name=\"SidecarContainers\",stage=\"BETA\"} 1\nit means that the feature is enabled."
+}

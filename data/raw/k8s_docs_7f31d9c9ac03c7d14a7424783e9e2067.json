@@ -1,0 +1,7 @@
+{
+  "id": "7f31d9c9ac03c7d14a7424783e9e2067",
+  "source": "k8s_docs",
+  "title": "kubectl label — Examples",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_label/#examples",
+  "text": "# Update pod 'foo' with the label 'unhealthy' and the value 'true'\n  kubectl label pods foo unhealthy=true\n  \n  # Update pod 'foo' with the label 'status' and the value 'unhealthy', overwriting any existing value\n  kubectl label --overwrite pods foo status=unhealthy\n  \n  # Update all pods in the namespace\n  kubectl label pods --all status=unhealthy\n  \n  # Update a pod identified by the type and name in \"pod.json\"\n  kubectl label -f pod.json status=unhealthy\n  \n  # Update pod 'foo' only if the resource is unchanged from version 1\n  kubectl label pods foo status=unhealthy --resource-version=1\n  \n  # Update pod 'foo' by removing a label named 'bar' if it exists\n  # Does not require the --overwrite flag\n  kubectl label pods foo bar-"
+}

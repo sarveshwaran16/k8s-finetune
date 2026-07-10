@@ -1,0 +1,7 @@
+{
+  "id": "c26e46caddb71c7e377fdbe5d143d75d",
+  "source": "k8s_docs",
+  "title": "Installing kubeadm — Verify the MAC address and product_uuid are unique for every node",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#verify-mac-address",
+  "text": "You can get the MAC address of the network interfaces using the command\nip link\nor\nifconfig -a\nThe product_uuid can be checked by using the command\nsudo cat /sys/class/dmi/id/product_uuid\nIt is very likely that hardware devices will have unique addresses, although some virtual machines may have\nidentical values. Kubernetes uses these values to uniquely identify the nodes in the cluster.\nIf these values are not unique to each node, the installation process\nmay\nfail\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6009b653a0c0393fe08ebb1bb4fdd819",
+  "source": "k8s_docs",
+  "title": "Leases — Workloads",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/leases/#custom-workload",
+  "text": "Your own workload can define its own use of Leases. For example, you might run a custom\ncontroller\nwhere a primary or leader member\nperforms operations that its peers do not. You define a Lease so that the controller replicas can select\nor elect a leader, using the Kubernetes API for coordination.\nIf you do use a Lease, it's a good practice to define a name for the Lease that is obviously linked to\nthe product or component. For example, if you have a component named Example Foo, use a Lease named\nexample-foo\n.\nIf a cluster operator or another end user could deploy multiple instances of a component, select a name\nprefix and pick a mechanism (such as hash of the name of the Deployment) to avoid name collisions\nfor the Leases.\nYou can use another approach so long as it achieves the same outcome: different software products do\nnot conflict with one another."
+}

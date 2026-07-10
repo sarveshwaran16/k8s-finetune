@@ -1,0 +1,7 @@
+{
+  "id": "62ba6695ae5a5d3bcd1db12319fa1112",
+  "source": "k8s_docs",
+  "title": "Learning environment — Setting up local Kubernetes environments",
+  "source_url": "https://kubernetes.io/docs/setup/learning-environment/#setting-up-local-kubernetes-environments",
+  "text": "Running Kubernetes locally gives you a safe environment to learn and experiment. You can set up and tear down clusters without worrying about costs or affecting production systems.\n\nkind\n(Kubernetes IN Docker) runs Kubernetes clusters using Docker containers as nodes. It is lightweight and designed specifically for testing Kubernetes itself, but works great for learning too.\nTo get started with kind, see the\nkind Quick Start\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "2a234540ee8d0f94e63f4d168d200388",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node.alpha.kubernetes.io/ttl (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-alpha-kubernetes-io-ttl-deprecated",
+  "text": "Type: Label\nExample:\nnode.alpha.kubernetes.io/ttl: \"0\"\nUsed on: Node\nThis label was used historically by some tools (such as minikube) to set a time-to-live\nvalue for nodes. The label is deprecated and should not be used in new deployments.\n\nType: Label\nExample:\nnode.kubernetes.io/exclude-from-external-load-balancers\nUsed on: Node\nYou can add labels to particular worker nodes to exclude them from the list of backend servers used by external load balancers.\nThe following command can be used to exclude a worker node from the list of backend servers in a\nbackend set:\nkubectl label nodes <node-name> node.kubernetes.io/exclude-from-external-load-balancers\n=\ntrue"
+}

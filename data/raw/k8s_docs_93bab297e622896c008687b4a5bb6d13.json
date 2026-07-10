@@ -1,0 +1,7 @@
+{
+  "id": "93bab297e622896c008687b4a5bb6d13",
+  "source": "k8s_docs",
+  "title": "Volumes — Using subPath",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/#using-subpath",
+  "text": "Sometimes, it is useful to share one volume for multiple uses in a single Pod.\nThe\nvolumeMounts[*].subPath\nproperty specifies a sub-path inside the referenced volume\ninstead of its root.\nThe following example shows how to configure a Pod with a LAMP stack (Linux, Apache, MySQL, PHP)\nusing a single, shared volume. This sample\nsubPath\nconfiguration is not recommended\nfor production use.\nThe PHP application's code and assets map to the volume's\nhtml\nfolder and\nthe MySQL database is stored in the volume's\nmysql\nfolder. For example:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmy-lamp-site\nspec\n:\ncontainers\n:\n-\nname\n:\nmysql\nimage\n:\nmysql\nenv\n:\n-\nname\n:\nMYSQL_ROOT_PASSWORD\nvalue\n:\n\"rootpasswd\"\nvolumeMounts\n:\n-\nmountPath\n:\n/var/lib/mysql\nname\n:\nsite-data\nsubPath\n:\nmysql\n-\nname\n:\nphp\nimage\n:\nphp:7.0-apache\nvolumeMounts\n:\n-\nmountPath\n:\n/var/www/html\nname\n:\nsite-data\nsubPath\n:\nhtml\nvolumes\n:\n-\nname\n:\nsite-data\npersistentVolumeClaim\n:\nclaimName\n:\nmy-lamp-site-data"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "9f5632cb21e962aef6c85c6f67a97ebd",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Pod Template",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#pod-template",
+  "text": "The\n.spec.template\nis a\npod template\nwhich is also\nrequired to have labels in place. In our\nfrontend.yaml\nexample we had one label:\ntier: frontend\n.\nBe careful not to overlap with the selectors of other controllers, lest they try to adopt this Pod.\nFor the template's\nrestart policy\nfield,\n.spec.template.spec.restartPolicy\n, the only allowed value is\nAlways\n, which is the default."
+}

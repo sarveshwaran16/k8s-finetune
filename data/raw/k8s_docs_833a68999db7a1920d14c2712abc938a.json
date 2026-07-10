@@ -1,0 +1,7 @@
+{
+  "id": "833a68999db7a1920d14c2712abc938a",
+  "source": "k8s_docs",
+  "title": "Topology Aware Routing — Custom heuristics",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/topology-aware-routing/#custom-heuristics",
+  "text": "Kubernetes is deployed in many different ways, there is no single heuristic for\nallocating endpoints to zones will work for every use case. A key goal of this\nfeature is to enable custom heuristics to be developed if the built in heuristic\ndoes not work for your use case. The first steps to enable custom heuristics\nwere included in the 1.27 release. This is a limited implementation that may not\nyet cover some relevant and plausible situations."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "b8ce8e4bfe77e0b8eb497bd13c131640",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — scale",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#scale",
+  "text": "Scale a replica set named 'foo' to 3\nkubectl scale\n--replicas\n=3 rs/foo\nScale a resource identified by type and name specified in \"foo.yaml\" to 3\nkubectl scale\n--replicas\n=3 -f foo.yaml\nIf the deployment named mysql's current size is 2, scale mysql to 3\nkubectl scale\n--current-replicas\n=2\n--replicas\n=3 deployment/mysql\nScale multiple replication controllers\nkubectl\nscale\n--replicas=\n5\nrc/foo rc/\nbar\nrc/baz\nScale stateful set named 'web' to 3\nkubectl scale\n--replicas\n=3 statefulset/web\nSet a new size for a deployment, replica set, replication controller, or stateful set.\nScale also allows users to specify one or more preconditions for the scale action.\nIf --current-replicas or --resource-version is specified, it is validated before the scale is attempted, and it is guaranteed that the precondition holds true when the scale is sent to the server."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "9051de8ee3bed885d1aacf8b6a2abbab",
+  "source": "k8s_docs",
+  "title": "API Priority and Fairness — Good practices for using API Priority and Fairness",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/flow-control/#good-practices-for-using-api-priority-and-fairness",
+  "text": "When a given priority level exceeds its permitted concurrency, requests can\nexperience increased latency or be dropped with an HTTP 429 (Too Many Requests)\nerror. To prevent these side effects of APF, you can modify your workload or\ntweak your APF settings to ensure there are sufficient seats available to serve\nyour requests.\nTo detect whether requests are being rejected due to APF, check the following\nmetrics:\napiserver_flowcontrol_rejected_requests_total: the total number of requests\nrejected per FlowSchema and PriorityLevelConfiguration.\napiserver_flowcontrol_current_inqueue_requests: the current number of requests\nqueued per FlowSchema and PriorityLevelConfiguration.\napiserver_flowcontrol_request_wait_duration_seconds: the latency added to\nrequests waiting in queues.\napiserver_flowcontrol_priority_level_seat_utilization: the seat utilization\nper PriorityLevelConfiguration."
+}

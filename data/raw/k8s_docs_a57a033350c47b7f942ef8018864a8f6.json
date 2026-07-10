@@ -1,0 +1,7 @@
+{
+  "id": "a57a033350c47b7f942ef8018864a8f6",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — alpha",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#alpha",
+  "text": "These commands correspond to alpha features that are not enabled in Kubernetes clusters by default.\n\n$ kubectl alpha\n\nInspect authorization\n\n$ kubectl alpha auth\n\nGet your subject attributes.\nkubectl alpha auth whoami\nGet your subject attributes in JSON format.\nkubectl alpha auth whoami -o json\nExperimental: Check who you are and your attributes (groups, extra).\nThis command is helpful to get yourself aware of the current user attributes,\n  especially when dynamic authentication, e.g., token webhook, auth proxy, or OIDC provider,\n  is enabled in the Kubernetes cluster."
+}

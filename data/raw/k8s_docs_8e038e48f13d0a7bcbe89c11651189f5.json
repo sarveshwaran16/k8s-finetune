@@ -1,0 +1,7 @@
+{
+  "id": "8e038e48f13d0a7bcbe89c11651189f5",
+  "source": "k8s_docs",
+  "title": "Mixed Version Proxy — Peer-aggregated discovery",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/mixed-version-proxy/#peer-aggregated-discovery",
+  "text": "When you enable the feature, discovery requests are automatically enabled to serve\na comprehensive discovery document (listing all resources served by any apiserver in the cluster)\nby default.\nIf you would like to request\na non peer-aggregated discovery document, you can indicate so by adding the following Accept header to the discovery request:\napplication/json;g=apidiscovery.k8s.io;v=v2;as=APIGroupDiscoveryList;profile=nopeer"
+}

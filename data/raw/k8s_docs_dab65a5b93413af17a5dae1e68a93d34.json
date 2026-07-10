@@ -1,0 +1,7 @@
+{
+  "id": "dab65a5b93413af17a5dae1e68a93d34",
+  "source": "k8s_docs",
+  "title": "kubeadm Configuration (v1beta3) — Etcd",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta3/#kubeadm-k8s-io-v1beta3-Etcd",
+  "text": "Appears in:\nClusterConfiguration\nEtcd contains elements describing Etcd configuration.\nField\nDescription\nlocal\nLocalEtcd\nlocal\nprovides configuration knobs for configuring the local etcd instance.\nlocal\nand\nexternal\nare mutually exclusive.\nexternal\nExternalEtcd\nexternal\ndescribes how to connect to an external etcd cluster.\nlocal\nand\nexternal\nare mutually exclusive.\nlocal\nprovides configuration knobs for configuring the local etcd instance.\nlocal\nand\nexternal\nare mutually exclusive.\nexternal\ndescribes how to connect to an external etcd cluster.\nlocal\nand\nexternal\nare mutually exclusive."
+}

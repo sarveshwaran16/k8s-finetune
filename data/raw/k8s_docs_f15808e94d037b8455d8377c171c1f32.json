@@ -1,0 +1,7 @@
+{
+  "id": "f15808e94d037b8455d8377c171c1f32",
+  "source": "k8s_docs",
+  "title": "kubectl api-resources — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_api-resources/#synopsis",
+  "text": "Print the supported API resources on the server.\nkubectl api-resources [flags]\n\n# Print the supported API resources\n  kubectl api-resources\n  \n  # Print the supported API resources with more information\n  kubectl api-resources -o wide\n  \n  # Print the supported API resources sorted by a column\n  kubectl api-resources --sort-by=name\n  \n  # Print the supported namespaced resources\n  kubectl api-resources --namespaced=true\n  \n  # Print the supported non-namespaced resources\n  kubectl api-resources --namespaced=false\n  \n  # Print the supported API resources with a specific APIGroup\n  kubectl api-resources --api-group=rbac.authorization.k8s.io"
+}

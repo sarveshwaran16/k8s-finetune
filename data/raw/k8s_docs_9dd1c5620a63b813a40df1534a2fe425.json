@@ -1,7 +1,0 @@
-{
-  "id": "9dd1c5620a63b813a40df1534a2fe425",
-  "source": "k8s_docs",
-  "title": "Best practices",
-  "source_url": "https://kubernetes.io/docs/setup/best-practices/",
-  "text": "Best practices\nConsiderations for large clusters\nRunning in multiple zones\nValidate node setup\nEnforcing Pod Security Standards\nPKI certificates and requirements\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified June 12, 2019 at 5:27 PM PST:\nRestructure the left navigation pane of setup (#14826) (55ac801bc4)"
-}

@@ -1,0 +1,7 @@
+{
+  "id": "23b831bd6125e4df55025a8b674c05fa",
+  "source": "k8s_docs",
+  "title": "Node Autoscaling — Workload autoscalers based on cluster size",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/#workload-autoscalers-based-on-cluster-size",
+  "text": "Cluster Proportional Autoscaler\nand\nCluster Proportional Vertical\nAutoscaler\nprovide\nhorizontal, and vertical workload autoscaling based on the number of Nodes in the cluster. You can\nread more in\nautoscaling based on cluster size\n.\n\nRead about\nworkload-level autoscaling\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

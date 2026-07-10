@@ -1,0 +1,7 @@
+{
+  "id": "260ca27ae7de3356476c4e0d682e323a",
+  "source": "k8s_docs",
+  "title": "kubectl cp — Options",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_cp/#options",
+  "text": "-c, --container string\nContainer name. If omitted, use the kubectl.kubernetes.io/default-container annotation for selecting the container to be attached or the first container in the pod will be chosen\n-h, --help\nhelp for cp\n--no-preserve\nThe copied file/directory's ownership and permissions will not be preserved in the container\n--retries int\nSet number of retries to complete a copy operation from a container. Specify 0 to disable or any negative value for infinite retrying. The default is 0 (no retry).\nContainer name. If omitted, use the kubectl.kubernetes.io/default-container annotation for selecting the container to be attached or the first container in the pod will be chosen\nhelp for cp\nThe copied file/directory's ownership and permissions will not be preserved in the container\nSet number of retries to complete a copy operation from a container. Specify 0 to disable or any negative value for infinite retrying. The default is 0 (no retry)."
+}

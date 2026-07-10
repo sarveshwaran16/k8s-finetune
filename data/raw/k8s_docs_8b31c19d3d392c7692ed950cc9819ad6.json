@@ -1,0 +1,7 @@
+{
+  "id": "8b31c19d3d392c7692ed950cc9819ad6",
+  "source": "k8s_docs",
+  "title": "Manage TLS Certificates in a Cluster — Issue a certificate",
+  "source_url": "https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/#issue-a-certificate",
+  "text": "{\n\"signing\"\n:\n{\n\"default\"\n:\n{\n\"usages\"\n:\n[\n\"digital signature\"\n,\n\"key encipherment\"\n,\n\"server auth\"\n],\n\"expiry\"\n:\n\"876000h\"\n,\n\"ca_constraint\"\n:\n{\n\"is_ca\"\n:\nfalse\n}\n}\n}\n}\nUse a\nserver-signing-config.json\nsigning configuration and the certificate authority key file\nand certificate to sign the certificate request:\nkubectl get csr my-svc.my-namespace -o\njsonpath\n=\n'{.spec.request}'\n|\n\\\nbase64 --decode\n|\n\\\ncfssl sign -ca ca.pem -ca-key ca-key.pem -config server-signing-config.json -\n|\n\\\ncfssljson -bare ca-signed-server\nYou should see the output similar to:\n2022/02/01 11:52:26 [INFO] signed certificate with serial number 576048928624926584381415936700914530534472870337\nThis produces a signed serving certificate file,\nca-signed-server.pem\n."
+}

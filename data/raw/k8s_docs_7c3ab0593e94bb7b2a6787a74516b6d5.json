@@ -1,0 +1,7 @@
+{
+  "id": "7c3ab0593e94bb7b2a6787a74516b6d5",
+  "source": "k8s_docs",
+  "title": "Overprovision Node Capacity For A Cluster — Create a PriorityClass",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/node-overprovisioning/#create-a-priorityclass",
+  "text": "Begin by defining a PriorityClass for the placeholder Pods. First, create a PriorityClass with a\nnegative priority value, that you will shortly assign to the placeholder pods.\nLater, you will set up a Deployment that uses this PriorityClass\napiVersion\n:\nscheduling.k8s.io/v1\nkind\n:\nPriorityClass\nmetadata\n:\nname\n:\nplaceholder\n# these Pods represent placeholder capacity\nvalue\n:\n-\n1000\nglobalDefault\n:\nfalse\ndescription\n:\n\"Negative priority for placeholder pods to enable overprovisioning.\"\nThen create the PriorityClass:\nkubectl apply -f https://k8s.io/examples/priorityclass/low-priority-class.yaml\nYou will next define a Deployment that uses the negative-priority PriorityClass and runs a minimal container.\nWhen you add this to your cluster, Kubernetes runs those placeholder pods to reserve capacity. Any time there\nis a capacity shortage, the control plane will pick one these placeholder pods as the first candidate to\npreempt\n."
+}

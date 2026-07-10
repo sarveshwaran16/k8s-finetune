@@ -1,0 +1,7 @@
+{
+  "id": "1571f29fa3038615cb42fb8a2c4df398",
+  "source": "k8s_docs",
+  "title": "Running Multiple Instances of Your App — Objectives",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/#objectives",
+  "text": "Scale an existing app manually using kubectl.\n\nThe shell commands in this tutorial use POSIX shell syntax, which is supported by\nthe default shells on most Linux and macOS systems (for example, bash, zsh, or sh).\nWindows users must use a POSIX-compatible shell such as\nWindows Subsystem for Linux (WSL)\nor\nGit Bash\nto run the commands as written.\nCommands that use\nexport\n,\n$()\n, and similar constructs are\nnot\ncompatible\nwith PowerShell or the Windows Command Prompt."
+}

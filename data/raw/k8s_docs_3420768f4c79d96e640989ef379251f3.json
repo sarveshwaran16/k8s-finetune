@@ -1,0 +1,7 @@
+{
+  "id": "3420768f4c79d96e640989ef379251f3",
+  "source": "k8s_docs",
+  "title": "Authenticating — Static token file integration",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#static-token-file",
+  "text": "The API server reads static bearer tokens from a file when given the\n--token-auth-file=<SOMEFILE>\noption on the command line.\nIn Kubernetes 1.36, tokens last indefinitely, and the token list cannot be\nchanged without restarting the API server.\nThe token file is a CSV file with a minimum of 3 columns: token, user name, user uid,\nfollowed by a comma-separated list of optional group names.\nIf you have more than one group, the column must be double quoted e.g.\ntoken,user,uid,\"group1,group2,group3\"\nUsing a static token file is appropriate for tokens that by their nature\nare long-lived, static, and perhaps may never be rotated. It is also useful\nwhen the client is local to a particular API server within the control plane,\nsuch as a monitoring agent.\nIf you use this method during cluster provisioning, and then transition to\na different authentication method that will be used longer term, you\nshould deactivate the token that was used for bootstrapping (this requires\na restart of each API server.\nFor other circumstances, and especially where very prompt token rotation is\nimportant, the Kubernetes project recommends using a\nwebhook token authenticator\ninstead of this mechanism."
+}

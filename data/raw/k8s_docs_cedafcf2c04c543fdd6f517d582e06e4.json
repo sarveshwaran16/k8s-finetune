@@ -1,0 +1,7 @@
+{
+  "id": "cedafcf2c04c543fdd6f517d582e06e4",
+  "source": "k8s_docs",
+  "title": "Ports and Protocols — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/networking/ports-and-protocols/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

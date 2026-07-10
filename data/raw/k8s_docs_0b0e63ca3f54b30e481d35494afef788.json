@@ -1,0 +1,7 @@
+{
+  "id": "0b0e63ca3f54b30e481d35494afef788",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — Disabling DeclarativeValidationBeta",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#opt-out",
+  "text": "As a cluster administrator, you might consider toggling\nDeclarativeValidationBeta\n=\nfalse\nunder specific circumstances:\nUnexpected Validation Behavior:\nIf enabling\nDeclarativeValidationBeta\nleads to unexpected validation errors or allows objects that were previously invalid.\nPerformance Regressions:\nIf monitoring indicates significant latency increases (e.g., in\napiserver_request_duration_seconds\n) correlated with the feature's enablement.\nHigh Mismatch Rate:\nIf the\ndeclarative_validation_mismatch_total\nmetric shows frequent mismatches, suggesting potential bugs in the declarative rules affecting the cluster's workloads, even if\nDeclarativeValidationBeta\nis false.\nTo revert\n+k8s:beta\nvalidation rules back to shadow mode, disable the\nDeclarativeValidationBeta\nfeature gate, for example via command-line arguments: (\n--feature-gates=DeclarativeValidationBeta=false\n)."
+}

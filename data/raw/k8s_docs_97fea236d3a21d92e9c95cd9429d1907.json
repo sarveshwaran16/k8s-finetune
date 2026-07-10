@@ -1,0 +1,7 @@
+{
+  "id": "97fea236d3a21d92e9c95cd9429d1907",
+  "source": "k8s_docs",
+  "title": "API Overview — Enabling or disabling API groups",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/#enabling-or-disabling",
+  "text": "Certain resources and API groups are enabled by default. You can enable or\ndisable them by setting\n--runtime-config\non the API server. The\n--runtime-config\nflag accepts comma separated\n<key>[=<value>]\npairs\ndescribing the runtime configuration of the API server. If the\n=<value>\npart is omitted, it is treated as if\n=true\nis specified. For example:\nto disable\nbatch/v1\n, set\n--runtime-config=batch/v1=false\nto enable\nbatch/v2alpha1\n, set\n--runtime-config=batch/v2alpha1\nto enable a specific version of an API, such as\nstorage.k8s.io/v1beta1/csistoragecapacities\n, set\n--runtime-config=storage.k8s.io/v1beta1/csistoragecapacities"
+}

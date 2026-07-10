@@ -1,0 +1,7 @@
+{
+  "id": "2a98c15bca3d7fef97ead9c68ecd9aa3",
+  "source": "k8s_docs",
+  "title": "Common Expression Language in Kubernetes — Kubernetes CEL libraries",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/cel/#kubernetes-cel-libraries",
+  "text": "In additional to the CEL community libraries, Kubernetes includes CEL libraries\nthat are available everywhere CEL is used in Kubernetes.\n\nThe list library includes\nindexOf\nand\nlastIndexOf\n, which work similar to the\nstrings functions of the same names. These functions either the first or last\npositional index of the provided element in the list.\nThe list library also includes\nmin\n,\nmax\nand\nsum\n. Sum is supported on all\nnumber types as well as the duration type. Min and max are supported on all\ncomparable types.\nisSorted\nis also provided as a convenience function and is supported on all\ncomparable types.\nExamples:\nExamples of CEL expressions using list library functions\nCEL Expression\nPurpose\nnames.isSorted()\nVerify that a list of names is kept in alphabetical order\nitems.map(x, x.weight).sum() == 1.0\nVerify that the \"weights\" of a list of objects sum to 1.0\nlowPriorities.map(x, x.priority).max() < highPriorities.map(x, x.priority).min()\nVerify that two sets of priorities do not overlap\nnames.indexOf('should-be-first') == 1\nRequire that the first name in a list if a specific value\nSee the\nKubernetes List Library\ngodoc for more information."
+}

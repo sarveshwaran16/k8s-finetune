@@ -1,0 +1,7 @@
+{
+  "id": "379cdffa7ce20af9d046e902f4bb43cd",
+  "source": "k8s_docs",
+  "title": "Cluster Architecture — kube-proxy (optional)",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/#kube-proxy",
+  "text": "kube-proxy is a network proxy that runs on each\nnode\nin your cluster,\nimplementing part of the Kubernetes\nService\nconcept.\nkube-proxy\nmaintains network rules on nodes. These network rules allow network\ncommunication to your Pods from network sessions inside or outside of\nyour cluster.\nkube-proxy uses the operating system packet filtering layer if there is one\nand it's available. Otherwise, kube-proxy forwards the traffic itself.\nIf you use a\nnetwork plugin\nthat implements packet forwarding for Services\nby itself, and providing equivalent behavior to kube-proxy, then you do not need to run\nkube-proxy on the nodes in your cluster.\nkube-proxy is a network proxy that runs on each\nnode\nin your cluster,\nimplementing part of the Kubernetes\nService\nconcept.\nkube-proxy\nmaintains network rules on nodes. These network rules allow network\ncommunication to your Pods from network sessions inside or outside of\nyour cluster.\nkube-proxy uses the operating system packet filtering layer if there is one\nand it's available. Otherwise, kube-proxy forwards the traffic itself."
+}

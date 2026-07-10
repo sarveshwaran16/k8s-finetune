@@ -1,0 +1,7 @@
+{
+  "id": "f570feee3a2f29b31e330f4e9f5d9517",
+  "source": "k8s_docs",
+  "title": "Imperative Management of Kubernetes Objects Using Configuration Files — How to update objects",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-config/#how-to-update-objects",
+  "text": "You can use\nkubectl replace -f\nto update a live object according to a\nconfiguration file.\nkubectl replace -f <filename|url>\n\nYou can use\nkubectl delete -f\nto delete an object that is described in a\nconfiguration file.\nkubectl delete -f <filename|url>\nIf configuration file has specified the\ngenerateName\nfield in the\nmetadata\nsection instead of the\nname\nfield, you cannot delete the object using\nkubectl delete -f <filename|url>\n.\nYou will have to use other flags for deleting the object. For example:\nkubectl delete <type> <name>\nkubectl delete <type> -l <label>"
+}

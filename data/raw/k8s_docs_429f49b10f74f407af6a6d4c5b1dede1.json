@@ -1,0 +1,7 @@
+{
+  "id": "429f49b10f74f407af6a6d4c5b1dede1",
+  "source": "k8s_docs",
+  "title": "Learning environment — Practicing with production-like clusters",
+  "source_url": "https://kubernetes.io/docs/setup/learning-environment/#practicing-with-production-like-clusters",
+  "text": "If you want to practice setting up a more production-like cluster, you can use\nkubeadm\n. Setting up a cluster with kubeadm is an advanced task that requires multiple machines (physical or virtual) and careful configuration.\nFor learning about production environments, see\nProduction environment\n.\n\nFollow the\nHello Minikube\ntutorial to deploy your first application\nLearn about\nKubernetes components\nExplore\nkubectl commands"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6f7cb1956b657c76fef171ba86585013",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Examples of good implementations",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#example-good-implementations",
+  "text": "The following projects are examples of \"good\" custom webhook server\nimplementations. You can use them as a starting point when designing your own\nwebhooks. Don't use these examples as-is; use them as a starting point and\ndesign your webhooks to run well in your specific environment.\ncert-manager\nGatekeeper Open Policy Agent (OPA)"
+}

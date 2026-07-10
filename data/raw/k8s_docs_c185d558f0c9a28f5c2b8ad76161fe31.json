@@ -1,0 +1,7 @@
+{
+  "id": "c185d558f0c9a28f5c2b8ad76161fe31",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:eachVal",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-eachVal",
+  "text": "Description:\nDeclares a validation for each value in a map or list.\nStability Level:\nAlpha\nPayload:\n<validation-tag>\n: The tag to evaluate for each value.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:eachVal=+k8s:minimum=1\nMyMap\nmap\n[\nstring\n]\nint\n`json:\"myMap\"`\n}\nIn this example,\neachVal\nis used to specify that the\n+k8s:minimum\ntag should be applied to each element in\nMyList\n. This means that all fields in\nMyStruct\nmust be >= 1."
+}

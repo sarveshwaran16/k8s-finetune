@@ -1,0 +1,7 @@
+{
+  "id": "d8b936fbffa1871a8f18ebae76d66833",
+  "source": "k8s_docs",
+  "title": "Install and Set Up kubectl on Windows — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

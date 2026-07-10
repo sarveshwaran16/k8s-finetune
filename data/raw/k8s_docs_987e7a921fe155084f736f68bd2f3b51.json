@@ -1,0 +1,7 @@
+{
+  "id": "987e7a921fe155084f736f68bd2f3b51",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_join/kubeadm_join_phase_control-plane-prepare/#synopsis",
+  "text": "Prepare the machine for serving a control plane\nkubeadm join phase control-plane-prepare [flags]\n\n# Prepares the machine for serving a control plane\n  kubeadm join phase control-plane-prepare all\n\n-h, --help\nhelp for control-plane-prepare\nhelp for control-plane-prepare\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

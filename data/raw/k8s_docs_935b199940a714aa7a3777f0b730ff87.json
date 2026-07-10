@@ -1,0 +1,7 @@
+{
+  "id": "935b199940a714aa7a3777f0b730ff87",
+  "source": "k8s_docs",
+  "title": "Reserve Compute Resources for System Daemons — Example Scenario",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/#example-scenario",
+  "text": "Here is an example to illustrate Node Allocatable computation:\nNode has\n32Gi\nof\nmemory\n,\n16 CPUs\nand\n100Gi\nof\nStorage\nkubeReserved\nis set to\n{cpu: 1000m, memory: 2Gi, ephemeral-storage: 1Gi}\nsystemReserved\nis set to\n{cpu: 500m, memory: 1Gi, ephemeral-storage: 1Gi}\nevictionHard\nis set to\n{memory.available: \"<500Mi\", nodefs.available: \"<10%\"}\nUnder this scenario, 'Allocatable' will be 14.5 CPUs, 28.5Gi of memory and\n88Gi\nof local storage.\nScheduler ensures that the total memory\nrequests\nacross all pods on this node does\nnot exceed 28.5Gi and storage doesn't exceed 88Gi.\nKubelet evicts pods whenever the overall memory usage across pods exceeds 28.5Gi,\nor if overall disk usage exceeds 88Gi. If all processes on the node consume as\nmuch CPU as they can, pods together cannot consume more than 14.5 CPUs.\nIf\nkubeReserved\nand/or\nsystemReserved\nis not enforced and system daemons\nexceed their reservation,\nkubelet\nevicts pods whenever the overall node memory\nusage is higher than 31.5Gi or\nstorage\nis greater than 90Gi."
+}

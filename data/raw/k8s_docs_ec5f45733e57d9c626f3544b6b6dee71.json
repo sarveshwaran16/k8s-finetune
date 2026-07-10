@@ -1,0 +1,7 @@
+{
+  "id": "ec5f45733e57d9c626f3544b6b6dee71",
+  "source": "k8s_docs",
+  "title": "Migrate Kubernetes Objects Using Storage Version Migration — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/storage-version-migration/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

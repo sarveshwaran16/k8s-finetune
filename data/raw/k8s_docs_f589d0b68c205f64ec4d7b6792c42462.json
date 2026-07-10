@@ -1,0 +1,7 @@
+{
+  "id": "f589d0b68c205f64ec4d7b6792c42462",
+  "source": "k8s_docs",
+  "title": "Enable Or Disable Feature Gates — Identify which components need the feature gate",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-feature-gates/#identify-which-components-need-the-feature-gate",
+  "text": "Different feature gates affect different Kubernetes components:\nSome features require enabling the gate on\nmultiple components\n(e.g., API server and controller manager)\nOther features only need the gate on a\nsingle component\n(e.g., only kubelet)\nThe\nFeature Gates reference\ntypically indicates which components are affected by each gate. All Kubernetes components\nshare the same feature gate definitions, so all gates appear in help output, but only\nrelevant gates affect each component's behavior."
+}

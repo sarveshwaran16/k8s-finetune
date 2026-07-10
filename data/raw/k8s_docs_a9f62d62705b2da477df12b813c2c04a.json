@@ -1,0 +1,7 @@
+{
+  "id": "a9f62d62705b2da477df12b813c2c04a",
+  "source": "k8s_docs",
+  "title": "Extend Service IP Ranges — Extend the number of available IPs for Services",
+  "source_url": "https://kubernetes.io/docs/tasks/network/extend-service-ip-ranges/#extend-the-number-of-available-ips-for-services",
+  "text": "There are cases that users will need to increase the number addresses available to Services,\npreviously, increasing the Service range was a disruptive operation that could also cause data loss.\nWith this new feature users only need to add a new ServiceCIDR to increase the number of available addresses."
+}

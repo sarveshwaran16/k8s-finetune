@@ -1,0 +1,7 @@
+{
+  "id": "39c01161af8d162e05f410efc5060293",
+  "source": "k8s_docs",
+  "title": "Sidecar Containers — Sidecar containers in Kubernetes",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers",
+  "text": "Kubernetes implements sidecar containers as a special case of\ninit containers\n; sidecar containers remain\nrunning after Pod startup. This document uses the term\nregular init containers\nto clearly\nrefer to containers that only run during Pod startup.\nProvided that your cluster has the\nSidecarContainers\nfeature gate\nenabled\n(the feature is active by default since Kubernetes v1.29), you can specify a\nrestartPolicy\nfor containers listed in a Pod's\ninitContainers\nfield.\nThese restartable\nsidecar\ncontainers are independent from other init containers and from\nthe main application container(s) within the same pod.\nThese can be started, stopped, or restarted without affecting the main application container\nand other init containers.\nYou can also run a Pod with multiple containers that are not marked as init or sidecar\ncontainers. This is appropriate if the containers within the Pod are required for the\nPod to work overall, but you don't need to control which containers start or stop first.\nYou could also do this if you need to support older versions of Kubernetes that don't\nsupport a container-level\nrestartPolicy\nfield."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "fb892e92629eb8b5003db396b1c3f615",
+  "source": "k8s_docs",
+  "title": "Customizing components with the kubeadm API — Customizing the kubelet",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/control-plane-flags/#kubelet",
+  "text": "To customize the kubelet you can add a\nKubeletConfiguration\nnext to the\nClusterConfiguration\nor\nInitConfiguration\nseparated by\n---\nwithin the same configuration file.\nThis file can then be passed to\nkubeadm init\nand kubeadm will apply the same base\nKubeletConfiguration\nto all nodes in the cluster.\nFor applying instance-specific configuration over the base\nKubeletConfiguration\nyou can use the\nkubeletconfiguration\npatch target\n.\nAlternatively, you can use kubelet flags as overrides by passing them in the\nnodeRegistration.kubeletExtraArgs\nfield supported by both\nInitConfiguration\nand\nJoinConfiguration\n.\nSome kubelet flags are deprecated, so check their status in the\nkubelet reference documentation\nbefore using them.\nFor additional details see\nConfiguring each kubelet in your cluster using kubeadm"
+}

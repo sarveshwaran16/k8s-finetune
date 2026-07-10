@@ -1,0 +1,7 @@
+{
+  "id": "5753beee3547940dbffa0e6514f745ee",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubeadm — corednsis stuck in thePendingstate",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/#coredns-is-stuck-in-the-pending-state",
+  "text": "This is\nexpected\nand part of the design. kubeadm is network provider-agnostic, so the admin\nshould\ninstall the pod network add-on\nof choice. You have to install a Pod Network\nbefore CoreDNS may be deployed fully. Hence the\nPending\nstate before the network is set up.\n\nThe\nHostPort\nand\nHostIP\nfunctionality is available depending on your Pod Network\nprovider. Please contact the author of the Pod Network add-on to find out whether\nHostPort\nand\nHostIP\nfunctionality are available.\nCalico, Canal, and Flannel CNI providers are verified to support HostPort.\nFor more information, see the\nCNI portmap documentation\n.\nIf your network provider does not support the portmap CNI plugin, you may need to use the\nNodePort feature of services\nor use\nHostNetwork=true\n."
+}

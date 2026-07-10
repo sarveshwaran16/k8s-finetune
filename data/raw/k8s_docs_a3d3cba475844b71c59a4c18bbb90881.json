@@ -1,0 +1,7 @@
+{
+  "id": "a3d3cba475844b71c59a4c18bbb90881",
+  "source": "k8s_docs",
+  "title": "Upgrading kubeadm clusters — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/#before-you-begin",
+  "text": "Make sure you read the\nrelease notes\ncarefully.\nThe cluster should use a static control plane and etcd pods or external etcd.\nMake sure to back up any important components, such as app-level state stored in a database.\nkubeadm upgrade\ndoes not touch your workloads, only components internal to Kubernetes, but backups are always a best practice.\nSwap must be disabled\n."
+}

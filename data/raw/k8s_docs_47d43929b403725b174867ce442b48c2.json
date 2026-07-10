@@ -1,0 +1,7 @@
+{
+  "id": "47d43929b403725b174867ce442b48c2",
+  "source": "k8s_docs",
+  "title": "Explore Validating and Mutating Admission Policies — Existing resources aren't affected",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/admission-policies/#limitation-admission-policy-validation",
+  "text": "If you have a Deployment with 0 or 1 replicas, and you change the ValidatingAdmissionPolicyBinding back\nto Deny mode, it doesn't affect any existing resources.\n(If you wanted to try to scale out Deployments to have at least 2 replicas, you could achieve that another\nway - for example, using a\ncontroller\n).\nThat's all for the ValidatingAdmissionPolicy. Now you'll learn about MutatingAdmissionPolicies."
+}

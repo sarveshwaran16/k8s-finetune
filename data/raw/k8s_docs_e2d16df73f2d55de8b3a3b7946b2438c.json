@@ -1,0 +1,7 @@
+{
+  "id": "e2d16df73f2d55de8b3a3b7946b2438c",
+  "source": "k8s_docs",
+  "title": "Advertise Extended Resources for a Node — Storage example",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/extended-resource-node/#storage-example",
+  "text": "Suppose a Node has 800 GiB of a special kind of disk storage. You could\ncreate a name for the special storage, say example.com/special-storage.\nThen you could advertise it in chunks of a certain size, say 100 GiB. In that case,\nyour Node would advertise that it has eight resources of type\nexample.com/special-storage.\nCapacity\n:\n...\nexample.com/special-storage\n:\n8\nIf you want to allow arbitrary requests for special storage, you\ncould advertise special storage in chunks of size 1 byte. In that case, you would advertise\n800Gi resources of type example.com/special-storage.\nCapacity\n:\n...\nexample.com/special-storage\n:\n800Gi\nThen a Container could request any number of bytes of special storage, up to 800Gi."
+}

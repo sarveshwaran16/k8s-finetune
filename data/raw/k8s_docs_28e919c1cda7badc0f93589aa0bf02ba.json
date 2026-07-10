@@ -1,0 +1,7 @@
+{
+  "id": "28e919c1cda7badc0f93589aa0bf02ba",
+  "source": "k8s_docs",
+  "title": "Storage Capacity — Scheduling",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/storage-capacity/#scheduling",
+  "text": "Storage capacity information is used by the Kubernetes scheduler if:\na Pod uses a volume that has not been created yet,\nthat volume uses a\nStorageClass\nwhich references a CSI driver and\nuses\nWaitForFirstConsumer\nvolume binding\nmode\n,\nand\nthe\nCSIDriver\nobject for the driver has\nStorageCapacity\nset to\ntrue.\nIn that case, the scheduler only considers nodes for the Pod which\nhave enough storage available to them. This check is very\nsimplistic and only compares the size of the volume against the\ncapacity listed in\nCSIStorageCapacity\nobjects with a topology that\nincludes the node.\nFor volumes with\nImmediate\nvolume binding mode, the storage driver\ndecides where to create the volume, independently of Pods that will\nuse the volume. The scheduler then schedules Pods onto nodes where the\nvolume is available after the volume has been created.\nFor\nCSI ephemeral volumes\n,\nscheduling always happens without considering storage capacity. This\nis based on the assumption that this volume type is only used by\nspecial CSI drivers which are local to a node and do not need\nsignificant resources there."
+}

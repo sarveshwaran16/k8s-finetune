@@ -1,0 +1,7 @@
+{
+  "id": "6a0eaecfae548fd2ddb32c0cb8f5c241",
+  "source": "k8s_docs",
+  "title": "ReplicationController — ReplicationControllerCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/replication-controller-v1/#ReplicationControllerCondition",
+  "text": "ReplicationControllerCondition describes the state of a replication controller at a certain point.\nField\nDescription\nlastTransitionTime\nTime\nThe last time the condition transitioned from one status to another.\nmessage\nstring\nA human readable message indicating details about the transition.\nreason\nstring\nThe reason for the condition's last transition.\nstatus\n*\nstring\nStatus of the condition, one of True, False, Unknown.\ntype\n*\nstring\nType of replication controller condition."
+}

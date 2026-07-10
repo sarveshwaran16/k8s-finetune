@@ -1,0 +1,7 @@
+{
+  "id": "8f93767da063264d6547a09e9560ff0f",
+  "source": "k8s_docs",
+  "title": "Pod Priority and Preemption — Pods are preempted, but the preemptor is not scheduled",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pods-are-preempted-but-the-preemptor-is-not-scheduled",
+  "text": "When pods are preempted, they receive their requested graceful termination\nperiod, which is by default 30 seconds. If the victim Pods do not terminate within\nthis period, they are forcibly terminated. Once all the victims go away, the\npreemptor Pod can be scheduled.\nWhile the preemptor Pod is waiting for the victims to go away, a higher priority\nPod may be created that fits on the same Node. In this case, the scheduler will\nschedule the higher priority Pod instead of the preemptor.\nThis is expected behavior: the Pod with the higher priority should take the place\nof a Pod with a lower priority."
+}

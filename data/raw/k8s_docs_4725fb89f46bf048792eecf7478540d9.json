@@ -1,0 +1,7 @@
+{
+  "id": "4725fb89f46bf048792eecf7478540d9",
+  "source": "k8s_docs",
+  "title": "Enable Or Disable Feature Gates — Configure multiple feature gates",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-feature-gates/#configure-multiple-feature-gates",
+  "text": "Use comma-separated lists for command-line flags:\n--feature-gates\n=\nFeatureA\n=\ntrue,FeatureB\n=\nfalse,FeatureC\n=\ntrue\nFor components that support configuration files (kubelet, kube-proxy):\nfeatureGates\n:\nFeatureA\n:\ntrue\nFeatureB\n:\nfalse\nFeatureC\n:\ntrue\n\nAfter configuring, verify the feature gates are active. The following methods apply\nto kubeadm clusters where control plane components run as static pods."
+}

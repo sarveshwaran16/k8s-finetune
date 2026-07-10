@@ -1,0 +1,7 @@
+{
+  "id": "e79f07bb1fb8c99d522133ff2af8469c",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — alpha.jobset.sigs.k8s.io/namespaced-job",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#alpha-jobset-sigs-k8s-io-namespaced-job",
+  "text": "Type: Label\nExample:\nalpha.jobset.sigs.k8s.io/namespaced-job: \"default_myjobset-replicatedjob-0\"\nUsed on: Nodes\nThis label is either set manually or automatically (for example, a cluster autoscaler) on the nodes. When\nalpha.jobset.sigs.k8s.io/node-selector\nis set to\n\"true\"\n, the JobSet controller adds a nodeSelector to this node label (along with the toleration to the taint\nalpha.jobset.sigs.k8s.io/no-schedule\ndiscussed next)."
+}

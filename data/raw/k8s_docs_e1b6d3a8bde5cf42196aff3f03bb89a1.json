@@ -1,0 +1,7 @@
+{
+  "id": "e1b6d3a8bde5cf42196aff3f03bb89a1",
+  "source": "k8s_docs",
+  "title": "Use Cascading Deletion in a Cluster — Check owner references on your pods",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/use-cascading-deletion/#check-owner-references-on-your-pods",
+  "text": "Check that the\nownerReferences\nfield is present on your pods:\nkubectl get pods -l\napp\n=\nnginx --output\n=\nyaml\nThe output has an\nownerReferences\nfield similar to this:\napiVersion\n:\nv1\n...\nownerReferences\n:\n-\napiVersion\n:\napps/v1\nblockOwnerDeletion\n:\ntrue\ncontroller\n:\ntrue\nkind\n:\nReplicaSet\nname\n:\nnginx-deployment-6b474476c4\nuid\n:\n4fdcd81c-bd5d-41f7-97af-3a3b759af9a7\n..."
+}

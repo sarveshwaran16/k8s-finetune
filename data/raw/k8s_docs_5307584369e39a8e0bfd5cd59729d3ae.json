@@ -1,0 +1,7 @@
+{
+  "id": "5307584369e39a8e0bfd5cd59729d3ae",
+  "source": "k8s_docs",
+  "title": "kube-proxy Configuration (v1alpha1) — JSONOptions",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-proxy-config.v1alpha1/#JSONOptions",
+  "text": "Appears in:\nFormatOptions\nJSONOptions contains options for logging format \"json\".\nField\nDescription\nOutputRoutingOptions\n[Required]\nOutputRoutingOptions\n(Members of\nOutputRoutingOptions\nare embedded into this type.)\nNo description provided.\n\nLogFormatFactory provides support for a certain additional,\nnon-default log format."
+}

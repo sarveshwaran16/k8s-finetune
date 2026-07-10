@@ -1,0 +1,7 @@
+{
+  "id": "fbad057e6a4333699aadcc4af00ed9d3",
+  "source": "k8s_docs",
+  "title": "kube-controller-manager Configuration (v1alpha1) — NodeControllerConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#NodeControllerConfiguration",
+  "text": "Appears in:\nCloudControllerManagerConfiguration\nNodeControllerConfiguration contains elements describing NodeController.\nField\nDescription\nConcurrentNodeSyncs\n[Required]\nint32\nConcurrentNodeSyncs is the number of workers\nconcurrently synchronizing nodes\nConcurrentNodeStatusUpdates\n[Required]\nint32\nConcurrentNodeStatusUpdates is the number of workers\nconcurrently updating node statuses.\nIf unspecified or 0, ConcurrentNodeSyncs is used instead\nConcurrentNodeSyncs is the number of workers\nconcurrently synchronizing nodes\nConcurrentNodeStatusUpdates is the number of workers\nconcurrently updating node statuses.\nIf unspecified or 0, ConcurrentNodeSyncs is used instead"
+}

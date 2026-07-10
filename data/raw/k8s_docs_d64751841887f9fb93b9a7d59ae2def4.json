@@ -1,0 +1,7 @@
+{
+  "id": "d64751841887f9fb93b9a7d59ae2def4",
+  "source": "k8s_docs",
+  "title": "Jobs — Delegation of managing a Job object to external controller",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#delegation-of-managing-a-job-object-to-external-controller",
+  "text": "This feature allows you to disable the built-in Job controller, for a specific\nJob, and delegate reconciliation of the Job to an external controller.\nYou indicate the controller that reconciles the Job by setting a custom value\nfor the\nspec.managedBy\nfield - any value\nother than\nkubernetes.io/job-controller\n. The value of the field is immutable.\nWhen developing an external Job controller be aware that your controller needs\nto operate in a fashion conformant with the definitions of the API spec and\nstatus fields of the Job object.\nPlease review these in detail in the\nJob API\n.\nWe also recommend that you run the e2e conformance tests for the Job object to\nverify your implementation.\nFinally, when developing an external Job controller make sure it does not use the\nbatch.kubernetes.io/job-tracking\nfinalizer, reserved for the built-in controller."
+}

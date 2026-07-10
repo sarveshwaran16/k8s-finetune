@@ -1,0 +1,7 @@
+{
+  "id": "05121d1ada2af5612250e58f43f44bb6",
+  "source": "k8s_docs",
+  "title": "Configure Service Accounts for Pods — Add ImagePullSecrets to a service account",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account",
+  "text": "First,\ncreate an imagePullSecret\n.\nNext, verify it has been created. For example:\nCreate an imagePullSecret, as described in\nSpecifying ImagePullSecrets on a Pod\n.\nkubectl create secret docker-registry myregistrykey --docker-server\n=\n<registry name>\n\\\n--docker-username\n=\nDUMMY_USERNAME --docker-password\n=\nDUMMY_DOCKER_PASSWORD\n\\\n--docker-email\n=\nDUMMY_DOCKER_EMAIL\nVerify it has been created.\nkubectl get secrets myregistrykey\nThe output is similar to this:\nNAME             TYPE                              DATA    AGE\nmyregistrykey    kubernetes.io/.dockerconfigjson   1       1d\nCreate an imagePullSecret, as described in\nSpecifying ImagePullSecrets on a Pod\n.\nkubectl create secret docker-registry myregistrykey --docker-server\n=\n<registry name>\n\\\n--docker-username\n=\nDUMMY_USERNAME --docker-password\n=\nDUMMY_DOCKER_PASSWORD\n\\\n--docker-email\n=\nDUMMY_DOCKER_EMAIL\nVerify it has been created.\nkubectl get secrets myregistrykey\nThe output is similar to this:\nNAME             TYPE                              DATA    AGE\nmyregistrykey    kubernetes.io/.dockerconfigjson   1       1d"
+}

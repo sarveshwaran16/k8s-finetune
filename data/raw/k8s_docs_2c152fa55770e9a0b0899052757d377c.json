@@ -1,0 +1,7 @@
+{
+  "id": "2c152fa55770e9a0b0899052757d377c",
+  "source": "k8s_docs",
+  "title": "Traces For Kubernetes System Components — kube-apiserver traces",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-traces/#kube-apiserver-traces",
+  "text": "The kube-apiserver generates spans for incoming HTTP requests, and for outgoing requests\nto webhooks, etcd, and re-entrant requests. It propagates the\nW3C Trace Context\nwith outgoing requests\nbut does not make use of the trace context attached to incoming requests,\nas the kube-apiserver is often a public endpoint.\nTo enable tracing, provide the kube-apiserver with a tracing configuration file\nwith\n--tracing-config-file=<path-to-config>\n. This is an example config that records\nspans for 1 in 10000 requests, and uses the default OpenTelemetry endpoint:\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nTracingConfiguration\n# default value\n#endpoint: localhost:4317\nsamplingRatePerMillion\n:\n100\nFor more information about the\nTracingConfiguration\nstruct, see\nAPI server config API (v1)\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "1d736a6d974ff1bb97293b9bb40e1a8d",
+  "source": "k8s_docs",
+  "title": "Restrict a Container's Access to Resources with AppArmor — What's next",
+  "source_url": "https://kubernetes.io/docs/tutorials/security/apparmor/#what-s-next",
+  "text": "Additional resources:\nQuick guide to the AppArmor profile language\nAppArmor core policy reference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

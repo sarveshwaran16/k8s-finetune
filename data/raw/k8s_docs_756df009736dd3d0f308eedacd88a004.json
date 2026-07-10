@@ -1,0 +1,7 @@
+{
+  "id": "756df009736dd3d0f308eedacd88a004",
+  "source": "k8s_docs",
+  "title": "Validating Admission Policy — API kinds exempt from admission validation",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/#api-kinds-exempt-from-admission-validation",
+  "text": "There are certain API kinds that are exempt from admission-time validation checks. For example, you can't create a ValidatingAdmissionPolicy that prevents changes to ValidatingAdmissionPolicyBindings.\nThe list of exempt API kinds is:\nValidatingAdmissionPolicies\nValidatingAdmissionPolicyBindings\nMutatingAdmissionPolicies\nMutatingAdmissionPolicyBindings\nTokenReviews\nLocalSubjectAccessReviews\nSelfSubjectAccessReviews\nSelfSubjectReviews"
+}

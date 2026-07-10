@@ -1,0 +1,7 @@
+{
+  "id": "9200501de901444d79591b3e668b9197",
+  "source": "k8s_docs",
+  "title": "kubeadm kubeconfig — kubeadm kubeconfig user",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-kubeconfig/#cmd-kubeconfig-user",
+  "text": "This command can be used to output a kubeconfig file for an additional user.\nuser\n\nOutput a kubeconfig file for an additional user.\nkubeadm kubeconfig user [flags]\n\n# Output a kubeconfig file for an additional user named foo\n  kubeadm kubeconfig user --client-name=foo\n  \n  # Output a kubeconfig file for an additional user named foo using a kubeadm config file bar\n  kubeadm kubeconfig user --client-name=foo --config=bar"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "300d6c78faad375cf5496d8e0211f839",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Request filtering",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#request-filtering",
+  "text": "This section provides recommendations for filtering which requests trigger\nspecific webhooks. In summary, these are as follows:\nLimit the webhook scope to avoid system components and read-only requests.\nLimit webhooks to specific namespaces.\nUse match conditions to perform fine-grained request filtering.\nMatch all versions of an object."
+}

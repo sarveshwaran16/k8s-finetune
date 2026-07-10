@@ -1,0 +1,7 @@
+{
+  "id": "8bc5986f0fca0a96e488ccc6bad475e3",
+  "source": "k8s_docs",
+  "title": "Securing a Cluster — Enable audit logging",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#enable-audit-logging",
+  "text": "The\naudit logger\nis a beta feature that records actions taken by the\nAPI for later analysis in the event of a compromise. It is recommended to enable audit logging\nand archive the audit file on a secure server.\n\nAlpha and beta Kubernetes features are in active development and may have limitations or bugs\nthat result in security vulnerabilities. Always assess the value an alpha or beta feature may\nprovide against the possible risk to your security posture. When in doubt, disable features you\ndo not use."
+}

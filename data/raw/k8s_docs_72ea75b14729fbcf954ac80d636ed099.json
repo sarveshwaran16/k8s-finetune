@@ -1,0 +1,7 @@
+{
+  "id": "72ea75b14729fbcf954ac80d636ed099",
+  "source": "k8s_docs",
+  "title": "Reserve Compute Resources for System Daemons — Eviction Thresholds",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/#eviction-thresholds",
+  "text": "KubeletConfiguration Setting\n:\nevictionHard: {memory.available: \"100Mi\", nodefs.available: \"10%\", nodefs.inodesFree: \"5%\", imagefs.available: \"15%\"}\n. Example value:\n{memory.available: \"<500Mi\"}\nMemory pressure at the node level leads to System OOMs which affects the entire\nnode and all pods running on it. Nodes can go offline temporarily until memory\nhas been reclaimed. To avoid (or reduce the probability of) system OOMs kubelet\nprovides\nout of resource\nmanagement. Evictions are\nsupported for\nmemory\nand\nephemeral-storage\nonly. By reserving some memory via\nevictionHard\nsetting, the\nkubelet\nattempts to evict pods whenever memory\navailability on the node drops below the reserved value. Hypothetically, if\nsystem daemons did not exist on a node, pods cannot use more than\ncapacity - eviction-hard\n. For this reason, resources reserved for evictions are not\navailable for pods."
+}

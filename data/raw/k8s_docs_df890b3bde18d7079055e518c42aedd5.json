@@ -1,0 +1,7 @@
+{
+  "id": "df890b3bde18d7079055e518c42aedd5",
+  "source": "k8s_docs",
+  "title": "kube-scheduler Configuration (v1) — PodTopologySpreadConstraintsDefaulting",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-scheduler-config.v1/#kubescheduler-config-k8s-io-v1-PodTopologySpreadConstraintsDefaulting",
+  "text": "(Alias of\nstring\n)\nAppears in:\nPodTopologySpreadArgs\nPodTopologySpreadConstraintsDefaulting defines how to set default constraints\nfor the PodTopologySpread plugin.\n\nAppears in:\nScoringStrategy\nRequestedToCapacityRatioParam define RequestedToCapacityRatio parameters\nField\nDescription\nshape\n[Required]\n[]UtilizationShapePoint\nShape is a list of points defining the scoring function shape.\nShape is a list of points defining the scoring function shape."
+}

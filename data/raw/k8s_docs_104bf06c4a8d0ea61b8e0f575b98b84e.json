@@ -1,0 +1,7 @@
+{
+  "id": "104bf06c4a8d0ea61b8e0f575b98b84e",
+  "source": "k8s_docs",
+  "title": "Workloads — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

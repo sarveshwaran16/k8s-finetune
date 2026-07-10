@@ -1,0 +1,7 @@
+{
+  "id": "bb18f351fb48c3717eb8c9aeb749e5c7",
+  "source": "k8s_docs",
+  "title": "Certificates and Certificate Signing Requests — Accessing ClusterTrustBundles from pods",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#ctb-projection",
+  "text": "The contents of ClusterTrustBundles can be injected into the container filesystem, similar to ConfigMaps and Secrets.\nSee the\nclusterTrustBundle projected volume source\nfor more details.\n\nRead\nManage TLS Certificates in a Cluster\nRead\nIssue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest\nView the source code for the kube-controller-manager built in\nsigner\nView the source code for the kube-controller-manager built in\napprover\nFor details of X.509 itself, refer to\nRFC 5280\nsection 3.1\nFor information on the syntax of PKCS#10 certificate signing requests, refer to\nRFC 2986\nRead about the ClusterTrustBundle API:\nClusterTrustBundle API reference\nClusterTrustBundle API reference"
+}

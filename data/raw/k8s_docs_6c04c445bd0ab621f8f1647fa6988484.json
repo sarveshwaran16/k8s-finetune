@@ -1,0 +1,7 @@
+{
+  "id": "6c04c445bd0ab621f8f1647fa6988484",
+  "source": "k8s_docs",
+  "title": "Getting started — Learning environment",
+  "source_url": "https://kubernetes.io/docs/setup/#learning-environment",
+  "text": "If you're learning Kubernetes, use the tools supported by the Kubernetes community,\nor tools in the ecosystem to set up a Kubernetes cluster on a local machine.\nSee\nLearning environment\n\nWhen evaluating a solution for a\nproduction environment\n, consider which aspects of\noperating a Kubernetes cluster (or\nabstractions\n) you want to manage yourself and which you\nprefer to hand off to a provider.\nFor a cluster you're managing yourself, the officially supported tool\nfor deploying Kubernetes is\nkubeadm\n."
+}

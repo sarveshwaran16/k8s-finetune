@@ -1,0 +1,7 @@
+{
+  "id": "9fb6d5e50587b85c83b72667afc1616e",
+  "source": "k8s_docs",
+  "title": "Control CPU Management Policies on the Node — Configuring CPU management policies",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cpu-management-policies/#configuring-cpu-management-policies",
+  "text": "By default, the kubelet uses\nCFS quota\nto enforce pod CPU limits.  When the node runs many CPU-bound pods,\nthe workload can move to different CPU cores depending on\nwhether the pod is throttled and which CPU cores are available at\nscheduling time. Many workloads are not sensitive to this migration and thus\nwork fine without any intervention.\nHowever, in workloads where CPU cache affinity and scheduling latency\nsignificantly affect workload performance, the kubelet allows alternative CPU\nmanagement policies to determine some placement preferences on the node."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "98716745dbd382ff25d0b5572f1c79eb",
+  "source": "k8s_docs",
+  "title": "Enable Or Disable Feature Gates — Understanding component-specific requirements",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-feature-gates/#understanding-component-specific-requirements",
+  "text": "Some examples of component-specific feature gates:\nAPI server-focused\n: Features like\nStructuredAuthenticationConfiguration\nprimarily affect kube-apiserver\nKubelet-focused\n: Features like\nGracefulNodeShutdown\nprimarily affect kubelet\nMultiple components\n: Some features require coordination between components\nAlways test feature gates in non-production environments first. Alpha features may be\nremoved without notice."
+}

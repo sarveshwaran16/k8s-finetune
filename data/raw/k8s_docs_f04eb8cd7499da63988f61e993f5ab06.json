@@ -1,0 +1,7 @@
+{
+  "id": "f04eb8cd7499da63988f61e993f5ab06",
+  "source": "k8s_docs",
+  "title": "Sidecar Containers — Differences from init containers",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#differences-from-init-containers",
+  "text": "Sidecar containers work alongside the main container, extending its functionality and\nproviding additional services.\nSidecar containers run concurrently with the main application container. They are active\nthroughout the lifecycle of the pod and can be started and stopped independently of the\nmain container. Unlike\ninit containers\n,\nsidecar containers support\nprobes\nto control their lifecycle.\nSidecar containers can interact directly with the main application containers, because\nlike init containers they always share the same network, and can optionally also share\nvolumes (filesystems).\nInit containers stop before the main containers start up, so init containers cannot\nexchange messages with the app container in a Pod. Any data passing is one-way\n(for example, an init container can put information inside an\nemptyDir\nvolume).\nChanging the image of a sidecar container will not cause the Pod to restart, but will\ntrigger a container restart."
+}

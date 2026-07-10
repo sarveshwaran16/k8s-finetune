@@ -1,0 +1,7 @@
+{
+  "id": "a3582e4d153972cf0f2a043c0a956192",
+  "source": "k8s_docs",
+  "title": "Running Multiple Instances of Your App — Scaling overview",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/#scaling-overview",
+  "text": "Scaling out a Deployment will ensure new Pods are created and scheduled to Nodes\nwith available resources. Scaling will increase the number of Pods to the new desired\nstate. Kubernetes also supports\nautoscaling\nof Pods, but it is outside of the scope of this tutorial. Scaling to zero is also\npossible, and it will terminate all Pods of the specified Deployment.\nRunning multiple instances of an application will require a way to distribute the\ntraffic to all of them. Services have an integrated load-balancer that will distribute\nnetwork traffic to all Pods of an exposed Deployment. Services will monitor continuously\nthe running Pods using endpoints, to ensure the traffic is sent only to available Pods.\nOnce you have multiple instances of an application running, you would be able to\ndo Rolling updates without downtime. We'll cover that in the next section of the\ntutorial. Now, let's go to the terminal and scale our application."
+}

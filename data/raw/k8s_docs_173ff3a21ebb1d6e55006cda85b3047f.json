@@ -1,0 +1,7 @@
+{
+  "id": "173ff3a21ebb1d6e55006cda85b3047f",
+  "source": "k8s_docs",
+  "title": "Extend kubectl with plugins — Distributing kubectl plugins",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/#distributing-kubectl-plugins",
+  "text": "If you have developed a plugin for others to use, you should consider how you\npackage it, distribute it and deliver updates to your users.\n\nKrew\noffers a cross-platform way to package and\ndistribute your plugins. This way, you use a single packaging format for all\ntarget platforms (Linux, Windows, macOS etc) and deliver updates to your users.\nKrew also maintains a\nplugin\nindex\nso that other people can\ndiscover your plugin and install it."
+}

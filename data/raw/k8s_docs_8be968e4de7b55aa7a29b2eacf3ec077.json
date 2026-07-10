@@ -1,0 +1,7 @@
+{
+  "id": "8be968e4de7b55aa7a29b2eacf3ec077",
+  "source": "k8s_docs",
+  "title": "Autoscale the DNS Service in a Cluster — Determine whether DNS horizontal autoscaling is already enabled",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-horizontal-autoscaling/#determining-whether-dns-horizontal-autoscaling-is-already-enabled",
+  "text": "List the\nDeployments\nin your cluster in the kube-system\nnamespace\n:\nkubectl get deployment --namespace\n=\nkube-system\nThe output is similar to this:\nNAME                   READY   UP-TO-DATE   AVAILABLE   AGE\n...\nkube-dns-autoscaler    1/1     1            1           ...\n...\nIf you see \"kube-dns-autoscaler\" in the output, DNS horizontal autoscaling is\nalready enabled, and you can skip to\nTuning autoscaling parameters\n."
+}

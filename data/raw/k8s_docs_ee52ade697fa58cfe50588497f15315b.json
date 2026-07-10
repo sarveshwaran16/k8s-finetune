@@ -1,0 +1,7 @@
+{
+  "id": "ee52ade697fa58cfe50588497f15315b",
+  "source": "k8s_docs",
+  "title": "Managing Secrets using kubectl — Edit a Secret",
+  "source_url": "https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#edit-secret",
+  "text": "You can edit an existing\nSecret\nobject unless it is\nimmutable\n. To edit a\nSecret, run the following command:\nkubectl edit secrets <secret-name>\nThis opens your default editor and allows you to update the base64 encoded\nSecret values in the\ndata\nfield, such as in the following example:\n# Please edit the object below. Lines beginning with a '#' will be ignored,\n# and an empty file will abort the edit. If an error occurs while saving this file, it will be\n# reopened with the relevant failures.\n#\napiVersion\n:\nv1\ndata\n:\npassword\n:\nUyFCXCpkJHpEc2I9\nusername\n:\nYWRtaW4=\nkind\n:\nSecret\nmetadata\n:\ncreationTimestamp\n:\n\"2022-06-28T17:44:13Z\"\nname\n:\ndb-user-pass\nnamespace\n:\ndefault\nresourceVersion\n:\n\"12708504\"\nuid\n:\n91becd59-78fa-4c85-823f-6d44436242ac\ntype\n:\nOpaque"
+}

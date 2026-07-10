@@ -1,0 +1,7 @@
+{
+  "id": "92b0f17436748c72cda56a3ba00e527c",
+  "source": "k8s_docs",
+  "title": "kubeadm reset phase — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-reset-phase/#synopsis",
+  "text": "Remove a local etcd member for a control plane node.\nkubeadm reset phase remove-etcd-member [flags]\n\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for remove-etcd-member\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nDon't apply any changes; just output what would be done.\nhelp for remove-etcd-member\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file."
+}

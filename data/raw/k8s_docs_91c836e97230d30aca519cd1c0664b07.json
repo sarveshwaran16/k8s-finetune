@@ -1,0 +1,7 @@
+{
+  "id": "91c836e97230d30aca519cd1c0664b07",
+  "source": "k8s_docs",
+  "title": "Linux kernel security constraints for Pods and containers — Run workloads without root privileges",
+  "source_url": "https://kubernetes.io/docs/concepts/security/linux-kernel-security-constraints/#run-without-root",
+  "text": "When you deploy a workload in Kubernetes, use the Pod specification to restrict\nthat workload from running as the root user on the node. You can use the Pod\nsecurityContext\nto define the specific Linux user and group for the processes in\nthe Pod, and explicitly restrict containers from running as root users. Setting\nthese values in the Pod manifest takes precedence over similar values in the\ncontainer image, which is especially useful if you're running images that you\ndon't own.\nConfiguring the kernel security features on this page provides fine-grained\ncontrol over the actions that processes in your cluster can take, but managing\nthese configurations can be challenging at scale. Running containers as\nnon-root, or in user namespaces if you need root privileges, helps to reduce the\nchance that you'll need to enforce your configured kernel security capabilities."
+}

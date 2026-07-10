@@ -1,0 +1,7 @@
+{
+  "id": "cd95f96998c2a0212b75d4af5c7d9347",
+  "source": "k8s_docs",
+  "title": "Horizontal Pod Autoscaling — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "1c79560e5bfbcca51973444a705cc5bb",
+  "source": "k8s_docs",
+  "title": "Run a Single-Instance Stateful Application — Updating",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/#updating",
+  "text": "The image or any other part of the Deployment can be updated as usual\nwith the\nkubectl apply\ncommand. Here are some precautions that are\nspecific to stateful apps:\nDon't scale the app. This setup is for single-instance apps\nonly. The underlying PersistentVolume can only be mounted to one\nPod. For clustered stateful apps, see the\nStatefulSet documentation\n.\nUse\nstrategy:\ntype: Recreate\nin the Deployment configuration\nYAML file. This instructs Kubernetes to\nnot\nuse rolling\nupdates. Rolling updates will not work, as you cannot have more than\none Pod running at a time. The\nRecreate\nstrategy will stop the\nfirst pod before creating a new one with the updated configuration."
+}

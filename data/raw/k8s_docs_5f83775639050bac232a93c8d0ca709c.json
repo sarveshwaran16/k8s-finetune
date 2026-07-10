@@ -1,0 +1,7 @@
+{
+  "id": "5f83775639050bac232a93c8d0ca709c",
+  "source": "k8s_docs",
+  "title": "StorageClass — TopologySelectorTerm",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/storage-class-v1/#TopologySelectorTerm",
+  "text": "A topology selector term represents the result of label queries. A null or empty topology selector term matches no objects. The requirements of them are ANDed. It provides a subset of functionality as NodeSelectorTerm. This is an alpha feature and may change in the future.\nField\nDescription\nmatchLabelExpressions\nTopologySelectorLabelRequirement array\nA list of topology selector requirements by labels."
+}

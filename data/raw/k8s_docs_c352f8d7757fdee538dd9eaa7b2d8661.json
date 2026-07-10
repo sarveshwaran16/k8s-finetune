@@ -1,0 +1,7 @@
+{
+  "id": "c352f8d7757fdee538dd9eaa7b2d8661",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — jobset.sigs.k8s.io/coordinator",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#jobset-sigs-k8s-io-coordinator",
+  "text": "Type: Annotation, Label\nExample:\njobset.sigs.k8s.io/coordinator: \"myjobset-workers-0-0.headless-svc\"\nUsed on: Jobs, Pods\nThis annotation/label is used on Jobs and Pods to store a stable network endpoint where the coordinator\npod can be reached if the\nJobSet\nspec defines the\n.spec.coordinator\nfield.\n\nauthorization.k8s.io/decision\nauthorization.k8s.io/reason\ninsecure-sha1.invalid-cert.kubernetes.io/$hostname\nmissing-san.invalid-cert.kubernetes.io/$hostname\npod-security.kubernetes.io/audit-violations\npod-security.kubernetes.io/enforce-policy\npod-security.kubernetes.io/exempt\nvalidation.policy.admission.k8s.io/validation_failure\nSee more details on\nAudit Annotations\n."
+}

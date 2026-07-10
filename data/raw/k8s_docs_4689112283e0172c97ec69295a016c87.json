@@ -1,0 +1,7 @@
+{
+  "id": "4689112283e0172c97ec69295a016c87",
+  "source": "k8s_docs",
+  "title": "Network Plugins — Installation",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/#installation",
+  "text": "A Container Runtime, in the networking context, is a daemon on a node configured to provide CRI\nServices for kubelet. In particular, the Container Runtime must be configured to load the CNI\nplugins required to implement the Kubernetes network model.\nPrior to Kubernetes 1.24, the CNI plugins could also be managed by the kubelet using the\ncni-bin-dir\nand\nnetwork-plugin\ncommand-line parameters.\nThese command-line parameters were removed in Kubernetes 1.24, with management of the CNI no\nlonger in scope for kubelet.\nSee\nTroubleshooting CNI plugin-related errors\nif you are facing issues following the removal of dockershim.\nFor specific information about how a Container Runtime manages the CNI plugins, see the\ndocumentation for that Container Runtime, for example:\ncontainerd\nCRI-O\nFor specific information about how to install and manage a CNI plugin, see the documentation for\nthat plugin or\nnetworking provider\n."
+}

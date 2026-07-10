@@ -1,0 +1,7 @@
+{
+  "id": "a797d3e8157a64781154f3950992084c",
+  "source": "k8s_docs",
+  "title": "Pod — PodIP",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#PodIP",
+  "text": "PodIP represents a single IP address allocated to the pod.\nField\nDescription\nip\n*\nstring\nIP is the IP address assigned to the pod\n\nPodOS defines the OS parameters of a pod.\nField\nDescription\nname\n*\nstring\nName is the name of the operating system. The currently supported values are linux and windows. Additional value may be defined in future and can be one of: https://github.com/opencontainers/runtime-spec/blob/master/config.md#platform-specific-configuration Clients should expect to handle additional values and treat unrecognized values in this field as os: null"
+}

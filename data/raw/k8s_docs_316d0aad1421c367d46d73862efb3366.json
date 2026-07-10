@@ -1,0 +1,7 @@
+{
+  "id": "316d0aad1421c367d46d73862efb3366",
+  "source": "k8s_docs",
+  "title": "Control Memory Management Policies on a Node — Memory Manager configuration",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/memory-manager/#memory-manager-configuration",
+  "text": "Other Managers should already be configured (see\nresource alignment prerequisites\n.\nSet the\nmemoryManagerPolicy\nconfiguration field within the\nkubelet configuration\n, to the name of your chosen\npolicy\n.\nOptionally, some amount of memory can be reserved for system or kubelet processes to increase\nnode stability (section\nReserved memory configuration\n)."
+}

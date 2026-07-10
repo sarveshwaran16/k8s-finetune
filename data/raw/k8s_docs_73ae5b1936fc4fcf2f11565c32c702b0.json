@@ -1,0 +1,7 @@
+{
+  "id": "73ae5b1936fc4fcf2f11565c32c702b0",
+  "source": "k8s_docs",
+  "title": "Security — Policies",
+  "source_url": "https://kubernetes.io/docs/concepts/security/#policies",
+  "text": "You can define security policies using Kubernetes-native mechanisms,\nsuch as\nNetworkPolicy\n(declarative control over network packet filtering) or\nValidatingAdmissionPolicy\n(declarative restrictions on what changes\nsomeone can make using the Kubernetes API).\nHowever, you can also rely on policy implementations from the wider\necosystem around Kubernetes. Kubernetes provides extension mechanisms\nto let those ecosystem projects implement their own policy controls\non source code review, container image approval, API access controls,\nnetworking, and more.\nFor more information about policy mechanisms and Kubernetes,\nread\nPolicies\n."
+}

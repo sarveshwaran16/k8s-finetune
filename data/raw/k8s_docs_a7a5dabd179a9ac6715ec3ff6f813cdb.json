@@ -1,0 +1,7 @@
+{
+  "id": "a7a5dabd179a9ac6715ec3ff6f813cdb",
+  "source": "k8s_docs",
+  "title": "Authenticating — Example use case",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#example-use-case",
+  "text": "In a hypothetical use case, an organization would run an external service that exchanges LDAP credentials\nfor user specific, signed tokens. The service would also be capable of responding to\nwebhook token\nauthenticator\nrequests to validate the tokens. Users would be required\nto install a credential plugin on their workstation.\nTo authenticate against the API:\nThe user issues a\nkubectl\ncommand.\nCredential plugin prompts the user for LDAP credentials, exchanges credentials with external service for a token.\nCredential plugin returns token to client-go, which uses it as a bearer token against the API server.\nAPI server uses the\nwebhook token authenticator\nto submit a\nTokenReview\nto the external service.\nExternal service verifies the signature on the token and returns the user's username and groups."
+}

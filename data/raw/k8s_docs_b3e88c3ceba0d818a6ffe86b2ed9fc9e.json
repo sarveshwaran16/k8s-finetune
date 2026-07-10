@@ -1,0 +1,7 @@
+{
+  "id": "b3e88c3ceba0d818a6ffe86b2ed9fc9e",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubeadm — Not possible to join a v1.18 Node to a v1.17 cluster due to missing RBAC",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/#not-possible-to-join-a-v1-18-node-to-a-v1-17-cluster-due-to-missing-rbac",
+  "text": "In v1.18 kubeadm added prevention for joining a Node in the cluster if a Node with the same name already exists.\nThis required adding RBAC for the bootstrap-token user to be able to GET a Node object.\nHowever this causes an issue where\nkubeadm join\nfrom v1.18 cannot join a cluster created by kubeadm v1.17.\nTo workaround the issue you have two options:\nExecute\nkubeadm init phase bootstrap-token\non a control-plane node using kubeadm v1.18.\nNote that this enables the rest of the bootstrap-token permissions as well.\nor\nApply the following RBAC manually using\nkubectl apply -f ...\n:\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\nkubeadm:get-nodes\nrules\n:\n-\napiGroups\n:\n-\n\"\"\nresources\n:\n-\nnodes\nverbs\n:\n-\nget\n---\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRoleBinding\nmetadata\n:\nname\n:\nkubeadm:get-nodes\nroleRef\n:\napiGroup\n:\nrbac.authorization.k8s.io\nkind\n:\nClusterRole\nname\n:\nkubeadm:get-nodes\nsubjects\n:\n-\napiGroup\n:\nrbac.authorization.k8s.io\nkind\n:\nGroup\nname\n:\nsystem:bootstrappers:kubeadm:default-node-token"
+}

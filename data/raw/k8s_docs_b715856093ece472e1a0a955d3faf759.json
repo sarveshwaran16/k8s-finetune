@@ -1,0 +1,7 @@
+{
+  "id": "b715856093ece472e1a0a955d3faf759",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_node_phase/#synopsis",
+  "text": "Use this command to invoke single phase of the \"node\" workflow\nkubeadm upgrade node phase [flags]\n\n-h, --help\nhelp for phase\nhelp for phase\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

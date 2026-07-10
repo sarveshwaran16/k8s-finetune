@@ -1,7 +1,0 @@
-{
-  "id": "835f29aea931656305e2e8ad655b9e3c",
-  "source": "k8s_docs",
-  "title": "Extend Kubernetes",
-  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/",
-  "text": "Extend Kubernetes\nUnderstand advanced ways to adapt your Kubernetes cluster to the needs of your work environment.\nConfigure the Aggregation Layer\nUse Custom Resources\nSet up an Extension API Server\nConfigure Multiple Schedulers\nUse an HTTP Proxy to Access the Kubernetes API\nUse a SOCKS5 Proxy to Access the Kubernetes API\nSet up Konnectivity service\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 17, 2023 at 9:14 AM PST:\nInclude index files (c4b70832dd)"
-}

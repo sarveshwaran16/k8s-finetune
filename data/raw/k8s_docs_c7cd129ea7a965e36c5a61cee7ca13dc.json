@@ -1,0 +1,7 @@
+{
+  "id": "c7cd129ea7a965e36c5a61cee7ca13dc",
+  "source": "k8s_docs",
+  "title": "kubectl label — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_label/#synopsis",
+  "text": "Update the labels on a resource.\nA label key and value must begin with a letter or number, and may contain letters, numbers, hyphens, dots, and underscores, up to 63 characters each.\nOptionally, the key can begin with a DNS subdomain prefix and a single '/', like example.com/my-app.\nIf --overwrite is true, then existing labels can be overwritten, otherwise attempting to overwrite a label will result in an error.\nIf --resource-version is specified, then updates will use this resource version, otherwise the existing resource-version will be used.\nkubectl label [--overwrite] (-f FILENAME | TYPE NAME) KEY_1=VAL_1 ... KEY_N=VAL_N [--resource-version=version]"
+}

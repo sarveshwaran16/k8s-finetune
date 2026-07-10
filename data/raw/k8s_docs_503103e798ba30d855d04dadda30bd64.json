@@ -1,0 +1,7 @@
+{
+  "id": "503103e798ba30d855d04dadda30bd64",
+  "source": "k8s_docs",
+  "title": "Assign Memory Resources to Containers and Pods — If you do not specify a memory limit",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#if-you-do-not-specify-a-memory-limit",
+  "text": "If you do not specify a memory limit for a Container, one of the following situations applies:\nThe Container has no upper bound on the amount of memory it uses. The Container\ncould use all of the memory available on the Node where it is running which in turn could invoke the OOM Killer. Further, in case of an OOM Kill, a container with no resource limits will have a greater chance of being killed.\nThe Container is running in a namespace that has a default memory limit, and the\nContainer is automatically assigned the default limit. Cluster administrators can use a\nLimitRange\nto specify a default value for the memory limit.\nThe Container has no upper bound on the amount of memory it uses. The Container\ncould use all of the memory available on the Node where it is running which in turn could invoke the OOM Killer. Further, in case of an OOM Kill, a container with no resource limits will have a greater chance of being killed.\nThe Container is running in a namespace that has a default memory limit, and the\nContainer is automatically assigned the default limit. Cluster administrators can use a\nLimitRange\nto specify a default value for the memory limit."
+}

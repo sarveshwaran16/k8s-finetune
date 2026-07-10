@@ -1,0 +1,7 @@
+{
+  "id": "0b392976ec92331f9b1ba4dcc4e280c2",
+  "source": "k8s_docs",
+  "title": "Limit Storage Consumption — Scenario: Limiting Storage Consumption",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/limit-storage-consumption/#scenario-limiting-storage-consumption",
+  "text": "The cluster-admin is operating a cluster on behalf of a user population and the admin wants to control\nhow much storage a single namespace can consume in order to control cost.\nThe admin would like to limit:\nThe number of persistent volume claims in a namespace\nThe amount of storage each claim can request\nThe amount of cumulative storage the namespace can have"
+}

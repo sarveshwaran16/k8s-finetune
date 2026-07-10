@@ -1,0 +1,7 @@
+{
+  "id": "ba20ff60aca6140866346325fd4808ea",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-manage-backend-security-group-rules (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-manage-backend-security-group-rules",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-manage-backend-security-group-rules: \"true\"\nUsed on: Service\nThe\nAWS load balancer controller\nuses this annotation.\nSee\nannotations\nin the AWS load balancer controller documentation.\n\nExample:\nservice.beta.kubernetes.io/aws-load-balancer-name: my-elb\nUsed on: Service\nIf you set this annotation on a Service, and you also annotate that Service with\nservice.beta.kubernetes.io/aws-load-balancer-type: \"external\"\n, and you use the\nAWS load balancer controller\nin your cluster, then the AWS load balancer controller sets the name of that load\nbalancer to the value you set for\nthis\nannotation.\nSee\nannotations\nin the AWS load balancer controller documentation."
+}

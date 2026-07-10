@@ -1,0 +1,7 @@
+{
+  "id": "d45b73645ccf97d6cfa15b424caf3da2",
+  "source": "k8s_docs",
+  "title": "Managing Kubernetes Objects Using Imperative Commands — How to update objects",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-command/#how-to-update-objects",
+  "text": "The\nkubectl\ncommand supports verb-driven commands for some common update operations.\nThese commands are named to enable users unfamiliar with Kubernetes\nobjects to perform updates without knowing the specific fields\nthat must be set:\nscale\n: Horizontally scale a controller to add or remove Pods by updating the replica count of the controller.\nannotate\n: Add or remove an annotation from an object.\nlabel\n: Add or remove a label from an object.\nThe\nkubectl\ncommand also supports update commands driven by an aspect of the object.\nSetting this aspect may set different fields for different object types:\nset\n<field>\n: Set an aspect of an object.\nThe\nkubectl\ntool supports these additional ways to update a live object directly,\nhowever they require a better understanding of the Kubernetes object schema.\nedit\n: Directly edit the raw configuration of a live object by opening its configuration in an editor.\npatch\n: Directly modify specific fields of a live object by using a patch string.\nFor more details on patch strings, see the patch section in\nAPI Conventions\n."
+}

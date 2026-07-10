@@ -1,0 +1,7 @@
+{
+  "id": "b7277df97e55a13a2154d8e6d6c57a77",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-access-log-emit-interval (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-access-log-emit-interval",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-access-log-emit-interval: \"5\"\nUsed on: Service\nThe cloud controller manager integration with AWS elastic load balancing configures\nthe load balancer for a Service based on this annotation. The value determines\nhow often the load balancer writes log entries. For example, if you set the value\nto 5, the log writes occur 5 seconds apart."
+}

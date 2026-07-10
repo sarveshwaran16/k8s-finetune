@@ -1,0 +1,7 @@
+{
+  "id": "83000490c04e3368ccd1cb56293c97eb",
+  "source": "k8s_docs",
+  "title": "Debug Init Containers — Checking the status of Init Containers",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-init-containers/#checking-the-status-of-init-containers",
+  "text": "Display the status of your pod:\nkubectl get pod <pod-name>\nFor example, a status of\nInit:1/2\nindicates that one of two Init Containers\nhas completed successfully:\nNAME         READY     STATUS     RESTARTS   AGE\n<pod-name>   0/1       Init:1/2   0          7s\nSee\nUnderstanding Pod status\nfor more examples of\nstatus values and their meanings."
+}

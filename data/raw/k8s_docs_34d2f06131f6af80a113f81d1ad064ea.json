@@ -1,0 +1,7 @@
+{
+  "id": "34d2f06131f6af80a113f81d1ad064ea",
+  "source": "k8s_docs",
+  "title": "Debug Running Pods — Debugging using a copy of the Pod",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#debugging-using-a-copy-of-the-pod",
+  "text": "Sometimes Pod configuration options make it difficult to troubleshoot in certain\nsituations. For example, you can't run\nkubectl exec\nto troubleshoot your\ncontainer if your container image does not include a shell or if your application\ncrashes on startup. In these situations you can use\nkubectl debug\nto create a\ncopy of the Pod with configuration values changed to aid debugging."
+}

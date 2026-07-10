@@ -1,0 +1,7 @@
+{
+  "id": "d14d2b5e57d955b6cce14884132383f3",
+  "source": "k8s_docs",
+  "title": "Configure Access to Multiple Clusters — Explore the $HOME/.kube directory",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/#explore-the-home-kube-directory",
+  "text": "If you already have a cluster, and you can use\nkubectl\nto interact with\nthe cluster, then you probably have a file named\nconfig\nin the\n$HOME/.kube\ndirectory.\nGo to\n$HOME/.kube\n, and see what files are there. Typically, there is a file named\nconfig\n. There might also be other configuration files in this directory. Briefly\nfamiliarize yourself with the contents of these files."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "aea4cd3031f4d300f8df75d4ce7fb29c",
+  "source": "k8s_docs",
+  "title": "Verify Signed Kubernetes Artifacts — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/verify-signed-artifacts/#before-you-begin",
+  "text": "You will need to have the following tools installed:\ncosign\n(\ninstall guide\n)\ncurl\n(often provided by your operating system)\njq\n(\ndownload jq\n)\n\nThe Kubernetes release process signs all binary artifacts (tarballs, SPDX files,\nstandalone binaries) by using cosign's keyless signing. To verify a particular\nbinary, retrieve it together with its signature and certificate:\nURL\n=\nhttps://dl.k8s.io/release/v1.36.0/bin/linux/amd64\nBINARY\n=\nkubectl\nFILES\n=(\n\"\n$BINARY\n\"\n\"\n$BINARY\n.sig\"\n\"\n$BINARY\n.cert\"\n)\nfor\nFILE in\n\"\n${\nFILES\n[@]\n}\n\"\n;\ndo\ncurl -sSfL --retry\n3\n--retry-delay\n3\n\"\n$URL\n/\n$FILE\n\"\n-o\n\"\n$FILE\n\"\ndone\nThen verify the blob by using\ncosign verify-blob\n:\ncosign verify-blob\n\"\n$BINARY\n\"\n\\\n--signature\n\"\n$BINARY\n\"\n.sig\n\\\n--certificate\n\"\n$BINARY\n\"\n.cert\n\\\n--certificate-identity krel-staging@k8s-releng-prod.iam.gserviceaccount.com\n\\\n--certificate-oidc-issuer https://accounts.google.com\nCosign 2.0 requires the\n--certificate-identity\nand\n--certificate-oidc-issuer\noptions.\nTo learn more about keyless signing, please refer to\nKeyless Signatures\n.\nPrevious versions of Cosign required that you set\nCOSIGN_EXPERIMENTAL=1\n.\nFor additional information, please refer to the\nsigstore Blog"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "553607168f4590de59846948ac5f5159",
+  "source": "k8s_docs",
+  "title": "ResourceClaim — AllocationResult",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-claim-v1/#AllocationResult",
+  "text": "AllocationResult contains attributes of an allocated resource.\nField\nDescription\nallocationTimestamp\nTime\nAllocationTimestamp stores the time when the resources were allocated. This field is not guaranteed to be set, in which case that time is unknown. This is a beta field and requires enabling the DRADeviceBindingConditions and DRAResourceClaimDeviceStatus feature gate.\ndevices\nDeviceAllocationResult\nDevices is the result of allocating devices.\nnodeSelector\nNodeSelector\nNodeSelector defines where the allocated resources are available. If unset, they are available everywhere."
+}

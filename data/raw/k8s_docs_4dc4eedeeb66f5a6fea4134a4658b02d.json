@@ -1,0 +1,7 @@
+{
+  "id": "4dc4eedeeb66f5a6fea4134a4658b02d",
+  "source": "k8s_docs",
+  "title": "Declare Network Policy — Define access label and test again",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/#define-access-label-and-test-again",
+  "text": "You can create a Pod with the correct labels to see that the request is allowed:\nkubectl run busybox --rm -ti --labels=\"access=true\" --image=busybox -- /bin/sh\nIn your shell, run the command:\nwget --spider --timeout\n=\n1\nnginx\nConnecting to nginx (10.100.0.16:80)\nremote file exists\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nItems on this page refer to third party products or projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for those third-party products or projects. See the\nCNCF website guidelines\nfor more details.\nYou should read the\ncontent guide\nbefore proposing a change that adds an extra third-party link."
+}

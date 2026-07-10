@@ -1,0 +1,7 @@
+{
+  "id": "79f1e3ec3f4d051dd10951464a1fcbef",
+  "source": "k8s_docs",
+  "title": "Application Security Checklist — Base security hardening",
+  "source_url": "https://kubernetes.io/docs/concepts/security/application-security-checklist/#base-security-hardening",
+  "text": "The following checklist provides base security hardening recommendations that\nwould apply to most applications deploying to Kubernetes.\n\nFollow the right\nsecurity principles\nwhen designing applications.\nApplication configured with appropriate\nQoS class\nthrough resource request and limits.\nMemory limit is set for the workloads with a limit equal to or greater than the request.\nCPU limit might be set on sensitive workloads.\nMemory limit is set for the workloads with a limit equal to or greater than the request.\nCPU limit might be set on sensitive workloads."
+}

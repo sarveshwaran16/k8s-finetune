@@ -1,0 +1,7 @@
+{
+  "id": "6aab1dfbd30ea372fab0adc29d168696",
+  "source": "k8s_docs",
+  "title": "Hardening Guide - Dynamic Resource Allocation — Node-aware DRA verbs",
+  "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/dynamic-resource-allocation/#node-aware-dra-verbs",
+  "text": "When authorizing updates to\nresourceclaims/driver\n, use the appropriate\nspecialized verb prefix:\nassociated-node:<verb>\n(for example,\nassociated-node:update\n)\nFor node-local drivers.\nThe API server verifies node association for the requesting driver.\narbitrary-node:<verb>\n(for example,\narbitrary-node:patch\n)\nFor control-plane or multi-node controllers that may update claims from\nany node.\nFor node-local drivers.\nThe API server verifies node association for the requesting driver.\nFor control-plane or multi-node controllers that may update claims from\nany node."
+}

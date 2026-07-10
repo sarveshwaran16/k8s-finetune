@@ -1,0 +1,7 @@
+{
+  "id": "5c3e91758530085f87d420bbd8eeb3ed",
+  "source": "k8s_docs",
+  "title": "StatefulSet Basics — Pod management policy",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#pod-management-policy",
+  "text": "For some distributed systems, the StatefulSet ordering guarantees are\nunnecessary and/or undesirable. These systems require only uniqueness and\nidentity.\nYou can specify a\nPod management policy\nto avoid this strict ordering; either\nOrderedReady\n(the default), or\nParallel\n.\n\nOrderedReady\npod management is the default for StatefulSets. It tells the\nStatefulSet controller to respect the ordering guarantees demonstrated\nabove.\nUse this when your application requires or expects that changes, such as rolling out a new\nversion of your application, happen in the strict order of the ordinal (pod number) that the StatefulSet provides.\nIn other words, if you have Pods\napp-0\n,\napp-1\nand\napp-2\n, Kubernetes will update\napp-0\nfirst and check it.\nOnce the checks are good, Kubernetes updates\napp-1\nand finally\napp-2\n.\nIf you added two more Pods, Kubernetes would set up\napp-3\nand wait for that to become healthy before deploying\napp-4\n.\nBecause this is the default setting, you've already practised using it."
+}

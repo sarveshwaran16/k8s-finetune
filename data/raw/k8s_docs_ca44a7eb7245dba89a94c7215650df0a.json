@@ -1,0 +1,7 @@
+{
+  "id": "ca44a7eb7245dba89a94c7215650df0a",
+  "source": "k8s_docs",
+  "title": "kubectl Quick Reference — Interacting with Deployments and Services",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/quick-reference/#interacting-with-deployments-and-services",
+  "text": "kubectl logs deploy/my-deployment\n# dump Pod logs for a Deployment (single-container case)\nkubectl logs deploy/my-deployment -c my-container\n# dump Pod logs for a Deployment (multi-container case)\nkubectl port-forward svc/my-service\n5000\n# listen on local port 5000 and forward to port 5000 on Service backend\nkubectl port-forward svc/my-service 5000:my-service-port\n# listen on local port 5000 and forward to Service target port with name <my-service-port>\nkubectl port-forward deploy/my-deployment 5000:6000\n# listen on local port 5000 and forward to port 6000 on a Pod created by <my-deployment>\nkubectl\nexec\ndeploy/my-deployment -- ls\n# run command in first Pod and first container in Deployment (single- or multi-container cases)"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "106a96ef91d129e9bbdfcfc770529a12",
+  "source": "k8s_docs",
+  "title": "Romana for NetworkPolicy — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/romana-network-policy/#what-s-next",
+  "text": "Once you have installed Romana, you can follow the\nDeclare Network Policy\nto try out Kubernetes NetworkPolicy.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "f5b12c4a291dbe2cd8c5207661ae2b87",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-ip-address-type (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-ip-address-type",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-ip-address-type: ipv4\nUsed on: Service\nThe\nAWS load balancer controller\nuses this annotation.\nSee\nannotations\nin the AWS load balancer controller documentation.\n\nExample:\nservice.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: \"60\"\nUsed on: Service\nThe cloud controller manager integration with AWS elastic load balancing configures\na load balancer based on this annotation. The load balancer has a configured idle\ntimeout period (in seconds) that applies to its connections. If no data has been\nsent or received by the time that the idle timeout period elapses, the load balancer\ncloses the connection."
+}

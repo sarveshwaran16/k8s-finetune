@@ -1,0 +1,7 @@
+{
+  "id": "6ab191a9405335f476d67085605548c3",
+  "source": "k8s_docs",
+  "title": "kubectl auth reconcile — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_auth/kubectl_auth_reconcile/#synopsis",
+  "text": "Reconciles rules for RBAC role, role binding, cluster role, and cluster role binding objects.\nMissing objects are created, and the containing namespace is created for namespaced objects, if required.\nExisting roles are updated to include the permissions in the input objects, and remove extra permissions if --remove-extra-permissions is specified.\nExisting bindings are updated to include the subjects in the input objects, and remove extra subjects if --remove-extra-subjects is specified.\nThis is preferred to 'apply' for RBAC resources so that semantically-aware merging of rules and subjects is done.\nkubectl auth reconcile -f FILENAME"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "4c4c7b90a789377474c61d4de5625af9",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_apply_phase_bootstrap-token/#synopsis",
+  "text": "Configures bootstrap token and cluster-info RBAC rules\nkubeadm upgrade apply phase bootstrap-token [flags]\n\n--config string\nPath to a kubeadm configuration file.\n--dry-run\nDo not change any state, just output what actions would be performed.\n-h, --help\nhelp for bootstrap-token\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nPath to a kubeadm configuration file.\nDo not change any state, just output what actions would be performed.\nhelp for bootstrap-token\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file."
+}

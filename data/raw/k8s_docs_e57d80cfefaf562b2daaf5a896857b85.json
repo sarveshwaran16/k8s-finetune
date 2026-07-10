@@ -1,0 +1,7 @@
+{
+  "id": "e57d80cfefaf562b2daaf5a896857b85",
+  "source": "k8s_docs",
+  "title": "Persistent Volumes — Binding Block Volumes",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#binding-block-volumes",
+  "text": "If a user requests a raw block volume by indicating this using the\nvolumeMode\nfield in the PersistentVolumeClaim spec, the binding rules differ slightly from\nprevious releases that didn't consider this mode as part of the spec.\nListed is a table of possible combinations the user and admin might specify for\nrequesting a raw block device. The table indicates if the volume will be bound or\nnot given the combinations: Volume binding matrix for statically provisioned volumes:\nPV volumeMode\nPVC volumeMode\nResult\nunspecified\nunspecified\nBIND\nunspecified\nBlock\nNO BIND\nunspecified\nFilesystem\nBIND\nBlock\nunspecified\nNO BIND\nBlock\nBlock\nBIND\nBlock\nFilesystem\nNO BIND\nFilesystem\nFilesystem\nBIND\nFilesystem\nBlock\nNO BIND\nFilesystem\nunspecified\nBIND"
+}

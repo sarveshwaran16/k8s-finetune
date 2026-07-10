@@ -1,0 +1,7 @@
+{
+  "id": "9a75d46621c9da838fd91ef0063546df",
+  "source": "k8s_docs",
+  "title": "Debug Init Containers — Getting details about Init Containers",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-init-containers/#getting-details-about-init-containers",
+  "text": "View more detailed information about Init Container execution:\nkubectl describe pod <pod-name>\nFor example, a Pod with two Init Containers might show the following:\nInit Containers:\n  <init-container-1>:\n    Container ID:    ...\n    ...\n    State:           Terminated\n      Reason:        Completed\n      Exit Code:     0\n      Started:       ...\n      Finished:      ...\n    Ready:           True\n    Restart Count:   0\n    ...\n  <init-container-2>:\n    Container ID:    ...\n    ...\n    State:           Waiting\n      Reason:        CrashLoopBackOff\n    Last State:      Terminated\n      Reason:        Error\n      Exit Code:     1\n      Started:       ...\n      Finished:      ...\n    Ready:           False\n    Restart Count:   3\n    ...\nYou can also access the Init Container statuses programmatically by reading the\nstatus.initContainerStatuses\nfield on the Pod Spec:\nkubectl get pod <pod-name> --template\n'{{.status.initContainerStatuses}}'\nThis command will return the same information as above, formatted using a\nGo template\n."
+}

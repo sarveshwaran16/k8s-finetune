@@ -1,0 +1,7 @@
+{
+  "id": "897a1985bfa0a1e05b0b7616105492b8",
+  "source": "k8s_docs",
+  "title": "Enable Or Disable Feature Gates — Check via metrics endpoint",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-feature-gates/#check-via-metrics-endpoint",
+  "text": "Feature gate status is exposed in Prometheus-style metrics by Kubernetes components\n(available in Kubernetes 1.26+). Query the metrics endpoint to verify which feature\ngates are enabled:\nkubectl get --raw /metrics\n|\ngrep kubernetes_feature_enabled\nTo check a specific feature gate:\nkubectl get --raw /metrics\n|\ngrep kubernetes_feature_enabled\n|\ngrep FeatureName\nThe metric shows\n1\nfor enabled gates and\n0\nfor disabled gates."
+}

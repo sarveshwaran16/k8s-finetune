@@ -1,0 +1,7 @@
+{
+  "id": "fa1a0d60658cf4bfda8be2046003e19e",
+  "source": "k8s_docs",
+  "title": "Node Declared Features — Enabling node declared features",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-declared-features/#enabling-node-declared-features",
+  "text": "To use Node Declared Features, the\nNodeDeclaredFeatures\nfeature gate\nmust be enabled on the\nkube-apiserver\n,\nkube-scheduler\n, and\nkubelet\ncomponents.\n\nRead the KEP for more details:\nKEP-5328: Node Declared Features\nRead about the\nNodeDeclaredFeatureValidator\nadmission controller\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

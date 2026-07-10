@@ -1,0 +1,7 @@
+{
+  "id": "8c44117388e6286ff1e2e111e22c4d5c",
+  "source": "k8s_docs",
+  "title": "Configuring each kubelet in your cluster using kubeadm — Kubernetes binaries and package contents",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/kubelet-integration/#kubernetes-binaries-and-package-contents",
+  "text": "The DEB and RPM packages shipped with the Kubernetes releases are:\nPackage name\nDescription\nkubeadm\nInstalls the\n/usr/bin/kubeadm\nCLI tool and the\nkubelet drop-in file\nfor the kubelet.\nkubelet\nInstalls the\n/usr/bin/kubelet\nbinary.\nkubectl\nInstalls the\n/usr/bin/kubectl\nbinary.\ncri-tools\nInstalls the\n/usr/bin/crictl\nbinary from the\ncri-tools git repository\n.\nkubernetes-cni\nInstalls the\n/opt/cni/bin\nbinaries from the\nplugins git repository\n."
+}

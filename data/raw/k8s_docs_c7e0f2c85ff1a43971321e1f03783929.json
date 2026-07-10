@@ -1,0 +1,7 @@
+{
+  "id": "c7e0f2c85ff1a43971321e1f03783929",
+  "source": "k8s_docs",
+  "title": "Cloud Native Security and Kubernetes — Deploylifecycle phase",
+  "source_url": "https://kubernetes.io/docs/concepts/security/cloud-native-security/#lifecycle-phase-deploy",
+  "text": "Ensure appropriate restrictions on what can be deployed, who can deploy it,\nand where it can be deployed.\nYou can enforce measures from the\ndistribute\nphase, such as verifying the\ncryptographic identity of container image artifacts.\nYou can deploy different applications and cluster components into different\nnamespaces\n. Containers\nand namespaces both provide isolation mechanisms that are relevant to\ninformation security.\nWhen you deploy Kubernetes, you also set the foundation for your\napplications' runtime environment: a Kubernetes cluster (or\nmultiple clusters).\nThat infrastructure must provide the security guarantees that higher\nlayers expect."
+}

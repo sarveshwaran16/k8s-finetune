@@ -1,0 +1,7 @@
+{
+  "id": "f8e1c17a418b3f9009092f2862dc2a4f",
+  "source": "k8s_docs",
+  "title": "kubectl kuberc — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_kuberc/#synopsis",
+  "text": "Manage user preferences (kuberc) file.\nThe kuberc file allows you to customize your kubectl experience.\nkubectl kuberc SUBCOMMAND\n\n# View the current kuberc configuration\n  kubectl kuberc view\n  \n  # Set a default value for a command flag\n  kubectl kuberc set --section defaults --command get --option output=wide\n  \n  # Create an alias for a command\n  kubectl kuberc set --section aliases --name getn --command get --prependarg nodes --option output=wide"
+}

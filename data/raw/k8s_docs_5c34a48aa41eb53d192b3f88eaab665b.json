@@ -1,0 +1,7 @@
+{
+  "id": "5c34a48aa41eb53d192b3f88eaab665b",
+  "source": "k8s_docs",
+  "title": "Cluster Architecture — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/#what-s-next",
+  "text": "Learn more about the following:\nNodes\nand\ntheir communication\nwith the control plane.\nKubernetes\ncontrollers\n.\nGarbage collection\nof cluster objects.\nkube-scheduler\nwhich is the default scheduler for Kubernetes.\nEtcd's official\ndocumentation\n.\nSeveral\ncontainer runtimes\nin Kubernetes.\nIntegrating with cloud providers using\ncloud-controller-manager\n.\nkubectl\ncommands."
+}

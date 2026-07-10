@@ -1,0 +1,7 @@
+{
+  "id": "4a00873bb8e63428ee841ac438aed2cf",
+  "source": "k8s_docs",
+  "title": "Configure a Pod to Use a ConfigMap — Add ConfigMap data to a specific path in the Volume",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-specific-path-in-the-volume",
+  "text": "Use the\npath\nfield to specify the desired file path for specific ConfigMap items.\nIn this case, the\nSPECIAL_LEVEL\nitem will be mounted in the\nconfig-volume\nvolume at\n/etc/config/keys\n.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\ndapi-test-pod\nspec\n:\ncontainers\n:\n-\nname\n:\ntest-container\nimage\n:\nregistry.k8s.io/busybox:1.27.2\ncommand\n:\n[\n\"/bin/sh\"\n,\n\"-c\"\n,\n\"cat /etc/config/keys\"\n]\nvolumeMounts\n:\n-\nname\n:\nconfig-volume\nmountPath\n:\n/etc/config\nvolumes\n:\n-\nname\n:\nconfig-volume\nconfigMap\n:\nname\n:\nspecial-config\nitems\n:\n-\nkey\n:\nSPECIAL_LEVEL\npath\n:\nkeys\nrestartPolicy\n:\nNever\nCreate the Pod:\nkubectl create -f https://kubernetes.io/examples/pods/pod-configmap-volume-specific-key.yaml\nWhen the pod runs, the command\ncat /etc/config/keys\nproduces the output below:\nvery\nDelete that Pod:\nkubectl delete pod dapi-test-pod --now"
+}

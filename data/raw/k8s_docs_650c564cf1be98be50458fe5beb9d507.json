@@ -1,0 +1,7 @@
+{
+  "id": "650c564cf1be98be50458fe5beb9d507",
+  "source": "k8s_docs",
+  "title": "Running Multiple Instances of Your App — Scale Down",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/#scale-down",
+  "text": "To scale down the Deployment to 2 replicas, run again the\nscale\nsubcommand:\nkubectl scale deployments/kubernetes-bootcamp --replicas\n=\n2\nList the Deployments to check if the change was applied with the\nget deployments\nsubcommand:\nkubectl get deployments\nThe number of replicas decreased to 2. List the number of Pods, with\nget pods\n:\nkubectl get pods -o wide\nThis confirms that 2 Pods were terminated."
+}

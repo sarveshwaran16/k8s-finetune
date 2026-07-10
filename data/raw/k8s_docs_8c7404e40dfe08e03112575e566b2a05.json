@@ -1,0 +1,7 @@
+{
+  "id": "8c7404e40dfe08e03112575e566b2a05",
+  "source": "k8s_docs",
+  "title": "Using ABAC Authorization — Authorization Algorithm",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/abac/#authorization-algorithm",
+  "text": "A request has attributes which correspond to the properties of a policy object.\nWhen a request is received, the attributes are determined. Unknown attributes\nare set to the zero value of its type (e.g. empty string, 0, false).\nA property set to\n\"*\"\nwill match any value of the corresponding attribute.\nThe tuple of attributes is checked for a match against every policy in the\npolicy file. If at least one line matches the request attributes, then the\nrequest is authorized (but may fail later validation).\nTo permit any authenticated user to do something, write a policy with the\ngroup property set to\n\"system:authenticated\"\n.\nTo permit any unauthenticated user to do something, write a policy with the\ngroup property set to\n\"system:unauthenticated\"\n.\nTo permit a user to do anything, write a policy with the apiGroup, namespace,\nresource, and nonResourcePath properties set to\n\"*\"\n."
+}

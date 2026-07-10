@@ -1,0 +1,7 @@
+{
+  "id": "7692651f6a1789e951fd23a9c6916512",
+  "source": "k8s_docs",
+  "title": "Running Kubernetes Node Components as a Non-root User — Configuring kube-proxy",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/#configuring-kube-proxy",
+  "text": "Running kube-proxy in a user namespace requires the following configuration:\napiVersion\n:\nkubeproxy.config.k8s.io/v1alpha1\nkind\n:\nKubeProxyConfiguration\nmode\n:\n\"iptables\"\n# or \"userspace\"\nconntrack\n:\n# Skip setting sysctl value \"net.netfilter.nf_conntrack_max\"\nmaxPerCore\n:\n0\n# Skip setting \"net.netfilter.nf_conntrack_tcp_timeout_established\"\ntcpEstablishedTimeout\n:\n0s\n# Skip setting \"net.netfilter.nf_conntrack_tcp_timeout_close\"\ntcpCloseWaitTimeout\n:\n0s"
+}

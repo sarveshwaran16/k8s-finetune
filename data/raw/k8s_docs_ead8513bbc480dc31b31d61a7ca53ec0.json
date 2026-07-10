@@ -1,0 +1,7 @@
+{
+  "id": "ead8513bbc480dc31b31d61a7ca53ec0",
+  "source": "k8s_docs",
+  "title": "Use a SOCKS5 Proxy to Access the Kubernetes API — Using ssh to create a SOCKS5 proxy",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/socks5-proxy-access-api/#using-ssh-to-create-a-socks5-proxy",
+  "text": "The following command starts a SOCKS5 proxy between your client machine and the remote SOCKS server:\n# The SSH tunnel continues running in the foreground after you run this\nssh -D\n1080\n-q -N username@kubernetes-remote-server.example\nThe SOCKS5 proxy lets you connect to your cluster's API server based on the following configuration:\n-D 1080\n: opens a SOCKS proxy on local port :1080.\n-q\n: quiet mode. Causes most warning and diagnostic messages to be suppressed.\n-N\n: Do not execute a remote command. Useful for just forwarding ports.\nusername@kubernetes-remote-server.example\n: the remote SSH server behind which the Kubernetes cluster\nis running (eg: a bastion host)."
+}

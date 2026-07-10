@@ -1,0 +1,7 @@
+{
+  "id": "279ad811d87a9e145e642253ad5cccf1",
+  "source": "k8s_docs",
+  "title": "Hardening Guide - Dynamic Resource Allocation — Related cluster administrator task",
+  "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/dynamic-resource-allocation/#related-cluster-administrator-task",
+  "text": "To apply these patterns in a running cluster, see\nHarden Dynamic Resource Allocation in Your Cluster\n.\n\nAuthorization\nSet Up DRA in a Cluster\nDynamic Resource Allocation\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

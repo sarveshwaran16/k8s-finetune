@@ -1,0 +1,7 @@
+{
+  "id": "cf60af39f07591345d9071cf70b04928",
+  "source": "k8s_docs",
+  "title": "Security Checklist — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/security/security-checklist/#what-s-next",
+  "text": "Privilege escalation via Pod creation\nwarns you about a specific access control risk; check how you're managing that\nthreat.\nIf you use Kubernetes RBAC, read\nRBAC Good Practices\nfor\nfurther information on authorization.\nSecuring a Cluster\nfor\ninformation on protecting a cluster from accidental or malicious access.\nCluster Multi-tenancy guide\nfor\nconfiguration options recommendations and best practices on multi-tenancy.\nBlog post \"A Closer Look at NSA/CISA Kubernetes Hardening Guidance\"\nfor complementary resource on hardening Kubernetes clusters.\nIf you use Kubernetes RBAC, read\nRBAC Good Practices\nfor\nfurther information on authorization."
+}

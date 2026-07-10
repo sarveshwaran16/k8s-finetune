@@ -1,0 +1,7 @@
+{
+  "id": "0f48818183f46aad97c38356fc963ed6",
+  "source": "k8s_docs",
+  "title": "Authorization — The system:masters group",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authorization/#the-system-masters-group",
+  "text": "The\nsystem:masters\ngroup is a built-in Kubernetes group that grants unrestricted\naccess to the API server. Any user assigned to this group has full cluster administrator\nprivileges, bypassing any authorization restrictions imposed by the RBAC or Webhook mechanisms.\nAvoid adding users\nto this group. If you do need to grant a user cluster-admin rights, you can create a\nClusterRoleBinding\nto the built-in\ncluster-admin\nClusterRole."
+}

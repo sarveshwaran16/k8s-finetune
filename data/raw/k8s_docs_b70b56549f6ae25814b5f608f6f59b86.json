@@ -1,0 +1,7 @@
+{
+  "id": "b70b56549f6ae25814b5f608f6f59b86",
+  "source": "k8s_docs",
+  "title": "Pod — getGet Connect Exec",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#get-get-connect-exec",
+  "text": "GET /api/v1/namespaces/{namespace}/pods/{name}/exec\nName\nType\nDescription\nname\nstring\nname of the PodExecOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\ncommand\nstring\nCommand is the remote command to execute. argv array. Not executed within a shell.\ncontainer\nstring\nContainer in which to execute the command. Defaults to only container if there is only one container in the pod.\nstderr\nboolean\nRedirect the standard error stream of the pod for this call.\nstdin\nboolean\nRedirect the standard input stream of the pod for this call. Defaults to false.\nstdout\nboolean\nRedirect the standard output stream of the pod for this call.\ntty\nboolean\nTTY if true indicates that a tty will be allocated for the exec call. Defaults to false.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

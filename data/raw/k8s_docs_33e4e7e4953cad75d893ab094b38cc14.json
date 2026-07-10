@@ -1,0 +1,7 @@
+{
+  "id": "33e4e7e4953cad75d893ab094b38cc14",
+  "source": "k8s_docs",
+  "title": "Topology Aware Routing — When it works best",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/topology-aware-routing/#when-it-works-best",
+  "text": "This feature works best when:\n\nIf a large proportion of traffic is originating from a single zone, that traffic\ncould overload the subset of endpoints that have been allocated to that zone.\nThis feature is not recommended when incoming traffic is expected to originate\nfrom a single zone.\n\nIn a three zone cluster, this means 9 or more endpoints. If there are fewer than\n3 endpoints per zone, there is a high (≈50%) probability that the EndpointSlice\ncontroller will not be able to allocate endpoints evenly and instead will fall\nback to the default cluster-wide routing approach."
+}

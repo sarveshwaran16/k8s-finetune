@@ -1,0 +1,7 @@
+{
+  "id": "471cede57d47a419053cd806db85334a",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — DefaultStorageClass",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#defaultstorageclass",
+  "text": "Type\n: Mutating.\nThis admission controller observes creation of\nPersistentVolumeClaim\nobjects that do not request any specific storage class\nand automatically adds a default storage class to them.\nThis way, users that do not request any special storage class do not need to care about them at all and they\nwill get the default one.\nThis admission controller does nothing when no default\nStorageClass\nexists. When more than one storage\nclass is marked as default, and you then create a\nPersistentVolumeClaim\nwith no\nstorageClassName\nset,\nKubernetes uses the most recently created default\nStorageClass\n.\nWhen a\nPersistentVolumeClaim\nis created with a specified\nvolumeName\n, it remains in a pending state\nif the static volume's\nstorageClassName\ndoes not match the\nstorageClassName\non the\nPersistentVolumeClaim\nafter any default StorageClass is applied to it.\nThis admission controller ignores any\nPersistentVolumeClaim\nupdates; it acts only on creation.\nSee\npersistent volume\ndocumentation about persistent volume claims and\nstorage classes and how to mark a storage class as default."
+}

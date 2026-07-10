@@ -1,0 +1,7 @@
+{
+  "id": "f03c4b62f64d54e742aac1ef9e31502c",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node.kubernetes.io/out-of-service",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-kubernetes-io-out-of-service",
+  "text": "Type: Taint\nExample:\nnode.kubernetes.io/out-of-service:NoExecute\nUsed on: Node\nA user can manually add the taint to a Node marking it out-of-service.\nIf a Node is marked out-of-service with this taint, the Pods on the node\nwill be forcefully deleted if there are no matching tolerations on it and\nvolume detach operations for the Pods terminating on the node will happen immediately.\nThis allows the Pods on the out-of-service node to recover quickly on a different node."
+}

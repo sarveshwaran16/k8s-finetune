@@ -1,0 +1,7 @@
+{
+  "id": "7e3daa2e914819cef87a05460343f2b7",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — quota",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-quota-em-",
+  "text": "Create a new resource quota named my-quota\nkubectl create quota my-quota --hard=cpu=\n1\n,memory=\n1\nG,pods=\n2\n,services=\n3\n,replicationcontrollers=\n2\n,resourcequotas=\n1\n,secrets=\n5\n,persistentvolumeclaims=\n10\nCreate a new resource quota named best-effort\nkubectl create quota best-effort\n--hard\n=pods=100\n--scopes\n=BestEffort\nCreate a resource quota with the specified name, hard limits, and optional scopes."
+}

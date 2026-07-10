@@ -1,0 +1,7 @@
+{
+  "id": "ee89ba00d89ef347db0eace1f8c34ce5",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — subject",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-subject-em-",
+  "text": "Update a cluster role binding for serviceaccount1\nkubectl\nset\nsubject clusterrolebinding admin\n--serviceaccount\n=namespace:serviceaccount1\nUpdate a role binding for user1, user2, and group1\nkubectl\nset\nsubject rolebinding admin\n--user\n=user1\n--user\n=user2\n--group\n=group1\nPrint the result (in YAML format) of updating rolebinding subjects from a local, without hitting the server\nkubectl create rolebinding admin\n--role\n=admin\n--user\n=admin -o yaml\n--dry-run\n=client | kubectl\nset\nsubject --local -f -\n--user\n=foo -o yaml\nUpdate the user, group, or service account in a role binding or cluster role binding."
+}

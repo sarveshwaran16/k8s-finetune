@@ -1,0 +1,7 @@
+{
+  "id": "f77f28d0ca983d1dfb1735c37265a744",
+  "source": "k8s_docs",
+  "title": "Managing Kubernetes Objects Using Imperative Commands — Usingsetcommands to modify objects before creation",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-command/#using-set-commands-to-modify-objects-before-creation",
+  "text": "There are some object fields that don't have a flag you can use\nin a\ncreate\ncommand. In some of those cases, you can use a combination of\nset\nand\ncreate\nto specify a value for the field before object\ncreation. This is done by piping the output of the\ncreate\ncommand to the\nset\ncommand, and then back to the\ncreate\ncommand. Here's an example:\nkubectl create service clusterip my-svc --clusterip\n=\n\"None\"\n-o yaml --dry-run\n=\nclient\n|\nkubectl\nset\nselector --local -f -\n'environment=qa'\n-o yaml\n|\nkubectl create -f -\nThe\nkubectl create service -o yaml --dry-run=client\ncommand creates the configuration for the Service, but prints it to stdout as YAML instead of sending it to the Kubernetes API server.\nThe\nkubectl set selector --local -f - -o yaml\ncommand reads the configuration from stdin, and writes the updated configuration to stdout as YAML.\nThe\nkubectl create -f -\ncommand creates the object using the configuration provided via stdin."
+}

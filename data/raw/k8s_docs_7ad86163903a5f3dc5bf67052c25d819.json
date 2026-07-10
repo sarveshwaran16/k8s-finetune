@@ -1,0 +1,7 @@
+{
+  "id": "7ad86163903a5f3dc5bf67052c25d819",
+  "source": "k8s_docs",
+  "title": "Resource Quotas — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#what-s-next",
+  "text": "See a\ndetailed example for how to use resource quota\n.\nRead the ResourceQuota\nAPI reference\nLearn about\nLimitRanges\nYou can read the historical\nResourceQuota design document\nfor more information.\nYou can also read the\nQuota support for priority class design document\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

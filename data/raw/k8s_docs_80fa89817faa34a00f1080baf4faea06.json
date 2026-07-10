@@ -1,0 +1,7 @@
+{
+  "id": "80fa89817faa34a00f1080baf4faea06",
+  "source": "k8s_docs",
+  "title": "Creating a cluster with kubeadm — kubeadm's skew against the Kubernetes version",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#kubeadm-s-skew-against-the-kubernetes-version",
+  "text": "kubeadm can be used with Kubernetes components that are the same version as kubeadm\nor one version older. The Kubernetes version can be specified to kubeadm by using the\n--kubernetes-version\nflag of\nkubeadm init\nor the\nClusterConfiguration.kubernetesVersion\nfield when using\n--config\n. This option will control the versions\nof kube-apiserver, kube-controller-manager, kube-scheduler and kube-proxy.\nExample:\nkubeadm is at 1.36\nkubernetesVersion\nmust be at 1.36 or 1.35"
+}

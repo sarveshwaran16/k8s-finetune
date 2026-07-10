@@ -1,0 +1,7 @@
+{
+  "id": "83818d8a26adc2c6b68770fd34394e5a",
+  "source": "k8s_docs",
+  "title": "Persistent Volumes — Raw Block Volume Support",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#raw-block-volume-support",
+  "text": "The following volume plugins support raw block volumes, including dynamic provisioning where\napplicable:\nCSI (including some CSI migrated volume types)\nFC (Fibre Channel)\niSCSI\nLocal volume\n\napiVersion\n:\nv1\nkind\n:\nPersistentVolume\nmetadata\n:\nname\n:\nblock-pv\nspec\n:\ncapacity\n:\nstorage\n:\n10Gi\naccessModes\n:\n-\nReadWriteOnce\nvolumeMode\n:\nBlock\npersistentVolumeReclaimPolicy\n:\nRetain\nfc\n:\ntargetWWNs\n:\n[\n\"50060e801049cfd1\"\n]\nlun\n:\n0\nreadOnly\n:\nfalse"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "1c901e359d6fd9441b6d7880346ec3b6",
+  "source": "k8s_docs",
+  "title": "kube-proxy Configuration (v1alpha1) — DebuggingConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-proxy-config.v1alpha1/#DebuggingConfiguration",
+  "text": "Appears in:\nKubeSchedulerConfiguration\nGenericControllerManagerConfiguration\nKubeSchedulerConfiguration\nGenericControllerManagerConfiguration\nDebuggingConfiguration holds configuration for Debugging related features.\nField\nDescription\nenableProfiling\n[Required]\nbool\nenableProfiling enables profiling via web interface host:port/debug/pprof/\nenableContentionProfiling\n[Required]\nbool\nenableContentionProfiling enables block profiling, if\nenableProfiling is true.\nenableProfiling enables profiling via web interface host:port/debug/pprof/\nenableContentionProfiling enables block profiling, if\nenableProfiling is true."
+}

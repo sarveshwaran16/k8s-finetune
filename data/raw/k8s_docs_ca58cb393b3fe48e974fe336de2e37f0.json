@@ -1,0 +1,7 @@
+{
+  "id": "ca58cb393b3fe48e974fe336de2e37f0",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — ReplicaSet as a Horizontal Pod Autoscaler Target",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#replicaset-as-a-horizontal-pod-autoscaler-target",
+  "text": "A ReplicaSet can also be a target for\nHorizontal Pod Autoscalers (HPA)\n. That is,\na ReplicaSet can be auto-scaled by an HPA. Here is an example HPA targeting\nthe ReplicaSet we created in the previous example.\napiVersion\n:\nautoscaling/v1\nkind\n:\nHorizontalPodAutoscaler\nmetadata\n:\nname\n:\nfrontend-scaler\nspec\n:\nscaleTargetRef\n:\napiVersion\n:\napps/v1\nkind\n:\nReplicaSet\nname\n:\nfrontend\nminReplicas\n:\n3\nmaxReplicas\n:\n10\ntargetCPUUtilizationPercentage\n:\n50\nSaving this manifest into\nhpa-rs.yaml\nand submitting it to a Kubernetes cluster should\ncreate the defined HPA that autoscales the target ReplicaSet depending on the CPU usage\nof the replicated Pods.\nkubectl apply -f https://k8s.io/examples/controllers/hpa-rs.yaml\nAlternatively, you can use the\nkubectl autoscale\ncommand to accomplish the same\n(and it's easier!)\nkubectl autoscale rs frontend --max\n=\n10\n--min\n=\n3\n--cpu\n=\n50%"
+}

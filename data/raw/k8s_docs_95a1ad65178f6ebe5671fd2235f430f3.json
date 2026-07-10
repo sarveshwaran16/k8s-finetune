@@ -1,0 +1,7 @@
+{
+  "id": "95a1ad65178f6ebe5671fd2235f430f3",
+  "source": "k8s_docs",
+  "title": "IPv4/IPv6 dual-stack — Prerequisites",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/dual-stack/#prerequisites",
+  "text": "The following prerequisites are needed in order to utilize IPv4/IPv6 dual-stack Kubernetes clusters:\nKubernetes 1.20 or later\nFor information about using dual-stack services with earlier\nKubernetes versions, refer to the documentation for that version\nof Kubernetes.\nProvider support for dual-stack networking (Cloud provider or otherwise must be able to provide\nKubernetes nodes with routable IPv4/IPv6 network interfaces)\nA\nnetwork plugin\nthat\nsupports dual-stack networking.\nKubernetes 1.20 or later\nFor information about using dual-stack services with earlier\nKubernetes versions, refer to the documentation for that version\nof Kubernetes.\nProvider support for dual-stack networking (Cloud provider or otherwise must be able to provide\nKubernetes nodes with routable IPv4/IPv6 network interfaces)\nA\nnetwork plugin\nthat\nsupports dual-stack networking."
+}

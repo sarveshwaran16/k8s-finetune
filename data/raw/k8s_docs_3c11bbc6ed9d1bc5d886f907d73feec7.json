@@ -1,0 +1,7 @@
+{
+  "id": "3c11bbc6ed9d1bc5d886f907d73feec7",
+  "source": "k8s_docs",
+  "title": "Managing Service Accounts — Additional metadata in Pod bound tokens",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#additional-metadata-in-pod-bound-tokens",
+  "text": "When a service account token is bound to a Pod object, additional metadata is also\nembedded into the token that indicates the value of the bound pod's\nspec.nodeName\nfield,\nand the uid of that Node, if available.\nThis node information is\nnot\nverified by the kube-apiserver when the token is used for authentication.\nIt is included so integrators do not have to fetch Pod or Node API objects to check the associated Node name\nand uid when inspecting a JWT."
+}

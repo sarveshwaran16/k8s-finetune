@@ -1,0 +1,7 @@
+{
+  "id": "5acc6fb1eda75dc94d2891397dc1336a",
+  "source": "k8s_docs",
+  "title": "kubeadm init — Use kubeadm with CRI runtimes",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/#use-kubeadm-with-cri-runtimes",
+  "text": "By default, kubeadm attempts to detect your container runtime. For more details on this detection,\nsee the\nkubeadm CRI installation guide\n.\n\nBy default, kubeadm assigns a node name based on a machine's host address.\nYou can override this setting with the\n--node-name\nflag.\nThe flag passes the appropriate\n--hostname-override\nvalue to the kubelet.\nBe aware that overriding the hostname can\ninterfere with cloud providers\n."
+}

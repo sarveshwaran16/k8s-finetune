@@ -1,0 +1,7 @@
+{
+  "id": "83cd9fe54640e15511669551843a5c15",
+  "source": "k8s_docs",
+  "title": "Using a KMS provider for data encryption — Configuring the KMS provider",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#configuring-the-kms-provider",
+  "text": "To configure a KMS provider on the API server, include a provider of type\nkms\nin the\nproviders\narray in the encryption configuration file and set the following properties:\n\napiVersion\n: API Version for KMS provider. Leave this value empty or set it to\nv1\n.\nname\n: Display name of the KMS plugin. Cannot be changed once set.\nendpoint\n: Listen address of the gRPC server (KMS plugin). The endpoint is a UNIX domain socket.\ncachesize\n: Number of data encryption keys (DEKs) to be cached in the clear.\nWhen cached, DEKs can be used without another call to the KMS;\nwhereas DEKs that are not cached require a call to the KMS to unwrap.\ntimeout\n: How long should\nkube-apiserver\nwait for kms-plugin to respond before\nreturning an error (default is 3 seconds)."
+}

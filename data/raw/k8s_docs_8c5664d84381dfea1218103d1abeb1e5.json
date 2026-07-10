@@ -1,0 +1,7 @@
+{
+  "id": "8c5664d84381dfea1218103d1abeb1e5",
+  "source": "k8s_docs",
+  "title": "Configure GMSA for Windows Pods and containers — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-gmsa/#before-you-begin",
+  "text": "You need to have a Kubernetes cluster and the\nkubectl\ncommand-line tool must be\nconfigured to communicate with your cluster. The cluster is expected to have Windows worker nodes.\nThis section covers a set of initial steps required once for each cluster:\n\nA\nCustomResourceDefinition\n(CRD)\nfor GMSA credential spec resources needs to be configured on the cluster to define\nthe custom resource type\nGMSACredentialSpec\n. Download the GMSA CRD\nYAML\nand save it as gmsa-crd.yaml. Next, install the CRD with\nkubectl apply -f gmsa-crd.yaml"
+}

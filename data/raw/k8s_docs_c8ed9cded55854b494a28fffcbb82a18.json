@@ -1,0 +1,7 @@
+{
+  "id": "c8ed9cded55854b494a28fffcbb82a18",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — scheduler.alpha.kubernetes.io/defaultTolerations",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#scheduleralphakubernetesio-defaulttolerations",
+  "text": "Type: Annotation\nExample:\nscheduler.alpha.kubernetes.io/defaultTolerations: '[{\"operator\": \"Equal\", \"value\": \"value1\", \"effect\": \"NoSchedule\", \"key\": \"dedicated-node\"}]'\nUsed on: Namespace\nThis annotation requires the\nPodTolerationRestriction\nadmission controller to be enabled. This annotation key allows assigning tolerations to a\nnamespace and any new pods created in this namespace would get these tolerations added."
+}

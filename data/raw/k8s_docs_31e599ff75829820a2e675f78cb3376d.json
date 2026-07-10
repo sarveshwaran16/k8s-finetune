@@ -1,0 +1,7 @@
+{
+  "id": "31e599ff75829820a2e675f78cb3376d",
+  "source": "k8s_docs",
+  "title": "Scheduler Performance Tuning — Setting the threshold",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduler-perf-tuning/#setting-the-threshold",
+  "text": "The\npercentageOfNodesToScore\noption accepts whole numeric values between 0\nand 100. The value 0 is a special number which indicates that the kube-scheduler\nshould use its compiled-in default.\nIf you set\npercentageOfNodesToScore\nabove 100, kube-scheduler acts as if you\nhad set a value of 100.\nTo change the value, edit the\nkube-scheduler configuration file\nand then restart the scheduler.\nIn many cases, the configuration file can be found at\n/etc/kubernetes/config/kube-scheduler.yaml\n.\nAfter you have made this change, you can run\nkubectl get pods -n kube-system\n|\ngrep kube-scheduler\nto verify that the kube-scheduler component is healthy."
+}

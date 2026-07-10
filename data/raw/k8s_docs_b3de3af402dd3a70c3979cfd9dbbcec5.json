@@ -1,0 +1,7 @@
+{
+  "id": "b3de3af402dd3a70c3979cfd9dbbcec5",
+  "source": "k8s_docs",
+  "title": "kube-scheduler Configuration (v1) — NodeAffinityArgs",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-scheduler-config.v1/#kubescheduler-config-k8s-io-v1-NodeAffinityArgs",
+  "text": "NodeAffinityArgs holds arguments to configure the NodeAffinity plugin.\nField\nDescription\napiVersion\nstring\nkubescheduler.config.k8s.io/v1\nkind\nstring\nNodeAffinityArgs\naddedAffinity\ncore/v1.NodeAffinity\nAddedAffinity is applied to all Pods additionally to the NodeAffinity\nspecified in the PodSpec. That is, Nodes need to satisfy AddedAffinity\nAND .spec.NodeAffinity. AddedAffinity is empty by default (all Nodes\nmatch).\nWhen AddedAffinity is used, some Pods with affinity requirements that match\na specific Node (such as Daemonset Pods) might remain unschedulable.\nAddedAffinity is applied to all Pods additionally to the NodeAffinity\nspecified in the PodSpec. That is, Nodes need to satisfy AddedAffinity\nAND .spec.NodeAffinity. AddedAffinity is empty by default (all Nodes\nmatch).\nWhen AddedAffinity is used, some Pods with affinity requirements that match\na specific Node (such as Daemonset Pods) might remain unschedulable."
+}

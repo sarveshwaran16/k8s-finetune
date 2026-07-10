@@ -1,0 +1,7 @@
+{
+  "id": "9358215cb34f8f7ab5ccc7f3c3b884df",
+  "source": "k8s_docs",
+  "title": "Apply Pod Security Standards at the Namespace Level — Clean up",
+  "source_url": "https://kubernetes.io/docs/tutorials/security/ns-level-pss/#clean-up",
+  "text": "Now delete the cluster which you created above by running the following command:\nkind delete cluster --name psa-ns-level\n\nRun a\nshell script\nto perform all the preceding steps all at once.\nCreate kind cluster\nCreate new namespace\nApply\nbaseline\nPod Security Standard in\nenforce\nmode while applying\nrestricted\nPod Security Standard also in\nwarn\nand\naudit\nmode.\nCreate a new pod with the following pod security standards applied\nPod Security Admission\nPod Security Standards\nApply Pod Security Standards at the cluster level\nRun a\nshell script\nto perform all the preceding steps all at once.\nCreate kind cluster\nCreate new namespace\nApply\nbaseline\nPod Security Standard in\nenforce\nmode while applying\nrestricted\nPod Security Standard also in\nwarn\nand\naudit\nmode.\nCreate a new pod with the following pod security standards applied\nPod Security Admission\nPod Security Standards\nApply Pod Security Standards at the cluster level"
+}

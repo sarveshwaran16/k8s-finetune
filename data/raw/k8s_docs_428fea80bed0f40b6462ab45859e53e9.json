@@ -1,0 +1,7 @@
+{
+  "id": "428fea80bed0f40b6462ab45859e53e9",
+  "source": "k8s_docs",
+  "title": "Configure Memory and CPU Quotas for a Namespace — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/quota-memory-cpu-namespace/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

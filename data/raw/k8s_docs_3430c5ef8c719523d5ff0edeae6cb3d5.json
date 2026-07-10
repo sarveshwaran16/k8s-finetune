@@ -1,0 +1,7 @@
+{
+  "id": "3430c5ef8c719523d5ff0edeae6cb3d5",
+  "source": "k8s_docs",
+  "title": "Assign CPU Resources to Containers and Pods — Clean up",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-cpu-resource/#clean-up",
+  "text": "Delete your namespace:\nkubectl delete namespace cpu-example\n\nAssign Memory Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nResize CPU and Memory Resources assigned to Containers\nResize Pod-level CPU and Memory Resources\nAssign Memory Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nResize CPU and Memory Resources assigned to Containers\nResize Pod-level CPU and Memory Resources"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "94c1f0c441a4ac76758aa7d0f5b28b28",
+  "source": "k8s_docs",
+  "title": "Enforce Pod Security Standards by Configuring the Built-in Admission Controller — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/enforce-standards-admission-controller/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

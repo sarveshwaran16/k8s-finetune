@@ -1,0 +1,7 @@
+{
+  "id": "820eaa6ffcab056a45b94c6f35cc0560",
+  "source": "k8s_docs",
+  "title": "PKI certificates and requirements — Single root CA",
+  "source_url": "https://kubernetes.io/docs/setup/best-practices/certificates/#single-root-ca",
+  "text": "You can create a single root CA, controlled by an administrator. This root CA can then create\nmultiple intermediate CAs, and delegate all further creation to Kubernetes itself.\nRequired CAs:\nPath\nDefault CN\nDescription\nca.crt,key\nkubernetes-ca\nKubernetes general CA\netcd/ca.crt,key\netcd-ca\nFor all etcd-related functions\nfront-proxy-ca.crt,key\nkubernetes-front-proxy-ca\nFor the\nfront-end proxy\nOn top of the above CAs, it is also necessary to get a public/private key pair for service account\nmanagement,\nsa.key\nand\nsa.pub\n.\nThe following example illustrates the CA key and certificate files shown in the previous table:\n/etc/kubernetes/pki/ca.crt\n/etc/kubernetes/pki/ca.key\n/etc/kubernetes/pki/etcd/ca.crt\n/etc/kubernetes/pki/etcd/ca.key\n/etc/kubernetes/pki/front-proxy-ca.crt\n/etc/kubernetes/pki/front-proxy-ca.key"
+}

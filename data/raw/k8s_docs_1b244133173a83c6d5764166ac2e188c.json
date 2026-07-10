@@ -1,0 +1,7 @@
+{
+  "id": "1b244133173a83c6d5764166ac2e188c",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Fail open and validate the final state",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#fail-open-validate-final-state",
+  "text": "Mutating admission webhooks support the\nfailurePolicy\nconfiguration field.\nThis field indicates whether the API server should admit or reject the request\nif the webhook fails. Webhook failures might occur because of timeouts or errors\nin the server logic.\nBy default, admission webhooks set the\nfailurePolicy\nfield to Fail. The API\nserver rejects a request if the webhook fails. However, rejecting requests by\ndefault might result in compliant requests being rejected during webhook\ndowntime.\nLet your mutating webhooks \"fail open\" by setting the\nfailurePolicy\nfield to\nIgnore. Use a validating controller to check the state of requests to ensure\nthat they comply with your policies.\nThis approach has the following benefits:\nMutating webhook downtime doesn't affect compliant resources from deploying.\nPolicy enforcement occurs during validating admission control.\nMutating webhooks don't interfere with other controllers in the cluster."
+}

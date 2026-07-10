@@ -1,0 +1,7 @@
+{
+  "id": "601a53dcacf025bc97fd38de2129f994",
+  "source": "k8s_docs",
+  "title": "Automatic Cleanup for Finished Jobs — Updating TTL for finished Jobs",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/#updating-ttl-for-finished-jobs",
+  "text": "You can modify the TTL period, e.g.\n.spec.ttlSecondsAfterFinished\nfield of Jobs,\nafter the job is created or has finished. If you extend the TTL period after the\nexisting\nttlSecondsAfterFinished\nperiod has expired, Kubernetes doesn't guarantee\nto retain that Job, even if an update to extend the TTL returns a successful API\nresponse."
+}

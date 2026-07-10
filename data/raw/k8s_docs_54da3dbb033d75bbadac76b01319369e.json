@@ -1,0 +1,7 @@
+{
+  "id": "54da3dbb033d75bbadac76b01319369e",
+  "source": "k8s_docs",
+  "title": "Securing a Cluster — Controlling access to the Kubernetes API",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#controlling-access-to-the-kubernetes-api",
+  "text": "As Kubernetes is entirely API-driven, controlling and limiting who can access the cluster and what actions\nthey are allowed to perform is the first line of defense.\n\nKubernetes expects that all API communication in the cluster is encrypted by default with TLS, and the\nmajority of installation methods will allow the necessary certificates to be created and distributed to\nthe cluster components. Note that some components and installation methods may enable local ports over\nHTTP and administrators should familiarize themselves with the settings of each component to identify\npotentially unsecured traffic."
+}

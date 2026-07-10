@@ -1,0 +1,7 @@
+{
+  "id": "7b8becc415e50dc5326d8fa333dc0d35",
+  "source": "k8s_docs",
+  "title": "Upgrading kubeadm clusters — Considerations when upgrading etcd",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/#considerations-when-upgrading-etcd",
+  "text": "Because the\nkube-apiserver\nstatic pod is running at all times (even if you\nhave drained the node), when you perform a kubeadm upgrade which includes an\netcd upgrade, in-flight requests to the server will stall while the new etcd\nstatic pod is restarting. As a workaround, it is possible to actively stop the\nkube-apiserver\nprocess a few seconds before starting the\nkubeadm upgrade apply\ncommand. This permits to complete in-flight requests and close existing\nconnections, and minimizes the consequence of the etcd downtime. This can be\ndone as follows on control plane nodes:\nkillall -s SIGTERM kube-apiserver\n# trigger a graceful kube-apiserver shutdown\nsleep\n20\n# wait a little bit to permit completing in-flight requests\nkubeadm upgrade ...\n# execute a kubeadm upgrade command"
+}

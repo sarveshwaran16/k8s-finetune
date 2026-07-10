@@ -1,0 +1,7 @@
+{
+  "id": "56d979ab060efc7b1fb5d9631f4d1032",
+  "source": "k8s_docs",
+  "title": "Run a Single-Instance Stateful Application — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/#what-s-next",
+  "text": "Learn more about\nDeployment objects\n.\nLearn more about\nDeploying applications\nkubectl run documentation\nVolumes\nand\nPersistent Volumes\nLearn more about\nDeployment objects\n.\nLearn more about\nDeploying applications\nkubectl run documentation\nVolumes\nand\nPersistent Volumes\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

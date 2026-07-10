@@ -1,0 +1,7 @@
+{
+  "id": "9b9b5b92348d85bfa025d3b4684738dc",
+  "source": "k8s_docs",
+  "title": "Pod — PodSchedulingGate",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#PodSchedulingGate",
+  "text": "PodSchedulingGate is associated to a Pod to guard its scheduling.\nField\nDescription\nname\n*\nstring\nName of the scheduling gate. Each scheduling gate must have a unique name field.\n\nPodSchedulingGroup identifies the runtime scheduling group instance that a Pod belongs to. The scheduler uses this information to apply workload-aware scheduling semantics. Exactly one field must be specified.\nField\nDescription\npodGroupName\nstring\nPodGroupName specifies the name of the standalone PodGroup object that represents the runtime instance of this group. Must be a DNS subdomain."
+}

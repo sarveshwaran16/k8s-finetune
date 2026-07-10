@@ -1,0 +1,7 @@
+{
+  "id": "3fcea1e847425349d0b7ce185578470c",
+  "source": "k8s_docs",
+  "title": "Imperative Management of Kubernetes Objects Using Configuration Files — Defining controller selectors and PodTemplate labels",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-config/#defining-controller-selectors-and-podtemplate-labels",
+  "text": "The recommended approach is to define a single, immutable PodTemplate label\nused only by the controller selector with no other semantic meaning.\nExample label:\nselector\n:\nmatchLabels\n:\ncontroller-selector\n:\n\"apps/v1/deployment/nginx\"\ntemplate\n:\nmetadata\n:\nlabels\n:\ncontroller-selector\n:\n\"apps/v1/deployment/nginx\""
+}

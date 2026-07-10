@@ -1,0 +1,7 @@
+{
+  "id": "ff15e260f6d95deccaed207776b31fb2",
+  "source": "k8s_docs",
+  "title": "Adding Windows worker nodes — Install kubeadm and kubelet",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-windows-nodes/#install-kubeadm-and-kubelet",
+  "text": "Run the following commands to install kubeadm and the kubelet:\ncurl\n.\nexe\n-LO\nhttps\n:\n//\nraw\n.\ngithubusercontent\n.\ncom\n/\nkubernetes-sigs\n/\nsig-windows\n-tools\n/\nmaster\n/\nhostprocess\n/\nPrepareNode\n.\nps1\n.\\\nPrepareNode\n.\nps1\n-KubernetesVersion\nv1.36.0\nAdjust the parameter\nKubernetesVersion\nof\nPrepareNode.ps1\nif needed."
+}

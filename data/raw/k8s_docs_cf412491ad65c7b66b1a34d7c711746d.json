@@ -1,0 +1,7 @@
+{
+  "id": "cf412491ad65c7b66b1a34d7c711746d",
+  "source": "k8s_docs",
+  "title": "Kubernetes Object Management — Imperative object configuration",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#imperative-object-configuration",
+  "text": "In imperative object configuration, the kubectl command specifies the\noperation (create, replace, etc.), optional flags and at least one file\nname. The file specified must contain a full definition of the object\nin YAML or JSON format.\nSee the\nAPI reference\nfor more details on object definitions.\n\nCreate the objects defined in a configuration file:\nkubectl create -f nginx.yaml\nDelete the objects defined in two configuration files:\nkubectl delete -f nginx.yaml -f redis.yaml\nUpdate the objects defined in a configuration file by overwriting\nthe live configuration:\nkubectl replace -f nginx.yaml"
+}

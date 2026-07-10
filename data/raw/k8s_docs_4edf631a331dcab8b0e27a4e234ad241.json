@@ -1,0 +1,7 @@
+{
+  "id": "4edf631a331dcab8b0e27a4e234ad241",
+  "source": "k8s_docs",
+  "title": "kubectl diff — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_diff/#synopsis",
+  "text": "Diff configurations specified by file name or stdin between the current online configuration, and the configuration as it would be if applied.\nThe output is always YAML.\nKUBECTL_EXTERNAL_DIFF environment variable can be used to select your own diff command. Users can use external commands with params too, example: KUBECTL_EXTERNAL_DIFF=\"colordiff -N -u\"\nBy default, the \"diff\" command available in your path will be run with the \"-u\" (unified diff) and \"-N\" (treat absent files as empty) options.\nExit status: 0 No differences were found. 1 Differences were found. >1 Kubectl or diff failed with an error.\nNote: KUBECTL_EXTERNAL_DIFF, if used, is expected to follow that convention.\nkubectl diff -f FILENAME"
+}

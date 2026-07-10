@@ -1,0 +1,7 @@
+{
+  "id": "16b19f4b38e76ee8a13da96cbb0a006d",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — uncordon",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#uncordon",
+  "text": "Mark node \"foo\" as schedulable\nkubectl uncordon foo\nMark node as schedulable.\n\n$ kubectl uncordon NODE\n\nName\nShorthand\nDefault\nUsage\ndry-run\nnone\nMust be \"none\", \"server\", or \"client\". If client strategy, only print the object that would be sent, without sending it. If server strategy, submit server-side request without persisting the resource.\nselector\nl\nSelector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2). Matching objects must satisfy all of the specified label constraints."
+}

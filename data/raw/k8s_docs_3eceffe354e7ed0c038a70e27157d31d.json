@@ -1,0 +1,7 @@
+{
+  "id": "3eceffe354e7ed0c038a70e27157d31d",
+  "source": "k8s_docs",
+  "title": "Role Based Access Control Good Practices — Namespace modification",
+  "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#namespace-modification",
+  "text": "Users who can perform\npatch\noperations on Namespace objects (through a namespaced RoleBinding to a Role with that access) can modify\nlabels on that namespace. In clusters where Pod Security Admission is used, this may allow a user to configure the namespace\nfor a more permissive policy than intended by the administrators.\nFor clusters where NetworkPolicy is used, users may be set labels that indirectly allow\naccess to services that an administrator did not intend to allow."
+}

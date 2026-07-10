@@ -1,0 +1,7 @@
+{
+  "id": "58affd1068d2e0d398daa379eb6cf265",
+  "source": "k8s_docs",
+  "title": "Projected Volumes — Example configuration with a secret, a downwardAPI, and a configMap",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/projected-volumes/#example-configuration-secret-downwardapi-configmap",
+  "text": "apiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nvolume-test\nspec\n:\ncontainers\n:\n-\nname\n:\ncontainer-test\nimage\n:\nbusybox:1.28\ncommand\n:\n[\n\"sleep\"\n,\n\"3600\"\n]\nvolumeMounts\n:\n-\nname\n:\nall-in-one\nmountPath\n:\n\"/projected-volume\"\nreadOnly\n:\ntrue\nvolumes\n:\n-\nname\n:\nall-in-one\nprojected\n:\nsources\n:\n-\nsecret\n:\nname\n:\nmysecret\nitems\n:\n-\nkey\n:\nusername\npath\n:\nmy-group/my-username\n-\ndownwardAPI\n:\nitems\n:\n-\npath\n:\n\"labels\"\nfieldRef\n:\nfieldPath\n:\nmetadata.labels\n-\npath\n:\n\"cpu_limit\"\nresourceFieldRef\n:\ncontainerName\n:\ncontainer-test\nresource\n:\nlimits.cpu\n-\nconfigMap\n:\nname\n:\nmyconfigmap\nitems\n:\n-\nkey\n:\nconfig\npath\n:\nmy-group/my-config"
+}

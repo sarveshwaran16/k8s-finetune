@@ -1,0 +1,7 @@
+{
+  "id": "3d6752ed73c0fec2877d9c67e261ed66",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — batch.kubernetes.io/job-tracking (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#batch-kubernetes-io-job-tracking",
+  "text": "Type: Annotation\nExample:\nbatch.kubernetes.io/job-tracking: \"\"\nUsed on: Jobs\nThe presence of this annotation on a Job used to indicate that the control plane is\ntracking the Job status using finalizers\n.\nAdding or removing this annotation no longer has an effect (Kubernetes v1.27 and later)\nAll Jobs are tracked with finalizers."
+}

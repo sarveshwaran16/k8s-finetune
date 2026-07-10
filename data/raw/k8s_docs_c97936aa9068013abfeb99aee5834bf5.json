@@ -1,0 +1,7 @@
+{
+  "id": "c97936aa9068013abfeb99aee5834bf5",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — The shardSelector field",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#the-shardselector-field",
+  "text": "The\nShardSelector\nfield on\nListOptions\naccepts a CEL-based expression using the\nshardRange()\nfunction:\nshardRange(<field-path>, '<hex-start>', '<hex-end>')\nWhere:\n<field-path>\nis the metadata field to hash, using CEL-style object-rooted syntax.\nCurrently supported paths are:\nobject.metadata.uid\nobject.metadata.namespace\n<hex-start>\nis the inclusive lower bound of the hash range, as a\n0x\n-prefixed\n16-digit lowercase hex string (for example,\n'0x0000000000000000'\n).\n<hex-end>\nis the exclusive upper bound, as a\n0x\n-prefixed hex string. The maximum\nvalue is\n'0x10000000000000000'\n(2^64).\nobject.metadata.uid\nobject.metadata.namespace\nThe API server computes a deterministic 64-bit\nFNV-1a\nhash of the specified field value and returns only objects whose hash falls within the\nrange\n[start, end)\n. The hash function produces the same result for the same input\nacross all API server instances, so sharded requests are safe to use with multiple\nAPI server replicas.\nYou can combine multiple ranges with\n||\n(logical OR) to cover non-contiguous parts of\nthe hash space. All ranges in a single expression must use the same field path."
+}

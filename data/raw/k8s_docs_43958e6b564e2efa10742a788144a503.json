@@ -1,0 +1,7 @@
+{
+  "id": "43958e6b564e2efa10742a788144a503",
+  "source": "k8s_docs",
+  "title": "Audit Annotations — authorization.k8s.io/decision",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/#authorization-k8s-io-decision",
+  "text": "Example:\nauthorization.k8s.io/decision: \"forbid\"\nValue must be\nforbid\nor\nallow\n. This annotation indicates whether or not a request\nwas authorized in Kubernetes audit logs.\nSee\nAuditing\nfor more information.\n\nExample:\nauthorization.k8s.io/reason: \"Human-readable reason for the decision\"\nThis annotation gives reason for the\ndecision\nin Kubernetes audit logs.\nSee\nAuditing\nfor more information."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "2855558b12f3056186ebefa0f2d3a585",
+  "source": "k8s_docs",
+  "title": "Disruptions — Pod disruption conditions",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/disruptions/#pod-disruption-conditions",
+  "text": "A dedicated Pod\nDisruptionTarget\ncondition\nis added to indicate\nthat the Pod is about to be deleted due to a\ndisruption\n.\nThe\nreason\nfield of the condition additionally\nindicates one of the following reasons for the Pod termination:\nIn all other disruption scenarios, like eviction due to exceeding\nPod container limits\n,\nPods don't receive the\nDisruptionTarget\ncondition because the disruptions were\nprobably caused by the Pod and would reoccur on retry.\nAlong with cleaning up the pods, the Pod garbage collector (PodGC) will also mark them as failed if they are in a non-terminal\nphase (see also\nPod garbage collection\n).\nWhen using a Job (or CronJob), you may want to use these Pod disruption conditions as part of your Job's\nPod failure policy\n."
+}

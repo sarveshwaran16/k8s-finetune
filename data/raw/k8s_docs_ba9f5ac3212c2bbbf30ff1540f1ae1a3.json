@@ -1,0 +1,7 @@
+{
+  "id": "ba9f5ac3212c2bbbf30ff1540f1ae1a3",
+  "source": "k8s_docs",
+  "title": "Assigning Pods to Nodes — nominatedNodeName",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nominatednodename",
+  "text": "nominatedNodeName\ncan be used for external components to nominate node for a pending pod.\nThis nomination is best effort: it might be ignored if the scheduler determines the pod cannot go to a nominated node.\nAlso, this field can be (over)written by the scheduler:\nIf the scheduler finds a node to nominate via the preemption.\nIf the scheduler decides where the pod is going, and move it to the binding cycle.\nNote that, in this case,\nnominatedNodeName\nis put only when the pod has to go through\nWaitOnPermit\nor\nPreBind\nextension points.\nNote that, in this case,\nnominatedNodeName\nis put only when the pod has to go through\nWaitOnPermit\nor\nPreBind\nextension points.\nHere is an example of a Pod status using the\nnominatedNodeName\nfield:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nnginx\n...\nstatus\n:\nnominatedNodeName\n:\nkube-01"
+}

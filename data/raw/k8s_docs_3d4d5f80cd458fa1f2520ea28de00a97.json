@@ -1,0 +1,7 @@
+{
+  "id": "3d4d5f80cd458fa1f2520ea28de00a97",
+  "source": "k8s_docs",
+  "title": "Liveness, Readiness, and Startup Probes — Probe-levelterminationGracePeriodSeconds",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#probe-level-terminationgraceperiodseconds",
+  "text": "In 1.25 and above, users can specify a probe-level\nterminationGracePeriodSeconds\nas part of the probe specification. When both a pod- and probe-level\nterminationGracePeriodSeconds\nare set, the kubelet will use the probe-level\nvalue.\nWhen setting the\nterminationGracePeriodSeconds\n, note the following:\nThe kubelet always honors the probe-level\nterminationGracePeriodSeconds\nfield if it is present on a Pod.\nIf you have existing Pods where the\nterminationGracePeriodSeconds\nfield is\nset and you no longer wish to use per-probe termination grace periods, you\nmust delete those existing Pods.\nFor example:\nspec\n:\nterminationGracePeriodSeconds\n:\n3600\n# pod-level\ncontainers\n:\n-\nname\n:\ntest\nimage\n:\n...\nports\n:\n-\nname\n:\nliveness-port\ncontainerPort\n:\n8080\nlivenessProbe\n:\nhttpGet\n:\npath\n:\n/healthz\nport\n:\nliveness-port\nfailureThreshold\n:\n1\nperiodSeconds\n:\n60\n# Override pod-level terminationGracePeriodSeconds\nterminationGracePeriodSeconds\n:\n60\nProbe-level\nterminationGracePeriodSeconds\ncannot\nbe set for readiness probes.\nIt will be rejected by the API server."
+}

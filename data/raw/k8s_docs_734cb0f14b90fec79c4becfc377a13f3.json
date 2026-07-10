@@ -1,0 +1,7 @@
+{
+  "id": "734cb0f14b90fec79c4becfc377a13f3",
+  "source": "k8s_docs",
+  "title": "Advanced Pod Configuration — Pod affinity and anti-affinity",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#pod-affinity-and-anti-affinity",
+  "text": "In addition to node affinity, you can also constrain which nodes a Pod can be scheduled on based on the labels of\nother Pods\nthat are already running on nodes. Pod affinity allows you to specify rules about where a Pod should be placed relative to other Pods.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nwith-pod-affinity\nspec\n:\naffinity\n:\npodAffinity\n:\nrequiredDuringSchedulingIgnoredDuringExecution\n:\n-\nlabelSelector\n:\nmatchExpressions\n:\n-\nkey\n:\napp\noperator\n:\nIn\nvalues\n:\n-\ndatabase\ntopologyKey\n:\ntopology.kubernetes.io/zone\ncontainers\n:\n-\nname\n:\nwith-pod-affinity\nimage\n:\nregistry.k8s.io/pause:3.8"
+}

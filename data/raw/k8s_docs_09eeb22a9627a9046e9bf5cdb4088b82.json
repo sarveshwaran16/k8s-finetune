@@ -1,0 +1,7 @@
+{
+  "id": "09eeb22a9627a9046e9bf5cdb4088b82",
+  "source": "k8s_docs",
+  "title": "NetworkPolicy — NetworkPolicyPort",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/networking/network-policy-v1/#NetworkPolicyPort",
+  "text": "NetworkPolicyPort describes a port to allow traffic on\nField\nDescription\nendPort\ninteger\nendPort indicates that the range of ports from port to endPort if set, inclusive, should be allowed by the policy. This field cannot be defined if the port field is not defined or if the port field is defined as a named (string) port. The endPort must be equal or greater than port.\nport\nport represents the port on the given protocol. This can either be a numerical or named port on a pod. If this field is not provided, this matches all port names and numbers. If present, only traffic on the specified protocol AND port will be matched.\nprotocol\nstring\nprotocol represents the protocol (TCP, UDP, or SCTP) which traffic must match. If not specified, this field defaults to TCP.\nPossible enum values:\n- `\"SCTP\"` is the SCTP protocol.\n- `\"TCP\"` is the TCP protocol.\n- `\"UDP\"` is the UDP protocol."
+}

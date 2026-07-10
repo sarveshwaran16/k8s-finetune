@@ -1,0 +1,7 @@
+{
+  "id": "5b92991f928887aab7b0411518ee627a",
+  "source": "k8s_docs",
+  "title": "Organizing Cluster Access Using kubeconfig Files — Supporting multiple clusters, users, and authentication mechanisms",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#supporting-multiple-clusters-users-and-authentication-mechanisms",
+  "text": "Suppose you have several clusters, and your users and components authenticate\nin a variety of ways. For example:\nA running kubelet might authenticate using certificates.\nA user might authenticate using tokens.\nAdministrators might have sets of certificates that they provide to individual users.\nWith kubeconfig files, you can organize your clusters, users, and namespaces.\nYou can also define contexts to quickly and easily switch between\nclusters and namespaces."
+}

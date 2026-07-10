@@ -1,0 +1,7 @@
+{
+  "id": "56db3929ce66c1d590641c6a1c3d47e0",
+  "source": "k8s_docs",
+  "title": "Hardening Guide - Authentication Mechanisms — Authenticating proxy",
+  "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/authentication-mechanisms/#authenticating-proxy",
+  "text": "Another option for integrating external authentication systems into Kubernetes is to use an\nauthenticating proxy\n.\nWith this mechanism, Kubernetes expects to receive requests from the proxy with specific header\nvalues set, indicating the username and group memberships to assign for authorization purposes.\nIt is important to note that there are specific considerations to take into account when using\nthis mechanism.\nFirstly, securely configured TLS must be used between the proxy and Kubernetes API server to\nmitigate the risk of traffic interception or sniffing attacks. This ensures that the communication\nbetween the proxy and Kubernetes API server is secure.\nSecondly, it is important to be aware that an attacker who is able to modify the headers of the\nrequest may be able to gain unauthorized access to Kubernetes resources. As such, it is important\nto ensure that the headers are properly secured and cannot be tampered with."
+}

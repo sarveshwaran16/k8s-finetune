@@ -1,0 +1,7 @@
+{
+  "id": "2e9d4d61650497da7d1c82ac95ddadcf",
+  "source": "k8s_docs",
+  "title": "Versions in CustomResourceDefinitions — Previous storage versions",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definition-versioning/#previous-storage-versions",
+  "text": "The API server records each version which has ever been marked as the storage\nversion in the status field\nstoredVersions\n. Objects may have been stored\nat any version that has ever been designated as a storage version. No objects\ncan exist in storage at a version that has never been a storage version."
+}

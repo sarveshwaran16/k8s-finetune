@@ -1,0 +1,7 @@
+{
+  "id": "3d56d54da2098b147f1413644144331d",
+  "source": "k8s_docs",
+  "title": "kubectl explain — Examples",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_explain/#examples",
+  "text": "# Get the documentation of the resource and its fields\n  kubectl explain pods\n  \n  # Get all the fields in the resource\n  kubectl explain pods --recursive\n  \n  # Get the explanation for deployment in supported api versions\n  kubectl explain deployments --api-version=apps/v1\n  \n  # Get the documentation of a specific field of a resource\n  kubectl explain pods.spec.containers\n  \n  # Get the documentation of resources in different format\n  kubectl explain deployment --output=plaintext-openapiv2"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "07593f51513e2576eae9c2c342317b45",
+  "source": "k8s_docs",
+  "title": "Ingress — ServiceBackendPort",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/networking/ingress-v1/#ServiceBackendPort",
+  "text": "ServiceBackendPort is the service port being referenced.\nField\nDescription\nname\nstring\nname is the name of the port on the Service. This is a mutually exclusive setting with \"Number\".\nnumber\ninteger\nnumber is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with \"Name\"."
+}

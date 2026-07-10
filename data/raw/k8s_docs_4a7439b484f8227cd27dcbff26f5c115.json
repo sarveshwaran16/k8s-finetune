@@ -1,0 +1,7 @@
+{
+  "id": "4a7439b484f8227cd27dcbff26f5c115",
+  "source": "k8s_docs",
+  "title": "Images — Maximum parallel image pulls",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/images/#maximum-parallel-image-pulls",
+  "text": "When\nserializeImagePulls\nis set to false, the kubelet defaults to no limit on\nthe maximum number of images being pulled at the same time. If you would like to\nlimit the number of parallel image pulls, you can set the field\nmaxParallelImagePulls\nin the kubelet configuration. With\nmaxParallelImagePulls\nset to\nn\n, only\nn\nimages can be pulled at the same time, and any image pull beyond\nn\nwill have to\nwait until at least one ongoing image pull is complete.\nLimiting the number of parallel image pulls prevents image pulling from consuming\ntoo much network bandwidth or disk I/O, when parallel image pulling is enabled.\nYou can set\nmaxParallelImagePulls\nto a positive number that is greater than or\nequal to 1. If you set\nmaxParallelImagePulls\nto be greater than or equal to 2,\nyou must set\nserializeImagePulls\nto false. The kubelet will fail to start\nwith an invalid\nmaxParallelImagePulls\nsetting."
+}

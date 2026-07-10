@@ -1,0 +1,7 @@
+{
+  "id": "b0bf31560275c456e02f9d24bca0699c",
+  "source": "k8s_docs",
+  "title": "Workload-Aware Preemption — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/workload-aware-preemption/#what-s-next",
+  "text": "Learn more about\nPodGroup Priority and Disruption\n.\nLearn about the\nWorkload API\n.\nRead more about\nGang scheduling\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

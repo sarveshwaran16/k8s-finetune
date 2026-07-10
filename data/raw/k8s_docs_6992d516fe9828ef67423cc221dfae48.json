@@ -1,0 +1,7 @@
+{
+  "id": "6992d516fe9828ef67423cc221dfae48",
+  "source": "k8s_docs",
+  "title": "Dynamic Admission Control — Failure policy",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#failure-policy",
+  "text": "failurePolicy\ndefines how unrecognized errors and timeout errors from the admission webhook\nare handled. Allowed values are\nIgnore\nor\nFail\n.\nIgnore\nmeans that an error calling the webhook is ignored and the API request is allowed to continue.\nFail\nmeans that an error calling the webhook causes the admission to fail and the API request to be rejected.\nHere is a mutating webhook configured to reject an API request if errors are encountered calling the admission webhook:\napiVersion\n:\nadmissionregistration.k8s.io/v1\nkind\n:\nMutatingWebhookConfiguration\nwebhooks\n:\n-\nname\n:\nmy-webhook.example.com\nfailurePolicy\n:\nFail\nThe default\nfailurePolicy\nfor an admission webhooks is\nFail\n."
+}

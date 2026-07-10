@@ -1,0 +1,7 @@
+{
+  "id": "34bc40b3183d69f42240e19785df42c8",
+  "source": "k8s_docs",
+  "title": "Volumes — nfs",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/#nfs",
+  "text": "An\nnfs\nvolume allows an existing NFS (Network File System) share to be\nmounted into a Pod. Unlike\nemptyDir\n, which is erased when a Pod is\nremoved, the contents of an\nnfs\nvolume are preserved, and the volume is merely\nunmounted. This means that an NFS volume can be pre-populated with data, and\nthat data can be shared between Pods. NFS can be mounted by multiple\nwriters simultaneously.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\ntest-pd\nspec\n:\ncontainers\n:\n-\nimage\n:\nregistry.k8s.io/test-webserver\nname\n:\ntest-container\nvolumeMounts\n:\n-\nmountPath\n:\n/my-nfs-data\nname\n:\ntest-volume\nvolumes\n:\n-\nname\n:\ntest-volume\nnfs\n:\nserver\n:\nmy-nfs-server.example.com\npath\n:\n/my-nfs-volume\nreadOnly\n:\ntrue\nYou must have your own NFS server running with the share exported before you can use it.\nAlso note that you can't specify NFS mount options in a Pod spec. You can either set mount options server-side or\nuse\n/etc/nfsmount.conf\n.\nYou can also mount NFS volumes via PersistentVolumes, which do allow you to set mount options."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7c660fb64be07f39c1524c2b127d3fce",
+  "source": "k8s_docs",
+  "title": "ConfigMaps — ConfigMap object",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-object",
+  "text": "A ConfigMap is an\nAPI object\nthat lets you store configuration for other objects to use. Unlike most\nKubernetes objects that have a\nspec\n, a ConfigMap has\ndata\nand\nbinaryData\nfields. These fields accept key-value pairs as their values. Both the\ndata\nfield and the\nbinaryData\nare optional. The\ndata\nfield is designed to\ncontain UTF-8 strings while the\nbinaryData\nfield is designed to\ncontain binary data as base64-encoded strings.\nThe name of a ConfigMap must be a valid\nDNS subdomain name\n.\nEach key under the\ndata\nor the\nbinaryData\nfield must consist of\nalphanumeric characters,\n-\n,\n_\nor\n.\n. The keys stored in\ndata\nmust not\noverlap with the keys in the\nbinaryData\nfield.\nStarting from v1.19, you can add an\nimmutable\nfield to a ConfigMap\ndefinition to create an\nimmutable ConfigMap\n."
+}

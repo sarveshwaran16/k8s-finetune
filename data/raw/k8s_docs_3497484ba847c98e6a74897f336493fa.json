@@ -1,0 +1,7 @@
+{
+  "id": "3497484ba847c98e6a74897f336493fa",
+  "source": "k8s_docs",
+  "title": "Debugging DNS Resolution — Are you in the right namespace for the service?",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/#are-you-in-the-right-namespace-for-the-service",
+  "text": "DNS queries that don't specify a namespace are limited to the pod's\nnamespace.\nIf the namespace of the pod and service differ, the DNS query must include\nthe namespace of the service.\nThis query is limited to the pod's namespace:\nkubectl\nexec\n-i -t dnsutils -- nslookup <service-name>\nThis query specifies the namespace:\nkubectl\nexec\n-i -t dnsutils -- nslookup <service-name>.<namespace>\nTo learn more about name resolution, see\nDNS for Services and Pods\n."
+}

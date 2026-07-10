@@ -1,0 +1,7 @@
+{
+  "id": "a46a2f4de7265fb3d5eb141ba5274f21",
+  "source": "k8s_docs",
+  "title": "kubectl config set-context — Options",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_set-context/#options",
+  "text": "--cluster string\ncluster for the context entry in kubeconfig\n--current\nModify the current context\n-h, --help\nhelp for set-context\n-n, --namespace string\nnamespace for the context entry in kubeconfig\n--user string\nuser for the context entry in kubeconfig\ncluster for the context entry in kubeconfig\nModify the current context\nhelp for set-context\nnamespace for the context entry in kubeconfig\nuser for the context entry in kubeconfig"
+}

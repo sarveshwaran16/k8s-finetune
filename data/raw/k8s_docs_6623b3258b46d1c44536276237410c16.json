@@ -1,0 +1,7 @@
+{
+  "id": "6623b3258b46d1c44536276237410c16",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:unionDiscriminator",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-unionDiscriminator",
+  "text": "Description:\nIndicates that this field is the discriminator for a union.\nStability Level:\nStable\nArguments:\nunion\n(string, optional): The name of the union, if more than one exists.\nUsage Example:\ntype\nMyStruct\nstruct\n{\nTypeMeta\nint\n// +k8s:unionDiscriminator\nD\nD\n`json:\"d\"`\n// +k8s:unionMember\n// +k8s:optional\nM1\n*\nM1\n`json:\"m1\"`\n// +k8s:unionMember\n// +k8s:optional\nM2\n*\nM2\n`json:\"m2\"`\n}\ntype\nD\nstring\nconst\n(\nDM1\nD\n=\n\"M1\"\nDM2\nD\n=\n\"M2\"\n)\ntype\nM1\nstruct\n{}\ntype\nM2\nstruct\n{}\nIn this example, the\nType\nfield is the discriminator for the union. The value of\nType\nwill determine which of the union members (\nM1\nor\nM2\n) is expected to be present."
+}

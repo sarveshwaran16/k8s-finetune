@@ -1,0 +1,7 @@
+{
+  "id": "edb13a9dcdefefd9a395103e6d03187a",
+  "source": "k8s_docs",
+  "title": "Updating Configuration via a ConfigMap — Summary",
+  "source_url": "https://kubernetes.io/docs/tutorials/configuration/updating-configuration-via-a-configmap/#summary",
+  "text": "Changes to a ConfigMap mounted as a Volume on a Pod are available seamlessly after the subsequent kubelet sync.\nChanges to a ConfigMap that configures environment variables for a Pod are available after the subsequent rollout for the Pod.\nOnce a ConfigMap is marked as immutable, it is not possible to revert this change\n(you cannot make an immutable ConfigMap mutable), and you also cannot make any change\nto the contents of the\ndata\nor the\nbinaryData\nfield. You can delete and recreate\nthe ConfigMap, or you can make a new different ConfigMap. When you delete a ConfigMap,\nrunning containers and their Pods maintain a mount point to any volume that referenced\nthat existing ConfigMap."
+}

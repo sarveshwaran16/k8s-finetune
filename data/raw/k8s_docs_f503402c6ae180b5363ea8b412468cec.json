@@ -1,0 +1,7 @@
+{
+  "id": "f503402c6ae180b5363ea8b412468cec",
+  "source": "k8s_docs",
+  "title": "Configure Access to Multiple Clusters — Clean up",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/#clean-up",
+  "text": "Return your\nKUBECONFIG\nenvironment variable to its original value. For example:\n\nexport\nKUBECONFIG\n=\n\"\n$KUBECONFIG_SAVED\n\"\n\n$Env:KUBECONFIG\n=\n$ENV:KUBECONFIG_SAVED\n\nIt is not always obvious what attributes (username, groups) you will get after authenticating to the cluster.\nIt can be even more challenging if you are managing more than one cluster at the same time.\nThere is a\nkubectl\nsubcommand to check subject attributes, such as username, for your selected Kubernetes\nclient context:\nkubectl auth whoami\n.\nRead\nAPI access to authentication information for a client\nto learn about this in more detail."
+}

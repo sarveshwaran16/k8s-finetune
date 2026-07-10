@@ -1,7 +1,0 @@
-{
-  "id": "feadbe01e7d12c6a73d3a5a87115eb86",
-  "source": "k8s_docs",
-  "title": "Inject Data Into Applications",
-  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/",
-  "text": "Inject Data Into Applications\nSpecify configuration and other data for the Pods that run your workload.\nDefine a Command and Arguments for a Container\nDefine Dependent Environment Variables\nDefine Environment Variables for a Container\nDefine Environment Variable Values Using An Init Container\nExpose Pod Information to Containers Through Environment Variables\nExpose Pod Information to Containers Through Files\nDistribute Credentials Securely Using Secrets\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 17, 2023 at 9:14 AM PST:\nInclude index files (c4b70832dd)"
-}

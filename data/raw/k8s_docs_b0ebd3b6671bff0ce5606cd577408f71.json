@@ -1,0 +1,7 @@
+{
+  "id": "b0ebd3b6671bff0ce5606cd577408f71",
+  "source": "k8s_docs",
+  "title": "ResourcePoolStatusRequest — getRead Status",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-pool-status-request-v1alpha3/#get-read-status",
+  "text": "GET /apis/resource.k8s.io/v1alpha3/resourcepoolstatusrequests/{name}/status\nName\nType\nDescription\nname\nstring\nname of the ResourcePoolStatusRequest\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nResourcePoolStatusRequest"
+}

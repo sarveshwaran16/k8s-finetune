@@ -1,0 +1,7 @@
+{
+  "id": "ddd4067e3c33f0bb94bf659d18ff3a31",
+  "source": "k8s_docs",
+  "title": "Recommended Labels — Applications And Instances Of Applications",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/#applications-and-instances-of-applications",
+  "text": "An application can be installed one or more times into a Kubernetes cluster and,\nin some cases, the same namespace. For example, WordPress can be installed more\nthan once where different websites are different installations of WordPress.\nThe name of an application and the instance name are recorded separately. For\nexample, WordPress has a\napp.kubernetes.io/name\nof\nwordpress\nwhile it has\nan instance name, represented as\napp.kubernetes.io/instance\nwith a value of\nwordpress-abcxyz\n. This enables the application and instance of the application\nto be identifiable. Every instance of an application must have a unique name."
+}

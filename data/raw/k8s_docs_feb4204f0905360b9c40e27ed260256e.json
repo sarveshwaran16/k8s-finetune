@@ -1,0 +1,7 @@
+{
+  "id": "feb4204f0905360b9c40e27ed260256e",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_node_phase_post-upgrade/#synopsis",
+  "text": "Run post upgrade tasks\nkubeadm upgrade node phase post-upgrade [flags]\n\n--config string\nPath to a kubeadm configuration file.\n--dry-run\nDo not change any state, just output the actions that would be performed.\n-h, --help\nhelp for post-upgrade\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nPath to a kubeadm configuration file.\nDo not change any state, just output the actions that would be performed.\nhelp for post-upgrade\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file."
+}

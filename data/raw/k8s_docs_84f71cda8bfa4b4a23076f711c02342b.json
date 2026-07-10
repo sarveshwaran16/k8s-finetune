@@ -1,0 +1,7 @@
+{
+  "id": "84f71cda8bfa4b4a23076f711c02342b",
+  "source": "k8s_docs",
+  "title": "Using NodeLocal DNSCache in Kubernetes Clusters — Introduction",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/#introduction",
+  "text": "NodeLocal DNSCache improves Cluster DNS performance by running a DNS caching agent\non cluster nodes as a DaemonSet. In today's architecture, Pods in 'ClusterFirst' DNS mode\nreach out to a kube-dns\nserviceIP\nfor DNS queries. This is translated to a\nkube-dns/CoreDNS endpoint via iptables rules added by kube-proxy.\nWith this new architecture, Pods will reach out to the DNS caching agent\nrunning on the same node, thereby avoiding iptables DNAT rules and connection tracking.\nThe local caching agent will query kube-dns service for cache misses of cluster\nhostnames (\"\ncluster.local\n\" suffix by default)."
+}

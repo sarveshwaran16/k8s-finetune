@@ -1,0 +1,7 @@
+{
+  "id": "fd0520d6c2a3c9da15c7667f8cf0c83b",
+  "source": "k8s_docs",
+  "title": "Verify Signed Kubernetes Artifacts — Verifying images for all control plane components",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/verify-signed-artifacts/#verifying-images-for-all-control-plane-components",
+  "text": "To verify all signed control plane images for the latest stable version\n(v1.36.0), please run the following commands:\ncurl -Ls\n\"https://sbom.k8s.io/\n$(\ncurl -Ls https://dl.k8s.io/release/stable.txt\n)\n/release\"\n\\\n|\ngrep\n\"SPDXID: SPDXRef-Package-registry.k8s.io\"\n\\\n|\ngrep -v sha256\n|\ncut -d- -f3-\n|\nsed\n's/-/\\//'\n|\nsed\n's/-v1/:v1/'\n\\\n|\nsort > images.txt\ninput\n=\nimages.txt\nwhile\nIFS\n=\nread\n-r image\ndo\ncosign verify\n\"\n$image\n\"\n\\\n--certificate-identity krel-trust@k8s-releng-prod.iam.gserviceaccount.com\n\\\n--certificate-oidc-issuer https://accounts.google.com\n\\\n|\njq .\ndone\n<\n\"\n$input\n\"\nOnce you have verified an image, you can specify the image by its digest in your Pod\nmanifests as per this example:\nregistry-url/image-name@sha256:45b23dee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb2\nFor more information, please refer\nto the\nImage Pull Policy\nsection."
+}

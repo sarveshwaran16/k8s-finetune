@@ -1,0 +1,7 @@
+{
+  "id": "59cc784db1a666ab243ce45795085155",
+  "source": "k8s_docs",
+  "title": "Logging Architecture — System component logs",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/logging/#system-component-logs",
+  "text": "There are two types of system components: those that typically run in a container,\nand those components directly involved in running containers. For example:\nThe kubelet and container runtime do not run in containers. The kubelet runs\nyour containers (grouped together in\npods\n)\nThe Kubernetes scheduler, controller manager, and API server run within pods\n(usually\nstatic Pods\n).\nThe etcd component runs in the control plane, and most commonly also as a static pod.\nIf your cluster uses kube-proxy, you typically run this as a\nDaemonSet\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "8411e88bf38244d1d74e638d57fc0e0d",
+  "source": "k8s_docs",
+  "title": "Autoscaling Workloads — Scaling workloads manually",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/#scaling-workloads-manually",
+  "text": "Kubernetes supports\nmanual scaling\nof workloads. Horizontal scaling can be done\nusing the\nkubectl\nCLI.\nFor vertical scaling, you need to\npatch\nthe resource definition of your workload.\nSee below for examples of both strategies.\nHorizontal scaling\n:\nRunning multiple instances of your app\nVertical scaling\n:\nResizing CPU and memory resources assigned to containers"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "9131da6fca1b3aec5ff8cab546f8e8c7",
+  "source": "k8s_docs",
+  "title": "kubectl wait — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_wait/#synopsis",
+  "text": "Wait for a specific condition on one or many resources.\nThe command takes multiple resources and waits until the specified condition is seen in the Status field of every given resource.\nAlternatively, the command can wait for the given set of resources to be created or deleted by providing the \"create\" or \"delete\" keyword as the value to the --for flag.\nA successful message will be printed to stdout indicating when the specified condition has been met. You can use -o option to change to output destination.\nkubectl wait ([-f FILENAME] | resource.group/resource.name | resource.group [(-l label | --all)]) [--for=create|--for=delete|--for condition=available|--for=jsonpath='{}'[=value]]"
+}

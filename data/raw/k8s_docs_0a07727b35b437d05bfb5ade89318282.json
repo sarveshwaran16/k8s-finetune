@@ -1,0 +1,7 @@
+{
+  "id": "0a07727b35b437d05bfb5ade89318282",
+  "source": "k8s_docs",
+  "title": "Storage Classes — Parameters",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/#parameters",
+  "text": "StorageClasses have parameters that describe volumes belonging to the storage\nclass. Different parameters may be accepted depending on the\nprovisioner\n.\nWhen a parameter is omitted, some default is used.\nThere can be at most 512 parameters defined for a StorageClass.\nThe total length of the parameters object including its keys and values cannot\nexceed 256 KiB."
+}

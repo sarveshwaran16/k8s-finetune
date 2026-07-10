@@ -1,0 +1,7 @@
+{
+  "id": "3f0370446e9f9448cd30efa73b5f363d",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.alpha.kubernetes.io/tolerate-unready-endpoints (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-alpha-kubernetes-io-tolerate-unready-endpoints-deprecated",
+  "text": "Type: Annotation\nUsed on: Service\nThis annotation was formerly used to indicate that the Endpoints controller\nshould create Endpoints for unready Pods. Since Kubernetes 1.11, the preferred\nAPI for this feature has been the\n.publishNotReadyAddresses\nfield on the\nService\n. This annotation has no effect in\nKubernetes 1.36."
+}

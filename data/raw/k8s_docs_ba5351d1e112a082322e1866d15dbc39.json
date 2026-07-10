@@ -1,0 +1,7 @@
+{
+  "id": "ba5351d1e112a082322e1866d15dbc39",
+  "source": "k8s_docs",
+  "title": "NetworkPolicy — IPBlock",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/networking/network-policy-v1/#IPBlock",
+  "text": "IPBlock describes a particular CIDR (Ex. \"192.168.1.0/24\",\"2001:db8::/64\") that is allowed to the pods matched by a NetworkPolicySpec's podSelector. The except entry describes CIDRs that should not be included within this rule.\nField\nDescription\ncidr\n*\nstring\ncidr is a string representing the IPBlock Valid examples are \"192.168.1.0/24\" or \"2001:db8::/64\"\nexcept\nstring array\nexcept is a slice of CIDRs that should not be included within an IPBlock Valid examples are \"192.168.1.0/24\" or \"2001:db8::/64\" Except values will be rejected if they are outside the cidr range"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "659f43443eefdab34e501868905ca8c7",
+  "source": "k8s_docs",
+  "title": "Install and Set Up kubectl on macOS — Upgrade Bash",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#upgrade-bash",
+  "text": "The instructions here assume you use Bash 4.1+. You can check your Bash's version by running:\necho\n$BASH_VERSION\nIf it is too old, you can install/upgrade it using Homebrew:\nbrew install bash\nReload your shell and verify that the desired version is being used:\necho\n$BASH_VERSION\n$SHELL\nHomebrew usually installs it at\n/usr/local/bin/bash\n."
+}

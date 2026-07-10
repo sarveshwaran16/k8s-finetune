@@ -1,7 +1,0 @@
-{
-  "id": "74b3ec84342fabd8dab53563d019ead2",
-  "source": "k8s_docs",
-  "title": "External APIs",
-  "source_url": "https://kubernetes.io/docs/reference/external-api/",
-  "text": "External APIs\nKubernetes Custom Metrics (v1beta2)\nKubernetes External Metrics (v1beta1)\nKubernetes Metrics (v1beta1)\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 18, 2023 at 9:35 PM PST:\nAdd config APIs metrics API (bc4758e3b2)"
-}

@@ -1,0 +1,7 @@
+{
+  "id": "db302e70175cc36f476280b92d03bbf5",
+  "source": "k8s_docs",
+  "title": "kubeadm Configuration (v1beta4) — FileDiscovery",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta4/#kubeadm-k8s-io-v1beta4-FileDiscovery",
+  "text": "Appears in:\nDiscovery\nFileDiscovery is used to specify a file or URL to a kubeconfig file from which to load\ncluster information.\nField\nDescription\nkubeConfigPath\n[Required]\nstring\nkubeConfigPath\nis used to specify the actual file path or URL to the kubeconfig\nfile from which to load cluster information.\nkubeConfigPath\nis used to specify the actual file path or URL to the kubeconfig\nfile from which to load cluster information."
+}

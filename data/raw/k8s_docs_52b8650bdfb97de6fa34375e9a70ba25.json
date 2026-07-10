@@ -1,0 +1,7 @@
+{
+  "id": "52b8650bdfb97de6fa34375e9a70ba25",
+  "source": "k8s_docs",
+  "title": "Using a KMS provider for data encryption — KMS v2",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#configuring-the-kms-provider-kms-v2",
+  "text": "apiVersion\n: API Version for KMS provider. Set this to\nv2\n.\nname\n: Display name of the KMS plugin. Cannot be changed once set.\nendpoint\n: Listen address of the gRPC server (KMS plugin). The endpoint is a UNIX domain socket.\ntimeout\n: How long should\nkube-apiserver\nwait for kms-plugin to respond before\nreturning an error (default is 3 seconds).\nKMS v2 does not support the\ncachesize\nproperty. All data encryption keys (DEKs) will be cached in\nthe clear once the server has unwrapped them via a call to the KMS. Once cached, DEKs can be used\nto perform decryption indefinitely without making a call to the KMS.\nSee\nUnderstanding the encryption at rest configuration\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "e034b220e71482013d2af711feee46ea",
+  "source": "k8s_docs",
+  "title": "PodDisruptionBudget — getRead Status",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/policy/pod-disruption-budget-v1/#get-read-status",
+  "text": "GET /apis/policy/v1/namespaces/{namespace}/poddisruptionbudgets/{name}/status\nName\nType\nDescription\nname\nstring\nname of the PodDisruptionBudget\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nPodDisruptionBudget"
+}

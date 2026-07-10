@@ -1,0 +1,7 @@
+{
+  "id": "514cd15cf547cd34c2eb1980126af40d",
+  "source": "k8s_docs",
+  "title": "Distribute Credentials Securely Using Secrets — Create a Secret directly with kubectl",
+  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#create-a-secret-directly-with-kubectl",
+  "text": "If you want to skip the Base64 encoding step, you can create the\nsame Secret using the\nkubectl create secret\ncommand. For example:\nkubectl create secret generic test-secret --from-literal\n=\n'username=my-app'\n--from-literal\n=\n'password=39528$vdg7Jb'\nThis is more convenient. The detailed approach shown earlier runs\nthrough each step explicitly to demonstrate what is happening."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "2b228c7c2c9b4b4b5e2344691b0bd0f1",
+  "source": "k8s_docs",
+  "title": "Pod Lifecycle — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#what-s-next",
+  "text": "Get hands-on experience\nattaching handlers to container lifecycle events\n.\nGet hands-on experience\nconfiguring Liveness, Readiness and Startup Probes\n.\nLearn more about\ncontainer lifecycle hooks\n.\nLearn more about\nsidecar containers\n.\nFor detailed information about Pod and container status in the API, see\nthe API reference documentation covering\nstatus\nfor Pod.\nGet hands-on experience\nattaching handlers to container lifecycle events\n.\nGet hands-on experience\nconfiguring Liveness, Readiness and Startup Probes\n.\nLearn more about\ncontainer lifecycle hooks\n.\nLearn more about\nsidecar containers\n.\nFor detailed information about Pod and container status in the API, see\nthe API reference documentation covering\nstatus\nfor Pod."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "edfb6ba400ee1665662c0ff2980a0aea",
+  "source": "k8s_docs",
+  "title": "Update a Deployment Without Downtime — Monitoring rollout progress",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/#monitoring-rollout-progress",
+  "text": "Use\nkubectl rollout status\nto watch the progress of a rolling update:\nkubectl rollout status deployment/nginx-deployment\nThe output is similar to:\nWaiting for deployment \"nginx-deployment\" rollout to finish: 1 out of 2 new replicas have been updated...\nWaiting for deployment \"nginx-deployment\" rollout to finish: 1 out of 2 new replicas have been updated...\nWaiting for deployment \"nginx-deployment\" rollout to finish: 1 old replicas are pending termination...\ndeployment \"nginx-deployment\" successfully rolled out\nAfter the rollout completes, verify the Deployment:\nkubectl get deployment nginx-deployment\nThe output is similar to:\nNAME               READY   UP-TO-DATE   AVAILABLE   AGE\nnginx-deployment   2/2     2            2           2m"
+}

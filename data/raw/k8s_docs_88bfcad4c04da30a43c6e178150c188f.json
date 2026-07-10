@@ -1,0 +1,7 @@
+{
+  "id": "88bfcad4c04da30a43c6e178150c188f",
+  "source": "k8s_docs",
+  "title": "kubectl taint — Examples",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_taint/#examples",
+  "text": "# Update node 'foo' with a taint with key 'dedicated' and value 'special-user' and effect 'NoSchedule'\n  # If a taint with that key and effect already exists, its value is replaced as specified\n  kubectl taint nodes foo dedicated=special-user:NoSchedule\n  \n  # Remove from node 'foo' the taint with key 'dedicated' and effect 'NoSchedule' if one exists\n  kubectl taint nodes foo dedicated:NoSchedule-\n  \n  # Remove from node 'foo' all the taints with key 'dedicated'\n  kubectl taint nodes foo dedicated-\n  \n  # Add a taint with key 'dedicated' on nodes having label myLabel=X\n  kubectl taint node -l myLabel=X  dedicated=foo:PreferNoSchedule\n  \n  # Add to node 'foo' a taint with key 'bar' and no value\n  kubectl taint nodes foo bar:NoSchedule"
+}

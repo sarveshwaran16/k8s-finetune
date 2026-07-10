@@ -1,0 +1,7 @@
+{
+  "id": "15dddb0481e39303e7ddb75b9afe8ea1",
+  "source": "k8s_docs",
+  "title": "Pod — EnvVarSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#EnvVarSource",
+  "text": "EnvVarSource represents a source for the value of an EnvVar.\nField\nDescription\nconfigMapKeyRef\nConfigMapKeySelector\nSelects a key of a ConfigMap.\nfieldRef\nObjectFieldSelector\nSelects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['\\\n']`, `metadata.annotations['\\\n']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.\nfileKeyRef\nFileKeySelector\nFileKeyRef selects a key of the env file. Requires the EnvFiles feature gate to be enabled.\nresourceFieldRef\nResourceFieldSelector\nSelects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.\nsecretKeyRef\nSecretKeySelector\nSelects a key of a secret in the pod's namespace"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "43c02223dbdb2a7435b3ff0013a109d7",
+  "source": "k8s_docs",
+  "title": "Managing Secrets using Configuration File — Specify bothdataandstringData",
+  "source_url": "https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-config-file/#specify-both-data-and-stringdata",
+  "text": "If you specify a field in both\ndata\nand\nstringData\n, the value from\nstringData\nis used.\nFor example, if you define the following Secret:\napiVersion\n:\nv1\nkind\n:\nSecret\nmetadata\n:\nname\n:\nmysecret\ntype\n:\nOpaque\ndata\n:\nusername\n:\nYWRtaW4=\nstringData\n:\nusername\n:\nadministrator\nThe\nSecret\nobject is created as follows:\napiVersion\n:\nv1\ndata\n:\nusername\n:\nYWRtaW5pc3RyYXRvcg==\nkind\n:\nSecret\nmetadata\n:\ncreationTimestamp\n:\n2018-11-15T20:46:46Z\nname\n:\nmysecret\nnamespace\n:\ndefault\nresourceVersion\n:\n\"7579\"\nuid\n:\n91460ecb-e917-11e8-98f2-025000000001\ntype\n:\nOpaque\nYWRtaW5pc3RyYXRvcg==\ndecodes to\nadministrator\n."
+}

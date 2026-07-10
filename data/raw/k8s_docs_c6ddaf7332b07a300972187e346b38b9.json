@@ -1,0 +1,7 @@
+{
+  "id": "c6ddaf7332b07a300972187e346b38b9",
+  "source": "k8s_docs",
+  "title": "CSIDriver — CSIDriverList",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/csi-driver-v1/#CSIDriverList",
+  "text": "CSIDriverList is a collection of CSIDriver objects.\nField\nDescription\napiVersion\nstring\nAPIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources\nitems\n*\nCSIDriver array\nitems is the list of CSIDriver\nkind\nstring\nKind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nmetadata\nListMeta\nStandard list metadata More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
+}

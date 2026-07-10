@@ -1,0 +1,7 @@
+{
+  "id": "42a7f9ed262ebda4d0a1072705541747",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler Walkthrough — Creating the autoscaler declaratively",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#creating-the-autoscaler-declaratively",
+  "text": "Instead of using\nkubectl autoscale\ncommand to create a HorizontalPodAutoscaler imperatively we\ncan use the following manifest to create it declaratively:\napiVersion\n:\nautoscaling/v2\nkind\n:\nHorizontalPodAutoscaler\nmetadata\n:\nname\n:\nphp-apache\nspec\n:\nscaleTargetRef\n:\napiVersion\n:\napps/v1\nkind\n:\nDeployment\nname\n:\nphp-apache\nminReplicas\n:\n1\nmaxReplicas\n:\n10\nmetrics\n:\n-\ntype\n:\nResource\nresource\n:\nname\n:\ncpu\ntarget\n:\ntype\n:\nUtilization\naverageUtilization\n:\n50\nThen, create the autoscaler by executing the following command:\nkubectl create -f https://k8s.io/examples/application/hpa/php-apache.yaml\nhorizontalpodautoscaler.autoscaling/php-apache created"
+}

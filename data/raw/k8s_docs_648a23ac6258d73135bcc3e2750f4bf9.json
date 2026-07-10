@@ -1,0 +1,7 @@
+{
+  "id": "648a23ac6258d73135bcc3e2750f4bf9",
+  "source": "k8s_docs",
+  "title": "Pod Lifecycle — Garbage collection of Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-garbage-collection",
+  "text": "For failed Pods, the API objects remain in the cluster's API until a human or\ncontroller\nprocess\nexplicitly removes them.\nThe Pod garbage collector (PodGC), which is a controller in the control plane, cleans up\nterminated Pods (with a phase of\nSucceeded\nor\nFailed\n), when the number of Pods exceeds the\nconfigured threshold (determined by\nterminated-pod-gc-threshold\nin the kube-controller-manager).\nThis avoids a resource leak as Pods are created and terminated over time.\nAdditionally, PodGC cleans up any Pods which satisfy any of the following conditions:\nare orphan Pods - bound to a node which no longer exists,\nare unscheduled terminating Pods,\nare terminating Pods, bound to a non-ready node tainted with\nnode.kubernetes.io/out-of-service\n.\nAlong with cleaning up the Pods, PodGC will also mark them as failed if they are in a non-terminal\nphase. Also, PodGC adds a Pod disruption condition when cleaning up an orphan Pod.\nSee\nPod disruption conditions\nfor more details."
+}

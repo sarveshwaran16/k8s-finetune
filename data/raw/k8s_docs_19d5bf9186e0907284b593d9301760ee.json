@@ -1,0 +1,7 @@
+{
+  "id": "19d5bf9186e0907284b593d9301760ee",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — endpoints.kubernetes.io/last-change-trigger-time (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#endpoints-kubernetes-io-last-change-trigger-time",
+  "text": "Type: Annotation\nExample:\nendpoints.kubernetes.io/last-change-trigger-time: \"2023-07-20T04:45:21Z\"\nUsed on: Endpoints\nThis annotation set to an\nEndpoints\nobject that\nrepresents the timestamp (The timestamp is stored in RFC 3339 date-time string format. For example, '2018-10-22T19:32:52.1Z'). This is timestamp\nof the last change in some Pod or Service object, that triggered the change to the Endpoints object."
+}

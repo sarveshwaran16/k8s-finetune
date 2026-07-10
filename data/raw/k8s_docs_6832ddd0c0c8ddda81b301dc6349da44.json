@@ -1,0 +1,7 @@
+{
+  "id": "6832ddd0c0c8ddda81b301dc6349da44",
+  "source": "k8s_docs",
+  "title": "Pod — SELinuxOptions",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#SELinuxOptions",
+  "text": "SELinuxOptions are the labels to be applied to the container\nField\nDescription\nlevel\nstring\nLevel is SELinux level label that applies to the container.\nrole\nstring\nRole is a SELinux role label that applies to the container.\ntype\nstring\nType is a SELinux type label that applies to the container.\nuser\nstring\nUser is a SELinux user label that applies to the container."
+}

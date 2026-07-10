@@ -3,5 +3,5 @@
   "source": "k8s_docs",
   "title": "Networking Reference",
   "source_url": "https://kubernetes.io/docs/reference/networking/",
-  "text": "Networking Reference\nThis section of the Kubernetes documentation provides reference details\nof Kubernetes networking.\nProtocols for Services\nPorts and Protocols\nVirtual IPs and Service Proxies\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified November 24, 2022 at 6:11 PM PST:\nSet page weights (b581bd417a)"
+  "text": "This section of the Kubernetes documentation provides reference details\nof Kubernetes networking.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
 }

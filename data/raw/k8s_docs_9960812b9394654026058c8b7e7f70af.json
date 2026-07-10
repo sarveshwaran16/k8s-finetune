@@ -1,0 +1,7 @@
+{
+  "id": "9960812b9394654026058c8b7e7f70af",
+  "source": "k8s_docs",
+  "title": "Example: Deploying Cassandra with a StatefulSet — What's next",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/cassandra/#what-s-next",
+  "text": "Learn how to\nScale a StatefulSet\n.\nLearn more about the\nKubernetesSeedProvider\nSee more custom\nSeed Provider Configurations\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "08d6e7f4651eacd90fc7b020febbd398",
+  "source": "k8s_docs",
+  "title": "DaemonSet — Bare Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#bare-pods",
+  "text": "It is possible to create Pods directly which specify a particular node to run on. However,\na DaemonSet replaces Pods that are deleted or terminated for any reason, such as in the case of\nnode failure or disruptive node maintenance, such as a kernel upgrade. For this reason, you should\nuse a DaemonSet rather than creating individual Pods."
+}

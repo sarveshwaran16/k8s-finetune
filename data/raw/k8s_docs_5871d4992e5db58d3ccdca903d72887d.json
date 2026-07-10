@@ -1,0 +1,7 @@
+{
+  "id": "5871d4992e5db58d3ccdca903d72887d",
+  "source": "k8s_docs",
+  "title": "Installing kubeadm — Swap configuration",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#swap-configuration",
+  "text": "The default behavior of a kubelet is to fail to start if swap memory is detected on a node.\nThis means that swap should either be disabled or tolerated by kubelet.\nTo tolerate swap, add\nfailSwapOn: false\nto kubelet configuration or as a command line argument.\nNote: even if\nfailSwapOn: false\nis provided, workloads wouldn't have swap access by default.\nThis can be changed by setting a\nswapBehavior\n, again in the kubelet configuration file. To use swap,\nset a\nswapBehavior\nother than the default\nNoSwap\nsetting.\nSee\nSwap memory management\nfor more details.\nTo disable swap,\nsudo swapoff -a\ncan be used to disable swapping temporarily.\nTo make this change persistent across reboots, make sure swap is disabled in\nconfig files like\n/etc/fstab\n,\nsystemd.swap\n, depending how it was configured on your system."
+}

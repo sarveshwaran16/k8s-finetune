@@ -1,0 +1,7 @@
+{
+  "id": "014fb0425ae0264b82624720f46fdfb6",
+  "source": "k8s_docs",
+  "title": "PodGroup Scheduling Policies — Setting policies via PodGroupTemplates",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/policies/#setting-policies-via-podgrouptemplates",
+  "text": "When using the\nWorkload API\n, you define scheduling\npolicies inside\nPodGroupTemplates\n. The workload controller copies the policy from the\ntemplate into each PodGroup it creates, making the PodGroup self-contained. Changes to the\nWorkload's templates only affect newly created PodGroups, not existing ones.\nFor standalone PodGroups (created without a Workload), you set\nspec.schedulingPolicy\ndirectly on the PodGroup itself."
+}

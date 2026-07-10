@@ -1,0 +1,7 @@
+{
+  "id": "3781f703761f7853a10d3f5865a657e9",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1beta1) — EgressSelection",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1beta1/#apiserver-k8s-io-v1beta1-EgressSelection",
+  "text": "Appears in:\nEgressSelectorConfiguration\nEgressSelection provides the configuration for a single egress selection client.\nField\nDescription\nname\n[Required]\nstring\nname is the name of the egress selection.\nCurrently supported values are \"controlplane\", \"master\", \"etcd\" and \"cluster\"\nThe \"master\" egress selector is deprecated in favor of \"controlplane\"\nconnection\n[Required]\nConnection\nconnection is the exact information used to configure the egress selection\nname is the name of the egress selection.\nCurrently supported values are \"controlplane\", \"master\", \"etcd\" and \"cluster\"\nThe \"master\" egress selector is deprecated in favor of \"controlplane\"\nconnection is the exact information used to configure the egress selection"
+}

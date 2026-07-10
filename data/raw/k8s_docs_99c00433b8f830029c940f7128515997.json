@@ -1,0 +1,7 @@
+{
+  "id": "99c00433b8f830029c940f7128515997",
+  "source": "k8s_docs",
+  "title": "Troubleshooting Topology Management — TroubleshootTopologyAffinityError",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/topology/#TopologyAffinityError",
+  "text": "This error typically occurs in the following situations:\na node has not enough resources available to satisfy the pod's request\nthe pod's request is rejected due to particular Topology Manager policy constraints\nThe error appears in the status of a pod:\nkubectl get pods\nNAME         READY   STATUS                  RESTARTS   AGE\nguaranteed   0/1     TopologyAffinityError   0          113s\nUse\nkubectl describe pod <id>\nor\nkubectl events\nto obtain a detailed error message:\nWarning  TopologyAffinityError  10m   kubelet, dell8  Resources cannot be allocated with Topology locality"
+}

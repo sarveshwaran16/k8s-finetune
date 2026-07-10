@@ -1,0 +1,7 @@
+{
+  "id": "6fcd31b62cc5622f684dd869cf45d9e6",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1) — Key",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-Key",
+  "text": "Appears in:\nAESConfiguration\nSecretboxConfiguration\nAESConfiguration\nSecretboxConfiguration\nKey contains name and secret of the provided key for a transformer.\nField\nDescription\nname\n[Required]\nstring\nname is the name of the key to be used while storing data to disk.\nsecret\n[Required]\nstring\nsecret is the actual key, encoded in base64.\nname is the name of the key to be used while storing data to disk.\nsecret is the actual key, encoded in base64."
+}

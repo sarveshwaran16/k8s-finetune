@@ -1,0 +1,7 @@
+{
+  "id": "8c47b5c9e1a63318d74aa5499fe8bf80",
+  "source": "k8s_docs",
+  "title": "Running Kubelet in Standalone Mode — Where to look for more details",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#where-to-look-for-more-details",
+  "text": "If you need to diagnose a problem getting this tutorial to work, you can look\nwithin the following directories for monitoring and troubleshooting:\n/var/lib/cni\n/var/lib/containers\n/var/lib/kubelet\n\n/var/log/containers\n/var/log/pods\n\nsudo systemctl disable --now kubelet.service\nsudo systemctl daemon-reload\nsudo rm /etc/systemd/system/kubelet.service\nsudo rm /usr/bin/kubelet\nsudo rm -rf /etc/kubernetes\nsudo rm -rf /var/lib/kubelet\nsudo rm -rf /var/log/containers\nsudo rm -rf /var/log/pods"
+}

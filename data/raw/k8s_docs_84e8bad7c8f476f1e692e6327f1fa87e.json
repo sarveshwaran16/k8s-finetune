@@ -1,0 +1,7 @@
+{
+  "id": "84e8bad7c8f476f1e692e6327f1fa87e",
+  "source": "k8s_docs",
+  "title": "Perform a Rollback on a DaemonSet — Step 1: Find the DaemonSet revision you want to roll back to",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/rollback-daemon-set/#step-1-find-the-daemonset-revision-you-want-to-roll-back-to",
+  "text": "You can skip this step if you only want to roll back to the last revision.\nList all revisions of a DaemonSet:\nkubectl rollout\nhistory\ndaemonset <daemonset-name>\nThis returns a list of DaemonSet revisions:\ndaemonsets \"<daemonset-name>\"\nREVISION        CHANGE-CAUSE\n1               ...\n2               ...\n...\nChange cause is copied from DaemonSet annotation\nkubernetes.io/change-cause\nto its revisions upon creation. You may specify\n--record=true\nin\nkubectl\nto record the command executed in the change cause annotation.\nTo see the details of a specific revision:\nkubectl rollout\nhistory\ndaemonset <daemonset-name> --revision\n=\n1\nThis returns the details of that revision:\ndaemonsets \"<daemonset-name>\" with revision #1\nPod Template:\nLabels:       foo=bar\nContainers:\napp:\n Image:        ...\n Port:         ...\n Environment:  ...\n Mounts:       ...\nVolumes:      ..."
+}

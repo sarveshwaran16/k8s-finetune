@@ -1,0 +1,7 @@
+{
+  "id": "609e2e210c4789b53faea3e70b84a022",
+  "source": "k8s_docs",
+  "title": "Pods — Pod security settings",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#pod-security",
+  "text": "To set security constraints on Pods and containers, you use the\nsecurityContext\nfield in the Pod specification. This field gives you\ngranular control over what a Pod or individual containers can do. See\nAdvanced Pod Configuration\nfor more details.\nFor basic security configuration, you should meet the Baseline Pod security standard and run containers as non-root. You can set simple security contexts:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nsecurity-context-demo\nspec\n:\nsecurityContext\n:\nrunAsUser\n:\n1000\nrunAsGroup\n:\n3000\nfsGroup\n:\n2000\ncontainers\n:\n-\nname\n:\nsec-ctx-demo\nimage\n:\nbusybox\ncommand\n:\n[\n\"sh\"\n,\n\"-c\"\n,\n\"sleep 1h\"\n]\nFor advanced security context configuration including capabilities, seccomp profiles, and detailed security options, see the\nsecurity concepts\nsection.\nTo learn about kernel-level security constraints that you can use,\nsee\nLinux kernel security constraints for Pods and containers\n.\nTo learn more about the Pod security context, see\nConfigure a Security Context for a Pod or Container\n."
+}

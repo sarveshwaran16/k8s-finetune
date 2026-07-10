@@ -1,0 +1,7 @@
+{
+  "id": "c42aea69e00a29fe942a6bd1513d897e",
+  "source": "k8s_docs",
+  "title": "kubectl set image — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_set/kubectl_set_image/#synopsis",
+  "text": "Update existing container image(s) of resources.\nPossible resources include (case insensitive):\npod (po), replicationcontroller (rc), deployment (deploy), daemonset (ds), statefulset (sts), cronjob (cj), replicaset (rs)\nkubectl set image (-f FILENAME | TYPE NAME) CONTAINER_NAME_1=CONTAINER_IMAGE_1 ... CONTAINER_NAME_N=CONTAINER_IMAGE_N"
+}

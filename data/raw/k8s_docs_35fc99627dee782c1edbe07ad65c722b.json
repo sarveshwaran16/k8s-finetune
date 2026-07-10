@@ -1,0 +1,7 @@
+{
+  "id": "35fc99627dee782c1edbe07ad65c722b",
+  "source": "k8s_docs",
+  "title": "Resize CPU and Memory Resources assigned to Containers — LeveragingobservedGenerationFields",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/#leveraging-observedgeneration-fields",
+  "text": "The top-level\nstatus.observedGeneration\nfield shows the\nmetadata.generation\ncorresponding to the latest pod specification that the kubelet has acknowledged. You can use this to determine the most recent resize request the kubelet has processed.\nIn the\nPodResizeInProgress\ncondition, the\nconditions[].observedGeneration\nfield indicates the\nmetadata.generation\nof the podSpec when the current in-progress resize was initiated.\nIn the\nPodResizePending\ncondition, the\nconditions[].observedGeneration\nfield indicates the\nmetadata.generation\nof the podSpec when the pending resize's allocation was last attempted."
+}

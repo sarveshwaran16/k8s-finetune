@@ -1,0 +1,7 @@
+{
+  "id": "bcb11d5ba4d77470eaf6274c0ab0fdbe",
+  "source": "k8s_docs",
+  "title": "Configure a Security Context for a Pod or Container — Delegating volume permission and ownership change to CSI driver",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#delegating-volume-permission-and-ownership-change-to-csi-driver",
+  "text": "If you deploy a\nContainer Storage Interface (CSI)\ndriver which supports the\nVOLUME_MOUNT_GROUP\nNodeServiceCapability\n, the\nprocess of setting file ownership and permissions based on the\nfsGroup\nspecified in the\nsecurityContext\nwill be performed by the CSI driver\ninstead of Kubernetes. In this case, since Kubernetes doesn't perform any\nownership and permission change,\nfsGroupChangePolicy\ndoes not take effect, and\nas specified by CSI, the driver is expected to mount the volume with the\nprovided\nfsGroup\n, resulting in a volume that is readable/writable by the\nfsGroup\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6d9bfcc37e65f18dc412bc0f74c5fb0e",
+  "source": "k8s_docs",
+  "title": "Resource Management for Pods and Containers — Pod resources example",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#example-2",
+  "text": "This feature can be enabled by setting the\nPodLevelResources\nfeature gate\n.\nThe following Pod has an explicit request of 1 CPU and 100 MiB of memory, and an\nexplicit limit of 1 CPU and 200 MiB of memory. The\npod-resources-demo-ctr-1\ncontainer has explicit requests and limits set. However, the\npod-resources-demo-ctr-2\ncontainer will simply share the resources available\nwithin the Pod resource boundaries, as it does not have explicit requests and limits\nset.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\npod-resources-demo\nnamespace\n:\npod-resources-example\nspec\n:\nresources\n:\nlimits\n:\ncpu\n:\n\"1\"\nmemory\n:\n\"200Mi\"\nrequests\n:\ncpu\n:\n\"1\"\nmemory\n:\n\"100Mi\"\ncontainers\n:\n-\nname\n:\npod-resources-demo-ctr-1\nimage\n:\nnginx\nresources\n:\nlimits\n:\ncpu\n:\n\"0.5\"\nmemory\n:\n\"100Mi\"\nrequests\n:\ncpu\n:\n\"0.5\"\nmemory\n:\n\"50Mi\"\n-\nname\n:\npod-resources-demo-ctr-2\nimage\n:\nfedora\ncommand\n:\n-\nsleep\n-\ninf"
+}

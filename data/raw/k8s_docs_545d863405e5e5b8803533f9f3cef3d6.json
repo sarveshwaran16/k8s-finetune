@@ -1,0 +1,7 @@
+{
+  "id": "545d863405e5e5b8803533f9f3cef3d6",
+  "source": "k8s_docs",
+  "title": "Upgrade A Cluster — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/#before-you-begin",
+  "text": "You must have an existing cluster. This page is about upgrading from Kubernetes\n1.35 to Kubernetes 1.36. If your cluster\nis not currently running Kubernetes 1.35 then please check\nthe documentation for the version of Kubernetes that you plan to upgrade to.\nOn Linux nodes, the kubelet defaults to supporting only cgroups v2.\nFor Kubernetes 1.36 the\nFailCgroupV1\nkubelet configuration option is set to\ntrue\nby default.\nTo learn more, refer to the\nKubernetes cgroup v1 deprecation documentation\n."
+}

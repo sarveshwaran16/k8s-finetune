@@ -1,7 +1,0 @@
-{
-  "id": "14546325af2af178acf3a398a5267e5c",
-  "source": "k8s_docs",
-  "title": "Assign Devices to Pods and Containers",
-  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/",
-  "text": "Assign Devices to Pods and Containers\nAssign infrastructure resources to your Kubernetes workloads.\nSet Up DRA in a Cluster\nAllocate Devices to Workloads with DRA\nAccess DRA Device Metadata\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified May 26, 2025 at 7:26 PM PST:\nAdd how-to guides for basic DRA task (44c0c10d2f)"
-}

@@ -1,0 +1,7 @@
+{
+  "id": "bf86244d10f7c8e6a0205bfc1e7cb524",
+  "source": "k8s_docs",
+  "title": "Kubernetes Default ServiceCIDR Reconfiguration",
+  "source_url": "https://kubernetes.io/docs/tasks/network/reconfigure-default-service-ip-ranges/#kubernetes-default-servicecidr-reconfiguration",
+  "text": "This document explains how to manage the Service IP address range within a\nKubernetes cluster, which also influences the cluster's supported IP families\nfor Services.\nThe IP families available for Service ClusterIPs are determined by the\n--service-cluster-ip-range\nflag to kube-apiserver. For a better\nunderstanding of Service IP address allocation, refer to the\nServices IP address allocation tracking\ndocumentation.\nSince Kubernetes 1.33, the Service IP families configured for the cluster are\nreflected by the ServiceCIDR object named\nkubernetes\n. The\nkubernetes\nServiceCIDR\nobject is created by the first kube-apiserver instance that starts, based on its\nconfigured\n--service-cluster-ip-range\nflag. To ensure consistent cluster behavior,\nall kube-apiserver instances must be configured with the same\n--service-cluster-ip-range\nvalues,\nwhich must match the default\nkubernetes\nServiceCIDR object."
+}

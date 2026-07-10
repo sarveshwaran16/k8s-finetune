@@ -1,0 +1,7 @@
+{
+  "id": "03e2a5b6724377109eefaadb3696f3ae",
+  "source": "k8s_docs",
+  "title": "kubectl Usage Conventions — Subresources",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/conventions/#subresources",
+  "text": "You can use the\n--subresource\nargument for kubectl subcommands such as\nget\n,\npatch\n,\nedit\n,\napply\nand\nreplace\nto fetch and update subresources for all resources that\nsupport them. In Kubernetes version 1.36, only the\nstatus\n,\nscale\nand\nresize\nsubresources are supported.\nFor\nkubectl edit\n, the\nscale\nsubresource is not supported. If you use\n--subresource\nwith\nkubectl edit\nand specify\nscale\nas the subresource, the command will error out.\nThe API contract against a subresource is identical to a full resource. While updating the\nstatus\nsubresource to a new value, keep in mind that the subresource could be potentially\nreconciled by a controller to a different value.\nFor\nkubectl edit\n, the\nscale\nsubresource is not supported. If you use\n--subresource\nwith\nkubectl edit\nand specify\nscale\nas the subresource, the command will error out."
+}

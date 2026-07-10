@@ -1,0 +1,7 @@
+{
+  "id": "9ebccff1ffbe02b2c8bce0f0fbae563c",
+  "source": "k8s_docs",
+  "title": "Windows containers in Kubernetes — Reporting issues and feature requests",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/intro/#reporting-issues-and-feature-requests",
+  "text": "If you have what looks like a bug, or you would like to\nmake a feature request, please follow the\nSIG Windows contributing guide\nto create a new issue.\nYou should first search the list of issues in case it was\nreported previously and comment with your experience on the issue and add additional\nlogs. SIG Windows channel on the Kubernetes Slack is also a great avenue to get some initial support and\ntroubleshooting ideas prior to creating a ticket."
+}

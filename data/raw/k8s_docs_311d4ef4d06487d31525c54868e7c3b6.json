@@ -1,0 +1,7 @@
+{
+  "id": "311d4ef4d06487d31525c54868e7c3b6",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_join/kubeadm_join_phase_control-plane-join_mark-control-plane/#synopsis",
+  "text": "Mark a node as a control-plane\nkubeadm join phase control-plane-join mark-control-plane [flags]\n\n--config string\nPath to a kubeadm configuration file.\n--control-plane\nCreate a new control plane instance on this node\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for mark-control-plane\n--node-name string\nSpecify the node name.\nPath to a kubeadm configuration file.\nCreate a new control plane instance on this node\nDon't apply any changes; just output what would be done.\nhelp for mark-control-plane\nSpecify the node name."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "65b78a243902c9970cc89e99947f07d3",
+  "source": "k8s_docs",
+  "title": "Update API Objects in Place Using kubectl patch — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/#what-s-next",
+  "text": "Kubernetes Object Management\nManaging Kubernetes Objects Using Imperative Commands\nImperative Management of Kubernetes Objects Using Configuration Files\nDeclarative Management of Kubernetes Objects Using Configuration Files\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

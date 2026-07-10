@@ -1,0 +1,7 @@
+{
+  "id": "f9d26ddd074d6d242e2e84d0f816a5c3",
+  "source": "k8s_docs",
+  "title": "Configure Quotas for API Objects — Attempt to create a second PersistentVolumeClaim",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/quota-api-object/#attempt-to-create-a-second-persistentvolumeclaim",
+  "text": "Here is the configuration file for a second PersistentVolumeClaim:\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\npvc-quota-demo-2\nspec\n:\nstorageClassName\n:\nmanual\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n4Gi\nAttempt to create the second PersistentVolumeClaim:\nkubectl apply -f https://k8s.io/examples/admin/resource/quota-objects-pvc-2.yaml --namespace\n=\nquota-object-example\nThe output shows that the second PersistentVolumeClaim was not created,\nbecause it would have exceeded the quota for the namespace.\npersistentvolumeclaims \"pvc-quota-demo-2\" is forbidden:\nexceeded quota: object-quota-demo, requested: persistentvolumeclaims=1,\nused: persistentvolumeclaims=1, limited: persistentvolumeclaims=1"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "2499b1bd916c7a675b17019c3bb07451",
+  "source": "k8s_docs",
+  "title": "Runtime Class — Pod Overhead",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/runtime-class/#pod-overhead",
+  "text": "You can specify\noverhead\nresources that are associated with running a Pod. Declaring overhead allows\nthe cluster (including the scheduler) to account for it when making decisions about Pods and resources.\nPod overhead is defined in RuntimeClass through the\noverhead\nfield. Through the use of this field,\nyou can specify the overhead of running pods utilizing this RuntimeClass and ensure these overheads\nare accounted for in Kubernetes."
+}

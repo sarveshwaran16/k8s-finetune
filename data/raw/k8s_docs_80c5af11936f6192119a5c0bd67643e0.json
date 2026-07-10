@@ -1,0 +1,7 @@
+{
+  "id": "80c5af11936f6192119a5c0bd67643e0",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Server Bypass Risks — Mitigations",
+  "source_url": "https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/#mitigations",
+  "text": "Restrict access to sub-resources of the\nnodes\nAPI object using mechanisms such as\nRBAC\n. Only grant this access when required,\nsuch as by monitoring services.\nAvoid granting the\nnodes/proxy\ncatch-all permission, even with just the\nget\nverb.\nInstead, grant\ngranular permissions\n.\nRestrict access to the kubelet port. Only allow specified and trusted IP address\nranges to access the port.\nEnsure that\nkubelet authentication\n.\nis set to webhook or certificate mode.\nEnsure that the unauthenticated \"read-only\" Kubelet port is not enabled on the cluster."
+}

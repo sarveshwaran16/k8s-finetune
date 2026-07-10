@@ -1,0 +1,7 @@
+{
+  "id": "6a8abd628101a0d66441586aa77cf91d",
+  "source": "k8s_docs",
+  "title": "Kubectl user preferences (kuberc) — Example",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kuberc/#credential-plugin-policy-example",
+  "text": "The following example shows an\n\"Allowlist\"\npolicy with its allowlist:\nPOSIX\nWindows\napiVersion\n:\nkubectl.config.k8s.io/v1beta1\nkind\n:\nPreference\ncredentialPluginPolicy\n:\nAllowlist\ncredentialPluginAllowlist\n:\n-\ncommand\n:\nmy-trusted-binary\n-\ncommand\n:\n/usr/local/bin/my-other-trusted-binary\napiVersion\n:\nkubectl.config.k8s.io/v1beta1\nkind\n:\nPreference\ncredentialPluginPolicy\n:\nAllowlist\ncredentialPluginAllowlist\n:\n-\ncommand\n:\nmy-trusted-binary\n-\ncommand\n:\n\"C:\\my-other-trusted-binary\""
+}

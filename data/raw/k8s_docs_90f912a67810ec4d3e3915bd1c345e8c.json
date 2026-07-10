@@ -1,0 +1,7 @@
+{
+  "id": "90f912a67810ec4d3e3915bd1c345e8c",
+  "source": "k8s_docs",
+  "title": "ReplicationController — Rolling updates",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#rolling-updates",
+  "text": "The ReplicationController is designed to facilitate rolling updates to a service by replacing pods one-by-one.\nAs explained in\n#1353\n, the recommended approach is to create a new ReplicationController with 1 replica, scale the new (+1) and old (-1) controllers one by one, and then delete the old controller after it reaches 0 replicas. This predictably updates the set of pods regardless of unexpected failures.\nIdeally, the rolling update controller would take application readiness into account, and would ensure that a sufficient number of pods were productively serving at any given time.\nThe two ReplicationControllers would need to create pods with at least one differentiating label, such as the image tag of the primary container of the pod, since it is typically image updates that motivate rolling updates."
+}

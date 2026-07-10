@@ -1,0 +1,7 @@
+{
+  "id": "51dd16b5d20a2fea74d537b8ff258c39",
+  "source": "k8s_docs",
+  "title": "The Kubernetes API — Protobuf serialization",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/#protobuf-serialization",
+  "text": "Kubernetes implements an alternative Protobuf based serialization format that\nis primarily intended for intra-cluster communication. For more information\nabout this format, see the\nKubernetes Protobuf serialization\ndesign proposal and the\nInterface Definition Language (IDL) files for each schema located in the Go\npackages that define the API objects."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "d3ddbd76c648c3f99ffc3f5a2ca2ae6c",
+  "source": "k8s_docs",
+  "title": "CustomResourceDefinition — CustomResourceValidation",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiextensions/custom-resource-definition-v1/#CustomResourceValidation",
+  "text": "CustomResourceValidation is a list of validation methods for CustomResources.\nField\nDescription\nopenAPIV3Schema\nJSONSchemaProps\nopenAPIV3Schema is the OpenAPI v3 schema to use for validation and pruning.\n\nExternalDocumentation allows referencing an external resource for extended documentation.\nField\nDescription\ndescription\nstring\nurl\nstring"
+}

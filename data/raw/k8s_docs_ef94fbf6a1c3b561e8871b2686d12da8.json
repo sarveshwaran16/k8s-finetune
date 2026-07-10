@@ -1,0 +1,7 @@
+{
+  "id": "ef94fbf6a1c3b561e8871b2686d12da8",
+  "source": "k8s_docs",
+  "title": "Running Kubelet in Standalone Mode — Install network plugins",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#install-network-plugins",
+  "text": "The\ncri-o\ninstaller installs and configures the\ncni-plugins\npackage. You can\nverify the installation running the following command:\n/opt/cni/bin/bridge --version\nThe output is similar to:\nCNI bridge plugin v1.5.1\nCNI protocol versions supported: 0.1.0, 0.2.0, 0.3.0, 0.3.1, 0.4.0, 1.0.0\nTo check the default configuration:\ncat /etc/cni/net.d/11-crio-ipv4-bridge.conflist\nThe output is similar to:\n{\n\"cniVersion\"\n:\n\"1.0.0\"\n,\n\"name\"\n:\n\"crio\"\n,\n\"plugins\"\n:\n[\n{\n\"type\"\n:\n\"bridge\"\n,\n\"bridge\"\n:\n\"cni0\"\n,\n\"isGateway\"\n:\ntrue\n,\n\"ipMasq\"\n:\ntrue\n,\n\"hairpinMode\"\n:\ntrue\n,\n\"ipam\"\n:\n{\n\"type\"\n:\n\"host-local\"\n,\n\"routes\"\n:\n[\n{\n\"dst\"\n:\n\"0.0.0.0/0\"\n}\n],\n\"ranges\"\n:\n[\n[{\n\"subnet\"\n:\n\"10.85.0.0/16\"\n}]\n]\n}\n}\n]\n}"
+}

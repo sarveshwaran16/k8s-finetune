@@ -1,7 +1,0 @@
-{
-  "id": "9373b34b7d920f2153fb780cbe1c5dc4",
-  "source": "k8s_docs",
-  "title": "Manage Cluster Daemons",
-  "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/",
-  "text": "Manage Cluster Daemons\nPerform common tasks for managing a DaemonSet, such as performing a rolling update.\nBuilding a Basic DaemonSet\nPerform a Rolling Update on a DaemonSet\nPerform a Rollback on a DaemonSet\nRunning Pods on Only Some Nodes\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified June 16, 2021 at 5:57 PM PST:\nRemove exec permission on markdown files (e9703497a1)"
-}

@@ -1,0 +1,7 @@
+{
+  "id": "56afce0e5ed4eacb2c904ee97b1c0a86",
+  "source": "k8s_docs",
+  "title": "Pod — Sysctl",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#Sysctl",
+  "text": "Sysctl defines a kernel parameter to be set\nField\nDescription\nname\n*\nstring\nName of a property to set\nvalue\n*\nstring\nValue of a property to set\n\nTCPSocketAction describes an action based on opening a socket\nField\nDescription\nhost\nstring\nOptional: Host name to connect to, defaults to the pod IP.\nport\n*\nNumber or name of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME."
+}

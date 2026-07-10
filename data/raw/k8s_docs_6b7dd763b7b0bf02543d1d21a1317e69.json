@@ -1,0 +1,7 @@
+{
+  "id": "6b7dd763b7b0bf02543d1d21a1317e69",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — priorityclass",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-priorityclass-em-",
+  "text": "Create a priority class named high-priority\nkubectl create priorityclass high-priority\n--value\n=1000\n--description\n=\n\"high priority\"\nCreate a priority class named default-priority that is considered as the global default priority\nkubectl create priorityclass\ndefault\n-priority --\nvalue\n=\n1000\n--\nglobal\n-\ndefault\n=\ntrue\n--description=\n\"default priority\"\nCreate a priority class named high-priority that cannot preempt pods with lower priority\nkubectl create priorityclass high-priority\n--value\n=1000\n--description\n=\n\"high priority\"\n--preemption-policy\n=\n\"Never\"\nCreate a priority class with the specified name, value, globalDefault and description."
+}

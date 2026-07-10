@@ -1,0 +1,7 @@
+{
+  "id": "ccdb4674121c9f6ddac6047660af531f",
+  "source": "k8s_docs",
+  "title": "kube-proxy — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/#synopsis",
+  "text": "The Kubernetes network proxy runs on each node. This\nreflects services as defined in the Kubernetes API on each node and can do simple\nTCP, UDP, and SCTP stream forwarding or round robin TCP, UDP, and SCTP forwarding across a set of backends.\nService cluster IPs and ports are currently found through Docker-links-compatible\nenvironment variables specifying ports opened by the service proxy. There is an optional\naddon that provides cluster DNS for these cluster IPs. The user must create a service\nwith the apiserver API to configure the proxy.\nkube-proxy [flags]"
+}

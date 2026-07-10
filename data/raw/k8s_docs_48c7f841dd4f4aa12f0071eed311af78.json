@@ -1,0 +1,7 @@
+{
+  "id": "48c7f841dd4f4aa12f0071eed311af78",
+  "source": "k8s_docs",
+  "title": "Network Plugins — Support traffic shaping",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/#support-traffic-shaping",
+  "text": "Experimental Feature\nThe CNI networking plugin also supports pod ingress and egress traffic shaping. You can use the\nofficial\nbandwidth\nplugin offered by the CNI plugin team or use your own plugin with bandwidth control functionality.\nIf you want to enable traffic shaping support, you must add the\nbandwidth\nplugin to your CNI\nconfiguration file (default\n/etc/cni/net.d\n) and ensure that the binary is included in your CNI\nbin dir (default\n/opt/cni/bin\n).\n{\n\"name\"\n:\n\"k8s-pod-network\"\n,\n\"cniVersion\"\n:\n\"0.4.0\"\n,\n\"plugins\"\n:\n[\n{\n\"type\"\n:\n\"calico\"\n,\n\"log_level\"\n:\n\"info\"\n,\n\"datastore_type\"\n:\n\"kubernetes\"\n,\n\"nodename\"\n:\n\"127.0.0.1\"\n,\n\"ipam\"\n:\n{\n\"type\"\n:\n\"host-local\"\n,\n\"subnet\"\n:\n\"usePodCidr\"\n},\n\"policy\"\n:\n{\n\"type\"\n:\n\"k8s\"\n},\n\"kubernetes\"\n:\n{\n\"kubeconfig\"\n:\n\"/etc/cni/net.d/calico-kubeconfig\"\n}\n},\n{\n\"type\"\n:\n\"bandwidth\"\n,\n\"capabilities\"\n:\n{\n\"bandwidth\"\n:\ntrue\n}\n}\n]\n}\nNow you can add the\nkubernetes.io/ingress-bandwidth\nand\nkubernetes.io/egress-bandwidth\nannotations to your Pod. For example:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nannotations\n:\nkubernetes.io/ingress-bandwidth\n:\n1M\nkubernetes.io/egress-bandwidth\n:\n1M\n..."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "f3b723863b5cb8c04caacf24e44e32bb",
+  "source": "k8s_docs",
+  "title": "Define Environment Variables for a Container — Using environment variables inside of your config",
+  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/#using-environment-variables-inside-of-your-config",
+  "text": "Environment variables that you define in a Pod's configuration under\n.spec.containers[*].env[*]\ncan be used elsewhere in the configuration, for\nexample in commands and arguments that you set for the Pod's containers.\nIn the example configuration below, the\nGREETING\n,\nHONORIFIC\n, and\nNAME\nenvironment variables are set to\nWarm greetings to\n,\nThe Most Honorable\n, and\nKubernetes\n, respectively. The environment variable\nMESSAGE\ncombines the set of all these environment variables and then uses it\nas a CLI argument passed to the\nenv-print-demo\ncontainer.\nEnvironment variable names may consist of any\nprintable ASCII characters\nexcept '='.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nprint-greeting\nspec\n:\ncontainers\n:\n-\nname\n:\nenv-print-demo\nimage\n:\nbash\nenv\n:\n-\nname\n:\nGREETING\nvalue\n:\n\"Warm greetings to\"\n-\nname\n:\nHONORIFIC\nvalue\n:\n\"The Most Honorable\"\n-\nname\n:\nNAME\nvalue\n:\n\"Kubernetes\"\n-\nname\n:\nMESSAGE\nvalue\n:\n\"$(GREETING) $(HONORIFIC) $(NAME)\"\ncommand\n:\n[\n\"echo\"\n]\nargs\n:\n[\n\"$(MESSAGE)\"\n]\nUpon creation, the command\necho Warm greetings to The Most Honorable Kubernetes\nis run on the container."
+}

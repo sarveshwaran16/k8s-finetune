@@ -1,0 +1,7 @@
+{
+  "id": "c3260f6068d1deb28dabe26df931fbea",
+  "source": "k8s_docs",
+  "title": "Configure a Security Context for a Pod or Container — Assign SELinux labels to a Container",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#assign-selinux-labels-to-a-container",
+  "text": "To assign SELinux labels to a Container, include the\nseLinuxOptions\nfield in\nthe\nsecurityContext\nsection of your Pod or Container manifest. The\nseLinuxOptions\nfield is an\nSELinuxOptions\nobject. Here's an example that applies an SELinux level:\n...\nsecurityContext\n:\nseLinuxOptions\n:\nlevel\n:\n\"s0:c123,c456\""
+}

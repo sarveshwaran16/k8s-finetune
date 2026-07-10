@@ -1,0 +1,7 @@
+{
+  "id": "4f1fd72207bb2838eeb9807874ba47d6",
+  "source": "k8s_docs",
+  "title": "Explore Validating and Mutating Admission Policies — Test the policy",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/admission-policies/#test-admission-policy-validation",
+  "text": "Now, test the policy. Try\ncreating a Deployment\nand then scale it to 0 replicas using\nkubectl scale\n. What happens?\nYou could change the ValidatingAdmissionPolicyBinding to have a different validation action,\ninstead of Deny. If you choose the Warning validation action and try to scale a Deployment to 0 replicas,\nwhat happens?\nIf you did change the ValidatingAdmissionPolicyBinding to just warn people, there's a problem…\nThe name is wrong! If you change a ValidatingAdmissionPolicyBinding or the associated ValidatingAdmissionPolicy so\nthat it only warns people, you should check if you also need to change the name of the policy. You would change the\nname to make sure that the naming doesn't mislead people."
+}

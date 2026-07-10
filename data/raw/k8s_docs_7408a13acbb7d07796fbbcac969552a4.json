@@ -1,0 +1,7 @@
+{
+  "id": "7408a13acbb7d07796fbbcac969552a4",
+  "source": "k8s_docs",
+  "title": "Volume Populators and Data Sources — Cross namespace data sources",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-populators-and-data-sources/#cross-namespace-data-sources",
+  "text": "Kubernetes supports cross namespace volume data sources.\nTo use cross namespace volume data sources, you must enable the\nAnyVolumeDataSource\nand\nCrossNamespaceVolumeDataSource\nfeature gates\nfor\nthe kube-apiserver and kube-controller-manager.\nAlso, you must enable the\nCrossNamespaceVolumeDataSource\nfeature gate for the csi-provisioner.\nEnabling the\nCrossNamespaceVolumeDataSource\nfeature gate allows you to specify\na namespace in the dataSourceRef field."
+}

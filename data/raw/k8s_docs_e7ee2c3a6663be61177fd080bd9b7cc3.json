@@ -1,0 +1,7 @@
+{
+  "id": "e7ee2c3a6663be61177fd080bd9b7cc3",
+  "source": "k8s_docs",
+  "title": "Performing a Rolling Update — Verify an update",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/#verify-an-update",
+  "text": "First, check that the service is running, as you might have deleted it in previous\ntutorial step, run\ndescribe services/kubernetes-bootcamp\n. If it's missing,\nyou can create it again with:\nkubectl expose deployment/kubernetes-bootcamp --type\n=\n\"NodePort\"\n--port\n8080\nCreate an environment variable called\nNODE_PORT\nthat has the value of the Node\nport assigned:\nexport\nNODE_PORT\n=\n\"\n$(\nkubectl get services/kubernetes-bootcamp -o go-template\n=\n'{{(index .spec.ports 0).nodePort}}'\n)\n\"\necho\n\"NODE_PORT=\n$NODE_PORT\n\"\nNext, do a\ncurl\nto the exposed IP and port:\ncurl http://\n\"\n$(\nminikube ip\n)\n:\n$NODE_PORT\n\"\nEvery time you run the\ncurl\ncommand, you will hit a different Pod. Notice that\nall Pods are now running the latest version (\nv2\n).\nYou can also confirm the update by running the\nrollout status\nsubcommand:\nkubectl rollout status deployments/kubernetes-bootcamp\nTo view the current image version of the app, run the describe pods subcommand:\nkubectl describe pods\nIn the\nImage\nfield of the output, verify that you are running the latest image\nversion (\nv2\n)."
+}

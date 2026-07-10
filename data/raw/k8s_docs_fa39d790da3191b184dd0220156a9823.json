@@ -1,0 +1,7 @@
+{
+  "id": "fa39d790da3191b184dd0220156a9823",
+  "source": "k8s_docs",
+  "title": "Advanced Pod Configuration — Influencing Pod scheduling decisions",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#scheduling",
+  "text": "Kubernetes provides several mechanisms to control which nodes your Pods are scheduled on.\n\nThe simplest form of node selection constraint:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nnginx\nspec\n:\ncontainers\n:\n-\nname\n:\nnginx\nimage\n:\nnginx\nnodeSelector\n:\ndisktype\n:\nssd\n\nNode affinity allows you to specify rules that constrain which nodes your Pod can be scheduled on. Here's an example of a Pod that prefers running on nodes labelled as being on a particular continent, selecting based on the value of\ntopology.kubernetes.io/zone\nlabel.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nwith-node-affinity\nspec\n:\naffinity\n:\nnodeAffinity\n:\nrequiredDuringSchedulingIgnoredDuringExecution\n:\nnodeSelectorTerms\n:\n-\nmatchExpressions\n:\n-\nkey\n:\ntopology.kubernetes.io/zone\noperator\n:\nIn\nvalues\n:\n-\nantarctica-east1\n-\nantarctica-west1\ncontainers\n:\n-\nname\n:\nwith-node-affinity\nimage\n:\nregistry.k8s.io/pause:3.8"
+}

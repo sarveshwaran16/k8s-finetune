@@ -1,0 +1,7 @@
+{
+  "id": "746dfd8ac6584c09ce96bf1c6b6d72b8",
+  "source": "k8s_docs",
+  "title": "Monitor Node Health — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/monitor-node-health/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

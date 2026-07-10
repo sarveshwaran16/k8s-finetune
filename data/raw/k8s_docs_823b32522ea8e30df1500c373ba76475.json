@@ -1,0 +1,7 @@
+{
+  "id": "823b32522ea8e30df1500c373ba76475",
+  "source": "k8s_docs",
+  "title": "Example: Deploying Cassandra with a StatefulSet — Validating (optional)",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/cassandra/#validating",
+  "text": "Get the Cassandra Service.\nkubectl get svc cassandra\nThe response is\nNAME        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE\ncassandra   ClusterIP   None         <none>        9042/TCP   45s\nIf you don't see a Service named\ncassandra\n, that means creation failed. Read\nDebug Services\nfor help troubleshooting common issues."
+}

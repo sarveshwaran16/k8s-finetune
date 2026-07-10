@@ -1,0 +1,7 @@
+{
+  "id": "c4f6a0588acc4df1188205607ebb4093",
+  "source": "k8s_docs",
+  "title": "Adding Windows worker nodes — Network configuration",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-windows-nodes/#network-configuration",
+  "text": "CNI setup on clusters mixed with Linux and Windows nodes requires more steps than just\nrunning\nkubectl apply\non a manifest file. Additionally, the CNI plugin running on control\nplane nodes must be prepared to support the CNI plugin running on Windows worker nodes.\nOnly a few CNI plugins currently support Windows. Below you can find individual setup instructions for them:\nCalico"
+}

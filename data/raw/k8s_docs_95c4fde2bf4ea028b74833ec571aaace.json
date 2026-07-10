@@ -1,0 +1,7 @@
+{
+  "id": "95c4fde2bf4ea028b74833ec571aaace",
+  "source": "k8s_docs",
+  "title": "Deprecated API Migration Guide — v1.26",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/#v1-26",
+  "text": "The\nv1.26\nrelease stopped serving the following deprecated API versions:\nThe\nflowcontrol.apiserver.k8s.io/v1beta1\nAPI version of FlowSchema and PriorityLevelConfiguration is no longer served as of v1.26.\nMigrate manifests and API clients to use the\nflowcontrol.apiserver.k8s.io/v1beta2\nAPI version.\nAll existing persisted objects are accessible via the new API\nNo notable changes\nThe\nautoscaling/v2beta2\nAPI version of HorizontalPodAutoscaler is no longer served as of v1.26.\nMigrate manifests and API clients to use the\nautoscaling/v2\nAPI version, available since v1.23.\nAll existing persisted objects are accessible via the new API\nNotable changes:\ntargetAverageUtilization\nis replaced with\ntarget.averageUtilization\nand\ntarget.type: Utilization\n. See\nAutoscaling on multiple metrics and custom metrics\n.\ntargetAverageUtilization\nis replaced with\ntarget.averageUtilization\nand\ntarget.type: Utilization\n. See\nAutoscaling on multiple metrics and custom metrics\n."
+}

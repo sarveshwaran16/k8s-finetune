@@ -1,0 +1,7 @@
+{
+  "id": "822d8b6eca3bfca1f65da25d5cb7a23e",
+  "source": "k8s_docs",
+  "title": "Install and Set Up kubectl on Windows — Verify kubectl configuration",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#verify-kubectl-configuration",
+  "text": "In order for kubectl to find and access a Kubernetes cluster, it needs a\nkubeconfig file\n,\nwhich is created automatically when you create a cluster using\nkube-up.sh\nor successfully deploy a Minikube cluster.\nBy default, kubectl configuration is located at\n~/.kube/config\n.\nCheck that kubectl is properly configured by getting the cluster state:\nkubectl cluster-info\nIf you see a URL response, kubectl is correctly configured to access your cluster.\nIf you see a message similar to the following, kubectl is not configured correctly\nor is not able to connect to a Kubernetes cluster.\nThe connection to the server <server-name:port> was refused - did you specify the right host or port?\nFor example, if you are intending to run a Kubernetes cluster on your laptop (locally),\nyou will need a tool like\nMinikube\nto be\ninstalled first and then re-run the commands stated above.\nIf\nkubectl cluster-info\nreturns the url response, but you can't access your cluster,\ncheck whether it is configured properly using the following command:\nkubectl cluster-info dump"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "10382caf72b4d874fb56333b794e5107",
+  "source": "k8s_docs",
+  "title": "Extending Kubernetes — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#what-s-next",
+  "text": "Learn more about infrastructure extensions\nDevice Plugins\nNetwork Plugins\nCSI\nstorage plugins\nLearn about\nkubectl plugins\nLearn more about\nCustom Resources\nLearn more about\nExtension API Servers\nLearn about\nDynamic admission control\nLearn about the\nOperator pattern\nDevice Plugins\nNetwork Plugins\nCSI\nstorage plugins"
+}

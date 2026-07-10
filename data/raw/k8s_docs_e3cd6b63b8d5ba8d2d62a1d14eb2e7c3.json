@@ -1,0 +1,7 @@
+{
+  "id": "e3cd6b63b8d5ba8d2d62a1d14eb2e7c3",
+  "source": "k8s_docs",
+  "title": "Good practices for Dynamic Resource Allocation as a Cluster Admin — When draining a node, drain the DRA driver as late as possible",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/dra/#when-draining-a-node-drain-the-dra-driver-as-late-as-possible",
+  "text": "The DRA driver is responsible for unpreparing any devices that were allocated to\nPods, and if the DRA driver is\ndrained\nbefore Pods with claims have been deleted, it will not be\nable to finalize its cleanup. If you implement custom drain logic for nodes,\nconsider checking that there are no allocated/reserved ResourceClaim or\nResourceClaimTemplates before terminating the DRA driver itself."
+}

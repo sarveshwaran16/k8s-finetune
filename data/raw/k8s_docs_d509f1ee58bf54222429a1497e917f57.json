@@ -1,0 +1,7 @@
+{
+  "id": "d509f1ee58bf54222429a1497e917f57",
+  "source": "k8s_docs",
+  "title": "Imperative Management of Kubernetes Objects Using Configuration Files — Migrating from imperative commands to imperative object configuration",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-config/#migrating-from-imperative-commands-to-imperative-object-configuration",
+  "text": "Migrating from imperative commands to imperative object configuration involves\nseveral manual steps.\nExport the live object to a local object configuration file:\nkubectl get <kind>/<name> -o yaml > <kind>_<name>.yaml\nManually remove the status field from the object configuration file.\nFor subsequent object management, use\nreplace\nexclusively.\nkubectl replace -f <kind>_<name>.yaml\nExport the live object to a local object configuration file:\nkubectl get <kind>/<name> -o yaml > <kind>_<name>.yaml\nManually remove the status field from the object configuration file.\nFor subsequent object management, use\nreplace\nexclusively.\nkubectl replace -f <kind>_<name>.yaml"
+}

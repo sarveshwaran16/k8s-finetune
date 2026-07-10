@@ -1,0 +1,7 @@
+{
+  "id": "050e931c8344c981eeefabe16d676fe6",
+  "source": "k8s_docs",
+  "title": "Debug Services — Is kube-proxy proxying?",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/#is-kube-proxy-proxying",
+  "text": "Assuming you do see one the above cases, try again to access your Service by\nIP from one of your Nodes:\ncurl 10.0.1.175:80\nhostnames-632524106-bbpiw\nIf this still fails, look at the\nkube-proxy\nlogs for specific lines like:\nSetting endpoints for default/hostnames:default to [10.244.0.5:9376 10.244.0.6:9376 10.244.0.7:9376]\nIf you don't see those, try restarting\nkube-proxy\nwith the\n-v\nflag set to 4, and\nthen look at the logs again."
+}

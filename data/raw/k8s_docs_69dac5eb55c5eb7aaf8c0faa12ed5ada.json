@@ -1,0 +1,7 @@
+{
+  "id": "69dac5eb55c5eb7aaf8c0faa12ed5ada",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — What are they?",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#what-are-they",
+  "text": "Admission controllers are code within the Kubernetes\nAPI server\nthat check the\ndata arriving in a request to modify a resource.\nAdmission controllers apply to requests that create, delete, or modify objects.\nAdmission controllers can also block custom verbs, such as a request to connect to a\npod via an API server proxy. Admission controllers do\nnot\n(and cannot) block requests\nto read (\nget\n,\nwatch\nor\nlist\n) objects, because reads bypass the admission\ncontrol layer.\nAdmission control mechanisms may be\nvalidating\n,\nmutating\n, or both. Mutating\ncontrollers may modify the data for the resource being modified; validating controllers may not.\nThe admission controllers in Kubernetes 1.36 consist of the\nlist\nbelow, are compiled into the\nkube-apiserver\nbinary, and may only be configured by the cluster\nadministrator."
+}

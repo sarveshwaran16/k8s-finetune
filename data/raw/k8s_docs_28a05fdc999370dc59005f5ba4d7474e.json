@@ -1,0 +1,7 @@
+{
+  "id": "28a05fdc999370dc59005f5ba4d7474e",
+  "source": "k8s_docs",
+  "title": "Reconfiguring a kubeadm cluster — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-reconfigure/#before-you-begin",
+  "text": "You need a cluster that was deployed using kubeadm\nHave administrator credentials (\n/etc/kubernetes/admin.conf\n) and network connectivity\nto a running kube-apiserver in the cluster from a host that has kubectl installed\nHave a text editor installed on all hosts\n\nkubeadm writes a set of cluster wide component configuration options in\nConfigMaps and other objects. These objects must be manually edited. The command\nkubectl edit\ncan be used for that.\nThe\nkubectl edit\ncommand will open a text editor where you can edit and save the object directly.\nYou can use the environment variables\nKUBECONFIG\nand\nKUBE_EDITOR\nto specify the location of\nthe kubectl consumed kubeconfig file and preferred text editor.\nFor example:\nKUBECONFIG=/etc/kubernetes/admin.conf KUBE_EDITOR=nano kubectl edit <parameters>"
+}

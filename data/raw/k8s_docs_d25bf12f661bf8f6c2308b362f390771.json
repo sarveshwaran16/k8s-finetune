@@ -1,0 +1,7 @@
+{
+  "id": "d25bf12f661bf8f6c2308b362f390771",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — Unavailable resource versions",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#unavailable-resource-versions",
+  "text": "Servers are not required to serve unrecognized resource versions. If you request\nlist\nor\nget\nfor a resource version that the API server does not recognize,\nthen the API server may either:\nwait briefly for the resource version to become available, then timeout with a\n504 (Gateway Timeout)\nif the provided resource versions does not become available\nin a reasonable amount of time;\nrespond with a\nRetry-After\nresponse header indicating how many seconds a client\nshould wait before retrying the request.\nIf you request a resource version that an API server does not recognize, the\nkube-apiserver additionally identifies its error responses with a message\nToo large resource version\n.\nIf you make a\nwatch\nrequest for an unrecognized resource version, the API server\nmay wait indefinitely (until the request timeout) for the resource version to become\navailable."
+}

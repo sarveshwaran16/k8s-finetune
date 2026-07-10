@@ -1,0 +1,7 @@
+{
+  "id": "e0b30fd9ffe4daa83e36960f7de3667c",
+  "source": "k8s_docs",
+  "title": "Advanced Pod Configuration — Security context options",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#security-context-options",
+  "text": "User and Group IDs\n: Control which user/group the container runs as\nCapabilities\n: Add or drop Linux capabilities\nSeccomp Profiles\n: Set security computing profiles\nSELinux Options\n: Configure SELinux context\nAppArmor\n: Configure AppArmor profiles for additional access control\nWindows Options\n: Configure Windows-specific security settings\nFor more information, see\nConfigure a Security Context for a Pod or Container\n."
+}

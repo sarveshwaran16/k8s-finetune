@@ -1,0 +1,7 @@
+{
+  "id": "db3cb7c2d553d67630ddad6e2b0c3610",
+  "source": "k8s_docs",
+  "title": "Images — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/images/#what-s-next",
+  "text": "Read the\nOCI Image Manifest Specification\n.\nLearn about\ncontainer image garbage collection\n.\nLearn more about\npulling an Image from a Private Registry\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "979c0e82401a0afcd0cb710013b0a717",
+  "source": "k8s_docs",
+  "title": "Pod Topology Spread Constraints — topologySpreadConstraintsfield",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/#topologyspreadconstraints-field",
+  "text": "The Pod API includes a field,\nspec.topologySpreadConstraints\n. The usage of this field looks like\nthe following:\n---\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nexample-pod\nspec\n:\n# Configure a topology spread constraint\ntopologySpreadConstraints\n:\n-\nmaxSkew\n:\n<integer>\nminDomains\n:\n<integer>\n# optional\ntopologyKey\n:\n<string>\nwhenUnsatisfiable\n:\n<string>\nlabelSelector\n:\n<object>\nmatchLabelKeys\n:\n<list>\n# optional; beta since v1.27\nnodeAffinityPolicy\n:\n[\nHonor|Ignore]\n# optional; beta since v1.26\nnodeTaintsPolicy\n:\n[\nHonor|Ignore]\n# optional; beta since v1.26\n### other Pod fields go here\nYou can read more about this field by running\nkubectl explain Pod.spec.topologySpreadConstraints\nor\nrefer to the\nscheduling\nsection of the API reference for Pod."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "21d16668945e1e2e5ecbeec27ef3f8c2",
+  "source": "k8s_docs",
+  "title": "Nodes — Node status",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/nodes/#node-status",
+  "text": "A Node's status contains the following information:\nAddresses\nConditions\nCapacity and Allocatable\nInfo\nYou can use\nkubectl\nto view a Node's status and other details:\nkubectl describe node <insert-node-name-here>\nSee\nNode Status\nfor more details.\n\nHeartbeats, sent by Kubernetes nodes, help your cluster determine the\navailability of each node, and to take action when failures are detected.\nFor nodes there are two forms of heartbeats:\nUpdates to the\n.status\nof a Node.\nLease\nobjects\nwithin the\nkube-node-lease\nnamespace\n.\nEach Node has an associated Lease object."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ca48b6821fadded884ebde9ed0dbbb85",
+  "source": "k8s_docs",
+  "title": "Fine Parallel Processing Using a Work Queue — Starting Redis",
+  "source_url": "https://kubernetes.io/docs/tasks/job/fine-parallel-processing-work-queue/#starting-redis",
+  "text": "For this example, for simplicity, you will start a single instance of Redis.\nSee the\nRedis Example\nfor an example\nof deploying Redis scalably and redundantly.\nYou could also download the following files directly:\nredis-pod.yaml\nredis-service.yaml\nDockerfile\njob.yaml\nrediswq.py\nworker.py\nTo start a single instance of Redis, you need to create the redis pod and redis service:\nkubectl apply -f https://k8s.io/examples/application/job/redis/redis-pod.yaml\nkubectl apply -f https://k8s.io/examples/application/job/redis/redis-service.yaml"
+}

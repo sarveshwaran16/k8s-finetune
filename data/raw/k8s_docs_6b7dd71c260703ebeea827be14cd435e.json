@@ -1,0 +1,7 @@
+{
+  "id": "6b7dd71c260703ebeea827be14cd435e",
+  "source": "k8s_docs",
+  "title": "Create an External Load Balancer — Garbage collecting load balancers",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/#garbage-collecting-load-balancers",
+  "text": "In usual case, the correlating load balancer resources in cloud provider should\nbe cleaned up soon after a LoadBalancer type Service is deleted. But it is known\nthat there are various corner cases where cloud resources are orphaned after the\nassociated Service is deleted. Finalizer Protection for Service LoadBalancers was\nintroduced to prevent this from happening. By using finalizers, a Service resource\nwill never be deleted until the correlating load balancer resources are also deleted.\nSpecifically, if a Service has\ntype\nLoadBalancer, the service controller will attach\na finalizer named\nservice.kubernetes.io/load-balancer-cleanup\n.\nThe finalizer will only be removed after the load balancer resource is cleaned up.\nThis prevents dangling load balancer resources even in corner cases such as the\nservice controller crashing."
+}

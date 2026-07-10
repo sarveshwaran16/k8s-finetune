@@ -1,0 +1,7 @@
+{
+  "id": "185e71d647d577adb92e6282322a620d",
+  "source": "k8s_docs",
+  "title": "Advertise Extended Resources for a Node — Discussion",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/extended-resource-node/#discussion",
+  "text": "Extended resources are similar to memory and CPU resources. For example,\njust as a Node has a certain amount of memory and CPU to be shared by all components\nrunning on the Node, it can have a certain number of dongles to be shared\nby all components running on the Node. And just as application developers\ncan create Pods that request a certain amount of memory and CPU, they can\ncreate Pods that request a certain number of dongles.\nExtended resources are opaque to Kubernetes; Kubernetes does not\nknow anything about what they are. Kubernetes knows only that a Node\nhas a certain number of them. Extended resources must be advertised in integer\namounts. For example, a Node can advertise four dongles, but not 4.5 dongles."
+}

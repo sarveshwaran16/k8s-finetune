@@ -1,0 +1,7 @@
+{
+  "id": "34322ba5fb8d95f9a0300615fa61141c",
+  "source": "k8s_docs",
+  "title": "Scheduling Group — Missing PodGroup reference",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/scheduling-group/#missing-podgroup-reference",
+  "text": "If a\nPod\nreferences a\nPodGroup\nthat does not yet exist, the\nPod\nremains pending.\nThe scheduler automatically reconsiders the\nPod\nonce the\nPodGroup\nis created.\nThis applies regardless of whether the eventual policy is\nbasic\nor\ngang\n,\nbecause the scheduler requires the\nPodGroup\nto determine the policy."
+}

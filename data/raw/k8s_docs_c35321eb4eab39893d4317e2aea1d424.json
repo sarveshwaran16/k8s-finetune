@@ -1,0 +1,7 @@
+{
+  "id": "c35321eb4eab39893d4317e2aea1d424",
+  "source": "k8s_docs",
+  "title": "Images — Image pull per runtime class",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/images/#image-pull-per-runtime-class",
+  "text": "FEATURE STATE:\nKubernetes v1.29 [alpha]\n(disabled by default)\nKubernetes includes alpha support for performing image pulls based on the RuntimeClass of a Pod.\nIf you enable the\nRuntimeClassInImageCriApi\nfeature gate\n,\nthe kubelet references container images by a tuple of image name and runtime handler\nrather than just the image name or digest. Your\ncontainer runtime\nmay adapt its behavior based on the selected runtime handler.\nPulling images based on runtime class is useful for VM-based containers, such as\nWindows Hyper-V containers."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "d135561fe8f68b126906ba461f23bc9e",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubectl — Verify kubectl helpers",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/troubleshoot-kubectl/#verify-kubectl-helpers",
+  "text": "Some kubectl authentication helpers provide easy access to Kubernetes clusters. If you\nhave used such helpers and are facing connectivity issues, ensure that the necessary\nconfigurations are still present.\nCheck kubectl configuration for authentication details:\nkubectl config view\nIf you previously used a helper tool (for example,\nkubectl-oidc-login\n), ensure that it is still\ninstalled and configured correctly."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "2ce0ead1c01863ef7f01152ed613813a",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-type (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-type",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-type: external\nKubernetes' official integrations with AWS use this annotation to determine\nwhether the AWS cloud provider integration should manage a Service of\ntype: LoadBalancer\n.\nThere are two permitted values:\nIf you deploy a Service of\ntype: LoadBalancer\non AWS, and you don't set any\nservice.beta.kubernetes.io/aws-load-balancer-type\nannotation,\nthe AWS integration deploys a classic Elastic Load Balancer. This behavior,\nwith no annotation present, is the default unless you specify otherwise.\nWhen you set this annotation to\nexternal\non a Service of\ntype: LoadBalancer\n,\nand your cluster has a working deployment of the AWS Load Balancer controller,\nthen the AWS Load Balancer controller attempts to deploy a load balancer based\non the Service specification."
+}

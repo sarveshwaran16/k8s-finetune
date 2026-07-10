@@ -1,0 +1,7 @@
+{
+  "id": "b078aab022bfc159746de6428350afe0",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — Automatic certificate renewal",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#automatic-certificate-renewal",
+  "text": "kubeadm renews all the certificates during control plane\nupgrade\n.\nThis feature is designed for addressing the simplest use cases;\nif you don't have specific requirements on certificate renewal and perform Kubernetes version\nupgrades regularly (less than 1 year in between each upgrade), kubeadm will take care of keeping\nyour cluster up to date and reasonably secure.\nIf you have more complex requirements for certificate renewal, you can opt out from the default\nbehavior by passing\n--certificate-renewal=false\nto\nkubeadm upgrade apply\nor to\nkubeadm upgrade node\n."
+}

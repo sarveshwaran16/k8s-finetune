@@ -1,0 +1,7 @@
+{
+  "id": "8e8a6355022c72551204e8625c8e3368",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Avoid self-mutations",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#avoid-self-mutation",
+  "text": "A webhook running inside the cluster might cause deadlocks for its own\ndeployment if it is configured to intercept resources required to start its own\nPods.\nFor example, a mutating admission webhook is configured to admit\ncreate\nPod\nrequests only if a certain label is set in the Pod (such as\nenv: prod\n).\nThe webhook server runs in a Deployment that doesn't set the\nenv\nlabel.\nWhen a node that runs the webhook server Pods becomes unhealthy, the webhook\nDeployment tries to reschedule the Pods to another node. However, the existing\nwebhook server rejects the requests since the\nenv\nlabel is unset. As a\nresult, the migration cannot happen.\nExclude the namespace where your webhook is running with a\nnamespaceSelector\n."
+}

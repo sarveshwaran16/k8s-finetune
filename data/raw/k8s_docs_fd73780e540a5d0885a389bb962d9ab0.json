@@ -1,0 +1,7 @@
+{
+  "id": "fd73780e540a5d0885a389bb962d9ab0",
+  "source": "k8s_docs",
+  "title": "Resource Management for Windows nodes — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/windows-resource-management/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

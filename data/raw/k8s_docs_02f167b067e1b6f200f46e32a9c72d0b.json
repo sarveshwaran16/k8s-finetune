@@ -1,0 +1,7 @@
+{
+  "id": "02f167b067e1b6f200f46e32a9c72d0b",
+  "source": "k8s_docs",
+  "title": "Configure Access to Multiple Clusters — Set the KUBECONFIG environment variable",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/#set-the-kubeconfig-environment-variable",
+  "text": "See whether you have an environment variable named\nKUBECONFIG\n. If so, save the\ncurrent value of your\nKUBECONFIG\nenvironment variable, so you can restore it later.\nFor example:\n\nexport\nKUBECONFIG_SAVED\n=\n\"\n$KUBECONFIG\n\"\n\n$Env:KUBECONFIG_SAVED\n=\n$ENV:KUBECONFIG\nThe\nKUBECONFIG\nenvironment variable is a list of paths to configuration files. The list is\ncolon-delimited for Linux and Mac, and semicolon-delimited for Windows. If you have\na\nKUBECONFIG\nenvironment variable, familiarize yourself with the configuration files\nin the list.\nTemporarily append two paths to your\nKUBECONFIG\nenvironment variable. For example:"
+}

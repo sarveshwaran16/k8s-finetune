@@ -1,0 +1,7 @@
+{
+  "id": "79dbbb7c90bbd06959b080a7cef36f55",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Replicas",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#replicas",
+  "text": "You can specify how many Pods should run concurrently by setting\n.spec.replicas\n. The ReplicaSet will create/delete\nits Pods to match this number.\nIf you do not specify\n.spec.replicas\n, then it defaults to 1.\n\nTo delete a ReplicaSet and all of its Pods, use\nkubectl delete\n. The\nGarbage collector\nautomatically deletes all of\nthe dependent Pods by default.\nWhen using the REST API or the\nclient-go\nlibrary, you must set\npropagationPolicy\nto\nBackground\nor\nForeground\nin the\n-d\noption. For example:\nkubectl proxy --port\n=\n8080\ncurl -X DELETE\n'localhost:8080/apis/apps/v1/namespaces/default/replicasets/frontend'\n\\\n-d\n'{\"kind\":\"DeleteOptions\",\"apiVersion\":\"v1\",\"propagationPolicy\":\"Foreground\"}'\n\\\n-H\n\"Content-Type: application/json\""
+}

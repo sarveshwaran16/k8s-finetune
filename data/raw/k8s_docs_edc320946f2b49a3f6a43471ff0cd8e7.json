@@ -1,0 +1,7 @@
+{
+  "id": "edc320946f2b49a3f6a43471ff0cd8e7",
+  "source": "k8s_docs",
+  "title": "ResourceSlice — DeviceCounterConsumption",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-slice-v1/#DeviceCounterConsumption",
+  "text": "DeviceCounterConsumption defines a set of counters that a device will consume from a CounterSet.\nField\nDescription\ncounterSet\n*\nstring\nCounterSet is the name of the set from which the counters defined will be consumed.\ncounters\n*\nobject\nCounters defines the counters that will be consumed by the device. The maximum number of counters is 32."
+}

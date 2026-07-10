@@ -1,0 +1,7 @@
+{
+  "id": "349294f7243567ef2160ca6a8aa68e43",
+  "source": "k8s_docs",
+  "title": "Role Based Access Control Good Practices — Minimize distribution of privileged tokens",
+  "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#minimize-distribution-of-privileged-tokens",
+  "text": "Ideally, pods shouldn't be assigned service accounts that have been granted powerful permissions\n(for example, any of the rights listed under\nprivilege escalation risks\n).\nIn cases where a workload requires powerful permissions, consider the following practices:\nLimit the number of nodes running powerful pods. Ensure that any DaemonSets you run\nare necessary and are run with least privilege to limit the blast radius of container escapes.\nAvoid running powerful pods alongside untrusted or publicly-exposed ones. Consider using\nTaints and Toleration\n,\nNodeAffinity\n, or\nPodAntiAffinity\nto ensure pods don't run alongside untrusted or less-trusted Pods. Pay special attention to\nsituations where less-trustworthy Pods are not meeting the\nRestricted\nPod Security Standard."
+}

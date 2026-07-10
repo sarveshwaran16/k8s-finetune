@@ -1,0 +1,7 @@
+{
+  "id": "ddb9f30ba6fb59ec7d2c9d6ebc968e83",
+  "source": "k8s_docs",
+  "title": "Create a Windows HostProcess Pod — System accounts",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/#system-accounts",
+  "text": "By default, HostProcess containers support the ability to run as one of three supported Windows service accounts:\nLocalSystem\nLocalService\nNetworkService\nYou should select an appropriate Windows service account for each HostProcess\ncontainer, aiming to limit the degree of privileges so as to avoid accidental (or even\nmalicious) damage to the host. The LocalSystem service account has the highest level\nof privilege of the three and should be used only if absolutely necessary. Where possible,\nuse the LocalService service account as it is the least privileged of the three options."
+}

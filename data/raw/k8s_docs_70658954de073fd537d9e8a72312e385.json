@@ -1,0 +1,7 @@
+{
+  "id": "70658954de073fd537d9e8a72312e385",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1alpha1) — AdmissionConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1alpha1/#apiserver-k8s-io-v1alpha1-AdmissionConfiguration",
+  "text": "AdmissionConfiguration provides versioned configuration for admission controllers.\nField\nDescription\napiVersion\nstring\napiserver.k8s.io/v1alpha1\nkind\nstring\nAdmissionConfiguration\nplugins\n[]AdmissionPluginConfiguration\nPlugins allows specifying a configuration per admission control plugin.\nPlugins allows specifying a configuration per admission control plugin."
+}

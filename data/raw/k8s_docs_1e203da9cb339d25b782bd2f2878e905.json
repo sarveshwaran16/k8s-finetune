@@ -1,0 +1,7 @@
+{
+  "id": "1e203da9cb339d25b782bd2f2878e905",
+  "source": "k8s_docs",
+  "title": "Specifying a Disruption Budget for your Application — Protecting an Application with a PodDisruptionBudget",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/configure-pdb/#protecting-an-application-with-a-poddisruptionbudget",
+  "text": "Identify what application you want to protect with a PodDisruptionBudget (PDB).\nThink about how your application reacts to disruptions.\nCreate a PDB definition as a YAML file.\nCreate the PDB object from the YAML file.\n\nThe most common use case when you want to protect an application\nspecified by one of the built-in Kubernetes controllers:\nDeployment\nReplicationController\nReplicaSet\nStatefulSet\nIn this case, make a note of the controller's\n.spec.selector\n; the same\nselector goes into the PDBs\n.spec.selector\n.\nFrom version 1.15 PDBs support custom controllers where the\nscale subresource\nis enabled.\nYou can also use PDBs with pods which are not controlled by one of the above\ncontrollers, or arbitrary groups of pods, but there are some restrictions,\ndescribed in\nArbitrary workloads and arbitrary selectors\n."
+}

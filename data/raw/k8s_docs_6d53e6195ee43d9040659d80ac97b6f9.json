@@ -1,0 +1,7 @@
+{
+  "id": "6d53e6195ee43d9040659d80ac97b6f9",
+  "source": "k8s_docs",
+  "title": "Configure a Pod to Use a ConfigMap — Project keys to specific paths and file permissions",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#project-keys-to-specific-paths-and-file-permissions",
+  "text": "You can project keys to specific paths. Refer to the corresponding section in the\nSecrets\nguide for the syntax.\nYou can set POSIX permissions for keys. Refer to the corresponding section in the\nSecrets\nguide for the syntax.\n\nA ConfigMap reference may be marked\noptional\n. If the ConfigMap is non-existent, the mounted\nvolume will be empty. If the ConfigMap exists, but the referenced key is non-existent, the path\nwill be absent beneath the mount point. See\nOptional ConfigMaps\nfor more\ndetails."
+}

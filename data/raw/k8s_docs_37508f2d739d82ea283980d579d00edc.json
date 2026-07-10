@@ -1,0 +1,7 @@
+{
+  "id": "37508f2d739d82ea283980d579d00edc",
+  "source": "k8s_docs",
+  "title": "Connect a Frontend to a Backend Using Services — Cleaning up",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/connecting-frontend-backend/#cleaning-up",
+  "text": "To delete the Services, enter this command:\nkubectl delete services frontend backend\nTo delete the Deployments, the ReplicaSets and the Pods that are running the backend and frontend applications, enter this command:\nkubectl delete deployment frontend backend\n\nLearn more about\nServices\nLearn more about\nConfigMaps\nLearn more about\nDNS for Service and Pods"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7a227f378d7649238d0dddd51308631a",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_control-plane/#synopsis",
+  "text": "Generate all static Pod manifest files necessary to establish the control plane\nkubeadm init phase control-plane [flags]\n\n-h, --help\nhelp for control-plane\nhelp for control-plane\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

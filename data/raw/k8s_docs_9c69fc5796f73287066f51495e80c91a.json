@@ -1,0 +1,7 @@
+{
+  "id": "9c69fc5796f73287066f51495e80c91a",
+  "source": "k8s_docs",
+  "title": "PersistentVolumeClaim",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-claim-v1/#PersistentVolumeClaim",
+  "text": "PersistentVolumeClaim is a user's request for and claim to a persistent volume\nField\nDescription\napiVersion\nstring\nAPIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources\nkind\nstring\nKind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nmetadata\nObjectMeta\nStandard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata\nspec\nPersistentVolumeClaimSpec\nspec defines the desired characteristics of a volume requested by a pod author. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims\nstatus\nPersistentVolumeClaimStatus\nstatus represents the current information/status of a persistent volume claim. Read-only. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims"
+}

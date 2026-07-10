@@ -1,0 +1,7 @@
+{
+  "id": "2613ba4447b69e2fe752bb94f1f6a348",
+  "source": "k8s_docs",
+  "title": "Configuring each kubelet in your cluster using kubeadm — Workflow when usingkubeadm join",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/kubelet-integration/#workflow-when-using-kubeadm-join",
+  "text": "When you run\nkubeadm join\n, kubeadm uses the Bootstrap Token credential to perform\na TLS bootstrap, which fetches the credential needed to download the\nkubelet-config\nConfigMap and writes it to\n/var/lib/kubelet/config.yaml\n.\nAdditionally, the kubeadm tool detects the CRI socket on the node and writes its details\n(including the socket path) into a local configuration,\n/var/lib/kubelet/instance-config.yaml\n.\nThe dynamic environment file is generated in exactly the same way as\nkubeadm init\n.\nNext,\nkubeadm\nruns the following two commands to load the new configuration into the kubelet:\nsystemctl daemon-reload\n&&\nsystemctl restart kubelet\nAfter the kubelet loads the new configuration, kubeadm writes the\n/etc/kubernetes/bootstrap-kubelet.conf\nKubeConfig file, which contains a CA certificate and Bootstrap\nToken. These are used by the kubelet to perform the TLS Bootstrap and obtain a unique\ncredential, which is stored in\n/etc/kubernetes/kubelet.conf\n.\nWhen the\n/etc/kubernetes/kubelet.conf\nfile is written, the kubelet has finished performing the TLS Bootstrap.\nKubeadm deletes the\n/etc/kubernetes/bootstrap-kubelet.conf\nfile after completing the TLS Bootstrap."
+}

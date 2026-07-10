@@ -1,0 +1,7 @@
+{
+  "id": "c6771d53c646ebee0569663c737d681b",
+  "source": "k8s_docs",
+  "title": "Restrict a Container's Access to Resources with AppArmor — Setting up Nodes with profiles",
+  "source_url": "https://kubernetes.io/docs/tutorials/security/apparmor/#setting-up-nodes-with-profiles",
+  "text": "Kubernetes 1.36 does not provide any built-in mechanisms for loading AppArmor profiles onto\nNodes. Profiles can be loaded through custom infrastructure or tools like the\nKubernetes Security Profiles Operator\n.\nThe scheduler is not aware of which profiles are loaded onto which Node, so the full set of profiles\nmust be loaded onto every Node. An alternative approach is to add a Node label for each profile (or\nclass of profiles) on the Node, and use a\nnode selector\nto ensure the Pod is run on a\nNode with the required profile."
+}

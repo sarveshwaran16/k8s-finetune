@@ -1,0 +1,7 @@
+{
+  "id": "059e3c4741b2f525afe53c348e015380",
+  "source": "k8s_docs",
+  "title": "StatefulSet Basics — Ordered Pod creation",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#ordered-pod-creation",
+  "text": "A StatefulSet defaults to creating its Pods in a strict order.\nFor a StatefulSet with\nn\nreplicas, when Pods are being deployed, they are\ncreated sequentially, ordered from\n{0..n-1}\n. Examine the output of the\nkubectl get\ncommand in the first terminal. Eventually, the output will\nlook like the example below.\n# Do not start a new watch;\n# this should already be running\nkubectl get pods --watch -l\napp\n=\nnginx\nNAME      READY     STATUS    RESTARTS   AGE\nweb-0     0/1       Pending   0          0s\nweb-0     0/1       Pending   0         0s\nweb-0     0/1       ContainerCreating   0         0s\nweb-0     1/1       Running   0         19s\nweb-1     0/1       Pending   0         0s\nweb-1     0/1       Pending   0         0s\nweb-1     0/1       ContainerCreating   0         0s\nweb-1     1/1       Running   0         18s\nNotice that the\nweb-1\nPod is not launched until the\nweb-0\nPod is\nRunning\n(see\nPod Phase\n)\nand\nReady\n(see\ntype\nin\nPod Conditions\n).\nLater in this tutorial you will practice\nparallel startup\n."
+}

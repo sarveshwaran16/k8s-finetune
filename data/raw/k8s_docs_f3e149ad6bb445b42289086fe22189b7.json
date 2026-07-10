@@ -1,0 +1,7 @@
+{
+  "id": "f3e149ad6bb445b42289086fe22189b7",
+  "source": "k8s_docs",
+  "title": "Pod — NodeAllocatableResourceClaimStatus",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#NodeAllocatableResourceClaimStatus",
+  "text": "NodeAllocatableResourceClaimStatus describes the status of node allocatable resources allocated via DRA.\nField\nDescription\ncontainers\nstring array\nContainers lists the names of all containers in this pod that reference the claim.\nresourceClaimName\n*\nstring\nResourceClaimName is the resource claim referenced by the pod that resulted in this node allocatable resource allocation.\nresources\n*\nobject\nResources is a map of the node-allocatable resource name to the aggregate quantity allocated to the claim."
+}

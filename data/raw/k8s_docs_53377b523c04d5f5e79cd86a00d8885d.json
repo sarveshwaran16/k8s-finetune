@@ -1,0 +1,7 @@
+{
+  "id": "53377b523c04d5f5e79cd86a00d8885d",
+  "source": "k8s_docs",
+  "title": "Update a Deployment Without Downtime — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/#before-you-begin",
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYou need an existing Deployment. If you do not have one, create the nginx\nDeployment from\nRun a Stateless Application Using a Deployment\n:\nkubectl apply -f https://k8s.io/examples/application/deployment.yaml\nVerify the Deployment runs two Pods:\nkubectl get deployment nginx-deployment\nThe output is similar to:\nNAME               READY   UP-TO-DATE   AVAILABLE   AGE\nnginx-deployment   2/2     2            2           10s"
+}

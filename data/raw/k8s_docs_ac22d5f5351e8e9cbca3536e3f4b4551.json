@@ -1,0 +1,7 @@
+{
+  "id": "ac22d5f5351e8e9cbca3536e3f4b4551",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1alpha1) — ImagePullSecret",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1alpha1/#kubelet-config-k8s-io-v1alpha1-ImagePullSecret",
+  "text": "Appears in:\nImagePullCredentials\nImagePullSecret is a representation of a Kubernetes secret object coordinates along\nwith a credential hash of the pull secret credentials this object contains.\nField\nDescription\nuid\n[Required]\nstring\nNo description provided.\nnamespace\n[Required]\nstring\nNo description provided.\nname\n[Required]\nstring\nNo description provided.\ncredentialHash\n[Required]\nstring\nCredentialHash is a SHA-256 retrieved by hashing the image pull credentials\ncontent of the secret specified by the UID/Namespace/Name coordinates.\nCredentialHash is a SHA-256 retrieved by hashing the image pull credentials\ncontent of the secret specified by the UID/Namespace/Name coordinates."
+}

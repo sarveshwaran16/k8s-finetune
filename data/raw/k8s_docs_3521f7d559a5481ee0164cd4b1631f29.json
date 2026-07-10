@@ -1,0 +1,7 @@
+{
+  "id": "3521f7d559a5481ee0164cd4b1631f29",
+  "source": "k8s_docs",
+  "title": "PersistentVolume — PhotonPersistentDiskVolumeSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-v1/#PhotonPersistentDiskVolumeSource",
+  "text": "Represents a Photon Controller persistent disk resource.\nField\nDescription\nfsType\nstring\nfsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.\npdID\n*\nstring\npdID is the ID that identifies Photon Controller persistent disk"
+}

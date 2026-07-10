@@ -1,0 +1,7 @@
+{
+  "id": "2f94efbfb350dfa21f945aa5698f774e",
+  "source": "k8s_docs",
+  "title": "Scheduling Framework — EnqueueExtension",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#enqueueextension",
+  "text": "EnqueueExtension is the interface where the plugin can control\nwhether to retry scheduling of Pods rejected by this plugin, based on changes in the cluster.\nPlugins that implement PreEnqueue, PreFilter, Filter, Reserve or Permit should implement this interface.\n\nQueueingHint is a callback function for deciding whether a Pod can be requeued to the active queue or backoff queue.\nIt's executed every time a certain kind of event or change happens in the cluster.\nWhen the QueueingHint finds that the event might make the Pod schedulable,\nthe Pod is put into the active queue or the backoff queue\nso that the scheduler will retry the scheduling of the Pod."
+}

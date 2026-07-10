@@ -1,0 +1,7 @@
+{
+  "id": "12880294c414543122028667dd628e10",
+  "source": "k8s_docs",
+  "title": "StatefulSet Basics — Objectives",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#objectives",
+  "text": "StatefulSets are intended to be used with stateful applications and distributed\nsystems. However, the administration of stateful applications and\ndistributed systems on Kubernetes is a broad, complex topic. In order to\ndemonstrate the basic features of a StatefulSet, and not to conflate the former\ntopic with the latter, you will deploy a simple web application using a StatefulSet.\nAfter this tutorial, you will be familiar with the following.\nHow to create a StatefulSet\nHow a StatefulSet manages its Pods\nHow to delete a StatefulSet\nHow to scale a StatefulSet\nHow to update a StatefulSet's Pods"
+}

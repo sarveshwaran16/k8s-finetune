@@ -1,0 +1,7 @@
+{
+  "id": "f2f3c0e84d24055beb8cbb0c05584a95",
+  "source": "k8s_docs",
+  "title": "Scheduling Framework — PreBind",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#pre-bind",
+  "text": "These plugins are used to perform any work required before a Pod is bound. For\nexample, a pre-bind plugin may provision a network volume and mount it on the\ntarget node before allowing the Pod to run there.\nIf any PreBind plugin returns an error, the Pod is\nrejected\nand\nreturned to the scheduling queue."
+}

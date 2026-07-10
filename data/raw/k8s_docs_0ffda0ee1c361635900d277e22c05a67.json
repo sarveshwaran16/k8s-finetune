@@ -1,0 +1,7 @@
+{
+  "id": "0ffda0ee1c361635900d277e22c05a67",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — scheduler.alpha.kubernetes.io/critical-pod (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#scheduler-alpha-kubernetes-io-critical-pod-deprecated",
+  "text": "Type: Annotation\nExample:\nscheduler.alpha.kubernetes.io/critical-pod: \"\"\nUsed on: Pod\nThis annotation lets Kubernetes control plane know about a Pod being a critical Pod\nso that the descheduler will not remove this Pod.\n\nType: Label, Annotation\nExample:\njobset.sigs.k8s.io/jobset-name: \"my-jobset\"\nUsed on: Jobs, Pods\nThis label/annotation is used to store the name of the JobSet that a Job or Pod belongs to.\nJobSet\nis an extension API that you can deploy into your Kubernetes cluster."
+}

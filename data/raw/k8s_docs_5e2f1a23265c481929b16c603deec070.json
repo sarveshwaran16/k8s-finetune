@@ -1,0 +1,7 @@
+{
+  "id": "5e2f1a23265c481929b16c603deec070",
+  "source": "k8s_docs",
+  "title": "The kubectl command-line tool — Role of kubectl",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/kubectl/#role-of-kubectl",
+  "text": "The\nkubectl\ntool is the primary interface for creating, inspecting, updating, and deleting Kubernetes objects.\nIt complements the\nKubernetes Components\nthat run inside your cluster\nand the\nKubernetes API\nthat those components implement.\nWhether you run\nkubectl\nfrom your laptop or from a Pod inside the cluster, it sends requests to the API server.\nOther clients, such as\nclient libraries\nand web dashboards\nlike\nHeadlamp\n, also communicate through the same API."
+}

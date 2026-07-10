@@ -1,0 +1,7 @@
+{
+  "id": "2d6945b07b69bb74b0471045ba9dc840",
+  "source": "k8s_docs",
+  "title": "Device Plugins — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/#what-s-next",
+  "text": "Learn about\nscheduling GPU resources\nusing device\nplugins\nLearn about\nadvertising extended resources\non a node\nLearn about the\nTopology Manager\nRead about using\nhardware acceleration for TLS ingress\nwith Kubernetes\nRead more about\nExtended Resource allocation by DRA\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nItems on this page refer to third party products or projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for those third-party products or projects. See the\nCNCF website guidelines\nfor more details.\nYou should read the\ncontent guide\nbefore proposing a change that adds an extra third-party link."
+}

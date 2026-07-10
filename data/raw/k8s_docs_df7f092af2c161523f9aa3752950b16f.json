@@ -1,0 +1,7 @@
+{
+  "id": "df7f092af2c161523f9aa3752950b16f",
+  "source": "k8s_docs",
+  "title": "IPv4/IPv6 dual-stack — Windows support",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/dual-stack/#windows-support",
+  "text": "Kubernetes on Windows does not support single-stack \"IPv6-only\" networking. However,\ndual-stack IPv4/IPv6 networking for pods and nodes with single-family services\nis supported.\nYou can use IPv4/IPv6 dual-stack networking with\nl2bridge\nnetworks.\nYou can read more about the different network modes for Windows within the\nNetworking on Windows\ntopic."
+}

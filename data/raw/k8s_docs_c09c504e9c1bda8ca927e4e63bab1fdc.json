@@ -1,0 +1,7 @@
+{
+  "id": "c09c504e9c1bda8ca927e4e63bab1fdc",
+  "source": "k8s_docs",
+  "title": "Recommended Labels — Examples",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/#examples",
+  "text": "To illustrate different ways to use these labels the following examples have varying complexity.\n\nConsider the case for a simple stateless service deployed using\nDeployment\nand\nService\nobjects. The following two snippets represent how the labels could be used in their simplest form.\nThe\nDeployment\nis used to oversee the pods running the application itself.\napiVersion\n:\napps/v1\nkind\n:\nDeployment\nmetadata\n:\nlabels\n:\napp.kubernetes.io/name\n:\nmyservice\napp.kubernetes.io/instance\n:\nmyservice-abcxyz\n...\nThe\nService\nis used to expose the application.\napiVersion\n:\nv1\nkind\n:\nService\nmetadata\n:\nlabels\n:\napp.kubernetes.io/name\n:\nmyservice\napp.kubernetes.io/instance\n:\nmyservice-abcxyz\n..."
+}

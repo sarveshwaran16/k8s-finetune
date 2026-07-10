@@ -1,0 +1,7 @@
+{
+  "id": "b7d17a0c970531e98c32862e31f34be5",
+  "source": "k8s_docs",
+  "title": "Custom Resources — Custom resource field selectors",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#custom-resource-field-selectors",
+  "text": "Field Selectors\nlet clients select custom resources based on the value of one or more resource\nfields.\nAll custom resources support the\nmetadata.name\nand\nmetadata.namespace\nfield\nselectors.\nFields declared in a\nCustomResourceDefinition\nmay also be used with field selectors when included in the\nspec.versions[*].selectableFields\nfield of the\nCustomResourceDefinition\n."
+}

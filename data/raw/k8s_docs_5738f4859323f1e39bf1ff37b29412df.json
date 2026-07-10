@@ -1,0 +1,7 @@
+{
+  "id": "5738f4859323f1e39bf1ff37b29412df",
+  "source": "k8s_docs",
+  "title": "Access DRA Device Metadata — Go applications",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/access-dra-device-metadata/#go-applications",
+  "text": "The\nk8s.io/dynamic-resource-allocation/devicemetadata\npackage provides\nready-made functions for reading metadata files. These functions handle\nversion negotiation automatically, decoding the metadata stream and converting\nit to internal types so your code works across schema versions without manual\nversion checks.\nFor a directly referenced ResourceClaim:\nimport\n\"k8s.io/dynamic-resource-allocation/devicemetadata\"\ndm\n,\nerr\n:=\ndevicemetadata\n.\nReadResourceClaimMetadata\n(\n\"gpu-claim\"\n,\n\"gpu\"\n)\nFor a template-generated claim (using the Pod's claim reference name):\ndm\n,\nerr\n:=\ndevicemetadata\n.\nReadResourceClaimTemplateMetadata\n(\n\"my-gpu\"\n,\n\"gpu\"\n)\nIf you know the specific driver name, you can read a single driver's metadata\nfile:\ndm\n,\nerr\n:=\ndevicemetadata\n.\nReadResourceClaimMetadataWithDriverName\n(\n\"gpu.example.com\"\n,\n\"gpu-claim\"\n,\n\"gpu\"\n)\nThe returned\n*metadata.DeviceMetadata\ncontains the claim metadata, requests,\nand per-device attributes.\nApplications in other languages can read the JSON file directly and inspect\nthe\napiVersion\nfield to determine the schema version before parsing."
+}

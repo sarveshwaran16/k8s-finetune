@@ -1,0 +1,7 @@
+{
+  "id": "6ada662f4d78d711268aa1739e3c21ba",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_diff/#synopsis",
+  "text": "Show what differences would be applied to existing static pod manifests. See also: kubeadm upgrade apply --dry-run\nkubeadm upgrade diff [version] [flags]\n\n--config string\nPath to a kubeadm configuration file.\n-c, --context-lines int     Default: 3\nHow many lines of context in the diff\n-h, --help\nhelp for diff\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nPath to a kubeadm configuration file.\nHow many lines of context in the diff\nhelp for diff\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file."
+}

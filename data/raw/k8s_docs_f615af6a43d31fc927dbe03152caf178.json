@@ -1,0 +1,7 @@
+{
+  "id": "f615af6a43d31fc927dbe03152caf178",
+  "source": "k8s_docs",
+  "title": "Configure Service Accounts for Pods — Opt out of API credential automounting",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#opt-out-of-api-credential-automounting",
+  "text": "If you don't want the\nkubelet\nto automatically mount a ServiceAccount's API credentials, you can opt out of\nthe default behavior.\nYou can opt out of automounting API credentials on\n/var/run/secrets/kubernetes.io/serviceaccount/token\nfor a service account by setting\nautomountServiceAccountToken: false\non the ServiceAccount:\nFor example:\napiVersion\n:\nv1\nkind\n:\nServiceAccount\nmetadata\n:\nname\n:\nbuild-robot\nautomountServiceAccountToken\n:\nfalse\n...\nYou can also opt out of automounting API credentials for a particular Pod:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmy-pod\nspec\n:\nserviceAccountName\n:\nbuild-robot\nautomountServiceAccountToken\n:\nfalse\n...\nIf both the ServiceAccount and the Pod's\n.spec\nspecify a value for\nautomountServiceAccountToken\n, the Pod spec takes precedence."
+}

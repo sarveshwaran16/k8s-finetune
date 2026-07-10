@@ -1,0 +1,7 @@
+{
+  "id": "30f3ba65ba0eab03de1bf0f8a7b6c6e6",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_apply/#synopsis",
+  "text": "Upgrade your Kubernetes cluster to the specified version\nThe \"apply [version]\" command executes the following phases:\npreflight        Run preflight checks before upgrade\ncontrol-plane    Upgrade the control plane\nupload-config    Upload the kubeadm and kubelet configurations to ConfigMaps\n  /kubeadm         Upload the kubeadm ClusterConfiguration to a ConfigMap\n  /kubelet         Upload the kubelet configuration to a ConfigMap\nkubelet-config   Upgrade the kubelet configuration for this node\nbootstrap-token  Configures bootstrap token and cluster-info RBAC rules\naddon            Upgrade the default kubeadm addons\n  /coredns         Upgrade the CoreDNS addon\n  /kube-proxy      Upgrade the kube-proxy addon\npost-upgrade     Run post upgrade tasks\nkubeadm upgrade apply [version]"
+}

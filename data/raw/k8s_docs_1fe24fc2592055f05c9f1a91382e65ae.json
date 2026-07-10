@@ -1,0 +1,7 @@
+{
+  "id": "1fe24fc2592055f05c9f1a91382e65ae",
+  "source": "k8s_docs",
+  "title": "Tutorials — Cluster Management",
+  "source_url": "https://kubernetes.io/docs/tutorials/#cluster-management",
+  "text": "Running Kubelet in Standalone Mode\nConfiguring Swap Memory on Kubernetes Nodes\nInstall Drivers and Allocate Devices with DRA\nExplore Validating and Mutating Admission Policies\n\nIf you would like to write a tutorial, see\nContent Page Types\nfor information about the tutorial page type.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

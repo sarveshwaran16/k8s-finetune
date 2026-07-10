@@ -1,0 +1,7 @@
+{
+  "id": "f93642e1a070308f54bc466a9416804b",
+  "source": "k8s_docs",
+  "title": "EndpointSlices — Ownership",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#ownership",
+  "text": "In most use cases, EndpointSlices are owned by the Service that the endpoint\nslice object tracks endpoints for. This ownership is indicated by an owner\nreference on each EndpointSlice as well as a\nkubernetes.io/service-name\nlabel that enables simple lookups of all EndpointSlices belonging to a Service."
+}

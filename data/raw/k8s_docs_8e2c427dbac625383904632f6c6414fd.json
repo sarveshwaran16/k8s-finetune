@@ -1,0 +1,7 @@
+{
+  "id": "8e2c427dbac625383904632f6c6414fd",
+  "source": "k8s_docs",
+  "title": "PodGroup Lifecycle — Limitations",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/podgroup-api/lifecycle/#limitations",
+  "text": "All Pods in a\nPodGroup\nmust use the same\n.spec.schedulerName\n.\nIf a mismatch is detected, the scheduler rejects all Pods in the group as unschedulable.\nThe\nspec.schedulingPolicy.gang.minCount\nfield on a PodGroup is immutable.\nOnce created, you cannot change the minimum number of Pods that must be schedulable for the group to be admitted.\nThe\nspec.schedulingGroup\nfield on a Pod is immutable.\nOnce set, a Pod cannot move to a different PodGroup.\nThe maximum number of\nPodGroupTemplates\nin a single\nWorkload\nis 8.\nThe\nPodGroupScheduled\ncondition reflects the outcome of the initial scheduling\nattempt only. Once the condition is set to\nTrue\n, the scheduler does not update it\nif Pods later fail, are evicted, or stop running."
+}

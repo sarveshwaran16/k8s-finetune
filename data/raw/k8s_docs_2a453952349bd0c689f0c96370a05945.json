@@ -1,0 +1,7 @@
+{
+  "id": "2a453952349bd0c689f0c96370a05945",
+  "source": "k8s_docs",
+  "title": "Observability — Tracing tools",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/observability/#tracing-tools",
+  "text": "Grafana Tempo\noffers scalable, low-cost distributed tracing storage.\nJaeger\ncaptures and visualizes distributed traces for microservices.\nOpenTelemetry Collector\nreceives, processes, and exports telemetry data including traces.\nZipkin\nprovides distributed tracing collection and visualization.\n\nLearn how to\ncollect resource usage metrics with metrics-server\nExplore\nlogging tasks and tutorials\nFollow the\nmonitoring and tracing task guides\nReview the\nsystem metrics guide\nfor component endpoints and stability\nReview the\ncommon observability tools\nsection for vetted third-party options"
+}

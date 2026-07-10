@@ -1,0 +1,7 @@
+{
+  "id": "906b5b96042d46538eb0cbe7f90bfb85",
+  "source": "k8s_docs",
+  "title": "DeviceClass — DeviceClassConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/device-class-v1/#DeviceClassConfiguration",
+  "text": "DeviceClassConfiguration is used in DeviceClass.\nField\nDescription\nopaque\nOpaqueDeviceConfiguration\nOpaque provides driver-specific configuration parameters.\n\nDeviceSelector must have exactly one field set.\nField\nDescription\ncel\nCELDeviceSelector\nCEL contains a CEL expression for selecting a device."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7c0cb619ed44b988fd78f2c7f69bad3a",
+  "source": "k8s_docs",
+  "title": "Pod — FlexVolumeSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#FlexVolumeSource",
+  "text": "FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.\nField\nDescription\ndriver\n*\nstring\ndriver is the name of the driver to use for this volume.\nfsType\nstring\nfsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default filesystem depends on FlexVolume script.\noptions\nobject\noptions is Optional: this field holds extra command options if any.\nreadOnly\nboolean\nreadOnly is Optional: defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.\nsecretRef\nLocalObjectReference\nsecretRef is Optional: secretRef is reference to the secret object containing sensitive information to pass to the plugin scripts. This may be empty if no secret object is specified. If the secret object contains more than one secret, all secrets are passed to the plugin scripts."
+}

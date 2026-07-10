@@ -1,0 +1,7 @@
+{
+  "id": "b9a52f9ab7e7f73290dfc627f5bceeb7",
+  "source": "k8s_docs",
+  "title": "Troubleshooting Clusters — Worker Nodes",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/#worker-nodes",
+  "text": "/var/log/kubelet.log\n- logs from the kubelet, responsible for running containers on the node\n/var/log/kube-proxy.log\n- logs from\nkube-proxy\n, which is responsible for directing traffic to Service endpoints\n\nThis is an incomplete list of things that could go wrong, and how to adjust your cluster setup to mitigate the problems."
+}

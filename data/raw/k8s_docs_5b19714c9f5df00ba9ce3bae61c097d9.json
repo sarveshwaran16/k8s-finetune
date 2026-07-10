@@ -1,0 +1,7 @@
+{
+  "id": "5b19714c9f5df00ba9ce3bae61c097d9",
+  "source": "k8s_docs",
+  "title": "Install Drivers and Allocate Devices with DRA — Create the Pod that references that ResourceClaim",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/install-use-dra/#create-the-pod-that-references-that-resourceclaim",
+  "text": "Below is the Pod manifest referencing the ResourceClaim you just made,\nsome-gpu\n, in the\nspec.resourceClaims.resourceClaimName\nfield. The local name\nfor that claim,\ngpu\n, is then used in the\nspec.containers.resources.claims.name\nfield to allocate the claim to the Pod's\nunderlying container.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\npod0\nnamespace\n:\ndra-tutorial\nlabels\n:\napp\n:\npod\nspec\n:\ncontainers\n:\n-\nname\n:\nctr0\nimage\n:\nubuntu:24.04\ncommand\n:\n[\n\"bash\"\n,\n\"-c\"\n]\nargs\n:\n[\n\"export; trap 'exit 0' TERM; sleep 9999 & wait\"\n]\nresources\n:\nclaims\n:\n-\nname\n:\ngpu\nresourceClaims\n:\n-\nname\n:\ngpu\nresourceClaimName\n:\nsome-gpu\nkubectl apply --server-side -f http://k8s.io/examples/dra/driver-install/example/pod.yaml\nConfirm the pod has deployed:\nkubectl get pod pod0 -n dra-tutorial\nThe output is similar to this:\nNAME   READY   STATUS    RESTARTS   AGE\npod0   1/1     Running   0          9s\nConfirm the pod has deployed:\nkubectl get pod pod0 -n dra-tutorial\nThe output is similar to this:\nNAME   READY   STATUS    RESTARTS   AGE\npod0   1/1     Running   0          9s"
+}

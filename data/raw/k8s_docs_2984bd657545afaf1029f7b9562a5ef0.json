@@ -1,0 +1,7 @@
+{
+  "id": "2984bd657545afaf1029f7b9562a5ef0",
+  "source": "k8s_docs",
+  "title": " — Options inherited from parent commands",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_token/kubeadm_token_delete/#options-inherited-from-parent-commands",
+  "text": "--dry-run\nWhether to enable dry-run mode or not\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nWhether to enable dry-run mode or not\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

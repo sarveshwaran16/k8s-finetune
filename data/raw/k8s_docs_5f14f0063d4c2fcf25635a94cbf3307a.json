@@ -1,0 +1,7 @@
+{
+  "id": "5f14f0063d4c2fcf25635a94cbf3307a",
+  "source": "k8s_docs",
+  "title": "Extending Kubernetes — Authentication",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#authentication",
+  "text": "Authentication\nmaps headers or certificates\nin all requests to a username for the client making the request.\nKubernetes has several built-in authentication methods that it supports. It can also sit behind an\nauthenticating proxy, and it can send a token from an\nAuthorization:\nheader to a remote service for\nverification (an\nauthentication webhook\n)\nif those don't meet your needs."
+}

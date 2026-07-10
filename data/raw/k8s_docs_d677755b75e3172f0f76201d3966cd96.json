@@ -1,0 +1,7 @@
+{
+  "id": "d677755b75e3172f0f76201d3966cd96",
+  "source": "k8s_docs",
+  "title": "Init Containers — Differences from regular containers",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/init-containers/#differences-from-regular-containers",
+  "text": "Init containers support all the fields and features of app containers,\nincluding resource limits,\nvolumes\n, and security settings. However, the\nresource requests and limits for an init container are handled differently,\nas documented in\nResource sharing within containers\n.\nRegular init containers (in other words: excluding sidecar containers) do not support the\nlifecycle\n,\nlivenessProbe\n,\nreadinessProbe\n, or\nstartupProbe\nfields. Init containers\nmust run to completion before the Pod can be ready; sidecar containers continue running\nduring a Pod's lifetime, and\ndo\nsupport some probes. See\nsidecar container\nfor further details about sidecar containers.\nIf you specify multiple init containers for a Pod, kubelet runs each init\ncontainer sequentially. Each init container must succeed before the next can run.\nWhen all of the init containers have run to completion, kubelet initializes\nthe application containers for the Pod and runs them as usual."
+}

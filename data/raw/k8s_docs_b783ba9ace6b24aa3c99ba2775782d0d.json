@@ -1,0 +1,7 @@
+{
+  "id": "b783ba9ace6b24aa3c99ba2775782d0d",
+  "source": "k8s_docs",
+  "title": "Configure Service Accounts for Pods — Verify that imagePullSecrets are set for new Pods",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#verify-that-imagepullsecrets-are-set-for-new-pods",
+  "text": "Now, when a new Pod is created in the current namespace and using the default\nServiceAccount, the new Pod has its\nspec.imagePullSecrets\nfield set automatically:\nkubectl run nginx --image\n=\n<registry name>/nginx --restart\n=\nNever\nkubectl get pod nginx -o\n=\njsonpath\n=\n'{.spec.imagePullSecrets[0].name}{\"\\n\"}'\nThe output is:\nmyregistrykey"
+}

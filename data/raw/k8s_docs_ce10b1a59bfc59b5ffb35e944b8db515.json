@@ -1,0 +1,7 @@
+{
+  "id": "ce10b1a59bfc59b5ffb35e944b8db515",
+  "source": "k8s_docs",
+  "title": "Pod — ObjectFieldSelector",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ObjectFieldSelector",
+  "text": "ObjectFieldSelector selects an APIVersioned field of an object.\nField\nDescription\napiVersion\nstring\nVersion of the schema the FieldPath is written in terms of, defaults to \"v1\".\nfieldPath\n*\nstring\nPath of the field to select in the specified API version.\n\nPersistentVolumeClaimTemplate is used to produce PersistentVolumeClaim objects as part of an EphemeralVolumeSource.\nField\nDescription\nmetadata\nObjectMeta\nMay contain labels and annotations that will be copied into the PVC when creating it. No other fields are allowed and will be rejected during validation.\nspec\n*\nPersistentVolumeClaimSpec\nThe specification for the PersistentVolumeClaim. The entire content is copied unchanged into the PVC that gets created from this template. The same fields as in a PersistentVolumeClaim are also valid here."
+}

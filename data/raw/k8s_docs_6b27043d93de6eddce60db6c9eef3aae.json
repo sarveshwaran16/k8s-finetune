@@ -1,0 +1,7 @@
+{
+  "id": "6b27043d93de6eddce60db6c9eef3aae",
+  "source": "k8s_docs",
+  "title": "Adding entries to Pod /etc/hosts with HostAliases — Why does the kubelet manage the hosts file?",
+  "source_url": "https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/#why-does-kubelet-manage-the-hosts-file",
+  "text": "The kubelet manages the\nhosts\nfile for each container of the Pod to prevent the container runtime from\nmodifying the file after the containers have already been started.\nHistorically, Kubernetes always used Docker Engine as its container runtime, and Docker Engine would\nthen modify the\n/etc/hosts\nfile after each container had started.\nCurrent Kubernetes can use a variety of container runtimes; even so, the kubelet manages the\nhosts file within each container so that the outcome is as intended regardless of which\ncontainer runtime you use.\nAvoid making manual changes to the hosts file inside a container.\nIf you make manual changes to the hosts file,\nthose changes are lost when the container exits."
+}

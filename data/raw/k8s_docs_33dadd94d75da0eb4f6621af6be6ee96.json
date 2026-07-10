@@ -1,0 +1,7 @@
+{
+  "id": "33dadd94d75da0eb4f6621af6be6ee96",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Mutation scope and field considerations",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#mutation-scope-considerations",
+  "text": "This section provides recommendations for the scope of mutations and any special\nconsiderations for object fields. In summary, these are as follows:\nPatch only the fields that you need to patch.\nDon't overwrite array values.\nAvoid side effects in mutations when possible.\nAvoid self-mutations.\nFail open and validate the final state.\nPlan for future field updates in later versions.\nPrevent webhooks from self-triggering.\nDon't change immutable objects."
+}

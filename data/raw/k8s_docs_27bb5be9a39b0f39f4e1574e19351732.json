@@ -1,0 +1,7 @@
+{
+  "id": "27bb5be9a39b0f39f4e1574e19351732",
+  "source": "k8s_docs",
+  "title": "Kubelet Pod Info gRPC API — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/node/kubelet-pod-info-grpc-api/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

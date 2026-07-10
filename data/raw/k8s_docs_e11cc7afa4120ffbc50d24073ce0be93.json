@@ -1,0 +1,7 @@
+{
+  "id": "e11cc7afa4120ffbc50d24073ce0be93",
+  "source": "k8s_docs",
+  "title": "PodGroup — BasicSchedulingPolicy",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/scheduling/pod-group-v1alpha2/#BasicSchedulingPolicy",
+  "text": "BasicSchedulingPolicy indicates that standard Kubernetes scheduling behavior should be used.\n\nGangSchedulingPolicy defines the parameters for gang scheduling.\nField\nDescription\nminCount\n*\ninteger\nMinCount is the minimum number of pods that must be schedulable or scheduled at the same time for the scheduler to admit the entire group. It must be a positive integer."
+}

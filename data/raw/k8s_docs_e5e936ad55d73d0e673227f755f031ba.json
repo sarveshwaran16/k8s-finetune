@@ -1,0 +1,7 @@
+{
+  "id": "e5e936ad55d73d0e673227f755f031ba",
+  "source": "k8s_docs",
+  "title": "Deploy and Access the Kubernetes Dashboard — Accessing the Dashboard UI",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui",
+  "text": "To protect your cluster data, Dashboard deploys with a minimal RBAC configuration by default.\nCurrently, Dashboard only supports logging in with a Bearer Token.\nTo create a token for this demo, you can follow our guide on\ncreating a sample user\n.\n\nYou can enable access to the Dashboard using the\nkubectl\ncommand-line tool,\nby running the following command:\nkubectl -n kubernetes-dashboard port-forward svc/kubernetes-dashboard-kong-proxy 8443:443\nKubectl will make Dashboard available at\nhttps://localhost:8443\n.\nThe UI can\nonly\nbe accessed from the machine where the command is executed. See\nkubectl port-forward --help\nfor more options."
+}

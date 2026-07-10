@@ -1,0 +1,7 @@
+{
+  "id": "697850bb615ad7d1d20be7c63c7d56fa",
+  "source": "k8s_docs",
+  "title": "Connect a Frontend to a Backend Using Services — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/connecting-frontend-backend/#before-you-begin",
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nTo check the version, enter\nkubectl version\n.\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nTo check the version, enter\nkubectl version\n.\nThis task uses\nServices with external load balancers\n, which\nrequire a supported environment. If your environment does not support this, you can use a Service of type\nNodePort\ninstead."
+}

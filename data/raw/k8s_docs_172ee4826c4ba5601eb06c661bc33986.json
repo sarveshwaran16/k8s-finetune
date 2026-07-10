@@ -1,0 +1,7 @@
+{
+  "id": "172ee4826c4ba5601eb06c661bc33986",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubectl — Verify kubectl setup",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/troubleshoot-kubectl/#verify-kubectl-setup",
+  "text": "Make sure you have installed and configured\nkubectl\ncorrectly on your local machine.\nCheck the\nkubectl\nversion to ensure it is up-to-date and compatible with your cluster.\nCheck kubectl version:\nkubectl version\nYou'll see a similar output:\nClient Version: version.Info{Major:\"1\", Minor:\"27\", GitVersion:\"v1.27.4\",GitCommit:\"fa3d7990104d7c1f16943a67f11b154b71f6a132\", GitTreeState:\"clean\",BuildDate:\"2023-07-19T12:20:54Z\", GoVersion:\"go1.20.6\", Compiler:\"gc\", Platform:\"linux/amd64\"}\nKustomize Version: v5.0.1\nServer Version: version.Info{Major:\"1\", Minor:\"27\", GitVersion:\"v1.27.3\",GitCommit:\"25b4e43193bcda6c7328a6d147b1fb73a33f1598\", GitTreeState:\"clean\",BuildDate:\"2023-06-14T09:47:40Z\", GoVersion:\"go1.20.5\", Compiler:\"gc\", Platform:\"linux/amd64\"}\nIf you see\nUnable to connect to the server: dial tcp <server-ip>:8443: i/o timeout\n,\ninstead of\nServer Version\n, you need to troubleshoot kubectl connectivity with your cluster.\nMake sure you have installed the kubectl by following the\nofficial documentation for installing kubectl\n, and you have\nproperly configured the\n$PATH\nenvironment variable."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "12865a7fd594d4aaf1f1fa0c896f61d3",
+  "source": "k8s_docs",
+  "title": "Accessing the Kubernetes API from a Pod — Without using a proxy",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/access-api-from-pod/#without-using-a-proxy",
+  "text": "It is possible to avoid using the kubectl proxy by passing the authentication token\ndirectly to the API server. The internal certificate secures the connection.\n# Point to the internal API server hostname\nAPISERVER\n=\nhttps://kubernetes.default.svc\n# Path to ServiceAccount token\nSERVICEACCOUNT\n=\n/var/run/secrets/kubernetes.io/serviceaccount\n# Read this Pod's namespace\nNAMESPACE\n=\n$(\ncat\n${\nSERVICEACCOUNT\n}\n/namespace\n)\n# Read the ServiceAccount bearer token\nTOKEN\n=\n$(\ncat\n${\nSERVICEACCOUNT\n}\n/token\n)\n# Reference the internal certificate authority (CA)\nCACERT\n=\n${\nSERVICEACCOUNT\n}\n/ca.crt\n# Explore the API with TOKEN\ncurl --cacert\n${\nCACERT\n}\n--header\n\"Authorization: Bearer\n${\nTOKEN\n}\n\"\n-X GET\n${\nAPISERVER\n}\n/api\nThe output will be similar to this:\n{\n\"kind\"\n:\n\"APIVersions\"\n,\n\"versions\"\n:\n[\n\"v1\"\n],\n\"serverAddressByClientCIDRs\"\n:\n[\n{\n\"clientCIDR\"\n:\n\"0.0.0.0/0\"\n,\n\"serverAddress\"\n:\n\"10.0.1.149:443\"\n}\n]\n}"
+}

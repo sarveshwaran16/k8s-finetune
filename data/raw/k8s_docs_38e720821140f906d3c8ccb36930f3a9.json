@@ -1,0 +1,7 @@
+{
+  "id": "38e720821140f906d3c8ccb36930f3a9",
+  "source": "k8s_docs",
+  "title": "Using RBAC Authorization — Auto-reconciliation",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/#auto-reconciliation",
+  "text": "At each start-up, the API server updates default cluster roles with any missing permissions,\nand updates default cluster role bindings with any missing subjects.\nThis allows the cluster to repair accidental modifications, and helps to keep roles and role bindings\nup-to-date as permissions and subjects change in new Kubernetes releases.\nTo opt out of this reconciliation, set the\nrbac.authorization.kubernetes.io/autoupdate\nannotation on a default cluster role or default cluster RoleBinding to\nfalse\n.\nBe aware that missing default permissions and subjects can result in non-functional clusters.\nAuto-reconciliation is enabled by default if the RBAC authorizer is active."
+}

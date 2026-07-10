@@ -1,0 +1,7 @@
+{
+  "id": "a86518dbb4f9683666a3b39dafed2d52",
+  "source": "k8s_docs",
+  "title": "Service — DNS",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#dns",
+  "text": "You can (and almost always should) set up a DNS service for your Kubernetes\ncluster using an\nadd-on\n.\nA cluster-aware DNS server, such as CoreDNS, watches the Kubernetes API for new\nServices and creates a set of DNS records for each one. If DNS has been enabled\nthroughout your cluster then all Pods should automatically be able to resolve\nServices by their DNS name.\nFor example, if you have a Service called\nmy-service\nin a Kubernetes\nnamespace\nmy-ns\n, the control plane and the DNS Service acting together\ncreate a DNS record for\nmy-service.my-ns\n. Pods in the\nmy-ns\nnamespace\nshould be able to find the service by doing a name lookup for\nmy-service\n(\nmy-service.my-ns\nwould also work).\nPods in other namespaces must qualify the name as\nmy-service.my-ns\n. These names\nwill resolve to the cluster IP assigned for the Service.\nKubernetes also supports DNS SRV (Service) records for named ports. If the\nmy-service.my-ns\nService has a port named\nhttp\nwith the protocol set to\nTCP\n, you can do a DNS SRV query for\n_http._tcp.my-service.my-ns\nto discover\nthe port number for\nhttp\n, as well as the IP address.\nThe Kubernetes DNS server is the only way to access\nExternalName\nServices.\nYou can find more information about\nExternalName\nresolution in\nDNS for Services and Pods\n."
+}

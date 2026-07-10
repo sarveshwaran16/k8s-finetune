@@ -1,0 +1,7 @@
+{
+  "id": "bb823c2fd2893127e51f83b0a3ac2bee",
+  "source": "k8s_docs",
+  "title": "Configure the Aggregation Layer — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-aggregation-layer/#what-s-next",
+  "text": "Set up an extension api-server\nto work with the aggregation layer.\nFor a high level overview, see\nExtending the Kubernetes API with the aggregation layer\n.\nLearn how to\nExtend the Kubernetes API Using Custom Resource Definitions\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

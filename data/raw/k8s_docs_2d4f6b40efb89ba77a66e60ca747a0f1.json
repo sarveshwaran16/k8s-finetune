@@ -1,0 +1,7 @@
+{
+  "id": "2d4f6b40efb89ba77a66e60ca747a0f1",
+  "source": "k8s_docs",
+  "title": "Set up a High Availability etcd Cluster with kubeadm — What's next",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-etcd-with-kubeadm/#what-s-next",
+  "text": "Once you have an etcd cluster with 3 working members, you can continue setting up a\nhighly available control plane using the\nexternal etcd method with kubeadm\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

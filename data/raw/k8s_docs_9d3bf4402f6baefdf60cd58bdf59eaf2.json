@@ -1,0 +1,7 @@
+{
+  "id": "9d3bf4402f6baefdf60cd58bdf59eaf2",
+  "source": "k8s_docs",
+  "title": "Configure Quotas for API Objects — For app developers",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/quota-api-object/#for-app-developers",
+  "text": "Assign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods"
+}

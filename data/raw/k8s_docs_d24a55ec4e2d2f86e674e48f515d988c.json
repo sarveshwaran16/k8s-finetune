@@ -1,0 +1,7 @@
+{
+  "id": "d24a55ec4e2d2f86e674e48f515d988c",
+  "source": "k8s_docs",
+  "title": "kubeadm Configuration (v1beta4) — ImageMeta",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta4/#kubeadm-k8s-io-v1beta4-ImageMeta",
+  "text": "Appears in:\nDNS\nLocalEtcd\nDNS\nLocalEtcd\nImageMeta allows to customize the image used for components that are not\noriginated from the Kubernetes/Kubernetes release process\nField\nDescription\nimageRepository\nstring\nimageRepository\nsets the container registry to pull images from.\nif not set, the\nimageRepository\ndefined in ClusterConfiguration will be used instead.\nimageTag\nstring\nimageTag\nallows to specify a tag for the image.\nIn case this value is set, kubeadm does not change automatically the version of\nthe above components during upgrades.\nimageRepository\nsets the container registry to pull images from.\nif not set, the\nimageRepository\ndefined in ClusterConfiguration will be used instead.\nimageTag\nallows to specify a tag for the image.\nIn case this value is set, kubeadm does not change automatically the version of\nthe above components during upgrades."
+}

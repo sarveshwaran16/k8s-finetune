@@ -1,0 +1,7 @@
+{
+  "id": "8abf97036cbfadd8a267354e152f0451",
+  "source": "k8s_docs",
+  "title": "kube-apiserver — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/#synopsis",
+  "text": "The Kubernetes API server validates and configures data\nfor the api objects which include pods, services, replicationcontrollers, and\nothers. The API Server services REST operations and provides the frontend to the\ncluster's shared state through which all other components interact.\nkube-apiserver [flags]"
+}

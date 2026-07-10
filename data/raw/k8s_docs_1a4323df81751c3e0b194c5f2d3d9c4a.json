@@ -1,0 +1,7 @@
+{
+  "id": "1a4323df81751c3e0b194c5f2d3d9c4a",
+  "source": "k8s_docs",
+  "title": "Volume Populators and Data Sources — Using volume populators",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-populators-and-data-sources/#using-volume-populators",
+  "text": "Volume populators are\ncontrollers\nthat can\ncreate non-empty volumes, where the contents of the volume are determined by a Custom Resource.\nUsers create a populated volume by referring to a Custom Resource using the\ndataSourceRef\nfield:\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\npopulated-pvc\nspec\n:\ndataSourceRef\n:\nname\n:\nexample-name\nkind\n:\nExampleDataSource\napiGroup\n:\nexample.storage.k8s.io\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n10Gi\nBecause volume populators are external components, attempts to create a PVC that uses one\ncan fail if not all the correct components are installed. External controllers should generate\nevents on the PVC to provide feedback on the status of the creation, including warnings if\nthe PVC cannot be created due to some missing component.\nYou can install the alpha\nvolume data source validator\ncontroller into your cluster. That controller generates warning Events on a PVC in the case that no populator\nis registered to handle that kind of data source. When a suitable populator is installed for a PVC, it's the\nresponsibility of that populator controller to report Events that relate to volume creation and issues during\nthe process."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "5bfa1bbcac242d1d50c51c54acaff994",
+  "source": "k8s_docs",
+  "title": "Pod — ContainerResizePolicy",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ContainerResizePolicy",
+  "text": "ContainerResizePolicy represents resource resize policy for the container.\nField\nDescription\nresourceName\n*\nstring\nName of the resource to which this resource resize policy applies. Supported values: cpu, memory.\nrestartPolicy\n*\nstring\nRestart policy to apply when specified resource is resized. If not specified, it defaults to NotRequired."
+}

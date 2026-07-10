@@ -1,0 +1,7 @@
+{
+  "id": "5d3f10736d3d617365cec91bbf2d7e24",
+  "source": "k8s_docs",
+  "title": "Leases — Leader election",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/leases/#leader-election",
+  "text": "Kubernetes also uses Leases to ensure only one instance of a component is running at any given time.\nThis is used by control plane components like\nkube-controller-manager\nand\nkube-scheduler\nin\nHA configurations, where only one instance of the component should be actively running while the other\ninstances are on stand-by.\nRead\ncoordinated leader election\nto learn about how Kubernetes builds on the Lease API to select which component instance\nacts as leader."
+}

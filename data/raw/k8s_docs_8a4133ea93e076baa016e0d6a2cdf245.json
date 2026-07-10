@@ -1,0 +1,7 @@
+{
+  "id": "8a4133ea93e076baa016e0d6a2cdf245",
+  "source": "k8s_docs",
+  "title": "Configure a Pod to Use a ConfigMap — Cleaning up",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#cleaning-up",
+  "text": "Delete the ConfigMaps and Pods that you made:\nkubectl delete configmaps/game-config configmaps/game-config-2 configmaps/game-config-3\n\\\nconfigmaps/game-config-env-file\nkubectl delete pod dapi-test-pod --now\n# You might already have removed the next set\nkubectl delete configmaps/special-config configmaps/env-config\nkubectl delete configmap -l\n'game-config in (config-4,config-5)'\nRemove the\nkustomization.yaml\nfile that you used to generate the ConfigMap:\nrm kustomization.yaml\nIf you created a directory\nconfigure-pod-container\nand no longer need it, you should remove that too,\nor move it into the trash can / deleted files location.\nrm -r configure-pod-container"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "b17c1cb958c87c88a845421ca5261f93",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — Choosing an encryption algorithm",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#choosing-encryption-algorithm",
+  "text": "kubeadm allows you to choose an encryption algorithm that is used for creating\npublic and private keys. That can be done by using the\nencryptionAlgorithm\nfield of the\nkubeadm configuration:\napiVersion\n:\nkubeadm.k8s.io/v1beta4\nkind\n:\nClusterConfiguration\nencryptionAlgorithm\n:\n<ALGORITHM>\n<ALGORITHM>\ncan be one of\nRSA-2048\n(default),\nRSA-3072\n,\nRSA-4096\nor\nECDSA-P256\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a78fbc12c30a82c64efaf4dfb6adc678",
+  "source": "k8s_docs",
+  "title": "Explore Validating and Mutating Admission Policies",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/admission-policies/",
+  "text": "This page lets you try out declarative\nadmission policies\n, which allow you to use the Common\nExpression Language (CEL) to validate or mutate resources.\nKubernetes 1.36 supports two kinds of admission policy:\nValidatingAdmissionPolicy\nMutatingAdmissionPolicy\nThis tutorial covers both kinds of admission policy."
+}

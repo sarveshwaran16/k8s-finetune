@@ -1,0 +1,7 @@
+{
+  "id": "56606c92dcaa4168d200e1c6fe2bcdaa",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — Kubernetes API terminology",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#standard-api-terminology",
+  "text": "Kubernetes generally leverages common RESTful terminology to describe the\nAPI concepts:\nA\nresource type\nis the name used in the URL (\npods\n,\nnamespaces\n,\nservices\n)\nAll resource types have a concrete representation (their object schema) which is called a\nkind\nA list of instances of a resource type is known as a\ncollection\nA single instance of a resource type is called a\nresource\n, and also usually represents an\nobject\nFor some resource types, the API includes one or more\nsub-resources\n, which are represented as URI paths below the resource\nMost Kubernetes API resource types are\nobjects\n–\nthey represent a concrete instance of a concept on the cluster, like a\npod or namespace. A smaller number of API resource types are\nvirtual\nin\nthat they often represent operations on objects, rather than objects, such\nas a permission check\n(use a POST with a JSON-encoded body of\nSubjectAccessReview\nto the\nsubjectaccessreviews\nresource), or the\neviction\nsub-resource of a Pod\n(used to trigger\nAPI-initiated eviction\n)."
+}

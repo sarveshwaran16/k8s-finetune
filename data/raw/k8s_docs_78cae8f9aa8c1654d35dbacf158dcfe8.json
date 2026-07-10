@@ -1,0 +1,7 @@
+{
+  "id": "78cae8f9aa8c1654d35dbacf158dcfe8",
+  "source": "k8s_docs",
+  "title": "CSIDriver — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/csi-driver-v1/#get-read",
+  "text": "GET /apis/storage.k8s.io/v1/csidrivers/{name}\nName\nType\nDescription\nname\nstring\nname of the CSIDriver\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nCSIDriver"
+}

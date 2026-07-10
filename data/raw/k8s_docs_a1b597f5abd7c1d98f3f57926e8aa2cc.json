@@ -1,0 +1,7 @@
+{
+  "id": "a1b597f5abd7c1d98f3f57926e8aa2cc",
+  "source": "k8s_docs",
+  "title": "StorageVersion — ServerStorageVersion",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiserverinternal/storage-version-v1alpha1/#ServerStorageVersion",
+  "text": "An API server instance reports the version it can decode and the version it encodes objects to when persisting objects in the backend.\nField\nDescription\napiServerID\n*\nstring\napiServerID is the ID of the reporting API server.\ndecodableVersions\n*\nstring array\ndecodableVersions are the encoding versions the API server can handle to decode. The API server can decode objects encoded in these versions. The encodingVersion must be included in the decodableVersions.\nencodingVersion\n*\nstring\nencodingVersion the API server encodes the object to when persisting it in the backend (e.g., etcd).\nservedVersions\nstring array\nservedVersions lists all versions the API server can serve. DecodableVersions must include all ServedVersions."
+}

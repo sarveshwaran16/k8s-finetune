@@ -1,0 +1,7 @@
+{
+  "id": "b9f22459924d689ecfb968821a219a20",
+  "source": "k8s_docs",
+  "title": "Configure Default Memory Requests and Limits for a Namespace — What if you specify a container's request, but not its limit?",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/#what-if-you-specify-a-container-s-request-but-not-its-limit",
+  "text": "Here's a manifest for a Pod that has one container. The container\nspecifies a memory request, but not a limit:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\ndefault-mem-demo-3\nspec\n:\ncontainers\n:\n-\nname\n:\ndefault-mem-demo-3-ctr\nimage\n:\nnginx\nresources\n:\nrequests\n:\nmemory\n:\n\"128Mi\"\nCreate the Pod:\nkubectl apply -f https://k8s.io/examples/admin/resource/memory-defaults-pod-3.yaml --namespace\n=\ndefault-mem-example\nView the Pod's specification:\nkubectl get pod default-mem-demo-3 --output\n=\nyaml --namespace\n=\ndefault-mem-example\nThe output shows that the container's memory request is set to the value specified in the\ncontainer's manifest. The container is limited to use no more than 512MiB of\nmemory, which matches the default memory limit for the namespace.\nresources:\n  limits:\n    memory: 512Mi\n  requests:\n    memory: 128Mi"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "61a6fa6aacb7c7365baf53e407a89059",
+  "source": "k8s_docs",
+  "title": "Declarative Management of Kubernetes Objects Using Configuration Files — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#what-s-next",
+  "text": "Managing Kubernetes Objects Using Imperative Commands\nImperative Management of Kubernetes Objects Using Configuration Files\nKubectl Command Reference\nKubernetes API Reference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

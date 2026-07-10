@@ -1,0 +1,7 @@
+{
+  "id": "077663b203f322cb114cfa28ad002869",
+  "source": "k8s_docs",
+  "title": "Pod Security Standards — What about sandboxed Pods?",
+  "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#what-about-sandboxed-pods",
+  "text": "There is currently no API standard that controls whether a Pod is considered sandboxed or\nnot. Sandbox Pods may be identified by the use of a sandboxed runtime (such as gVisor or Kata\nContainers), but there is no standard definition of what a sandboxed runtime is.\nThe protections necessary for sandboxed workloads can differ from others. For example, the need to\nrestrict privileged permissions is lessened when the workload is isolated from the underlying\nkernel. This allows for workloads requiring heightened permissions to still be isolated.\nAdditionally, the protection of sandboxed workloads is highly dependent on the method of\nsandboxing. As such, no single recommended profile is recommended for all sandboxed workloads."
+}

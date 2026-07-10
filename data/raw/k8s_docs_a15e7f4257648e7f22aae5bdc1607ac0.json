@@ -1,0 +1,7 @@
+{
+  "id": "a15e7f4257648e7f22aae5bdc1607ac0",
+  "source": "k8s_docs",
+  "title": "Multi-tenancy — Operators",
+  "source_url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/#operators",
+  "text": "Operators\nare Kubernetes controllers that manage\napplications. Operators can simplify the management of multiple instances of an application, like\na database service, which makes them a common building block in the multi-consumer (SaaS)\nmulti-tenancy use case.\nOperators used in a multi-tenant environment should follow a stricter set of guidelines.\nSpecifically, the Operator should:\nSupport creating resources within different tenant namespaces, rather than just in the namespace\nin which the Operator is deployed.\nEnsure that the Pods are configured with resource requests and limits, to ensure scheduling and fairness.\nSupport configuration of Pods for data-plane isolation techniques such as node isolation and\nsandboxed containers."
+}

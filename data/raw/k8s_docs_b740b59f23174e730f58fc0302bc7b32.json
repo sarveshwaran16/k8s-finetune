@@ -1,0 +1,7 @@
+{
+  "id": "b740b59f23174e730f58fc0302bc7b32",
+  "source": "k8s_docs",
+  "title": "Limit Storage Consumption — ResourceQuota to limit PVC count and cumulative storage capacity",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/limit-storage-consumption/#resourcequota-to-limit-pvc-count-and-cumulative-storage-capacity",
+  "text": "Admins can limit the number of PVCs in a namespace as well as the cumulative capacity of those PVCs. New PVCs that exceed\neither maximum value will be rejected.\nIn this example, a 6th PVC in the namespace would be rejected because it exceeds the maximum count of 5. Alternatively,\na 5Gi maximum quota when combined with the 2Gi max limit above, cannot have 3 PVCs where each has 2Gi. That would be 6Gi requested\nfor a namespace capped at 5Gi.\napiVersion\n:\nv1\nkind\n:\nResourceQuota\nmetadata\n:\nname\n:\nstoragequota\nspec\n:\nhard\n:\npersistentvolumeclaims\n:\n\"5\"\nrequests.storage\n:\n\"5Gi\""
+}

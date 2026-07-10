@@ -1,0 +1,7 @@
+{
+  "id": "9761aae56876f165b9144bf6353ca5d5",
+  "source": "k8s_docs",
+  "title": "Configure Multiple Schedulers — Verifying that the pods were scheduled using the desired schedulers",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/#verifying-that-the-pods-were-scheduled-using-the-desired-schedulers",
+  "text": "In order to make it easier to work through these examples, we did not verify that the\npods were actually scheduled using the desired schedulers. We can verify that by\nchanging the order of pod and deployment config submissions above. If we submit all the\npod configs to a Kubernetes cluster before submitting the scheduler deployment config,\nwe see that the pod\nannotation-second-scheduler\nremains in \"Pending\" state forever\nwhile the other two pods get scheduled. Once we submit the scheduler deployment config\nand our new scheduler starts running, the\nannotation-second-scheduler\npod gets\nscheduled as well.\nAlternatively, you can look at the \"Scheduled\" entries in the event logs to\nverify that the pods were scheduled by the desired schedulers.\nkubectl get events\nYou can also use a\ncustom scheduler configuration\nor a custom container image for the cluster's main scheduler by modifying its static pod manifest\non the relevant control plane nodes."
+}

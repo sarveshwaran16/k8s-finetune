@@ -1,0 +1,7 @@
+{
+  "id": "1f3620b353e58c8e8000bead78e85995",
+  "source": "k8s_docs",
+  "title": "Custom Resources — Selectable fields for custom resources",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#crd-selectable-fields",
+  "text": "The\nspec.versions[*].selectableFields\nfield of a\nCustomResourceDefinition\nmay be used to\ndeclare which other fields in a custom resource may be used in field selectors.\nThe following example adds the\n.spec.color\nand\n.spec.size\nfields as\nselectable fields.\napiVersion\n:\napiextensions.k8s.io/v1\nkind\n:\nCustomResourceDefinition\nmetadata\n:\nname\n:\nshirts.stable.example.com\nspec\n:\ngroup\n:\nstable.example.com\nscope\n:\nNamespaced\nnames\n:\nplural\n:\nshirts\nsingular\n:\nshirt\nkind\n:\nShirt\nversions\n:\n-\nname\n:\nv1\nserved\n:\ntrue\nstorage\n:\ntrue\nschema\n:\nopenAPIV3Schema\n:\ntype\n:\nobject\nproperties\n:\nspec\n:\ntype\n:\nobject\nproperties\n:\ncolor\n:\ntype\n:\nstring\nsize\n:\ntype\n:\nstring\nselectableFields\n:\n-\njsonPath\n:\n.spec.color\n-\njsonPath\n:\n.spec.size\nadditionalPrinterColumns\n:\n-\njsonPath\n:\n.spec.color\nname\n:\nColor\ntype\n:\nstring\n-\njsonPath\n:\n.spec.size\nname\n:\nSize\ntype\n:\nstring\nField selectors can then be used to get only resources with a\ncolor\nof\nblue\n:\nkubectl get shirts.stable.example.com --field-selector spec.color\n=\nblue\nThe output should be:\nNAME       COLOR  SIZE\nexample1   blue   S\nexample2   blue   M"
+}

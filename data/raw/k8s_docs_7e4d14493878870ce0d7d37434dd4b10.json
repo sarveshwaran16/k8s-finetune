@@ -1,0 +1,7 @@
+{
+  "id": "7e4d14493878870ce0d7d37434dd4b10",
+  "source": "k8s_docs",
+  "title": "Translate a Docker Compose File to Kubernetes Resources — Docker Compose Versions",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/#docker-compose-versions",
+  "text": "Kompose supports Docker Compose versions: 1, 2 and 3. We have limited support on versions 2.1 and 3.2 due to their experimental nature.\nA full list on compatibility between all three versions is listed in our\nconversion document\nincluding a list of all incompatible Docker Compose keys.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

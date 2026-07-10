@@ -1,0 +1,7 @@
+{
+  "id": "09f9b623c41c7186b4df83c4636f4154",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1) — WebhookConnectionInfo",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-WebhookConnectionInfo",
+  "text": "Appears in:\nWebhookConfiguration\nField\nDescription\ntype\n[Required]\nstring\nControls how the webhook should communicate with the server.\nValid values:\nKubeConfigFile: use the file specified in kubeConfigFile to locate the\nserver.\nInClusterConfig: use the in-cluster configuration to call the\nSubjectAccessReview API hosted by kube-apiserver. This mode is not\nallowed for kube-apiserver.\nkubeConfigFile\n[Required]\nstring\nPath to KubeConfigFile for connection info\nRequired, if connectionInfo.Type is KubeConfig\nControls how the webhook should communicate with the server.\nValid values:\nKubeConfigFile: use the file specified in kubeConfigFile to locate the\nserver.\nInClusterConfig: use the in-cluster configuration to call the\nSubjectAccessReview API hosted by kube-apiserver. This mode is not\nallowed for kube-apiserver.\nPath to KubeConfigFile for connection info\nRequired, if connectionInfo.Type is KubeConfig"
+}

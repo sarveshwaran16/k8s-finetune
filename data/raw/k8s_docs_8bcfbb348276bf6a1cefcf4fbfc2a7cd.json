@@ -1,0 +1,7 @@
+{
+  "id": "8bcfbb348276bf6a1cefcf4fbfc2a7cd",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — Dry-run authorization",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#dry-run-authorization",
+  "text": "Authorization for dry-run and non-dry-run requests is identical. Thus, to make\na dry-run request, you must be authorized to make the non-dry-run request.\nFor example, to run a dry-run\npatch\nfor a Deployment, you must be authorized\nto perform that\npatch\n. Here is an example of a rule for Kubernetes\nRBAC\nthat allows patching\nDeployments:\nrules\n:\n-\napiGroups\n:\n[\n\"apps\"\n]\nresources\n:\n[\n\"deployments\"\n]\nverbs\n:\n[\n\"patch\"\n]\nSee\nAuthorization Overview\n."
+}

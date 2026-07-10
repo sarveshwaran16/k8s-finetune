@@ -1,0 +1,7 @@
+{
+  "id": "51ccec5b20ebb1c0a2a4755b7119bb52",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — controller.kubernetes.io/pod-deletion-cost",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#pod-deletion-cost",
+  "text": "Type: Annotation\nExample:\ncontroller.kubernetes.io/pod-deletion-cost: \"10\"\nUsed on: Pod\nThis annotation is used to set\nPod Deletion Cost\nwhich allows users to influence ReplicaSet downscaling order.\nThe annotation value parses into an\nint32\ntype.\n\nType: Annotation\nExample:\ncluster-autoscaler.kubernetes.io/enable-ds-eviction: \"true\"\nUsed on: Pod\nThis annotation controls whether a DaemonSet pod should be evicted by a ClusterAutoscaler.\nThis annotation needs to be specified on DaemonSet pods in a DaemonSet manifest.\nWhen this annotation is set to\n\"true\"\n, the ClusterAutoscaler is allowed to evict\na DaemonSet Pod, even if other rules would normally prevent that.\nTo disallow the ClusterAutoscaler from evicting DaemonSet pods,\nyou can set this annotation to\n\"false\"\nfor important DaemonSet pods.\nIf this annotation is not set, then the ClusterAutoscaler follows its overall behavior\n(i.e evict the DaemonSets based on its configuration)."
+}

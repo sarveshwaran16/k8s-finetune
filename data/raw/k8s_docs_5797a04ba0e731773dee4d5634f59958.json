@@ -1,0 +1,7 @@
+{
+  "id": "5797a04ba0e731773dee4d5634f59958",
+  "source": "k8s_docs",
+  "title": "Find Out What Container Runtime is Used on a Node — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/find-out-runtime-you-use/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

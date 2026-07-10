@@ -1,0 +1,7 @@
+{
+  "id": "a334247ec0345f810ad5f299ca9b1c72",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — create",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#create",
+  "text": "Create a pod using the data in pod.json\nkubectl\ncreate\n-f ./pod.json\nCreate a pod based on the JSON passed into stdin\ncat pod.json | kubectl\ncreate\n-f -\nEdit the data in registry.yaml in JSON then create the resource using the edited data\nkubectl\ncreate\n-f registry.yaml --\nedit\n-o json\nCreate a resource from a file or from stdin.\nJSON and YAML formats are accepted."
+}

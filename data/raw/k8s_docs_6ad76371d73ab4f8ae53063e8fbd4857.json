@@ -1,0 +1,7 @@
+{
+  "id": "6ad76371d73ab4f8ae53063e8fbd4857",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — logs",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#logs",
+  "text": "Return snapshot logs from pod nginx with only one container\nkubectl logs nginx\nReturn snapshot logs from pod nginx with multi containers\nkubectl logs nginx --\nall\n-containers=\ntrue\nReturn snapshot logs from all containers in pods defined by label app=nginx\nkubectl logs -l\napp\n=nginx\n--all-containers\n=\ntrue\nReturn snapshot of previous terminated ruby container logs from pod web-1\nkubectl logs -p -c ruby web\n-1\nBegin streaming the logs of the ruby container in pod web-1\nkubectl logs -f -c ruby web\n-1\nBegin streaming the logs from all containers in pods defined by label app=nginx\nkubectl logs -f -l\napp\n=nginx\n--all-containers\n=\ntrue\nDisplay only the most recent 20 lines of output in pod nginx\nkubectl logs\n--tail\n=20 nginx\nShow all logs from pod nginx written in the last hour\nkubectl logs\n--since\n=1h nginx\nShow logs from a kubelet with an expired serving certificate\nkubectl logs\n--insecure-skip-tls-verify-backend nginx\nReturn snapshot logs from first container of a job named hello\nkubectl logs\njob\n/hello\nReturn snapshot logs from container nginx-1 of a deployment named nginx\nkubectl logs deployment/nginx -c nginx\n-1\nPrint the logs for a container in a pod or specified resource. If the pod has only one container, the container name is optional."
+}

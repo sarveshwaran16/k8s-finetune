@@ -1,0 +1,7 @@
+{
+  "id": "e4937f8b3e39ed2cf8cbf7de5321ab82",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Aggregation Layer — Aggregation layer",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/#aggregation-layer",
+  "text": "The aggregation layer runs in-process with the kube-apiserver. Until an extension resource is\nregistered, the aggregation layer will do nothing. To register an API, you add an\nAPIService\nobject, which \"claims\" the URL path in the Kubernetes API. At that point, the aggregation layer\nwill proxy anything sent to that API path (e.g.\n/apis/myextension.mycompany.io/v1/…\n) to the\nregistered APIService.\nThe most common way to implement the APIService is to run an\nextension API server\nin Pod(s) that\nrun in your cluster. If you're using the extension API server to manage resources in your cluster,\nthe extension API server (also written as \"extension-apiserver\") is typically paired with one or\nmore\ncontrollers\n. The apiserver-builder\nlibrary provides a skeleton for both extension API servers and the associated controller(s)."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "df3beccb865f036d0019f6158d92ab20",
+  "source": "k8s_docs",
+  "title": "API Priority and Fairness — Exempt requests",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/flow-control/#exempt-requests",
+  "text": "Some requests are considered sufficiently important that they are not subject to\nany of the limitations imposed by this feature. These exemptions prevent an\nimproperly-configured flow control configuration from totally disabling an API\nserver.\n\nThe flow control API involves two kinds of resources.\nPriorityLevelConfigurations\ndefine the available priority levels, the share of the available concurrency\nbudget that each can handle, and allow for fine-tuning queuing behavior.\nFlowSchemas\nare used to classify individual inbound requests, matching each to a\nsingle PriorityLevelConfiguration."
+}

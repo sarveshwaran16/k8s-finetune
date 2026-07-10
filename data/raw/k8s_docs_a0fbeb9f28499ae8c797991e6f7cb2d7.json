@@ -1,0 +1,7 @@
+{
+  "id": "a0fbeb9f28499ae8c797991e6f7cb2d7",
+  "source": "k8s_docs",
+  "title": "Specifying a Disruption Budget for your Application — Create the PDB object",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/configure-pdb/#create-the-pdb-object",
+  "text": "You can create or update the PDB object using kubectl.\nkubectl apply -f mypdb.yaml\n\nUse kubectl to check that your PDB is created.\nAssuming you don't actually have pods matching\napp: zookeeper\nin your namespace,\nthen you'll see something like this:\nkubectl get poddisruptionbudgets\nNAME     MIN AVAILABLE   MAX UNAVAILABLE   ALLOWED DISRUPTIONS   AGE\nzk-pdb   2               N/A               0                     7s\nIf there are matching pods (say, 3), then you would see something like this:\nkubectl get poddisruptionbudgets\nNAME     MIN AVAILABLE   MAX UNAVAILABLE   ALLOWED DISRUPTIONS   AGE\nzk-pdb   2               N/A               1                     7s\nThe non-zero value for\nALLOWED DISRUPTIONS\nmeans that the disruption controller has seen the pods,\ncounted the matching pods, and updated the status of the PDB.\nYou can get more information about the status of a PDB with this command:\nkubectl get poddisruptionbudgets zk-pdb -o yaml\napiVersion\n:\npolicy/v1\nkind\n:\nPodDisruptionBudget\nmetadata\n:\nannotations\n:\n…\ncreationTimestamp\n:\n\"2020-03-04T04:22:56Z\"\ngeneration\n:\n1\nname\n:\nzk-pdb\n…\nstatus\n:\ncurrentHealthy\n:\n3\ndesiredHealthy\n:\n2\ndisruptionsAllowed\n:\n1\nexpectedPods\n:\n3\nobservedGeneration\n:\n1"
+}

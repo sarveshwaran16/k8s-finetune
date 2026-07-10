@@ -1,0 +1,7 @@
+{
+  "id": "c479751422b59f7f63fb4e217498195e",
+  "source": "k8s_docs",
+  "title": "Application Security Checklist — Role Based Access Control (RBAC)",
+  "source_url": "https://kubernetes.io/docs/concepts/security/application-security-checklist/#rbac",
+  "text": "Permissions such as\ncreate\n,\npatch\n,\nupdate\nand\ndelete\nshould be only granted if necessary.\nAvoid creating RBAC permissions to create or update roles which can lead to\nprivilege escalation\n.\nReview bindings for the\nsystem:unauthenticated\ngroup and remove them where\npossible, as this gives access to anyone who can contact the API server at a network level.\nThe\ncreate\n,\nupdate\nand\ndelete\nverbs should be permitted judiciously.\nThe\npatch\nverb if allowed on a Namespace can\nallow users to update labels on the namespace or deployments\nwhich can increase the attack surface.\nFor sensitive workloads, consider providing a recommended ValidatingAdmissionPolicy\nthat further restricts the permitted write actions."
+}

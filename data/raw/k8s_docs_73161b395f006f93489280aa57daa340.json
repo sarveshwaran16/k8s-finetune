@@ -1,0 +1,7 @@
+{
+  "id": "73161b395f006f93489280aa57daa340",
+  "source": "k8s_docs",
+  "title": "Running Kubelet in Standalone Mode — Container Runtime",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#container-runtime-1",
+  "text": "sudo systemctl disable --now crio.service\nsudo systemctl daemon-reload\nsudo rm -rf /usr/local/bin\nsudo rm -rf /usr/local/lib\nsudo rm -rf /usr/local/share\nsudo rm -rf /usr/libexec/crio\nsudo rm -rf /etc/crio\nsudo rm -rf /etc/containers\n\nsudo rm -rf /opt/cni\nsudo rm -rf /etc/cni\nsudo rm -rf /var/lib/cni"
+}

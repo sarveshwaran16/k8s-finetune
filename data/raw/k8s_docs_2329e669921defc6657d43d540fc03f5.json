@@ -1,0 +1,7 @@
+{
+  "id": "2329e669921defc6657d43d540fc03f5",
+  "source": "k8s_docs",
+  "title": "PodGroup API — Template reference",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/podgroup-api/#template-reference",
+  "text": "The optional\nspec.podGroupTemplateRef\nlinks the PodGroup back to the PodGroupTemplate\nin the Workload it was created from. This is useful for observability and tooling.\nspec\n:\npodGroupTemplateRef\n:\nworkload\n:\nworkloadName\n:\ntraining-policy\npodGroupTemplateName\n:\nworker\n\nDevices\navailable through\nDynamic Resource Allocation (DRA)\ncan be requested by a PodGroup through its\nspec.resourceClaims\nfield:\napiVersion\n:\nscheduling.k8s.io/v1alpha2\nkind\n:\nPodGroup\nmetadata\n:\nname\n:\ntraining-group\nnamespace\n:\nsome-ns\nspec\n:\n...\nresourceClaims\n:\n-\nname\n:\npg-claim\nresourceClaimName\n:\nmy-pg-claim\n-\nname\n:\npg-claim-template\nresourceClaimTemplateName\n:\nmy-pg-template\nResourceClaims\nassociated with PodGroups can be shared by all Pods belonging to the group. With\nonly a reference to the PodGroup in the ResourceClaim's\nstatus.reservedFor\ninstead of each individual Pod, any number of Pods in the same PodGroup can\nshare a ResourceClaim. ResourceClaims can also be generated from\nResourceClaimTemplates\nfor each PodGroup, allowing the devices allocated to each generated\nResourceClaim to be shared by the Pods in each PodGroup.\nFor more details and a more complete example, see the\nDRA documentation\n."
+}

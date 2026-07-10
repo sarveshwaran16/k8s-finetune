@@ -1,0 +1,7 @@
+{
+  "id": "6b5dfde3eba6e8993000c43b42f041f8",
+  "source": "k8s_docs",
+  "title": "Deployments — Selector",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#selector",
+  "text": ".spec.selector\nis a required field that specifies a\nlabel selector\nfor the Pods targeted by this Deployment.\n.spec.selector\nmust match\n.spec.template.metadata.labels\n, or it will be rejected by the API.\nIn API version\napps/v1\n,\n.spec.selector\nand\n.metadata.labels\ndo not default to\n.spec.template.metadata.labels\nif not set. So they must be set explicitly. Also note that\n.spec.selector\nis immutable after creation of the Deployment in\napps/v1\n.\nA Deployment may terminate Pods whose labels match the selector if their template is different\nfrom\n.spec.template\nor if the total number of such Pods exceeds\n.spec.replicas\n. It brings up new\nPods with\n.spec.template\nif the number of Pods is less than the desired number.\nIf you have multiple controllers that have overlapping selectors, the controllers will fight with each\nother and won't behave correctly."
+}

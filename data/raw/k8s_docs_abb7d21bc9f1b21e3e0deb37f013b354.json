@@ -1,0 +1,7 @@
+{
+  "id": "abb7d21bc9f1b21e3e0deb37f013b354",
+  "source": "k8s_docs",
+  "title": "Authenticating — External integrations",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#external-integrations",
+  "text": "Kubernetes has native support for JWT and for OpenID Connect (OIDC); see\nJSON Web Token authentication\n.\nIntegrations with other authentication protocols (for example: LDAP, SAML, Kerberos, alternate X.509 schemes)\ncan be accomplished using an\nauthenticating proxy\nor by integrating with an\nauthentication webhook\n.\nYou can also use any custom method that issues\nclient X.509 certificates\nto clients,\nprovided that the API server will trust the valid certificates.\nRead\nX.509 client certificates\nto learn about how to generate a\ncertificate.\nIf you do issue certificates to clients, it is up to you (as a cloud platform administrator)\nto make sure that the certificate validity period, and other design choices you make, provide a\nsuitable level of security."
+}

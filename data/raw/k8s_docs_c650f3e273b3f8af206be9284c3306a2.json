@@ -1,0 +1,7 @@
+{
+  "id": "c650f3e273b3f8af206be9284c3306a2",
+  "source": "k8s_docs",
+  "title": "Versions in CustomResourceDefinitions — Upgrade existing objects to a new stored version",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definition-versioning/#upgrade-existing-objects-to-a-new-stored-version",
+  "text": "When deprecating versions and dropping support, select a storage upgrade\nprocedure.\nOption 1:\nUse the Storage Version Migrator\nRun the\nstorage Version migrator\nRemove the old version from the CustomResourceDefinition\nstatus.storedVersions\nfield.\nOption 2:\nManually upgrade the existing objects to a new stored version\nThe following is an example procedure to upgrade from\nv1beta1\nto\nv1\n.\nSet\nv1\nas the storage in the CustomResourceDefinition file and apply it\nusing kubectl. The\nstoredVersions\nis now\nv1beta1, v1\n.\nWrite an upgrade procedure to list all existing objects and write them with\nthe same content. This forces the backend to write objects in the current\nstorage version, which is\nv1\n.\nRemove\nv1beta1\nfrom the CustomResourceDefinition\nstatus.storedVersions\nfield.\nHere is an example of how to patch the\nstatus\nsubresource for a CRD object using\nkubectl\n:\nkubectl patch customresourcedefinitions <CRD_Name> --subresource\n=\n'status'\n--type\n=\n'merge'\n-p\n'{\"status\":{\"storedVersions\":[\"v1\"]}}'"
+}

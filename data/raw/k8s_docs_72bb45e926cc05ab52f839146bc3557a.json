@@ -1,0 +1,7 @@
+{
+  "id": "72bb45e926cc05ab52f839146bc3557a",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/psp (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-psp",
+  "text": "Type: Annotation\nExample:\nkubernetes.io/psp: restricted\nUsed on: Pod\nThis annotation was only relevant if you were using\nPodSecurityPolicy\nobjects.\nKubernetes v1.36 does not support the PodSecurityPolicy API.\nWhen the PodSecurityPolicy admission controller admitted a Pod, the admission controller\nmodified the Pod to have this annotation.\nThe value of the annotation was the name of the PodSecurityPolicy that was used for validation."
+}

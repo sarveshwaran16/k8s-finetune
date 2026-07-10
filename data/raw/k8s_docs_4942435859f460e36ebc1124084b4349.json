@@ -1,0 +1,7 @@
+{
+  "id": "4942435859f460e36ebc1124084b4349",
+  "source": "k8s_docs",
+  "title": "Local Files And Paths Used By The Kubelet — Container runtime",
+  "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#container-runtime",
+  "text": "Kubelet communicates with the container runtime using socket configured via the\nconfiguration parameters:\ncontainerRuntimeEndpoint\nfor runtime operations\nimageServiceEndpoint\nfor image management operations\nThe actual values of those endpoints depend on the container runtime being used.\n\nThe kubelet exposes a socket at the path\n/var/lib/kubelet/device-plugins/kubelet.sock\nfor\nvarious\nDevice Plugins to register\n.\nWhen a device plugin registers itself, it provides its socket path for the kubelet to connect.\nThe device plugin socket must be in the directory\n/var/lib/kubelet/device-plugins/\n.\nThis path is hardcoded and is not relative to the kubelet base directory (root directory).\nOn Linux, this path is always\n/var/lib/kubelet/device-plugins\n."
+}

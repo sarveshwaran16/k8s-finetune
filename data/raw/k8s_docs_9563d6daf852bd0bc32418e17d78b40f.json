@@ -1,0 +1,7 @@
+{
+  "id": "9563d6daf852bd0bc32418e17d78b40f",
+  "source": "k8s_docs",
+  "title": "EndpointSlices — EndpointSlice mirroring",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#endpointslice-mirroring",
+  "text": "The EndpointSlice API is a replacement for the older Endpoints API. To\npreserve compatibility with older controllers and user workloads that\nexpect\nkube-proxy\nto route traffic based on Endpoints resources, the cluster's control\nplane mirrors most user-created Endpoints resources to corresponding\nEndpointSlices.\n(However, this feature, like the rest of the Endpoints API, is\ndeprecated. Users who manually specify endpoints for selectorless\nServices should do so by creating EndpointSlice resources directly,\nrather than by creating Endpoints resources and allowing them to be\nmirrored.)\nThe control plane mirrors Endpoints resources unless:\nthe Endpoints resource has a\nendpointslice.kubernetes.io/skip-mirror\nlabel\nset to\ntrue\n.\nthe Endpoints resource has a\ncontrol-plane.alpha.kubernetes.io/leader\nannotation.\nthe corresponding Service resource does not exist.\nthe corresponding Service resource has a non-nil selector.\nIndividual Endpoints resources may translate into multiple EndpointSlices. This\nwill occur if an Endpoints resource has multiple subsets or includes endpoints\nwith multiple IP families (IPv4 and IPv6). A maximum of 1000 addresses per\nsubset will be mirrored to EndpointSlices."
+}

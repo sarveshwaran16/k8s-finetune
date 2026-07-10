@@ -1,0 +1,7 @@
+{
+  "id": "e77c21e831393fb63957e505fb80cc31",
+  "source": "k8s_docs",
+  "title": "Deployments — Min Ready Seconds",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#min-ready-seconds",
+  "text": ".spec.minReadySeconds\nis an optional field that specifies the minimum number of seconds for which a newly\ncreated Pod should be ready without any of its containers crashing, for it to be considered available.\nThis defaults to 0 (the Pod will be considered available as soon as it is ready). To learn more about when\na Pod is considered ready, see\nContainer Probes\n."
+}

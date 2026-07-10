@@ -1,0 +1,7 @@
+{
+  "id": "8ece42ea23eff2bed7bbf088593eb57b",
+  "source": "k8s_docs",
+  "title": "Extend kubectl with plugins — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/#before-you-begin",
+  "text": "You need to have a working\nkubectl\nbinary installed.\n\nA plugin is a standalone executable file, whose name begins with\nkubectl-\n. To install a plugin, move its executable file to anywhere on your\nPATH\n.\nYou can also discover and install kubectl plugins available in the open source\nusing\nKrew\n. Krew is a plugin manager maintained by\nthe Kubernetes SIG CLI community."
+}

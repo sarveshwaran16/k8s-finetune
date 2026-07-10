@@ -1,0 +1,7 @@
+{
+  "id": "96ce124b561ea49dc8af8870baf5542d",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — failure-domain.beta.kubernetes.io/region (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#failure-domainbetakubernetesioregion",
+  "text": "Type: Label\n\nType: Label\n\nType: Annotation\nExample:\npv.kubernetes.io/bind-completed: \"yes\"\nUsed on: PersistentVolumeClaim\nWhen this annotation is set on a PersistentVolumeClaim (PVC), that indicates that the lifecycle\nof the PVC has passed through initial binding setup. When present, that information changes\nhow the control plane interprets the state of PVC objects.\nThe value of this annotation does not matter to Kubernetes."
+}

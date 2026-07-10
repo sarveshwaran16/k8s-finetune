@@ -1,0 +1,7 @@
+{
+  "id": "9955937306d2b567f0aec7bd25955351",
+  "source": "k8s_docs",
+  "title": "Creating a cluster with kubeadm — Managed node labels",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#managed-node-labels",
+  "text": "By default, kubeadm enables the\nNodeRestriction\nadmission controller that restricts what labels can be self-applied by kubelets on node registration.\nThe admission controller documentation covers what labels are permitted to be used with the kubelet\n--node-labels\noption.\nBecause of the\nNodeRestriction\nadmission controller, you\ncannot\nuse the kubelet\n--node-labels\nflag to apply restricted labels (such as\nnode-role.kubernetes.io/*\n) during initialization.\nIf you attempt to add restricted labels by using this kubelet flag, the node will fail to register\nwith the API server.\nTo apply these labels manually, you must use\nkubectl label\nafter the node has joined the cluster.\nEnsure you are using a privileged kubeconfig, such as the kubeadm-managed\n/etc/kubernetes/admin.conf\n."
+}

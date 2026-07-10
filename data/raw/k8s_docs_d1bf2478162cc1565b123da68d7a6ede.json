@@ -1,0 +1,7 @@
+{
+  "id": "d1bf2478162cc1565b123da68d7a6ede",
+  "source": "k8s_docs",
+  "title": "API-initiated Eviction — Calling the Eviction API",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/#calling-the-eviction-api",
+  "text": "You can use a\nKubernetes language client\nto access the Kubernetes API and create an\nEviction\nobject. To do this, you\nPOST the attempted operation, similar to the following example:\npolicy/v1\npolicy/v1beta1\n{\n\"apiVersion\"\n:\n\"policy/v1\"\n,\n\"kind\"\n:\n\"Eviction\"\n,\n\"metadata\"\n:\n{\n\"name\"\n:\n\"quux\"\n,\n\"namespace\"\n:\n\"default\"\n}\n}\n{\n\"apiVersion\"\n:\n\"policy/v1beta1\"\n,\n\"kind\"\n:\n\"Eviction\"\n,\n\"metadata\"\n:\n{\n\"name\"\n:\n\"quux\"\n,\n\"namespace\"\n:\n\"default\"\n}\n}\nAlternatively, you can attempt an eviction operation by accessing the API using\ncurl\nor\nwget\n, similar to the following example:\ncurl -v -H\n'Content-type: application/json'\nhttps://your-cluster-api-endpoint.example/api/v1/namespaces/default/pods/quux/eviction -d @eviction.json"
+}

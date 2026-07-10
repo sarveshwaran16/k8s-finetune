@@ -1,0 +1,7 @@
+{
+  "id": "127b184fe4c4922915787da0d0bcf731",
+  "source": "k8s_docs",
+  "title": "Assign Pod-level CPU and memory resources — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-pod-level-resources/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

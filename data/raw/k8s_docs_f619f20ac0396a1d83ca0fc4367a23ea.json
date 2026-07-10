@@ -1,0 +1,7 @@
+{
+  "id": "f619f20ac0396a1d83ca0fc4367a23ea",
+  "source": "k8s_docs",
+  "title": "Ingress — Load balancing",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#load-balancing",
+  "text": "An Ingress controller is bootstrapped with some load balancing policy settings\nthat it applies to all Ingress, such as the load balancing algorithm, backend\nweight scheme, and others. More advanced load balancing concepts\n(e.g. persistent sessions, dynamic weights) are not yet exposed through the\nIngress. You can instead get these features through the load balancer used for\na Service.\nIt's also worth noting that even though health checks are not exposed directly\nthrough the Ingress, there exist parallel concepts in Kubernetes such as\nreadiness probes\nthat allow you to achieve the same end result. Please review the controller\nspecific documentation to see how they handle health checks."
+}

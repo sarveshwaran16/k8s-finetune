@@ -1,0 +1,7 @@
+{
+  "id": "9a3a473bd1d5ff0551aed5a52fe6b821",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — auth",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#auth",
+  "text": "Inspect authorization\n\n$ kubectl auth\n\nCheck to see if I can create pods in any namespace\nkubectl auth can-i\ncreate\npods\n--all-namespaces\nCheck to see if I can list deployments in my current namespace\nkubectl auth can-i\nlist\ndeployments.apps\nCheck to see if I can do everything in my current namespace (\"*\" means all)\nkubectl auth can-\ni\n'*'\n'*'\nCheck to see if I can get the job named \"bar\" in namespace \"foo\"\nkubectl auth can-i\nlist\njobs.batch/bar -n foo\nCheck to see if I can read pod logs\nkubectl auth can-i\nget\npods\n--subresource\n=log\nCheck to see if I can access the URL /logs/\nkubectl auth can-i\nget\n/logs/\nList all allowed actions in namespace \"foo\"\nkubectl auth can-i --list --\nnamespace\n=\nfoo\nCheck whether an action is allowed.\nVERB is a logical Kubernetes API verb like 'get', 'list', 'watch', 'delete', etc. TYPE is a Kubernetes resource. Shortcuts and groups will be resolved. NONRESOURCEURL is a partial URL that starts with \"/\". NAME is the name of a particular Kubernetes resource. This command pairs nicely with impersonation. See --as global flag."
+}

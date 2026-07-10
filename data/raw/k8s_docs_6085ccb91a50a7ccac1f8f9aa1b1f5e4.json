@@ -1,0 +1,7 @@
+{
+  "id": "6085ccb91a50a7ccac1f8f9aa1b1f5e4",
+  "source": "k8s_docs",
+  "title": "Limit Ranges — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/limit-range/#what-s-next",
+  "text": "For examples on using limits, see:\nhow to configure minimum and maximum CPU constraints per namespace\n.\nhow to configure minimum and maximum Memory constraints per namespace\n.\nhow to configure default CPU Requests and Limits per namespace\n.\nhow to configure default Memory Requests and Limits per namespace\n.\nhow to configure minimum and maximum Storage consumption per namespace\n.\na\ndetailed example on configuring quota per namespace\n.\nRefer to the\nLimitRanger design document\nfor context and historical information."
+}

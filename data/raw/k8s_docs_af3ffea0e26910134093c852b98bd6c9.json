@@ -1,0 +1,7 @@
+{
+  "id": "af3ffea0e26910134093c852b98bd6c9",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — Force deletion",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#force-deletion",
+  "text": "By enabling the delete option\nignoreStoreReadErrorWithClusterBreakingPotential\n, the\nuser can perform an unsafe force\ndelete\noperation of an undecryptable/corrupt\nresource. This option is behind an ALPHA feature gate, and it is disabled by\ndefault. In order to use this option, the cluster operator must enable the feature by\nsetting the command line option\n--feature-gates=AllowUnsafeMalformedObjectDeletion=true\n.\nA resource is considered corrupt if it can not be successfully retrieved from the\nstorage due to:\ntransformation error (for example: decryption failure), or\nthe object failed to decode.\nThe API server first attempts a normal deletion, and if it fails with\na\ncorrupt resource\nerror then it triggers the force delete. A force\ndelete\noperation\nis unsafe because it ignores finalizer constraints, and skips precondition checks.\nThe default value for this option is\nfalse\n, this maintains backward compatibility.\nFor a\ndelete\nrequest with\nignoreStoreReadErrorWithClusterBreakingPotential\nset to\ntrue\n, the fields\ndryRun\n,\ngracePeriodSeconds\n,\norphanDependents\n,\npreconditions\n, and\npropagationPolicy\nmust be left unset."
+}

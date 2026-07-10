@@ -1,0 +1,7 @@
+{
+  "id": "71257330358e2ca74c7210785973ed25",
+  "source": "k8s_docs",
+  "title": "Volume Snapshots — Delete",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/#delete",
+  "text": "Deletion is triggered by deleting the\nVolumeSnapshot\nobject, and the\nDeletionPolicy\nwill be followed. If the\nDeletionPolicy\nis\nDelete\n, then the underlying storage snapshot\nwill be deleted along with the\nVolumeSnapshotContent\nobject. If the\nDeletionPolicy\nis\nRetain\n, then both the underlying snapshot and\nVolumeSnapshotContent\nremain."
+}

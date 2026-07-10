@@ -1,0 +1,7 @@
+{
+  "id": "37bdefea284871f6e5d393a6be392977",
+  "source": "k8s_docs",
+  "title": "Decrypt Confidential Data that is Already Encrypted at Rest — Reconfigure other control plane hosts",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/decrypt-data/#api-server-config-update-more-2",
+  "text": "If you have multiple API servers in your cluster, you should again deploy the changes in turn to each API server.\nMake sure that you use the same encryption configuration on each control plane host.\n\nLearn more about the\nEncryptionConfiguration configuration API (v1)\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

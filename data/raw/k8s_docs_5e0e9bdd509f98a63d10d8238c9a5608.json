@@ -1,0 +1,7 @@
+{
+  "id": "5e0e9bdd509f98a63d10d8238c9a5608",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — OutputRoutingOptions",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#OutputRoutingOptions",
+  "text": "Appears in:\nJSONOptions\nTextOptions\nJSONOptions\nTextOptions\nOutputRoutingOptions contains options that are supported by both \"text\" and \"json\".\nField\nDescription\nsplitStream\n[Required]\nbool\n[Alpha] SplitStream redirects error messages to stderr while\ninfo messages go to stdout, with buffering. The default is to write\nboth to stdout, without buffering. Only available when\nthe LoggingAlphaOptions feature gate is enabled.\ninfoBufferSize\n[Required]\nk8s.io/apimachinery/pkg/api/resource.QuantityValue\n[Alpha] InfoBufferSize sets the size of the info stream when\nusing split streams. The default is zero, which disables buffering.\nOnly available when the LoggingAlphaOptions feature gate is enabled.\n[Alpha] SplitStream redirects error messages to stderr while\ninfo messages go to stdout, with buffering. The default is to write\nboth to stdout, without buffering. Only available when\nthe LoggingAlphaOptions feature gate is enabled.\n[Alpha] InfoBufferSize sets the size of the info stream when\nusing split streams. The default is zero, which disables buffering.\nOnly available when the LoggingAlphaOptions feature gate is enabled."
+}

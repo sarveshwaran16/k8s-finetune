@@ -1,0 +1,7 @@
+{
+  "id": "ae1bb8cc8eb951a81f0f8abbd9f88ef4",
+  "source": "k8s_docs",
+  "title": "Pod Quality of Service Classes — Burstable",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/#burstable",
+  "text": "Pods that are\nBurstable\nhave some lower-bound resource guarantees based on the request, but\ndo not require a specific limit. If a limit is not specified, it defaults to a\nlimit equivalent to the capacity of the Node, which allows the Pods to flexibly increase\ntheir resources if resources are available. In the event of Pod eviction due to Node\nresource pressure, these Pods are evicted only after all\nBestEffort\nPods are evicted.\nBecause a\nBurstable\nPod can include a Container that has no resource limits or requests, a Pod\nthat is\nBurstable\ncan try to use any amount of node resources.\nA Pod is given a QoS class of\nBurstable\nif:\nThe Pod does not meet the criteria for QoS class\nGuaranteed\n.\nAt least one Container in the Pod has a memory or CPU request or limit,\nor the Pod has a Pod-level memory or CPU request or limit."
+}

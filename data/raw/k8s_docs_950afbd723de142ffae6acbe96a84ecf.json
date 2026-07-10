@@ -1,0 +1,7 @@
+{
+  "id": "950afbd723de142ffae6acbe96a84ecf",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — deny",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-deny-em-",
+  "text": "Deny CSR 'csr-sqgzp'\nkubectl certificate\ndeny\ncsr-sqgzp\nDeny a certificate signing request.\nkubectl certificate deny allows a cluster admin to deny a certificate signing request (CSR). This action tells a certificate signing controller to not to issue a certificate to the requestor.\n\n$ kubectl certificate deny (-f FILENAME | NAME)"
+}

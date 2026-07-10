@@ -1,0 +1,7 @@
+{
+  "id": "77b72e9729191b94683efd10cc5ba1fa",
+  "source": "k8s_docs",
+  "title": "Extend Service IP Ranges — Adding a new ServiceCIDR",
+  "source_url": "https://kubernetes.io/docs/tasks/network/extend-service-ip-ranges/#adding-a-new-servicecidr",
+  "text": "On a cluster with a 10.96.0.0/28 range for Services, there is only 2^(32-28) - 2 = 14\nIP addresses available. The\nkubernetes.default\nService is always created; for this example,\nthat leaves you with only 13 possible Services.\nfor\ni in\n$(\nseq\n1\n13\n)\n;\ndo\nkubectl create service clusterip\n\"test-\n$i\n\"\n--tcp\n80\n-o json\n|\njq -r .spec.clusterIP\n;\ndone\n10.96.0.11\n10.96.0.5\n10.96.0.12\n10.96.0.13\n10.96.0.14\n10.96.0.2\n10.96.0.3\n10.96.0.4\n10.96.0.6\n10.96.0.7\n10.96.0.8\n10.96.0.9\nerror: failed to create ClusterIP service: Internal error occurred: failed to allocate a serviceIP: range is full\nYou can increase the number of IP addresses available for Services, by creating a new ServiceCIDR\nthat extends or adds new IP address ranges.\ncat\n<<EOF | kubectl apply -f -\napiVersion: networking.k8s.io/v1\nkind: ServiceCIDR\nmetadata:\nname: newcidr1\nspec:\ncidrs:\n- 10.96.0.0/24\nEOF\nservicecidr.networking.k8s.io/newcidr1 created\nand this will allow you to create new Services with ClusterIPs that will be picked from this new range.\nfor\ni in\n$(\nseq\n13\n16\n)\n;\ndo\nkubectl create service clusterip\n\"test-\n$i\n\"\n--tcp\n80\n-o json\n|\njq -r .spec.clusterIP\n;\ndone\n10.96.0.48\n10.96.0.200\n10.96.0.121\n10.96.0.144"
+}

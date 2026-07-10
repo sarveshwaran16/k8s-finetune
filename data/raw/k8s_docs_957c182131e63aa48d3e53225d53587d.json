@@ -1,0 +1,7 @@
+{
+  "id": "957c182131e63aa48d3e53225d53587d",
+  "source": "k8s_docs",
+  "title": "DNS for Services and Pods — Namespaces of Services",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#namespaces-of-services",
+  "text": "A DNS query may return different results based on the namespace of the Pod making\nit. DNS queries that don't specify a namespace are limited to the Pod's\nnamespace. Access Services in other namespaces by specifying it in the DNS query.\nFor example, consider a Pod in a\ntest\nnamespace. A\ndata\nService is in\nthe\nprod\nnamespace.\nA query for\ndata\nreturns no results, because it uses the Pod's\ntest\nnamespace.\nA query for\ndata.prod\nreturns the intended result, because it specifies the\nnamespace.\nDNS queries may be expanded using the Pod's\n/etc/resolv.conf\n. kubelet\nconfigures this file for each Pod. For example, a query for just\ndata\nmay be\nexpanded to\ndata.test.svc.cluster.local\n. The values of the\nsearch\noption\nare used to expand queries. To learn more about DNS queries, see\nthe\nresolv.conf\nmanual page\n.\nnameserver 10.32.0.10\nsearch <namespace>.svc.cluster.local svc.cluster.local cluster.local\noptions ndots:5\nIn summary, a Pod in the\ntest\nnamespace can successfully resolve either\ndata.prod\nor\ndata.prod.svc.cluster.local\n."
+}

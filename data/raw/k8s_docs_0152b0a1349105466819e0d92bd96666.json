@@ -1,0 +1,7 @@
+{
+  "id": "0152b0a1349105466819e0d92bd96666",
+  "source": "k8s_docs",
+  "title": "Authenticating — Anonymous authenticator configuration",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#anonymous-authenticator-configuration",
+  "text": "The\nAuthenticationConfiguration\ncan be used to configure the anonymous\nauthenticator. If you set the anonymous field in the\nAuthenticationConfiguration\nfile then you cannot set the\n--anonymous-auth\ncommand line option.\nThe main advantage of configuring anonymous authenticator using the authentication\nconfiguration file is that in addition to enabling and disabling anonymous authentication\nyou can also configure which endpoints support anonymous authentication.\nA sample authentication configuration file is below:\n---\n#\n# CAUTION: this is an example configuration.\n#          Do not use this as-is for your own cluster!\n#\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nAuthenticationConfiguration\nanonymous\n:\nenabled\n:\ntrue\nconditions\n:\n-\npath\n:\n/livez\n-\npath\n:\n/readyz\n-\npath\n:\n/healthz\nIn the configuration above, only the\n/livez\n,\n/readyz\nand\n/healthz\nendpoints\nare reachable by anonymous requests. Any other endpoints will not be reachable\nanonymously, even if your authorization configuration would allow it."
+}

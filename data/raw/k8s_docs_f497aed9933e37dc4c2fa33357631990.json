@@ -1,0 +1,7 @@
+{
+  "id": "f497aed9933e37dc4c2fa33357631990",
+  "source": "k8s_docs",
+  "title": "Generate Certificates Manually — Distributing Self-Signed CA Certificate",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/certificates/#distributing-self-signed-ca-certificate",
+  "text": "A client node may refuse to recognize a self-signed CA certificate as valid.\nFor a non-production deployment, or for a deployment that runs behind a company\nfirewall, you can distribute a self-signed CA certificate to all clients and\nrefresh the local list for valid certificates.\nOn each client, perform the following operations:\nsudo cp ca.crt /usr/local/share/ca-certificates/kubernetes.crt\nsudo update-ca-certificates\nUpdating certificates in /etc/ssl/certs...\n1 added, 0 removed; done.\nRunning hooks in /etc/ca-certificates/update.d....\ndone."
+}

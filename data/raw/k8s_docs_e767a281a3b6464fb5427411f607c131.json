@@ -1,0 +1,7 @@
+{
+  "id": "e767a281a3b6464fb5427411f607c131",
+  "source": "k8s_docs",
+  "title": "Scheduler Configuration — What's next",
+  "source_url": "https://kubernetes.io/docs/reference/scheduling/config/#what-s-next",
+  "text": "Read the\nkube-scheduler reference\nLearn about\nscheduling\nRead the\nkube-scheduler configuration (v1)\nreference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a33a5335a8d7e34721013f957544bf81",
+  "source": "k8s_docs",
+  "title": "Running Kubelet in Standalone Mode — What's next",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#what-s-next",
+  "text": "Follow\nHello, minikube\nto learn about running Kubernetes\nwith\na control plane. The minikube tool helps you set up a practice cluster on your own computer.\nLearn more about\nNetwork Plugins\nLearn more about\nContainer Runtimes\nLearn more about\nkubelet\nLearn more about\nstatic Pods\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nItems on this page refer to third party products or projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for those third-party products or projects. See the\nCNCF website guidelines\nfor more details.\nYou should read the\ncontent guide\nbefore proposing a change that adds an extra third-party link."
+}

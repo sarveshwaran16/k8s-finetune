@@ -1,0 +1,7 @@
+{
+  "id": "87392c4f8c0fecf396391a125392189d",
+  "source": "k8s_docs",
+  "title": "Debug Pods — Debugging Services",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/#debugging-services",
+  "text": "Services provide load balancing across a set of pods. There are several common problems that can make Services\nnot work properly. The following instructions should help debug Service problems.\nFirst, verify that there are endpoints for the service. For every Service object,\nthe apiserver makes one or more\nEndpointSlice\nresources available.\nYou can view these resources with:\nkubectl get endpointslices -l kubernetes.io/service-name\n=\n${\nSERVICE_NAME\n}\nMake sure that the endpoints in the EndpointSlices match up with the number of pods that you expect to be members of your service.\nFor example, if your Service is for an nginx container with 3 replicas, you would expect to see three different\nIP addresses in the Service's endpoint slices.\nIf you are missing endpoints, try listing pods using the labels that Service uses.\nImagine that you have a Service where the labels are:\n...\nspec\n:\n-\nselector\n:\nname\n:\nnginx\ntype\n:\nfrontend\nYou can use:\nkubectl get pods --selector\n=\nname\n=\nnginx,type\n=\nfrontend\nto list pods that match this selector. Verify that the list matches the Pods that you expect to provide your Service.\nVerify that the pod's\ncontainerPort\nmatches up with the Service's\ntargetPort\nPlease see\ndebugging service\nfor more information."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "eede5bd8afaea9045acb04c9344982e0",
+  "source": "k8s_docs",
+  "title": "List All Container Images Running in a Cluster — List all Container images in all namespaces",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/#list-all-container-images-in-all-namespaces",
+  "text": "Fetch all Pods in all namespaces using\nkubectl get pods --all-namespaces\nFormat the output to include only the list of Container image names\nusing\n-o jsonpath={.items[*].spec['initContainers', 'containers'][*].image}\n. This will recursively parse out the\nimage\nfield from the returned json.\nSee the\njsonpath reference\nfor further information on how to use jsonpath.\nFormat the output using standard tools:\ntr\n,\nsort\n,\nuniq\nUse\ntr\nto replace spaces with newlines\nUse\nsort\nto sort the results\nUse\nuniq\nto aggregate image counts\nSee the\njsonpath reference\nfor further information on how to use jsonpath.\nUse\ntr\nto replace spaces with newlines\nUse\nsort\nto sort the results\nUse\nuniq\nto aggregate image counts\nkubectl get pods --all-namespaces -o\njsonpath\n=\n\"{.items[*].spec['initContainers', 'containers'][*].image}\"\n|\n\\\ntr -s\n'[[:space:]]'\n'\\n'\n|\n\\\nsort\n|\n\\\nuniq -c\nThe jsonpath is interpreted as follows:\n.items[*]\n: for each returned value\n.spec\n: get the spec\n['initContainers', 'containers'][*]\n: for each container\n.image\n: get the image"
+}

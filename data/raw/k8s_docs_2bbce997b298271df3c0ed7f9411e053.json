@@ -1,0 +1,7 @@
+{
+  "id": "2bbce997b298271df3c0ed7f9411e053",
+  "source": "k8s_docs",
+  "title": "kubectl plugin — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_plugin/#synopsis",
+  "text": "Provides utilities for interacting with plugins.\nPlugins provide extended functionality that is not part of the major command-line distribution. Please refer to the documentation and examples for more information about how write your own plugins.\nThe easiest way to discover and install plugins is via the kubernetes sub-project krew: [krew.sigs.k8s.io]. To install krew, visit\nhttps://krew.sigs.k8s.io/docs/user-guide/setup/install\nkubectl plugin [flags]"
+}

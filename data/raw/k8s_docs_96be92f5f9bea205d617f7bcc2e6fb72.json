@@ -1,0 +1,7 @@
+{
+  "id": "96be92f5f9bea205d617f7bcc2e6fb72",
+  "source": "k8s_docs",
+  "title": "Images — Multi-architecture images with image indexes",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/images/#multi-architecture-images-with-image-indexes",
+  "text": "As well as providing binary images, a container registry can also serve a\ncontainer image index\n.\nAn image index can point to multiple\nimage manifests\nfor architecture-specific versions of a container. The idea is that you can have\na name for an image (for example:\npause\n,\nexample/mycontainer\n,\nkube-apiserver\n)\nand allow different systems to fetch the right binary image for the machine\narchitecture they are using.\nThe Kubernetes project typically creates container images for its releases with\nnames that include the suffix\n-$(ARCH)\n. For backward compatibility, generate\nolder images with suffixes. For instance, an image named as\npause\nwould be a\nmulti-architecture image containing manifests for all supported architectures,\nwhile\npause-amd64\nwould be a backward-compatible version for older configurations,\nor for YAML files with hardcoded image names containing suffixes."
+}

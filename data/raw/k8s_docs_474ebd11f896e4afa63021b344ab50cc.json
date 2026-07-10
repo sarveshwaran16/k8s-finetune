@@ -1,7 +1,0 @@
-{
-  "id": "474ebd11f896e4afa63021b344ab50cc",
-  "source": "k8s_docs",
-  "title": "Use Custom Resources",
-  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/",
-  "text": "Use Custom Resources\nExtend the Kubernetes API with CustomResourceDefinitions\nVersions in CustomResourceDefinitions\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified June 16, 2021 at 5:57 PM PST:\nRemove exec permission on markdown files (e9703497a1)"
-}

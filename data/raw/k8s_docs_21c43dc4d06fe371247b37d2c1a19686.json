@@ -1,0 +1,7 @@
+{
+  "id": "21c43dc4d06fe371247b37d2c1a19686",
+  "source": "k8s_docs",
+  "title": "The kubectl command-line tool — How kubectl works",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/kubectl/#how-kubectl-works",
+  "text": "The\nkubectl\ntool connects to the API server and authenticates using the cluster, user, and context defined in your\nkubeconfig\nfile.\nWhen you run\nkubectl\nfrom outside a cluster, it uses the kubeconfig file to find the API server address and credentials.\nWhen\nkubectl\nruns inside a Pod (for example, in a CI/CD pipeline), it can use in-cluster authentication\nbased on the ServiceAccount token mounted in the Pod.\nWhen you run a command,\nkubectl\ntranslates your intent into one or more HTTP requests to the\nKubernetes API\n. The API server validates each request,\napplies it to the cluster state stored in\netcd\n, and\nreturns the result. This means every\nkubectl\naction, whether creating a Deployment or reading logs,\nfollows the same API-driven path.\nBecause your kubeconfig can define multiple clusters, users, and contexts, you can use\nkubectl\nto\nswitch between clusters without reconfiguring your environment. Run\nkubectl config use-context\nto\nchange the active context."
+}

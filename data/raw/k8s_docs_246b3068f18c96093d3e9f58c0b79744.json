@@ -1,0 +1,7 @@
+{
+  "id": "246b3068f18c96093d3e9f58c0b79744",
+  "source": "k8s_docs",
+  "title": "PersistentVolumeClaim — PersistentVolumeClaimList",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-claim-v1/#PersistentVolumeClaimList",
+  "text": "PersistentVolumeClaimList is a list of PersistentVolumeClaim items.\nField\nDescription\napiVersion\nstring\nAPIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources\nitems\n*\nPersistentVolumeClaim array\nitems is a list of persistent volume claims. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims\nkind\nstring\nKind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nmetadata\nListMeta\nStandard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+}

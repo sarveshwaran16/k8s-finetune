@@ -1,0 +1,7 @@
+{
+  "id": "bf2a7f8f0dbeeca8b447ab3986f0160c",
+  "source": "k8s_docs",
+  "title": "ResourceClaim — DeviceClaimConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-claim-v1/#DeviceClaimConfiguration",
+  "text": "DeviceClaimConfiguration is used for configuration parameters in DeviceClaim.\nField\nDescription\nopaque\nOpaqueDeviceConfiguration\nOpaque provides driver-specific configuration parameters.\nrequests\nstring array\nRequests lists the names of requests where the configuration applies. If empty, it applies to all requests. References to subrequests must include the name of the main request and may include the subrequest using the format \\\n[/\\\n]. If just the main request is given, the configuration applies to all subrequests."
+}

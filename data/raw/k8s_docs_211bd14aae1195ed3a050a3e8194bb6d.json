@@ -1,0 +1,7 @@
+{
+  "id": "211bd14aae1195ed3a050a3e8194bb6d",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Avoid dependency loops",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#avoid-dependency-loops",
+  "text": "Dependency loops can occur in scenarios like the following:\nTwo webhooks check each other's Pods. If both webhooks become unavailable\nat the same time, neither webhook can start.\nYour webhook intercepts cluster add-on components, such as networking plugins\nor storage plugins, that your webhook depends on. If both the webhook and the\ndependent add-on become unavailable, neither component can function.\nTo avoid these dependency loops, try the following:\nUse\nValidatingAdmissionPolicies\nto avoid introducing dependencies.\nPrevent webhooks from validating or mutating other webhooks. Consider\nexcluding specific namespaces\nfrom triggering your webhook.\nPrevent your webhooks from acting on dependent add-ons by using an\nobjectSelector\n."
+}

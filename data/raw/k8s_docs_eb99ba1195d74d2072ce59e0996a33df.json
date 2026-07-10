@@ -1,0 +1,7 @@
+{
+  "id": "eb99ba1195d74d2072ce59e0996a33df",
+  "source": "k8s_docs",
+  "title": "Ingress — Hostname wildcards",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#hostname-wildcards",
+  "text": "Hosts can be precise matches (for example “\nfoo.bar.com\n”) or a wildcard (for\nexample “\n*.foo.com\n”). Precise matches require that the HTTP\nhost\nheader\nmatches the\nhost\nfield. Wildcard matches require the HTTP\nhost\nheader is\nequal to the suffix of the wildcard rule.\nHost\nHost header\nMatch?\n*.foo.com\nbar.foo.com\nMatches based on shared suffix\n*.foo.com\nbaz.bar.foo.com\nNo match, wildcard only covers a single DNS label\n*.foo.com\nfoo.com\nNo match, wildcard only covers a single DNS label\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nIngress\nmetadata\n:\nname\n:\ningress-wildcard-host\nspec\n:\nrules\n:\n-\nhost\n:\n\"foo.bar.com\"\nhttp\n:\npaths\n:\n-\npathType\n:\nPrefix\npath\n:\n\"/bar\"\nbackend\n:\nservice\n:\nname\n:\nservice1\nport\n:\nnumber\n:\n80\n-\nhost\n:\n\"*.foo.com\"\nhttp\n:\npaths\n:\n-\npathType\n:\nPrefix\npath\n:\n\"/foo\"\nbackend\n:\nservice\n:\nname\n:\nservice2\nport\n:\nnumber\n:\n80"
+}

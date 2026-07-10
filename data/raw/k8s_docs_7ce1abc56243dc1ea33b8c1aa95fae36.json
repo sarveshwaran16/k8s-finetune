@@ -1,0 +1,7 @@
+{
+  "id": "7ce1abc56243dc1ea33b8c1aa95fae36",
+  "source": "k8s_docs",
+  "title": "Deployments — Deployment status",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#deployment-status",
+  "text": "A Deployment enters various states during its lifecycle. It can be\nprogressing\nwhile\nrolling out a new ReplicaSet, it can be\ncomplete\n, or it can\nfail to progress\n.\n\nKubernetes marks a Deployment as\nprogressing\nwhen one of the following tasks is performed:\nThe Deployment creates a new ReplicaSet.\nThe Deployment is scaling up its newest ReplicaSet.\nThe Deployment is scaling down its older ReplicaSet(s).\nNew Pods become ready or available (ready for at least\nMinReadySeconds\n).\nWhen the rollout becomes “progressing”, the Deployment controller adds a condition with the following\nattributes to the Deployment's\n.status.conditions\n:\ntype: Progressing\nstatus: \"True\"\nreason: NewReplicaSetCreated\n|\nreason: FoundNewReplicaSet\n|\nreason: ReplicaSetUpdated\nYou can monitor the progress for a Deployment by using\nkubectl rollout status\n."
+}

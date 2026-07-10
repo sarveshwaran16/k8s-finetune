@@ -1,0 +1,7 @@
+{
+  "id": "75cda0e9eaa3b593468c7fb3870961a1",
+  "source": "k8s_docs",
+  "title": "Reconfiguring a kubeadm cluster — Applying kube-proxy configuration changes",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-reconfigure/#applying-kube-proxy-configuration-changes",
+  "text": "During cluster creation and upgrade, kubeadm writes its\nKubeProxyConfiguration\nin a ConfigMap in the\nkube-system\nnamespace called\nkube-proxy\n.\nThis ConfigMap is used by the\nkube-proxy\nDaemonSet in the\nkube-system\nnamespace.\nTo change a particular option in the\nKubeProxyConfiguration\n, you can edit the ConfigMap with this command:\nkubectl edit cm -n kube-system kube-proxy\nThe configuration is located under the\ndata.config.conf\nkey.\nOnce the\nkube-proxy\nConfigMap is updated, you can restart all kube-proxy Pods:\nDelete the Pods with:\nkubectl delete po -n kube-system -l k8s-app\n=\nkube-proxy\nNew Pods that use the updated ConfigMap will be created."
+}

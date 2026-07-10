@@ -1,0 +1,7 @@
+{
+  "id": "c722dfb8a63cba21cf4c30e517bdb405",
+  "source": "k8s_docs",
+  "title": "Resize CPU and Memory Resources assigned to Containers — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

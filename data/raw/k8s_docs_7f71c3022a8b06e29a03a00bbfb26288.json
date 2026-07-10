@@ -1,0 +1,7 @@
+{
+  "id": "7f71c3022a8b06e29a03a00bbfb26288",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — volume.beta.kubernetes.io/storage-provisioner (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#volume-beta-kubernetes-io-storage-provisioner-deprecated",
+  "text": "Type: Annotation\nExample:\nvolume.beta.kubernetes.io/storage-provisioner: \"k8s.io/minikube-hostpath\"\nUsed on: PersistentVolumeClaim\nThis annotation has been deprecated since v1.23.\nSee\nvolume.kubernetes.io/storage-provisioner\n.\n\nType: Annotation\nExample:\nvolume.beta.kubernetes.io/storage-class: \"example-class\"\nUsed on: PersistentVolume, PersistentVolumeClaim\nThis annotation can be used for PersistentVolume(PV) or PersistentVolumeClaim(PVC)\nto specify the name of\nStorageClass\n.\nWhen both the\nstorageClassName\nattribute and the\nvolume.beta.kubernetes.io/storage-class\nannotation are specified, the annotation\nvolume.beta.kubernetes.io/storage-class\ntakes precedence over the\nstorageClassName\nattribute.\nThis annotation has been deprecated. Instead, set the\nstorageClassName\nfield\nfor the PersistentVolumeClaim or PersistentVolume."
+}

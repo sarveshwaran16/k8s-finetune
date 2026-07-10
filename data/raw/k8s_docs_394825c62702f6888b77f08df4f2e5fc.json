@@ -1,0 +1,7 @@
+{
+  "id": "394825c62702f6888b77f08df4f2e5fc",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_join/kubeadm_join_phase_kubelet-wait-bootstrap/#synopsis",
+  "text": "Wait for the kubelet to bootstrap itself\nkubeadm join phase kubelet-wait-bootstrap [flags]\n\n--config string\nPath to a kubeadm configuration file.\n--cri-socket string\nPath to the CRI socket to connect. If empty kubeadm will try to auto-detect this value; use this option only if you have more than one CRI installed or if you have non-standard CRI socket.\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for kubelet-wait-bootstrap\nPath to a kubeadm configuration file.\nPath to the CRI socket to connect. If empty kubeadm will try to auto-detect this value; use this option only if you have more than one CRI installed or if you have non-standard CRI socket.\nDon't apply any changes; just output what would be done.\nhelp for kubelet-wait-bootstrap"
+}

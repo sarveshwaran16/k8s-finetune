@@ -1,0 +1,7 @@
+{
+  "id": "6fcd997c22bc1e71398fd86dc51af336",
+  "source": "k8s_docs",
+  "title": "Pod — LifecycleHandler",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#LifecycleHandler",
+  "text": "LifecycleHandler defines a specific action that should be taken in a lifecycle hook. One and only one of the fields, except TCPSocket must be specified.\nField\nDescription\nexec\nExecAction\nExec specifies a command to execute in the container.\nhttpGet\nHTTPGetAction\nHTTPGet specifies an HTTP GET request to perform.\nsleep\nSleepAction\nSleep represents a duration that the container should sleep.\ntcpSocket\nTCPSocketAction\nDeprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for backward compatibility. There is no validation of this field and lifecycle hooks will fail at runtime when it is specified."
+}

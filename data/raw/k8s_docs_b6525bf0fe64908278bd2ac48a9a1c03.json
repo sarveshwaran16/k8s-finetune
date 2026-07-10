@@ -1,0 +1,7 @@
+{
+  "id": "b6525bf0fe64908278bd2ac48a9a1c03",
+  "source": "k8s_docs",
+  "title": "Jobs — Job Labels",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#job-labels",
+  "text": "Job labels will have\nbatch.kubernetes.io/\nprefix for\njob-name\nand\ncontroller-uid\n.\n\nThe\n.spec.template\nis the only required field of the\n.spec\n.\nThe\n.spec.template\nis a\npod template\n.\nIt has exactly the same schema as a\nPod\n,\nexcept it is nested and does not have an\napiVersion\nor\nkind\n.\nIn addition to required fields for a Pod, a pod template in a Job must specify appropriate\nlabels (see\npod selector\n) and an appropriate restart policy.\nOnly a\nRestartPolicy\nequal to\nNever\nor\nOnFailure\nis allowed."
+}

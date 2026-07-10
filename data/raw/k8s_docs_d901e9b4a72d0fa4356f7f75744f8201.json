@@ -1,0 +1,7 @@
+{
+  "id": "d901e9b4a72d0fa4356f7f75744f8201",
+  "source": "k8s_docs",
+  "title": "Ephemeral Volumes — CSI driver restrictions",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/ephemeral-volumes/#csi-driver-restrictions",
+  "text": "CSI ephemeral volumes allow users to provide\nvolumeAttributes\ndirectly to the CSI driver as part of the Pod spec. A CSI driver\nallowing\nvolumeAttributes\nthat are typically restricted to\nadministrators is NOT suitable for use in an inline ephemeral volume.\nFor example, parameters that are normally defined in the StorageClass\nshould not be exposed to users through the use of inline ephemeral volumes.\nCluster administrators who need to restrict the CSI drivers that are\nallowed to be used as inline volumes within a Pod spec may do so by:\nRemoving\nEphemeral\nfrom\nvolumeLifecycleModes\nin the CSIDriver spec, which prevents the\ndriver from being used as an inline ephemeral volume.\nUsing an\nadmission webhook\nto restrict how this driver is used."
+}

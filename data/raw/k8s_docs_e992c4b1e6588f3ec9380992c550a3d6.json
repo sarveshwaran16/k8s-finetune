@@ -1,0 +1,7 @@
+{
+  "id": "e992c4b1e6588f3ec9380992c550a3d6",
+  "source": "k8s_docs",
+  "title": "Define Environment Variable Values Using An Init Container — Unsupported forms",
+  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-via-file/#unsupported-forms",
+  "text": "Unquoted values are\nprohibited\n:\nVAR=value\n— not supported.\nDouble-quoted values are\nprohibited\n:\nVAR=\"value\"\n— not supported.\nMultiple adjacent quoted strings are\nnot\nsupported:\nVAR='val1''val2'\n— not supported.\nAny form of interpolation, expansion, or concatenation is\nnot\nsupported:\nVAR='a'$OTHER\nor\nVAR=${OTHER}\n— not supported.\nVAR=value\n— not supported.\nVAR=\"value\"\n— not supported.\nVAR='val1''val2'\n— not supported.\nVAR='a'$OTHER\nor\nVAR=${OTHER}\n— not supported.\nThe strict single-quote requirement ensures the value is taken literally by the kubelet when loading environment variables from files."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "483a3d4a250c51e44bd264067eb3b192",
+  "source": "k8s_docs",
+  "title": "Operating etcd clusters for Kubernetes — Backing up an etcd cluster",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster",
+  "text": "All Kubernetes objects are stored in etcd. Periodically backing up the etcd\ncluster data is important to recover Kubernetes clusters under disaster\nscenarios, such as losing all control plane nodes. The snapshot file contains\nall the Kubernetes state and critical information. In order to keep the\nsensitive Kubernetes data safe, encrypt the snapshot files.\nBacking up an etcd cluster can be accomplished in two ways: etcd built-in\nsnapshot and volume snapshot."
+}

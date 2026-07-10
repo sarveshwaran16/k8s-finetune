@@ -1,0 +1,7 @@
+{
+  "id": "a5fbe73cfff41d7afdf083760dc64d15",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — Create certificate signing requests (CSR)",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#create-certificate-signing-requests-csr",
+  "text": "See\nCreate CertificateSigningRequest\nfor creating CSRs with the Kubernetes API.\n\nThis section provide more details about how to execute manual certificate renewal using an external CA.\nTo better integrate with external CAs, kubeadm can also produce certificate signing requests (CSRs).\nA CSR represents a request to a CA for a signed certificate for a client.\nIn kubeadm terms, any certificate that would normally be signed by an on-disk CA can be produced\nas a CSR instead. A CA, however, cannot be produced as a CSR."
+}

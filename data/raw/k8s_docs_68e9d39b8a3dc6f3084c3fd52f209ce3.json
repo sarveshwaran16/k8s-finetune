@@ -1,0 +1,7 @@
+{
+  "id": "68e9d39b8a3dc6f3084c3fd52f209ce3",
+  "source": "k8s_docs",
+  "title": "kube-controller-manager Configuration (v1alpha1) — EphemeralVolumeControllerConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#kubecontrollermanager-config-k8s-io-v1alpha1-EphemeralVolumeControllerConfiguration",
+  "text": "Appears in:\nKubeControllerManagerConfiguration\nEphemeralVolumeControllerConfiguration contains elements describing EphemeralVolumeController.\nField\nDescription\nConcurrentEphemeralVolumeSyncs\n[Required]\nint32\nConcurrentEphemeralVolumeSyncseSyncs is the number of ephemeral volume syncing operations\nthat will be done concurrently. Larger number = faster ephemeral volume updating,\nbut more CPU (and network) load.\nConcurrentEphemeralVolumeSyncseSyncs is the number of ephemeral volume syncing operations\nthat will be done concurrently. Larger number = faster ephemeral volume updating,\nbut more CPU (and network) load."
+}

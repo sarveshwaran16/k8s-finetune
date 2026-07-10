@@ -1,0 +1,7 @@
+{
+  "id": "9e69e68016ea4bdb66170758c5b26ba7",
+  "source": "k8s_docs",
+  "title": "Changing the Container Runtime on a Node from Docker Engine to containerd — Configure the kubelet to use containerd as its container runtime",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/change-runtime-containerd/#configure-the-kubelet-to-use-containerd-as-its-container-runtime",
+  "text": "Edit the file\n/var/lib/kubelet/kubeadm-flags.env\nand add the containerd runtime to the flags;\n--container-runtime-endpoint=unix:///run/containerd/containerd.sock\n.\nUsers using kubeadm should be aware that the kubeadm tool stores the host's CRI socket in the\n/var/lib/kubelet/instance-config.yaml\nfile on each node. You can create this\n/var/lib/kubelet/instance-config.yaml\nfile on the node.\nThe\n/var/lib/kubelet/instance-config.yaml\nfile allows setting the\ncontainerRuntimeEndpoint\nparameter.\nYou can set this parameter's value to the path of your chosen CRI socket (for example\nunix:///run/containerd/containerd.sock\n)."
+}

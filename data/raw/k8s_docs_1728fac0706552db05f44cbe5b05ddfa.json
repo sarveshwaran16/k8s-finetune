@@ -1,0 +1,7 @@
+{
+  "id": "1728fac0706552db05f44cbe5b05ddfa",
+  "source": "k8s_docs",
+  "title": "PKI certificates and requirements — Feedback",
+  "source_url": "https://kubernetes.io/docs/setup/best-practices/certificates/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

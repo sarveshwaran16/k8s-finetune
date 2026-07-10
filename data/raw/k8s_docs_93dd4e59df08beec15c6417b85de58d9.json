@@ -1,0 +1,7 @@
+{
+  "id": "93dd4e59df08beec15c6417b85de58d9",
+  "source": "k8s_docs",
+  "title": "Container Runtimes — cgroup drivers",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/#cgroup-drivers",
+  "text": "On Linux,\ncontrol groups\nare used to constrain resources that are allocated to processes.\nBoth the\nkubelet\nand the\nunderlying container runtime need to interface with control groups to enforce\nresource management for pods and containers\nand set resources such as cpu/memory requests and limits. To interface with control\ngroups, the kubelet and the container runtime need to use a\ncgroup driver\n.\nIt's critical that the kubelet and the container runtime use the same cgroup\ndriver and are configured the same.\nThere are two cgroup drivers available:\ncgroupfs\nsystemd"
+}

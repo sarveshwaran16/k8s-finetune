@@ -1,0 +1,7 @@
+{
+  "id": "d88c5e69daca130c7af5a998277515c7",
+  "source": "k8s_docs",
+  "title": "Configure GMSA for Windows Pods and containers — Configure cluster role to enable RBAC on specific GMSA credential specs",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-gmsa/#configure-cluster-role-to-enable-rbac-on-specific-gmsa-credential-specs",
+  "text": "A cluster role needs to be defined for each GMSA credential spec resource. This\nauthorizes the\nuse\nverb on a specific GMSA resource by a subject which is typically\na service account. The following example shows a cluster role that authorizes usage\nof the\ngmsa-WebApp1\ncredential spec from above. Save the file as gmsa-webapp1-role.yaml\nand apply using\nkubectl apply -f gmsa-webapp1-role.yaml\n# Create the Role to read the credspec\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\nwebapp1-role\nrules\n:\n-\napiGroups\n:\n[\n\"windows.k8s.io\"\n]\nresources\n:\n[\n\"gmsacredentialspecs\"\n]\nverbs\n:\n[\n\"use\"\n]\nresourceNames\n:\n[\n\"gmsa-WebApp1\"\n]"
+}

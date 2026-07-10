@@ -1,0 +1,7 @@
+{
+  "id": "76ef98364a8b8e1516f768ee1d243b30",
+  "source": "k8s_docs",
+  "title": "Downward API — Information available viafieldRef",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/downward-api/#downwardapi-fieldRef",
+  "text": "For some Pod-level fields, you can provide them to a container either as\nan environment variable or using a\ndownwardAPI\nvolume. The fields available\nvia either mechanism are:\nThe following information is available through environment variables\nbut not as a downwardAPI volume fieldRef\n:\nThe following information is available through a\ndownwardAPI\nvolume\nfieldRef\n,\nbut not as environment variables\n:"
+}

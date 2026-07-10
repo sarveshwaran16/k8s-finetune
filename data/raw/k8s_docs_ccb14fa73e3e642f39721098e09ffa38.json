@@ -1,0 +1,7 @@
+{
+  "id": "ccb14fa73e3e642f39721098e09ffa38",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — Admission control extension points",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#admission-control-extension-points",
+  "text": "Within the full\nlist\n, there are three\nspecial controllers:\nMutatingAdmissionWebhook\n,\nValidatingAdmissionWebhook\n, and\nValidatingAdmissionPolicy\n.\nThe two webhook controllers execute the mutating and validating (respectively)\nadmission control webhooks\nwhich are configured in the API. ValidatingAdmissionPolicy provides a way to embed\ndeclarative validation code within the API, without relying on any external HTTP\ncallouts.\nYou can use these three admission controllers to customize cluster behavior at\nadmission time."
+}

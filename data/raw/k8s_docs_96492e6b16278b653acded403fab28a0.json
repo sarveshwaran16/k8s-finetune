@@ -1,0 +1,7 @@
+{
+  "id": "96492e6b16278b653acded403fab28a0",
+  "source": "k8s_docs",
+  "title": "kubectl set resources — Examples",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_set/kubectl_set_resources/#examples",
+  "text": "# Set a deployments nginx container cpu limits to \"200m\" and memory to \"512Mi\"\n  kubectl set resources deployment nginx -c=nginx --limits=cpu=200m,memory=512Mi\n  \n  # Set the resource request and limits for all containers in nginx\n  kubectl set resources deployment nginx --limits=cpu=200m,memory=512Mi --requests=cpu=100m,memory=256Mi\n  \n  # Remove the resource requests for resources on containers in nginx\n  kubectl set resources deployment nginx --limits=cpu=0,memory=0 --requests=cpu=0,memory=0\n  \n  # Print the result (in yaml format) of updating nginx container limits from a local, without hitting the server\n  kubectl set resources -f path/to/file.yaml --limits=cpu=200m,memory=512Mi --local -o yaml"
+}

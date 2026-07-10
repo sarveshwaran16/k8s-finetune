@@ -1,0 +1,7 @@
+{
+  "id": "1a05058e94662c226eb4e7fdae7691f9",
+  "source": "k8s_docs",
+  "title": "Scheduling Framework — Framework workflow",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#framework-workflow",
+  "text": "The Scheduling Framework defines a few extension points. Scheduler plugins\nregister to be invoked at one or more extension points. Some of these plugins\ncan change the scheduling decisions and some are informational only.\nEach attempt to schedule one Pod is split into two phases, the\nscheduling cycle\nand the\nbinding cycle\n."
+}

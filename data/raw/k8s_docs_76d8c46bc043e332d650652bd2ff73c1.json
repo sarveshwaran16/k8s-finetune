@@ -1,0 +1,7 @@
+{
+  "id": "76d8c46bc043e332d650652bd2ff73c1",
+  "source": "k8s_docs",
+  "title": "ReplicationController — Multiple release tracks",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#multiple-release-tracks",
+  "text": "In addition to running multiple releases of an application while a rolling update is in progress, it's common to run multiple releases for an extended period of time, or even continuously, using multiple release tracks. The tracks would be differentiated by labels.\nFor instance, a service might target all pods with\ntier in (frontend), environment in (prod)\n. Now say you have 10 replicated pods that make up this tier. But you want to be able to 'canary' a new version of this component. You could set up a ReplicationController with\nreplicas\nset to 9 for the bulk of the replicas, with labels\ntier=frontend, environment=prod, track=stable\n, and another ReplicationController with\nreplicas\nset to 1 for the canary, with labels\ntier=frontend, environment=prod, track=canary\n. Now the service is covering both the canary and non-canary pods. But you can mess with the ReplicationControllers separately to test things out, monitor the results, etc."
+}

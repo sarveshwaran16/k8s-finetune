@@ -1,0 +1,7 @@
+{
+  "id": "6a724ce5c622da1e8bc1502a0d0a45fb",
+  "source": "k8s_docs",
+  "title": "Volume Snapshots — Lifecycle of a volume snapshot and volume snapshot content",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/#lifecycle-of-a-volume-snapshot-and-volume-snapshot-content",
+  "text": "VolumeSnapshotContents\nare resources in the cluster.\nVolumeSnapshots\nare requests\nfor those resources. The interaction between\nVolumeSnapshotContents\nand\nVolumeSnapshots\nfollow this lifecycle:\n\nThere are two ways snapshots may be provisioned: pre-provisioned or dynamically provisioned.\nA cluster administrator creates a number of\nVolumeSnapshotContents\n. They carry the details\nof the real volume snapshot on the storage system which is available for use by cluster users.\nThey exist in the Kubernetes API and are available for consumption.\nInstead of using a pre-existing snapshot, you can request that a snapshot to be dynamically\ntaken from a PersistentVolumeClaim. The\nVolumeSnapshotClass\nspecifies storage provider-specific parameters to use when taking a snapshot."
+}

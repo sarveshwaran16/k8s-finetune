@@ -1,0 +1,7 @@
+{
+  "id": "dce11465148d458985134dd9b598c19b",
+  "source": "k8s_docs",
+  "title": "Resource Management for Pods and Containers — How Pods with resource requests are scheduled",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#how-pods-with-resource-requests-are-scheduled",
+  "text": "When you create a Pod, the Kubernetes scheduler selects a node for the Pod to\nrun on. Each node has a maximum capacity for each of the resource types: the\namount of CPU and memory it can provide for Pods. The scheduler ensures that,\nfor each resource type, the sum of the resource requests of the scheduled\ncontainers is less than the capacity of the node.\nNote that although actual memory\nor CPU resource usage on nodes is very low, the scheduler still refuses to place\na Pod on a node if the capacity check fails. This protects against a resource\nshortage on a node when resource usage later increases, for example, during a\ndaily peak in request rate."
+}

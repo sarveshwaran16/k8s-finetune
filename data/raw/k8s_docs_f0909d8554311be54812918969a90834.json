@@ -1,0 +1,7 @@
+{
+  "id": "f0909d8554311be54812918969a90834",
+  "source": "k8s_docs",
+  "title": "Linux kernel security constraints for Pods and containers — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/security/linux-kernel-security-constraints/#what-s-next",
+  "text": "Learn how to use AppArmor\nLearn how to use seccomp\nLearn how to use SELinux\nSeccomp Node Reference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

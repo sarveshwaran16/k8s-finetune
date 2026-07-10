@@ -1,0 +1,7 @@
+{
+  "id": "f151922c6897f6c439a1fe5d0e15b327",
+  "source": "k8s_docs",
+  "title": "Network Policies — Network traffic filtering",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/#network-traffic-filtering",
+  "text": "NetworkPolicy is defined for\nlayer 4\nconnections (TCP, UDP, and optionally SCTP). For all the other protocols, the behaviour may vary\nacross network plugins.\nWhen a\ndeny all\nnetwork policy is defined, it is only guaranteed to deny TCP, UDP and SCTP\nconnections. For other protocols, such as ARP or ICMP, the behaviour is undefined.\nThe same applies to allow rules: when a specific pod is allowed as ingress source or egress destination,\nit is undefined what happens with (for example) ICMP packets. Protocols such as ICMP may be allowed by some\nnetwork plugins and denied by others."
+}

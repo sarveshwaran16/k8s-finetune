@@ -1,0 +1,7 @@
+{
+  "id": "e5b1c5d1954e2a0e78c54934b3a98d85",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/limit-ranger",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-limit-ranger",
+  "text": "Type: Annotation\nExample:\nkubernetes.io/limit-ranger: \"LimitRanger plugin set: cpu, memory request for container nginx; cpu, memory limit for container nginx\"\nUsed on: Pod\nKubernetes by default doesn't provide any resource limit, that means unless you explicitly define\nlimits, your container can consume unlimited CPU and memory.\nYou can define a default request or default limit for pods. You do this by creating a LimitRange\nin the relevant namespace. Pods deployed after you define a LimitRange will have these limits\napplied to them.\nThe annotation\nkubernetes.io/limit-ranger\nrecords that resource defaults were specified for the Pod,\nand they were applied successfully.\nFor more details, read about\nLimitRanges\n."
+}

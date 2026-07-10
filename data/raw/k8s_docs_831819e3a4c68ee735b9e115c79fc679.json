@@ -1,0 +1,7 @@
+{
+  "id": "831819e3a4c68ee735b9e115c79fc679",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_certs_etcd-peer/#synopsis",
+  "text": "Generate the certificate for etcd nodes to communicate with each other, and save them into etcd/peer.crt and etcd/peer.key files.\nDefault SANs are localhost, 127.0.0.1, 127.0.0.1, ::1\nIf both files already exist, kubeadm skips the generation step and existing files will be used.\nkubeadm init phase certs etcd-peer [flags]"
+}

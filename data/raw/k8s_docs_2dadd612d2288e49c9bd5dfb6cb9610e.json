@@ -1,0 +1,7 @@
+{
+  "id": "2dadd612d2288e49c9bd5dfb6cb9610e",
+  "source": "k8s_docs",
+  "title": "Kubelet authentication/authorization — Fine-grained authorization",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-authn-authz/#fine-grained-authorization",
+  "text": "Kubelet performs a fine-grained check before falling back to the\nproxy\nsubresource for the\n/pods\n,\n/runningPods\n,\n/configz\nand\n/healthz\nendpoints. The resource and subresource are determined from the incoming\nrequest's path:\nKubelet API\nresource\nsubresource\n/stats/*\nnodes\nstats\n/metrics/*\nnodes\nmetrics\n/logs/*\nnodes\nlog\n/pods\nnodes\npods, proxy\n/runningPods/\nnodes\npods, proxy\n/healthz\nnodes\nhealthz, proxy\n/configz\nnodes\nconfigz, proxy\nall others\nnodes\nproxy\nWhen the feature-gate\nKubeletFineGrainedAuthz\nis enabled, ensure the user\nidentified by the\n--kubelet-client-certificate\nand\n--kubelet-client-key\nflags passed to the API server is authorized for the following attributes:\nverb=*, resource=nodes, subresource=proxy\nverb=*, resource=nodes, subresource=stats\nverb=*, resource=nodes, subresource=log\nverb=*, resource=nodes, subresource=metrics\nverb=*, resource=nodes, subresource=configz\nverb=*, resource=nodes, subresource=healthz\nverb=*, resource=nodes, subresource=pods\nIf\nRBAC authorization\nis used,\nenabling this gate also ensure that the builtin\nsystem:kubelet-api-admin\nClusterRole\nis updated with permissions to access all the above mentioned subresources."
+}

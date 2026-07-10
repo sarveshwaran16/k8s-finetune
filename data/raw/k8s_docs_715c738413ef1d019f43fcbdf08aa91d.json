@@ -1,0 +1,7 @@
+{
+  "id": "715c738413ef1d019f43fcbdf08aa91d",
+  "source": "k8s_docs",
+  "title": " — Options",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_token/#options",
+  "text": "--dry-run\nWhether to enable dry-run mode or not\n-h, --help\nhelp for token\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nWhether to enable dry-run mode or not\nhelp for token\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "8785779925be51e45b9238592ba198f5",
+  "source": "k8s_docs",
+  "title": "Namespace — NamespaceCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/namespace-v1/#NamespaceCondition",
+  "text": "NamespaceCondition contains details about state of namespace.\nField\nDescription\nlastTransitionTime\nTime\nLast time the condition transitioned from one status to another.\nmessage\nstring\nHuman-readable message indicating details about last transition.\nreason\nstring\nUnique, one-word, CamelCase reason for the condition's last transition.\nstatus\n*\nstring\nStatus of the condition, one of True, False, Unknown.\ntype\n*\nstring\nType of namespace controller condition."
+}

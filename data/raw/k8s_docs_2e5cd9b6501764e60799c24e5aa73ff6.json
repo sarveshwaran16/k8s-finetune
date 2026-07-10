@@ -1,0 +1,7 @@
+{
+  "id": "2e5cd9b6501764e60799c24e5aa73ff6",
+  "source": "k8s_docs",
+  "title": "Declarative Management of Kubernetes Objects Using Configuration Files — Changing the owner from a direct imperative writer to a configuration file",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#changing-the-owner-from-a-direct-imperative-writer-to-a-configuration-file",
+  "text": "Add the field to the configuration file. For the field, discontinue direct updates to\nthe live configuration that do not go through\nkubectl apply\n.\n\nAs of Kubernetes 1.5, changing ownership of a field from a configuration file to\nan imperative writer requires manual steps:\nRemove the field from the configuration file.\nRemove the field from the\nkubectl.kubernetes.io/last-applied-configuration\nannotation on the live object."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "8395da5306a2854831e4370789250b1d",
+  "source": "k8s_docs",
+  "title": "Cloud Controller Manager Administration — Scalability",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/#scalability",
+  "text": "The cloud-controller-manager queries your cloud provider's APIs to retrieve\ninformation for all nodes. For very large clusters, consider possible\nbottlenecks such as resource requirements and API rate limiting.\n\nThe goal of the cloud controller manager project is to decouple development\nof cloud features from the core Kubernetes project. Unfortunately, many aspects\nof the Kubernetes project has assumptions that cloud provider features are tightly\nintegrated into the project. As a result, adopting this new architecture can create\nseveral situations where a request is being made for information from a cloud provider,\nbut the cloud controller manager may not be able to return that information without\nthe original request being complete.\nA good example of this is the TLS bootstrapping feature in the Kubelet.\nTLS bootstrapping assumes that the Kubelet has the ability to ask the cloud provider\n(or a local metadata service) for all its address types (private, public, etc)\nbut cloud controller manager cannot set a node's address types without being\ninitialized in the first place which requires that the kubelet has TLS certificates\nto communicate with the apiserver.\nAs this initiative evolves, changes will be made to address these issues in upcoming releases."
+}

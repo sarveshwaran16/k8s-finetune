@@ -1,0 +1,7 @@
+{
+  "id": "7356ff0fa4ce552de0c5659b9ceb8e2e",
+  "source": "k8s_docs",
+  "title": "Kubernetes Components — Flexibility in Architecture",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/components/#flexibility-in-architecture",
+  "text": "Kubernetes allows for flexibility in how these components are deployed and managed.\nThe architecture can be adapted to various needs, from small development environments\nto large-scale production deployments.\nFor more detailed information about each component and various ways to configure your\ncluster architecture, see the\nCluster Architecture\npage."
+}

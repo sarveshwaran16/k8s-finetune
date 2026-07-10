@@ -1,0 +1,7 @@
+{
+  "id": "16dea7d60c6dcb3bc57ef753f815206f",
+  "source": "k8s_docs",
+  "title": "Leases — Node heartbeats",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/leases/#node-heart-beats",
+  "text": "Kubernetes uses the Lease API to communicate kubelet node heartbeats to the Kubernetes API server.\nFor every\nNode\n, there is a\nLease\nobject with a matching name in the\nkube-node-lease\nnamespace. Under the hood, every kubelet heartbeat is an\nupdate\nrequest to this\nLease\nobject, updating\nthe\nspec.renewTime\nfield for the Lease. The Kubernetes control plane uses the time stamp of this field\nto determine the availability of this\nNode\n.\nSee\nNode Lease objects\nfor more details."
+}

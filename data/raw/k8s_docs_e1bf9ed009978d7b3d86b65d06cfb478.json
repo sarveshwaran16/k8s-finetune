@@ -1,0 +1,7 @@
+{
+  "id": "e1bf9ed009978d7b3d86b65d06cfb478",
+  "source": "k8s_docs",
+  "title": "Using kubectl to Create a Deployment — Objectives",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/#objectives",
+  "text": "Learn about application Deployments.\nDeploy your first app on Kubernetes with kubectl.\n\nThe shell commands in this tutorial use POSIX shell syntax, which is supported by\nthe default shells on most Linux and macOS systems (for example, bash, zsh, or sh).\nWindows users must use a POSIX-compatible shell such as\nWindows Subsystem for Linux (WSL)\nor\nGit Bash\nto run the commands as written.\nCommands that use\nexport\n,\n$()\n, and similar constructs are\nnot\ncompatible\nwith PowerShell or the Windows Command Prompt."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a485aa321f3e66faa1f0b392eb754621",
+  "source": "k8s_docs",
+  "title": "Coarse Parallel Processing Using a Work Queue — Defining a Job",
+  "source_url": "https://kubernetes.io/docs/tasks/job/coarse-parallel-processing-work-queue/#defining-a-job",
+  "text": "Here is a manifest for a Job. You'll need to make a copy of the Job manifest\n(call it\n./job.yaml\n),\nand edit the name of the container image to match the name you used.\napiVersion\n:\nbatch/v1\nkind\n:\nJob\nmetadata\n:\nname\n:\njob-wq-1\nspec\n:\ncompletions\n:\n8\nparallelism\n:\n2\ntemplate\n:\nmetadata\n:\nname\n:\njob-wq-1\nspec\n:\ncontainers\n:\n-\nname\n:\nc\nimage\n:\ngcr.io/<project>/job-wq-1\nenv\n:\n-\nname\n:\nBROKER_URL\nvalue\n:\namqp://guest:guest@rabbitmq-service:5672\n-\nname\n:\nQUEUE\nvalue\n:\njob1\nrestartPolicy\n:\nOnFailure\nIn this example, each pod works on one item from the queue and then exits.\nSo, the completion count of the Job corresponds to the number of work items\ndone. That is why the example manifest has\n.spec.completions\nset to\n8\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "b6377cc4ff34ba5e3fd96eec4184c6a0",
+  "source": "k8s_docs",
+  "title": "Encrypting Confidential Data at Rest — Key storage",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#key-storage",
+  "text": "Encrypting secret data with a locally managed key protects against an etcd compromise, but it fails to\nprotect against a host compromise. Since the encryption keys are stored on the host in the\nEncryptionConfiguration YAML file, a skilled attacker can access that file and extract the encryption\nkeys.\nThe KMS provider uses\nenvelope encryption\n: Kubernetes encrypts resources using a data key, and then\nencrypts that data key using the managed encryption service. Kubernetes generates a unique data key for\neach resource. The API server stores an encrypted version of the data key in etcd alongside the ciphertext;\nwhen reading the resource, the API server calls the managed encryption service and provides both the\nciphertext and the (encrypted) data key.\nWithin the managed encryption service, the provider use a\nkey encryption key\nto decipher the data key,\ndeciphers the data key, and finally recovers the plain text. Communication between the control plane\nand the KMS requires in-transit protection, such as TLS.\nUsing envelope encryption creates dependence on the key encryption key, which is not stored in Kubernetes.\nIn the KMS case, an attacker who intends to get unauthorised access to the plaintext\nvalues would need to compromise etcd\nand\nthe third-party KMS provider."
+}

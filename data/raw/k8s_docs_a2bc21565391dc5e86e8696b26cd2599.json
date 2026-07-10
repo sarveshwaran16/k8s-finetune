@@ -1,0 +1,7 @@
+{
+  "id": "a2bc21565391dc5e86e8696b26cd2599",
+  "source": "k8s_docs",
+  "title": "Gang Scheduling — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/gang-scheduling/#what-s-next",
+  "text": "Learn about the\nPodGroup API\nand its\nlifecycle\n.\nRead about\nPodGroup scheduling policies\n.\nRead about\nPodGroup scheduling\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

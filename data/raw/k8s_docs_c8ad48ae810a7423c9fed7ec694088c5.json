@@ -1,0 +1,7 @@
+{
+  "id": "c8ad48ae810a7423c9fed7ec694088c5",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Deployment (recommended)",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#deployment-recommended",
+  "text": "Deployment\nis an object which can own ReplicaSets and update\nthem and their Pods via declarative, server-side rolling updates.\nWhile ReplicaSets can be used independently, today they're mainly used by Deployments as a mechanism to orchestrate Pod\ncreation, deletion and updates. When you use Deployments you don't have to worry about managing the ReplicaSets that\nthey create. Deployments own and manage their ReplicaSets.\nAs such, it is recommended to use Deployments when you want ReplicaSets."
+}

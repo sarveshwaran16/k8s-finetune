@@ -1,0 +1,7 @@
+{
+  "id": "4b2301c463cb1dcb2085ed94b8e24a51",
+  "source": "k8s_docs",
+  "title": "DaemonSet — Required Fields",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#required-fields",
+  "text": "As with all other Kubernetes config, a DaemonSet needs\napiVersion\n,\nkind\n, and\nmetadata\nfields. For\ngeneral information about working with config files, see\nrunning stateless applications\nand\nobject management using kubectl\n.\nThe name of a DaemonSet object must be a valid\nDNS subdomain name\n.\nA DaemonSet also needs a\n.spec\nsection."
+}

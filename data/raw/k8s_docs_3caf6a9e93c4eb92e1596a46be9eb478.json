@@ -1,0 +1,7 @@
+{
+  "id": "3caf6a9e93c4eb92e1596a46be9eb478",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_kubeconfig/kubeadm_kubeconfig_user/#synopsis",
+  "text": "Output a kubeconfig file for an additional user.\nkubeadm kubeconfig user [flags]\n\n# Output a kubeconfig file for an additional user named foo\n  kubeadm kubeconfig user --client-name=foo\n  \n  # Output a kubeconfig file for an additional user named foo using a kubeadm config file bar\n  kubeadm kubeconfig user --client-name=foo --config=bar"
+}

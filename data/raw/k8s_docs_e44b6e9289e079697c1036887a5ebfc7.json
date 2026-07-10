@@ -1,0 +1,7 @@
+{
+  "id": "e44b6e9289e079697c1036887a5ebfc7",
+  "source": "k8s_docs",
+  "title": "Event Rate Limit Configuration (v1alpha1) — Resource Types",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-eventratelimit.v1alpha1/#resource-types",
+  "text": "Configuration\n\nConfiguration provides configuration for the EventRateLimit admission\ncontroller.\nField\nDescription\napiVersion\nstring\neventratelimit.admission.k8s.io/v1alpha1\nkind\nstring\nConfiguration\nlimits\n[Required]\n[]Limit\nlimits are the limits to place on event queries received.\nLimits can be placed on events received server-wide, per namespace,\nper user, and per source+object.\nAt least one limit is required.\nlimits are the limits to place on event queries received.\nLimits can be placed on events received server-wide, per namespace,\nper user, and per source+object.\nAt least one limit is required."
+}

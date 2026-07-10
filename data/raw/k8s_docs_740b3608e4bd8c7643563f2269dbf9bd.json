@@ -1,0 +1,7 @@
+{
+  "id": "740b3608e4bd8c7643563f2269dbf9bd",
+  "source": "k8s_docs",
+  "title": "Pod — ScaleIOVolumeSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ScaleIOVolumeSource",
+  "text": "ScaleIOVolumeSource represents a persistent ScaleIO volume\nField\nDescription\nfsType\nstring\nfsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Default is \"xfs\".\ngateway\n*\nstring\ngateway is the host address of the ScaleIO API Gateway.\nprotectionDomain\nstring\nprotectionDomain is the name of the ScaleIO Protection Domain for the configured storage.\nreadOnly\nboolean\nreadOnly Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.\nsecretRef\n*\nLocalObjectReference\nsecretRef references to the secret for ScaleIO user and other sensitive information. If this is not provided, Login operation will fail.\nsslEnabled\nboolean\nsslEnabled Flag enable/disable SSL communication with Gateway, default false\nstorageMode\nstring\nstorageMode indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.\nstoragePool\nstring\nstoragePool is the ScaleIO Storage Pool associated with the protection domain.\nsystem\n*\nstring\nsystem is the name of the storage system as configured in ScaleIO.\nvolumeName\nstring\nvolumeName is the name of a volume already created in the ScaleIO system that is associated with this volume source."
+}

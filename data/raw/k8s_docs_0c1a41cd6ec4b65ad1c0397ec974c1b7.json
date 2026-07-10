@@ -1,0 +1,7 @@
+{
+  "id": "0c1a41cd6ec4b65ad1c0397ec974c1b7",
+  "source": "k8s_docs",
+  "title": "Configure Minimum and Maximum CPU Constraints for a Namespace — Attempt to create a Pod that does not meet the minimum CPU request",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-constraint-namespace/#attempt-to-create-a-pod-that-does-not-meet-the-minimum-cpu-request",
+  "text": "Here's a manifest for a Pod that has one container. The container specifies a\nCPU request of 100 millicpu and a CPU limit of 800 millicpu.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nconstraints-cpu-demo-3\nspec\n:\ncontainers\n:\n-\nname\n:\nconstraints-cpu-demo-3-ctr\nimage\n:\nnginx\nresources\n:\nlimits\n:\ncpu\n:\n\"800m\"\nrequests\n:\ncpu\n:\n\"100m\"\nAttempt to create the Pod:\nkubectl apply -f https://k8s.io/examples/admin/resource/cpu-constraints-pod-3.yaml --namespace\n=\nconstraints-cpu-example\nThe output shows that the Pod does not get created, because it defines an unacceptable container.\nThat container is not acceptable because it specifies a CPU request that is lower than the\nenforced minimum:\nError from server (Forbidden): error when creating \"examples/admin/resource/cpu-constraints-pod-3.yaml\":\npods \"constraints-cpu-demo-3\" is forbidden: minimum cpu usage per Container is 200m, but request is 100m."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "fb6518d8e2afd0680a3400cd73366e18",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — undo",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-undo-em-",
+  "text": "Roll back to the previous deployment\nkubectl rollout\nundo\ndeployment/\nabc\nRoll back to daemonset revision 3\nkubectl rollout\nundo\ndaemonset/\nabc\n--\nto\n-revision=\n3\nRoll back to the previous deployment with dry-run\nkubectl rollout undo --dry-\nrun\n=server deployment/abc\nRoll back to a previous rollout."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "bb752569da18ad2db2d575d05fde0f61",
+  "source": "k8s_docs",
+  "title": "Scheduling — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/scheduling/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

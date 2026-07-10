@@ -1,0 +1,7 @@
+{
+  "id": "6401ff2c723a9e661738bc4bbf6a2a23",
+  "source": "k8s_docs",
+  "title": "Kubeadm — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

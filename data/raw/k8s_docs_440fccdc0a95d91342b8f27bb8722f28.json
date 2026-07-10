@@ -1,0 +1,7 @@
+{
+  "id": "440fccdc0a95d91342b8f27bb8722f28",
+  "source": "k8s_docs",
+  "title": "Hardening Guide - Dynamic Resource Allocation — Multi-node status controller permissions",
+  "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/dynamic-resource-allocation/#multi-node-status-controller-permissions",
+  "text": "apiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\ndra-multinode-status-updater\nrules\n:\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/status\"\n]\nverbs\n:\n[\n\"get\"\n,\n\"patch\"\n,\n\"update\"\n]\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/driver\"\n]\nverbs\n:\n[\n\"arbitrary-node:patch\"\n,\n\"arbitrary-node:update\"\n]\nresourceNames\n:\n[\n\"dra.example.com\"\n]"
+}

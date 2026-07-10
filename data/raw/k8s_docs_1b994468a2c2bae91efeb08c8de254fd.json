@@ -1,0 +1,7 @@
+{
+  "id": "1b994468a2c2bae91efeb08c8de254fd",
+  "source": "k8s_docs",
+  "title": "Get a Shell to a Running Container — Opening a shell when a Pod has more than one container",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/#opening-a-shell-when-a-pod-has-more-than-one-container",
+  "text": "If a Pod has more than one container, use\n--container\nor\n-c\nto\nspecify a container in the\nkubectl exec\ncommand. For example,\nsuppose you have a Pod named my-pod, and the Pod has two containers\nnamed\nmain-app\nand\nhelper-app\n. The following command would open a\nshell to the\nmain-app\ncontainer.\nkubectl\nexec\n-i -t my-pod --container main-app -- /bin/bash"
+}

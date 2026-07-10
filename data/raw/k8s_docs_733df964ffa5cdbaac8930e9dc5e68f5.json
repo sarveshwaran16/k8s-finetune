@@ -1,0 +1,7 @@
+{
+  "id": "733df964ffa5cdbaac8930e9dc5e68f5",
+  "source": "k8s_docs",
+  "title": "Set Up DRA in a Cluster — Clean up",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/set-up-dra-cluster/#clean-up",
+  "text": "To delete the DeviceClass that you created in this task, run the following\ncommand:\nkubectl delete -f https://k8s.io/examples/dra/deviceclass.yaml\n\nLearn more about DRA\nAllocate Devices to Workloads with DRA\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

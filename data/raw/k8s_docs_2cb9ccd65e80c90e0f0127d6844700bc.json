@@ -1,0 +1,7 @@
+{
+  "id": "2cb9ccd65e80c90e0f0127d6844700bc",
+  "source": "k8s_docs",
+  "title": "Pull an Image from a Private Registry — Log in to Docker Hub",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#log-in-to-docker-hub",
+  "text": "On your laptop, you must authenticate with a registry in order to pull a private image.\nUse the\ndocker\ntool to log in to Docker Hub. See the\nlog in\nsection of\nDocker ID accounts\nfor more information.\ndocker login\nWhen prompted, enter your Docker ID, and then the credential you want to use (access token,\nor the password for your Docker ID).\nThe login process creates or updates a\nconfig.json\nfile that holds an authorization token.\nReview\nhow Kubernetes interprets this file\n.\nView the\nconfig.json\nfile:\ncat ~/.docker/config.json\nThe output contains a section similar to this:\n{\n\"auths\"\n:\n{\n\"https://index.docker.io/v1/\"\n:\n{\n\"auth\"\n:\n\"c3R...zE2\"\n}\n}\n}"
+}

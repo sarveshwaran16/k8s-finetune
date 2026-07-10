@@ -1,0 +1,7 @@
+{
+  "id": "f98ea168e4507fc9158007be8a485419",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Server Bypass Risks — Mitigations",
+  "source_url": "https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/#runtime-socket-mitigations",
+  "text": "Ensure that you tightly control filesystem access to container runtime sockets.\nWhen possible, restrict this access to the\nroot\nuser.\nIsolate the kubelet from other components running on the node, using\nmechanisms such as Linux kernel namespaces.\nEnsure that you restrict or forbid the use of\nhostPath\nmounts\nthat include the container runtime socket, either directly or by mounting a parent\ndirectory. Also\nhostPath\nmounts must be set as read-only to mitigate risks\nof attackers bypassing directory restrictions.\nRestrict user access to nodes, and especially restrict superuser access to nodes."
+}

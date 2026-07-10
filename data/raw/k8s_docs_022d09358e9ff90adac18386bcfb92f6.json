@@ -1,0 +1,7 @@
+{
+  "id": "022d09358e9ff90adac18386bcfb92f6",
+  "source": "k8s_docs",
+  "title": "StatefulSet Basics — Deleting StatefulSets",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#deleting-statefulsets",
+  "text": "StatefulSet supports both\nnon-cascading\nand\ncascading\ndeletion. In a\nnon-cascading\ndelete\n, the StatefulSet's Pods are not deleted when the\nStatefulSet is deleted. In a cascading\ndelete\n, both the StatefulSet and\nits Pods are deleted.\nRead\nUse Cascading Deletion in a Cluster\nto learn about cascading deletion generally."
+}

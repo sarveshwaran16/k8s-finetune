@@ -1,0 +1,7 @@
+{
+  "id": "755fee01147e0114f2bd399b0c90fbe6",
+  "source": "k8s_docs",
+  "title": "System Logs — JSON log format",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-logs/#json-log-format",
+  "text": "JSON output does not support many standard klog flags. For list of unsupported klog flags, see the\nCommand line tool reference\n.\nNot all logs are guaranteed to be written in JSON format (for example, during process start).\nIf you intend to parse logs, make sure you can handle log lines that are not JSON as well.\nField names and JSON serialization are subject to change.\nThe\n--logging-format=json\nflag changes the format of logs from klog native format to JSON format.\nExample of JSON log format (pretty printed):\n{\n\"ts\"\n:\n1580306777.04728\n,\n\"v\"\n:\n4\n,\n\"msg\"\n:\n\"Pod status updated\"\n,\n\"pod\"\n:{\n\"name\"\n:\n\"nginx-1\"\n,\n\"namespace\"\n:\n\"default\"\n},\n\"status\"\n:\n\"ready\"\n}\nKeys with special meaning:\nts\n- timestamp as Unix time (required, float)\nv\n- verbosity (only for info and not for error messages, int)\nerr\n- error string (optional, string)\nmsg\n- message (required, string)\nList of components currently supporting JSON format:\nkube-controller-manager\nkube-apiserver\nkube-scheduler\nkubelet"
+}

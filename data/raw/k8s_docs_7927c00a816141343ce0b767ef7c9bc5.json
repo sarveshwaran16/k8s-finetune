@@ -1,0 +1,7 @@
+{
+  "id": "7927c00a816141343ce0b767ef7c9bc5",
+  "source": "k8s_docs",
+  "title": "Cloud Controller Manager Administration — Limitations",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/#limitations",
+  "text": "Running cloud controller manager comes with a few possible limitations. Although\nthese limitations are being addressed in upcoming releases, it's important that\nyou are aware of these limitations for production workloads.\n\nCloud controller manager does not implement any of the volume controllers found\nin\nkube-controller-manager\nas the volume integrations also require coordination\nwith kubelets. As we evolve CSI (container storage interface) and add stronger\nsupport for flex volume plugins, necessary support will be added to cloud\ncontroller manager so that clouds can fully integrate with volumes. Learn more\nabout out-of-tree CSI volume plugins\nhere\n."
+}

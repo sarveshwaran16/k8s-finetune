@@ -1,0 +1,7 @@
+{
+  "id": "36653b0f845aeed4f87422fb43b158e6",
+  "source": "k8s_docs",
+  "title": "Translate a Docker Compose File to Kubernetes Resources — Warning about Deployment Configurations",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/#warning-about-deployment-configurations",
+  "text": "If the Docker Compose file has a volume specified for a service, the Deployment (Kubernetes) or DeploymentConfig (OpenShift) strategy is changed to \"Recreate\" instead of \"RollingUpdate\" (default). This is done to avoid multiple instances of a service from accessing a volume at the same time.\nIf the Docker Compose file has service name with\n_\nin it (for example,\nweb_service\n), then it will be replaced by\n-\nand the service name will be renamed accordingly (for example,\nweb-service\n). Kompose does this because \"Kubernetes\" doesn't allow\n_\nin object name.\nPlease note that changing service name might break some\ndocker-compose\nfiles."
+}

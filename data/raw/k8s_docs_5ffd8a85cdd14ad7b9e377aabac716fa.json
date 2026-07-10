@@ -1,0 +1,7 @@
+{
+  "id": "5ffd8a85cdd14ad7b9e377aabac716fa",
+  "source": "k8s_docs",
+  "title": "Apply Pod Security Standards at the Cluster Level — Clean up",
+  "source_url": "https://kubernetes.io/docs/tutorials/security/cluster-level-pss/#clean-up",
+  "text": "Now delete the clusters which you created above by running the following command:\nkind delete cluster --name psa-with-cluster-pss\nkind delete cluster --name psa-wo-cluster-pss\n\nRun a\nshell script\nto perform all the preceding steps at once:\nCreate a Pod Security Standards based cluster level Configuration\nCreate a file to let API server consume this configuration\nCreate a cluster that creates an API server with this configuration\nSet kubectl context to this new cluster\nCreate a minimal pod yaml file\nApply this file to create a Pod in the new cluster\nPod Security Admission\nPod Security Standards\nApply Pod Security Standards at the namespace level\nCreate a Pod Security Standards based cluster level Configuration\nCreate a file to let API server consume this configuration\nCreate a cluster that creates an API server with this configuration\nSet kubectl context to this new cluster\nCreate a minimal pod yaml file\nApply this file to create a Pod in the new cluster"
+}

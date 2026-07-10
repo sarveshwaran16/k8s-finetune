@@ -1,0 +1,7 @@
+{
+  "id": "7462c95060d781874e47dfc20836862e",
+  "source": "k8s_docs",
+  "title": "Building a Basic DaemonSet — Cleaning up",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/create-daemon-set/#cleaning-up",
+  "text": "To delete the DaemonSet, run this command:\nkubectl delete --cascade\n=\nforeground --ignore-not-found --now daemonsets/example-daemonset\nThis simple DaemonSet example introduces key components like init containers and host path volumes,\nwhich can be expanded upon for more advanced use cases. For more details refer to\nDaemonSet\n."
+}

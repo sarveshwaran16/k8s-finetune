@@ -1,0 +1,7 @@
+{
+  "id": "6081c2bfaeb72c2970fd88defc2f2638",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_reset/kubeadm_reset_phase/#synopsis",
+  "text": "Use this command to invoke single phase of the \"reset\" workflow\nkubeadm reset phase [flags]\n\n-h, --help\nhelp for phase\nhelp for phase\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

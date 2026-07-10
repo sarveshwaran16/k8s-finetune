@@ -1,0 +1,7 @@
+{
+  "id": "1648c97479247a4d7a9068b5bc2a64c1",
+  "source": "k8s_docs",
+  "title": "DaemonSet — Communicating with Daemon Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#communicating-with-daemon-pods",
+  "text": "Some possible patterns for communicating with Pods in a DaemonSet are:\nPush\n: Pods in the DaemonSet are configured to send updates to another service, such\nas a stats database. They do not have clients.\nNodeIP and Known Port\n: Pods in the DaemonSet can use a\nhostPort\n, so that the pods\nare reachable via the node IPs.\nClients know the list of node IPs somehow, and know the port by convention.\nDNS\n: Create a\nheadless service\nwith the same pod selector, and then discover DaemonSets using the\nendpoints\nresource or retrieve multiple A records from DNS.\nService\n: Create a service with the same Pod selector, and use the service to reach a\ndaemon on a random node. Use\nService Internal Traffic Policy\nto limit to pods on the same node."
+}

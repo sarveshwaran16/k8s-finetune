@@ -1,0 +1,7 @@
+{
+  "id": "23dde2d6b61715b9d67ba91da97b2033",
+  "source": "k8s_docs",
+  "title": "Assign Memory Resources to Containers and Pods — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "69140ae3b4b60194109340f8d08b1899",
+  "source": "k8s_docs",
+  "title": "Application Security Checklist — Container-levelsecurityContextrecommendations",
+  "source_url": "https://kubernetes.io/docs/concepts/security/application-security-checklist/#security-context-container",
+  "text": "Disable privilege escalations using\nallowPrivilegeEscalation: false\n.\nConfigure the root filesystem to be read-only with\nreadOnlyRootFilesystem: true\n.\nAvoid running privileged containers (set\nprivileged: false\n).\nDrop all capabilities from the containers and add back only specific ones\nthat are needed for operation of the container."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7ad163002019e57e64100c8fb6821ed8",
+  "source": "k8s_docs",
+  "title": "Using CoreDNS for Service Discovery — Tuning CoreDNS",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/coredns/#tuning-coredns",
+  "text": "When resource utilisation is a concern, it may be useful to tune the\nconfiguration of CoreDNS. For more details, check out the\ndocumentation on scaling CoreDNS\n.\n\nYou can configure\nCoreDNS\nto support many more use cases than\nkube-dns does by modifying the CoreDNS configuration (\"Corefile\").\nFor more information, see the\ndocumentation\nfor the\nkubernetes\nCoreDNS plugin, or read the\nCustom DNS Entries for Kubernetes\n.\nin the CoreDNS blog."
+}

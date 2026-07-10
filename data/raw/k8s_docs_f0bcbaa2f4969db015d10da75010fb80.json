@@ -1,0 +1,7 @@
+{
+  "id": "f0bcbaa2f4969db015d10da75010fb80",
+  "source": "k8s_docs",
+  "title": "Viewing Pods and Nodes — Objectives",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/explore/explore-intro/#objectives",
+  "text": "Learn about Kubernetes Pods.\nLearn about Kubernetes Nodes.\nTroubleshoot deployed applications.\n\nThe shell commands in this tutorial use POSIX shell syntax, which is supported by\nthe default shells on most Linux and macOS systems (for example, bash, zsh, or sh).\nWindows users must use a POSIX-compatible shell such as\nWindows Subsystem for Linux (WSL)\nor\nGit Bash\nto run the commands as written.\nCommands that use\nexport\n,\n$()\n, and similar constructs are\nnot\ncompatible\nwith PowerShell or the Windows Command Prompt."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "af0e8e0aebbdc439b5ba383444d9fe0c",
+  "source": "k8s_docs",
+  "title": "Deployments — Operating on a failed deployment",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#operating-on-a-failed-deployment",
+  "text": "All actions that apply to a complete Deployment also apply to a failed Deployment. You can scale it up/down, roll back\nto a previous revision, or even pause it if you need to apply multiple tweaks in the Deployment Pod template.\n\nYou can set\n.spec.revisionHistoryLimit\nfield in a Deployment to specify how many old ReplicaSets for\nthis Deployment you want to retain. The rest will be garbage-collected in the background. By default,\nit is 10.\nThe cleanup only starts\nafter\na Deployment reaches a\ncomplete state\n.\nIf you set\n.spec.revisionHistoryLimit\nto 0, any rollout nonetheless triggers creation of a new\nReplicaSet before Kubernetes removes the old one.\nEven with a non-zero revision history limit, you can have more ReplicaSets than the limit\nyou configure. For example, if pods are crash looping, and there are multiple rolling updates\nevents triggered over time, you might end up with more ReplicaSets than the\n.spec.revisionHistoryLimit\nbecause the Deployment never reaches a complete state."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7a18ffc041582b7c523ef37795b9ea5d",
+  "source": "k8s_docs",
+  "title": "Restrict a Container's Access to Resources with AppArmor — AppArmor profile within security context",
+  "source_url": "https://kubernetes.io/docs/tutorials/security/apparmor/#appArmorProfile",
+  "text": "You can specify the\nappArmorProfile\non either a container's\nsecurityContext\nor on a Pod's\nsecurityContext\n. If the profile is set at the pod level, it will be used as the default profile\nfor all containers in the pod (including init, sidecar, and ephemeral containers). If both a pod & container\nAppArmor profile are set, the container's profile will be used.\nAn AppArmor profile has 2 fields:\ntype\n(required)\n- indicates which kind of AppArmor profile will be applied. Valid options are:\nlocalhostProfile\n- The name of a profile loaded on the node that should be used.\nThe profile must be preconfigured on the node to work.\nThis option must be provided if and only if the\ntype\nis\nLocalhost\n."
+}

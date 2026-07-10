@@ -1,0 +1,7 @@
+{
+  "id": "7142c013e012bfcff428291b7d9b6527",
+  "source": "k8s_docs",
+  "title": "Extending Kubernetes — Configuration",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#configuration",
+  "text": "Configuration files\nand\ncommand arguments\nare documented in the\nReference\nsection of the online\ndocumentation, with a page for each binary:\nkube-apiserver\nkube-controller-manager\nkube-scheduler\nkubelet\nkube-proxy\nCommand arguments and configuration files may not always be changeable in a hosted Kubernetes service or a\ndistribution with managed installation. When they are changeable, they are usually only changeable\nby the cluster operator. Also, they are subject to change in future Kubernetes versions, and\nsetting them may require restarting processes. For those reasons, they should be used only when\nthere are no other options.\nBuilt-in\npolicy APIs\n, such as\nResourceQuota\n,\nNetworkPolicy\nand Role-based Access Control\n(\nRBAC\n), are built-in Kubernetes APIs that provide declaratively configured policy settings.\nAPIs are typically usable even with hosted Kubernetes services and with managed Kubernetes installations.\nThe built-in policy APIs follow the same conventions as other Kubernetes resources such as Pods.\nWhen you use a policy APIs that is\nstable\n, you benefit from a\ndefined support policy\nlike other Kubernetes APIs.\nFor these reasons, policy APIs are recommended over\nconfiguration files\nand\ncommand arguments\nwhere suitable."
+}

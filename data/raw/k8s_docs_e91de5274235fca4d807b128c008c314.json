@@ -1,0 +1,7 @@
+{
+  "id": "e91de5274235fca4d807b128c008c314",
+  "source": "k8s_docs",
+  "title": "EndpointSlices — Topology information",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/#topology",
+  "text": "Each endpoint within an EndpointSlice can contain relevant topology information.\nThe topology information includes the location of the endpoint and information\nabout the corresponding Node and zone. These are available in the following\nper endpoint fields on EndpointSlices:\nnodeName\n- The name of the Node this endpoint is on.\nzone\n- The zone this endpoint is in."
+}

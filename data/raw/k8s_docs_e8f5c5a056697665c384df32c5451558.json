@@ -1,0 +1,7 @@
+{
+  "id": "e8f5c5a056697665c384df32c5451558",
+  "source": "k8s_docs",
+  "title": "Operator pattern — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/#what-s-next",
+  "text": "Read the\nCNCF\nOperator White Paper\n.\nLearn more about\nCustom Resources\nFind ready-made operators on\nOperatorHub.io\nto suit your use case\nPublish\nyour operator for other people to use\nRead\nCoreOS' original article\nthat introduced the operator pattern (this is an archived version of the original article).\nRead an\narticle\nfrom Google Cloud about best practices for building operators"
+}

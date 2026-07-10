@@ -1,0 +1,7 @@
+{
+  "id": "c1584dc8a2f0e0ecfad3e8bf34b1486f",
+  "source": "k8s_docs",
+  "title": "Monitor Node Health — Exporter",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/monitor-node-health/#exporter",
+  "text": "An exporter reports the node problems and/or metrics to certain backends.\nThe following exporters are supported:\nKubernetes exporter\n: this exporter reports node problems to the Kubernetes API server.\nTemporary problems are reported as Events and permanent problems are reported as Node Conditions.\nPrometheus exporter\n: this exporter reports node problems and metrics locally as Prometheus\n(or OpenMetrics) metrics. You can specify the IP address and port for the exporter using command\nline arguments.\nStackdriver exporter\n: this exporter reports node problems and metrics to the Stackdriver\nMonitoring API. The exporting behavior can be customized using a\nconfiguration file\n.\nKubernetes exporter\n: this exporter reports node problems to the Kubernetes API server.\nTemporary problems are reported as Events and permanent problems are reported as Node Conditions.\nPrometheus exporter\n: this exporter reports node problems and metrics locally as Prometheus\n(or OpenMetrics) metrics. You can specify the IP address and port for the exporter using command\nline arguments.\nStackdriver exporter\n: this exporter reports node problems and metrics to the Stackdriver\nMonitoring API. The exporting behavior can be customized using a\nconfiguration file\n."
+}

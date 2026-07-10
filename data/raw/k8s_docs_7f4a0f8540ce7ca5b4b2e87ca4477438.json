@@ -1,0 +1,7 @@
+{
+  "id": "7f4a0f8540ce7ca5b4b2e87ca4477438",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubectl.kubernetes.io/restartedAt",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubectl-k8s-io-restart-at",
+  "text": "Type: Annotation\nExample:\nkubectl.kubernetes.io/restartedAt: \"2024-06-21T17:27:41Z\"\nUsed on: Deployment, ReplicaSet, StatefulSet, DaemonSet, Pod\nThis annotation contains the latest restart time of a resource (Deployment, ReplicaSet, StatefulSet or DaemonSet),\nwhere kubectl triggered a rollout in order to force creation of new Pods.\nThe command\nkubectl rollout restart <RESOURCE>\ntriggers a restart by patching the template\nmetadata of all the pods of resource with this annotation. In above example the latest restart time is shown as 21st June 2024 at 17:27:41 UTC.\nYou should not assume that this annotation represents the date / time of the most recent update;\na separate change could have been made since the last manually triggered rollout.\nIf you manually set this annotation on a Pod, nothing happens. The restarting side effect comes from\nhow workload management and Pod templating works."
+}

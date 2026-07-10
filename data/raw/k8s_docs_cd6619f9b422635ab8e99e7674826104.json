@@ -1,0 +1,7 @@
+{
+  "id": "cd6619f9b422635ab8e99e7674826104",
+  "source": "k8s_docs",
+  "title": "Process ID Limits And Reservations — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/pid-limiting/#what-s-next",
+  "text": "Refer to the\nPID Limiting enhancement document\nfor more information.\nFor historical context, read\nProcess ID Limiting for Stability Improvements in Kubernetes 1.14\n.\nRead\nManaging Resources for Containers\n.\nLearn how to\nConfigure Out of Resource Handling\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

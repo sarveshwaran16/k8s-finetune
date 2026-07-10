@@ -1,0 +1,7 @@
+{
+  "id": "795a44b5341e260ec0583e94a3e284f0",
+  "source": "k8s_docs",
+  "title": "Cluster Architecture — Addons",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/#addons",
+  "text": "Addons use Kubernetes resources (\nDaemonSet\n,\nDeployment\n, etc) to implement cluster features.\nBecause these are providing cluster-level features, namespaced resources for\naddons belong within the\nkube-system\nnamespace.\nSelected addons are described below; for an extended list of available addons,\nplease see\nAddons\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "83be8e0b6c68b7a546cd858fb20513b3",
+  "source": "k8s_docs",
+  "title": "Ingress — Ingress backed by a single Service",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#single-service-ingress",
+  "text": "There are existing Kubernetes concepts that allow you to expose a single Service\n(see\nalternatives\n). You can also do this with an Ingress by specifying a\ndefault backend\nwith no rules.\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nIngress\nmetadata\n:\nname\n:\ntest-ingress\nspec\n:\ndefaultBackend\n:\nservice\n:\nname\n:\ntest\nport\n:\nnumber\n:\n80\nIf you create it using\nkubectl apply -f\nyou should be able to view the state\nof the Ingress you added:\nkubectl get ingress test-ingress\nNAME           CLASS         HOSTS   ADDRESS         PORTS   AGE\ntest-ingress   external-lb   *       203.0.113.123   80      59s\nWhere\n203.0.113.123\nis the IP allocated by the Ingress controller to satisfy\nthis Ingress."
+}

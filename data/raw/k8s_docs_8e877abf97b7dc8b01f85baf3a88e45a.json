@@ -1,0 +1,7 @@
+{
+  "id": "8e877abf97b7dc8b01f85baf3a88e45a",
+  "source": "k8s_docs",
+  "title": "Parallel Processing using Expansions — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

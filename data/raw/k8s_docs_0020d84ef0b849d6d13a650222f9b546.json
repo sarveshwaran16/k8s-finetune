@@ -1,0 +1,7 @@
+{
+  "id": "0020d84ef0b849d6d13a650222f9b546",
+  "source": "k8s_docs",
+  "title": "Device Plugins — Monitoring device plugin resources",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/#monitoring-device-plugin-resources",
+  "text": "In order to monitor resources provided by device plugins, monitoring agents need to be able to\ndiscover the set of devices that are in-use on the node and obtain metadata to describe which\ncontainer the metric should be associated with.\nPrometheus\nmetrics\nexposed by device monitoring agents should follow the\nKubernetes Instrumentation Guidelines\n,\nidentifying containers using\npod\n,\nnamespace\n, and\ncontainer\nprometheus labels.\nThe kubelet provides a gRPC service to enable discovery of in-use devices, and to provide metadata\nfor these devices:\n// PodResourcesLister is a service provided by the kubelet that provides information about the\n// node resources consumed by pods and containers on the node\nservice PodResourcesLister {\n    rpc List(ListPodResourcesRequest) returns (ListPodResourcesResponse) {}\n    rpc GetAllocatableResources(AllocatableResourcesRequest) returns (AllocatableResourcesResponse) {}\n    rpc Get(GetPodResourcesRequest) returns (GetPodResourcesResponse) {}\n}"
+}

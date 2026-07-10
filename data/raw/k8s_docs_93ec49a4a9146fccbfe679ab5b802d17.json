@@ -1,0 +1,7 @@
+{
+  "id": "93ec49a4a9146fccbfe679ab5b802d17",
+  "source": "k8s_docs",
+  "title": "RuntimeClass — Overhead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/node/runtime-class-v1/#Overhead",
+  "text": "Overhead structure represents the resource overhead associated with running a pod.\nField\nDescription\npodFixed\nobject\npodFixed represents the fixed resource overhead associated with running a pod.\n\nScheduling specifies the scheduling constraints for nodes supporting a RuntimeClass.\nField\nDescription\nnodeSelector\nobject\nnodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a pod's existing nodeSelector. Any conflicts will cause the pod to be rejected in admission.\ntolerations\nToleration array\ntolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the pod and the RuntimeClass."
+}

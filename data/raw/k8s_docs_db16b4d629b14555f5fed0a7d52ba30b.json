@@ -1,0 +1,7 @@
+{
+  "id": "db16b4d629b14555f5fed0a7d52ba30b",
+  "source": "k8s_docs",
+  "title": "Using kubectl to Create a Deployment — kubectl basics",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/#kubectl-basics",
+  "text": "The common format of a kubectl command is:\nkubectl action resource\n.\nThis performs the specified\naction\n(like\ncreate\n,\ndescribe\nor\ndelete\n) on the\nspecified\nresource\n(like\nnode\nor\ndeployment\n. You can use\n--help\nafter the\nsubcommand to get additional info about possible parameters (for example:\nkubectl get nodes --help\n).\nCheck that kubectl is configured to talk to your cluster, by running the\nkubectl version\ncommand.\nCheck that kubectl is installed and that you can see both the client and the server versions.\nTo view the nodes in the cluster, run the\nkubectl get nodes\ncommand.\nYou see the available nodes. Later, Kubernetes will choose where to deploy our\napplication based on Node available resources."
+}

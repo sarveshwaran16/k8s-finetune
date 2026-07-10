@@ -1,0 +1,7 @@
+{
+  "id": "cc0deceffa5f5b72ac9367df6d3edbed",
+  "source": "k8s_docs",
+  "title": "Persistent Volumes — Unused PVC tracking",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#unused-pvc-tracking",
+  "text": "When enabled, the PVC protection controller adds an\nUnused\ncondition\nto each\nPersistentVolumeClaim to indicate whether it is currently referenced by any\nnon-terminal Pod.\nThe condition has two states:\nA Pod is considered non-terminal if its phase is not\nSucceeded\nor\nFailed\n.\nThis means that a Pending Pod (even one that has not yet been scheduled) counts\nas using the PVC.\nThe\nlastTransitionTime\nof the\nUnused\ncondition can be used by cluster\nadministrators, monitoring tools, and external controllers to identify PVCs that\nhave been unused for a long time. For example, to find all PVCs that have been\nunused for more than 30 days, you could query for PVCs where the\nUnused\ncondition has\nstatus: \"True\"\nand\nlastTransitionTime\nis older than 30 days."
+}

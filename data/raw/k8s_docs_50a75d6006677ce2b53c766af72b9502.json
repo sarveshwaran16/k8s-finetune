@@ -1,0 +1,7 @@
+{
+  "id": "50a75d6006677ce2b53c766af72b9502",
+  "source": "k8s_docs",
+  "title": "Kubectl user preferences (kuberc) — prependArgs",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kuberc/#prependargs",
+  "text": "This next example, will expand the previous one, introducing\nprependArgs\nsection,\nwhich allows inserting arbitrary arguments immediately after the kubectl command\nand its subcommand (if any).\napiVersion\n:\nkubectl.config.k8s.io/v1beta1\nkind\n:\nPreference\naliases\n:\n-\nname\n:\ngetn\ncommand\n:\nget\noptions\n:\n-\nname\n:\noutput\ndefault\n:\njson\nprependArgs\n:\n-\nnamespace\nIn this example, the following settings were used:\nname\n- Alias name must not collide with the built-in commands.\ncommand\n- Specify the underlying built-in command that your alias will execute.\nThis includes support for subcommands like\ncreate role\n.\noptions\n- Specify default values for options. If you explicitly specify an option\nwhen you run\nkubectl\n, the value you provide takes precedence over the default\none defined in\nkuberc\n.\nprependArgs\n- Specify explicit argument that will be placed right after the\ncommand. Here, this will be translated to\nkubectl get namespace test-ns --output json\n."
+}

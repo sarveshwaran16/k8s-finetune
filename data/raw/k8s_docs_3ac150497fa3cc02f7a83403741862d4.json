@@ -1,0 +1,7 @@
+{
+  "id": "3ac150497fa3cc02f7a83403741862d4",
+  "source": "k8s_docs",
+  "title": "Viewing Pods and Nodes — Troubleshooting with kubectl",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/explore/explore-intro/#troubleshooting-with-kubectl",
+  "text": "In\nModule 2\n, you used\nthe kubectl command-line interface. You'll continue to use it in Module 3 to get\ninformation about deployed applications and their environments. The most common\noperations can be done with the following kubectl subcommands:\nkubectl get\n- list resources\nkubectl describe\n- show detailed information about a resource\nkubectl logs\n- print the logs from a container in a pod\nkubectl exec\n- execute a command on a container in a pod\nYou can use these commands to see when applications were deployed, what their current\nstatuses are, where they are running and what their configurations are.\nNow that we know more about our cluster components and the command line, let's\nexplore our application."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "fdf8d513b8e551b1aeafe97d67878533",
+  "source": "k8s_docs",
+  "title": "Advanced Pod Configuration — Pod and container level security context configuration",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#security-context",
+  "text": "The\nSecurity context\nfield in the Pod specification provides granular control over security settings for Pods and containers.\n\nSome aspects of security apply to the whole Pod; for other aspects,\nyou might want to set a default, without any container-level overrides.\nHere's an example of using\nsecurityContext\nat the Pod level:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nsecurity-context-demo\nspec\n:\nsecurityContext\n:\n# This applies to the entire Pod\nrunAsUser\n:\n1000\nrunAsGroup\n:\n3000\nfsGroup\n:\n2000\ncontainers\n:\n-\nname\n:\nsec-ctx-demo\nimage\n:\nregistry.k8s.io/e2e-test-images/agnhost:2.45\ncommand\n:\n[\n\"sh\"\n,\n\"-c\"\n,\n\"sleep 1h\"\n]"
+}

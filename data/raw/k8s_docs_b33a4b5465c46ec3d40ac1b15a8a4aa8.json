@@ -1,0 +1,7 @@
+{
+  "id": "b33a4b5465c46ec3d40ac1b15a8a4aa8",
+  "source": "k8s_docs",
+  "title": "Install and Set Up kubectl on macOS — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

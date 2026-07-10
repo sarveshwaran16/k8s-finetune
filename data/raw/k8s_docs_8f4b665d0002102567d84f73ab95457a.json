@@ -1,0 +1,7 @@
+{
+  "id": "8f4b665d0002102567d84f73ab95457a",
+  "source": "k8s_docs",
+  "title": "Update a Deployment Without Downtime — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "c072951a38d568f32ed8f342fddf8794",
+  "source": "k8s_docs",
+  "title": "Create a Windows HostProcess Pod — Containerd v1.6",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/#containerd-v1-6",
+  "text": "Applications running inside the container can access volume mounts directly via relative or\nabsolute paths. An environment variable\n$CONTAINER_SANDBOX_MOUNT_POINT\nis set upon container\ncreation and provides the absolute host path to the container volume. Relative paths are based\nupon the\n.spec.containers.volumeMounts.mountPath\nconfiguration.\nTo access service account tokens (for example) the following path structures are supported within the container:\n.\\var\\run\\secrets\\kubernetes.io\\serviceaccount\\\n$CONTAINER_SANDBOX_MOUNT_POINT\\var\\run\\secrets\\kubernetes.io\\serviceaccount\\"
+}

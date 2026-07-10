@@ -1,0 +1,7 @@
+{
+  "id": "6633eca891baf5be653e71504bef19ee",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Writing a ReplicaSet manifest",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#writing-a-replicaset-manifest",
+  "text": "As with all other Kubernetes API objects, a ReplicaSet needs the\napiVersion\n,\nkind\n, and\nmetadata\nfields.\nFor ReplicaSets, the\nkind\nis always a ReplicaSet.\nWhen the control plane creates new Pods for a ReplicaSet, the\n.metadata.name\nof the\nReplicaSet is part of the basis for naming those Pods. The name of a ReplicaSet must be a valid\nDNS subdomain\nvalue, but this can produce unexpected results for the Pod hostnames. For best compatibility,\nthe name should follow the more restrictive rules for a\nDNS label\n.\nA ReplicaSet also needs a\n.spec\nsection\n."
+}

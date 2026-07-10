@@ -1,0 +1,7 @@
+{
+  "id": "4de79006369fa9aaf0302a7218bfb8cb",
+  "source": "k8s_docs",
+  "title": "Running Kubernetes Node Components as a Non-root User — Configuring kubelet",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/#configuring-kubelet",
+  "text": "Running kubelet in a user namespace requires the following configuration:\napiVersion\n:\nkubelet.config.k8s.io/v1beta1\nkind\n:\nKubeletConfiguration\nfeatureGates\n:\nKubeletInUserNamespace\n:\ntrue\n# We use cgroupfs that is delegated by systemd, so we do not use \"systemd\" driver\n# (unless you run another systemd in the namespace)\ncgroupDriver\n:\n\"cgroupfs\"\nWhen the\nKubeletInUserNamespace\nfeature gate is enabled, the kubelet ignores errors\nthat may happen during setting the following sysctl values on the node.\nvm.overcommit_memory\nvm.panic_on_oom\nkernel.panic\nkernel.panic_on_oops\nkernel.keys.root_maxkeys\nkernel.keys.root_maxbytes\n.\nWithin a user namespace, the kubelet also ignores any error raised from trying to open\n/dev/kmsg\n.\nThis feature gate also allows kube-proxy to ignore an error during setting\nRLIMIT_NOFILE\n.\nThe\nKubeletInUserNamespace\nfeature gate was introduced in Kubernetes v1.22 with \"alpha\" status.\nRunning kubelet in a user namespace without using this feature gate is also possible\nby mounting a specially crafted proc filesystem (as done by\nSysbox\n), but not officially supported."
+}

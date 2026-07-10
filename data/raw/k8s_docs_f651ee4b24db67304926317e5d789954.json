@@ -1,0 +1,7 @@
+{
+  "id": "f651ee4b24db67304926317e5d789954",
+  "source": "k8s_docs",
+  "title": "Manage TLS Certificates in a Cluster — Trusting TLS in a cluster",
+  "source_url": "https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/#trusting-tls-in-a-cluster",
+  "text": "Trusting the\ncustom CA\nfrom an application running as a pod usually requires\nsome extra application configuration. You will need to add the CA certificate\nbundle to the list of CA certificates that the TLS client or server trusts. For\nexample, you would do this with a golang TLS config by parsing the certificate\nchain and adding the parsed certificates to the\nRootCAs\nfield in the\ntls.Config\nstruct.\nEven though the custom CA certificate may be included in the filesystem (in the\nConfigMap\nkube-root-ca.crt\n),\nyou should not use that certificate authority for any purpose other than to verify internal\nKubernetes endpoints. An example of an internal Kubernetes endpoint is the\nService named\nkubernetes\nin the default namespace.\nIf you want to use a custom certificate authority for your workloads, you should generate\nthat CA separately, and distribute its CA certificate using a\nConfigMap\nthat your pods\nhave access to read."
+}

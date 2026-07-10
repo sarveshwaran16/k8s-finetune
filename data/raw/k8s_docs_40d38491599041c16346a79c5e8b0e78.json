@@ -1,0 +1,7 @@
+{
+  "id": "40d38491599041c16346a79c5e8b0e78",
+  "source": "k8s_docs",
+  "title": "IPv4/IPv6 dual-stack — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/dual-stack/#what-s-next",
+  "text": "Validate IPv4/IPv6 dual-stack\nnetworking\nEnable dual-stack networking using kubeadm\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

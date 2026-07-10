@@ -1,0 +1,7 @@
+{
+  "id": "630d1c775ba81cc49aa2ead8751bbb61",
+  "source": "k8s_docs",
+  "title": "Pod Hostname — Hostname with pod's hostname and subdomain fields",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-hostname/#hostname-with-pod-s-hostname-and-subdomain-fields",
+  "text": "The Pod spec includes an optional\nhostname\nfield.\nWhen set, this value takes precedence over the Pod's\nmetadata.name\nas the\nhostname (observed from within the Pod).\nFor example, a Pod with spec.hostname set to\nmy-host\nwill have its hostname set to\nmy-host\n.\nThe Pod spec also includes an optional\nsubdomain\nfield,\nindicating the Pod belongs to a subdomain within its namespace.\nIf a Pod has\nspec.hostname\nset to \"foo\" and spec.subdomain set\nto \"bar\" in the namespace\nmy-namespace\n, its hostname becomes\nfoo\nand its\nfully qualified domain name (FQDN) becomes\nfoo.bar.my-namespace.svc.cluster-domain.example\n(observed from within the Pod).\nWhen both hostname and subdomain are set, the cluster's DNS server will\ncreate A and/or AAAA records based on these fields.\nRefer to:\nPod's hostname and subdomain fields\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "289ee4a7789a28ef677f53fe5dba0d04",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — Manual preparation of component credentials",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#manual-preparation-of-component-credentials",
+  "text": "PKI certificates and requirements\nincludes information\non how to prepare all the required by kubeadm component credentials manually.\nThis guide covers the usage of the\nopenssl\ncommand (used for manual certificate signing,\nif you choose that approach), but you can use your preferred tools.\n\nkubeadm can\ngenerate CSR files\nthat you can sign manually with tools like\nopenssl\nand your external CA. These CSR files will include all the specification for credentials\nthat components deployed by kubeadm require."
+}

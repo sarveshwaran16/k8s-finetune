@@ -1,0 +1,7 @@
+{
+  "id": "17e10ed3cc170f1177fae731baea9a03",
+  "source": "k8s_docs",
+  "title": "Cloud Native Security and Kubernetes — Runtimelifecycle phase",
+  "source_url": "https://kubernetes.io/docs/concepts/security/cloud-native-security/#lifecycle-phase-runtime",
+  "text": "The Runtime phase comprises three critical areas:\naccess\n,\ncompute\n, and\nstorage\n.\n\nThe Kubernetes API is what makes your cluster work. Protecting this API is key\nto providing effective cluster security.\nOther pages in the Kubernetes documentation have more detail about how to set up\nspecific aspects of access control. The\nsecurity checklist\nprovides suggested basic checks for your cluster.\nBeyond that, securing your cluster means implementing effective\nauthentication\nand\nauthorization\nfor API access. Use\nServiceAccounts\nto\nprovide and manage security identities for workloads and cluster\ncomponents.\nKubernetes uses TLS to protect API traffic; make sure to deploy the cluster using\nTLS (including for traffic between nodes and the control plane) and protect the\nencryption keys. If you use Kubernetes' own API for\nCertificateSigningRequests\n,\npay special attention to restricting misuse there."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6358699c41630009e8a76fb4b83fec8b",
+  "source": "k8s_docs",
+  "title": "Debugging Kubernetes nodes with crictl — List images",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/#list-images",
+  "text": "List all images:\ncrictl images\nThe output is similar to this:\nIMAGE                                     TAG                 IMAGE ID            SIZE\nbusybox                                   latest              8c811b4aec35f       1.15MB\nk8s-gcrio.azureedge.net/hyperkube-amd64   v1.10.3             e179bbfe5d238       665MB\nk8s-gcrio.azureedge.net/pause-amd64       3.1                 da86e6ba6ca19       742kB\nnginx                                     latest              cd5239a0906a6       109MB\nList images by repository:\ncrictl images nginx\nThe output is similar to this:\nIMAGE               TAG                 IMAGE ID            SIZE\nnginx               latest              cd5239a0906a6       109MB\nOnly list image IDs:\ncrictl images -q\nThe output is similar to this:\nsha256:8c811b4aec35f259572d0f79207bc0678df4c736eeec50bc9fec37ed936a472a\nsha256:e179bbfe5d238de6069f3b03fccbecc3fb4f2019af741bfff1233c4d7b2970c5\nsha256:da86e6ba6ca197bf6bc5e9d900febd906b133eaa4750e6bed647b0fbe50ed43e\nsha256:cd5239a0906a6ccf0562354852fae04bc5b52d72a2aff9a871ddb6bd57553569"
+}

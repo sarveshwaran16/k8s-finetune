@@ -1,0 +1,7 @@
+{
+  "id": "51e9ca3d5749b2c9a9ea08a2d0e694ef",
+  "source": "k8s_docs",
+  "title": "Running Kubelet in Standalone Mode — Conclusion",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#conclusion",
+  "text": "This page covered the basic aspects of deploying a kubelet in standalone mode.\nYou are now ready to deploy Pods and test additional functionality.\nNotice that in standalone mode the kubelet does\nnot\nsupport fetching Pod\nconfigurations from the control plane (because there is no control plane connection).\nYou also cannot use a\nConfigMap\nor a\nSecret\nto configure the containers\nin a static Pod."
+}

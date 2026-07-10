@@ -1,0 +1,7 @@
+{
+  "id": "372c15c696b3b5d593ab3565a6f841d8",
+  "source": "k8s_docs",
+  "title": "Images — Pre-pulled images",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images",
+  "text": "By default, the kubelet tries to pull each image from the specified registry.\nHowever, if the\nimagePullPolicy\nproperty of the container is set to\nIfNotPresent\nor\nNever\n,\nthen a local image is used (preferentially or exclusively, respectively).\nIf you want to rely on pre-pulled images as a substitute for registry authentication,\nyou must ensure all nodes in the cluster have the same pre-pulled images.\nThis can be used to preload certain images for speed or as an alternative to\nauthenticating to a private registry.\nSimilar to the usage of the\nkubelet credential provider\n,\npre-pulled images are also suitable for launching\nstatic Pods\nthat depend\non images hosted in a private registry.\nAccess to pre-pulled images may be authorized according to\nimage pull credential verification\n."
+}

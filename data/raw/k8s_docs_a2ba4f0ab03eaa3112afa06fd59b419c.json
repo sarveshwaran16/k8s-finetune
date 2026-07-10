@@ -1,0 +1,7 @@
+{
+  "id": "a2ba4f0ab03eaa3112afa06fd59b419c",
+  "source": "k8s_docs",
+  "title": "Control Memory Management Policies on a Node — Memory manager reserved memory syntax",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/memory-manager/#reserved-memory-syntax",
+  "text": "Here are some examples of how to set the\nreservedMemory\nconfiguration for the kubelet.\n# Example 1\nreservedMemory\n:\n-\nnumaNode\n:\n0\n# NUMA node index\nlimits\n:\nmemory\n:\n\"1Gi\"\n# byte quantity\n-\nnumaNode\n:\n1\nlimits\n:\nmemory\n:\n\"2Gi\"\n# byte quantity\n# Example 2\nreservedMemory\n:\n-\nnumaNode\n:\n0\nlimits\n:\n\"memory\":\n\"512Gi\"\n-\nnumaNode\n:\n1\nlimits\n:\n\"memory\":\n\"512Gi\"\n\"hugepages-1Gi\":\n\"2Gi\"\n# only relevant on Linux"
+}

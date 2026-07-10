@@ -1,0 +1,7 @@
+{
+  "id": "d27c6ee7b5d85126b69300222012e6de",
+  "source": "k8s_docs",
+  "title": "Audit Annotations — insecure-sha1.invalid-cert.kubernetes.io/$hostname",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/#insecure-sha1-invalid-cert-kubernetes-io-hostname",
+  "text": "Example:\ninsecure-sha1.invalid-cert.kubernetes.io/example-svc.example-namespace.svc: \"uses an insecure SHA-1 signature\"\nUsed by Kubernetes version v1.24 and later\nThis annotation indicates a webhook or aggregated API server\nis using an insecure certificate signed with a SHA-1 hash.\nSupport for these insecure certificates is disabled by default in Kubernetes 1.24,\nand will be removed in a future release.\nServices using these certificates should replace them as soon as possible,\nto ensure connections are secured properly and to avoid disruption in future releases.\nThere's more information about this in the Go documentation:\nRejecting SHA-1 certificates\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "693d6d71721428ec819b1d1c01a56c2e",
+  "source": "k8s_docs",
+  "title": "StatefulSets — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#what-s-next",
+  "text": "Learn about\nPods\n.\nFind out how to use StatefulSets\nFollow an example of\ndeploying a stateful application\n.\nFollow an example of\ndeploying Cassandra with Stateful Sets\n.\nFollow an example of\nrunning a replicated stateful application\n.\nLearn how to\nscale a StatefulSet\n.\nLearn what's involved when you\ndelete a StatefulSet\n.\nLearn how to\nconfigure a Pod to use a volume for storage\n.\nLearn how to\nconfigure a Pod to use a PersistentVolume for storage\n.\nStatefulSet\nis a top-level resource in the Kubernetes REST API.\nRead the\nStatefulSet\nobject definition to understand the API for stateful sets.\nRead about\nPodDisruptionBudget\nand how\nyou can use it to manage application availability during disruptions.\nFollow an example of\ndeploying a stateful application\n.\nFollow an example of\ndeploying Cassandra with Stateful Sets\n.\nFollow an example of\nrunning a replicated stateful application\n.\nLearn how to\nscale a StatefulSet\n.\nLearn what's involved when you\ndelete a StatefulSet\n.\nLearn how to\nconfigure a Pod to use a volume for storage\n.\nLearn how to\nconfigure a Pod to use a PersistentVolume for storage\n."
+}

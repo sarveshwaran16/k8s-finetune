@@ -1,0 +1,7 @@
+{
+  "id": "b9e969ffd51292d9b9959e98b9d502d1",
+  "source": "k8s_docs",
+  "title": "Custom Resources — Choosing a method for adding custom resources",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#choosing-a-method-for-adding-custom-resources",
+  "text": "CRDs are easier to use. Aggregated APIs are more flexible. Choose the method that best meets your needs.\nTypically, CRDs are a good fit if:\nYou have a handful of fields\nYou are using the resource within your company, or as part of a small open-source project (as\nopposed to a commercial product)\n\nCRDs are easier to create than Aggregated APIs.\nCRDs\nAggregated API\nDo not require programming. Users can choose any language for a CRD controller.\nRequires programming and building binary and image.\nNo additional service to run; CRDs are handled by API server.\nAn additional service to create and that could fail.\nNo ongoing support once the CRD is created. Any bug fixes are picked up as part of normal Kubernetes Master upgrades.\nMay need to periodically pickup bug fixes from upstream and rebuild and update the Aggregated API server.\nNo need to handle multiple versions of your API; for example, when you control the client for this resource, you can upgrade it in sync with the API.\nYou need to handle multiple versions of your API; for example, when developing an extension to share with the world."
+}

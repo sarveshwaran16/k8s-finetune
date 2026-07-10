@@ -1,0 +1,7 @@
+{
+  "id": "3be71bf3ac6462268ce4eb6fc1c314ef",
+  "source": "k8s_docs",
+  "title": "Apply Pod Security Standards at the Cluster Level — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tutorials/security/cluster-level-pss/#before-you-begin",
+  "text": "Install the following on your workstation:\nkind\nkubectl\nThis tutorial demonstrates what you can configure for a Kubernetes cluster that you fully\ncontrol. If you are learning how to configure Pod Security Admission for a managed cluster\nwhere you are not able to configure the control plane, read\nApply Pod Security Standards at the namespace level\n."
+}

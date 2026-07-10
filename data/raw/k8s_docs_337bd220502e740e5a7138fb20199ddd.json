@@ -1,0 +1,7 @@
+{
+  "id": "337bd220502e740e5a7138fb20199ddd",
+  "source": "k8s_docs",
+  "title": "Set Kubelet Parameters Via A Configuration File — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/#before-you-begin",
+  "text": "Some steps in this page use the\njq\ntool. If you don't have\njq\n, you can\ninstall it via your operating system's software sources, or fetch it from\nhttps://jqlang.github.io/jq/\n.\nSome steps also involve installing\ncurl\n, which can be installed via your\noperating system's software sources.\nA subset of the kubelet's configuration parameters may be\nset via an on-disk config file, as a substitute for command-line flags.\nProviding parameters via a config file is the recommended approach because\nit simplifies node deployment and configuration management."
+}

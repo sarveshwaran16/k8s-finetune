@@ -1,0 +1,7 @@
+{
+  "id": "1f3db95168dbccebcf42b3f6461f6ffb",
+  "source": "k8s_docs",
+  "title": "Troubleshooting CNI plugin-related errors — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/troubleshooting-cni-plugin-related-errors/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

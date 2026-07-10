@@ -1,0 +1,7 @@
+{
+  "id": "c55d1e89ee6beb456693a585fda3109c",
+  "source": "k8s_docs",
+  "title": "Network Policies — Targeting a range of ports",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/#targeting-a-range-of-ports",
+  "text": "When writing a NetworkPolicy, you can target a range of ports instead of a single port.\nThis is achievable with the usage of the\nendPort\nfield, as the following example:\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nNetworkPolicy\nmetadata\n:\nname\n:\nmulti-port-egress\nnamespace\n:\ndefault\nspec\n:\npodSelector\n:\nmatchLabels\n:\nrole\n:\ndb\npolicyTypes\n:\n-\nEgress\negress\n:\n-\nto\n:\n-\nipBlock\n:\ncidr\n:\n10.0.0.0\n/24\nports\n:\n-\nprotocol\n:\nTCP\nport\n:\n32000\nendPort\n:\n32768\nThe above rule allows any Pod with label\nrole=db\non the namespace\ndefault\nto communicate\nwith any IP within the range\n10.0.0.0/24\nover TCP, provided that the target\nport is between the range 32000 and 32768.\nThe following restrictions apply when using this field:\nThe\nendPort\nfield must be equal to or greater than the\nport\nfield.\nendPort\ncan only be defined if\nport\nis also defined.\nBoth ports must be numeric."
+}

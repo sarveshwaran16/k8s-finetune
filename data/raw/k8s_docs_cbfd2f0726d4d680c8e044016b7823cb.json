@@ -1,0 +1,7 @@
+{
+  "id": "cbfd2f0726d4d680c8e044016b7823cb",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler — PodsMetricSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#PodsMetricSource",
+  "text": "PodsMetricSource indicates how to scale on a metric describing each pod in the current scale target (for example, transactions-processed-per-second). The values will be averaged together before being compared to the target value.\nField\nDescription\nmetric\n*\nMetricIdentifier\nmetric identifies the target metric by name and selector\ntarget\n*\nMetricTarget\ntarget specifies the target value for the given metric"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "8682ba6a08f64508a955b4cdf962081d",
+  "source": "k8s_docs",
+  "title": "Declarative Management of Kubernetes Objects Using Configuration Files — How to view an object",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#how-to-view-an-object",
+  "text": "You can use\nkubectl get\nwith\n-o yaml\nto view the configuration of a live object:\nkubectl get -f <filename\n|\nurl> -o yaml\n\nWhen\nkubectl apply\nupdates the live configuration for an object,\nit does so by sending a patch request to the API server. The\npatch defines updates scoped to specific fields of the live object\nconfiguration. The\nkubectl apply\ncommand calculates this patch request\nusing the configuration file, the live configuration, and the\nlast-applied-configuration\nannotation stored in the live configuration."
+}

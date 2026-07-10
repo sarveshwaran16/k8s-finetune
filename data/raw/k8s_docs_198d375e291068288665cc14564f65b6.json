@@ -1,0 +1,7 @@
+{
+  "id": "198d375e291068288665cc14564f65b6",
+  "source": "k8s_docs",
+  "title": "kubeadm reset — Graceful kube-apiserver shutdown",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-reset/#graceful-kube-apiserver-shutdown",
+  "text": "If you have your\nkube-apiserver\nconfigured with the\n--shutdown-delay-duration\nflag,\nyou can run the following commands to attempt a graceful shutdown for the running API server Pod,\nbefore you run\nkubeadm reset\n:\nyq\neval\n-i\n'.spec.containers[0].command = []'\n/etc/kubernetes/manifests/kube-apiserver.yaml\ntimeout\n60\nsh -c\n'while pgrep kube-apiserver >/dev/null; do sleep 1; done'\n||\ntrue"
+}

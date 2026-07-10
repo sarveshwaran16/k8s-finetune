@@ -1,0 +1,7 @@
+{
+  "id": "48dbe49a03415ad3ebe4b70640b2847c",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — set-last-applied",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-set-last-applied-em-",
+  "text": "Set the last-applied-configuration of a resource to match the contents of a file\nkubectl\napply\nset-last-applied\n-f\ndeploy.\nyaml\nExecute set-last-applied against each configuration file in a directory\nkubectl\napply\nset-last-applied\n-f\npath/\nSet the last-applied-configuration of a resource to match the contents of a file; will create the annotation if it does not already exist\nkubectl\napply\nset-last-applied\n-f\ndeploy.\nyaml\n--create-annotation=true\nSet the latest last-applied-configuration annotations by setting it to match the contents of a file. This results in the last-applied-configuration being updated as though 'kubectl apply -f\n' was run, without updating any other parts of the object."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "46b1220d02e4b37c7ffef25a5135d894",
+  "source": "k8s_docs",
+  "title": "Resource Quotas — Non-terminating Pods scope",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#quota-scope-non-terminating",
+  "text": "This scope only tracks quota consumed by Pods that are not terminating. The\noperator\nfor a\nscopeSelector\nmust be\nExists\n.\nA Pod is not terminating if the\n.spec.activeDeadlineSeconds\nfield is unset.\nYou can use a ResourceQuota with this scope to manage the following resources:\ncount.pods\npods\ncpu\nmemory\nrequests.cpu\nrequests.memory\nlimits.cpu\nlimits.memory"
+}

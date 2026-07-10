@@ -1,0 +1,7 @@
+{
+  "id": "1ff4366be6cd7c4e81acd0237b955ab1",
+  "source": "k8s_docs",
+  "title": "Network Policies — Default deny all egress traffic",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/#default-deny-all-egress-traffic",
+  "text": "You can create a \"default\" egress isolation policy for a namespace by creating a NetworkPolicy\nthat selects all pods but does not allow any egress traffic from those pods.\n---\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nNetworkPolicy\nmetadata\n:\nname\n:\ndefault-deny-egress\nspec\n:\npodSelector\n:\n{}\npolicyTypes\n:\n-\nEgress\nThis ensures that even pods that aren't selected by any other NetworkPolicy will not be allowed\negress traffic. This policy does not change the ingress isolation behavior of any pod."
+}

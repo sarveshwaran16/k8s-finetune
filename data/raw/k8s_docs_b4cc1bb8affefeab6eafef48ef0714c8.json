@@ -1,0 +1,7 @@
+{
+  "id": "b4cc1bb8affefeab6eafef48ef0714c8",
+  "source": "k8s_docs",
+  "title": "Service Accounts — Default service accounts",
+  "source_url": "https://kubernetes.io/docs/concepts/security/service-accounts/#default-service-accounts",
+  "text": "When you create a cluster, Kubernetes automatically creates a ServiceAccount\nobject named\ndefault\nfor every namespace in your cluster. The\ndefault\nservice accounts in each namespace get no permissions by default other than the\ndefault API discovery permissions\nthat Kubernetes grants to all authenticated principals if role-based access control (RBAC) is enabled.\nIf you delete the\ndefault\nServiceAccount object in a namespace, the\ncontrol plane\nreplaces it with a new one.\nIf you deploy a Pod in a namespace, and you don't\nmanually assign a ServiceAccount to the Pod\n, Kubernetes\nassigns the\ndefault\nServiceAccount for that namespace to the Pod."
+}

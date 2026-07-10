@@ -1,0 +1,7 @@
+{
+  "id": "488dd370476e0c133f0ff288c3f6fe8f",
+  "source": "k8s_docs",
+  "title": "Upgrade A Cluster — Device Plugins",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/#device-plugins",
+  "text": "If your cluster is running device plugins and the node needs to be upgraded to a Kubernetes\nrelease with a newer device plugin API version, device plugins must be upgraded to support\nboth version before the node is upgraded in order to guarantee that device allocations\ncontinue to complete successfully during the upgrade.\nRefer to\nAPI compatibility\nand\nKubelet Device Manager API Versions\nfor more details."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "4609b072577a27c9f658d39c737ed075",
+  "source": "k8s_docs",
+  "title": "Pull an Image from a Private Registry — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#what-s-next",
+  "text": "Learn more about\nSecrets\nor read the API reference for\nSecret\nLearn more about\nusing a private registry\n.\nLearn more about\nadding image pull secrets to a service account\n.\nSee\nkubectl create secret docker-registry\n.\nSee the\nimagePullSecrets\nfield within the\ncontainer definitions\nof a Pod\nor read the API reference for\nSecret"
+}

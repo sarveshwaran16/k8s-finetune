@@ -1,0 +1,7 @@
+{
+  "id": "5832be0dadb13e8c8a519104bf5009d7",
+  "source": "k8s_docs",
+  "title": "Garbage Collection — Foreground cascading deletion",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/garbage-collection/#foreground-deletion",
+  "text": "In foreground cascading deletion, the owner object you're deleting first enters\na\ndeletion in progress\nstate. In this state, the following happens to the\nowner object:\nThe Kubernetes API server sets the object's\nmetadata.deletionTimestamp\nfield to the time the object was marked for deletion.\nThe Kubernetes API server also sets the\nmetadata.finalizers\nfield to\nforegroundDeletion\n.\nThe object remains visible through the Kubernetes API until the deletion\nprocess is complete.\nAfter the owner object enters the\ndeletion in progress\nstate, the controller\ndeletes dependents it knows about. After deleting all the dependent objects it knows about,\nthe controller deletes the owner object. At this point, the object is no longer visible in the\nKubernetes API.\nDuring foreground cascading deletion, the only dependents that block owner\ndeletion are those that have the\nownerReference.blockOwnerDeletion=true\nfield\nand are in the garbage collection controller cache. The garbage collection controller\ncache may not contain objects whose resource type cannot be listed / watched successfully,\nor objects that are created concurrent with deletion of an owner object.\nSee\nUse foreground cascading deletion\nto learn more."
+}

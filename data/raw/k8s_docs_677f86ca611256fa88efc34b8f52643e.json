@@ -1,0 +1,7 @@
+{
+  "id": "677f86ca611256fa88efc34b8f52643e",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Design admission webhooks for low latency",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#design-admission-webhooks-low-latency",
+  "text": "Mutating admission webhooks are called in sequence. Depending on the mutating\nwebhook setup, some webhooks might be called multiple times. Every mutating\nwebhook call adds latency to the admission process. This is unlike validating\nwebhooks, which get called in parallel.\nWhen designing your mutating webhooks, consider your latency requirements and\ntolerance. The more mutating webhooks there are in your cluster, the greater the\nchance of latency increases.\nConsider the following to reduce latency:\nConsolidate webhooks that perform a similar mutation on different objects.\nReduce the number of API calls made in the mutating webhook server logic.\nLimit the match conditions of each mutating webhook to reduce how many\nwebhooks are triggered by a specific API request.\nConsolidate small webhooks into one server and configuration to help with\nordering and organization."
+}

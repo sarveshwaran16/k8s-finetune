@@ -1,0 +1,7 @@
+{
+  "id": "37088f91206a69372b7ed89dcbf1e0ba",
+  "source": "k8s_docs",
+  "title": "Security For Windows Nodes — Container users",
+  "source_url": "https://kubernetes.io/docs/concepts/security/windows-security/#container-users",
+  "text": "RunAsUsername\ncan be specified for Windows Pods or containers to execute the container\nprocesses as specific user. This is roughly equivalent to\nRunAsUser\n.\nWindows containers offer two default user accounts, ContainerUser and ContainerAdministrator.\nThe differences between these two user accounts are covered in\nWhen to use ContainerAdmin and ContainerUser user accounts\nwithin Microsoft's\nSecure Windows containers\ndocumentation.\nLocal users can be added to container images during the container build process.\nNano Server\nbased images run as\nContainerUser\nby default\nServer Core\nbased images run as\nContainerAdministrator\nby default\nWindows containers can also run as Active Directory identities by utilizing\nGroup Managed Service Accounts"
+}

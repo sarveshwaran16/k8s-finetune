@@ -1,0 +1,7 @@
+{
+  "id": "d0af612c3c68eaa64eb50b466d752f08",
+  "source": "k8s_docs",
+  "title": "Update API Objects in Place Using kubectl patch — Alternate forms of the kubectl patch command",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/#alternate-forms-of-the-kubectl-patch-command",
+  "text": "The\nkubectl patch\ncommand takes YAML or JSON. It can take the patch as a file or\ndirectly on the command line.\nCreate a file named\npatch-file.json\nthat has this content:\n{\n\"spec\"\n:\n{\n\"template\"\n:\n{\n\"spec\"\n:\n{\n\"containers\"\n:\n[\n{\n\"name\"\n:\n\"patch-demo-ctr-2\"\n,\n\"image\"\n:\n\"redis\"\n}\n]\n}\n}\n}\n}\nThe following commands are equivalent:\nkubectl patch deployment patch-demo --patch-file patch-file.yaml\nkubectl patch deployment patch-demo --patch\n'spec:\\n template:\\n  spec:\\n   containers:\\n   - name: patch-demo-ctr-2\\n     image: redis'\nkubectl patch deployment patch-demo --patch-file patch-file.json\nkubectl patch deployment patch-demo --patch\n'{\"spec\": {\"template\": {\"spec\": {\"containers\": [{\"name\": \"patch-demo-ctr-2\",\"image\": \"redis\"}]}}}}'"
+}

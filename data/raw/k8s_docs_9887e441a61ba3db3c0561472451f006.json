@@ -1,0 +1,7 @@
+{
+  "id": "9887e441a61ba3db3c0561472451f006",
+  "source": "k8s_docs",
+  "title": "Cloud Controller Manager Administration — Requirements",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/#requirements",
+  "text": "Every cloud has their own set of requirements for running their own cloud provider\nintegration, it should not be too different from the requirements when running\nkube-controller-manager\n. As a general rule of thumb you'll need:\ncloud authentication/authorization: your cloud may require a token or IAM rules\nto allow access to their APIs\nkubernetes authentication/authorization: cloud-controller-manager may need RBAC\nrules set to speak to the kubernetes apiserver\nhigh availability: like kube-controller-manager, you may want a high available\nsetup for cloud controller manager using leader election (on by default)."
+}

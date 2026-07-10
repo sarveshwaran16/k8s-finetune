@@ -1,0 +1,7 @@
+{
+  "id": "fc430aad7c28144684fd2b19d715f281",
+  "source": "k8s_docs",
+  "title": "StatefulSets — Using StatefulSets",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#using-statefulsets",
+  "text": "StatefulSets are valuable for applications that require one or more of the\nfollowing:\nStable, unique network identifiers.\nStable, persistent storage.\nOrdered, graceful deployment and scaling.\nOrdered, automated rolling updates.\nIn the above, stable is synonymous with persistence across Pod (re)scheduling.\nIf an application doesn't require any stable identifiers or ordered deployment,\ndeletion, or scaling, you should deploy your application using a workload object\nthat provides a set of stateless replicas.\nDeployment\nor\nReplicaSet\nmay be better suited to your stateless needs."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "386d6690c15500f7d636552841d4f4dd",
+  "source": "k8s_docs",
+  "title": "Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/#before-you-begin",
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYou need the\nkubectl\n,\nopenssl\nand\nbase64\nutilities.\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYou need the\nkubectl\n,\nopenssl\nand\nbase64\nutilities.\nThis page assumes you are using Kubernetes\nrole based access control\n(RBAC).\nIf you have alternative or additional security mechanisms around authorization, you need to account for those as well."
+}

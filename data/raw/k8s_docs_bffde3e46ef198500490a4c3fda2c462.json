@@ -1,0 +1,7 @@
+{
+  "id": "bffde3e46ef198500490a4c3fda2c462",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — How do I turn off an admission controller?",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#how-do-i-turn-off-an-admission-controller",
+  "text": "The Kubernetes API server flag\ndisable-admission-plugins\ntakes a comma-delimited list of admission control plugins to be disabled, even if they are in the list of plugins enabled by default.\nkube-apiserver --disable-admission-plugins\n=\nPodNodeSelector,AlwaysDeny ...\n\nTo see which admission plugins are enabled:\nkube-apiserver -h\n|\ngrep enable-admission-plugins\nIn Kubernetes 1.36, the default ones are:\nCertificateApproval, CertificateSigning, CertificateSubjectRestriction, DefaultIngressClass, DefaultStorageClass, DefaultTolerationSeconds, LimitRanger, MutatingAdmissionWebhook, NamespaceLifecycle, PersistentVolumeClaimResize, PodSecurity, Priority, ResourceQuota, RuntimeClass, ServiceAccount, StorageObjectInUseProtection, TaintNodesByCondition, ValidatingAdmissionPolicy, ValidatingAdmissionWebhook"
+}

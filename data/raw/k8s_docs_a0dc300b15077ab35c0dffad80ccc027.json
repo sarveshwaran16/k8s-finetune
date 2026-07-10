@@ -1,0 +1,7 @@
+{
+  "id": "a0dc300b15077ab35c0dffad80ccc027",
+  "source": "k8s_docs",
+  "title": "kubectl debug — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_debug/#synopsis",
+  "text": "Debug cluster resources using interactive debugging containers.\n'debug' provides automation for common debugging tasks for cluster objects identified by resource and name. Pods will be used by default if no resource is specified.\nThe action taken by 'debug' varies depending on what resource is specified. Supported actions include:\nWorkload: Create a copy of an existing pod with certain attributes changed, for example changing the image tag to a new version.\nWorkload: Add an ephemeral container to an already running pod, for example to add debugging utilities without restarting the pod.\nNode: Create a new pod that runs in the node's host namespaces and can access the node's filesystem.\nNote: When a non-root user is configured for the entire target Pod, some capabilities granted by debug profile may not work.\nkubectl debug (POD | TYPE[[.VERSION].GROUP]/NAME) [ -- COMMAND [args...] ]"
+}

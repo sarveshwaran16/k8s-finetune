@@ -1,0 +1,7 @@
+{
+  "id": "060fd5385e4eb10f8b6b88d9e871bd7c",
+  "source": "k8s_docs",
+  "title": "Scale a StatefulSet — Use kubectl to scale StatefulSets",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/scale-stateful-set/#use-kubectl-to-scale-statefulsets",
+  "text": "First, find the StatefulSet you want to scale.\nkubectl get statefulsets <stateful-set-name>\nChange the number of replicas of your StatefulSet:\nkubectl scale statefulsets <stateful-set-name> --replicas\n=\n<new-replicas>\n\nAlternatively, you can do\nin-place updates\non your StatefulSets.\nIf your StatefulSet was initially created with\nkubectl apply\n,\nupdate\n.spec.replicas\nof the StatefulSet manifests, and then do a\nkubectl apply\n:\nkubectl apply -f <stateful-set-file-updated>\nOtherwise, edit that field with\nkubectl edit\n:\nkubectl edit statefulsets <stateful-set-name>\nOr use\nkubectl patch\n:\nkubectl patch statefulsets <stateful-set-name> -p\n'{\"spec\":{\"replicas\":<new-replicas>}}'"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a7598d2a877a2a1f3e4fc57119429793",
+  "source": "k8s_docs",
+  "title": "Declare Network Policy — Create annginxdeployment and expose it via a service",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/#create-an-nginx-deployment-and-expose-it-via-a-service",
+  "text": "To see how Kubernetes network policy works, start off by creating an\nnginx\nDeployment.\nkubectl create deployment nginx --image=nginx\ndeployment.apps/nginx created\nExpose the Deployment through a Service called\nnginx\n.\nkubectl expose deployment nginx --port=80\nservice/nginx exposed\nThe above commands create a Deployment with an nginx Pod and expose the Deployment through a Service named\nnginx\n. The\nnginx\nPod and Deployment are found in the\ndefault\nnamespace.\nkubectl get svc,pod\nNAME                        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE\nservice/kubernetes          10.100.0.1    <none>        443/TCP    46m\nservice/nginx               10.100.0.16   <none>        80/TCP     33s\n\nNAME                        READY         STATUS        RESTARTS   AGE\npod/nginx-701339712-e0qfq   1/1           Running       0          35s"
+}

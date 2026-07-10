@@ -1,0 +1,7 @@
+{
+  "id": "c3c0a70d564619270ecf17e8a5f2fef8",
+  "source": "k8s_docs",
+  "title": "Virtual IPs and Service Proxies — Traffic policies",
+  "source_url": "https://kubernetes.io/docs/reference/networking/virtual-ips/#traffic-policies",
+  "text": "You can set the\n.spec.internalTrafficPolicy\nand\n.spec.externalTrafficPolicy\nfields\nto control how Kubernetes routes traffic to healthy (“ready”) backends.\n\nYou can set the\n.spec.internalTrafficPolicy\nfield to control how traffic from\ninternal sources is routed. Valid values are\nCluster\nand\nLocal\n. Set the field to\nCluster\nto route internal traffic to all ready endpoints and\nLocal\nto only route\nto ready node-local endpoints. If the traffic policy is\nLocal\nand there are no\nnode-local endpoints, traffic is dropped by kube-proxy."
+}

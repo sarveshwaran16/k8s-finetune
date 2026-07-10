@@ -1,0 +1,7 @@
+{
+  "id": "cc120f76728e782811852aaff9a62287",
+  "source": "k8s_docs",
+  "title": "Update a Deployment Without Downtime — Rolling back to a specific revision",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/#rolling-back-to-a-specific-revision",
+  "text": "kubectl rollout undo deployment/nginx-deployment --to-revision\n=\n1\nVerify the rollback completes:\nkubectl rollout status deployment/nginx-deployment\n\nDelete the Deployment:\nkubectl delete deployment nginx-deployment\n\nLearn more about\nDeployments\n.\nLearn how to\nscale a Deployment manually\n.\nWalk through\nHorizontal Pod Autoscaling\n.\nSee how to\nperform a rolling update on a DaemonSet\n."
+}

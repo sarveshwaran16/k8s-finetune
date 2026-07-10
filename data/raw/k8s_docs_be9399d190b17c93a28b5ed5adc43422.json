@@ -1,0 +1,7 @@
+{
+  "id": "be9399d190b17c93a28b5ed5adc43422",
+  "source": "k8s_docs",
+  "title": "Observability — Logging tools",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/observability/#logging-tools",
+  "text": "Elasticsearch\ndelivers distributed log indexing and search.\nFluent Bit\ncollects and forwards container and node logs with a low resource footprint.\nFluentd\nroutes and transforms logs to multiple destinations.\nGrafana Loki\nstores logs in a Prometheus-inspired, label-based format.\nOpenSearch\nprovides open source log indexing and search compatible with Elasticsearch APIs."
+}

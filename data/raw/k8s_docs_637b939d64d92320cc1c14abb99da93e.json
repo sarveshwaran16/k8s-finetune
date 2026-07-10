@@ -1,0 +1,7 @@
+{
+  "id": "637b939d64d92320cc1c14abb99da93e",
+  "source": "k8s_docs",
+  "title": "Metrics for Kubernetes Object States — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nItems on this page refer to third party products or projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for those third-party products or projects. See the\nCNCF website guidelines\nfor more details.\nYou should read the\ncontent guide\nbefore proposing a change that adds an extra third-party link."
+}

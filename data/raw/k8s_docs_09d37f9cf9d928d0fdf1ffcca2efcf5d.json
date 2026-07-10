@@ -1,0 +1,7 @@
+{
+  "id": "09d37f9cf9d928d0fdf1ffcca2efcf5d",
+  "source": "k8s_docs",
+  "title": "Enforce Pod Security Standards with Namespace Labels — Requiring thebaselinePod Security Standard with namespace labels",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/enforce-standards-namespace-labels/#requiring-the-baseline-pod-security-standard-with-namespace-labels",
+  "text": "This manifest defines a Namespace\nmy-baseline-namespace\nthat:\nBlocks\nany pods that don't satisfy the\nbaseline\npolicy requirements.\nGenerates a user-facing warning and adds an audit annotation to any created pod that does not\nmeet the\nrestricted\npolicy requirements.\nPins the versions of the\nbaseline\nand\nrestricted\npolicies to v1.36.\napiVersion\n:\nv1\nkind\n:\nNamespace\nmetadata\n:\nname\n:\nmy-baseline-namespace\nlabels\n:\npod-security.kubernetes.io/enforce\n:\nbaseline\npod-security.kubernetes.io/enforce-version\n:\nv1.36\n# We are setting these to our _desired_ `enforce` level.\npod-security.kubernetes.io/audit\n:\nrestricted\npod-security.kubernetes.io/audit-version\n:\nv1.36\npod-security.kubernetes.io/warn\n:\nrestricted\npod-security.kubernetes.io/warn-version\n:\nv1.36"
+}

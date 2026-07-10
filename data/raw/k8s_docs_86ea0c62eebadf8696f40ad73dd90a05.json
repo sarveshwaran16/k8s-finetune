@@ -1,0 +1,7 @@
+{
+  "id": "86ea0c62eebadf8696f40ad73dd90a05",
+  "source": "k8s_docs",
+  "title": "Resource Management for Pods and Containers — Container resources example",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#example-1",
+  "text": "The following Pod has two containers. Both containers are defined with a request for\n0.25 CPU\nand 64MiB (2\n26\nbytes) of memory. Each container has a limit of 0.5\nCPU and 128MiB of memory. You can say the Pod has a request of 0.5 CPU and 128\nMiB of memory, and a limit of 1 CPU and 256MiB of memory.\n---\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nfrontend\nspec\n:\ncontainers\n:\n-\nname\n:\napp\nimage\n:\nimages.my-company.example/app:v4\nresources\n:\nrequests\n:\nmemory\n:\n\"64Mi\"\ncpu\n:\n\"250m\"\nlimits\n:\nmemory\n:\n\"128Mi\"\ncpu\n:\n\"500m\"\n-\nname\n:\nlog-aggregator\nimage\n:\nimages.my-company.example/log-aggregator:v6\nresources\n:\nrequests\n:\nmemory\n:\n\"64Mi\"\ncpu\n:\n\"250m\"\nlimits\n:\nmemory\n:\n\"128Mi\"\ncpu\n:\n\"500m\""
+}

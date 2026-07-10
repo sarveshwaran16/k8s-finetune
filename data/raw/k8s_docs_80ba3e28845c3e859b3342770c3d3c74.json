@@ -1,0 +1,7 @@
+{
+  "id": "80ba3e28845c3e859b3342770c3d3c74",
+  "source": "k8s_docs",
+  "title": "DaemonSet — Init scripts",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#init-scripts",
+  "text": "It is certainly possible to run daemon processes by directly starting them on a node (e.g. using\ninit\n,\nupstartd\n, or\nsystemd\n). This is perfectly fine. However, there are several advantages to\nrunning such processes via a DaemonSet:\nAbility to monitor and manage logs for daemons in the same way as applications.\nSame config language and tools (e.g. Pod templates,\nkubectl\n) for daemons and applications.\nRunning daemons in containers with resource limits increases isolation between daemons from app\ncontainers. However, this can also be accomplished by running the daemons in a container but not in a Pod."
+}

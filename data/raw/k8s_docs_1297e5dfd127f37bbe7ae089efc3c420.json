@@ -1,0 +1,7 @@
+{
+  "id": "1297e5dfd127f37bbe7ae089efc3c420",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:beta",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-beta",
+  "text": "Description:\nThe\n+k8s:beta\ntag enables\nenforced mode\nfor validation rules migrating from hand-written logic, controlled by the\nDeclarativeValidationBeta\nfeature gate. Do not use this tag for net-new API fields, which should apply declarative validation tags directly.\nAfter a validation rule has been evaluated in shadow mode (via\n+k8s:alpha\n), it is promoted to beta. When\nDeclarativeValidationBeta\nis enabled (the default),\n+k8s:beta\nrules are enforced and authoritative. Disabling the feature gate reverts\n+k8s:beta\nrules to shadow mode, providing a rollback mechanism if regressions occur.\nStability Level:\nStable\nArguments:\nsince\n(string, required): The Kubernetes version in which the validation was promoted to beta.\nPayload:\n<validation-tag>\n: The standard declarative validation tag to be enforced (e.g.,\n+k8s:minimum=1\n).\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:beta(since:\"1.37\")=+k8s:minimum=1\nMyField\nint\n`json:\"myField\"`\n}"
+}

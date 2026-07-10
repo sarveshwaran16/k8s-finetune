@@ -1,0 +1,7 @@
+{
+  "id": "b64aebf55b97d04188f996d8e769dd99",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Deleting just a ReplicaSet",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#deleting-just-a-replicaset",
+  "text": "You can delete a ReplicaSet without affecting any of its Pods using\nkubectl delete\nwith the\n--cascade=orphan\noption.\nWhen using the REST API or the\nclient-go\nlibrary, you must set\npropagationPolicy\nto\nOrphan\n.\nFor example:\nkubectl proxy --port\n=\n8080\ncurl -X DELETE\n'localhost:8080/apis/apps/v1/namespaces/default/replicasets/frontend'\n\\\n-d\n'{\"kind\":\"DeleteOptions\",\"apiVersion\":\"v1\",\"propagationPolicy\":\"Orphan\"}'\n\\\n-H\n\"Content-Type: application/json\"\nOnce the original is deleted, you can create a new ReplicaSet to replace it. As long\nas the old and new\n.spec.selector\nare the same, then the new one will adopt the old Pods.\nHowever, it will not make any effort to make existing Pods match a new, different pod template.\nTo update Pods to a new spec in a controlled way, use a\nDeployment\n, as\nReplicaSets do not support a rolling update directly."
+}

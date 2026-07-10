@@ -1,0 +1,7 @@
+{
+  "id": "1181658b080087b19d477c8be9634399",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler — ObjectMetricStatus",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#ObjectMetricStatus",
+  "text": "ObjectMetricStatus indicates the current value of a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).\nField\nDescription\ncurrent\n*\nMetricValueStatus\ncurrent contains the current value for the given metric\ndescribedObject\n*\nCrossVersionObjectReference\nDescribedObject specifies the descriptions of a object,such as kind,name apiVersion\nmetric\n*\nMetricIdentifier\nmetric identifies the target metric by name and selector"
+}

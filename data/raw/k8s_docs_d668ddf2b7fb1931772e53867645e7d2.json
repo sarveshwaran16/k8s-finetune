@@ -1,0 +1,7 @@
+{
+  "id": "d668ddf2b7fb1931772e53867645e7d2",
+  "source": "k8s_docs",
+  "title": "kubeadm join phase — Options",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join-phase/#options",
+  "text": "-h, --help\nhelp for wait-control-plane\nhelp for wait-control-plane\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\n\nkubeadm init\nto bootstrap a Kubernetes control-plane node\nkubeadm join\nto connect a node to the cluster\nkubeadm reset\nto revert any changes made to this host by\nkubeadm init\nor\nkubeadm join\nkubeadm alpha\nto try experimental functionality"
+}

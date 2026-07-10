@@ -1,0 +1,7 @@
+{
+  "id": "231eb83ea2d42a038928819686b6bc4c",
+  "source": "k8s_docs",
+  "title": "Node metrics data — Summary metrics API source",
+  "source_url": "https://kubernetes.io/docs/reference/instrumentation/node-metrics/#summary-api-source",
+  "text": "By default, Kubernetes fetches node summary metrics data using an embedded\ncAdvisor\nthat runs within the kubelet. If you\nenable the\nPodAndContainerStatsFromCRI\nfeature gate\nin your cluster, and you use a container runtime that supports statistics access via\nContainer Runtime Interface\n(CRI), then\nthe kubelet\nfetches Pod- and container-level metric data using CRI\n, and not via cAdvisor."
+}

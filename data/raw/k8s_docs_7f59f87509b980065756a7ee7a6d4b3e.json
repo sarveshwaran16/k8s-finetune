@@ -1,0 +1,7 @@
+{
+  "id": "7f59f87509b980065756a7ee7a6d4b3e",
+  "source": "k8s_docs",
+  "title": "Using NodeLocal DNSCache in Kubernetes Clusters — StubDomains and Upstream server Configuration",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/#stubdomains-and-upstream-server-configuration",
+  "text": "StubDomains and upstream servers specified in the\nkube-dns\nConfigMap in the\nkube-system\nnamespace\nare automatically picked up by\nnode-local-dns\npods. The ConfigMap contents need to follow the format\nshown in\nthe example\n.\nThe\nnode-local-dns\nConfigMap can also be modified directly with the stubDomain configuration\nin the Corefile format. Some cloud providers might not allow modifying\nnode-local-dns\nConfigMap directly.\nIn those cases, the\nkube-dns\nConfigMap can be updated."
+}

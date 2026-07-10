@@ -1,0 +1,7 @@
+{
+  "id": "4f7279ed80247a4e59b7ac1f1460c395",
+  "source": "k8s_docs",
+  "title": "CronJob — JobTemplateSpec",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/cron-job-v1/#JobTemplateSpec",
+  "text": "JobTemplateSpec describes the data a Job should have when created from a template\nField\nDescription\nmetadata\nObjectMeta\nStandard object's metadata of the jobs created from this template. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata\nspec\nJobSpec\nSpecification of the desired behavior of the job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status"
+}

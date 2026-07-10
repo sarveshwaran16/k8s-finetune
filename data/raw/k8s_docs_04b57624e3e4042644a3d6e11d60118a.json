@@ -1,0 +1,7 @@
+{
+  "id": "04b57624e3e4042644a3d6e11d60118a",
+  "source": "k8s_docs",
+  "title": "Handling retriable and non-retriable pod failures with Pod failure policy — Alternatives",
+  "source_url": "https://kubernetes.io/docs/tasks/job/pod-failure-policy/#alternatives",
+  "text": "You could rely solely on the\nPod backoff failure policy\n,\nby specifying the Job's\n.spec.backoffLimit\nfield. However, in many situations\nit is problematic to find a balance between setting a low value for\n.spec.backoffLimit\nto avoid unnecessary Pod retries, yet high enough to make sure the Job would\nnot be terminated by Pod disruptions."
+}

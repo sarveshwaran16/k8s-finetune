@@ -1,0 +1,7 @@
+{
+  "id": "160fe3860132573356609e3553514408",
+  "source": "k8s_docs",
+  "title": "Auditing — Log entry truncation",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/#truncate",
+  "text": "Both log and webhook backends support limiting the size of events that are logged.\nAs an example, the following is the list of flags available for the log backend:\naudit-log-truncate-enabled\nwhether event and batch truncating is enabled.\naudit-log-truncate-max-batch-size\nmaximum size in bytes of the batch sent to the underlying backend.\naudit-log-truncate-max-event-size\nmaximum size in bytes of the audit event sent to the underlying backend.\nBy default truncate is disabled in both\nwebhook\nand\nlog\n, a cluster administrator should set\naudit-log-truncate-enabled\nor\naudit-webhook-truncate-enabled\nto enable the feature."
+}

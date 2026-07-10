@@ -1,0 +1,7 @@
+{
+  "id": "33c3e92b223d47863d13bde47b84ec41",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — applyset.kubernetes.io/id (alpha)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#applyset-kubernetes-io-id",
+  "text": "Type: Label\nExample:\napplyset.kubernetes.io/id: \"applyset-0eFHV8ySqp7XoShsGvyWFQD3s96yqwHmzc4e0HR1dsY-v1\"\nUsed on: Objects being used as ApplySet parents.\nUse of this label is Alpha.\nFor Kubernetes version 1.36, you can use this label on Secrets, ConfigMaps,\nor custom resources if the CustomResourceDefinition\ndefining them has the\napplyset.kubernetes.io/is-parent-type\nlabel.\nPart of the specification used to implement\nApplySet-based pruning in kubectl\n.\nThis label is what makes an object an ApplySet parent object.\nIts value is the unique ID of the ApplySet, which is derived from the identity of the parent\nobject itself. This ID\nmust\nbe the base64 encoding (using the URL safe encoding of RFC4648) of\nthe hash of the group-kind-name-namespace of the object it is on, in the form:\n<base64(sha256(<name>.<namespace>.<kind>.<group>))>\n.\nThere is no relation between the value of this label and object UID."
+}

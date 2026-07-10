@@ -1,0 +1,7 @@
+{
+  "id": "0b2ef9dff6d8ae46e28cce51936a187e",
+  "source": "k8s_docs",
+  "title": "Communicate Between Containers in the Same Pod Using a Shared Volume — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/communicate-containers-same-pod-shared-volume/#what-s-next",
+  "text": "Learn more about\npatterns for composite containers\n.\nLearn about\ncomposite containers for modular architecture\n.\nSee\nConfiguring a Pod to Use a Volume for Storage\n.\nSee\nConfigure a Pod to share process namespace between containers in a Pod\nSee\nVolume\n.\nSee\nPod\n.\nLearn more about\npatterns for composite containers\n.\nLearn about\ncomposite containers for modular architecture\n.\nSee\nConfiguring a Pod to Use a Volume for Storage\n.\nSee\nConfigure a Pod to share process namespace between containers in a Pod\nSee\nVolume\n.\nSee\nPod\n."
+}

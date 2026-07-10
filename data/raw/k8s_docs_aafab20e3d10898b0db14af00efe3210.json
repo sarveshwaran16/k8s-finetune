@@ -1,0 +1,7 @@
+{
+  "id": "aafab20e3d10898b0db14af00efe3210",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-connection-draining-timeout (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-connection-draining-timeout",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-connection-draining-timeout: \"60\"\nUsed on: Service\nIf you configure\nconnection draining\nfor a Service of\ntype: LoadBalancer\n, and you use the AWS cloud, the integration configures\nthe draining period based on this annotation. The value you set determines the draining\ntimeout in seconds."
+}

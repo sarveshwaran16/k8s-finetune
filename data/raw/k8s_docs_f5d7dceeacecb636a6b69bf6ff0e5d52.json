@@ -1,0 +1,7 @@
+{
+  "id": "f5d7dceeacecb636a6b69bf6ff0e5d52",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-proxy-protocol (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-proxy-protocol",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-proxy-protocol: \"*\"\nUsed on: Service\nThe official Kubernetes integration with AWS elastic load balancing configures\na load balancer based on this annotation. The only permitted value is\n\"*\"\n,\nwhich indicates that the load balancer should wrap TCP connections to the backend\nPod with the PROXY protocol."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7bf76626ceb5bbca6c2aeb3ec6e8b177",
+  "source": "k8s_docs",
+  "title": "ValidatingWebhookConfiguration — ValidatingWebhookConfigurationList",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/admissionregistration/validating-webhook-configuration-v1/#ValidatingWebhookConfigurationList",
+  "text": "ValidatingWebhookConfigurationList is a list of ValidatingWebhookConfiguration.\nField\nDescription\napiVersion\nstring\nAPIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources\nitems\n*\nValidatingWebhookConfiguration array\nList of ValidatingWebhookConfiguration.\nkind\nstring\nKind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nmetadata\nListMeta\nmetadata is the standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "0f8c83c84de95ac5a0c116e65ebdfe6b",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1) — ProviderConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-ProviderConfiguration",
+  "text": "Appears in:\nResourceConfiguration\nProviderConfiguration stores the provided configuration for an encryption provider.\nField\nDescription\naesgcm\n[Required]\nAESConfiguration\naesgcm is the configuration for the AES-GCM transformer.\naescbc\n[Required]\nAESConfiguration\naescbc is the configuration for the AES-CBC transformer.\nsecretbox\n[Required]\nSecretboxConfiguration\nsecretbox is the configuration for the Secretbox based transformer.\nidentity\n[Required]\nIdentityConfiguration\nidentity is the (empty) configuration for the identity transformer.\nkms\n[Required]\nKMSConfiguration\nkms contains the name, cache size and path to configuration file for a KMS based envelope transformer.\naesgcm is the configuration for the AES-GCM transformer.\naescbc is the configuration for the AES-CBC transformer.\nsecretbox is the configuration for the Secretbox based transformer.\nidentity is the (empty) configuration for the identity transformer.\nkms contains the name, cache size and path to configuration file for a KMS based envelope transformer."
+}

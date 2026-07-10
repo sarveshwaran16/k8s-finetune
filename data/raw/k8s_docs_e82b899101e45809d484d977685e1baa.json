@@ -1,0 +1,7 @@
+{
+  "id": "e82b899101e45809d484d977685e1baa",
+  "source": "k8s_docs",
+  "title": "kubeadm reset phase — kubeadm reset phase preflight",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-reset-phase/#cmd-reset-phase-preflight",
+  "text": "Using this phase you can execute preflight checks on a node that is being reset.\npreflight\nRun reset pre-flight checks\n\nRun pre-flight checks for kubeadm reset.\nkubeadm reset phase preflight [flags]\n\n--dry-run\nDon't apply any changes; just output what would be done.\n-f, --force\nReset the node without prompting for confirmation.\n-h, --help\nhelp for preflight\n--ignore-preflight-errors strings\nA list of checks whose errors will be shown as warnings. Example: 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks.\nDon't apply any changes; just output what would be done.\nReset the node without prompting for confirmation.\nhelp for preflight\nA list of checks whose errors will be shown as warnings. Example: 'IsPrivilegedUser,Swap'. Value 'all' ignores errors from all checks."
+}

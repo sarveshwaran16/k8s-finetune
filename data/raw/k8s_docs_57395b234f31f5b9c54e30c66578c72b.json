@@ -1,0 +1,7 @@
+{
+  "id": "57395b234f31f5b9c54e30c66578c72b",
+  "source": "k8s_docs",
+  "title": "Virtual IPs and Service Proxies — Session affinity",
+  "source_url": "https://kubernetes.io/docs/reference/networking/virtual-ips/#session-affinity",
+  "text": "In these proxy models, the traffic bound for the Service's IP:Port is\nproxied to an appropriate backend without the clients knowing anything\nabout Kubernetes or Services or Pods.\nIf you want to make sure that connections from a particular client\nare passed to the same Pod each time, you can select the session affinity based\non the client's IP addresses by setting\n.spec.sessionAffinity\nto\nClientIP\nfor a Service (the default is\nNone\n)."
+}

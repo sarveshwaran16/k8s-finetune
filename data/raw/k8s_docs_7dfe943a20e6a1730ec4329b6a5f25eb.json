@@ -1,0 +1,7 @@
+{
+  "id": "7dfe943a20e6a1730ec4329b6a5f25eb",
+  "source": "k8s_docs",
+  "title": "Securing a Cluster — Rotate infrastructure credentials frequently",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#rotate-infrastructure-credentials-frequently",
+  "text": "The shorter the lifetime of a secret or credential the harder it is for an attacker to make\nuse of that credential. Set short lifetimes on certificates and automate their rotation. Use\nan authentication provider that can control how long issued tokens are available and use short\nlifetimes where possible. If you use service-account tokens in external integrations, plan to\nrotate those tokens frequently. For example, once the bootstrap phase is complete, a bootstrap\ntoken used for setting up nodes should be revoked or its authorization removed."
+}

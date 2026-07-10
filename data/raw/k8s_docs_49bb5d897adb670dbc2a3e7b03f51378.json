@@ -1,0 +1,7 @@
+{
+  "id": "49bb5d897adb670dbc2a3e7b03f51378",
+  "source": "k8s_docs",
+  "title": "Troubleshooting Topology Management — Sources of troubleshooting information",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/topology/#sources-of-troubleshooting-information",
+  "text": "You can use the following means to troubleshoot the reason why a pod could not be deployed or\nbecame rejected at a node, in the context of topology management:\nPod status\n- indicates topology affinity errors\nsystem logs\n- include valuable information for debugging; for example, about generated hints\nkubelet state file\n- the dump of internal state of the Memory Manager\n(including the\nnode map\nand\nmemory maps\n)\nYou can use the\ndevice plugin resource API\nto retrieve information about the memory reserved for containers"
+}

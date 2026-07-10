@@ -1,0 +1,7 @@
+{
+  "id": "0e33e17fa0da2420982e1ec6a8764b8a",
+  "source": "k8s_docs",
+  "title": "Adding Windows worker nodes — Install containerd",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-windows-nodes/#install-containerd",
+  "text": "To install containerd, first run the following command:\ncurl\n.\nexe\n-LO\nhttps\n:\n//\nraw\n.\ngithubusercontent\n.\ncom\n/\nkubernetes-sigs\n/\nsig-windows\n-tools\n/\nmaster\n/\nhostprocess\n/\nInstall-Containerd\n.\nps1\nThen run the following command, but first replace\nCONTAINERD_VERSION\nwith a recent release\nfrom the\ncontainerd repository\n.\nThe version must not have a\nv\nprefix. For example, use\n1.7.22\ninstead of\nv1.7.22\n:\n.\\\nInstall-Containerd\n.\nps1\n-ContainerDVersion\nCONTAINERD_VERSION\nAdjust any other parameters for\nInstall-Containerd.ps1\nsuch as\nnetAdapterName\nas you need them.\nSet\nskipHypervisorSupportCheck\nif your machine does not support Hyper-V and cannot host Hyper-V isolated\ncontainers.\nIf you change the\nInstall-Containerd.ps1\noptional parameters\nCNIBinPath\nand/or\nCNIConfigPath\nyou will\nneed to configure the installed Windows CNI plugin with matching values."
+}

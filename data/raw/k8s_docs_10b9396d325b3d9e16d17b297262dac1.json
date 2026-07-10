@@ -1,0 +1,7 @@
+{
+  "id": "10b9396d325b3d9e16d17b297262dac1",
+  "source": "k8s_docs",
+  "title": "Virtual IPs and Service Proxies — IP address ranges for Service virtual IP addresses",
+  "source_url": "https://kubernetes.io/docs/reference/networking/virtual-ips/#service-ip-static-sub-range",
+  "text": "Kubernetes divides the\nClusterIP\nrange into two bands, based on\nthe size of the configured\nservice-cluster-ip-range\nby using the following formula\nmin(max(16, cidrSize / 16), 256)\n. That formula means the result is\nnever less than 16 or\nmore than 256, with a graduated step function between them\n.\nKubernetes prefers to allocate dynamic IP addresses to Services by choosing from the upper band,\nwhich means that if you want to assign a specific IP address to a\ntype: ClusterIP\nService, you should manually assign an IP address from the\nlower\nband. That approach\nreduces the risk of a conflict over allocation."
+}

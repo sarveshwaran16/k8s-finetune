@@ -1,0 +1,7 @@
+{
+  "id": "a18ea38faf79789bc2cc6bc88da5ad49",
+  "source": "k8s_docs",
+  "title": "Securing a Cluster — Encrypt secrets at rest",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#encrypt-secrets-at-rest",
+  "text": "In general, the etcd database will contain any information accessible via the Kubernetes API\nand may grant an attacker significant visibility into the state of your cluster. Always encrypt\nyour backups using a well reviewed backup and encryption solution, and consider using full disk\nencryption where possible.\nKubernetes supports optional\nencryption at rest\nfor information in the Kubernetes API.\nThis lets you ensure that when Kubernetes stores data for objects (for example,\nSecret\nor\nConfigMap\nobjects), the API server writes an encrypted representation of the object.\nThat encryption means that even someone who has access to etcd backup data is unable\nto view the content of those objects.\nIn Kubernetes 1.36 you can also encrypt custom resources;\nencryption-at-rest for extension APIs defined in CustomResourceDefinitions was added to\nKubernetes as part of the v1.26 release."
+}

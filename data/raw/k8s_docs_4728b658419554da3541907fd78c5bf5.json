@@ -1,0 +1,7 @@
+{
+  "id": "4728b658419554da3541907fd78c5bf5",
+  "source": "k8s_docs",
+  "title": "Leases — Kube controller manager lock release on exit",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/leases/#kube-controller-manager-lock-release-on-exit",
+  "text": "When the\nControllerManagerReleaseLeaderElectionLockOnExit\nfeature gate is enabled,\nthe\nkube-controller-manager\nactively releases its leader election lock during\nleader transitions, rather than waiting for the lock's TTL to expire. This allows\na new leader to be elected more quickly, reducing leader transition latency."
+}

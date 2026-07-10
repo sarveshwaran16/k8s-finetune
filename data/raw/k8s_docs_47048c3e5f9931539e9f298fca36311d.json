@@ -1,0 +1,7 @@
+{
+  "id": "47048c3e5f9931539e9f298fca36311d",
+  "source": "k8s_docs",
+  "title": "Finalizers — Owner references, labels, and finalizers",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/#owners-labels-finalizers",
+  "text": "Like\nlabels\n,\nowner references\ndescribe the relationships between objects in Kubernetes, but are used for a\ndifferent purpose. When a\ncontroller\nmanages objects\nlike Pods, it uses labels to track changes to groups of related objects. For\nexample, when a\nJob\ncreates one or\nmore Pods, the Job controller applies labels to those pods and tracks changes to\nany Pods in the cluster with the same label.\nThe Job controller also adds\nowner references\nto those Pods, pointing at the\nJob that created the Pods. If you delete the Job while these Pods are running,\nKubernetes uses the owner references (not labels) to determine which Pods in the\ncluster need cleanup.\nKubernetes also processes finalizers when it identifies owner references on a\nresource targeted for deletion.\nIn some situations, finalizers can block the deletion of dependent objects,\nwhich can cause the targeted owner object to remain for\nlonger than expected without being fully deleted. In these situations, you\nshould check finalizers and owner references on the target owner and dependent\nobjects to troubleshoot the cause."
+}

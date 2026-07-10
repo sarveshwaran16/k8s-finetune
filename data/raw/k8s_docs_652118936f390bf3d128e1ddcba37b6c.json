@@ -1,0 +1,7 @@
+{
+  "id": "652118936f390bf3d128e1ddcba37b6c",
+  "source": "k8s_docs",
+  "title": "Mutating Admission Policy — API kinds exempt from mutating admission",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/#api-kinds-exempt-from-mutating-admission",
+  "text": "There are certain API kinds that are exempt from admission-time mutation. For example, you can't create a MutatingAdmissionPolicy that changes a MutatingAdmissionPolicy.\nThe list of exempt API kinds is:\nValidatingAdmissionPolicies\nValidatingAdmissionPolicyBindings\nMutatingAdmissionPolicies\nMutatingAdmissionPolicyBindings\nTokenReviews\nLocalSubjectAccessReviews\nSelfSubjectAccessReviews\nSelfSubjectReviews"
+}

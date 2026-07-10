@@ -1,0 +1,7 @@
+{
+  "id": "02de1a7060f0f79d5a47a1c03f38f628",
+  "source": "k8s_docs",
+  "title": "Configure Quality of Service for Pods — Create a Pod that gets assigned a QoS class of BestEffort",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/#create-a-pod-that-gets-assigned-a-qos-class-of-besteffort",
+  "text": "For a Pod to be given a QoS class of\nBestEffort\n, the Containers in the Pod must not\nhave any memory or CPU limits or requests.\nHere is a manifest for a Pod that has one Container. The Container has no memory or CPU\nlimits or requests:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nqos-demo-3\nnamespace\n:\nqos-example\nspec\n:\ncontainers\n:\n-\nname\n:\nqos-demo-3-ctr\nimage\n:\nnginx\nCreate the Pod:\nkubectl apply -f https://k8s.io/examples/pods/qos/qos-pod-3.yaml --namespace\n=\nqos-example\nView detailed information about the Pod:\nkubectl get pod qos-demo-3 --namespace\n=\nqos-example --output\n=\nyaml\nThe output shows that Kubernetes gave the Pod a QoS class of\nBestEffort\n:\nspec\n:\ncontainers\n:\n...\nresources\n:\n{}\n...\nstatus\n:\nqosClass\n:\nBestEffort\nDelete your Pod:\nkubectl delete pod qos-demo-3 --namespace\n=\nqos-example"
+}

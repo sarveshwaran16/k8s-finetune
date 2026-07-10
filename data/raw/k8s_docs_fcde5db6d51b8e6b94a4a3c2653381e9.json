@@ -1,0 +1,7 @@
+{
+  "id": "fcde5db6d51b8e6b94a4a3c2653381e9",
+  "source": "k8s_docs",
+  "title": "kubeadm join phase — Options inherited from parent commands",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join-phase/#options-inherited-from-parent-commands",
+  "text": "--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\n\nWait for the control plane components to start.\nwait-control-plane\n\nWait for the control plane to start\nkubeadm join phase wait-control-plane [flags]"
+}

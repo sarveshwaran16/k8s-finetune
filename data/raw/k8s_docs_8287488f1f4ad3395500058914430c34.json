@@ -1,0 +1,7 @@
+{
+  "id": "8287488f1f4ad3395500058914430c34",
+  "source": "k8s_docs",
+  "title": "Kubernetes Deprecation Policy — Exceptions",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/deprecation-policy/#exceptions",
+  "text": "No policy can cover every possible situation. This policy is a living\ndocument, and will evolve over time. In practice, there will be situations\nthat do not fit neatly into this policy, or for which this policy becomes a\nserious impediment. Such situations should be discussed with SIGs and project\nleaders to find the best solutions for those specific cases, always bearing in\nmind that Kubernetes is committed to being a stable system that, as much as\npossible, never breaks users. Exceptions will always be announced in all\nrelevant release notes."
+}

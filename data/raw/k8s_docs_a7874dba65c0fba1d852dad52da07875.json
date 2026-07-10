@@ -1,0 +1,7 @@
+{
+  "id": "a7874dba65c0fba1d852dad52da07875",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — Copying the administrator certificate (optional)",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#admin-certificate-copy",
+  "text": "Clusters built with kubeadm often copy the\nadmin.conf\ncertificate into\n$HOME/.kube/config\n, as instructed in\nCreating a cluster with kubeadm\n.\nOn such a system, to update the contents of\n$HOME/.kube/config\nafter renewing the\nadmin.conf\n, you could run the following commands:\nsudo cp -i /etc/kubernetes/admin.conf\n$HOME\n/.kube/config\nsudo chown\n$(\nid -u\n)\n:\n$(\nid -g\n)\n$HOME\n/.kube/config"
+}

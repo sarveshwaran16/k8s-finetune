@@ -1,0 +1,7 @@
+{
+  "id": "04000114b08c36e7b1dbc54fabe00fff",
+  "source": "k8s_docs",
+  "title": "LeaseCandidate — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/coordination/lease-candidate-v1beta1/#get-read",
+  "text": "GET /apis/coordination.k8s.io/v1beta1/namespaces/{namespace}/leasecandidates/{name}\nName\nType\nDescription\nname\nstring\nname of the LeaseCandidate\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nLeaseCandidate"
+}

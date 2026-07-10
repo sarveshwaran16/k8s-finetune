@@ -1,0 +1,7 @@
+{
+  "id": "3bd0b426122373b925dda9a862a36b0b",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — pv.kubernetes.io/provisioned-by",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#pv-kubernetesiodynamically-provisioned",
+  "text": "Type: Annotation\nExample:\npv.kubernetes.io/provisioned-by: \"kubernetes.io/rbd\"\nUsed on: PersistentVolume\nThis annotation is added to a PersistentVolume(PV) that has been dynamically provisioned by Kubernetes.\nIts value is the name of volume plugin that created the volume. It serves both users (to show where a PV\ncomes from) and Kubernetes (to recognize dynamically provisioned PVs in its decisions)."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6d742b538ca1d01b06ee60294534ec21",
+  "source": "k8s_docs",
+  "title": "Cloud Native Security and Kubernetes — Observability and runtime security",
+  "source_url": "https://kubernetes.io/docs/concepts/security/cloud-native-security/#observability-and-runtime-security",
+  "text": "Kubernetes lets you extend your cluster with extra tooling. You can set up third\nparty solutions to help you monitor or troubleshoot your applications and the\nclusters they are running. You also get some basic observability features built\nin to Kubernetes itself. Your code running in containers can generate logs,\npublish metrics, or provide other observability data; at deploy time, you need to\nmake sure your cluster provides an appropriate level of protection there.\nIf you set up a metrics dashboard or something similar, review the chain of components\nthat populate data into that dashboard, as well as the dashboard itself. Make sure\nthat the whole chain is designed with enough resilience and integrity protection\nthat you can rely on it even during an incident where your cluster might be degraded.\nWhere appropriate, deploy security measures below the Kubernetes layer,\nsuch as cryptographically measured boot or authenticated distribution\nof time (which helps ensure the fidelity of logs and audit records).\nFor a high-assurance environment, deploy cryptographic protections to ensure that\nlogs are both tamper-proof and confidential."
+}

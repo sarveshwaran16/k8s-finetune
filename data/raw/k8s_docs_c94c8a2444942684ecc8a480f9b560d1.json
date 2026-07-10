@@ -1,0 +1,7 @@
+{
+  "id": "c94c8a2444942684ecc8a480f9b560d1",
+  "source": "k8s_docs",
+  "title": "Pod — FileKeySelector",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#FileKeySelector",
+  "text": "FileKeySelector selects a key of the env file.\nField\nDescription\nkey\n*\nstring\nThe key within the env file. An invalid key will prevent the pod from starting. The keys defined within a source may consist of any printable ASCII characters except '='. During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.\noptional\nboolean\nSpecify whether the file or its key must be defined. If the file or key does not exist, then the env var is not published. If optional is set to true and the specified key does not exist, the environment variable will not be set in the Pod's containers. If optional is set to false and the specified key does not exist, an error will be returned during Pod creation.\npath\n*\nstring\nThe path within the volume from which to select the file. Must be relative and may not contain the '..' path or start with '..'.\nvolumeName\n*\nstring\nThe name of the volume mount containing the env file."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "7f2dc84f079d50a806471ebd726c2969",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — statefulset.kubernetes.io/pod-name",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#statefulsetkubernetesiopod-name",
+  "text": "Type: Label\nExample:\nstatefulset.kubernetes.io/pod-name: \"mystatefulset-7\"\nUsed on: Pod\nWhen a StatefulSet controller creates a Pod for the StatefulSet, the control plane\nsets this label on that Pod. The value of the label is the name of the Pod being created.\nSee\nPod Name Label\nin the StatefulSet topic for more details."
+}

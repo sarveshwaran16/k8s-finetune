@@ -1,0 +1,7 @@
+{
+  "id": "881838650fab8083bfed8a1b2b3bd665",
+  "source": "k8s_docs",
+  "title": "Pod Lifecycle — Resizing by launching replacement Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#resizing-by-launching-replacement-pods",
+  "text": "The more cloud native approach to changing a Pod's resources is through the\nworkload resource that manages it (such as a Deployment or StatefulSet).\nWhen you update the resource specifications in the Pod template,\nthe workload's controller creates new Pods with the updated resources and terminates\nthe old Pods according to its update strategy.\nThis approach:\nWorks with any Kubernetes version.\nCan change any Pod specification, not just resources.\nResults in Pod replacement, so you should design your workload to handle\nplanned disruptions\n. Consider using a\nPodDisruptionBudget\nto control availability.\nRequires that your Pods are managed by a workload resource.\nYou can also use a\nVerticalPodAutoscaler\nto automatically manage Pod resource recommendations and updates."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "1a7201a63d765eadfb21b59aba1048ca",
+  "source": "k8s_docs",
+  "title": "Mixed Version Proxy — Configuration for peer API server connectivity",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/mixed-version-proxy/#configuration-for-peer-api-server-connectivity",
+  "text": "To set the network location of a kube-apiserver that peers will use to proxy requests, use the\n--peer-advertise-ip\nand\n--peer-advertise-port\ncommand line arguments to kube-apiserver or specify\nthese fields in the API server configuration file.\nIf these flags are unspecified, peers will use the value from either\n--advertise-address\nor\n--bind-address\ncommand line argument to the kube-apiserver.\nIf those too, are unset, the host's default interface is used."
+}

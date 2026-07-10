@@ -1,0 +1,7 @@
+{
+  "id": "a2fa9e92f3aa24604584779637cc669d",
+  "source": "k8s_docs",
+  "title": "Resource managers — Limitations and caveats",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/resource-managers/#limitations-and-caveats",
+  "text": "The functionality is only implemented for the\nstatic\nCPU Manager policy\nand the\nStatic\nMemory Manager policy. Note that the\nBestEffort\npolicy is\nnot supported for the Memory Manager.\nThis feature is only supported on Linux nodes. On Windows nodes, the\nresource managers will act as a no-op for pod-level allocations."
+}

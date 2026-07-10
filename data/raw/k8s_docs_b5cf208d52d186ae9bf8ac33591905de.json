@@ -1,0 +1,7 @@
+{
+  "id": "b5cf208d52d186ae9bf8ac33591905de",
+  "source": "k8s_docs",
+  "title": "Pod — PodList",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#PodList",
+  "text": "PodList is a list of Pods.\nField\nDescription\napiVersion\nstring\nAPIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources\nitems\n*\nPod array\nList of pods. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md\nkind\nstring\nKind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nmetadata\nListMeta\nStandard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+}

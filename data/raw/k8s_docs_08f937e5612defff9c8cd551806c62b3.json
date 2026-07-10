@@ -1,0 +1,7 @@
+{
+  "id": "08f937e5612defff9c8cd551806c62b3",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Test minor version upgrades to ensure consistent behavior",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#test-minor-version-upgrades",
+  "text": "Before upgrading your production clusters to a new minor version, test your\nwebhooks and workloads in a staging environment. Compare the results to ensure\nthat your webhooks continue to function as expected after the upgrade.\nAdditionally, use the following resources to stay informed about API changes:\nKubernetes release notes\nKubernetes blog"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "4d2af8fe4fb1727d97625f508cb1fcda",
+  "source": "k8s_docs",
+  "title": "Validating Admission Policy — Feedback",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

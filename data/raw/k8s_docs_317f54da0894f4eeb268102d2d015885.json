@@ -1,0 +1,7 @@
+{
+  "id": "317f54da0894f4eeb268102d2d015885",
+  "source": "k8s_docs",
+  "title": "Volumes — Read-only mounts",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/#read-only-mounts",
+  "text": "A mount can be made read-only by setting the\n.spec.containers[*].volumeMounts[*].readOnly\nfield to\ntrue\n.\nThis does not make the volume itself read-only, but that specific container will\nnot be able to write to it.\nOther containers in the Pod may mount the same volume as read-write.\nOn Linux, read-only mounts are not recursively read-only by default.\nFor example, consider a Pod that mounts the hosts\n/mnt\nas a\nhostPath\nvolume. If\nthere is another filesystem mounted read-write on\n/mnt/<SUBMOUNT>\n(such as tmpfs,\nNFS, or USB storage), the volume mounted into the container(s) will also have a writeable\n/mnt/<SUBMOUNT>\n, even if the mount itself was specified as read-only."
+}

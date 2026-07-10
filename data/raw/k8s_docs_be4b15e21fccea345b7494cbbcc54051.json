@@ -1,0 +1,7 @@
+{
+  "id": "be4b15e21fccea345b7494cbbcc54051",
+  "source": "k8s_docs",
+  "title": "Considerations for large clusters — etcd storage",
+  "source_url": "https://kubernetes.io/docs/setup/best-practices/cluster-large/#etcd-storage",
+  "text": "To improve performance of large clusters, you can store Event objects in a separate\ndedicated etcd instance.\nWhen creating a cluster, you can (using custom tooling):\nstart and configure additional etcd instance\nconfigure the\nAPI server\nto use it for storing events\nSee\nOperating etcd clusters for Kubernetes\nand\nSet up a High Availability etcd cluster with kubeadm\nfor details on configuring and managing etcd for a large cluster."
+}

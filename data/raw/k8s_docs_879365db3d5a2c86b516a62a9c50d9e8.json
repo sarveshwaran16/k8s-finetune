@@ -1,0 +1,7 @@
+{
+  "id": "879365db3d5a2c86b516a62a9c50d9e8",
+  "source": "k8s_docs",
+  "title": "Configure a Security Context for a Pod or Container — Implementations",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#implementations-supplementalgroupspolicy",
+  "text": "The following container runtimes are known to support fine-grained SupplementalGroups control.\nCRI-level:\ncontainerd\n, since v2.0\nCRI-O\n, since v1.31\nYou can see if the feature is supported in the Node status.\napiVersion\n:\nv1\nkind\n:\nNode\n...\nstatus\n:\nfeatures\n:\nsupplementalGroupsPolicy\n:\ntrue\nAt this alpha release(from v1.31 to v1.32), when a pod with\nSupplementalGroupsPolicy=Strict\nare scheduled to a node that does NOT support this feature(i.e.\n.status.features.supplementalGroupsPolicy=false\n), the pod's supplemental groups policy falls back to the\nMerge\npolicy\nsilently\n.\nHowever, since the beta release (v1.33), to enforce the policy more strictly,\nsuch pod creation will be rejected by kubelet because the node cannot ensure the specified policy\n. When your pod is rejected, you will see warning events with\nreason=SupplementalGroupsPolicyNotSupported\nlike below:\napiVersion\n:\nv1\nkind\n:\nEvent\n...\ntype\n:\nWarning\nreason\n:\nSupplementalGroupsPolicyNotSupported\nmessage\n:\n\"SupplementalGroupsPolicy=Strict is not supported in this node\"\ninvolvedObject\n:\napiVersion\n:\nv1\nkind\n:\nPod\n..."
+}

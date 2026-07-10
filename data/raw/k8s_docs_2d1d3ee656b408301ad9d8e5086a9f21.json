@@ -1,0 +1,7 @@
+{
+  "id": "2d1d3ee656b408301ad9d8e5086a9f21",
+  "source": "k8s_docs",
+  "title": "Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller — 4. Review namespace creation processes",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/migrate-from-psp/#review-namespace-creation-process",
+  "text": "Now that existing namespaces have been updated to enforce Pod Security Admission, you should ensure\nthat your processes and/or policies for creating new namespaces are updated to ensure that an\nappropriate Pod Security profile is applied to new namespaces.\nYou can also statically configure the Pod Security admission controller to set a default enforce,\naudit, and/or warn level for unlabeled namespaces. See\nConfigure the Admission Controller\nfor more information."
+}

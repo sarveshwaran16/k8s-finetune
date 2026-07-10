@@ -1,0 +1,7 @@
+{
+  "id": "751b9f63b0e9bcd02097e2db32c2b685",
+  "source": "k8s_docs",
+  "title": "Authenticating — Authentication strategies",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#authentication-strategies",
+  "text": "Kubernetes uses client certificates, bearer tokens, or an authenticating proxy to\nauthenticate API requests through authentication plugins. As HTTP requests are\nmade to the API server, plugins attempt to associate the following attributes\nwith the request:\nUsername: a string which identifies the end user. Common values might be\nkube-admin\nor\njane@example.com\n.\nUID: a string which identifies the end user and attempts to be more consistent and unique than username.\nGroups: a set of strings, each of which indicates the user's membership in a named logical collection of users.\nCommon values might be\nsystem:masters\nor\ndevops-team\n.\nExtra fields: a map of strings to list of strings which holds additional information authorizers may find useful."
+}

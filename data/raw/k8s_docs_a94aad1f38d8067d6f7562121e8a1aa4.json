@@ -1,0 +1,7 @@
+{
+  "id": "a94aad1f38d8067d6f7562121e8a1aa4",
+  "source": "k8s_docs",
+  "title": "kubectl auth whoami — See Also",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_auth/kubectl_auth_whoami/#see-also",
+  "text": "kubectl auth\n- Inspect authorization\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "aba68075305e0abe46d0f77b4b6beb31",
+  "source": "k8s_docs",
+  "title": "The Kubernetes API — Discovery API",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/#discovery-api",
+  "text": "Kubernetes publishes a list of all group versions and resources supported via\nthe Discovery API. This includes the following for each resource:\nName\nCluster or namespaced scope\nEndpoint URL and supported verbs\nAlternative names\nGroup, version, kind\nThe API is available in both aggregated and unaggregated form. The aggregated\ndiscovery serves two endpoints, while the unaggregated discovery serves a\nseparate endpoint for each group version."
+}

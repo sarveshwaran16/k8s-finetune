@@ -1,0 +1,7 @@
+{
+  "id": "f779f53bedef447d46fd122e75d5c6d7",
+  "source": "k8s_docs",
+  "title": "kubeadm reset — Cleanup of CNI configuration",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-reset/#cleanup-of-cni-configuration",
+  "text": "CNI plugins use the directory\n/etc/cni/net.d\nto store their configuration.\nThe\nkubeadm reset\ncommand does not cleanup that directory. Leaving the configuration\nof a CNI plugin on a host can be problematic if the same host is later used\nas a new Kubernetes node and a different CNI plugin happens to be deployed in that cluster.\nIt can result in a configuration conflict between CNI plugins.\nTo cleanup the directory, backup its contents if needed and then execute\nthe following command:\nsudo rm -rf /etc/cni/net.d"
+}

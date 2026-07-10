@@ -1,0 +1,7 @@
+{
+  "id": "13aadf6118b62002ba483dc88beac933",
+  "source": "k8s_docs",
+  "title": "kubeadm config — Options",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-config/#options",
+  "text": "--allow-deprecated-api\nAllow validation of deprecated APIs.\n--allow-experimental-api\nAllow validation of experimental, unreleased APIs.\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for validate\nAllow validation of deprecated APIs.\nAllow validation of experimental, unreleased APIs.\nPath to a kubeadm configuration file.\nhelp for validate"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "4945fcf2c9f35c8ec95b5be5c186fc82",
+  "source": "k8s_docs",
+  "title": "The Kubernetes API — Unaggregated discovery",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/#unaggregated-discovery",
+  "text": "Without discovery aggregation, discovery is published in levels, with the root\nendpoints publishing discovery information for downstream documents.\nA list of all group versions supported by a cluster is published at\nthe\n/api\nand\n/apis\nendpoints. Example:\n{\n  \"kind\": \"APIGroupList\",\n  \"apiVersion\": \"v1\",\n  \"groups\": [\n    {\n      \"name\": \"apiregistration.k8s.io\",\n      \"versions\": [\n        {\n          \"groupVersion\": \"apiregistration.k8s.io/v1\",\n          \"version\": \"v1\"\n        }\n      ],\n      \"preferredVersion\": {\n        \"groupVersion\": \"apiregistration.k8s.io/v1\",\n        \"version\": \"v1\"\n      }\n    },\n    {\n      \"name\": \"apps\",\n      \"versions\": [\n        {\n          \"groupVersion\": \"apps/v1\",\n          \"version\": \"v1\"\n        }\n      ],\n      \"preferredVersion\": {\n        \"groupVersion\": \"apps/v1\",\n        \"version\": \"v1\"\n      }\n    },\n    ...\n}\nAdditional requests are needed to obtain the discovery document for each group version at\n/apis/<group>/<version>\n(for example:\n/apis/rbac.authorization.k8s.io/v1alpha1\n), which advertises the list of\nresources served under a particular group version. These endpoints are used by\nkubectl to fetch the list of resources supported by a cluster."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "207e575b8cf3e05d5c8af05fa592e201",
+  "source": "k8s_docs",
+  "title": "Configure a kubelet image credential provider — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-credential-provider/#before-you-begin",
+  "text": "You need a Kubernetes cluster with nodes that support kubelet credential\nprovider plugins. This support is available in Kubernetes 1.36;\nKubernetes v1.24 and v1.25 included this as a beta feature, enabled by default.\nIf you are configuring a credential provider plugin\nthat requires the service account token,\nyou need a Kubernetes cluster with nodes running Kubernetes v1.33 or later\nand the\nKubeletServiceAccountTokenForCredentialProviders\nfeature gate\nenabled on the kubelet.\nA working implementation of a credential provider exec plugin. You can build your own plugin or use one provided by cloud providers.\nTo check the version, enter\nkubectl version\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "c4b2ab21ca93ef43f538c36334b0a525",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_apply_phase_addon/#synopsis",
+  "text": "Upgrade the default kubeadm addons\nkubeadm upgrade apply phase addon [flags]\n\n-h, --help\nhelp for addon\nhelp for addon\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+}

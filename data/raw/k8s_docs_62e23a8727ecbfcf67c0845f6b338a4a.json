@@ -1,0 +1,7 @@
+{
+  "id": "62e23a8727ecbfcf67c0845f6b338a4a",
+  "source": "k8s_docs",
+  "title": "Migrating telemetry and security agents from dockershim — Detecting Docker dependency from node agents",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/migrating-telemetry-and-security-agents/#detecting-docker-dependency-from-node-agents",
+  "text": "If your cluster nodes are customized and install additional security and\ntelemetry agents on the node, check with the agent vendor\nto verify whether it has any dependency on Docker.\n\nThis section is intended to aggregate information about various telemetry and\nsecurity agents that may have a dependency on container runtimes.\nWe keep the work in progress version of migration instructions for various telemetry and security agent vendors\nin\nGoogle doc\n.\nPlease contact the vendor to get up to date instructions for migrating from dockershim."
+}

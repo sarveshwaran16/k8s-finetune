@@ -1,0 +1,7 @@
+{
+  "id": "5080bbd82781280d6320c468aaedf221",
+  "source": "k8s_docs",
+  "title": "Indexed Job for Parallel Processing with Static Work Assignment — Choose an approach",
+  "source_url": "https://kubernetes.io/docs/tasks/job/indexed-parallel-processing-static/#choose-an-approach",
+  "text": "To access the work item from the worker program, you have a few options:\nRead the\nJOB_COMPLETION_INDEX\nenvironment variable. The Job\ncontroller\nautomatically links this variable to the annotation containing the completion\nindex.\nRead a file that contains the completion index.\nAssuming that you can't modify the program, you can wrap it with a script\nthat reads the index using any of the methods above and converts it into\nsomething that the program can use as input.\nFor this example, imagine that you chose option 3 and you want to run the\nrev\nutility. This\nprogram accepts a file as an argument and prints its content reversed.\nrev data.txt\nYou'll use the\nrev\ntool from the\nbusybox\ncontainer image.\nAs this is only an example, each Pod only does a tiny piece of work (reversing a short\nstring). In a real workload you might, for example, create a Job that represents\nthe\ntask of producing 60 seconds of video based on scene data.\nEach work item in the video rendering Job would be to render a particular\nframe of that video clip. Indexed completion would mean that each Pod in\nthe Job knows which frame to render and publish, by counting frames from\nthe start of the clip."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "db4d12669c1f564a9d7dbc1ff3db9f5d",
+  "source": "k8s_docs",
+  "title": "Managing Service Accounts — Bound service account tokens",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#bound-service-account-tokens",
+  "text": "ServiceAccount tokens can be bound to API objects that exist in the kube-apiserver.\nThis can be used to tie the validity of a token to the existence of another API object.\nSupported object types are as follows:\nPod (used for projected volume mounts, see below)\nSecret (can be used to allow revoking a token by deleting the Secret)\nNode (can be used to auto-revoke a token when its Node is deleted; creating new node-bound tokens is GA in v1.33+)\nWhen a token is bound to an object, the object's\nmetadata.name\nand\nmetadata.uid\nare\nstored as extra 'private claims' in the issued JWT.\nWhen a bound token is presented to the kube-apiserver, the service account authenticator\nwill extract and verify these claims.\nIf the referenced object or the ServiceAccount is pending deletion (for example, due to finalizers),\nthen for any instant that is 60 seconds (or more) after the\n.metadata.deletionTimestamp\ndate,\nauthentication with that token would fail.\nIf the referenced object no longer exists (or its\nmetadata.uid\ndoes not match),\nthe request will not be authenticated."
+}

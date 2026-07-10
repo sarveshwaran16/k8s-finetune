@@ -1,0 +1,7 @@
+{
+  "id": "dde873ea2b33afb06949a61981d62466",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — CertificateSubjectRestriction",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#certificatesubjectrestriction",
+  "text": "Type\n: Validating.\nThis admission controller observes creation of CertificateSigningRequest resources that have a\nspec.signerName\nof\nkubernetes.io/kube-apiserver-client\n. It rejects any request that specifies a 'group' (or 'organization attribute')\nof\nsystem:masters\n.\n\nType\n: Mutating.\nThis admission controller observes creation of\nIngress\nobjects that do not request any specific\ningress class and automatically adds a default ingress class to them. This way, users that do not\nrequest any special ingress class do not need to care about them at all and they will get the\ndefault one.\nThis admission controller does not do anything when no default ingress class is configured. When more than one ingress\nclass is marked as default, it rejects any creation of\nIngress\nwith an error and an administrator\nmust revisit their\nIngressClass\nobjects and mark only one as default (with the annotation\n\"ingressclass.kubernetes.io/is-default-class\"). This admission controller ignores any\nIngress\nupdates; it acts only on creation.\nSee the\nIngress\ndocumentation for more about ingress\nclasses and how to mark one as default."
+}

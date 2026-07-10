@@ -1,0 +1,7 @@
+{
+  "id": "a2d48bed8e8439d122d9bc63ae193b6f",
+  "source": "k8s_docs",
+  "title": "Distribute Credentials Securely Using Secrets — Set POSIX permissions for Secret keys",
+  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#set-posix-permissions-for-secret-keys",
+  "text": "You can set the POSIX file access permission bits for a single Secret key.\nIf you don't specify any permissions,\n0644\nis used by default.\nYou can also set a default POSIX file mode for the entire Secret volume, and\nyou can override per key if needed.\nFor example, you can specify a default mode like this:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmypod\nspec\n:\ncontainers\n:\n-\nname\n:\nmypod\nimage\n:\nredis\nvolumeMounts\n:\n-\nname\n:\nfoo\nmountPath\n:\n\"/etc/foo\"\nvolumes\n:\n-\nname\n:\nfoo\nsecret\n:\nsecretName\n:\nmysecret\ndefaultMode\n:\n0400\nThe Secret is mounted on\n/etc/foo\n; all the files created by the\nsecret volume mount have permission\n0400\n."
+}

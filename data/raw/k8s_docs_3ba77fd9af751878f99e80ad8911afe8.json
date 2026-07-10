@@ -1,0 +1,7 @@
+{
+  "id": "3ba77fd9af751878f99e80ad8911afe8",
+  "source": "k8s_docs",
+  "title": "Dynamic Volume Provisioning — Enabling Dynamic Provisioning",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/dynamic-provisioning/#enabling-dynamic-provisioning",
+  "text": "To enable dynamic provisioning, a cluster administrator needs to pre-create\none or more StorageClass objects for users.\nStorageClass objects define which provisioner should be used and what parameters\nshould be passed to that provisioner when dynamic provisioning is invoked.\nThe name of a StorageClass object must be a valid\nDNS subdomain name\n.\nThe following manifest creates a storage class \"slow\" which provisions standard\ndisk-like persistent disks.\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nStorageClass\nmetadata\n:\nname\n:\nslow\nprovisioner\n:\nkubernetes.io/gce-pd\nparameters\n:\ntype\n:\npd-standard\nThe following manifest creates a storage class \"fast\" which provisions\nSSD-like persistent disks.\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nStorageClass\nmetadata\n:\nname\n:\nfast\nprovisioner\n:\nkubernetes.io/gce-pd\nparameters\n:\ntype\n:\npd-ssd"
+}

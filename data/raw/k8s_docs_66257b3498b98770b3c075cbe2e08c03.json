@@ -1,0 +1,7 @@
+{
+  "id": "66257b3498b98770b3c075cbe2e08c03",
+  "source": "k8s_docs",
+  "title": "Resource Management for Pods and Containers — Huge pages",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#huge-pages",
+  "text": "For Linux workloads, you can specify\nhuge page\nresources.\nHuge pages are a Linux-specific feature where the node kernel allocates blocks of memory\nthat are much larger than the default page size.\nFor example, on a system where the default page size is 4KiB, you could specify a limit,\nhugepages-2Mi: 80Mi\n. If the container tries allocating over 40 2MiB huge pages (a\ntotal of 80 MiB), that allocation fails.\nCPU and memory are collectively referred to as\ncompute resources\n, or\nresources\n. Compute\nresources are measurable quantities that can be requested, allocated, and\nconsumed. They are distinct from\nAPI resources\n. API resources, such as Pods and\nServices\nare objects that can be read and modified\nthrough the Kubernetes API server."
+}

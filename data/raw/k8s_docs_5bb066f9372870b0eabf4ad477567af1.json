@@ -1,0 +1,7 @@
+{
+  "id": "5bb066f9372870b0eabf4ad477567af1",
+  "source": "k8s_docs",
+  "title": "Horizontal Pod Autoscaling — Tolerance",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#tolerance",
+  "text": "The\ntolerance\nfield configures a threshold for metric variations, preventing the\nautoscaler from scaling for changes below that value.\nThis tolerance is defined as the amount of variation around the desired metric value under\nwhich no scaling will occur. For example, consider a HorizontalPodAutoscaler configured\nwith a target memory consumption of 100MiB and a scale-up tolerance of 5%:\nbehavior\n:\nscaleUp\n:\ntolerance\n:\n0.05\n# 5% tolerance for scale up\nWith this configuration, the HPA algorithm will only consider scaling up if the memory\nconsumption is higher than 105MiB (that is: 5% above the target).\nIf you don't set this field, the HPA applies the default cluster-wide tolerance of 10%. This\ndefault can be updated for both scale-up and scale-down using the\nkube-controller-manager\n--horizontal-pod-autoscaler-tolerance\ncommand line argument. (You can't use the Kubernetes API\nto configure this default value.)"
+}

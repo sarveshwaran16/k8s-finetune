@@ -1,0 +1,7 @@
+{
+  "id": "cdfa159e14d68bfaedc82a655fdc85ee",
+  "source": "k8s_docs",
+  "title": "Horizontal Pod Autoscaling — Autoscaling during rolling update",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#autoscaling-during-rolling-update",
+  "text": "Kubernetes lets you perform a rolling update on a Deployment. In that\ncase, the Deployment manages the underlying ReplicaSets for you.\nWhen you configure autoscaling for a Deployment, you bind a\nHorizontalPodAutoscaler to a single Deployment. The HorizontalPodAutoscaler\nmanages the\nreplicas\nfield of the Deployment. The deployment controller is responsible\nfor setting the\nreplicas\nof the underlying ReplicaSets so that they add up to a suitable\nnumber during the rollout and also afterwards.\nIf you perform a rolling update of a StatefulSet that has an autoscaled number of\nreplicas, the StatefulSet directly manages its set of Pods (there is no intermediate resource\nsimilar to ReplicaSet)."
+}

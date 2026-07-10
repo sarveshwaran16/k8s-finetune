@@ -1,0 +1,7 @@
+{
+  "id": "4725febb8102a9bce2d430633368d916",
+  "source": "k8s_docs",
+  "title": "Cloud Native Security and Kubernetes — Networking and security",
+  "source_url": "https://kubernetes.io/docs/concepts/security/cloud-native-security/#networking-and-security",
+  "text": "You should also consider network security measures, such as\nNetworkPolicy\nor a\nservice mesh\n.\nSome network plugins for Kubernetes provide encryption for your\ncluster network using technologies such as a virtual\nprivate network (VPN) overlay.\nBy design, Kubernetes lets you use your own networking plugin for your\ncluster. If you use managed Kubernetes, the provider may have already selected a\nnetwork plugin for you.\nThe network plugin you choose and the way you integrate it can have a\nstrong impact on the security of information in transit."
+}

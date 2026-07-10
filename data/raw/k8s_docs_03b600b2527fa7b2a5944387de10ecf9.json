@@ -1,0 +1,7 @@
+{
+  "id": "03b600b2527fa7b2a5944387de10ecf9",
+  "source": "k8s_docs",
+  "title": "Coarse Parallel Processing Using a Work Queue — Starting a message queue service",
+  "source_url": "https://kubernetes.io/docs/tasks/job/coarse-parallel-processing-work-queue/#starting-a-message-queue-service",
+  "text": "This example uses RabbitMQ, however, you can adapt the example to use another AMQP-type message service.\nIn practice you could set up a message queue service once in a\ncluster and reuse it for many jobs, as well as for long-running services.\nStart RabbitMQ as follows:\n# make a Service for the StatefulSet to use\nkubectl create -f https://kubernetes.io/examples/application/job/rabbitmq/rabbitmq-service.yaml\nservice \"rabbitmq-service\" created\nkubectl create -f https://kubernetes.io/examples/application/job/rabbitmq/rabbitmq-statefulset.yaml\nstatefulset \"rabbitmq\" created"
+}

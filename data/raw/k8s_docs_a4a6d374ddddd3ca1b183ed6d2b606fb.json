@@ -1,0 +1,7 @@
+{
+  "id": "a4a6d374ddddd3ca1b183ed6d2b606fb",
+  "source": "k8s_docs",
+  "title": "Pod Lifecycle — Stop Signals",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination-stop-signals",
+  "text": "The stop signal used to kill the container can be defined in the container image with the\nSTOPSIGNAL\ninstruction.\nIf no stop signal is defined in the image, the default signal of the container runtime\n(SIGTERM for both containerd and CRI-O) would be used to kill the container.\n\nIf the\nContainerStopSignals\nfeature gate is enabled, you can configure a custom stop signal\nfor your containers from the container Lifecycle. We require the Pod's\nspec.os.name\nfield\nto be present as a requirement for defining stop signals in the container lifecycle.\nThe list of signals that are valid depends on the OS the Pod is scheduled to.\nFor Pods scheduled to Windows nodes, we only support SIGTERM and SIGKILL as valid signals.\nHere is an example Pod spec defining a custom stop signal:\nspec\n:\nos\n:\nname\n:\nlinux\ncontainers\n:\n-\nname\n:\nmy-container\nimage\n:\ncontainer-image:latest\nlifecycle\n:\nstopSignal\n:\nSIGUSR1\nIf a stop signal is defined in the lifecycle, this will override the signal defined in the container image.\nIf no stop signal is defined in the container spec, the container would fall back to the default behavior."
+}

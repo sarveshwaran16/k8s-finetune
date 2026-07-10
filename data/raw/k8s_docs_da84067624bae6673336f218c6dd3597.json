@@ -1,0 +1,7 @@
+{
+  "id": "da84067624bae6673336f218c6dd3597",
+  "source": "k8s_docs",
+  "title": "kubectl config set-cluster — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_set-cluster/#synopsis",
+  "text": "Set a cluster entry in kubeconfig.\nSpecifying a name that already exists will merge new fields on top of existing values for those fields.\nkubectl config set-cluster NAME [--server=server] [--certificate-authority=path/to/certificate/authority] [--insecure-skip-tls-verify=true] [--tls-server-name=example.com]"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "b69bc98b3c8b041e67b6795175b7ab7f",
+  "source": "k8s_docs",
+  "title": "CustomResourceDefinition — JSONSchemaPropsOrArray",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiextensions/custom-resource-definition-v1/#JSONSchemaPropsOrArray",
+  "text": "JSONSchemaPropsOrArray represents a value that can either be a JSONSchemaProps or an array of JSONSchemaProps. Mainly here for serialization purposes.\n\nJSONSchemaPropsOrBool represents JSONSchemaProps or a boolean value. Defaults to true for the boolean property.\n\nSelectableField specifies the JSON path of a field that may be used with field selectors.\nField\nDescription\njsonPath\n*\nstring\njsonPath is a simple JSON path which is evaluated against each custom resource to produce a field selector value. Only JSON paths without the array notation are allowed. Must point to a field of type string, boolean or integer. Types with enum values and strings with formats are allowed. If jsonPath refers to absent field in a resource, the jsonPath evaluates to an empty string. Must not point to metdata fields. Required."
+}

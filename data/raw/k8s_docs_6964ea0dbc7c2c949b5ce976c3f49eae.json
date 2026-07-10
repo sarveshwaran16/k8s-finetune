@@ -1,0 +1,7 @@
+{
+  "id": "6964ea0dbc7c2c949b5ce976c3f49eae",
+  "source": "k8s_docs",
+  "title": "The kubectl command-line tool — Extending kubectl with plugins",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/kubectl/#extending-kubectl-with-plugins",
+  "text": "You can extend\nkubectl\nwith\nplugins\nthat add new\nsub-commands. Plugins are standalone binaries that follow the\nkubectl-<plugin-name>\nnaming convention.\nThe Kubernetes community maintains many plugins, and you can manage them with the\nKrew\nplugin manager.\n\nThe\nkubectl\ntool supports a version skew of plus-or-minus one minor version relative to the cluster's\ncontrol plane. For example,\nkubectl\nv1.32 works with control planes at v1.31, v1.32, and v1.33.\nUsing a compatible version avoids unexpected behavior. See the\nversion skew policy\nfor details."
+}

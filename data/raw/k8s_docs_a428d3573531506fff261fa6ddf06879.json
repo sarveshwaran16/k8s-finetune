@@ -1,0 +1,7 @@
+{
+  "id": "a428d3573531506fff261fa6ddf06879",
+  "source": "k8s_docs",
+  "title": "Local Files And Paths Used By The Kubelet — What's next",
+  "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#what-s-next",
+  "text": "Learn about the kubelet\ncommand line arguments\n.\nReview the\nKubelet Configuration (v1beta1) reference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

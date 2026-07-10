@@ -1,0 +1,7 @@
+{
+  "id": "6e15d2ce1aea97175b89de2efd363c59",
+  "source": "k8s_docs",
+  "title": "Autoscaling Workloads — Scaling workloads vertically",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/#scaling-workloads-vertically",
+  "text": "You can automatically scale a workload vertically using a\nVerticalPodAutoscaler\n(VPA).\nUnlike the HPA, the VPA doesn't come with Kubernetes by default, but is a an add-on that you or a cluster administrator may need to deploy before you can use it.\nOnce installed, it allows you to create\nCustomResourceDefinitions\n(CRDs) for your workloads which define\nhow\nand\nwhen\nto scale the resources of the managed replicas.\nAs of Kubernetes 1.36, VPA does not support resizing pods in-place,\nbut this integration is being worked on.\nFor manually resizing pods in-place, see\nResize Container Resources In-Place\n."
+}

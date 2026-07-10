@@ -1,0 +1,7 @@
+{
+  "id": "8106e30b443b6a5e1d15e55a095ac04b",
+  "source": "k8s_docs",
+  "title": "kubectl create secret — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_secret/#synopsis",
+  "text": "Create a secret with specified type.\nA docker-registry type secret is for accessing a container registry.\nA generic type secret indicate an Opaque secret type.\nA tls type secret holds TLS certificate and its associated key.\nkubectl create secret (docker-registry | generic | tls)\n\n-h, --help\nhelp for secret\nhelp for secret"
+}

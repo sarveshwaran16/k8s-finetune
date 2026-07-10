@@ -1,0 +1,7 @@
+{
+  "id": "e6fdf9ff0781293a6f45db0c214659fa",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler — ObjectMetricSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#ObjectMetricSource",
+  "text": "ObjectMetricSource indicates how to scale on a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).\nField\nDescription\ndescribedObject\n*\nCrossVersionObjectReference\ndescribedObject specifies the descriptions of a object,such as kind,name apiVersion\nmetric\n*\nMetricIdentifier\nmetric identifies the target metric by name and selector\ntarget\n*\nMetricTarget\ntarget specifies the target value for the given metric"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "1820ed3bc7a50d3b2b220b44ec3a1c63",
+  "source": "k8s_docs",
+  "title": "Managing Workloads — Managing rollouts",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#managing-rollouts",
+  "text": "You can use\nkubectl rollout\nto manage a\nprogressive update of an existing application.\nFor example:\nkubectl apply -f my-deployment.yaml\n# wait for rollout to finish\nkubectl rollout status deployment/my-deployment --timeout 10m\n# 10 minute timeout\nor\nkubectl apply -f backing-stateful-component.yaml\n# don't wait for rollout to finish, just check the status\nkubectl rollout status statefulsets/backing-stateful-component --watch\n=\nfalse\nYou can also pause, resume or cancel a rollout.\nVisit\nkubectl rollout\nto learn more."
+}

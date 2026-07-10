@@ -1,0 +1,7 @@
+{
+  "id": "8c615aa73a99db9680e2010522b2bc58",
+  "source": "k8s_docs",
+  "title": "kubectl create secret docker-registry — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_secret_docker-registry/#synopsis",
+  "text": "Create a new secret for use with Docker registries.\nDockercfg secrets are used to authenticate against Docker registries.\n    \n    When using the Docker command line to push images, you can authenticate to a given registry by running:\n    '$ docker login DOCKER_REGISTRY_SERVER --username=DOCKER_USER --password=DOCKER_PASSWORD --email=DOCKER_EMAIL'.\nThat produces a ~/.dockercfg file that is used by subsequent 'docker push' and 'docker pull' commands to authenticate to the registry. The email address is optional.\nWhen creating applications, you may have a Docker registry that requires authentication.  In order for the\n    nodes to pull images on your behalf, they must have the credentials.  You can provide this information\n    by creating a dockercfg secret and attaching it to your service account.\nkubectl create secret docker-registry NAME --docker-username=user --docker-password=password --docker-email=email [--docker-server=string] [--from-file=[key=]source] [--dry-run=server|client|none]"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "23373deda278bee49fdcc2bcffd448ba",
+  "source": "k8s_docs",
+  "title": "Metrics For Kubernetes System Components — Metrics in Kubernetes",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-metrics/#metrics-in-kubernetes",
+  "text": "In most cases metrics are available on\n/metrics\nendpoint of the HTTP server. For components that\ndon't expose endpoint by default, it can be enabled using\n--bind-address\nflag.\nExamples of those components:\nkube-controller-manager\nkube-proxy\nkube-apiserver\nkube-scheduler\nkubelet\nIn a production environment you may want to configure\nPrometheus Server\nor some other metrics scraper to periodically gather these metrics and make them available in some\nkind of time series database.\nNote that\nkubelet\nalso exposes metrics in\n/metrics/cadvisor\n,\n/metrics/resource\nand\n/metrics/probes\nendpoints. Those metrics do not\nhave the same lifecycle.\nIf your cluster uses\nRBAC\n, reading metrics requires\nauthorization via a user, group or ServiceAccount with a ClusterRole that allows accessing\n/metrics\n. For example:\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\nprometheus\nrules\n:\n-\nnonResourceURLs\n:\n-\n\"/metrics\"\nverbs\n:\n-\nget"
+}

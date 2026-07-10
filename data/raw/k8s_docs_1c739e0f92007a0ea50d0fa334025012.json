@@ -1,0 +1,7 @@
+{
+  "id": "1c739e0f92007a0ea50d0fa334025012",
+  "source": "k8s_docs",
+  "title": "Container Runtimes — Network configuration",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/#network-configuration",
+  "text": "By default, the Linux kernel does not allow IPv4 packets to be routed\nbetween interfaces. Most Kubernetes cluster networking implementations\nwill change this setting (if needed), but some might expect the\nadministrator to do it for them. (Some might also expect other sysctl\nparameters to be set, kernel modules to be loaded, etc; consult the\ndocumentation for your specific network implementation.)"
+}

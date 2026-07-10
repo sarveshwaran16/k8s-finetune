@@ -1,0 +1,7 @@
+{
+  "id": "fbc3838e901d18347bc18fab487d5eb6",
+  "source": "k8s_docs",
+  "title": "Using a KMS provider for data encryption — KMS v1",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#encrypting-your-data-with-the-kms-provider-kms-v1",
+  "text": "apiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nEncryptionConfiguration\nresources\n:\n-\nresources\n:\n-\nsecrets\n-\nconfigmaps\n-\npandas.awesome.bears.example\nproviders\n:\n-\nkms\n:\nname\n:\nmyKmsPluginFoo\nendpoint\n:\nunix:///tmp/socketfile-foo.sock\ncachesize\n:\n100\ntimeout\n:\n3s\n-\nkms\n:\nname\n:\nmyKmsPluginBar\nendpoint\n:\nunix:///tmp/socketfile-bar.sock\ncachesize\n:\n100\ntimeout\n:\n3s"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "145edf42375d52b9235039208b53b0ee",
+  "source": "k8s_docs",
+  "title": "Managing Kubernetes Objects Using Imperative Commands — Using--editto modify objects before creation",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-command/#using-edit-to-modify-objects-before-creation",
+  "text": "You can use\nkubectl create --edit\nto make arbitrary changes to an object\nbefore it is created. Here's an example:\nkubectl create service clusterip my-svc --clusterip\n=\n\"None\"\n-o yaml --dry-run\n=\nclient > /tmp/srv.yaml\nkubectl create --edit -f /tmp/srv.yaml\nThe\nkubectl create service\ncommand creates the configuration for the Service and saves it to\n/tmp/srv.yaml\n.\nThe\nkubectl create --edit\ncommand opens the configuration file for editing before it creates the object."
+}

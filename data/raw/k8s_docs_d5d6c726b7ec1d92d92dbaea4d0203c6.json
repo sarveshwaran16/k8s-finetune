@@ -1,0 +1,7 @@
+{
+  "id": "d5d6c726b7ec1d92d92dbaea4d0203c6",
+  "source": "k8s_docs",
+  "title": "Debug Init Containers — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-init-containers/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

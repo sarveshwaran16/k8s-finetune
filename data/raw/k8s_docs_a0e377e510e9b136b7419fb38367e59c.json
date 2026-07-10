@@ -1,0 +1,7 @@
+{
+  "id": "a0e377e510e9b136b7419fb38367e59c",
+  "source": "k8s_docs",
+  "title": "SubjectAccessReview — SubjectAccessReviewSpec",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/subject-access-review-v1-authorization/#SubjectAccessReviewSpec",
+  "text": "SubjectAccessReviewSpec is a description of the access request. Exactly one of resourceAttributes and nonResourceAttributes must be set\nField\nDescription\nextra\nobject\nextra corresponds to the user.Info.GetExtra() method from the authenticator. Since that is input to the authorizer it needs a reflection here.\ngroups\nstring array\ngroups is the groups you're testing for.\nnonResourceAttributes\nNonResourceAttributes\nnonResourceAttributes describes information for a non-resource access request\nresourceAttributes\nResourceAttributes\nresourceAttributes describes information for a resource access request\nuid\nstring\nuid information about the requesting user.\nuser\nstring\nuser is the user you're testing for. If you specify \"User\" but not \"Groups\", then is it interpreted as \"What if User were not a member of any groups"
+}

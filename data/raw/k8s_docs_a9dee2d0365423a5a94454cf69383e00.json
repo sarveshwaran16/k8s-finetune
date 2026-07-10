@@ -1,0 +1,7 @@
+{
+  "id": "a9dee2d0365423a5a94454cf69383e00",
+  "source": "k8s_docs",
+  "title": "kubectl uncordon — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_uncordon/#synopsis",
+  "text": "Mark node as schedulable.\nkubectl uncordon NODE\n\n# Mark node \"foo\" as schedulable\n  kubectl uncordon foo\n\n--dry-run string[=\"unchanged\"]     Default: \"none\"\nMust be \"none\", \"server\", or \"client\". If client strategy, only print the object that would be sent, without sending it. If server strategy, submit server-side request without persisting the resource.\n-h, --help\nhelp for uncordon\n-l, --selector string\nSelector (label query) to filter on, supports '=', '==', '!=', 'in', 'notin'.(e.g. -l key1=value1,key2=value2,key3 in (value3)). Matching objects must satisfy all of the specified label constraints.\nMust be \"none\", \"server\", or \"client\". If client strategy, only print the object that would be sent, without sending it. If server strategy, submit server-side request without persisting the resource.\nhelp for uncordon\nSelector (label query) to filter on, supports '=', '==', '!=', 'in', 'notin'.(e.g. -l key1=value1,key2=value2,key3 in (value3)). Matching objects must satisfy all of the specified label constraints."
+}

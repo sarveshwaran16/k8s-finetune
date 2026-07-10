@@ -1,0 +1,7 @@
+{
+  "id": "c275fb697b9a852d83115617df68adab",
+  "source": "k8s_docs",
+  "title": "Cloud Native Security and Kubernetes — Kubernetes and information security",
+  "source_url": "https://kubernetes.io/docs/concepts/security/cloud-native-security/#further-reading-k8s",
+  "text": "Kubernetes security\nSecuring your cluster\nData encryption in transit\nfor the control plane\nData encryption at rest\nSecrets in Kubernetes\nControlling Access to the Kubernetes API\nNetwork policies\nfor Pods\nPod security standards\nRuntimeClasses\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

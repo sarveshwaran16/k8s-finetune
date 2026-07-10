@@ -1,0 +1,7 @@
+{
+  "id": "a3e0e9b4ba8a154d51896fe534eb8a03",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — batch.kubernetes.io/cronjob-scheduled-timestamp",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#batch-kubernetes-io-cronjob-scheduled-timestamp",
+  "text": "Type: Annotation\nExample:\nbatch.kubernetes.io/cronjob-scheduled-timestamp: \"2016-05-19T03:00:00-07:00\"\nUsed on: Jobs and Pods controlled by CronJobs\nThis annotation is used to record the original (expected) creation timestamp for a Job,\nwhen that Job is part of a CronJob.\nThe control plane sets the value to that timestamp in RFC3339 format. If the Job belongs to a CronJob\nwith a timezone specified, then the timestamp is in that timezone. Otherwise, the timestamp is in controller-manager's local time."
+}

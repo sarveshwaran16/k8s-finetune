@@ -1,0 +1,7 @@
+{
+  "id": "2b11ca137e7e07ff00962ed92f175974",
+  "source": "k8s_docs",
+  "title": "Configure the Aggregation Layer — Kubernetes Apiserver Authentication and Authorization",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-aggregation-layer/#kubernetes-apiserver-authentication-and-authorization",
+  "text": "A request to an API path that is served by an extension apiserver begins\nthe same way as all API requests: communication to the Kubernetes apiserver.\nThis path already has been registered with the Kubernetes apiserver by the extension apiserver.\nThe user communicates with the Kubernetes apiserver, requesting access to the path.\nThe Kubernetes apiserver uses standard authentication and authorization configured\nwith the Kubernetes apiserver to authenticate the user and authorize access to the specific path.\nFor an overview of authenticating to a Kubernetes cluster, see\n\"Authenticating to a Cluster\"\n.\nFor an overview of authorization of access to Kubernetes cluster resources, see\n\"Authorization Overview\"\n.\nEverything to this point has been standard Kubernetes API requests, authentication and authorization.\nThe Kubernetes apiserver now is prepared to send the request to the extension apiserver."
+}

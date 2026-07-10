@@ -1,0 +1,7 @@
+{
+  "id": "a77b1a7cc3538190602f75da20b8ed39",
+  "source": "k8s_docs",
+  "title": "Network Plugins — Support hostPort",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/#support-hostport",
+  "text": "The CNI networking plugin supports\nhostPort\n. You can use the official\nportmap\nplugin offered by the CNI plugin team or use your own plugin with portMapping functionality.\nIf you want to enable\nhostPort\nsupport, you must specify\nportMappings capability\nin your\ncni-conf-dir\n. For example:\n{\n\"name\"\n:\n\"k8s-pod-network\"\n,\n\"cniVersion\"\n:\n\"0.4.0\"\n,\n\"plugins\"\n:\n[\n{\n\"type\"\n:\n\"calico\"\n,\n\"log_level\"\n:\n\"info\"\n,\n\"datastore_type\"\n:\n\"kubernetes\"\n,\n\"nodename\"\n:\n\"127.0.0.1\"\n,\n\"ipam\"\n:\n{\n\"type\"\n:\n\"host-local\"\n,\n\"subnet\"\n:\n\"usePodCidr\"\n},\n\"policy\"\n:\n{\n\"type\"\n:\n\"k8s\"\n},\n\"kubernetes\"\n:\n{\n\"kubeconfig\"\n:\n\"/etc/cni/net.d/calico-kubeconfig\"\n}\n},\n{\n\"type\"\n:\n\"portmap\"\n,\n\"capabilities\"\n:\n{\n\"portMappings\"\n:\ntrue\n},\n\"externalSetMarkChain\"\n:\n\"KUBE-MARK-MASQ\"\n}\n]\n}"
+}

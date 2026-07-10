@@ -1,0 +1,7 @@
+{
+  "id": "0409ec18e6b221bba3de3d087335e044",
+  "source": "k8s_docs",
+  "title": "Specifying a Disruption Budget for your Application — Arbitrary workloads and arbitrary selectors",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/configure-pdb/#arbitrary-controllers-and-selectors",
+  "text": "You can skip this section if you only use PDBs with the built-in\nworkload resources (Deployment, ReplicaSet, StatefulSet and ReplicationController)\nor with\ncustom resources\nthat implement a\nscale\nsubresource\n,\nand where the PDB selector exactly matches the selector of the Pod's owning resource.\nYou can use a PDB with pods controlled by another resource, by an\n\"operator\", or bare pods, but with these restrictions:\nonly\n.spec.minAvailable\ncan be used, not\n.spec.maxUnavailable\n.\nonly an integer value can be used with\n.spec.minAvailable\n, not a percentage.\nIt is not possible to use other availability configurations,\nbecause Kubernetes cannot derive a total number of pods without a supported owning resource.\nYou can use a selector which selects a subset or superset of the pods belonging to a\nworkload resource. The eviction API will disallow eviction of any pod covered by multiple PDBs,\nso most users will want to avoid overlapping selectors. One reasonable use of overlapping\nPDBs is when pods are being transitioned from one PDB to another."
+}

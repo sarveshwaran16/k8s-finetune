@@ -1,0 +1,7 @@
+{
+  "id": "894e703aeb641f9e3a8738c23471b1b5",
+  "source": "k8s_docs",
+  "title": "Enforcing Pod Security Standards — Third-party alternatives",
+  "source_url": "https://kubernetes.io/docs/setup/best-practices/enforcing-pod-security-standards/#third-party-alternatives",
+  "text": "Other alternatives for enforcing security profiles are being developed in the Kubernetes\necosystem:\nKubewarden\n.\nKyverno\n.\nOPA Gatekeeper\n.\nThe decision to go with a\nbuilt-in\nsolution (e.g. PodSecurity admission controller) versus a\nthird-party tool is entirely dependent on your own situation. When evaluating any solution,\ntrust of your supply chain is crucial. Ultimately, using\nany\nof the aforementioned approaches\nwill be better than doing nothing."
+}

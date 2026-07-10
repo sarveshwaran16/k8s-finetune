@@ -1,0 +1,7 @@
+{
+  "id": "1ddc855de38ac0d90af31110fc6c1281",
+  "source": "k8s_docs",
+  "title": "Control Memory Management Policies on a Node — Placing a Pod in the Guaranteed QoS class",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/memory-manager/#placing-a-pod-in-the-guaranteed-qos-class",
+  "text": "If the selected policy is anything other than\nNone\n, the Memory Manager identifies pods\nthat are in the\nGuaranteed\nQoS class.\nThe Memory Manager provides specific topology hints to the Topology Manager for each\nGuaranteed\npod.\nFor pods in a QoS class other than\nGuaranteed\n, the Memory Manager provides default topology hints\nto the Topology Manager.\nThe following excerpts from pod manifests assign a pod to the\nGuaranteed\nQoS class.\nA Pod with integer CPU(s) runs in the\nGuaranteed\nQoS class, when\nrequests\nare equal to\nlimits\n:\nspec\n:\ncontainers\n:\n-\nname\n:\nnginx\nimage\n:\nnginx\nresources\n:\nlimits\n:\nmemory\n:\n\"200Mi\"\ncpu\n:\n\"2\"\nexample.com/device\n:\n\"1\"\nrequests\n:\nmemory\n:\n\"200Mi\"\ncpu\n:\n\"2\"\nexample.com/device\n:\n\"1\"\nAlso, a pod sharing CPU(s) runs in the\nGuaranteed\nQoS class, when\nrequests\nare equal to\nlimits\n.\nspec\n:\ncontainers\n:\n-\nname\n:\nnginx\nimage\n:\nnginx\nresources\n:\nlimits\n:\nmemory\n:\n\"200Mi\"\ncpu\n:\n\"300m\"\nexample.com/device\n:\n\"1\"\nrequests\n:\nmemory\n:\n\"200Mi\"\ncpu\n:\n\"300m\"\nexample.com/device\n:\n\"1\"\nNotice that both CPU and memory requests must be specified for a Pod to lend it to Guaranteed QoS class."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "0462fb47a932e7bf85c575ec80a73e31",
+  "source": "k8s_docs",
+  "title": "Using CoreDNS for Service Discovery — Installing CoreDNS",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/coredns/#installing-coredns",
+  "text": "For manual deployment or replacement of kube-dns, see the documentation at the\nCoreDNS website\n.\n\nIn Kubernetes version 1.21, kubeadm removed its support for\nkube-dns\nas a DNS application.\nFor\nkubeadm\nv1.36, the only supported cluster DNS application\nis CoreDNS.\nYou can move to CoreDNS when you use\nkubeadm\nto upgrade a cluster that is\nusing\nkube-dns\n. In this case,\nkubeadm\ngenerates the CoreDNS configuration\n(\"Corefile\") based upon the\nkube-dns\nConfigMap, preserving configurations for\nstub domains, and upstream name server."
+}

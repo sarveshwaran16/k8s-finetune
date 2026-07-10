@@ -1,0 +1,7 @@
+{
+  "id": "49c6ea7eb19b260c704e325884d34064",
+  "source": "k8s_docs",
+  "title": "Running Automated Tasks with a CronJob — Deleting a CronJob",
+  "source_url": "https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/#deleting-a-cron-job",
+  "text": "When you don't need a cron job any more, delete it with\nkubectl delete cronjob <cronjob name>\n:\nkubectl delete cronjob hello\nDeleting the cron job removes all the jobs and pods it created and stops it from creating additional jobs.\nYou can read more about removing jobs in\ngarbage collection\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

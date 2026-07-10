@@ -1,0 +1,7 @@
+{
+  "id": "b01e79512bc2954f7da9f0c1bbcc6538",
+  "source": "k8s_docs",
+  "title": "kubectl cp — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_cp/#synopsis",
+  "text": "Copy files and directories to and from containers.\nkubectl cp <file-spec-src> <file-spec-dest>\n\n# !!!Important Note!!!\n  # Requires that the 'tar' binary is present in your container\n  # image.  If 'tar' is not present, 'kubectl cp' will fail.\n  #\n  # For advanced use cases, such as symlinks, wildcard expansion or\n  # file mode preservation, consider using 'kubectl exec'.\n  \n  # Copy /tmp/foo local file to /tmp/bar in a remote pod in namespace <some-namespace>\n  tar cf - /tmp/foo | kubectl exec -i -n <some-namespace> <some-pod> -- tar xf - -C /tmp/bar\n  \n  # Copy /tmp/foo from a remote pod to /tmp/bar locally\n  kubectl exec -n <some-namespace> <some-pod> -- tar cf - /tmp/foo | tar xf - -C /tmp/bar\n  \n  # Copy /tmp/foo_dir local directory to /tmp/bar_dir in a remote pod in the default namespace\n  kubectl cp /tmp/foo_dir <some-pod>:/tmp/bar_dir\n  \n  # Copy /tmp/foo local file to /tmp/bar in a remote pod in a specific container\n  kubectl cp /tmp/foo <some-pod>:/tmp/bar -c <specific-container>\n  \n  # Copy /tmp/foo local file to /tmp/bar in a remote pod in namespace <some-namespace>\n  kubectl cp /tmp/foo <some-namespace>/<some-pod>:/tmp/bar\n  \n  # Copy /tmp/foo from a remote pod to /tmp/bar locally\n  kubectl cp <some-namespace>/<some-pod>:/tmp/foo /tmp/bar"
+}

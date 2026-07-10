@@ -1,0 +1,7 @@
+{
+  "id": "aa24ef37570cb672a58bdd9f2672c432",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubeadm — kubeadm blocks when removing managed containers",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/#kubeadm-blocks-when-removing-managed-containers",
+  "text": "The following could happen if the container runtime halts and does not remove\nany Kubernetes-managed containers:\nsudo kubeadm reset\n[preflight] Running pre-flight checks\n[reset] Stopping the kubelet service\n[reset] Unmounting mounted directories in \"/var/lib/kubelet\"\n[reset] Removing kubernetes-managed containers\n(block)\nA possible solution is to restart the container runtime and then re-run\nkubeadm reset\n.\nYou can also use\ncrictl\nto debug the state of the container runtime. See\nDebugging Kubernetes nodes with crictl\n."
+}

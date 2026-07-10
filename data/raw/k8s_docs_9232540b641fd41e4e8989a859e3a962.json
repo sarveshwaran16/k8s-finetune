@@ -1,0 +1,7 @@
+{
+  "id": "9232540b641fd41e4e8989a859e3a962",
+  "source": "k8s_docs",
+  "title": "API Overview — Persistence",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/#persistence",
+  "text": "Kubernetes stores its serialized state in terms of the API resources by writing them into\netcd\n.\n\nLearn more about\nAPI conventions\nRead the design documentation for\naggregator\nLearn about\nDeclarative API Validation\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

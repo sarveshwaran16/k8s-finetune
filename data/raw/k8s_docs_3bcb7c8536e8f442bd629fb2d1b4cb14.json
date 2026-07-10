@@ -1,0 +1,7 @@
+{
+  "id": "3bcb7c8536e8f442bd629fb2d1b4cb14",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Install and enable a mutating webhook",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#install-enable-mutating-webhook",
+  "text": "When you're ready to deploy your mutating webhook to a cluster, use the\nfollowing order of operations:\nInstall the webhook server and start it.\nSet the\nfailurePolicy\nfield in the MutatingWebhookConfiguration manifest\nto Ignore. This lets you avoid disruptions caused by misconfigured webhooks.\nSet the\nnamespaceSelector\nfield in the MutatingWebhookConfiguration\nmanifest to a test namespace.\nDeploy the MutatingWebhookConfiguration to your cluster.\nMonitor the webhook in the test namespace to check for any issues, then roll the\nwebhook out to other namespaces. If the webhook intercepts an API request that\nit wasn't meant to intercept, pause the rollout and adjust the scope of the\nwebhook configuration."
+}

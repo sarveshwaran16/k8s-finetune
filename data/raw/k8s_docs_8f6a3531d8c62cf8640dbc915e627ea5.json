@@ -1,0 +1,7 @@
+{
+  "id": "8f6a3531d8c62cf8640dbc915e627ea5",
+  "source": "k8s_docs",
+  "title": "kubeadm Configuration (v1beta3) — APIServer",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta3/#kubeadm-k8s-io-v1beta3-APIServer",
+  "text": "Appears in:\nClusterConfiguration\nAPIServer holds settings necessary for API server deployments in the cluster\nField\nDescription\nControlPlaneComponent\n[Required]\nControlPlaneComponent\n(Members of\nControlPlaneComponent\nare embedded into this type.)\nNo description provided.\ncertSANs\n[]string\ncertSANs\nsets extra Subject Alternative Names (SANs) for the API Server signing\ncertificate.\ntimeoutForControlPlane\nmeta/v1.Duration\ntimeoutForControlPlane\ncontrols the timeout that we wait for API server to appear.\ncertSANs\nsets extra Subject Alternative Names (SANs) for the API Server signing\ncertificate.\ntimeoutForControlPlane\ncontrols the timeout that we wait for API server to appear."
+}

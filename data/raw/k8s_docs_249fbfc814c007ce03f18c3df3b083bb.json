@@ -1,0 +1,7 @@
+{
+  "id": "249fbfc814c007ce03f18c3df3b083bb",
+  "source": "k8s_docs",
+  "title": "Cluster Networking — Kubernetes IP address ranges",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/networking/#kubernetes-ip-address-ranges",
+  "text": "Kubernetes clusters require to allocate non-overlapping IP addresses for Pods, Services and Nodes,\nfrom a range of available addresses configured in the following components:\nThe network plugin is configured to assign IP addresses to Pods.\nThe kube-apiserver is configured to assign IP addresses to Services.\nThe kubelet or the cloud-controller-manager is configured to assign IP addresses to Nodes."
+}

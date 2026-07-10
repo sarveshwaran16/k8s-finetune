@@ -1,0 +1,7 @@
+{
+  "id": "1b1e0086fb4b92d2e1a2abb515a6223c",
+  "source": "k8s_docs",
+  "title": "Securing a Cluster — Controlling which nodes pods may access",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#controlling-which-nodes-pods-may-access",
+  "text": "By default, there are no restrictions on which nodes may run a pod. Kubernetes offers a\nrich set of policies for controlling placement of pods onto nodes\nand the\ntaint-based pod placement and eviction\nthat are available to end users. For many clusters use of these policies to separate workloads\ncan be a convention that authors adopt or enforce via tooling.\nAs an administrator, a beta admission plugin\nPodNodeSelector\ncan be used to force pods\nwithin a namespace to default or require a specific node selector, and if end users cannot\nalter namespaces, this can strongly limit the placement of all of the pods in a specific workload."
+}

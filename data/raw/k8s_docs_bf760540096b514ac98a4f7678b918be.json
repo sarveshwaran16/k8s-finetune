@@ -1,0 +1,7 @@
+{
+  "id": "bf760540096b514ac98a4f7678b918be",
+  "source": "k8s_docs",
+  "title": "kubeadm Configuration (v1beta3) — ControlPlaneComponent",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta3/#kubeadm-k8s-io-v1beta3-ControlPlaneComponent",
+  "text": "Appears in:\nClusterConfiguration\nAPIServer\nClusterConfiguration\nAPIServer\nControlPlaneComponent holds settings common to control plane component of the cluster\nField\nDescription\nextraArgs\nmap[string]string\nextraArgs\nis an extra set of flags to pass to the control plane component.\nA key in this map is the flag name as it appears on the command line except\nwithout leading dash(es).\nextraVolumes\n[]HostPathMount\nextraVolumes\nis an extra set of host volumes, mounted to the control plane component.\nextraArgs\nis an extra set of flags to pass to the control plane component.\nA key in this map is the flag name as it appears on the command line except\nwithout leading dash(es).\nextraVolumes\nis an extra set of host volumes, mounted to the control plane component."
+}

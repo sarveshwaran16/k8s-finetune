@@ -1,0 +1,7 @@
+{
+  "id": "b5f9f6b1831ce8625baacf54adb04a3e",
+  "source": "k8s_docs",
+  "title": "Securing a Cluster — Review third party integrations before enabling them",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#review-third-party-integrations-before-enabling-them",
+  "text": "Many third party integrations to Kubernetes may alter the security profile of your cluster. When\nenabling an integration, always review the permissions that an extension requests before granting\nit access. For example, many security integrations may request access to view all secrets on\nyour cluster which is effectively making that component a cluster admin. When in doubt,\nrestrict the integration to functioning in a single namespace if possible.\nComponents that create pods may also be unexpectedly powerful if they can do so inside namespaces\nlike the\nkube-system\nnamespace, because those pods can gain access to service account secrets\nor run with elevated permissions if those service accounts are granted access to permissive\nPodSecurityPolicies\n.\nIf you use\nPod Security admission\nand allow\nany component to create Pods within a namespace that permits privileged Pods, those Pods may\nbe able to escape their containers and use this widened access to elevate their privileges.\nYou should not allow untrusted components to create Pods in any system namespace (those with\nnames that start with\nkube-\n) nor in any namespace where that access grant allows the possibility\nof privilege escalation."
+}

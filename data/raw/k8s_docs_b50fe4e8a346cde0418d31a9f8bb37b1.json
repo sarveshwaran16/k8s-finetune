@@ -1,0 +1,7 @@
+{
+  "id": "b50fe4e8a346cde0418d31a9f8bb37b1",
+  "source": "k8s_docs",
+  "title": "Flow control — Debug logging",
+  "source_url": "https://kubernetes.io/docs/reference/debug-cluster/flow-control/#debug-logging",
+  "text": "At\n-v=3\nor more verbosity, the API server outputs an httplog line for every\nrequest in the API server log, and it includes the following attributes.\napf_fs\n: the name of the flow schema to which the request was classified.\napf_pl\n: the name of the priority level for that flow schema.\napf_iseats\n: the number of seats determined for the initial\n(normal) stage of execution of the request.\napf_fseats\n: the number of seats determined for the final stage of\nexecution (accounting for the associated\nwatch\nnotifications) of the\nrequest.\napf_additionalLatency\n: the duration of the final stage of\nexecution of the request.\nAt higher levels of verbosity there will be log lines exposing details\nof how APF handled the request, primarily for debugging purposes."
+}

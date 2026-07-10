@@ -1,0 +1,7 @@
+{
+  "id": "2cf7c208774a116d291c30638da890b0",
+  "source": "k8s_docs",
+  "title": "kubectl Quick Reference — Copying files and directories to and from containers",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/quick-reference/#copying-files-and-directories-to-and-from-containers",
+  "text": "kubectl cp /tmp/foo_dir my-pod:/tmp/bar_dir\n# Copy /tmp/foo_dir local directory to /tmp/bar_dir in a remote pod in the current namespace\nkubectl cp /tmp/foo my-pod:/tmp/bar -c my-container\n# Copy /tmp/foo local file to /tmp/bar in a remote pod in a specific container\nkubectl cp /tmp/foo my-namespace/my-pod:/tmp/bar\n# Copy /tmp/foo local file to /tmp/bar in a remote pod in namespace my-namespace\nkubectl cp my-namespace/my-pod:/tmp/foo /tmp/bar\n# Copy /tmp/foo from a remote pod to /tmp/bar locally\ntar cf - /tmp/foo\n|\nkubectl\nexec\n-i -n my-namespace my-pod -- tar xf - -C /tmp/bar\n# Copy /tmp/foo local file to /tmp/bar in a remote pod in namespace my-namespace\nkubectl\nexec\n-n my-namespace my-pod -- tar cf - /tmp/foo\n|\ntar xf - -C /tmp/bar\n# Copy /tmp/foo from a remote pod to /tmp/bar locally"
+}

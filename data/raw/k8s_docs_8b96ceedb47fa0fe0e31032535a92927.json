@@ -1,0 +1,7 @@
+{
+  "id": "8b96ceedb47fa0fe0e31032535a92927",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — service",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-service-em-",
+  "text": "Create a service using a specified subcommand.\n\n$ kubectl create service\n\nCreate a new ClusterIP service named my-cs\nkubectl create\nservice\nclusterip my-cs\n--tcp\n=5678:8080\nCreate a new ClusterIP service named my-cs (in headless mode)\nkubectl create\nservice\nclusterip my-cs\n--clusterip\n=\n\"None\"\nCreate a ClusterIP service with the specified name."
+}

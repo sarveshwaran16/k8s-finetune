@@ -1,0 +1,7 @@
+{
+  "id": "8d7220c76acf04069c472aa055731c31",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — Is there a recommended set of admission controllers to use?",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#is-there-a-recommended-set-of-admission-controllers-to-use",
+  "text": "Yes. The recommended admission controllers are enabled by default\n(shown\nhere\n),\nso you do not need to explicitly specify them.\nYou can enable additional admission controllers beyond the default set using the\n--enable-admission-plugins\nflag (\norder doesn't matter\n).\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

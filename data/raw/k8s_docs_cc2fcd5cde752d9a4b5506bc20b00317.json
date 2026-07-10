@@ -1,0 +1,7 @@
+{
+  "id": "cc2fcd5cde752d9a4b5506bc20b00317",
+  "source": "k8s_docs",
+  "title": "Process ID Limits And Reservations — Node PID limits",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/pid-limiting/#node-pid-limits",
+  "text": "Kubernetes allows you to reserve a number of process IDs for the system use. To\nconfigure the reservation, use the parameter\npid=<number>\nin the\n--system-reserved\nand\n--kube-reserved\ncommand line options to the kubelet.\nThe value you specified declares that the specified number of process IDs will\nbe reserved for the system as a whole and for Kubernetes system daemons\nrespectively."
+}

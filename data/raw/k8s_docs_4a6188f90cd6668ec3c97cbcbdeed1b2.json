@@ -1,0 +1,7 @@
+{
+  "id": "4a6188f90cd6668ec3c97cbcbdeed1b2",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:unionMember",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-unionMember",
+  "text": "Description:\nIndicates that this field is a member of a union.\nStability Level:\nStable\nArguments:\nunion\n(string, optional): The name of the union, if more than one exists.\nmemberName\n(string, optional): The discriminator value for this member. Defaults to the field's name.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:unionMember(union: \"union1\")\n// +k8s:optional\nM1\n*\nM1\n`json:\"u1m1\"`\n// +k8s:unionMember(union: \"union1\")\n// +k8s:optional\nM2\n*\nM2\n`json:\"u1m2\"`\n}\ntype\nM1\nstruct\n{}\ntype\nM2\nstruct\n{}\nIn this example,\nM1\nand\nM2\nare members of the named union\nunion1\n."
+}

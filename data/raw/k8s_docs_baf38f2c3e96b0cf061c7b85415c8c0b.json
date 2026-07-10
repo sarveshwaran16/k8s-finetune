@@ -1,0 +1,7 @@
+{
+  "id": "baf38f2c3e96b0cf061c7b85415c8c0b",
+  "source": "k8s_docs",
+  "title": "Reserve Compute Resources for System Daemons — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

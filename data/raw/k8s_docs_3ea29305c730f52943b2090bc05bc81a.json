@@ -1,0 +1,7 @@
+{
+  "id": "3ea29305c730f52943b2090bc05bc81a",
+  "source": "k8s_docs",
+  "title": "Volume Attributes Classes — Parameters",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/#parameters",
+  "text": "VolumeAttributeClasses have parameters that describe volumes belonging to them. Different parameters may be accepted\ndepending on the provisioner or the resizer. For example, the value\n4000\n, for the parameter\niops\n,\nand the parameter\nthroughput\nare specific to GCE PD.\nWhen a parameter is omitted, the default is used at volume provisioning.\nIf a user applies the PVC with a different VolumeAttributesClass with omitted parameters, the default value of\nthe parameters may be used depending on the CSI driver implementation.\nPlease refer to the related CSI driver documentation for more details.\nThere can be at most 512 parameters defined for a VolumeAttributesClass.\nThe total length of the parameters object including its keys and values cannot exceed 256 KiB."
+}

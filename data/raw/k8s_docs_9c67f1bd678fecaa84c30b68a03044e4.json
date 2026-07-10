@@ -1,0 +1,7 @@
+{
+  "id": "9c67f1bd678fecaa84c30b68a03044e4",
+  "source": "k8s_docs",
+  "title": "kube-controller-manager Configuration (v1alpha1) — DeprecatedControllerConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#kubecontrollermanager-config-k8s-io-v1alpha1-DeprecatedControllerConfiguration",
+  "text": "Appears in:\nKubeControllerManagerConfiguration\nDeprecatedControllerConfiguration contains elements be deprecated.\n\nAppears in:\nKubeControllerManagerConfiguration\nDeviceTaintEvictionControllerConfiguration contains elements configuring the device taint eviction controller.\nField\nDescription\nConcurrentSyncs\n[Required]\nint32\nConcurrentSyncs is the number of operations (deleting a pod, updating a ResourcClaim status, etc.)\nthat will be done concurrently. Larger number = processing, but more CPU (and network) load.\nThe default is 10.\nConcurrentSyncs is the number of operations (deleting a pod, updating a ResourcClaim status, etc.)\nthat will be done concurrently. Larger number = processing, but more CPU (and network) load.\nThe default is 10."
+}

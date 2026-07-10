@@ -1,0 +1,7 @@
+{
+  "id": "a28f8bb80fb4fda9f5149cc270fd4361",
+  "source": "k8s_docs",
+  "title": "kubeadm join phase — kubeadm join phase preflight",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join-phase/#cmd-join-phase-preflight",
+  "text": "Using this phase you can execute preflight checks on a joining node.\npreflight\nRun join pre-flight checks\n\nRun pre-flight checks for kubeadm join.\nkubeadm join phase preflight [api-server-endpoint] [flags]\n\n# Run join pre-flight checks using a config file.\n  kubeadm join phase preflight --config kubeadm-config.yaml"
+}

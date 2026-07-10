@@ -1,0 +1,7 @@
+{
+  "id": "7ce3b0917c206006aa31cbf7ee6306df",
+  "source": "k8s_docs",
+  "title": "StatefulSet Basics — Updating StatefulSets",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#updating-statefulsets",
+  "text": "The StatefulSet controller supports automated updates. The\nstrategy used is determined by the\nspec.updateStrategy\nfield of the\nStatefulSet API object. This feature can be used to upgrade the container\nimages, resource requests and/or limits, labels, and annotations of the Pods in a\nStatefulSet.\nThere are two valid update strategies,\nRollingUpdate\n(the default) and\nOnDelete\n."
+}

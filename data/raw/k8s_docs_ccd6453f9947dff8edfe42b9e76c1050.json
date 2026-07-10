@@ -1,0 +1,7 @@
+{
+  "id": "ccd6453f9947dff8edfe42b9e76c1050",
+  "source": "k8s_docs",
+  "title": "kubectl explain — Options",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_explain/#options",
+  "text": "--api-version string\nGet different explanations for particular API version (API group/version)\n-h, --help\nhelp for explain\n-o, --output string     Default: \"plaintext\"\nFormat in which to render the schema (plaintext, plaintext-openapiv2)\n-R, --recursive\nPrint the fields of fields (Currently only 1 level deep)\nGet different explanations for particular API version (API group/version)\nhelp for explain\nFormat in which to render the schema (plaintext, plaintext-openapiv2)\nPrint the fields of fields (Currently only 1 level deep)"
+}

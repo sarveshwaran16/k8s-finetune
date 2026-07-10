@@ -1,0 +1,7 @@
+{
+  "id": "39f675e3e5849a69835b1fce987ddd71",
+  "source": "k8s_docs",
+  "title": "Volume Snapshots — Binding",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/#binding",
+  "text": "The snapshot controller handles the binding of a\nVolumeSnapshot\nobject with an appropriate\nVolumeSnapshotContent\nobject, in both pre-provisioned and dynamically provisioned scenarios.\nThe binding is a one-to-one mapping.\nIn the case of pre-provisioned binding, the VolumeSnapshot will remain unbound until the\nrequested VolumeSnapshotContent object is created."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "af63872a0bae2d742eb01d9d19f38abc",
+  "source": "k8s_docs",
+  "title": "kubectl annotate — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_annotate/#synopsis",
+  "text": "Update the annotations on one or more resources.\nAll Kubernetes objects support the ability to store additional data with the object as annotations. Annotations are key/value pairs that can be larger than labels and include arbitrary string values such as structured JSON. Tools and system extensions may use annotations to store their own data.\nAttempting to set an annotation that already exists will fail unless --overwrite is set. If --resource-version is specified and does not match the current resource version on the server the command will fail.\nUse \"kubectl api-resources\" for a complete list of supported resources.\nkubectl annotate [--overwrite] (-f FILENAME | TYPE NAME) KEY_1=VAL_1 ... KEY_N=VAL_N [--resource-version=version]"
+}

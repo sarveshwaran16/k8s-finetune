@@ -1,0 +1,7 @@
+{
+  "id": "89d8d4d19388e27770e00697b6aa9b2a",
+  "source": "k8s_docs",
+  "title": "Managing Workloads — Chaining and filtering",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#chaining-and-filtering",
+  "text": "Because\nkubectl\noutputs resource names in the same syntax it accepts, you can chain operations\nusing\n$()\nor\nxargs\n:\nkubectl get\n$(\nkubectl create -f docs/concepts/cluster-administration/nginx/ -o name\n|\ngrep service/\n)\nkubectl create -f docs/concepts/cluster-administration/nginx/ -o name\n|\ngrep service/\n|\nxargs -i kubectl get\n'{}'\nThe output might be similar to:\nNAME           TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)      AGE\nmy-nginx-svc   LoadBalancer   10.0.0.208   <pending>     80/TCP       0s\nWith the above commands, first you create resources under\ndocs/concepts/cluster-administration/nginx/\nand print\nthe resources created with\n-o name\noutput format (print each resource as resource/name).\nThen you\ngrep\nonly the Service, and then print it with\nkubectl get\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "b256a712ea13fff83064d1d60fd62856",
+  "source": "k8s_docs",
+  "title": "Example: Deploying PHP Guestbook application with Redis — Set up and Expose the Guestbook Frontend",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateless-application/guestbook/#set-up-and-expose-the-guestbook-frontend",
+  "text": "Now that you have the Redis storage of your guestbook up and running, start\nthe guestbook web servers. Like the Redis followers, the frontend is deployed\nusing a Kubernetes Deployment.\nThe guestbook app uses a PHP frontend. It is configured to communicate with\neither the Redis follower or leader Services, depending on whether the request\nis a read or a write. The frontend exposes a JSON interface, and serves a\njQuery-Ajax-based UX."
+}

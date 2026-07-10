@@ -1,0 +1,7 @@
+{
+  "id": "0c8bcc3ec55bd48ecdf0da0682aa1db0",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Avoid side effects",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#avoid-side-effects",
+  "text": "Ensure that your webhooks operate only on the content of the AdmissionReview\nthat's sent to them, and do not make out-of-band changes. These additional\nchanges, called\nside effects\n, might cause conflicts during admission if they\naren't reconciled properly. The\n.webhooks[].sideEffects\nfield should\nbe set to\nNone\nif a webhook doesn't have any side effect.\nIf side effects are required during the admission evaluation, they must be\nsuppressed when processing an AdmissionReview object with\ndryRun\nset to\ntrue\n, and the\n.webhooks[].sideEffects\nfield should be set to\nNoneOnDryRun\n.\nFor details, see\nSide effects\n."
+}

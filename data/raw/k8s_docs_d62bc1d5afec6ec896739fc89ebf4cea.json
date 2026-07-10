@@ -1,0 +1,7 @@
+{
+  "id": "d62bc1d5afec6ec896739fc89ebf4cea",
+  "source": "k8s_docs",
+  "title": "PersistentVolume — AzureFilePersistentVolumeSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-v1/#AzureFilePersistentVolumeSource",
+  "text": "AzureFile represents an Azure File Service mount on the host and bind mount to the pod.\nField\nDescription\nreadOnly\nboolean\nreadOnly defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.\nsecretName\n*\nstring\nsecretName is the name of secret that contains Azure Storage Account Name and Key\nsecretNamespace\nstring\nsecretNamespace is the namespace of the secret that contains Azure Storage Account Name and Key default is the same as the Pod\nshareName\n*\nstring\nshareName is the azure Share Name"
+}

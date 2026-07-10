@@ -1,0 +1,7 @@
+{
+  "id": "22652c8585ee6f4f1d0a146fa6fee913",
+  "source": "k8s_docs",
+  "title": "Define Environment Variable Values Using An Init Container — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-via-file/#what-s-next",
+  "text": "Learn more about\nenvironment variables\n.\nRead\nDefining Environment Variables for a Container\nRead\nExpose Pod Information to Containers Through Environment Variables\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

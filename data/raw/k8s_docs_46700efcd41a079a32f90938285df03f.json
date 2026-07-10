@@ -1,0 +1,7 @@
+{
+  "id": "46700efcd41a079a32f90938285df03f",
+  "source": "k8s_docs",
+  "title": "Configure Quality of Service for Pods — Create a Pod that gets assigned a QoS class of Burstable",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/#create-a-pod-that-gets-assigned-a-qos-class-of-burstable",
+  "text": "A Pod is given a QoS class of\nBurstable\nif:\nThe Pod does not meet the criteria for QoS class\nGuaranteed\n.\nAt least one Container in the Pod has a memory or CPU request or limit.\nHere is a manifest for a Pod that has one Container. The Container has a memory limit of 200 MiB\nand a memory request of 100 MiB.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nqos-demo-2\nnamespace\n:\nqos-example\nspec\n:\ncontainers\n:\n-\nname\n:\nqos-demo-2-ctr\nimage\n:\nnginx\nresources\n:\nlimits\n:\nmemory\n:\n\"200Mi\"\nrequests\n:\nmemory\n:\n\"100Mi\"\nCreate the Pod:\nkubectl apply -f https://k8s.io/examples/pods/qos/qos-pod-2.yaml --namespace\n=\nqos-example\nView detailed information about the Pod:\nkubectl get pod qos-demo-2 --namespace\n=\nqos-example --output\n=\nyaml\nThe output shows that Kubernetes gave the Pod a QoS class of\nBurstable\n:\nspec\n:\ncontainers\n:\n-\nimage\n:\nnginx\nimagePullPolicy\n:\nAlways\nname\n:\nqos-demo-2-ctr\nresources\n:\nlimits\n:\nmemory\n:\n200Mi\nrequests\n:\nmemory\n:\n100Mi\n...\nstatus\n:\nqosClass\n:\nBurstable\nDelete your Pod:\nkubectl delete pod qos-demo-2 --namespace\n=\nqos-example"
+}

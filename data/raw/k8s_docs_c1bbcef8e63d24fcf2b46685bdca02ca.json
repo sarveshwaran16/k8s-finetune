@@ -1,0 +1,7 @@
+{
+  "id": "c1bbcef8e63d24fcf2b46685bdca02ca",
+  "source": "k8s_docs",
+  "title": "StatefulSets — Stable Storage",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#stable-storage",
+  "text": "For each VolumeClaimTemplate entry defined in a StatefulSet, each Pod receives one\nPersistentVolumeClaim. In the nginx example above, each Pod receives a single PersistentVolume\nwith a StorageClass of\nmy-storage-class\nand 1 GiB of provisioned storage. If no StorageClass\nis specified, then the default StorageClass will be used. When a Pod is (re)scheduled\nonto a node, its\nvolumeMounts\nmount the PersistentVolumes associated with its\nPersistentVolume Claims. Note that, the PersistentVolumes associated with the\nPods' PersistentVolume Claims are not deleted when the Pods, or StatefulSet are deleted.\nThis must be done manually."
+}

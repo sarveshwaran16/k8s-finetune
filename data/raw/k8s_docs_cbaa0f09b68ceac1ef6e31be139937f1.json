@@ -1,0 +1,7 @@
+{
+  "id": "cbaa0f09b68ceac1ef6e31be139937f1",
+  "source": "k8s_docs",
+  "title": "Good practices for Kubernetes Secrets — Good practices for using swap memory",
+  "source_url": "https://kubernetes.io/docs/concepts/security/secrets-good-practices/#good-practices-for-using-swap-memory",
+  "text": "For best practices for setting swap memory for Linux nodes, please refer to\nswap memory management\n.\n\nThis section provides good practices for developers to use to improve the\nsecurity of confidential data when building and deploying Kubernetes resources.\n\nIf you are defining multiple containers in a Pod, and only one of those\ncontainers needs access to a Secret, define the volume mount or environment\nvariable configuration so that the other containers do not have access to that\nSecret."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "e9032865b6f5cd2780f111c9db87db23",
+  "source": "k8s_docs",
+  "title": "Service — Cloud-native service discovery",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#cloud-native-service-discovery",
+  "text": "If you're able to use Kubernetes APIs for service discovery in your application,\nyou can query the\nAPI server\nfor matching EndpointSlices. Kubernetes updates the EndpointSlices for a Service\nwhenever the set of Pods in a Service changes.\nFor non-native applications, Kubernetes offers ways to place a network port or load\nbalancer in between your application and the backend Pods.\nEither way, your workload can use these\nservice discovery\nmechanisms to find the target it wants to connect to."
+}

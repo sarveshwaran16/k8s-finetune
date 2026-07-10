@@ -1,0 +1,7 @@
+{
+  "id": "9e43676fe422134ad9b42dd28efeb2d4",
+  "source": "k8s_docs",
+  "title": "Resource managers — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/resource-managers/#what-s-next",
+  "text": "For more detailed information on node-level resource managers, see:\nNode Resource Managers\nFor more detailed information on how to configure and use pod-level resource\nmanagers, see:\nAssign Pod-level CPU and memory resources\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

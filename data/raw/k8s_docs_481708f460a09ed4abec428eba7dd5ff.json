@@ -1,0 +1,7 @@
+{
+  "id": "481708f460a09ed4abec428eba7dd5ff",
+  "source": "k8s_docs",
+  "title": "Connecting Applications with Services — DNS",
+  "source_url": "https://kubernetes.io/docs/tutorials/services/connect-applications-service/#dns",
+  "text": "Kubernetes offers a DNS cluster addon Service that automatically assigns dns names\nto other Services. You can check if it's running on your cluster:\nkubectl get services kube-dns --namespace\n=\nkube-system\nNAME       TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)         AGE\nkube-dns   ClusterIP   10.0.0.10    <none>        53/UDP,53/TCP   8m\nThe rest of this section will assume you have a Service with a long lived IP\n(my-nginx), and a DNS server that has assigned a name to that IP. Here we use\nthe CoreDNS cluster addon (application name\nkube-dns\n), so you can talk to the\nService from any pod in your cluster using standard methods (e.g.\ngethostbyname()\n).\nIf CoreDNS isn't running, you can enable it referring to the\nCoreDNS README\nor\nInstalling CoreDNS\n.\nLet's run another curl application to test this:\nkubectl run curl --image\n=\nradial/busyboxplus:curl -i --tty --rm\nWaiting for pod default/curl-131556218-9fnch to be running, status is Pending, pod ready: false\nHit enter for command prompt\nThen, hit enter and run\nnslookup my-nginx\n:\n[\nroot@curl-131556218-9fnch:/\n]\n$ nslookup my-nginx\nServer:    10.0.0.10\nAddress 1: 10.0.0.10\nName:      my-nginx\nAddress 1: 10.0.162.149"
+}

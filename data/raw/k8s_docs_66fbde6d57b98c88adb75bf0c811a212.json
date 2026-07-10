@@ -1,0 +1,7 @@
+{
+  "id": "66fbde6d57b98c88adb75bf0c811a212",
+  "source": "k8s_docs",
+  "title": "Adopting Sidecar Containers — Benefits of a built-in sidecar container",
+  "source_url": "https://kubernetes.io/docs/tutorials/configuration/pod-sidecar-containers/#benefits-of-a-built-in-sidecar-container",
+  "text": "Using Kubernetes' native support for sidecar containers provides several benefits:\nYou can configure a native sidecar container to start ahead of\ninit containers\n.\nThe built-in sidecar containers can be authored to guarantee that they are terminated last.\nSidecar containers are terminated with a\nSIGTERM\nsignal once all the regular containers\nare completed and terminated. If the sidecar container isn’t gracefully shut down, a\nSIGKILL\nsignal will be used to terminate it.\nWith Jobs, when Pod's\nrestartPolicy: OnFailure\nor\nrestartPolicy: Never\n,\nnative sidecar containers do not block Pod completion. With legacy sidecar containers,\nspecial care is needed to handle this situation.\nAlso, with Jobs, built-in sidecar containers would keep being restarted once they are done,\neven if regular containers would not with Pod's\nrestartPolicy: Never\n.\nSee\ndifferences from init containers\nto learn more about it."
+}

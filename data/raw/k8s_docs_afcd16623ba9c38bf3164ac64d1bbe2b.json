@@ -1,0 +1,7 @@
+{
+  "id": "afcd16623ba9c38bf3164ac64d1bbe2b",
+  "source": "k8s_docs",
+  "title": "Containers — Container images",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/#container-images",
+  "text": "A\ncontainer image\nis a ready-to-run\nsoftware package containing everything needed to run an application:\nthe code and any runtime it requires, application and system libraries,\nand default values for any essential settings.\nContainers are intended to be stateless and\nimmutable\n:\nyou should not change\nthe code of a container that is already running. If you have a containerized\napplication and want to make changes, the correct process is to build a new\nimage that includes the change, then recreate the container to start from the\nupdated image."
+}

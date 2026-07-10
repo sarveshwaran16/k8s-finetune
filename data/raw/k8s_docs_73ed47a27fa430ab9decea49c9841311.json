@@ -1,0 +1,7 @@
+{
+  "id": "73ed47a27fa430ab9decea49c9841311",
+  "source": "k8s_docs",
+  "title": "Expose Pod Information to Containers Through Environment Variables — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

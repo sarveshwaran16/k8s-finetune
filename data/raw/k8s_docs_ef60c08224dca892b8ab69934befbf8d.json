@@ -1,0 +1,7 @@
+{
+  "id": "ef60c08224dca892b8ab69934befbf8d",
+  "source": "k8s_docs",
+  "title": "Configure Default CPU Requests and Limits for a Namespace — What if you specify a container's limit, but not its request?",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/#what-if-you-specify-a-container-s-limit-but-not-its-request",
+  "text": "Here's a manifest for a Pod that has one container. The container\nspecifies a CPU limit, but not a request:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\ndefault-cpu-demo-2\nspec\n:\ncontainers\n:\n-\nname\n:\ndefault-cpu-demo-2-ctr\nimage\n:\nnginx\nresources\n:\nlimits\n:\ncpu\n:\n\"1\"\nCreate the Pod:\nkubectl apply -f https://k8s.io/examples/admin/resource/cpu-defaults-pod-2.yaml --namespace\n=\ndefault-cpu-example\nView the\nspecification\nof the Pod that you created:\nkubectl get pod default-cpu-demo-2 --output=yaml --namespace=default-cpu-example\nThe output shows that the container's CPU request is set to match its CPU limit.\nNotice that the container was not assigned the default CPU request value of 0.5\ncpu\n:\nresources:\n  limits:\n    cpu: \"1\"\n  requests:\n    cpu: \"1\""
+}

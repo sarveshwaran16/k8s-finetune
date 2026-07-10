@@ -1,0 +1,7 @@
+{
+  "id": "99c288160f651b0a90cc93678b9bbb10",
+  "source": "k8s_docs",
+  "title": "Horizontal Pod Autoscaling — Example: disable scale down",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#example-disable-scale-down",
+  "text": "The\nselectPolicy\nvalue of\nDisabled\nturns off scaling the given direction.\nSo to prevent downscaling the following policy would be used:\nbehavior\n:\nscaleDown\n:\nselectPolicy\n:\nDisabled\n\nHorizontalPodAutoscaler, like every API resource, is supported in a standard way by\nkubectl\n.\nYou can create a new autoscaler using\nkubectl create\ncommand.\nYou can list autoscalers by\nkubectl get hpa\nor get detailed description by\nkubectl describe hpa\n.\nFinally, you can delete an autoscaler using\nkubectl delete hpa\n.\nIn addition, there is a special\nkubectl autoscale\ncommand for creating a HorizontalPodAutoscaler object.\nFor instance, executing\nkubectl autoscale rs foo --min=2 --max=5 --cpu=80%\nwill create an autoscaler for ReplicaSet\nfoo\n, with target CPU utilization set to\n80%\nand the number of replicas between 2 and 5."
+}

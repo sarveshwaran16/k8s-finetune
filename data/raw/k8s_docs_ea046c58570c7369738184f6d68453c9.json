@@ -1,0 +1,7 @@
+{
+  "id": "ea046c58570c7369738184f6d68453c9",
+  "source": "k8s_docs",
+  "title": "Harden Dynamic Resource Allocation in Your Cluster — Grant scheduler and allocation-controller permissions",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/hardening-dra/#grant-scheduler-and-allocation-controller-permissions",
+  "text": "Apply a role that allows binding-related updates:\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\ndra-binding-updater\nrules\n:\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/status\"\n]\nverbs\n:\n[\n\"get\"\n,\n\"patch\"\n,\n\"update\"\n]\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/binding\"\n]\nverbs\n:\n[\n\"patch\"\n,\n\"update\"\n]"
+}

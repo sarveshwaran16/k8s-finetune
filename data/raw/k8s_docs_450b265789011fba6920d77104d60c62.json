@@ -1,7 +1,0 @@
-{
-  "id": "450b265789011fba6920d77104d60c62",
-  "source": "k8s_docs",
-  "title": "Services",
-  "source_url": "https://kubernetes.io/docs/tutorials/services/",
-  "text": "Services\nConnecting Applications with Services\nUsing Source IP\nExplore Termination Behavior for Pods And Their Endpoints\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified June 16, 2021 at 5:57 PM PST:\nRemove exec permission on markdown files (e9703497a1)"
-}

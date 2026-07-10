@@ -1,0 +1,7 @@
+{
+  "id": "335dbc1fb445b2ec8d593509246a6091",
+  "source": "k8s_docs",
+  "title": "Manifest-Based Admission Control — Restrictions",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/#restrictions",
+  "text": "Manifest-based admission configurations exist in isolation and cannot\nreference API resources. The following restrictions apply:\nWebhooks\n: Must use\nclientConfig.url\n. The\nclientConfig.service\nfield is\nnot allowed because the service network may not be available at API server\nstartup.\nPolicies\n: The\nspec.paramKind\nfield is not allowed. Policies cannot\nreference ConfigMaps or other cluster objects for parameters.\nBindings\n: The\nspec.paramRef\nfield is not allowed. The\nspec.policyName\nmust reference a policy defined in the same manifest file set and must end\nwith\n.static.k8s.io\n.\nManifest files are decoded using the strict decoder, which rejects files\ncontaining duplicate fields or unknown fields. Each object undergoes the same\ndefaulting and validation that the REST API applies."
+}

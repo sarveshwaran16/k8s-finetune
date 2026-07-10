@@ -1,0 +1,7 @@
+{
+  "id": "f1b60664fb832a0916dd71d7535e3870",
+  "source": "k8s_docs",
+  "title": "Example: Deploying Cassandra with a StatefulSet — Cassandra container environment variables",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/cassandra/#cassandra-container-environment-variables",
+  "text": "The Pods in this tutorial use the\ngcr.io/google-samples/cassandra:v13\nimage from Google's\ncontainer registry\n.\nThe Docker image above is based on\ndebian-base\nand includes OpenJDK 8.\nThis image includes a standard Cassandra installation from the Apache Debian repo.\nBy using environment variables you can change values that are inserted into\ncassandra.yaml\n.\nEnvironment variable\nDefault value\nCASSANDRA_CLUSTER_NAME\n'Test Cluster'\nCASSANDRA_NUM_TOKENS\n32\nCASSANDRA_RPC_ADDRESS\n0.0.0.0"
+}

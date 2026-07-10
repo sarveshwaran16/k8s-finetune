@@ -1,0 +1,7 @@
+{
+  "id": "8bbcda039a892e3206fc9bea9cce2f0c",
+  "source": "k8s_docs",
+  "title": "Use Cascading Deletion in a Cluster — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/use-cascading-deletion/#what-s-next",
+  "text": "Learn about\nowners and dependents\nin Kubernetes.\nLearn about Kubernetes\nfinalizers\n.\nLearn about\ngarbage collection\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

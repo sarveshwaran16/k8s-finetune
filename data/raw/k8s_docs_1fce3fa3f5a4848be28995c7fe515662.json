@@ -1,0 +1,7 @@
+{
+  "id": "1fce3fa3f5a4848be28995c7fe515662",
+  "source": "k8s_docs",
+  "title": "Implementation details — kubeadm upgrade workflow internal design",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#kubeadm-upgrade-workflow-internal-design",
+  "text": "kubeadm upgrade\nhas sub-commands for handling the upgrade of the Kubernetes cluster created by kubeadm.\nYou must run\nkubeadm upgrade apply\non a control plane node (you can choose which one);\nthis starts the upgrade process. You then run\nkubeadm upgrade node\non all remaining\nnodes (both worker nodes and control plane nodes).\nBoth\nkubeadm upgrade apply\nand\nkubeadm upgrade node\nhave a\nphase\nsubcommand which provides access\nto the internal phases of the upgrade process.\nSee\nkubeadm upgrade phase\nfor more details.\nAdditional utility upgrade commands are\nkubeadm upgrade plan\nand\nkubeadm upgrade diff\n.\nAll upgrade sub-commands support passing a configuration file."
+}

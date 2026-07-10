@@ -1,0 +1,7 @@
+{
+  "id": "4490f74fbb892c628055312181dc6a73",
+  "source": "k8s_docs",
+  "title": "PodGroup Scheduling Policies — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/policies/#what-s-next",
+  "text": "See the\nPodGroup API\nfor how policies are carried at runtime.\nLearn about the\nWorkload API\nthat defines PodGroupTemplates.\nRead about\nPodGroup scheduling\n.\nRead about the\ngang scheduling\nalgorithm.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a09380e3fca6e862a4f002483a88cce8",
+  "source": "k8s_docs",
+  "title": "Kubernetes Object Management — Declarative object configuration",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#declarative-object-configuration",
+  "text": "When using declarative object configuration, a user operates on object\nconfiguration files stored locally, however the user does not define the\noperations to be taken on the files. Create, update, and delete operations\nare automatically detected per-object by\nkubectl\n. This enables working on\ndirectories, where different operations might be needed for different objects."
+}

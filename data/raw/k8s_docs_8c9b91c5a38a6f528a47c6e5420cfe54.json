@@ -1,0 +1,7 @@
+{
+  "id": "8c9b91c5a38a6f528a47c6e5420cfe54",
+  "source": "k8s_docs",
+  "title": "Good practices for Kubernetes Secrets — Cluster administrators",
+  "source_url": "https://kubernetes.io/docs/concepts/security/secrets-good-practices/#cluster-administrators",
+  "text": "This section provides good practices that cluster administrators can use to\nimprove the security of confidential information in the cluster.\n\nBy default, Secret objects are stored unencrypted in\netcd\n. You should configure encryption of your Secret\ndata in\netcd\n. For instructions, refer to\nEncrypt Secret Data at Rest\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a8d839c9c080405e6a4b9e778967c201",
+  "source": "k8s_docs",
+  "title": "Creating a cluster with kubeadm — Cluster resilience",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#resilience",
+  "text": "The cluster created here has a single control-plane node, with a single etcd database\nrunning on it. This means that if the control-plane node fails, your cluster may lose\ndata and may need to be recreated from scratch.\nWorkarounds:\nRegularly\nback up etcd\n. The\netcd data directory configured by kubeadm is at\n/var/lib/etcd\non the control-plane node.\nUse multiple control-plane nodes. You can read\nOptions for Highly Available topology\nto pick a cluster\ntopology that provides\nhigh-availability\n.\nRegularly\nback up etcd\n. The\netcd data directory configured by kubeadm is at\n/var/lib/etcd\non the control-plane node.\nUse multiple control-plane nodes. You can read\nOptions for Highly Available topology\nto pick a cluster\ntopology that provides\nhigh-availability\n."
+}

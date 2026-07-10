@@ -1,0 +1,7 @@
+{
+  "id": "aa9afde0b2542b63795a9645aa506f3d",
+  "source": "k8s_docs",
+  "title": "Policies — Apply policies using admission controllers",
+  "source_url": "https://kubernetes.io/docs/concepts/policy/#apply-policies-using-admission-controllers",
+  "text": "An\nadmission controller\nruns in the API server\nand can validate or mutate API requests. Some admission controllers act to apply policies.\nFor example, the\nAlwaysPullImages\nadmission controller modifies a new Pod to set the image pull policy to\nAlways\n.\nKubernetes has several built-in admission controllers that are configurable via the API server\n--enable-admission-plugins\nflag.\nDetails on admission controllers, with the complete list of available admission controllers, are documented in a dedicated section:\nAdmission Controllers"
+}

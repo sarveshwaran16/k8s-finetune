@@ -1,0 +1,7 @@
+{
+  "id": "83bedf3a877d343c56bb7ba58d9d86e8",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_certs/kubeadm_certs_renew_admin.conf/#synopsis",
+  "text": "Renew the certificate embedded in the kubeconfig file for the admin to use and for kubeadm itself.\nRenewals run unconditionally, regardless of certificate expiration date; extra attributes such as SANs will be based on the existing file/certificates, there is no need to resupply them.\nRenewal by default tries to use the certificate authority in the local PKI managed by kubeadm; as alternative it is possible to use K8s certificate API for certificate renewal, or as a last option, to generate a CSR request.\nAfter renewal, in order to make changes effective, is required to restart control-plane components and eventually re-distribute the renewed certificate in case the file is used elsewhere.\nkubeadm certs renew admin.conf [flags]"
+}

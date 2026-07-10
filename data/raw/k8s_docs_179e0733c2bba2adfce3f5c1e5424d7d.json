@@ -1,0 +1,7 @@
+{
+  "id": "179e0733c2bba2adfce3f5c1e5424d7d",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_node/#synopsis",
+  "text": "Upgrade commands for a node in the cluster\nThe \"node\" command executes the following phases:\npreflight       Run upgrade node pre-flight checks\ncontrol-plane   Upgrade the control plane instance deployed on this node, if any\nkubelet-config  Upgrade the kubelet configuration for this node\naddon           Upgrade the default kubeadm addons\n  /coredns        Upgrade the CoreDNS addon\n  /kube-proxy     Upgrade the kube-proxy addon\npost-upgrade    Run post upgrade tasks\nkubeadm upgrade node [flags]"
+}

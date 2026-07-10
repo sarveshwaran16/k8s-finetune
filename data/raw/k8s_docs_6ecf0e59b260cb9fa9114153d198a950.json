@@ -1,0 +1,7 @@
+{
+  "id": "6ecf0e59b260cb9fa9114153d198a950",
+  "source": "k8s_docs",
+  "title": "Manifest-Based Admission Control — Evaluation order",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/#evaluation-order",
+  "text": "Manifest-based configurations are evaluated before API-based configurations.\nThis ensures that platform-level policies enforced via static configuration take\nprecedence over API-based policies.\nFor admission configuration resources themselves (ValidatingAdmissionPolicy,\nMutatingAdmissionPolicy, ValidatingAdmissionPolicyBinding,\nMutatingAdmissionPolicyBinding, ValidatingWebhookConfiguration,\nMutatingWebhookConfiguration), only manifest-based admission hooks are\nevaluated. API-based hooks are skipped for these resource types to prevent\ncircular dependencies."
+}

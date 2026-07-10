@@ -1,0 +1,7 @@
+{
+  "id": "970071bf522a9d487d2c4160b458771c",
+  "source": "k8s_docs",
+  "title": "kubectl rollout restart — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/kubectl_rollout_restart/#synopsis",
+  "text": "Restart a resource.\nResource rollout will be restarted.\nkubectl rollout restart RESOURCE\n\n# Restart all deployments in the test-namespace namespace\n  kubectl rollout restart deployment -n test-namespace\n  \n  # Restart a deployment\n  kubectl rollout restart deployment/nginx\n  \n  # Restart a daemon set\n  kubectl rollout restart daemonset/abc\n  \n  # Restart deployments with the app=nginx label\n  kubectl rollout restart deployment --selector=app=nginx"
+}

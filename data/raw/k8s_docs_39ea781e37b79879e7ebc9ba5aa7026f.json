@@ -1,0 +1,7 @@
+{
+  "id": "39ea781e37b79879e7ebc9ba5aa7026f",
+  "source": "k8s_docs",
+  "title": "Debug Running Pods — Applying Custom Profile",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#custom-profile",
+  "text": "You can define a partial container spec for debugging as a custom profile in either YAML or JSON format,\nand apply it using the\n--custom\nflag.\nCreate a Pod named myapp as an example:\nkubectl run myapp --image\n=\nbusybox:1.28 --restart\n=\nNever -- sleep 1d\nCreate a custom profile in YAML or JSON format.\nHere, create a YAML format file named\ncustom-profile.yaml\n:\nenv\n:\n-\nname\n:\nENV_VAR_1\nvalue\n:\nvalue_1\n-\nname\n:\nENV_VAR_2\nvalue\n:\nvalue_2\nsecurityContext\n:\ncapabilities\n:\nadd\n:\n-\nNET_ADMIN\n-\nSYS_TIME\nRun this command to debug the Pod using an ephemeral container with the custom profile:\nkubectl debug -it myapp --image\n=\nbusybox:1.28 --target\n=\nmyapp --profile\n=\ngeneral --custom\n=\ncustom-profile.yaml\nYou can check that the ephemeral container has been added to the target Pod with the custom profile applied:\nkubectl get pod myapp -o\njsonpath\n=\n'{.spec.ephemeralContainers[0].env}'\n[{\"name\":\"ENV_VAR_1\",\"value\":\"value_1\"},{\"name\":\"ENV_VAR_2\",\"value\":\"value_2\"}]\nkubectl get pod myapp -o\njsonpath\n=\n'{.spec.ephemeralContainers[0].securityContext}'\n{\"capabilities\":{\"add\":[\"NET_ADMIN\",\"SYS_TIME\"]}}\nClean up the Pod when you're finished with it:\nkubectl delete pod myapp"
+}

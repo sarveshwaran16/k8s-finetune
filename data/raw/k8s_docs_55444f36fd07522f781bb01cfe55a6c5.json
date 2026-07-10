@@ -1,0 +1,7 @@
+{
+  "id": "55444f36fd07522f781bb01cfe55a6c5",
+  "source": "k8s_docs",
+  "title": "Hello Minikube — Create a minikube cluster",
+  "source_url": "https://kubernetes.io/docs/tutorials/hello-minikube/#create-a-minikube-cluster",
+  "text": "minikube start\n\nVerify the status of the minikube cluster to ensure all the components are in a running state.\nminikube status\nThe output from the above command should show all components Running or Configured, as shown in the example output below:\nminikube\ntype: Control Plane\nhost: Running\nkubelet: Running\napiserver: Running\nkubeconfig: Configured"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "f8fe29af435ea1d91a5842f2265e54c7",
+  "source": "k8s_docs",
+  "title": "Migrate Replicated Control Plane To Use Cloud Controller Manager — Default Configuration",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/controller-manager-leader-migration/#default-configuration",
+  "text": "Starting Kubernetes 1.22, Leader Migration provides a default configuration suitable\nfor the default controller-to-manager assignment.\nThe default configuration can be enabled by setting\n--enable-leader-migration\nbut\nwithout\n--leader-migration-config=\n.\nFor\nkube-controller-manager\nand\ncloud-controller-manager\n, if there are no flags\nthat enable any in-tree cloud provider or change ownership of controllers, the\ndefault configuration can be used to avoid manual creation of the configuration file."
+}

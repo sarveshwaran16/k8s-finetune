@@ -1,0 +1,7 @@
+{
+  "id": "2454b193a18a0fbb0d9081b5a40e60e4",
+  "source": "k8s_docs",
+  "title": "Service — Defining a Service",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service",
+  "text": "A Service is an\nobject\n(the same way that a Pod or a ConfigMap is an object). You can create,\nview or modify Service definitions using the Kubernetes API. Usually\nyou use a tool such as\nkubectl\nto make those API calls for you.\nFor example, suppose you have a set of Pods that each listen on TCP port 9376\nand are labelled as\napp.kubernetes.io/name=MyApp\n. You can define a Service to\npublish that TCP listener:\napiVersion\n:\nv1\nkind\n:\nService\nmetadata\n:\nname\n:\nmy-service\nspec\n:\nselector\n:\napp.kubernetes.io/name\n:\nMyApp\nports\n:\n-\nprotocol\n:\nTCP\nport\n:\n80\ntargetPort\n:\n9376\nApplying this manifest creates a new Service named \"my-service\" with the default\nClusterIP\nservice type\n. The Service\ntargets TCP port 9376 on any Pod with the\napp.kubernetes.io/name: MyApp\nlabel.\nKubernetes assigns this Service an IP address (the\ncluster IP\n),\nthat is used by the virtual IP address mechanism. For more details on that mechanism,\nread\nVirtual IPs and Service Proxies\n.\nThe controller for that Service continuously scans for Pods that\nmatch its selector, and then makes any necessary updates to the set of\nEndpointSlices for the Service.\nThe name of a Service object must be a valid\nRFC 1123 label name\n."
+}

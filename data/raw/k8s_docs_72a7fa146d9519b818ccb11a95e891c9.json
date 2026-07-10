@@ -1,0 +1,7 @@
+{
+  "id": "72a7fa146d9519b818ccb11a95e891c9",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — app.kubernetes.io/version",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#app-kubernetes-io-version",
+  "text": "Type: Label\nExample:\napp.kubernetes.io/version: \"5.7.21\"\nUsed on: All Objects (typically used on\nworkload resources\n).\nThe current version of the application.\nCommon forms of values include:\nsemantic version\nthe Git\nrevision hash\nfor the source code.\nOne of the\nrecommended labels\n.\n\nType: Annotation\nExample:\napplyset.kubernetes.io/additional-namespaces: \"namespace1,namespace2\"\nUsed on: Objects being used as ApplySet parents.\nUse of this annotation is Alpha.\nFor Kubernetes version 1.36, you can use this annotation on Secrets,\nConfigMaps, or custom resources if the\nCustomResourceDefinition\ndefining them has the\napplyset.kubernetes.io/is-parent-type\nlabel.\nPart of the specification used to implement\nApplySet-based pruning in kubectl\n.\nThis annotation is applied to the parent object used to track an ApplySet to extend the scope of\nthe ApplySet beyond the parent object's own namespace (if any).\nThe value is a comma-separated list of the names of namespaces other than the parent's namespace\nin which objects are found."
+}

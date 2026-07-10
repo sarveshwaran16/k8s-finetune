@@ -1,0 +1,7 @@
+{
+  "id": "8e41fefaab1f5b209931fdfe695bd5d1",
+  "source": "k8s_docs",
+  "title": "StatefulSet Basics — Ordered Pod termination",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#ordered-pod-termination",
+  "text": "The control plane deleted one Pod at a time, in reverse order with respect\nto its ordinal index, and it waited for each Pod to be completely shut down\nbefore deleting the next one.\nGet the StatefulSet's PersistentVolumeClaims:\nkubectl get pvc -l\napp\n=\nnginx\nNAME        STATUS    VOLUME                                     CAPACITY   ACCESSMODES   AGE\nwww-web-0   Bound     pvc-15c268c7-b507-11e6-932f-42010a800002   1Gi        RWO           13h\nwww-web-1   Bound     pvc-15c79307-b507-11e6-932f-42010a800002   1Gi        RWO           13h\nwww-web-2   Bound     pvc-e1125b27-b508-11e6-932f-42010a800002   1Gi        RWO           13h\nwww-web-3   Bound     pvc-e1176df6-b508-11e6-932f-42010a800002   1Gi        RWO           13h\nwww-web-4   Bound     pvc-e11bb5f8-b508-11e6-932f-42010a800002   1Gi        RWO           13h\nThere are still five PersistentVolumeClaims and five PersistentVolumes.\nWhen exploring a Pod's\nstable storage\n, you saw that\nthe PersistentVolumes mounted to the Pods of a StatefulSet are not deleted when the\nStatefulSet's Pods are deleted. This is still true when Pod deletion is caused by\nscaling the StatefulSet down."
+}

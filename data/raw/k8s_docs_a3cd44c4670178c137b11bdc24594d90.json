@@ -1,0 +1,7 @@
+{
+  "id": "a3cd44c4670178c137b11bdc24594d90",
+  "source": "k8s_docs",
+  "title": "Fine Parallel Processing Using a Work Queue — Defining a Job",
+  "source_url": "https://kubernetes.io/docs/tasks/job/fine-parallel-processing-work-queue/#defining-a-job",
+  "text": "Here is a manifest for the Job you will create:\napiVersion\n:\nbatch/v1\nkind\n:\nJob\nmetadata\n:\nname\n:\njob-wq-2\nspec\n:\nparallelism\n:\n2\ntemplate\n:\nmetadata\n:\nname\n:\njob-wq-2\nspec\n:\ncontainers\n:\n-\nname\n:\nc\nimage\n:\ngcr.io/myproject/job-wq-2\nrestartPolicy\n:\nOnFailure\nIn this example, each pod works on several items from the queue and then exits when there are no more items.\nSince the workers themselves detect when the workqueue is empty, and the Job controller does not\nknow about the workqueue, it relies on the workers to signal when they are done working.\nThe workers signal that the queue is empty by exiting with success. So, as soon as\nany\nworker\nexits with success, the controller knows the work is done, and that the Pods will exit soon.\nSo, you need to leave the completion count of the Job unset. The job controller will wait for\nthe other pods to complete too."
+}

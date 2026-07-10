@@ -1,0 +1,7 @@
+{
+  "id": "3b9fcf36bd285696364a00c5c73eb560",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/config.seen",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-config-seen",
+  "text": "Type: Annotation\nExample:\nkubernetes.io/config.seen: \"2023-10-27T04:04:56.011314488Z\"\nUsed on: Pod\nWhen the kubelet sees a Pod for the first time, it may add this annotation to\nthe Pod with a value of current timestamp in the RFC3339 format.\n\nType: Label\nExample:\naddonmanager.kubernetes.io/mode: \"Reconcile\"\nUsed on: All objects\nTo specify how an add-on should be managed, you can use the\naddonmanager.kubernetes.io/mode\nlabel.\nThis label can have one of three values:\nReconcile\n,\nEnsureExists\n, or\nIgnore\n.\nReconcile\n: Addon resources will be periodically reconciled with the expected state.\nIf there are any differences, the add-on manager will recreate, reconfigure or delete\nthe resources as needed. This is the default mode if no label is specified.\nEnsureExists\n: Addon resources will be checked for existence only but will not be modified\nafter creation. The add-on manager will create or re-create the resources when there is\nno instance of the resource with that name.\nIgnore\n: Addon resources will be ignored. This mode is useful for add-ons that are not\ncompatible with the add-on manager or that are managed by another controller.\nFor more details, see\nAddon-manager\n."
+}

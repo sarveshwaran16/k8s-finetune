@@ -1,0 +1,7 @@
+{
+  "id": "4cb797ed52cbab02c5f585d0a7195f56",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Test webhooks in staging environments",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#test-in-staging-environments",
+  "text": "Robust testing should be a core part of your release cycle for new or updated\nwebhooks. If possible, test any changes to your cluster webhooks in a staging\nenvironment that closely resembles your production clusters. At the very least,\nconsider using a tool like\nminikube\nor\nkind\nto create a small test cluster for webhook\nchanges."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "c5975c784512f4392f8a4299b6d4e3a5",
+  "source": "k8s_docs",
+  "title": "Explore Termination Behavior for Pods And Their Endpoints — What's next",
+  "source_url": "https://kubernetes.io/docs/tutorials/services/pods-and-endpoint-termination-flow/#what-s-next",
+  "text": "Learn how to\nConnect Applications with Services\nLearn more about\nUsing a Service to Access an Application in a Cluster\nLearn more about\nConnecting a Front End to a Back End Using a Service\nLearn more about\nCreating an External Load Balancer\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

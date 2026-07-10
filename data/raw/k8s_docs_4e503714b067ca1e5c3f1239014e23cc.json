@@ -1,0 +1,7 @@
+{
+  "id": "4e503714b067ca1e5c3f1239014e23cc",
+  "source": "k8s_docs",
+  "title": "Pods — Specifying a scheduling group",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#specifying-a-scheduling-group",
+  "text": "By default, Kubernetes schedules every Pod individually. However, some tightly-coupled applications\nneed a group of Pods to be scheduled simultaneously to function correctly.\nYou can link a Pod to a\nPodGroup\nusing the\nscheduling group\nfield\n(\nspec.schedulingGroup\n). This tells the\nkube-scheduler\nthat the\nPod\nbelongs to a specific\ngroup, enabling it to apply group-level coordinated placement decisions for the entire group at once."
+}

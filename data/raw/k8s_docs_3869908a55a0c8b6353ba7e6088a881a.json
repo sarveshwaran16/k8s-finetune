@@ -1,0 +1,7 @@
+{
+  "id": "3869908a55a0c8b6353ba7e6088a881a",
+  "source": "k8s_docs",
+  "title": "Managing Workloads — In-place updates of resources",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#in-place-updates-of-resources",
+  "text": "Sometimes it's necessary to make narrow, non-disruptive updates to resources you've created.\n\nIt is suggested to maintain a set of configuration files in source control\n(see\nconfiguration as code\n),\nso that they can be maintained and versioned along with the code for the resources they configure.\nThen, you can use\nkubectl apply\nto push your configuration changes to the cluster.\nThis command will compare the version of the configuration that you're pushing with the previous\nversion and apply the changes you've made, without overwriting any automated changes to properties\nyou haven't specified.\nkubectl apply -f https://k8s.io/examples/application/nginx/nginx-deployment.yaml\ndeployment.apps/my-nginx configured\nTo learn more about the underlying mechanism, read\nserver-side apply\n."
+}

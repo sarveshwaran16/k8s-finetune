@@ -1,0 +1,7 @@
+{
+  "id": "7760199d9b734ae27190040f99f8ad0a",
+  "source": "k8s_docs",
+  "title": "Control Topology Management Policies on a node — prefer-closest-numa-nodes",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/#policy-option-prefer-closest-numa-nodes",
+  "text": "The\nprefer-closest-numa-nodes\noption is GA since Kubernetes 1.32. In Kubernetes 1.36\nthis policy option is visible by default provided that the\nTopologyManagerPolicyOptions\nfeature gate\nis enabled.\nThe Topology Manager is not aware by default of NUMA distances, and does not take them into account when making\nPod admission decisions. This limitation surfaces in multi-socket, as well as single-socket multi NUMA systems,\nand can cause significant performance degradation in latency-critical execution and high-throughput applications\nif the Topology Manager decides to align resources on non-adjacent NUMA nodes.\nIf you specify the\nprefer-closest-numa-nodes\npolicy option, the\nbest-effort\nand\nrestricted\npolicies favor sets of NUMA nodes with shorter distance between them when making admission decisions.\nYou can enable this option by adding\nprefer-closest-numa-nodes=true\nto the Topology Manager policy options.\nBy default (without this option), the Topology Manager aligns resources on either a single NUMA node or,\nin the case where more than one NUMA node is required, using the minimum number of NUMA nodes."
+}

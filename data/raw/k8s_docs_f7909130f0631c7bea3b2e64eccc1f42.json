@@ -1,0 +1,7 @@
+{
+  "id": "f7909130f0631c7bea3b2e64eccc1f42",
+  "source": "k8s_docs",
+  "title": "Creating a cluster with kubeadm — Initializing your control-plane node",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#initializing-your-control-plane-node",
+  "text": "The control-plane node is the machine where the control plane components run, including\netcd\n(the cluster database) and the\nAPI Server\n(which the\nkubectl\ncommand line tool\ncommunicates with).\n(Recommended) If you have plans to upgrade this single control-plane\nkubeadm\ncluster\nto\nhigh availability\nyou should specify the\n--control-plane-endpoint\nto set the shared endpoint for all control-plane nodes.\nSuch an endpoint can be either a DNS name or an IP address of a load-balancer.\nChoose a Pod network add-on, and verify whether it requires any arguments to\nbe passed to\nkubeadm init\n. Depending on which\nthird-party provider you choose, you might need to set the\n--pod-network-cidr\nto\na provider-specific value. See\nInstalling a Pod network add-on\n.\n(Optional)\nkubeadm\ntries to detect the container runtime by using a list of well\nknown endpoints. To use different container runtime or if there are more than one installed\non the provisioned node, specify the\n--cri-socket\nargument to\nkubeadm\n. See\nInstalling a runtime\n.\nTo initialize the control-plane node run:\nkubeadm init <args>"
+}

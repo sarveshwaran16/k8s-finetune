@@ -1,0 +1,7 @@
+{
+  "id": "75975cf68aa3c5cf5b62ee4da08888ed",
+  "source": "k8s_docs",
+  "title": "Client Authentication (v1beta1) — ExecCredentialSpec",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/client-authentication.v1beta1/#client-authentication-k8s-io-v1beta1-ExecCredentialSpec",
+  "text": "Appears in:\nExecCredential\nExecCredentialSpec holds request and runtime specific information provided by\nthe transport.\nField\nDescription\ncluster\nCluster\nCluster contains information to allow an exec plugin to communicate with the\nkubernetes cluster being authenticated to. Note that Cluster is non-nil only\nwhen provideClusterInfo is set to true in the exec provider config (i.e.,\nExecConfig.ProvideClusterInfo).\ninteractive\n[Required]\nbool\nInteractive declares whether stdin has been passed to this exec plugin.\nCluster contains information to allow an exec plugin to communicate with the\nkubernetes cluster being authenticated to. Note that Cluster is non-nil only\nwhen provideClusterInfo is set to true in the exec provider config (i.e.,\nExecConfig.ProvideClusterInfo).\nInteractive declares whether stdin has been passed to this exec plugin."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6acd1b058641d6f1a75a935935f1d266",
+  "source": "k8s_docs",
+  "title": "Pod Security Standards — User namespaces",
+  "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#user-namespaces",
+  "text": "User Namespaces are a Linux-only feature to run workloads with increased\nisolation. How they work together with Pod Security Standards is described in\nthe\ndocumentation\nfor Pods that use user namespaces.\n\nThe three profiles defined here have a clear linear progression from most secure (Restricted) to least\nsecure (Privileged), and cover a broad set of workloads. Privileges required above the Baseline\npolicy are typically very application specific, so we do not offer a standard profile in this\nniche. This is not to say that the privileged profile should always be used in this case, but that\npolicies in this space need to be defined on a case-by-case basis.\nSIG Auth may reconsider this position in the future, should a clear need for other profiles arise."
+}

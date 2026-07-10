@@ -1,0 +1,7 @@
+{
+  "id": "e06fa262fd498096478050cf272b4246",
+  "source": "k8s_docs",
+  "title": "Upgrading Windows nodes — Drain the node",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/upgrading-windows-nodes/#drain-the-node",
+  "text": "From a machine with access to the Kubernetes API,\nprepare the node for maintenance by marking it unschedulable and evicting the workloads:\n# replace <node-to-drain> with the name of your node you are draining\nkubectl drain <node-to-drain> --ignore-daemonsets\nYou should see output similar to this:\nnode/ip-172-31-85-18 cordoned\nnode/ip-172-31-85-18 drained\nFrom a machine with access to the Kubernetes API,\nprepare the node for maintenance by marking it unschedulable and evicting the workloads:\n# replace <node-to-drain> with the name of your node you are draining\nkubectl drain <node-to-drain> --ignore-daemonsets\nYou should see output similar to this:\nnode/ip-172-31-85-18 cordoned\nnode/ip-172-31-85-18 drained"
+}

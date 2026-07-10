@@ -1,0 +1,7 @@
+{
+  "id": "d535cb553fb510b06c733d1bdd69b4a5",
+  "source": "k8s_docs",
+  "title": "VolumeAttachment — VolumeAttachmentStatus",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/volume-attachment-v1/#VolumeAttachmentStatus",
+  "text": "VolumeAttachmentStatus is the status of a VolumeAttachment request.\nField\nDescription\nattachError\nVolumeError\nattachError represents the last error encountered during attach operation, if any. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.\nattached\n*\nboolean\nattached indicates the volume is successfully attached. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.\nattachmentMetadata\nobject\nattachmentMetadata is populated with any information returned by the attach operation, upon successful attach, that must be passed into subsequent WaitForAttach or Mount calls. This field must only be set by the entity completing the attach operation, i.e. the external-attacher.\ndetachError\nVolumeError\ndetachError represents the last error encountered during detach operation, if any. This field must only be set by the entity completing the detach operation, i.e. the external-attacher."
+}

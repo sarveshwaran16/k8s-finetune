@@ -1,0 +1,7 @@
+{
+  "id": "5d6cfcceeaf79bf790392cc79231ee0b",
+  "source": "k8s_docs",
+  "title": "Dynamic Admission Control — Timeouts",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#timeouts",
+  "text": "Because webhooks add to API request latency, they should evaluate as quickly as possible.\ntimeoutSeconds\nallows configuring how long the API server should wait for a webhook to respond\nbefore treating the call as a failure.\nIf the timeout expires before the webhook responds, the webhook call will be ignored or\nthe API call will be rejected based on the\nfailure policy\n.\nThe timeout value must be between 1 and 30 seconds.\nHere is an example of a validating webhook with a custom timeout of 2 seconds:\napiVersion\n:\nadmissionregistration.k8s.io/v1\nkind\n:\nValidatingWebhookConfiguration\nwebhooks\n:\n-\nname\n:\nmy-webhook.example.com\ntimeoutSeconds\n:\n2\nThe timeout for an admission webhook defaults to 10 seconds."
+}

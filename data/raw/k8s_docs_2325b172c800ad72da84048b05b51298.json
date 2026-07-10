@@ -1,0 +1,7 @@
+{
+  "id": "2325b172c800ad72da84048b05b51298",
+  "source": "k8s_docs",
+  "title": "kubectl config — See Also",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/#see-also",
+  "text": "kubectl\n- kubectl controls the Kubernetes cluster manager\nkubectl config current-context\n- Display the current-context\nkubectl config delete-cluster\n- Delete the specified cluster from the kubeconfig\nkubectl config delete-context\n- Delete the specified context from the kubeconfig\nkubectl config delete-user\n- Delete the specified user from the kubeconfig\nkubectl config get-clusters\n- Display clusters defined in the kubeconfig\nkubectl config get-contexts\n- Describe one or many contexts\nkubectl config get-users\n- Display users defined in the kubeconfig\nkubectl config rename-context\n- Rename a context from the kubeconfig file\nkubectl config set\n- Set an individual value in a kubeconfig file\nkubectl config set-cluster\n- Set a cluster entry in kubeconfig\nkubectl config set-context\n- Set a context entry in kubeconfig\nkubectl config set-credentials\n- Set a user entry in kubeconfig\nkubectl config unset\n- Unset an individual value in a kubeconfig file\nkubectl config use-context\n- Set the current-context in a kubeconfig file\nkubectl config view\n- Display merged kubeconfig settings or a specified kubeconfig file"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ae691dfe3fce757e0e6f3ded97ac3ff4",
+  "source": "k8s_docs",
+  "title": " — Options inherited from parent commands",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_etcd_local/#options-inherited-from-parent-commands",
+  "text": "--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ec7c5a322897b07c9637cfff6fe5b5af",
+  "source": "k8s_docs",
+  "title": "kubectl create cronjob — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_cronjob/#synopsis",
+  "text": "Create a cron job with the specified name.\nkubectl create cronjob NAME --image=image --schedule='0/5 * * * ?' -- [COMMAND] [args...] [flags]\n\n# Create a cron job\n  kubectl create cronjob my-job --image=busybox --schedule=\"*/1 * * * *\"\n  \n  # Create a cron job with a command\n  kubectl create cronjob my-job --image=busybox --schedule=\"*/1 * * * *\" -- date"
+}

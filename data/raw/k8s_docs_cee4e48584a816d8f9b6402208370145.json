@@ -1,0 +1,7 @@
+{
+  "id": "cee4e48584a816d8f9b6402208370145",
+  "source": "k8s_docs",
+  "title": "Nodes — Resource capacity tracking",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/nodes/#node-capacity",
+  "text": "Node objects track information about the Node's resource capacity: for example, the amount\nof memory available and the number of CPUs.\nNodes that\nself register\nreport their capacity during\nregistration. If you\nmanually\nadd a Node, then\nyou need to set the node's capacity information when you add it.\nThe Kubernetes\nscheduler\nensures that\nthere are enough resources for all the Pods on a Node. The scheduler checks that the sum\nof the requests of containers on the node is no greater than the node's capacity.\nThat sum of requests includes all containers managed by the kubelet, but excludes any\ncontainers started directly by the container runtime, and also excludes any\nprocesses running outside of the kubelet's control."
+}

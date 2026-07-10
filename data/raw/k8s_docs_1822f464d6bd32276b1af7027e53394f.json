@@ -1,0 +1,7 @@
+{
+  "id": "1822f464d6bd32276b1af7027e53394f",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-cross-zone-load-balancing-enabled",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: \"true\"\nUsed on: Service\nThe cloud controller manager integration with AWS elastic load balancing configures\na load balancer based on this annotation. If you set this annotation to \"true\",\neach load balancer node distributes requests evenly across the registered targets\nin all enabled\navailability zones\n.\nIf you disable cross-zone load balancing, each load balancer node distributes requests\nevenly across the registered targets in its availability zone only."
+}

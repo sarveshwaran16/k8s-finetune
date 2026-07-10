@@ -1,0 +1,7 @@
+{
+  "id": "932f1be1eda37c060127fd78bf9a3c06",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — Flags",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#flags",
+  "text": "Name\nShorthand\nDefault\nUsage\nauth-provider\nAuth provider for the user entry in kubeconfig\nauth-provider-arg\n[]\n'key=value' arguments for the auth provider\nclient-certificate\nPath to client-certificate file for the user entry in kubeconfig\nclient-key\nPath to client-key file for the user entry in kubeconfig\nembed-certs\nfalse\nEmbed client cert/key for the user entry in kubeconfig\nexec-api-version\nAPI version of the exec credential plugin for the user entry in kubeconfig\nexec-arg\n[]\nNew arguments for the exec credential plugin command for the user entry in kubeconfig\nexec-command\nCommand for the exec credential plugin for the user entry in kubeconfig\nexec-env\n[]\n'key=value' environment values for the exec credential plugin\npassword\npassword for the user entry in kubeconfig\ntoken\ntoken for the user entry in kubeconfig\nusername\nusername for the user entry in kubeconfig"
+}

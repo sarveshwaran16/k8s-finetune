@@ -1,0 +1,7 @@
+{
+  "id": "5a0abbd9b578ede67d550fea93c16177",
+  "source": "k8s_docs",
+  "title": "Change the default StorageClass — Why change the default storage class?",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/#why-change-the-default-storage-class",
+  "text": "Depending on the installation method, your Kubernetes cluster may be deployed with\nan existing StorageClass that is marked as default. This default StorageClass\nis then used to dynamically provision storage for PersistentVolumeClaims\nthat do not require any specific storage class. See\nPersistentVolumeClaim documentation\nfor details.\nThe pre-installed default StorageClass may not fit well with your expected workload;\nfor example, it might provision storage that is too expensive. If this is the case,\nyou can either change the default StorageClass or disable it completely to avoid\ndynamic provisioning of storage.\nDeleting the default StorageClass may not work, as it may be re-created\nautomatically by the addon manager running in your cluster. Please consult the docs for your installation\nfor details about addon manager and how to disable individual addons."
+}

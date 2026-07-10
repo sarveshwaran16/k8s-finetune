@@ -1,0 +1,7 @@
+{
+  "id": "e3e802ebcc8198046ad6c2f5e1090e16",
+  "source": "k8s_docs",
+  "title": "Fine Parallel Processing Using a Work Queue — Filling the queue with tasks",
+  "source_url": "https://kubernetes.io/docs/tasks/job/fine-parallel-processing-work-queue/#filling-the-queue-with-tasks",
+  "text": "Now let's fill the queue with some \"tasks\". In this example, the tasks are strings to be\nprinted.\nStart a temporary interactive pod for running the Redis CLI.\nkubectl run -i --tty temp --image redis --command\n\"/bin/sh\"\nWaiting for pod default/redis2-c7h78 to be running, status is Pending, pod ready: false\nHit enter for command prompt\nNow hit enter, start the Redis CLI, and create a list with some work items in it.\nredis-cli -h redis\nredis:6379> rpush job2 \"apple\"\n(integer) 1\nredis:6379> rpush job2 \"banana\"\n(integer) 2\nredis:6379> rpush job2 \"cherry\"\n(integer) 3\nredis:6379> rpush job2 \"date\"\n(integer) 4\nredis:6379> rpush job2 \"fig\"\n(integer) 5\nredis:6379> rpush job2 \"grape\"\n(integer) 6\nredis:6379> rpush job2 \"lemon\"\n(integer) 7\nredis:6379> rpush job2 \"melon\"\n(integer) 8\nredis:6379> rpush job2 \"orange\"\n(integer) 9\nredis:6379> lrange job2 0 -1\n1) \"apple\"\n2) \"banana\"\n3) \"cherry\"\n4) \"date\"\n5) \"fig\"\n6) \"grape\"\n7) \"lemon\"\n8) \"melon\"\n9) \"orange\"\nSo, the list with key\njob2\nwill be the work queue.\nNote: if you do not have Kube DNS setup correctly, you may need to change\nthe first step of the above block to\nredis-cli -h $REDIS_SERVICE_HOST\n."
+}

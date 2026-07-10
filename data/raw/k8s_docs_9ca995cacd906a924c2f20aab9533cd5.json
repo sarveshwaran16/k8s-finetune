@@ -1,0 +1,7 @@
+{
+  "id": "9ca995cacd906a924c2f20aab9533cd5",
+  "source": "k8s_docs",
+  "title": "Manage TLS Certificates in a Cluster — Configuring your cluster to provide signing",
+  "source_url": "https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/#configuring-your-cluster-to-provide-signing",
+  "text": "This page assumes that a signer is set up to serve the certificates API. The\nKubernetes controller manager provides a default implementation of a signer. To\nenable it, pass the\n--cluster-signing-cert-file\nand\n--cluster-signing-key-file\nparameters to the controller manager with paths to\nyour Certificate Authority's keypair."
+}

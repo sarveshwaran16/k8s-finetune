@@ -1,0 +1,7 @@
+{
+  "id": "d55172b26608c90c82fe24b7bba94579",
+  "source": "k8s_docs",
+  "title": "Other Tools — Headlamp",
+  "source_url": "https://kubernetes.io/docs/reference/tools/#headlamp",
+  "text": "Headlamp\nis an extensible Kubernetes graphical user\ninterface, and is an optional Kubernetes cluster component.\nHeadlamp is part of the Kubernetes project.\nHeadlamp provides:\nA modern, user-friendly graphical interface for cluster management and troubleshooting\nSupport for both in-cluster deployment and desktop application modes\nExtensibility through a plugin system\nRBAC-based controls that adapt to user permissions"
+}

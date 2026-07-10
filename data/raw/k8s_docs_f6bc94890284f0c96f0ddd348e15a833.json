@@ -1,0 +1,7 @@
+{
+  "id": "f6bc94890284f0c96f0ddd348e15a833",
+  "source": "k8s_docs",
+  "title": "Pod Priority and Preemption — Effect of Pod priority on scheduling order",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#effect-of-pod-priority-on-scheduling-order",
+  "text": "When Pod priority is enabled, the scheduler orders pending Pods by\ntheir priority and a pending Pod is placed ahead of other pending Pods\nwith lower priority in the scheduling queue. As a result, the higher\npriority Pod may be scheduled sooner than Pods with lower priority if\nits scheduling requirements are met. If such Pod cannot be scheduled, the\nscheduler will continue and try to schedule other lower priority Pods."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "9e0645d00dca876a84e890d1010b461c",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — API verbs",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#api-verbs",
+  "text": "Almost all object resource types support the standard HTTP verbs - GET, POST, PUT, PATCH,\nand DELETE. Kubernetes also uses its own verbs, which are often written in lowercase to distinguish\nthem from HTTP verbs.\nKubernetes uses the term\nlist\nto describe the action of returning a\ncollection\nof\nresources, to distinguish it from retrieving a single resource which is usually called\na\nget\n. If you sent an HTTP GET request with the\n?watch\nquery parameter,\nKubernetes calls this a\nwatch\nand not a\nget\n(see\nEfficient detection of changes\nfor more details).\nFor PUT requests, Kubernetes internally classifies these as either\ncreate\nor\nupdate\nbased on the state of the existing object. An\nupdate\nis different from a\npatch\n; the\nHTTP verb for a\npatch\nis PATCH."
+}

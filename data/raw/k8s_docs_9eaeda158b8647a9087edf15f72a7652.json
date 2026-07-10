@@ -1,0 +1,7 @@
+{
+  "id": "9eaeda158b8647a9087edf15f72a7652",
+  "source": "k8s_docs",
+  "title": "Multi-tenancy — Multiple customers",
+  "source_url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/#multiple-customers",
+  "text": "The other major form of multi-tenancy frequently involves a Software-as-a-Service (SaaS) vendor\nrunning multiple instances of a workload for customers. This business model is so strongly\nassociated with this deployment style that many people call it \"SaaS tenancy.\" However, a better\nterm might be \"multi-customer tenancy,\" since SaaS vendors may also use other deployment models,\nand this deployment model can also be used outside of SaaS.\nIn this scenario, the customers do not have access to the cluster; Kubernetes is invisible from\ntheir perspective and is only used by the vendor to manage the workloads. Cost optimization is\nfrequently a critical concern, and Kubernetes policies are used to ensure that the workloads are\nstrongly isolated from each other."
+}

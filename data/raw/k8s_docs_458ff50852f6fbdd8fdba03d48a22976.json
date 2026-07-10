@@ -1,0 +1,7 @@
+{
+  "id": "458ff50852f6fbdd8fdba03d48a22976",
+  "source": "k8s_docs",
+  "title": "Storage Capacity — Rescheduling",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/storage-capacity/#rescheduling",
+  "text": "When a node has been selected for a Pod with\nWaitForFirstConsumer\nvolumes, that decision is still tentative. The next step is that the\nCSI storage driver gets asked to create the volume with a hint that the\nvolume is supposed to be available on the selected node.\nBecause Kubernetes might have chosen a node based on out-dated\ncapacity information, it is possible that the volume cannot really be\ncreated. The node selection is then reset and the Kubernetes scheduler\ntries again to find a node for the Pod."
+}

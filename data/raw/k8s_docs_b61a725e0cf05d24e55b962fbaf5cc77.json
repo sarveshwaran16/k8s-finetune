@@ -1,0 +1,7 @@
+{
+  "id": "b61a725e0cf05d24e55b962fbaf5cc77",
+  "source": "k8s_docs",
+  "title": "Distribute Credentials Securely Using Secrets — Convert your secret data to a base-64 representation",
+  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#convert-your-secret-data-to-a-base-64-representation",
+  "text": "Suppose you want to have two pieces of secret data: a username\nmy-app\nand a password\n39528$vdg7Jb\n. First, use a base64 encoding tool to convert your username and password to a base64 representation. Here's an example using the commonly available base64 program:\necho\n-n\n'my-app'\n|\nbase64\necho\n-n\n'39528$vdg7Jb'\n|\nbase64\nThe output shows that the base-64 representation of your username is\nbXktYXBw\n,\nand the base-64 representation of your password is\nMzk1MjgkdmRnN0pi\n."
+}

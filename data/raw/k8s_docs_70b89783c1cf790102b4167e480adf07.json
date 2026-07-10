@@ -1,0 +1,7 @@
+{
+  "id": "70b89783c1cf790102b4167e480adf07",
+  "source": "k8s_docs",
+  "title": "kubeadm reset — Cleanup of external etcd members",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-reset/#cleanup-of-external-etcd-members",
+  "text": "kubeadm reset\nwill not delete any etcd data if external etcd is used. This means that if you run\nkubeadm init\nagain using the same etcd endpoints, you will see state from previous clusters.\nTo wipe etcd data it is recommended you use a client like etcdctl, such as:\netcdctl del\n\"\"\n--prefix\nSee the\netcd documentation\nfor more information."
+}

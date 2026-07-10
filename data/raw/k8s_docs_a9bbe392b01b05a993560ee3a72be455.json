@@ -1,0 +1,7 @@
+{
+  "id": "a9bbe392b01b05a993560ee3a72be455",
+  "source": "k8s_docs",
+  "title": "API Priority and Fairness — Priority Levels",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/flow-control/#priority-levels",
+  "text": "Without APF enabled, overall concurrency in the API server is limited by the\nkube-apiserver\nflags\n--max-requests-inflight\nand\n--max-mutating-requests-inflight\n. With APF enabled, the concurrency limits\ndefined by these flags are summed and then the sum is divided up among a\nconfigurable set of\npriority levels\n. Each incoming request is assigned to a\nsingle priority level, and each priority level will only dispatch as many\nconcurrent requests as its particular limit allows.\nThe default configuration, for example, includes separate priority levels for\nleader-election requests, requests from built-in controllers, and requests from\nPods. This means that an ill-behaved Pod that floods the API server with\nrequests cannot prevent leader election or actions by the built-in controllers\nfrom succeeding.\nThe concurrency limits of the priority levels are periodically\nadjusted, allowing under-utilized priority levels to temporarily lend\nconcurrency to heavily-utilized levels. These limits are based on\nnominal limits and bounds on how much concurrency a priority level may\nlend and how much it may borrow, all derived from the configuration\nobjects mentioned below."
+}

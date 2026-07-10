@@ -1,0 +1,7 @@
+{
+  "id": "ed2c09ebcd3ed6cfbcccbd9a1292d48a",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — cronjob.kubernetes.io/instantiate",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#cronjob-kubernetes-io-instantiate",
+  "text": "Type: Annotation\nExample:\ncronjob.kubernetes.io/instantiate: \"manual\"\nUsed on: Jobs\nWhen you use\nkubectl create job\nwith the\n--from=cronjob/<cronjob-name>\nflag to manually create a Job from an existing CronJob template,\nkubectl\nsets this annotation on the newly created Job.\nThe value of this annotation is always\nmanual\n. This annotation allows you to distinguish\nJobs that were created on demand by a user from Jobs that the CronJob controller automatically creates on their scheduled time."
+}

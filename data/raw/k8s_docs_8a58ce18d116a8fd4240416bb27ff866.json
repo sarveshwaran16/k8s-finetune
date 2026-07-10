@@ -1,0 +1,7 @@
+{
+  "id": "8a58ce18d116a8fd4240416bb27ff866",
+  "source": "k8s_docs",
+  "title": "Declarative API Validation — +k8s:minimum",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-minimum",
+  "text": "Description:\nIndicates that a numeric field has a minimum value.\nStability Level:\nStable\nPayload:\n<integer>\n: This field must be greater than or equal to x.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:minimum=0\nMyInt\nint\n`json:\"myInt\"`\n}\nIn this example,\nMyInt\nmust be greater than or equal to 0.\n\nDescription:\nVerifies the field's value is not equal to a specific disallowed value. Supports string, integer, and boolean types.\nStability Level:\nAlpha\nPayload:\n<value>\n: The disallowed value. The parser will infer the type (string, int, bool).\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:neq=\"disallowed\"\nMyString\nstring\n`json:\"myString\"`\n// +k8s:neq=0\nMyInt\nint\n`json:\"myInt\"`\n// +k8s:neq=true\nMyBool\nbool\n`json:\"myBool\"`\n}\nIn this example:\nMyString\ncannot be equal to\n\"disallowed\"\n.\nMyInt\ncannot be equal to\n0\n.\nMyBool\ncannot be equal to\ntrue\n."
+}

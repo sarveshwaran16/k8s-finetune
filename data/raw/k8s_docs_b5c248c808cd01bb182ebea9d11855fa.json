@@ -1,0 +1,7 @@
+{
+  "id": "b5c248c808cd01bb182ebea9d11855fa",
+  "source": "k8s_docs",
+  "title": "Service Accounts — Use cases for Kubernetes service accounts",
+  "source_url": "https://kubernetes.io/docs/concepts/security/service-accounts/#use-cases",
+  "text": "As a general guideline, you can use service accounts to provide identities in\nthe following scenarios:\nYour Pods need to communicate with the Kubernetes API server, for example in\nsituations such as the following:\nProviding read-only access to sensitive information stored in Secrets.\nGranting\ncross-namespace access\n, such as allowing a\nPod in namespace\nexample\nto read, list, and watch for Lease objects in\nthe\nkube-node-lease\nnamespace.\nYour Pods need to communicate with an external service. For example, a\nworkload Pod requires an identity for a commercially available cloud API,\nand the commercial provider allows configuring a suitable trust relationship.\nAuthenticating to a private image registry using an\nimagePullSecret\n.\nAn external service needs to communicate with the Kubernetes API server. For\nexample, authenticating to the cluster as part of a CI/CD pipeline.\nYou use third-party security software in your cluster that relies on the\nServiceAccount identity of different Pods to group those Pods into different\ncontexts.\nProviding read-only access to sensitive information stored in Secrets.\nGranting\ncross-namespace access\n, such as allowing a\nPod in namespace\nexample\nto read, list, and watch for Lease objects in\nthe\nkube-node-lease\nnamespace."
+}

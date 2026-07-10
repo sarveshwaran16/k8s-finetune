@@ -34,7 +34,7 @@ def save_document(doc: dict, source_name: str):
 
 def run():
     sources = [
-        #("k8s_docs", k8s_docs.fetch_all()),
+        ("k8s_docs", k8s_docs.fetch_all()),
         #("prometheus_runbooks", prometheus_runbooks.fetch_all()),
         #("k8s_failures", k8s_failures.fetch_all()),
         #("opensre", opensre.fetch_all()),

@@ -1,0 +1,7 @@
+{
+  "id": "601d944c2439cbfb303049177949090e",
+  "source": "k8s_docs",
+  "title": "kubectl config set-context — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_set-context/#synopsis",
+  "text": "Set a context entry in kubeconfig.\nSpecifying a name that already exists will merge new fields on top of existing values for those fields.\nkubectl config set-context [NAME | --current] [--cluster=cluster_nickname] [--user=user_nickname] [--namespace=namespace]\n\n# Set the user field on the gce context entry without touching other values\n  kubectl config set-context gce --user=cluster-admin"
+}

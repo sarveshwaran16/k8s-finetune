@@ -1,0 +1,7 @@
+{
+  "id": "863f60f6095ebf7611a74d2179666e35",
+  "source": "k8s_docs",
+  "title": "Volumes — iscsi",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/#iscsi",
+  "text": "An\niscsi\nvolume allows an existing iSCSI (SCSI over IP) volume to be mounted\ninto your Pod. Unlike\nemptyDir\n, which is erased when a Pod is removed, the\ncontents of an\niscsi\nvolume are preserved, and the volume is merely\nunmounted. This means that an iscsi volume can be pre-populated with data, and\nthat data can be shared between Pods.\nA feature of iSCSI is that it can be mounted as read-only by multiple consumers\nsimultaneously. This means that you can pre-populate a volume with your dataset\nand then serve it in parallel from as many Pods as you need. Unfortunately,\niSCSI volumes can only be mounted by a single consumer in read-write mode.\nSimultaneous writers are not allowed."
+}

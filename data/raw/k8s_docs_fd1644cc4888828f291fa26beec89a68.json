@@ -1,0 +1,7 @@
+{
+  "id": "fd1644cc4888828f291fa26beec89a68",
+  "source": "k8s_docs",
+  "title": "PodGroup Scheduling — PodGroup conditions",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/podgroup-scheduling/#podgroup-conditions",
+  "text": "After a PodGroup scheduling cycle completes, the scheduler updates conditions on the\nPodGroup's\nstatus.conditions\n:\nPodGroupScheduled\n: reports whether the PodGroup has been successfully scheduled.\nDisruptionTarget\n: indicates the PodGroup is about to be terminated due to a\ndisruption such as preemption."
+}

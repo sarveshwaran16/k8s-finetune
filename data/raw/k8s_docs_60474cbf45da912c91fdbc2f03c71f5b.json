@@ -1,0 +1,7 @@
+{
+  "id": "60474cbf45da912c91fdbc2f03c71f5b",
+  "source": "k8s_docs",
+  "title": "Application Security Checklist — Image security",
+  "source_url": "https://kubernetes.io/docs/concepts/security/application-security-checklist/#image-security",
+  "text": "Using an image scanning tool to scan an image before deploying containers in the Kubernetes cluster.\nUse container signing to validate the container image signature before deploying to the Kubernetes cluster.\n\nConfigure\nNetworkPolicies\nto only allow expected ingress and egress traffic from the pods.\nMake sure that your cluster provides and enforces NetworkPolicy.\nIf you are writing an application that users will deploy to different clusters,\nconsider whether you can assume that NetworkPolicy is available and enforced."
+}

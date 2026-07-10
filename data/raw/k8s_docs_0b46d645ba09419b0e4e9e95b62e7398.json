@@ -1,0 +1,7 @@
+{
+  "id": "0b46d645ba09419b0e4e9e95b62e7398",
+  "source": "k8s_docs",
+  "title": "Install and Set Up kubectl on Linux — Troubleshooting the 'No Auth Provider Found' error message",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#no-auth-provider-found",
+  "text": "In Kubernetes 1.26, kubectl removed the built-in authentication for the following cloud\nproviders' managed Kubernetes offerings. These providers have released kubectl plugins\nto provide the cloud-specific authentication. For instructions, refer to the following provider documentation:\nAzure AKS:\nkubelogin plugin\nGoogle Kubernetes Engine:\ngke-gcloud-auth-plugin\nThere could also be other causes for the same error message that are unrelated\nto that change."
+}

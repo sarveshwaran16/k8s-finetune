@@ -1,0 +1,7 @@
+{
+  "id": "2608088d1e53f1d5da4bdfb74105f42b",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/ingress-bandwidth",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-ingress-bandwidth",
+  "text": "Type: Annotation\nExample:\nkubernetes.io/ingress-bandwidth: 10M\nUsed on: Pod\nYou can apply quality-of-service traffic shaping to a pod and effectively limit its available\nbandwidth. Ingress traffic to a Pod is handled by shaping queued packets to effectively\nhandle data. To limit the bandwidth on a Pod, write an object definition JSON file and specify\nthe data traffic speed using\nkubernetes.io/ingress-bandwidth\nannotation. The unit used for\nspecifying ingress rate is bits per second, as a\nQuantity\n.\nFor example,\n10M\nmeans 10 megabits per second."
+}

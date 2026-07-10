@@ -1,0 +1,7 @@
+{
+  "id": "6795313964e82668c42a965790d47961",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Performance and latency",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#performance-latency",
+  "text": "This section describes recommendations for improving performance and reducing\nlatency. In summary, these are as follows:\nConsolidate webhooks and limit the number of API calls per webhook.\nUse audit logs to check for webhooks that repeatedly do the same action.\nUse load balancing for webhook availability.\nSet a small timeout value for each webhook.\nConsider cluster availability needs during webhook design."
+}

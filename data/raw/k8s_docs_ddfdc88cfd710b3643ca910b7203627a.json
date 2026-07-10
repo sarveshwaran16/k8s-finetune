@@ -1,0 +1,7 @@
+{
+  "id": "ddfdc88cfd710b3643ca910b7203627a",
+  "source": "k8s_docs",
+  "title": "Encrypting Confidential Data at Rest — Decrypt all data",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#decrypting-all-data",
+  "text": "This example shows how to stop encrypting the Secret API at rest. If you are encrypting\nother API kinds, adjust the steps to match.\nTo disable encryption at rest, place the\nidentity\nprovider as the first\nentry in your encryption configuration file:\n---\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nEncryptionConfiguration\nresources\n:\n-\nresources\n:\n-\nsecrets\n# list any other resources here that you previously were\n# encrypting at rest\nproviders\n:\n-\nidentity\n:\n{}\n# add this line\n-\naescbc\n:\nkeys\n:\n-\nname\n:\nkey1\nsecret\n:\n<BASE 64 ENCODED SECRET>\n# keep this in place\n# make sure it comes after \"identity\"\nThen run the following command to force decryption of all Secrets:\nkubectl get secrets --all-namespaces -o json\n|\nkubectl replace -f -\nOnce you have replaced all existing encrypted resources with backing data that\ndon't use encryption, you can remove the encryption settings from the\nkube-apiserver\n."
+}

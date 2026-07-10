@@ -1,0 +1,7 @@
+{
+  "id": "851260be8e350cef8ea95f1fefd8ceb8",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — nfd.node.kubernetes.io/node-name",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#nfd-node-kubernetes-io-node-name",
+  "text": "Type: Label\nExample:\nnfd.node.kubernetes.io/node-name: node-1\nUsed on: Nodes\nIt specifies which node the NodeFeature object is targeting.\nCreators of NodeFeature objects must set this label and\nconsumers of the objects are supposed to use the label for\nfiltering features designated for a certain node."
+}

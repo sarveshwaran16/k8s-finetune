@@ -1,0 +1,7 @@
+{
+  "id": "c40fdb2b83b6cc6bfd1fa64d12428297",
+  "source": "k8s_docs",
+  "title": "Job — JobList",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/#JobList",
+  "text": "JobList is a collection of jobs.\nField\nDescription\napiVersion\nstring\nAPIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources\nitems\n*\nJob array\nitems is the list of Jobs.\nkind\nstring\nKind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nmetadata\nListMeta\nStandard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata"
+}

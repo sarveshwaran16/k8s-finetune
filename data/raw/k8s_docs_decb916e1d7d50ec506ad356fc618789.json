@@ -1,0 +1,7 @@
+{
+  "id": "decb916e1d7d50ec506ad356fc618789",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — exec",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#exec",
+  "text": "Get output from running the 'date' command from pod mypod, using the first container by default\nkubectl\nexec\nmypod --\ndate\nGet output from running the 'date' command in ruby-container from pod mypod\nkubectl\nexec\nmypod -c ruby-\ncontainer\n--\ndate\nSwitch to raw terminal mode; sends stdin to 'bash' in ruby-container from pod mypod # and sends stdout/stderr from 'bash' back to the client\nkubectl\nexec\nmypod -c ruby-\ncontainer\n-i -t -- bash -il\nList contents of /usr from the first container of pod mypod and sort by modification time # If the command you want to execute in the pod has any flags in common (e.g. -i), # you must use two dashes (--) to separate your command's flags/arguments # Also note, do not surround your command and its flags/arguments with quotes # unless that is how you would execute it normally (i.e., do ls -t /usr, not \"ls -t /usr\")\nkubectl exec mypod -i -\nt\n-- ls -\nt\n/usr\nGet output from running 'date' command from the first pod of the deployment mydeployment, using the first container by default\nkubectl\nexec\ndeploy/mydeployment --\ndate\nGet output from running 'date' command from the first pod of the service myservice, using the first container by default\nkubectl\nexec\nsvc/myservice --\ndate\nExecute a command in a container."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "a164db9a70f7f73fea9a151c5862bc61",
+  "source": "k8s_docs",
+  "title": "Monitor Node Health — Recommendations and restrictions",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/monitor-node-health/#recommendations-and-restrictions",
+  "text": "It is recommended to run the Node Problem Detector in your cluster to monitor node health.\nWhen running the Node Problem Detector, you can expect extra resource overhead on each node.\nUsually this is fine, because:\nThe kernel log grows relatively slowly.\nA resource limit is set for the Node Problem Detector.\nEven under high load, the resource usage is acceptable. For more information, see the Node Problem Detector\nbenchmark result\n."
+}

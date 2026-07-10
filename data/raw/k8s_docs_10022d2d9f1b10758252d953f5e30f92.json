@@ -1,0 +1,7 @@
+{
+  "id": "10022d2d9f1b10758252d953f5e30f92",
+  "source": "k8s_docs",
+  "title": "Ephemeral Containers — Uses for ephemeral containers",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/#uses-for-ephemeral-containers",
+  "text": "Ephemeral containers are useful for interactive troubleshooting when\nkubectl exec\nis insufficient because a container has crashed or a container image\ndoesn't include debugging utilities.\nIn particular,\ndistroless images\nenable you to deploy minimal container images that reduce attack surface\nand exposure to bugs and vulnerabilities. Since distroless images do not include a\nshell or any debugging utilities, it's difficult to troubleshoot distroless\nimages using\nkubectl exec\nalone.\nWhen using ephemeral containers, it's helpful to enable\nprocess namespace\nsharing\nso\nyou can view processes in other containers."
+}

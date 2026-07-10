@@ -1,0 +1,7 @@
+{
+  "id": "ba0d275fa04860a02e97f5fb6719e77f",
+  "source": "k8s_docs",
+  "title": "Liveness, Readiness, and Startup Probes — When should you use a liveness probe?",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#when-should-you-use-a-liveness-probe",
+  "text": "If the process in your container is able to crash on its own whenever it\nencounters an issue or becomes unhealthy, you do not necessarily need a liveness\nprobe; the kubelet will automatically perform the correct action in accordance\nwith the Pod's\nrestartPolicy\n.\nIf you'd like your container to be killed and restarted if a probe fails, then\nspecify a liveness probe, and specify a\nrestartPolicy\nof\nAlways\nor\nOnFailure\n.\nA common pattern for liveness probes is to use the same low-cost HTTP endpoint\nas for readiness probes, but with a higher\nfailureThreshold\n. This ensures\nthat the pod is observed as not-ready for some period of time before it is hard\nkilled."
+}

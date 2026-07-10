@@ -1,0 +1,7 @@
+{
+  "id": "18af1d1edff42724632dca399ed6ed7c",
+  "source": "k8s_docs",
+  "title": "Swap memory management — Node and container level metric statistics",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/swap-memory-management/#node-and-container-level-metric-statistics",
+  "text": "Kubelet now collects node and container level metric statistics,\nwhich can be accessed at the\n/metrics/resource\n(which is used mainly by monitoring\ntools like Prometheus) and\n/stats/summary\n(which is used mainly by Autoscalers) kubelet HTTP endpoints.\nThis allows clients who can directly request the kubelet to\nmonitor swap usage and remaining swap memory when using\nLimitedSwap\n.\nAdditionally, a\nmachine_swap_bytes\nmetric has been added to cadvisor to show\nthe total physical swap capacity of the machine.\nSee\nthis page\nfor more info.\nFor example, these\n/metrics/resource\nare supported:\nnode_swap_usage_bytes\n: Current swap usage of the node in bytes.\ncontainer_swap_usage_bytes\n: Current amount of the container swap usage in bytes.\ncontainer_swap_limit_bytes\n: Current amount of the container swap limit in bytes."
+}

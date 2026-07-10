@@ -1,0 +1,7 @@
+{
+  "id": "8c7d28f25bf33e1a3388eef7e2bf0259",
+  "source": "k8s_docs",
+  "title": "Pod — headHead Connect Proxy",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#head-head-connect-proxy",
+  "text": "HEAD /api/v1/namespaces/{namespace}/pods/{name}/proxy\nName\nType\nDescription\nname\nstring\nname of the PodProxyOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to pod.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

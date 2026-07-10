@@ -1,0 +1,7 @@
+{
+  "id": "6df60db778bdd5d8cbf9ab9bdcda5cb1",
+  "source": "k8s_docs",
+  "title": "Resource Bin Packing — Tuning the score function",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/resource-bin-packing/#tuning-the-score-function",
+  "text": "shape\nis used to specify the behavior of the\nRequestedToCapacityRatio\nfunction.\nshape\n:\n-\nutilization\n:\n0\nscore\n:\n0\n-\nutilization\n:\n100\nscore\n:\n10\nThe above arguments give the node a\nscore\nof 0 if\nutilization\nis 0% and 10 for\nutilization\n100%, thus enabling bin packing behavior. To enable least\nrequested the score value must be reversed as follows.\nshape\n:\n-\nutilization\n:\n0\nscore\n:\n10\n-\nutilization\n:\n100\nscore\n:\n0\nresources\nis an optional parameter which defaults to:\nresources\n:\n-\nname\n:\ncpu\nweight\n:\n1\n-\nname\n:\nmemory\nweight\n:\n1\nIt can be used to add extended resources as follows:\nresources\n:\n-\nname\n:\nintel.com/foo\nweight\n:\n5\n-\nname\n:\ncpu\nweight\n:\n3\n-\nname\n:\nmemory\nweight\n:\n1\nThe\nweight\nparameter is optional and is set to 1 if not specified. Also, the\nweight\ncannot be set to a negative value."
+}

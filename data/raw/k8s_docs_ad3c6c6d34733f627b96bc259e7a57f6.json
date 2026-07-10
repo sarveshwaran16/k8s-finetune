@@ -1,0 +1,7 @@
+{
+  "id": "ad3c6c6d34733f627b96bc259e7a57f6",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — YAML resource encoding",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#yaml-encoding",
+  "text": "Kubernetes also supports the\napplication/yaml\nmedia type for both requests and responses.\nYAML\ncan be used for defining Kubernetes manifests and API interactions.\nFor example:\nList all of the pods on a cluster in YAML format\nGET /api/v1/pods\nAccept: application/yaml\n200 OK\nContent-Type: application/yaml\n\n… YAML encoded collection of Pods (PodList object)\nCreate a pod by sending YAML-encoded data to the server, requesting a YAML response:\nPOST /api/v1/namespaces/test/pods\nContent-Type: application/yaml\nAccept: application/yaml\n… YAML encoded Pod object\n200 OK\nContent-Type: application/yaml\n\napiVersion: v1\nkind: Pod\nmetadata:\n  name: my-pod\n  …\nList all of the pods on a cluster in YAML format\nGET /api/v1/pods\nAccept: application/yaml\n200 OK\nContent-Type: application/yaml\n\n… YAML encoded collection of Pods (PodList object)\nCreate a pod by sending YAML-encoded data to the server, requesting a YAML response:\nPOST /api/v1/namespaces/test/pods\nContent-Type: application/yaml\nAccept: application/yaml\n… YAML encoded Pod object\n200 OK\nContent-Type: application/yaml\n\napiVersion: v1\nkind: Pod\nmetadata:\n  name: my-pod\n  …\nYou can also request\ntable\nand\nmetadata-only\nrepresentations of this encoding."
+}

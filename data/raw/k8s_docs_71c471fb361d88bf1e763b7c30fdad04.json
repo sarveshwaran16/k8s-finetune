@@ -1,0 +1,7 @@
+{
+  "id": "71c471fb361d88bf1e763b7c30fdad04",
+  "source": "k8s_docs",
+  "title": "Container Runtimes — CRI-O",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/#cri-o",
+  "text": "This section contains the necessary steps to install CRI-O as a container runtime.\nTo install CRI-O, follow\nCRI-O Install Instructions\n.\nCRI-O uses the systemd cgroup driver per default, which is likely to work fine\nfor you. To switch to the\ncgroupfs\ncgroup driver, either edit\n/etc/crio/crio.conf\nor place a drop-in configuration in\n/etc/crio/crio.conf.d/02-cgroup-manager.conf\n, for example:\n[\ncrio\n.\nruntime\n]\nconmon_cgroup\n=\n\"pod\"\ncgroup_manager\n=\n\"cgroupfs\"\nYou should also note the changed\nconmon_cgroup\n, which has to be set to the value\npod\nwhen using CRI-O with\ncgroupfs\n. It is generally necessary to keep the\ncgroup driver configuration of the kubelet (usually done via kubeadm) and CRI-O\nin sync.\nIn Kubernetes v1.28, you can enable automatic detection of the\ncgroup driver as an alpha feature. See\nsystemd cgroup driver\nfor more details.\nFor CRI-O, the CRI socket is\n/var/run/crio/crio.sock\nby default.\nIn your\nCRI-O config\nyou can set the following\nconfig value:\n[\ncrio\n.\nimage\n]\npause_image\n=\n\"registry.k8s.io/pause:3.10\"\nThis config option supports live configuration reload to apply this change:\nsystemctl reload crio\nor by sending\nSIGHUP\nto the\ncrio\nprocess."
+}

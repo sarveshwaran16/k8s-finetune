@@ -1,7 +1,0 @@
-{
-  "id": "8fc887f48be3943f754f239849d7f937",
-  "source": "k8s_docs",
-  "title": "",
-  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_join/kubeadm_join_phase_control-plane-join_mark-control-plane/",
-  "text": "Synopsis\nMark a node as a control-plane\nkubeadm join phase control-plane-join mark-control-plane [flags]\nOptions\n--config string\nPath to a kubeadm configuration file.\n--control-plane\nCreate a new control plane instance on this node\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for mark-control-plane\n--node-name string\nSpecify the node name.\nOptions inherited from parent commands\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified September 04, 2025 at 3:32 PM PST:\nUpdate kubeadm reference for v1.34 (02f1b512e4)"
-}

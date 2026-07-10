@@ -1,0 +1,7 @@
+{
+  "id": "5b67e83f4096d567a43d45ec55fe056a",
+  "source": "k8s_docs",
+  "title": "Pod Priority and Preemption — Notes about PodPriority and existing clusters",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#notes-about-podpriority-and-existing-clusters",
+  "text": "If you upgrade an existing cluster without this feature, the priority\nof your existing Pods is effectively zero.\nAddition of a PriorityClass with\nglobalDefault\nset to\ntrue\ndoes not\nchange the priorities of existing Pods. The value of such a PriorityClass is\nused only for Pods created after the PriorityClass is added.\nIf you delete a PriorityClass, existing Pods that use the name of the\ndeleted PriorityClass remain unchanged, but you cannot create more Pods that\nuse the name of the deleted PriorityClass.\nIf you upgrade an existing cluster without this feature, the priority\nof your existing Pods is effectively zero.\nAddition of a PriorityClass with\nglobalDefault\nset to\ntrue\ndoes not\nchange the priorities of existing Pods. The value of such a PriorityClass is\nused only for Pods created after the PriorityClass is added.\nIf you delete a PriorityClass, existing Pods that use the name of the\ndeleted PriorityClass remain unchanged, but you cannot create more Pods that\nuse the name of the deleted PriorityClass."
+}

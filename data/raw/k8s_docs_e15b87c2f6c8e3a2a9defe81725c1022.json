@@ -1,0 +1,7 @@
+{
+  "id": "e15b87c2f6c8e3a2a9defe81725c1022",
+  "source": "k8s_docs",
+  "title": "Storage Versions — How storage versions are relevant to encryption at rest",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/storage-version/#how-storage-versions-are-relevant-to-encryption-at-rest",
+  "text": "There are tools to\nencrypt the at rest\nstorage\nof a cluster, especially\nfor cluster secrets. This adds an additional layer of protection for data\nexfiltration since the actual stored data in the cluster is encrypted. This\nmeans that the API Server is actually decrypting the data as it retrieves them\nfrom storage. The APIServer must have the key for that\nstorage version in order to decode the object properly.\nThe storage version in this case is more than just the binary encoding of the\nobject. As long as what is stored can be somehow converted into the API object,\nit can be used as a storage version."
+}

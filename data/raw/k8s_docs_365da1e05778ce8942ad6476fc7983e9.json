@@ -1,0 +1,7 @@
+{
+  "id": "365da1e05778ce8942ad6476fc7983e9",
+  "source": "k8s_docs",
+  "title": "Delete a StatefulSet — Complete deletion of a StatefulSet",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/delete-stateful-set/#complete-deletion-of-a-statefulset",
+  "text": "To delete everything in a StatefulSet, including the associated pods,\nyou can run a series of commands similar to the following:\ngrace\n=\n$(\nkubectl get pods <stateful-set-pod> --template\n'{{.spec.terminationGracePeriodSeconds}}'\n)\nkubectl delete statefulset -l app.kubernetes.io/name\n=\nMyApp\nsleep\n$grace\nkubectl delete pvc -l app.kubernetes.io/name\n=\nMyApp\nIn the example above, the Pods have the label\napp.kubernetes.io/name=MyApp\n;\nsubstitute your own label as appropriate."
+}

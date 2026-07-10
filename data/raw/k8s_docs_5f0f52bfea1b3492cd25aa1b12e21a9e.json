@@ -1,0 +1,7 @@
+{
+  "id": "5f0f52bfea1b3492cd25aa1b12e21a9e",
+  "source": "k8s_docs",
+  "title": "Creating a cluster with kubeadm — (Optional) Proxying API Server to localhost",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#optional-proxying-api-server-to-localhost",
+  "text": "If you want to connect to the API Server from outside the cluster, you can use\nkubectl proxy\n:\nscp root@<control-plane-host>:/etc/kubernetes/admin.conf .\nkubectl --kubeconfig ./admin.conf proxy\nYou can now access the API Server locally at\nhttp://localhost:8001/api/v1\n\nIf you used disposable servers for your cluster, for testing, you can\nswitch those off and do no further clean up. You can use\nkubectl config delete-cluster\nto delete your local references to the\ncluster.\nHowever, if you want to deprovision your cluster more cleanly, you should\nfirst\ndrain the node\nand make sure that the node is empty, then deconfigure the node."
+}

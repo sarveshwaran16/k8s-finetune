@@ -1,0 +1,7 @@
+{
+  "id": "9ffd7a1f151ba35d5f18bc31275bdb61",
+  "source": "k8s_docs",
+  "title": "Volume Snapshots — Persistent Volume Claim as Snapshot Source Protection",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/#persistent-volume-claim-as-snapshot-source-protection",
+  "text": "The purpose of this protection is to ensure that in-use\nPersistentVolumeClaim\nAPI objects are not removed from the system while a snapshot is being taken from it\n(as this may result in data loss).\nWhile a snapshot is being taken of a PersistentVolumeClaim, that PersistentVolumeClaim\nis in-use. If you delete a PersistentVolumeClaim API object in active use as a snapshot\nsource, the PersistentVolumeClaim object is not removed immediately. Instead, removal of\nthe PersistentVolumeClaim object is postponed until the snapshot is readyToUse or aborted."
+}

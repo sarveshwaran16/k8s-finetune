@@ -1,0 +1,7 @@
+{
+  "id": "805b71a45440d2ec4368aac69f78139e",
+  "source": "k8s_docs",
+  "title": "Advanced Pod Configuration — Tolerations",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#tolerations",
+  "text": "Tolerations\nallow Pods to be scheduled on nodes with matching taints:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmypod\nspec\n:\ncontainers\n:\n-\nname\n:\nmyapp\nimage\n:\nnginx\ntolerations\n:\n-\nkey\n:\n\"key\"\noperator\n:\n\"Equal\"\nvalue\n:\n\"value\"\neffect\n:\n\"NoSchedule\"\nFor more information, see\nAssign Pods to Nodes\n."
+}

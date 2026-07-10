@@ -1,0 +1,7 @@
+{
+  "id": "b3334eb355dfffff80a5235733221d1b",
+  "source": "k8s_docs",
+  "title": "Manifest-Based Admission Control — Troubleshooting",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/#troubleshooting",
+  "text": "Common issues and their resolution\nSymptom\nPossible cause\nResolution\nAPI server fails to start\nInvalid manifest file at startup\nCheck API server logs for validation errors. Fix the manifest file and restart.\nAPI server fails to start\nDuplicate object names across manifest files\nEnsure all object names within a plugin's\nstaticManifestsDir\nare unique.\nPolicies not enforced after file update\nReload validation failure\nCheck\nautomatic_reloads_total{status=\"failure\"}\nmetric and API server logs. Fix the manifest and wait for the next reload cycle.\nWebhook requests failing\nWebhook URL not reachable\nVerify that the URL specified in\nclientConfig.url\nis accessible from the kube-apiserver.\nCannot create API objects with\n.static.k8s.io\nsuffix\nName suffix reserved by feature gate\nThe\n.static.k8s.io\nsuffix is reserved for manifest-based configurations when the feature gate is enabled. Use a different name for API-based objects."
+}

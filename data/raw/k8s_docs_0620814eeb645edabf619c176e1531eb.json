@@ -1,0 +1,7 @@
+{
+  "id": "0620814eeb645edabf619c176e1531eb",
+  "source": "k8s_docs",
+  "title": "Monitor Node Health — Limitations",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/monitor-node-health/#limitations",
+  "text": "Node Problem Detector uses the kernel log format for reporting kernel issues.\nTo learn how to extend the kernel log format, see\nAdd support for another log format\n.\n\nSome cloud providers enable Node Problem Detector as an\nAddon\n.\nYou can also enable Node Problem Detector with\nkubectl\nor by creating an Addon DaemonSet."
+}

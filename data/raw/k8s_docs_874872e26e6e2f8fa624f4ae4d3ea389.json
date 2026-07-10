@@ -1,0 +1,7 @@
+{
+  "id": "874872e26e6e2f8fa624f4ae4d3ea389",
+  "source": "k8s_docs",
+  "title": "Scheduler Configuration — Profiles",
+  "source_url": "https://kubernetes.io/docs/reference/scheduling/config/#profiles",
+  "text": "A scheduling Profile allows you to configure the different stages of scheduling\nin the\nkube-scheduler\n.\nEach stage is exposed in an\nextension point\n.\nPlugins\nprovide scheduling behaviors by implementing one\nor more of these extension points.\nYou can configure a single instance of\nkube-scheduler\nto run\nmultiple profiles\n."
+}

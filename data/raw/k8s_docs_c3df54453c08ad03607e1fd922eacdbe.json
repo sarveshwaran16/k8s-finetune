@@ -1,7 +1,0 @@
-{
-  "id": "c3df54453c08ad03607e1fd922eacdbe",
-  "source": "k8s_docs",
-  "title": "Run Jobs",
-  "source_url": "https://kubernetes.io/docs/tasks/job/",
-  "text": "Run Jobs\nRun Jobs using parallel processing.\nRunning Automated Tasks with a CronJob\nCoarse Parallel Processing Using a Work Queue\nFine Parallel Processing Using a Work Queue\nIndexed Job for Parallel Processing with Static Work Assignment\nJob with Pod-to-Pod Communication\nParallel Processing using Expansions\nHandling retriable and non-retriable pod failures with Pod failure policy\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified January 17, 2023 at 9:14 AM PST:\nInclude index files (c4b70832dd)"
-}

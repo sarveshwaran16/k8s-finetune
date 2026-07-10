@@ -1,0 +1,7 @@
+{
+  "id": "eead3d1da5e9fede9788fa781b2a2204",
+  "source": "k8s_docs",
+  "title": "ConfigMaps — Using ConfigMaps",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/configmap/#using-configmaps",
+  "text": "ConfigMaps can be mounted as data volumes. ConfigMaps can also be used by other\nparts of the system, without being directly exposed to the Pod. For example,\nConfigMaps can hold data that other parts of the system should use for configuration.\nThe most common way to use ConfigMaps is to configure settings for\ncontainers running in a Pod in the same namespace. You can also use a\nConfigMap separately.\nFor example, you\nmight encounter\naddons\nor\noperators\nthat\nadjust their behavior based on a ConfigMap."
+}

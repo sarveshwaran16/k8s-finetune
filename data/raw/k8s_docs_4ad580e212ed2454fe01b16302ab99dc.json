@@ -1,0 +1,7 @@
+{
+  "id": "4ad580e212ed2454fe01b16302ab99dc",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — KubeletAuthorizationMode",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-KubeletAuthorizationMode",
+  "text": "(Alias of\nstring\n)\nAppears in:\nKubeletAuthorization\n\nAppears in:\nKubeletAuthentication\nField\nDescription\nenabled\nbool\nenabled allows bearer token authentication backed by the\ntokenreviews.authentication.k8s.io API.\ncacheTTL\nmeta/v1.Duration\ncacheTTL enables caching of authentication results\nenabled allows bearer token authentication backed by the\ntokenreviews.authentication.k8s.io API.\ncacheTTL enables caching of authentication results"
+}

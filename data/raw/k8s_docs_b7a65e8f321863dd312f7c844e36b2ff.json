@@ -1,0 +1,7 @@
+{
+  "id": "b7a65e8f321863dd312f7c844e36b2ff",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — StorageObjectInUseProtection",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#storageobjectinuseprotection",
+  "text": "Type\n: Mutating.\nThe\nStorageObjectInUseProtection\nplugin adds the\nkubernetes.io/pvc-protection\nor\nkubernetes.io/pv-protection\nfinalizers to newly created Persistent Volume Claims (PVCs) or Persistent Volumes (PV).\nIn case a user deletes a PVC or PV the PVC or PV is not removed until the finalizer is removed\nfrom the PVC or PV by PVC or PV Protection Controller.\nRefer to the\nStorage Object in Use Protection\nfor more detailed information."
+}

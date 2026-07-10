@@ -1,0 +1,7 @@
+{
+  "id": "c5801136e590ae4f1645e5cca5f1d5ae",
+  "source": "k8s_docs",
+  "title": "Kubernetes Object Management — Imperative commands",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#imperative-commands",
+  "text": "When using imperative commands, a user operates directly on live objects\nin a cluster. The user provides operations to\nthe\nkubectl\ncommand as arguments or flags.\nThis is the recommended way to get started or to run a one-off task in\na cluster. Because this technique operates directly on live\nobjects, it provides no history of previous configurations."
+}

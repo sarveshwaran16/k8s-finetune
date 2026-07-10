@@ -1,0 +1,7 @@
+{
+  "id": "3de6fea681e109c918bc31675a5ce33a",
+  "source": "k8s_docs",
+  "title": "Manifest-Based Admission Control — Writing manifest files",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/#manifest-files",
+  "text": "Manifest files contain standard Kubernetes resource definitions. You can include\nmultiple resources in a single file using YAML document separators (\n---\n).\n\nAll objects in manifest files must have names ending with the\n.static.k8s.io\nsuffix. For example:\ndeny-privileged.static.k8s.io\n.\nWhen the\nManifestBasedAdmissionControlConfig\nfeature gate is enabled, creation\nof API-based admission objects with names ending in\n.static.k8s.io\nis blocked.\nWhen the feature gate is disabled, a warning is returned instead."
+}

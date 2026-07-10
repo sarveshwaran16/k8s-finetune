@@ -1,0 +1,7 @@
+{
+  "id": "9bba2b9ee53a222ff9ef0378828a59c8",
+  "source": "k8s_docs",
+  "title": "Guide for Running Windows Containers in Kubernetes — Using configurable Container usernames",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/user-guide/#using-configurable-container-usernames",
+  "text": "Windows containers can be configured to run their entrypoints and processes\nwith different usernames than the image defaults.\nLearn more about it\nhere\n.\n\nWindows container workloads can be configured to use Group Managed Service Accounts (GMSA).\nGroup Managed Service Accounts are a specific type of Active Directory account that provide automatic password management,\nsimplified service principal name (SPN) management, and the ability to delegate the management to other administrators across multiple servers.\nContainers configured with a GMSA can access external Active Directory Domain resources while carrying the identity configured with the GMSA.\nLearn more about configuring and using GMSA for Windows containers\nhere\n."
+}

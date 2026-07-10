@@ -1,0 +1,7 @@
+{
+  "id": "0aa46ed0226eecbed83b78a15465b4a8",
+  "source": "k8s_docs",
+  "title": "List All Container Images Running in a Cluster — Reference",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/#reference",
+  "text": "Jsonpath\nreference guide\nGo template\nreference guide\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

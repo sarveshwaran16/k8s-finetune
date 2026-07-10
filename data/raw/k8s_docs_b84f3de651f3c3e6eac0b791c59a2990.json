@@ -1,0 +1,7 @@
+{
+  "id": "b84f3de651f3c3e6eac0b791c59a2990",
+  "source": "k8s_docs",
+  "title": "Pod — ContainerExtendedResourceRequest",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ContainerExtendedResourceRequest",
+  "text": "ContainerExtendedResourceRequest has the mapping of container name, extended resource name to the device request name.\nField\nDescription\ncontainerName\n*\nstring\nThe name of the container requesting resources.\nrequestName\n*\nstring\nThe name of the request in the special ResourceClaim which corresponds to the extended resource.\nresourceName\n*\nstring\nThe name of the extended resource in that container which gets backed by DRA."
+}

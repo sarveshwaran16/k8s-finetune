@@ -1,0 +1,7 @@
+{
+  "id": "092e9ff3e353886f4f5acb1c3215ee8b",
+  "source": "k8s_docs",
+  "title": "Volume Populators and Data Sources — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-populators-and-data-sources/#what-s-next",
+  "text": "Learn about\nPersistent Volumes\n.\nLearn about\nCSI Volume Cloning\n.\nLearn about\nVolume Snapshots\n.\nRead about the\nfeature gates\nmentioned on this page.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "c0775e9190d06c3809e62e9139f03d9c",
+  "source": "k8s_docs",
+  "title": "Accessing Clusters — Python client",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/access-cluster/#python-client",
+  "text": "To use\nPython client\n, run the following command:\npip install kubernetes\n. See\nPython Client Library page\nfor more installation options.\nThe Python client can use the same\nkubeconfig file\nas the kubectl CLI does to locate and authenticate to the apiserver. See this\nexample\n.\n\nThere are\nclient libraries\nfor accessing the API from other languages.\nSee documentation for other libraries for how they authenticate."
+}

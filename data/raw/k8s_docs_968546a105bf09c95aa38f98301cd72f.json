@@ -1,0 +1,7 @@
+{
+  "id": "968546a105bf09c95aa38f98301cd72f",
+  "source": "k8s_docs",
+  "title": "kubectl top pod — See Also",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_top/kubectl_top_pod/#see-also",
+  "text": "kubectl top\n- Display resource (CPU/memory) usage\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+}

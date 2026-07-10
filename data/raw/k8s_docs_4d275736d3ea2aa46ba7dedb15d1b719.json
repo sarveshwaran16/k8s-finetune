@@ -1,0 +1,7 @@
+{
+  "id": "4d275736d3ea2aa46ba7dedb15d1b719",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — seccomp.security.alpha.kubernetes.io/pod (non-functional)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#seccomp-security-alpha-kubernetes-io-pod",
+  "text": "Type: Annotation\nUsed on: Pod\nKubernetes before v1.25 allowed you to configure seccomp behavior using this annotation.\nSee\nRestrict a Container's Syscalls with seccomp\nto\nlearn the supported way to specify seccomp restrictions for a Pod.\n\nType: Annotation\nUsed on: Pod\nKubernetes before v1.25 allowed you to configure seccomp behavior using this annotation.\nSee\nRestrict a Container's Syscalls with seccomp\nto\nlearn the supported way to specify seccomp restrictions for a Pod."
+}

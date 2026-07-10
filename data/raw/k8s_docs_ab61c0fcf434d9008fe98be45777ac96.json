@@ -3,5 +3,5 @@
   "source": "k8s_docs",
   "title": "Create a Cluster",
   "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/",
-  "text": "Create a Cluster\nLearn about Kubernetes\ncluster\nand create a simple cluster using Minikube.\nUsing Minikube to Create a Cluster\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified July 12, 2021 at 9:01 AM PST:\nImprovement to create cluster page (3766686671)"
+  "text": "Learn about Kubernetes\ncluster\nand create a simple cluster using Minikube.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
 }

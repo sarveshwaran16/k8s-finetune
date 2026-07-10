@@ -1,0 +1,7 @@
+{
+  "id": "eda3f26c13fd34bc4aacb23c02c04753",
+  "source": "k8s_docs",
+  "title": "Configure Multiple Schedulers — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

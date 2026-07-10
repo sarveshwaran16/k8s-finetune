@@ -1,0 +1,7 @@
+{
+  "id": "e3184406cbaf94472137c210b5195aa7",
+  "source": "k8s_docs",
+  "title": "SelfSubjectAccessReview — SelfSubjectAccessReviewSpec",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/self-subject-access-review-v1-authorization/#SelfSubjectAccessReviewSpec",
+  "text": "SelfSubjectAccessReviewSpec is a description of the access request. Exactly one of resourceAttributes and nonResourceAttributes must be set\nField\nDescription\nnonResourceAttributes\nNonResourceAttributes\nnonResourceAttributes describes information for a non-resource access request\nresourceAttributes\nResourceAttributes\nresourceAttributes describes information for a resource access request"
+}

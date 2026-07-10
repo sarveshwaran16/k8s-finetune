@@ -1,0 +1,7 @@
+{
+  "id": "3538ce16b0ecc299be77d9edd10caef5",
+  "source": "k8s_docs",
+  "title": "Access Clusters Using the Kubernetes API — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-api/#what-s-next",
+  "text": "Accessing the Kubernetes API from a Pod\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "3f0fc3d653de23e5c37db16b2a23ef17",
+  "source": "k8s_docs",
+  "title": "Guide for Running Windows Containers in Kubernetes — Handling multiple Windows versions in the same cluster",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/user-guide/#handling-multiple-windows-versions-in-the-same-cluster",
+  "text": "The Windows Server version used by each pod must match that of the node. If you want to use multiple Windows\nServer versions in the same cluster, then you should set additional node labels and\nnodeSelector\nfields.\nKubernetes automatically adds a label,\nnode.kubernetes.io/windows-build\nto simplify this.\nThis label reflects the Windows major, minor, and build number that need to match for compatibility.\nHere are values used for each Windows Server version:\nProduct Name\nVersion\nWindows Server 2022\n10.0.20348\nWindows Server 2025\n10.0.26100"
+}

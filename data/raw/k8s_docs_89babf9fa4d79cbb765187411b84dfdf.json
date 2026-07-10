@@ -1,0 +1,7 @@
+{
+  "id": "89babf9fa4d79cbb765187411b84dfdf",
+  "source": "k8s_docs",
+  "title": "Logging Architecture — Container log streams",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/logging/#container-log-streams",
+  "text": "As an alpha feature, the kubelet can split out the logs from the two standard streams produced\nby a container:\nstandard output\nand\nstandard error\n.\nTo use this behavior, you must enable the\nPodLogsQuerySplitStreams\nfeature gate\n.\nWith that feature gate enabled, Kubernetes 1.36 allows access to these\nlog streams directly via the Pod API. You can fetch a specific stream by specifying the stream name (either\nStdout\nor\nStderr\n),\nusing the\nstream\nquery string. You must have access to read the\nlog\nsubresource of that Pod.\nTo demonstrate this feature, you can create a Pod that periodically writes text to both the standard output and error stream.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\ncounter-err\nspec\n:\ncontainers\n:\n-\nname\n:\ncount\nimage\n:\nbusybox:1.28\nargs\n:\n[\n/bin/sh, -c,\n'i=0; while true; do echo \"$i: $(date)\"; echo \"$i: err\" >&2 ; i=$((i+1)); sleep 1; done'\n]\nTo run this pod, use the following command:\nkubectl apply -f https://k8s.io/examples/debug/counter-pod-err.yaml\nTo fetch only the stderr log stream, you can run:\nkubectl get --raw\n\"/api/v1/namespaces/default/pods/counter-err/log?stream=Stderr\"\nSee the\nkubectl logs\ndocumentation\nfor more details."
+}

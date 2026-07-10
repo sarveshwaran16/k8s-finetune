@@ -1,0 +1,7 @@
+{
+  "id": "a869c61d3a2586eb3933725f074e2d4b",
+  "source": "k8s_docs",
+  "title": "GETTING STARTED — describe",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#describe",
+  "text": "Describe a node\nkubectl describe nodes kubernetes-\nnode\n-emt8\n.c.myproject.internal\nDescribe a pod\nkubectl\ndescribe\npods/nginx\nDescribe a pod identified by type and name in \"pod.json\"\nkubectl\ndescribe\n-f\npod\n.json\nDescribe all pods\nkubectl describe pods\nDescribe pods by label name=myLabel\nkubectl describe po -l\nname\n=myLabel\nDescribe all pods managed by the 'frontend' replication controller # (rc-created pods get the name of the rc as a prefix in the pod name)\nkubectl describe pods frontend\nShow details of a specific resource or group of resources.\nPrint a detailed description of the selected resources, including related resources such as events or controllers. You may select a single object by name, all objects of that type, provide a name prefix, or label selector. For example:\n$ kubectl describe TYPE NAME_PREFIX\nwill first check for an exact match on TYPE and NAME_PREFIX. If no such resource exists, it will output details for every resource that has a name prefixed with NAME_PREFIX.\nUse \"kubectl api-resources\" for a complete list of supported resources."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "1b8a14ec46900a8c25052d974f6e3023",
+  "source": "k8s_docs",
+  "title": "Autoscale the DNS Service in a Cluster — Get the name of your DNS Deployment",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-horizontal-autoscaling/#find-scaling-target",
+  "text": "List the DNS deployments in your cluster in the kube-system namespace:\nkubectl get deployment -l k8s-app\n=\nkube-dns --namespace\n=\nkube-system\nThe output is similar to this:\nNAME      READY   UP-TO-DATE   AVAILABLE   AGE\n...\ncoredns   2/2     2            2           ...\n...\nIf you don't see a Deployment for DNS services, you can also look for it by name:\nkubectl get deployment --namespace\n=\nkube-system\nand look for a deployment named\ncoredns\nor\nkube-dns\n.\nYour scale target is\nDeployment/<your-deployment-name>\nwhere\n<your-deployment-name>\nis the name of your DNS Deployment. For example, if\nthe name of your Deployment for DNS is coredns, your scale target is Deployment/coredns."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "c5e5da2dcabe053d1dfe801bb5923c33",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Limit edit access to mutating webhooks",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#limit-edit-access",
+  "text": "Mutating webhooks are powerful Kubernetes controllers. Use RBAC or another\nauthorization mechanism to limit access to your webhook configurations and\nservers. For RBAC, ensure that the following access is only available to trusted\nentities:\nVerbs:\ncreate\n,\nupdate\n,\npatch\n,\ndelete\n,\ndeletecollection\nAPI group:\nadmissionregistration.k8s.io/v1\nAPI kind: MutatingWebhookConfigurations\nIf your mutating webhook server runs in the cluster, limit access to create or\nmodify any resources in that namespace."
+}

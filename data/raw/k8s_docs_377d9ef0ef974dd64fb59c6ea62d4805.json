@@ -1,0 +1,7 @@
+{
+  "id": "377d9ef0ef974dd64fb59c6ea62d4805",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — resource.kubernetes.io/admin-access {resource-kubernetes-io-admin-access}",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#resource-kubernetes-io-admin-access-resource-kubernetes-io-admin-access",
+  "text": "Type: Label\nExample:\nresource.kubernetes.io/admin-access: \"true\"\nUsed on: Namespace\nUsed to grant administrative access to certain resource.k8s.io API types within\na namespace. When this label is set on a namespace with the value\n\"true\"\n(case-sensitive), it allows the use of\nadminAccess: true\nin any namespaced\nresource.k8s.io\nAPI types. Currently, this permission applies to\nResourceClaim\nand\nResourceClaimTemplate\nobjects.\nSee\nDynamic Resource Allocation Admin access\nfor more information."
+}

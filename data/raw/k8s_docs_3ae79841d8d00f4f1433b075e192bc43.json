@@ -1,0 +1,7 @@
+{
+  "id": "3ae79841d8d00f4f1433b075e192bc43",
+  "source": "k8s_docs",
+  "title": "Distribute Credentials Securely Using Secrets — Define container environment variables using Secret data",
+  "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#define-container-environment-variables-using-secret-data",
+  "text": "You can consume the data in Secrets as environment variables in your\ncontainers.\nIf a container already consumes a Secret in an environment variable,\na Secret update will not be seen by the container unless it is\nrestarted. There are third party solutions for triggering restarts when\nsecrets change."
+}

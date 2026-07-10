@@ -1,0 +1,7 @@
+{
+  "id": "b1bc091c6ee4a32f3256b88777ab6aeb",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node-role.kubernetes.io/control-plane",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-role-kubernetes-io-control-plane-taint",
+  "text": "Type: Taint\nExample:\nnode-role.kubernetes.io/control-plane:NoSchedule\nUsed on: Node\nTaint that kubeadm applies on control plane nodes to restrict placing Pods and\nallow only specific pods to schedule on them.\nIf this Taint is applied, control plane nodes allow only critical workloads to\nbe scheduled onto them. You can manually remove this taint with the following\ncommand on a specific node.\nkubectl taint nodes <node-name> node-role.kubernetes.io/control-plane:NoSchedule-"
+}

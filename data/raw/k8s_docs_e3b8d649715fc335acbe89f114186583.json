@@ -1,0 +1,7 @@
+{
+  "id": "e3b8d649715fc335acbe89f114186583",
+  "source": "k8s_docs",
+  "title": "DNS for Services and Pods — A/AAAA records",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#a-aaaa-records-1",
+  "text": "Kube-DNS versions, prior to the implementation of the\nDNS specification\n,\nhad the following DNS resolution:\n<pod-IPv4-address>.<namespace>.pod.<cluster-domain>\nFor example, if a Pod in the\ndefault\nnamespace has the IP address 172.17.0.3,\nand the domain name for your cluster is\ncluster.local\n, then the Pod has a DNS name:\n172-17-0-3.default.pod.cluster.local\nSome cluster DNS mechanisms, like\nCoreDNS\n, also provide\nA\nrecords for:\n<pod-ipv4-address>.<service-name>.<my-namespace>.svc.<cluster-domain.example>\nFor example, if a Pod in the\ncafe\nnamespace has the IP address 172.17.0.3,\nis an endpoint of a Service named\nbarista\n, and the domain name for your cluster is\ncluster.local\n, then the Pod would have this service-scoped DNS\nA\nrecord.\n172-17-0-3.barista.cafe.svc.cluster.local"
+}

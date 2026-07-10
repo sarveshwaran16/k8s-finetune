@@ -1,0 +1,7 @@
+{
+  "id": "0b5f1b2116bdb080d5cae5f828ffc55a",
+  "source": "k8s_docs",
+  "title": "Troubleshooting CNI plugin-related errors — Failed to destroy network for sandbox error",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/troubleshooting-cni-plugin-related-errors/#failed-to-destroy-network-for-sandbox-error",
+  "text": "If the version of the plugin is missing in the CNI plugin config, the pod may\nrun. However, stopping the pod generates an error similar to:\nERROR[2022-04-26T00:43:24.518165483Z] StopPodSandbox for \"b\" failed\nerror=\"failed to destroy network for sandbox \\\"bbc85f891eaf060c5a879e27bba9b6b06450210161dfdecfbb2732959fb6500a\\\": invalid version \\\"\\\": the version is empty\"\nThis error leaves the pod in the not-ready state with a network namespace still\nattached. To recover from this problem,\nedit the CNI config file\nto add\nthe missing version information. The next attempt to stop the pod should\nbe successful."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "5d0697a720a524368ee7c6dc1620044d",
+  "source": "k8s_docs",
+  "title": "Fine Parallel Processing Using a Work Queue — Push the image",
+  "source_url": "https://kubernetes.io/docs/tasks/job/fine-parallel-processing-work-queue/#push-the-image",
+  "text": "For the\nDocker Hub\n, tag your app image with\nyour username and push to the Hub with the below commands. Replace\n<username>\nwith your Hub username.\ndocker tag job-wq-2 <username>/job-wq-2\ndocker push <username>/job-wq-2\nYou need to push to a public repository or\nconfigure your cluster to be able to access\nyour private repository\n."
+}

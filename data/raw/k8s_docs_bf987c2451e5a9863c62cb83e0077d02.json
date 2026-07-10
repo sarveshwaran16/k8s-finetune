@@ -1,0 +1,7 @@
+{
+  "id": "bf987c2451e5a9863c62cb83e0077d02",
+  "source": "k8s_docs",
+  "title": "Running ZooKeeper, A Distributed System Coordinator — Testing for readiness",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/zookeeper/#testing-for-readiness",
+  "text": "Readiness is not the same as liveness. If a process is alive, it is scheduled\nand healthy. If a process is ready, it is able to process input. Liveness is\na necessary, but not sufficient, condition for readiness. There are cases,\nparticularly during initialization and termination, when a process can be\nalive but not ready.\nIf you specify a readiness probe, Kubernetes will ensure that your application's\nprocesses will not receive network traffic until their readiness checks pass.\nFor a ZooKeeper server, liveness implies readiness. Therefore, the readiness\nprobe from the\nzookeeper.yaml\nmanifest is identical to the liveness probe.\nreadinessProbe\n:\nexec\n:\ncommand\n:\n-\nsh\n- -\nc\n-\n\"zookeeper-ready 2181\"\ninitialDelaySeconds\n:\n15\ntimeoutSeconds\n:\n5\nEven though the liveness and readiness probes are identical, it is important\nto specify both. This ensures that only healthy servers in the ZooKeeper\nensemble receive network traffic."
+}

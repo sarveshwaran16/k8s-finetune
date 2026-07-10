@@ -1,0 +1,7 @@
+{
+  "id": "bbe1b789ba6bbc0b84512ee63d93cd48",
+  "source": "k8s_docs",
+  "title": "Service — EndpointSlices",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#endpointslices",
+  "text": "EndpointSlices\nare objects that\nrepresent a subset (a\nslice\n) of the backing network endpoints for a Service.\nYour Kubernetes cluster tracks how many endpoints each EndpointSlice represents.\nIf there are so many endpoints for a Service that a threshold is reached, then\nKubernetes adds another empty EndpointSlice and stores new endpoint information\nthere.\nBy default, Kubernetes makes a new EndpointSlice once the existing EndpointSlices\nall contain at least 100 endpoints. Kubernetes does not make the new EndpointSlice\nuntil an extra endpoint needs to be added.\nSee\nEndpointSlices\nfor more\ninformation about this API."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "5a766937a703ec2adae381c4a13cb9d0",
+  "source": "k8s_docs",
+  "title": "kuberc (v1beta1) — CommandDefaults",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kuberc.v1beta1/#kubectl-config-k8s-io-v1beta1-CommandDefaults",
+  "text": "Appears in:\nPreference\nCommandDefaults stores the commands and their associated option's\ndefault values.\nField\nDescription\ncommand\n[Required]\nstring\ncommand refers to a command whose option's default value is changed.\noptions\n[Required]\n[]CommandOptionDefault\noptions is a list of options storing different default values.\ncommand refers to a command whose option's default value is changed.\noptions is a list of options storing different default values."
+}

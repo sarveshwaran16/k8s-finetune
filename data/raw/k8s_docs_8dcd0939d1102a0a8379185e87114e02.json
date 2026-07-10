@@ -1,0 +1,7 @@
+{
+  "id": "8dcd0939d1102a0a8379185e87114e02",
+  "source": "k8s_docs",
+  "title": "CronJob — Deadline for delayed Job start",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#starting-deadline",
+  "text": "The\n.spec.startingDeadlineSeconds\nfield is optional.\nThis field defines a deadline (in whole seconds) for starting the Job, if that Job misses its scheduled time\nfor any reason.\nAfter missing the deadline, the CronJob skips that instance of the Job (future occurrences are still scheduled).\nFor example, if you have a backup Job that runs twice a day, you might allow it to start up to 8 hours late,\nbut no later, because a backup taken any later wouldn't be useful: you would instead prefer to wait for\nthe next scheduled run.\nFor Jobs that miss their configured deadline, Kubernetes treats them as failed Jobs.\nIf you don't specify\nstartingDeadlineSeconds\nfor a CronJob, the Job occurrences have no deadline.\nIf the\n.spec.startingDeadlineSeconds\nfield is set (not null), the CronJob\ncontroller measures the time between when a Job is expected to be created and\nnow. If the difference is higher than that limit, it will skip this execution.\nFor example, if it is set to\n200\n, it allows a Job to be created for up to 200\nseconds after the actual schedule."
+}

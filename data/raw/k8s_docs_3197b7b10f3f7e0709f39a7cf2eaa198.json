@@ -1,0 +1,7 @@
+{
+  "id": "3197b7b10f3f7e0709f39a7cf2eaa198",
+  "source": "k8s_docs",
+  "title": "Node — ContainerImage",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/node-v1/#ContainerImage",
+  "text": "Describe a container image\nField\nDescription\nnames\nstring array\nNames by which this image is known. e.g. [\"kubernetes.example/hyperkube:v1.0.7\", \"cloud-vendor.registry.example/cloud-vendor/hyperkube:v1.0.7\"]\nsizeBytes\ninteger\nThe size of the image in bytes.\n\nDaemonEndpoint contains information about a single Daemon endpoint.\nField\nDescription\nPort\n*\ninteger\nPort number of the given endpoint."
+}

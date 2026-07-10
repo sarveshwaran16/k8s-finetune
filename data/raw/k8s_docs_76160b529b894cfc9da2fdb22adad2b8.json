@@ -1,0 +1,7 @@
+{
+  "id": "76160b529b894cfc9da2fdb22adad2b8",
+  "source": "k8s_docs",
+  "title": "StatefulSets — Minimum ready seconds",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#minimum-ready-seconds",
+  "text": ".spec.minReadySeconds\nis an optional field that specifies the minimum number of seconds for which a newly\ncreated Pod should be running and ready without any of its containers crashing, for it to be considered available.\nThis is used to check progression of a rollout when using a\nRolling Update\nstrategy.\nThis field defaults to 0 (the Pod will be considered available as soon as it is ready). To learn more about when\na Pod is considered ready, see\nContainer Probes\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "38091e0438fe6ce5fa8491c5bbeee5b7",
+  "source": "k8s_docs",
+  "title": "Pod Quality of Service Classes — BestEffort",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/#besteffort",
+  "text": "Pods in the\nBestEffort\nQoS class can use node resources that aren't specifically assigned\nto Pods in other QoS classes. For example, if you have a node with 16 CPU cores available to the\nkubelet, and you assign 4 CPU cores to a\nGuaranteed\nPod, then a Pod in the\nBestEffort\nQoS class can try to use any amount of the remaining 12 CPU cores.\nThe kubelet prefers to evict\nBestEffort\nPods if the node comes under resource pressure.\nA Pod has a QoS class of\nBestEffort\nif it doesn't meet the criteria for either\nGuaranteed\nor\nBurstable\n. In other words, a Pod is\nBestEffort\nonly if none of the Containers in the Pod have a\nmemory limit or a memory request, and none of the Containers in the Pod have a\nCPU limit or a CPU request, and the Pod does not have any Pod-level memory or CPU limits or requests.\nContainers in a Pod can request other resources (not CPU or memory) and still be classified as\nBestEffort\n."
+}

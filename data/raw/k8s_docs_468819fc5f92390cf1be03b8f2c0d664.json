@@ -1,0 +1,7 @@
+{
+  "id": "468819fc5f92390cf1be03b8f2c0d664",
+  "source": "k8s_docs",
+  "title": "Objects In Kubernetes — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/#what-s-next",
+  "text": "If you're new to Kubernetes, read more about the following:\nPods\nwhich are the most important basic Kubernetes objects.\nDeployment\nobjects.\nControllers\nin Kubernetes.\nkubectl\nand\nkubectl commands\n.\nKubernetes Object Management\nexplains how to use\nkubectl\nto manage objects.\nYou might need to\ninstall kubectl\nif you don't already have it available.\nTo learn about the Kubernetes API in general, visit:\nKubernetes API overview\nTo learn about objects in Kubernetes in more depth, read other pages in this section:\nKubernetes Object Management\nObject Names and IDs\nLabels and Selectors\nNamespaces\nAnnotations\nField Selectors\nFinalizers\nOwners and Dependents\nRecommended Labels\nStorage Versions"
+}

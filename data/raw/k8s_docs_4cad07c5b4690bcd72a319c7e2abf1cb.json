@@ -1,7 +1,0 @@
-{
-  "id": "4cad07c5b4690bcd72a319c7e2abf1cb",
-  "source": "k8s_docs",
-  "title": "",
-  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_kubeconfig/",
-  "text": "Synopsis\nGenerate all kubeconfig files necessary to establish the control plane and the admin kubeconfig file\nkubeadm init phase kubeconfig [flags]\nOptions\n-h, --help\nhelp for kubeconfig\nOptions inherited from parent commands\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified September 04, 2025 at 3:32 PM PST:\nUpdate kubeadm reference for v1.34 (02f1b512e4)"
-}

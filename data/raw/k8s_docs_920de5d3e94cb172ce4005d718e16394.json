@@ -1,0 +1,7 @@
+{
+  "id": "920de5d3e94cb172ce4005d718e16394",
+  "source": "k8s_docs",
+  "title": "Encrypting Confidential Data at Rest — Prevent plain text retrieval",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#cleanup-all-secrets-encrypted",
+  "text": "If you want to make sure that the only access to a particular API kind is done using\nencryption, you can remove the API server's ability to read that API's backing data\nas plaintext.\nMaking this change prevents the API server from retrieving resources that are marked\nas encrypted at rest, but are actually stored in the clear.\nWhen you have configured encryption at rest for an API (for example: the API kind\nSecret\n, representing\nsecrets\nresources in the core API group), you\nmust\nensure\nthat all those resources in this cluster really are encrypted at rest. Check this before\nyou carry on with the next steps.\nOnce all Secrets in your cluster are encrypted, you can remove the\nidentity\npart of the encryption configuration. For example:\n---\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nEncryptionConfiguration\nresources\n:\n-\nresources\n:\n-\nsecrets\nproviders\n:\n-\naescbc\n:\nkeys\n:\n-\nname\n:\nkey1\nsecret\n:\n<BASE 64 ENCODED SECRET>\n-\nidentity\n:\n{}\n# REMOVE THIS LINE\n…and then restart each API server in turn. This change prevents the API server\nfrom accessing a plain-text Secret, even by accident."
+}

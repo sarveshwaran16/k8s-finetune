@@ -1,0 +1,7 @@
+{
+  "id": "f4896f7f08ac5d9e712c6b42b0c5b2d5",
+  "source": "k8s_docs",
+  "title": "Extend Service IP Ranges — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/network/extend-service-ip-ranges/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

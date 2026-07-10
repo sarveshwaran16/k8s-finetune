@@ -1,0 +1,7 @@
+{
+  "id": "517a5f15c7729f66963d42311cecfaf6",
+  "source": "k8s_docs",
+  "title": "Manifest-Based Admission Control — Configuration types",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/#configuration-types",
+  "text": "Each admission plugin uses a specific configuration kind:\nConfiguration types for each admission plugin\nPlugin\napiVersion\nkind\nValidatingAdmissionWebhook\napiserver.config.k8s.io/v1\nWebhookAdmissionConfiguration\nMutatingAdmissionWebhook\napiserver.config.k8s.io/v1\nWebhookAdmissionConfiguration\nValidatingAdmissionPolicy\napiserver.config.k8s.io/v1\nValidatingAdmissionPolicyConfiguration\nMutatingAdmissionPolicy\napiserver.config.k8s.io/v1\nMutatingAdmissionPolicyConfiguration"
+}

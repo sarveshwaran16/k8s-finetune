@@ -1,0 +1,7 @@
+{
+  "id": "f3cd8142c46e600d073144f3dee3ea62",
+  "source": "k8s_docs",
+  "title": "Node Shutdowns — Graceful node shutdown",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/node-shutdown/#graceful-node-shutdown",
+  "text": "The kubelet attempts to detect node system shutdown and terminates pods running on the node.\nKubelet ensures that pods follow the normal\npod termination process\nduring the node shutdown. During node shutdown, the kubelet does not accept new\nPods (even if those Pods are already bound to the node).\n\nLinux\nWindows\nOn Linux, the graceful node shutdown feature is controlled with the\nGracefulNodeShutdown\nfeature gate\nwhich is\nenabled by default in 1.21.\nOn Windows, the graceful node shutdown feature is controlled with the\nWindowsGracefulNodeShutdown\nfeature gate\nwhich is introduced in 1.32 as an alpha feature. In Kubernetes 1.34 the feature is Beta\nand is enabled by default.\nWindows graceful node shutdown can not be cancelled.\nIf kubelet is not running as a Windows service, it will not be able to set and monitor\nthe\nPreshutdown\nevent,\nthe node will have to go through the\nNon-Graceful Node Shutdown\nprocedure mentioned above.\nIn the case where the Windows graceful node shutdown feature is enabled, but the kubelet is not\nrunning as a Windows service, the kubelet will continue running instead of failing. However,\nit will log an error indicating that it needs to be run as a Windows service."
+}

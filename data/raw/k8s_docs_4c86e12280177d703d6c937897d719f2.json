@@ -1,0 +1,7 @@
+{
+  "id": "4c86e12280177d703d6c937897d719f2",
+  "source": "k8s_docs",
+  "title": "Translate a Docker Compose File to Kubernetes Resources — User Guide",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/#user-guide",
+  "text": "CLI\nkompose convert\nDocumentation\nAlternative Conversions\nLabels\nRestart\nDocker Compose Versions\nkompose convert\nAlternative Conversions\nLabels\nRestart\nDocker Compose Versions\nKompose has support for two providers: OpenShift and Kubernetes.\nYou can choose a targeted provider using global option\n--provider\n. If no provider is specified, Kubernetes is set by default."
+}

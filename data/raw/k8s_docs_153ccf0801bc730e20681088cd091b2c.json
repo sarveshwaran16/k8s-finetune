@@ -1,0 +1,7 @@
+{
+  "id": "153ccf0801bc730e20681088cd091b2c",
+  "source": "k8s_docs",
+  "title": "Mutating Admission Policy — What are MutatingAdmissionPolicies?",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/#what-are-mutatingadmissionpolicies",
+  "text": "Mutating admission policies offer a declarative, in-process alternative to mutating admission webhooks.\nMutating admission policies use the Common Expression Language (CEL) to declare mutations to resources.\nMutations can be defined either with an\napply configuration\nthat is merged using the\nserver side apply merge strategy\n,\nor a\nJSON patch\n.\nMutating admission policies are highly configurable, enabling policy authors to define policies\nthat can be parameterized and scoped to resources as needed by cluster administrators."
+}

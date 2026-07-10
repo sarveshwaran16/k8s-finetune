@@ -1,0 +1,7 @@
+{
+  "id": "76864ffb1d28383fa004ba59e57b2d5b",
+  "source": "k8s_docs",
+  "title": "Multi-tenancy — Storage isolation",
+  "source_url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/#storage-isolation",
+  "text": "Kubernetes offers several types of volumes that can be used as persistent storage for workloads.\nFor security and data-isolation,\ndynamic volume provisioning\nis recommended and volume types that use node resources should be avoided.\nStorageClasses\nallow you to describe custom \"classes\"\nof storage offered by your cluster, based on quality-of-service levels, backup policies, or custom\npolicies determined by the cluster administrators.\nPods can request storage using a\nPersistentVolumeClaim\n.\nA PersistentVolumeClaim is a namespaced resource, which enables isolating portions of the storage\nsystem and dedicating it to tenants within the shared Kubernetes cluster.\nHowever, it is important to note that a PersistentVolume is a cluster-wide resource and has a\nlifecycle independent of workloads and namespaces.\nFor example, you can configure a separate StorageClass for each tenant and use this to strengthen isolation.\nIf a StorageClass is shared, you should set a\nreclaim policy of\nDelete\nto ensure that a PersistentVolume cannot be reused across different namespaces."
+}

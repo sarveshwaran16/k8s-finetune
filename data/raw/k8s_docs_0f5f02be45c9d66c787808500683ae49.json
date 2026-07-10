@@ -1,0 +1,7 @@
+{
+  "id": "0f5f02be45c9d66c787808500683ae49",
+  "source": "k8s_docs",
+  "title": "Server-Side Apply — Downgrading from server-side apply to client-side apply",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/server-side-apply/#downgrading-from-server-side-apply-to-client-side-apply",
+  "text": "If you manage a resource with\nkubectl apply --server-side\n,\nyou can downgrade to client-side apply directly with\nkubectl apply\n.\nDowngrading works because kubectl Server-Side Apply keeps the\nlast-applied-configuration\nannotation up-to-date if you use\nkubectl apply\n.\nThis behavior applies to Server-Side Apply with the\nkubectl\nfield manager.\nAs an exception, you can opt-out of this behavior by specifying a different,\nnon-default field manager, as seen in the following example. The default field\nmanager for kubectl server-side apply is\nkubectl\n.\nkubectl apply --server-side --field-manager\n=\nmy-manager\n[\n--dry-run\n=\nserver\n]"
+}

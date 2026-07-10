@@ -1,0 +1,7 @@
+{
+  "id": "a22ff37503ac7cc1866830531178ea57",
+  "source": "k8s_docs",
+  "title": "Install and Set Up kubectl on macOS — Install bash-completion",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#install-bash-completion",
+  "text": "You can test if you have bash-completion v2 already installed with\ntype _init_completion\n.\nIf not, you can install it with Homebrew:\nbrew install bash-completion@2\nAs stated in the output of this command, add the following to your\n~/.bash_profile\nfile:\nbrew_etc\n=\n\"\n$(\nbrew --prefix\n)\n/etc\"\n&&\n[[\n-r\n\"\n${\nbrew_etc\n}\n/profile.d/bash_completion.sh\"\n]]\n&&\n.\n\"\n${\nbrew_etc\n}\n/profile.d/bash_completion.sh\"\nReload your shell and verify that bash-completion v2 is correctly installed with\ntype _init_completion\n."
+}

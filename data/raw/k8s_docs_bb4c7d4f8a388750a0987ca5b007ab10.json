@@ -1,0 +1,7 @@
+{
+  "id": "bb4c7d4f8a388750a0987ca5b007ab10",
+  "source": "k8s_docs",
+  "title": "Organizing Cluster Access Using kubeconfig Files — File references",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#file-references",
+  "text": "File and path references in a kubeconfig file are relative to the location of the kubeconfig file.\nFile references on the command line are relative to the current working directory.\nIn\n$HOME/.kube/config\n, relative paths are stored relatively, and absolute paths\nare stored absolutely.\n\nYou can configure\nkubectl\nto use a proxy per cluster using\nproxy-url\nin your kubeconfig file, like this:\napiVersion\n:\nv1\nkind\n:\nConfig\nclusters\n:\n-\ncluster\n:\nproxy-url\n:\nhttp://proxy.example.org:3128\nserver\n:\nhttps://k8s.example.org/k8s/clusters/c-xxyyzz\nname\n:\ndevelopment\nusers\n:\n-\nname\n:\ndeveloper\ncontexts\n:\n-\ncontext\n:\nname\n:\ndevelopment"
+}

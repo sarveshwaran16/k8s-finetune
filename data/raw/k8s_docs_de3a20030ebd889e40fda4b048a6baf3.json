@@ -1,0 +1,7 @@
+{
+  "id": "de3a20030ebd889e40fda4b048a6baf3",
+  "source": "k8s_docs",
+  "title": "Container Runtimes — What's next",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/#what-s-next",
+  "text": "As well as a container runtime, your cluster will need a working\nnetwork plugin\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nItems on this page refer to third party products or projects that provide functionality required by Kubernetes. The Kubernetes project authors aren't responsible for those third-party products or projects. See the\nCNCF website guidelines\nfor more details.\nYou should read the\ncontent guide\nbefore proposing a change that adds an extra third-party link."
+}

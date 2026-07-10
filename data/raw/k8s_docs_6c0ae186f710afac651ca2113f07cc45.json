@@ -1,0 +1,7 @@
+{
+  "id": "6c0ae186f710afac651ca2113f07cc45",
+  "source": "k8s_docs",
+  "title": "Job — JobCondition",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/#JobCondition",
+  "text": "JobCondition describes current state of a job.\nField\nDescription\nlastProbeTime\nTime\nLast time the condition was checked.\nlastTransitionTime\nTime\nLast time the condition transit from one status to another.\nmessage\nstring\nHuman readable message indicating details about last transition.\nreason\nstring\n(brief) reason for the condition's last transition.\nstatus\n*\nstring\nStatus of the condition, one of True, False, Unknown.\ntype\n*\nstring\nType of job condition, Complete or Failed."
+}

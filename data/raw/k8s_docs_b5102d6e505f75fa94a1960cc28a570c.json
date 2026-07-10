@@ -1,0 +1,7 @@
+{
+  "id": "b5102d6e505f75fa94a1960cc28a570c",
+  "source": "k8s_docs",
+  "title": "kubeadm init — Adding kube-proxy parameters",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/#kube-proxy",
+  "text": "For information about kube-proxy parameters in the kubeadm configuration see:\nkube-proxy reference\nFor information about enabling IPVS mode with kubeadm see:\nIPVS\n\nFor information about passing flags to control plane components see:\ncontrol-plane-flags\n\nFor running kubeadm without an Internet connection you have to pre-pull the required control plane images.\nYou can list and pull the images using the\nkubeadm config images\nsub-command:\nkubeadm config images list\nkubeadm config images pull\nYou can pass\n--config\nto the above commands with a\nkubeadm configuration file\nto control the\nkubernetesVersion\nand\nimageRepository\nfields.\nAll default\nregistry.k8s.io\nimages that kubeadm requires support multiple architectures."
+}

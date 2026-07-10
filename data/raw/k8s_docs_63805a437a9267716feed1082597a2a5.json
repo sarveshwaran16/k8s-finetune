@@ -1,0 +1,7 @@
+{
+  "id": "63805a437a9267716feed1082597a2a5",
+  "source": "k8s_docs",
+  "title": "Versions in CustomResourceDefinitions — Webhook conversion",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definition-versioning/#webhook-conversion",
+  "text": "The above example has a None conversion between versions which only sets the\napiVersion\nfield\non conversion and does not change the rest of the object. The API server also supports webhook\nconversions that call an external service in case a conversion is required. For example when:\ncustom resource is requested in a different version than stored version.\nWatch is created in one version but the changed object is stored in another version.\ncustom resource PUT request is in a different version than storage version.\nTo cover all of these cases and to optimize conversion by the API server,\nthe conversion requests may contain multiple objects in order to minimize the external calls.\nThe webhook should perform these conversions independently."
+}

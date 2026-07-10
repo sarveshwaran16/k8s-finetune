@@ -1,0 +1,7 @@
+{
+  "id": "367a6c1a6f76c87994499b01dbf88fa8",
+  "source": "k8s_docs",
+  "title": "kubectl set resources — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_set/kubectl_set_resources/#synopsis",
+  "text": "Specify compute resource requirements (CPU, memory) for any resource that defines a pod template. If a pod is successfully scheduled, it is guaranteed the amount of resource requested, but may burst up to its specified limits.\nFor each compute resource, if a limit is specified and a request is omitted, the request will default to the limit.\nPossible resources include (case insensitive): Use \"kubectl api-resources\" for a complete list of supported resources..\nkubectl set resources (-f FILENAME | TYPE NAME)  ([--limits=LIMITS & --requests=REQUESTS]"
+}

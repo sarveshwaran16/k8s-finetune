@@ -1,0 +1,7 @@
+{
+  "id": "2869f7e8bd5c5a06815230a76af5b74a",
+  "source": "k8s_docs",
+  "title": "ResourceSlice — CapacityRequestPolicyRange",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-slice-v1/#CapacityRequestPolicyRange",
+  "text": "CapacityRequestPolicyRange defines a valid range for consumable capacity values.\nIf the requested amount is less than Min, it is rounded up to the Min value.\nIf Step is set and the requested amount is between Min and Max but not aligned with Step,\nit will be rounded up to the next value equal to Min + (n * Step).\nIf Step is not set, the requested amount is used as-is if it falls within the range Min to Max (if set).\nIf the requested or rounded amount exceeds Max (if set), the request does not satisfy the policy,\nand the device cannot be allocated.\nField\nDescription\nmax\nQuantity\nMax defines the upper limit for capacity that can be requested. Max must be less than or equal to the capacity value. Min and requestPolicy.default must be less than or equal to the maximum.\nmin\n*\nQuantity\nMin specifies the minimum capacity allowed for a consumption request. Min must be greater than or equal to zero, and less than or equal to the capacity value. requestPolicy.default must be more than or equal to the minimum.\nstep\nQuantity\nStep defines the step size between valid capacity amounts within the range. Max (if set) and requestPolicy.default must be a multiple of Step. Min + Step must be less than or equal to the capacity value."
+}

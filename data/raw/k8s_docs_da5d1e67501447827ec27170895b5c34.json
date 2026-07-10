@@ -1,0 +1,7 @@
+{
+  "id": "da5d1e67501447827ec27170895b5c34",
+  "source": "k8s_docs",
+  "title": "Secrets — Using Secrets as environment variables",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables",
+  "text": "To use a Secret in an\nenvironment variable\nin a Pod:\nFor each container in your Pod specification, add an environment variable\nfor each Secret key that you want to use to the\nenv[].valueFrom.secretKeyRef\nfield.\nModify your image and/or command line so that the program looks for values\nin the specified environment variables.\nFor instructions, refer to\nDefine container environment variables using Secret data\n.\nIt's important to note that the range of characters allowed for environment variable\nnames in pods is\nrestricted\n.\nIf any keys do not meet the rules, those keys are not made available to your container, though\nthe Pod is allowed to start."
+}

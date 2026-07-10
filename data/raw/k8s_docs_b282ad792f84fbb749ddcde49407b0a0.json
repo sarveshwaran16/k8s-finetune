@@ -1,0 +1,7 @@
+{
+  "id": "b282ad792f84fbb749ddcde49407b0a0",
+  "source": "k8s_docs",
+  "title": "Security Checklist — Enabling Seccomp",
+  "source_url": "https://kubernetes.io/docs/concepts/security/security-checklist/#enabling-seccomp",
+  "text": "Seccomp stands for secure computing mode and has been a feature of the Linux kernel since version 2.6.12.\nIt can be used to sandbox the privileges of a process, restricting the calls it is able to make\nfrom userspace into the kernel. Kubernetes lets you automatically apply seccomp profiles loaded onto\na node to your Pods and containers.\nSeccomp can improve the security of your workloads by reducing the Linux kernel syscall attack\nsurface available inside containers. The seccomp filter mode leverages BPF to create an allow or\ndeny list of specific syscalls, named profiles.\nSince Kubernetes 1.27, you can enable the use of\nRuntimeDefault\nas the default seccomp profile\nfor all workloads. A\nsecurity tutorial\nis available on this\ntopic. In addition, the\nKubernetes Security Profiles Operator\nis a project that facilitates the management and use of seccomp in clusters."
+}

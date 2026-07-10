@@ -1,0 +1,7 @@
+{
+  "id": "b5da03e4f01e6db8cf1617b463ab76cc",
+  "source": "k8s_docs",
+  "title": "User Impersonation — Understanding constrained impersonation",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/user-impersonation/#understanding-constrained-impersonation",
+  "text": "Constrained impersonation requires\ntwo separate permissions\n:\nPermission to impersonate a specific identity\n(user, UID, group, service account or node)\nPermission to perform specific actions at a particular scope when impersonating\n(for\nexample, only\nlist\nand\nwatch\npods in the\ndefault\nnamespace)\nThis means an impersonator can be limited to impersonate another user only for specific operations."
+}

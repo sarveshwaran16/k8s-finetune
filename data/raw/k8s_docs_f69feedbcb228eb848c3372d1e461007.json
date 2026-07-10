@@ -1,7 +1,0 @@
-{
-  "id": "f69feedbcb228eb848c3372d1e461007",
-  "source": "k8s_docs",
-  "title": "",
-  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_join/kubeadm_join_phase_kubelet-wait-bootstrap/",
-  "text": "Synopsis\nWait for the kubelet to bootstrap itself\nkubeadm join phase kubelet-wait-bootstrap [flags]\nOptions\n--config string\nPath to a kubeadm configuration file.\n--cri-socket string\nPath to the CRI socket to connect. If empty kubeadm will try to auto-detect this value; use this option only if you have more than one CRI installed or if you have non-standard CRI socket.\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for kubelet-wait-bootstrap\nOptions inherited from parent commands\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified December 21, 2025 at 5:16 PM PST:\nUpdate kubeadm reference for v1.35 (769e76a326)"
-}

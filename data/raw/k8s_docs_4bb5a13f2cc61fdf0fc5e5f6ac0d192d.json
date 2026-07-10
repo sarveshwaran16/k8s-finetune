@@ -1,0 +1,7 @@
+{
+  "id": "4bb5a13f2cc61fdf0fc5e5f6ac0d192d",
+  "source": "k8s_docs",
+  "title": "Windows containers in Kubernetes — Container runtimes",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/intro/#container-runtime",
+  "text": "You need to install a\ncontainer runtime\ninto each node in the cluster so that Pods can run there.\nThe following container runtimes work with Windows:\n\nYou can use\nContainerD\n1.4.0+\nas the container runtime for Kubernetes nodes that run Windows.\nLearn how to\ninstall ContainerD on a Windows node\n.\nNote:\nThere is a\nknown limitation\nwhen using GMSA with containerd to access Windows network shares, which requires a\nkernel patch."
+}

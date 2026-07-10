@@ -1,0 +1,7 @@
+{
+  "id": "5541cc1f538be91a1922a9599c74dc35",
+  "source": "k8s_docs",
+  "title": "Running Kubelet in Standalone Mode — Install a container runtime",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#container-runtime",
+  "text": "Download the latest available versions of the required packages (recommended).\nThis tutorial suggests installing the\nCRI-O container runtime\n(external link).\nThere are several\nways to install\nthe CRI-O container runtime, depending on your particular Linux distribution. Although\nCRI-O recommends using either\ndeb\nor\nrpm\npackages, this tutorial uses the\nstatic binary bundle\nscript of the\nCRI-O Packaging project\n,\nboth to streamline the overall process, and to remain distribution agnostic.\nThe script installs and configures additional required software, such as\ncni-plugins\n, for container\nnetworking, and\ncrun\nand\nrunc\n, for running containers.\nThe script will automatically detect your system's processor architecture\n(\namd64\nor\narm64\n) and select and install the latest versions of the software packages."
+}

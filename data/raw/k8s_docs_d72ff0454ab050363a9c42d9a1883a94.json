@@ -1,0 +1,7 @@
+{
+  "id": "d72ff0454ab050363a9c42d9a1883a94",
+  "source": "k8s_docs",
+  "title": "Pods — Resource sharing and communication",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#resource-sharing-and-communication",
+  "text": "Pods enable data sharing and communication among their constituent\ncontainers.\n\nA Pod can specify a set of shared storage\nvolumes\n. All containers\nin the Pod can access the shared volumes, allowing those containers to\nshare data. Volumes also allow persistent data in a Pod to survive\nin case one of the containers within needs to be restarted. See\nStorage\nfor more information on how\nKubernetes implements shared storage and makes it available to Pods."
+}

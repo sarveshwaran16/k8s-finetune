@@ -1,0 +1,7 @@
+{
+  "id": "a0779154acf3272a6436266e19b74f81",
+  "source": "k8s_docs",
+  "title": "Autoscale the DNS Service in a Cluster — Option 2: Delete the kube-dns-autoscaler deployment",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-horizontal-autoscaling/#option-2-delete-the-kube-dns-autoscaler-deployment",
+  "text": "This option works if kube-dns-autoscaler is under your own control, which means\nno one will re-create it:\nkubectl delete deployment kube-dns-autoscaler --namespace\n=\nkube-system\nThe output is:\ndeployment.apps \"kube-dns-autoscaler\" deleted\n\nThis option works if kube-dns-autoscaler is under control of the (deprecated)\nAddon Manager\n,\nand you have write access to the master node.\nSign in to the master node and delete the corresponding manifest file.\nThe common path for this kube-dns-autoscaler is:\n/etc/kubernetes/addons/dns-horizontal-autoscaler/dns-horizontal-autoscaler.yaml\nAfter the manifest file is deleted, the Addon Manager will delete the\nkube-dns-autoscaler Deployment."
+}

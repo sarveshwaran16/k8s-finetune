@@ -1,0 +1,7 @@
+{
+  "id": "53a2e765ca8d721073dddd355fa26c3c",
+  "source": "k8s_docs",
+  "title": "Implementation details — Preflight checks",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#preflight-checks-1",
+  "text": "kubeadm\nexecutes a set of preflight checks before starting the join, with the aim to verify\npreconditions and avoid common cluster startup problems.\nAlso note that:\nkubeadm join\npreflight checks are basically a subset of\nkubeadm init\npreflight checks\nIf you are joining a Windows node, Linux specific controls are skipped.\nIn any case the user can skip specific preflight checks (or eventually all preflight checks)\nwith the\n--ignore-preflight-errors\noption."
+}

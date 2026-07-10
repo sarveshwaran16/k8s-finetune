@@ -1,0 +1,7 @@
+{
+  "id": "e54361d7e876a2da2a6823086fe9207b",
+  "source": "k8s_docs",
+  "title": "Pod Scheduling Readiness — Configuring Pod schedulingGates",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-scheduling-readiness/#configuring-pod-schedulinggates",
+  "text": "The\nschedulingGates\nfield contains a list of strings, and each string literal is perceived as a\ncriteria that Pod should be satisfied before considered schedulable. This field can be initialized\nonly when a Pod is created (either by the client, or mutated during admission). After creation,\neach schedulingGate can be removed in arbitrary order, but addition of a new scheduling gate is disallowed.\nFigure. Pod SchedulingGates"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ec44f8e80562aaa4c588bae18eead6e8",
+  "source": "k8s_docs",
+  "title": "Namespace — NamespaceSpec",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/namespace-v1/#NamespaceSpec",
+  "text": "NamespaceSpec describes the attributes on a Namespace.\nField\nDescription\nfinalizers\nstring array\nFinalizers is an opaque list of values that must be empty to permanently remove object from storage. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/\n\nNamespaceStatus is information about the current status of a Namespace.\nField\nDescription\nconditions\nNamespaceCondition array\npatch strategy: merge on key\ntype\nRepresents the latest available observations of a namespace's current state.\nphase\nstring\nPhase is the current lifecycle phase of the namespace. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/\nPossible enum values:\n- `\"Active\"` means the namespace is available for use in the system\n- `\"Terminating\"` means the namespace is undergoing graceful termination"
+}

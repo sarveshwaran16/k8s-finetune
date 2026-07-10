@@ -1,0 +1,7 @@
+{
+  "id": "5166d2ec832a9150b01ec51d15ceb34a",
+  "source": "k8s_docs",
+  "title": "Configure Access to Multiple Clusters — Create a second configuration file",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/#create-a-second-configuration-file",
+  "text": "In your\nconfig-exercise\ndirectory, create a file named\nconfig-demo-2\nwith this content:\napiVersion\n:\nv1\nkind\n:\nConfig\npreferences\n:\n{}\ncontexts\n:\n-\ncontext\n:\ncluster\n:\ndevelopment\nnamespace\n:\nramp\nuser\n:\ndeveloper\nname\n:\ndev-ramp-up\nThe preceding configuration file defines a new context named\ndev-ramp-up\n."
+}

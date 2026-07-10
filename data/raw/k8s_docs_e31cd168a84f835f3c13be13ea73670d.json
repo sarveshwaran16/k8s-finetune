@@ -1,0 +1,7 @@
+{
+  "id": "e31cd168a84f835f3c13be13ea73670d",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler — ExternalMetricSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#ExternalMetricSource",
+  "text": "ExternalMetricSource indicates how to scale on a metric not associated with any Kubernetes object (for example length of queue in cloud messaging service, or QPS from loadbalancer running outside of cluster).\nField\nDescription\nmetric\n*\nMetricIdentifier\nmetric identifies the target metric by name and selector\ntarget\n*\nMetricTarget\ntarget specifies the target value for the given metric"
+}

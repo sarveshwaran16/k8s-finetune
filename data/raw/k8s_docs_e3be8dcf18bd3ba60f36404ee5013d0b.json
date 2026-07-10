@@ -1,0 +1,7 @@
+{
+  "id": "e3be8dcf18bd3ba60f36404ee5013d0b",
+  "source": "k8s_docs",
+  "title": "Configure Default Memory Requests and Limits for a Namespace — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/#before-you-begin",
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYou must have access to create namespaces in your cluster.\nEach node in your cluster must have at least 2 GiB of memory."
+}

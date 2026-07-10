@@ -1,0 +1,7 @@
+{
+  "id": "a6ffa71bfffe578f69ea38b7bf867bf5",
+  "source": "k8s_docs",
+  "title": "kubeadm config — What's next",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-config/#what-s-next",
+  "text": "kubeadm upgrade\nto upgrade a Kubernetes cluster to a newer version\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

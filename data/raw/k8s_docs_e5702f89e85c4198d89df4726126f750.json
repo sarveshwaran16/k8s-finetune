@@ -1,0 +1,7 @@
+{
+  "id": "e5702f89e85c4198d89df4726126f750",
+  "source": "k8s_docs",
+  "title": "User Impersonation — Working withimpersonateverb",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/user-impersonation/#working-with-impersonate-verb",
+  "text": "If you have existing RBAC rules using the\nimpersonate\nverb, they continue\nto function when the feature gate is enabled.\nWhen an impersonation request is made, the API server first checks for\nconstrained impersonation permissions. If those checks fail, it falls back to checking the\nimpersonate\npermission.\nIf you have existing RBAC rules using the\nimpersonate\nverb, they continue\nto function when the feature gate is enabled.\nWhen an impersonation request is made, the API server first checks for\nconstrained impersonation permissions. If those checks fail, it falls back to checking the\nimpersonate\npermission."
+}

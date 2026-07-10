@@ -1,0 +1,7 @@
+{
+  "id": "831faaeeff2c7a6cb66a471db7c8a359",
+  "source": "k8s_docs",
+  "title": "Assigning Pods to Nodes — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#what-s-next",
+  "text": "Read more about\ntaints and tolerations\n.\nRead the design docs for\nnode affinity\nand for\ninter-pod affinity/anti-affinity\n.\nLearn about how the\ntopology manager\ntakes part in node-level\nresource allocation decisions.\nLearn how to use\nnodeSelector\n.\nLearn how to use\naffinity and anti-affinity\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

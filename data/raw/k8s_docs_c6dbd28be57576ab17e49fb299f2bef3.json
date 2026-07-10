@@ -1,0 +1,7 @@
+{
+  "id": "c6dbd28be57576ab17e49fb299f2bef3",
+  "source": "k8s_docs",
+  "title": "Node-pressure Eviction — Eviction monitoring interval",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/#eviction-monitoring-interval",
+  "text": "The kubelet evaluates eviction thresholds based on its configured\nhousekeeping-interval\n,\nwhich defaults to\n10s\n.\n\nThe kubelet reports\nnode conditions\nto reflect that the node is under pressure because hard or soft eviction\nthreshold is met, independent of configured grace periods.\nThe kubelet maps eviction signals to node conditions as follows:\nNode Condition\nEviction Signal\nDescription\nMemoryPressure\nmemory.available\nAvailable memory on the node has satisfied an eviction threshold\nDiskPressure\nnodefs.available\n,\nnodefs.inodesFree\n,\nimagefs.available\n,\nimagefs.inodesFree\n,\ncontainerfs.available\n, or\ncontainerfs.inodesFree\nAvailable disk space and inodes on either the node's root filesystem, image filesystem, or container filesystem has satisfied an eviction threshold\nPIDPressure\npid.available\nAvailable processes identifiers on the (Linux) node has fallen below an eviction threshold\nThe control plane also\nmaps\nthese node conditions to taints.\nThe kubelet updates the node conditions based on the configured\n--node-status-update-frequency\n, which defaults to\n10s\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "147fe957f4ef3abf6d49f8baff9c7d45",
+  "source": "k8s_docs",
+  "title": "Resize CPU and Memory Resources assigned to Containers — Example 2: Resizing memory with restart",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/#example-2-resizing-memory-with-restart",
+  "text": "Now, resize the memory for the\nsame\npod by increasing it to\n300Mi\n.\nSince the memory\nresizePolicy\nis\nRestartContainer\n, the container is expected to restart.\nkubectl patch pod resize-demo -n qos-example --subresource resize --patch\n\\\n'{\"spec\":{\"containers\":[{\"name\":\"pause\", \"resources\":{\"requests\":{\"memory\":\"300Mi\"}, \"limits\":{\"memory\":\"300Mi\"}}}]}}'\nCheck the pod status shortly after patching:\nkubectl get pod resize-demo --output\n=\nyaml --namespace\n=\nqos-example\nYou should now observe:\nspec.containers[0].resources\nshows\nmemory: 300Mi\n.\nstatus.containerStatuses[0].resources\nalso shows\nmemory: 300Mi\n.\nstatus.containerStatuses[0].restartCount\nhas increased to\n1\n(or more, if restarts happened previously),\nindicating the container was restarted to apply the memory change."
+}

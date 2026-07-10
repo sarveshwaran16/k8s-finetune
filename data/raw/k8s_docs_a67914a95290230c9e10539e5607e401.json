@@ -1,0 +1,7 @@
+{
+  "id": "a67914a95290230c9e10539e5607e401",
+  "source": "k8s_docs",
+  "title": "The kubectl command-line tool — Declarative vs imperative",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/kubectl/#declarative-vs-imperative",
+  "text": "For production workloads, prefer\ndeclarative object management\nusing\nkubectl apply\nwith version-controlled configuration files.\nDeclarative management helps you track changes, collaborate, and integrate with GitOps workflows.\nImperative commands (such as\nkubectl create\nor\nkubectl run\n) are useful for development and experimentation,\nbut are harder to reproduce and audit."
+}

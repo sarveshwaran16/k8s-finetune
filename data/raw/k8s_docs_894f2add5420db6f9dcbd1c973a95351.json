@@ -1,0 +1,7 @@
+{
+  "id": "894f2add5420db6f9dcbd1c973a95351",
+  "source": "k8s_docs",
+  "title": "Managing Secrets using Kustomize — Apply the kustomization file",
+  "source_url": "https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kustomize/#apply-the-kustomization-file",
+  "text": "To create the Secret, apply the directory that contains the kustomization file:\nkubectl apply -k <directory-path>\nThe output is similar to:\nsecret/database-creds-5hdh7hhgfk created\nWhen a Secret is generated, the Secret name is created by hashing\nthe Secret data and appending the hash value to the name. This ensures that\na new Secret is generated each time the data is modified.\nTo verify that the Secret was created and to decode the Secret data,\nkubectl get -k <directory-path> -o\njsonpath\n=\n'{.data}'\nThe output is similar to:\n{ \"password\": \"MWYyZDFlMmU2N2Rm\", \"username\": \"YWRtaW4=\" }\necho 'MWYyZDFlMmU2N2Rm' | base64 --decode\nThe output is similar to:\n1f2d1e2e67df\nFor more information, refer to\nManaging Secrets using kubectl\nand\nDeclarative Management of Kubernetes Objects Using Kustomize\n."
+}

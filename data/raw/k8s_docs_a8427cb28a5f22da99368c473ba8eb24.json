@@ -1,0 +1,7 @@
+{
+  "id": "a8427cb28a5f22da99368c473ba8eb24",
+  "source": "k8s_docs",
+  "title": "Advanced Pod Configuration — Pod overhead",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#pod-overhead",
+  "text": "Pod overhead allows you to account for the resources consumed by the Pod infrastructure on top of the container requests and limits.\n---\napiVersion\n:\nnode.k8s.io/v1\nkind\n:\nRuntimeClass\nmetadata\n:\nname\n:\nkvisor-runtime\nhandler\n:\nkvisor-runtime\noverhead\n:\npodFixed\n:\nmemory\n:\n\"2Gi\"\ncpu\n:\n\"500m\"\n---\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmypod\nspec\n:\nruntimeClassName\n:\nkvisor-runtime\ncontainers\n:\n-\nname\n:\nmyapp\nimage\n:\nnginx\nresources\n:\nrequests\n:\nmemory\n:\n\"64Mi\"\ncpu\n:\n\"250m\"\nlimits\n:\nmemory\n:\n\"128Mi\"\ncpu\n:\n\"500m\""
+}

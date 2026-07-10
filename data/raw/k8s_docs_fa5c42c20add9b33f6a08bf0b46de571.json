@@ -1,0 +1,7 @@
+{
+  "id": "fa5c42c20add9b33f6a08bf0b46de571",
+  "source": "k8s_docs",
+  "title": "Control CPU Management Policies on the Node — nonepolicy configuration",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cpu-management-policies/#none-policy-configuration",
+  "text": "This policy has no extra configuration items.\n\nThis policy manages a shared pool of CPUs that initially contains all CPUs in the\nnode. The amount of exclusively allocatable CPUs is equal to the total\nnumber of CPUs in the node minus any CPU reservations by the kubelet\n--kube-reserved\nor\n--system-reserved\noptions. From 1.17, the CPU reservation list can be specified\nexplicitly by kubelet\n--reserved-cpus\noption. The explicit CPU list specified by\n--reserved-cpus\ntakes precedence over the CPU reservation specified by\n--kube-reserved\nand\n--system-reserved\n. CPUs reserved by these options are taken, in\ninteger quantity, from the initial shared pool in ascending order by physical\ncore ID.  This shared pool is the set of CPUs on which any containers in\nBestEffort\nand\nBurstable\npods run. Containers in\nGuaranteed\npods with fractional\nCPU\nrequests\nalso run on CPUs in the shared pool. Only containers that are\nboth part of a\nGuaranteed\npod and have integer CPU\nrequests\nare assigned\nexclusive CPUs."
+}

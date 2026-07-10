@@ -1,0 +1,7 @@
+{
+  "id": "db7806e4764d5e0f6be6099d4347bff2",
+  "source": "k8s_docs",
+  "title": "Manage TLS Certificates in a Cluster — Requesting a certificate",
+  "source_url": "https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/#requesting-a-certificate",
+  "text": "The following section demonstrates how to create a TLS certificate for a\nKubernetes service accessed through DNS.\n\nGenerate a private key and certificate signing request (or CSR) by running\nthe following command:\ncat\n<<EOF | cfssl genkey - | cfssljson -bare server\n{\n\"hosts\": [\n\"my-svc.my-namespace.svc.cluster.local\",\n\"my-pod.my-namespace.pod.cluster.local\",\n\"192.0.2.24\",\n\"10.0.34.2\"\n],\n\"CN\": \"my-pod.my-namespace.pod.cluster.local\",\n\"key\": {\n\"algo\": \"ecdsa\",\n\"size\": 256\n}\n}\nEOF\nWhere\n192.0.2.24\nis the service's cluster IP,\nmy-svc.my-namespace.svc.cluster.local\nis the service's DNS name,\n10.0.34.2\nis the pod's IP and\nmy-pod.my-namespace.pod.cluster.local\nis the pod's DNS name. You should see the output similar to:\n2022/02/01 11:45:32 [INFO] generate received request\n2022/02/01 11:45:32 [INFO] received CSR\n2022/02/01 11:45:32 [INFO] generating key: ecdsa-256\n2022/02/01 11:45:32 [INFO] encoded CSR\nThis command generates two files; it generates\nserver.csr\ncontaining the PEM\nencoded\nPKCS#10\ncertification request,\nand\nserver-key.pem\ncontaining the PEM encoded key to the certificate that\nis still to be created."
+}

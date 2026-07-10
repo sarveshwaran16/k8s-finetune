@@ -1,0 +1,7 @@
+{
+  "id": "906028fbd42540da5b2887efb20e5232",
+  "source": "k8s_docs",
+  "title": "List All Container Images Running in a Cluster — List Container images filtering by Pod namespace",
+  "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/#list-container-images-filtering-by-pod-namespace",
+  "text": "To target only pods in a specific namespace, use the namespace flag. The\nfollowing matches only Pods in the\nkube-system\nnamespace.\nkubectl get pods --namespace kube-system -o\njsonpath\n=\n\"{.items[*].spec.containers[*].image}\"\n\nAs an alternative to jsonpath, Kubectl supports using\ngo-templates\nfor formatting the output:\nkubectl get pods --all-namespaces -o go-template --template\n=\n\"{{range .items}}{{range .spec.containers}}{{.image}} {{end}}{{end}}\""
+}

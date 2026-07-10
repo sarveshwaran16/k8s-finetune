@@ -1,0 +1,7 @@
+{
+  "id": "8efc104836572fa1d3f7132c3e60464b",
+  "source": "k8s_docs",
+  "title": "Security — Admission control",
+  "source_url": "https://kubernetes.io/docs/concepts/security/#admission-control",
+  "text": "Admission controllers\nare plugins that intercept Kubernetes API requests and can validate or mutate\nthe requests based on specific fields in the request. Thoughtfully designing\nthese controllers helps to avoid unintended disruptions as Kubernetes APIs\nchange across version updates. For design considerations, see\nAdmission Webhook Good Practices\n."
+}

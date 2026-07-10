@@ -1,0 +1,7 @@
+{
+  "id": "5fca3409b38ee198f14b101684e1144b",
+  "source": "k8s_docs",
+  "title": "kube-scheduler Configuration (v1) — ResourceSpec",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-scheduler-config.v1/#kubescheduler-config-k8s-io-v1-ResourceSpec",
+  "text": "Appears in:\nNodeResourcesBalancedAllocationArgs\nScoringStrategy\nNodeResourcesBalancedAllocationArgs\nScoringStrategy\nResourceSpec represents a single resource.\nField\nDescription\nname\n[Required]\nstring\nName of the resource.\nweight\n[Required]\nint64\nWeight of the resource.\nName of the resource.\nWeight of the resource."
+}

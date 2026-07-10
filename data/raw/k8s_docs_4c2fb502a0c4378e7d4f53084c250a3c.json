@@ -1,0 +1,7 @@
+{
+  "id": "4c2fb502a0c4378e7d4f53084c250a3c",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubeadm — Pods inRunContainerError,CrashLoopBackOfforErrorstate",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/#pods-in-runcontainererror-crashloopbackoff-or-error-state",
+  "text": "Right after\nkubeadm init\nthere should not be any pods in these states.\nIf there are pods in one of these states\nright after\nkubeadm init\n, please open an\nissue in the kubeadm repo.\ncoredns\n(or\nkube-dns\n) should be in the\nPending\nstate\nuntil you have deployed the network add-on.\nIf you see Pods in the\nRunContainerError\n,\nCrashLoopBackOff\nor\nError\nstate\nafter deploying the network add-on and nothing happens to\ncoredns\n(or\nkube-dns\n),\nit's very likely that the Pod Network add-on that you installed is somehow broken.\nYou might have to grant it more RBAC privileges or use a newer version. Please file\nan issue in the Pod Network providers' issue tracker and get the issue triaged there."
+}

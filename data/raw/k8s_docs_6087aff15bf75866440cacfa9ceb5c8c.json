@@ -1,0 +1,7 @@
+{
+  "id": "6087aff15bf75866440cacfa9ceb5c8c",
+  "source": "k8s_docs",
+  "title": "Pods — Using Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#using-pods",
+  "text": "The following is an example of a Pod which consists of a container running the image\nnginx:1.14.2\n.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nnginx\nspec\n:\ncontainers\n:\n-\nname\n:\nnginx\nimage\n:\nnginx:1.14.2\nports\n:\n-\ncontainerPort\n:\n80\nTo create the Pod shown above, run the following command:\nkubectl apply -f https://k8s.io/examples/pods/simple-pod.yaml\nPods are generally not created directly and are created using workload resources.\nSee\nWorking with Pods\nfor more information on how Pods are used\nwith workload resources."
+}

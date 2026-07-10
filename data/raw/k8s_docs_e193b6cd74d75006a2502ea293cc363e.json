@@ -1,0 +1,7 @@
+{
+  "id": "e193b6cd74d75006a2502ea293cc363e",
+  "source": "k8s_docs",
+  "title": "Cloud Native Security and Kubernetes — Cloud native security",
+  "source_url": "https://kubernetes.io/docs/concepts/security/cloud-native-security/#further-reading-cloud-native",
+  "text": "CNCF\nwhite paper\non cloud native security.\nCNCF\nwhite paper\non good practices for securing a software supply chain.\nFixing the Kubernetes clusterf**k: Understanding security from the kernel up\n(FOSDEM 2020)\nKubernetes Security Best Practices\n(Kubernetes Forum Seoul 2019)\nTowards Measured Boot Out of the Box\n(Linux Security Summit 2016)"
+}

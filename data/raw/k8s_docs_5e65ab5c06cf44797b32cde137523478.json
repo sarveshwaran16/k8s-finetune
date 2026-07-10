@@ -1,0 +1,7 @@
+{
+  "id": "5e65ab5c06cf44797b32cde137523478",
+  "source": "k8s_docs",
+  "title": "Pod Quality of Service Classes — Guaranteed",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/#guaranteed",
+  "text": "Pods that are\nGuaranteed\nhave the strictest resource limits and are least likely\nto face eviction. They are guaranteed not to be killed until they exceed their limits\nor there are no lower-priority Pods that can be preempted from the Node. They may\nnot acquire resources beyond their specified limits. These Pods can also make\nuse of exclusive CPUs using the\nstatic\nCPU management policy.\nFor a Pod to be given a QoS class of\nGuaranteed\n:\nEvery Container in the Pod must have a memory limit and a memory request, both greater than zero.\nFor every Container in the Pod, the memory limit must equal the memory request.\nEvery Container in the Pod must have a CPU limit and a CPU request, both greater than zero.\nFor every Container in the Pod, the CPU limit must equal the CPU request.\nIf instead the Pod uses\nPod-level resources\n:\nThe Pod must have a Pod-level memory limit and memory request, and their values must be equal.\nThe Pod must have a Pod-level CPU limit and CPU request, and their values must be equal."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "59f916421ac371e3e5ab3792198d725f",
+  "source": "k8s_docs",
+  "title": "Debug Services — Are the Pods working?",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/#are-the-pods-working",
+  "text": "At this point, you know that your Service exists and has selected your Pods.\nAt the beginning of this walk-through, you verified the Pods themselves.\nLet's check again that the Pods are actually working - you can bypass the\nService mechanism and go straight to the Pods, as listed by the Endpoints\nabove.\nFrom within a Pod:\nfor\nep in 10.244.0.5:9376 10.244.0.6:9376 10.244.0.7:9376\n;\ndo\nwget -qO-\n$ep\ndone\nThis should produce something like:\nhostnames-632524106-bbpiw\nhostnames-632524106-ly40y\nhostnames-632524106-tlaok\nYou expect each Pod in the endpoints list to return its own hostname. If\nthis is not what happens (or whatever the correct behavior is for your own\nPods), you should investigate what's happening there."
+}

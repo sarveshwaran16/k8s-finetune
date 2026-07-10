@@ -1,0 +1,7 @@
+{
+  "id": "8179a9c3a21cc130a76c12bc06945b4b",
+  "source": "k8s_docs",
+  "title": "Hardening Guide - Authentication Mechanisms — Webhook token authentication",
+  "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/authentication-mechanisms/#webhook-token-authentication",
+  "text": "Webhook token authentication\nis another option for integrating external authentication providers into Kubernetes. This mechanism\nallows for an authentication service, either running inside the cluster or externally, to be\ncontacted for an authentication decision over a webhook. It is important to note that the suitability\nof this mechanism will likely depend on the software used for the authentication service, and there\nare some Kubernetes-specific considerations to take into account.\nTo configure Webhook authentication, access to control plane server filesystems is required. This\nmeans that it will not be possible with Managed Kubernetes unless the provider specifically makes it\navailable. Additionally, any software installed in the cluster to support this access should be\nisolated from general workloads, as it will run with high privileges."
+}

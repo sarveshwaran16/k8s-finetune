@@ -1,0 +1,7 @@
+{
+  "id": "c6519e39e0650f24a58b101bd2203f26",
+  "source": "k8s_docs",
+  "title": "User Namespaces — Filesystem support",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/user-namespaces/#filesystem-support",
+  "text": "Pods that use a user namespace require the filesystem to support idmap mounts.\nSome filesystems don't support idmap mounts, and therefore cannot be used with user namespaces.\nIn such cases, the following events will be generated. Please note that the warning details depend on the container runtime you are using.\nWarning  Failed 1s kubelet Error: failed to create containerd task: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: failed to fulfil mount request: failed to set MOUNT_ATTR_IDMAP on ${your mount path} invalid argument (maybe the filesystem used doesn't support idmap mounts on this kernel?): unknown\nNFS volumes cannot be mounted in a user-namespace pod because the Linux NFS client doesn't yet support idmap mounts.\nFor the current list of supported filesystems, see the Linux kernel’s\nmount_setattr(2)\nman page\n."
+}

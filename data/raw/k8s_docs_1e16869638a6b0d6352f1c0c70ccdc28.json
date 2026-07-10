@@ -1,0 +1,7 @@
+{
+  "id": "1e16869638a6b0d6352f1c0c70ccdc28",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — NamespaceAutoProvision",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#namespaceautoprovision",
+  "text": "Type\n: Mutating.\nThis admission controller examines all incoming requests on namespaced resources and checks\nif the referenced namespace does exist.\nIt creates a namespace if it cannot be found.\nThis admission controller is useful in deployments that do not want to restrict creation of\na namespace prior to its usage."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "2685e5e8d0afa1cd2f1b9f777619c2f2",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

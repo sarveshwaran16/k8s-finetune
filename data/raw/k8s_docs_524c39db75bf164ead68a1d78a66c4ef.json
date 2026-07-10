@@ -1,0 +1,7 @@
+{
+  "id": "524c39db75bf164ead68a1d78a66c4ef",
+  "source": "k8s_docs",
+  "title": "Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller — 1. Review namespace permissions",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/migrate-from-psp/#review-namespace-permissions",
+  "text": "Pod Security Admission is controlled by\nlabels on\nnamespaces\n.\nThis means that anyone who can update (or patch or create) a namespace can also modify the Pod\nSecurity level for that namespace, which could be used to bypass a more restrictive policy. Before\nproceeding, ensure that only trusted, privileged users have these namespace permissions. It is not\nrecommended to grant these powerful permissions to users that shouldn't have elevated permissions,\nbut if you must you will need to use an\nadmission webhook\nto place additional restrictions on setting Pod Security labels on Namespace objects."
+}

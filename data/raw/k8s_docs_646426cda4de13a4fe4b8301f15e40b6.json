@@ -1,0 +1,7 @@
+{
+  "id": "646426cda4de13a4fe4b8301f15e40b6",
+  "source": "k8s_docs",
+  "title": "ValidatingAdmissionPolicy — ValidatingAdmissionPolicyStatus",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/admissionregistration/validating-admission-policy-v1/#ValidatingAdmissionPolicyStatus",
+  "text": "ValidatingAdmissionPolicyStatus represents the status of an admission validation policy.\nField\nDescription\nconditions\nCondition array\nconditions represent the latest available observations of a policy's current state.\nobservedGeneration\ninteger\nobservedGeneration is the generation observed by the controller.\ntypeChecking\nTypeChecking\ntypeChecking contains the results of type checking for each expression. Presence of this field indicates the completion of the type checking."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "88efa7a57941d90607affac08e65695f",
+  "source": "k8s_docs",
+  "title": "Kubernetes Object Management — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

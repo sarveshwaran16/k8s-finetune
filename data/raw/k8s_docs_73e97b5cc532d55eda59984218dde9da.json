@@ -1,0 +1,7 @@
+{
+  "id": "73e97b5cc532d55eda59984218dde9da",
+  "source": "k8s_docs",
+  "title": "Troubleshooting kubeadm — kubeadm blocks waiting for control plane during installation",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/#kubeadm-blocks-waiting-for-control-plane-during-installation",
+  "text": "If you notice that\nkubeadm init\nhangs after printing out the following line:\n[apiclient] Created API client, waiting for the control plane to become ready\nThis may be caused by a number of problems. The most common are:\nnetwork connection problems. Check that your machine has full network connectivity before continuing.\nthe cgroup driver of the container runtime differs from that of the kubelet. To understand how to\nconfigure it properly, see\nConfiguring a cgroup driver\n.\ncontrol plane containers are crashlooping or hanging. You can check this by running\ndocker ps\nand investigating each container by running\ndocker logs\n. For other container runtime, see\nDebugging Kubernetes nodes with crictl\n."
+}

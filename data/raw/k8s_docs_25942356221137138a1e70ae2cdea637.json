@@ -1,0 +1,7 @@
+{
+  "id": "25942356221137138a1e70ae2cdea637",
+  "source": "k8s_docs",
+  "title": "Object Names and IDs — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#what-s-next",
+  "text": "Read about\nlabels\nand\nannotations\nin Kubernetes.\nSee the\nIdentifiers and Names in Kubernetes\ndesign document.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

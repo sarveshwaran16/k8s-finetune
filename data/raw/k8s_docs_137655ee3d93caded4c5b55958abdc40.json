@@ -1,0 +1,7 @@
+{
+  "id": "137655ee3d93caded4c5b55958abdc40",
+  "source": "k8s_docs",
+  "title": "Get a Shell to a Running Container — Running individual commands in a container",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/get-shell-running-container/#running-individual-commands-in-a-container",
+  "text": "In an ordinary command window, not your shell, list the environment\nvariables in the running container:\nkubectl\nexec\nshell-demo -- env\nExperiment with running other commands. Here are some examples:\nkubectl\nexec\nshell-demo -- ps aux\nkubectl\nexec\nshell-demo -- ls /\nkubectl\nexec\nshell-demo -- cat /proc/1/mounts"
+}

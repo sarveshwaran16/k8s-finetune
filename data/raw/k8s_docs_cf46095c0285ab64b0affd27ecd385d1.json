@@ -1,0 +1,7 @@
+{
+  "id": "cf46095c0285ab64b0affd27ecd385d1",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kube-scheduler-simulator.sigs.k8s.io/reserve-result",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kube-scheduler-simulator-sigs-k8s-io-reserve-result",
+  "text": "Type: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/reserve-result: '{\"VolumeBinding\":\"success\"}'\nUsed on: Pod\nThis annotation records the result of reserve scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n.\n\nType: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/result-history: '[]'\nUsed on: Pod\nThis annotation records all the past scheduling results from scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n."
+}

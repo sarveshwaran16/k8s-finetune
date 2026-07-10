@@ -1,0 +1,7 @@
+{
+  "id": "c7f12acafedb344812ee6e924ff61aca",
+  "source": "k8s_docs",
+  "title": "Managing Secrets using kubectl — Create a Secret",
+  "source_url": "https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#create-a-secret",
+  "text": "A\nSecret\nobject stores sensitive data such as credentials\nused by Pods to access services. For example, you might need a Secret to store\nthe username and password needed to access a database.\nYou can create the Secret by passing the raw data in the command, or by storing\nthe credentials in files that you pass in the command. The following commands\ncreate a Secret that stores the username\nadmin\nand the password\nS!B\\*d$zDsb=\n."
+}

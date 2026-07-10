@@ -1,0 +1,7 @@
+{
+  "id": "6e4571edb92287c5d09ff1da10083f12",
+  "source": "k8s_docs",
+  "title": "kubectl rollout — See Also",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/#see-also",
+  "text": "kubectl\n- kubectl controls the Kubernetes cluster manager\nkubectl rollout history\n- View rollout history\nkubectl rollout pause\n- Mark the provided resource as paused\nkubectl rollout restart\n- Restart a resource\nkubectl rollout resume\n- Resume a paused resource\nkubectl rollout status\n- Show the status of the rollout\nkubectl rollout undo\n- Undo a previous rollout"
+}

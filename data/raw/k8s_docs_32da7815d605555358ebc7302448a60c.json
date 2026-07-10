@@ -1,0 +1,7 @@
+{
+  "id": "32da7815d605555358ebc7302448a60c",
+  "source": "k8s_docs",
+  "title": "Run a Replicated Stateful Application — Delete Pods",
+  "source_url": "https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/#delete-pods",
+  "text": "The StatefulSet also recreates Pods if they're deleted, similar to what a\nReplicaSet does for stateless Pods.\nkubectl delete pod mysql-2\nThe StatefulSet controller notices that no\nmysql-2\nPod exists anymore,\nand creates a new one with the same name and linked to the same\nPersistentVolumeClaim.\nYou should see server ID\n102\ndisappear from the loop output for a while\nand then return on its own."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "825803cc5b9afbdf0eb8184c7b44f57f",
+  "source": "k8s_docs",
+  "title": "Install Tools — kubectl",
+  "source_url": "https://kubernetes.io/docs/tasks/tools/#kubectl",
+  "text": "The Kubernetes command-line tool,\nkubectl\n, allows\nyou to run commands against Kubernetes clusters.\nYou can use kubectl to deploy applications, inspect and manage cluster resources,\nand view logs. For more information including a complete list of kubectl operations, see the\nkubectl\nreference documentation\n.\nkubectl is installable on a variety of Linux platforms, macOS and Windows.\nFind your preferred operating system below.\nInstall kubectl on Linux\nInstall kubectl on macOS\nInstall kubectl on Windows"
+}

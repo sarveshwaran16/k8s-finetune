@@ -1,0 +1,7 @@
+{
+  "id": "2c390f7bc09472057e8a9d77c7ce5f21",
+  "source": "k8s_docs",
+  "title": "Node Autoscaling — Autoscalers",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/#autoscalers",
+  "text": "The functionalities described in previous sections are provided by Node\nautoscalers\n. In addition\nto the Kubernetes API, autoscalers also need to interact with cloud provider APIs to provision and\nconsolidate Nodes. This means that they need to be explicitly integrated with each supported cloud\nprovider. The performance and feature set of a given autoscaler can differ between cloud provider\nintegrations.\ngraph TD\n    na[Node autoscaler]\n    k8s[Kubernetes]\n    cp[Cloud Provider]\n\n    k8s --> |get Pods/Nodes|na\n    na --> |drain Nodes|k8s\n    na --> |create/remove resources backing Nodes|cp\n    cp --> |get resources backing Nodes|na\n\n    classDef white_on_blue fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff;\n    classDef blue_on_white fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5;\n    class na blue_on_white;\n    class k8s,cp white_on_blue;"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "5b83d1f45df2a2aa52ff3ea54abe9991",
+  "source": "k8s_docs",
+  "title": "Authenticating with Bootstrap Tokens — Enabling Bootstrap Token Authentication",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/#enabling-bootstrap-token-authentication",
+  "text": "The Bootstrap Token authenticator can be enabled using the following flag on the\nAPI server:\n--enable-bootstrap-token-auth\nWhen enabled, bootstrapping tokens can be used as bearer token credentials to\nauthenticate requests against the API server.\nAuthorization: Bearer 07401b.f395accd246ae52d\nTokens authenticate as the username\nsystem:bootstrap:<token id>\nand are members\nof the group\nsystem:bootstrappers\n.\nAdditional groups may be specified in the token's Secret.\nExpired tokens can be deleted automatically by enabling the\ntokencleaner\ncontroller on the controller manager.\n--controllers=*,tokencleaner"
+}

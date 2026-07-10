@@ -1,0 +1,7 @@
+{
+  "id": "1ec6952eab0849fe40a8c7ff86d5e65d",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1alpha1) — EgressSelectorConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1alpha1/#apiserver-k8s-io-v1alpha1-EgressSelectorConfiguration",
+  "text": "EgressSelectorConfiguration provides versioned configuration for egress selector clients.\nField\nDescription\napiVersion\nstring\napiserver.k8s.io/v1alpha1\nkind\nstring\nEgressSelectorConfiguration\negressSelections\n[Required]\n[]EgressSelection\nconnectionServices contains a list of egress selection client configurations\nconnectionServices contains a list of egress selection client configurations"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "3637f1aa9d92a2922e7da1e04baea200",
+  "source": "k8s_docs",
+  "title": "Configure Multiple Schedulers — Package the scheduler",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/#package-the-scheduler",
+  "text": "Package your scheduler binary into a container image. For the purposes of this example,\nyou can use the default scheduler (kube-scheduler) as your second scheduler.\nClone the\nKubernetes source code from GitHub\nand build the source.\ngit clone https://github.com/kubernetes/kubernetes.git\ncd\nkubernetes\nmake\nCreate a container image containing the kube-scheduler binary. Here is the\nDockerfile\nto build the image:\nFROM\nbusybox\nADD\n./_output/local/bin/linux/amd64/kube-scheduler /usr/local/bin/kube-scheduler\nSave the file as\nDockerfile\n, build the image and push it to a registry. This example\npushes the image to\nGoogle Container Registry (GCR)\n.\nFor more details, please read the GCR\ndocumentation\n. Alternatively\nyou can also use the\ndocker hub\n. For more details\nrefer to the docker hub\ndocumentation\n.\ndocker build -t gcr.io/my-gcp-project/my-kube-scheduler:1.0 .\n# The image name and the repository\ngcloud docker -- push gcr.io/my-gcp-project/my-kube-scheduler:1.0\n# used in here is just an example"
+}

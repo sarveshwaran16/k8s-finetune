@@ -1,0 +1,7 @@
+{
+  "id": "57239a66b2a76e265c45d5462b4a8295",
+  "source": "k8s_docs",
+  "title": "Resource Management for Pods and Containers — Local ephemeral storage",
+  "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#local-ephemeral-storage",
+  "text": "For general concepts about local ephemeral storage and hints about\nconfiguring the requests and/or limits of ephemeral storage for a container,\nplease check the\nlocal ephemeral storage\npage.\n\nThe kubelet can measure how much local ephemeral storage is being used. It\ndoes this as long as you have enabled local ephemeral storage capacity isolation.\nKubernetes tracks the amount of ephemeral storage a Pod uses from the following:\nWriting to the container's writable layer (rootfs), container images, or both.\nWriting to local\nemptyDir\nvolumes.\nThe Pod's own logs (usually stored under\n/var/log/pods\n).\nSystem files managed by Kubernetes that are mapped into the Pod, such as\n/etc/hosts\n."
+}

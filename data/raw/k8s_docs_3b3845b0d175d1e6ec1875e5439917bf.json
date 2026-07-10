@@ -1,0 +1,7 @@
+{
+  "id": "3b3845b0d175d1e6ec1875e5439917bf",
+  "source": "k8s_docs",
+  "title": "Traces For Kubernetes System Components — Feedback",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-traces/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

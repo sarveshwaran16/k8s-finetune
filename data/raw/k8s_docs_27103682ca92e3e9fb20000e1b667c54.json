@@ -1,0 +1,7 @@
+{
+  "id": "27103682ca92e3e9fb20000e1b667c54",
+  "source": "k8s_docs",
+  "title": "APIService — ServiceReference",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiregistration/api-service-v1/#ServiceReference",
+  "text": "ServiceReference holds a reference to Service.legacy.k8s.io\nField\nDescription\nname\nstring\nName is the name of the service\nnamespace\nstring\nNamespace is the namespace of the service\nport\ninteger\nIf specified, the port on the service that hosting webhook. Default to 443 for backward compatibility. `port` should be a valid port number (1-65535, inclusive)."
+}

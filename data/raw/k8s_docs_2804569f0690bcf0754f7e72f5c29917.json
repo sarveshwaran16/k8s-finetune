@@ -1,0 +1,7 @@
+{
+  "id": "2804569f0690bcf0754f7e72f5c29917",
+  "source": "k8s_docs",
+  "title": "Dynamic Resource Allocation — ResourceClaim device status",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#resourceclaim-device-status",
+  "text": "DRA drivers can report driver-specific\ndevice status\ndata for each allocated device in the\nstatus.devices\nfield of a ResourceClaim.\nFor example, the driver might list the IP addresses that are assigned to a\nnetwork interface device. Updating this field requires specific synthetic RBAC permissions,\nsee\nHardening Guide - Dynamic Resource Allocation\nand\nHarden Dynamic Resource Allocation in Your Cluster\n.\nThe accuracy of the information that a driver adds to a ResourceClaim\nstatus.devices\nfield depends on the driver. Evaluate drivers to decide whether\nyou can rely on this field as the only source of device information.\nIf you disable the\nDRAResourceClaimDeviceStatus\nfeature gate\n, the\nstatus.devices\nfield automatically gets cleared when storing the ResourceClaim.\nA ResourceClaim device status is supported when it is possible, from a DRA\ndriver, to update an existing ResourceClaim where the\nstatus.devices\nfield is\nset.\nFor details about the\nstatus.devices\nfield, see the\nResourceClaim\nAPI reference."
+}

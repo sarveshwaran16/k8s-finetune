@@ -1,7 +1,0 @@
-{
-  "id": "2e25de4422625b00f0aae9c6653d11ec",
-  "source": "k8s_docs",
-  "title": "Debug cluster",
-  "source_url": "https://kubernetes.io/docs/reference/debug-cluster/",
-  "text": "Debug cluster\nFlow control\nFeedback\nWas this page helpful?\nYes\nNo\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nLast modified September 14, 2023 at 6:34 PM PST:\naddress comments (0469dc9b32)"
-}

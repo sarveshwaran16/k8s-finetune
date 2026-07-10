@@ -1,0 +1,7 @@
+{
+  "id": "797d37ba7e6243ff8ed2f528f29abe41",
+  "source": "k8s_docs",
+  "title": "Running Multiple Instances of Your App — Scaling an application",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/#scaling-an-application",
+  "text": "Previously we created a\nDeployment\n,\nand then exposed it publicly via a\nService\n.\nThe Deployment created only one Pod for running our application. When traffic increases,\nwe will need to scale the application to keep up with user demand.\nIf you haven't worked through the earlier sections, start from\nUsing minikube to create a cluster\n.\nScaling\nis accomplished by changing the number of replicas in a Deployment.\nIf you are trying this after the\nprevious section\n, then you\nmay have deleted the service you created, or have created a Service of\ntype: NodePort\n.\nIn this section, it is assumed that a service with\ntype: LoadBalancer\nis created\nfor the kubernetes-bootcamp Deployment.\nIf you have\nnot\ndeleted the Service created in\nthe previous section\n,\nfirst delete that Service and then run the following command to create a new Service\nwith its\ntype\nset to\nLoadBalancer\n:\nkubectl expose deployment/kubernetes-bootcamp --type\n=\n\"LoadBalancer\"\n--port\n8080"
+}

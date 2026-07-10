@@ -1,0 +1,7 @@
+{
+  "id": "0644541e7339f0d95ead9dec864f5b4b",
+  "source": "k8s_docs",
+  "title": "Enforcing Pod Security Standards — Embrace the principle of least privilege",
+  "source_url": "https://kubernetes.io/docs/setup/best-practices/enforcing-pod-security-standards/#embrace-the-principle-of-least-privilege",
+  "text": "In an ideal world, every pod in every namespace would meet the requirements of the\nrestricted\npolicy. However, this is not possible nor practical, as some workloads will require elevated\nprivileges for legitimate reasons.\nNamespaces allowing\nprivileged\nworkloads should establish and enforce appropriate access controls.\nFor workloads running in those permissive namespaces, maintain documentation about their unique\nsecurity requirements. If at all possible, consider how those requirements could be further\nconstrained."
+}

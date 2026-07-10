@@ -1,0 +1,7 @@
+{
+  "id": "308c8d6778f655c3c16de4afb6cfe68d",
+  "source": "k8s_docs",
+  "title": "Running ZooKeeper, A Distributed System Coordinator — Sanity testing the ensemble",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/zookeeper/#sanity-testing-the-ensemble",
+  "text": "The most basic sanity test is to write data to one ZooKeeper server and\nto read the data from another.\nThe command below executes the\nzkCli.sh\nscript to write\nworld\nto the path\n/hello\non the\nzk-0\nPod in the ensemble.\nkubectl\nexec\nzk-0 -- zkCli.sh create /hello world\nWATCHER::\n\nWatchedEvent state:SyncConnected type:None path:null\nCreated /hello\nTo get the data from the\nzk-1\nPod use the following command.\nkubectl\nexec\nzk-1 -- zkCli.sh get /hello\nThe data that you created on\nzk-0\nis available on all the servers in the\nensemble.\nWATCHER::\n\nWatchedEvent state:SyncConnected type:None path:null\nworld\ncZxid = 0x100000002\nctime = Thu Dec 08 15:13:30 UTC 2016\nmZxid = 0x100000002\nmtime = Thu Dec 08 15:13:30 UTC 2016\npZxid = 0x100000002\ncversion = 0\ndataVersion = 0\naclVersion = 0\nephemeralOwner = 0x0\ndataLength = 5\nnumChildren = 0"
+}

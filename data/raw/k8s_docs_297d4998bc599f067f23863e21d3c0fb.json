@@ -1,0 +1,7 @@
+{
+  "id": "297d4998bc599f067f23863e21d3c0fb",
+  "source": "k8s_docs",
+  "title": "Kubelet Configuration (v1beta1) — ImagePullCredentialsVerificationPolicy",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-ImagePullCredentialsVerificationPolicy",
+  "text": "(Alias of\nstring\n)\nAppears in:\nKubeletConfiguration\nImagePullCredentialsVerificationPolicy is an enum for the policy that is enforced\nwhen pod is requesting an image that appears on the system\n\nAppears in:\nImagePullCredentials\nImagePullSecret is a representation of a Kubernetes secret object coordinates along\nwith a credential hash of the pull secret credentials this object contains.\nField\nDescription\nuid\n[Required]\nstring\nNo description provided.\nnamespace\n[Required]\nstring\nNo description provided.\nname\n[Required]\nstring\nNo description provided.\ncredentialHash\n[Required]\nstring\nCredentialHash is a SHA-256 retrieved by hashing the image pull credentials\ncontent of the secret specified by the UID/Namespace/Name coordinates.\nCredentialHash is a SHA-256 retrieved by hashing the image pull credentials\ncontent of the secret specified by the UID/Namespace/Name coordinates."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "0172f41f506e67388cc10e2a6830c2fd",
+  "source": "k8s_docs",
+  "title": "Workload — WorkloadSpec",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/scheduling/workload-v1alpha2/#WorkloadSpec",
+  "text": "WorkloadSpec defines the desired state of a Workload.\nField\nDescription\ncontrollerRef\nTypedLocalObjectReference\nControllerRef is an optional reference to the controlling object, such as a Deployment or Job. This field is intended for use by tools like CLIs to provide a link back to the original workload definition. This field is immutable.\npodGroupTemplates\n*\nPodGroupTemplate array\nPodGroupTemplates is the list of templates that make up the Workload. The maximum number of templates is 8. This field is immutable."
+}

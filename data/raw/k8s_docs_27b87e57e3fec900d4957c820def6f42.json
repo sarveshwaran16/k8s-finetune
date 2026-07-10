@@ -1,0 +1,7 @@
+{
+  "id": "27b87e57e3fec900d4957c820def6f42",
+  "source": "k8s_docs",
+  "title": "kubectl — Environment variables",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl/#environment-variables",
+  "text": "KUBECONFIG\nPath to the kubectl configuration (\"kubeconfig\") file. Default: \"$HOME/.kube/config\"\nKUBECTL_EXPLAIN_OPENAPIV3\nToggles whether calls to `kubectl explain` use the new OpenAPIv3 data source available. OpenAPIV3 is enabled by default since Kubernetes 1.24.\nKUBECTL_ENABLE_CMD_SHADOW\nWhen set to true, external plugins can be used as subcommands for builtin commands if subcommand does not exist. In alpha stage, this feature can only be used for create command(e.g. kubectl create networkpolicy).\nKUBECTL_PORT_FORWARD_WEBSOCKETS\nWhen set to true, the kubectl port-forward command will attempt to stream using the websockets protocol. If the upgrade to websockets fails, the commands will fallback to use the current SPDY protocol.\nKUBECTL_REMOTE_COMMAND_WEBSOCKETS\nWhen set to true, the kubectl exec, cp, and attach commands will attempt to stream using the websockets protocol. If the upgrade to websockets fails, the commands will fallback to use the current SPDY protocol.\nKUBECTL_KUBERC\nWhen set to true, kuberc file is taken into account to define user specific preferences.\nKUBECTL_KYAML\nWhen set to true, kubectl is capable of producing Kubernetes-specific dialect of YAML output format."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "125386115375a5555696458a5324874b",
+  "source": "k8s_docs",
+  "title": "Common Expression Language in Kubernetes — Kubernetes regex library",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/cel/#kubernetes-regex-library",
+  "text": "In addition to the\nmatches\nfunction provided by the CEL standard library, the\nregex library provides\nfind\nand\nfindAll\n, enabling a much wider range of\nregex operations.\nExamples:\nExamples of CEL expressions using regex library functions\nCEL Expression\nPurpose\n\"abc 123\".find('[0-9]+')\nFind the first number in a string\n\"1, 2, 3, 4\".findAll('[0-9]+').map(x, int(x)).sum() < 100\nVerify that the numbers in a string sum to less than 100\nSee the\nKubernetes regex library\ngodoc for more information."
+}

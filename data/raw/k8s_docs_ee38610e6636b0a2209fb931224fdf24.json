@@ -1,0 +1,7 @@
+{
+  "id": "ee38610e6636b0a2209fb931224fdf24",
+  "source": "k8s_docs",
+  "title": "Dynamic Volume Provisioning — Using Dynamic Provisioning",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/dynamic-provisioning/#using-dynamic-provisioning",
+  "text": "Users request dynamically provisioned storage by including a storage class in\ntheir\nPersistentVolumeClaim\n. Before Kubernetes v1.6, this was done via the\nvolume.beta.kubernetes.io/storage-class\nannotation. However, this annotation\nis deprecated since v1.9. Users now can and should instead use the\nstorageClassName\nfield of the\nPersistentVolumeClaim\nobject. The value of\nthis field must match the name of a\nStorageClass\nconfigured by the\nadministrator (see\nEnabling Dynamic Provisioning\n).\nTo select the \"fast\" storage class, for example, a user would create the\nfollowing PersistentVolumeClaim:\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\nclaim1\nspec\n:\naccessModes\n:\n-\nReadWriteOnce\nstorageClassName\n:\nfast\nresources\n:\nrequests\n:\nstorage\n:\n30Gi\nThis claim results in an SSD-like Persistent Disk being automatically\nprovisioned. When the claim is deleted, the volume is destroyed."
+}

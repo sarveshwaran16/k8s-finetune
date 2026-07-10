@@ -1,0 +1,7 @@
+{
+  "id": "e159645ed73a8bbb781a833d4414d264",
+  "source": "k8s_docs",
+  "title": "Changing The Kubernetes Package Repository — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/change-package-repository/#what-s-next",
+  "text": "See how to\nUpgrade Linux nodes\n.\nSee how to\nUpgrade Windows nodes\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

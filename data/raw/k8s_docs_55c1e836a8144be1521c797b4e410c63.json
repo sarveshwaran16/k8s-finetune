@@ -1,0 +1,7 @@
+{
+  "id": "55c1e836a8144be1521c797b4e410c63",
+  "source": "k8s_docs",
+  "title": "Topology-Aware Workload Scheduling — API configuration: scheduling constraints",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/topology-aware-scheduling/#api-configuration-scheduling-constraints",
+  "text": "Every PodGroup (or PodGroupTemplate) may optionally declare the\nschedulingConstraints\nfield,\nwhich is interpreted by the\nplacement-based PodGroup scheduling algorithm\n.\nIf constraints are defined in PodGroupTemplate, they will be copied to referencing PodGroups.\nAs of Kubernetes v1.36, the API supports topology constraints."
+}

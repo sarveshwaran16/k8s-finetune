@@ -1,0 +1,7 @@
+{
+  "id": "5d4b90eb89791c3f9450042ccf417393",
+  "source": "k8s_docs",
+  "title": "Service Internal Traffic Policy — How it works",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/service-traffic-policy/#how-it-works",
+  "text": "The kube-proxy filters the endpoints it routes to based on the\nspec.internalTrafficPolicy\nsetting. When it's set to\nLocal\n, only node local\nendpoints are considered. When it's\nCluster\n(the default), or is not set,\nKubernetes considers all endpoints.\n\nRead about\nTopology Aware Routing\nRead about\nService External Traffic Policy\nFollow the\nConnecting Applications with Services\ntutorial"
+}

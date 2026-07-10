@@ -1,0 +1,7 @@
+{
+  "id": "827447702764fddb1cc5bcbd0c9f31fb",
+  "source": "k8s_docs",
+  "title": "Disruptions — Dealing with disruptions",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/disruptions/#dealing-with-disruptions",
+  "text": "Here are some ways to mitigate involuntary disruptions:\nEnsure your pod\nrequests the resources\nit needs.\nReplicate your application if you need higher availability. (Learn about running replicated\nstateless\nand\nstateful\napplications.)\nFor even higher availability when running replicated applications,\nspread applications across racks (using\nanti-affinity\n)\nor across zones (if using a\nmulti-zone cluster\n.)\nThe frequency of voluntary disruptions varies. On a basic Kubernetes cluster, there are\nno automated voluntary disruptions (only user-triggered ones). However, your cluster administrator or hosting provider\nmay run some additional services which cause voluntary disruptions. For example,\nrolling out node software updates can cause voluntary disruptions. Also, some implementations\nof cluster (node) autoscaling may cause voluntary disruptions to defragment and compact nodes.\nYour cluster administrator or hosting provider should have documented what level of voluntary\ndisruptions, if any, to expect. Certain configuration options, such as\nusing PriorityClasses\nin your pod spec can also cause voluntary (and involuntary) disruptions."
+}

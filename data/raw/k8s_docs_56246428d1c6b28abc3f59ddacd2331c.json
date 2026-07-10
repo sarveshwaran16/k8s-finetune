@@ -1,0 +1,7 @@
+{
+  "id": "56246428d1c6b28abc3f59ddacd2331c",
+  "source": "k8s_docs",
+  "title": "kubectl create configmap — Examples",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_configmap/#examples",
+  "text": "# Create a new config map named my-config based on folder bar\n  kubectl create configmap my-config --from-file=path/to/bar\n  \n  # Create a new config map named my-config with specified keys instead of file basenames on disk\n  kubectl create configmap my-config --from-file=key1=/path/to/bar/file1.txt --from-file=key2=/path/to/bar/file2.txt\n  \n  # Create a new config map named my-config with key1=config1 and key2=config2\n  kubectl create configmap my-config --from-literal=key1=config1 --from-literal=key2=config2\n  \n  # Create a new config map named my-config with key=value pairs from an env file\n  kubectl create configmap my-config --from-env-file=path/to/bar.env"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "d13a6491d92c2097efa75846c2c3c19a",
+  "source": "k8s_docs",
+  "title": "Volume Attributes Classes — Resizer",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/#resizer",
+  "text": "Each VolumeAttributesClass has a resizer that determines what volume plugin is used\nfor modifying PVs. The field\ndriverName\nmust be specified.\nThe modifying volume feature support for VolumeAttributesClass is implemented in\nkubernetes-csi/external-resizer\n.\nFor example, an existing PersistentVolumeClaim is using a VolumeAttributesClass named silver:\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\ntest-pv-claim\nspec\n:\n…\nvolumeAttributesClassName\n:\nsilver\n…\nA new VolumeAttributesClass gold is available in the cluster:\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nVolumeAttributesClass\nmetadata\n:\nname\n:\ngold\ndriverName\n:\npd.csi.storage.gke.io\nparameters\n:\niops\n:\n\"4000\"\nthroughput\n:\n\"60\"\nThe end user can update the PVC with the new VolumeAttributesClass gold and apply:\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\ntest-pv-claim\nspec\n:\n…\nvolumeAttributesClassName\n:\ngold\n…\nTo understand how the resizer works with VolumeAttributesClass, refer to\nthe\nCSI external-resizer documentation\n."
+}

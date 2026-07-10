@@ -1,0 +1,7 @@
+{
+  "id": "a1619578736338a14d78a13696a57df4",
+  "source": "k8s_docs",
+  "title": "Persistent Volumes — Access Modes",
+  "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes-1",
+  "text": "Claims use\nthe same conventions as volumes\nwhen requesting\nstorage with specific access modes.\n\nClaims use\nthe same convention as volumes\nto indicate the\nconsumption of the volume as either a filesystem or block device.\n\nClaims can use the\nvolumeName\nfield to explicitly bind to a specific PersistentVolume. You can also leave\nvolumeName\nunset, indicating that you'd like Kubernetes to set up a new PersistentVolume\nthat matches the claim.\nIf the specified PV is already bound to another PVC, the binding will be stuck\nin a pending state."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "00afe44da5360cf217c50791f748267c",
+  "source": "k8s_docs",
+  "title": "Container Lifecycle Hooks — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#what-s-next",
+  "text": "Learn more about the\nContainer environment\n.\nGet hands-on experience\nattaching handlers to Container lifecycle events\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

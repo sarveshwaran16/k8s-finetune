@@ -1,0 +1,7 @@
+{
+  "id": "74d95c782452e201e4cb463d3a7eb91e",
+  "source": "k8s_docs",
+  "title": " — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/kubeadm_upgrade_apply_phase_upload-config_kubelet/#synopsis",
+  "text": "Upload the kubelet configuration to a ConfigMap\nkubeadm upgrade apply phase upload-config kubelet [flags]\n\n--config string\nPath to a kubeadm configuration file.\n--dry-run\nDo not change any state, just output what actions would be performed.\n-h, --help\nhelp for kubelet\n--kubeconfig string     Default: \"/etc/kubernetes/admin.conf\"\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file.\nPath to a kubeadm configuration file.\nDo not change any state, just output what actions would be performed.\nhelp for kubelet\nThe kubeconfig file to use when talking to the cluster. If the flag is not set, a set of standard locations can be searched for an existing kubeconfig file."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "fb157f55a2a186c429e67bcda66c4e1e",
+  "source": "k8s_docs",
+  "title": "Scheduling, Preemption and Eviction — Scheduling",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/#scheduling",
+  "text": "Kubernetes Scheduler\nAssigning Pods to Nodes\nPod Overhead\nPod Topology Spread Constraints\nTaints and Tolerations\nScheduling Framework\nDynamic Resource Allocation\nScheduler Performance Tuning\nResource Bin Packing for Extended Resources\nPod Scheduling Readiness\nPodGroup Scheduling\nGang Scheduling\nTopology-aware Scheduling\nWorkload-Aware preemption\nDescheduler\nNode Declared Features"
+}

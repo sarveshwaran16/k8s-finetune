@@ -1,0 +1,7 @@
+{
+  "id": "7d5cf7fdd72195a8119187da66b0501e",
+  "source": "k8s_docs",
+  "title": "Example: Deploying WordPress and MySQL with Persistent Volumes — Cleaning up",
+  "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/#cleaning-up",
+  "text": "Run the following command to delete your Secret, Deployments, Services and PersistentVolumeClaims:\nkubectl delete -k ./\nRun the following command to delete your Secret, Deployments, Services and PersistentVolumeClaims:\nkubectl delete -k ./\n\nLearn more about\nIntrospection and Debugging\nLearn more about\nJobs\nLearn more about\nPort Forwarding\nLearn how to\nGet a Shell to a Container"
+}

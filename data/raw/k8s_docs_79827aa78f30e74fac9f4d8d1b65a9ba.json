@@ -1,0 +1,7 @@
+{
+  "id": "79827aa78f30e74fac9f4d8d1b65a9ba",
+  "source": "k8s_docs",
+  "title": "Configure Default CPU Requests and Limits for a Namespace — For app developers",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/#for-app-developers",
+  "text": "Assign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods"
+}

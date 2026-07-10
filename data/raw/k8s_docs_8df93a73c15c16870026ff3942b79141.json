@@ -1,0 +1,7 @@
+{
+  "id": "8df93a73c15c16870026ff3942b79141",
+  "source": "k8s_docs",
+  "title": "Admission Webhook Good Practices — Mutating webhook deployment",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#mutating-webhook-deployment",
+  "text": "This section provides recommendations for deploying your mutating admission\nwebhooks. In summary, these are as follows:\nGradually roll out the webhook configuration and monitor for issues by\nnamespace.\nLimit access to edit the webhook configuration resources.\nLimit access to the namespace that runs the webhook server, if the server is\nin-cluster."
+}

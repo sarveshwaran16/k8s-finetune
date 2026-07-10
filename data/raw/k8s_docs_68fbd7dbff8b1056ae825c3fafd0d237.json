@@ -1,0 +1,7 @@
+{
+  "id": "68fbd7dbff8b1056ae825c3fafd0d237",
+  "source": "k8s_docs",
+  "title": "Kubernetes Custom Metrics (v1beta2) — MetricValueList",
+  "source_url": "https://kubernetes.io/docs/reference/external-api/custom-metrics.v1beta2/#custom-metrics-k8s-io-v1beta2-MetricValueList",
+  "text": "MetricValueList is a list of values for a given metric for some set of objects\nField\nDescription\napiVersion\nstring\ncustom.metrics.k8s.io/v1beta2\nkind\nstring\nMetricValueList\nmetadata\n[Required]\nmeta/v1.ListMeta\nNo description provided.\nitems\n[Required]\n[]MetricValue\nthe value of the metric across the described objects\nthe value of the metric across the described objects"
+}

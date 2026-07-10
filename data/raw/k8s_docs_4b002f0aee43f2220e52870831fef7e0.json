@@ -1,0 +1,7 @@
+{
+  "id": "4b002f0aee43f2220e52870831fef7e0",
+  "source": "k8s_docs",
+  "title": "Scheduling Framework — Scheduling cycle & binding cycle",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#scheduling-cycle-binding-cycle",
+  "text": "The scheduling cycle selects a node for the Pod, and the binding cycle applies\nthat decision to the cluster. Together, a scheduling cycle and binding cycle are\nreferred to as a \"scheduling context\".\nScheduling cycles are run serially, while binding cycles may run concurrently.\nA scheduling or binding cycle can be aborted if the Pod is determined to\nbe unschedulable or if there is an internal error. The Pod will be returned to\nthe queue and retried."
+}

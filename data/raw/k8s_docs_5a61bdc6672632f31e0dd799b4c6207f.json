@@ -1,0 +1,7 @@
+{
+  "id": "5a61bdc6672632f31e0dd799b4c6207f",
+  "source": "k8s_docs",
+  "title": "Services, Load Balancing, and Networking — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/#what-s-next",
+  "text": "The\nConnecting Applications with Services\ntutorial lets you learn about Services and Kubernetes networking with a hands-on example.\nCluster Networking\nexplains how to set\nup networking for your cluster, and also provides an overview of the technologies involved.\nTo learn about specific networking concepts, see:\nService\n- expose an application behind a single outward-facing endpoint\nIngress\n- protocol-aware HTTP/HTTPS routing using URIs, hostnames, and paths\nGateway API\n- dynamic infrastructure provisioning and advanced traffic routing\nNetwork Policies\n- control traffic flow at the IP address or port level (OSI layer 3 or 4)\nDNS for Services and Pods\n- discover services within your cluster using DNS"
+}

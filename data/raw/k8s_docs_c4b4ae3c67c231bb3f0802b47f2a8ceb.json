@@ -1,0 +1,7 @@
+{
+  "id": "c4b4ae3c67c231bb3f0802b47f2a8ceb",
+  "source": "k8s_docs",
+  "title": "Audit Annotations — missing-san.invalid-cert.kubernetes.io/$hostname",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/#missing-san-invalid-cert-kubernetes-io-hostname",
+  "text": "Example:\nmissing-san.invalid-cert.kubernetes.io/example-svc.example-namespace.svc: \"relies on a legacy Common Name field instead of the SAN extension for subject validation\"\nUsed by Kubernetes version v1.24 and later\nThis annotation indicates a webhook or aggregated API server\nis using an invalid certificate that is missing\nsubjectAltNames\n.\nSupport for these certificates was disabled by default in Kubernetes 1.19,\nand removed in Kubernetes 1.23.\nRequests to endpoints using these certificates will fail.\nServices using these certificates should replace them as soon as possible\nto avoid disruption when running in Kubernetes 1.23+ environments.\nThere's more information about this in the Go documentation:\nX.509 CommonName deprecation\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "890354e7851bec63dde6f16ee804a07a",
+  "source": "k8s_docs",
+  "title": "Configure Memory and CPU Quotas for a Namespace — Discussion",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/quota-memory-cpu-namespace/#discussion",
+  "text": "As you have seen in this exercise, you can use a ResourceQuota to restrict\nthe memory request total for all Pods running in a namespace.\nYou can also restrict the totals for memory limit, cpu request, and cpu limit.\nInstead of managing total resource use within a namespace, you might want to restrict\nindividual Pods, or the containers in those Pods. To achieve that kind of limiting, use a\nLimitRange\n."
+}

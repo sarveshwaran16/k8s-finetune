@@ -1,0 +1,7 @@
+{
+  "id": "3d7298ffd91805d7519e7c4d8cb2081e",
+  "source": "k8s_docs",
+  "title": "Scheduling Framework — Bind",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#bind",
+  "text": "These plugins are used to bind a Pod to a Node. Bind plugins will not be called\nuntil all PreBind plugins have completed. Each bind plugin is called in the\nconfigured order. A bind plugin may choose whether or not to handle the given\nPod. If a bind plugin chooses to handle a Pod,\nthe remaining bind plugins are\nskipped\n."
+}

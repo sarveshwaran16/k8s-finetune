@@ -1,0 +1,7 @@
+{
+  "id": "0287dea603e4040f773c3cd14bbb7e10",
+  "source": "k8s_docs",
+  "title": "Liveness, Readiness, and Startup Probes — Liveness probe",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#liveness-probe",
+  "text": "Liveness probes determine when to restart a container.\nFor example, liveness probes could catch a deadlock, where an application is\nrunning, but unable to make progress. Restarting a container in such a state\ncan help to make the application more available despite bugs.\nIf a container fails its liveness probe more times than the configured tolerance,\nthe kubelet restarts that container.\nLiveness probes do not wait for readiness probes to succeed. If you want to\nwait before executing a liveness probe, you can either define\ninitialDelaySeconds\nor use a\nstartup probe\n.\nLiveness probes can be a powerful way to recover from application failures,\nbut they should be used with caution.\nLiveness probes must be configured carefully to ensure that they truly indicate\nunrecoverable application failure, for example a deadlock.\nIncorrect implementation of liveness probes can lead to cascading failures.\nThis results in restarting of container under high load; failed client requests\nas your application became less scalable; and increased workload on remaining\npods due to some failed pods. Understand the difference between liveness and\nreadiness probes and when to apply them for your app."
+}

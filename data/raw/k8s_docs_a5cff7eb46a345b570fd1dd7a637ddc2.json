@@ -1,0 +1,7 @@
+{
+  "id": "a5cff7eb46a345b570fd1dd7a637ddc2",
+  "source": "k8s_docs",
+  "title": "Ingress — Deprecated annotation",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#deprecated-annotation",
+  "text": "Before the IngressClass resource and\ningressClassName\nfield were added in\nKubernetes 1.18, Ingress classes were specified with a\nkubernetes.io/ingress.class\nannotation on the Ingress. This annotation was\nnever formally defined, but was widely supported by Ingress controllers.\nThe newer\ningressClassName\nfield on Ingresses is a replacement for that\nannotation, but is not a direct equivalent. While the annotation was generally\nused to reference the name of the Ingress controller that should implement the\nIngress, the field is a reference to an IngressClass resource that contains\nadditional Ingress configuration, including the name of the Ingress controller."
+}

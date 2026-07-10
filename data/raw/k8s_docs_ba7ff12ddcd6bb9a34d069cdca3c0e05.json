@@ -1,0 +1,7 @@
+{
+  "id": "ba7ff12ddcd6bb9a34d069cdca3c0e05",
+  "source": "k8s_docs",
+  "title": "Harden Dynamic Resource Allocation in Your Cluster — Identify DRA components that write status",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/hardening-dra/#identify-dra-components-that-write-status",
+  "text": "Document which identities (usually ServiceAccounts) update ResourceClaim\nstatus in your cluster. Typical writers are:\nkube-scheduler or a custom allocation controller\nnode-local DRA drivers\nmulti-node DRA status controllers\n\nStarting in Kubernetes v1.36, DRA status updates require synthetic subresource\npermissions in addition to\nresourceclaims/status\n."
+}

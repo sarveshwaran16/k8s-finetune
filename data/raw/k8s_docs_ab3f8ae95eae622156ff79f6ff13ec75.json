@@ -1,0 +1,7 @@
+{
+  "id": "ab3f8ae95eae622156ff79f6ff13ec75",
+  "source": "k8s_docs",
+  "title": "Overprovision Node Capacity For A Cluster — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/node-overprovisioning/#what-s-next",
+  "text": "Learn more about\nPriorityClasses\nand how they affect pod scheduling.\nExplore\nnode autoscaling\nto dynamically adjust your cluster's size based on workload demands.\nUnderstand\nPod preemption\n, a\nkey mechanism for Kubernetes to handle resource contention. The same page covers\neviction\n,\nwhich is less relevant to the placeholder Pod approach, but is also a mechanism for Kubernetes\nto react when resources are contended."
+}

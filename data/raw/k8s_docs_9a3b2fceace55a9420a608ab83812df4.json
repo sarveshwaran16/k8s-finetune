@@ -1,0 +1,7 @@
+{
+  "id": "9a3b2fceace55a9420a608ab83812df4",
+  "source": "k8s_docs",
+  "title": "Certificate Management with kubeadm — Performing cleanup",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#post-csr-cleanup",
+  "text": "Perform this step on all nodes that have CSR files.\nWrite the following script in the\n/etc/kubernetes\ndirectory, navigate to the directory\nand execute the script.\n#!/bin/bash\n# Cleanup CSR files\nrm -f ./*.csr ./pki/*.csr ./pki/etcd/*.csr\n# Clean all CSR files\n# Cleanup CRT files that were already embedded in kubeconfig files\nrm -f ./*.crt\nOptionally, move\n.srl\nfiles to the next node to be processed.\nOptionally, if using external CA remove the\n/etc/kubernetes/pki/ca.key\nfile,\nas explained in the\nExternal CA node\nsection."
+}

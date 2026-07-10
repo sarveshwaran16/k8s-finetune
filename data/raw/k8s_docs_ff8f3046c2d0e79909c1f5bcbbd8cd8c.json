@@ -1,0 +1,7 @@
+{
+  "id": "ff8f3046c2d0e79909c1f5bcbbd8cd8c",
+  "source": "k8s_docs",
+  "title": "Kubernetes API Concepts — Example",
+  "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#example-streaming-lists",
+  "text": "An example: you want to watch a collection of Pods. For that collection, the current resource version\nis 10245 and there are two pods:\nfoo\nand\nbar\n. Then sending the following request (explicitly requesting\nconsistent read\nby setting empty resource version using\nresourceVersion=\n) could result\nin the following sequence of events:\nGET /api/v1/namespaces/test/pods?watch=1&sendInitialEvents=true&allowWatchBookmarks=true&resourceVersion=&resourceVersionMatch=NotOlderThan\n---\n200 OK\nTransfer-Encoding: chunked\nContent-Type: application/json\n{\n\"type\": \"ADDED\",\n\"object\": {\"kind\": \"Pod\", \"apiVersion\": \"v1\", \"metadata\": {\"resourceVersion\": \"8467\", \"name\": \"foo\"}, ...}\n}\n{\n\"type\": \"ADDED\",\n\"object\": {\"kind\": \"Pod\", \"apiVersion\": \"v1\", \"metadata\": {\"resourceVersion\": \"5726\", \"name\": \"bar\"}, ...}\n}\n{\n\"type\": \"BOOKMARK\",\n\"object\": {\"kind\": \"Pod\", \"apiVersion\": \"v1\", \"metadata\": {\"resourceVersion\": \"10245\"} }\n}\n...\n<followed by regular watch stream starting from resourceVersion=\"10245\">"
+}

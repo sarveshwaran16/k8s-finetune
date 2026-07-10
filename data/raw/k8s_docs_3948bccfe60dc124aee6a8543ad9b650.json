@@ -1,0 +1,7 @@
+{
+  "id": "3948bccfe60dc124aee6a8543ad9b650",
+  "source": "k8s_docs",
+  "title": "ReplicaSet — Pod Selector",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#pod-selector",
+  "text": "The\n.spec.selector\nfield is a\nlabel selector\n. As discussed\nearlier\nthese are the labels used to identify potential Pods to acquire. In our\nfrontend.yaml\nexample, the selector was:\nmatchLabels\n:\ntier\n:\nfrontend\nIn the ReplicaSet,\n.spec.template.metadata.labels\nmust match\nspec.selector\n, or it will\nbe rejected by the API."
+}

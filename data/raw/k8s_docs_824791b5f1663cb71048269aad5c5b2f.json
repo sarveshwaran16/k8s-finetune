@@ -1,0 +1,7 @@
+{
+  "id": "824791b5f1663cb71048269aad5c5b2f",
+  "source": "k8s_docs",
+  "title": "Declarative Management of Kubernetes Objects Using Configuration Files — Migrating from imperative object configuration to declarative object configuration",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#migrating-from-imperative-object-configuration-to-declarative-object-configuration",
+  "text": "Set the\nkubectl.kubernetes.io/last-applied-configuration\nannotation on the object:\nkubectl replace --save-config -f <kind>_<name>.yaml\nChange processes to use\nkubectl apply\nfor managing the object exclusively.\nSet the\nkubectl.kubernetes.io/last-applied-configuration\nannotation on the object:\nkubectl replace --save-config -f <kind>_<name>.yaml\nChange processes to use\nkubectl apply\nfor managing the object exclusively."
+}

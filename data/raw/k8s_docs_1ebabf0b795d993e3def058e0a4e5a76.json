@@ -1,0 +1,7 @@
+{
+  "id": "1ebabf0b795d993e3def058e0a4e5a76",
+  "source": "k8s_docs",
+  "title": "StorageVersion — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiserverinternal/storage-version-v1alpha1/#get-read",
+  "text": "GET /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}\nName\nType\nDescription\nname\nstring\nname of the StorageVersion\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nStorageVersion"
+}

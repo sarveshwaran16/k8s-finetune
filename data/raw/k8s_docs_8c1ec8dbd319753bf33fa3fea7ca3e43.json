@@ -1,0 +1,7 @@
+{
+  "id": "8c1ec8dbd319753bf33fa3fea7ca3e43",
+  "source": "k8s_docs",
+  "title": "Service — Application protocol",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#application-protocol",
+  "text": "The\nappProtocol\nfield provides a way to specify an application protocol for\neach Service port. This is used as a hint for implementations to offer\nricher behavior for protocols that they understand.\nThe value of this field is mirrored by the corresponding\nEndpoints and EndpointSlice objects.\nThis field follows standard Kubernetes label syntax. Valid values are one of:\nIANA standard service names\n.\nImplementation-defined prefixed names such as\nmycompany.com/my-custom-protocol\n.\nKubernetes-defined prefixed names:\nIANA standard service names\n.\nImplementation-defined prefixed names such as\nmycompany.com/my-custom-protocol\n.\nKubernetes-defined prefixed names:\nProtocol\nDescription\nkubernetes.io/h2c\nHTTP/2 over cleartext as described in\nRFC 9113\nkubernetes.io/ws\nWebSocket over cleartext as described in\nRFC 6455\nkubernetes.io/wss\nWebSocket over TLS as described in\nRFC 6455"
+}

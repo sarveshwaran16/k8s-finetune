@@ -1,0 +1,7 @@
+{
+  "id": "32eaf4d2d325c97f7e72daa9b5edb6a0",
+  "source": "k8s_docs",
+  "title": "PodGroup — PodGroupSchedulingConstraints",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/scheduling/pod-group-v1alpha2/#PodGroupSchedulingConstraints",
+  "text": "PodGroupSchedulingConstraints defines scheduling constraints (e.g. topology) for a PodGroup.\nField\nDescription\ntopology\nTopologyConstraint array\nTopology defines the topology constraints for the pod group. Currently only a single topology constraint can be specified. This may change in the future.\n\nPodGroupSchedulingPolicy defines the scheduling configuration for a PodGroup. Exactly one policy must be set.\nField\nDescription\nbasic\nBasicSchedulingPolicy\nBasic specifies that the pods in this group should be scheduled using standard Kubernetes scheduling behavior.\ngang\nGangSchedulingPolicy\nGang specifies that the pods in this group should be scheduled using all-or-nothing semantics."
+}

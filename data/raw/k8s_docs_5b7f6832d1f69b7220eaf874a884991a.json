@@ -1,0 +1,7 @@
+{
+  "id": "5b7f6832d1f69b7220eaf874a884991a",
+  "source": "k8s_docs",
+  "title": "Resize CPU and Memory Resources assigned to Containers — Pod resize status",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/#pod-resize-status",
+  "text": "The Kubelet updates the Pod's status conditions to indicate the state of a resize request:\ntype: PodResizePending\n: The Kubelet cannot immediately grant the request.\nThe\nmessage\nfield provides an explanation of why.\nreason: Infeasible\n: The requested resize is impossible on the current node\n(for example, requesting more resources than the node has).\nreason: Deferred\n: The requested resize is currently not possible,\nbut might become feasible later (for example if another pod is removed).\nThe Kubelet will retry the resize.\ntype: PodResizeInProgress\n: The Kubelet has accepted the resize and allocated resources,\nbut the changes are still being applied.\nThis is usually brief but might take longer depending on the resource type and runtime behavior.\nAny errors during actuation are reported in the\nmessage\nfield (along with\nreason: Error\n).\nreason: Infeasible\n: The requested resize is impossible on the current node\n(for example, requesting more resources than the node has).\nreason: Deferred\n: The requested resize is currently not possible,\nbut might become feasible later (for example if another pod is removed).\nThe Kubelet will retry the resize."
+}

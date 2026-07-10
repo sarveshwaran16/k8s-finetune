@@ -1,0 +1,7 @@
+{
+  "id": "8562886384aa8969cd1ce9059acee3b7",
+  "source": "k8s_docs",
+  "title": "Configuring a cgroup driver — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

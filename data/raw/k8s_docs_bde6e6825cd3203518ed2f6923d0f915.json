@@ -1,0 +1,7 @@
+{
+  "id": "bde6e6825cd3203518ed2f6923d0f915",
+  "source": "k8s_docs",
+  "title": "Cluster Architecture — cloud-controller-manager",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/#cloud-controller-manager",
+  "text": "The cloud-controller-manager only runs controllers that are specific to your cloud provider.\nIf you are running Kubernetes on your own premises, or in a learning environment inside your\nown PC, the cluster does not have a cloud controller manager.\nAs with the kube-controller-manager, the cloud-controller-manager combines several logically\nindependent control loops into a single binary that you run as a single process. You can scale\nhorizontally (run more than one copy) to improve performance or to help tolerate failures.\nThe following controllers can have cloud provider dependencies:\nNode controller: For checking the cloud provider to determine if a node has been\ndeleted in the cloud after it stops responding\nRoute controller: For setting up routes in the underlying cloud infrastructure\nService controller: For creating, updating and deleting cloud provider load balancers"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "95f228c17000675d3f5b722784485457",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — nfd.node.kubernetes.io/feature-labels",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#nfd-node-kubernetes-io-feature-labels",
+  "text": "Type: Annotation\nExample:\nnfd.node.kubernetes.io/feature-labels: \"cpu-cpuid.ADX,cpu-cpuid.AESNI,cpu-hardware_multithreading,kernel-version.full\"\nUsed on: Nodes\nThis annotation records a comma-separated list of node feature labels managed by\nNode Feature Discovery\n(NFD).\nNFD uses this for an internal mechanism. You should not edit this annotation yourself."
+}

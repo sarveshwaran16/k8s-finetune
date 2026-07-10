@@ -1,0 +1,7 @@
+{
+  "id": "623b245bb02db18ae849a203e68d9844",
+  "source": "k8s_docs",
+  "title": "Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller — 2.a. Eliminate purely mutating fields",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/migrate-from-psp/#eliminate-mutating-fields",
+  "text": "If a PodSecurityPolicy is mutating pods, then you could end up with pods that don't meet the Pod\nSecurity level requirements when you finally turn PodSecurityPolicy off. In order to avoid this, you\nshould eliminate all PSP mutation prior to switching over. Unfortunately PSP does not cleanly\nseparate mutating & validating fields, so this is not a straightforward migration.\nYou can start by eliminating the fields that are purely mutating, and don't have any bearing on the\nvalidating policy. These fields (also listed in the\nMapping PodSecurityPolicies to Pod Security Standards\nreference) are:\n.spec.defaultAllowPrivilegeEscalation\n.spec.runtimeClass.defaultRuntimeClassName\n.metadata.annotations['seccomp.security.alpha.kubernetes.io/defaultProfileName']\n.metadata.annotations['apparmor.security.beta.kubernetes.io/defaultProfileName']\n.spec.defaultAddCapabilities\n- Although technically a mutating & validating field, these should\nbe merged into\n.spec.allowedCapabilities\nwhich performs the same validation without mutation."
+}

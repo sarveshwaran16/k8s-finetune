@@ -1,0 +1,7 @@
+{
+  "id": "f2b04e38c04abbeed8eb95a12cb0fa8c",
+  "source": "k8s_docs",
+  "title": "Use an HTTP Proxy to Access the Kubernetes API — Using kubectl to start a proxy server",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/http-proxy-access-api/#using-kubectl-to-start-a-proxy-server",
+  "text": "This command starts a proxy to the Kubernetes API server:\nkubectl proxy --port=8080\n\nWhen the proxy server is running, you can explore the API using\ncurl\n,\nwget\n,\nor a browser.\nGet the API versions:\ncurl http://localhost:8080/api/\nThe output should look similar to this:\n{\n  \"kind\": \"APIVersions\",\n  \"versions\": [\n    \"v1\"\n  ],\n  \"serverAddressByClientCIDRs\": [\n    {\n      \"clientCIDR\": \"0.0.0.0/0\",\n      \"serverAddress\": \"10.0.2.15:8443\"\n    }\n  ]\n}\nGet a list of pods:\ncurl http://localhost:8080/api/v1/namespaces/default/pods\nThe output should look similar to this:\n{\n  \"kind\": \"PodList\",\n  \"apiVersion\": \"v1\",\n  \"metadata\": {\n    \"resourceVersion\": \"33074\"\n  },\n  \"items\": [\n    {\n      \"metadata\": {\n        \"name\": \"kubernetes-bootcamp-2321272333-ix8pt\",\n        \"generateName\": \"kubernetes-bootcamp-2321272333-\",\n        \"namespace\": \"default\",\n        \"uid\": \"ba21457c-6b1d-11e6-85f7-1ef9f1dab92b\",\n        \"resourceVersion\": \"33003\",\n        \"creationTimestamp\": \"2016-08-25T23:43:30Z\",\n        \"labels\": {\n          \"pod-template-hash\": \"2321272333\",\n          \"run\": \"kubernetes-bootcamp\"\n        },\n        ...\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "9e4e378bdb6e7e7129cf70df52ba91e3",
+  "source": "k8s_docs",
+  "title": "Authorization — What's next",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authorization/#what-s-next",
+  "text": "To learn more about Authentication, see\nAuthentication\n.\nFor an overview, read\nControlling Access to the Kubernetes API\n.\nTo learn more about Admission Control, see\nUsing Admission Controllers\n.\nRead more about\nCommon Expression Language in Kubernetes\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

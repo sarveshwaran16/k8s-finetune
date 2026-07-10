@@ -1,0 +1,7 @@
+{
+  "id": "f5df8d700f775ea73ae76edec5e4cc05",
+  "source": "k8s_docs",
+  "title": "Using kubectl to Create a Deployment — Deploy an app",
+  "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/#deploy-an-app",
+  "text": "Let’s deploy our first app on Kubernetes with the\nkubectl create deployment\ncommand.\nWe need to provide the deployment name and app image location (include the full\nrepository url for images hosted outside Docker Hub).\nkubectl create deployment kubernetes-bootcamp --image\n=\ngcr.io/google-samples/kubernetes-bootcamp:v1\nGreat! You just deployed your first application by creating a deployment. This performed a few things for you:\nsearched for a suitable node where an instance of the application could be run (we have only 1 available node)\nscheduled the application to run on that Node\nconfigured the cluster to reschedule the instance on a new Node when needed\nTo list your deployments use the\nkubectl get deployments\ncommand:\nkubectl get deployments\nWe see that there is 1 deployment running a single instance of your app. The instance\nis running inside a container on your node."
+}

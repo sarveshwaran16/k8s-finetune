@@ -1,0 +1,7 @@
+{
+  "id": "da24d67538507614375828923519f5c2",
+  "source": "k8s_docs",
+  "title": "Pod — GRPCAction",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#GRPCAction",
+  "text": "GRPCAction specifies an action involving a GRPC service.\nField\nDescription\nport\n*\ninteger\nPort number of the gRPC service. Number must be in the range 1 to 65535.\nservice\nstring\nService is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC."
+}

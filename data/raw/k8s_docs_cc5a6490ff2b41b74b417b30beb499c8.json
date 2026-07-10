@@ -1,0 +1,7 @@
+{
+  "id": "cc5a6490ff2b41b74b417b30beb499c8",
+  "source": "k8s_docs",
+  "title": "Pods — Working with Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#working-with-pods",
+  "text": "You'll rarely create individual Pods directly in Kubernetes—even singleton Pods. This\nis because Pods are designed as relatively ephemeral, disposable entities. When\na Pod gets created (directly by you, or indirectly by a\ncontroller\n), the new Pod is\nscheduled to run on a\nNode\nin your cluster.\nThe Pod remains on that node until the Pod finishes execution, the Pod object is deleted,\nthe Pod is\nevicted\nfor lack of resources, or the node fails.\nThe name of a Pod must be a valid\nDNS subdomain\nvalue, but this can produce unexpected results for the Pod hostname. For best compatibility,\nthe name should follow the more restrictive rules for a\nDNS label\n."
+}

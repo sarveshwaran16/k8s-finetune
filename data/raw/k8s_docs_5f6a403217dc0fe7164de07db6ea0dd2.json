@@ -1,0 +1,7 @@
+{
+  "id": "5f6a403217dc0fe7164de07db6ea0dd2",
+  "source": "k8s_docs",
+  "title": "Explore Validating and Mutating Admission Policies — What are declarative admission policies?",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/admission-policies/#what-are-declarative-admission-policies",
+  "text": "Declarative admission policies offer a declarative,\nin-process alternative to admission webhooks.\nBy using the Common Expression Language (CEL) to declare policy rules,\nthese policies are evaluated directly within the API server.\nThese policies are highly configurable, enabling policy authors to define logic that can be parameterized\nand scoped to resources as needed by cluster administrators."
+}

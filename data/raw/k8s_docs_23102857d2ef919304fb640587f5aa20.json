@@ -1,0 +1,7 @@
+{
+  "id": "23102857d2ef919304fb640587f5aa20",
+  "source": "k8s_docs",
+  "title": "kubectl create clusterrole — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_clusterrole/#synopsis",
+  "text": "Create a cluster role.\nkubectl create clusterrole NAME --verb=verb --resource=resource.group [--resource-name=resourcename] [--dry-run=server|client|none]\n\n# Create a cluster role named \"pod-reader\" that allows user to perform \"get\", \"watch\" and \"list\" on pods\n  kubectl create clusterrole pod-reader --verb=get,list,watch --resource=pods\n  \n  # Create a cluster role named \"pod-reader\" with ResourceName specified\n  kubectl create clusterrole pod-reader --verb=get --resource=pods --resource-name=readablepod --resource-name=anotherpod\n  \n  # Create a cluster role named \"foo\" with API Group specified\n  kubectl create clusterrole foo --verb=get,list,watch --resource=rs.apps\n  \n  # Create a cluster role named \"foo\" with SubResource specified\n  kubectl create clusterrole foo --verb=get,list,watch --resource=pods,pods/status\n  \n  # Create a cluster role name \"foo\" with NonResourceURL specified\n  kubectl create clusterrole \"foo\" --verb=get --non-resource-url=/logs/*\n  \n  # Create a cluster role name \"monitoring\" with AggregationRule specified\n  kubectl create clusterrole monitoring --aggregation-rule=\"rbac.example.com/aggregate-to-monitoring=true\""
+}

@@ -1,0 +1,7 @@
+{
+  "id": "851b5445be4cd822eb147b92f5efb208",
+  "source": "k8s_docs",
+  "title": "Storage Versions — Migrating to a different storage version",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/storage-version/#migrating-to-a-different-storage-version",
+  "text": "Multiple storage versions for a single resource can pose problems for cluster\nadministrators. A cluster administrator may not remove old versions of an API\nfor CRDs which may be unsupported until they are sure that all objects are no\nlonger using the storage version associated with it. With a large number of\nobjects and an opaque view into which ones are new and which ones still are\nbacked by old storage versions, it makes it difficult to tell when a version can\nbe safely removed. If a version is removed prematurely, it can mean being unable\nto read the object entirely.\nAnother important issue is the use of encryption keys as defined in the section\nabove. Since a resource must be actively in use to update the storage version,\nwhen a key rotation is done, both the old encryption key and the new encryption\nkey must remain in use until the administrator is sure all objects have been\nwritten to at least once. This poses both security risks and usability issues,\nsince a key cannot be fully removed from use until then.\nSee\nstorage version\nmigration\non\nexamples of how to run a migration to ensure that all objects are using a newer\nstorage version without manual intervention."
+}

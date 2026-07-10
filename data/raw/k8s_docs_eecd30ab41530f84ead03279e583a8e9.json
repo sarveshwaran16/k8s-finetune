@@ -1,0 +1,7 @@
+{
+  "id": "eecd30ab41530f84ead03279e583a8e9",
+  "source": "k8s_docs",
+  "title": "Pod — postCreate Connect Attach",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#post-create-connect-attach",
+  "text": "POST /api/v1/namespaces/{namespace}/pods/{name}/attach\nName\nType\nDescription\nname\nstring\nname of the PodAttachOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\ncontainer\nstring\nThe container in which to execute the command. Defaults to only container if there is only one container in the pod.\nstderr\nboolean\nStderr if true indicates that stderr is to be redirected for the attach call. Defaults to true.\nstdin\nboolean\nStdin if true, redirects the standard input stream of the pod for this call. Defaults to false.\nstdout\nboolean\nStdout if true indicates that stdout is to be redirected for the attach call. Defaults to true.\ntty\nboolean\nTTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+}

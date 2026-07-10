@@ -1,0 +1,7 @@
+{
+  "id": "ed851a24e903cb8857f8ef57eb22c3c0",
+  "source": "k8s_docs",
+  "title": "Adopting Sidecar Containers — What's next",
+  "source_url": "https://kubernetes.io/docs/tutorials/configuration/pod-sidecar-containers/#what-s-next",
+  "text": "Learn more about\nsidecar containers\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

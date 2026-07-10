@@ -1,0 +1,7 @@
+{
+  "id": "398a35d588a1779a7da9bffe1a3e6a79",
+  "source": "k8s_docs",
+  "title": "Guide for Running Windows Containers in Kubernetes — Taints and tolerations",
+  "source_url": "https://kubernetes.io/docs/concepts/windows/user-guide/#taints-and-tolerations",
+  "text": "Users need to use some combination of\ntaint\nand node selectors in order to schedule Linux and Windows workloads to their respective OS-specific nodes.\nThe recommended approach is outlined below,\nwith one of its main goals being that this approach should not break compatibility for existing Linux workloads.\nYou can (and should) set\n.spec.os.name\nfor each Pod, to indicate the operating system\nthat the containers in that Pod are designed for. For Pods that run Linux containers, set\n.spec.os.name\nto\nlinux\n. For Pods that run Windows containers, set\n.spec.os.name\nto\nwindows\n.\nThe scheduler does not use the value of\n.spec.os.name\nwhen assigning Pods to nodes. You should\nuse normal Kubernetes mechanisms for\nassigning pods to nodes\nto ensure that the control plane for your cluster places pods onto nodes that are running the\nappropriate operating system.\nThe\n.spec.os.name\nvalue has no effect on the scheduling of the Windows pods,\nso taints and tolerations (or node selectors) are still required\nto ensure that the Windows pods land onto appropriate Windows nodes."
+}

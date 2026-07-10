@@ -1,0 +1,7 @@
+{
+  "id": "59680eb8448e747f26dab401f96270a3",
+  "source": "k8s_docs",
+  "title": "Dynamic Admission Control — Monitoring admission webhooks",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#monitoring-admission-webhooks",
+  "text": "The API server provides ways to monitor admission webhook behaviors. These\nmonitoring mechanisms help cluster admins to answer questions like:\nWhich mutating webhook mutated the object in a API request?\nWhat change did the mutating webhook applied to the object?\nWhich webhooks are frequently rejecting API requests? What's the reason for a rejection?\nWhich mutating webhook mutated the object in a API request?\nWhat change did the mutating webhook applied to the object?\nWhich webhooks are frequently rejecting API requests? What's the reason for a rejection?"
+}

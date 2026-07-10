@@ -1,0 +1,7 @@
+{
+  "id": "50c21cf6769f89fea35e6d5ed6553ace",
+  "source": "k8s_docs",
+  "title": "Developing Cloud Controller Manager — Out of tree",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/developing-cloud-controller-manager/#out-of-tree",
+  "text": "To build an out-of-tree cloud-controller-manager for your cloud:\nCreate a go package with an implementation that satisfies\ncloudprovider.Interface\n.\nUse\nmain.go\nin cloud-controller-manager\nfrom Kubernetes core as a template for your\nmain.go\n. As mentioned above, the only difference should be the cloud package that will be imported.\nImport your cloud package in\nmain.go\n, ensure your package has an\ninit\nblock to run\ncloudprovider.RegisterCloudProvider\n.\nMany cloud providers publish their controller manager code as open source. If you are creating\na new cloud-controller-manager from scratch, you could take an existing out-of-tree cloud\ncontroller manager as your starting point."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "476631f2071c9e3720628ee8c064fd62",
+  "source": "k8s_docs",
+  "title": "ResourceClaim — DeviceAllocationResult",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-claim-v1/#DeviceAllocationResult",
+  "text": "DeviceAllocationResult is the result of allocating devices.\nField\nDescription\nconfig\nDeviceAllocationConfiguration array\nThis field is a combination of all the claim and class configuration parameters. Drivers can distinguish between those based on a flag. This includes configuration parameters for drivers which have no allocated devices in the result because it is up to the drivers which configuration parameters they support. They can silently ignore unknown configuration parameters.\nresults\nDeviceRequestAllocationResult array\nResults lists all allocated devices."
+}

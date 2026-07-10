@@ -1,0 +1,7 @@
+{
+  "id": "cb3580982399036c345f54740ab1ef32",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1) — SecretboxConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-SecretboxConfiguration",
+  "text": "Appears in:\nProviderConfiguration\nSecretboxConfiguration contains the API configuration for an Secretbox transformer.\nField\nDescription\nkeys\n[Required]\n[]Key\nkeys is a list of keys to be used for creating the Secretbox transformer.\nEach key has to be 32 bytes long.\nkeys is a list of keys to be used for creating the Secretbox transformer.\nEach key has to be 32 bytes long."
+}

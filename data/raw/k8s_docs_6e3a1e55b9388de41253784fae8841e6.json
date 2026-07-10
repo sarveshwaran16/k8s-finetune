@@ -1,0 +1,7 @@
+{
+  "id": "6e3a1e55b9388de41253784fae8841e6",
+  "source": "k8s_docs",
+  "title": "Adding Linux worker nodes — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-linux-nodes/#what-s-next",
+  "text": "See how to\nadd Windows worker nodes\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "c322388fe6a9766a59927c3e5dbcc885",
+  "source": "k8s_docs",
+  "title": "Debugging DNS Resolution — Check if the DNS pod is running",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/#check-if-the-dns-pod-is-running",
+  "text": "Use the\nkubectl get pods\ncommand to verify that the DNS pod is running.\nkubectl get pods --namespace\n=\nkube-system -l k8s-app\n=\nkube-dns\nNAME                       READY     STATUS    RESTARTS   AGE\n...\ncoredns-7b96bf9f76-5hsxb   1/1       Running   0           1h\ncoredns-7b96bf9f76-mvmmt   1/1       Running   0           1h\n...\nIf you see that no CoreDNS Pod is running or that the Pod has failed/completed,\nthe DNS add-on may not be deployed by default in your current environment and you\nwill have to deploy it manually."
+}

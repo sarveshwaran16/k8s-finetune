@@ -1,0 +1,7 @@
+{
+  "id": "985482031af9b1f0cf9170fd6333844e",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — experimental.windows.kubernetes.io/isolation-type (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#experimental-windows-kubernetes-io-isolation-type",
+  "text": "Type: Annotation\nExample:\nexperimental.windows.kubernetes.io/isolation-type: \"hyperv\"\nUsed on: Pod\nThe annotation is used to run Windows containers with Hyper-V isolation.\n\nType: Annotation\nExample:\ngateway.networking.k8s.io/generator: \"ingress2gateway\"\nUsed on: Gateway, HTTPRoute, and other Gateway API resources\nThis annotation is added by tools that automatically generate\nGateway API\nresources.\nThe value identifies the tool that created the resource (for example,\ningress2gateway\n). The annotation is informational only and does not\naffect the behavior of any Gateway API implementation."
+}

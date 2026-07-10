@@ -1,0 +1,7 @@
+{
+  "id": "2376f1f78ed3670afe2a3abd38949a51",
+  "source": "k8s_docs",
+  "title": "Application Security Checklist — Service account",
+  "source_url": "https://kubernetes.io/docs/concepts/security/application-security-checklist/#service-account",
+  "text": "Avoid using the\ndefault\nServiceAccount. Instead, create ServiceAccounts for\neach workload or microservice.\nautomountServiceAccountToken\nshould be set to\nfalse\nunless the pod\nspecifically requires access to the Kubernetes API to operate.\n\nSet\nrunAsNonRoot: true\n.\nConfigure the container to execute as a less privileged user\n(for example, using\nrunAsUser\nand\nrunAsGroup\n), and configure appropriate\npermissions on files or directories inside the container image.\nOptionally add a supplementary group with\nfsGroup\nto access persistent volumes.\nThe application deploys into a namespace that enforces an appropriate\nPod security standard\n.\nIf you cannot control this enforcement for the cluster(s) where the application is\ndeployed, take this into account either through documentation or additional defense in depth."
+}

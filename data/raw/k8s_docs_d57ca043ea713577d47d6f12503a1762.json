@@ -1,0 +1,7 @@
+{
+  "id": "d57ca043ea713577d47d6f12503a1762",
+  "source": "k8s_docs",
+  "title": "Running Kubelet in Standalone Mode — Find out information about the kubelet and the Pod",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#find-out-information",
+  "text": "The Pod networking plugin creates a network bridge (\ncni0\n) and a pair of\nveth\ninterfaces\nfor each Pod (one of the pair is inside the newly made Pod, and the other is at the host level).\nQuery the kubelet's API endpoint at\nhttp://localhost:10255/pods\n:\ncurl http://localhost:10255/pods\n|\njq\n'.'\nTo obtain the IP address of the\nstatic-web\nPod:\ncurl http://localhost:10255/pods\n|\njq\n'.items[].status.podIP'\nThe output is similar to:\n\"10.85.0.4\"\nConnect to the\nnginx\nserver Pod on\nhttp://<IP>:<Port>\n(port 80 is the default), in this case:\ncurl http://10.85.0.4\nThe output is similar to:\n<!DOCTYPE html>\n<\nhtml\n>\n<\nhead\n>\n<\ntitle\n>\nWelcome to nginx!\n</\ntitle\n>\n..."
+}

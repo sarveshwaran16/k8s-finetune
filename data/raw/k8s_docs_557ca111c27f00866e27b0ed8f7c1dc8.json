@@ -1,0 +1,7 @@
+{
+  "id": "557ca111c27f00866e27b0ed8f7c1dc8",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node.kubernetes.io/network-unavailable",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-kubernetes-io-network-unavailable",
+  "text": "Type: Taint\nExample:\nnode.kubernetes.io/network-unavailable: \"NoSchedule\"\nUsed on: Node\nThis is initially set by the kubelet when the cloud provider used indicates a requirement for\nadditional network configuration. Only when the route on the cloud is configured properly will the\ntaint be removed by the cloud provider."
+}

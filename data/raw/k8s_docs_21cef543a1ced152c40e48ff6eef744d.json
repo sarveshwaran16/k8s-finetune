@@ -1,0 +1,7 @@
+{
+  "id": "21cef543a1ced152c40e48ff6eef744d",
+  "source": "k8s_docs",
+  "title": "Node Status — Info",
+  "source_url": "https://kubernetes.io/docs/reference/node/node-status/#info",
+  "text": "Describes general information about the node, such as kernel version, Kubernetes\nversion (kubelet and kube-proxy version), container runtime details, and which\noperating system the node uses.\nThe kubelet gathers this information from the node and publishes it into\nthe Kubernetes API.\n\nThis field lists specific Kubernetes features that are currently enabled on the\nnode's kubelet via\nfeature gates\n.\nThe features are reported by the kubelet as a list of strings in the\n.status.declaredFeatures\nfield of the Node object.\nThis field is intended for newer features under active development; features that\nhave graduated and no longer require a feature gate are considered baseline and\nare not declared in this field. This reflects the enablement of Kubernetes\nfeatures, not the underlying operating system or kernel capabilities of the node.\nSee\nNode Declared Features\nfor more details."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "04fd6a113d89d4cfa4322542e49cae4e",
+  "source": "k8s_docs",
+  "title": "Running Kubernetes Node Components as a Non-root User — Caveats",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/#caveats",
+  "text": "Most of \"non-local\" volume drivers such as\nnfs\nand\niscsi\ndo not work.\nLocal volumes like\nlocal\n,\nhostPath\n,\nemptyDir\n,\nconfigMap\n,\nsecret\n, and\ndownwardAPI\nare known to work.\nSome CNI plugins may not work. Flannel (VXLAN) is known to work.\nMost of \"non-local\" volume drivers such as\nnfs\nand\niscsi\ndo not work.\nLocal volumes like\nlocal\n,\nhostPath\n,\nemptyDir\n,\nconfigMap\n,\nsecret\n, and\ndownwardAPI\nare known to work.\nSome CNI plugins may not work. Flannel (VXLAN) is known to work.\nFor more on this, see the\nCaveats and Future work\npage\non the rootlesscontaine.rs website."
+}

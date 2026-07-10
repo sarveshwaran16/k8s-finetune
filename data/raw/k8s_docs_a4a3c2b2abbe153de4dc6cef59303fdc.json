@@ -1,0 +1,7 @@
+{
+  "id": "a4a3c2b2abbe153de4dc6cef59303fdc",
+  "source": "k8s_docs",
+  "title": "kubeconfig (v1) — NamedAuthInfo",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kubeconfig.v1/#NamedAuthInfo",
+  "text": "Appears in:\nConfig\nNamedAuthInfo relates nicknames to auth information\nField\nDescription\nname\n[Required]\nstring\nName is the nickname for this AuthInfo\nuser\n[Required]\nAuthInfo\nAuthInfo holds the auth information\nName is the nickname for this AuthInfo\nAuthInfo holds the auth information\n\nAppears in:\nConfig\nNamedCluster relates nicknames to cluster information\nField\nDescription\nname\n[Required]\nstring\nName is the nickname for this Cluster\ncluster\n[Required]\nCluster\nCluster holds the cluster information\nName is the nickname for this Cluster\nCluster holds the cluster information"
+}

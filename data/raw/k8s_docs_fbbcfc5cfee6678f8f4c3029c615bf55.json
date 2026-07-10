@@ -1,0 +1,7 @@
+{
+  "id": "fbbcfc5cfee6678f8f4c3029c615bf55",
+  "source": "k8s_docs",
+  "title": "API Priority and Fairness — Enabling/Disabling API Priority and Fairness",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/flow-control/#enabling-disabling-api-priority-and-fairness",
+  "text": "The API Priority and Fairness feature is controlled by a command-line flag\nand is enabled by default. See\nOptions\nfor a general explanation of the available kube-apiserver command-line\noptions and how to enable and disable them. The name of the\ncommand-line option for APF is \"--enable-priority-and-fairness\". This feature\nalso involves an\nAPI Group\nwith: (a) a stable\nv1\nversion, introduced in 1.29, and\nenabled by default (b) a\nv1beta3\nversion, enabled by default, and\ndeprecated in v1.29. You can\ndisable the API group beta version\nv1beta3\nby adding the\nfollowing command-line flags to your\nkube-apiserver\ninvocation:\nkube-apiserver\n\\\n--runtime-config\n=\nflowcontrol.apiserver.k8s.io/v1beta3\n=\nfalse\n\\\n# …and other flags as usual\nThe command-line flag\n--enable-priority-and-fairness=false\nwill disable the\nAPI Priority and Fairness feature."
+}

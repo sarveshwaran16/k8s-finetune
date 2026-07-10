@@ -1,0 +1,7 @@
+{
+  "id": "a752b581c669145aeef750bdeca75162",
+  "source": "k8s_docs",
+  "title": "Perform a Rolling Update on a DaemonSet — Performing a Rolling Update",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/#performing-a-rolling-update",
+  "text": "To enable the rolling update feature of a DaemonSet, you must set its\n.spec.updateStrategy.type\nto\nRollingUpdate\n.\nYou may want to set\n.spec.updateStrategy.rollingUpdate.maxUnavailable\n(default to 1),\n.spec.minReadySeconds\n(default to 0) and\n.spec.updateStrategy.rollingUpdate.maxSurge\n(defaults to 0) as well."
+}

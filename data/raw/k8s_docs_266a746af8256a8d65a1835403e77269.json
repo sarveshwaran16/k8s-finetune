@@ -1,0 +1,7 @@
+{
+  "id": "266a746af8256a8d65a1835403e77269",
+  "source": "k8s_docs",
+  "title": "Virtual IPs and Service Proxies — Avoiding collisions",
+  "source_url": "https://kubernetes.io/docs/reference/networking/virtual-ips/#avoiding-collisions",
+  "text": "One of the primary philosophies of Kubernetes is that you should not be\nexposed to situations that could cause your actions to fail through no fault\nof your own. For the design of the Service resource, this means not making\nyou choose your own IP address if that choice might collide with\nsomeone else's choice. That is an isolation failure.\nIn order to allow you to choose an IP address for your Services, we must\nensure that no two Services can collide. Kubernetes does that by allocating each\nService its own IP address from within the\nservice-cluster-ip-range\nCIDR range that is configured for the\nAPI Server\n."
+}

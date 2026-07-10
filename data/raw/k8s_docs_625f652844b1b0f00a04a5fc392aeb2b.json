@@ -1,0 +1,7 @@
+{
+  "id": "625f652844b1b0f00a04a5fc392aeb2b",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — beta.kubernetes.io/instance-type (deprecated)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#beta-kubernetes-io-instance-type-deprecated",
+  "text": "Type: Label\n\nType: Label\nExample:\nnode.kubernetes.io/instance-type: \"m3.medium\"\nUsed on: Node\nThe Kubelet populates this with the instance type as defined by the cloud provider.\nThis will be set only if you are using a cloud provider. This setting is handy\nif you want to target certain workloads to certain instance types, but typically you want\nto rely on the Kubernetes scheduler to perform resource-based scheduling.\nYou should aim to schedule based on properties rather than on instance types\n(for example: require a GPU, instead of requiring a\ng2.2xlarge\n)."
+}

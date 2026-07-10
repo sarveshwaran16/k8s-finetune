@@ -1,0 +1,7 @@
+{
+  "id": "af26ec93db135be0f463b79c1e51d19b",
+  "source": "k8s_docs",
+  "title": "kube-controller-manager Configuration (v1alpha1) — ValidatingAdmissionPolicyStatusControllerConfiguration",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#kubecontrollermanager-config-k8s-io-v1alpha1-ValidatingAdmissionPolicyStatusControllerConfiguration",
+  "text": "Appears in:\nKubeControllerManagerConfiguration\nValidatingAdmissionPolicyStatusControllerConfiguration contains elements describing ValidatingAdmissionPolicyStatusController.\nField\nDescription\nConcurrentPolicySyncs\n[Required]\nint32\nConcurrentPolicySyncs is the number of policy objects that are\nallowed to sync concurrently. Larger number = quicker type checking,\nbut more CPU (and network) load.\nThe default value is 5.\nConcurrentPolicySyncs is the number of policy objects that are\nallowed to sync concurrently. Larger number = quicker type checking,\nbut more CPU (and network) load.\nThe default value is 5."
+}

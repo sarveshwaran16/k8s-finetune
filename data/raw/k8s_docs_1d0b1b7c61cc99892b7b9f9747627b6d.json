@@ -1,0 +1,7 @@
+{
+  "id": "1d0b1b7c61cc99892b7b9f9747627b6d",
+  "source": "k8s_docs",
+  "title": "Reserve Compute Resources for System Daemons — Explicitly Reserved CPU List",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/#explicitly-reserved-cpu-list",
+  "text": "KubeletConfiguration Setting\n:\nreservedSystemCPUs:\n. Example value\n0-3\nreservedSystemCPUs\nis meant to define an explicit CPU set for OS system daemons and\nkubernetes system daemons.\nreservedSystemCPUs\nis for systems that do not intend to\ndefine separate top level cgroups for OS system daemons and kubernetes system daemons\nwith regard to cpuset resource.\nIf the Kubelet\ndoes not\nhave\nkubeReservedCgroup\nand\nsystemReservedCgroup\n,\nthe explicit cpuset provided by\nreservedSystemCPUs\nwill take precedence over the CPUs\ndefined by\nkubeReservedCgroup\nand\nsystemReservedCgroup\noptions.\nThis option is specifically designed for Telco/NFV use cases where uncontrolled\ninterrupts/timers may impact the workload performance. you can use this option\nto define the explicit cpuset for the system/kubernetes daemons as well as the\ninterrupts/timers, so the rest CPUs on the system can be used exclusively for\nworkloads, with less impact from uncontrolled interrupts/timers. To move the\nsystem daemon, kubernetes daemons and interrupts/timers to the explicit cpuset\ndefined by this option, other mechanism outside Kubernetes should be used.\nFor example: in Centos, you can do this using the tuned toolset."
+}

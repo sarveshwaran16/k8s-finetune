@@ -1,0 +1,7 @@
+{
+  "id": "ad3ac30f5709ae98dddf2cd2f6fc5709",
+  "source": "k8s_docs",
+  "title": "Manage TLS Certificates in a Cluster — Download the certificate and use it",
+  "source_url": "https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/#download-the-certificate-and-use-it",
+  "text": "Now, as the requesting user, you can download the issued certificate\nand save it to a\nserver.crt\nfile by running the following:\nkubectl get csr my-svc.my-namespace -o\njsonpath\n=\n'{.status.certificate}'\n\\\n|\nbase64 --decode > server.crt\nNow you can populate\nserver.crt\nand\nserver-key.pem\nin a\nSecret\nthat you could later mount into a Pod (for example, to use with a webserver\nthat serves HTTPS).\nkubectl create secret tls server --cert server.crt --key server-key.pem\nsecret/server created\nFinally, you can populate\nca.pem\ninto a\nConfigMap\nand use it as the trust root to verify the serving certificate:\nkubectl create configmap example-serving-ca --from-file ca.crt\n=\nca.pem\nconfigmap/example-serving-ca created"
+}

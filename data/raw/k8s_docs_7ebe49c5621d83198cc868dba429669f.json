@@ -1,0 +1,7 @@
+{
+  "id": "7ebe49c5621d83198cc868dba429669f",
+  "source": "k8s_docs",
+  "title": "Local Files And Paths Used By The Kubelet — Kubelet configuration files",
+  "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#kubelet-configuration-files",
+  "text": "The path to the kubelet configuration file can be configured\nusing the command line argument\n--config\n. The kubelet also supports\ndrop-in configuration files\nto enhance configuration.\n\nCertificates and private keys are typically located at\n/var/lib/kubelet/pki\n,\nbut can be configured using the\n--cert-dir\nkubelet command line argument.\nNames of certificate files are also configurable."
+}

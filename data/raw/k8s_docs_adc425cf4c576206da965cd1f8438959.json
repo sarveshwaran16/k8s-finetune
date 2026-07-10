@@ -1,0 +1,7 @@
+{
+  "id": "adc425cf4c576206da965cd1f8438959",
+  "source": "k8s_docs",
+  "title": "kubectl config set — Synopsis",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_set/#synopsis",
+  "text": "Set an individual value in a kubeconfig file.\nPROPERTY_NAME is a dot delimited name where each token represents either an attribute name or a map key. Map keys may not contain dots.\nPROPERTY_VALUE is the new value you want to set. Binary fields such as 'certificate-authority-data' expect a base64 encoded string unless the --set-raw-bytes flag is used.\nSpecifying an attribute name that already exists will merge new fields on top of existing values.\nkubectl config set PROPERTY_NAME PROPERTY_VALUE"
+}

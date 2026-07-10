@@ -1,0 +1,7 @@
+{
+  "id": "a81ba8e1b8dc8c2840211eb991de0e64",
+  "source": "k8s_docs",
+  "title": "Control Topology Management Policies on a node — What's next",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/#what-s-next",
+  "text": "Read about\nPod-level resource managers\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

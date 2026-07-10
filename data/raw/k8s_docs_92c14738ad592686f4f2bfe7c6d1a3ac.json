@@ -1,0 +1,7 @@
+{
+  "id": "92c14738ad592686f4f2bfe7c6d1a3ac",
+  "source": "k8s_docs",
+  "title": "Running Pods on Only Some Nodes — Running Pods on only some Nodes",
+  "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/pods-some-nodes/#running-pods-on-only-some-nodes",
+  "text": "Imagine that you want to run a\nDaemonSet\n, but you only need to run those daemon pods\non nodes that have local solid state (SSD) storage. For example, the Pod might provide cache service to the\nnode, and the cache is only useful when low-latency local storage is available.\n\nAdd the label\nssd=true\nto the nodes which have SSDs.\nkubectl label nodes example-node-1 example-node-2\nssd\n=\ntrue"
+}

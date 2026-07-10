@@ -1,0 +1,7 @@
+{
+  "id": "de626c4b9a7c2b1ce0c333a1e8920a20",
+  "source": "k8s_docs",
+  "title": "StatefulSets — Forced rollback",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#forced-rollback",
+  "text": "When using\nRolling Updates\nwith the default\nPod Management Policy\n(\nOrderedReady\n),\nit's possible to get into a broken state that requires manual intervention to repair.\nIf you update the Pod template to a configuration that never becomes Running and\nReady (for example, due to a bad binary or application-level configuration error),\nStatefulSet will stop the rollout and wait.\nIn this state, it's not enough to revert the Pod template to a good configuration.\nDue to a\nknown issue\n,\nStatefulSet will continue to wait for the broken Pod to become Ready\n(which never happens) before it will attempt to revert it back to the working\nconfiguration.\nAfter reverting the template, you must also delete any Pods that StatefulSet had\nalready attempted to run with the bad configuration.\nStatefulSet will then begin to recreate the Pods using the reverted template."
+}

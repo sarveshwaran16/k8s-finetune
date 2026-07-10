@@ -1,0 +1,7 @@
+{
+  "id": "2a30a6258e4053c7e3b4b990489a99d1",
+  "source": "k8s_docs",
+  "title": "Security Checklist — Logs and auditing",
+  "source_url": "https://kubernetes.io/docs/concepts/security/security-checklist/#logs-and-auditing",
+  "text": "Audit logs, if enabled, are protected from general access.\n\nPod placement is done in accordance with the tiers of sensitivity of the\napplication.\nSensitive applications are running isolated on nodes or with specific\nsandboxed runtimes.\nPods that are on different tiers of sensitivity, for example, an application pod\nand the Kubernetes API server, should be deployed onto separate nodes. The\npurpose of node isolation is to prevent an application container breakout to\ndirectly providing access to applications with higher level of sensitivity to easily\npivot within the cluster. This separation should be enforced to prevent pods\naccidentally being deployed onto the same node. This could be enforced with the\nfollowing features:"
+}

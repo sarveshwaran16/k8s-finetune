@@ -1,0 +1,7 @@
+{
+  "id": "20c3b4769287c18d676b17b18a7c71da",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — pv.kubernetes.io/migrated-to",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#pv-kubernetesio-migratedto",
+  "text": "Type: Annotation\nExample:\npv.kubernetes.io/migrated-to: pd.csi.storage.gke.io\nUsed on: PersistentVolume, PersistentVolumeClaim\nIt is added to a PersistentVolume(PV) and PersistentVolumeClaim(PVC) that is supposed to be\ndynamically provisioned/deleted by its corresponding CSI driver through the\nCSIMigration\nfeature gate.\nWhen this annotation is set, the Kubernetes components will \"stand-down\" and the\nexternal-provisioner\nwill act on the objects."
+}

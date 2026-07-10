@@ -1,0 +1,7 @@
+{
+  "id": "b28dd4ec074793e367066b70b3d3d1d3",
+  "source": "k8s_docs",
+  "title": "Cluster Networking — What's next",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/networking/#what-s-next",
+  "text": "The early design of the networking model and its rationale are described in more detail in the\nnetworking design document\n.\nFor future plans and some on-going efforts that aim to improve Kubernetes networking, please\nrefer to the SIG-Network\nKEPs\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "23513d63dc6bb2d2b86dd5f37ec98b80",
+  "source": "k8s_docs",
+  "title": "Pod — AzureFileVolumeSource",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#AzureFileVolumeSource",
+  "text": "AzureFile represents an Azure File Service mount on the host and bind mount to the pod.\nField\nDescription\nreadOnly\nboolean\nreadOnly defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.\nsecretName\n*\nstring\nsecretName is the name of secret that contains Azure Storage Account Name and Key\nshareName\n*\nstring\nshareName is the azure share Name"
+}

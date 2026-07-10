@@ -1,0 +1,7 @@
+{
+  "id": "44c86ba8997f8777169dd2cd4144f370",
+  "source": "k8s_docs",
+  "title": "Service — Virtual IP addressing mechanism",
+  "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ip-addressing-mechanism",
+  "text": "Read\nVirtual IPs and Service Proxies\nexplains the\nmechanism Kubernetes provides to expose a Service with a virtual IP address.\n\nYou can set the\n.spec.internalTrafficPolicy\nand\n.spec.externalTrafficPolicy\nfields\nto control how Kubernetes routes traffic to healthy (“ready”) backends.\nSee\nTraffic Policies\nfor more details."
+}

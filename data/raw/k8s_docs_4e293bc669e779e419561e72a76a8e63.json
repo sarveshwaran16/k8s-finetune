@@ -1,0 +1,7 @@
+{
+  "id": "4e293bc669e779e419561e72a76a8e63",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — pod-security.kubernetes.io/warn",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#pod-security-kubernetes-io-warn",
+  "text": "Type: Label\nExample:\npod-security.kubernetes.io/warn: \"baseline\"\nUsed on: Namespace\nValue\nmust\nbe one of\nprivileged\n,\nbaseline\n, or\nrestricted\nwhich correspond to\nPod Security Standard\nlevels.\nSpecifically, the\nwarn\nlabel does not prevent the creation of a Pod in the labeled\nNamespace which does not meet the requirements outlined in the indicated level,\nbut returns a warning to the user after doing so.\nNote that warnings are also displayed when creating or updating objects that contain\nPod templates, such as Deployments, Jobs, StatefulSets, etc.\nSee\nEnforcing Pod Security at the Namespace Level\nfor more information."
+}

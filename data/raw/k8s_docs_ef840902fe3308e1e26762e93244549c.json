@@ -1,0 +1,7 @@
+{
+  "id": "ef840902fe3308e1e26762e93244549c",
+  "source": "k8s_docs",
+  "title": "Parallel Processing using Expansions — Alternatives",
+  "source_url": "https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/#alternatives",
+  "text": "If you plan to create a large number of Job objects, you may find that:\nEven using labels, managing so many Jobs is cumbersome.\nIf you create many Jobs in a batch, you might place high load\non the Kubernetes control plane. Alternatively, the Kubernetes API\nserver could rate limit you, temporarily rejecting your requests with a 429 status.\nYou are limited by a\nresource quota\non Jobs: the API server permanently rejects some of your requests\nwhen you create a great deal of work in one batch.\nThere are other\njob patterns\nthat you can use to process large amounts of work without creating very many Job\nobjects.\nYou could also consider writing your own\ncontroller\nto manage Job objects automatically."
+}

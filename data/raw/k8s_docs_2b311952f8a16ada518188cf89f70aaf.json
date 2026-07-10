@@ -1,0 +1,7 @@
+{
+  "id": "2b311952f8a16ada518188cf89f70aaf",
+  "source": "k8s_docs",
+  "title": "Native Histogram Support for Kubernetes Metrics — Disabling native histograms",
+  "source_url": "https://kubernetes.io/docs/reference/instrumentation/native-histograms/#disabling-native-histograms",
+  "text": "You can disable native histograms at any time using either of two approaches:\nPrometheus-side (fastest, no Kubernetes restart needed; Prometheus 3.x only)\n:\nSet\nscrape_native_histograms: false\nper scrape job. Prometheus resumes\nscraping classic format on the next scrape interval.\nKubernetes feature gate\n: Restart the component with\n--feature-gates=NativeHistograms=false\n. Only classic histogram format is\nexposed after restart.\nPrometheus-side (fastest, no Kubernetes restart needed; Prometheus 3.x only)\n:\nSet\nscrape_native_histograms: false\nper scrape job. Prometheus resumes\nscraping classic format on the next scrape interval.\nKubernetes feature gate\n: Restart the component with\n--feature-gates=NativeHistograms=false\n. Only classic histogram format is\nexposed after restart.\nWhen native histograms are disabled, the metrics endpoint reverts to\nclassic histogram format only. Historical native histogram data in Prometheus\nremains queryable."
+}

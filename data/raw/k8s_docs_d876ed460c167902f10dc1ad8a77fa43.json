@@ -1,0 +1,7 @@
+{
+  "id": "d876ed460c167902f10dc1ad8a77fa43",
+  "source": "k8s_docs",
+  "title": "Assign Pods to Nodes — Create a pod that gets scheduled to specific node",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/#create-a-pod-that-gets-scheduled-to-specific-node",
+  "text": "You can also schedule a pod to one specific node via setting\nnodeName\n.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nnginx\nspec\n:\nnodeName\n:\nfoo-node\n# schedule pod to specific node\ncontainers\n:\n-\nname\n:\nnginx\nimage\n:\nnginx\nimagePullPolicy\n:\nIfNotPresent\nUse the configuration file to create a pod that will get scheduled on\nfoo-node\nonly."
+}

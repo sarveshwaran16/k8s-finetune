@@ -1,0 +1,7 @@
+{
+  "id": "edb76408a00af5a48b328a8e0078b4b2",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — node.cloudprovider.kubernetes.io/uninitialized",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-cloudprovider-kubernetes-io-uninitialized",
+  "text": "Type: Taint\nExample:\nnode.cloudprovider.kubernetes.io/uninitialized: \"NoSchedule\"\nUsed on: Node\nSets this taint on a Node to mark it as unusable, when kubelet is started with the \"external\"\ncloud provider, until a controller from the cloud-controller-manager initializes this Node, and\nthen removes the taint."
+}

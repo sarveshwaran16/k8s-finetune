@@ -1,0 +1,7 @@
+{
+  "id": "6c555c0927c2d0b0d9b6f1eda3bec7cd",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/config.hash",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-config-hash",
+  "text": "Type: Annotation\nExample:\nkubernetes.io/config.hash: \"df7cc47f8477b6b1226d7d23a904867b\"\nUsed on: Pod\nWhen the kubelet creates a static Pod based on a given manifest, it attaches this annotation\nto the static Pod. The value of the annotation is the UID of the Pod.\nNote that the kubelet also sets the\n.spec.nodeName\nto the current node name as if the Pod\nwas scheduled to the node."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "4af4389f3ef5548c4f5ffd054f5c1a01",
+  "source": "k8s_docs",
+  "title": "Install Drivers and Allocate Devices with DRA — Objectives",
+  "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/install-use-dra/#objectives",
+  "text": "Deploy an example DRA driver\nDeploy a Pod requesting a hardware claim using DRA APIs\nDelete a Pod that has a claim\n\nYour cluster should support\nRBAC\n.\nYou can try this tutorial with a cluster using a different authorization\nmechanism, but in that case you will have to adapt the steps around defining\nroles and permissions.\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nThis tutorial has been tested with Linux nodes, though it may also work with\nother types of nodes.\nTo check the version, enter\nkubectl version\n.\nIf your cluster is not currently running Kubernetes 1.36 then please check the documentation for the version of Kubernetes that you\nplan to use."
+}

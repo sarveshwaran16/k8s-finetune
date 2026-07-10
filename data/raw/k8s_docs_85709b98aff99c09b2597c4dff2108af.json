@@ -1,0 +1,7 @@
+{
+  "id": "85709b98aff99c09b2597c4dff2108af",
+  "source": "k8s_docs",
+  "title": "CustomResourceDefinition — getRead Status",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiextensions/custom-resource-definition-v1/#get-read-status",
+  "text": "GET /apis/apiextensions.k8s.io/v1/customresourcedefinitions/{name}/status\nName\nType\nDescription\nname\nstring\nname of the CustomResourceDefinition\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nCustomResourceDefinition"
+}

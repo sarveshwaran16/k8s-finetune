@@ -1,0 +1,7 @@
+{
+  "id": "b38a162691198b06e158bbaa529f4977",
+  "source": "k8s_docs",
+  "title": "Configuring a cgroup driver — Using thecgroupfsdriver",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/#using-the-cgroupfs-driver",
+  "text": "To use\ncgroupfs\nand to prevent\nkubeadm upgrade\nfrom modifying the\nKubeletConfiguration\ncgroup driver on existing setups, you must be explicit\nabout its value. This applies to a case where you do not wish future versions\nof kubeadm to apply the\nsystemd\ndriver by default.\nSee the below section on \"\nModify the kubelet ConfigMap\n\" for details on\nhow to be explicit about the value.\nIf you wish to configure a container runtime to use the\ncgroupfs\ndriver,\nyou must refer to the documentation of the container runtime of your choice."
+}

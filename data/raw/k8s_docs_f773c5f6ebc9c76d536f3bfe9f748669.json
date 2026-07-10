@@ -1,0 +1,7 @@
+{
+  "id": "f773c5f6ebc9c76d536f3bfe9f748669",
+  "source": "k8s_docs",
+  "title": "Vertical Pod Autoscaling — Update modes",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/#update-modes",
+  "text": "A VerticalPodAutoscaler supports different\nupdate modes\nthat control how and when\nresource recommendations are applied to your Pods. You configure the update mode using\nthe\nupdateMode\nfield in the VPA spec under\nupdatePolicy\n:\n---\napiVersion\n:\nautoscaling.k8s.io/v1\nkind\n:\nVerticalPodAutoscaler\nmetadata\n:\nname\n:\nmy-app-vpa\nspec\n:\ntargetRef\n:\napiVersion\n:\n\"apps/v1\"\nkind\n:\nDeployment\nname\n:\nmy-app\nupdatePolicy\n:\nupdateMode\n:\n\"Recreate\"\n# Off, Initial, Recreate, InPlaceOrRecreate, InPlace"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "6f8841443624b91b2060fa7212f951fc",
+  "source": "k8s_docs",
+  "title": "Handling retriable and non-retriable pod failures with Pod failure policy — Feedback",
+  "source_url": "https://kubernetes.io/docs/tasks/job/pod-failure-policy/#feedback",
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

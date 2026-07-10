@@ -1,0 +1,7 @@
+{
+  "id": "25aaf7b70fdead8014e72bcd865eee69",
+  "source": "k8s_docs",
+  "title": "Implementation details — Mark the node as control-plane",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#mark-the-node-as-control-plane",
+  "text": "As soon as the control plane is available, kubeadm executes the following actions:\nLabels the node as control-plane with\nnode-role.kubernetes.io/control-plane=\"\"\nTaints the node with\nnode-role.kubernetes.io/control-plane:NoSchedule\nPlease note that the phase to mark the control-plane phase can be invoked\nindividually with the\nkubeadm init phase mark-control-plane\ncommand."
+}

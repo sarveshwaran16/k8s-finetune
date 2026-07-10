@@ -1,0 +1,7 @@
+{
+  "id": "72e859db74172da08fa2416ba8e67471",
+  "source": "k8s_docs",
+  "title": "Other Tools — Kui",
+  "source_url": "https://kubernetes.io/docs/reference/tools/#kui",
+  "text": "Kui\nis a GUI tool that takes your normal\nkubectl\ncommand line requests and responds with graphics.\nInstead of ASCII tables, Kui provides a GUI rendering with tables that you can sort.\nKui lets you:\nDirectly click on long, auto-generated resource names instead of copying and pasting\nType in\nkubectl\ncommands and see them execute, even sometimes faster than\nkubectl\nitself\nQuery a\nJob\nand see its execution rendered\nas a waterfall diagram\nClick through resources in your cluster using a tabbed UI"
+}

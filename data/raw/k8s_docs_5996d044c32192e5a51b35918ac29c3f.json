@@ -1,0 +1,7 @@
+{
+  "id": "5996d044c32192e5a51b35918ac29c3f",
+  "source": "k8s_docs",
+  "title": "Local Files And Paths Used By The Kubelet — Pod resources API",
+  "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#pod-resources-api",
+  "text": "Pod Resources API\nwill be exposed at the path\npod-resources\nwithin the kubelet base directory (root directory).\nOn a typical Linux node, this means\n/var/lib/kubelet/pod-resources\n.\n\nThe kubelet looks for socket files created by device plugins managed via\nDRA\n,\ndevice manager, or storage plugins, and then attempts to connect\nto these sockets. The directory that the kubelet looks in is\nplugins_registry\nwithin the kubelet base\ndirectory, so on a typical Linux node this means\n/var/lib/kubelet/plugins_registry\n.\nNote, for the device plugins there are two alternative registration mechanisms\nOnly one should be used for a given plugin.\nThe types of plugins that can place socket files into that directory are:\nCSI plugins\nDRA plugins\nDevice Manager plugins\n(typically\n/var/lib/kubelet/plugins_registry\n)."
+}

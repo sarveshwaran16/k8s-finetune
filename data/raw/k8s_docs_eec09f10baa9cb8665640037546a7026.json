@@ -1,0 +1,7 @@
+{
+  "id": "eec09f10baa9cb8665640037546a7026",
+  "source": "k8s_docs",
+  "title": "Assigning Pods to Nodes — Pod topology labels",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#pod-topology-labels",
+  "text": "Pods inherit the topology labels (\ntopology.kubernetes.io/zone\nand\ntopology.kubernetes.io/region\n) from their assigned Node if those labels are present. These labels can then be utilized via the Downward API to provide the workload with node topology awareness.\nHere is an example of a Pod using downward API for it's zone and region:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\npod-with-topology-labels\nspec\n:\ncontainers\n:\n-\nname\n:\napp\nimage\n:\nalpine\ncommand\n:\n[\n\"sh\"\n,\n\"-c\"\n,\n\"env\"\n]\nenv\n:\n-\nname\n:\nMY_ZONE\nvalueFrom\n:\nfieldRef\n:\nfieldPath\n:\nmetadata.labels['topology.kubernetes.io/zone']\n-\nname\n:\nMY_REGION\nvalueFrom\n:\nfieldRef\n:\nfieldPath\n:\nmetadata.labels['topology.kubernetes.io/region']"
+}

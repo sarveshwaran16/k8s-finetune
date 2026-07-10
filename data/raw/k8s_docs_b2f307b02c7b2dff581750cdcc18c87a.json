@@ -1,0 +1,7 @@
+{
+  "id": "b2f307b02c7b2dff581750cdcc18c87a",
+  "source": "k8s_docs",
+  "title": " — Options",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_mark-control-plane/#options",
+  "text": "--config string\nPath to a kubeadm configuration file.\n--dry-run\nDon't apply any changes; just output what would be done.\n-h, --help\nhelp for mark-control-plane\n--node-name string\nSpecify the node name.\nPath to a kubeadm configuration file.\nDon't apply any changes; just output what would be done.\nhelp for mark-control-plane\nSpecify the node name."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ef78f7d0c3ba4d9f932a397339852aab",
+  "source": "k8s_docs",
+  "title": "Admission Control in Kubernetes — LimitPodHardAntiAffinityTopology",
+  "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#limitpodhardantiaffinitytopology",
+  "text": "Type\n: Validating.\nThis admission controller denies any pod that defines an\nAntiAffinity\ntopology key other than\nkubernetes.io/hostname\nin\nrequiredDuringSchedulingIgnoredDuringExecution\n.\nThis admission controller is disabled by default.\n\nType\n: Mutating and Validating.\nThis admission controller will observe the incoming request and ensure that it does not violate\nany of the constraints enumerated in the\nLimitRange\nobject in a\nNamespace\n. If you are using\nLimitRange\nobjects in your Kubernetes deployment, you MUST use this admission controller to\nenforce those constraints. LimitRanger can also be used to apply default resource requests to Pods\nthat don't specify any; currently, the default LimitRanger applies a 0.1 CPU requirement to all\nPods in the\ndefault\nnamespace.\nSee the\nLimitRange API reference\nand the\nexample of LimitRange\nfor more details."
+}

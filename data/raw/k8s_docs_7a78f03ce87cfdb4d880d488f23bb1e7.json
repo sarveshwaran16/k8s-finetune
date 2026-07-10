@@ -1,0 +1,7 @@
+{
+  "id": "7a78f03ce87cfdb4d880d488f23bb1e7",
+  "source": "k8s_docs",
+  "title": "Developing and debugging services locally using telepresence — Developing or debugging an existing service",
+  "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/local-debugging/#developing-or-debugging-an-existing-service",
+  "text": "When developing an application on Kubernetes, you typically program\nor debug a single service. The service might require access to other\nservices for testing and debugging. One option is to use the continuous\ndeployment pipeline, but even the fastest deployment pipeline introduces\na delay in the program or debug cycle.\nUse the\ntelepresence intercept $SERVICE_NAME --port $LOCAL_PORT:$REMOTE_PORT\ncommand to create an \"intercept\" for rerouting remote service traffic.\nWhere:\n$SERVICE_NAME\nis the name of your local service\n$LOCAL_PORT\nis the port that your service is running on your local workstation\nAnd\n$REMOTE_PORT\nis the port your service listens to in the cluster\nRunning this command tells Telepresence to send remote traffic to your\nlocal service instead of the service in the remote Kubernetes cluster.\nMake edits to your service source code locally, save, and see the corresponding\nchanges when accessing your remote application take effect immediately.\nYou can also run your local service using a debugger or any other local development tool."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "5f397c57216800dfbf2e1a7875607a27",
+  "source": "k8s_docs",
+  "title": "kubectl auth can-i — Examples",
+  "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_auth/kubectl_auth_can-i/#examples",
+  "text": "# Check to see if I can create pods in any namespace\n  kubectl auth can-i create pods --all-namespaces\n  \n  # Check to see if I can list deployments in my current namespace\n  kubectl auth can-i list deployments.apps\n  \n  # Check to see if service account \"foo\" of namespace \"dev\" can list pods in the namespace \"prod\"\n  # You must be allowed to use impersonation for the global option \"--as\"\n  kubectl auth can-i list pods --as=system:serviceaccount:dev:foo -n prod\n  \n  # Check to see if I can do everything in my current namespace (\"*\" means all)\n  kubectl auth can-i '*' '*'\n  \n  # Check to see if I can get the job named \"bar\" in namespace \"foo\"\n  kubectl auth can-i list jobs.batch/bar -n foo\n  \n  # Check to see if I can read pod logs\n  kubectl auth can-i get pods --subresource=log\n  \n  # Check to see if I can access the URL /logs/\n  kubectl auth can-i get /logs/\n  \n  # Check to see if I can approve certificates.k8s.io\n  kubectl auth can-i approve certificates.k8s.io\n  \n  # List all allowed actions in namespace \"foo\"\n  kubectl auth can-i --list --namespace=foo"
+}

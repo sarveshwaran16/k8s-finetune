@@ -1,0 +1,7 @@
+{
+  "id": "19486bdfc1a503ad460aebb561c3f756",
+  "source": "k8s_docs",
+  "title": "Operating etcd clusters for Kubernetes — Volume snapshot",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#volume-snapshot",
+  "text": "If etcd is running on a storage volume that supports backup, such as Amazon\nElastic Block Store, back up etcd data by creating a snapshot of the storage\nvolume.\n\nWe can also create the snapshot using various options given by etcdctl. For example:\nETCDCTL_API\n=\n3\netcdctl -h\nwill list various options available from etcdctl. For example, you can create a snapshot by specifying\nthe endpoint, certificates and key as shown below:\nETCDCTL_API\n=\n3\netcdctl --endpoints\n=\nhttps://127.0.0.1:2379\n\\\n--cacert\n=\n<trusted-ca-file> --cert\n=\n<cert-file> --key\n=\n<key-file>\n\\\nsnapshot save <backup-file-location>\nwhere\ntrusted-ca-file\n,\ncert-file\nand\nkey-file\ncan be obtained from the description of the etcd Pod."
+}

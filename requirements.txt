@@ -1,14 +1,37 @@
-# Ingestion
-beautifulsoup4==4.12.3
-requests==2.32.3
-tqdm==4.66.5
+```txt
+# -------------------------
+# Core
+# -------------------------
 python-dotenv==1.0.1
+tqdm==4.66.5
+requests==2.32.3
+beautifulsoup4==4.12.3
 
-# Dataset generation
+# -------------------------
+# Dataset Generation
+# -------------------------
 ollama==0.2.1
 
-# Evaluation
+# -------------------------
+# Machine Learning / LLM
+# -------------------------
+torch
+transformers
+datasets
+accelerate
+peft
+trl
+sentencepiece
+safetensors
+
+# Optional (recommended for quantization)
+bitsandbytes
+
+# -------------------------
+# Evaluation / API
+# -------------------------
 fastapi==0.115.0
 uvicorn[standard]==0.30.6
 pydantic==2.9.2
 httpx==0.27.2
+```

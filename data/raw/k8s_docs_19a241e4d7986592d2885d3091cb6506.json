@@ -1,0 +1,7 @@
+{
+  "id": "19a241e4d7986592d2885d3091cb6506",
+  "source": "k8s_docs",
+  "title": "Logging Architecture — Exposing logs directly from the application",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/logging/#exposing-logs-directly-from-the-application",
+  "text": "Cluster-logging that exposes or pushes logs directly from every application is outside the scope\nof Kubernetes.\n\nRead about\nKubernetes system logs\nLearn about\nTraces For Kubernetes System Components\nLearn how to\ncustomise the termination message\nthat Kubernetes records when a Pod fails\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+}

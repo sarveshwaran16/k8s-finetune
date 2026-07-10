@@ -1,0 +1,7 @@
+{
+  "id": "39c95e84445aebf82f31ec8771bff8c5",
+  "source": "k8s_docs",
+  "title": "PodGroup Lifecycle — Creation ordering",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/podgroup-api/lifecycle/#creation-ordering",
+  "text": "Controllers must create objects in this order:\nWorkload\n— the scheduling policy template.\nPodGroup\n— the runtime instance.\nPods\n— with\nspec.schedulingGroup.podGroupName\npointing to the\nPodGroup\n.\nIf a\nPodGroup\nincludes a\npodGroupTemplateRef\nthat points to a\nWorkload\nthat does\nnot exist (or is being deleted), the API server rejects the\nPodGroup\ncreation request.\nThe referenced\nWorkload\nmust exist before the\nPodGroup\ncan be created.\nIf a\nPod\nreferences a\nPodGroup\nthat does not yet exist, the\nPod\nremains pending.\nThe scheduler automatically queues the\nPod\nfor scheduling once the\nPodGroup\nis created."
+}

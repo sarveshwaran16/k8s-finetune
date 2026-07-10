@@ -1,0 +1,7 @@
+{
+  "id": "c609cb9c02c9236567506f0793c1b579",
+  "source": "k8s_docs",
+  "title": "Cluster Administration — Securing the kubelet",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/#securing-the-kubelet",
+  "text": "Control Plane-Node communication\nTLS bootstrapping\nKubelet authentication/authorization\n\nDNS Integration\ndescribes how to resolve\na DNS name directly to a Kubernetes service.\nLogging and Monitoring Cluster Activity\nexplains how logging in Kubernetes works and how to implement it.\nDNS Integration\ndescribes how to resolve\na DNS name directly to a Kubernetes service.\nLogging and Monitoring Cluster Activity\nexplains how logging in Kubernetes works and how to implement it."
+}

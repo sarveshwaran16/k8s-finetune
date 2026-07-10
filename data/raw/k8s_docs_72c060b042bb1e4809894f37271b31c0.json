@@ -1,0 +1,7 @@
+{
+  "id": "72c060b042bb1e4809894f37271b31c0",
+  "source": "k8s_docs",
+  "title": "Control Topology Management Policies on a node — Windows Support",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/#windows-support",
+  "text": "The Topology Manager support can be enabled on Windows by using the\nWindowsCPUAndMemoryAffinity\nfeature gate and\nit requires support in the container runtime.\n\nThe Topology Manager currently:\naligns Pods of all QoS classes.\naligns the requested resources that Hint Provider provides topology hints for.\nIf these conditions are met, the Topology Manager will align the requested resources.\nIn order to customize how this alignment is carried out, the Topology Manager provides two\ndistinct options:\nscope\nand\npolicy\n.\nThe\nscope\ndefines the granularity at which you would like resource alignment to be performed,\nfor example, at the\npod\nor\ncontainer\nlevel. And the\npolicy\ndefines the actual policy used to\ncarry out the alignment, for example,\nbest-effort\n,\nrestricted\n, and\nsingle-numa-node\n.\nDetails on the various\nscopes\nand\npolicies\navailable today can be found below."
+}

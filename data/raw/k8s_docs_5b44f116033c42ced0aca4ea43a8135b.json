@@ -1,0 +1,7 @@
+{
+  "id": "5b44f116033c42ced0aca4ea43a8135b",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — pod-security.kubernetes.io/audit-version",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#pod-security-kubernetes-io-audit-version",
+  "text": "Type: Label\nExample:\npod-security.kubernetes.io/audit-version: \"1.36\"\nUsed on: Namespace\nValue\nmust\nbe\nlatest\nor a valid Kubernetes version in the format\nv<major>.<minor>\n.\nThis determines the version of the\nPod Security Standard\npolicies to apply when validating a Pod.\nSee\nEnforcing Pod Security at the Namespace Level\nfor more information."
+}

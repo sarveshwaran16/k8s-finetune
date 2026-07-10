@@ -1,0 +1,7 @@
+{
+  "id": "dc50c6d2c830c3dddd66e090ced1d671",
+  "source": "k8s_docs",
+  "title": "Pod Security Admission — Workload resources and Pod templates",
+  "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-admission/#workload-resources-and-pod-templates",
+  "text": "Pods are often created indirectly, by creating a\nworkload\nobject\nsuch as a\nDeployment\nor\nJob\n. The workload object defines a\nPod template\nand a\ncontroller\nfor the\nworkload resource creates Pods based on that template. To help catch violations early, both the\naudit and warning modes are applied to the workload resources. However, enforce mode is\nnot\napplied to workload resources, only to the resulting pod objects."
+}

@@ -1,0 +1,7 @@
+{
+  "id": "f3c2fd58ed34ed9694b4d3fbf66c3bd1",
+  "source": "k8s_docs",
+  "title": "Versions in CustomResourceDefinitions — Version removal",
+  "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definition-versioning/#version-removal",
+  "text": "An older API version cannot be dropped from a CustomResourceDefinition manifest until existing stored data has been migrated to the newer API version for all clusters that served the older version of the custom resource, and the old version is removed from the\nstatus.storedVersions\nof the CustomResourceDefinition.\napiVersion\n:\napiextensions.k8s.io/v1\nkind\n:\nCustomResourceDefinition\nmetadata\n:\nname\n:\ncrontabs.example.com\nspec\n:\ngroup\n:\nexample.com\nnames\n:\nplural\n:\ncrontabs\nsingular\n:\ncrontab\nkind\n:\nCronTab\nscope\n:\nNamespaced\nversions\n:\n-\nname\n:\nv1beta1\n# This indicates the v1beta1 version of the custom resource is no longer served.\n# API requests to this version receive a not found error in the server response.\nserved\n:\nfalse\nschema\n:\n...\n-\nname\n:\nv1\nserved\n:\ntrue\n# The new served version should be set as the storage version\nstorage\n:\ntrue\nschema\n:\n..."
+}

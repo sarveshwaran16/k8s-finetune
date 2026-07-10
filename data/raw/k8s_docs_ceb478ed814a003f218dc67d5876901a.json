@@ -1,0 +1,7 @@
+{
+  "id": "ceb478ed814a003f218dc67d5876901a",
+  "source": "k8s_docs",
+  "title": "Kubernetes Components — Node Components",
+  "source_url": "https://kubernetes.io/docs/concepts/overview/components/#node-components",
+  "text": "Run on every node, maintaining running pods and providing the Kubernetes runtime environment:\nYour cluster may require additional software on each node; for example, you might also\nrun\nsystemd\non a Linux node to supervise local components.\n\nAddons extend the functionality of Kubernetes. A few important examples include:"
+}

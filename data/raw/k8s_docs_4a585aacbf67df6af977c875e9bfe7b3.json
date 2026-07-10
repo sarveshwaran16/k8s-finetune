@@ -1,0 +1,7 @@
+{
+  "id": "4a585aacbf67df6af977c875e9bfe7b3",
+  "source": "k8s_docs",
+  "title": "Restrict a Container's Access to Resources with AppArmor — Authoring Profiles",
+  "source_url": "https://kubernetes.io/docs/tutorials/security/apparmor/#authoring-profiles",
+  "text": "Getting AppArmor profiles specified correctly can be a tricky business. Fortunately there are some\ntools to help with that:\naa-genprof\nand\naa-logprof\ngenerate profile rules by monitoring an application's activity and\nlogs, and admitting the actions it takes. Further instructions are provided by the\nAppArmor documentation\n.\nbane\nis an AppArmor profile generator for Docker that uses a\nsimplified profile language.\nTo debug problems with AppArmor, you can check the system logs to see what, specifically, was\ndenied. AppArmor logs verbose messages to\ndmesg\n, and errors can usually be found in the system\nlogs or through\njournalctl\n. More information is provided in\nAppArmor failures\n."
+}

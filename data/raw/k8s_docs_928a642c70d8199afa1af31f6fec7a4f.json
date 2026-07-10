@@ -1,0 +1,7 @@
+{
+  "id": "928a642c70d8199afa1af31f6fec7a4f",
+  "source": "k8s_docs",
+  "title": "StatefulSets — Pod Name Label",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#pod-name-label",
+  "text": "When the StatefulSet\ncontroller\ncreates a Pod,\nit adds a label,\nstatefulset.kubernetes.io/pod-name\n, that is set to the name of\nthe Pod. This label allows you to attach a Service to a specific Pod in\nthe StatefulSet.\n\nWhen the StatefulSet\ncontroller\ncreates a Pod,\nthe new Pod is labelled with\napps.kubernetes.io/pod-index\n. The value of this label is the ordinal index of\nthe Pod. This label allows you to route traffic to a particular pod index, filter logs/metrics\nusing the pod index label, and more. Note the feature gate\nPodIndexLabel\nis enabled and locked by default for this\nfeature, in order to disable it, users will have to use server emulated version v1.31."
+}

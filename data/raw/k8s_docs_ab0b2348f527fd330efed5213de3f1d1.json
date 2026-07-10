@@ -1,0 +1,7 @@
+{
+  "id": "ab0b2348f527fd330efed5213de3f1d1",
+  "source": "k8s_docs",
+  "title": "kube-apiserver Configuration (v1beta1) — Transport",
+  "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1beta1/#apiserver-k8s-io-v1beta1-Transport",
+  "text": "Appears in:\nConnection\nTransport defines the transport configurations we use to dial to the konnectivity server\nField\nDescription\ntcp\nTCPTransport\nTCP is the TCP configuration for communicating with the konnectivity server via TCP\nProxyProtocol of GRPC is not supported with TCP transport at the moment\nRequires at least one of TCP or UDS to be set\nuds\nUDSTransport\nUDS is the UDS configuration for communicating with the konnectivity server via UDS\nRequires at least one of TCP or UDS to be set\nTCP is the TCP configuration for communicating with the konnectivity server via TCP\nProxyProtocol of GRPC is not supported with TCP transport at the moment\nRequires at least one of TCP or UDS to be set\nUDS is the UDS configuration for communicating with the konnectivity server via UDS\nRequires at least one of TCP or UDS to be set"
+}

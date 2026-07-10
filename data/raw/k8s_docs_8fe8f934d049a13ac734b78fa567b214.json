@@ -1,0 +1,7 @@
+{
+  "id": "8fe8f934d049a13ac734b78fa567b214",
+  "source": "k8s_docs",
+  "title": "Jobs — Bare Pods",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#bare-pods",
+  "text": "When the node that a Pod is running on reboots or fails, the pod is terminated\nand will not be restarted. However, a Job will create new Pods to replace terminated ones.\nFor this reason, we recommend that you use a Job rather than a bare Pod, even if your application\nrequires only a single Pod.\n\nJobs are complementary to\nReplication Controllers\n.\nA Replication Controller manages Pods which are not expected to terminate (e.g. web servers), and a Job\nmanages Pods that are expected to terminate (e.g. batch tasks).\nAs discussed in\nPod Lifecycle\n,\nJob\nis\nonly\nappropriate\nfor pods with\nRestartPolicy\nequal to\nOnFailure\nor\nNever\n."
+}

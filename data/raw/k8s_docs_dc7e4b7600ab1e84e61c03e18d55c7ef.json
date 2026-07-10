@@ -1,0 +1,7 @@
+{
+  "id": "dc7e4b7600ab1e84e61c03e18d55c7ef",
+  "source": "k8s_docs",
+  "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-nlb-target-type (beta)",
+  "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-nlb-target-type",
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-nlb-target-type: \"true\"\nUsed on: Service\nThe\nAWS load balancer controller\nuses this annotation.\nSee\nannotations\nin the AWS load balancer controller documentation.\n\nExample:\nservice.beta.kubernetes.io/aws-load-balancer-private-ipv4-addresses: \"198.51.100.0,198.51.100.64\"\nUsed on: Service\nThe\nAWS load balancer controller\nuses this annotation.\nSee\nannotations\nin the AWS load balancer controller documentation."
+}

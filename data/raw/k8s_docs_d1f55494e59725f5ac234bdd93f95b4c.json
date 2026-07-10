@@ -1,0 +1,7 @@
+{
+  "id": "d1f55494e59725f5ac234bdd93f95b4c",
+  "source": "k8s_docs",
+  "title": "Controllers — Controller pattern",
+  "source_url": "https://kubernetes.io/docs/concepts/architecture/controller/#controller-pattern",
+  "text": "A controller tracks at least one Kubernetes resource type.\nThese\nobjects\nhave a spec field that represents the desired state. The\ncontroller(s) for that resource are responsible for making the current\nstate come closer to that desired state.\nThe controller might carry the action out itself; more commonly, in Kubernetes,\na controller will send messages to the\nAPI server\nthat have\nuseful side effects. You'll see examples of this below."
+}

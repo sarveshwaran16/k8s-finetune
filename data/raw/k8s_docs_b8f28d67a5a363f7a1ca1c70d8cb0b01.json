@@ -1,0 +1,7 @@
+{
+  "id": "b8f28d67a5a363f7a1ca1c70d8cb0b01",
+  "source": "k8s_docs",
+  "title": "Application Security Checklist — Runtime classes",
+  "source_url": "https://kubernetes.io/docs/concepts/security/application-security-checklist/#runtime-classes",
+  "text": "Configure appropriate runtime classes for containers.\nSome containers may require a different isolation level from what is provided by\nthe default runtime of the cluster.\nruntimeClassName\ncan be used in a podspec\nto define a different runtime class.\nFor sensitive workloads consider using kernel emulation tools like\ngVisor\n, or virtualized isolation using a mechanism\nsuch as\nkata-containers\n.\nIn high trust environments, consider using\nconfidential virtual machines\nto improve cluster security even further."
+}

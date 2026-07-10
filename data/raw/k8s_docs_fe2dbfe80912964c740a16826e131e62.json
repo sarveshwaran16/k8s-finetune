@@ -1,0 +1,7 @@
+{
+  "id": "fe2dbfe80912964c740a16826e131e62",
+  "source": "k8s_docs",
+  "title": "Configure Default CPU Requests and Limits for a Namespace — Motivation for default CPU limits and requests",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/#motivation-for-default-cpu-limits-and-requests",
+  "text": "If your namespace has a CPU\nresource quota\nconfigured,\nit is helpful to have a default value in place for CPU limit.\nHere are two of the restrictions that a CPU resource quota imposes on a namespace:\nFor every Pod that runs in the namespace, each of its containers must have a CPU limit.\nCPU limits apply a resource reservation on the node where the Pod in question is scheduled.\nThe total amount of CPU that is reserved for use by all Pods in the namespace must not\nexceed a specified limit.\nWhen you add a LimitRange:\nIf any Pod in that namespace that includes a container does not specify its own CPU limit,\nthe control plane applies the default CPU limit to that container, and the Pod can be\nallowed to run in a namespace that is restricted by a CPU ResourceQuota."
+}

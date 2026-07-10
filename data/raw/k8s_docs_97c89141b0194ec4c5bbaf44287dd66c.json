@@ -1,0 +1,7 @@
+{
+  "id": "97c89141b0194ec4c5bbaf44287dd66c",
+  "source": "k8s_docs",
+  "title": "Switching from Polling to CRI Event-based Updates to Container Status — Before you begin",
+  "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/switch-to-evented-pleg/#before-you-begin",
+  "text": "You need to run a version of Kubernetes that provides this feature.\nKubernetes v1.27 includes beta support for event-based container\nstatus updates. The feature is beta but is\ndisabled\nby default\nbecause it requires support from the container runtime.\nYour Kubernetes server must be at or later than version 1.26.\nTo check the version, enter\nkubectl version\n.\nIf you are running a different version of Kubernetes, check the documentation for that release.\nThe container runtime in use must support container lifecycle events.\nThe kubelet automatically switches back to the legacy generic PLEG\nmechanism if the container runtime does not announce support for\ncontainer lifecycle events, even if you have this feature gate enabled.\nTo check the version, enter\nkubectl version\n."
+}

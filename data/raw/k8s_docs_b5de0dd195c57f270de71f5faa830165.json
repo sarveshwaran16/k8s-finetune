@@ -1,0 +1,7 @@
+{
+  "id": "b5de0dd195c57f270de71f5faa830165",
+  "source": "k8s_docs",
+  "title": "Multi-tenancy — Use cases",
+  "source_url": "https://kubernetes.io/docs/concepts/security/multi-tenancy/#use-cases",
+  "text": "The first step to determining how to share your cluster is understanding your use case, so you can\nevaluate the patterns and tools available. In general, multi-tenancy in Kubernetes clusters falls\ninto two broad categories, though many variations and hybrids are also possible.\n\nA common form of multi-tenancy is to share a cluster between multiple teams within an\norganization, each of whom may operate one or more workloads. These workloads frequently need to\ncommunicate with each other, and with other workloads located on the same or different clusters.\nIn this scenario, members of the teams often have direct access to Kubernetes resources via tools\nsuch as\nkubectl\n, or indirect access through GitOps controllers or other types of release\nautomation tools. There is often some level of trust between members of different teams, but\nKubernetes policies such as RBAC, quotas, and network policies are essential to safely and fairly\nshare clusters."
+}

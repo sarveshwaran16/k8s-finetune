@@ -1,0 +1,7 @@
+{
+  "id": "bdfe1b173f1980db8463a054a19f9e07",
+  "source": "k8s_docs",
+  "title": " — Options",
+  "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_config/kubeadm_config_print_init-defaults/#options",
+  "text": "--component-configs strings\nA comma-separated list for component config API objects to print the default values for. Available values: [KubeProxyConfiguration KubeletConfiguration]. If this flag is not set, no component configs will be printed.\n-h, --help\nhelp for init-defaults\nA comma-separated list for component config API objects to print the default values for. Available values: [KubeProxyConfiguration KubeletConfiguration]. If this flag is not set, no component configs will be printed.\nhelp for init-defaults"
+}

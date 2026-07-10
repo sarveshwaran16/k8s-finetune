@@ -1,0 +1,7 @@
+{
+  "id": "773fe1786a4608561d345c93a4b45849",
+  "source": "k8s_docs",
+  "title": "ReplicationController — API Object",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#api-object",
+  "text": "Replication controller is a top-level resource in the Kubernetes REST API. More details about the\nAPI object can be found at:\nReplicationController API object\n.\n\nReplicaSet\nis the next-generation ReplicationController that supports the new\nset-based label selector\n.\nIt's mainly used by\nDeployment\nas a mechanism to orchestrate pod creation, deletion and updates.\nNote that we recommend using Deployments instead of directly using Replica Sets, unless you require custom update orchestration or don't require updates at all."
+}

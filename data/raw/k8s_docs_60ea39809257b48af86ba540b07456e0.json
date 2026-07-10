@@ -1,0 +1,7 @@
+{
+  "id": "60ea39809257b48af86ba540b07456e0",
+  "source": "k8s_docs",
+  "title": "Node Autoscaling — Node constraints imposed by autoscaler configuration",
+  "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/#provisioning-node-constraints",
+  "text": "The specifics of the provisioned Nodes (for example the amount of resources, the presence of a given\nlabel) depend on autoscaler configuration. Autoscalers can either choose them from a pre-defined set\nof Node configurations, or use\nauto-provisioning\n.\n\nNode auto-provisioning is a mode of provisioning in which a user doesn't have to fully configure the\nspecifics of the Nodes that can be provisioned. Instead, the autoscaler dynamically chooses the Node\nconfiguration based on the pending Pods it's reacting to, as well as pre-configured constraints (for\nexample, the minimum amount of resources or the need for a given label)."
+}

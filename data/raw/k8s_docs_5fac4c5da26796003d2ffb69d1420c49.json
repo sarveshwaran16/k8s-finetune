@@ -1,0 +1,7 @@
+{
+  "id": "5fac4c5da26796003d2ffb69d1420c49",
+  "source": "k8s_docs",
+  "title": "Configure Service Accounts for Pods — Add image pull secret to service account",
+  "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-image-pull-secret-to-service-account",
+  "text": "Next, modify the default service account for the namespace to use this Secret as an imagePullSecret.\nkubectl patch serviceaccount default -p\n'{\"imagePullSecrets\": [{\"name\": \"myregistrykey\"}]}'\nYou can achieve the same outcome by editing the object manually:\nkubectl edit serviceaccount/default\nThe output of the\nsa.yaml\nfile is similar to this:\nYour selected text editor will open with a configuration looking something like this:\napiVersion\n:\nv1\nkind\n:\nServiceAccount\nmetadata\n:\ncreationTimestamp\n:\n2021-07-07T22:02:39Z\nname\n:\ndefault\nnamespace\n:\ndefault\nresourceVersion\n:\n\"243024\"\nuid\n:\n052fb0f4-3d50-11e5-b066-42010af0d7b6\nUsing your editor, delete the line with key\nresourceVersion\n, add lines for\nimagePullSecrets:\nand save it. Leave the\nuid\nvalue set the same as you found it.\nAfter you made those changes, the edited ServiceAccount looks something like this:\napiVersion\n:\nv1\nkind\n:\nServiceAccount\nmetadata\n:\ncreationTimestamp\n:\n2021-07-07T22:02:39Z\nname\n:\ndefault\nnamespace\n:\ndefault\nuid\n:\n052fb0f4-3d50-11e5-b066-42010af0d7b6\nimagePullSecrets\n:\n-\nname\n:\nmyregistrykey"
+}

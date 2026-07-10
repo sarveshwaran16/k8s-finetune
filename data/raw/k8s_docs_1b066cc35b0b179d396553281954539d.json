@@ -1,0 +1,7 @@
+{
+  "id": "1b066cc35b0b179d396553281954539d",
+  "source": "k8s_docs",
+  "title": "Device Plugins — Example",
+  "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/#example-pod",
+  "text": "Suppose a Kubernetes cluster is running a device plugin that advertises resource\nhardware-vendor.example/foo\non certain nodes. Here is an example of a pod requesting this resource to run a demo workload:\n---\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\ndemo-pod\nspec\n:\ncontainers\n:\n-\nname\n:\ndemo-container-1\nimage\n:\nregistry.k8s.io/pause:3.8\nresources\n:\nlimits\n:\nhardware-vendor.example/foo\n:\n2\n#\n# This Pod needs 2 of the hardware-vendor.example/foo devices\n# and can only schedule onto a Node that's able to satisfy\n# that need.\n#\n# If the Node has more than 2 of those devices available, the\n# remainder would be available for other Pods to use."
+}

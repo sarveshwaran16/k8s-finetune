@@ -1,0 +1,7 @@
+{
+  "id": "4556d60c2fa19ef272f808d7934b4689",
+  "source": "k8s_docs",
+  "title": "HorizontalPodAutoscaler — getRead",
+  "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#get-read",
+  "text": "GET /apis/autoscaling/v2/namespaces/{namespace}/horizontalpodautoscalers/{name}\nName\nType\nDescription\nname\nstring\nname of the HorizontalPodAutoscaler\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nHorizontalPodAutoscaler"
+}

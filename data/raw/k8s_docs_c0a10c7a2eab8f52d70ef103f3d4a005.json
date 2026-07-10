@@ -1,0 +1,7 @@
+{
+  "id": "c0a10c7a2eab8f52d70ef103f3d4a005",
+  "source": "k8s_docs",
+  "title": "Customizing components with the kubeadm API — Customizing the control plane with flags inClusterConfiguration",
+  "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/control-plane-flags/#customizing-the-control-plane-with-flags-in-clusterconfiguration",
+  "text": "The kubeadm\nClusterConfiguration\nobject exposes a way for users to override the default\nflags passed to control plane components such as the APIServer, ControllerManager, Scheduler and Etcd.\nThe components are defined using the following structures:\napiServer\ncontrollerManager\nscheduler\netcd\nThese structures contain a common\nextraArgs\nfield, that consists of\nname\n/\nvalue\npairs.\nTo override a flag for a control plane component:\nAdd the appropriate\nextraArgs\nto your configuration.\nAdd flags to the\nextraArgs\nfield.\nRun\nkubeadm init\nwith\n--config <YOUR CONFIG YAML>\n."
+}

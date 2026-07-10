@@ -1,0 +1,7 @@
+{
+  "id": "e2158626ea2bf5585342ebae9f272d63",
+  "source": "k8s_docs",
+  "title": "Dynamic Resource Allocation — Benefits of DRA",
+  "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#dra-benefits",
+  "text": "DRA provides a flexible way to categorize, request, and use devices in your cluster.\nUsing DRA provides benefits like the following:\nFlexible device filtering\n: use common expression language (CEL) to perform\nfine-grained filtering for specific device attributes.\nDevice sharing\n: share the same resource with multiple containers or Pods\nby referencing the corresponding resource claim.\nCentralized device categorization\n: device drivers and cluster admins can\nuse device classes to provide app operators with hardware categories that are\noptimized for various use cases. For example, you can create a cost-optimized\ndevice class for general-purpose workloads, and a high-performance device\nclass for critical jobs.\nSimplified Pod requests\n: with DRA, app operators don't need to specify\ndevice quantities in Pod resource requests. Instead, the Pod references a\nresource claim, and the device configuration in that claim applies to the Pod.\nThese benefits provide significant improvements in the device allocation\nworkflow when compared to\ndevice plugins\n,\nwhich require per-container device requests, don't support device sharing, and\ndon't support expression-based device filtering."
+}

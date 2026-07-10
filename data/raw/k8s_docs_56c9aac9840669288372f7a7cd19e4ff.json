@@ -1,0 +1,7 @@
+{
+  "id": "56c9aac9840669288372f7a7cd19e4ff",
+  "source": "k8s_docs",
+  "title": "Pod Lifecycle — Forced Pod termination",
+  "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination-forced",
+  "text": "By default, all deletes are graceful within 30 seconds. The\nkubectl delete\ncommand supports\nthe\n--grace-period=<seconds>\noption which allows you to override the default and specify your\nown value.\nSetting the grace period to\n0\nforcibly and immediately deletes the Pod from the API\nserver. If the Pod was still running on a node, that forcible deletion triggers the kubelet to\nbegin immediate cleanup.\nUsing kubectl, You must specify an additional flag\n--force\nalong with\n--grace-period=0\nin order to perform force deletions.\nWhen a force deletion is performed, the API server does not wait for confirmation\nfrom the kubelet that the Pod has been terminated on the node it was running on. It\nremoves the Pod in the API immediately so a new Pod can be created with the same\nname. On the node, Pods that are set to terminate immediately will still be given\na small grace period before being force killed.\nIf you need to force-delete Pods that are part of a StatefulSet, refer to the task\ndocumentation for\ndeleting Pods from a StatefulSet\n."
+}
