@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Running Kubelet in Standalone Mode — Set up CRI-O",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#cri-o-setup",
-  "text": "Visit the\nreleases\npage (external link).\nDownload the static binary bundle script:\ncurl https://raw.githubusercontent.com/cri-o/packaging/main/get > crio-install\nRun the installer script:\nsudo bash crio-install\nEnable and start the\ncrio\nservice:\nsudo systemctl daemon-reload\nsudo systemctl\nenable\n--now crio.service\nQuick test:\nsudo systemctl is-active crio.service\nThe output is similar to:\nactive\nDetailed service check:\nsudo journalctl -f -u crio.service"
+  "text": "Visit the\nreleases\npage (external link).\nDownload the static binary bundle script:\ncurl https://raw.githubusercontent.com/cri-o/packaging/main/get > crio-install\nRun the installer script:\nsudo bash crio-install\nEnable and start the\ncrio\nservice:\nsudo systemctl daemon-reload\nsudo systemctl\nenable\n--now crio.service\nQuick test:\nsudo systemctl is-active crio.service\nThe output is similar to:\nactive\nDetailed service check:\nsudo journalctl -f -u crio.service",
+  "failure_classes": []
 }

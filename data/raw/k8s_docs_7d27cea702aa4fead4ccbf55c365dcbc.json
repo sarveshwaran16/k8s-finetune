@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PKI certificates and requirements — Where certificates are stored",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/certificates/#where-certificates-are-stored",
-  "text": "If you install Kubernetes with kubeadm, most certificates are stored in\n/etc/kubernetes/pki\n.\nAll paths in this documentation are relative to that directory, with the exception of user account\ncertificates which kubeadm places in\n/etc/kubernetes\n.\n\nIf you don't want kubeadm to generate the required certificates, you can create them using a\nsingle root CA or by providing all certificates. See\nCertificates\nfor details on creating your own certificate authority. See\nCertificate Management with kubeadm\nfor more on managing certificates."
+  "text": "If you install Kubernetes with kubeadm, most certificates are stored in\n/etc/kubernetes/pki\n.\nAll paths in this documentation are relative to that directory, with the exception of user account\ncertificates which kubeadm places in\n/etc/kubernetes\n.\n\nIf you don't want kubeadm to generate the required certificates, you can create them using a\nsingle root CA or by providing all certificates. See\nCertificates\nfor details on creating your own certificate authority. See\nCertificate Management with kubeadm\nfor more on managing certificates.",
+  "failure_classes": []
 }

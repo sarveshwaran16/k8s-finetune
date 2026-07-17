@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Implementation details",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/",
-  "text": "kubeadm init\nand\nkubeadm join\ntogether provide a nice user experience for creating a\nbare Kubernetes cluster from scratch, that aligns with the best-practices.\nHowever, it might not be obvious\nhow\nkubeadm does that.\nThis document provides additional details on what happens under the hood, with the aim of sharing\nknowledge on the best practices for a Kubernetes cluster."
+  "text": "kubeadm init\nand\nkubeadm join\ntogether provide a nice user experience for creating a\nbare Kubernetes cluster from scratch, that aligns with the best-practices.\nHowever, it might not be obvious\nhow\nkubeadm does that.\nThis document provides additional details on what happens under the hood, with the aim of sharing\nknowledge on the best practices for a Kubernetes cluster.",
+  "failure_classes": []
 }

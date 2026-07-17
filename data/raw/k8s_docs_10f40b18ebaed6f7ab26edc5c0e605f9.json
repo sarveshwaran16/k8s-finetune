@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PersistentVolume — PortworxVolumeSource",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-v1/#PortworxVolumeSource",
-  "text": "PortworxVolumeSource represents a Portworx volume resource.\nField\nDescription\nfsType\nstring\nfSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\". Implicitly inferred to be \"ext4\" if unspecified.\nreadOnly\nboolean\nreadOnly defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.\nvolumeID\n*\nstring\nvolumeID uniquely identifies a Portworx volume"
+  "text": "PortworxVolumeSource represents a Portworx volume resource.\nField\nDescription\nfsType\nstring\nfSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\". Implicitly inferred to be \"ext4\" if unspecified.\nreadOnly\nboolean\nreadOnly defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.\nvolumeID\n*\nstring\nvolumeID uniquely identifies a Portworx volume",
+  "failure_classes": []
 }

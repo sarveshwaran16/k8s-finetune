@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Expose Pod Information to Containers Through Environment Variables — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information/#what-s-next",
-  "text": "Read\nDefining Environment Variables for a Container\nRead the\nspec\nAPI definition for Pod. This includes the definition of Container (part of Pod).\nRead the list of\navailable fields\nthat you\ncan expose using the downward API.\nRead about Pods, containers and environment variables in the legacy API reference:\nPodSpec\nContainer\nEnvVar\nEnvVarSource\nObjectFieldSelector\nResourceFieldSelector"
+  "text": "Read\nDefining Environment Variables for a Container\nRead the\nspec\nAPI definition for Pod. This includes the definition of Container (part of Pod).\nRead the list of\navailable fields\nthat you\ncan expose using the downward API.\nRead about Pods, containers and environment variables in the legacy API reference:\nPodSpec\nContainer\nEnvVar\nEnvVarSource\nObjectFieldSelector\nResourceFieldSelector",
+  "failure_classes": []
 }

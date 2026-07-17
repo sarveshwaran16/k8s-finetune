@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Assign CPU Resources to Containers and Pods — If you specify a CPU limit but do not specify a CPU request",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-cpu-resource/#if-you-specify-a-cpu-limit-but-do-not-specify-a-cpu-request",
-  "text": "If you specify a CPU limit for a Container but do not specify a CPU request, Kubernetes automatically\nassigns a CPU request that matches the limit. Similarly, if a Container specifies its own memory limit,\nbut does not specify a memory request, Kubernetes automatically assigns a memory request that matches\nthe limit."
+  "text": "If you specify a CPU limit for a Container but do not specify a CPU request, Kubernetes automatically\nassigns a CPU request that matches the limit. Similarly, if a Container specifies its own memory limit,\nbut does not specify a memory request, Kubernetes automatically assigns a memory request that matches\nthe limit.",
+  "failure_classes": [
+    "OOMKilled"
+  ]
 }

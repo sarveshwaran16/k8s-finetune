@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Monitoring, Logging, and Debugging — Forum",
   "source_url": "https://kubernetes.io/docs/tasks/debug/#forum",
-  "text": "You're welcome to join the official Kubernetes Forum:\ndiscuss.kubernetes.io\n.\n\nIf you have what looks like a bug, or you would like to make a feature request,\nplease use the\nGitHub issue tracking system\n.\nBefore you file an issue, please search existing issues to see if your issue is\nalready covered.\nIf filing a bug, please include detailed information about how to reproduce the\nproblem, such as:\nKubernetes version:\nkubectl version\nCloud provider, OS distro, network configuration, and container runtime version\nSteps to reproduce the problem"
+  "text": "You're welcome to join the official Kubernetes Forum:\ndiscuss.kubernetes.io\n.\n\nIf you have what looks like a bug, or you would like to make a feature request,\nplease use the\nGitHub issue tracking system\n.\nBefore you file an issue, please search existing issues to see if your issue is\nalready covered.\nIf filing a bug, please include detailed information about how to reproduce the\nproblem, such as:\nKubernetes version:\nkubectl version\nCloud provider, OS distro, network configuration, and container runtime version\nSteps to reproduce the problem",
+  "failure_classes": []
 }

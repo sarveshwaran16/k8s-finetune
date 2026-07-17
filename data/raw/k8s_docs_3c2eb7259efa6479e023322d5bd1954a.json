@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kuberc (v1alpha1) — CommandOptionDefault",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kuberc.v1alpha1/#kubectl-config-k8s-io-v1alpha1-CommandOptionDefault",
-  "text": "Appears in:\nAliasOverride\nCommandDefaults\nAliasOverride\nCommandDefaults\nCommandOptionDefault stores the name and the specified default\nvalue of an option.\nField\nDescription\nname\n[Required]\nstring\nFlag name (long form, without dashes).\ndefault\n[Required]\nstring\nIn a string format of a default value. It will be parsed\nby kubectl to the compatible value of the flag.\nFlag name (long form, without dashes).\nIn a string format of a default value. It will be parsed\nby kubectl to the compatible value of the flag."
+  "text": "Appears in:\nAliasOverride\nCommandDefaults\nAliasOverride\nCommandDefaults\nCommandOptionDefault stores the name and the specified default\nvalue of an option.\nField\nDescription\nname\n[Required]\nstring\nFlag name (long form, without dashes).\ndefault\n[Required]\nstring\nIn a string format of a default value. It will be parsed\nby kubectl to the compatible value of the flag.\nFlag name (long form, without dashes).\nIn a string format of a default value. It will be parsed\nby kubectl to the compatible value of the flag.",
+  "failure_classes": []
 }

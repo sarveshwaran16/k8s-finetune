@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Feature Gates — How to enable Feature Gates",
   "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/#how-to-enable-feature-gates",
-  "text": "To enable or disable a feature gate for a particular Kubernetes component, use the\n--feature-gates\nflag.\nThis flag accepts a comma-separated list of key=value pairs, where each key is a\nfeature gate name and each value is either\ntrue\n(enable) or\nfalse\n(disable).\nExample usage:\nkube-apiserver --feature-gates\n=\nFeatureName1\n=\ntrue,FeatureName2\n=\nfalse\nkubelet --feature-gates\n=\nGracefulNodeShutdown\n=\ntrue\nEach Kubernetes component supports only the feature gates relevant to its functions.\nUse\n<component> -h\nto list available feature gates for a specific component.\nFor detailed instructions on configuring feature gates in your cluster, see\nConfigure Feature Gates\n."
+  "text": "To enable or disable a feature gate for a particular Kubernetes component, use the\n--feature-gates\nflag.\nThis flag accepts a comma-separated list of key=value pairs, where each key is a\nfeature gate name and each value is either\ntrue\n(enable) or\nfalse\n(disable).\nExample usage:\nkube-apiserver --feature-gates\n=\nFeatureName1\n=\ntrue,FeatureName2\n=\nfalse\nkubelet --feature-gates\n=\nGracefulNodeShutdown\n=\ntrue\nEach Kubernetes component supports only the feature gates relevant to its functions.\nUse\n<component> -h\nto list available feature gates for a specific component.\nFor detailed instructions on configuring feature gates in your cluster, see\nConfigure Feature Gates\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

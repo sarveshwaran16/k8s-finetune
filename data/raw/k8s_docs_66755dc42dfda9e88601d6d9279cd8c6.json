@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm token",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/",
-  "text": "Bootstrap tokens are used for establishing bidirectional trust between a node joining\nthe cluster and a control-plane node, as described in\nauthenticating with bootstrap tokens\n.\nkubeadm init\ncreates an initial token with a 24-hour TTL. The following commands allow you to manage\nsuch a token and also to create and manage new ones."
+  "text": "Bootstrap tokens are used for establishing bidirectional trust between a node joining\nthe cluster and a control-plane node, as described in\nauthenticating with bootstrap tokens\n.\nkubeadm init\ncreates an initial token with a 24-hour TTL. The following commands allow you to manage\nsuch a token and also to create and manage new ones.",
+  "failure_classes": []
 }

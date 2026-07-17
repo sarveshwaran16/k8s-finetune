@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Security Admission",
   "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-admission/",
-  "text": "The Kubernetes\nPod Security Standards\ndefine\ndifferent isolation levels for Pods. These standards let you define how you want to restrict the\nbehavior of pods in a clear, consistent fashion.\nKubernetes offers a built-in\nPod Security\nadmission controller\nto enforce the Pod Security Standards. Pod security restrictions\nare applied at the\nnamespace\nlevel when pods are\ncreated."
+  "text": "The Kubernetes\nPod Security Standards\ndefine\ndifferent isolation levels for Pods. These standards let you define how you want to restrict the\nbehavior of pods in a clear, consistent fashion.\nKubernetes offers a built-in\nPod Security\nadmission controller\nto enforce the Pod Security Standards. Pod security restrictions\nare applied at the\nnamespace\nlevel when pods are\ncreated.",
+  "failure_classes": []
 }

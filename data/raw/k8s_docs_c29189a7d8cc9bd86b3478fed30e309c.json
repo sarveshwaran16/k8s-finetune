@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Using sysctls in a Kubernetes Cluster",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/",
-  "text": "This document describes how to configure and use kernel parameters within a\nKubernetes cluster using the\nsysctl\ninterface.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nFor some steps, you also need to be able to reconfigure the command line\noptions for the kubelets running on your cluster."
+  "text": "This document describes how to configure and use kernel parameters within a\nKubernetes cluster using the\nsysctl\ninterface.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nFor some steps, you also need to be able to reconfigure the command line\noptions for the kubelets running on your cluster.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

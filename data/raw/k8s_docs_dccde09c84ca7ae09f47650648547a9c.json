@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Container Lifecycle Hooks — Hook delivery guarantees",
   "source_url": "https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#hook-delivery-guarantees",
-  "text": "Hook delivery is intended to be\nat least once\n,\nwhich means that a hook may be called multiple times for any given event,\nsuch as for\nPostStart\nor\nPreStop\n.\nIt is up to the hook implementation to handle this correctly.\nGenerally, only single deliveries are made.\nIf, for example, an HTTP hook receiver is down and is unable to take traffic,\nthere is no attempt to resend.\nIn some rare cases, however, double delivery may occur.\nFor instance, if a kubelet restarts in the middle of sending a hook,\nthe hook might be resent after the kubelet comes back up."
+  "text": "Hook delivery is intended to be\nat least once\n,\nwhich means that a hook may be called multiple times for any given event,\nsuch as for\nPostStart\nor\nPreStop\n.\nIt is up to the hook implementation to handle this correctly.\nGenerally, only single deliveries are made.\nIf, for example, an HTTP hook receiver is down and is unable to take traffic,\nthere is no attempt to resend.\nIn some rare cases, however, double delivery may occur.\nFor instance, if a kubelet restarts in the middle of sending a hook,\nthe hook might be resent after the kubelet comes back up.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

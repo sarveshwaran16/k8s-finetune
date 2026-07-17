@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Container Runtime Interface (CRI) — Upgrading",
   "source_url": "https://kubernetes.io/docs/concepts/containers/cri/#upgrading",
-  "text": "When upgrading the Kubernetes version on a node, the kubelet restarts. If the\ncontainer runtime does not support the\nv1\nCRI API, the kubelet will fail to\nregister and report an error. If a gRPC re-dial is required because the container\nruntime has been upgraded, the runtime must support the\nv1\nCRI API for the\nconnection to succeed. This might require a restart of the kubelet after the\ncontainer runtime is correctly configured."
+  "text": "When upgrading the Kubernetes version on a node, the kubelet restarts. If the\ncontainer runtime does not support the\nv1\nCRI API, the kubelet will fail to\nregister and report an error. If a gRPC re-dial is required because the container\nruntime has been upgraded, the runtime must support the\nv1\nCRI API for the\nconnection to succeed. This might require a restart of the kubelet after the\ncontainer runtime is correctly configured.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

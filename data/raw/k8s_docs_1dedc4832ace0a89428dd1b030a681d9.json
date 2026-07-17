@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Declarative API Validation — +k8s:enum",
   "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-enum",
-  "text": "Description:\nIndicates that a string type is an enum. All const values of this type are considered values in the enum.\nStability Level:\nBeta\nUsage Example:\nFirst, define a new string type and some constants of that type:\n// +k8s:enum\ntype\nMyEnum\nstring\nconst\n(\nMyEnumA\nMyEnum\n=\n\"A\"\nMyEnumB\nMyEnum\n=\n\"B\"\n)\nThen, use this type in another struct:\ntype\nMyStruct\nstruct\n{\nMyField\nMyEnum\n`json:\"myField\"`\n}\nThe validation logic will ensure that\nMyField\nis one of the defined enum values (\n\"A\"\nor\n\"B\"\n)."
+  "text": "Description:\nIndicates that a string type is an enum. All const values of this type are considered values in the enum.\nStability Level:\nBeta\nUsage Example:\nFirst, define a new string type and some constants of that type:\n// +k8s:enum\ntype\nMyEnum\nstring\nconst\n(\nMyEnumA\nMyEnum\n=\n\"A\"\nMyEnumB\nMyEnum\n=\n\"B\"\n)\nThen, use this type in another struct:\ntype\nMyStruct\nstruct\n{\nMyField\nMyEnum\n`json:\"myField\"`\n}\nThe validation logic will ensure that\nMyField\nis one of the defined enum values (\n\"A\"\nor\n\"B\"\n).",
+  "failure_classes": []
 }

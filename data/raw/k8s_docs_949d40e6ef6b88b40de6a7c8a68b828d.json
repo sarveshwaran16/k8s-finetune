@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Creating a cluster with kubeadm — Preparing the required container images",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#preparing-the-required-container-images",
-  "text": "This step is optional and only applies in case you wish\nkubeadm init\nand\nkubeadm join\nto not download the default container images which are hosted at\nregistry.k8s.io\n.\nKubeadm has commands that can help you pre-pull the required images\nwhen creating a cluster without an internet connection on its nodes.\nSee\nRunning kubeadm without an internet connection\nfor more details.\nKubeadm allows you to use a custom image repository for the required images.\nSee\nUsing custom images\nfor more details."
+  "text": "This step is optional and only applies in case you wish\nkubeadm init\nand\nkubeadm join\nto not download the default container images which are hosted at\nregistry.k8s.io\n.\nKubeadm has commands that can help you pre-pull the required images\nwhen creating a cluster without an internet connection on its nodes.\nSee\nRunning kubeadm without an internet connection\nfor more details.\nKubeadm allows you to use a custom image repository for the required images.\nSee\nUsing custom images\nfor more details.",
+  "failure_classes": []
 }

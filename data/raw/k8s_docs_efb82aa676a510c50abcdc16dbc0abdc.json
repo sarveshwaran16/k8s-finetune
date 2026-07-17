@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configuring each kubelet in your cluster using kubeadm — Configure kubelets using kubeadm",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/kubelet-integration/#configure-kubelets-using-kubeadm",
-  "text": "It is possible to configure the kubelet that kubeadm will start if a custom\nKubeletConfiguration\nAPI object is passed with a configuration file like so\nkubeadm ... --config some-config-file.yaml\n.\nBy calling\nkubeadm config print init-defaults --component-configs KubeletConfiguration\nyou can\nsee all the default values for this structure.\nIt is also possible to apply instance-specific patches over the base\nKubeletConfiguration\n.\nHave a look at\nCustomizing the kubelet\nfor more details."
+  "text": "It is possible to configure the kubelet that kubeadm will start if a custom\nKubeletConfiguration\nAPI object is passed with a configuration file like so\nkubeadm ... --config some-config-file.yaml\n.\nBy calling\nkubeadm config print init-defaults --component-configs KubeletConfiguration\nyou can\nsee all the default values for this structure.\nIt is also possible to apply instance-specific patches over the base\nKubeletConfiguration\n.\nHave a look at\nCustomizing the kubelet\nfor more details.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

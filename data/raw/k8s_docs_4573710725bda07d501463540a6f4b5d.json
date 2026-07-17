@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Troubleshooting kubeadm — ebtablesor some similar executable not found during installation",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/#ebtables-or-some-similar-executable-not-found-during-installation",
-  "text": "If you see the following warnings while running\nkubeadm init\n[preflight] WARNING: ebtables not found in system path\n[preflight] WARNING: ethtool not found in system path\nThen you may be missing\nebtables\n,\nethtool\nor a similar executable on your node.\nYou can install them with the following commands:\nFor Ubuntu/Debian users, run\napt install ebtables ethtool\n.\nFor CentOS/Fedora users, run\nyum install ebtables ethtool\n."
+  "text": "If you see the following warnings while running\nkubeadm init\n[preflight] WARNING: ebtables not found in system path\n[preflight] WARNING: ethtool not found in system path\nThen you may be missing\nebtables\n,\nethtool\nor a similar executable on your node.\nYou can install them with the following commands:\nFor Ubuntu/Debian users, run\napt install ebtables ethtool\n.\nFor CentOS/Fedora users, run\nyum install ebtables ethtool\n.",
+  "failure_classes": []
 }

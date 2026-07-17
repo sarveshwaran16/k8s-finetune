@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Hardening Guide - Dynamic Resource Allocation",
   "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/dynamic-resource-allocation/",
-  "text": "Dynamic Resource Allocation (DRA) adds powerful scheduling and device management\ncapabilities. Because DRA components update\nResourceClaim\nstatus, cluster\nadministrators should configure authorization for those updates with explicit,\nleast-privilege RBAC.\nStarting in Kubernetes v1.36, DRA status updates use synthetic subresources and,\nin some cases, specialized node-aware verbs."
+  "text": "Dynamic Resource Allocation (DRA) adds powerful scheduling and device management\ncapabilities. Because DRA components update\nResourceClaim\nstatus, cluster\nadministrators should configure authorization for those updates with explicit,\nleast-privilege RBAC.\nStarting in Kubernetes v1.36, DRA status updates use synthetic subresources and,\nin some cases, specialized node-aware verbs.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

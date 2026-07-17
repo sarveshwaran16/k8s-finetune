@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Control CPU Management Policies on the Node",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cpu-management-policies/",
-  "text": "Kubernetes keeps many aspects of how pods execute on nodes abstracted\nfrom the user. This is by design.  However, some workloads require\nstronger guarantees in terms of latency and/or performance in order to operate\nacceptably. The kubelet provides methods to enable more complex workload\nplacement policies while keeping the abstraction free from explicit placement\ndirectives.\nFor detailed information on resource management, please refer to the\nResource Management for Pods and Containers\ndocumentation.\nFor detailed information on how the kubelet implements resource management, please refer to the\nNode ResourceManagers\ndocumentation."
+  "text": "Kubernetes keeps many aspects of how pods execute on nodes abstracted\nfrom the user. This is by design.  However, some workloads require\nstronger guarantees in terms of latency and/or performance in order to operate\nacceptably. The kubelet provides methods to enable more complex workload\nplacement policies while keeping the abstraction free from explicit placement\ndirectives.\nFor detailed information on resource management, please refer to the\nResource Management for Pods and Containers\ndocumentation.\nFor detailed information on how the kubelet implements resource management, please refer to the\nNode ResourceManagers\ndocumentation.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

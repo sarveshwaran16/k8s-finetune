@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "DNS for Services and Pods — A/AAAA records",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#a-aaaa-records",
-  "text": "\"Normal\" (not headless) Services are assigned DNS A and/or AAAA records,\ndepending on the IP family or families of the Service, with a name of the form\nmy-svc.my-namespace.svc.cluster-domain.example\n. This resolves to the cluster IP\nof the Service.\nHeadless Services\n(without a cluster IP) are also assigned DNS A and/or AAAA records,\nwith a name of the form\nmy-svc.my-namespace.svc.cluster-domain.example\n. Unlike normal\nServices, this resolves to the set of IPs of all of the Pods selected by the Service.\nClients are expected to consume the set or else use standard round-robin\nselection from the set."
+  "text": "\"Normal\" (not headless) Services are assigned DNS A and/or AAAA records,\ndepending on the IP family or families of the Service, with a name of the form\nmy-svc.my-namespace.svc.cluster-domain.example\n. This resolves to the cluster IP\nof the Service.\nHeadless Services\n(without a cluster IP) are also assigned DNS A and/or AAAA records,\nwith a name of the form\nmy-svc.my-namespace.svc.cluster-domain.example\n. Unlike normal\nServices, this resolves to the set of IPs of all of the Pods selected by the Service.\nClients are expected to consume the set or else use standard round-robin\nselection from the set.",
+  "failure_classes": []
 }

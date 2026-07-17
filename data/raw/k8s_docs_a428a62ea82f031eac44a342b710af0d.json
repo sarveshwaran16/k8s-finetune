@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Role Based Access Control Good Practices — Hardening",
   "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#hardening",
-  "text": "Kubernetes defaults to providing access which may not be required in every cluster. Reviewing\nthe RBAC rights provided by default can provide opportunities for security hardening.\nIn general, changes should not be made to rights provided to\nsystem:\naccounts some options\nto harden cluster rights exist:\nReview bindings for the\nsystem:unauthenticated\ngroup and remove them where possible, as this gives\naccess to anyone who can contact the API server at a network level.\nAvoid the default auto-mounting of service account tokens by setting\nautomountServiceAccountToken: false\n. For more details, see\nusing default service account token\n.\nSetting this value for a Pod will overwrite the service account setting, workloads\nwhich require service account tokens can still mount them."
+  "text": "Kubernetes defaults to providing access which may not be required in every cluster. Reviewing\nthe RBAC rights provided by default can provide opportunities for security hardening.\nIn general, changes should not be made to rights provided to\nsystem:\naccounts some options\nto harden cluster rights exist:\nReview bindings for the\nsystem:unauthenticated\ngroup and remove them where possible, as this gives\naccess to anyone who can contact the API server at a network level.\nAvoid the default auto-mounting of service account tokens by setting\nautomountServiceAccountToken: false\n. For more details, see\nusing default service account token\n.\nSetting this value for a Pod will overwrite the service account setting, workloads\nwhich require service account tokens can still mount them.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

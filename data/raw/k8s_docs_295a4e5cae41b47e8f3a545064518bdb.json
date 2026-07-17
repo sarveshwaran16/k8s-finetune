@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — snapshot.storage.kubernetes.io/allow-volume-mode-change",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#snapshot-storage-kubernetes-io-allow-volume-mode-change",
-  "text": "Type: Annotation\nExample:\nsnapshot.storage.kubernetes.io/allow-volume-mode-change: \"true\"\nUsed on: VolumeSnapshotContent\nValue can either be\ntrue\nor\nfalse\n. This determines whether a user can modify\nthe mode of the source volume when a PersistentVolumeClaim is being created from\na VolumeSnapshot.\nRefer to\nConverting the volume mode of a Snapshot\nand the\nKubernetes CSI Developer Documentation\nfor more information."
+  "text": "Type: Annotation\nExample:\nsnapshot.storage.kubernetes.io/allow-volume-mode-change: \"true\"\nUsed on: VolumeSnapshotContent\nValue can either be\ntrue\nor\nfalse\n. This determines whether a user can modify\nthe mode of the source volume when a PersistentVolumeClaim is being created from\na VolumeSnapshot.\nRefer to\nConverting the volume mode of a Snapshot\nand the\nKubernetes CSI Developer Documentation\nfor more information.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

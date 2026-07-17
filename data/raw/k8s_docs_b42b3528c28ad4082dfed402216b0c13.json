@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — applyset.kubernetes.io/is-parent-type (alpha)",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#applyset-kubernetes-io-is-parent-type",
-  "text": "Type: Label\nExample:\napplyset.kubernetes.io/is-parent-type: \"true\"\nUsed on: Custom Resource Definition (CRD)\nUse of this label is Alpha.\nPart of the specification used to implement\nApplySet-based pruning in kubectl\n.\nYou can set this label on a CustomResourceDefinition (CRD) to identify the custom resource type it\ndefines (not the CRD itself) as an allowed parent for an ApplySet.\nThe only permitted value for this label is\n\"true\"\n; if you want to mark a CRD as\nnot being a valid parent for ApplySets, omit this label."
+  "text": "Type: Label\nExample:\napplyset.kubernetes.io/is-parent-type: \"true\"\nUsed on: Custom Resource Definition (CRD)\nUse of this label is Alpha.\nPart of the specification used to implement\nApplySet-based pruning in kubectl\n.\nYou can set this label on a CustomResourceDefinition (CRD) to identify the custom resource type it\ndefines (not the CRD itself) as an allowed parent for an ApplySet.\nThe only permitted value for this label is\n\"true\"\n; if you want to mark a CRD as\nnot being a valid parent for ApplySets, omit this label.",
+  "failure_classes": []
 }

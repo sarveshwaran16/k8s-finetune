@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Server Bypass Risks — Mitigations",
   "source_url": "https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/#etcd-api-mitigations",
-  "text": "Ensure that the certificate authority trusted by etcd is used only for the purposes of\nauthentication to that service.\nControl access to the private key for the etcd server certificate, and to the API server's\nclient certificate and key.\nConsider restricting access to the etcd port at a network level, to only allow access\nfrom specified and trusted IP address ranges."
+  "text": "Ensure that the certificate authority trusted by etcd is used only for the purposes of\nauthentication to that service.\nControl access to the private key for the etcd server certificate, and to the API server's\nclient certificate and key.\nConsider restricting access to the etcd port at a network level, to only allow access\nfrom specified and trusted IP address ranges.",
+  "failure_classes": []
 }

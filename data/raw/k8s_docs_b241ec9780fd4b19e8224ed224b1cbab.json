@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kube-scheduler-simulator.sigs.k8s.io/permit-result",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kube-scheduler-simulator-sigs-k8s-io-permit-result",
-  "text": "Type: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/permit-result: '{\"CustomPermitPlugin\":\"success\"}'\nUsed on: Pod\nThis annotation records the result of permit scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n.\n\nType: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/permit-result-timeout: '{\"CustomPermitPlugin\":\"10s\"}'\nUsed on: Pod\nThis annotation records the timeouts returned from permit scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n."
+  "text": "Type: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/permit-result: '{\"CustomPermitPlugin\":\"success\"}'\nUsed on: Pod\nThis annotation records the result of permit scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n.\n\nType: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/permit-result-timeout: '{\"CustomPermitPlugin\":\"10s\"}'\nUsed on: Pod\nThis annotation records the timeouts returned from permit scheduler plugins, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n.",
+  "failure_classes": []
 }

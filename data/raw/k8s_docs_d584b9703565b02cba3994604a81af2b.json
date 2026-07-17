@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Terminated",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-state-terminated",
-  "text": "A container in the\nTerminated\nstate began execution and then either ran to\ncompletion or failed for some reason. When you use\nkubectl\nto query a Pod with\na container that is\nTerminated\n, you see a reason, an exit code, and the start and\nfinish time for that container's period of execution.\nIf a container has a\npreStop\nhook configured, this hook runs before the container enters\nthe\nTerminated\nstate."
+  "text": "A container in the\nTerminated\nstate began execution and then either ran to\ncompletion or failed for some reason. When you use\nkubectl\nto query a Pod with\na container that is\nTerminated\n, you see a reason, an exit code, and the start and\nfinish time for that container's period of execution.\nIf a container has a\npreStop\nhook configured, this hook runs before the container enters\nthe\nTerminated\nstate.",
+  "failure_classes": []
 }

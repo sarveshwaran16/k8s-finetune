@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "API-initiated Eviction",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/",
-  "text": "API-initiated eviction is the process by which you use the\nEviction API\nto create an\nEviction\nobject that triggers graceful pod termination.\nYou can request eviction by calling the Eviction API directly, or programmatically\nusing a client of the\nAPI server\n, like the\nkubectl drain\ncommand. This\ncreates an\nEviction\nobject, which causes the API server to terminate the Pod.\nAPI-initiated evictions respect your configured\nPodDisruptionBudgets\nand\nterminationGracePeriodSeconds\n.\nUsing the API to create an Eviction object for a Pod is like performing a\npolicy-controlled\nDELETE\noperation\non the Pod."
+  "text": "API-initiated eviction is the process by which you use the\nEviction API\nto create an\nEviction\nobject that triggers graceful pod termination.\nYou can request eviction by calling the Eviction API directly, or programmatically\nusing a client of the\nAPI server\n, like the\nkubectl drain\ncommand. This\ncreates an\nEviction\nobject, which causes the API server to terminate the Pod.\nAPI-initiated evictions respect your configured\nPodDisruptionBudgets\nand\nterminationGracePeriodSeconds\n.\nUsing the API to create an Eviction object for a Pod is like performing a\npolicy-controlled\nDELETE\noperation\non the Pod.",
+  "failure_classes": []
 }

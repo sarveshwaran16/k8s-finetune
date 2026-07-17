@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Secrets — Uses for Secrets",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/secret/#uses-for-secrets",
-  "text": "You can use Secrets for purposes such as the following:\nSet environment variables for a container\n.\nProvide credentials such as SSH keys or passwords to Pods\n.\nAllow the kubelet to pull container images from private registries\n.\nThe Kubernetes control plane also uses Secrets; for example,\nbootstrap token Secrets\nare a mechanism to\nhelp automate node registration."
+  "text": "You can use Secrets for purposes such as the following:\nSet environment variables for a container\n.\nProvide credentials such as SSH keys or passwords to Pods\n.\nAllow the kubelet to pull container images from private registries\n.\nThe Kubernetes control plane also uses Secrets; for example,\nbootstrap token Secrets\nare a mechanism to\nhelp automate node registration.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

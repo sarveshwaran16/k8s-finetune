@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Using RBAC Authorization",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
-  "text": "Role-based access control (RBAC) is a method of regulating access to computer or\nnetwork resources based on the roles of individual users within your organization.\nRBAC authorization uses the\nrbac.authorization.k8s.io\nAPI group\nto drive authorization\ndecisions, allowing you to dynamically configure policies through the Kubernetes API.\nTo enable RBAC, start the\nAPI server\nwith the\n--authorization-config\nflag set to a file that includes the\nRBAC\nauthorizer; for example:\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nAuthorizationConfiguration\nauthorizers\n:\n...\n-\ntype\n:\nRBAC\n...\nOr, start the\nAPI server\nwith\nthe\n--authorization-mode\nflag set to a comma-separated list that includes\nRBAC\n;\nfor example:\nkube-apiserver --authorization-mode\n=\n...,RBAC --other-options --more-options"
+  "text": "Role-based access control (RBAC) is a method of regulating access to computer or\nnetwork resources based on the roles of individual users within your organization.\nRBAC authorization uses the\nrbac.authorization.k8s.io\nAPI group\nto drive authorization\ndecisions, allowing you to dynamically configure policies through the Kubernetes API.\nTo enable RBAC, start the\nAPI server\nwith the\n--authorization-config\nflag set to a file that includes the\nRBAC\nauthorizer; for example:\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nAuthorizationConfiguration\nauthorizers\n:\n...\n-\ntype\n:\nRBAC\n...\nOr, start the\nAPI server\nwith\nthe\n--authorization-mode\nflag set to a comma-separated list that includes\nRBAC\n;\nfor example:\nkube-apiserver --authorization-mode\n=\n...,RBAC --other-options --more-options",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

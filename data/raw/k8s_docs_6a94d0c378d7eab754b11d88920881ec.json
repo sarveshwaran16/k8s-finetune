@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Volume Populators and Data Sources — Volume populators and data sources",
   "source_url": "https://kubernetes.io/docs/concepts/storage/volume-populators-and-data-sources/#volume-populators-and-data-sources",
-  "text": "Kubernetes supports custom volume populators.\nTo use custom volume populators, you must enable the\nAnyVolumeDataSource\nfeature gate\nfor\nthe kube-apiserver and kube-controller-manager.\nVolume populators take advantage of a PVC spec field called\ndataSourceRef\n. Unlike the\ndataSource\nfield, which can only contain either a reference to another PersistentVolumeClaim\nor to a VolumeSnapshot, the\ndataSourceRef\nfield can contain a reference to any object in the\nsame namespace, except for core objects other than PVCs. For clusters that have the feature\ngate enabled, use of the\ndataSourceRef\nis preferred over\ndataSource\n."
+  "text": "Kubernetes supports custom volume populators.\nTo use custom volume populators, you must enable the\nAnyVolumeDataSource\nfeature gate\nfor\nthe kube-apiserver and kube-controller-manager.\nVolume populators take advantage of a PVC spec field called\ndataSourceRef\n. Unlike the\ndataSource\nfield, which can only contain either a reference to another PersistentVolumeClaim\nor to a VolumeSnapshot, the\ndataSourceRef\nfield can contain a reference to any object in the\nsame namespace, except for core objects other than PVCs. For clusters that have the feature\ngate enabled, use of the\ndataSourceRef\nis preferred over\ndataSource\n.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

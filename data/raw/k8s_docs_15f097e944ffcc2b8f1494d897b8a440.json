@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/config.mirror",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-config-mirror",
-  "text": "Type: Annotation\nExample:\nkubernetes.io/config.mirror: \"df7cc47f8477b6b1226d7d23a904867b\"\nUsed on: Pod\nFor a static Pod created by the kubelet on a node, a\nmirror Pod\nis created on the API server. The kubelet adds an annotation to indicate that this Pod is\nactually a mirror Pod. The annotation value is copied from the\nkubernetes.io/config.hash\nannotation, which is the UID of the Pod.\nWhen updating a Pod with this annotation set, the annotation cannot be changed or removed.\nIf a Pod doesn't have this annotation, it cannot be added during a Pod update."
+  "text": "Type: Annotation\nExample:\nkubernetes.io/config.mirror: \"df7cc47f8477b6b1226d7d23a904867b\"\nUsed on: Pod\nFor a static Pod created by the kubelet on a node, a\nmirror Pod\nis created on the API server. The kubelet adds an annotation to indicate that this Pod is\nactually a mirror Pod. The annotation value is copied from the\nkubernetes.io/config.hash\nannotation, which is the UID of the Pod.\nWhen updating a Pod with this annotation set, the annotation cannot be changed or removed.\nIf a Pod doesn't have this annotation, it cannot be added during a Pod update.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

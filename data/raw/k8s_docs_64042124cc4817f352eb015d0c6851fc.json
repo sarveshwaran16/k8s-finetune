@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debug Pods — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/#what-s-next",
-  "text": "If none of the above solves your problem, follow the instructions in\nDebugging Service document\nto make sure that your\nService\nis running, has\nEndpoints\n, and your\nPods\nare\nactually serving; you have DNS working, iptables rules installed, and kube-proxy\ndoes not seem to be misbehaving.\nYou may also visit\ntroubleshooting document\nfor more information."
+  "text": "If none of the above solves your problem, follow the instructions in\nDebugging Service document\nto make sure that your\nService\nis running, has\nEndpoints\n, and your\nPods\nare\nactually serving; you have DNS working, iptables rules installed, and kube-proxy\ndoes not seem to be misbehaving.\nYou may also visit\ntroubleshooting document\nfor more information.",
+  "failure_classes": []
 }

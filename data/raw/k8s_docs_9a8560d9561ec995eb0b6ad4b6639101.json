@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Use Kube-router for NetworkPolicy",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/kube-router-network-policy/",
-  "text": "This page shows how to use\nKube-router\nfor NetworkPolicy.\n\nYou need to have a Kubernetes cluster running. If you do not already have a cluster, you can create one by using any of the cluster installers like Kops, Bootkube, Kubeadm etc.\n\nThe Kube-router Addon comes with a Network Policy Controller that watches Kubernetes API server for any NetworkPolicy and pods updated and configures iptables rules and ipsets to allow or block traffic as directed by the policies. Please follow the\ntrying Kube-router with cluster installers\nguide to install Kube-router addon."
+  "text": "This page shows how to use\nKube-router\nfor NetworkPolicy.\n\nYou need to have a Kubernetes cluster running. If you do not already have a cluster, you can create one by using any of the cluster installers like Kops, Bootkube, Kubeadm etc.\n\nThe Kube-router Addon comes with a Network Policy Controller that watches Kubernetes API server for any NetworkPolicy and pods updated and configures iptables rules and ipsets to allow or block traffic as directed by the policies. Please follow the\ntrying Kube-router with cluster installers\nguide to install Kube-router addon.",
+  "failure_classes": []
 }

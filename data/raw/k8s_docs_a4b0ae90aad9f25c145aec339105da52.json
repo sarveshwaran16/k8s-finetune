@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "EndpointSlice — EndpointHints",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/discovery/endpoint-slice-v1/#EndpointHints",
-  "text": "EndpointHints provides hints describing how an endpoint should be consumed.\nField\nDescription\nforNodes\nForNode array\nforNodes indicates the node(s) this endpoint should be consumed by when using topology aware routing. May contain a maximum of 8 entries.\nforZones\nForZone array\nforZones indicates the zone(s) this endpoint should be consumed by when using topology aware routing. May contain a maximum of 8 entries."
+  "text": "EndpointHints provides hints describing how an endpoint should be consumed.\nField\nDescription\nforNodes\nForNode array\nforNodes indicates the node(s) this endpoint should be consumed by when using topology aware routing. May contain a maximum of 8 entries.\nforZones\nForZone array\nforZones indicates the zone(s) this endpoint should be consumed by when using topology aware routing. May contain a maximum of 8 entries.",
+  "failure_classes": []
 }

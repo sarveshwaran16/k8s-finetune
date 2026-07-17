@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_wait-control-plane/#synopsis",
-  "text": "Wait for the control plane to start\nkubeadm init phase wait-control-plane [flags]\n\n-h, --help\nhelp for wait-control-plane\nhelp for wait-control-plane\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "Wait for the control plane to start\nkubeadm init phase wait-control-plane [flags]\n\n-h, --help\nhelp for wait-control-plane\nhelp for wait-control-plane\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": []
 }

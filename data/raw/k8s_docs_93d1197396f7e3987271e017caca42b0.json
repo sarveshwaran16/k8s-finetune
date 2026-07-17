@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — How do I turn on an admission controller?",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#how-do-i-turn-on-an-admission-controller",
-  "text": "The Kubernetes API server flag\nenable-admission-plugins\ntakes a comma-delimited list of admission control plugins to invoke prior to modifying objects in the cluster.\nFor example, the following command line enables the\nNamespaceLifecycle\nand the\nLimitRanger\nadmission control plugins:\nkube-apiserver --enable-admission-plugins\n=\nNamespaceLifecycle,LimitRanger ..."
+  "text": "The Kubernetes API server flag\nenable-admission-plugins\ntakes a comma-delimited list of admission control plugins to invoke prior to modifying objects in the cluster.\nFor example, the following command line enables the\nNamespaceLifecycle\nand the\nLimitRanger\nadmission control plugins:\nkube-apiserver --enable-admission-plugins\n=\nNamespaceLifecycle,LimitRanger ...",
+  "failure_classes": []
 }

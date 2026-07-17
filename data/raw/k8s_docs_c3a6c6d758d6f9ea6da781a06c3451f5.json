@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pods — Pods and controllers",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#pods-and-controllers",
-  "text": "You can use workload resources to create and manage multiple Pods for you. A controller\nfor the resource handles replication and rollout and automatic healing in case of\nPod failure. For example, if a Node fails, a controller notices that Pods on that\nNode have stopped working and creates a replacement Pod. The scheduler places the\nreplacement Pod onto a healthy Node.\nHere are some examples of workload resources that manage one or more Pods:\nDeployment\nStatefulSet\nDaemonSet"
+  "text": "You can use workload resources to create and manage multiple Pods for you. A controller\nfor the resource handles replication and rollout and automatic healing in case of\nPod failure. For example, if a Node fails, a controller notices that Pods on that\nNode have stopped working and creates a replacement Pod. The scheduler places the\nreplacement Pod onto a healthy Node.\nHere are some examples of workload resources that manage one or more Pods:\nDeployment\nStatefulSet\nDaemonSet",
+  "failure_classes": []
 }

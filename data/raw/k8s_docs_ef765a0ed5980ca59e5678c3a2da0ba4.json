@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Vertical Pod Autoscaling — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/#what-s-next",
-  "text": "If you configure autoscaling in your cluster, you may also want to consider using\nnode autoscaling\nto ensure you are running the right number of nodes.\nYou can also read more about\nhorizontal\nPod autoscaling\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "If you configure autoscaling in your cluster, you may also want to consider using\nnode autoscaling\nto ensure you are running the right number of nodes.\nYou can also read more about\nhorizontal\nPod autoscaling\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

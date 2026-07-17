@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Container Runtimes — Docker Engine",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker",
-  "text": "On each of your nodes, install Docker for your Linux distribution as per\nInstall Docker Engine\n.\nInstall\ncri-dockerd\n, following the directions in the install section of the documentation.\nOn each of your nodes, install Docker for your Linux distribution as per\nInstall Docker Engine\n.\nInstall\ncri-dockerd\n, following the directions in the install section of the documentation.\nFor\ncri-dockerd\n, the CRI socket is\n/run/cri-dockerd.sock\nby default."
+  "text": "On each of your nodes, install Docker for your Linux distribution as per\nInstall Docker Engine\n.\nInstall\ncri-dockerd\n, following the directions in the install section of the documentation.\nOn each of your nodes, install Docker for your Linux distribution as per\nInstall Docker Engine\n.\nInstall\ncri-dockerd\n, following the directions in the install section of the documentation.\nFor\ncri-dockerd\n, the CRI socket is\n/run/cri-dockerd.sock\nby default.",
+  "failure_classes": []
 }

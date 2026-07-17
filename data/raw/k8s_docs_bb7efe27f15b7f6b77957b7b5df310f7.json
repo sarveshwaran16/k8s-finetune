@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Debugging Kubernetes Nodes With Kubectl — Cleaning up",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#cleaning-up",
-  "text": "When you finish using the debugging Pod, delete it:\nkubectl get pods\nNAME                          READY   STATUS       RESTARTS   AGE\nnode-debugger-mynode-pdx84    0/1     Completed    0          8m1s\n# Change the pod name accordingly\nkubectl delete pod node-debugger-mynode-pdx84 --now\npod \"node-debugger-mynode-pdx84\" deleted"
+  "text": "When you finish using the debugging Pod, delete it:\nkubectl get pods\nNAME                          READY   STATUS       RESTARTS   AGE\nnode-debugger-mynode-pdx84    0/1     Completed    0          8m1s\n# Change the pod name accordingly\nkubectl delete pod node-debugger-mynode-pdx84 --now\npod \"node-debugger-mynode-pdx84\" deleted",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

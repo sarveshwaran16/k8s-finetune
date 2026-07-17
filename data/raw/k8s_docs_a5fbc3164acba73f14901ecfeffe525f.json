@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Example: Deploying PHP Guestbook application with Redis",
   "source_url": "https://kubernetes.io/docs/tutorials/stateless-application/guestbook/",
-  "text": "This tutorial shows you how to build and deploy a simple\n(not production\nready)\n, multi-tier web application using Kubernetes and\nDocker\n. This example consists of the following\ncomponents:\nA single-instance\nRedis\nto store guestbook entries\nMultiple web frontend instances\n\nStart up a Redis leader.\nStart up two Redis followers.\nStart up the guestbook frontend.\nExpose and view the Frontend Service.\nClean up."
+  "text": "This tutorial shows you how to build and deploy a simple\n(not production\nready)\n, multi-tier web application using Kubernetes and\nDocker\n. This example consists of the following\ncomponents:\nA single-instance\nRedis\nto store guestbook entries\nMultiple web frontend instances\n\nStart up a Redis leader.\nStart up two Redis followers.\nStart up the guestbook frontend.\nExpose and view the Frontend Service.\nClean up.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubernetes Self-Healing — Considerations",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/self-healing/#considerations",
-  "text": "Storage Failures:\nIf a persistent volume becomes unavailable, recovery steps may be required.\nApplication Errors:\nKubernetes can restart containers, but underlying application issues must be addressed separately.\nStorage Failures:\nIf a persistent volume becomes unavailable, recovery steps may be required.\nApplication Errors:\nKubernetes can restart containers, but underlying application issues must be addressed separately."
+  "text": "Storage Failures:\nIf a persistent volume becomes unavailable, recovery steps may be required.\nApplication Errors:\nKubernetes can restart containers, but underlying application issues must be addressed separately.\nStorage Failures:\nIf a persistent volume becomes unavailable, recovery steps may be required.\nApplication Errors:\nKubernetes can restart containers, but underlying application issues must be addressed separately.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

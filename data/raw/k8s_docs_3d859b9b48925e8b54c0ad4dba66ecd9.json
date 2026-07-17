@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Nodes",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/nodes/",
-  "text": "Kubernetes runs your\nworkload\nby placing\ncontainers\ninto Pods to run on\nNodes\n.\nA node may be a virtual or physical machine, depending on the cluster. Each node\nis managed by the\ncontrol plane\nand contains the services necessary to run\nPods\n.\nTypically you have several nodes in a cluster; in a learning or resource-limited\nenvironment, you might have only one node.\nThe\ncomponents\non a node include the\nkubelet\n, a\ncontainer runtime\n, and the\nkube-proxy\n."
+  "text": "Kubernetes runs your\nworkload\nby placing\ncontainers\ninto Pods to run on\nNodes\n.\nA node may be a virtual or physical machine, depending on the cluster. Each node\nis managed by the\ncontrol plane\nand contains the services necessary to run\nPods\n.\nTypically you have several nodes in a cluster; in a learning or resource-limited\nenvironment, you might have only one node.\nThe\ncomponents\non a node include the\nkubelet\n, a\ncontainer runtime\n, and the\nkube-proxy\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

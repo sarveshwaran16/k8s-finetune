@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Troubleshooting kubectl",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/troubleshoot-kubectl/",
-  "text": "This documentation is about investigating and diagnosing\nkubectl\nrelated issues.\nIf you encounter issues accessing\nkubectl\nor connecting to your cluster, this\ndocument outlines various common scenarios and potential solutions to help\nidentify and address the likely cause.\n\nYou need to have a Kubernetes cluster.\nYou also need to have\nkubectl\ninstalled - see\ninstall tools"
+  "text": "This documentation is about investigating and diagnosing\nkubectl\nrelated issues.\nIf you encounter issues accessing\nkubectl\nor connecting to your cluster, this\ndocument outlines various common scenarios and potential solutions to help\nidentify and address the likely cause.\n\nYou need to have a Kubernetes cluster.\nYou also need to have\nkubectl\ninstalled - see\ninstall tools",
+  "failure_classes": []
 }

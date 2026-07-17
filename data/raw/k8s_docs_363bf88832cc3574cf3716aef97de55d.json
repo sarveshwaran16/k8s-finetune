@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Namespaces — Setting the namespace for a request",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#setting-the-namespace-for-a-request",
-  "text": "To set the namespace for a current request, use the\n--namespace\nflag.\nFor example:\nkubectl run nginx --image\n=\nnginx --namespace\n=\n<insert-namespace-name-here>\nkubectl get pods --namespace\n=\n<insert-namespace-name-here>\n\nYou can permanently save the namespace for all subsequent kubectl commands in that\ncontext.\nkubectl config set-context --current --namespace\n=\n<insert-namespace-name-here>\n# Validate it\nkubectl config view --minify\n|\ngrep namespace:"
+  "text": "To set the namespace for a current request, use the\n--namespace\nflag.\nFor example:\nkubectl run nginx --image\n=\nnginx --namespace\n=\n<insert-namespace-name-here>\nkubectl get pods --namespace\n=\n<insert-namespace-name-here>\n\nYou can permanently save the namespace for all subsequent kubectl commands in that\ncontext.\nkubectl config set-context --current --namespace\n=\n<insert-namespace-name-here>\n# Validate it\nkubectl config view --minify\n|\ngrep namespace:",
+  "failure_classes": []
 }

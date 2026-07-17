@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — PersistentVolumeClaim requesting a Raw Block Volume",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistent-volume-claim-requesting-a-raw-block-volume",
-  "text": "apiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\nblock-pvc\nspec\n:\naccessModes\n:\n-\nReadWriteOnce\nvolumeMode\n:\nBlock\nresources\n:\nrequests\n:\nstorage\n:\n10Gi\n\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\npod-with-block-volume\nspec\n:\ncontainers\n:\n-\nname\n:\nfc-container\nimage\n:\nfedora:26\ncommand\n:\n[\n\"/bin/sh\"\n,\n\"-c\"\n]\nargs\n:\n[\n\"tail -f /dev/null\"\n]\nvolumeDevices\n:\n-\nname\n:\ndata\ndevicePath\n:\n/dev/xvda\nvolumes\n:\n-\nname\n:\ndata\npersistentVolumeClaim\n:\nclaimName\n:\nblock-pvc"
+  "text": "apiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\nblock-pvc\nspec\n:\naccessModes\n:\n-\nReadWriteOnce\nvolumeMode\n:\nBlock\nresources\n:\nrequests\n:\nstorage\n:\n10Gi\n\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\npod-with-block-volume\nspec\n:\ncontainers\n:\n-\nname\n:\nfc-container\nimage\n:\nfedora:26\ncommand\n:\n[\n\"/bin/sh\"\n,\n\"-c\"\n]\nargs\n:\n[\n\"tail -f /dev/null\"\n]\nvolumeDevices\n:\n-\nname\n:\ndata\ndevicePath\n:\n/dev/xvda\nvolumes\n:\n-\nname\n:\ndata\npersistentVolumeClaim\n:\nclaimName\n:\nblock-pvc",
+  "failure_classes": [
+    "PVC"
+  ]
 }

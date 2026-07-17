@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Access DRA Device Metadata",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/access-dra-device-metadata/",
-  "text": "This page shows you how to access\ndevice metadata\nfrom containers that use\ndynamic resource allocation (DRA)\n. Device metadata\nlets workloads discover information about allocated devices such as device\nattributes or network interface details — by reading JSON files at\nwell-known paths inside the container.\nBefore reading this page, familiarize yourself with\nDynamic Resource Allocation (DRA)\nand how to\nallocate devices to workloads\n."
+  "text": "This page shows you how to access\ndevice metadata\nfrom containers that use\ndynamic resource allocation (DRA)\n. Device metadata\nlets workloads discover information about allocated devices such as device\nattributes or network interface details — by reading JSON files at\nwell-known paths inside the container.\nBefore reading this page, familiarize yourself with\nDynamic Resource Allocation (DRA)\nand how to\nallocate devices to workloads\n.",
+  "failure_classes": []
 }

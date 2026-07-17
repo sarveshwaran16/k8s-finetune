@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Create an External Load Balancer",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/",
-  "text": "This page shows how to create an external load balancer.\nWhen creating a\nService\n, you have\nthe option of automatically creating a cloud load balancer. This provides an\nexternally-accessible IP address that sends traffic to the correct port on your cluster\nnodes,\nprovided your cluster runs in a supported environment and is configured with\nthe correct cloud load balancer provider package\n.\nYou can also use an\nIngress\nin place of Service.\nFor more information, check the\nIngress\ndocumentation."
+  "text": "This page shows how to create an external load balancer.\nWhen creating a\nService\n, you have\nthe option of automatically creating a cloud load balancer. This provides an\nexternally-accessible IP address that sends traffic to the correct port on your cluster\nnodes,\nprovided your cluster runs in a supported environment and is configured with\nthe correct cloud load balancer provider package\n.\nYou can also use an\nIngress\nin place of Service.\nFor more information, check the\nIngress\ndocumentation.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

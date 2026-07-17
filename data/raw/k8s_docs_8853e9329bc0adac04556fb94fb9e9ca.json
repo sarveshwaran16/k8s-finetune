@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeconfig (v1) — ExecEnvVar",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubeconfig.v1/#ExecEnvVar",
-  "text": "Appears in:\nExecConfig\nExecEnvVar is used for setting environment variables when executing an exec-based\ncredential plugin.\nField\nDescription\nname\n[Required]\nstring\nNo description provided.\nvalue\n[Required]\nstring\nNo description provided.\n\n(Alias of\nstring\n)\nAppears in:\nExecConfig\nExecInteractiveMode is a string that describes an exec plugin's relationship with standard input."
+  "text": "Appears in:\nExecConfig\nExecEnvVar is used for setting environment variables when executing an exec-based\ncredential plugin.\nField\nDescription\nname\n[Required]\nstring\nNo description provided.\nvalue\n[Required]\nstring\nNo description provided.\n\n(Alias of\nstring\n)\nAppears in:\nExecConfig\nExecInteractiveMode is a string that describes an exec plugin's relationship with standard input.",
+  "failure_classes": []
 }

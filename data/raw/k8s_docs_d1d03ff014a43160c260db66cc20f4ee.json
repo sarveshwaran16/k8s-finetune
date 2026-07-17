@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Certificates and Certificate Signing Requests — Approval or rejection usingkubectl",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#approval-rejection-kubectl",
-  "text": "A Kubernetes administrator (with appropriate permissions) can manually approve\n(or deny) CertificateSigningRequests by using the\nkubectl certificate approve\nand\nkubectl certificate deny\ncommands.\nTo approve a CSR with kubectl:\nkubectl certificate approve <certificate-signing-request-name>\nLikewise, to deny a CSR:\nkubectl certificate deny <certificate-signing-request-name>"
+  "text": "A Kubernetes administrator (with appropriate permissions) can manually approve\n(or deny) CertificateSigningRequests by using the\nkubectl certificate approve\nand\nkubectl certificate deny\ncommands.\nTo approve a CSR with kubectl:\nkubectl certificate approve <certificate-signing-request-name>\nLikewise, to deny a CSR:\nkubectl certificate deny <certificate-signing-request-name>",
+  "failure_classes": []
 }

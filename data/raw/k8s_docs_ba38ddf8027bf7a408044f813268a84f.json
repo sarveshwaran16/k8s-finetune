@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Run a Replicated Stateful Application — Understanding stateful Pod initialization",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/#understanding-stateful-pod-initialization",
-  "text": "The StatefulSet controller starts Pods one at a time, in order by their\nordinal index.\nIt waits until each Pod reports being Ready before starting the next one.\nIn addition, the controller assigns each Pod a unique, stable name of the form\n<statefulset-name>-<ordinal-index>\n, which results in Pods named\nmysql-0\n,\nmysql-1\n, and\nmysql-2\n.\nThe Pod template in the above StatefulSet manifest takes advantage of these\nproperties to perform orderly startup of MySQL replication."
+  "text": "The StatefulSet controller starts Pods one at a time, in order by their\nordinal index.\nIt waits until each Pod reports being Ready before starting the next one.\nIn addition, the controller assigns each Pod a unique, stable name of the form\n<statefulset-name>-<ordinal-index>\n, which results in Pods named\nmysql-0\n,\nmysql-1\n, and\nmysql-2\n.\nThe Pod template in the above StatefulSet manifest takes advantage of these\nproperties to perform orderly startup of MySQL replication.",
+  "failure_classes": []
 }

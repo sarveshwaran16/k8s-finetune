@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Scheduling, Preemption and Eviction",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/",
-  "text": "In Kubernetes, scheduling refers to making sure that\nPods\nare matched to\nNodes\nso that the\nkubelet\ncan run them. Preemption\nis the process of terminating Pods with lower\nPriority\nso that Pods with higher Priority can schedule on Nodes. Eviction is the process\nof terminating one or more Pods on Nodes."
+  "text": "In Kubernetes, scheduling refers to making sure that\nPods\nare matched to\nNodes\nso that the\nkubelet\ncan run them. Preemption\nis the process of terminating Pods with lower\nPriority\nso that Pods with higher Priority can schedule on Nodes. Eviction is the process\nof terminating one or more Pods on Nodes.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

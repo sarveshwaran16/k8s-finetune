@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-apiserver Configuration (v1) — AdmissionConfiguration",
   "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-AdmissionConfiguration",
-  "text": "AdmissionConfiguration provides versioned configuration for admission controllers.\nField\nDescription\napiVersion\nstring\napiserver.config.k8s.io/v1\nkind\nstring\nAdmissionConfiguration\nplugins\n[]AdmissionPluginConfiguration\nPlugins allows specifying a configuration per admission control plugin.\nPlugins allows specifying a configuration per admission control plugin."
+  "text": "AdmissionConfiguration provides versioned configuration for admission controllers.\nField\nDescription\napiVersion\nstring\napiserver.config.k8s.io/v1\nkind\nstring\nAdmissionConfiguration\nplugins\n[]AdmissionPluginConfiguration\nPlugins allows specifying a configuration per admission control plugin.\nPlugins allows specifying a configuration per admission control plugin.",
+  "failure_classes": []
 }

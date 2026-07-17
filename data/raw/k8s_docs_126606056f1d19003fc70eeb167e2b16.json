@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Sidecar Containers — Sidecar containers and Linux cgroups",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#cgroups",
-  "text": "On Linux, resource allocations for Pod level control groups (cgroups) are based on the effective Pod\nrequest and limit, the same as the scheduler.\n\nLearn how to\nAdopt Sidecar Containers\nRead a blog post on\nnative sidecar containers\n.\nRead about\ncreating a Pod that has an init container\n.\nLearn about the\ntypes of probes\n: liveness, readiness, startup probe.\nLearn about\npod overhead\n."
+  "text": "On Linux, resource allocations for Pod level control groups (cgroups) are based on the effective Pod\nrequest and limit, the same as the scheduler.\n\nLearn how to\nAdopt Sidecar Containers\nRead a blog post on\nnative sidecar containers\n.\nRead about\ncreating a Pod that has an init container\n.\nLearn about the\ntypes of probes\n: liveness, readiness, startup probe.\nLearn about\npod overhead\n.",
+  "failure_classes": []
 }

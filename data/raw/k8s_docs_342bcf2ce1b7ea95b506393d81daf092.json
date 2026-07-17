@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Cloud Controller Manager — Service controller",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/cloud-controller/#authorization-service-controller",
-  "text": "The service controller watches for Service object\ncreate\n,\nupdate\nand\ndelete\nevents and then\nconfigures load balancers for those Services appropriately.\nTo access Services, it requires\nlist\n, and\nwatch\naccess. To update Services, it requires\npatch\nand\nupdate\naccess to the\nstatus\nsubresource.\nv1/Service\n:\nlist\nget\nwatch\npatch\nupdate"
+  "text": "The service controller watches for Service object\ncreate\n,\nupdate\nand\ndelete\nevents and then\nconfigures load balancers for those Services appropriately.\nTo access Services, it requires\nlist\n, and\nwatch\naccess. To update Services, it requires\npatch\nand\nupdate\naccess to the\nstatus\nsubresource.\nv1/Service\n:\nlist\nget\nwatch\npatch\nupdate",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

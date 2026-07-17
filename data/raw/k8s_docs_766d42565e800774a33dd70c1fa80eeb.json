@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Service — Service type",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types",
-  "text": "For some parts of your application (for example, frontends) you may want to expose a\nService onto an external IP address, one that's accessible from outside of your\ncluster.\nKubernetes Service types allow you to specify what kind of Service you want.\nThe available\ntype\nvalues and their behaviors are:\nThe\ntype\nfield in the Service API is designed as nested functionality - each level\nadds to the previous. However there is an exception to this nested design. You can\ndefine a\nLoadBalancer\nService by\ndisabling the load balancer\nNodePort\nallocation\n."
+  "text": "For some parts of your application (for example, frontends) you may want to expose a\nService onto an external IP address, one that's accessible from outside of your\ncluster.\nKubernetes Service types allow you to specify what kind of Service you want.\nThe available\ntype\nvalues and their behaviors are:\nThe\ntype\nfield in the Service API is designed as nested functionality - each level\nadds to the previous. However there is an exception to this nested design. You can\ndefine a\nLoadBalancer\nService by\ndisabling the load balancer\nNodePort\nallocation\n.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

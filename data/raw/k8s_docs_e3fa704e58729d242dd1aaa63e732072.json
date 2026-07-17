@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-apiserver Audit Configuration (v1) — Stage",
   "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-audit.v1/#audit-k8s-io-v1-Stage",
-  "text": "(Alias of\nstring\n)\nAppears in:\nEvent\nPolicy\nPolicyRule\nEvent\nPolicy\nPolicyRule\nStage defines the stages in request handling that audit events may be generated.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project."
+  "text": "(Alias of\nstring\n)\nAppears in:\nEvent\nPolicy\nPolicyRule\nEvent\nPolicy\nPolicyRule\nStage defines the stages in request handling that audit events may be generated.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.\nThis page is automatically generated.\nIf you plan to report an issue with this page, mention that the page is auto-generated in your issue description. The fix may need to happen elsewhere in the Kubernetes project.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cluster Architecture — Control plane components",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/#control-plane-components",
-  "text": "The control plane's components make global decisions about the cluster (for example, scheduling),\nas well as detecting and responding to cluster events (for example, starting up a new\npod\nwhen a Deployment's\nreplicas\nfield is unsatisfied).\nControl plane components can be run on any machine in the cluster. However, for simplicity, setup scripts\ntypically start all control plane components on the same machine, and do not run user containers on this machine.\nSee\nCreating Highly Available clusters with kubeadm\nfor an example control plane setup that runs across multiple machines."
+  "text": "The control plane's components make global decisions about the cluster (for example, scheduling),\nas well as detecting and responding to cluster events (for example, starting up a new\npod\nwhen a Deployment's\nreplicas\nfield is unsatisfied).\nControl plane components can be run on any machine in the cluster. However, for simplicity, setup scripts\ntypically start all control plane components on the same machine, and do not run user containers on this machine.\nSee\nCreating Highly Available clusters with kubeadm\nfor an example control plane setup that runs across multiple machines.",
+  "failure_classes": []
 }

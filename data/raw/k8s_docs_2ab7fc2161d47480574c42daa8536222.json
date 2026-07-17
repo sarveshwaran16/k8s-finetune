@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Deprecation Policy",
   "source_url": "https://kubernetes.io/docs/reference/using-api/deprecation-policy/",
-  "text": "This document details the deprecation policy for various facets of the system.\nKubernetes is a large system with many components and many contributors. As\nwith any such software, the feature set naturally evolves over time, and\nsometimes a feature may need to be removed. This could include an API, a flag,\nor even an entire feature. To avoid breaking existing users, Kubernetes follows\na deprecation policy for aspects of the system that are slated to be removed."
+  "text": "This document details the deprecation policy for various facets of the system.\nKubernetes is a large system with many components and many contributors. As\nwith any such software, the feature set naturally evolves over time, and\nsometimes a feature may need to be removed. This could include an API, a flag,\nor even an entire feature. To avoid breaking existing users, Kubernetes follows\na deprecation policy for aspects of the system that are slated to be removed.",
+  "failure_classes": []
 }

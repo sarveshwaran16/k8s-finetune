@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Reconfiguring a kubeadm cluster",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-reconfigure/",
-  "text": "kubeadm does not support automated ways of reconfiguring components that\nwere deployed on managed nodes. One way of automating this would be\nby using a custom\noperator\n.\nTo modify the components configuration you must manually edit associated cluster\nobjects and files on disk.\nThis guide shows the correct sequence of steps that need to be performed\nto achieve kubeadm cluster reconfiguration."
+  "text": "kubeadm does not support automated ways of reconfiguring components that\nwere deployed on managed nodes. One way of automating this would be\nby using a custom\noperator\n.\nTo modify the components configuration you must manually edit associated cluster\nobjects and files on disk.\nThis guide shows the correct sequence of steps that need to be performed\nto achieve kubeadm cluster reconfiguration.",
+  "failure_classes": []
 }

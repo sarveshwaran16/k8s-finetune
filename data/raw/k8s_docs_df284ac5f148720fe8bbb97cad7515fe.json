@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Using a KMS provider for data encryption — Implementing a KMS plugin",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#implementing-a-kms-plugin",
-  "text": "To implement a KMS plugin, you can develop a new plugin gRPC server or enable a KMS plugin\nalready provided by your cloud provider.\nYou then integrate the plugin with the remote KMS and deploy it on the Kubernetes control plane.\n\nRefer to your cloud provider for instructions on enabling the cloud provider-specific KMS plugin."
+  "text": "To implement a KMS plugin, you can develop a new plugin gRPC server or enable a KMS plugin\nalready provided by your cloud provider.\nYou then integrate the plugin with the remote KMS and deploy it on the Kubernetes control plane.\n\nRefer to your cloud provider for instructions on enabling the cloud provider-specific KMS plugin.",
+  "failure_classes": []
 }

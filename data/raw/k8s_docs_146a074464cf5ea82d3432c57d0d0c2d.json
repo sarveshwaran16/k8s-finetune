@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — node.kubernetes.io/memory-pressure",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-kubernetes-io-memory-pressure",
-  "text": "Type: Taint\nExample:\nnode.kubernetes.io/memory-pressure: \"NoSchedule\"\nUsed on: Node\nThe kubelet detects memory pressure based on\nmemory.available\nand\nallocatableMemory.available\nobserved on a Node. The observed values are then compared to the corresponding thresholds that can\nbe set on the kubelet to determine if the Node condition and taint should be added/removed."
+  "text": "Type: Taint\nExample:\nnode.kubernetes.io/memory-pressure: \"NoSchedule\"\nUsed on: Node\nThe kubelet detects memory pressure based on\nmemory.available\nand\nallocatableMemory.available\nobserved on a Node. The observed values are then compared to the corresponding thresholds that can\nbe set on the kubelet to determine if the Node condition and taint should be added/removed.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

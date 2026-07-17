@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "DeviceTaintRule — DeviceTaintRuleSpec",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/device-taint-rule-v1beta2/#DeviceTaintRuleSpec",
-  "text": "DeviceTaintRuleSpec specifies the selector and one taint.\nField\nDescription\ndeviceSelector\nDeviceTaintSelector\nDeviceSelector defines which device(s) the taint is applied to. All selector criteria must be satisfied for a device to match. The empty selector matches all devices. Without a selector, no devices are matches.\ntaint\n*\nDeviceTaint\nThe taint that gets applied to matching devices."
+  "text": "DeviceTaintRuleSpec specifies the selector and one taint.\nField\nDescription\ndeviceSelector\nDeviceTaintSelector\nDeviceSelector defines which device(s) the taint is applied to. All selector criteria must be satisfied for a device to match. The empty selector matches all devices. Without a selector, no devices are matches.\ntaint\n*\nDeviceTaint\nThe taint that gets applied to matching devices.",
+  "failure_classes": []
 }

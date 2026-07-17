@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Production environment",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/",
-  "text": "A production-quality Kubernetes cluster requires planning and preparation.\nIf your Kubernetes cluster is to run critical workloads, it must be configured to be resilient.\nThis page explains steps you can take to set up a production-ready cluster,\nor to promote an existing cluster for production use.\nIf you're already familiar with production setup and want the links, skip to\nWhat's next\n."
+  "text": "A production-quality Kubernetes cluster requires planning and preparation.\nIf your Kubernetes cluster is to run critical workloads, it must be configured to be resilient.\nThis page explains steps you can take to set up a production-ready cluster,\nor to promote an existing cluster for production use.\nIf you're already familiar with production setup and want the links, skip to\nWhat's next\n.",
+  "failure_classes": []
 }

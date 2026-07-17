@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Example: Deploying PHP Guestbook application with Redis — What's next",
   "source_url": "https://kubernetes.io/docs/tutorials/stateless-application/guestbook/#what-s-next",
-  "text": "Complete the\nKubernetes Basics\nInteractive Tutorials\nUse Kubernetes to create a blog using\nPersistent Volumes for MySQL and Wordpress\nRead more about\nconnecting applications with services\nRead more about\nusing labels effectively\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Complete the\nKubernetes Basics\nInteractive Tutorials\nUse Kubernetes to create a blog using\nPersistent Volumes for MySQL and Wordpress\nRead more about\nconnecting applications with services\nRead more about\nusing labels effectively\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

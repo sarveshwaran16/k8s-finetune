@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cluster Architecture — etcd",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/#etcd",
-  "text": "Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.\nIf your Kubernetes cluster uses etcd as its backing store, make sure you have a\nback up\nplan\nfor the data.\nYou can find in-depth information about etcd in the official\ndocumentation\n.\n\nControl plane component that watches for newly created\nPods\nwith no assigned\nnode\n, and selects a node for them\nto run on.\nFactors taken into account for scheduling decisions include:\nindividual and collective\nresource\nrequirements, hardware/software/policy constraints, affinity and anti-affinity specifications,\ndata locality, inter-workload interference, and deadlines."
+  "text": "Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.\nIf your Kubernetes cluster uses etcd as its backing store, make sure you have a\nback up\nplan\nfor the data.\nYou can find in-depth information about etcd in the official\ndocumentation\n.\n\nControl plane component that watches for newly created\nPods\nwith no assigned\nnode\n, and selects a node for them\nto run on.\nFactors taken into account for scheduling decisions include:\nindividual and collective\nresource\nrequirements, hardware/software/policy constraints, affinity and anti-affinity specifications,\ndata locality, inter-workload interference, and deadlines.",
+  "failure_classes": []
 }

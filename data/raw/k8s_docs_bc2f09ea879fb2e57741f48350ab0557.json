@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_kubelet-start/",
-  "text": "Write kubelet settings and (re)start the kubelet\n\nWrite a file with KubeletConfiguration and an environment file with node specific kubelet settings, and then (re)start kubelet.\nkubeadm init phase kubelet-start [flags]\n\n# Writes a dynamic environment file with kubelet flags from a InitConfiguration file.\n  kubeadm init phase kubelet-start --config config.yaml"
+  "text": "Write kubelet settings and (re)start the kubelet\n\nWrite a file with KubeletConfiguration and an environment file with node specific kubelet settings, and then (re)start kubelet.\nkubeadm init phase kubelet-start [flags]\n\n# Writes a dynamic environment file with kubelet flags from a InitConfiguration file.\n  kubeadm init phase kubelet-start --config config.yaml",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

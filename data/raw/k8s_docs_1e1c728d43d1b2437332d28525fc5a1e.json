@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Security Standards — Privileged",
   "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#privileged",
-  "text": "The\nPrivileged\npolicy is purposely-open, and entirely unrestricted.\nThis type of policy is\ntypically aimed at system- and infrastructure-level workloads managed by privileged, trusted users.\nThe Privileged policy is defined by an absence of restrictions. If you define a Pod where the Privileged\nsecurity policy applies, the Pod you define is able to bypass typical container isolation mechanisms.\nFor example, you can define a Pod that has access to the node's host network."
+  "text": "The\nPrivileged\npolicy is purposely-open, and entirely unrestricted.\nThis type of policy is\ntypically aimed at system- and infrastructure-level workloads managed by privileged, trusted users.\nThe Privileged policy is defined by an absence of restrictions. If you define a Pod where the Privileged\nsecurity policy applies, the Pod you define is able to bypass typical container isolation mechanisms.\nFor example, you can define a Pod that has access to the node's host network.",
+  "failure_classes": []
 }

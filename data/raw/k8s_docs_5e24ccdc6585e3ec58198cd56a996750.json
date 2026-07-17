@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Deploy and Access the Kubernetes Dashboard — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#what-s-next",
-  "text": "For more information, see the\nKubernetes Dashboard project page\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "For more information, see the\nKubernetes Dashboard project page\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

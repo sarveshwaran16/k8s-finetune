@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Deprecation Policy — Enumerated or constant values",
   "source_url": "https://kubernetes.io/docs/reference/using-api/deprecation-policy/#enumerated-or-constant-values",
-  "text": "As with whole REST resources and fields thereof, a constant value which was\nsupported in API v1 must exist and function until API v1 is removed.\n\nComponent configs are versioned and managed similar to REST resources.\n\nOver time, Kubernetes will introduce more fine-grained API versions, at which\npoint these rules will be adjusted as needed."
+  "text": "As with whole REST resources and fields thereof, a constant value which was\nsupported in API v1 must exist and function until API v1 is removed.\n\nComponent configs are versioned and managed similar to REST resources.\n\nOver time, Kubernetes will introduce more fine-grained API versions, at which\npoint these rules will be adjusted as needed.",
+  "failure_classes": []
 }

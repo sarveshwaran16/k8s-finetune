@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Service — API Object",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#api-object",
-  "text": "Service is a top-level resource in the Kubernetes REST API. You can find more details\nabout the\nService API object\n.\n\nLearn more about Services and how they fit into Kubernetes:\nFollow the\nConnecting Applications with Services\ntutorial.\nRead about\nIngress\n, which\nexposes HTTP and HTTPS routes from outside the cluster to Services within\nyour cluster.\nRead about\nGateway\n, an extension to\nKubernetes that provides more flexibility than Ingress.\nFor more context, read the following:\nVirtual IPs and Service Proxies\nEndpointSlices\nService API reference\nEndpointSlice API reference\nEndpoint API reference (legacy)"
+  "text": "Service is a top-level resource in the Kubernetes REST API. You can find more details\nabout the\nService API object\n.\n\nLearn more about Services and how they fit into Kubernetes:\nFollow the\nConnecting Applications with Services\ntutorial.\nRead about\nIngress\n, which\nexposes HTTP and HTTPS routes from outside the cluster to Services within\nyour cluster.\nRead about\nGateway\n, an extension to\nKubernetes that provides more flexibility than Ingress.\nFor more context, read the following:\nVirtual IPs and Service Proxies\nEndpointSlices\nService API reference\nEndpointSlice API reference\nEndpoint API reference (legacy)",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Server-Side Apply — Custom resources and Server-Side Apply",
   "source_url": "https://kubernetes.io/docs/reference/using-api/server-side-apply/#custom-resources-and-server-side-apply",
-  "text": "By default, Server-Side Apply treats custom resources as unstructured data. All\nkeys are treated the same as struct fields, and all lists are considered atomic.\nIf the CustomResourceDefinition defines a\nschema\nthat contains annotations as defined in the previous\nMerge Strategy\nsection, these annotations will be used when merging objects of this\ntype."
+  "text": "By default, Server-Side Apply treats custom resources as unstructured data. All\nkeys are treated the same as struct fields, and all lists are considered atomic.\nIf the CustomResourceDefinition defines a\nschema\nthat contains annotations as defined in the previous\nMerge Strategy\nsection, these annotations will be used when merging objects of this\ntype.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Updating Configuration via a ConfigMap",
   "source_url": "https://kubernetes.io/docs/tutorials/configuration/updating-configuration-via-a-configmap/",
-  "text": "This page provides a step-by-step example of updating configuration within a Pod via a ConfigMap\nand builds upon the\nConfigure a Pod to Use a ConfigMap\ntask.\nAt the end of this tutorial, you will understand how to change the configuration for a running application.\nThis tutorial uses the\nalpine\nand\nnginx\nimages as examples."
+  "text": "This page provides a step-by-step example of updating configuration within a Pod via a ConfigMap\nand builds upon the\nConfigure a Pod to Use a ConfigMap\ntask.\nAt the end of this tutorial, you will understand how to change the configuration for a running application.\nThis tutorial uses the\nalpine\nand\nnginx\nimages as examples.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Harden Dynamic Resource Allocation in Your Cluster — Grant node-local driver permissions",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/hardening-dra/#grant-node-local-driver-permissions",
-  "text": "Use node-aware verbs for node-local drivers:\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\ndra-node-driver-status-updater\nrules\n:\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/status\"\n]\nverbs\n:\n[\n\"get\"\n,\n\"patch\"\n,\n\"update\"\n]\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/driver\"\n]\nverbs\n:\n[\n\"associated-node:patch\"\n,\n\"associated-node:update\"\n]\nresourceNames\n:\n[\n\"dra.example.com\"\n]"
+  "text": "Use node-aware verbs for node-local drivers:\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\ndra-node-driver-status-updater\nrules\n:\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/status\"\n]\nverbs\n:\n[\n\"get\"\n,\n\"patch\"\n,\n\"update\"\n]\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/driver\"\n]\nverbs\n:\n[\n\"associated-node:patch\"\n,\n\"associated-node:update\"\n]\nresourceNames\n:\n[\n\"dra.example.com\"\n]",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

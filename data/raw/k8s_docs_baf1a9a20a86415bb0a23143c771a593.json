@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "StatefulSets — Maximum unavailable Pods",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#maximum-unavailable-pods",
-  "text": "You can control the maximum number of Pods that can be unavailable during an update\nby specifying the\n.spec.updateStrategy.rollingUpdate.maxUnavailable\nfield.\nThe value can be an absolute number (for example,\n5\n) or a percentage of desired\nPods (for example,\n10%\n). Absolute number is calculated from the percentage value\nby rounding it up. This field cannot be 0. The default setting is 1.\nThis field applies to all Pods in the range\n0\nto\nreplicas - 1\n. If there is any\nunavailable Pod in the range\n0\nto\nreplicas - 1\n, it will be counted towards\nmaxUnavailable\n."
+  "text": "You can control the maximum number of Pods that can be unavailable during an update\nby specifying the\n.spec.updateStrategy.rollingUpdate.maxUnavailable\nfield.\nThe value can be an absolute number (for example,\n5\n) or a percentage of desired\nPods (for example,\n10%\n). Absolute number is calculated from the percentage value\nby rounding it up. This field cannot be 0. The default setting is 1.\nThis field applies to all Pods in the range\n0\nto\nreplicas - 1\n. If there is any\nunavailable Pod in the range\n0\nto\nreplicas - 1\n, it will be counted towards\nmaxUnavailable\n.",
+  "failure_classes": []
 }

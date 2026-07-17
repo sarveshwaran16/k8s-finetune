@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Hardening Guide - Scheduler Configuration — Disallow labeling nodes",
   "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/scheduler/#disallow-labeling-nodes",
-  "text": "A cluster administrator should ensure that cluster users cannot label the nodes.\nA malicious actor can use\nnodeSelector\nto schedule workloads on nodes where those workloads should not be present.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "A cluster administrator should ensure that cluster users cannot label the nodes.\nA malicious actor can use\nnodeSelector\nto schedule workloads on nodes where those workloads should not be present.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

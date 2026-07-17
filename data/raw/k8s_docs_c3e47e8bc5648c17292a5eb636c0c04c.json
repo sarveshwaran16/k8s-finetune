@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ConfigMaps — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/configmap/#what-s-next",
-  "text": "Read about\nSecrets\n.\nRead\nConfigure a Pod to Use a ConfigMap\n.\nRead about\nchanging a ConfigMap (or any other Kubernetes object)\nRead\nThe Twelve-Factor App\nto understand the motivation for\nseparating code from configuration.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Read about\nSecrets\n.\nRead\nConfigure a Pod to Use a ConfigMap\n.\nRead about\nchanging a ConfigMap (or any other Kubernetes object)\nRead\nThe Twelve-Factor App\nto understand the motivation for\nseparating code from configuration.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

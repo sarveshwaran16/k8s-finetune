@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Runtime Class — Usage",
   "source_url": "https://kubernetes.io/docs/concepts/containers/runtime-class/#usage",
-  "text": "Once RuntimeClasses are configured for the cluster, you can specify a\nruntimeClassName\nin the Pod spec to use it. For example:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmypod\nspec\n:\nruntimeClassName\n:\nmyclass\n# ...\nThis will instruct the kubelet to use the named RuntimeClass to run this pod. If the named\nRuntimeClass does not exist, or the CRI cannot run the corresponding handler, the pod will enter the\nFailed\nterminal\nphase\n. Look for a\ncorresponding\nevent\nfor an\nerror message.\nIf no\nruntimeClassName\nis specified, the default RuntimeHandler will be used, which is equivalent\nto the behavior when the RuntimeClass feature is disabled."
+  "text": "Once RuntimeClasses are configured for the cluster, you can specify a\nruntimeClassName\nin the Pod spec to use it. For example:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmypod\nspec\n:\nruntimeClassName\n:\nmyclass\n# ...\nThis will instruct the kubelet to use the named RuntimeClass to run this pod. If the named\nRuntimeClass does not exist, or the CRI cannot run the corresponding handler, the pod will enter the\nFailed\nterminal\nphase\n. Look for a\ncorresponding\nevent\nfor an\nerror message.\nIf no\nruntimeClassName\nis specified, the default RuntimeHandler will be used, which is equivalent\nto the behavior when the RuntimeClass feature is disabled.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

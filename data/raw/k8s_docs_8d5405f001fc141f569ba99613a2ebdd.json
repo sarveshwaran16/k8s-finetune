@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Node-pressure Eviction — DaemonSets and node-pressure eviction",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/#daemonset",
-  "text": "Pod priority is a major factor in making eviction decisions. If you do not want\nthe kubelet to evict pods that belong to a DaemonSet, give those pods a high\nenough priority by specifying a suitable\npriorityClassName\nin the pod spec.\nYou can also use a lower priority, or the default, to only allow pods from that\nDaemonSet to run when there are enough resources."
+  "text": "Pod priority is a major factor in making eviction decisions. If you do not want\nthe kubelet to evict pods that belong to a DaemonSet, give those pods a high\nenough priority by specifying a suitable\npriorityClassName\nin the pod spec.\nYou can also use a lower priority, or the default, to only allow pods from that\nDaemonSet to run when there are enough resources.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

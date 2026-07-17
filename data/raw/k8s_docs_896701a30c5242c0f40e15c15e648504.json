@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod — ContainerState",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ContainerState",
-  "text": "ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.\nField\nDescription\nrunning\nContainerStateRunning\nDetails about a running container\nterminated\nContainerStateTerminated\nDetails about a terminated container\nwaiting\nContainerStateWaiting\nDetails about a waiting container"
+  "text": "ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.\nField\nDescription\nrunning\nContainerStateRunning\nDetails about a running container\nterminated\nContainerStateTerminated\nDetails about a terminated container\nwaiting\nContainerStateWaiting\nDetails about a waiting container",
+  "failure_classes": []
 }

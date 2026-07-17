@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "DNS for Services and Pods — SRV records",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#srv-records",
-  "text": "SRV Records are created for named ports that are part of normal or headless\nservices.\nFor each named port, the SRV record has the form\n_port-name._port-protocol.my-svc.my-namespace.svc.cluster-domain.example\n.\nFor a regular Service, this resolves to the port number and the domain name:\nmy-svc.my-namespace.svc.cluster-domain.example\n.\nFor a headless Service, this resolves to multiple answers, one for each Pod\nthat is backing the Service, and contains the port number and the domain name of the Pod\nof the form\nhostname.my-svc.my-namespace.svc.cluster-domain.example\n."
+  "text": "SRV Records are created for named ports that are part of normal or headless\nservices.\nFor each named port, the SRV record has the form\n_port-name._port-protocol.my-svc.my-namespace.svc.cluster-domain.example\n.\nFor a regular Service, this resolves to the port number and the domain name:\nmy-svc.my-namespace.svc.cluster-domain.example\n.\nFor a headless Service, this resolves to multiple answers, one for each Pod\nthat is backing the Service, and contains the port number and the domain name of the Pod\nof the form\nhostname.my-svc.my-namespace.svc.cluster-domain.example\n.",
+  "failure_classes": []
 }

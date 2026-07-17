@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — alpha.jobset.sigs.k8s.io/no-schedule",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#alpha-jobset-sigs-k8s-io-no-schedule",
-  "text": "Type: Taint\nExample:\nalpha.jobset.sigs.k8s.io/no-schedule: \"NoSchedule\"\nUsed on: Nodes\nThis taint is either set manually or automatically (for example, a cluster autoscaler) on the nodes. When\nalpha.jobset.sigs.k8s.io/node-selector\nis set to\n\"true\"\n, the JobSet controller adds a toleration to this node taint (along with the node selector to the label\nalpha.jobset.sigs.k8s.io/namespaced-job\ndiscussed previously)."
+  "text": "Type: Taint\nExample:\nalpha.jobset.sigs.k8s.io/no-schedule: \"NoSchedule\"\nUsed on: Nodes\nThis taint is either set manually or automatically (for example, a cluster autoscaler) on the nodes. When\nalpha.jobset.sigs.k8s.io/node-selector\nis set to\n\"true\"\n, the JobSet controller adds a toleration to this node taint (along with the node selector to the label\nalpha.jobset.sigs.k8s.io/namespaced-job\ndiscussed previously).",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Implementation details — Save the kubeadm ClusterConfiguration in a ConfigMap for later reference",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#save-the-kubeadm-clusterconfiguration-in-a-configmap-for-later-reference",
-  "text": "kubeadm saves the configuration passed to\nkubeadm init\nin a ConfigMap named\nkubeadm-config\nunder\nkube-system\nnamespace.\nThis will ensure that kubeadm actions executed in future (e.g\nkubeadm upgrade\n) will be able to\ndetermine the actual/current cluster state and make new decisions based on that data.\nPlease note that:\nBefore saving the ClusterConfiguration, sensitive information like the token is stripped from the configuration\nUpload of control plane node configuration can be invoked individually with the command\nkubeadm init phase upload-config\n."
+  "text": "kubeadm saves the configuration passed to\nkubeadm init\nin a ConfigMap named\nkubeadm-config\nunder\nkube-system\nnamespace.\nThis will ensure that kubeadm actions executed in future (e.g\nkubeadm upgrade\n) will be able to\ndetermine the actual/current cluster state and make new decisions based on that data.\nPlease note that:\nBefore saving the ClusterConfiguration, sensitive information like the token is stripped from the configuration\nUpload of control plane node configuration can be invoked individually with the command\nkubeadm init phase upload-config\n.",
+  "failure_classes": []
 }

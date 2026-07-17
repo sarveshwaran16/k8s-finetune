@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Installing kubeadm — Configuring a cgroup driver",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#configuring-a-cgroup-driver",
-  "text": "Both the container runtime and the kubelet have a property called\n\"cgroup driver\"\n, which is important\nfor the management of cgroups on Linux machines.\nMatching the container runtime and kubelet cgroup drivers is required or otherwise the kubelet process will fail.\nSee\nConfiguring a cgroup driver\nfor more details."
+  "text": "Both the container runtime and the kubelet have a property called\n\"cgroup driver\"\n, which is important\nfor the management of cgroups on Linux machines.\nMatching the container runtime and kubelet cgroup drivers is required or otherwise the kubelet process will fail.\nSee\nConfiguring a cgroup driver\nfor more details.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Node-pressure Eviction — Known issues",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/#known-issues",
-  "text": "The following sections describe known issues related to out of resource handling.\n\nBy default, the kubelet polls cAdvisor to collect memory usage stats at a\nregular interval. If memory usage increases within that window rapidly, the\nkubelet may not observe\nMemoryPressure\nfast enough, and the OOM killer\nwill still be invoked.\nYou can use the\n--kernel-memcg-notification\nflag to enable the\nmemcg\nnotification API on the kubelet to get notified immediately when a threshold\nis crossed.\nIf you are not trying to achieve extreme utilization, but a sensible measure of\novercommit, a viable workaround for this issue is to use the\n--kube-reserved\nand\n--system-reserved\nflags to allocate memory for the system."
+  "text": "The following sections describe known issues related to out of resource handling.\n\nBy default, the kubelet polls cAdvisor to collect memory usage stats at a\nregular interval. If memory usage increases within that window rapidly, the\nkubelet may not observe\nMemoryPressure\nfast enough, and the OOM killer\nwill still be invoked.\nYou can use the\n--kernel-memcg-notification\nflag to enable the\nmemcg\nnotification API on the kubelet to get notified immediately when a threshold\nis crossed.\nIf you are not trying to achieve extreme utilization, but a sensible measure of\novercommit, a viable workaround for this issue is to use the\n--kube-reserved\nand\n--system-reserved\nflags to allocate memory for the system.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

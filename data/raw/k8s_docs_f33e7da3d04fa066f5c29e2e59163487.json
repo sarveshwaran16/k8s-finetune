@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Overprovision Node Capacity For A Cluster — Before you begin",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/node-overprovisioning/#before-you-begin",
-  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with\nyour cluster.\nYou should already have a basic understanding of\nDeployments\n,\nPod\npriority\n,\nand\nPriorityClasses\n.\nYour cluster must be set up with an\nautoscaler\nthat manages nodes based on demand."
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with\nyour cluster.\nYou should already have a basic understanding of\nDeployments\n,\nPod\npriority\n,\nand\nPriorityClasses\n.\nYour cluster must be set up with an\nautoscaler\nthat manages nodes based on demand.",
+  "failure_classes": []
 }

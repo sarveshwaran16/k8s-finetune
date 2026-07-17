@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure a Pod to Use a Projected Volume for Storage — Clean up",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-projected-volume-storage/#clean-up",
-  "text": "Delete the Pod and the Secrets:\nkubectl delete pod test-projected-volume\nkubectl delete secret user pass\n\nLearn more about\nprojected\nvolumes.\nRead the\nall-in-one volume\ndesign document.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Delete the Pod and the Secrets:\nkubectl delete pod test-projected-volume\nkubectl delete secret user pass\n\nLearn more about\nprojected\nvolumes.\nRead the\nall-in-one volume\ndesign document.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

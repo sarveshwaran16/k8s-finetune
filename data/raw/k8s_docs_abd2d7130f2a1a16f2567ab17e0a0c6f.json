@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Perform a Rolling Update on a DaemonSet — DaemonSet Update Strategy",
   "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/#daemonset-update-strategy",
-  "text": "DaemonSet has two update strategy types:\nOnDelete\n: With\nOnDelete\nupdate strategy, after you update a DaemonSet template, new\nDaemonSet pods will\nonly\nbe created when you manually delete old DaemonSet\npods. This is the same behavior of DaemonSet in Kubernetes version 1.5 or\nbefore.\nRollingUpdate\n: This is the default update strategy.\nWith\nRollingUpdate\nupdate strategy, after you update a\nDaemonSet template, old DaemonSet pods will be killed, and new DaemonSet pods\nwill be created automatically, in a controlled fashion. At most one pod of\nthe DaemonSet will be running on each node during the whole update process."
+  "text": "DaemonSet has two update strategy types:\nOnDelete\n: With\nOnDelete\nupdate strategy, after you update a DaemonSet template, new\nDaemonSet pods will\nonly\nbe created when you manually delete old DaemonSet\npods. This is the same behavior of DaemonSet in Kubernetes version 1.5 or\nbefore.\nRollingUpdate\n: This is the default update strategy.\nWith\nRollingUpdate\nupdate strategy, after you update a\nDaemonSet template, old DaemonSet pods will be killed, and new DaemonSet pods\nwill be created automatically, in a controlled fashion. At most one pod of\nthe DaemonSet will be running on each node during the whole update process.",
+  "failure_classes": []
 }

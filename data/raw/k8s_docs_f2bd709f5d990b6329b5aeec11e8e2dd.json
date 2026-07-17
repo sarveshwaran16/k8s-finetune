@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "About cgroup v2",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/cgroups/",
-  "text": "On Linux,\ncontrol groups\nconstrain resources that are allocated to processes.\nThe\nkubelet\nand the\nunderlying container runtime need to interface with cgroups to enforce\nresource management for pods and containers\nwhich\nincludes cpu/memory requests and limits for containerized workloads.\nThere are two versions of cgroups in Linux: cgroup v1 and cgroup v2. cgroup v2 is\nthe new generation of the\ncgroup\nAPI."
+  "text": "On Linux,\ncontrol groups\nconstrain resources that are allocated to processes.\nThe\nkubelet\nand the\nunderlying container runtime need to interface with cgroups to enforce\nresource management for pods and containers\nwhich\nincludes cpu/memory requests and limits for containerized workloads.\nThere are two versions of cgroups in Linux: cgroup v1 and cgroup v2. cgroup v2 is\nthe new generation of the\ncgroup\nAPI.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

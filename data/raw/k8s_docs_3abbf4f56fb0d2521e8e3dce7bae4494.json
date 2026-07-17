@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Scheduling Readiness",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-scheduling-readiness/",
-  "text": "Pods were considered ready for scheduling once created. Kubernetes scheduler\ndoes its due diligence to find nodes to place all pending Pods. However, in a\nreal-world case, some Pods may stay in a \"miss-essential-resources\" state for a long period.\nThese Pods actually churn the scheduler (and downstream integrators like Cluster AutoScaler)\nin an unnecessary manner.\nBy specifying/removing a Pod's\n.spec.schedulingGates\n, you can control when a Pod is ready\nto be considered for scheduling."
+  "text": "Pods were considered ready for scheduling once created. Kubernetes scheduler\ndoes its due diligence to find nodes to place all pending Pods. However, in a\nreal-world case, some Pods may stay in a \"miss-essential-resources\" state for a long period.\nThese Pods actually churn the scheduler (and downstream integrators like Cluster AutoScaler)\nin an unnecessary manner.\nBy specifying/removing a Pod's\n.spec.schedulingGates\n, you can control when a Pod is ready\nto be considered for scheduling.",
+  "failure_classes": []
 }

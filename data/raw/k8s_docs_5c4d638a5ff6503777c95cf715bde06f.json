@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling Framework — Plugin configuration",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#plugin-configuration",
-  "text": "You can enable or disable plugins in the scheduler configuration. If you are using\nKubernetes v1.18 or later, most scheduling\nplugins\nare in use and\nenabled by default.\nIn addition to default plugins, you can also implement your own scheduling\nplugins and get them configured along with default plugins. You can visit\nscheduler-plugins\nfor more details.\nIf you are using Kubernetes v1.18 or later, you can configure a set of plugins as\na scheduler profile and then define multiple profiles to fit various kinds of workload.\nLearn more at\nmultiple profiles\n."
+  "text": "You can enable or disable plugins in the scheduler configuration. If you are using\nKubernetes v1.18 or later, most scheduling\nplugins\nare in use and\nenabled by default.\nIn addition to default plugins, you can also implement your own scheduling\nplugins and get them configured along with default plugins. You can visit\nscheduler-plugins\nfor more details.\nIf you are using Kubernetes v1.18 or later, you can configure a set of plugins as\na scheduler profile and then define multiple profiles to fit various kinds of workload.\nLearn more at\nmultiple profiles\n.",
+  "failure_classes": []
 }

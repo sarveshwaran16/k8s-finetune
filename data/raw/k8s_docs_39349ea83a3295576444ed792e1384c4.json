@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Jobs — Mutable Pod resources for suspended Jobs",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#mutable-pod-resources-for-suspended-jobs",
-  "text": "A cluster administrator can define admission controls in Kubernetes, modifying the resource requests or limits for a Job, based on policy rules.\nWith this feature, Kubernetes also lets you modify the pod template of a\nsuspended job\n, to change the resource requirements of the Pods in the Job.\nThis is different from\nin-place Pod resize\nwhich lets you update resources, one Pod at a time, for Pods that are already running.\nThe client that sets the new resource requests or limits can be different from the client that initially created the Job, and does not need to be a cluster administrator."
+  "text": "A cluster administrator can define admission controls in Kubernetes, modifying the resource requests or limits for a Job, based on policy rules.\nWith this feature, Kubernetes also lets you modify the pod template of a\nsuspended job\n, to change the resource requirements of the Pods in the Job.\nThis is different from\nin-place Pod resize\nwhich lets you update resources, one Pod at a time, for Pods that are already running.\nThe client that sets the new resource requests or limits can be different from the client that initially created the Job, and does not need to be a cluster administrator.",
+  "failure_classes": []
 }

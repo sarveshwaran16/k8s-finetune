@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Assign Memory Resources to Containers and Pods — Clean up",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#clean-up",
-  "text": "Delete your namespace. This deletes all the Pods that you created for this task:\nkubectl delete namespace mem-example\n\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nResize CPU and Memory Resources assigned to Containers\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nResize CPU and Memory Resources assigned to Containers"
+  "text": "Delete your namespace. This deletes all the Pods that you created for this task:\nkubectl delete namespace mem-example\n\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nResize CPU and Memory Resources assigned to Containers\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nResize CPU and Memory Resources assigned to Containers",
+  "failure_classes": []
 }

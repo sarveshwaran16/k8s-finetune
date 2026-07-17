@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Reserve Compute Resources for System Daemons — Before you begin",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/#before-you-begin",
-  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYou can configure below kubelet\nconfiguration settings\nusing the\nkubelet configuration file\n."
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nYou can configure below kubelet\nconfiguration settings\nusing the\nkubelet configuration file\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

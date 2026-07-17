@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Translate a Docker Compose File to Kubernetes Resources — Restart",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/#restart",
-  "text": "If you want to create normal pods without controllers you can use\nrestart\nconstruct of docker-compose to define that. Follow table below to see what happens on the\nrestart\nvalue.\ndocker-compose\nrestart\nobject created\nPod\nrestartPolicy\n\"\"\ncontroller object\nAlways\nalways\ncontroller object\nAlways\non-failure\nPod\nOnFailure\nno\nPod\nNever\nFor example, the\npival\nservice will become pod down here. This container calculated value of\npi\n.\nversion\n:\n'2'\nservices\n:\npival\n:\nimage\n:\nperl\ncommand\n:\n[\n\"perl\"\n,\n\"-Mbignum=bpi\"\n,\n\"-wle\"\n,\n\"print bpi(2000)\"\n]\nrestart\n:\n\"on-failure\""
+  "text": "If you want to create normal pods without controllers you can use\nrestart\nconstruct of docker-compose to define that. Follow table below to see what happens on the\nrestart\nvalue.\ndocker-compose\nrestart\nobject created\nPod\nrestartPolicy\n\"\"\ncontroller object\nAlways\nalways\ncontroller object\nAlways\non-failure\nPod\nOnFailure\nno\nPod\nNever\nFor example, the\npival\nservice will become pod down here. This container calculated value of\npi\n.\nversion\n:\n'2'\nservices\n:\npival\n:\nimage\n:\nperl\ncommand\n:\n[\n\"perl\"\n,\n\"-Mbignum=bpi\"\n,\n\"-wle\"\n,\n\"print bpi(2000)\"\n]\nrestart\n:\n\"on-failure\"",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cluster Networking — How to implement the Kubernetes network model",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/networking/#how-to-implement-the-kubernetes-network-model",
-  "text": "The network model is implemented by the container runtime on each node. The most common container\nruntimes use\nContainer Network Interface\n(CNI)\nplugins to manage their network and security capabilities. Many different CNI plugins exist from\nmany different vendors. Some of these provide only basic features of adding and removing network\ninterfaces, while others provide more sophisticated solutions, such as integration with other\ncontainer orchestration systems, running multiple CNI plugins, advanced IPAM features etc.\nSee\nthis page\nfor a non-exhaustive list of networking addons supported by Kubernetes."
+  "text": "The network model is implemented by the container runtime on each node. The most common container\nruntimes use\nContainer Network Interface\n(CNI)\nplugins to manage their network and security capabilities. Many different CNI plugins exist from\nmany different vendors. Some of these provide only basic features of adding and removing network\ninterfaces, while others provide more sophisticated solutions, such as integration with other\ncontainer orchestration systems, running multiple CNI plugins, advanced IPAM features etc.\nSee\nthis page\nfor a non-exhaustive list of networking addons supported by Kubernetes.",
+  "failure_classes": []
 }

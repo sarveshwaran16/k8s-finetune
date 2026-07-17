@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "DaemonSet — Pod Template",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#pod-template",
-  "text": "The\n.spec.template\nis one of the required fields in\n.spec\n.\nThe\n.spec.template\nis a\npod template\n.\nIt has exactly the same schema as a\nPod\n,\nexcept it is nested and does not have an\napiVersion\nor\nkind\n.\nIn addition to required fields for a Pod, a Pod template in a DaemonSet has to specify appropriate\nlabels (see\npod selector\n).\nA Pod Template in a DaemonSet must have a\nRestartPolicy\nequal to\nAlways\n, or be unspecified, which defaults to\nAlways\n."
+  "text": "The\n.spec.template\nis one of the required fields in\n.spec\n.\nThe\n.spec.template\nis a\npod template\n.\nIt has exactly the same schema as a\nPod\n,\nexcept it is nested and does not have an\napiVersion\nor\nkind\n.\nIn addition to required fields for a Pod, a Pod template in a DaemonSet has to specify appropriate\nlabels (see\npod selector\n).\nA Pod Template in a DaemonSet must have a\nRestartPolicy\nequal to\nAlways\n, or be unspecified, which defaults to\nAlways\n.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

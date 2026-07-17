@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "PrometheusRemoteWriteDesiredShards#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheusremotewritedesiredshards/",
-  "text": "PrometheusRemoteWriteDesiredShards\nPrometheusRemoteWriteDesiredShards\n#\nMeaning\n#\nPrometheus remote write desired shards calculation wants to run\nmore than configured max shards.\nImpact\n#\nMetrics and alerts may be missing or inaccurate.\nDiagnosis\n#\nCheck metrics cardinality.\nCheck prometheus logs and remote storage logs.\nInvestigate network issues.\nCheck configs and credentials.\nMitigation\n#\nProbbaly amout of data sent to remote system is too high\nfor given network connectivity speed.\nYou may need to limit which metrics to send to minimize transfers.\nSee\nPrometheus Remote Storage Failures"
+  "text": "PrometheusRemoteWriteDesiredShards\nPrometheusRemoteWriteDesiredShards\n#\nMeaning\n#\nPrometheus remote write desired shards calculation wants to run\nmore than configured max shards.\nImpact\n#\nMetrics and alerts may be missing or inaccurate.\nDiagnosis\n#\nCheck metrics cardinality.\nCheck prometheus logs and remote storage logs.\nInvestigate network issues.\nCheck configs and credentials.\nMitigation\n#\nProbbaly amout of data sent to remote system is too high\nfor given network connectivity speed.\nYou may need to limit which metrics to send to minimize transfers.\nSee\nPrometheus Remote Storage Failures",
+  "failure_classes": []
 }

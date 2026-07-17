@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure Quality of Service for Pods",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/",
-  "text": "This page shows how to configure Pods so that they will be assigned particular\nQuality of Service (QoS) classes\n.\nKubernetes uses QoS classes to make decisions about evicting Pods when Node resources are exceeded.\nWhen Kubernetes creates a Pod it assigns one of these QoS classes to the Pod:\nGuaranteed\nBurstable\nBestEffort"
+  "text": "This page shows how to configure Pods so that they will be assigned particular\nQuality of Service (QoS) classes\n.\nKubernetes uses QoS classes to make decisions about evicting Pods when Node resources are exceeded.\nWhen Kubernetes creates a Pod it assigns one of these QoS classes to the Pod:\nGuaranteed\nBurstable\nBestEffort",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Local Files And Paths Used By The Kubelet — Locking",
   "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#locking",
-  "text": "A lock file for the kubelet; typically\n/var/run/kubelet.lock\n. The kubelet uses this to ensure\nthat two different kubelets don't try to run in conflict with each other.\nYou can configure the path to the lock file using the the\n--lock-file\nkubelet command line argument.\nIf two kubelets on the same node use a different value for the lock file path, they will not be able to\ndetect a conflict when both are running."
+  "text": "A lock file for the kubelet; typically\n/var/run/kubelet.lock\n. The kubelet uses this to ensure\nthat two different kubelets don't try to run in conflict with each other.\nYou can configure the path to the lock file using the the\n--lock-file\nkubelet command line argument.\nIf two kubelets on the same node use a different value for the lock file path, they will not be able to\ndetect a conflict when both are running.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

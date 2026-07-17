@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Check whether dockershim removal affects you",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/check-if-dockershim-removal-affects-you/",
-  "text": "The\ndockershim\ncomponent of Kubernetes allows the use of Docker as a Kubernetes's\ncontainer runtime\n.\nKubernetes' built-in\ndockershim\ncomponent was removed in release v1.24.\nThis page explains how your cluster could be using Docker as a container runtime,\nprovides details on the role that\ndockershim\nplays when in use, and shows steps\nyou can take to check whether any workloads could be affected by\ndockershim\nremoval."
+  "text": "The\ndockershim\ncomponent of Kubernetes allows the use of Docker as a Kubernetes's\ncontainer runtime\n.\nKubernetes' built-in\ndockershim\ncomponent was removed in release v1.24.\nThis page explains how your cluster could be using Docker as a container runtime,\nprovides details on the role that\ndockershim\nplays when in use, and shows steps\nyou can take to check whether any workloads could be affected by\ndockershim\nremoval.",
+  "failure_classes": []
 }

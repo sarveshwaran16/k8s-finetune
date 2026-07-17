@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "StatefulSet Basics — Pods in a StatefulSet",
   "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#pods-in-a-statefulset",
-  "text": "Pods in a StatefulSet have a unique ordinal index and a stable network identity.\n\nGet the StatefulSet's Pods:\nkubectl get pods -l\napp\n=\nnginx\nNAME      READY     STATUS    RESTARTS   AGE\nweb-0     1/1       Running   0          1m\nweb-1     1/1       Running   0          1m\nAs mentioned in the\nStatefulSets\nconcept, the Pods in a StatefulSet have a sticky, unique identity. This identity\nis based on a unique ordinal index that is assigned to each Pod by the\nStatefulSet\ncontroller\n.\nThe Pods' names take the form\n<statefulset name>-<ordinal index>\n.\nSince the\nweb\nStatefulSet has two replicas, it creates two Pods,\nweb-0\nand\nweb-1\n."
+  "text": "Pods in a StatefulSet have a unique ordinal index and a stable network identity.\n\nGet the StatefulSet's Pods:\nkubectl get pods -l\napp\n=\nnginx\nNAME      READY     STATUS    RESTARTS   AGE\nweb-0     1/1       Running   0          1m\nweb-1     1/1       Running   0          1m\nAs mentioned in the\nStatefulSets\nconcept, the Pods in a StatefulSet have a sticky, unique identity. This identity\nis based on a unique ordinal index that is assigned to each Pod by the\nStatefulSet\ncontroller\n.\nThe Pods' names take the form\n<statefulset name>-<ordinal index>\n.\nSince the\nweb\nStatefulSet has two replicas, it creates two Pods,\nweb-0\nand\nweb-1\n.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Access Applications in a Cluster",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/",
-  "text": "Deploy the web UI (Kubernetes Dashboard) and access it.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Deploy the web UI (Kubernetes Dashboard) and access it.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

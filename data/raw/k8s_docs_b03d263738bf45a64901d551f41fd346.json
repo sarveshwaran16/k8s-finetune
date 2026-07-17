@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "IPv4/IPv6 dual-stack",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/dual-stack/",
-  "text": "IPv4/IPv6 dual-stack networking enables the allocation of both IPv4 and IPv6 addresses to\nPods\nand\nServices\n.\nIPv4/IPv6 dual-stack networking is enabled by default for your Kubernetes cluster starting in\n1.21, allowing the simultaneous assignment of both IPv4 and IPv6 addresses.\n\nIPv4/IPv6 dual-stack on your Kubernetes cluster provides the following features:\nDual-stack Pod networking (a single IPv4 and IPv6 address assignment per Pod)\nIPv4 and IPv6 enabled Services\nPod off-cluster egress routing (eg. the Internet) via both IPv4 and IPv6 interfaces"
+  "text": "IPv4/IPv6 dual-stack networking enables the allocation of both IPv4 and IPv6 addresses to\nPods\nand\nServices\n.\nIPv4/IPv6 dual-stack networking is enabled by default for your Kubernetes cluster starting in\n1.21, allowing the simultaneous assignment of both IPv4 and IPv6 addresses.\n\nIPv4/IPv6 dual-stack on your Kubernetes cluster provides the following features:\nDual-stack Pod networking (a single IPv4 and IPv6 address assignment per Pod)\nIPv4 and IPv6 enabled Services\nPod off-cluster egress routing (eg. the Internet) via both IPv4 and IPv6 interfaces",
+  "failure_classes": []
 }

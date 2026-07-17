@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "API-initiated Eviction — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/#what-s-next",
-  "text": "Learn how to protect your applications with a\nPod Disruption Budget\n.\nLearn about\nNode-pressure Eviction\n.\nLearn about\nPod Priority and Preemption\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Learn how to protect your applications with a\nPod Disruption Budget\n.\nLearn about\nNode-pressure Eviction\n.\nLearn about\nPod Priority and Preemption\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

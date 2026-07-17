@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Manage Memory, CPU, and API Resources",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/",
-  "text": "Define a default memory resource limit for a namespace, so that every new Pod in that namespace has a memory resource limit configured.\nDefine a default CPU resource limits for a namespace, so that every new Pod in that namespace has a CPU resource limit configured.\nDefine a range of valid memory resource limits for a namespace, so that every new Pod in that namespace falls within the range you configure.\nDefine a range of valid CPU resource limits for a namespace, so that every new Pod in that namespace falls within the range you configure.\nDefine overall memory and CPU resource limits for a namespace.\nRestrict how many Pods you can create within a namespace."
+  "text": "Define a default memory resource limit for a namespace, so that every new Pod in that namespace has a memory resource limit configured.\nDefine a default CPU resource limits for a namespace, so that every new Pod in that namespace has a CPU resource limit configured.\nDefine a range of valid memory resource limits for a namespace, so that every new Pod in that namespace falls within the range you configure.\nDefine a range of valid CPU resource limits for a namespace, so that every new Pod in that namespace falls within the range you configure.\nDefine overall memory and CPU resource limits for a namespace.\nRestrict how many Pods you can create within a namespace.",
+  "failure_classes": []
 }

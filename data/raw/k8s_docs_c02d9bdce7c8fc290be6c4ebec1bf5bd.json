@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — A Note on Namespaces",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#a-note-on-namespaces",
-  "text": "PersistentVolumes binds are exclusive, and since PersistentVolumeClaims are\nnamespaced objects, mounting claims with \"Many\" modes (\nROX\n,\nRWX\n) is only\npossible within one namespace.\n\nA\nhostPath\nPersistentVolume uses a file or directory on the Node to emulate\nnetwork-attached storage. See\nan example of\nhostPath\ntyped volume\n."
+  "text": "PersistentVolumes binds are exclusive, and since PersistentVolumeClaims are\nnamespaced objects, mounting claims with \"Many\" modes (\nROX\n,\nRWX\n) is only\npossible within one namespace.\n\nA\nhostPath\nPersistentVolume uses a file or directory on the Node to emulate\nnetwork-attached storage. See\nan example of\nhostPath\ntyped volume\n.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

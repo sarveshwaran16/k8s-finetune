@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Client Libraries",
   "source_url": "https://kubernetes.io/docs/reference/using-api/client-libraries/",
-  "text": "This page contains an overview of the client libraries for using the Kubernetes\nAPI from various programming languages.\nTo write applications using the\nKubernetes REST API\n,\nyou do not need to implement the API calls and request/response types yourself.\nYou can use a client library for the programming language you are using.\nClient libraries often handle common tasks such as authentication for you.\nMost client libraries can discover and use the Kubernetes Service Account to\nauthenticate if the API client is running inside the Kubernetes cluster, or can\nunderstand the\nkubeconfig file\nformat to read the credentials and the API Server address."
+  "text": "This page contains an overview of the client libraries for using the Kubernetes\nAPI from various programming languages.\nTo write applications using the\nKubernetes REST API\n,\nyou do not need to implement the API calls and request/response types yourself.\nYou can use a client library for the programming language you are using.\nClient libraries often handle common tasks such as authentication for you.\nMost client libraries can discover and use the Kubernetes Service Account to\nauthenticate if the API client is running inside the Kubernetes cluster, or can\nunderstand the\nkubeconfig file\nformat to read the credentials and the API Server address.",
+  "failure_classes": []
 }

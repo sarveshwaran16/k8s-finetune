@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase/#synopsis",
-  "text": "Use this command to invoke single phase of the \"init\" workflow\nkubeadm init phase [flags]\n\n-h, --help\nhelp for phase\nhelp for phase\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "Use this command to invoke single phase of the \"init\" workflow\nkubeadm init phase [flags]\n\n-h, --help\nhelp for phase\nhelp for phase\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": []
 }

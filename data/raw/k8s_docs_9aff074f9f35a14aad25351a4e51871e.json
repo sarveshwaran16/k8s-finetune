@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl Quick Reference — Deleting resources",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/quick-reference/#deleting-resources",
-  "text": "kubectl delete -f ./pod.json\n# Delete a pod using the type and name specified in pod.json\nkubectl delete pod unwanted --now\n# Delete a pod with no grace period\nkubectl delete pod,service baz foo\n# Delete pods and services with same names \"baz\" and \"foo\"\nkubectl delete pods,services -l\nname\n=\nmyLabel\n# Delete pods and services with label name=myLabel\nkubectl -n my-ns delete pod,svc --all\n# Delete all pods and services in namespace my-ns,\n# Delete all pods matching the awk pattern1 or pattern2\nkubectl get pods  -n mynamespace --no-headers\n=\ntrue\n|\nawk\n'/pattern1|pattern2/{print $1}'\n|\nxargs  kubectl delete -n mynamespace pod"
+  "text": "kubectl delete -f ./pod.json\n# Delete a pod using the type and name specified in pod.json\nkubectl delete pod unwanted --now\n# Delete a pod with no grace period\nkubectl delete pod,service baz foo\n# Delete pods and services with same names \"baz\" and \"foo\"\nkubectl delete pods,services -l\nname\n=\nmyLabel\n# Delete pods and services with label name=myLabel\nkubectl -n my-ns delete pod,svc --all\n# Delete all pods and services in namespace my-ns,\n# Delete all pods matching the awk pattern1 or pattern2\nkubectl get pods  -n mynamespace --no-headers\n=\ntrue\n|\nawk\n'/pattern1|pattern2/{print $1}'\n|\nxargs  kubectl delete -n mynamespace pod",
+  "failure_classes": []
 }

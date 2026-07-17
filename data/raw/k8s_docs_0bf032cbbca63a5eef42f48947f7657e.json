@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Ephemeral Volumes",
   "source_url": "https://kubernetes.io/docs/concepts/storage/ephemeral-volumes/",
-  "text": "This document describes\nephemeral volumes\nin Kubernetes. Familiarity\nwith\nvolumes\nis suggested, in\nparticular PersistentVolumeClaim and PersistentVolume.\nSome applications need additional storage but don't care whether that\ndata is stored persistently across restarts. For example, caching\nservices are often limited by memory size and can move infrequently\nused data into storage that is slower than memory with little impact\non overall performance.\nOther applications expect some read-only input data to be present in\nfiles, like configuration data or secret keys.\nEphemeral volumes\nare designed for these use cases. Because volumes\nfollow the Pod's lifetime and get created and deleted along with the\nPod, Pods can be stopped and restarted without being limited to where\nsome persistent volume is available.\nEphemeral volumes are specified\ninline\nin the Pod spec, which\nsimplifies application deployment and management."
+  "text": "This document describes\nephemeral volumes\nin Kubernetes. Familiarity\nwith\nvolumes\nis suggested, in\nparticular PersistentVolumeClaim and PersistentVolume.\nSome applications need additional storage but don't care whether that\ndata is stored persistently across restarts. For example, caching\nservices are often limited by memory size and can move infrequently\nused data into storage that is slower than memory with little impact\non overall performance.\nOther applications expect some read-only input data to be present in\nfiles, like configuration data or secret keys.\nEphemeral volumes\nare designed for these use cases. Because volumes\nfollow the Pod's lifetime and get created and deleted along with the\nPod, Pods can be stopped and restarted without being limited to where\nsome persistent volume is available.\nEphemeral volumes are specified\ninline\nin the Pod spec, which\nsimplifies application deployment and management.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "PVC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Use a Service to Access an Application in a Cluster",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/",
-  "text": "This page shows how to create a Kubernetes Service object that external\nclients can use to access an application running in a cluster. The Service\nprovides load balancing for an application that has two running instances.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud"
+  "text": "This page shows how to create a Kubernetes Service object that external\nclients can use to access an application running in a cluster. The Service\nprovides load balancing for an application that has two running instances.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud",
+  "failure_classes": []
 }

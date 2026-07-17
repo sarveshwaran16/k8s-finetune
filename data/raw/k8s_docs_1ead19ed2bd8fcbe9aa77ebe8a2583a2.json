@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Good practices for Kubernetes Secrets — Improve etcd management policies",
   "source_url": "https://kubernetes.io/docs/concepts/security/secrets-good-practices/#improve-etcd-management-policies",
-  "text": "Consider wiping or shredding the durable storage used by\netcd\nonce it is\nno longer in use.\nIf there are multiple\netcd\ninstances, configure encrypted SSL/TLS\ncommunication between the instances to protect the Secret data in transit.\n\nYou can use third-party Secrets store providers to keep your confidential data\noutside your cluster and then configure Pods to access that information.\nThe\nKubernetes Secrets Store CSI Driver\nis a DaemonSet that lets the kubelet retrieve Secrets from external stores, and\nmount the Secrets as a volume into specific Pods that you authorize to access\nthe data.\nFor a list of supported providers, refer to\nProviders for the Secret Store CSI Driver\n."
+  "text": "Consider wiping or shredding the durable storage used by\netcd\nonce it is\nno longer in use.\nIf there are multiple\netcd\ninstances, configure encrypted SSL/TLS\ncommunication between the instances to protect the Secret data in transit.\n\nYou can use third-party Secrets store providers to keep your confidential data\noutside your cluster and then configure Pods to access that information.\nThe\nKubernetes Secrets Store CSI Driver\nis a DaemonSet that lets the kubelet retrieve Secrets from external stores, and\nmount the Secrets as a volume into specific Pods that you authorize to access\nthe data.\nFor a list of supported providers, refer to\nProviders for the Secret Store CSI Driver\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

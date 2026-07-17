@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Service ClusterIP allocation — How can you avoid Service ClusterIP conflicts?",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/#avoid-ClusterIP-conflict",
-  "text": "The allocation strategy implemented in Kubernetes to allocate ClusterIPs to Services reduces the\nrisk of collision.\nThe\nClusterIP\nrange is divided, based on the formula\nmin(max(16, cidrSize / 16), 256)\n,\ndescribed as\nnever less than 16 or more than 256 with a graduated step between them\n.\nDynamic IP assignment uses the upper band by default, once this has been exhausted it will\nuse the lower range. This will allow users to use static allocations on the lower band with a low\nrisk of collision."
+  "text": "The allocation strategy implemented in Kubernetes to allocate ClusterIPs to Services reduces the\nrisk of collision.\nThe\nClusterIP\nrange is divided, based on the formula\nmin(max(16, cidrSize / 16), 256)\n,\ndescribed as\nnever less than 16 or more than 256 with a graduated step between them\n.\nDynamic IP assignment uses the upper band by default, once this has been exhausted it will\nuse the lower range. This will allow users to use static allocations on the lower band with a low\nrisk of collision.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Node — postCreate Connect Proxy",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/node-v1/#post-create-connect-proxy",
-  "text": "POST /api/v1/nodes/{name}/proxy\nName\nType\nDescription\nname\nstring\nname of the NodeProxyOptions\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to node.\nStatus\nDescription\nResponse\n200\nOK\nstring\n\nPOST /api/v1/nodes/{name}/proxy/{path}\nName\nType\nDescription\nname\nstring\nname of the NodeProxyOptions\npath\nstring\npath to the resource\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to node.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+  "text": "POST /api/v1/nodes/{name}/proxy\nName\nType\nDescription\nname\nstring\nname of the NodeProxyOptions\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to node.\nStatus\nDescription\nResponse\n200\nOK\nstring\n\nPOST /api/v1/nodes/{name}/proxy/{path}\nName\nType\nDescription\nname\nstring\nname of the NodeProxyOptions\npath\nstring\npath to the resource\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to node.\nStatus\nDescription\nResponse\n200\nOK\nstring",
+  "failure_classes": []
 }

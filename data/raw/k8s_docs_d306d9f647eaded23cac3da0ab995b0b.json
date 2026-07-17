@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Workload API",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/",
-  "text": "The\nWorkload\nAPI resource defines the scheduling requirements and structure of a multi-Pod\napplication. While workload controllers such as\nJob\nmanage the application's runtime state, the\nWorkload\nspecifies how groups of\nPods\nshould be scheduled. The Job controller is the only built-in controller that creates\nPodGroup\nobjects from the\nWorkload\n's\nPodGroupTemplates\nat runtime."
+  "text": "The\nWorkload\nAPI resource defines the scheduling requirements and structure of a multi-Pod\napplication. While workload controllers such as\nJob\nmanage the application's runtime state, the\nWorkload\nspecifies how groups of\nPods\nshould be scheduled. The Job controller is the only built-in controller that creates\nPodGroup\nobjects from the\nWorkload\n's\nPodGroupTemplates\nat runtime.",
+  "failure_classes": []
 }

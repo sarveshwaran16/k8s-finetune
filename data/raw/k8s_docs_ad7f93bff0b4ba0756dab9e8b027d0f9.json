@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubectl set — See Also",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_set/#see-also",
-  "text": "kubectl\n- kubectl controls the Kubernetes cluster manager\nkubectl set env\n- Update environment variables on a pod template\nkubectl set image\n- Update the image of a pod template\nkubectl set resources\n- Update resource requests/limits on objects with pod templates\nkubectl set selector\n- Set the selector on a resource\nkubectl set serviceaccount\n- Update the service account of a resource\nkubectl set subject\n- Update the user, group, or service account in a role binding or cluster role binding"
+  "text": "kubectl\n- kubectl controls the Kubernetes cluster manager\nkubectl set env\n- Update environment variables on a pod template\nkubectl set image\n- Update the image of a pod template\nkubectl set resources\n- Update resource requests/limits on objects with pod templates\nkubectl set selector\n- Set the selector on a resource\nkubectl set serviceaccount\n- Update the service account of a resource\nkubectl set subject\n- Update the user, group, or service account in a role binding or cluster role binding",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "CronJob — Time zones",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#time-zones",
-  "text": "For CronJobs with no time zone specified, the\nkube-controller-manager\ninterprets schedules relative to its local time zone.\nYou can specify a time zone for a CronJob by setting\n.spec.timeZone\nto the name\nof a valid\ntime zone\n.\nFor example, setting\n.spec.timeZone: \"Etc/UTC\"\ninstructs Kubernetes to interpret\nthe schedule relative to Coordinated Universal Time.\nA time zone database from the Go standard library is included in the binaries and used as a fallback in case an external database is not available on the system."
+  "text": "For CronJobs with no time zone specified, the\nkube-controller-manager\ninterprets schedules relative to its local time zone.\nYou can specify a time zone for a CronJob by setting\n.spec.timeZone\nto the name\nof a valid\ntime zone\n.\nFor example, setting\n.spec.timeZone: \"Etc/UTC\"\ninstructs Kubernetes to interpret\nthe schedule relative to Coordinated Universal Time.\nA time zone database from the Go standard library is included in the binaries and used as a fallback in case an external database is not available on the system.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cluster Architecture — Web UI (Dashboard)",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/#web-ui-dashboard",
-  "text": "Dashboard\nis a general purpose,\nweb-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications\nrunning in the cluster, as well as the cluster itself.\n\nContainer Resource Monitoring\nrecords generic time-series metrics about containers in a central database, and provides a UI for browsing that data."
+  "text": "Dashboard\nis a general purpose,\nweb-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications\nrunning in the cluster, as well as the cluster itself.\n\nContainer Resource Monitoring\nrecords generic time-series metrics about containers in a central database, and provides a UI for browsing that data.",
+  "failure_classes": []
 }

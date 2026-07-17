@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Using RBAC Authorization — Default roles and role bindings",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/#default-roles-and-role-bindings",
-  "text": "API servers create a set of default ClusterRole and ClusterRoleBinding objects.\nMany of these are\nsystem:\nprefixed, which indicates that the resource is directly\nmanaged by the cluster control plane.\nAll of the default ClusterRoles and ClusterRoleBindings are labeled with\nkubernetes.io/bootstrapping=rbac-defaults\n."
+  "text": "API servers create a set of default ClusterRole and ClusterRoleBinding objects.\nMany of these are\nsystem:\nprefixed, which indicates that the resource is directly\nmanaged by the cluster control plane.\nAll of the default ClusterRoles and ClusterRoleBindings are labeled with\nkubernetes.io/bootstrapping=rbac-defaults\n.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

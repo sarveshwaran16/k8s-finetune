@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_certs_sa/",
-  "text": "Generate a private key for signing service account tokens along with its public key\n\nGenerate the private key for signing service account tokens along with its public key, and save them into sa.key and sa.pub files.\nIf both files already exist, kubeadm skips the generation step and existing files will be used.\nkubeadm init phase certs sa [flags]"
+  "text": "Generate a private key for signing service account tokens along with its public key\n\nGenerate the private key for signing service account tokens along with its public key, and save them into sa.key and sa.pub files.\nIf both files already exist, kubeadm skips the generation step and existing files will be used.\nkubeadm init phase certs sa [flags]",
+  "failure_classes": []
 }

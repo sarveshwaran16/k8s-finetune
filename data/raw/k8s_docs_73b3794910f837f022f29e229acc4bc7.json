@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Using sysctls in a Kubernetes Cluster — Enabling Unsafe Sysctls",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/#enabling-unsafe-sysctls",
-  "text": "All\nsafe\nsysctls are enabled by default.\nAll\nunsafe\nsysctls are disabled by default and must be allowed manually by the\ncluster admin on a per-node basis. Pods with disabled unsafe sysctls will be\nscheduled, but will fail to launch.\nWith the warning above in mind, the cluster admin can allow certain\nunsafe\nsysctls for very special situations such as high-performance or real-time\napplication tuning.\nUnsafe\nsysctls are enabled on a node-by-node basis with a\nflag of the kubelet; for example:\nkubelet --allowed-unsafe-sysctls\n\\\n'kernel.msg*,net.core.somaxconn'\n...\nFor\nMinikube\n, this can be done via the\nextra-config\nflag:\nminikube start --extra-config\n=\n\"kubelet.allowed-unsafe-sysctls=kernel.msg*,net.core.somaxconn\"\n...\nOnly\nnamespaced\nsysctls can be enabled this way."
+  "text": "All\nsafe\nsysctls are enabled by default.\nAll\nunsafe\nsysctls are disabled by default and must be allowed manually by the\ncluster admin on a per-node basis. Pods with disabled unsafe sysctls will be\nscheduled, but will fail to launch.\nWith the warning above in mind, the cluster admin can allow certain\nunsafe\nsysctls for very special situations such as high-performance or real-time\napplication tuning.\nUnsafe\nsysctls are enabled on a node-by-node basis with a\nflag of the kubelet; for example:\nkubelet --allowed-unsafe-sysctls\n\\\n'kernel.msg*,net.core.somaxconn'\n...\nFor\nMinikube\n, this can be done via the\nextra-config\nflag:\nminikube start --extra-config\n=\n\"kubelet.allowed-unsafe-sysctls=kernel.msg*,net.core.somaxconn\"\n...\nOnly\nnamespaced\nsysctls can be enabled this way.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

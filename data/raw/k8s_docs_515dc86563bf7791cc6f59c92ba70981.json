@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-controller-manager Configuration (v1alpha1) — GroupResource",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#kubecontrollermanager-config-k8s-io-v1alpha1-GroupResource",
-  "text": "Appears in:\nGarbageCollectorControllerConfiguration\nGroupResource describes an group resource.\nField\nDescription\nGroup\n[Required]\nstring\ngroup is the group portion of the GroupResource.\nResource\n[Required]\nstring\nresource is the resource portion of the GroupResource.\ngroup is the group portion of the GroupResource.\nresource is the resource portion of the GroupResource."
+  "text": "Appears in:\nGarbageCollectorControllerConfiguration\nGroupResource describes an group resource.\nField\nDescription\nGroup\n[Required]\nstring\ngroup is the group portion of the GroupResource.\nResource\n[Required]\nstring\nresource is the resource portion of the GroupResource.\ngroup is the group portion of the GroupResource.\nresource is the resource portion of the GroupResource.",
+  "failure_classes": []
 }

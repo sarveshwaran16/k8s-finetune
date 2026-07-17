@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Certificates and Certificate Signing Requests — Control plane signer",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#signer-control-plane",
-  "text": "The Kubernetes control plane implements each of the\nKubernetes signers\n,\nas part of the kube-controller-manager.\nFor a hands-on example of creating a CertificateSigningRequest and having it approved and\nsigned by the Kubernetes control plane, see\nIssue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest\n."
+  "text": "The Kubernetes control plane implements each of the\nKubernetes signers\n,\nas part of the kube-controller-manager.\nFor a hands-on example of creating a CertificateSigningRequest and having it approved and\nsigned by the Kubernetes control plane, see\nIssue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest\n.",
+  "failure_classes": []
 }

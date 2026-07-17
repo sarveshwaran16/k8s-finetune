@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "TLS bootstrapping — Configuration",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/#configuration",
-  "text": "To configure for TLS bootstrapping and optional automatic approval, you must configure options on the following components:\nkube-apiserver\nkube-controller-manager\nkubelet\nin-cluster resources:\nClusterRoleBinding\nand potentially\nClusterRole\nIn addition, you need your Kubernetes Certificate Authority (CA)."
+  "text": "To configure for TLS bootstrapping and optional automatic approval, you must configure options on the following components:\nkube-apiserver\nkube-controller-manager\nkubelet\nin-cluster resources:\nClusterRoleBinding\nand potentially\nClusterRole\nIn addition, you need your Kubernetes Certificate Authority (CA).",
+  "failure_classes": [
+    "NodeNotReady",
+    "RBAC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — jobset.sigs.k8s.io/replicatedjob-replicas",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#jobset-sigs-k8s-io-replicatedjob-replicas",
-  "text": "Type: Label, Annotation\nExample:\njobset.sigs.k8s.io/replicatedjob-replicas: \"5\"\nUsed on: Jobs, Pods\nThis label/annotation specifies the number of replicas for a ReplicatedJob.\n\nType: Label, Annotation\nExample:\njobset.sigs.k8s.io/replicatedjob-name: \"my-replicatedjob\"\nUsed on: Jobs, Pods\nThis label or annotation stores the name of the replicated job that this Job or Pod is part of."
+  "text": "Type: Label, Annotation\nExample:\njobset.sigs.k8s.io/replicatedjob-replicas: \"5\"\nUsed on: Jobs, Pods\nThis label/annotation specifies the number of replicas for a ReplicatedJob.\n\nType: Label, Annotation\nExample:\njobset.sigs.k8s.io/replicatedjob-name: \"my-replicatedjob\"\nUsed on: Jobs, Pods\nThis label or annotation stores the name of the replicated job that this Job or Pod is part of.",
+  "failure_classes": []
 }

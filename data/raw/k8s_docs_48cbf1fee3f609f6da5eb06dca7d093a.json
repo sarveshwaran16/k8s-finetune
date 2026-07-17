@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "List All Container Images Running in a Cluster — List Container images by Pod",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/#list-container-images-by-pod",
-  "text": "The formatting can be controlled further by using the\nrange\noperation to\niterate over elements individually.\nkubectl get pods --all-namespaces -o\njsonpath\n=\n'{range .items[*]}{\"\\n\"}{.metadata.name}{\":\\t\"}{range .spec.containers[*]}{.image}{\", \"}{end}{end}'\n|\n\\\nsort\n\nTo target only Pods matching a specific label, use the -l flag. The\nfollowing matches only Pods with labels matching\napp=nginx\n.\nkubectl get pods --all-namespaces -o\njsonpath\n=\n\"{.items[*].spec.containers[*].image}\"\n-l\napp\n=\nnginx"
+  "text": "The formatting can be controlled further by using the\nrange\noperation to\niterate over elements individually.\nkubectl get pods --all-namespaces -o\njsonpath\n=\n'{range .items[*]}{\"\\n\"}{.metadata.name}{\":\\t\"}{range .spec.containers[*]}{.image}{\", \"}{end}{end}'\n|\n\\\nsort\n\nTo target only Pods matching a specific label, use the -l flag. The\nfollowing matches only Pods with labels matching\napp=nginx\n.\nkubectl get pods --all-namespaces -o\njsonpath\n=\n\"{.items[*].spec.containers[*].image}\"\n-l\napp\n=\nnginx",
+  "failure_classes": []
 }

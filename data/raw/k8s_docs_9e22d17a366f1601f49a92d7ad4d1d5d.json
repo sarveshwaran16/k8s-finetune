@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Using a KMS provider for data encryption — Integrating a KMS plugin with the remote KMS",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#integrating-a-kms-plugin-with-the-remote-kms",
-  "text": "The KMS plugin can communicate with the remote KMS using any protocol supported by the KMS.\nAll configuration data, including authentication credentials the KMS plugin uses to communicate with the remote KMS,\nare stored and managed by the KMS plugin independently.\nThe KMS plugin can encode the ciphertext with additional metadata that may be required before sending it to the KMS\nfor decryption (KMS v2 makes this process easier by providing a dedicated\nannotations\nfield)."
+  "text": "The KMS plugin can communicate with the remote KMS using any protocol supported by the KMS.\nAll configuration data, including authentication credentials the KMS plugin uses to communicate with the remote KMS,\nare stored and managed by the KMS plugin independently.\nThe KMS plugin can encode the ciphertext with additional metadata that may be required before sending it to the KMS\nfor decryption (KMS v2 makes this process easier by providing a dedicated\nannotations\nfield).",
+  "failure_classes": []
 }

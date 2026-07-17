@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Group Disruption and Priority — Disruption mode types",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/disruption-and-priority/#disruption-mode-types",
-  "text": "The API supports two disruption modes:\nPod\nand\nPodGroup\n.\nThe default one is\nPod\n.\n\nThe\nPod\nmode instructs the scheduler to treat all Pods in the group as separate entities,\nallowing independent disruption of a single pod from a PodGroup.\n\nThe\nPodGroup\nmode emphasizes \"all-or-nothing\" semantics for disruption.\nIt instructs the scheduler that all pods from the PodGroup have to be disrupted together."
+  "text": "The API supports two disruption modes:\nPod\nand\nPodGroup\n.\nThe default one is\nPod\n.\n\nThe\nPod\nmode instructs the scheduler to treat all Pods in the group as separate entities,\nallowing independent disruption of a single pod from a PodGroup.\n\nThe\nPodGroup\nmode emphasizes \"all-or-nothing\" semantics for disruption.\nIt instructs the scheduler that all pods from the PodGroup have to be disrupted together.",
+  "failure_classes": []
 }

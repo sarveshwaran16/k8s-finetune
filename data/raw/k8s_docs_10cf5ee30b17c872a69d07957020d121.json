@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Managing Workloads — Updating annotations",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#updating-annotations",
-  "text": "Sometimes you would want to attach annotations to resources. Annotations are arbitrary\nnon-identifying metadata for retrieval by API clients such as tools or libraries.\nThis can be done with\nkubectl annotate\n. For example:\nkubectl annotate pods my-nginx-v4-9gw19\ndescription\n=\n'my frontend running nginx'\nkubectl get pods my-nginx-v4-9gw19 -o yaml\napiVersion: v1\nkind: pod\nmetadata:\nannotations:\ndescription: my frontend running nginx\n...\nFor more information, see\nannotations\nand\nkubectl annotate\n."
+  "text": "Sometimes you would want to attach annotations to resources. Annotations are arbitrary\nnon-identifying metadata for retrieval by API clients such as tools or libraries.\nThis can be done with\nkubectl annotate\n. For example:\nkubectl annotate pods my-nginx-v4-9gw19\ndescription\n=\n'my frontend running nginx'\nkubectl get pods my-nginx-v4-9gw19 -o yaml\napiVersion: v1\nkind: pod\nmetadata:\nannotations:\ndescription: my frontend running nginx\n...\nFor more information, see\nannotations\nand\nkubectl annotate\n.",
+  "failure_classes": []
 }

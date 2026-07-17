@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Fine Parallel Processing Using a Work Queue — Alternatives",
   "source_url": "https://kubernetes.io/docs/tasks/job/fine-parallel-processing-work-queue/#alternatives",
-  "text": "If running a queue service or modifying your containers to use a work queue is inconvenient, you may\nwant to consider one of the other\njob patterns\n.\nIf you have a continuous stream of background processing work to run, then\nconsider running your background workers with a ReplicaSet instead,\nand consider running a background processing library such as\nhttps://github.com/resque/resque\n."
+  "text": "If running a queue service or modifying your containers to use a work queue is inconvenient, you may\nwant to consider one of the other\njob patterns\n.\nIf you have a continuous stream of background processing work to run, then\nconsider running your background workers with a ReplicaSet instead,\nand consider running a background processing library such as\nhttps://github.com/resque/resque\n.",
+  "failure_classes": []
 }

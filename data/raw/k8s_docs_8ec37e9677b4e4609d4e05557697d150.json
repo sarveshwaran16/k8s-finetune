@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Create a Windows HostProcess Pod — When should I use a Windows HostProcess container?",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/#when-should-i-use-a-windows-hostprocess-container",
-  "text": "When you need to perform tasks which require the networking namespace of the host.\nHostProcess containers have access to the host's network interfaces and IP addresses.\nYou need access to resources on the host such as the filesystem, event logs, etc.\nInstallation of specific device drivers or Windows services.\nConsolidation of administrative tasks and security policies. This reduces the degree of\nprivileges needed by Windows nodes."
+  "text": "When you need to perform tasks which require the networking namespace of the host.\nHostProcess containers have access to the host's network interfaces and IP addresses.\nYou need access to resources on the host such as the filesystem, event logs, etc.\nInstallation of specific device drivers or Windows services.\nConsolidation of administrative tasks and security policies. This reduces the degree of\nprivileges needed by Windows nodes.",
+  "failure_classes": []
 }

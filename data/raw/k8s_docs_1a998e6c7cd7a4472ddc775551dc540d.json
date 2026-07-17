@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Validate IPv4/IPv6 dual-stack",
   "source_url": "https://kubernetes.io/docs/tasks/network/validate-dual-stack/",
-  "text": "This document shares how to validate IPv4/IPv6 dual-stack enabled Kubernetes clusters.\n\nProvider support for dual-stack networking (Cloud provider or otherwise must be able to\nprovide Kubernetes nodes with routable IPv4/IPv6 network interfaces)\nA\nnetwork plugin\nthat supports dual-stack networking.\nDual-stack enabled\ncluster\nTo check the version, enter\nkubectl version\n."
+  "text": "This document shares how to validate IPv4/IPv6 dual-stack enabled Kubernetes clusters.\n\nProvider support for dual-stack networking (Cloud provider or otherwise must be able to\nprovide Kubernetes nodes with routable IPv4/IPv6 network interfaces)\nA\nnetwork plugin\nthat supports dual-stack networking.\nDual-stack enabled\ncluster\nTo check the version, enter\nkubectl version\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Imperative Management of Kubernetes Objects Using Configuration Files — Creating and editing an object from a URL without saving the configuration",
   "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/imperative-config/#creating-and-editing-an-object-from-a-url-without-saving-the-configuration",
-  "text": "Suppose you have the URL of an object configuration file. You can use\nkubectl create --edit\nto make changes to the configuration before the\nobject is created. This is particularly useful for tutorials and tasks\nthat point to a configuration file that could be modified by the reader.\nkubectl create -f <url> --edit"
+  "text": "Suppose you have the URL of an object configuration file. You can use\nkubectl create --edit\nto make changes to the configuration before the\nobject is created. This is particularly useful for tutorials and tasks\nthat point to a configuration file that could be modified by the reader.\nkubectl create -f <url> --edit",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Install and Set Up kubectl on Linux — Before you begin",
   "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#before-you-begin",
-  "text": "You must use a kubectl version that is within one minor version difference of\nyour cluster. For example, a v1.36 client can communicate\nwith v1.35, v1.36,\nand v1.37 control planes.\nUsing the latest compatible version of kubectl helps avoid unforeseen issues.\n\nThe following methods exist for installing kubectl on Linux:\nInstall kubectl binary with curl on Linux\nInstall using native package management\nInstall using other package management"
+  "text": "You must use a kubectl version that is within one minor version difference of\nyour cluster. For example, a v1.36 client can communicate\nwith v1.35, v1.36,\nand v1.37 control planes.\nUsing the latest compatible version of kubectl helps avoid unforeseen issues.\n\nThe following methods exist for installing kubectl on Linux:\nInstall kubectl binary with curl on Linux\nInstall using native package management\nInstall using other package management",
+  "failure_classes": []
 }

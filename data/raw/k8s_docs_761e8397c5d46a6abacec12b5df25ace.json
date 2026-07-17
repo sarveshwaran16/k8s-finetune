@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Create a Windows HostProcess Pod — Containerd v1.7 (and greater)",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/#containerd-v1-7-and-greater",
-  "text": "Applications running inside the container can access volume mounts directly via the volumeMount's\nspecified\nmountPath\n(just like Linux and non-HostProcess Windows containers).\nFor backwards compatibility volumes can also be accessed via using the same relative paths configured\nby containerd v1.6.\nAs an example, to access service account tokens within the container you would use one of the following paths:\nc:\\var\\run\\secrets\\kubernetes.io\\serviceaccount\n/var/run/secrets/kubernetes.io/serviceaccount/\n$CONTAINER_SANDBOX_MOUNT_POINT\\var\\run\\secrets\\kubernetes.io\\serviceaccount\\"
+  "text": "Applications running inside the container can access volume mounts directly via the volumeMount's\nspecified\nmountPath\n(just like Linux and non-HostProcess Windows containers).\nFor backwards compatibility volumes can also be accessed via using the same relative paths configured\nby containerd v1.6.\nAs an example, to access service account tokens within the container you would use one of the following paths:\nc:\\var\\run\\secrets\\kubernetes.io\\serviceaccount\n/var/run/secrets/kubernetes.io/serviceaccount/\n$CONTAINER_SANDBOX_MOUNT_POINT\\var\\run\\secrets\\kubernetes.io\\serviceaccount\\",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

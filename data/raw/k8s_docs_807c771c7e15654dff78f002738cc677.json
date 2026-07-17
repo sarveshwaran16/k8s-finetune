@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Enable Or Disable Feature Gates — Understand feature gate maturity",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-feature-gates/#understand-feature-gate-maturity",
-  "text": "Before enabling a feature gate, check the\nFeature Gates reference\nfor the feature's maturity level:\nAlpha\n: Disabled by default, may be buggy. Use only in test clusters.\nBeta\n: Usually enabled by default, well-tested.\nGA\n: Always enabled by default; can sometimes be disabled for one release after GA."
+  "text": "Before enabling a feature gate, check the\nFeature Gates reference\nfor the feature's maturity level:\nAlpha\n: Disabled by default, may be buggy. Use only in test clusters.\nBeta\n: Usually enabled by default, well-tested.\nGA\n: Always enabled by default; can sometimes be disabled for one release after GA.",
+  "failure_classes": []
 }

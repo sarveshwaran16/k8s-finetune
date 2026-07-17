@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Topology Aware Routing — kube-proxy",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/topology-aware-routing/#implementation-kube-proxy",
-  "text": "The kube-proxy component filters the endpoints it routes to based on the hints set by\nthe EndpointSlice controller. In most cases, this means that the kube-proxy is able\nto route traffic to endpoints in the same zone. Sometimes the controller allocates endpoints\nfrom a different zone to ensure more even distribution of endpoints between zones.\nThis would result in some traffic being routed to other zones."
+  "text": "The kube-proxy component filters the endpoints it routes to based on the hints set by\nthe EndpointSlice controller. In most cases, this means that the kube-proxy is able\nto route traffic to endpoints in the same zone. Sometimes the controller allocates endpoints\nfrom a different zone to ensure more even distribution of endpoints between zones.\nThis would result in some traffic being routed to other zones.",
+  "failure_classes": []
 }

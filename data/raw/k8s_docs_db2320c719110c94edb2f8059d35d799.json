@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Hello Minikube",
   "source_url": "https://kubernetes.io/docs/tutorials/hello-minikube/",
-  "text": "This tutorial shows you how to run a sample app on Kubernetes using minikube.\nThe tutorial provides a container image that uses NGINX to echo back all the requests.\n\nDeploy a sample application to minikube.\nRun the app.\nView application logs.\n\nThis tutorial assumes that you have already set up\nminikube\n.\nSee\nStep 1\nin\nminikube start\nfor installation instructions.\nNote:\nOnly execute the instructions in\nStep 1, Installation\n. The rest is covered on this page.\nYou also need to install\nkubectl\n.\nSee\nInstall tools\nfor installation instructions."
+  "text": "This tutorial shows you how to run a sample app on Kubernetes using minikube.\nThe tutorial provides a container image that uses NGINX to echo back all the requests.\n\nDeploy a sample application to minikube.\nRun the app.\nView application logs.\n\nThis tutorial assumes that you have already set up\nminikube\n.\nSee\nStep 1\nin\nminikube start\nfor installation instructions.\nNote:\nOnly execute the instructions in\nStep 1, Installation\n. The rest is covered on this page.\nYou also need to install\nkubectl\n.\nSee\nInstall tools\nfor installation instructions.",
+  "failure_classes": []
 }

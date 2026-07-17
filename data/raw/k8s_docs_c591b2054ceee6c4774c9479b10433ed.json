@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Security",
   "source_url": "https://kubernetes.io/docs/tutorials/security/",
-  "text": "Security is an important concern for most organizations and people who run Kubernetes\nclusters. You can find a basic\nsecurity checklist\nelsewhere in the Kubernetes documentation.\nTo learn how to deploy and manage security aspects of Kubernetes, you can follow the\ntutorials in this section.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Security is an important concern for most organizations and people who run Kubernetes\nclusters. You can find a basic\nsecurity checklist\nelsewhere in the Kubernetes documentation.\nTo learn how to deploy and manage security aspects of Kubernetes, you can follow the\ntutorials in this section.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

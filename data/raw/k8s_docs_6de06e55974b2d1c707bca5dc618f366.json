@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extend kubectl with plugins — Writing kubectl plugins",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/#writing-kubectl-plugins",
-  "text": "You can write a plugin in any programming language or script that allows you to write command-line commands.\nThere is no plugin installation or pre-loading required. Plugin executables receive\nthe inherited environment from the\nkubectl\nbinary.\nA plugin determines which command path it wishes to implement based on its name.\nFor example, a plugin named\nkubectl-foo\nprovides a command\nkubectl foo\n. You must\ninstall the plugin executable somewhere in your\nPATH\n."
+  "text": "You can write a plugin in any programming language or script that allows you to write command-line commands.\nThere is no plugin installation or pre-loading required. Plugin executables receive\nthe inherited environment from the\nkubectl\nbinary.\nA plugin determines which command path it wishes to implement based on its name.\nFor example, a plugin named\nkubectl-foo\nprovides a command\nkubectl foo\n. You must\ninstall the plugin executable somewhere in your\nPATH\n.",
+  "failure_classes": []
 }

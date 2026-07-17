@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Linux Kernel Version Requirements — Linux kernel long term maintenance",
   "source_url": "https://kubernetes.io/docs/reference/node/kernel-version-requirements/#linux-kernel-long-term-maintenance",
-  "text": "Active kernel releases can be found in\nkernel.org\n.\nThere are usually several\nlong term maintenance\nkernel releases provided for the purposes of backporting\nbug fixes for older kernel trees. Only important bug fixes are applied to such kernels and they don't\nusually see very frequent releases, especially for older trees.\nSee the Linux kernel website for the\nlist of releases\nin the\nLongterm\ncategory."
+  "text": "Active kernel releases can be found in\nkernel.org\n.\nThere are usually several\nlong term maintenance\nkernel releases provided for the purposes of backporting\nbug fixes for older kernel trees. Only important bug fixes are applied to such kernels and they don't\nusually see very frequent releases, especially for older trees.\nSee the Linux kernel website for the\nlist of releases\nin the\nLongterm\ncategory.",
+  "failure_classes": []
 }

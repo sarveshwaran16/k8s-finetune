@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Resource Management for Windows nodes — Memory management",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/windows-resource-management/#resource-management-memory",
-  "text": "Windows does not have an out-of-memory process killer as Linux does. Windows always\ntreats all user-mode memory allocations as virtual, and pagefiles are mandatory.\nWindows nodes do not overcommit memory for processes. The\nnet effect is that Windows won't reach out of memory conditions the same way Linux\ndoes, and processes page to disk instead of being subject to out of memory (OOM)\ntermination. If memory is over-provisioned and all physical memory is exhausted,\nthen paging can slow down performance."
+  "text": "Windows does not have an out-of-memory process killer as Linux does. Windows always\ntreats all user-mode memory allocations as virtual, and pagefiles are mandatory.\nWindows nodes do not overcommit memory for processes. The\nnet effect is that Windows won't reach out of memory conditions the same way Linux\ndoes, and processes page to disk instead of being subject to out of memory (OOM)\ntermination. If memory is over-provisioned and all physical memory is exhausted,\nthen paging can slow down performance.",
+  "failure_classes": [
+    "OOMKilled"
+  ]
 }

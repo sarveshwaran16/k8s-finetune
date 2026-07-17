@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ReplicationController — Multiple Replicas",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#multiple-replicas",
-  "text": "You can specify how many pods should run concurrently by setting\n.spec.replicas\nto the number\nof pods you would like to have running concurrently. The number running at any time may be higher\nor lower, such as if the replicas were just increased or decreased, or if a pod is gracefully\nshutdown, and a replacement starts early.\nIf you do not specify\n.spec.replicas\n, then it defaults to 1."
+  "text": "You can specify how many pods should run concurrently by setting\n.spec.replicas\nto the number\nof pods you would like to have running concurrently. The number running at any time may be higher\nor lower, such as if the replicas were just increased or decreased, or if a pod is gracefully\nshutdown, and a replacement starts early.\nIf you do not specify\n.spec.replicas\n, then it defaults to 1.",
+  "failure_classes": []
 }

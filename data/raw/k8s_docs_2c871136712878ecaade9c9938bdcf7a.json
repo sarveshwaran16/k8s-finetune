@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-strong-getting-started-strong-",
-  "text": "This section contains the most basic commands for getting a workload\nrunning on your cluster.\nrun\nwill start running 1 or more instances of a container image on your cluster.\nexpose\nwill load balance traffic across the running instances, and can create a HA proxy for accessing the containers from outside the cluster.\nOnce your workloads are running, you can use the commands in the\nWORKING WITH APPS\nsection to\ninspect them."
+  "text": "This section contains the most basic commands for getting a workload\nrunning on your cluster.\nrun\nwill start running 1 or more instances of a container image on your cluster.\nexpose\nwill load balance traffic across the running instances, and can create a HA proxy for accessing the containers from outside the cluster.\nOnce your workloads are running, you can use the commands in the\nWORKING WITH APPS\nsection to\ninspect them.",
+  "failure_classes": []
 }

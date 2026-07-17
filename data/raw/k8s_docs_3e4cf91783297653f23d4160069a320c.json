@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dynamic Resource Allocation — DRA terminology",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#terminology",
-  "text": "DRA uses the following Kubernetes API kinds to provide the core allocation\nfunctionality. All of these API kinds are included in the\nresource.k8s.io/v1\nAPI group\n.\n\nA DeviceClass lets cluster admins or device drivers define categories of devices\nin the cluster. DeviceClasses tell operators what devices they can request and\nhow they can request those devices. You can use\ncommon expression language (CEL)\nto select devices based on\nspecific attributes. A ResourceClaim that references the DeviceClass can then\nrequest specific configurations within the DeviceClass.\nTo create a DeviceClass, see\nSet Up DRA in a Cluster\n."
+  "text": "DRA uses the following Kubernetes API kinds to provide the core allocation\nfunctionality. All of these API kinds are included in the\nresource.k8s.io/v1\nAPI group\n.\n\nA DeviceClass lets cluster admins or device drivers define categories of devices\nin the cluster. DeviceClasses tell operators what devices they can request and\nhow they can request those devices. You can use\ncommon expression language (CEL)\nto select devices based on\nspecific attributes. A ResourceClaim that references the DeviceClass can then\nrequest specific configurations within the DeviceClass.\nTo create a DeviceClass, see\nSet Up DRA in a Cluster\n.",
+  "failure_classes": []
 }

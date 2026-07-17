@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Install and Set Up kubectl on macOS — Uninstall kubectl on macOS",
   "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#uninstall-kubectl-on-macos",
-  "text": "Depending on how you installed\nkubectl\n, use one of the following methods.\n\nLocate the\nkubectl\nbinary on your system:\nwhich kubectl\nRemove the\nkubectl\nbinary:\nsudo rm <path>\nReplace\n<path>\nwith the path to the\nkubectl\nbinary from the previous step. For example,\nsudo rm /usr/local/bin/kubectl\n.\nLocate the\nkubectl\nbinary on your system:\nwhich kubectl\nRemove the\nkubectl\nbinary:\nsudo rm <path>\nReplace\n<path>\nwith the path to the\nkubectl\nbinary from the previous step. For example,\nsudo rm /usr/local/bin/kubectl\n."
+  "text": "Depending on how you installed\nkubectl\n, use one of the following methods.\n\nLocate the\nkubectl\nbinary on your system:\nwhich kubectl\nRemove the\nkubectl\nbinary:\nsudo rm <path>\nReplace\n<path>\nwith the path to the\nkubectl\nbinary from the previous step. For example,\nsudo rm /usr/local/bin/kubectl\n.\nLocate the\nkubectl\nbinary on your system:\nwhich kubectl\nRemove the\nkubectl\nbinary:\nsudo rm <path>\nReplace\n<path>\nwith the path to the\nkubectl\nbinary from the previous step. For example,\nsudo rm /usr/local/bin/kubectl\n.",
+  "failure_classes": []
 }

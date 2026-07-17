@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Considerations for large clusters",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/cluster-large/",
-  "text": "A cluster is a set of\nnodes\n(physical\nor virtual machines) running Kubernetes agents, managed by the\ncontrol plane\n.\nKubernetes v1.36 supports clusters with up to 5,000 nodes. More specifically,\nKubernetes is designed to accommodate configurations that meet\nall\nof the following criteria:\nNo more than 110 pods per node\nNo more than 5,000 nodes\nNo more than 150,000 total pods\nNo more than 300,000 total containers\nYou can scale your cluster by adding or removing nodes. The way you do this depends\non how your cluster is deployed."
+  "text": "A cluster is a set of\nnodes\n(physical\nor virtual machines) running Kubernetes agents, managed by the\ncontrol plane\n.\nKubernetes v1.36 supports clusters with up to 5,000 nodes. More specifically,\nKubernetes is designed to accommodate configurations that meet\nall\nof the following criteria:\nNo more than 110 pods per node\nNo more than 5,000 nodes\nNo more than 150,000 total pods\nNo more than 300,000 total containers\nYou can scale your cluster by adding or removing nodes. The way you do this depends\non how your cluster is deployed.",
+  "failure_classes": []
 }

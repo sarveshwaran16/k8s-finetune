@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extending Kubernetes — Extensions",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#extensions",
-  "text": "Extensions are software components that extend and deeply integrate with Kubernetes.\nThey adapt it to support new types and new kinds of hardware.\nMany cluster administrators use a hosted or distribution instance of Kubernetes.\nThese clusters come with extensions pre-installed. As a result, most Kubernetes\nusers will not need to install extensions and even fewer users will need to author new ones."
+  "text": "Extensions are software components that extend and deeply integrate with Kubernetes.\nThey adapt it to support new types and new kinds of hardware.\nMany cluster administrators use a hosted or distribution instance of Kubernetes.\nThese clusters come with extensions pre-installed. As a result, most Kubernetes\nusers will not need to install extensions and even fewer users will need to author new ones.",
+  "failure_classes": []
 }

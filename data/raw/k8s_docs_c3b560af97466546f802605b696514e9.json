@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Introduction to kubectl — Declarative Application Management",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/introduction/#declarative-application-management",
-  "text": "The preferred approach for managing resources is through\ndeclarative files called resource configuration used with the kubectl\nApply\ncommand.\nThis command reads a local (or remote) file structure and modifies cluster state to\nreflect the declared intent.\n\nUsers will need to view workload state.\nPrinting summarize state and information about resources\nPrinting complete state and information about resources\nPrinting specific fields from resources\nQuery resources matching labels"
+  "text": "The preferred approach for managing resources is through\ndeclarative files called resource configuration used with the kubectl\nApply\ncommand.\nThis command reads a local (or remote) file structure and modifies cluster state to\nreflect the declared intent.\n\nUsers will need to view workload state.\nPrinting summarize state and information about resources\nPrinting complete state and information about resources\nPrinting specific fields from resources\nQuery resources matching labels",
+  "failure_classes": []
 }

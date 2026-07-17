@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubelet Configuration (v1beta1) — KubeletAuthorization",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-KubeletAuthorization",
-  "text": "Appears in:\nKubeletConfiguration\nField\nDescription\nmode\nKubeletAuthorizationMode\nmode is the authorization mode to apply to requests to the kubelet server.\nValid values are\nAlwaysAllow\nand\nWebhook\n.\nWebhook mode uses the SubjectAccessReview API to determine authorization.\nwebhook\nKubeletWebhookAuthorization\nwebhook contains settings related to Webhook authorization.\nmode is the authorization mode to apply to requests to the kubelet server.\nValid values are\nAlwaysAllow\nand\nWebhook\n.\nWebhook mode uses the SubjectAccessReview API to determine authorization.\nwebhook contains settings related to Webhook authorization."
+  "text": "Appears in:\nKubeletConfiguration\nField\nDescription\nmode\nKubeletAuthorizationMode\nmode is the authorization mode to apply to requests to the kubelet server.\nValid values are\nAlwaysAllow\nand\nWebhook\n.\nWebhook mode uses the SubjectAccessReview API to determine authorization.\nwebhook\nKubeletWebhookAuthorization\nwebhook contains settings related to Webhook authorization.\nmode is the authorization mode to apply to requests to the kubelet server.\nValid values are\nAlwaysAllow\nand\nWebhook\n.\nWebhook mode uses the SubjectAccessReview API to determine authorization.\nwebhook contains settings related to Webhook authorization.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

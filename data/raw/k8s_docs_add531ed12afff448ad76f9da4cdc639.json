@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "CertificateSigningRequest",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/certificates/certificate-signing-request-v1/",
-  "text": "CertificateSigningRequest objects provide a mechanism to obtain x509 certificates by submitting a certificate signing request, and having it asynchronously approved and issued.\nKubelets use this API to obtain:\nclient certificates to authenticate to kube-apiserver (with the \"kubernetes.io/kube-apiserver-client-kubelet\" signerName).\nserving certificates for TLS endpoints kube-apiserver can connect to securely (with the \"kubernetes.io/kubelet-serving\" signerName).\nThis API can be used to request client certificates to authenticate to kube-apiserver (with the \"kubernetes.io/kube-apiserver-client\" signerName), or to obtain certificates from custom non-Kubernetes signers.\napiVersion: certificates.k8s.io/v1\nimport \"k8s.io/api/certificates/v1\""
+  "text": "CertificateSigningRequest objects provide a mechanism to obtain x509 certificates by submitting a certificate signing request, and having it asynchronously approved and issued.\nKubelets use this API to obtain:\nclient certificates to authenticate to kube-apiserver (with the \"kubernetes.io/kube-apiserver-client-kubelet\" signerName).\nserving certificates for TLS endpoints kube-apiserver can connect to securely (with the \"kubernetes.io/kubelet-serving\" signerName).\nThis API can be used to request client certificates to authenticate to kube-apiserver (with the \"kubernetes.io/kube-apiserver-client\" signerName), or to obtain certificates from custom non-Kubernetes signers.\napiVersion: certificates.k8s.io/v1\nimport \"k8s.io/api/certificates/v1\"",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

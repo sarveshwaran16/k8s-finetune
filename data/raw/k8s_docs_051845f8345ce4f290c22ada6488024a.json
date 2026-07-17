@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm Configuration (v1beta4) — UpgradeDiffConfiguration",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta4/#kubeadm-k8s-io-v1beta4-UpgradeDiffConfiguration",
-  "text": "Appears in:\nUpgradeConfiguration\nUpgradeDiffConfiguration contains a list of configurable options which are specific to the\nkubeadm upgrade diff\ncommand.\nField\nDescription\nkubernetesVersion\nstring\nkubernetesVersion\nis the target version of the control plane.\ncontextLines\nint\ndiffContextLines\nis the number of lines of context in the diff.\nkubernetesVersion\nis the target version of the control plane.\ndiffContextLines\nis the number of lines of context in the diff."
+  "text": "Appears in:\nUpgradeConfiguration\nUpgradeDiffConfiguration contains a list of configurable options which are specific to the\nkubeadm upgrade diff\ncommand.\nField\nDescription\nkubernetesVersion\nstring\nkubernetesVersion\nis the target version of the control plane.\ncontextLines\nint\ndiffContextLines\nis the number of lines of context in the diff.\nkubernetesVersion\nis the target version of the control plane.\ndiffContextLines\nis the number of lines of context in the diff.",
+  "failure_classes": []
 }

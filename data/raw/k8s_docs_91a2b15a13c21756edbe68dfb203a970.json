@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Installing Addons — Service Discovery",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/addons/#service-discovery",
-  "text": "CoreDNS\nis a flexible, extensible DNS server which can\nbe\ninstalled\nas the in-cluster DNS for pods.\n\nDashboard\nis a dashboard web interface for Kubernetes.\nHeadlamp\nis an extensible Kubernetes UI that can be\ndeployed in-cluster or used as a desktop application.\n\nKubeVirt\nis an add-on\nto run virtual machines on Kubernetes. Usually run on bare-metal clusters.\nThe\nnode problem detector\nruns on Linux nodes and reports system issues as either\nEvents\nor\nNode conditions\n."
+  "text": "CoreDNS\nis a flexible, extensible DNS server which can\nbe\ninstalled\nas the in-cluster DNS for pods.\n\nDashboard\nis a dashboard web interface for Kubernetes.\nHeadlamp\nis an extensible Kubernetes UI that can be\ndeployed in-cluster or used as a desktop application.\n\nKubeVirt\nis an add-on\nto run virtual machines on Kubernetes. Usually run on bare-metal clusters.\nThe\nnode problem detector\nruns on Linux nodes and reports system issues as either\nEvents\nor\nNode conditions\n.",
+  "failure_classes": []
 }

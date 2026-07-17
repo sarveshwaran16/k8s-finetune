@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Migrating telemetry and security agents from dockershim",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/migrating-telemetry-and-security-agents/",
-  "text": "Kubernetes' support for direct integration with Docker Engine is deprecated and\nhas been removed. Most apps do not have a direct dependency on runtime hosting\ncontainers. However, there are still a lot of telemetry and monitoring agents\nthat have a dependency on Docker to collect containers metadata, logs, and\nmetrics. This document aggregates information on how to detect these\ndependencies as well as links on how to migrate these agents to use generic tools or\nalternative runtimes."
+  "text": "Kubernetes' support for direct integration with Docker Engine is deprecated and\nhas been removed. Most apps do not have a direct dependency on runtime hosting\ncontainers. However, there are still a lot of telemetry and monitoring agents\nthat have a dependency on Docker to collect containers metadata, logs, and\nmetrics. This document aggregates information on how to detect these\ndependencies as well as links on how to migrate these agents to use generic tools or\nalternative runtimes.",
+  "failure_classes": []
 }

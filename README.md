@@ -8,9 +8,9 @@ This repository contains the pipeline for collecting Kubernetes and SRE document
 
 ```mermaid
 graph TD
-    A[Web Sources: Google SRE, Kubernetes Docs, etc.] -->|Ingestion: ingest_raw.py| B[1,212 Raw JSON Files]
-    B -->|Dataset Generation: generate.py using Ollama| C[Raw Q&A Pairs]
-    C -->|Validation: validate.py| D[Cleaned Q&A Pairs dataset_clean.jsonl]
+    A[Web Sources: Google SRE, Kubernetes Docs, etc.] -->|Ingestion: ingest.py| B[7,503 Raw JSON Chunks]
+    B -->|Dataset Generation: generate_dataset_groq.py using Groq API| C[Raw Q&A Pairs]
+    C -->|Validation: validate_dataset.py| D[Cleaned Q&A Pairs dataset_clean.jsonl]
     D -->|Fine-Tuning: k8s-finetune.ipynb| E[Fine-Tuned TinyLlama 1.1B Model]
 ```
 
@@ -20,14 +20,15 @@ graph TD
 
 ### Comparison: Instructor's Proposed Strategy vs. Implemented Strategy
 
-The instructor proposed a manual chunking and curation strategy targeting official Kubernetes documentation. The **actually implemented strategy** scales much better, automates data cleaning, and covers a broader scope.
+The instructor proposed a manual chunking and curation strategy targeting official Kubernetes documentation. The **implemented strategy** scales much better, automates data cleaning, and covers a broader scope.
 
 | Feature | Instructor's Proposal | Implemented Ingestion (This Repo) |
 | :--- | :--- | :--- |
 | **Scope** | Only official K8s Markdown docs | **5 authoritative sources**: Kubernetes Docs, Prometheus Runbooks, Kubernetes Failures, OpenSRE, and Google SRE |
-| **Scale** | ~200 chunks, manually cleaned to 100–150 | **1,212 complete documents** ingested automatically |
-| **Curation** | Manual clustering and de-duplication | Programmatic validation and deduplication in [`validate.py`](file:///d:/rag-assistant/k8s-finetune/services/dataset/validate.py) |
-| **Tagging/Chunking** | Manual URL/version tracking & failure class tagging | Automated tracking via source mapping, md5-hash generation, and automated validation |
+| **Scale** | ~200 chunks, manually cleaned to 100–150 | **7,503 chunks** ingested automatically (see chunking strategy below) |
+| **Curation** | Manual clustering and de-duplication | Programmatic validation and deduplication in [`validate_dataset.py`](file:///d:/rag-assistant/k8s-finetune/services/dataset/validate_dataset.py) |
+| **Chunking** | Manual, "complete self-contained explanation" per chunk | Automated **heading-based section splitting** (see below) — achieves the same "complete, self-contained" principle the instructor specified, without manual effort |
+| **Tagging** | Manual URL/version tracking & failure class tagging | Automated source/URL tracking via md5-hash filenames, plus **heuristic failure-class tagging** per chunk |
 
 #### Why the Implemented Strategy is Better
 1. **Broader SRE Knowledge**: By ingesting Prometheus Runbooks, SRE books, and failure stories alongside official docs, the SLM gains actual troubleshooting knowledge rather than just API definitions.
@@ -36,73 +37,146 @@ The instructor proposed a manual chunking and curation strategy targeting offici
 
 ---
 
-## 2. Ingestion Code Implementation
+## 2. Chunking Strategy: Old vs. New
 
-The raw documentation is collected using scraping/fetching scripts and standardized into single JSON files containing page metadata and content.
+This is the most consequential change in the ingestion pipeline, and it's worth calling out on its own.
 
-* **Target Script**: [ingest_raw.py](file:///d:/rag-assistant/k8s-finetune/services/ingestion/ingest_raw.py)
-* **Output**: `1,212` raw JSON documents stored in the `data/raw/` folder.
+### The Old Strategy: Whole-Page Chunking
 
-### Key Code Logic
+The original scraper (`k8s_docs.py`) treated **one entire documentation page as one chunk**, regardless of how long that page was:
 
-1. **[save_document](file:///d:/rag-assistant/k8s-finetune/services/ingestion/ingest_raw.py#L17)**: Standardizes and serializes each scraped document. An MD5 hash is generated from the source URL to act as a unique file identifier (`doc_id`).
-   ```python
-   def save_document(doc: dict, source_name: str):
-       os.makedirs(OUTPUT_DIR, exist_ok=True)
-       doc_id = hashlib.md5(doc["metadata"]["source_url"].encode()).hexdigest()
-       filename = f"{source_name}_{doc_id}.json"
-       filepath = os.path.join(OUTPUT_DIR, filename)
-       with open(filepath, "w", encoding="utf-8") as f:
-           json.dump({
-               "id": doc_id,
-               "source": source_name,
-               "title": doc["metadata"]["title"],
-               "source_url": doc["metadata"]["source_url"],
-               "text": doc["text"]
-           }, f, indent=2, ensure_ascii=False)
-   ```
+```python
+def parse_page(url: str) -> dict | None:
+    ...
+    text = main.get_text(separator="\n", strip=True)
+    if len(text) < 200:
+        return None
+    return {
+        "text": text,
+        "metadata": {"source_url": url, "title": title, "source": "kubernetes_docs"}
+    }
+```
 
-2. **[run](file:///d:/rag-assistant/k8s-finetune/services/ingestion/ingest_raw.py#L35)**: Iterates over the specified generators (e.g., Google SRE books, Kubernetes docs) and triggers `save_document` for each yielded page.
+This produced **1,212 raw documents** across all 5 sources combined. It looked reasonable on the surface, but it silently broke downstream: the dataset generation step truncates each document's text to fit within model context/token limits (`text[:2500]`, later raised to `text[:6000]`). For a short concept page, the whole page fit easily. But for long pages — e.g. a full "Pod Lifecycle" or "Troubleshooting" reference page covering many distinct sub-topics — **only the first 2,500–6,000 characters were ever seen by the model.** Everything past that cutoff (often the majority of the page) was silently discarded before a single Q&A pair could be generated from it.
+
+This directly violated the instructor's own chunking principle:
+
+> "Do not chunk by character count. Each chunk should be a complete, self-contained explanation... This keeps SLMs from learning fragmented, incomplete knowledge."
+
+Ironically, whole-page chunking + downstream truncation *is* character-count chunking — it just happens one step later in the pipeline instead of at ingestion time.
+
+### The New Strategy: Heading-Based Section Chunking
+
+`k8s_docs.py` now splits each page along its actual heading structure (`h1`/`h2`/`h3`) into **self-contained sections**, instead of yielding the whole page as one blob:
+
+```python
+def _split_into_sections(main, page_title: str) -> list[dict]:
+    """
+    Split a page's main content into self-contained sections based on
+    heading structure (h2/h3), instead of returning the whole page as one
+    blob. Each section keeps everything between one heading and the next
+    heading of the same or higher level — a complete logical unit, not an
+    arbitrary character-count slice.
+    """
+```
+
+Key behaviors:
+- **One section = one chunk.** A page like "Pod Lifecycle" with 5 distinct `h2` sections now yields 5 focused chunks instead of 1 oversized one.
+- **Short sections merge forward** (`MIN_SECTION_CHARS = 300`) rather than becoming tiny, low-value chunks or getting dropped.
+- **Anchor-aware source URLs**: each chunk's `source_url` points to `page#section-anchor` when the heading has an `id`, so every chunk is traceable down to the exact section, not just the page.
+- **Heuristic failure-class tagging**: each chunk is scanned for keywords tied to the 7 target failure classes (OOMKilled, CrashLoopBackOff, RBAC, etc.) and tagged accordingly — this preserves the instructor's "tag each chunk with failure classes" requirement, just automated instead of manual.
+
+### The Difference, in Numbers
+
+| | Old (whole-page) | New (heading-based sections) |
+| :--- | :--- | :--- |
+| **`k8s_docs` chunks** | part of 1,212 total (all sources) | **7,279** |
+| **Total raw documents (all 5 sources)** | 1,212 | **7,503** |
+| **Content actually reaching the LLM** | First 2,500–6,000 chars per page only | Full page content, split across right-sized chunks |
+
+The `k8s_docs` source alone grew from a fraction of the original 1,212-document pool to **7,279 chunks on its own** — roughly a 6x increase in the total corpus size, driven almost entirely by this one fix. This isn't inflation for its own sake: it's the same underlying Kubernetes documentation, just no longer being silently cut off before the model ever sees it.
+
+### Why This Is Absolutely Necessary
+
+1. **No more silent data loss.** Under the old strategy, long pages contributed a fraction of their actual content to the training set — the rest simply never existed as far as the generation step was concerned. The new strategy guarantees every section of every page is eligible for Q&A generation.
+2. **Matches the "complete, self-contained explanation" principle exactly.** Instead of an arbitrary character cutoff mid-topic, each chunk now corresponds to one coherent concept (e.g. "Restart Policy," "Liveness Probes," "RBAC Role Binding") — precisely what the instructor's proposal called for, just achieved automatically at web-scale instead of manually across ~150 hand-picked docs.
+3. **Better-grounded, less speculative Q&A.** A focused, complete section gives the generation model a clean, bounded scope to answer from — reducing the risk of hedging or invented answers that comes from either (a) a truncated chunk missing context, or (b) an oversized chunk forcing the model to generalize across unrelated sub-topics.
+4. **Enables real failure-class targeting.** With section-level granularity and heuristic tagging, it becomes possible to specifically target generation toward the instructor's 7 named failure classes in later iterations — something that was effectively impossible when a "chunk" was an entire multi-topic page.
 
 ---
 
-## 3. Dataset Generation (Ollama / Local LLM Style)
+## 3. Dataset Generation Strategy
 
-For generating the training Q&A dataset, the pipeline runs local inference or structured API calls formatted for Ollama style local completion. 
+### Correction: This Pipeline Uses Groq, Not Ollama
 
-### Generation Strategy & Negating Limits
-* **Original Run**: An initial dataset was generated using a local Ollama model producing 3 QA pairs per document, yielding **2,600 validated Q&A pairs**.
-* **Current Run / Multi-Model Strategy**: To negate rate limits and context restrictions, multiple Ollama models are distributed across generation passes:
-  * `llama-3.1-8b-instant`
-  - `meta-llama/llama-4-scout`
-  - `allam-2-7b`
-  - `qwen/qwen3-32b`
+An earlier version of this document described generation as "Ollama / Local LLM style." That's no longer accurate — the pipeline was migrated from a local Ollama model (`phi3:mini`) to **Groq's hosted API**, for two reasons: response quality/length, and eliminating local hardware/runtime constraints entirely.
 
-* **Target Script**: [generate.py](file:///d:/rag-assistant/k8s-finetune/services/dataset/generate.py)
+* **Target Script**: [`generate_dataset_groq.py`](file:///d:/rag-assistant/k8s-finetune/services/dataset/generate_dataset_groq.py)
+* **Endpoint**: Groq's OpenAI-compatible `chat/completions` API (`https://api.groq.com/openai/v1/chat/completions`)
 
-### Key Code Logic
+### Multi-Model Rotation (Quota Management)
 
-1. **Structured Prompts**: A strict system prompt ensures the models output valid JSON without conversational wrapper text (preamble or markdown fences).
-   ```python
-   SYSTEM_PROMPT = (
-       "You are a Kubernetes expert creating a training dataset. "
-       "You always respond with valid JSON only — no preamble, no markdown "
-       "code fences, no commentary."
-   )
-   ```
+Groq's free tier enforces per-model daily token caps (TPD) as low as 100K–200K for some models. Rather than being blocked by a single model's daily limit, generation rotates across several Groq-hosted models with independent quota buckets:
 
-2. **[generate_pairs](file:///d:/rag-assistant/k8s-finetune/services/dataset/generate.py#L161)**: Truncates documents to fit local model context limits (trimmed to 2,500 characters) and constructs the prompt asking for structured Q&A JSON formatting.
-   ```python
-   def generate_pairs(doc: dict) -> list[dict]:
-       text = doc["text"][:2500]
-       prompt = GENERATION_PROMPT.format(
-           title=doc["title"],
-           source=doc["source"],
-           text=text
-       )
-       # Calls Ollama endpoint / API client returning choices
-       ...
-   ```
+| Model | TPD | Notes |
+| :--- | :--- | :--- |
+| `llama-3.1-8b-instant` | 500K | Best daily headroom |
+| `meta-llama/llama-4-scout-17b-16e-instruct` | 500K | Best TPM + TPD combination |
+| `qwen/qwen3-32b` | 500K | Larger model, good quality |
+| `llama-3.3-70b-versatile` | 100K | Strong quality, tighter daily budget |
+| `openai/gpt-oss-20b` | 200K | Groq's default/fallback recommendation |
+
+The script reads Groq's live rate-limit response headers (`x-ratelimit-remaining-tokens`, `x-ratelimit-reset-tokens`, etc.) to pace requests proactively, and distinguishes a short per-minute wait from a genuine daily-quota exhaustion (raising a `DailyQuotaExhausted` signal that stops the run cleanly rather than retrying pointlessly for hours). All progress is written incrementally, so an interrupted run resumes automatically from where it left off on the next invocation, skipping already-completed titles.
+
+### Structured Prompting
+
+A strict system prompt ensures valid JSON output with no conversational wrapper text:
+```python
+SYSTEM_PROMPT = (
+    "You are a Kubernetes expert creating a training dataset. "
+    "You always respond with valid JSON only — no preamble, no markdown "
+    "code fences, no commentary."
+)
+```
+
+### Variable Pair Count (Not a Fixed 5)
+
+The original generation prompt forced **exactly 5** Q&A pairs per document, regardless of how much substantive content that document actually contained. That made sense under whole-page chunking, where every chunk was large. It stopped making sense once chunking moved to focused, section-level chunks (Section 2 above): forcing 5 pairs out of a short, narrow section risks padding with trivial questions or the model stretching beyond what the text supports — exactly the kind of speculative, hedged answer the validation step (Section 4) is built to catch.
+
+The prompt now asks for a natural range instead:
+```python
+GENERATION_PROMPT = """Read the following Kubernetes documentation and generate high-quality question-answer pairs.
+
+Rules:
+- Generate as many pairs as the text genuinely supports — typically 2 to 4 for a focused section.
+  Do NOT pad with trivial, repetitive, or overly generic questions just to hit a number.
+- If the text is too thin or narrow to support even 2 distinct, meaningful questions, generate just 1 — or return an empty "pairs" list rather than inventing content.
+...
+"""
+```
+
+A chunk that correctly returns an empty `"pairs": []` (because the section genuinely didn't support a good question) is tracked separately from an actual error:
+```python
+if pairs is None:
+    failed += 1          # real error: network, bad JSON, HTTP failure, etc.
+elif len(pairs) == 0:
+    skipped_thin += 1     # model correctly declined — not a failure
+else:
+    ...                   # write pairs to dataset.jsonl
+```
+
+### Context Window
+
+```python
+def generate_pairs(doc: dict) -> list[dict] | None:
+    text = doc["text"][:6000]
+    prompt = GENERATION_PROMPT.format(
+        title=doc["title"],
+        source=doc["source"],
+        text=text
+    )
+```
+This cap is now a safety net for outlier-long merged sections, rather than the routine, content-losing truncation it was under whole-page chunking.
 
 ---
 
@@ -110,19 +184,19 @@ For generating the training Q&A dataset, the pipeline runs local inference or st
 
 To ensure the high quality of the instruction-tuning pairs, raw output pairs are passed through a strict validator to remove duplicates, bad formatting, and low-quality model behavior.
 
-* **Target Script**: [validate.py](file:///d:/rag-assistant/k8s-finetune/services/dataset/validate.py)
+* **Target Script**: [`validate_dataset.py`](file:///d:/rag-assistant/k8s-finetune/services/dataset/validate_dataset.py)
 * **Output**: `dataset_clean.jsonl` containing high-quality pairs.
 
 ### Key Code Logic
 
-1. **Rejection Rules & [is_valid](file:///d:/rag-assistant/k8s-finetune/services/dataset/validate.py#L67)**: Checks each Q&A pair against criteria:
-   - **Hedging Check**: Filters phrases indicating guessing (e.g. *"not explicitly stated"*, *"could imply"*).
+1. **Rejection Rules (`is_valid`)**: Checks each Q&A pair against criteria:
+   - **Hedging Check**: Filters phrases indicating guessing rather than grounded extraction (e.g. *"not explicitly stated"*, *"could imply"*, *"it is unclear"*).
    - **Self-Reference Check**: Rejects boilerplate AI self-mentions (e.g. *"as an AI language model"*).
-   - **Admitted Ignorance Check**: Rejects fallback responses (e.g. *"I don't know"*).
-   - **Truncation Check ([looks_truncated](file:///d:/rag-assistant/k8s-finetune/services/dataset/validate.py#L48))**: Uses regular expressions and trailing word check to see if responses end abruptly without ending punctuation.
-   - **Length Constraints**: Minimum of 10 chars for instructions, 20 chars for responses.
+   - **Admitted Ignorance Check**: Rejects fallback responses (e.g. *"I don't know"*, *"unable to determine"*).
+   - **Truncation Check (`looks_truncated`)**: Flags responses that end abruptly — missing terminal punctuation or ending on a dangling conjunction/article — a sign the model's output was cut off mid-sentence by a token limit.
+   - **Length Constraints**: Minimum 10 chars for instructions, 20 chars for responses.
 
-2. **Deduplication ([run](file:///d:/rag-assistant/k8s-finetune/services/dataset/validate.py#L108))**: Dedups instruction-response pairs so that identical questions and answers are not repeated in the training split.
+2. **Deduplication**: Dedups on `(instruction, response)` pairs so identical Q&A generated more than once (e.g. across a resumed or re-run session) isn't repeated in the training set:
    ```python
    key = (
        str(pair.get("instruction", "")).strip().lower(),
@@ -134,6 +208,8 @@ To ensure the high quality of the instruction-tuning pairs, raw output pairs are
    seen.add(key)
    valid.append(pair)
    ```
+
+3. **Resilient parsing**: malformed JSON lines are logged with their line number and skipped, rather than silently swallowed or crashing the whole validation run.
 
 ---
 

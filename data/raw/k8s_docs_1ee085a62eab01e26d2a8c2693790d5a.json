@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Vertical Pod Autoscaling — InPlaceOrRecreate",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/#updateMode-InPlaceOrRecreate",
-  "text": "In\nInPlaceOrRecreate\nmode, VPA attempts to update Pod resource requests and limits without restarting the Pod when possible. However, if in-place updates cannot be performed for a particular resource change, VPA falls back to evicting the Pod\n(similar to\nRecreate\nmode) and allowing the workload controller to create a replacement Pod with updated resources.\nIn this mode, the updater applies recommendations in-place using the\nResize Container Resources In-Place\nfeature."
+  "text": "In\nInPlaceOrRecreate\nmode, VPA attempts to update Pod resource requests and limits without restarting the Pod when possible. However, if in-place updates cannot be performed for a particular resource change, VPA falls back to evicting the Pod\n(similar to\nRecreate\nmode) and allowing the workload controller to create a replacement Pod with updated resources.\nIn this mode, the updater applies recommendations in-place using the\nResize Container Resources In-Place\nfeature.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

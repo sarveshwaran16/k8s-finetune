@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Changing The Kubernetes Package Repository",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/change-package-repository/",
-  "text": "This page explains how to enable a package repository for the desired\nKubernetes minor release upon upgrading a cluster. This is only needed\nfor users of the community-owned package repositories hosted at\npkgs.k8s.io\n.\nUnlike the legacy package repositories, the community-owned package\nrepositories are structured in a way that there's a dedicated package\nrepository for each Kubernetes minor version."
+  "text": "This page explains how to enable a package repository for the desired\nKubernetes minor release upon upgrading a cluster. This is only needed\nfor users of the community-owned package repositories hosted at\npkgs.k8s.io\n.\nUnlike the legacy package repositories, the community-owned package\nrepositories are structured in a way that there's a dedicated package\nrepository for each Kubernetes minor version.",
+  "failure_classes": []
 }

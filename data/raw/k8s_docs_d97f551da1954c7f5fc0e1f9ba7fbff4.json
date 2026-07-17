@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure Default CPU Requests and Limits for a Namespace",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/",
-  "text": "This page shows how to configure default CPU requests and limits for a\nnamespace\n.\nA Kubernetes cluster can be divided into namespaces. If you create a Pod within a\nnamespace that has a default CPU\nlimit\n, and any container in that Pod does not specify\nits own CPU limit, then the\ncontrol plane\nassigns the default\nCPU limit to that container.\nKubernetes assigns a default CPU\nrequest\n,\nbut only under certain conditions that are explained later in this page."
+  "text": "This page shows how to configure default CPU requests and limits for a\nnamespace\n.\nA Kubernetes cluster can be divided into namespaces. If you create a Pod within a\nnamespace that has a default CPU\nlimit\n, and any container in that Pod does not specify\nits own CPU limit, then the\ncontrol plane\nassigns the default\nCPU limit to that container.\nKubernetes assigns a default CPU\nrequest\n,\nbut only under certain conditions that are explained later in this page.",
+  "failure_classes": []
 }

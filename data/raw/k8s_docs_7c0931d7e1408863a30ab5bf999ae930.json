@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Exposing an External IP Address to Access an Application in a Cluster",
   "source_url": "https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address/",
-  "text": "This page shows how to create a Kubernetes Service object that exposes an\nexternal IP address.\n\nInstall\nkubectl\n.\nUse a cloud provider like Google Kubernetes Engine or Amazon Web Services to\ncreate a Kubernetes cluster. This tutorial creates an\nexternal load balancer\n,\nwhich requires a cloud provider.\nConfigure\nkubectl\nto communicate with your Kubernetes API server. For instructions, see the\ndocumentation for your cloud provider."
+  "text": "This page shows how to create a Kubernetes Service object that exposes an\nexternal IP address.\n\nInstall\nkubectl\n.\nUse a cloud provider like Google Kubernetes Engine or Amazon Web Services to\ncreate a Kubernetes cluster. This tutorial creates an\nexternal load balancer\n,\nwhich requires a cloud provider.\nConfigure\nkubectl\nto communicate with your Kubernetes API server. For instructions, see the\ndocumentation for your cloud provider.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

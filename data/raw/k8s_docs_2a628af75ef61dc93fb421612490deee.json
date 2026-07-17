@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Object Management",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/",
-  "text": "The\nkubectl\ncommand-line tool supports several different ways to create and manage\nKubernetes\nobjects\n. This document provides an overview of the different\napproaches. Read the\nKubectl book\nfor\ndetails of managing objects by Kubectl.\n\nManagement technique\nOperates on\nRecommended environment\nSupported writers\nLearning curve\nImperative commands\nLive objects\nDevelopment projects\n1+\nLowest\nImperative object configuration\nIndividual files\nProduction projects\n1\nModerate\nDeclarative object configuration\nDirectories of files\nProduction projects\n1+\nHighest"
+  "text": "The\nkubectl\ncommand-line tool supports several different ways to create and manage\nKubernetes\nobjects\n. This document provides an overview of the different\napproaches. Read the\nKubectl book\nfor\ndetails of managing objects by Kubectl.\n\nManagement technique\nOperates on\nRecommended environment\nSupported writers\nLearning curve\nImperative commands\nLive objects\nDevelopment projects\n1+\nLowest\nImperative object configuration\nIndividual files\nProduction projects\n1\nModerate\nDeclarative object configuration\nDirectories of files\nProduction projects\n1+\nHighest",
+  "failure_classes": []
 }

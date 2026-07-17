@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Autoscaling Workloads — Autoscaling based on schedules",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/#autoscaling-based-on-schedules",
-  "text": "Another strategy for scaling your workloads is to\nschedule\nthe scaling operations, for example in order to\nreduce resource consumption during off-peak hours.\nSimilar to event driven autoscaling, such behavior can be achieved using KEDA in conjunction with\nits\nCron\nscaler\n.\nThe\nCron\nscaler allows you to define schedules (and time zones) for scaling your workloads in or out."
+  "text": "Another strategy for scaling your workloads is to\nschedule\nthe scaling operations, for example in order to\nreduce resource consumption during off-peak hours.\nSimilar to event driven autoscaling, such behavior can be achieved using KEDA in conjunction with\nits\nCron\nscaler\n.\nThe\nCron\nscaler allows you to define schedules (and time zones) for scaling your workloads in or out.",
+  "failure_classes": []
 }

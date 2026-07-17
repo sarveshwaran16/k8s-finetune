@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "NodeSelectorTerm",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/node-selector-term-v1/",
-  "text": "apiVersion: v1\nimport \"k8s.io/api/core/v1\"\n\nA null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.\nField\nDescription\nmatchExpressions\nNodeSelectorRequirement array\nA list of node selector requirements by node's labels.\nmatchFields\nNodeSelectorRequirement array\nA list of node selector requirements by node's fields."
+  "text": "apiVersion: v1\nimport \"k8s.io/api/core/v1\"\n\nA null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.\nField\nDescription\nmatchExpressions\nNodeSelectorRequirement array\nA list of node selector requirements by node's labels.\nmatchFields\nNodeSelectorRequirement array\nA list of node selector requirements by node's fields.",
+  "failure_classes": []
 }

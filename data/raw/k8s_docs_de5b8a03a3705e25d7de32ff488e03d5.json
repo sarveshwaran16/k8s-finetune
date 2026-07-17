@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "StatefulSets — Start ordinal",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#start-ordinal",
-  "text": ".spec.ordinals\nis an optional field that allows you to configure the integer\nordinals assigned to each Pod. It defaults to nil. Within the field, you can\nconfigure the following options:\n.spec.ordinals.start\n: If the\n.spec.ordinals.start\nfield is set, Pods will\nbe assigned ordinals from\n.spec.ordinals.start\nup through\n.spec.ordinals.start + .spec.replicas - 1\n."
+  "text": ".spec.ordinals\nis an optional field that allows you to configure the integer\nordinals assigned to each Pod. It defaults to nil. Within the field, you can\nconfigure the following options:\n.spec.ordinals.start\n: If the\n.spec.ordinals.start\nfield is set, Pods will\nbe assigned ordinals from\n.spec.ordinals.start\nup through\n.spec.ordinals.start + .spec.replicas - 1\n.",
+  "failure_classes": []
 }

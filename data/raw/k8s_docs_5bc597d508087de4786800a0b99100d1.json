@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Adopting Sidecar Containers — Adopting built-in sidecar containers",
   "source_url": "https://kubernetes.io/docs/tutorials/configuration/pod-sidecar-containers/#adopting-built-in-sidecar-containers",
-  "text": "The\nSidecarContainers\nfeature gate\nis in beta state starting from Kubernetes version 1.29 and is enabled by default.\nSome clusters may have this feature disabled or have software installed that is incompatible with the feature.\nWhen this happens, the Pod may be rejected or the sidecar containers may block Pod startup,\nrendering the Pod useless. This condition is easy to detect as the Pod simply gets stuck on\ninitialization. However, it is often unclear what caused the problem.\nHere are the considerations and troubleshooting steps that one can take while adopting sidecar containers for their workload."
+  "text": "The\nSidecarContainers\nfeature gate\nis in beta state starting from Kubernetes version 1.29 and is enabled by default.\nSome clusters may have this feature disabled or have software installed that is incompatible with the feature.\nWhen this happens, the Pod may be rejected or the sidecar containers may block Pod startup,\nrendering the Pod useless. This condition is easy to detect as the Pod simply gets stuck on\ninitialization. However, it is often unclear what caused the problem.\nHere are the considerations and troubleshooting steps that one can take while adopting sidecar containers for their workload.",
+  "failure_classes": []
 }

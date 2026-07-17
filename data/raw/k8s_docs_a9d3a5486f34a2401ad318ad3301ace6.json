@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — node-role.kubernetes.io/*",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-role-kubernetes-io",
-  "text": "Type: Label\nExample:\nnode-role.kubernetes.io/gpu: gpu\nUsed on: Node\nThis optional label is applied to a node when you want to mark a node role.\nThe node role (text following\n/\nin the label key) can be set, as long as the overall key follows the\nsyntax\nrules for\nobject labels.\nKubernetes defines one specific node role,\ncontrol-plane\n. A label you can use to mark that node\nrole is\nnode-role.kubernetes.io/control-plane\n."
+  "text": "Type: Label\nExample:\nnode-role.kubernetes.io/gpu: gpu\nUsed on: Node\nThis optional label is applied to a node when you want to mark a node role.\nThe node role (text following\n/\nin the label key) can be set, as long as the overall key follows the\nsyntax\nrules for\nobject labels.\nKubernetes defines one specific node role,\ncontrol-plane\n. A label you can use to mark that node\nrole is\nnode-role.kubernetes.io/control-plane\n.",
+  "failure_classes": []
 }

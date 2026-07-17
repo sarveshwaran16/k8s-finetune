@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Command line tool (kubectl) — Sorting list objects",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/#sorting-list-objects",
-  "text": "To output objects to a sorted list in your terminal window, you can add the\n--sort-by\nflag\nto a supported\nkubectl\ncommand. Sort your objects by specifying any numeric or string field\nwith the\n--sort-by\nflag. To specify a field, use a\njsonpath\nexpression.\nkubectl\n[\ncommand\n]\n[\nTYPE\n]\n[\nNAME\n]\n--sort-by\n=\n<jsonpath_exp>\nTo print a list of pods sorted by name, you run:\nkubectl get pods --sort-by\n=\n.metadata.name"
+  "text": "To output objects to a sorted list in your terminal window, you can add the\n--sort-by\nflag\nto a supported\nkubectl\ncommand. Sort your objects by specifying any numeric or string field\nwith the\n--sort-by\nflag. To specify a field, use a\njsonpath\nexpression.\nkubectl\n[\ncommand\n]\n[\nTYPE\n]\n[\nNAME\n]\n--sort-by\n=\n<jsonpath_exp>\nTo print a list of pods sorted by name, you run:\nkubectl get pods --sort-by\n=\n.metadata.name",
+  "failure_classes": []
 }

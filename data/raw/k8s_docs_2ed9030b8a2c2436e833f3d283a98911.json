@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Linux kernel security constraints for Pods and containers — Considerations for managing custom configurations",
   "source_url": "https://kubernetes.io/docs/concepts/security/linux-kernel-security-constraints/#considerations-custom-configurations",
-  "text": "seccomp, AppArmor, and SELinux usually have a default configuration that offers\nbasic protections. You can also create custom profiles and policies that meet\nthe requirements of your workloads. Managing and distributing these custom\nconfigurations at scale might be challenging, especially if you use all three\nfeatures together. To help you to manage these configurations at scale, use a\ntool like the\nKubernetes Security Profiles Operator\n."
+  "text": "seccomp, AppArmor, and SELinux usually have a default configuration that offers\nbasic protections. You can also create custom profiles and policies that meet\nthe requirements of your workloads. Managing and distributing these custom\nconfigurations at scale might be challenging, especially if you use all three\nfeatures together. To help you to manage these configurations at scale, use a\ntool like the\nKubernetes Security Profiles Operator\n.",
+  "failure_classes": []
 }

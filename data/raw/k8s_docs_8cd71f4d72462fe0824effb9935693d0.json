@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Security — Secrets",
   "source_url": "https://kubernetes.io/docs/concepts/security/#secrets",
-  "text": "The\nSecret\nAPI provides basic protection for\nconfiguration values that require confidentiality.\n\nEnforce\nPod security standards\nto\nensure that Pods and their containers are isolated appropriately. You can also use\nRuntimeClasses\nto define custom isolation\nif you need it.\nNetwork policies\nlet you control\nnetwork traffic between Pods, or between Pods and the network outside your cluster.\nYou can deploy security controls from the wider ecosystem to implement preventative\nor detective controls around Pods, their containers, and the images that run in them."
+  "text": "The\nSecret\nAPI provides basic protection for\nconfiguration values that require confidentiality.\n\nEnforce\nPod security standards\nto\nensure that Pods and their containers are isolated appropriately. You can also use\nRuntimeClasses\nto define custom isolation\nif you need it.\nNetwork policies\nlet you control\nnetwork traffic between Pods, or between Pods and the network outside your cluster.\nYou can deploy security controls from the wider ecosystem to implement preventative\nor detective controls around Pods, their containers, and the images that run in them.",
+  "failure_classes": []
 }

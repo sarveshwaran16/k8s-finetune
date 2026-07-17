@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Device Plugins",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/",
-  "text": "Kubernetes provides a device plugin framework that you can use to advertise system hardware\nresources to the\nKubelet\n.\nInstead of customizing the code for Kubernetes itself, vendors can implement a\ndevice plugin that you deploy either manually or as a\nDaemonSet\n.\nThe targeted devices include GPUs, high-performance NICs, FPGAs, InfiniBand adapters,\nand other similar computing resources that may require vendor specific initialization\nand setup."
+  "text": "Kubernetes provides a device plugin framework that you can use to advertise system hardware\nresources to the\nKubelet\n.\nInstead of customizing the code for Kubernetes itself, vendors can implement a\ndevice plugin that you deploy either manually or as a\nDaemonSet\n.\nThe targeted devices include GPUs, high-performance NICs, FPGAs, InfiniBand adapters,\nand other similar computing resources that may require vendor specific initialization\nand setup.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

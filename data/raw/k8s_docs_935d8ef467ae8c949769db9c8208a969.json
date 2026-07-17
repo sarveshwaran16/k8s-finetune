@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Set up an Extension API Server — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/setup-extension-api-server/#what-s-next",
-  "text": "Walk through the steps to\nconfigure the API aggregation layer\nand enable the apiserver flags.\nFor a high level overview, see\nExtending the Kubernetes API with the aggregation layer\n.\nLearn how to\nExtend the Kubernetes API using Custom Resource Definitions\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Walk through the steps to\nconfigure the API aggregation layer\nand enable the apiserver flags.\nFor a high level overview, see\nExtending the Kubernetes API with the aggregation layer\n.\nLearn how to\nExtend the Kubernetes API using Custom Resource Definitions\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

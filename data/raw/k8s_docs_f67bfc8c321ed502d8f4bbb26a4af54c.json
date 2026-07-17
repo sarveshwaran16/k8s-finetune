@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Images — Legacy built-in kubelet credential provider",
   "source_url": "https://kubernetes.io/docs/concepts/containers/images/#legacy-built-in-kubelet-credential-provider",
-  "text": "In older versions of Kubernetes, the kubelet had a direct integration with cloud\nprovider credentials. This provided the ability to dynamically fetch credentials\nfor image registries.\nThere were three built-in implementations of the kubelet credential provider\nintegration: ACR (Azure Container Registry), ECR (Elastic Container Registry),\nand GCR (Google Container Registry).\nStarting with version 1.26 of Kubernetes, the legacy mechanism has been removed,\nso you would need to either:\nconfigure a kubelet image credential provider on each node; or\nspecify image pull credentials using\nimagePullSecrets\nand at least one Secret."
+  "text": "In older versions of Kubernetes, the kubelet had a direct integration with cloud\nprovider credentials. This provided the ability to dynamically fetch credentials\nfor image registries.\nThere were three built-in implementations of the kubelet credential provider\nintegration: ACR (Azure Container Registry), ECR (Elastic Container Registry),\nand GCR (Google Container Registry).\nStarting with version 1.26 of Kubernetes, the legacy mechanism has been removed,\nso you would need to either:\nconfigure a kubelet image credential provider on each node; or\nspecify image pull credentials using\nimagePullSecrets\nand at least one Secret.",
+  "failure_classes": [
+    "ImagePullBackOff",
+    "NodeNotReady"
+  ]
 }

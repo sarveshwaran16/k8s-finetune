@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "API Overview",
   "source_url": "https://kubernetes.io/docs/reference/using-api/",
-  "text": "This section provides reference information for the Kubernetes API.\nThe REST API is the fundamental fabric of Kubernetes. All operations and\ncommunications between components, and external user commands are REST API\ncalls that the API Server handles. Consequently, everything in the Kubernetes\nplatform is treated as an API object and has a corresponding entry in the\nAPI\n.\nThe\nKubernetes API reference\nlists the API for Kubernetes version v1.36.\nFor general background information, read\nThe Kubernetes API\n.\nControlling Access to the Kubernetes API\ndescribes how clients can authenticate to the Kubernetes API server, and how their\nrequests are authorized."
+  "text": "This section provides reference information for the Kubernetes API.\nThe REST API is the fundamental fabric of Kubernetes. All operations and\ncommunications between components, and external user commands are REST API\ncalls that the API Server handles. Consequently, everything in the Kubernetes\nplatform is treated as an API object and has a corresponding entry in the\nAPI\n.\nThe\nKubernetes API reference\nlists the API for Kubernetes version v1.36.\nFor general background information, read\nThe Kubernetes API\n.\nControlling Access to the Kubernetes API\ndescribes how clients can authenticate to the Kubernetes API server, and how their\nrequests are authorized.",
+  "failure_classes": []
 }

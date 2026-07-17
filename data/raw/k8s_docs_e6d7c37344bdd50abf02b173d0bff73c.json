@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Security Checklist",
   "source_url": "https://kubernetes.io/docs/concepts/security/security-checklist/",
-  "text": "This checklist aims at providing a basic list of guidance with links to more\ncomprehensive documentation on each topic. It does not claim to be exhaustive\nand is meant to evolve.\nOn how to read and use this document:\nThe order of topics does not reflect an order of priority.\nSome checklist items are detailed in the paragraph below the list of each section."
+  "text": "This checklist aims at providing a basic list of guidance with links to more\ncomprehensive documentation on each topic. It does not claim to be exhaustive\nand is meant to evolve.\nOn how to read and use this document:\nThe order of topics does not reflect an order of priority.\nSome checklist items are detailed in the paragraph below the list of each section.",
+  "failure_classes": []
 }

@@ -3,5 +3,10 @@
   "source": "k8s_docs",
   "title": "Using Node Authorization — Service account token audience restriction",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/node/#service-account-token-audience-restriction",
-  "text": "When the\nServiceAccountNodeAudienceRestriction\nfeature gate\nis enabled and the\nNodeRestriction\nadmission plugin is active, the kubelet can only\nrequest service account tokens for audiences that are already referenced by pods running\non that node. This prevents a compromised node from obtaining tokens for arbitrary audiences.\nThe allowed audiences are determined from the pod spec:\nThe default API server audience (empty or the API server's configured audience).\nAudiences set in projected service account token volume sources.\nAudiences configured in CSI driver\nspec.tokenRequests\nfor any CSI driver used by\nthe pod, whether through inline CSI volumes, PersistentVolumeClaim-backed volumes,\nor ephemeral volumes.\nThis is particularly relevant when using\nservice account tokens for image credential providers\n,\nwhere the kubelet requests tokens with a registry-specific audience on behalf of pods."
+  "text": "When the\nServiceAccountNodeAudienceRestriction\nfeature gate\nis enabled and the\nNodeRestriction\nadmission plugin is active, the kubelet can only\nrequest service account tokens for audiences that are already referenced by pods running\non that node. This prevents a compromised node from obtaining tokens for arbitrary audiences.\nThe allowed audiences are determined from the pod spec:\nThe default API server audience (empty or the API server's configured audience).\nAudiences set in projected service account token volume sources.\nAudiences configured in CSI driver\nspec.tokenRequests\nfor any CSI driver used by\nthe pod, whether through inline CSI volumes, PersistentVolumeClaim-backed volumes,\nor ephemeral volumes.\nThis is particularly relevant when using\nservice account tokens for image credential providers\n,\nwhere the kubelet requests tokens with a registry-specific audience on behalf of pods.",
+  "failure_classes": [
+    "NodeNotReady",
+    "RBAC",
+    "PVC"
+  ]
 }

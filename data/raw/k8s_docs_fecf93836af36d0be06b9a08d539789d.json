@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Resource managers",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/resource-managers/",
-  "text": "In order to support latency-critical and high-throughput workloads, Kubernetes\noffers a suite of Resource Managers. The managers aim to co-ordinate and\noptimize the alignment of node's resources for pods configured with a specific\nrequirement for CPUs, devices, and memory (hugepages) resources.\n\nTopology Manager\nis a kubelet component that aims to coordinate the set of\ncomponents that are responsible for these optimizations. To learn more, read\nControl Topology Management Policies on a Node\n."
+  "text": "In order to support latency-critical and high-throughput workloads, Kubernetes\noffers a suite of Resource Managers. The managers aim to co-ordinate and\noptimize the alignment of node's resources for pods configured with a specific\nrequirement for CPUs, devices, and memory (hugepages) resources.\n\nTopology Manager\nis a kubelet component that aims to coordinate the set of\ncomponents that are responsible for these optimizations. To learn more, read\nControl Topology Management Policies on a Node\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-scheduler Configuration (v1) — NodeResourcesBalancedAllocationArgs",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kube-scheduler-config.v1/#kubescheduler-config-k8s-io-v1-NodeResourcesBalancedAllocationArgs",
-  "text": "NodeResourcesBalancedAllocationArgs holds arguments used to configure NodeResourcesBalancedAllocation plugin.\nField\nDescription\napiVersion\nstring\nkubescheduler.config.k8s.io/v1\nkind\nstring\nNodeResourcesBalancedAllocationArgs\nresources\n[Required]\n[]ResourceSpec\nResources to be managed, the default is \"cpu\" and \"memory\" if not specified.\nResources to be managed, the default is \"cpu\" and \"memory\" if not specified."
+  "text": "NodeResourcesBalancedAllocationArgs holds arguments used to configure NodeResourcesBalancedAllocation plugin.\nField\nDescription\napiVersion\nstring\nkubescheduler.config.k8s.io/v1\nkind\nstring\nNodeResourcesBalancedAllocationArgs\nresources\n[Required]\n[]ResourceSpec\nResources to be managed, the default is \"cpu\" and \"memory\" if not specified.\nResources to be managed, the default is \"cpu\" and \"memory\" if not specified.",
+  "failure_classes": []
 }

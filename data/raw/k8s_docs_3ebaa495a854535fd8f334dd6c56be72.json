@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Node Status",
   "source_url": "https://kubernetes.io/docs/reference/node/node-status/",
-  "text": "The status of a\nnode\nin Kubernetes is a critical\naspect of managing a Kubernetes cluster. In this article, we'll cover the basics of\nmonitoring and maintaining node status to ensure a healthy and stable cluster.\n\nA Node's status contains the following information:\nAddresses\nConditions\nCapacity and Allocatable\nInfo\nDeclared Features\nYou can use\nkubectl\nto view a Node's status and other details:\nkubectl describe node <insert-node-name-here>\nEach section of the output is described below."
+  "text": "The status of a\nnode\nin Kubernetes is a critical\naspect of managing a Kubernetes cluster. In this article, we'll cover the basics of\nmonitoring and maintaining node status to ensure a healthy and stable cluster.\n\nA Node's status contains the following information:\nAddresses\nConditions\nCapacity and Allocatable\nInfo\nDeclared Features\nYou can use\nkubectl\nto view a Node's status and other details:\nkubectl describe node <insert-node-name-here>\nEach section of the output is described below.",
+  "failure_classes": []
 }

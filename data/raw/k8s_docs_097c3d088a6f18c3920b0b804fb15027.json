@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/",
-  "text": "This page provides good practices and considerations when designing\nadmission webhooks\nin Kubernetes. This information is intended for\ncluster operators who run admission webhook servers or third-party applications\nthat modify or validate your API requests.\nBefore reading this page, ensure that you're familiar with the following\nconcepts:\nAdmission controllers\nAdmission webhooks"
+  "text": "This page provides good practices and considerations when designing\nadmission webhooks\nin Kubernetes. This information is intended for\ncluster operators who run admission webhook servers or third-party applications\nthat modify or validate your API requests.\nBefore reading this page, ensure that you're familiar with the following\nconcepts:\nAdmission controllers\nAdmission webhooks",
+  "failure_classes": []
 }

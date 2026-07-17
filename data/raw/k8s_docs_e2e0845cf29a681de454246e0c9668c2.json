@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Taints and Tolerations",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/",
-  "text": "Node affinity\nis a property of\nPods\nthat\nattracts\nthem to\na set of\nnodes\n(either as a preference or a\nhard requirement).\nTaints\nare the opposite -- they allow a node to repel a set of pods.\nTolerations\nare applied to pods. Tolerations allow the scheduler to schedule pods with matching\ntaints. Tolerations allow scheduling but don't guarantee scheduling: the scheduler also\nevaluates other parameters\nas part of its function.\nTaints and tolerations work together to ensure that pods are not scheduled\nonto inappropriate nodes. One or more taints are applied to a node; this\nmarks that the node should not accept any pods that do not tolerate the taints."
+  "text": "Node affinity\nis a property of\nPods\nthat\nattracts\nthem to\na set of\nnodes\n(either as a preference or a\nhard requirement).\nTaints\nare the opposite -- they allow a node to repel a set of pods.\nTolerations\nare applied to pods. Tolerations allow the scheduler to schedule pods with matching\ntaints. Tolerations allow scheduling but don't guarantee scheduling: the scheduler also\nevaluates other parameters\nas part of its function.\nTaints and tolerations work together to ensure that pods are not scheduled\nonto inappropriate nodes. One or more taints are applied to a node; this\nmarks that the node should not accept any pods that do not tolerate the taints.",
+  "failure_classes": []
 }

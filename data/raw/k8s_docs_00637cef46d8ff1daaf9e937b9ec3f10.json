@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl config view — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_view/#synopsis",
-  "text": "Display merged kubeconfig settings or a specified kubeconfig file.\nYou can use --output jsonpath={...} to extract specific values using a jsonpath expression.\nkubectl config view [flags]\n\n# Show merged kubeconfig settings\n  kubectl config view\n  \n  # Show merged kubeconfig settings, raw certificate data, and exposed secrets\n  kubectl config view --raw\n  \n  # Get the password for the e2e user\n  kubectl config view -o jsonpath='{.users[?(@.name == \"e2e\")].user.password}'"
+  "text": "Display merged kubeconfig settings or a specified kubeconfig file.\nYou can use --output jsonpath={...} to extract specific values using a jsonpath expression.\nkubectl config view [flags]\n\n# Show merged kubeconfig settings\n  kubectl config view\n  \n  # Show merged kubeconfig settings, raw certificate data, and exposed secrets\n  kubectl config view --raw\n  \n  # Get the password for the e2e user\n  kubectl config view -o jsonpath='{.users[?(@.name == \"e2e\")].user.password}'",
+  "failure_classes": []
 }

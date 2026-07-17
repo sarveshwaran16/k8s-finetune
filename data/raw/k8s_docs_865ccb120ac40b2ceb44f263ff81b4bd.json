@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "DaemonSet — Static Pods",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#static-pods",
-  "text": "It is possible to create Pods by writing a file to a certain directory watched by Kubelet. These\nare called\nstatic pods\n.\nUnlike DaemonSet, static Pods cannot be managed with kubectl\nor other Kubernetes API clients. Static Pods do not depend on the apiserver, making them useful\nin cluster bootstrapping cases. Also, static Pods may be deprecated in the future."
+  "text": "It is possible to create Pods by writing a file to a certain directory watched by Kubelet. These\nare called\nstatic pods\n.\nUnlike DaemonSet, static Pods cannot be managed with kubectl\nor other Kubernetes API clients. Static Pods do not depend on the apiserver, making them useful\nin cluster bootstrapping cases. Also, static Pods may be deprecated in the future.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

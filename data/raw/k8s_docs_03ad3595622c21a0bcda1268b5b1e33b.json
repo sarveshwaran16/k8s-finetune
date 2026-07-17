@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling Framework — Filter",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#filter",
-  "text": "These plugins are used to filter out nodes that cannot run the Pod. For each\nnode, the scheduler will call filter plugins in their configured order. If any\nfilter plugin marks the node as infeasible, the remaining plugins will not be\ncalled for that node. Nodes may be evaluated concurrently.\n\nThese plugins are called after the Filter phase, but only when no feasible nodes\nwere found for the pod. Plugins are called in their configured order. If\nany postFilter plugin marks the node as\nSchedulable\n, the remaining plugins\nwill not be called. A typical PostFilter implementation is preemption, which\ntries to make the pod schedulable by preempting other Pods."
+  "text": "These plugins are used to filter out nodes that cannot run the Pod. For each\nnode, the scheduler will call filter plugins in their configured order. If any\nfilter plugin marks the node as infeasible, the remaining plugins will not be\ncalled for that node. Nodes may be evaluated concurrently.\n\nThese plugins are called after the Filter phase, but only when no feasible nodes\nwere found for the pod. Plugins are called in their configured order. If\nany postFilter plugin marks the node as\nSchedulable\n, the remaining plugins\nwill not be called. A typical PostFilter implementation is preemption, which\ntries to make the pod schedulable by preempting other Pods.",
+  "failure_classes": []
 }

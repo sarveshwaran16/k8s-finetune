@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "IPAddress — ParentReference",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/networking/ip-address-v1/#ParentReference",
-  "text": "ParentReference describes a reference to a parent object.\nField\nDescription\ngroup\nstring\nGroup is the group of the object being referenced.\nname\n*\nstring\nName is the name of the object being referenced.\nnamespace\nstring\nNamespace is the namespace of the object being referenced.\nresource\n*\nstring\nResource is the resource of the object being referenced."
+  "text": "ParentReference describes a reference to a parent object.\nField\nDescription\ngroup\nstring\nGroup is the group of the object being referenced.\nname\n*\nstring\nName is the name of the object being referenced.\nnamespace\nstring\nNamespace is the namespace of the object being referenced.\nresource\n*\nstring\nResource is the resource of the object being referenced.",
+  "failure_classes": []
 }

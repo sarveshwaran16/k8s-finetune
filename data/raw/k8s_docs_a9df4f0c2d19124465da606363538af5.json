@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Container Environment",
   "source_url": "https://kubernetes.io/docs/concepts/containers/container-environment/",
-  "text": "This page describes the resources available to Containers in the Container environment.\n\nThe Kubernetes Container environment provides several important resources to Containers:\nA filesystem, which is a combination of an\nimage\nand one or more\nvolumes\n.\nInformation about the Container itself.\nInformation about other objects in the cluster."
+  "text": "This page describes the resources available to Containers in the Container environment.\n\nThe Kubernetes Container environment provides several important resources to Containers:\nA filesystem, which is a combination of an\nimage\nand one or more\nvolumes\n.\nInformation about the Container itself.\nInformation about other objects in the cluster.",
+  "failure_classes": []
 }

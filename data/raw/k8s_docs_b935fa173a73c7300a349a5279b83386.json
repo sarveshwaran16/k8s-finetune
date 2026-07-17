@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Jobs — Limitations for Alpha release",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#workload-integration-limitations",
-  "text": "Each Job maps to exactly one\nPodGroup\n. All Pods in the Job belong to the same\nscheduling group.\nThe\nminCount\nin the gang policy is immutable. Updates to\n.spec.parallelism\nare rejected for Jobs that use gang scheduling. See\nElastic Indexed Jobs\nfor details on this restriction.\nSuspended Jobs retain their\nWorkload\nand\nPodGroup\nobjects; they are not deleted\non suspend or recreated on resume."
+  "text": "Each Job maps to exactly one\nPodGroup\n. All Pods in the Job belong to the same\nscheduling group.\nThe\nminCount\nin the gang policy is immutable. Updates to\n.spec.parallelism\nare rejected for Jobs that use gang scheduling. See\nElastic Indexed Jobs\nfor details on this restriction.\nSuspended Jobs retain their\nWorkload\nand\nPodGroup\nobjects; they are not deleted\non suspend or recreated on resume.",
+  "failure_classes": []
 }

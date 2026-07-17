@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "API-initiated Eviction — Troubleshooting stuck evictions",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/#troubleshooting-stuck-evictions",
-  "text": "In some cases, your applications may enter a broken state, where the Eviction\nAPI will only return\n429\nor\n500\nresponses until you intervene. This can\nhappen if, for example, a ReplicaSet creates pods for your application but new\npods do not enter a\nReady\nstate. You may also notice this behavior in cases\nwhere the last evicted Pod had a long termination grace period.\nIf you notice stuck evictions, try one of the following solutions:\nAbort or pause the automated operation causing the issue. Investigate the stuck\napplication before you restart the operation.\nWait a while, then directly delete the Pod from your cluster control plane\ninstead of using the Eviction API."
+  "text": "In some cases, your applications may enter a broken state, where the Eviction\nAPI will only return\n429\nor\n500\nresponses until you intervene. This can\nhappen if, for example, a ReplicaSet creates pods for your application but new\npods do not enter a\nReady\nstate. You may also notice this behavior in cases\nwhere the last evicted Pod had a long termination grace period.\nIf you notice stuck evictions, try one of the following solutions:\nAbort or pause the automated operation causing the issue. Investigate the stuck\napplication before you restart the operation.\nWait a while, then directly delete the Pod from your cluster control plane\ninstead of using the Eviction API.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

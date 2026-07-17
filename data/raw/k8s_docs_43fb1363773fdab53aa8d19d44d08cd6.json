@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Create an External Load Balancer — Caveats and limitations when preserving source IPs",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/#caveats-and-limitations-when-preserving-source-ips",
-  "text": "Load balancing services from some cloud providers do not let you configure different weights for each target.\nWith each target weighted equally in terms of sending traffic to Nodes, external\ntraffic is not equally load balanced across different Pods. The external load balancer\nis unaware of the number of Pods on each node that are used as a target.\nWhere\nNumServicePods << NumNodes\nor\nNumServicePods >> NumNodes\n, a fairly close-to-equal\ndistribution will be seen, even without weights.\nInternal pod to pod traffic should behave similar to ClusterIP services, with equal probability across all pods."
+  "text": "Load balancing services from some cloud providers do not let you configure different weights for each target.\nWith each target weighted equally in terms of sending traffic to Nodes, external\ntraffic is not equally load balanced across different Pods. The external load balancer\nis unaware of the number of Pods on each node that are used as a target.\nWhere\nNumServicePods << NumNodes\nor\nNumServicePods >> NumNodes\n, a fairly close-to-equal\ndistribution will be seen, even without weights.\nInternal pod to pod traffic should behave similar to ClusterIP services, with equal probability across all pods.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

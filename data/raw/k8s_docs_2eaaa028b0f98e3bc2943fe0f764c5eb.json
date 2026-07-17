@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Manifest-Based Admission Control",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/",
-  "text": "This page provides an overview of manifest-based admission control configuration.\nManifest-based admission control lets you load\nadmission webhooks\nand CEL-based admission policies from static files on disk, rather than from the\nKubernetes API. These policies are active from API server startup, operate\nindependently of\netcd\n, and can\nprotect API-based admission resources from modification.\nTo use the feature, enable the\nManifestBasedAdmissionControlConfig\nfeature gate\nand\nconfigure the\nstaticManifestsDir\nfield in the\nAdmissionConfiguration\nfile passed to the kube-apiserver via\n--admission-control-config-file\n."
+  "text": "This page provides an overview of manifest-based admission control configuration.\nManifest-based admission control lets you load\nadmission webhooks\nand CEL-based admission policies from static files on disk, rather than from the\nKubernetes API. These policies are active from API server startup, operate\nindependently of\netcd\n, and can\nprotect API-based admission resources from modification.\nTo use the feature, enable the\nManifestBasedAdmissionControlConfig\nfeature gate\nand\nconfigure the\nstaticManifestsDir\nfield in the\nAdmissionConfiguration\nfile passed to the kube-apiserver via\n--admission-control-config-file\n.",
+  "failure_classes": []
 }

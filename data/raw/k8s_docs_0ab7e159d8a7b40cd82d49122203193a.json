@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Vertical Pod Autoscaling — controlledValues",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/#controlledvalues",
-  "text": "The\ncontrolledValues\nfield determines whether VPA controls resource requests, limits, or both:\nSee\nrequests and limits\nto learn more about those two concepts.\n\nThe admission controller and updater VPA components post-process recommendations to comply with the constraints defined in\nLimitRanges\n. The LimitRange resources with\ntype\nPod and Container are checked in the Kubernetes cluster.\nFor example, if the\nmax\nfield in a Container LimitRange resource is exceeded, both VPA components lower the limit to the value defined in the\nmax\nfield, and the request is proportionally decreased to maintain the request-to-limit ratio in the Pod spec."
+  "text": "The\ncontrolledValues\nfield determines whether VPA controls resource requests, limits, or both:\nSee\nrequests and limits\nto learn more about those two concepts.\n\nThe admission controller and updater VPA components post-process recommendations to comply with the constraints defined in\nLimitRanges\n. The LimitRange resources with\ntype\nPod and Container are checked in the Kubernetes cluster.\nFor example, if the\nmax\nfield in a Container LimitRange resource is exceeded, both VPA components lower the limit to the value defined in the\nmax\nfield, and the request is proportionally decreased to maintain the request-to-limit ratio in the Pod spec.",
+  "failure_classes": []
 }

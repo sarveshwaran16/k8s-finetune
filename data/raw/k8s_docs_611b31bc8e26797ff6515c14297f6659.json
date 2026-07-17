@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Pod — ContainerRestartRule",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ContainerRestartRule",
-  "text": "ContainerRestartRule describes how a container exit is handled.\nField\nDescription\naction\n*\nstring\nSpecifies the action taken on a container exit if the requirements are satisfied. The only possible value is \"Restart\" to restart the container.\nexitCodes\nContainerRestartRuleOnExitCodes\nRepresents the exit codes to check on container exits."
+  "text": "ContainerRestartRule describes how a container exit is handled.\nField\nDescription\naction\n*\nstring\nSpecifies the action taken on a container exit if the requirements are satisfied. The only possible value is \"Restart\" to restart the container.\nexitCodes\nContainerRestartRuleOnExitCodes\nRepresents the exit codes to check on container exits.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

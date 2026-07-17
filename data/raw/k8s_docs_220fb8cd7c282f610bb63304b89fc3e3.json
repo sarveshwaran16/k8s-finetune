@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PersistentVolumeClaim — VolumeResourceRequirements",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-claim-v1/#VolumeResourceRequirements",
-  "text": "VolumeResourceRequirements describes the storage resource requirements for a volume.\nField\nDescription\nlimits\nobject\nLimits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/\nrequests\nobject\nRequests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. Requests cannot exceed Limits. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+  "text": "VolumeResourceRequirements describes the storage resource requirements for a volume.\nField\nDescription\nlimits\nobject\nLimits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/\nrequests\nobject\nRequests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. Requests cannot exceed Limits. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+  "failure_classes": []
 }

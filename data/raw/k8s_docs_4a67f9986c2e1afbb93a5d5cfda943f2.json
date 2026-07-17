@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Adding entries to Pod /etc/hosts with HostAliases — Default hosts file content",
   "source_url": "https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/#default-hosts-file-content",
-  "text": "Start an Nginx Pod which is assigned a Pod IP:\nkubectl run nginx --image nginx\npod/nginx created\nExamine a Pod IP:\nkubectl get pods --output\n=\nwide\nNAME     READY     STATUS    RESTARTS   AGE    IP           NODE\nnginx    1/1       Running   0          13s    10.200.0.4   worker0\nThe hosts file content would look like this:\nkubectl\nexec\nnginx -- cat /etc/hosts\n# Kubernetes-managed hosts file.\n127.0.0.1\tlocalhost\n::1\tlocalhost ip6-localhost ip6-loopback\nfe00::0\tip6-localnet\nfe00::0\tip6-mcastprefix\nfe00::1\tip6-allnodes\nfe00::2\tip6-allrouters\n10.200.0.4\tnginx\nBy default, the\nhosts\nfile only includes IPv4 and IPv6 boilerplates like\nlocalhost\nand its own hostname."
+  "text": "Start an Nginx Pod which is assigned a Pod IP:\nkubectl run nginx --image nginx\npod/nginx created\nExamine a Pod IP:\nkubectl get pods --output\n=\nwide\nNAME     READY     STATUS    RESTARTS   AGE    IP           NODE\nnginx    1/1       Running   0          13s    10.200.0.4   worker0\nThe hosts file content would look like this:\nkubectl\nexec\nnginx -- cat /etc/hosts\n# Kubernetes-managed hosts file.\n127.0.0.1\tlocalhost\n::1\tlocalhost ip6-localhost ip6-loopback\nfe00::0\tip6-localnet\nfe00::0\tip6-mcastprefix\nfe00::1\tip6-allnodes\nfe00::2\tip6-allrouters\n10.200.0.4\tnginx\nBy default, the\nhosts\nfile only includes IPv4 and IPv6 boilerplates like\nlocalhost\nand its own hostname.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

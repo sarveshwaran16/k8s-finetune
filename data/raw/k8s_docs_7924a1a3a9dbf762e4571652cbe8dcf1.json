@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ParamKind",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/param-kind-v1-admissionregistration/",
-  "text": "apiVersion: admissionregistration.k8s.io/v1\nimport \"k8s.io/api/admissionregistration/v1\"\n\nParamKind is a tuple of Group Kind and Version.\nField\nDescription\napiVersion\nstring\napiVersion is the API group version the resources belong to. In format of \"group/version\". Required.\nkind\nstring\nkind is the API kind the resources belong to. Required."
+  "text": "apiVersion: admissionregistration.k8s.io/v1\nimport \"k8s.io/api/admissionregistration/v1\"\n\nParamKind is a tuple of Group Kind and Version.\nField\nDescription\napiVersion\nstring\napiVersion is the API group version the resources belong to. In format of \"group/version\". Required.\nkind\nstring\nkind is the API kind the resources belong to. Required.",
+  "failure_classes": []
 }

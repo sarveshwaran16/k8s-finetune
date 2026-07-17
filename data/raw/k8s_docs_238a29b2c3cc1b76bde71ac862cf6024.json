@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Extending Kubernetes — Network plugins",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#network-plugins",
-  "text": "Your Kubernetes cluster needs a\nnetwork plugin\nin order to have a working Pod network\nand to support other aspects of the Kubernetes network model.\nNetwork Plugins\nallow Kubernetes to work with different networking topologies and technologies.\n\nFEATURE STATE:\nKubernetes v1.26 [stable]\nKubelet image credential providers are plugins for the kubelet to dynamically retrieve image registry\ncredentials. The credentials are then used when pulling images from container image registries that\nmatch the configuration.\nThe plugins can communicate with external services or use local files to obtain credentials. This way,\nthe kubelet does not need to have static credentials for each registry, and can support various\nauthentication methods and protocols.\nFor plugin configuration details, see\nConfigure a kubelet image credential provider\n."
+  "text": "Your Kubernetes cluster needs a\nnetwork plugin\nin order to have a working Pod network\nand to support other aspects of the Kubernetes network model.\nNetwork Plugins\nallow Kubernetes to work with different networking topologies and technologies.\n\nFEATURE STATE:\nKubernetes v1.26 [stable]\nKubelet image credential providers are plugins for the kubelet to dynamically retrieve image registry\ncredentials. The credentials are then used when pulling images from container image registries that\nmatch the configuration.\nThe plugins can communicate with external services or use local files to obtain credentials. This way,\nthe kubelet does not need to have static credentials for each registry, and can support various\nauthentication methods and protocols.\nFor plugin configuration details, see\nConfigure a kubelet image credential provider\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

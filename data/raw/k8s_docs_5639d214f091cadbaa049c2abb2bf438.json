@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Declarative Management of Kubernetes Objects Using Kustomize",
   "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
-  "text": "Kustomize\nis a standalone tool\nto customize Kubernetes objects\nthrough a\nkustomization file\n.\nSince 1.14, kubectl also\nsupports the management of Kubernetes objects using a kustomization file.\nTo view resources found in a directory containing a kustomization file, run the following command:\nkubectl kustomize <kustomization_directory>\nTo apply those resources, run\nkubectl apply\nwith\n--kustomize\nor\n-k\nflag:\nkubectl apply -k <kustomization_directory>"
+  "text": "Kustomize\nis a standalone tool\nto customize Kubernetes objects\nthrough a\nkustomization file\n.\nSince 1.14, kubectl also\nsupports the management of Kubernetes objects using a kustomization file.\nTo view resources found in a directory containing a kustomization file, run the following command:\nkubectl kustomize <kustomization_directory>\nTo apply those resources, run\nkubectl apply\nwith\n--kustomize\nor\n-k\nflag:\nkubectl apply -k <kustomization_directory>",
+  "failure_classes": []
 }

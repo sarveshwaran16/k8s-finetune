@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Horizontal Pod Autoscaling — Stability of workload scale",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#flapping",
-  "text": "When managing the scale of a group of replicas using the HorizontalPodAutoscaler,\nit is possible that the number of replicas keeps fluctuating frequently due to the\ndynamic nature of the metrics evaluated. This is sometimes referred to as\nthrashing\n,\nor\nflapping\n. It's similar to the concept of\nhysteresis\nin cybernetics."
+  "text": "When managing the scale of a group of replicas using the HorizontalPodAutoscaler,\nit is possible that the number of replicas keeps fluctuating frequently due to the\ndynamic nature of the metrics evaluated. This is sometimes referred to as\nthrashing\n,\nor\nflapping\n. It's similar to the concept of\nhysteresis\nin cybernetics.",
+  "failure_classes": []
 }

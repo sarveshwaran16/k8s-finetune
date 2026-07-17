@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm reset",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-reset/",
-  "text": "Performs a best effort revert of changes made by\nkubeadm init\nor\nkubeadm join\n.\n\nPerforms a best effort revert of changes made to this host by 'kubeadm init' or 'kubeadm join'\nThe \"reset\" command executes the following phases:\npreflight           Run reset pre-flight checks\nremove-etcd-member  Remove a local etcd member.\ncleanup-node        Run cleanup node.\nkubeadm reset [flags]"
+  "text": "Performs a best effort revert of changes made by\nkubeadm init\nor\nkubeadm join\n.\n\nPerforms a best effort revert of changes made to this host by 'kubeadm init' or 'kubeadm join'\nThe \"reset\" command executes the following phases:\npreflight           Run reset pre-flight checks\nremove-etcd-member  Remove a local etcd member.\ncleanup-node        Run cleanup node.\nkubeadm reset [flags]",
+  "failure_classes": []
 }

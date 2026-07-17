@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "HorizontalPodAutoscaler — CrossVersionObjectReference",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#CrossVersionObjectReference",
-  "text": "CrossVersionObjectReference contains enough information to let you identify the referred resource.\nField\nDescription\napiVersion\nstring\napiVersion is the API version of the referent\nkind\n*\nstring\nkind is the kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nname\n*\nstring\nname is the name of the referent; More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+  "text": "CrossVersionObjectReference contains enough information to let you identify the referred resource.\nField\nDescription\napiVersion\nstring\napiVersion is the API version of the referent\nkind\n*\nstring\nkind is the kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nname\n*\nstring\nname is the name of the referent; More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
+  "failure_classes": []
 }

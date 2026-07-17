@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Authenticating with Bootstrap Tokens",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/",
-  "text": "Bootstrap tokens are a simple bearer token that is meant to be used when\ncreating new clusters or joining new nodes to an existing cluster.\nIt was built to support\nkubeadm\n, but can be used in other contexts\nfor users that wish to start clusters without\nkubeadm\n. It is also built to\nwork, via RBAC policy, with the\nkubelet TLS Bootstrapping\nsystem."
+  "text": "Bootstrap tokens are a simple bearer token that is meant to be used when\ncreating new clusters or joining new nodes to an existing cluster.\nIt was built to support\nkubeadm\n, but can be used in other contexts\nfor users that wish to start clusters without\nkubeadm\n. It is also built to\nwork, via RBAC policy, with the\nkubelet TLS Bootstrapping\nsystem.",
+  "failure_classes": [
+    "NodeNotReady",
+    "RBAC"
+  ]
 }

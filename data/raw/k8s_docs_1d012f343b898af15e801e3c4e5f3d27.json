@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Find Out What Container Runtime is Used on a Node",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/find-out-runtime-you-use/",
-  "text": "This page outlines steps to find out what\ncontainer runtime\nthe nodes in your cluster use.\nDepending on the way you run your cluster, the container runtime for the nodes may\nhave been pre-configured or you need to configure it. If you're using a managed\nKubernetes service, there might be vendor-specific ways to check what container runtime is\nconfigured for the nodes. The method described on this page should work whenever\nthe execution of\nkubectl\nis allowed."
+  "text": "This page outlines steps to find out what\ncontainer runtime\nthe nodes in your cluster use.\nDepending on the way you run your cluster, the container runtime for the nodes may\nhave been pre-configured or you need to configure it. If you're using a managed\nKubernetes service, there might be vendor-specific ways to check what container runtime is\nconfigured for the nodes. The method described on this page should work whenever\nthe execution of\nkubectl\nis allowed.",
+  "failure_classes": []
 }

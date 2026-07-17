@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Control Topology Management Policies on a node — Topology manager policy options",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/#topology-manager-policy-options",
-  "text": "Support for the Topology Manager policy options requires\nTopologyManagerPolicyOptions\nfeature gate\nto be enabled\n(it is enabled by default).\nYou can toggle groups of options on and off based upon their maturity level using the following feature gates:\nTopologyManagerPolicyBetaOptions\ndefault enabled. Enable to show beta-level options.\nTopologyManagerPolicyAlphaOptions\ndefault disabled. Enable to show alpha-level options.\nYou will still have to enable each option using the\nTopologyManagerPolicyOptions\nkubelet option."
+  "text": "Support for the Topology Manager policy options requires\nTopologyManagerPolicyOptions\nfeature gate\nto be enabled\n(it is enabled by default).\nYou can toggle groups of options on and off based upon their maturity level using the following feature gates:\nTopologyManagerPolicyBetaOptions\ndefault enabled. Enable to show beta-level options.\nTopologyManagerPolicyAlphaOptions\ndefault disabled. Enable to show alpha-level options.\nYou will still have to enable each option using the\nTopologyManagerPolicyOptions\nkubelet option.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

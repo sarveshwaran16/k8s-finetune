@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Authenticating — Authentication methods",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#authentication-methods",
-  "text": "You can enable multiple authentication methods at once. You should usually use at least two methods:\nservice account tokens\nfor ServiceAccounts\nat least one other method for (normal) user authentication\nAvailable authentication methods include:\nX.509 client certificates\nBootstrap tokens\nService account tokens\nStatic token file\nExternal integrations\nJSON Web Tokens\nOpenID Connect Tokens\nWebhook token authentication\nAuthenticating reverse proxy\nJSON Web Tokens\nOpenID Connect Tokens\nWebhook token authentication\nAuthenticating reverse proxy\nWhen multiple authenticator modules are enabled, the first module\nto successfully authenticate the request short-circuits evaluation.\nThe API server does not guarantee the order authenticators run in."
+  "text": "You can enable multiple authentication methods at once. You should usually use at least two methods:\nservice account tokens\nfor ServiceAccounts\nat least one other method for (normal) user authentication\nAvailable authentication methods include:\nX.509 client certificates\nBootstrap tokens\nService account tokens\nStatic token file\nExternal integrations\nJSON Web Tokens\nOpenID Connect Tokens\nWebhook token authentication\nAuthenticating reverse proxy\nJSON Web Tokens\nOpenID Connect Tokens\nWebhook token authentication\nAuthenticating reverse proxy\nWhen multiple authenticator modules are enabled, the first module\nto successfully authenticate the request short-circuits evaluation.\nThe API server does not guarantee the order authenticators run in.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

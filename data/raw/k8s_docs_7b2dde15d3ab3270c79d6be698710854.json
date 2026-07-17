@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Workloads — Workload placement",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/#workload-placement",
-  "text": "While standard workload resources (like Deployments and Jobs) manage the lifecycle of Pods,\nyou may have complex scheduling requirements where groups of Pods must be treated as a single unit.\nThe\nWorkload API\nallows you to define\nPodGroupTemplates\nto group Pods and apply advanced scheduling policies to them,\nsuch as\ngang scheduling\n.\nControllers create\nPodGroup\nobjects from these templates at runtime,\nand\nPods\nreference their\nPodGroup\nvia the\nspec.schedulingGroup\nfield. This is particularly useful for batch processing and machine\nlearning workloads where \"all-or-nothing\" placement is required."
+  "text": "While standard workload resources (like Deployments and Jobs) manage the lifecycle of Pods,\nyou may have complex scheduling requirements where groups of Pods must be treated as a single unit.\nThe\nWorkload API\nallows you to define\nPodGroupTemplates\nto group Pods and apply advanced scheduling policies to them,\nsuch as\ngang scheduling\n.\nControllers create\nPodGroup\nobjects from these templates at runtime,\nand\nPods\nreference their\nPodGroup\nvia the\nspec.schedulingGroup\nfield. This is particularly useful for batch processing and machine\nlearning workloads where \"all-or-nothing\" placement is required.",
+  "failure_classes": []
 }

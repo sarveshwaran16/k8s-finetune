@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "DNS for Services and Pods",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/",
-  "text": "Kubernetes creates DNS records for Services and Pods. You can contact\nServices with consistent DNS names instead of IP addresses.\nKubernetes publishes information about Pods and Services which is used\nto program DNS. kubelet configures Pods' DNS so that running containers\ncan look up Services by name rather than IP.\nServices defined in the cluster are assigned DNS names. By default, a\nclient Pod's DNS search list includes the Pod's own namespace and the\ncluster's default domain."
+  "text": "Kubernetes creates DNS records for Services and Pods. You can contact\nServices with consistent DNS names instead of IP addresses.\nKubernetes publishes information about Pods and Services which is used\nto program DNS. kubelet configures Pods' DNS so that running containers\ncan look up Services by name rather than IP.\nServices defined in the cluster are assigned DNS names. By default, a\nclient Pod's DNS search list includes the Pod's own namespace and the\ncluster's default domain.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

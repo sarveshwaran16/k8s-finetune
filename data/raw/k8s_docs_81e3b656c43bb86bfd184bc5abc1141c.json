@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Pull an Image from a Private Registry — Using images from multiple registries",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#using-images-from-multiple-registries",
-  "text": "A pod can have multiple containers, each container image can be from a different registry.\nYou can use multiple\nimagePullSecrets\nwith one pod, and each can contain multiple credentials.\nThe image pull will be attempted using each credential that matches the registry.\nIf no credentials match the registry, the image pull will be attempted without authorization or using custom runtime specific configuration."
+  "text": "A pod can have multiple containers, each container image can be from a different registry.\nYou can use multiple\nimagePullSecrets\nwith one pod, and each can contain multiple credentials.\nThe image pull will be attempted using each credential that matches the registry.\nIf no credentials match the registry, the image pull will be attempted without authorization or using custom runtime specific configuration.",
+  "failure_classes": [
+    "ImagePullBackOff"
+  ]
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Static Pods — Mirror Pods",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/static-pods/#mirror-pods",
-  "text": "The kubelet automatically tries to create a\nmirror Pod\non the Kubernetes API server for each static Pod.\nThis means that the Pods running on a node are visible on the API server,\nbut cannot be controlled from there.\nThe Pod names will be suffixed with the node hostname with a leading hyphen.\nThe kubelet propagates\nlabels\nfrom the static Pod to the mirror Pod. You can use those labels as normal via\nselectors\n.\nIf you try to use\nkubectl\nto delete the mirror Pod from the API server,\nthe kubelet\ndoes not\nremove the static Pod. The kubelet will recreate\nthe mirror Pod."
+  "text": "The kubelet automatically tries to create a\nmirror Pod\non the Kubernetes API server for each static Pod.\nThis means that the Pods running on a node are visible on the API server,\nbut cannot be controlled from there.\nThe Pod names will be suffixed with the node hostname with a leading hyphen.\nThe kubelet propagates\nlabels\nfrom the static Pod to the mirror Pod. You can use those labels as normal via\nselectors\n.\nIf you try to use\nkubectl\nto delete the mirror Pod from the API server,\nthe kubelet\ndoes not\nremove the static Pod. The kubelet will recreate\nthe mirror Pod.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

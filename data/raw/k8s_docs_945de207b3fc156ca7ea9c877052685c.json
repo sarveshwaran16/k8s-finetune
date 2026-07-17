@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Volumes — gcePersistentDisk (deprecated)",
   "source_url": "https://kubernetes.io/docs/concepts/storage/volumes/#gcepersistentdisk",
-  "text": "In Kubernetes 1.36, all operations for the in-tree\ngcePersistentDisk\ntype\nare redirected to the\npd.csi.storage.gke.io\nCSI\ndriver.\nThe\ngcePersistentDisk\nin-tree storage driver was deprecated in the Kubernetes v1.17 release\nand then removed entirely in the v1.28 release.\nThe Kubernetes project suggests that you use the\nGoogle Compute Engine Persistent Disk CSI\nthird party storage driver instead."
+  "text": "In Kubernetes 1.36, all operations for the in-tree\ngcePersistentDisk\ntype\nare redirected to the\npd.csi.storage.gke.io\nCSI\ndriver.\nThe\ngcePersistentDisk\nin-tree storage driver was deprecated in the Kubernetes v1.17 release\nand then removed entirely in the v1.28 release.\nThe Kubernetes project suggests that you use the\nGoogle Compute Engine Persistent Disk CSI\nthird party storage driver instead.",
+  "failure_classes": []
 }

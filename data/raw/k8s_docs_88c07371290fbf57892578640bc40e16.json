@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Running in multiple zones — What's next",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/multiple-zones/#what-s-next",
-  "text": "To learn how the scheduler places Pods in a cluster, honoring the configured constraints,\nvisit\nScheduling and Eviction\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "To learn how the scheduler places Pods in a cluster, honoring the configured constraints,\nvisit\nScheduling and Eviction\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

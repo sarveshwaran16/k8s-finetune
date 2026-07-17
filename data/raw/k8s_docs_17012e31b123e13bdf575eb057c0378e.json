@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Quality of Service Classes — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/#what-s-next",
-  "text": "Learn about\nresource management for Pods and Containers\n.\nLearn about\nNode-pressure eviction\n.\nLearn about\nPod priority and preemption\n.\nLearn about\nPod disruptions\n.\nLearn how to\nassign memory resources to containers and pods\n.\nLearn how to\nassign CPU resources to containers and pods\n.\nLearn how to\nconfigure Quality of Service for Pods\n."
+  "text": "Learn about\nresource management for Pods and Containers\n.\nLearn about\nNode-pressure eviction\n.\nLearn about\nPod priority and preemption\n.\nLearn about\nPod disruptions\n.\nLearn how to\nassign memory resources to containers and pods\n.\nLearn how to\nassign CPU resources to containers and pods\n.\nLearn how to\nconfigure Quality of Service for Pods\n.",
+  "failure_classes": []
 }

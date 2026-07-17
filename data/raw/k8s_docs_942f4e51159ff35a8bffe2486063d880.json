@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — explain",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#explain",
-  "text": "Get the documentation of the resource and its fields\nkubectl explain pods\nGet the documentation of a specific field of a resource\nkubectl\nexplain\npods\n.spec\n.containers\nList the fields for supported resources.\nThis command describes the fields associated with each supported API resource. Fields are identified via a simple JSONPath identifier:\n<type>.<fieldName>\n[\n.<fieldName>\n]\nAdd the --recursive flag to display all of the fields at once without descriptions. Information about each field is retrieved from the server in OpenAPI format.\nUse \"kubectl api-resources\" for a complete list of supported resources."
+  "text": "Get the documentation of the resource and its fields\nkubectl explain pods\nGet the documentation of a specific field of a resource\nkubectl\nexplain\npods\n.spec\n.containers\nList the fields for supported resources.\nThis command describes the fields associated with each supported API resource. Fields are identified via a simple JSONPath identifier:\n<type>.<fieldName>\n[\n.<fieldName>\n]\nAdd the --recursive flag to display all of the fields at once without descriptions. Information about each field is retrieved from the server in OpenAPI format.\nUse \"kubectl api-resources\" for a complete list of supported resources.",
+  "failure_classes": []
 }

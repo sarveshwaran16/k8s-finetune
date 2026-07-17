@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "User Impersonation — Using constrained impersonation",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/user-impersonation/#using-constrained-impersonation",
-  "text": "From a client perspective, using constrained impersonation is identical to using traditional\nimpersonation. You use the same impersonation headers:\nImpersonate-User: jane.doe@example.com\nOr with kubectl:\nkubectl get pods -n default --as\n=\njane.doe@example.com\nThe difference is entirely in the authorization checks performed by the API server."
+  "text": "From a client perspective, using constrained impersonation is identical to using traditional\nimpersonation. You use the same impersonation headers:\nImpersonate-User: jane.doe@example.com\nOr with kubectl:\nkubectl get pods -n default --as\n=\njane.doe@example.com\nThe difference is entirely in the authorization checks performed by the API server.",
+  "failure_classes": []
 }

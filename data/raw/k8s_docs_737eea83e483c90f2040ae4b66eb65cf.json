@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Use Port Forwarding to Access Applications in a Cluster — Optionally letkubectlchoose the local port",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/#let-kubectl-choose-local-port",
-  "text": "If you don't need a specific local port, you can let\nkubectl\nchoose and allocate\nthe local port and thus relieve you from having to manage local port conflicts, with\nthe slightly simpler syntax:\nkubectl port-forward deployment/mongo :27017\nThe\nkubectl\ntool finds a local port number that is not in use (avoiding low ports numbers,\nbecause these might be used by other applications). The output is similar to:\nForwarding from 127.0.0.1:63753 -> 27017\nForwarding from [::1]:63753 -> 27017"
+  "text": "If you don't need a specific local port, you can let\nkubectl\nchoose and allocate\nthe local port and thus relieve you from having to manage local port conflicts, with\nthe slightly simpler syntax:\nkubectl port-forward deployment/mongo :27017\nThe\nkubectl\ntool finds a local port number that is not in use (avoiding low ports numbers,\nbecause these might be used by other applications). The output is similar to:\nForwarding from 127.0.0.1:63753 -> 27017\nForwarding from [::1]:63753 -> 27017",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Namespaces — Not all objects are in a namespace",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#not-all-objects-are-in-a-namespace",
-  "text": "Most Kubernetes resources (e.g. Pods, Services, Deployments, and others) are in some namespaces. However namespace resources are not themselves in a namespace. And low-level resources, such as\nNodes\nand\nPersistentVolumes\n, are not in any namespace.\nTo see which Kubernetes resources are and aren't in a namespace:\n# In a namespace\nkubectl api-resources --namespaced\n=\ntrue\n# Not in a namespace\nkubectl api-resources --namespaced\n=\nfalse"
+  "text": "Most Kubernetes resources (e.g. Pods, Services, Deployments, and others) are in some namespaces. However namespace resources are not themselves in a namespace. And low-level resources, such as\nNodes\nand\nPersistentVolumes\n, are not in any namespace.\nTo see which Kubernetes resources are and aren't in a namespace:\n# In a namespace\nkubectl api-resources --namespaced\n=\ntrue\n# Not in a namespace\nkubectl api-resources --namespaced\n=\nfalse",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ingress — What is Ingress?",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress",
-  "text": "Ingress\nexposes HTTP and HTTPS routes from outside the cluster to\nservices\nwithin the cluster.\nTraffic routing is controlled by rules defined on the Ingress resource.\nHere is a simple example where an Ingress sends all its traffic to one Service:\nFigure. Ingress\nAn Ingress may be configured to give Services externally-reachable URLs,\nload balance traffic, terminate SSL / TLS, and offer name-based virtual hosting.\nAn\nIngress controller\nis responsible for fulfilling the Ingress, usually with a load balancer, though\nit may also configure your edge router or additional frontends to help handle the traffic.\nAn Ingress does not expose arbitrary ports or protocols. Exposing services other than HTTP and HTTPS to the internet typically\nuses a service of type\nService.Type=NodePort\nor\nService.Type=LoadBalancer\n."
+  "text": "Ingress\nexposes HTTP and HTTPS routes from outside the cluster to\nservices\nwithin the cluster.\nTraffic routing is controlled by rules defined on the Ingress resource.\nHere is a simple example where an Ingress sends all its traffic to one Service:\nFigure. Ingress\nAn Ingress may be configured to give Services externally-reachable URLs,\nload balance traffic, terminate SSL / TLS, and offer name-based virtual hosting.\nAn\nIngress controller\nis responsible for fulfilling the Ingress, usually with a load balancer, though\nit may also configure your edge router or additional frontends to help handle the traffic.\nAn Ingress does not expose arbitrary ports or protocols. Exposing services other than HTTP and HTTPS to the internet typically\nuses a service of type\nService.Type=NodePort\nor\nService.Type=LoadBalancer\n.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

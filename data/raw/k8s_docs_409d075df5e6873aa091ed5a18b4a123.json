@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "User Namespaces — Metrics and observability",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/user-namespaces/#metrics-and-observability",
-  "text": "The kubelet exports two prometheus metrics specific to user-namespaces:\nstarted_user_namespaced_pods_total\n: a counter that tracks the number of user namespaced pods that are attempted to be created.\nstarted_user_namespaced_pods_errors_total\n: a counter that tracks the number of errors creating user namespaced pods."
+  "text": "The kubelet exports two prometheus metrics specific to user-namespaces:\nstarted_user_namespaced_pods_total\n: a counter that tracks the number of user namespaced pods that are attempted to be created.\nstarted_user_namespaced_pods_errors_total\n: a counter that tracks the number of errors creating user namespaced pods.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

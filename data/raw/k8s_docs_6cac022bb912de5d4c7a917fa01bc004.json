@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — pod-security.kubernetes.io/warn-version",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#pod-security-kubernetes-io-warn-version",
-  "text": "Type: Label\nExample:\npod-security.kubernetes.io/warn-version: \"1.36\"\nUsed on: Namespace\nValue\nmust\nbe\nlatest\nor a valid Kubernetes version in the format\nv<major>.<minor>\n.\nThis determines the version of the\nPod Security Standard\npolicies to apply when validating a submitted Pod.\nNote that warnings are also displayed when creating or updating objects that contain\nPod templates, such as Deployments, Jobs, StatefulSets, etc.\nSee\nEnforcing Pod Security at the Namespace Level\nfor more information."
+  "text": "Type: Label\nExample:\npod-security.kubernetes.io/warn-version: \"1.36\"\nUsed on: Namespace\nValue\nmust\nbe\nlatest\nor a valid Kubernetes version in the format\nv<major>.<minor>\n.\nThis determines the version of the\nPod Security Standard\npolicies to apply when validating a submitted Pod.\nNote that warnings are also displayed when creating or updating objects that contain\nPod templates, such as Deployments, Jobs, StatefulSets, etc.\nSee\nEnforcing Pod Security at the Namespace Level\nfor more information.",
+  "failure_classes": []
 }

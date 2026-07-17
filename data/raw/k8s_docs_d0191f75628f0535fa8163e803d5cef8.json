@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Runtime Class — Setup",
   "source_url": "https://kubernetes.io/docs/concepts/containers/runtime-class/#setup",
-  "text": "Configure the CRI implementation on nodes (runtime dependent)\nCreate the corresponding RuntimeClass resources\n\nThe configurations available through RuntimeClass are Container Runtime Interface (CRI)\nimplementation dependent. See the corresponding documentation (\nbelow\n) for your\nCRI implementation for how to configure.\nThe configurations have a corresponding\nhandler\nname, referenced by the RuntimeClass. The\nhandler must be a valid\nDNS label name\n."
+  "text": "Configure the CRI implementation on nodes (runtime dependent)\nCreate the corresponding RuntimeClass resources\n\nThe configurations available through RuntimeClass are Container Runtime Interface (CRI)\nimplementation dependent. See the corresponding documentation (\nbelow\n) for your\nCRI implementation for how to configure.\nThe configurations have a corresponding\nhandler\nname, referenced by the RuntimeClass. The\nhandler must be a valid\nDNS label name\n.",
+  "failure_classes": []
 }

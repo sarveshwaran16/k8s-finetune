@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "AlertmanagerConfigInconsistent#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerconfiginconsistent/",
-  "text": "Alertmanager ConfigInconsistent\nAlertmanagerConfigInconsistent\n#\nMeaning\n#\nThe configuration between instances inside a cluster is inconsistent.\nImpact\n#\nConfiguration inconsistency can be multiple and impact is hard to predict.\nNevertheless, in most cases the alert might be lost or routed to the incorrect integration.\nDiagnosis\n#\nRun a\ndiff\ntool between all\nalertmanager.yml\nthat are deployed to find what is wrong.\nYou could run a job within your CI to avoid this issue in the future.\nMitigation\n#\nDelete the incorrect secret and deploy the correct one."
+  "text": "Alertmanager ConfigInconsistent\nAlertmanagerConfigInconsistent\n#\nMeaning\n#\nThe configuration between instances inside a cluster is inconsistent.\nImpact\n#\nConfiguration inconsistency can be multiple and impact is hard to predict.\nNevertheless, in most cases the alert might be lost or routed to the incorrect integration.\nDiagnosis\n#\nRun a\ndiff\ntool between all\nalertmanager.yml\nthat are deployed to find what is wrong.\nYou could run a job within your CI to avoid this issue in the future.\nMitigation\n#\nDelete the incorrect secret and deploy the correct one.",
+  "failure_classes": []
 }

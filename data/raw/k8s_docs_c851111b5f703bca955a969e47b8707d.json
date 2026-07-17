@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure a Pod to Use a PersistentVolume for Storage — Before you begin",
   "source_url": "https://kubernetes.io/docs/tutorials/configuration/configure-persistent-volume-storage/#before-you-begin",
-  "text": "You need to have a Kubernetes cluster that has only one Node, and the\nkubectl\ncommand-line tool must be configured to communicate with your cluster. If you\ndo not already have a single-node cluster, you can create one by using\nMinikube\n.\nFamiliarize yourself with the material in\nPersistent Volumes\n.\nYou need to have a Kubernetes cluster that has only one Node, and the\nkubectl\ncommand-line tool must be configured to communicate with your cluster. If you\ndo not already have a single-node cluster, you can create one by using\nMinikube\n.\nFamiliarize yourself with the material in\nPersistent Volumes\n."
+  "text": "You need to have a Kubernetes cluster that has only one Node, and the\nkubectl\ncommand-line tool must be configured to communicate with your cluster. If you\ndo not already have a single-node cluster, you can create one by using\nMinikube\n.\nFamiliarize yourself with the material in\nPersistent Volumes\n.\nYou need to have a Kubernetes cluster that has only one Node, and the\nkubectl\ncommand-line tool must be configured to communicate with your cluster. If you\ndo not already have a single-node cluster, you can create one by using\nMinikube\n.\nFamiliarize yourself with the material in\nPersistent Volumes\n.",
+  "failure_classes": []
 }

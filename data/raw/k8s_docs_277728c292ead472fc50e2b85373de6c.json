@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — batch.kubernetes.io/job-completion-index",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#batch-kubernetes-io-job-completion-index",
-  "text": "Type: Annotation, Label\nExample:\nbatch.kubernetes.io/job-completion-index: \"3\"\nUsed on: Pod\nThe Job controller in the kube-controller-manager sets this as a label and annotation for Pods\ncreated with Indexed\ncompletion mode\n.\nNote the\nPodIndexLabel\nfeature gate must be enabled for this to be added as a pod\nlabel\n,\notherwise it will just be an annotation."
+  "text": "Type: Annotation, Label\nExample:\nbatch.kubernetes.io/job-completion-index: \"3\"\nUsed on: Pod\nThe Job controller in the kube-controller-manager sets this as a label and annotation for Pods\ncreated with Indexed\ncompletion mode\n.\nNote the\nPodIndexLabel\nfeature gate must be enabled for this to be added as a pod\nlabel\n,\notherwise it will just be an annotation.",
+  "failure_classes": []
 }

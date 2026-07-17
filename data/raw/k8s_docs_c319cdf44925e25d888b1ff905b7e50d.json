@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl events — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/#synopsis",
-  "text": "Display events.\nPrints a table of the most important information about events. You can request events for a namespace, for all namespace, or filtered to only those pertaining to a specified resource.\nkubectl events [(-o|--output=)json|yaml|kyaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-as-json|jsonpath-file] [--for TYPE/NAME] [--watch] [--types=Normal,Warning]"
+  "text": "Display events.\nPrints a table of the most important information about events. You can request events for a namespace, for all namespace, or filtered to only those pertaining to a specified resource.\nkubectl events [(-o|--output=)json|yaml|kyaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-as-json|jsonpath-file] [--for TYPE/NAME] [--watch] [--types=Normal,Warning]",
+  "failure_classes": []
 }

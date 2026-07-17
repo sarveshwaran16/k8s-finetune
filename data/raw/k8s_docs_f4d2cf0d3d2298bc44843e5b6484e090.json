@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Local Files And Paths Used By The Kubelet — Seccomp",
   "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#seccomp",
-  "text": "Seccomp profile files referenced from Pods should be placed in\n/var/lib/kubelet/seccomp\n.\nSee the\nseccomp reference\nfor details.\n\nThe kubelet does not load or refer to AppArmor profiles by a Kubernetes-specific path.\nAppArmor profiles are loaded via the node operating system rather then referenced by their path."
+  "text": "Seccomp profile files referenced from Pods should be placed in\n/var/lib/kubelet/seccomp\n.\nSee the\nseccomp reference\nfor details.\n\nThe kubelet does not load or refer to AppArmor profiles by a Kubernetes-specific path.\nAppArmor profiles are loaded via the node operating system rather then referenced by their path.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

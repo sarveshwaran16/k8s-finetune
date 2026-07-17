@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubePersistentVolumeErrors#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubepersistentvolumeerrors/",
-  "text": "Kube Persistent Volume Errors\nKubePersistentVolumeErrors\n#\nMeaning\n#\nPersistentVolume is having issues with provisioning.\nImpact\n#\nVolue may be unavailable or have data erors (corrupted storage).\nService degradation, data loss.\nDiagnosis\n#\nCheck PV events via\nkubectl describe pv $PV\n.\nCheck storage provider for logs.\nCheck storage quotas in the cloud.\nMitigation\n#\nIn happy scenario storage is just not provisioned as fast as expected.\nIn worst scenario there is data corruption or data loss. Restore from backup."
+  "text": "Kube Persistent Volume Errors\nKubePersistentVolumeErrors\n#\nMeaning\n#\nPersistentVolume is having issues with provisioning.\nImpact\n#\nVolue may be unavailable or have data erors (corrupted storage).\nService degradation, data loss.\nDiagnosis\n#\nCheck PV events via\nkubectl describe pv $PV\n.\nCheck storage provider for logs.\nCheck storage quotas in the cloud.\nMitigation\n#\nIn happy scenario storage is just not provisioned as fast as expected.\nIn worst scenario there is data corruption or data loss. Restore from backup.",
+  "failure_classes": []
 }

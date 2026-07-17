@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Use Antrea for NetworkPolicy",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/antrea-network-policy/",
-  "text": "This page shows how to install and use Antrea CNI plugin on Kubernetes.\nFor background on Project Antrea, read the\nIntroduction to Antrea\n.\n\nYou need to have a Kubernetes cluster. Follow the\nkubeadm getting started guide\nto bootstrap one.\n\nFollow\nGetting Started\nguide to deploy Antrea for kubeadm.\n\nOnce your cluster is running, you can follow the\nDeclare Network Policy\nto try out Kubernetes NetworkPolicy."
+  "text": "This page shows how to install and use Antrea CNI plugin on Kubernetes.\nFor background on Project Antrea, read the\nIntroduction to Antrea\n.\n\nYou need to have a Kubernetes cluster. Follow the\nkubeadm getting started guide\nto bootstrap one.\n\nFollow\nGetting Started\nguide to deploy Antrea for kubeadm.\n\nOnce your cluster is running, you can follow the\nDeclare Network Policy\nto try out Kubernetes NetworkPolicy.",
+  "failure_classes": []
 }

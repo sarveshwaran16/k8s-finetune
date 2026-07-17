@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Upgrading Windows nodes — Upgrade kubeadm",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/upgrading-windows-nodes/#upgrade-kubeadm",
-  "text": "From the Windows node, upgrade kubeadm:\n# replace 1.36.0 with your desired version\ncurl\n.\nexe\n-Lo\n<\npath-to\n-kubeadm\n.\nexe\n>\n\"https://dl.k8s.io/v1.36.0/bin/windows/amd64/kubeadm.exe\"\nFrom the Windows node, upgrade kubeadm:\n# replace 1.36.0 with your desired version\ncurl\n.\nexe\n-Lo\n<\npath-to\n-kubeadm\n.\nexe\n>\n\"https://dl.k8s.io/v1.36.0/bin/windows/amd64/kubeadm.exe\""
+  "text": "From the Windows node, upgrade kubeadm:\n# replace 1.36.0 with your desired version\ncurl\n.\nexe\n-Lo\n<\npath-to\n-kubeadm\n.\nexe\n>\n\"https://dl.k8s.io/v1.36.0/bin/windows/amd64/kubeadm.exe\"\nFrom the Windows node, upgrade kubeadm:\n# replace 1.36.0 with your desired version\ncurl\n.\nexe\n-Lo\n<\npath-to\n-kubeadm\n.\nexe\n>\n\"https://dl.k8s.io/v1.36.0/bin/windows/amd64/kubeadm.exe\"",
+  "failure_classes": []
 }

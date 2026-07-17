@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Restrict a Container's Access to Resources with AppArmor",
   "source_url": "https://kubernetes.io/docs/tutorials/security/apparmor/",
-  "text": "This page shows you how to load AppArmor profiles on your nodes and enforce\nthose profiles in Pods. To learn more about how Kubernetes can confine Pods using\nAppArmor, see\nLinux kernel security constraints for Pods and containers\n.\n\nSee an example of how to load a profile on a Node\nLearn how to enforce the profile on a Pod\nLearn how to check that the profile is loaded\nSee what happens when a profile is violated\nSee what happens when a profile cannot be loaded"
+  "text": "This page shows you how to load AppArmor profiles on your nodes and enforce\nthose profiles in Pods. To learn more about how Kubernetes can confine Pods using\nAppArmor, see\nLinux kernel security constraints for Pods and containers\n.\n\nSee an example of how to load a profile on a Node\nLearn how to enforce the profile on a Pod\nLearn how to check that the profile is loaded\nSee what happens when a profile is violated\nSee what happens when a profile cannot be loaded",
+  "failure_classes": []
 }

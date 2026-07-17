@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Jobs — Elastic Indexed Jobs",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#elastic-indexed-jobs",
-  "text": "You can scale Indexed Jobs up or down by mutating both\n.spec.parallelism\nand\n.spec.completions\ntogether such that\n.spec.parallelism == .spec.completions\n.\nWhen scaling down, Kubernetes removes the Pods with higher indexes.\nUse cases for elastic Indexed Jobs include batch workloads which require\nscaling an indexed Job, such as MPI, Horovod, Ray, and PyTorch training jobs."
+  "text": "You can scale Indexed Jobs up or down by mutating both\n.spec.parallelism\nand\n.spec.completions\ntogether such that\n.spec.parallelism == .spec.completions\n.\nWhen scaling down, Kubernetes removes the Pods with higher indexes.\nUse cases for elastic Indexed Jobs include batch workloads which require\nscaling an indexed Job, such as MPI, Horovod, Ray, and PyTorch training jobs.",
+  "failure_classes": []
 }

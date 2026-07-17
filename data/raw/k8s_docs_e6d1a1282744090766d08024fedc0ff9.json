@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Troubleshooting Topology Management",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/topology/",
-  "text": "Kubernetes keeps many aspects of how pods execute on nodes abstracted\nfrom the user. This is by design. However, some workloads require\nstronger guarantees in terms of latency and/or performance in order to operate\nacceptably. The\nkubelet\nprovides methods to enable more complex workload\nplacement policies while keeping the abstraction free from explicit placement\ndirectives.\nYou can manage topology within nodes. This means helping the kubelet to configure the host operating system so that\nPods and containers are placed on the correct side of inner boundaries, such as\nNUMA domains\n. (NUMA is an abbreviation\nof\nnon-uniform memory access\n, and refers to an idea that CPUs might be topologically closer to specific regions of\nmemory, due to the physical layout of the hardware components and the way that these are connected)."
+  "text": "Kubernetes keeps many aspects of how pods execute on nodes abstracted\nfrom the user. This is by design. However, some workloads require\nstronger guarantees in terms of latency and/or performance in order to operate\nacceptably. The\nkubelet\nprovides methods to enable more complex workload\nplacement policies while keeping the abstraction free from explicit placement\ndirectives.\nYou can manage topology within nodes. This means helping the kubelet to configure the host operating system so that\nPods and containers are placed on the correct side of inner boundaries, such as\nNUMA domains\n. (NUMA is an abbreviation\nof\nnon-uniform memory access\n, and refers to an idea that CPUs might be topologically closer to specific regions of\nmemory, due to the physical layout of the hardware components and the way that these are connected).",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Adding Linux worker nodes",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-linux-nodes/",
-  "text": "This page explains how to add Linux worker nodes to a kubeadm cluster.\n\nEach joining worker node has installed the required components from\nInstalling kubeadm\n, such as,\nkubeadm, the kubelet and a\ncontainer runtime\n.\nA running kubeadm cluster created by\nkubeadm init\nand following the steps\nin the document\nCreating a cluster with kubeadm\n.\nYou need superuser access to the node."
+  "text": "This page explains how to add Linux worker nodes to a kubeadm cluster.\n\nEach joining worker node has installed the required components from\nInstalling kubeadm\n, such as,\nkubeadm, the kubelet and a\ncontainer runtime\n.\nA running kubeadm cluster created by\nkubeadm init\nand following the steps\nin the document\nCreating a cluster with kubeadm\n.\nYou need superuser access to the node.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

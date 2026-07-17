@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubectl rollout — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/#synopsis",
-  "text": "Manage the rollout of one or many resources.\nValid resource types include:\ndeployments\ndaemonsets\nstatefulsets\nkubectl rollout SUBCOMMAND\n\n# Rollback to the previous deployment\n  kubectl rollout undo deployment/abc\n  \n  # Check the rollout status of a daemonset\n  kubectl rollout status daemonset/foo\n  \n  # Restart a deployment\n  kubectl rollout restart deployment/abc\n  \n  # Restart deployments with the 'app=nginx' label\n  kubectl rollout restart deployment --selector=app=nginx"
+  "text": "Manage the rollout of one or many resources.\nValid resource types include:\ndeployments\ndaemonsets\nstatefulsets\nkubectl rollout SUBCOMMAND\n\n# Rollback to the previous deployment\n  kubectl rollout undo deployment/abc\n  \n  # Check the rollout status of a daemonset\n  kubectl rollout status daemonset/foo\n  \n  # Restart a deployment\n  kubectl rollout restart deployment/abc\n  \n  # Restart deployments with the 'app=nginx' label\n  kubectl rollout restart deployment --selector=app=nginx",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

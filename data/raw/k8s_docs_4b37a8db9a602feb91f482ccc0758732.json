@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Security For Windows Nodes — Pod-level security isolation",
   "source_url": "https://kubernetes.io/docs/concepts/security/windows-security/#pod-level-security-isolation",
-  "text": "Linux-specific pod security context mechanisms (such as SELinux, AppArmor, Seccomp, or custom\nPOSIX capabilities) are not supported on Windows nodes.\nPrivileged containers are\nnot supported\non Windows.\nInstead\nHostProcess containers\ncan be used on Windows to perform many of the tasks performed by privileged containers on Linux."
+  "text": "Linux-specific pod security context mechanisms (such as SELinux, AppArmor, Seccomp, or custom\nPOSIX capabilities) are not supported on Windows nodes.\nPrivileged containers are\nnot supported\non Windows.\nInstead\nHostProcess containers\ncan be used on Windows to perform many of the tasks performed by privileged containers on Linux.",
+  "failure_classes": []
 }

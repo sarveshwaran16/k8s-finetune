@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Jobs — Opt-out for higher-level controllers",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#opt-out-for-higher-level-controllers",
-  "text": "If a Job's Pod template already has\nspec.schedulingGroup\nset, the Job controller\ndoes not create\nWorkload\nor\nPodGroup\nobjects. This allows higher-level controllers\nsuch as\nJobSet\nto manage the\nWorkload\nand\nPodGroup\nlifecycle themselves.\n\nJobs created by a\nCronJob\ndo not have\nschedulingGroup\nset in the\nPodTemplate\n.\nIf a CronJob-created\nJob\nmatches the gang scheduling criteria, the Job controller\ncreates a separate\nWorkload\nand\nPodGroup\nfor each Job instance."
+  "text": "If a Job's Pod template already has\nspec.schedulingGroup\nset, the Job controller\ndoes not create\nWorkload\nor\nPodGroup\nobjects. This allows higher-level controllers\nsuch as\nJobSet\nto manage the\nWorkload\nand\nPodGroup\nlifecycle themselves.\n\nJobs created by a\nCronJob\ndo not have\nschedulingGroup\nset in the\nPodTemplate\n.\nIf a CronJob-created\nJob\nmatches the gang scheduling criteria, the Job controller\ncreates a separate\nWorkload\nand\nPodGroup\nfor each Job instance.",
+  "failure_classes": []
 }

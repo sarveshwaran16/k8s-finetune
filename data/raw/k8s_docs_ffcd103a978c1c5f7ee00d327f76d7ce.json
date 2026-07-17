@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Operator pattern — Operators in Kubernetes",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/#operators-in-kubernetes",
-  "text": "Kubernetes is designed for automation. Out of the box, you get lots of\nbuilt-in automation from the core of Kubernetes. You can use Kubernetes\nto automate deploying and running workloads,\nand\nyou can automate how\nKubernetes does that.\nKubernetes'\noperator pattern\nconcept lets you extend the cluster's behaviour without modifying the code of Kubernetes\nitself by linking\ncontrollers\nto\none or more custom resources. Operators are clients of the Kubernetes API that act as\ncontrollers for a\nCustom Resource\n."
+  "text": "Kubernetes is designed for automation. Out of the box, you get lots of\nbuilt-in automation from the core of Kubernetes. You can use Kubernetes\nto automate deploying and running workloads,\nand\nyou can automate how\nKubernetes does that.\nKubernetes'\noperator pattern\nconcept lets you extend the cluster's behaviour without modifying the code of Kubernetes\nitself by linking\ncontrollers\nto\none or more custom resources. Operators are clients of the Kubernetes API that act as\ncontrollers for a\nCustom Resource\n.",
+  "failure_classes": []
 }

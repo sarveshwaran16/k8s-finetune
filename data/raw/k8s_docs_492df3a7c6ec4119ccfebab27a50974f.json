@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Server-Side Apply — Transferring ownership between managers",
   "source_url": "https://kubernetes.io/docs/reference/using-api/server-side-apply/#transferring-ownership-between-managers",
-  "text": "Field managers can transfer ownership of a field between each other by setting the field\nto the same value in both of their applied configurations, causing them to share\nownership of the field. Once the managers share ownership of the field, one of them\ncan remove the field from their applied configuration to give up ownership and\ncomplete the transfer to the other field manager."
+  "text": "Field managers can transfer ownership of a field between each other by setting the field\nto the same value in both of their applied configurations, causing them to share\nownership of the field. Once the managers share ownership of the field, one of them\ncan remove the field from their applied configuration to give up ownership and\ncomplete the transfer to the other field manager.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Storage Classes — Volume expansion",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/#allow-volume-expansion",
-  "text": "PersistentVolumes can be configured to be expandable. This allows you to resize the\nvolume by editing the corresponding PVC object, requesting a new larger amount of\nstorage.\nThe following types of volumes support volume expansion, when the underlying\nStorageClass has the field\nallowVolumeExpansion\nset to true.\nTable of Volume types and the version of Kubernetes they require\nVolume type\nRequired Kubernetes version for volume expansion\nAzure File\n1.11\nCSI\n1.24\nFlexVolume\n1.13\nPortworx\n1.11\nrbd\n1.11"
+  "text": "PersistentVolumes can be configured to be expandable. This allows you to resize the\nvolume by editing the corresponding PVC object, requesting a new larger amount of\nstorage.\nThe following types of volumes support volume expansion, when the underlying\nStorageClass has the field\nallowVolumeExpansion\nset to true.\nTable of Volume types and the version of Kubernetes they require\nVolume type\nRequired Kubernetes version for volume expansion\nAzure File\n1.11\nCSI\n1.24\nFlexVolume\n1.13\nPortworx\n1.11\nrbd\n1.11",
+  "failure_classes": [
+    "PVC"
+  ]
 }

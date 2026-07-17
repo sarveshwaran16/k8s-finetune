@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Components",
   "source_url": "https://kubernetes.io/docs/concepts/overview/components/",
-  "text": "This page provides a high-level overview of the essential components that make up a Kubernetes cluster.\nThe components of a Kubernetes cluster\n\nA Kubernetes cluster consists of a control plane and one or more worker nodes.\nHere's a brief overview of the main components:\n\nManage the overall state of the cluster:"
+  "text": "This page provides a high-level overview of the essential components that make up a Kubernetes cluster.\nThe components of a Kubernetes cluster\n\nA Kubernetes cluster consists of a control plane and one or more worker nodes.\nHere's a brief overview of the main components:\n\nManage the overall state of the cluster:",
+  "failure_classes": []
 }

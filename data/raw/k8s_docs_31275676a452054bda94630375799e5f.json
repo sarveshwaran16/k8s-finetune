@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Troubleshooting Clusters",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/",
-  "text": "This doc is about cluster troubleshooting; we assume you have already ruled out your application as the root cause of the\nproblem you are experiencing. See\nthe\napplication troubleshooting guide\nfor tips on application debugging.\nYou may also visit the\ntroubleshooting overview document\nfor more information.\nFor troubleshooting\nkubectl\n, refer to\nTroubleshooting kubectl\n."
+  "text": "This doc is about cluster troubleshooting; we assume you have already ruled out your application as the root cause of the\nproblem you are experiencing. See\nthe\napplication troubleshooting guide\nfor tips on application debugging.\nYou may also visit the\ntroubleshooting overview document\nfor more information.\nFor troubleshooting\nkubectl\n, refer to\nTroubleshooting kubectl\n.",
+  "failure_classes": []
 }

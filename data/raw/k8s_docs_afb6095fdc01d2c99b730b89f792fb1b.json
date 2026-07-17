@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm Configuration (v1beta4) — Arg",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta4/#kubeadm-k8s-io-v1beta4-Arg",
-  "text": "Appears in:\nControlPlaneComponent\nLocalEtcd\nNodeRegistrationOptions\nControlPlaneComponent\nLocalEtcd\nNodeRegistrationOptions\nArg represents an argument with a name and a value.\nField\nDescription\nname\n[Required]\nstring\nThe name of the argument.\nvalue\n[Required]\nstring\nThe value of the argument.\nThe name of the argument.\nThe value of the argument."
+  "text": "Appears in:\nControlPlaneComponent\nLocalEtcd\nNodeRegistrationOptions\nControlPlaneComponent\nLocalEtcd\nNodeRegistrationOptions\nArg represents an argument with a name and a value.\nField\nDescription\nname\n[Required]\nstring\nThe name of the argument.\nvalue\n[Required]\nstring\nThe value of the argument.\nThe name of the argument.\nThe value of the argument.",
+  "failure_classes": []
 }

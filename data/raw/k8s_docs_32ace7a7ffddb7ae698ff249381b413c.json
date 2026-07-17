@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cloud Controller Manager — Authorization",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/cloud-controller/#authorization",
-  "text": "This section breaks down the access that the cloud controller manager requires\non various API objects, in order to perform its operations.\n\nThe Node controller only works with Node objects. It requires full access\nto read and modify Node objects.\nv1/Node\n:\nget\nlist\ncreate\nupdate\npatch\nwatch\ndelete\n\nThe route controller listens to Node object creation and configures\nroutes appropriately. It requires Get access to Node objects.\nv1/Node\n:\nget"
+  "text": "This section breaks down the access that the cloud controller manager requires\non various API objects, in order to perform its operations.\n\nThe Node controller only works with Node objects. It requires full access\nto read and modify Node objects.\nv1/Node\n:\nget\nlist\ncreate\nupdate\npatch\nwatch\ndelete\n\nThe route controller listens to Node object creation and configures\nroutes appropriately. It requires Get access to Node objects.\nv1/Node\n:\nget",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cluster Architecture — Cluster-level Logging",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/#cluster-level-logging",
-  "text": "A\ncluster-level logging\nmechanism is responsible\nfor saving container logs to a central log store with a search/browsing interface.\n\nNetwork plugins\nare software components that implement the container network interface (CNI) specification.\nThey are responsible for allocating IP addresses to pods and enabling them to communicate\nwith each other within the cluster."
+  "text": "A\ncluster-level logging\nmechanism is responsible\nfor saving container logs to a central log store with a search/browsing interface.\n\nNetwork plugins\nare software components that implement the container network interface (CNI) specification.\nThey are responsible for allocating IP addresses to pods and enabling them to communicate\nwith each other within the cluster.",
+  "failure_classes": []
 }

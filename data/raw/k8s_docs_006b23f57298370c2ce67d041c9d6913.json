@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Object Names and IDs — DNS Subdomain Names",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-subdomain-names",
-  "text": "Most resource types require a name that can be used as a DNS subdomain name\nas defined in\nRFC 1123\n.\nThis means the name must:\ncontain no more than 253 characters\ncontain only lowercase alphanumeric characters, '-' or '.'\nstart with an alphanumeric character\nend with an alphanumeric character\n\nSome resource types require their names to follow the DNS\nlabel standard as defined in\nRFC 1123\n.\nThis means the name must:\ncontain at most 63 characters\ncontain only lowercase alphanumeric characters or '-'\nstart with an alphabetic character\nend with an alphanumeric character"
+  "text": "Most resource types require a name that can be used as a DNS subdomain name\nas defined in\nRFC 1123\n.\nThis means the name must:\ncontain no more than 253 characters\ncontain only lowercase alphanumeric characters, '-' or '.'\nstart with an alphanumeric character\nend with an alphanumeric character\n\nSome resource types require their names to follow the DNS\nlabel standard as defined in\nRFC 1123\n.\nThis means the name must:\ncontain at most 63 characters\ncontain only lowercase alphanumeric characters or '-'\nstart with an alphabetic character\nend with an alphanumeric character",
+  "failure_classes": []
 }

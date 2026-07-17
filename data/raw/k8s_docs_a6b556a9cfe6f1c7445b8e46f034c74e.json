@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — scheduler.alpha.kubernetes.io/node-selector",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#schedulerkubernetesnode-selector",
-  "text": "Type: Annotation\nExample:\nscheduler.alpha.kubernetes.io/node-selector: \"name-of-node-selector\"\nUsed on: Namespace\nThe\nPodNodeSelector\nuses this annotation key to assign node selectors to pods in namespaces.\n\nType: Label\nExample:\ntopology.kubernetes.io/region: \"us-east-1\"\nUsed on: Node, PersistentVolume\nSee\ntopology.kubernetes.io/zone\n."
+  "text": "Type: Annotation\nExample:\nscheduler.alpha.kubernetes.io/node-selector: \"name-of-node-selector\"\nUsed on: Namespace\nThe\nPodNodeSelector\nuses this annotation key to assign node selectors to pods in namespaces.\n\nType: Label\nExample:\ntopology.kubernetes.io/region: \"us-east-1\"\nUsed on: Node, PersistentVolume\nSee\ntopology.kubernetes.io/zone\n.",
+  "failure_classes": []
 }

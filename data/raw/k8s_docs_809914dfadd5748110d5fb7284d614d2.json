@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Security Standards — What's the difference between a security profile and a security context?",
   "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#what-s-the-difference-between-a-security-profile-and-a-security-context",
-  "text": "Security Contexts\nconfigure Pods and\nContainers at runtime. Security contexts are defined as part of the Pod and container specifications\nin the Pod manifest, and represent parameters to the container runtime.\nSecurity profiles are control plane mechanisms to enforce specific settings in the Security Context,\nas well as other related parameters outside the Security Context. As of July 2021,\nPod Security Policies\nare deprecated in favor of the\nbuilt-in\nPod Security Admission Controller\n."
+  "text": "Security Contexts\nconfigure Pods and\nContainers at runtime. Security contexts are defined as part of the Pod and container specifications\nin the Pod manifest, and represent parameters to the container runtime.\nSecurity profiles are control plane mechanisms to enforce specific settings in the Security Context,\nas well as other related parameters outside the Security Context. As of July 2021,\nPod Security Policies\nare deprecated in favor of the\nbuilt-in\nPod Security Admission Controller\n.",
+  "failure_classes": []
 }

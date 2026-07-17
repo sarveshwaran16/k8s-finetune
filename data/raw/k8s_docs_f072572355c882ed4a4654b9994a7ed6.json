@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Limit Storage Consumption — Summary",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/limit-storage-consumption/#summary",
-  "text": "A limit range can put a ceiling on how much storage is requested while a resource quota can effectively cap the storage\nconsumed by a namespace through claim counts and cumulative storage capacity. The allows a cluster-admin to plan their\ncluster's storage budget without risk of any one project going over their allotment."
+  "text": "A limit range can put a ceiling on how much storage is requested while a resource quota can effectively cap the storage\nconsumed by a namespace through claim counts and cumulative storage capacity. The allows a cluster-admin to plan their\ncluster's storage budget without risk of any one project going over their allotment.",
+  "failure_classes": []
 }

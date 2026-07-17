@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure a Security Context for a Pod or Container — Clean up",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#clean-up",
-  "text": "Delete the Pod:\nkubectl delete pod security-context-demo\nkubectl delete pod security-context-demo-2\nkubectl delete pod security-context-demo-3\nkubectl delete pod security-context-demo-4\n\nPodSecurityContext\nSecurityContext\nCRI Plugin Config Guide\nSecurity Contexts design document\nOwnership Management design document\nPodSecurity Admission\nAllowPrivilegeEscalation design\ndocument\nFor more information about security mechanisms in Linux, see\nOverview of Linux Kernel Security Features\n(Note: Some information is out of date)\nRead about\nUser Namespaces\nfor Linux pods.\nMasked Paths in the OCI Runtime\nSpecification"
+  "text": "Delete the Pod:\nkubectl delete pod security-context-demo\nkubectl delete pod security-context-demo-2\nkubectl delete pod security-context-demo-3\nkubectl delete pod security-context-demo-4\n\nPodSecurityContext\nSecurityContext\nCRI Plugin Config Guide\nSecurity Contexts design document\nOwnership Management design document\nPodSecurity Admission\nAllowPrivilegeEscalation design\ndocument\nFor more information about security mechanisms in Linux, see\nOverview of Linux Kernel Security Features\n(Note: Some information is out of date)\nRead about\nUser Namespaces\nfor Linux pods.\nMasked Paths in the OCI Runtime\nSpecification",
+  "failure_classes": []
 }

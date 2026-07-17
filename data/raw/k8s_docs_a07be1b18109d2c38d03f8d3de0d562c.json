@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Resource Quotas — Best effort Pods scope",
   "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#quota-scope-best-effort",
-  "text": "This scope only tracks quota consumed by Pods.\nIt only matches pods that have the\nbest effort\nQoS class\n.\nThe\noperator\nfor a\nscopeSelector\nmust be\nExists\n.\n\nThis scope only tracks quota consumed by Pods.\nIt only matches pods that have the\nGuaranteed\nor\nBurstable\nQoS class\n.\nThe\noperator\nfor a\nscopeSelector\nmust be\nExists\n."
+  "text": "This scope only tracks quota consumed by Pods.\nIt only matches pods that have the\nbest effort\nQoS class\n.\nThe\noperator\nfor a\nscopeSelector\nmust be\nExists\n.\n\nThis scope only tracks quota consumed by Pods.\nIt only matches pods that have the\nGuaranteed\nor\nBurstable\nQoS class\n.\nThe\noperator\nfor a\nscopeSelector\nmust be\nExists\n.",
+  "failure_classes": []
 }

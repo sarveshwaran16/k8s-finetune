@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod — LinuxContainerUser",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#LinuxContainerUser",
-  "text": "LinuxContainerUser represents user identity information in Linux containers\nField\nDescription\ngid\n*\ninteger\nGID is the primary gid initially attached to the first process in the container\nsupplementalGroups\ninteger array\nSupplementalGroups are the supplemental groups initially attached to the first process in the container\nuid\n*\ninteger\nUID is the primary uid initially attached to the first process in the container"
+  "text": "LinuxContainerUser represents user identity information in Linux containers\nField\nDescription\ngid\n*\ninteger\nGID is the primary gid initially attached to the first process in the container\nsupplementalGroups\ninteger array\nSupplementalGroups are the supplemental groups initially attached to the first process in the container\nuid\n*\ninteger\nUID is the primary uid initially attached to the first process in the container",
+  "failure_classes": []
 }

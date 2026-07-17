@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Other Tools — Helm",
   "source_url": "https://kubernetes.io/docs/reference/tools/#helm",
-  "text": "Helm\nis a tool for managing packages of pre-configured\nKubernetes resources. These packages are known as\nHelm charts\n.\nUse Helm to:\nFind and use popular software packaged as Kubernetes charts\nShare your own applications as Kubernetes charts\nCreate reproducible builds of your Kubernetes applications\nIntelligently manage your Kubernetes manifest files\nManage releases of Helm packages"
+  "text": "Helm\nis a tool for managing packages of pre-configured\nKubernetes resources. These packages are known as\nHelm charts\n.\nUse Helm to:\nFind and use popular software packaged as Kubernetes charts\nShare your own applications as Kubernetes charts\nCreate reproducible builds of your Kubernetes applications\nIntelligently manage your Kubernetes manifest files\nManage releases of Helm packages",
+  "failure_classes": []
 }

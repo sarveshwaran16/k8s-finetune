@@ -26,19 +26,19 @@ SYSTEM_PROMPT = (
     "code fences, no commentary."
 )
 
-GENERATION_PROMPT = """Read the following Kubernetes documentation and generate exactly 5 question-answer pairs.
+GENERATION_PROMPT = """Read the following Kubernetes documentation and generate high-quality question-answer pairs.
 
 Rules:
+- Generate as many pairs as the text genuinely supports — typically 2 to 4 for a focused section.
+  Do NOT pad with trivial, repetitive, or overly generic questions just to hit a number.
+- If the text is too thin or narrow to support even 2 distinct, meaningful questions, generate just 1 — or return an empty "pairs" list rather than inventing content.
 - Questions must be specific and practical (troubleshooting, configuration, concepts)
 - Answers must be accurate, thorough, and based ONLY on the provided text
 - Answers can be a few sentences long where useful — don't artificially truncate them
+- Never speculate, hedge, or guess at anything not explicitly covered by the text
 - Format your response as valid JSON only, nothing else:
 
 {{"pairs": [
-    {{"question": "...", "answer": "..."}},
-    {{"question": "...", "answer": "..."}},
-    {{"question": "...", "answer": "..."}},
-    {{"question": "...", "answer": "..."}},
     {{"question": "...", "answer": "..."}}
 ]}}
 
@@ -106,7 +106,7 @@ def _call_groq(prompt: str):
                     {"role": "user", "content": prompt},
                 ],
                 "temperature": 0.3,
-                "max_tokens": 1100,
+                "max_tokens": 800,
                 "response_format": {"type": "json_object"},
             },
             timeout=120
@@ -158,7 +158,7 @@ def _call_groq(prompt: str):
         return resp
 
 
-def generate_pairs(doc: dict) -> list[dict]:
+def generate_pairs(doc: dict) -> list[dict] | None:
     # k8s_docs chunks are now section-sized (split by heading, not by whole
     # page), so most chunks should already fit comfortably. This cap is now
     # a safety net for outlier long sections (e.g. merged short sections, or
@@ -195,13 +195,16 @@ def generate_pairs(doc: dict) -> list[dict]:
                     "source_url": doc["source_url"],
                     "title": doc["title"]
                 })
+        # Note: an empty `result` here is a legitimate outcome (the chunk was
+        # too thin, and the model correctly declined rather than inventing
+        # content) — distinct from the error case below, which returns None.
         return result
 
     except DailyQuotaExhausted:
         raise  # let this propagate up to run() so the whole run stops cleanly
     except Exception as e:
         print(f"[generate] Failed on {doc['title']}: {e}")
-        return []
+        return None
 
 
 def run(limit: int = None):
@@ -212,11 +215,11 @@ def run(limit: int = None):
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    files = [f for f in os.listdir(RAW_DIR) if f.endswith(".json")]
-    if limit:
-        files = files[:limit]
+    all_filenames = [f for f in os.listdir(RAW_DIR) if f.endswith(".json")]
 
-    # Resume: skip already processed titles
+    # Resume: figure out which titles are already done BEFORE loading everything,
+    # so --limit means "process the next N undone docs," not "the first N files
+    # on disk, some of which might already be done."
     processed_titles = set()
     if os.path.exists(OUTPUT_FILE):
         with open(OUTPUT_FILE, "r", encoding="utf-8") as existing:
@@ -228,26 +231,46 @@ def run(limit: int = None):
                     pass
         if processed_titles:
             print(f"Resuming — {len(processed_titles)} titles already processed, skipping...")
-            files = [f for f in files if json.load(open(os.path.join(RAW_DIR, f), encoding="utf-8"))["title"] not in processed_titles]
 
-    print(f"Generating Q&A pairs from {len(files)} documents using Groq model '{GROQ_MODEL}'...")
+    # Load each remaining doc once (title + failure_classes + full doc), so we
+    # can both filter and priority-sort without re-reading files later.
+    remaining = []
+    for filename in all_filenames:
+        filepath = os.path.join(RAW_DIR, filename)
+        with open(filepath, "r", encoding="utf-8") as f:
+            doc = json.load(f)
+        if doc.get("title", "") in processed_titles:
+            continue
+        remaining.append(doc)
+
+    # Priority: docs tagged with a failure_class (troubleshooting-relevant
+    # content — OOMKilled, CrashLoopBackOff, RBAC, etc.) go first. This
+    # matters when a hard --limit or a daily quota wall means not everything
+    # gets processed today — we want the highest-value content done first,
+    # not whatever happened to come first alphabetically.
+    remaining.sort(key=lambda d: 0 if d.get("failure_classes") else 1)
+
+    tagged_count = sum(1 for d in remaining if d.get("failure_classes"))
+    print(f"{len(remaining)} undone docs remaining ({tagged_count} failure-class-tagged, prioritized first)")
+
+    if limit:
+        remaining = remaining[:limit]
+
+    docs = remaining
 
     total_pairs = 0
     failed = 0
+    skipped_thin = 0
     docs_done = 0
     quota_exhausted = False
 
     with open(OUTPUT_FILE, "a", encoding="utf-8") as out:
-        for filename in tqdm(files):
-            filepath = os.path.join(RAW_DIR, filename)
-            with open(filepath, "r", encoding="utf-8") as f:
-                doc = json.load(f)
-
+        for doc in tqdm(docs):
             try:
                 pairs = generate_pairs(doc)
             except DailyQuotaExhausted as e:
                 hours = e.wait_seconds / 3600
-                print(f"\n⚠️  Hit a long-duration rate limit (Groq asked for a {e.wait_seconds:.0f}s / ~{hours:.1f}h wait).")
+                print(f"\n Hit a long-duration rate limit (Groq asked for a {e.wait_seconds:.0f}s / ~{hours:.1f}h wait).")
                 print("   This is almost always the DAILY TOKEN cap (TPD), not the daily request")
                 print("   cap (RPD) — Groq doesn't expose a 'remaining TPD' header, so the")
                 print("   [quota] line above showing plenty of requests left can look misleading.")
@@ -259,21 +282,29 @@ def run(limit: int = None):
                 break
 
             docs_done += 1
-            if pairs:
+            if pairs is None:
+                # An actual error occurred (network, bad JSON, HTTP error, etc.)
+                # — already logged inside generate_pairs.
+                failed += 1
+            elif len(pairs) == 0:
+                # Model correctly declined: the chunk was too thin to support
+                # even one meaningful, grounded question. This is working as
+                # intended, not a failure — don't count it as one.
+                skipped_thin += 1
+            else:
                 for pair in pairs:
                     out.write(json.dumps(pair, ensure_ascii=False) + "\n")
                 out.flush()
                 total_pairs += len(pairs)
-            else:
-                failed += 1
 
     if quota_exhausted:
-        print(f"\n⏸️  Run paused early due to quota limits.")
+        print(f"\n  Run paused early due to quota limits.")
     else:
-        print(f"\n✅ Dataset generation complete!")
-    print(f"   Documents processed this run: {docs_done}/{len(files)}")
+        print(f"\n Dataset generation complete!")
+    print(f"   Documents processed this run: {docs_done}/{len(docs)}")
     print(f"   Q&A pairs generated this run: {total_pairs}")
-    print(f"   Failed: {failed}")
+    print(f"   Skipped (chunk too thin, correctly declined): {skipped_thin}")
+    print(f"   Failed (actual errors): {failed}")
     print(f"   Saved to: {OUTPUT_FILE}")
 
 

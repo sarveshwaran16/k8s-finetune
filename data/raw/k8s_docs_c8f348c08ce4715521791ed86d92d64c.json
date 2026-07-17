@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Secrets — Opaque Secrets",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/secret/#opaque-secrets",
-  "text": "Opaque\nis the default Secret type if you don't explicitly specify a type in\na Secret manifest. When you create a Secret using\nkubectl\n, you must use the\ngeneric\nsubcommand to indicate an\nOpaque\nSecret type. For example, the\nfollowing command creates an empty Secret of type\nOpaque\n:\nkubectl create secret generic empty-secret\nkubectl get secret empty-secret\nThe output looks like:\nNAME           TYPE     DATA   AGE\nempty-secret   Opaque   0      2m6s\nThe\nDATA\ncolumn shows the number of data items stored in the Secret.\nIn this case,\n0\nmeans you have created an empty Secret."
+  "text": "Opaque\nis the default Secret type if you don't explicitly specify a type in\na Secret manifest. When you create a Secret using\nkubectl\n, you must use the\ngeneric\nsubcommand to indicate an\nOpaque\nSecret type. For example, the\nfollowing command creates an empty Secret of type\nOpaque\n:\nkubectl create secret generic empty-secret\nkubectl get secret empty-secret\nThe output looks like:\nNAME           TYPE     DATA   AGE\nempty-secret   Opaque   0      2m6s\nThe\nDATA\ncolumn shows the number of data items stored in the Secret.\nIn this case,\n0\nmeans you have created an empty Secret.",
+  "failure_classes": []
 }

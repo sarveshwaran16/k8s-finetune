@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubectl user preferences (kuberc) — Disable kuberc",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kuberc/#disable-kuberc",
-  "text": "To temporarily disable the\nkuberc\nfunctionality, set (and export) the environment\nvariable\nKUBERC\nwith the value\noff\n:\nexport\nKUBERC\n=\noff\nor disable the feature gate:\nexport\nKUBECTL_KUBERC\n=\nfalse\nThis might be useful for troubleshooting whether your\nkuberc\nis causing a problem.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "To temporarily disable the\nkuberc\nfunctionality, set (and export) the environment\nvariable\nKUBERC\nwith the value\noff\n:\nexport\nKUBERC\n=\noff\nor disable the feature gate:\nexport\nKUBECTL_KUBERC\n=\nfalse\nThis might be useful for troubleshooting whether your\nkuberc\nis causing a problem.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

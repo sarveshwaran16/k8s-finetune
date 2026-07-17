@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Creating a cluster with kubeadm — Feedback",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#feedback",
-  "text": "For bugs, visit the\nkubeadm GitHub issue tracker\nFor support, visit the\n#kubeadm\nSlack channel\nGeneral SIG Cluster Lifecycle development Slack channel:\n#sig-cluster-lifecycle\nSIG Cluster Lifecycle\nSIG information\nSIG Cluster Lifecycle mailing list:\nkubernetes-sig-cluster-lifecycle\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "For bugs, visit the\nkubeadm GitHub issue tracker\nFor support, visit the\n#kubeadm\nSlack channel\nGeneral SIG Cluster Lifecycle development Slack channel:\n#sig-cluster-lifecycle\nSIG Cluster Lifecycle\nSIG information\nSIG Cluster Lifecycle mailing list:\nkubernetes-sig-cluster-lifecycle\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

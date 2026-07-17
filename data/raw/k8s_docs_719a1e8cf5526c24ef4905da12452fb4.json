@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Options",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_config/kubeadm_config_validate/#options",
-  "text": "--allow-deprecated-api\nAllow validation of deprecated APIs.\n--allow-experimental-api\nAllow validation of experimental, unreleased APIs.\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for validate\nAllow validation of deprecated APIs.\nAllow validation of experimental, unreleased APIs.\nPath to a kubeadm configuration file.\nhelp for validate"
+  "text": "--allow-deprecated-api\nAllow validation of deprecated APIs.\n--allow-experimental-api\nAllow validation of experimental, unreleased APIs.\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for validate\nAllow validation of deprecated APIs.\nAllow validation of experimental, unreleased APIs.\nPath to a kubeadm configuration file.\nhelp for validate",
+  "failure_classes": []
 }

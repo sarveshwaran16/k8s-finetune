@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Aggregation Layer",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/",
-  "text": "The aggregation layer allows Kubernetes to be extended with additional APIs, beyond what is\noffered by the core Kubernetes APIs.\nThe additional APIs can either be ready-made solutions such as a\nmetrics server\n, or APIs that you develop yourself.\nThe aggregation layer is different from\nCustom Resource Definitions\n,\nwhich are a way to make the\nkube-apiserver\nrecognise new kinds of object."
+  "text": "The aggregation layer allows Kubernetes to be extended with additional APIs, beyond what is\noffered by the core Kubernetes APIs.\nThe additional APIs can either be ready-made solutions such as a\nmetrics server\n, or APIs that you develop yourself.\nThe aggregation layer is different from\nCustom Resource Definitions\n,\nwhich are a way to make the\nkube-apiserver\nrecognise new kinds of object.",
+  "failure_classes": []
 }

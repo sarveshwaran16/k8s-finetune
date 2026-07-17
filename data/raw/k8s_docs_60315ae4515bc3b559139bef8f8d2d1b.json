@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Learn Kubernetes Basics — Objectives",
   "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/#objectives",
-  "text": "This tutorial provides a walkthrough of the basics of the Kubernetes cluster orchestration\nsystem. Each module contains some background information on major Kubernetes features\nand concepts, and a tutorial for you to follow along.\nUsing the tutorials, you can learn to:\nDeploy a containerized application on a cluster.\nScale the deployment.\nUpdate the containerized application with a new software version.\nDebug the containerized application."
+  "text": "This tutorial provides a walkthrough of the basics of the Kubernetes cluster orchestration\nsystem. Each module contains some background information on major Kubernetes features\nand concepts, and a tutorial for you to follow along.\nUsing the tutorials, you can learn to:\nDeploy a containerized application on a cluster.\nScale the deployment.\nUpdate the containerized application with a new software version.\nDebug the containerized application.",
+  "failure_classes": []
 }

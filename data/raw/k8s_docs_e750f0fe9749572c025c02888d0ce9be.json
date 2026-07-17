@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Protocols for Services",
   "source_url": "https://kubernetes.io/docs/reference/networking/service-protocols/",
-  "text": "If you configure a\nService\n,\nyou can select from any network protocol that Kubernetes supports.\nKubernetes supports the following protocols with Services:\nSCTP\nTCP\n(the default)\nUDP\nWhen you define a Service, you can also specify the\napplication protocol\nthat it uses.\nThis document details some special cases, all of them typically using TCP\nas a transport protocol:\nHTTP\nand\nHTTPS\nPROXY protocol\nTLS\ntermination at the load balancer"
+  "text": "If you configure a\nService\n,\nyou can select from any network protocol that Kubernetes supports.\nKubernetes supports the following protocols with Services:\nSCTP\nTCP\n(the default)\nUDP\nWhen you define a Service, you can also specify the\napplication protocol\nthat it uses.\nThis document details some special cases, all of them typically using TCP\nas a transport protocol:\nHTTP\nand\nHTTPS\nPROXY protocol\nTLS\ntermination at the load balancer",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Accessing the Kubernetes API from a Pod — Using kubectl proxy",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/access-api-from-pod/#using-kubectl-proxy",
-  "text": "If you would like to query the API without an official client library, you can run\nkubectl proxy\nas the\ncommand\nof a new sidecar container in the Pod. This way,\nkubectl proxy\nwill authenticate\nto the API and expose it on the\nlocalhost\ninterface of the Pod, so that other containers\nin the Pod can use it directly."
+  "text": "If you would like to query the API without an official client library, you can run\nkubectl proxy\nas the\ncommand\nof a new sidecar container in the Pod. This way,\nkubectl proxy\nwill authenticate\nto the API and expose it on the\nlocalhost\ninterface of the Pod, so that other containers\nin the Pod can use it directly.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Garbage Collection — Configuring garbage collection",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/garbage-collection/#configuring-gc",
-  "text": "You can tune garbage collection of resources by configuring options specific to\nthe controllers managing those resources. The following pages show you how to\nconfigure garbage collection:\nConfiguring cascading deletion of Kubernetes objects\nConfiguring cleanup of finished Jobs\n\nLearn more about\nownership of Kubernetes objects\n.\nLearn more about Kubernetes\nfinalizers\n.\nLearn about the\nTTL controller\nthat cleans up finished Jobs."
+  "text": "You can tune garbage collection of resources by configuring options specific to\nthe controllers managing those resources. The following pages show you how to\nconfigure garbage collection:\nConfiguring cascading deletion of Kubernetes objects\nConfiguring cleanup of finished Jobs\n\nLearn more about\nownership of Kubernetes objects\n.\nLearn more about Kubernetes\nfinalizers\n.\nLearn about the\nTTL controller\nthat cleans up finished Jobs.",
+  "failure_classes": []
 }

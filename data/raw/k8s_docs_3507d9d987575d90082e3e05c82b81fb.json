@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debug Pods",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/",
-  "text": "This guide is to help users debug applications that are deployed into Kubernetes\nand not behaving correctly. This is\nnot\na guide for people who want to debug their cluster.\nFor that you should check out\nthis guide\n.\n\nThe first step in troubleshooting is triage. What is the problem?\nIs it your Pods, your Replication Controller or your Service?\nDebugging Pods\nDebugging Replication Controllers\nDebugging Services"
+  "text": "This guide is to help users debug applications that are deployed into Kubernetes\nand not behaving correctly. This is\nnot\na guide for people who want to debug their cluster.\nFor that you should check out\nthis guide\n.\n\nThe first step in troubleshooting is triage. What is the problem?\nIs it your Pods, your Replication Controller or your Service?\nDebugging Pods\nDebugging Replication Controllers\nDebugging Services",
+  "failure_classes": []
 }

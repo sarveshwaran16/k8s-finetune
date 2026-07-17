@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "StatefulSets — Pod Selector",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#pod-selector",
-  "text": "You must set the\n.spec.selector\nfield of a StatefulSet to match the labels of its\n.spec.template.metadata.labels\n. Failing to specify a matching Pod Selector will result in a\nvalidation error during StatefulSet creation.\n\nYou can set the\n.spec.volumeClaimTemplates\nfield to create a\nPersistentVolumeClaim\n.\nThis will provide stable storage to the StatefulSet if either:\nThe StorageClass specified for the volume claim is set up to use\ndynamic\nprovisioning\n.\nThe cluster already contains a PersistentVolume with the correct StorageClass\nand sufficient available storage space."
+  "text": "You must set the\n.spec.selector\nfield of a StatefulSet to match the labels of its\n.spec.template.metadata.labels\n. Failing to specify a matching Pod Selector will result in a\nvalidation error during StatefulSet creation.\n\nYou can set the\n.spec.volumeClaimTemplates\nfield to create a\nPersistentVolumeClaim\n.\nThis will provide stable storage to the StatefulSet if either:\nThe StorageClass specified for the volume claim is set up to use\ndynamic\nprovisioning\n.\nThe cluster already contains a PersistentVolume with the correct StorageClass\nand sufficient available storage space.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Controllers — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/controller/#what-s-next",
-  "text": "Read about the\nKubernetes control plane\nDiscover some of the basic\nKubernetes objects\nLearn more about the\nKubernetes API\nIf you want to write your own controller, see\nKubernetes extension patterns\nand the\nsample-controller\nrepository.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Read about the\nKubernetes control plane\nDiscover some of the basic\nKubernetes objects\nLearn more about the\nKubernetes API\nIf you want to write your own controller, see\nKubernetes extension patterns\nand the\nsample-controller\nrepository.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Topology Aware Routing — Enabling Topology Aware Routing",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/topology-aware-routing/#enabling-topology-aware-routing",
-  "text": "You can enable Topology Aware Routing for a Service by setting the\nservice.kubernetes.io/topology-mode\nannotation to\nAuto\n. When there are\nenough endpoints available in each zone, Topology Hints will be populated on\nEndpointSlices to allocate individual endpoints to specific zones, resulting in\ntraffic being routed closer to where it originated from."
+  "text": "You can enable Topology Aware Routing for a Service by setting the\nservice.kubernetes.io/topology-mode\nannotation to\nAuto\n. When there are\nenough endpoints available in each zone, Topology Hints will be populated on\nEndpointSlices to allocate individual endpoints to specific zones, resulting in\ntraffic being routed closer to where it originated from.",
+  "failure_classes": []
 }

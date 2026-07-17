@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Adopting Sidecar Containers",
   "source_url": "https://kubernetes.io/docs/tutorials/configuration/pod-sidecar-containers/",
-  "text": "This section is relevant for people adopting a new built-in\nsidecar containers\nfeature for their workloads.\nSidecar container is not a new concept as posted in the\nblog post\n.\nKubernetes allows running multiple containers in a Pod to implement this concept.\nHowever, running a sidecar container as a regular container\nhas a lot of limitations being fixed with the new built-in sidecar containers support."
+  "text": "This section is relevant for people adopting a new built-in\nsidecar containers\nfeature for their workloads.\nSidecar container is not a new concept as posted in the\nblog post\n.\nKubernetes allows running multiple containers in a Pod to implement this concept.\nHowever, running a sidecar container as a regular container\nhas a lot of limitations being fixed with the new built-in sidecar containers support.",
+  "failure_classes": []
 }

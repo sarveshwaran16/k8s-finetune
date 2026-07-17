@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_token/kubeadm_token_delete/",
-  "text": "Delete bootstrap tokens on the server\n\nThis command will delete a list of bootstrap tokens for you.\nThe [token-value] is the full Token of the form \"[a-z0-9]{6}.[a-z0-9]{16}\" or the\nToken ID of the form \"[a-z0-9]{6}\" to delete.\nkubeadm token delete [token-value] ...\n\n-h, --help\nhelp for delete\nhelp for delete"
+  "text": "Delete bootstrap tokens on the server\n\nThis command will delete a list of bootstrap tokens for you.\nThe [token-value] is the full Token of the form \"[a-z0-9]{6}.[a-z0-9]{16}\" or the\nToken ID of the form \"[a-z0-9]{6}\" to delete.\nkubeadm token delete [token-value] ...\n\n-h, --help\nhelp for delete\nhelp for delete",
+  "failure_classes": []
 }

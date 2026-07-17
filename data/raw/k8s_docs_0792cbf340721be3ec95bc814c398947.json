@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Field Selectors — List of supported fields",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/#list-of-supported-fields",
-  "text": "Kind\nFields\nPod\nspec.nodeName\nspec.restartPolicy\nspec.schedulerName\nspec.serviceAccountName\nspec.hostNetwork\nstatus.phase\nstatus.podIP\nstatus.podIPs\nstatus.nominatedNodeName\nEvent\ninvolvedObject.kind\ninvolvedObject.namespace\ninvolvedObject.name\ninvolvedObject.uid\ninvolvedObject.apiVersion\ninvolvedObject.resourceVersion\ninvolvedObject.fieldPath\nreason\nreportingComponent\nsource\ntype\nSecret\ntype\nService\nspec.clusterIP\nspec.type\nNamespace\nstatus.phase\nReplicaSet\nstatus.replicas\nReplicationController\nstatus.replicas\nJob\nstatus.successful\nNode\nspec.unschedulable\nCertificateSigningRequest\nspec.signerName"
+  "text": "Kind\nFields\nPod\nspec.nodeName\nspec.restartPolicy\nspec.schedulerName\nspec.serviceAccountName\nspec.hostNetwork\nstatus.phase\nstatus.podIP\nstatus.podIPs\nstatus.nominatedNodeName\nEvent\ninvolvedObject.kind\ninvolvedObject.namespace\ninvolvedObject.name\ninvolvedObject.uid\ninvolvedObject.apiVersion\ninvolvedObject.resourceVersion\ninvolvedObject.fieldPath\nreason\nreportingComponent\nsource\ntype\nSecret\ntype\nService\nspec.clusterIP\nspec.type\nNamespace\nstatus.phase\nReplicaSet\nstatus.replicas\nReplicationController\nstatus.replicas\nJob\nstatus.successful\nNode\nspec.unschedulable\nCertificateSigningRequest\nspec.signerName",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "RBAC"
+  ]
 }

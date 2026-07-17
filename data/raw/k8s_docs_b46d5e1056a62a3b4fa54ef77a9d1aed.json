@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Advanced Pod Configuration — Defining a PriorityClass",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#defining-a-priorityclass",
-  "text": "apiVersion\n:\nscheduling.k8s.io/v1\nkind\n:\nPriorityClass\nmetadata\n:\nname\n:\nhigh-priority\nvalue\n:\n10000\nglobalDefault\n:\nfalse\ndescription\n:\n\"Priority class for high-priority workloads\"\n\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nnginx\nspec\n:\ncontainers\n:\n-\nname\n:\nnginx\nimage\n:\nnginx\npriorityClassName\n:\nhigh-priority"
+  "text": "apiVersion\n:\nscheduling.k8s.io/v1\nkind\n:\nPriorityClass\nmetadata\n:\nname\n:\nhigh-priority\nvalue\n:\n10000\nglobalDefault\n:\nfalse\ndescription\n:\n\"Priority class for high-priority workloads\"\n\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nnginx\nspec\n:\ncontainers\n:\n-\nname\n:\nnginx\nimage\n:\nnginx\npriorityClassName\n:\nhigh-priority",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Nodes — Node name uniqueness",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/nodes/#node-name-uniqueness",
-  "text": "The\nname\nidentifies a Node. Two Nodes\ncannot have the same name at the same time. Kubernetes also assumes that a resource with the same\nname is the same object. In the case of a Node, it is implicitly assumed that an instance using the\nsame name will have the same state (e.g. network settings, root disk contents) and attributes like\nnode labels. This may lead to inconsistencies if an instance was modified without changing its name.\nIf the Node needs to be replaced or updated significantly, the existing Node object needs to be\nremoved from API server first and re-added after the update."
+  "text": "The\nname\nidentifies a Node. Two Nodes\ncannot have the same name at the same time. Kubernetes also assumes that a resource with the same\nname is the same object. In the case of a Node, it is implicitly assumed that an instance using the\nsame name will have the same state (e.g. network settings, root disk contents) and attributes like\nnode labels. This may lead to inconsistencies if an instance was modified without changing its name.\nIf the Node needs to be replaced or updated significantly, the existing Node object needs to be\nremoved from API server first and re-added after the update.",
+  "failure_classes": []
 }

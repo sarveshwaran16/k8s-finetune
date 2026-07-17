@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — pod-security.kubernetes.io/enforce",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#pod-security-kubernetes-io-enforce",
-  "text": "Type: Label\nExample:\npod-security.kubernetes.io/enforce: \"baseline\"\nUsed on: Namespace\nValue\nmust\nbe one of\nprivileged\n,\nbaseline\n, or\nrestricted\nwhich correspond to\nPod Security Standard\nlevels.\nSpecifically, the\nenforce\nlabel\nprohibits\nthe creation of any Pod in the labeled\nNamespace which does not meet the requirements outlined in the indicated level.\nSee\nEnforcing Pod Security at the Namespace Level\nfor more information."
+  "text": "Type: Label\nExample:\npod-security.kubernetes.io/enforce: \"baseline\"\nUsed on: Namespace\nValue\nmust\nbe one of\nprivileged\n,\nbaseline\n, or\nrestricted\nwhich correspond to\nPod Security Standard\nlevels.\nSpecifically, the\nenforce\nlabel\nprohibits\nthe creation of any Pod in the labeled\nNamespace which does not meet the requirements outlined in the indicated level.\nSee\nEnforcing Pod Security at the Namespace Level\nfor more information.",
+  "failure_classes": []
 }

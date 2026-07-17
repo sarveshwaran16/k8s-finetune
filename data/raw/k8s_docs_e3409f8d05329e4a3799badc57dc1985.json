@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/service-account.name",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-service-account-name",
-  "text": "Type: Annotation\nExample:\nkubernetes.io/service-account.name: \"sa-name\"\nUsed on: Secret\nThis annotation records the\nname\nof the\nServiceAccount that the token (stored in the Secret of type\nkubernetes.io/service-account-token\n)\nrepresents.\n\nType: Annotation\nExample:\nkubernetes.io/service-account.uid: da68f9c6-9d26-11e7-b84e-002dc52800da\nUsed on: Secret\nThis annotation records the\nunique ID\nof the\nServiceAccount that the token (stored in the Secret of type\nkubernetes.io/service-account-token\n)\nrepresents."
+  "text": "Type: Annotation\nExample:\nkubernetes.io/service-account.name: \"sa-name\"\nUsed on: Secret\nThis annotation records the\nname\nof the\nServiceAccount that the token (stored in the Secret of type\nkubernetes.io/service-account-token\n)\nrepresents.\n\nType: Annotation\nExample:\nkubernetes.io/service-account.uid: da68f9c6-9d26-11e7-b84e-002dc52800da\nUsed on: Secret\nThis annotation records the\nunique ID\nof the\nServiceAccount that the token (stored in the Secret of type\nkubernetes.io/service-account-token\n)\nrepresents.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

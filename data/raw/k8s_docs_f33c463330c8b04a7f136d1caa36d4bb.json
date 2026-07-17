@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Communication between Nodes and the Control Plane — Control plane to node",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/control-plane-node-communication/#control-plane-to-node",
-  "text": "There are two primary communication paths from the control plane (the API server) to the nodes.\nThe first is from the API server to the\nkubelet\nprocess which runs on each node in the cluster.\nThe second is from the API server to any node, pod, or service through the API server's\nproxy\nfunctionality."
+  "text": "There are two primary communication paths from the control plane (the API server) to the nodes.\nThe first is from the API server to the\nkubelet\nprocess which runs on each node in the cluster.\nThe second is from the API server to any node, pod, or service through the API server's\nproxy\nfunctionality.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

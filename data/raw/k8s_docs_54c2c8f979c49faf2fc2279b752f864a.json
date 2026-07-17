@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "CronJob — Example",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#example",
-  "text": "This example CronJob manifest prints the current time and a hello message every minute:\napiVersion\n:\nbatch/v1\nkind\n:\nCronJob\nmetadata\n:\nname\n:\nhello\nspec\n:\nschedule\n:\n\"* * * * *\"\njobTemplate\n:\nspec\n:\ntemplate\n:\nspec\n:\ncontainers\n:\n-\nname\n:\nhello\nimage\n:\nbusybox:1.28\nimagePullPolicy\n:\nIfNotPresent\ncommand\n:\n-\n/bin/sh\n- -\nc\n-\ndate; echo Hello from the Kubernetes cluster\nrestartPolicy\n:\nOnFailure\n(\nRunning Automated Tasks with a CronJob\ntakes you through this example in more detail)."
+  "text": "This example CronJob manifest prints the current time and a hello message every minute:\napiVersion\n:\nbatch/v1\nkind\n:\nCronJob\nmetadata\n:\nname\n:\nhello\nspec\n:\nschedule\n:\n\"* * * * *\"\njobTemplate\n:\nspec\n:\ntemplate\n:\nspec\n:\ncontainers\n:\n-\nname\n:\nhello\nimage\n:\nbusybox:1.28\nimagePullPolicy\n:\nIfNotPresent\ncommand\n:\n-\n/bin/sh\n- -\nc\n-\ndate; echo Hello from the Kubernetes cluster\nrestartPolicy\n:\nOnFailure\n(\nRunning Automated Tasks with a CronJob\ntakes you through this example in more detail).",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

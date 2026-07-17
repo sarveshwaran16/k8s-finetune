@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extend Service IP Ranges — Kubernetes Service CIDR Policies",
   "source_url": "https://kubernetes.io/docs/tasks/network/extend-service-ip-ranges/#kubernetes-service-cidr-policies",
-  "text": "Cluster administrators can implement policies to control the creation and\nmodification of ServiceCIDR resources within the cluster. This allows for\ncentralized management of the IP address ranges used for Services and helps\nprevent unintended or conflicting configurations. Kubernetes provides mechanisms\nlike Validating Admission Policies to enforce these rules."
+  "text": "Cluster administrators can implement policies to control the creation and\nmodification of ServiceCIDR resources within the cluster. This allows for\ncentralized management of the IP address ranges used for Services and helps\nprevent unintended or conflicting configurations. Kubernetes provides mechanisms\nlike Validating Admission Policies to enforce these rules.",
+  "failure_classes": []
 }

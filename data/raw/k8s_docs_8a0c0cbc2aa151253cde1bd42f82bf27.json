@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Deploy and Access the Kubernetes Dashboard — Deploying the Dashboard UI",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#deploying-the-dashboard-ui",
-  "text": "The Dashboard UI is not deployed by default. To deploy it, run the following command:\n# Add kubernetes-dashboard repository\nhelm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/\n# Deploy a Helm Release named \"kubernetes-dashboard\" using the kubernetes-dashboard chart\nhelm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard --create-namespace --namespace kubernetes-dashboard"
+  "text": "The Dashboard UI is not deployed by default. To deploy it, run the following command:\n# Add kubernetes-dashboard repository\nhelm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/\n# Deploy a Helm Release named \"kubernetes-dashboard\" using the kubernetes-dashboard chart\nhelm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard --create-namespace --namespace kubernetes-dashboard",
+  "failure_classes": []
 }

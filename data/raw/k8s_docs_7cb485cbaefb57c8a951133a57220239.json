@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — pv.kubernetes.io/bound-by-controller",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#pv-kubernetesioboundby-controller",
-  "text": "Type: Annotation\nExample:\npv.kubernetes.io/bound-by-controller: \"yes\"\nUsed on: PersistentVolume, PersistentVolumeClaim\nIf this annotation is set on a PersistentVolume or PersistentVolumeClaim, it indicates that a\nstorage binding (PersistentVolume → PersistentVolumeClaim, or PersistentVolumeClaim → PersistentVolume)\nwas installed by the\ncontroller\n.\nIf the annotation isn't set, and there is a storage binding in place, the absence of that\nannotation means that the binding was done manually.\nThe value of this annotation does not matter."
+  "text": "Type: Annotation\nExample:\npv.kubernetes.io/bound-by-controller: \"yes\"\nUsed on: PersistentVolume, PersistentVolumeClaim\nIf this annotation is set on a PersistentVolume or PersistentVolumeClaim, it indicates that a\nstorage binding (PersistentVolume → PersistentVolumeClaim, or PersistentVolumeClaim → PersistentVolume)\nwas installed by the\ncontroller\n.\nIf the annotation isn't set, and there is a storage binding in place, the absence of that\nannotation means that the binding was done manually.\nThe value of this annotation does not matter.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

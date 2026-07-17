@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Server Bypass Risks",
   "source_url": "https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/",
-  "text": "The Kubernetes API server is the main point of entry to a cluster for external parties\n(users and services) interacting with it.\nAs part of this role, the API server has several key built-in security controls, such as\naudit logging and\nadmission controllers\n.\nHowever, there are ways to modify the configuration\nor content of the cluster that bypass these controls.\nThis page describes the ways in which the security controls built into the\nKubernetes API server can be bypassed, so that cluster operators\nand security architects can ensure that these bypasses are appropriately restricted."
+  "text": "The Kubernetes API server is the main point of entry to a cluster for external parties\n(users and services) interacting with it.\nAs part of this role, the API server has several key built-in security controls, such as\naudit logging and\nadmission controllers\n.\nHowever, there are ways to modify the configuration\nor content of the cluster that bypass these controls.\nThis page describes the ways in which the security controls built into the\nKubernetes API server can be bypassed, so that cluster operators\nand security architects can ensure that these bypasses are appropriately restricted.",
+  "failure_classes": []
 }

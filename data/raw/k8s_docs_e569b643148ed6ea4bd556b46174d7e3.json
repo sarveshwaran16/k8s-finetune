@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl describe — Examples",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_describe/#examples",
-  "text": "# Describe a node\n  kubectl describe nodes kubernetes-node-emt8.c.myproject.internal\n  \n  # Describe a pod\n  kubectl describe pods/nginx\n  \n  # Describe a pod identified by type and name in \"pod.json\"\n  kubectl describe -f pod.json\n  \n  # Describe all pods\n  kubectl describe pods\n  \n  # Describe pods by label name=myLabel\n  kubectl describe pods -l name=myLabel\n  \n  # Describe all pods managed by the 'frontend' replication controller\n  # (rc-created pods get the name of the rc as a prefix in the pod name)\n  kubectl describe pods frontend"
+  "text": "# Describe a node\n  kubectl describe nodes kubernetes-node-emt8.c.myproject.internal\n  \n  # Describe a pod\n  kubectl describe pods/nginx\n  \n  # Describe a pod identified by type and name in \"pod.json\"\n  kubectl describe -f pod.json\n  \n  # Describe all pods\n  kubectl describe pods\n  \n  # Describe pods by label name=myLabel\n  kubectl describe pods -l name=myLabel\n  \n  # Describe all pods managed by the 'frontend' replication controller\n  # (rc-created pods get the name of the rc as a prefix in the pod name)\n  kubectl describe pods frontend",
+  "failure_classes": []
 }

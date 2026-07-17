@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Run a Single-Instance Stateful Application — Deleting a deployment",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/#deleting-a-deployment",
-  "text": "Delete the deployed objects by name:\nkubectl delete deployment,svc mysql\nkubectl delete pvc mysql-pv-claim\nkubectl delete pv mysql-pv-volume\nIf you manually provisioned a PersistentVolume, you also need to manually\ndelete it, as well as release the underlying resource.\nIf you used a dynamic provisioner, it automatically deletes the\nPersistentVolume when it sees that you deleted the PersistentVolumeClaim.\nSome dynamic provisioners (such as those for EBS and PD) also release the\nunderlying resource upon deleting the PersistentVolume."
+  "text": "Delete the deployed objects by name:\nkubectl delete deployment,svc mysql\nkubectl delete pvc mysql-pv-claim\nkubectl delete pv mysql-pv-volume\nIf you manually provisioned a PersistentVolume, you also need to manually\ndelete it, as well as release the underlying resource.\nIf you used a dynamic provisioner, it automatically deletes the\nPersistentVolume when it sees that you deleted the PersistentVolumeClaim.\nSome dynamic provisioners (such as those for EBS and PD) also release the\nunderlying resource upon deleting the PersistentVolume.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

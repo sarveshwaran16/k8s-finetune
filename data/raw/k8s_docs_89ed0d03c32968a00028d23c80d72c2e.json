@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Advanced Pod Configuration — Container-level security context",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#container-level-security-context",
-  "text": "You can specify the security context just for a specific container.\nHere's an example:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nsecurity-context-demo-2\nspec\n:\ncontainers\n:\n-\nname\n:\nsec-ctx-demo-2\nimage\n:\ngcr.io/google-samples/node-hello:1.0\nsecurityContext\n:\nallowPrivilegeEscalation\n:\nfalse\nrunAsNonRoot\n:\ntrue\nrunAsUser\n:\n1000\ncapabilities\n:\ndrop\n:\n-\nALL\nseccompProfile\n:\ntype\n:\nRuntimeDefault"
+  "text": "You can specify the security context just for a specific container.\nHere's an example:\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nsecurity-context-demo-2\nspec\n:\ncontainers\n:\n-\nname\n:\nsec-ctx-demo-2\nimage\n:\ngcr.io/google-samples/node-hello:1.0\nsecurityContext\n:\nallowPrivilegeEscalation\n:\nfalse\nrunAsNonRoot\n:\ntrue\nrunAsUser\n:\n1000\ncapabilities\n:\ndrop\n:\n-\nALL\nseccompProfile\n:\ntype\n:\nRuntimeDefault",
+  "failure_classes": []
 }

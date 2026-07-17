@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Running Kubelet in Standalone Mode — Swap configuration",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#swap-configuration",
-  "text": "By default, kubelet fails to start if swap memory is detected on a node.\nThis means that swap should either be disabled or tolerated by kubelet.\nIf you have swap memory enabled, either disable it or add\nfailSwapOn: false\nto the\nkubelet configuration file.\nTo check if swap is enabled:\nsudo swapon --show\nIf there is no output from the command, then swap memory is already disabled.\nTo disable swap temporarily:\nsudo swapoff -a\nTo make this change persistent across reboots:\nMake sure swap is disabled in either\n/etc/fstab\nor\nsystemd.swap\n, depending on how it was\nconfigured on your system."
+  "text": "By default, kubelet fails to start if swap memory is detected on a node.\nThis means that swap should either be disabled or tolerated by kubelet.\nIf you have swap memory enabled, either disable it or add\nfailSwapOn: false\nto the\nkubelet configuration file.\nTo check if swap is enabled:\nsudo swapon --show\nIf there is no output from the command, then swap memory is already disabled.\nTo disable swap temporarily:\nsudo swapoff -a\nTo make this change persistent across reboots:\nMake sure swap is disabled in either\n/etc/fstab\nor\nsystemd.swap\n, depending on how it was\nconfigured on your system.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PodGroup Scheduling — Placement scheduling algorithm",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/podgroup-scheduling/#placement-scheduling-algorithm",
-  "text": "Placement scheduling algorithm is an alternative PodGroup scheduling algorithm, which uses\nscheduling plugins\nto find the optimal\nplacement for the considered PodGroup. Users can accommodate the algorithm to their specific needs\nby using and configuring plugins.\nThe algorithm proceeds in three main phases for a given PodGroup:"
+  "text": "Placement scheduling algorithm is an alternative PodGroup scheduling algorithm, which uses\nscheduling plugins\nto find the optimal\nplacement for the considered PodGroup. Users can accommodate the algorithm to their specific needs\nby using and configuring plugins.\nThe algorithm proceeds in three main phases for a given PodGroup:",
+  "failure_classes": []
 }

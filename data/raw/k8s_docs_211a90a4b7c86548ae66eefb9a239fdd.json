@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Declare Network Policy — Assign the policy to the service",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/#assign-the-policy-to-the-service",
-  "text": "Use kubectl to create a NetworkPolicy from the above\nnginx-policy.yaml\nfile:\nkubectl apply -f https://k8s.io/examples/service/networking/nginx-policy.yaml\nnetworkpolicy.networking.k8s.io/access-nginx created\n\nWhen you attempt to access the\nnginx\nService from a Pod without the correct labels, the request times out:\nkubectl run busybox --rm -ti --image=busybox -- /bin/sh\nIn your shell, run the command:\nwget --spider --timeout\n=\n1\nnginx\nConnecting to nginx (10.100.0.16:80)\nwget: download timed out"
+  "text": "Use kubectl to create a NetworkPolicy from the above\nnginx-policy.yaml\nfile:\nkubectl apply -f https://k8s.io/examples/service/networking/nginx-policy.yaml\nnetworkpolicy.networking.k8s.io/access-nginx created\n\nWhen you attempt to access the\nnginx\nService from a Pod without the correct labels, the request times out:\nkubectl run busybox --rm -ti --image=busybox -- /bin/sh\nIn your shell, run the command:\nwget --spider --timeout\n=\n1\nnginx\nConnecting to nginx (10.100.0.16:80)\nwget: download timed out",
+  "failure_classes": []
 }

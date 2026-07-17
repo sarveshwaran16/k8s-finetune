@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Hostname",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-hostname/",
-  "text": "This page explains how to set a Pod's hostname,\npotential side effects after configuration, and the underlying mechanics.\n\nWhen a Pod is created, its hostname (as observed from within the Pod)\nis derived from the Pod's metadata.name value.\nBoth the hostname and its corresponding fully qualified domain name (FQDN)\nare set to the metadata.name value (from the Pod's perspective)\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nbusybox-1\nspec\n:\ncontainers\n:\n-\nimage\n:\nbusybox:1.28\ncommand\n:\n-\nsleep\n-\n\"3600\"\nname\n:\nbusybox\nThe Pod created by this manifest will have its hostname and fully qualified domain name (FQDN) set to\nbusybox-1\n."
+  "text": "This page explains how to set a Pod's hostname,\npotential side effects after configuration, and the underlying mechanics.\n\nWhen a Pod is created, its hostname (as observed from within the Pod)\nis derived from the Pod's metadata.name value.\nBoth the hostname and its corresponding fully qualified domain name (FQDN)\nare set to the metadata.name value (from the Pod's perspective)\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nbusybox-1\nspec\n:\ncontainers\n:\n-\nimage\n:\nbusybox:1.28\ncommand\n:\n-\nsleep\n-\n\"3600\"\nname\n:\nbusybox\nThe Pod created by this manifest will have its hostname and fully qualified domain name (FQDN) set to\nbusybox-1\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Schedule GPUs — Manage clusters with different types of GPUs",
   "source_url": "https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/#manage-clusters-with-different-types-of-gpus",
-  "text": "If different nodes in your cluster have different types of GPUs, then you\ncan use\nNode Labels and Node Selectors\nto schedule pods to appropriate nodes.\nFor example:\n# Label your nodes with the accelerator type they have.\nkubectl label nodes node1\naccelerator\n=\nexample-gpu-x100\nkubectl label nodes node2\naccelerator\n=\nother-gpu-k915\nThat label key\naccelerator\nis just an example; you can use\na different label key if you prefer."
+  "text": "If different nodes in your cluster have different types of GPUs, then you\ncan use\nNode Labels and Node Selectors\nto schedule pods to appropriate nodes.\nFor example:\n# Label your nodes with the accelerator type they have.\nkubectl label nodes node1\naccelerator\n=\nexample-gpu-x100\nkubectl label nodes node2\naccelerator\n=\nother-gpu-k915\nThat label key\naccelerator\nis just an example; you can use\na different label key if you prefer.",
+  "failure_classes": []
 }

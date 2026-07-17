@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-controller-manager Configuration (v1alpha1) — CloudProviderConfiguration",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#cloudcontrollermanager-config-k8s-io-v1alpha1-CloudProviderConfiguration",
-  "text": "Appears in:\nKubeCloudSharedConfiguration\nCloudProviderConfiguration contains basically elements about cloud provider.\nField\nDescription\nName\n[Required]\nstring\nName is the provider for cloud services.\nCloudConfigFile\n[Required]\nstring\ncloudConfigFile is the path to the cloud provider configuration file.\nName is the provider for cloud services.\ncloudConfigFile is the path to the cloud provider configuration file."
+  "text": "Appears in:\nKubeCloudSharedConfiguration\nCloudProviderConfiguration contains basically elements about cloud provider.\nField\nDescription\nName\n[Required]\nstring\nName is the provider for cloud services.\nCloudConfigFile\n[Required]\nstring\ncloudConfigFile is the path to the cloud provider configuration file.\nName is the provider for cloud services.\ncloudConfigFile is the path to the cloud provider configuration file.",
+  "failure_classes": []
 }

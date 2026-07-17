@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dynamic Admission Control — Best practices and warnings",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#best-practices-and-warnings",
-  "text": "For recommendations and considerations when writing mutating admission webhooks,\nsee\nAdmission Webhooks Good Practices\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "For recommendations and considerations when writing mutating admission webhooks,\nsee\nAdmission Webhooks Good Practices\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

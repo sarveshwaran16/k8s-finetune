@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Role Based Access Control Good Practices — Listing secrets",
   "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#listing-secrets",
-  "text": "It is generally clear that allowing\nget\naccess on Secrets will allow a user to read their contents.\nIt is also important to note that\nlist\nand\nwatch\naccess also effectively allow for users to reveal the Secret contents.\nFor example, when a List response is returned (for example, via\nkubectl get secrets -A -o yaml\n), the response\nincludes the contents of all Secrets."
+  "text": "It is generally clear that allowing\nget\naccess on Secrets will allow a user to read their contents.\nIt is also important to note that\nlist\nand\nwatch\naccess also effectively allow for users to reveal the Secret contents.\nFor example, when a List response is returned (for example, via\nkubectl get secrets -A -o yaml\n), the response\nincludes the contents of all Secrets.",
+  "failure_classes": []
 }

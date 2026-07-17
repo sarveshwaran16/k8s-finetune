@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Restrict a Container's Syscalls with seccomp — Objectives",
   "source_url": "https://kubernetes.io/docs/tutorials/security/seccomp/#objectives",
-  "text": "Learn how to load seccomp profiles on a node\nLearn how to apply a seccomp profile to a container\nObserve auditing of syscalls made by a container process\nObserve behavior when a missing profile is specified\nObserve a violation of a seccomp profile\nLearn how to create fine-grained seccomp profiles\nLearn how to apply a container runtime default seccomp profile"
+  "text": "Learn how to load seccomp profiles on a node\nLearn how to apply a seccomp profile to a container\nObserve auditing of syscalls made by a container process\nObserve behavior when a missing profile is specified\nObserve a violation of a seccomp profile\nLearn how to create fine-grained seccomp profiles\nLearn how to apply a container runtime default seccomp profile",
+  "failure_classes": []
 }

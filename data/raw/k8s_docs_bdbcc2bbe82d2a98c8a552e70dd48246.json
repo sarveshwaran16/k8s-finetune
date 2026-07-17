@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Node-specific Volume Limits — Preventing Pod placement without CSI driver",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-limits/#preventing-pod-placement-without-csi-driver",
-  "text": "If\nVolumeLimitScaling\nfeature gate\nis enabled and a CSI driver has corresponding\nCSIDriver\nobject installed with\nspec.preventPodSchedulingIfMissing\nset to true then scheduler will prevent pod placement to nodes that do not yet have CSI driver installed. For example:\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nCSIDriver\nmetadata\n:\nname\n:\nhostpath.csi.k8s.io\nspec\n:\npreventPodSchedulingIfMissing\n:\ntrue\nThis limitation only applies to pods that require corresponding CSI volume."
+  "text": "If\nVolumeLimitScaling\nfeature gate\nis enabled and a CSI driver has corresponding\nCSIDriver\nobject installed with\nspec.preventPodSchedulingIfMissing\nset to true then scheduler will prevent pod placement to nodes that do not yet have CSI driver installed. For example:\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nCSIDriver\nmetadata\n:\nname\n:\nhostpath.csi.k8s.io\nspec\n:\npreventPodSchedulingIfMissing\n:\ntrue\nThis limitation only applies to pods that require corresponding CSI volume.",
+  "failure_classes": []
 }

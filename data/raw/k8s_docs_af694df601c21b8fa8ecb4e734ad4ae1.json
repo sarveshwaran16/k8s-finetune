@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "FlowSchema — ServiceAccountSubject",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/flowcontrol/flow-schema-v1/#ServiceAccountSubject",
-  "text": "ServiceAccountSubject holds detailed information for service-account-kind subject.\nField\nDescription\nname\n*\nstring\n`name` is the name of matching ServiceAccount objects, or \"*\" to match regardless of name. Required.\nnamespace\n*\nstring\n`namespace` is the namespace of matching ServiceAccount objects. Required."
+  "text": "ServiceAccountSubject holds detailed information for service-account-kind subject.\nField\nDescription\nname\n*\nstring\n`name` is the name of matching ServiceAccount objects, or \"*\" to match regardless of name. Required.\nnamespace\n*\nstring\n`namespace` is the namespace of matching ServiceAccount objects. Required.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Concepts — Detecting server support",
   "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#detecting-server-support",
-  "text": "If the API server does not support sharded list and watch (because the feature gate is\nnot enabled, or the server is an older version), the\nShardSelector\nfield is ignored\nand the server returns the full, unfiltered result set. Clients can detect this by\nchecking for the presence of\nshardInfo\nin the list response metadata. If\nshardInfo\nis absent, the server did not honor the shard selector and the client received the\ncomplete, unfiltered collection. In this case, the client should be prepared to handle\nthe full result set, for example by applying client-side filtering to discard objects\noutside its assigned shard range."
+  "text": "If the API server does not support sharded list and watch (because the feature gate is\nnot enabled, or the server is an older version), the\nShardSelector\nfield is ignored\nand the server returns the full, unfiltered result set. Clients can detect this by\nchecking for the presence of\nshardInfo\nin the list response metadata. If\nshardInfo\nis absent, the server did not honor the shard selector and the client received the\ncomplete, unfiltered collection. In this case, the client should be prepared to handle\nthe full result set, for example by applying client-side filtering to discard objects\noutside its assigned shard range.",
+  "failure_classes": []
 }

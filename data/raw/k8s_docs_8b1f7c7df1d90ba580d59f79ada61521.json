@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm upgrade — Options inherited from parent commands",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade/#options-inherited-from-parent-commands",
-  "text": "--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\n\nkubeadm config\nif you initialized your cluster using kubeadm v1.7.x or lower, to configure your cluster for\nkubeadm upgrade"
+  "text": "--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\n\nkubeadm config\nif you initialized your cluster using kubeadm v1.7.x or lower, to configure your cluster for\nkubeadm upgrade",
+  "failure_classes": []
 }

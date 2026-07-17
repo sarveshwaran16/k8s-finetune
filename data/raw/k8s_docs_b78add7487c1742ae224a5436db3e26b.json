@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Implementation details — kubeadm upgrade plan",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#kubeadm-upgrade-plan",
-  "text": "You can optionally run\nkubeadm upgrade plan\nbefore you run\nkubeadm upgrade apply\n.\nThe\nplan\nsubcommand checks which versions are available to upgrade\nto and validates whether your current cluster is upgradeable.\n\nThis shows what differences would be applied to existing static pod manifests for control plane nodes.\nA more verbose way to do the same thing is running\nkubeadm upgrade apply --dry-run\nor\nkubeadm upgrade node --dry-run\n."
+  "text": "You can optionally run\nkubeadm upgrade plan\nbefore you run\nkubeadm upgrade apply\n.\nThe\nplan\nsubcommand checks which versions are available to upgrade\nto and validates whether your current cluster is upgradeable.\n\nThis shows what differences would be applied to existing static pod manifests for control plane nodes.\nA more verbose way to do the same thing is running\nkubeadm upgrade apply --dry-run\nor\nkubeadm upgrade node --dry-run\n.",
+  "failure_classes": []
 }

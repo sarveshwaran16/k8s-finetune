@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — job",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-job-em-",
-  "text": "Create a job\nkubectl create job\nmy\n-job\n--image=busybox\nCreate a job with a command\nkubectl create\njob\nmy-\njob\n--image=\nbusybox\n-- date\nCreate a job from a cron job named \"a-cronjob\"\nkubectl\ncreate\njob\ntest\n-job\n--from=cronjob/a-cronjob\nCreate a job with the specified name.\n\n$ kubectl create job NAME --image=image [--from=cronjob/name] -- [COMMAND] [args...]"
+  "text": "Create a job\nkubectl create job\nmy\n-job\n--image=busybox\nCreate a job with a command\nkubectl create\njob\nmy-\njob\n--image=\nbusybox\n-- date\nCreate a job from a cron job named \"a-cronjob\"\nkubectl\ncreate\njob\ntest\n-job\n--from=cronjob/a-cronjob\nCreate a job with the specified name.\n\n$ kubectl create job NAME --image=image [--from=cronjob/name] -- [COMMAND] [args...]",
+  "failure_classes": []
 }

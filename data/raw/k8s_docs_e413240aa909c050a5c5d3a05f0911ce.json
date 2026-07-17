@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Monitor Node Health — Using an Addon pod to enable Node Problem Detector",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/monitor-node-health/#using-addon-pod",
-  "text": "If you are using a custom cluster bootstrap solution and don't need\nto overwrite the default configuration, you can leverage the Addon pod to\nfurther automate the deployment.\nCreate\nnode-problem-detector.yaml\n, and save the configuration in the Addon pod's\ndirectory\n/etc/kubernetes/addons/node-problem-detector\non a control plane node."
+  "text": "If you are using a custom cluster bootstrap solution and don't need\nto overwrite the default configuration, you can leverage the Addon pod to\nfurther automate the deployment.\nCreate\nnode-problem-detector.yaml\n, and save the configuration in the Addon pod's\ndirectory\n/etc/kubernetes/addons/node-problem-detector\non a control plane node.",
+  "failure_classes": []
 }

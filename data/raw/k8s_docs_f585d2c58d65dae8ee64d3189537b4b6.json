@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm kubeconfig",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-kubeconfig/",
-  "text": "kubeadm kubeconfig\nprovides utilities for managing kubeconfig files.\nFor examples on how to use\nkubeadm kubeconfig user\nsee\nGenerating kubeconfig files for additional users\n.\n\noverview\n\nKubeconfig file utilities.\n\n-h, --help\nhelp for kubeconfig\nhelp for kubeconfig\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "kubeadm kubeconfig\nprovides utilities for managing kubeconfig files.\nFor examples on how to use\nkubeadm kubeconfig user\nsee\nGenerating kubeconfig files for additional users\n.\n\noverview\n\nKubeconfig file utilities.\n\n-h, --help\nhelp for kubeconfig\nhelp for kubeconfig\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": []
 }

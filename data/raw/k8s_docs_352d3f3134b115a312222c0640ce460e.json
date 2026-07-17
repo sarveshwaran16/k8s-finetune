@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "TLS bootstrapping — kube-apiserver configuration",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/#kube-apiserver-configuration",
-  "text": "The kube-apiserver has several requirements to enable TLS bootstrapping:\nRecognizing CA that signs the client certificate\nAuthenticating the bootstrapping kubelet to the\nsystem:bootstrappers\ngroup\nAuthorize the bootstrapping kubelet to create a certificate signing request (CSR)\n\nThis is normal for all client certificate authentication.\nIf not already set, add the\n--client-ca-file=FILENAME\nflag to the kube-apiserver command to enable\nclient certificate authentication, referencing a certificate authority bundle\ncontaining the signing certificate, for example\n--client-ca-file=/var/lib/kubernetes/ca.pem\n."
+  "text": "The kube-apiserver has several requirements to enable TLS bootstrapping:\nRecognizing CA that signs the client certificate\nAuthenticating the bootstrapping kubelet to the\nsystem:bootstrappers\ngroup\nAuthorize the bootstrapping kubelet to create a certificate signing request (CSR)\n\nThis is normal for all client certificate authentication.\nIf not already set, add the\n--client-ca-file=FILENAME\nflag to the kube-apiserver command to enable\nclient certificate authentication, referencing a certificate authority bundle\ncontaining the signing certificate, for example\n--client-ca-file=/var/lib/kubernetes/ca.pem\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "DeviceTaintRule",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/device-taint-rule-v1beta2/",
-  "text": "Dynamic Resource Allocation\nAbout DRA\nDRA terminology\nHow resource allocation with DRA works\nObservability of dynamic resources\nPre-scheduled Pods\nLimitations\nDRA beta features\nDRA alpha features\nWhat's next\nAbout DRA\nDRA terminology\nHow resource allocation with DRA works\nObservability of dynamic resources\nPre-scheduled Pods\nLimitations\nDRA beta features\nDRA alpha features\nWhat's next\napiVersion: resource.k8s.io/v1beta2\nimport \"k8s.io/api/resource/v1beta2\""
+  "text": "Dynamic Resource Allocation\nAbout DRA\nDRA terminology\nHow resource allocation with DRA works\nObservability of dynamic resources\nPre-scheduled Pods\nLimitations\nDRA beta features\nDRA alpha features\nWhat's next\nAbout DRA\nDRA terminology\nHow resource allocation with DRA works\nObservability of dynamic resources\nPre-scheduled Pods\nLimitations\nDRA beta features\nDRA alpha features\nWhat's next\napiVersion: resource.k8s.io/v1beta2\nimport \"k8s.io/api/resource/v1beta2\"",
+  "failure_classes": []
 }

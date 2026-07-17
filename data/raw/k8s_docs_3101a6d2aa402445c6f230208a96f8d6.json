@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — Class",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class",
-  "text": "A PV can have a class, which is specified by setting the\nstorageClassName\nattribute to the name of a\nStorageClass\n.\nA PV of a particular class can only be bound to PVCs requesting\nthat class. A PV with no\nstorageClassName\nhas no class and can only be bound\nto PVCs that request no particular class.\nIn the past, the annotation\nvolume.beta.kubernetes.io/storage-class\nwas used instead\nof the\nstorageClassName\nattribute. This annotation is still working; however,\nit will become fully deprecated in a future Kubernetes release."
+  "text": "A PV can have a class, which is specified by setting the\nstorageClassName\nattribute to the name of a\nStorageClass\n.\nA PV of a particular class can only be bound to PVCs requesting\nthat class. A PV with no\nstorageClassName\nhas no class and can only be bound\nto PVCs that request no particular class.\nIn the past, the annotation\nvolume.beta.kubernetes.io/storage-class\nwas used instead\nof the\nstorageClassName\nattribute. This annotation is still working; however,\nit will become fully deprecated in a future Kubernetes release.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

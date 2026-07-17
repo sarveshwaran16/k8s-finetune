@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Encrypting Confidential Data at Rest — Replicate the encryption key",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#replicate-the-encryption-key",
-  "text": "Using a secure mechanism for file transfer, make a copy of that encryption key\navailable to every other control plane host.\nAt a minimum, use encryption in transit - for example, secure shell (SSH). For more\nsecurity, use asymmetric encryption between hosts, or change the approach you are using\nso that you're relying on KMS encryption."
+  "text": "Using a secure mechanism for file transfer, make a copy of that encryption key\navailable to every other control plane host.\nAt a minimum, use encryption in transit - for example, secure shell (SSH). For more\nsecurity, use asymmetric encryption between hosts, or change the approach you are using\nso that you're relying on KMS encryption.",
+  "failure_classes": []
 }

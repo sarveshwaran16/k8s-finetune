@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Safely Drain a Node — The Eviction API",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/#eviction-api",
-  "text": "If you prefer not to use\nkubectl drain\n(such as\nto avoid calling to an external command, or to get finer control over the pod\neviction process), you can also programmatically cause evictions using the\neviction API.\nFor more information, see\nAPI-initiated eviction\n.\n\nFollow steps to protect your application by\nconfiguring a Pod Disruption Budget\n."
+  "text": "If you prefer not to use\nkubectl drain\n(such as\nto avoid calling to an external command, or to get finer control over the pod\neviction process), you can also programmatically cause evictions using the\neviction API.\nFor more information, see\nAPI-initiated eviction\n.\n\nFollow steps to protect your application by\nconfiguring a Pod Disruption Budget\n.",
+  "failure_classes": []
 }

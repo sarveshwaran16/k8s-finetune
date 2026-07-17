@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Sidecar Containers — Example application",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#sidecar-example",
-  "text": "Here's an example of a Deployment with two containers, one of which is a sidecar:\napiVersion\n:\napps/v1\nkind\n:\nDeployment\nmetadata\n:\nname\n:\nmyapp\nlabels\n:\napp\n:\nmyapp\nspec\n:\nreplicas\n:\n1\nselector\n:\nmatchLabels\n:\napp\n:\nmyapp\ntemplate\n:\nmetadata\n:\nlabels\n:\napp\n:\nmyapp\nspec\n:\ncontainers\n:\n-\nname\n:\nmyapp\nimage\n:\nalpine:latest\ncommand\n:\n[\n'sh'\n,\n'-c'\n,\n'while true; do echo \"logging\" >> /opt/logs.txt; sleep 1; done'\n]\nvolumeMounts\n:\n-\nname\n:\ndata\nmountPath\n:\n/opt\ninitContainers\n:\n-\nname\n:\nlogshipper\nimage\n:\nalpine:latest\n# Setting restartPolicy: Always makes this a sidecar container.\nrestartPolicy\n:\nAlways\ncommand\n:\n[\n'sh'\n,\n'-c'\n,\n'tail -F /opt/logs.txt'\n]\nvolumeMounts\n:\n-\nname\n:\ndata\nmountPath\n:\n/opt\nvolumes\n:\n-\nname\n:\ndata\nemptyDir\n:\n{}"
+  "text": "Here's an example of a Deployment with two containers, one of which is a sidecar:\napiVersion\n:\napps/v1\nkind\n:\nDeployment\nmetadata\n:\nname\n:\nmyapp\nlabels\n:\napp\n:\nmyapp\nspec\n:\nreplicas\n:\n1\nselector\n:\nmatchLabels\n:\napp\n:\nmyapp\ntemplate\n:\nmetadata\n:\nlabels\n:\napp\n:\nmyapp\nspec\n:\ncontainers\n:\n-\nname\n:\nmyapp\nimage\n:\nalpine:latest\ncommand\n:\n[\n'sh'\n,\n'-c'\n,\n'while true; do echo \"logging\" >> /opt/logs.txt; sleep 1; done'\n]\nvolumeMounts\n:\n-\nname\n:\ndata\nmountPath\n:\n/opt\ninitContainers\n:\n-\nname\n:\nlogshipper\nimage\n:\nalpine:latest\n# Setting restartPolicy: Always makes this a sidecar container.\nrestartPolicy\n:\nAlways\ncommand\n:\n[\n'sh'\n,\n'-c'\n,\n'tail -F /opt/logs.txt'\n]\nvolumeMounts\n:\n-\nname\n:\ndata\nmountPath\n:\n/opt\nvolumes\n:\n-\nname\n:\ndata\nemptyDir\n:\n{}",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

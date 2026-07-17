@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-proxy Configuration (v1alpha1) — VModuleConfiguration",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kube-proxy-config.v1alpha1/#VModuleConfiguration",
-  "text": "(Alias of\n[]k8s.io/component-base/logs/api/v1.VModuleItem\n)\nAppears in:\nLoggingConfiguration\nVModuleConfiguration is a collection of individual file names or patterns\nand the corresponding verbosity threshold.\n\n(Alias of\nuint32\n)\nAppears in:\nLoggingConfiguration\nVerbosityLevel represents a klog or logr verbosity threshold."
+  "text": "(Alias of\n[]k8s.io/component-base/logs/api/v1.VModuleItem\n)\nAppears in:\nLoggingConfiguration\nVModuleConfiguration is a collection of individual file names or patterns\nand the corresponding verbosity threshold.\n\n(Alias of\nuint32\n)\nAppears in:\nLoggingConfiguration\nVerbosityLevel represents a klog or logr verbosity threshold.",
+  "failure_classes": []
 }

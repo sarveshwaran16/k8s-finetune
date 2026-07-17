@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "HorizontalPodAutoscaler Walkthrough — Quantities",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#quantities",
-  "text": "All metrics in the HorizontalPodAutoscaler and metrics APIs are specified using\na special whole-number notation known in Kubernetes as a\nquantity\n. For example,\nthe quantity\n10500m\nwould be written as\n10.5\nin decimal notation. The metrics APIs\nwill return whole numbers without a suffix when possible, and will generally return\nquantities in milli-units otherwise. This means you might see your metric value fluctuate\nbetween\n1\nand\n1500m\n, or\n1\nand\n1.5\nwhen written in decimal notation."
+  "text": "All metrics in the HorizontalPodAutoscaler and metrics APIs are specified using\na special whole-number notation known in Kubernetes as a\nquantity\n. For example,\nthe quantity\n10500m\nwould be written as\n10.5\nin decimal notation. The metrics APIs\nwill return whole numbers without a suffix when possible, and will generally return\nquantities in milli-units otherwise. This means you might see your metric value fluctuate\nbetween\n1\nand\n1500m\n, or\n1\nand\n1.5\nwhen written in decimal notation.",
+  "failure_classes": []
 }

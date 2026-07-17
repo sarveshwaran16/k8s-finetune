@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Object Management — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#what-s-next",
-  "text": "Managing Kubernetes Objects Using Imperative Commands\nImperative Management of Kubernetes Objects Using Configuration Files\nDeclarative Management of Kubernetes Objects Using Configuration Files\nDeclarative Management of Kubernetes Objects Using Kustomize\nKubectl Command Reference\nKubectl Book\nKubernetes API Reference"
+  "text": "Managing Kubernetes Objects Using Imperative Commands\nImperative Management of Kubernetes Objects Using Configuration Files\nDeclarative Management of Kubernetes Objects Using Configuration Files\nDeclarative Management of Kubernetes Objects Using Kustomize\nKubectl Command Reference\nKubectl Book\nKubernetes API Reference",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Updating Configuration via a ConfigMap — Cleaning up",
   "source_url": "https://kubernetes.io/docs/tutorials/configuration/updating-configuration-via-a-configmap/#cleaning-up",
-  "text": "Terminate the\nkubectl port-forward\ncommands in case they are running.\nDelete the resources created during the tutorial:\nkubectl delete deployment configmap-volume configmap-env-var configmap-two-containers configmap-sidecar-container immutable-configmap-volume\nkubectl delete service configmap-service configmap-sidecar-service\nkubectl delete configmap sport fruits color company-name-20240312\nkubectl delete configmap company-name-20150801\n# In case it was not handled during the task execution"
+  "text": "Terminate the\nkubectl port-forward\ncommands in case they are running.\nDelete the resources created during the tutorial:\nkubectl delete deployment configmap-volume configmap-env-var configmap-two-containers configmap-sidecar-container immutable-configmap-volume\nkubectl delete service configmap-service configmap-sidecar-service\nkubectl delete configmap sport fruits color company-name-20240312\nkubectl delete configmap company-name-20150801\n# In case it was not handled during the task execution",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — PodTopologyLabels",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#podtopologylabels",
-  "text": "Type\n: Mutating\nThe PodTopologyLabels admission controller mutates the\npods/binding\nsubresources\nfor all pods bound to a Node, adding topology labels matching those of the bound Node.\nThis allows Node topology labels to be available as pod labels,\nwhich can be surfaced to running containers using the\nDownward API\n.\nThe labels available as a result of this controller are the\ntopology.kubernetes.io/region\nand\ntopology.kuberentes.io/zone\nlabels.\nThis admission controller is enabled when the\nPodTopologyLabelsAdmission\nfeature gate is enabled."
+  "text": "Type\n: Mutating\nThe PodTopologyLabels admission controller mutates the\npods/binding\nsubresources\nfor all pods bound to a Node, adding topology labels matching those of the bound Node.\nThis allows Node topology labels to be available as pod labels,\nwhich can be surfaced to running containers using the\nDownward API\n.\nThe labels available as a result of this controller are the\ntopology.kubernetes.io/region\nand\ntopology.kuberentes.io/zone\nlabels.\nThis admission controller is enabled when the\nPodTopologyLabelsAdmission\nfeature gate is enabled.",
+  "failure_classes": []
 }

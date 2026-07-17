@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest — Create private key",
   "source_url": "https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/#create-private-key",
-  "text": "In this step, you create a private key. You need to keep this document secret; anyone who has it can impersonate the user.\n# Create a private key\nopenssl genrsa -out myuser.key\n3072\n\nIt is important to set CN and O attribute of the CSR. CN is the name of the user and O is the group that this user will belong to.\nYou can refer to\nRBAC\nfor standard groups.\n# Change the common name \"myuser\" to the actual username that you want to use\nopenssl req -new -key myuser.key -out myuser.csr -subj\n\"/CN=myuser\""
+  "text": "In this step, you create a private key. You need to keep this document secret; anyone who has it can impersonate the user.\n# Create a private key\nopenssl genrsa -out myuser.key\n3072\n\nIt is important to set CN and O attribute of the CSR. CN is the name of the user and O is the group that this user will belong to.\nYou can refer to\nRBAC\nfor standard groups.\n# Change the common name \"myuser\" to the actual username that you want to use\nopenssl req -new -key myuser.key -out myuser.csr -subj\n\"/CN=myuser\"",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

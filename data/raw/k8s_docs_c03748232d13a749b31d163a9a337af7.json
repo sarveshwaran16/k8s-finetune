@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubeadm",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/",
-  "text": "Kubeadm is a tool built to provide\nkubeadm init\nand\nkubeadm join\nas best-practice \"fast paths\" for creating Kubernetes clusters.\nkubeadm performs the actions necessary to get a minimum viable cluster up and running. By design, it cares only about bootstrapping, not about provisioning machines. Likewise, installing various nice-to-have addons, like the Kubernetes Dashboard, monitoring solutions, and cloud-specific addons, is not in scope.\nInstead, we expect higher-level and more tailored tooling to be built on top of kubeadm, and ideally, using kubeadm as the basis of all deployments will make it easier to create conformant clusters."
+  "text": "Kubeadm is a tool built to provide\nkubeadm init\nand\nkubeadm join\nas best-practice \"fast paths\" for creating Kubernetes clusters.\nkubeadm performs the actions necessary to get a minimum viable cluster up and running. By design, it cares only about bootstrapping, not about provisioning machines. Likewise, installing various nice-to-have addons, like the Kubernetes Dashboard, monitoring solutions, and cloud-specific addons, is not in scope.\nInstead, we expect higher-level and more tailored tooling to be built on top of kubeadm, and ideally, using kubeadm as the basis of all deployments will make it easier to create conformant clusters.",
+  "failure_classes": []
 }

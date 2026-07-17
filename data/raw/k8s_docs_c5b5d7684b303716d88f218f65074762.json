@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm Configuration (v1beta3) — DNS",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta3/#kubeadm-k8s-io-v1beta3-DNS",
-  "text": "Appears in:\nClusterConfiguration\nDNS defines the DNS addon that should be used in the cluster\nField\nDescription\nImageMeta\n[Required]\nImageMeta\n(Members of\nImageMeta\nare embedded into this type.)\nimageMeta\nallows to customize the image used for the DNS component.\nimageMeta\nallows to customize the image used for the DNS component."
+  "text": "Appears in:\nClusterConfiguration\nDNS defines the DNS addon that should be used in the cluster\nField\nDescription\nImageMeta\n[Required]\nImageMeta\n(Members of\nImageMeta\nare embedded into this type.)\nimageMeta\nallows to customize the image used for the DNS component.\nimageMeta\nallows to customize the image used for the DNS component.",
+  "failure_classes": []
 }

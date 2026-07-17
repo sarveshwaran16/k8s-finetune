@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "APIService — getRead",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiregistration/api-service-v1/#get-read",
-  "text": "GET /apis/apiregistration.k8s.io/v1/apiservices/{name}\nName\nType\nDescription\nname\nstring\nname of the APIService\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nAPIService"
+  "text": "GET /apis/apiregistration.k8s.io/v1/apiservices/{name}\nName\nType\nDescription\nname\nstring\nname of the APIService\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nAPIService",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Workload API — What is a Workload?",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/#what-is-a-workload",
-  "text": "The Workload API resource is part of the\nscheduling.k8s.io/v1alpha2\nAPI group\nand your cluster must have that API group enabled, as well as the\nGenericWorkload\nfeature gate\n,\nbefore you can use this API.\nA\nWorkload\nis a static, long-lived policy template. It defines what scheduling\npolicies should be applied to groups of Pods, but does not track runtime state itself.\nRuntime scheduling state is maintained by\nPodGroup\nobjects, which controllers create from the\nWorkload\n's\nPodGroupTemplates\n."
+  "text": "The Workload API resource is part of the\nscheduling.k8s.io/v1alpha2\nAPI group\nand your cluster must have that API group enabled, as well as the\nGenericWorkload\nfeature gate\n,\nbefore you can use this API.\nA\nWorkload\nis a static, long-lived policy template. It defines what scheduling\npolicies should be applied to groups of Pods, but does not track runtime state itself.\nRuntime scheduling state is maintained by\nPodGroup\nobjects, which controllers create from the\nWorkload\n's\nPodGroupTemplates\n.",
+  "failure_classes": []
 }

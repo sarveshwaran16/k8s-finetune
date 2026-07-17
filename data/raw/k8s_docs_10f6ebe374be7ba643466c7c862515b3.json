@@ -3,5 +3,10 @@
   "source": "k8s_docs",
   "title": "Node-pressure Eviction — Node out of memory behavior",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/#node-out-of-memory-behavior",
-  "text": "If the node experiences an\nout of memory\n(OOM) event prior to the kubelet\nbeing able to reclaim memory, the node depends on the\noom_killer\nto respond.\nThe kubelet sets an\noom_score_adj\nvalue for each container based on the QoS for the pod.\nQuality of Service\noom_score_adj\nGuaranteed\n-997\nBestEffort\n1000\nBurstable\nmin(max(2, 1000 - (1000 × memoryRequestBytes) / machineMemoryCapacityBytes), 999)\nIf the kubelet can't reclaim memory before a node experiences OOM, the\noom_killer\ncalculates an\noom_score\nbased on the percentage of memory it's\nusing on the node, and then adds the\noom_score_adj\nto get an effective\noom_score\nfor each container. It then kills the container with the highest score.\nThis means that containers in low QoS pods that consume a large amount of memory\nrelative to their scheduling requests are killed first.\nUnlike pod eviction, if a container is OOM killed, the kubelet can restart it\nbased on its\nrestartPolicy\n."
+  "text": "If the node experiences an\nout of memory\n(OOM) event prior to the kubelet\nbeing able to reclaim memory, the node depends on the\noom_killer\nto respond.\nThe kubelet sets an\noom_score_adj\nvalue for each container based on the QoS for the pod.\nQuality of Service\noom_score_adj\nGuaranteed\n-997\nBestEffort\n1000\nBurstable\nmin(max(2, 1000 - (1000 × memoryRequestBytes) / machineMemoryCapacityBytes), 999)\nIf the kubelet can't reclaim memory before a node experiences OOM, the\noom_killer\ncalculates an\noom_score\nbased on the percentage of memory it's\nusing on the node, and then adds the\noom_score_adj\nto get an effective\noom_score\nfor each container. It then kills the container with the highest score.\nThis means that containers in low QoS pods that consume a large amount of memory\nrelative to their scheduling requests are killed first.\nUnlike pod eviction, if a container is OOM killed, the kubelet can restart it\nbased on its\nrestartPolicy\n.",
+  "failure_classes": [
+    "OOMKilled",
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

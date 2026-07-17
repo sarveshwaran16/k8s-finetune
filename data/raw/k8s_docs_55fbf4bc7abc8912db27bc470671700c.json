@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistent-volumes",
-  "text": "Each PV contains a spec and status, which is the specification and status of the volume.\nThe name of a PersistentVolume object must be a valid\nDNS subdomain name\n.\napiVersion\n:\nv1\nkind\n:\nPersistentVolume\nmetadata\n:\nname\n:\npv0003\nspec\n:\ncapacity\n:\nstorage\n:\n5Gi\nvolumeMode\n:\nFilesystem\naccessModes\n:\n-\nReadWriteOnce\npersistentVolumeReclaimPolicy\n:\nRecycle\nstorageClassName\n:\nslow\nmountOptions\n:\n-\nhard\n-\nnfsvers=4.1\nnfs\n:\npath\n:\n/tmp\nserver\n:\n172.17.0.2"
+  "text": "Each PV contains a spec and status, which is the specification and status of the volume.\nThe name of a PersistentVolume object must be a valid\nDNS subdomain name\n.\napiVersion\n:\nv1\nkind\n:\nPersistentVolume\nmetadata\n:\nname\n:\npv0003\nspec\n:\ncapacity\n:\nstorage\n:\n5Gi\nvolumeMode\n:\nFilesystem\naccessModes\n:\n-\nReadWriteOnce\npersistentVolumeReclaimPolicy\n:\nRecycle\nstorageClassName\n:\nslow\nmountOptions\n:\n-\nhard\n-\nnfsvers=4.1\nnfs\n:\npath\n:\n/tmp\nserver\n:\n172.17.0.2",
+  "failure_classes": []
 }

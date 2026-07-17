@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Adding entries to Pod /etc/hosts with HostAliases — Feedback",
   "source_url": "https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/#feedback",
-  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Was this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

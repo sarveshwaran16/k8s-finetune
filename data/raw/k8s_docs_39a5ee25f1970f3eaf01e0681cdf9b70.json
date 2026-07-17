@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Securing a Cluster — Protecting cluster components from compromise",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#protecting-cluster-components-from-compromise",
-  "text": "This section describes some common patterns for protecting clusters from compromise.\n\nWrite access to the etcd backend for the API is equivalent to gaining root on the entire cluster,\nand read access can be used to escalate fairly quickly. Administrators should always use strong\ncredentials from the API servers to their etcd server, such as mutual auth via TLS client certificates,\nand it is often recommended to isolate the etcd servers behind a firewall that only the API servers\nmay access."
+  "text": "This section describes some common patterns for protecting clusters from compromise.\n\nWrite access to the etcd backend for the API is equivalent to gaining root on the entire cluster,\nand read access can be used to escalate fairly quickly. Administrators should always use strong\ncredentials from the API servers to their etcd server, such as mutual auth via TLS client certificates,\nand it is often recommended to isolate the etcd servers behind a firewall that only the API servers\nmay access.",
+  "failure_classes": []
 }

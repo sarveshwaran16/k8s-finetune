@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/egress-bandwidth",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-egress-bandwidth",
-  "text": "Type: Annotation\nExample:\nkubernetes.io/egress-bandwidth: 10M\nUsed on: Pod\nEgress traffic from a Pod is handled by policing, which simply drops packets in excess of the\nconfigured rate. The limits you place on a Pod do not affect the bandwidth of other Pods.\nTo limit the bandwidth on a Pod, write an object definition JSON file and specify the data traffic\nspeed using\nkubernetes.io/egress-bandwidth\nannotation. The unit used for specifying egress rate\nis bits per second, as a\nQuantity\n.\nFor example,\n10M\nmeans 10 megabits per second."
+  "text": "Type: Annotation\nExample:\nkubernetes.io/egress-bandwidth: 10M\nUsed on: Pod\nEgress traffic from a Pod is handled by policing, which simply drops packets in excess of the\nconfigured rate. The limits you place on a Pod do not affect the bandwidth of other Pods.\nTo limit the bandwidth on a Pod, write an object definition JSON file and specify the data traffic\nspeed using\nkubernetes.io/egress-bandwidth\nannotation. The unit used for specifying egress rate\nis bits per second, as a\nQuantity\n.\nFor example,\n10M\nmeans 10 megabits per second.",
+  "failure_classes": []
 }

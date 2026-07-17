@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Running ZooKeeper, A Distributed System Coordinator — Managing the ZooKeeper process",
   "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/zookeeper/#managing-the-zookeeper-process",
-  "text": "The\nZooKeeper documentation\nmentions that \"You will want to have a supervisory process that\nmanages each of your ZooKeeper server processes (JVM).\" Utilizing a watchdog\n(supervisory process) to restart failed processes in a distributed system is a\ncommon pattern. When deploying an application in Kubernetes, rather than using\nan external utility as a supervisory process, you should use Kubernetes as the\nwatchdog for your application."
+  "text": "The\nZooKeeper documentation\nmentions that \"You will want to have a supervisory process that\nmanages each of your ZooKeeper server processes (JVM).\" Utilizing a watchdog\n(supervisory process) to restart failed processes in a distributed system is a\ncommon pattern. When deploying an application in Kubernetes, rather than using\nan external utility as a supervisory process, you should use Kubernetes as the\nwatchdog for your application.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

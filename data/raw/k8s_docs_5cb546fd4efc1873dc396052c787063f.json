@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Field Selectors",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/",
-  "text": "Field selectors\nlet you select Kubernetes\nobjects\nbased on the\nvalue of one or more resource fields. Here are some examples of field selector queries:\nmetadata.name=my-service\nmetadata.namespace!=default\nstatus.phase=Pending\nThis\nkubectl\ncommand selects all Pods for which the value of the\nstatus.phase\nfield is\nRunning\n:\nkubectl get pods --field-selector status.phase\n=\nRunning"
+  "text": "Field selectors\nlet you select Kubernetes\nobjects\nbased on the\nvalue of one or more resource fields. Here are some examples of field selector queries:\nmetadata.name=my-service\nmetadata.namespace!=default\nstatus.phase=Pending\nThis\nkubectl\ncommand selects all Pods for which the value of the\nstatus.phase\nfield is\nRunning\n:\nkubectl get pods --field-selector status.phase\n=\nRunning",
+  "failure_classes": []
 }

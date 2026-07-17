@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — service.kubernetes.io/headless",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#servicekubernetesioheadless",
-  "text": "Type: Label\nExample:\nservice.kubernetes.io/headless: \"\"\nUsed on: EndpointSlice, Endpoints\nThe\ncontrol plane\nadds\nthis\nlabel\nto EndpointSlice and\nEndpoints objects when the owning\nService\nis\nheadless (as a hint to the service proxy that it can ignore these endpoints). To\nlearn more, read\nHeadless\nServices\n."
+  "text": "Type: Label\nExample:\nservice.kubernetes.io/headless: \"\"\nUsed on: EndpointSlice, Endpoints\nThe\ncontrol plane\nadds\nthis\nlabel\nto EndpointSlice and\nEndpoints objects when the owning\nService\nis\nheadless (as a hint to the service proxy that it can ignore these endpoints). To\nlearn more, read\nHeadless\nServices\n.",
+  "failure_classes": []
 }

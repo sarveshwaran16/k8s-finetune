@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Share Process Namespace between Containers in a Pod",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/",
-  "text": "This page shows how to configure process namespace sharing for a pod. When\nprocess namespace sharing is enabled, processes in a container are visible\nto all other containers in the same pod.\nYou can use this feature to configure cooperating containers, such as a log\nhandler sidecar container, or to troubleshoot container images that don't\ninclude debugging utilities like a shell."
+  "text": "This page shows how to configure process namespace sharing for a pod. When\nprocess namespace sharing is enabled, processes in a container are visible\nto all other containers in the same pod.\nYou can use this feature to configure cooperating containers, such as a log\nhandler sidecar container, or to troubleshoot container images that don't\ninclude debugging utilities like a shell.",
+  "failure_classes": []
 }

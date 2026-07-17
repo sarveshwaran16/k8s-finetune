@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Service ClusterIP allocation",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/",
-  "text": "In Kubernetes,\nServices\nare an abstract way to expose\nan application running on a set of Pods. Services\ncan have a cluster-scoped virtual IP address (using a Service of\ntype: ClusterIP\n).\nClients can connect using that virtual IP address, and Kubernetes then load-balances traffic to that\nService across the different backing Pods."
+  "text": "In Kubernetes,\nServices\nare an abstract way to expose\nan application running on a set of Pods. Services\ncan have a cluster-scoped virtual IP address (using a Service of\ntype: ClusterIP\n).\nClients can connect using that virtual IP address, and Kubernetes then load-balances traffic to that\nService across the different backing Pods.",
+  "failure_classes": []
 }

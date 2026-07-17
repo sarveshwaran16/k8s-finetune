@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling, Preemption and Eviction — Pod Disruption",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/#pod-disruption",
-  "text": "Pod disruption\nis the process by which\nPods on Nodes are terminated either voluntarily or involuntarily.\nVoluntary disruptions are started intentionally by application owners or cluster\nadministrators. Involuntary disruptions are unintentional and can be triggered by\nunavoidable issues like Nodes running out of\nresources\n,\nor by accidental deletions.\nPod Priority and Preemption\nNode-pressure Eviction\nAPI-initiated Eviction"
+  "text": "Pod disruption\nis the process by which\nPods on Nodes are terminated either voluntarily or involuntarily.\nVoluntary disruptions are started intentionally by application owners or cluster\nadministrators. Involuntary disruptions are unintentional and can be triggered by\nunavoidable issues like Nodes running out of\nresources\n,\nor by accidental deletions.\nPod Priority and Preemption\nNode-pressure Eviction\nAPI-initiated Eviction",
+  "failure_classes": []
 }

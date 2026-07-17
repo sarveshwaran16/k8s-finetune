@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Example: Deploying WordPress and MySQL with Persistent Volumes",
   "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/",
-  "text": "This tutorial shows you how to deploy a WordPress site and a MySQL database using\nMinikube. Both applications use PersistentVolumes and PersistentVolumeClaims to store data.\nA\nPersistentVolume\n(PV) is a piece\nof storage in the cluster that has been manually provisioned by an administrator,\nor dynamically provisioned by Kubernetes using a\nStorageClass\n.\nA\nPersistentVolumeClaim\n(PVC)\nis a request for storage by a user that can be fulfilled by a PV. PersistentVolumes and\nPersistentVolumeClaims are independent from Pod lifecycles and preserve data through\nrestarting, rescheduling, and even deleting Pods."
+  "text": "This tutorial shows you how to deploy a WordPress site and a MySQL database using\nMinikube. Both applications use PersistentVolumes and PersistentVolumeClaims to store data.\nA\nPersistentVolume\n(PV) is a piece\nof storage in the cluster that has been manually provisioned by an administrator,\nor dynamically provisioned by Kubernetes using a\nStorageClass\n.\nA\nPersistentVolumeClaim\n(PVC)\nis a request for storage by a user that can be fulfilled by a PV. PersistentVolumes and\nPersistentVolumeClaims are independent from Pod lifecycles and preserve data through\nrestarting, rescheduling, and even deleting Pods.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "PVC"
+  ]
 }

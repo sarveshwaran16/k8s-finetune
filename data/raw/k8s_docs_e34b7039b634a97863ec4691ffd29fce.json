@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod — SecretEnvSource",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#SecretEnvSource",
-  "text": "SecretEnvSource selects a Secret to populate the environment variables with.\nThe contents of the target Secret's Data field will represent the key-value pairs as environment variables.\nField\nDescription\nname\nstring\nName of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\noptional\nboolean\nSpecify whether the Secret must be defined"
+  "text": "SecretEnvSource selects a Secret to populate the environment variables with.\nThe contents of the target Secret's Data field will represent the key-value pairs as environment variables.\nField\nDescription\nname\nstring\nName of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names\noptional\nboolean\nSpecify whether the Secret must be defined",
+  "failure_classes": []
 }

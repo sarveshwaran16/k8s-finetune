@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Endpoints — EndpointAddress",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/endpoints-v1/#EndpointAddress",
-  "text": "EndpointAddress is a tuple that describes single IP address. Deprecated: This API is deprecated in v1.33+.\nField\nDescription\nhostname\nstring\nThe Hostname of this endpoint\nip\n*\nstring\nThe IP of this endpoint. May not be loopback (127.0.0.0/8 or ::1), link-local (169.254.0.0/16 or fe80::/10), or link-local multicast (224.0.0.0/24 or ff02::/16).\nnodeName\nstring\nOptional: Node hosting this endpoint. This can be used to determine endpoints local to a node.\ntargetRef\nObjectReference\nReference to object providing the endpoint."
+  "text": "EndpointAddress is a tuple that describes single IP address. Deprecated: This API is deprecated in v1.33+.\nField\nDescription\nhostname\nstring\nThe Hostname of this endpoint\nip\n*\nstring\nThe IP of this endpoint. May not be loopback (127.0.0.0/8 or ::1), link-local (169.254.0.0/16 or fe80::/10), or link-local multicast (224.0.0.0/24 or ff02::/16).\nnodeName\nstring\nOptional: Node hosting this endpoint. This can be used to determine endpoints local to a node.\ntargetRef\nObjectReference\nReference to object providing the endpoint.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Learning environment",
   "source_url": "https://kubernetes.io/docs/setup/learning-environment/",
-  "text": "If you are learning Kubernetes, you need a place to practice. This page explains your options for setting up a Kubernetes environment where you can experiment and learn.\n\nBefore you set up a cluster, you need the\nkubectl\ncommand-line tool. This tool lets you communicate with a Kubernetes cluster and run commands against it.\nSee\nInstall and Set Up kubectl\nfor installation instructions."
+  "text": "If you are learning Kubernetes, you need a place to practice. This page explains your options for setting up a Kubernetes environment where you can experiment and learn.\n\nBefore you set up a cluster, you need the\nkubectl\ncommand-line tool. This tool lets you communicate with a Kubernetes cluster and run commands against it.\nSee\nInstall and Set Up kubectl\nfor installation instructions.",
+  "failure_classes": []
 }

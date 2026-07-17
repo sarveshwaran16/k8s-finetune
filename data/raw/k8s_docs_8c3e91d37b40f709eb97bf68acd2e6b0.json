@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices — Set a small timeout value",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#small-timeout",
-  "text": "Admission webhooks should evaluate as quickly as possible (typically in\nmilliseconds), since they add to API request latency. Use a small timeout for\nwebhooks.\nFor details, see\nTimeouts\n.\n\nAdmission webhooks should leverage some form of load-balancing to provide high\navailability and performance benefits. If a webhook is running within the\ncluster, you can run multiple webhook backends behind a Service of type\nClusterIP\n."
+  "text": "Admission webhooks should evaluate as quickly as possible (typically in\nmilliseconds), since they add to API request latency. Use a small timeout for\nwebhooks.\nFor details, see\nTimeouts\n.\n\nAdmission webhooks should leverage some form of load-balancing to provide high\navailability and performance benefits. If a webhook is running within the\ncluster, you can run multiple webhook backends behind a Service of type\nClusterIP\n.",
+  "failure_classes": []
 }

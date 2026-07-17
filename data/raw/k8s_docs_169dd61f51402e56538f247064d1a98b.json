@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices — Use built-in validation and defaulting for CustomResourceDefinitions",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#no-crd-validation-defaulting",
-  "text": "If you use\nCustomResourceDefinitions\n,\ndon't use admission webhooks to validate values in CustomResource specifications\nor to set default values for fields. Kubernetes lets you define validation rules\nand default field values when you create CustomResourceDefinitions.\nTo learn more, see the following resources:\nValidation rules\nDefaulting"
+  "text": "If you use\nCustomResourceDefinitions\n,\ndon't use admission webhooks to validate values in CustomResource specifications\nor to set default values for fields. Kubernetes lets you define validation rules\nand default field values when you create CustomResourceDefinitions.\nTo learn more, see the following resources:\nValidation rules\nDefaulting",
+  "failure_classes": []
 }

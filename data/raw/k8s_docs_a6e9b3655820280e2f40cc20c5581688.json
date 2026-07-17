@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Declarative API Validation — +k8s:eachKey",
   "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-eachKey",
-  "text": "Description:\nDeclares a validation for each key in a map.\nStability Level:\nAlpha\nPayload:\n<validation-tag>\n: The tag to evaluate for each key.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:eachKey=+k8s:minimum=1\nMyMap\nmap\n[\nint\n]\nstring\n`json:\"myMap\"`\n}\nIn this example,\neachKey\nis used to specify that the\n+k8s:minimum\ntag should be applied to each\nint\nkey in\nMyMap\n. This means that all keys in the map must be >= 1."
+  "text": "Description:\nDeclares a validation for each key in a map.\nStability Level:\nAlpha\nPayload:\n<validation-tag>\n: The tag to evaluate for each key.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:eachKey=+k8s:minimum=1\nMyMap\nmap\n[\nint\n]\nstring\n`json:\"myMap\"`\n}\nIn this example,\neachKey\nis used to specify that the\n+k8s:minimum\ntag should be applied to each\nint\nkey in\nMyMap\n. This means that all keys in the map must be >= 1.",
+  "failure_classes": []
 }

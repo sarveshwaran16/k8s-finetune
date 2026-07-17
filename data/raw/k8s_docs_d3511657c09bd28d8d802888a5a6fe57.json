@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Adding entries to Pod /etc/hosts with HostAliases",
   "source_url": "https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/",
-  "text": "Adding entries to a Pod's\n/etc/hosts\nfile provides Pod-level override of hostname resolution when DNS and other options are not applicable. You can add these custom entries with the HostAliases field in PodSpec.\nThe Kubernetes project recommends modifying DNS configuration using the\nhostAliases\nfield\n(part of the\n.spec\nfor a Pod), and not by using an init container or other means to edit\n/etc/hosts\ndirectly.\nChange made in other ways may be overwritten by the kubelet during Pod creation or restart."
+  "text": "Adding entries to a Pod's\n/etc/hosts\nfile provides Pod-level override of hostname resolution when DNS and other options are not applicable. You can add these custom entries with the HostAliases field in PodSpec.\nThe Kubernetes project recommends modifying DNS configuration using the\nhostAliases\nfield\n(part of the\n.spec\nfor a Pod), and not by using an init container or other means to edit\n/etc/hosts\ndirectly.\nChange made in other ways may be overwritten by the kubelet during Pod creation or restart.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

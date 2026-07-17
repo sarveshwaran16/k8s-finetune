@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Decrypt Confidential Data that is Already Encrypted at Rest — Decrypt all data",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/decrypt-data/#decrypting-all-data",
-  "text": "This example shows how to stop encrypting the Secret API at rest. If you are encrypting\nother API kinds, adjust the steps to match.\n\nFirst, find the API server configuration files. On each control plane node, static Pod manifest\nfor the kube-apiserver specifies a command line argument,\n--encryption-provider-config\n.\nYou are likely to find that this file is mounted into the static Pod using a\nhostPath\nvolume mount. Once you locate the volume\nyou can find the file on the node filesystem and inspect it."
+  "text": "This example shows how to stop encrypting the Secret API at rest. If you are encrypting\nother API kinds, adjust the steps to match.\n\nFirst, find the API server configuration files. On each control plane node, static Pod manifest\nfor the kube-apiserver specifies a command line argument,\n--encryption-provider-config\n.\nYou are likely to find that this file is mounted into the static Pod using a\nhostPath\nvolume mount. Once you locate the volume\nyou can find the file on the node filesystem and inspect it.",
+  "failure_classes": []
 }

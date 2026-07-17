@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — nfd.node.kubernetes.io/master.version",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#nfd-node-kubernetes-io-master-version",
-  "text": "Type: Annotation\nExample:\nnfd.node.kubernetes.io/master.version: \"v0.6.0\"\nUsed on: Node\nFor node(s) where the Node Feature Discovery (NFD)\nmaster\nis scheduled, this annotation records the version of the NFD master.\nIt is used for informative use only.\n\nType: Annotation\nExample:\nnfd.node.kubernetes.io/worker.version: \"v0.4.0\"\nUsed on: Nodes\nThis annotation records the version for a Node Feature Discovery's\nworker\nif there is one running on a node. It's used for informative use only."
+  "text": "Type: Annotation\nExample:\nnfd.node.kubernetes.io/master.version: \"v0.6.0\"\nUsed on: Node\nFor node(s) where the Node Feature Discovery (NFD)\nmaster\nis scheduled, this annotation records the version of the NFD master.\nIt is used for informative use only.\n\nType: Annotation\nExample:\nnfd.node.kubernetes.io/worker.version: \"v0.4.0\"\nUsed on: Nodes\nThis annotation records the version for a Node Feature Discovery's\nworker\nif there is one running on a node. It's used for informative use only.",
+  "failure_classes": []
 }

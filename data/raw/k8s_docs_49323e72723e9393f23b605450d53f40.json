@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Security Standards — Policy Instantiation",
   "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/#policy-instantiation",
-  "text": "Decoupling policy definition from policy instantiation allows for a common understanding and\nconsistent language of policies across clusters, independent of the underlying enforcement\nmechanism.\nAs mechanisms mature, they will be defined below on a per-policy basis. The methods of enforcement\nof individual policies are not defined here.\nPod Security Admission Controller\nPrivileged namespace\nBaseline namespace\nRestricted namespace"
+  "text": "Decoupling policy definition from policy instantiation allows for a common understanding and\nconsistent language of policies across clusters, independent of the underlying enforcement\nmechanism.\nAs mechanisms mature, they will be defined below on a per-policy basis. The methods of enforcement\nof individual policies are not defined here.\nPod Security Admission Controller\nPrivileged namespace\nBaseline namespace\nRestricted namespace",
+  "failure_classes": []
 }

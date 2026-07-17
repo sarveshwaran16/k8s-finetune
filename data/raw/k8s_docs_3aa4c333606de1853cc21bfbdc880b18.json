@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Security Policies",
   "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-policy/",
-  "text": "Instead of using PodSecurityPolicy, you can enforce similar restrictions on Pods using\neither or both:\nPod Security Admission\na 3rd party admission plugin, that you deploy and configure yourself\nFor a migration guide, see\nMigrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller\n.\nFor more information on the removal of this API,\nsee\nPodSecurityPolicy Deprecation: Past, Present, and Future\n.\nIf you are not running Kubernetes v1.36, check the documentation for\nyour version of Kubernetes."
+  "text": "Instead of using PodSecurityPolicy, you can enforce similar restrictions on Pods using\neither or both:\nPod Security Admission\na 3rd party admission plugin, that you deploy and configure yourself\nFor a migration guide, see\nMigrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller\n.\nFor more information on the removal of this API,\nsee\nPodSecurityPolicy Deprecation: Past, Present, and Future\n.\nIf you are not running Kubernetes v1.36, check the documentation for\nyour version of Kubernetes.",
+  "failure_classes": []
 }

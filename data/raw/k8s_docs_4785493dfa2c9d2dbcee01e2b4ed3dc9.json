@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Operator pattern — Deploying operators",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/#deploying-operators",
-  "text": "The most common way to deploy an operator is to add the\nCustom Resource Definition and its associated Controller to your cluster.\nThe Controller will normally run outside of the\ncontrol plane\n,\nmuch as you would run any containerized application.\nFor example, you can run the controller in your cluster as a Deployment."
+  "text": "The most common way to deploy an operator is to add the\nCustom Resource Definition and its associated Controller to your cluster.\nThe Controller will normally run outside of the\ncontrol plane\n,\nmuch as you would run any containerized application.\nFor example, you can run the controller in your cluster as a Deployment.",
+  "failure_classes": []
 }

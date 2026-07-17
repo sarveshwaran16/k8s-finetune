@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Troubleshooting CNI plugin-related errors — Incompatible CNI versions error",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/troubleshooting-cni-plugin-related-errors/#incompatible-cni-versions-error",
-  "text": "If the version of your CNI plugin does not correctly match the plugin version in\nthe config because the config version is later than the plugin version, the\ncontainerd log will likely show an error message on startup of a pod similar\nto:\nincompatible CNI versions; config is \\\"1.0.0\\\", plugin supports [\\\"0.1.0\\\" \\\"0.2.0\\\" \\\"0.3.0\\\" \\\"0.3.1\\\" \\\"0.4.0\\\"]\"\nTo fix this issue,\nupdate your CNI plugins and CNI config files\n."
+  "text": "If the version of your CNI plugin does not correctly match the plugin version in\nthe config because the config version is later than the plugin version, the\ncontainerd log will likely show an error message on startup of a pod similar\nto:\nincompatible CNI versions; config is \\\"1.0.0\\\", plugin supports [\\\"0.1.0\\\" \\\"0.2.0\\\" \\\"0.3.0\\\" \\\"0.3.1\\\" \\\"0.4.0\\\"]\"\nTo fix this issue,\nupdate your CNI plugins and CNI config files\n.",
+  "failure_classes": []
 }

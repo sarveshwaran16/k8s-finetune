@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Use a Service to Access an Application in a Cluster — Using a service configuration file",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/#using-a-service-configuration-file",
-  "text": "As an alternative to using\nkubectl expose\n, you can use a\nservice configuration file\nto create a Service.\n\nTo delete the Service, enter this command:\nkubectl delete services example-service\nTo delete the Deployment, the ReplicaSet, and the Pods that are running\nthe Hello World application, enter this command:\nkubectl delete deployment hello-world"
+  "text": "As an alternative to using\nkubectl expose\n, you can use a\nservice configuration file\nto create a Service.\n\nTo delete the Service, enter this command:\nkubectl delete services example-service\nTo delete the Deployment, the ReplicaSet, and the Pods that are running\nthe Hello World application, enter this command:\nkubectl delete deployment hello-world",
+  "failure_classes": []
 }

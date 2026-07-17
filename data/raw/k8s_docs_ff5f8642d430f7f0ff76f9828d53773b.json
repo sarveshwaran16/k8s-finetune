@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Service Internal Traffic Policy — Using Service Internal Traffic Policy",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/service-traffic-policy/#using-service-internal-traffic-policy",
-  "text": "You can enable the internal-only traffic policy for a\nService\n, by setting its\n.spec.internalTrafficPolicy\nto\nLocal\n. This tells kube-proxy to only use node local\nendpoints for cluster internal traffic.\nThe following example shows what a Service looks like when you set\n.spec.internalTrafficPolicy\nto\nLocal\n:\napiVersion\n:\nv1\nkind\n:\nService\nmetadata\n:\nname\n:\nmy-service\nspec\n:\nselector\n:\napp.kubernetes.io/name\n:\nMyApp\nports\n:\n-\nprotocol\n:\nTCP\nport\n:\n80\ntargetPort\n:\n9376\ninternalTrafficPolicy\n:\nLocal"
+  "text": "You can enable the internal-only traffic policy for a\nService\n, by setting its\n.spec.internalTrafficPolicy\nto\nLocal\n. This tells kube-proxy to only use node local\nendpoints for cluster internal traffic.\nThe following example shows what a Service looks like when you set\n.spec.internalTrafficPolicy\nto\nLocal\n:\napiVersion\n:\nv1\nkind\n:\nService\nmetadata\n:\nname\n:\nmy-service\nspec\n:\nselector\n:\napp.kubernetes.io/name\n:\nMyApp\nports\n:\n-\nprotocol\n:\nTCP\nport\n:\n80\ntargetPort\n:\n9376\ninternalTrafficPolicy\n:\nLocal",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ValidatingAdmissionPolicy — ExpressionWarning",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/admissionregistration/validating-admission-policy-v1/#ExpressionWarning",
-  "text": "ExpressionWarning is a warning information that targets a specific expression.\nField\nDescription\nfieldRef\n*\nstring\nfieldRef is the path to the field that refers to the expression. For example, the reference to the expression of the first item of validations is \"spec.validations[0].expression\"\nwarning\n*\nstring\nwarning contains the content of type checking information in a human-readable form. Each line of the warning contains the type that the expression is checked against, followed by the type check error from the compiler."
+  "text": "ExpressionWarning is a warning information that targets a specific expression.\nField\nDescription\nfieldRef\n*\nstring\nfieldRef is the path to the field that refers to the expression. For example, the reference to the expression of the first item of validations is \"spec.validations[0].expression\"\nwarning\n*\nstring\nwarning contains the content of type checking information in a human-readable form. Each line of the warning contains the type that the expression is checked against, followed by the type check error from the compiler.",
+  "failure_classes": []
 }

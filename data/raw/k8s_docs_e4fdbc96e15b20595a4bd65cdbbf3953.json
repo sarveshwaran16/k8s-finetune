@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Pod Overhead",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-overhead/",
-  "text": "When you run a Pod on a Node, the Pod itself takes an amount of system resources. These\nresources are additional to the resources needed to run the container(s) inside the Pod.\nIn Kubernetes,\nPod Overhead\nis a way to account for the resources consumed by the Pod\ninfrastructure on top of the container requests & limits.\nIn Kubernetes, the Pod's overhead is set at\nadmission\ntime according to the overhead associated with the Pod's\nRuntimeClass\n.\nA pod's overhead is considered in addition to the sum of container resource requests when\nscheduling a Pod. Similarly, the kubelet will include the Pod overhead when sizing the Pod cgroup,\nand when carrying out Pod eviction ranking."
+  "text": "When you run a Pod on a Node, the Pod itself takes an amount of system resources. These\nresources are additional to the resources needed to run the container(s) inside the Pod.\nIn Kubernetes,\nPod Overhead\nis a way to account for the resources consumed by the Pod\ninfrastructure on top of the container requests & limits.\nIn Kubernetes, the Pod's overhead is set at\nadmission\ntime according to the overhead associated with the Pod's\nRuntimeClass\n.\nA pod's overhead is considered in addition to the sum of container resource requests when\nscheduling a Pod. Similarly, the kubelet will include the Pod overhead when sizing the Pod cgroup,\nand when carrying out Pod eviction ranking.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

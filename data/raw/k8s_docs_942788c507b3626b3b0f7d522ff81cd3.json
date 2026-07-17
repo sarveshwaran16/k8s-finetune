@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling Framework",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/",
-  "text": "The\nscheduling framework\nis a pluggable architecture for the Kubernetes scheduler.\nIt consists of a set of \"plugin\" APIs that are compiled directly into the scheduler.\nThese APIs allow most scheduling features to be implemented as plugins,\nwhile keeping the scheduling \"core\" lightweight and maintainable. Refer to the\ndesign proposal of the scheduling framework\nfor more technical information on\nthe design of the framework."
+  "text": "The\nscheduling framework\nis a pluggable architecture for the Kubernetes scheduler.\nIt consists of a set of \"plugin\" APIs that are compiled directly into the scheduler.\nThese APIs allow most scheduling features to be implemented as plugins,\nwhile keeping the scheduling \"core\" lightweight and maintainable. Refer to the\ndesign proposal of the scheduling framework\nfor more technical information on\nthe design of the framework.",
+  "failure_classes": []
 }

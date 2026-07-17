@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "The kubectl command-line tool",
   "source_url": "https://kubernetes.io/docs/concepts/overview/kubectl/",
-  "text": "Kubernetes provides a command line tool for communicating with a Kubernetes cluster's\ncontrol plane\n,\nusing the Kubernetes API.\nThe\nkubectl\ntool communicates with your cluster through the\nKubernetes API\n.\nFor configuration,\nkubectl\nlooks for a file named\nconfig\nin the\n$HOME/.kube\ndirectory.\nYou can specify other\nkubeconfig\nfiles by setting the\nKUBECONFIG\nenvironment variable or by setting the\n--kubeconfig\nflag."
+  "text": "Kubernetes provides a command line tool for communicating with a Kubernetes cluster's\ncontrol plane\n,\nusing the Kubernetes API.\nThe\nkubectl\ntool communicates with your cluster through the\nKubernetes API\n.\nFor configuration,\nkubectl\nlooks for a file named\nconfig\nin the\n$HOME/.kube\ndirectory.\nYou can specify other\nkubeconfig\nfiles by setting the\nKUBECONFIG\nenvironment variable or by setting the\n--kubeconfig\nflag.",
+  "failure_classes": []
 }

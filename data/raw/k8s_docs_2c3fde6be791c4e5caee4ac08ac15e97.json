@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ControllerRevision — getRead",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apps/controller-revision-v1/#get-read",
-  "text": "GET /apis/apps/v1/namespaces/{namespace}/controllerrevisions/{name}\nName\nType\nDescription\nname\nstring\nname of the ControllerRevision\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nControllerRevision"
+  "text": "GET /apis/apps/v1/namespaces/{namespace}/controllerrevisions/{name}\nName\nType\nDescription\nname\nstring\nname of the ControllerRevision\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nControllerRevision",
+  "failure_classes": []
 }

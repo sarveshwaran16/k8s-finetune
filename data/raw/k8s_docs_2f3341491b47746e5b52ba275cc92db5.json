@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PKI certificates and requirements",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/certificates/",
-  "text": "Kubernetes requires PKI certificates for authentication over TLS.\nIf you install Kubernetes with\nkubeadm\n, the certificates\nthat your cluster requires are automatically generated.\nYou can also generate your own certificates -- for example, to keep your private keys more secure\nby not storing them on the API server.\nThis page explains the certificates that your cluster requires."
+  "text": "Kubernetes requires PKI certificates for authentication over TLS.\nIf you install Kubernetes with\nkubeadm\n, the certificates\nthat your cluster requires are automatically generated.\nYou can also generate your own certificates -- for example, to keep your private keys more secure\nby not storing them on the API server.\nThis page explains the certificates that your cluster requires.",
+  "failure_classes": []
 }

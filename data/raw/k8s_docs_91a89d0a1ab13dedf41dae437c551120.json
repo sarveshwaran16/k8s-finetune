@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Update a Deployment Without Downtime",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/",
-  "text": "This page shows how to update a running Deployment to a new version using a\nrolling update. A rolling update gradually replaces old Pods with new ones, so\nyour application remains available throughout the process.\n\nTrigger a rolling update on a Deployment.\nMonitor rollout progress.\nPause and resume the rollout.\nConfigure rolling update strategy parameters.\n(If required) Roll back to a previous revision."
+  "text": "This page shows how to update a running Deployment to a new version using a\nrolling update. A rolling update gradually replaces old Pods with new ones, so\nyour application remains available throughout the process.\n\nTrigger a rolling update on a Deployment.\nMonitor rollout progress.\nPause and resume the rollout.\nConfigure rolling update strategy parameters.\n(If required) Roll back to a previous revision.",
+  "failure_classes": []
 }

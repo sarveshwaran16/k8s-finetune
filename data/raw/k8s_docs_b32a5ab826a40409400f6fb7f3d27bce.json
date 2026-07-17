@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_kubeconfig_kubelet/",
-  "text": "Generate a kubeconfig file for the kubelet to use\nonly\nfor cluster bootstrapping purposes\n\nGenerate the kubeconfig file for the kubelet to use and save it to kubelet.conf file.\nPlease note that this should\nonly\nbe used for cluster bootstrapping purposes. After your control plane is up, you should request all kubelet credentials from the CSR API.\nkubeadm init phase kubeconfig kubelet [flags]"
+  "text": "Generate a kubeconfig file for the kubelet to use\nonly\nfor cluster bootstrapping purposes\n\nGenerate the kubeconfig file for the kubelet to use and save it to kubelet.conf file.\nPlease note that this should\nonly\nbe used for cluster bootstrapping purposes. After your control plane is up, you should request all kubelet credentials from the CSR API.\nkubeadm init phase kubeconfig kubelet [flags]",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

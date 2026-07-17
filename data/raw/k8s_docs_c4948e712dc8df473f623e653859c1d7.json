@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Node Status — Capacity and Allocatable",
   "source_url": "https://kubernetes.io/docs/reference/node/node-status/#capacity",
-  "text": "Describes the resources available on the node: CPU, memory, and the maximum\nnumber of pods that can be scheduled onto the node.\nThe fields in the capacity block indicate the total amount of resources that a\nNode has. The allocatable block indicates the amount of resources on a\nNode that is available to be consumed by normal Pods.\nYou may read more about capacity and allocatable resources while learning how\nto\nreserve compute resources\non a Node."
+  "text": "Describes the resources available on the node: CPU, memory, and the maximum\nnumber of pods that can be scheduled onto the node.\nThe fields in the capacity block indicate the total amount of resources that a\nNode has. The allocatable block indicates the amount of resources on a\nNode that is available to be consumed by normal Pods.\nYou may read more about capacity and allocatable resources while learning how\nto\nreserve compute resources\non a Node.",
+  "failure_classes": []
 }

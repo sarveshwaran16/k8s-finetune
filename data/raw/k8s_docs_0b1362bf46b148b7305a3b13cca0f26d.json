@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Storage Classes — Allowed topologies",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/#allowed-topologies",
-  "text": "When a cluster operator specifies the\nWaitForFirstConsumer\nvolume binding mode, it is no longer necessary\nto restrict provisioning to specific topologies in most situations. However,\nif still required,\nallowedTopologies\ncan be specified.\nThis example demonstrates how to restrict the topology of provisioned volumes to specific\nzones and should be used as a replacement for the\nzone\nand\nzones\nparameters for the\nsupported plugins.\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nStorageClass\nmetadata\n:\nname\n:\nstandard\nprovisioner\n:\nexample.com/example\nparameters\n:\ntype\n:\npd-standard\nvolumeBindingMode\n:\nWaitForFirstConsumer\nallowedTopologies\n:\n-\nmatchLabelExpressions\n:\n-\nkey\n:\ntopology.kubernetes.io/zone\nvalues\n:\n-\nus-central-1a\n-\nus-central-1b"
+  "text": "When a cluster operator specifies the\nWaitForFirstConsumer\nvolume binding mode, it is no longer necessary\nto restrict provisioning to specific topologies in most situations. However,\nif still required,\nallowedTopologies\ncan be specified.\nThis example demonstrates how to restrict the topology of provisioned volumes to specific\nzones and should be used as a replacement for the\nzone\nand\nzones\nparameters for the\nsupported plugins.\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nStorageClass\nmetadata\n:\nname\n:\nstandard\nprovisioner\n:\nexample.com/example\nparameters\n:\ntype\n:\npd-standard\nvolumeBindingMode\n:\nWaitForFirstConsumer\nallowedTopologies\n:\n-\nmatchLabelExpressions\n:\n-\nkey\n:\ntopology.kubernetes.io/zone\nvalues\n:\n-\nus-central-1a\n-\nus-central-1b",
+  "failure_classes": [
+    "PVC"
+  ]
 }

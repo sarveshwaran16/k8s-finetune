@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Node-pressure Eviction — Node condition oscillation",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/#node-condition-oscillation",
-  "text": "In some cases, nodes oscillate above and below soft eviction thresholds without\nholding for the defined grace periods. This causes the reported node condition\nto constantly switch between\ntrue\nand\nfalse\n, leading to bad eviction decisions.\nTo protect against oscillation, you can use the\neviction-pressure-transition-period\nflag, which controls how long the kubelet must wait before transitioning a node\ncondition to a different state. The transition period has a default value of\n5m\n."
+  "text": "In some cases, nodes oscillate above and below soft eviction thresholds without\nholding for the defined grace periods. This causes the reported node condition\nto constantly switch between\ntrue\nand\nfalse\n, leading to bad eviction decisions.\nTo protect against oscillation, you can use the\neviction-pressure-transition-period\nflag, which controls how long the kubelet must wait before transitioning a node\ncondition to a different state. The transition period has a default value of\n5m\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

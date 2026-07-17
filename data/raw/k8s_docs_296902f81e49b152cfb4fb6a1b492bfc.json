@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — PodSecurity",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#podsecurity",
-  "text": "Type\n: Validating.\nThe PodSecurity admission controller checks new Pods before they are\nadmitted, determines if it should be admitted based on the requested security context and the restrictions on permitted\nPod Security Standards\nfor the namespace that the Pod would be in.\nSee the\nPod Security Admission\ndocumentation for more information.\nPodSecurity replaced an older admission controller named PodSecurityPolicy."
+  "text": "Type\n: Validating.\nThe PodSecurity admission controller checks new Pods before they are\nadmitted, determines if it should be admitted based on the requested security context and the restrictions on permitted\nPod Security Standards\nfor the namespace that the Pod would be in.\nSee the\nPod Security Admission\ndocumentation for more information.\nPodSecurity replaced an older admission controller named PodSecurityPolicy.",
+  "failure_classes": []
 }

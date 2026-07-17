@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — applyset.kubernetes.io/part-of (alpha)",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#applyset-kubernetes-io-part-of",
-  "text": "Type: Label\nExample:\napplyset.kubernetes.io/part-of: \"applyset-0eFHV8ySqp7XoShsGvyWFQD3s96yqwHmzc4e0HR1dsY-v1\"\nUsed on: All objects.\nUse of this label is Alpha.\nPart of the specification used to implement\nApplySet-based pruning in kubectl\n.\nThis label is what makes an object a member of an ApplySet.\nThe value of the label\nmust\nmatch the value of the\napplyset.kubernetes.io/id\nlabel on the parent object."
+  "text": "Type: Label\nExample:\napplyset.kubernetes.io/part-of: \"applyset-0eFHV8ySqp7XoShsGvyWFQD3s96yqwHmzc4e0HR1dsY-v1\"\nUsed on: All objects.\nUse of this label is Alpha.\nPart of the specification used to implement\nApplySet-based pruning in kubectl\n.\nThis label is what makes an object a member of an ApplySet.\nThe value of the label\nmust\nmatch the value of the\napplyset.kubernetes.io/id\nlabel on the parent object.",
+  "failure_classes": []
 }

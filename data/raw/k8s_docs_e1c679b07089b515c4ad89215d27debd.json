@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Volume Attributes Classes — The VolumeAttributesClass API",
   "source_url": "https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/#the-volumeattributesclass-api",
-  "text": "Each VolumeAttributesClass contains the\ndriverName\nand\nparameters\n, which are\nused when a PersistentVolume (PV) belonging to the class needs to be dynamically provisioned\nor modified.\nThe name of a VolumeAttributesClass object is significant and is how users can request a particular class.\nAdministrators set the name and other parameters of a class when first creating VolumeAttributesClass objects.\nWhile the name of a VolumeAttributesClass object in a\nPersistentVolumeClaim\nis mutable, the parameters in an existing class are immutable.\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nVolumeAttributesClass\nmetadata\n:\nname\n:\nsilver\ndriverName\n:\npd.csi.storage.gke.io\nparameters\n:\nprovisioned-iops\n:\n\"3000\"\nprovisioned-throughput\n:\n\"50\""
+  "text": "Each VolumeAttributesClass contains the\ndriverName\nand\nparameters\n, which are\nused when a PersistentVolume (PV) belonging to the class needs to be dynamically provisioned\nor modified.\nThe name of a VolumeAttributesClass object is significant and is how users can request a particular class.\nAdministrators set the name and other parameters of a class when first creating VolumeAttributesClass objects.\nWhile the name of a VolumeAttributesClass object in a\nPersistentVolumeClaim\nis mutable, the parameters in an existing class are immutable.\napiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nVolumeAttributesClass\nmetadata\n:\nname\n:\nsilver\ndriverName\n:\npd.csi.storage.gke.io\nparameters\n:\nprovisioned-iops\n:\n\"3000\"\nprovisioned-throughput\n:\n\"50\"",
+  "failure_classes": [
+    "PVC"
+  ]
 }

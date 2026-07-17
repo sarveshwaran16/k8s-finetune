@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/config.source",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-config-source",
-  "text": "Type: Annotation\nExample:\nkubernetes.io/config.source: \"file\"\nUsed on: Pod\nThis annotation is added by the kubelet to indicate where the Pod comes from.\nFor static Pods, the annotation value could be one of\nfile\nor\nhttp\ndepending\non where the Pod manifest is located. For a Pod created on the API server and then\nscheduled to the current node, the annotation value is\napi\n."
+  "text": "Type: Annotation\nExample:\nkubernetes.io/config.source: \"file\"\nUsed on: Pod\nThis annotation is added by the kubelet to indicate where the Pod comes from.\nFor static Pods, the annotation value could be one of\nfile\nor\nhttp\ndepending\non where the Pod manifest is located. For a Pod created on the API server and then\nscheduled to the current node, the annotation value is\napi\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Command line tool (kubectl) — What's next",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/#what-s-next",
-  "text": "Read the\nkubectl\nreference documentation:\nthe kubectl\ncommand reference\nthe\ncommand line arguments\nreference\nLearn about\nkubectl\nusage conventions\nRead about\nJSONPath support\nin kubectl\nRead about how to\nextend kubectl with plugins\nTo find out more about plugins, take a look at the\nexample CLI plugin\n.\nthe kubectl\ncommand reference\nthe\ncommand line arguments\nreference\nTo find out more about plugins, take a look at the\nexample CLI plugin\n."
+  "text": "Read the\nkubectl\nreference documentation:\nthe kubectl\ncommand reference\nthe\ncommand line arguments\nreference\nLearn about\nkubectl\nusage conventions\nRead about\nJSONPath support\nin kubectl\nRead about how to\nextend kubectl with plugins\nTo find out more about plugins, take a look at the\nexample CLI plugin\n.\nthe kubectl\ncommand reference\nthe\ncommand line arguments\nreference\nTo find out more about plugins, take a look at the\nexample CLI plugin\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Liveness, Readiness, and Startup Probes — When should you use a startup probe?",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#when-should-you-use-a-startup-probe",
-  "text": "Startup probes are useful for Pods that have containers that take a long time to\ncome into service. Rather than set a long liveness interval, you can configure a\nseparate configuration for probing the container as it starts up, allowing a\ntime longer than the liveness interval would allow.\nIf your container usually starts in more than\n\\( initialDelaySeconds + failureThreshold \\times periodSeconds \\), you should specify a\nstartup probe that checks the same endpoint as the liveness probe. The default\nfor\nperiodSeconds\nis 10s. You should then set its\nfailureThreshold\nhigh\nenough to allow the container to start, without changing the default values of\nthe liveness probe. This helps to protect against deadlocks."
+  "text": "Startup probes are useful for Pods that have containers that take a long time to\ncome into service. Rather than set a long liveness interval, you can configure a\nseparate configuration for probing the container as it starts up, allowing a\ntime longer than the liveness interval would allow.\nIf your container usually starts in more than\n\\( initialDelaySeconds + failureThreshold \\times periodSeconds \\), you should specify a\nstartup probe that checks the same endpoint as the liveness probe. The default\nfor\nperiodSeconds\nis 10s. You should then set its\nfailureThreshold\nhigh\nenough to allow the container to start, without changing the default values of\nthe liveness probe. This helps to protect against deadlocks.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

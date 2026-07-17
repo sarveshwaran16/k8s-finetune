@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PodGroup Lifecycle",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/podgroup-api/lifecycle/",
-  "text": "A\nPodGroup\nis scheduled as a unit and protected\nfrom premature deletion while its Pods are still running.\n\nPodGroups\nare owned by the workload controller that created them (for example, a Job)\nvia standard\nownerReferences\n. When the owning object is deleted,\nPodGroups\nare\nautomatically garbage collected.\nPodGroup\nnames must be unique within a namespace and must be valid\nDNS subdomains\n."
+  "text": "A\nPodGroup\nis scheduled as a unit and protected\nfrom premature deletion while its Pods are still running.\n\nPodGroups\nare owned by the workload controller that created them (for example, a Job)\nvia standard\nownerReferences\n. When the owning object is deleted,\nPodGroups\nare\nautomatically garbage collected.\nPodGroup\nnames must be unique within a namespace and must be valid\nDNS subdomains\n.",
+  "failure_classes": []
 }

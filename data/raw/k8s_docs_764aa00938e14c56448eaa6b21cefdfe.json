@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Device Plugins — GetgRPC endpoint",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/#grpc-endpoint-get",
-  "text": "The\nGet\nendpoint provides information on resources of a running Pod. It exposes information\nsimilar to those described in the\nList\nendpoint. The\nGet\nendpoint requires\nPodName\nand\nPodNamespace\nof the running Pod.\n// GetPodResourcesRequest contains information about the pod\nmessage GetPodResourcesRequest {\n    string pod_name = 1;\n    string pod_namespace = 2;\n}\nThe\nGet\nendpoint can provide Pod information related to dynamic resources\nallocated by the dynamic resource allocation API.\nStarting from Kubernetes v1.34, this feature is enabled by default."
+  "text": "The\nGet\nendpoint provides information on resources of a running Pod. It exposes information\nsimilar to those described in the\nList\nendpoint. The\nGet\nendpoint requires\nPodName\nand\nPodNamespace\nof the running Pod.\n// GetPodResourcesRequest contains information about the pod\nmessage GetPodResourcesRequest {\n    string pod_name = 1;\n    string pod_namespace = 2;\n}\nThe\nGet\nendpoint can provide Pod information related to dynamic resources\nallocated by the dynamic resource allocation API.\nStarting from Kubernetes v1.34, this feature is enabled by default.",
+  "failure_classes": []
 }

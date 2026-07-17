@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debug Running Pods — Debugging a Pod or Node while applying a profile",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#debugging-profiles",
-  "text": "When using\nkubectl debug\nto debug a node via a debugging Pod, a Pod via an ephemeral container,\nor a copied Pod, you can apply a profile to them.\nBy applying a profile, specific properties such as\nsecurityContext\nare set, allowing for adaptation to various scenarios.\nThere are two types of profiles, static profile and custom profile."
+  "text": "When using\nkubectl debug\nto debug a node via a debugging Pod, a Pod via an ephemeral container,\nor a copied Pod, you can apply a profile to them.\nBy applying a profile, specific properties such as\nsecurityContext\nare set, allowing for adaptation to various scenarios.\nThere are two types of profiles, static profile and custom profile.",
+  "failure_classes": []
 }

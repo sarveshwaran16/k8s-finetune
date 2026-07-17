@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Debug Services — Running commands in a Pod",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/#running-commands-in-a-pod",
-  "text": "For many steps here you will want to see what a Pod running in the cluster\nsees. The simplest way to do this is to run an interactive busybox Pod:\nkubectl run -it --rm --restart=Never busybox --image=registry.k8s.io/busybox:1.27.2 sh\nIf you already have a running Pod that you prefer to use, you can run a\ncommand in it using:\nkubectl\nexec\n<POD-NAME> -c <CONTAINER-NAME> -- <COMMAND>"
+  "text": "For many steps here you will want to see what a Pod running in the cluster\nsees. The simplest way to do this is to run an interactive busybox Pod:\nkubectl run -it --rm --restart=Never busybox --image=registry.k8s.io/busybox:1.27.2 sh\nIf you already have a running Pod that you prefer to use, you can run a\ncommand in it using:\nkubectl\nexec\n<POD-NAME> -c <CONTAINER-NAME> -- <COMMAND>",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

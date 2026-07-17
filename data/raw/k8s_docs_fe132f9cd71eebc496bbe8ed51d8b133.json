@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Authorization — Privilege escalation via workload creation or edits",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authorization/#privilege-escalation-via-pod-creation",
-  "text": "Users who can create/edit pods in a namespace, either directly or through an object that\nenables indirect\nworkload management\n, may be\nable to escalate their privileges in that namespace. The potential routes to privilege\nescalation include Kubernetes\nAPI extensions\nand their associated\ncontrollers\n."
+  "text": "Users who can create/edit pods in a namespace, either directly or through an object that\nenables indirect\nworkload management\n, may be\nable to escalate their privileges in that namespace. The potential routes to privilege\nescalation include Kubernetes\nAPI extensions\nand their associated\ncontrollers\n.",
+  "failure_classes": []
 }

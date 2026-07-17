@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Implementation details — kubeadm join phases internal design",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#kubeadm-join-phases-internal-design",
-  "text": "Similarly to\nkubeadm init\n, also\nkubeadm join\ninternal workflow consists of a sequence of\natomic work tasks to perform.\nThis is split into discovery (having the Node trust the Kubernetes API Server) and TLS bootstrap\n(having the Kubernetes API Server trust the Node).\nsee\nAuthenticating with Bootstrap Tokens\nor the corresponding\ndesign proposal\n."
+  "text": "Similarly to\nkubeadm init\n, also\nkubeadm join\ninternal workflow consists of a sequence of\natomic work tasks to perform.\nThis is split into discovery (having the Node trust the Kubernetes API Server) and TLS bootstrap\n(having the Kubernetes API Server trust the Node).\nsee\nAuthenticating with Bootstrap Tokens\nor the corresponding\ndesign proposal\n.",
+  "failure_classes": []
 }

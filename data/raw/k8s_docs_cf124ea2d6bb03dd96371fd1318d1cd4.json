@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — Volume Snapshot and Restore Volume from Snapshot Support",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#volume-snapshot-and-restore-volume-from-snapshot-support",
-  "text": "Volume snapshots only support the out-of-tree CSI volume plugins.\nFor details, see\nVolume Snapshots\n.\nIn-tree volume plugins are deprecated. You can read about the deprecated volume\nplugins in the\nVolume Plugin FAQ\n.\n\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\nrestore-pvc\nspec\n:\nstorageClassName\n:\ncsi-hostpath-sc\ndataSource\n:\nname\n:\nnew-snapshot-test\nkind\n:\nVolumeSnapshot\napiGroup\n:\nsnapshot.storage.k8s.io\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n10Gi"
+  "text": "Volume snapshots only support the out-of-tree CSI volume plugins.\nFor details, see\nVolume Snapshots\n.\nIn-tree volume plugins are deprecated. You can read about the deprecated volume\nplugins in the\nVolume Plugin FAQ\n.\n\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\nrestore-pvc\nspec\n:\nstorageClassName\n:\ncsi-hostpath-sc\ndataSource\n:\nname\n:\nnew-snapshot-test\nkind\n:\nVolumeSnapshot\napiGroup\n:\nsnapshot.storage.k8s.io\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n10Gi",
+  "failure_classes": [
+    "PVC"
+  ]
 }

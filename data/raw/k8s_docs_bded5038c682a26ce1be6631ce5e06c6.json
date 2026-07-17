@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — scheduler.alpha.kubernetes.io/preferAvoidPods (deprecated)",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#scheduleralphakubernetesio-preferavoidpods",
-  "text": "Type: Annotation\nUsed on: Node\nThis annotation requires the\nNodePreferAvoidPods scheduling plugin\nto be enabled. The plugin is deprecated since Kubernetes 1.22.\nUse\nTaints and Tolerations\ninstead.\n\nType: Taint\nExample:\nnode.kubernetes.io/not-ready: \"NoExecute\"\nUsed on: Node\nThe Node controller detects whether a Node is ready by monitoring its health\nand adds or removes this taint accordingly."
+  "text": "Type: Annotation\nUsed on: Node\nThis annotation requires the\nNodePreferAvoidPods scheduling plugin\nto be enabled. The plugin is deprecated since Kubernetes 1.22.\nUse\nTaints and Tolerations\ninstead.\n\nType: Taint\nExample:\nnode.kubernetes.io/not-ready: \"NoExecute\"\nUsed on: Node\nThe Node controller detects whether a Node is ready by monitoring its health\nand adds or removes this taint accordingly.",
+  "failure_classes": []
 }

@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Configuring swap memory on Kubernetes nodes — Set up kubelet configuration",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/provision-swap-memory/#set-up-kubelet-configuration",
-  "text": "After enabling swap on the node, kubelet needs to be configured to use it.\nYou need to select a\nswap behavior\nfor this node. You'll configure\nLimitedSwap\nbehavior for this tutorial.\nFind and edit the kubelet configuration file, and:\nset\nfailSwapOn\nto false\nset\nmemorySwap.swapBehavior\nto LimitedSwap\n# this fragment goes into the kubelet's configuration file\nfailSwapOn\n:\nfalse\nmemorySwap\n:\nswapBehavior\n:\nLimitedSwap\nIn order for these configurations to take effect, kubelet needs to be restarted.\nTypically you do that by running:\nsystemctl restart kubelet.service\nYou should find that the kubelet is now healthy, and that you can run Pods\nthat use swap memory as needed."
+  "text": "After enabling swap on the node, kubelet needs to be configured to use it.\nYou need to select a\nswap behavior\nfor this node. You'll configure\nLimitedSwap\nbehavior for this tutorial.\nFind and edit the kubelet configuration file, and:\nset\nfailSwapOn\nto false\nset\nmemorySwap.swapBehavior\nto LimitedSwap\n# this fragment goes into the kubelet's configuration file\nfailSwapOn\n:\nfalse\nmemorySwap\n:\nswapBehavior\n:\nLimitedSwap\nIn order for these configurations to take effect, kubelet needs to be restarted.\nTypically you do that by running:\nsystemctl restart kubelet.service\nYou should find that the kubelet is now healthy, and that you can run Pods\nthat use swap memory as needed.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

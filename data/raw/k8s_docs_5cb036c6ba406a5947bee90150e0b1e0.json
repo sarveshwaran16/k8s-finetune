@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Horizontal Manual Scaling for a Deployment — Scaling to zero",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/scale-deployment/#scaling-to-zero",
-  "text": "You can scale a Deployment to zero to temporarily suspend the workload without\ndeleting the Deployment itself:\nkubectl scale deployment/nginx-deployment --replicas\n=\n0\nVerify that no Pods are running:\nkubectl get deployment nginx-deployment\nThe output is similar to:\nNAME               READY   UP-TO-DATE   AVAILABLE   AGE\nnginx-deployment   0/0     0            0           5m\nCommon use cases for scaling to zero include:\nTemporarily suspending a workload to save resources\nDebugging or maintenance windows\nCost control in development or staging environments"
+  "text": "You can scale a Deployment to zero to temporarily suspend the workload without\ndeleting the Deployment itself:\nkubectl scale deployment/nginx-deployment --replicas\n=\n0\nVerify that no Pods are running:\nkubectl get deployment nginx-deployment\nThe output is similar to:\nNAME               READY   UP-TO-DATE   AVAILABLE   AGE\nnginx-deployment   0/0     0            0           5m\nCommon use cases for scaling to zero include:\nTemporarily suspending a workload to save resources\nDebugging or maintenance windows\nCost control in development or staging environments",
+  "failure_classes": []
 }

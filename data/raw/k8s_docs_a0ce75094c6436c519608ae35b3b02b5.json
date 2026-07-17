@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Troubleshooting Clusters — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/#what-s-next",
-  "text": "Learn about the metrics available in the\nResource Metrics Pipeline\nDiscover additional tools for\nmonitoring resource usage\nUse Node Problem Detector to\nmonitor node health\nUse\nkubectl debug node\nto\ndebug Kubernetes nodes\nUse\ncrictl\nto\ndebug Kubernetes nodes\nGet more information about\nKubernetes auditing\nUse\ntelepresence\nto\ndevelop and debug services locally"
+  "text": "Learn about the metrics available in the\nResource Metrics Pipeline\nDiscover additional tools for\nmonitoring resource usage\nUse Node Problem Detector to\nmonitor node health\nUse\nkubectl debug node\nto\ndebug Kubernetes nodes\nUse\ncrictl\nto\ndebug Kubernetes nodes\nGet more information about\nKubernetes auditing\nUse\ntelepresence\nto\ndevelop and debug services locally",
+  "failure_classes": []
 }

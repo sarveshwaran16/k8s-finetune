@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Monitoring in Kubernetes",
   "source_url": "https://kubernetes.io/docs/tasks/debug/monitoring/",
-  "text": "This page provides resources that describe monitoring in Kubernetes. You can learn how to collect system metrics and traces for Kubernetes system components:\nMetrics For Kubernetes System Components\nTraces For Kubernetes System Components\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "This page provides resources that describe monitoring in Kubernetes. You can learn how to collect system metrics and traces for Kubernetes system components:\nMetrics For Kubernetes System Components\nTraces For Kubernetes System Components\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

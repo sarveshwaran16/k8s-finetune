@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Volume Snapshot Classes — Parameters",
   "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshot-classes/#parameters",
-  "text": "Volume snapshot classes have parameters that describe volume snapshots belonging to\nthe volume snapshot class. Different parameters may be accepted depending on the\ndriver\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Volume snapshot classes have parameters that describe volume snapshots belonging to\nthe volume snapshot class. Different parameters may be accepted depending on the\ndriver\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

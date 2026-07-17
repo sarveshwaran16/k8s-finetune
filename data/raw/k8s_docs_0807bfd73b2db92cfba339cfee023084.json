@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Kubelet Systemd Watchdog — Example Configuration",
   "source_url": "https://kubernetes.io/docs/reference/node/systemd-watchdog/#example-configuration",
-  "text": "[Unit]\nDescription\n=\nkubelet: The Kubernetes Node Agent\nDocumentation\n=\nhttps://kubernetes.io/docs/home/\nWants\n=\nnetwork-online.target\nAfter\n=\nnetwork-online.target\n[Service]\nExecStart\n=\n/usr/bin/kubelet\n# Configures the watchdog timeout\nWatchdogSec\n=\n30s\nRestart\n=\non-failure\nStartLimitInterval\n=\n0\nRestartSec\n=\n10\n[Install]\nWantedBy\n=\nmulti-user.target"
+  "text": "[Unit]\nDescription\n=\nkubelet: The Kubernetes Node Agent\nDocumentation\n=\nhttps://kubernetes.io/docs/home/\nWants\n=\nnetwork-online.target\nAfter\n=\nnetwork-online.target\n[Service]\nExecStart\n=\n/usr/bin/kubelet\n# Configures the watchdog timeout\nWatchdogSec\n=\n30s\nRestart\n=\non-failure\nStartLimitInterval\n=\n0\nRestartSec\n=\n10\n[Install]\nWantedBy\n=\nmulti-user.target",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

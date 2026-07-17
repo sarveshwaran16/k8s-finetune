@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Horizontal Pod Autoscaling — API object",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#api-object",
-  "text": "The HorizontalPodAutoscaler is an API kind in the Kubernetes\nautoscaling\nAPI group. The current stable version can be found in\nthe\nautoscaling/v2\nAPI version which includes support for scaling on\nmemory and custom metrics. The new fields introduced in\nautoscaling/v2\nare preserved as annotations when working with\nautoscaling/v1\n.\nWhen you create a HorizontalPodAutoscaler API object, make sure the name specified is a valid\nDNS subdomain name\n.\nMore details about the API object can be found at\nHorizontalPodAutoscaler Object\n."
+  "text": "The HorizontalPodAutoscaler is an API kind in the Kubernetes\nautoscaling\nAPI group. The current stable version can be found in\nthe\nautoscaling/v2\nAPI version which includes support for scaling on\nmemory and custom metrics. The new fields introduced in\nautoscaling/v2\nare preserved as annotations when working with\nautoscaling/v1\n.\nWhen you create a HorizontalPodAutoscaler API object, make sure the name specified is a valid\nDNS subdomain name\n.\nMore details about the API object can be found at\nHorizontalPodAutoscaler Object\n.",
+  "failure_classes": []
 }

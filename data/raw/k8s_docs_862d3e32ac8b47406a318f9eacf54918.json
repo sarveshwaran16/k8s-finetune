@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "CRI Pod & Container Metrics",
   "source_url": "https://kubernetes.io/docs/reference/instrumentation/cri-pod-container-metrics/",
-  "text": "The\nkubelet\ncollects pod and\ncontainer metrics via\ncAdvisor\n. As an alpha feature,\nKubernetes lets you configure the collection of pod and container\nmetrics via the\nContainer Runtime Interface\n(CRI). You\nmust enable the\nPodAndContainerStatsFromCRI\nfeature gate\nand\nuse a compatible CRI implementation (containerd >= 1.6.0, CRI-O >= 1.23.0) to\nuse the CRI based collection mechanism."
+  "text": "The\nkubelet\ncollects pod and\ncontainer metrics via\ncAdvisor\n. As an alpha feature,\nKubernetes lets you configure the collection of pod and container\nmetrics via the\nContainer Runtime Interface\n(CRI). You\nmust enable the\nPodAndContainerStatsFromCRI\nfeature gate\nand\nuse a compatible CRI implementation (containerd >= 1.6.0, CRI-O >= 1.23.0) to\nuse the CRI based collection mechanism.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

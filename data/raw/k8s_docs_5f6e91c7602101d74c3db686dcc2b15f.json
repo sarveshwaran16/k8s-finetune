@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Reduced container restart delay",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#reduced-container-restart-delay",
-  "text": "With the alpha feature gate\nReduceDefaultCrashLoopBackOffDecay\nenabled,\ncontainer start retries across your cluster will be reduced to begin at 1s\n(instead of 10s) and increase exponentially by 2x each restart until a maximum\ndelay of 60s (instead of 300s which is 5 minutes).\nIf you use this feature along with the alpha feature\nKubeletCrashLoopBackOffMax\n(described below), individual nodes may have\ndifferent maximum delays."
+  "text": "With the alpha feature gate\nReduceDefaultCrashLoopBackOffDecay\nenabled,\ncontainer start retries across your cluster will be reduced to begin at 1s\n(instead of 10s) and increase exponentially by 2x each restart until a maximum\ndelay of 60s (instead of 300s which is 5 minutes).\nIf you use this feature along with the alpha feature\nKubeletCrashLoopBackOffMax\n(described below), individual nodes may have\ndifferent maximum delays.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

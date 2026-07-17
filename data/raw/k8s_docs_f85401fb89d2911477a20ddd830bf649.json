@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Debug Running Pods — Copying a Pod while changing container images",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#copying-a-pod-while-changing-container-images",
-  "text": "In some situations you may want to change a misbehaving Pod from its normal\nproduction container images to an image containing a debugging build or\nadditional utilities.\nAs an example, create a Pod using\nkubectl run\n:\nkubectl run myapp --image=busybox:1.28 --restart=Never -- sleep 1d\nNow use\nkubectl debug\nto make a copy and change its container image\nto\nubuntu\n:\nkubectl debug myapp --copy-to=myapp-debug --set-image=*=ubuntu\nThe syntax of\n--set-image\nuses the same\ncontainer_name=image\nsyntax as\nkubectl set image\n.\n*=ubuntu\nmeans change the image of all containers\nto\nubuntu\n.\nDon't forget to clean up the debugging Pod when you're finished with it:\nkubectl delete pod myapp myapp-debug"
+  "text": "In some situations you may want to change a misbehaving Pod from its normal\nproduction container images to an image containing a debugging build or\nadditional utilities.\nAs an example, create a Pod using\nkubectl run\n:\nkubectl run myapp --image=busybox:1.28 --restart=Never -- sleep 1d\nNow use\nkubectl debug\nto make a copy and change its container image\nto\nubuntu\n:\nkubectl debug myapp --copy-to=myapp-debug --set-image=*=ubuntu\nThe syntax of\n--set-image\nuses the same\ncontainer_name=image\nsyntax as\nkubectl set image\n.\n*=ubuntu\nmeans change the image of all containers\nto\nubuntu\n.\nDon't forget to clean up the debugging Pod when you're finished with it:\nkubectl delete pod myapp myapp-debug",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

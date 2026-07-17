@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Troubleshooting Topology Management — Check the device plugin resource API",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/topology/#device-plugin-resource-api",
-  "text": "The kubelet provides a\nPodResourceLister\ngRPC service to enable discovery of resources and associated metadata.\nBy using its\nList gRPC endpoint\n,\ninformation about reserved memory for each container can be retrieved, which is contained\nin protobuf\nContainerMemory\nmessage.\nThis information can be retrieved solely for pods in Guaranteed QoS class."
+  "text": "The kubelet provides a\nPodResourceLister\ngRPC service to enable discovery of resources and associated metadata.\nBy using its\nList gRPC endpoint\n,\ninformation about reserved memory for each container can be retrieved, which is contained\nin protobuf\nContainerMemory\nmessage.\nThis information can be retrieved solely for pods in Guaranteed QoS class.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

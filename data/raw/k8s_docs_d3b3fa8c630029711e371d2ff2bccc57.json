@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "VolumeAttachment — VolumeAttachmentSpec",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/volume-attachment-v1/#VolumeAttachmentSpec",
-  "text": "VolumeAttachmentSpec is the specification of a VolumeAttachment request.\nField\nDescription\nattacher\n*\nstring\nattacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName().\nnodeName\n*\nstring\nnodeName represents the node that the volume should be attached to.\nsource\n*\nVolumeAttachmentSource\nsource represents the volume that should be attached."
+  "text": "VolumeAttachmentSpec is the specification of a VolumeAttachment request.\nField\nDescription\nattacher\n*\nstring\nattacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName().\nnodeName\n*\nstring\nnodeName represents the node that the volume should be attached to.\nsource\n*\nVolumeAttachmentSource\nsource represents the volume that should be attached.",
+  "failure_classes": []
 }

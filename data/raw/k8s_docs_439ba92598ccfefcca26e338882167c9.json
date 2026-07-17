@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Native Histogram Support for Kubernetes Metrics — Enabling native histograms",
   "source_url": "https://kubernetes.io/docs/reference/instrumentation/native-histograms/#enabling-native-histograms",
-  "text": "Enabling native histograms is a two-step process: enable the feature gate on\nKubernetes components, and configure Prometheus to scrape native histograms.\n\nEnable the\nNativeHistograms\nfeature gate on the Kubernetes components\nyou want to expose native histograms from:\n--feature-gates\n=\nNativeHistograms\n=\ntrue\nThis feature gate applies to the following components:\nkube-apiserver\nkube-controller-manager\nkube-scheduler\nkubelet\nkube-proxy\nEach component's metrics are independent; you can enable or disable the feature\ngate per component."
+  "text": "Enabling native histograms is a two-step process: enable the feature gate on\nKubernetes components, and configure Prometheus to scrape native histograms.\n\nEnable the\nNativeHistograms\nfeature gate on the Kubernetes components\nyou want to expose native histograms from:\n--feature-gates\n=\nNativeHistograms\n=\ntrue\nThis feature gate applies to the following components:\nkube-apiserver\nkube-controller-manager\nkube-scheduler\nkubelet\nkube-proxy\nEach component's metrics are independent; you can enable or disable the feature\ngate per component.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

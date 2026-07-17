@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "ServiceAccount",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/service-account-v1/",
-  "text": "Service Accounts\nLearn about ServiceAccount objects in Kubernetes.\nWhat are service accounts?\nUse cases for Kubernetes service accounts\nHow to use service accounts\nAuthenticating service account credentials\nAlternatives\nWhat's next\nLearn about ServiceAccount objects in Kubernetes.\nWhat are service accounts?\nUse cases for Kubernetes service accounts\nHow to use service accounts\nAuthenticating service account credentials\nAlternatives\nWhat's next\napiVersion: v1\nimport \"k8s.io/api/core/v1\""
+  "text": "Service Accounts\nLearn about ServiceAccount objects in Kubernetes.\nWhat are service accounts?\nUse cases for Kubernetes service accounts\nHow to use service accounts\nAuthenticating service account credentials\nAlternatives\nWhat's next\nLearn about ServiceAccount objects in Kubernetes.\nWhat are service accounts?\nUse cases for Kubernetes service accounts\nHow to use service accounts\nAuthenticating service account credentials\nAlternatives\nWhat's next\napiVersion: v1\nimport \"k8s.io/api/core/v1\"",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

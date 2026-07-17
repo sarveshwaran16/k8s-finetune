@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Local ephemeral storage — How Pods with ephemeral-storage requests are scheduled",
   "source_url": "https://kubernetes.io/docs/concepts/storage/ephemeral-storage/#how-pods-with-ephemeral-storage-requests-are-scheduled",
-  "text": "When you create a Pod, the Kubernetes scheduler selects a node for the Pod to\nrun on. Each node has a maximum amount of local ephemeral storage it can provide for Pods.\nFor more information, see\nNode Allocatable\n.\nThe scheduler ensures that the sum of the resource requests of the scheduled containers is less than the capacity of the node."
+  "text": "When you create a Pod, the Kubernetes scheduler selects a node for the Pod to\nrun on. Each node has a maximum amount of local ephemeral storage it can provide for Pods.\nFor more information, see\nNode Allocatable\n.\nThe scheduler ensures that the sum of the resource requests of the scheduled containers is less than the capacity of the node.",
+  "failure_classes": []
 }

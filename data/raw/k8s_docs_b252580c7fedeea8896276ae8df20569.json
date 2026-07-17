@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Assign Extended Resources to a Container — Clean up",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/extended-resource/#clean-up",
-  "text": "Delete the Pods that you created for this exercise:\nkubectl delete pod extended-resource-demo\nkubectl delete pod extended-resource-demo-2\n\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\n\nAdvertise Extended Resources for a Node\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Delete the Pods that you created for this exercise:\nkubectl delete pod extended-resource-demo\nkubectl delete pod extended-resource-demo-2\n\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\n\nAdvertise Extended Resources for a Node\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

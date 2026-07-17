@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Swap memory management — Swap behaviors",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/swap-memory-management/#swap-behaviors",
-  "text": "You need to pick a\nswap behavior\nto\nuse. Different nodes in your cluster can use different swap behaviors.\nThe swap behaviors you can choose for Linux nodes are:\nIf you choose the NoSwap behavior, and you configure the kubelet to tolerate\nswap space (\nfailSwapOn: false\n), then your workloads don't use any swap.\nHowever, processes outside of Kubernetes-managed containers, such as systemd\nservices (and even the kubelet itself!)\ncan\nutilize swap.\nYou can read\nconfiguring swap memory on Kubernetes nodes\nto learn about enabling swap for your cluster."
+  "text": "You need to pick a\nswap behavior\nto\nuse. Different nodes in your cluster can use different swap behaviors.\nThe swap behaviors you can choose for Linux nodes are:\nIf you choose the NoSwap behavior, and you configure the kubelet to tolerate\nswap space (\nfailSwapOn: false\n), then your workloads don't use any swap.\nHowever, processes outside of Kubernetes-managed containers, such as systemd\nservices (and even the kubelet itself!)\ncan\nutilize swap.\nYou can read\nconfiguring swap memory on Kubernetes nodes\nto learn about enabling swap for your cluster.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

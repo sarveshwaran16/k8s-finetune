@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Connect a Frontend to a Backend Using Services",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/connecting-frontend-backend/",
-  "text": "This task shows how to create a\nfrontend\nand a\nbackend\nmicroservice. The backend\nmicroservice is a hello greeter. The frontend exposes the backend using nginx and a\nKubernetes\nService\nobject.\n\nCreate and run a sample\nhello\nbackend microservice using a\nDeployment\nobject.\nUse a Service object to send traffic to the backend microservice's multiple replicas.\nCreate and run a\nnginx\nfrontend microservice, also using a Deployment object.\nConfigure the frontend microservice to send traffic to the backend microservice.\nUse a Service object of\ntype=LoadBalancer\nto expose the frontend microservice\noutside the cluster."
+  "text": "This task shows how to create a\nfrontend\nand a\nbackend\nmicroservice. The backend\nmicroservice is a hello greeter. The frontend exposes the backend using nginx and a\nKubernetes\nService\nobject.\n\nCreate and run a sample\nhello\nbackend microservice using a\nDeployment\nobject.\nUse a Service object to send traffic to the backend microservice's multiple replicas.\nCreate and run a\nnginx\nfrontend microservice, also using a Deployment object.\nConfigure the frontend microservice to send traffic to the backend microservice.\nUse a Service object of\ntype=LoadBalancer\nto expose the frontend microservice\noutside the cluster.",
+  "failure_classes": []
 }

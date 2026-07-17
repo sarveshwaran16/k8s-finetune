@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubeSchedulerDown#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeschedulerdown/",
-  "text": "Kube Scheduler Down\nKubeSchedulerDown\n#\nMeaning\n#\nKube Scheduler has disappeared from Prometheus target discovery.\nImpact\n#\nThis is a critical alert. The cluster may partially or fully non-functional.\nDiagnosis\n#\nTo be added.\nMitigation\n#\nSee old CoreOS docs in\nWeb Archive"
+  "text": "Kube Scheduler Down\nKubeSchedulerDown\n#\nMeaning\n#\nKube Scheduler has disappeared from Prometheus target discovery.\nImpact\n#\nThis is a critical alert. The cluster may partially or fully non-functional.\nDiagnosis\n#\nTo be added.\nMitigation\n#\nSee old CoreOS docs in\nWeb Archive",
+  "failure_classes": []
 }

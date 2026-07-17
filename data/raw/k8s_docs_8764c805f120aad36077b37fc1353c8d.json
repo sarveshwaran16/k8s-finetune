@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extending Kubernetes — Dynamic admission control",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#dynamic-admission-control",
-  "text": "After a request is authorized, if it is a write operation, it also goes through\nAdmission Control\nsteps.\nIn addition to the built-in steps, there are several extensions:\nThe\nImage Policy webhook\nrestricts what images can be run in containers.\nTo make arbitrary admission control decisions, a general\nAdmission webhook\ncan be used. Admission webhooks can reject creations or updates.\nSome admission webhooks modify the incoming request data before it is handled further by Kubernetes."
+  "text": "After a request is authorized, if it is a write operation, it also goes through\nAdmission Control\nsteps.\nIn addition to the built-in steps, there are several extensions:\nThe\nImage Policy webhook\nrestricts what images can be run in containers.\nTo make arbitrary admission control decisions, a general\nAdmission webhook\ncan be used. Admission webhooks can reject creations or updates.\nSome admission webhooks modify the incoming request data before it is handled further by Kubernetes.",
+  "failure_classes": []
 }

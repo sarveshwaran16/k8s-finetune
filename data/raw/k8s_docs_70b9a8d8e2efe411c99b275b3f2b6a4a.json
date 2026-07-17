@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ingress — Default IngressClass",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#default-ingress-class",
-  "text": "You can mark a particular IngressClass as default for your cluster. Setting the\ningressclass.kubernetes.io/is-default-class\nannotation to\ntrue\non an\nIngressClass resource will ensure that new Ingresses without an\ningressClassName\nfield specified will be assigned this default IngressClass.\nStart by defining a\ndefault IngressClass. It is recommended though, to specify the default\nIngressClass:\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nIngressClass\nmetadata\n:\nlabels\n:\napp.kubernetes.io/component\n:\ncontroller\nname\n:\nexample-class\nannotations\n:\ningressclass.kubernetes.io/is-default-class\n:\n\"true\"\nspec\n:\ncontroller\n:\nk8s.io/example-class"
+  "text": "You can mark a particular IngressClass as default for your cluster. Setting the\ningressclass.kubernetes.io/is-default-class\nannotation to\ntrue\non an\nIngressClass resource will ensure that new Ingresses without an\ningressClassName\nfield specified will be assigned this default IngressClass.\nStart by defining a\ndefault IngressClass. It is recommended though, to specify the default\nIngressClass:\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nIngressClass\nmetadata\n:\nlabels\n:\napp.kubernetes.io/component\n:\ncontroller\nname\n:\nexample-class\nannotations\n:\ningressclass.kubernetes.io/is-default-class\n:\n\"true\"\nspec\n:\ncontroller\n:\nk8s.io/example-class",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

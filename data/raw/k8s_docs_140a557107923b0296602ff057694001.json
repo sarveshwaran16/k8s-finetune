@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Audit Annotations — audit.k8s.io/truncated",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/#audit-k8s-io-truncated",
-  "text": "Example:\naudit.k8s.io/truncated: \"true\"\nValue is always \"true\". This annotation indicates that the audit event has been truncated\nbecause the event size exceeded the configured maximum. Truncation is disabled by default\nand must be explicitly enabled via the API server flags.\nSee\nAuditing\nfor more information."
+  "text": "Example:\naudit.k8s.io/truncated: \"true\"\nValue is always \"true\". This annotation indicates that the audit event has been truncated\nbecause the event size exceeded the configured maximum. Truncation is disabled by default\nand must be explicitly enabled via the API server flags.\nSee\nAuditing\nfor more information.",
+  "failure_classes": []
 }

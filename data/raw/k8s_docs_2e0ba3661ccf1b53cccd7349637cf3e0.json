@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl plugin list — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_plugin/kubectl_plugin_list/#synopsis",
-  "text": "List all available plugin files on a user's PATH. To see plugins binary names without the full path use --name-only flag.\nAvailable plugin files are those that are: - executable - anywhere on the user's PATH - begin with \"kubectl-\"\nkubectl plugin list [flags]\n\n# List all available plugins\n  kubectl plugin list\n  \n  # List only binary names of available plugins without paths\n  kubectl plugin list --name-only"
+  "text": "List all available plugin files on a user's PATH. To see plugins binary names without the full path use --name-only flag.\nAvailable plugin files are those that are: - executable - anywhere on the user's PATH - begin with \"kubectl-\"\nkubectl plugin list [flags]\n\n# List all available plugins\n  kubectl plugin list\n  \n  # List only binary names of available plugins without paths\n  kubectl plugin list --name-only",
+  "failure_classes": []
 }

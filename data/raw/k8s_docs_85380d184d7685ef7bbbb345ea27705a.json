@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Resource Management for Pods and Containers — Extended resources",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#extended-resources",
-  "text": "Extended resources are fully-qualified resource names outside the\nkubernetes.io\ndomain. They allow cluster operators to advertise and users to\nconsume the non-Kubernetes-built-in resources.\nThere are two steps required to use Extended Resources. First, the cluster\noperator must advertise an Extended Resource. Second, users must request the\nExtended Resource in Pods."
+  "text": "Extended resources are fully-qualified resource names outside the\nkubernetes.io\ndomain. They allow cluster operators to advertise and users to\nconsume the non-Kubernetes-built-in resources.\nThere are two steps required to use Extended Resources. First, the cluster\noperator must advertise an Extended Resource. Second, users must request the\nExtended Resource in Pods.",
+  "failure_classes": []
 }

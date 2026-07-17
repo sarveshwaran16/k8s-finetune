@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Deployments — Pod Template",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#pod-template",
-  "text": "The\n.spec.template\nand\n.spec.selector\nare the only required fields of the\n.spec\n.\nThe\n.spec.template\nis a\nPod template\n. It has exactly the same schema as a\nPod\n, except it is nested and does not have an\napiVersion\nor\nkind\n.\nIn addition to required fields for a Pod, a Pod template in a Deployment must specify appropriate\nlabels and an appropriate restart policy. For labels, make sure not to overlap with other controllers. See\nselector\n.\nOnly a\n.spec.template.spec.restartPolicy\nequal to\nAlways\nis\nallowed, which is the default if not specified."
+  "text": "The\n.spec.template\nand\n.spec.selector\nare the only required fields of the\n.spec\n.\nThe\n.spec.template\nis a\nPod template\n. It has exactly the same schema as a\nPod\n, except it is nested and does not have an\napiVersion\nor\nkind\n.\nIn addition to required fields for a Pod, a Pod template in a Deployment must specify appropriate\nlabels and an appropriate restart policy. For labels, make sure not to overlap with other controllers. See\nselector\n.\nOnly a\n.spec.template.spec.restartPolicy\nequal to\nAlways\nis\nallowed, which is the default if not specified.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

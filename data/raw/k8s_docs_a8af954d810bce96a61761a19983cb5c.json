@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "StorageVersion — getRead Status",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiserverinternal/storage-version-v1alpha1/#get-read-status",
-  "text": "GET /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}/status\nName\nType\nDescription\nname\nstring\nname of the StorageVersion\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nStorageVersion"
+  "text": "GET /apis/internal.apiserver.k8s.io/v1alpha1/storageversions/{name}/status\nName\nType\nDescription\nname\nstring\nname of the StorageVersion\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nStorageVersion",
+  "failure_classes": []
 }

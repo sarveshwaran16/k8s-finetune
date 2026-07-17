@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — replace",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#replace",
-  "text": "Replace a pod using the data in pod.json\nkubectl\nreplace\n-f ./pod.json\nReplace a pod based on the JSON passed into stdin\ncat pod.json |\nkubectl\nreplace\n-f -\nUpdate a single-container pod's image version (tag) to v4\nkubectl get pod mypod -o yaml |\nsed\n's/\\(image: myimage\\):.*$/\\\n1\n:v4/' |\nkubectl\nreplace\n-f -\nForce replace, delete and then re-create the resource\nkubectl replace\n--force\n-f\n./pod.json\nReplace a resource by file name or stdin.\nJSON and YAML formats are accepted. If replacing an existing resource, the complete resource spec must be provided. This can be obtained by\n$ kubectl get TYPE NAME -o yaml"
+  "text": "Replace a pod using the data in pod.json\nkubectl\nreplace\n-f ./pod.json\nReplace a pod based on the JSON passed into stdin\ncat pod.json |\nkubectl\nreplace\n-f -\nUpdate a single-container pod's image version (tag) to v4\nkubectl get pod mypod -o yaml |\nsed\n's/\\(image: myimage\\):.*$/\\\n1\n:v4/' |\nkubectl\nreplace\n-f -\nForce replace, delete and then re-create the resource\nkubectl replace\n--force\n-f\n./pod.json\nReplace a resource by file name or stdin.\nJSON and YAML formats are accepted. If replacing an existing resource, the complete resource spec must be provided. This can be obtained by\n$ kubectl get TYPE NAME -o yaml",
+  "failure_classes": []
 }

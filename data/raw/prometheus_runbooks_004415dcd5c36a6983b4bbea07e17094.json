@@ -3,5 +3,8 @@
   "source": "prometheus_runbooks",
   "title": "KubeClientCertificateExpiration#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeclientcertificateexpiration/",
-  "text": "Kube Client Certificate Expiration\nKubeClientCertificateExpiration\n#\nMeaning\n#\nA client certificate used to authenticate to the apiserver is expiring in less than 7 days (warning alert) or 24 hours (critical alert).\nImpact\n#\nClient will not be able to interact with the cluster.\nIn cluster services communicating with Kubernetes API may degrade or become unavailable.\nDiagnosis\n#\nCheck when certificate was issued and when it expires.\nCheck serviceAccounts and service account tokens.\nMitigation\n#\nUpdate client certificate.\nFor in-cluster clients recreate pods."
+  "text": "Kube Client Certificate Expiration\nKubeClientCertificateExpiration\n#\nMeaning\n#\nA client certificate used to authenticate to the apiserver is expiring in less than 7 days (warning alert) or 24 hours (critical alert).\nImpact\n#\nClient will not be able to interact with the cluster.\nIn cluster services communicating with Kubernetes API may degrade or become unavailable.\nDiagnosis\n#\nCheck when certificate was issued and when it expires.\nCheck serviceAccounts and service account tokens.\nMitigation\n#\nUpdate client certificate.\nFor in-cluster clients recreate pods.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

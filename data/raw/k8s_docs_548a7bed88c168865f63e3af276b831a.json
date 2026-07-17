@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Custom Resources — Authentication, authorization, and auditing",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#authentication-authorization-and-auditing",
-  "text": "CRDs always use the same authentication, authorization, and audit logging as the built-in\nresources of your API server.\nIf you use RBAC for authorization, most RBAC roles will not grant access to the new resources\n(except the cluster-admin role or any role created with wildcard rules). You'll need to explicitly\ngrant access to the new resources. CRDs and Aggregated APIs often come bundled with new role\ndefinitions for the types they add.\nAggregated API servers may or may not use the same authentication, authorization, and auditing as\nthe primary API server."
+  "text": "CRDs always use the same authentication, authorization, and audit logging as the built-in\nresources of your API server.\nIf you use RBAC for authorization, most RBAC roles will not grant access to the new resources\n(except the cluster-admin role or any role created with wildcard rules). You'll need to explicitly\ngrant access to the new resources. CRDs and Aggregated APIs often come bundled with new role\ndefinitions for the types they add.\nAggregated API servers may or may not use the same authentication, authorization, and auditing as\nthe primary API server.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

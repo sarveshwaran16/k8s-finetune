@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod — ResourceClaim",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#ResourceClaim",
-  "text": "ResourceClaim references one entry in PodSpec.ResourceClaims.\nField\nDescription\nname\n*\nstring\nName must match the name of one entry in pod.spec.resourceClaims of the Pod where this field is used. It makes that resource available inside a container.\nrequest\nstring\nRequest is the name chosen for a request in the referenced claim. If empty, everything from the claim is made available, otherwise only the result of this request."
+  "text": "ResourceClaim references one entry in PodSpec.ResourceClaims.\nField\nDescription\nname\n*\nstring\nName must match the name of one entry in pod.spec.resourceClaims of the Pod where this field is used. It makes that resource available inside a container.\nrequest\nstring\nRequest is the name chosen for a request in the referenced claim. If empty, everything from the claim is made available, otherwise only the result of this request.",
+  "failure_classes": []
 }

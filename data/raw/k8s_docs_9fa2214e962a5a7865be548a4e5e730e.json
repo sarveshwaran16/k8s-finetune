@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Allocate Devices to Workloads with DRA — Identify devices to claim",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/allocate-devices-dra/#identify-devices",
-  "text": "Your cluster administrator or the device drivers create\nDeviceClasses\nthat\ndefine categories of devices. You can claim devices by using\nCommon Expression Language\nto filter for specific device properties.\nGet a list of DeviceClasses in the cluster:\nkubectl get deviceclasses\nThe output is similar to the following:\nNAME                 AGE\ndriver.example.com   16m\nIf you get a permission error, you might not have access to get DeviceClasses.\nCheck with your cluster administrator or with the driver provider for available\ndevice properties."
+  "text": "Your cluster administrator or the device drivers create\nDeviceClasses\nthat\ndefine categories of devices. You can claim devices by using\nCommon Expression Language\nto filter for specific device properties.\nGet a list of DeviceClasses in the cluster:\nkubectl get deviceclasses\nThe output is similar to the following:\nNAME                 AGE\ndriver.example.com   16m\nIf you get a permission error, you might not have access to get DeviceClasses.\nCheck with your cluster administrator or with the driver provider for available\ndevice properties.",
+  "failure_classes": []
 }

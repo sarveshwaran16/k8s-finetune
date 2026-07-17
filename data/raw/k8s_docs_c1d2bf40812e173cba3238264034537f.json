@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "CustomResourceDefinition — ServiceReference",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/apiextensions/custom-resource-definition-v1/#ServiceReference",
-  "text": "ServiceReference holds a reference to Service.legacy.k8s.io\nField\nDescription\nname\n*\nstring\nname is the name of the service. Required\nnamespace\n*\nstring\nnamespace is the namespace of the service. Required\npath\nstring\npath is an optional URL path at which the webhook will be contacted.\nport\ninteger\nport is an optional service port at which the webhook will be contacted. `port` should be a valid port number (1-65535, inclusive). Defaults to 443 for backward compatibility."
+  "text": "ServiceReference holds a reference to Service.legacy.k8s.io\nField\nDescription\nname\n*\nstring\nname is the name of the service. Required\nnamespace\n*\nstring\nnamespace is the namespace of the service. Required\npath\nstring\npath is an optional URL path at which the webhook will be contacted.\nport\ninteger\nport is an optional service port at which the webhook will be contacted. `port` should be a valid port number (1-65535, inclusive). Defaults to 443 for backward compatibility.",
+  "failure_classes": []
 }

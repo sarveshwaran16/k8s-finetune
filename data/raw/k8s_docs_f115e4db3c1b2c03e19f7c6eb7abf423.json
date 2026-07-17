@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubectl create quota — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_quota/#synopsis",
-  "text": "Create a resource quota with the specified name, hard limits, and optional scopes.\nkubectl create quota NAME [--hard=key1=value1,key2=value2] [--scopes=Scope1,Scope2] [--dry-run=server|client|none]\n\n# Create a new resource quota named my-quota\n  kubectl create quota my-quota --hard=cpu=1,memory=1G,pods=2,services=3,replicationcontrollers=2,resourcequotas=1,secrets=5,persistentvolumeclaims=10\n  \n  # Create a new resource quota named best-effort\n  kubectl create quota best-effort --hard=pods=100 --scopes=BestEffort"
+  "text": "Create a resource quota with the specified name, hard limits, and optional scopes.\nkubectl create quota NAME [--hard=key1=value1,key2=value2] [--scopes=Scope1,Scope2] [--dry-run=server|client|none]\n\n# Create a new resource quota named my-quota\n  kubectl create quota my-quota --hard=cpu=1,memory=1G,pods=2,services=3,replicationcontrollers=2,resourcequotas=1,secrets=5,persistentvolumeclaims=10\n  \n  # Create a new resource quota named best-effort\n  kubectl create quota best-effort --hard=pods=100 --scopes=BestEffort",
+  "failure_classes": [
+    "PVC"
+  ]
 }

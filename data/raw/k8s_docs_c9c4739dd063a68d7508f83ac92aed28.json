@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Node Status — Addresses",
   "source_url": "https://kubernetes.io/docs/reference/node/node-status/#addresses",
-  "text": "The usage of these fields varies depending on your cloud provider or bare metal configuration.\nHostName: The hostname as reported by the node's kernel. Can be overridden via the kubelet\n--hostname-override\nparameter.\nExternalIP: Typically the IP address of the node that is externally routable (available from\noutside the cluster).\nInternalIP: Typically the IP address of the node that is routable only within the cluster."
+  "text": "The usage of these fields varies depending on your cloud provider or bare metal configuration.\nHostName: The hostname as reported by the node's kernel. Can be overridden via the kubelet\n--hostname-override\nparameter.\nExternalIP: Typically the IP address of the node that is externally routable (available from\noutside the cluster).\nInternalIP: Typically the IP address of the node that is routable only within the cluster.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

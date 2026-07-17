@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Linux Kernel Version Requirements",
   "source_url": "https://kubernetes.io/docs/reference/node/kernel-version-requirements/",
-  "text": "Many features rely on specific kernel functionalities and have minimum kernel version requirements.\nHowever, relying solely on kernel version numbers may not be sufficient\nfor certain operating system distributions,\nas maintainers for distributions such as RHEL, Ubuntu and SUSE often backport selected features\nto older kernel releases (retaining the older kernel version)."
+  "text": "Many features rely on specific kernel functionalities and have minimum kernel version requirements.\nHowever, relying solely on kernel version numbers may not be sufficient\nfor certain operating system distributions,\nas maintainers for distributions such as RHEL, Ubuntu and SUSE often backport selected features\nto older kernel releases (retaining the older kernel version).",
+  "failure_classes": []
 }

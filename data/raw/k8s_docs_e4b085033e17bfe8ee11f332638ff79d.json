@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm alpha",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-alpha/",
-  "text": "Currently there are no experimental commands under\nkubeadm alpha\n.\n\nkubeadm init\nto bootstrap a Kubernetes control-plane node\nkubeadm join\nto connect a node to the cluster\nkubeadm reset\nto revert any changes made to this host by\nkubeadm init\nor\nkubeadm join\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Currently there are no experimental commands under\nkubeadm alpha\n.\n\nkubeadm init\nto bootstrap a Kubernetes control-plane node\nkubeadm join\nto connect a node to the cluster\nkubeadm reset\nto revert any changes made to this host by\nkubeadm init\nor\nkubeadm join\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

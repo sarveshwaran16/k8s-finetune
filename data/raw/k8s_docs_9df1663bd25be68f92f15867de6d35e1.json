@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Example: Deploying WordPress and MySQL with Persistent Volumes — Create PersistentVolumeClaims and PersistentVolumes",
   "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/#create-persistentvolumeclaims-and-persistentvolumes",
-  "text": "MySQL and Wordpress each require a PersistentVolume to store data.\nTheir PersistentVolumeClaims will be created at the deployment step.\nMany cluster environments have a default StorageClass installed.\nWhen a StorageClass is not specified in the PersistentVolumeClaim,\nthe cluster's default StorageClass is used instead.\nWhen a PersistentVolumeClaim is created, a PersistentVolume is dynamically\nprovisioned based on the StorageClass configuration."
+  "text": "MySQL and Wordpress each require a PersistentVolume to store data.\nTheir PersistentVolumeClaims will be created at the deployment step.\nMany cluster environments have a default StorageClass installed.\nWhen a StorageClass is not specified in the PersistentVolumeClaim,\nthe cluster's default StorageClass is used instead.\nWhen a PersistentVolumeClaim is created, a PersistentVolume is dynamically\nprovisioned based on the StorageClass configuration.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

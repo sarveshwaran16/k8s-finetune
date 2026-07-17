@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl Quick Reference — What's next",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/quick-reference/#what-s-next",
-  "text": "Learn about\nkubectl overview\nand its role in the Kubernetes ecosystem.\nRead the\nkubectl reference\nand learn about\nJsonPath\n.\nSee\nkubectl\noptions.\nSee\nkuberc\noptions.\nAlso read\nkubectl Usage Conventions\nto understand how to use kubectl in reusable scripts.\nSee more community\nkubectl cheatsheets\n.\nLearn about\nkubectl overview\nand its role in the Kubernetes ecosystem.\nRead the\nkubectl reference\nand learn about\nJsonPath\n.\nSee\nkubectl\noptions.\nSee\nkuberc\noptions.\nAlso read\nkubectl Usage Conventions\nto understand how to use kubectl in reusable scripts.\nSee more community\nkubectl cheatsheets\n."
+  "text": "Learn about\nkubectl overview\nand its role in the Kubernetes ecosystem.\nRead the\nkubectl reference\nand learn about\nJsonPath\n.\nSee\nkubectl\noptions.\nSee\nkuberc\noptions.\nAlso read\nkubectl Usage Conventions\nto understand how to use kubectl in reusable scripts.\nSee more community\nkubectl cheatsheets\n.\nLearn about\nkubectl overview\nand its role in the Kubernetes ecosystem.\nRead the\nkubectl reference\nand learn about\nJsonPath\n.\nSee\nkubectl\noptions.\nSee\nkuberc\noptions.\nAlso read\nkubectl Usage Conventions\nto understand how to use kubectl in reusable scripts.\nSee more community\nkubectl cheatsheets\n.",
+  "failure_classes": []
 }

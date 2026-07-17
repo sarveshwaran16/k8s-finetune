@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_certs_etcd-healthcheck-client/#synopsis",
-  "text": "Generate the certificate for liveness probes to healthcheck etcd, and save them into etcd/healthcheck-client.crt and etcd/healthcheck-client.key files.\nIf both files already exist, kubeadm skips the generation step and existing files will be used.\nkubeadm init phase certs etcd-healthcheck-client [flags]"
+  "text": "Generate the certificate for liveness probes to healthcheck etcd, and save them into etcd/healthcheck-client.crt and etcd/healthcheck-client.key files.\nIf both files already exist, kubeadm skips the generation step and existing files will be used.\nkubeadm init phase certs etcd-healthcheck-client [flags]",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — node-role.kubernetes.io/master (deprecated)",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-role-kubernetes-io-master-taint",
-  "text": "Type: Taint\nUsed on: Node\nExample:\nnode-role.kubernetes.io/master:NoSchedule\nTaint that kubeadm previously applied on control plane nodes to allow only critical\nworkloads to schedule on them. Replaced by the\nnode-role.kubernetes.io/control-plane\ntaint. kubeadm no longer sets or uses this deprecated taint."
+  "text": "Type: Taint\nUsed on: Node\nExample:\nnode-role.kubernetes.io/master:NoSchedule\nTaint that kubeadm previously applied on control plane nodes to allow only critical\nworkloads to schedule on them. Replaced by the\nnode-role.kubernetes.io/control-plane\ntaint. kubeadm no longer sets or uses this deprecated taint.",
+  "failure_classes": []
 }

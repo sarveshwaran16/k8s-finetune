@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "PrometheusTargetLimitHit#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheustargetlimithit/",
-  "text": "Prometheus Target Limit Hit\nPrometheusTargetLimitHit\n#\nMeaning\n#\nPrometheus has dropped targets because some scrape configs have exceeded the targets limit.\nImpact\n#\nMetrics and alerts may be missing or inaccurate.\nDiagnosis\n#\nMitigation\n#\nStart thinking about sharding prometheus.\nIncrease scrape times to perform it less frequently."
+  "text": "Prometheus Target Limit Hit\nPrometheusTargetLimitHit\n#\nMeaning\n#\nPrometheus has dropped targets because some scrape configs have exceeded the targets limit.\nImpact\n#\nMetrics and alerts may be missing or inaccurate.\nDiagnosis\n#\nMitigation\n#\nStart thinking about sharding prometheus.\nIncrease scrape times to perform it less frequently.",
+  "failure_classes": []
 }

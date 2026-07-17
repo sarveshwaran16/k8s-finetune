@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extending Kubernetes — Combining new APIs with automation",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#combining-new-apis-with-automation",
-  "text": "A combination of a custom resource API and a control loop is called the\ncontrollers\npattern. If your controller takes\nthe place of a human operator deploying infrastructure based on a desired state, then the controller\nmay also be following the\noperator pattern\n.\nThe Operator pattern is used to manage specific applications; usually, these are applications that\nmaintain state and require care in how they are managed.\nYou can also make your own custom APIs and control loops that manage other resources, such as storage,\nor to define policies (such as an access control restriction)."
+  "text": "A combination of a custom resource API and a control loop is called the\ncontrollers\npattern. If your controller takes\nthe place of a human operator deploying infrastructure based on a desired state, then the controller\nmay also be following the\noperator pattern\n.\nThe Operator pattern is used to manage specific applications; usually, these are applications that\nmaintain state and require care in how they are managed.\nYou can also make your own custom APIs and control loops that manage other resources, such as storage,\nor to define policies (such as an access control restriction).",
+  "failure_classes": []
 }

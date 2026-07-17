@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_addon/#synopsis",
-  "text": "Install required addons for passing conformance tests\nkubeadm init phase addon [flags]\n\n-h, --help\nhelp for addon\nhelp for addon\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "Install required addons for passing conformance tests\nkubeadm init phase addon [flags]\n\n-h, --help\nhelp for addon\nhelp for addon\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": []
 }

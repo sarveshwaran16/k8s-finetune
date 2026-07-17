@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Monitoring, Logging, and Debugging",
   "source_url": "https://kubernetes.io/docs/tasks/debug/",
-  "text": "Sometimes things go wrong. This guide helps you gather the relevant information and resolve issues. It has four sections:\nDebugging your application\n- Useful\nfor users who are deploying code into Kubernetes and wondering why it is not working.\nDebugging your cluster\n- Useful\nfor cluster administrators and operators troubleshooting issues with the Kubernetes cluster itself.\nLogging in Kubernetes\n- Useful\nfor cluster administrators who want to set up and manage logging in Kubernetes.\nMonitoring in Kubernetes\n- Useful\nfor cluster administrators who want to enable monitoring in a Kubernetes cluster.\nYou should also check the known issues for the\nrelease\nyou're using."
+  "text": "Sometimes things go wrong. This guide helps you gather the relevant information and resolve issues. It has four sections:\nDebugging your application\n- Useful\nfor users who are deploying code into Kubernetes and wondering why it is not working.\nDebugging your cluster\n- Useful\nfor cluster administrators and operators troubleshooting issues with the Kubernetes cluster itself.\nLogging in Kubernetes\n- Useful\nfor cluster administrators who want to set up and manage logging in Kubernetes.\nMonitoring in Kubernetes\n- Useful\nfor cluster administrators who want to enable monitoring in a Kubernetes cluster.\nYou should also check the known issues for the\nrelease\nyou're using.",
+  "failure_classes": []
 }

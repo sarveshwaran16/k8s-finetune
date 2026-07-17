@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubeHpaReplicasMismatch#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubehpareplicasmismatch/",
-  "text": "Kube HPA  Replicas Mismatch\nKubeHpaReplicasMismatch\n#\nMeaning\n#\nHorizontal Pod Autoscaler has not matched the desired number of replicas for\nlonger than 15 minutes.\nImpact\n#\nHPA was unable to schedule desired number of pods.\nDiagnosis\n#\nCheck why HPA was unable to scale:\nnot enough nodes in the cluster\nhitting resource quotas in the cluster\npods evicted due to pod priority\nMitigation\n#\nIn case of cluster-autoscaler you may need to set up preemtive pod pools to\nensure nodes are created on time."
+  "text": "Kube HPA  Replicas Mismatch\nKubeHpaReplicasMismatch\n#\nMeaning\n#\nHorizontal Pod Autoscaler has not matched the desired number of replicas for\nlonger than 15 minutes.\nImpact\n#\nHPA was unable to schedule desired number of pods.\nDiagnosis\n#\nCheck why HPA was unable to scale:\nnot enough nodes in the cluster\nhitting resource quotas in the cluster\npods evicted due to pod priority\nMitigation\n#\nIn case of cluster-autoscaler you may need to set up preemtive pod pools to\nensure nodes are created on time.",
+  "failure_classes": []
 }

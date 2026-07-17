@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Swap memory management — Nodes to report swap capacity as part of node status",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/swap-memory-management/#nodes-to-report-swap-capacity-as-part-of-node-status",
-  "text": "A new node status field is now added,\nnode.status.nodeInfo.swap.capacity\n, to report the swap capacity of a node.\nAs an example, the following command can be used to retrieve the swap capacity of the nodes in a cluster:\nkubectl get nodes -o go-template\n=\n'{{range .items}}{{.metadata.name}}: {{if .status.nodeInfo.swap.capacity}}{{.status.nodeInfo.swap.capacity}}{{else}}<unknown>{{end}}{{\"\\n\"}}{{end}}'\nThis will result in an output similar to:\nnode1: 21474836480\nnode2: 42949664768\nnode3: <unknown>"
+  "text": "A new node status field is now added,\nnode.status.nodeInfo.swap.capacity\n, to report the swap capacity of a node.\nAs an example, the following command can be used to retrieve the swap capacity of the nodes in a cluster:\nkubectl get nodes -o go-template\n=\n'{{range .items}}{{.metadata.name}}: {{if .status.nodeInfo.swap.capacity}}{{.status.nodeInfo.swap.capacity}}{{else}}<unknown>{{end}}{{\"\\n\"}}{{end}}'\nThis will result in an output similar to:\nnode1: 21474836480\nnode2: 42949664768\nnode3: <unknown>",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Install Tools — kubeadm",
   "source_url": "https://kubernetes.io/docs/tasks/tools/#kubeadm",
-  "text": "You can use the\nkubeadm\ntool to create and manage Kubernetes clusters.\nIt performs the actions necessary to get a minimum viable, secure cluster up and running in a user friendly way.\nInstalling kubeadm\nshows you how to install kubeadm.\nOnce installed, you can use it to\ncreate a cluster\n.\nView kubeadm Install Guide"
+  "text": "You can use the\nkubeadm\ntool to create and manage Kubernetes clusters.\nIt performs the actions necessary to get a minimum viable, secure cluster up and running in a user friendly way.\nInstalling kubeadm\nshows you how to install kubeadm.\nOnce installed, you can use it to\ncreate a cluster\n.\nView kubeadm Install Guide",
+  "failure_classes": []
 }

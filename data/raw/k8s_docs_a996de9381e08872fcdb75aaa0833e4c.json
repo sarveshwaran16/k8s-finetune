@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Topology-Aware Workload Scheduling",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/topology-aware-scheduling/",
-  "text": "Topology-Aware Scheduling\n(TAS) is a\nplacement scheduling algorithm\nthat allows to find the optimal placement for the considered PodGroup, guaranteeing that all pods\nwill be collocated within the same topology domain. Users can accomodate TAS to their specific\nneeds by changing TAS plugins configuration."
+  "text": "Topology-Aware Scheduling\n(TAS) is a\nplacement scheduling algorithm\nthat allows to find the optimal placement for the considered PodGroup, guaranteeing that all pods\nwill be collocated within the same topology domain. Users can accomodate TAS to their specific\nneeds by changing TAS plugins configuration.",
+  "failure_classes": []
 }

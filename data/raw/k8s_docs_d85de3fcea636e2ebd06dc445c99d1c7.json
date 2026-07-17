@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Static Pods — Limitations",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/static-pods/#limitations",
-  "text": "The spec of a static Pod cannot refer to other API objects,\nsuch as\nServiceAccount\n,\nConfigMap\n, or\nSecret\n.\nStatic Pods do not support\nephemeral containers\n.\n\nIf you are running clustered Kubernetes and are using static Pods to run a Pod\non every node, you should probably be using a\nDaemonSet\ninstead.\nStatic Pods are not managed by the control plane, so they cannot be rolled out,\nrolled back, or scaled using standard Kubernetes mechanisms. DaemonSets provide\nthese capabilities and are the recommended approach for running node-level workloads.\nStatic Pods are started by the kubelet before the API server is available, which\nmakes them suitable for bootstrapping control plane components. DaemonSets require\na running control plane."
+  "text": "The spec of a static Pod cannot refer to other API objects,\nsuch as\nServiceAccount\n,\nConfigMap\n, or\nSecret\n.\nStatic Pods do not support\nephemeral containers\n.\n\nIf you are running clustered Kubernetes and are using static Pods to run a Pod\non every node, you should probably be using a\nDaemonSet\ninstead.\nStatic Pods are not managed by the control plane, so they cannot be rolled out,\nrolled back, or scaled using standard Kubernetes mechanisms. DaemonSets provide\nthese capabilities and are the recommended approach for running node-level workloads.\nStatic Pods are started by the kubelet before the API server is available, which\nmakes them suitable for bootstrapping control plane components. DaemonSets require\na running control plane.",
+  "failure_classes": [
+    "NodeNotReady",
+    "RBAC"
+  ]
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — restart",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-restart-em-",
-  "text": "Restart a deployment\nkubectl rollout\nrestart\ndeployment/nginx\nRestart a daemon set\nkubectl rollout\nrestart\ndaemonset/abc\nRestart deployments with the app=nginx label\nkubectl rollout\nrestart\ndeployment\n--selector=app=nginx\nRestart a resource.\nResource rollout will be restarted.\n\n$ kubectl rollout restart RESOURCE"
+  "text": "Restart a deployment\nkubectl rollout\nrestart\ndeployment/nginx\nRestart a daemon set\nkubectl rollout\nrestart\ndaemonset/abc\nRestart deployments with the app=nginx label\nkubectl rollout\nrestart\ndeployment\n--selector=app=nginx\nRestart a resource.\nResource rollout will be restarted.\n\n$ kubectl rollout restart RESOURCE",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

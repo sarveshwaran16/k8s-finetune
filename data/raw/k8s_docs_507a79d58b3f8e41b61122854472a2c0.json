@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod — getGet Connect Proxy Path",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#get-get-connect-proxy-path",
-  "text": "GET /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}\nName\nType\nDescription\nname\nstring\nname of the PodProxyOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\npath\nstring\npath to the resource\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to pod.\nStatus\nDescription\nResponse\n200\nOK\nstring"
+  "text": "GET /api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}\nName\nType\nDescription\nname\nstring\nname of the PodProxyOptions\nnamespace\nstring\nobject name and auth scope, such as for teams and projects\npath\nstring\npath to the resource\nName\nType\nDescription\npath\nstring\nPath is the URL path to use for the current proxy request to pod.\nStatus\nDescription\nResponse\n200\nOK\nstring",
+  "failure_classes": []
 }

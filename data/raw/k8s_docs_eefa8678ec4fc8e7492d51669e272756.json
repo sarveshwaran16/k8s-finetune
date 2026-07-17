@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Windows containers in Kubernetes — Getting help and troubleshooting",
   "source_url": "https://kubernetes.io/docs/concepts/windows/intro/#troubleshooting",
-  "text": "Your main source of help for troubleshooting your Kubernetes cluster should start\nwith the\nTroubleshooting\npage.\nSome additional, Windows-specific troubleshooting help is included\nin this section. Logs are an important element of troubleshooting\nissues in Kubernetes. Make sure to include them any time you seek\ntroubleshooting assistance from other contributors. Follow the\ninstructions in the\nSIG Windows\ncontributing guide on gathering logs\n."
+  "text": "Your main source of help for troubleshooting your Kubernetes cluster should start\nwith the\nTroubleshooting\npage.\nSome additional, Windows-specific troubleshooting help is included\nin this section. Logs are an important element of troubleshooting\nissues in Kubernetes. Make sure to include them any time you seek\ntroubleshooting assistance from other contributors. Follow the\ninstructions in the\nSIG Windows\ncontributing guide on gathering logs\n.",
+  "failure_classes": []
 }

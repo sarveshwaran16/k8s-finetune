@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_upload-config_kubelet/",
-  "text": "Upload the kubelet component config to a ConfigMap\n\nUpload the kubelet configuration extracted from the kubeadm InitConfiguration object to a kubelet-config ConfigMap in the cluster\nkubeadm init phase upload-config kubelet [flags]\n\n# Upload the kubelet configuration from the kubeadm Config file to a ConfigMap in the cluster.\n  kubeadm init phase upload-config kubelet --config kubeadm.yaml"
+  "text": "Upload the kubelet component config to a ConfigMap\n\nUpload the kubelet configuration extracted from the kubeadm InitConfiguration object to a kubelet-config ConfigMap in the cluster\nkubeadm init phase upload-config kubelet [flags]\n\n# Upload the kubelet configuration from the kubeadm Config file to a ConfigMap in the cluster.\n  kubeadm init phase upload-config kubelet --config kubeadm.yaml",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

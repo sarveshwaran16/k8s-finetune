@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Mutating Admission Policy",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/",
-  "text": "This page provides an overview of\nMutatingAdmissionPolicies\n.\nMutatingAdmissionPolicies allow you to change what happens when someone writes a change to the Kubernetes API.\nIf you want to use declarative policies just to prevent a particular kind of change to resources (for example: protecting platform namespaces from deletion),\nValidatingAdmissionPolicy\nis\na simpler and more effective alternative."
+  "text": "This page provides an overview of\nMutatingAdmissionPolicies\n.\nMutatingAdmissionPolicies allow you to change what happens when someone writes a change to the Kubernetes API.\nIf you want to use declarative policies just to prevent a particular kind of change to resources (for example: protecting platform namespaces from deletion),\nValidatingAdmissionPolicy\nis\na simpler and more effective alternative.",
+  "failure_classes": []
 }

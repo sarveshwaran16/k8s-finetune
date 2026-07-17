@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Waiting",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-state-waiting",
-  "text": "If a container is not in either the\nRunning\nor\nTerminated\nstate, it is\nWaiting\n.\nA container in the\nWaiting\nstate is still running the operations it requires in\norder to complete start up: for example, pulling the container image from a container\nimage registry, or applying\nSecret\ndata.\nWhen you use\nkubectl\nto query a Pod with a container that is\nWaiting\n, you also see\na Reason field to summarize why the container is in that state."
+  "text": "If a container is not in either the\nRunning\nor\nTerminated\nstate, it is\nWaiting\n.\nA container in the\nWaiting\nstate is still running the operations it requires in\norder to complete start up: for example, pulling the container image from a container\nimage registry, or applying\nSecret\ndata.\nWhen you use\nkubectl\nto query a Pod with a container that is\nWaiting\n, you also see\na Reason field to summarize why the container is in that state.",
+  "failure_classes": []
 }

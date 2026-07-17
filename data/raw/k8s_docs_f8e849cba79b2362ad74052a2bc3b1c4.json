@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure a Pod to Use a PersistentVolume for Storage — Clean up",
   "source_url": "https://kubernetes.io/docs/tutorials/configuration/configure-persistent-volume-storage/#clean-up-1",
-  "text": "Delete the Pod:\nkubectl delete pod\ntest\nkubectl delete pvc task-pv-claim\nkubectl delete pv task-pv-volume\nIf you don't already have a shell open to the Node in your cluster,\nopen a new shell the same way that you did earlier.\nIn the shell on your Node, remove the file and directory that you created:\n# This assumes that your Node uses \"sudo\" to run commands\n# as the superuser\nsudo rm /mnt/data/html/index.html\nsudo rm /mnt/data/nginx.conf\nsudo rmdir /mnt/data\nYou can now close the shell to your Node."
+  "text": "Delete the Pod:\nkubectl delete pod\ntest\nkubectl delete pvc task-pv-claim\nkubectl delete pv task-pv-volume\nIf you don't already have a shell open to the Node in your cluster,\nopen a new shell the same way that you did earlier.\nIn the shell on your Node, remove the file and directory that you created:\n# This assumes that your Node uses \"sudo\" to run commands\n# as the superuser\nsudo rm /mnt/data/html/index.html\nsudo rm /mnt/data/nginx.conf\nsudo rmdir /mnt/data\nYou can now close the shell to your Node.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

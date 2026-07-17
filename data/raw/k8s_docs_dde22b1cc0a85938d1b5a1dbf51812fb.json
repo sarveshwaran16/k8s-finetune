@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cluster Architecture — DNS",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/#dns",
-  "text": "While the other addons are not strictly required, all Kubernetes clusters should have\ncluster DNS\n, as many examples rely on it.\nCluster DNS is a DNS server, in addition to the other DNS server(s) in your environment,\nwhich serves DNS records for Kubernetes services.\nContainers started by Kubernetes automatically include this DNS server in their DNS searches."
+  "text": "While the other addons are not strictly required, all Kubernetes clusters should have\ncluster DNS\n, as many examples rely on it.\nCluster DNS is a DNS server, in addition to the other DNS server(s) in your environment,\nwhich serves DNS records for Kubernetes services.\nContainers started by Kubernetes automatically include this DNS server in their DNS searches.",
+  "failure_classes": []
 }

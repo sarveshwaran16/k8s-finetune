@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Hello Minikube — Clean up",
   "source_url": "https://kubernetes.io/docs/tutorials/hello-minikube/#clean-up",
-  "text": "Now you can clean up the resources you created in your cluster:\nkubectl delete service hello-node\nkubectl delete deployment hello-node\nStop the Minikube cluster\nminikube stop\nOptionally, delete the Minikube VM:\n# Optional\nminikube delete\nIf you want to use minikube again to learn more about Kubernetes, you don't need to delete it."
+  "text": "Now you can clean up the resources you created in your cluster:\nkubectl delete service hello-node\nkubectl delete deployment hello-node\nStop the Minikube cluster\nminikube stop\nOptionally, delete the Minikube VM:\n# Optional\nminikube delete\nIf you want to use minikube again to learn more about Kubernetes, you don't need to delete it.",
+  "failure_classes": []
 }

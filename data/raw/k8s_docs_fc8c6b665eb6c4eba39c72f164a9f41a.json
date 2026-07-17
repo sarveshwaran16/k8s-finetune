@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-apiserver Configuration (v1beta1) — UDSTransport",
   "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1beta1/#apiserver-k8s-io-v1beta1-UDSTransport",
-  "text": "Appears in:\nTransport\nUDSTransport provides the information to connect to konnectivity server via UDS\nField\nDescription\nudsName\n[Required]\nstring\nUDSName is the name of the unix domain socket to connect to konnectivity server\nThis does not use a unix:// prefix. (Eg: /etc/srv/kubernetes/konnectivity-server/konnectivity-server.socket)\nUDSName is the name of the unix domain socket to connect to konnectivity server\nThis does not use a unix:// prefix. (Eg: /etc/srv/kubernetes/konnectivity-server/konnectivity-server.socket)"
+  "text": "Appears in:\nTransport\nUDSTransport provides the information to connect to konnectivity server via UDS\nField\nDescription\nudsName\n[Required]\nstring\nUDSName is the name of the unix domain socket to connect to konnectivity server\nThis does not use a unix:// prefix. (Eg: /etc/srv/kubernetes/konnectivity-server/konnectivity-server.socket)\nUDSName is the name of the unix domain socket to connect to konnectivity server\nThis does not use a unix:// prefix. (Eg: /etc/srv/kubernetes/konnectivity-server/konnectivity-server.socket)",
+  "failure_classes": []
 }

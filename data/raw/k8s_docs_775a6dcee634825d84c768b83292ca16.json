@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Workload API — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/#what-s-next",
-  "text": "Learn about\nPodGroup scheduling policies\n.\nSee how PodGroups are created from Workloads in the\nPodGroup API\noverview.\nRead about how Pods reference their PodGroup via the\nscheduling group\nfield.\nLearn about\nTopology-aware workload scheduling\n.\nUnderstand the\ngang scheduling\nalgorithm.\nPod Group Disruption and Priority\nPodGroup Scheduling Policies\nTopology-Aware Workload Scheduling"
+  "text": "Learn about\nPodGroup scheduling policies\n.\nSee how PodGroups are created from Workloads in the\nPodGroup API\noverview.\nRead about how Pods reference their PodGroup via the\nscheduling group\nfield.\nLearn about\nTopology-aware workload scheduling\n.\nUnderstand the\ngang scheduling\nalgorithm.\nPod Group Disruption and Priority\nPodGroup Scheduling Policies\nTopology-Aware Workload Scheduling",
+  "failure_classes": []
 }

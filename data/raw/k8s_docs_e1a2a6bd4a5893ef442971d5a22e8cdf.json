@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Distribute Credentials Securely Using Secrets",
   "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/",
-  "text": "This page shows how to securely inject sensitive data, such as passwords and\nencryption keys, into Pods.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud"
+  "text": "This page shows how to securely inject sensitive data, such as passwords and\nencryption keys, into Pods.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud",
+  "failure_classes": []
 }

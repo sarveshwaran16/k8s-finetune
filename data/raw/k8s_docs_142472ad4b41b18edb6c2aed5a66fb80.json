@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Controlling Access to the Kubernetes API",
   "source_url": "https://kubernetes.io/docs/concepts/security/controlling-access/",
-  "text": "This page provides an overview of controlling access to the Kubernetes API.\nUsers access the\nKubernetes API\nusing\nkubectl\n,\nclient libraries, or by making REST requests. Both human users and\nKubernetes service accounts\ncan be\nauthorized for API access.\nWhen a request reaches the API, it goes through several stages, illustrated in the\nfollowing diagram:"
+  "text": "This page provides an overview of controlling access to the Kubernetes API.\nUsers access the\nKubernetes API\nusing\nkubectl\n,\nclient libraries, or by making REST requests. Both human users and\nKubernetes service accounts\ncan be\nauthorized for API access.\nWhen a request reaches the API, it goes through several stages, illustrated in the\nfollowing diagram:",
+  "failure_classes": []
 }

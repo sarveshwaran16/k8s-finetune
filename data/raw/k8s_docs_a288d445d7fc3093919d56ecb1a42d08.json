@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling Framework — PreEnqueue",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#pre-enqueue",
-  "text": "These plugins are called prior to adding Pods to the internal active queue, where Pods are marked as\nready for scheduling.\nOnly when all PreEnqueue plugins return\nSuccess\n, the Pod is allowed to enter the active queue.\nOtherwise, it's placed in the internal unschedulable Pods list, and doesn't get an\nUnschedulable\ncondition.\nFor more details about how internal scheduler queues work, read\nScheduling queue in kube-scheduler\n."
+  "text": "These plugins are called prior to adding Pods to the internal active queue, where Pods are marked as\nready for scheduling.\nOnly when all PreEnqueue plugins return\nSuccess\n, the Pod is allowed to enter the active queue.\nOtherwise, it's placed in the internal unschedulable Pods list, and doesn't get an\nUnschedulable\ncondition.\nFor more details about how internal scheduler queues work, read\nScheduling queue in kube-scheduler\n.",
+  "failure_classes": []
 }

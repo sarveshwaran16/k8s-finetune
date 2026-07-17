@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Role Based Access Control Good Practices — Token request",
   "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#token-request",
-  "text": "Users with\ncreate\nrights on\nserviceaccounts/token\ncan create TokenRequests to issue\ntokens for existing service accounts.\n\nUsers with control over\nvalidatingwebhookconfigurations\nor\nmutatingwebhookconfigurations\ncan control webhooks that can read any object admitted to the cluster, and in the case of\nmutating webhooks, also mutate admitted objects."
+  "text": "Users with\ncreate\nrights on\nserviceaccounts/token\ncan create TokenRequests to issue\ntokens for existing service accounts.\n\nUsers with control over\nvalidatingwebhookconfigurations\nor\nmutatingwebhookconfigurations\ncan control webhooks that can read any object admitted to the cluster, and in the case of\nmutating webhooks, also mutate admitted objects.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

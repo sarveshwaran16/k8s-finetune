@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Adding Windows worker nodes",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-windows-nodes/",
-  "text": "This page explains how to add Windows worker nodes to a kubeadm cluster.\n\nA running\nWindows Server 2022\n(or higher) instance with administrative access.\nA running kubeadm cluster created by\nkubeadm init\nand following the steps\nin the document\nCreating a cluster with kubeadm\n.\n\nDo the following for each machine:\nOpen a PowerShell session on the machine.\nMake sure you are Administrator or a privileged user.\nThen proceed with the steps outlined below."
+  "text": "This page explains how to add Windows worker nodes to a kubeadm cluster.\n\nA running\nWindows Server 2022\n(or higher) instance with administrative access.\nA running kubeadm cluster created by\nkubeadm init\nand following the steps\nin the document\nCreating a cluster with kubeadm\n.\n\nDo the following for each machine:\nOpen a PowerShell session on the machine.\nMake sure you are Administrator or a privileged user.\nThen proceed with the steps outlined below.",
+  "failure_classes": []
 }

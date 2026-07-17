@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — CertificateSigning",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#certificatesigning",
-  "text": "Type\n: Validating.\nThis admission controller observes updates to the\nstatus.certificate\nfield of CertificateSigningRequest resources\nand performs an additional authorization checks to ensure the signing user has permission to\nsign\ncertificate\nrequests with the\nspec.signerName\nrequested on the CertificateSigningRequest resource.\nSee\nCertificate Signing Requests\nfor more\ninformation on the permissions required to perform different actions on CertificateSigningRequest resources."
+  "text": "Type\n: Validating.\nThis admission controller observes updates to the\nstatus.certificate\nfield of CertificateSigningRequest resources\nand performs an additional authorization checks to ensure the signing user has permission to\nsign\ncertificate\nrequests with the\nspec.signerName\nrequested on the CertificateSigningRequest resource.\nSee\nCertificate Signing Requests\nfor more\ninformation on the permissions required to perform different actions on CertificateSigningRequest resources.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Creating a cluster with kubeadm — Adding more control plane nodes",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#adding-more-control-plane-nodes",
-  "text": "See\nCreating Highly Available Clusters with kubeadm\nfor steps on creating a high availability kubeadm cluster by adding more control plane nodes.\n\nThe worker nodes are where your workloads run.\nThe following pages show how to add Linux and Windows worker nodes to the cluster by using\nthe\nkubeadm join\ncommand:\nAdding Linux worker nodes\nAdding Windows worker nodes"
+  "text": "See\nCreating Highly Available Clusters with kubeadm\nfor steps on creating a high availability kubeadm cluster by adding more control plane nodes.\n\nThe worker nodes are where your workloads run.\nThe following pages show how to add Linux and Windows worker nodes to the cluster by using\nthe\nkubeadm join\ncommand:\nAdding Linux worker nodes\nAdding Windows worker nodes",
+  "failure_classes": []
 }

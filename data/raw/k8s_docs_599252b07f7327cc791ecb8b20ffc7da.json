@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Accessing the Kubernetes API from a Pod",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/access-api-from-pod/",
-  "text": "This guide demonstrates how to access the Kubernetes API from within a pod.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud"
+  "text": "This guide demonstrates how to access the Kubernetes API from within a pod.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud",
+  "failure_classes": []
 }

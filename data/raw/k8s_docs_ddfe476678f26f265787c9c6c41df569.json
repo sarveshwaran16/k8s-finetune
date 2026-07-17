@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "StatefulSets — Revision history",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#revision-history",
-  "text": "ControllerRevision is a Kubernetes API resource used by controllers, such as the StatefulSet controller, to track historical configuration changes.\nStatefulSets use ControllerRevisions to maintain a revision history, enabling rollbacks and version tracking.\n\nWhen you update a StatefulSet's Pod template (\nspec.template\n), the StatefulSet controller:\nPrepares a new ControllerRevision object\nStores a snapshot of the Pod template and metadata\nAssigns an incremental revision number\nSee\nControllerRevision\nto learn more about key properties and other details."
+  "text": "ControllerRevision is a Kubernetes API resource used by controllers, such as the StatefulSet controller, to track historical configuration changes.\nStatefulSets use ControllerRevisions to maintain a revision history, enabling rollbacks and version tracking.\n\nWhen you update a StatefulSet's Pod template (\nspec.template\n), the StatefulSet controller:\nPrepares a new ControllerRevision object\nStores a snapshot of the Pod template and metadata\nAssigns an incremental revision number\nSee\nControllerRevision\nto learn more about key properties and other details.",
+  "failure_classes": []
 }

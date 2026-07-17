@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Good practices for Dynamic Resource Allocation as a Cluster Admin — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/dra/#what-s-next",
-  "text": "Learn more about\nDRA\nRead the\nKubernetes Metrics\nReference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Learn more about\nDRA\nRead the\nKubernetes Metrics\nReference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

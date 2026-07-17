@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ephemeral Volumes — Security",
   "source_url": "https://kubernetes.io/docs/concepts/storage/ephemeral-volumes/#security",
-  "text": "Using generic ephemeral volumes allows users to create PVCs indirectly\nif they can create Pods, even if they do not have permission to create PVCs directly.\nCluster administrators must be aware of this. If this does not fit their security model,\nthey should use an\nadmission webhook\nthat rejects objects like Pods that have a generic ephemeral volume.\nThe normal\nnamespace quota for PVCs\nstill applies, so even if users are allowed to use this new mechanism, they cannot use\nit to circumvent other policies."
+  "text": "Using generic ephemeral volumes allows users to create PVCs indirectly\nif they can create Pods, even if they do not have permission to create PVCs directly.\nCluster administrators must be aware of this. If this does not fit their security model,\nthey should use an\nadmission webhook\nthat rejects objects like Pods that have a generic ephemeral volume.\nThe normal\nnamespace quota for PVCs\nstill applies, so even if users are allowed to use this new mechanism, they cannot use\nit to circumvent other policies.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

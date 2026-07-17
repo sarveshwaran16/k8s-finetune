@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubeAPITerminatedRequests#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubeapiterminatedrequests/",
-  "text": "Kube API Terminated Requests\nKubeAPITerminatedRequests\n#\nMeaning\n#\nThe apiserver has terminated over 20% of its incoming requests.\nImpact\n#\nClient will not be able to interact with the cluster.\nSome in-cluster services this may degrade or make service unavailable.\nDiagnosis\n#\nUse the\napiserver_flowcontrol_rejected_requests_total\nmetric to determine\nwhich flow schema is throttling the traffic to the API Server.\nThe flow schema also provides information on the affected resources and subjects.\nMitigation\n#\nTODO"
+  "text": "Kube API Terminated Requests\nKubeAPITerminatedRequests\n#\nMeaning\n#\nThe apiserver has terminated over 20% of its incoming requests.\nImpact\n#\nClient will not be able to interact with the cluster.\nSome in-cluster services this may degrade or make service unavailable.\nDiagnosis\n#\nUse the\napiserver_flowcontrol_rejected_requests_total\nmetric to determine\nwhich flow schema is throttling the traffic to the API Server.\nThe flow schema also provides information on the affected resources and subjects.\nMitigation\n#\nTODO",
+  "failure_classes": []
 }

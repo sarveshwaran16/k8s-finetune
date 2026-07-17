@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Running Pods on Only Some Nodes — Step 3: Create the DaemonSet",
   "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/pods-some-nodes/#step-3-create-the-daemonset",
-  "text": "Create the DaemonSet from the manifest by using\nkubectl create\nor\nkubectl apply\nLet's label another node as\nssd=true\n.\nkubectl label nodes example-node-3\nssd\n=\ntrue\nLabelling the node automatically triggers the control plane (specifically, the DaemonSet controller)\nto run a new daemon pod on that node.\nkubectl get pods -o wide\nThe output is similar to:\nNAME                              READY     STATUS    RESTARTS   AGE    IP      NODE\n<daemonset-name><some-hash-01>    1/1       Running   0          13s    .....   example-node-1\n<daemonset-name><some-hash-02>    1/1       Running   0          13s    .....   example-node-2\n<daemonset-name><some-hash-03>    1/1       Running   0          5s     .....   example-node-3"
+  "text": "Create the DaemonSet from the manifest by using\nkubectl create\nor\nkubectl apply\nLet's label another node as\nssd=true\n.\nkubectl label nodes example-node-3\nssd\n=\ntrue\nLabelling the node automatically triggers the control plane (specifically, the DaemonSet controller)\nto run a new daemon pod on that node.\nkubectl get pods -o wide\nThe output is similar to:\nNAME                              READY     STATUS    RESTARTS   AGE    IP      NODE\n<daemonset-name><some-hash-01>    1/1       Running   0          13s    .....   example-node-1\n<daemonset-name><some-hash-02>    1/1       Running   0          13s    .....   example-node-2\n<daemonset-name><some-hash-03>    1/1       Running   0          5s     .....   example-node-3",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Exposing an External IP Address to Access an Application in a Cluster — Cleaning up",
   "source_url": "https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address/#cleaning-up",
-  "text": "To delete the Service, enter this command:\nkubectl delete services my-service\nTo delete the Deployment, the ReplicaSet, and the Pods that are running\nthe Hello World application, enter this command:\nkubectl delete deployment hello-world\n\nLearn more about\nconnecting applications with services\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "To delete the Service, enter this command:\nkubectl delete services my-service\nTo delete the Deployment, the ReplicaSet, and the Pods that are running\nthe Hello World application, enter this command:\nkubectl delete deployment hello-world\n\nLearn more about\nconnecting applications with services\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

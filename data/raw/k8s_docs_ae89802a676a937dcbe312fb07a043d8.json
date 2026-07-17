@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Update API Objects in Place Using kubectl patch — Summary",
   "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/#summary",
-  "text": "In this exercise, you used\nkubectl patch\nto change the live configuration\nof a Deployment object. You did not change the configuration file that you originally used to\ncreate the Deployment object. Other commands for updating API objects include\nkubectl annotate\n,\nkubectl edit\n,\nkubectl replace\n,\nkubectl scale\n,\nand\nkubectl apply\n."
+  "text": "In this exercise, you used\nkubectl patch\nto change the live configuration\nof a Deployment object. You did not change the configuration file that you originally used to\ncreate the Deployment object. Other commands for updating API objects include\nkubectl annotate\n,\nkubectl edit\n,\nkubectl replace\n,\nkubectl scale\n,\nand\nkubectl apply\n.",
+  "failure_classes": []
 }

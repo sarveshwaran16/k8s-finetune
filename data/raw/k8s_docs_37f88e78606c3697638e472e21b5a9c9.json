@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — resource.kubernetes.io/pod-claim-name",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#resource-kubernetes-io-pod-claim-name",
-  "text": "Type: Annotation\nExample:\nresource.kubernetes.io/pod-claim-name: \"my-pod-claim\"\nUsed on: ResourceClaim\nThis annotation is assigned to generated ResourceClaims.\nIts value corresponds to the name of the resource claim in the\n.spec\nof any Pod(s) for which the ResourceClaim was created.\nWithin\ndynamic resource allocation\n, the\ndiscoverable device metadata feature uses this annotation to map a generated ResourceClaim\nback to the Pod claim name (\npod.spec.resourceClaims[].name\n) for template-based claims.\nKubernetes manages this annotation, so you should not modify it."
+  "text": "Type: Annotation\nExample:\nresource.kubernetes.io/pod-claim-name: \"my-pod-claim\"\nUsed on: ResourceClaim\nThis annotation is assigned to generated ResourceClaims.\nIts value corresponds to the name of the resource claim in the\n.spec\nof any Pod(s) for which the ResourceClaim was created.\nWithin\ndynamic resource allocation\n, the\ndiscoverable device metadata feature uses this annotation to map a generated ResourceClaim\nback to the Pod claim name (\npod.spec.resourceClaims[].name\n) for template-based claims.\nKubernetes manages this annotation, so you should not modify it.",
+  "failure_classes": []
 }

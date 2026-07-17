@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "FlowSchema — Subject",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/flowcontrol/flow-schema-v1/#Subject",
-  "text": "Subject matches the originator of a request, as identified by the request authentication system. There are three ways of matching an originator; by user, group, or service account.\nField\nDescription\ngroup\nGroupSubject\n`group` matches based on user group name.\nkind\n*\nstring\n`kind` indicates which one of the other fields is non-empty. Required\nserviceAccount\nServiceAccountSubject\n`serviceAccount` matches ServiceAccounts.\nuser\nUserSubject\n`user` matches based on username."
+  "text": "Subject matches the originator of a request, as identified by the request authentication system. There are three ways of matching an originator; by user, group, or service account.\nField\nDescription\ngroup\nGroupSubject\n`group` matches based on user group name.\nkind\n*\nstring\n`kind` indicates which one of the other fields is non-empty. Required\nserviceAccount\nServiceAccountSubject\n`serviceAccount` matches ServiceAccounts.\nuser\nUserSubject\n`user` matches based on username.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

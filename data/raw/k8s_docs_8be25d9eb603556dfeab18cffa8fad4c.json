@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Security Admission — Built-in Pod Security admission enforcement",
   "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-admission/#built-in-pod-security-admission-enforcement",
-  "text": "This page is part of the documentation for Kubernetes v1.36.\nIf you are running a different version of Kubernetes, consult the documentation for that release.\n\nPod Security admission places requirements on a Pod's\nSecurity\nContext\nand other related fields according\nto the three levels defined by the\nPod Security\nStandards\n:\nprivileged\n,\nbaseline\n, and\nrestricted\n. Refer to the\nPod Security Standards\npage for an in-depth look at those requirements."
+  "text": "This page is part of the documentation for Kubernetes v1.36.\nIf you are running a different version of Kubernetes, consult the documentation for that release.\n\nPod Security admission places requirements on a Pod's\nSecurity\nContext\nand other related fields according\nto the three levels defined by the\nPod Security\nStandards\n:\nprivileged\n,\nbaseline\n, and\nrestricted\n. Refer to the\nPod Security Standards\npage for an in-depth look at those requirements.",
+  "failure_classes": []
 }

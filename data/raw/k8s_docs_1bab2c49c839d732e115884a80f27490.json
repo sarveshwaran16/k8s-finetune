@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — rbac.authorization.kubernetes.io/autoupdate",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#rbac-authorization-kubernetes-io-autoupdate",
-  "text": "Type: Annotation\nExample:\nrbac.authorization.kubernetes.io/autoupdate: \"false\"\nUsed on: ClusterRole, ClusterRoleBinding, Role, RoleBinding\nWhen this annotation is set to\n\"true\"\non default RBAC objects created by the API server,\nthey are automatically updated at server start to add missing permissions and subjects\n(extra permissions and subjects are left in place).\nTo prevent autoupdating a particular role or rolebinding, set this annotation to\n\"false\"\n.\nIf you create your own RBAC objects and set this annotation to\n\"false\"\n,\nkubectl auth reconcile\n(which allows reconciling arbitrary RBAC objects in a\nmanifest\n)\nrespects this annotation and does not automatically add missing permissions and subjects."
+  "text": "Type: Annotation\nExample:\nrbac.authorization.kubernetes.io/autoupdate: \"false\"\nUsed on: ClusterRole, ClusterRoleBinding, Role, RoleBinding\nWhen this annotation is set to\n\"true\"\non default RBAC objects created by the API server,\nthey are automatically updated at server start to add missing permissions and subjects\n(extra permissions and subjects are left in place).\nTo prevent autoupdating a particular role or rolebinding, set this annotation to\n\"false\"\n.\nIf you create your own RBAC objects and set this annotation to\n\"false\"\n,\nkubectl auth reconcile\n(which allows reconciling arbitrary RBAC objects in a\nmanifest\n)\nrespects this annotation and does not automatically add missing permissions and subjects.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "EndpointSlice",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/discovery/endpoint-slice-v1/",
-  "text": "EndpointSlices\nThe EndpointSlice API is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends, and allows the cluster to update its list of healthy backends efficiently.\nEndpointSlice API\nWhat's next\nThe EndpointSlice API is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends, and allows the cluster to update its list of healthy backends efficiently.\nEndpointSlice API\nWhat's next\napiVersion: discovery.k8s.io/v1\nimport \"k8s.io/api/discovery/v1\""
+  "text": "EndpointSlices\nThe EndpointSlice API is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends, and allows the cluster to update its list of healthy backends efficiently.\nEndpointSlice API\nWhat's next\nThe EndpointSlice API is the mechanism that Kubernetes uses to let your Service scale to handle large numbers of backends, and allows the cluster to update its list of healthy backends efficiently.\nEndpointSlice API\nWhat's next\napiVersion: discovery.k8s.io/v1\nimport \"k8s.io/api/discovery/v1\"",
+  "failure_classes": []
 }

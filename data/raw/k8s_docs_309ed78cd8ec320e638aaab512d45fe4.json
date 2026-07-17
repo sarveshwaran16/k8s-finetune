@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Dynamic Resource Allocation — Observability of dynamic resources",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#observability-dynamic-resources",
-  "text": "You can check the status of dynamically allocated resources by using any of the\nfollowing methods:\nkubelet device metrics\nResourceClaim status\nDevice health monitoring\n\nThe\nPodResourcesLister\nkubelet gRPC service lets you monitor in-use devices.\nThe\nDynamicResource\nmessage provides information that's specific to dynamic\nresource allocation, such as the device name and the claim name. For details,\nsee\nMonitoring device plugin resources\n."
+  "text": "You can check the status of dynamically allocated resources by using any of the\nfollowing methods:\nkubelet device metrics\nResourceClaim status\nDevice health monitoring\n\nThe\nPodResourcesLister\nkubelet gRPC service lets you monitor in-use devices.\nThe\nDynamicResource\nmessage provides information that's specific to dynamic\nresource allocation, such as the device name and the claim name. For details,\nsee\nMonitoring device plugin resources\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

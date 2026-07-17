@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Process ID Limits And Reservations — Pod PID limits",
   "source_url": "https://kubernetes.io/docs/concepts/policy/pid-limiting/#pod-pid-limits",
-  "text": "Kubernetes allows you to limit the number of processes running in a Pod. You\nspecify this limit at the node level, rather than configuring it as a resource\nlimit for a particular Pod. Each Node can have a different PID limit.\nTo configure the limit, you can specify the command line parameter\n--pod-max-pids\nto the kubelet, or set\nPodPidsLimit\nin the kubelet\nconfiguration file\n."
+  "text": "Kubernetes allows you to limit the number of processes running in a Pod. You\nspecify this limit at the node level, rather than configuring it as a resource\nlimit for a particular Pod. Each Node can have a different PID limit.\nTo configure the limit, you can specify the command line parameter\n--pod-max-pids\nto the kubelet, or set\nPodPidsLimit\nin the kubelet\nconfiguration file\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

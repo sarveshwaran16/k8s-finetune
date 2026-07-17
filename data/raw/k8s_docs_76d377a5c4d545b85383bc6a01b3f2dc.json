@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Horizontal Pod Autoscaling — Scaling on custom metrics",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#scaling-on-custom-metrics",
-  "text": "(the\nautoscaling/v2beta2\nAPI version previously provided this ability as a beta feature)\nProvided that you use the\nautoscaling/v2\nAPI version, you can configure a HorizontalPodAutoscaler\nto scale based on a custom metric (that is not built in to Kubernetes or any Kubernetes component).\nThe HorizontalPodAutoscaler controller then queries for these custom metrics from the Kubernetes\nAPI.\nSee\nSupport for metrics APIs\nfor the requirements."
+  "text": "(the\nautoscaling/v2beta2\nAPI version previously provided this ability as a beta feature)\nProvided that you use the\nautoscaling/v2\nAPI version, you can configure a HorizontalPodAutoscaler\nto scale based on a custom metric (that is not built in to Kubernetes or any Kubernetes component).\nThe HorizontalPodAutoscaler controller then queries for these custom metrics from the Kubernetes\nAPI.\nSee\nSupport for metrics APIs\nfor the requirements.",
+  "failure_classes": []
 }

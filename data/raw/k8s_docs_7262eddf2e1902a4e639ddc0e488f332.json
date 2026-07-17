@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Vertical Pod Autoscaling — API object",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/#api-object",
-  "text": "The VerticalPodAutoscaler is defined as a\nCustom Resource Definition\n(CRD) in Kubernetes. Unlike HorizontalPodAutoscaler, which is part of the core Kubernetes API, VPA must be installed separately in your cluster.\nThe current stable API version is\nautoscaling.k8s.io/v1\n. More details about the VPA installation and API can be found in the\nVPA GitHub repository\n."
+  "text": "The VerticalPodAutoscaler is defined as a\nCustom Resource Definition\n(CRD) in Kubernetes. Unlike HorizontalPodAutoscaler, which is part of the core Kubernetes API, VPA must be installed separately in your cluster.\nThe current stable API version is\nautoscaling.k8s.io/v1\n. More details about the VPA installation and API can be found in the\nVPA GitHub repository\n.",
+  "failure_classes": []
 }

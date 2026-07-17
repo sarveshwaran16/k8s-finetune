@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Policies — Implementations",
   "source_url": "https://kubernetes.io/docs/concepts/policy/#implementations-admission-control",
-  "text": "Dynamic Admission Controllers that act as flexible policy engines are being developed in the Kubernetes ecosystem, such as:\nKubewarden\nKyverno\nOPA Gatekeeper\nPolaris\n\nKubernetes allows configuring the Kubelet on each worker node. Some Kubelet configurations act as policies:\nProcess ID limits and reservations\nare used to limit and reserve allocatable PIDs.\nNode Resource Managers\ncan manage compute, memory, and device resources for latency-critical and high-throughput workloads."
+  "text": "Dynamic Admission Controllers that act as flexible policy engines are being developed in the Kubernetes ecosystem, such as:\nKubewarden\nKyverno\nOPA Gatekeeper\nPolaris\n\nKubernetes allows configuring the Kubelet on each worker node. Some Kubelet configurations act as policies:\nProcess ID limits and reservations\nare used to limit and reserve allocatable PIDs.\nNode Resource Managers\ncan manage compute, memory, and device resources for latency-critical and high-throughput workloads.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

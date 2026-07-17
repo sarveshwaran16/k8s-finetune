@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Handling retriable and non-retriable pod failures with Pod failure policy",
   "source_url": "https://kubernetes.io/docs/tasks/job/pod-failure-policy/",
-  "text": "This document shows you how to use the\nPod failure policy\n,\nin combination with the default\nPod backoff failure policy\n,\nto improve the control over the handling of container- or Pod-level failure\nwithin a\nJob\n.\nThe definition of Pod failure policy may help you to:\nbetter utilize the computational resources by avoiding unnecessary Pod retries.\navoid Job failures due to Pod disruptions (such\npreemption\n,\nAPI-initiated eviction\nor\ntaint\n-based eviction)."
+  "text": "This document shows you how to use the\nPod failure policy\n,\nin combination with the default\nPod backoff failure policy\n,\nto improve the control over the handling of container- or Pod-level failure\nwithin a\nJob\n.\nThe definition of Pod failure policy may help you to:\nbetter utilize the computational resources by avoiding unnecessary Pod retries.\navoid Job failures due to Pod disruptions (such\npreemption\n,\nAPI-initiated eviction\nor\ntaint\n-based eviction).",
+  "failure_classes": []
 }

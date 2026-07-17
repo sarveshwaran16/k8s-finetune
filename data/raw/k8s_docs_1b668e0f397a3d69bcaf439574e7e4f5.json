@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Encrypting Confidential Data at Rest — Protection for encryption keys",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#protection-for-encryption-keys",
-  "text": "You should take appropriate measures to protect the confidential information that allows decryption,\nwhether that is a local encryption key, or an authentication token that allows the API server to\ncall KMS.\nEven when you rely on a provider to manage the use and lifecycle of the main encryption key (or keys), you are still responsible\nfor making sure that access controls and other security measures for the managed encryption service are\nappropriate for your security needs."
+  "text": "You should take appropriate measures to protect the confidential information that allows decryption,\nwhether that is a local encryption key, or an authentication token that allows the API server to\ncall KMS.\nEven when you rely on a provider to manage the use and lifecycle of the main encryption key (or keys), you are still responsible\nfor making sure that access controls and other security measures for the managed encryption service are\nappropriate for your security needs.",
+  "failure_classes": []
 }

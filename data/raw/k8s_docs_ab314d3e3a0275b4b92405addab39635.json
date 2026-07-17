@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Implementation details — kubeadm init workflow internal design",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#kubeadm-init-workflow-internal-design",
-  "text": "The\nkubeadm init\nconsists of a sequence of atomic work tasks to perform,\nas described in the\nkubeadm init\ninternal workflow\n.\nThe\nkubeadm init phase\ncommand allows\nusers to invoke each task individually, and ultimately offers a reusable and composable\nAPI/toolbox that can be used by other Kubernetes bootstrap tools, by any IT automation tool or by\nan advanced user for creating custom clusters."
+  "text": "The\nkubeadm init\nconsists of a sequence of atomic work tasks to perform,\nas described in the\nkubeadm init\ninternal workflow\n.\nThe\nkubeadm init phase\ncommand allows\nusers to invoke each task individually, and ultimately offers a reusable and composable\nAPI/toolbox that can be used by other Kubernetes bootstrap tools, by any IT automation tool or by\nan advanced user for creating custom clusters.",
+  "failure_classes": []
 }

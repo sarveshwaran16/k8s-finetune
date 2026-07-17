@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl edit — Examples",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_edit/#examples",
-  "text": "# Edit the service named 'registry'\n  kubectl edit svc/registry\n  \n  # Use an alternative editor\n  KUBE_EDITOR=\"nano\" kubectl edit svc/registry\n  \n  # Edit the job 'myjob' in JSON using the v1 API format\n  kubectl edit job.v1.batch/myjob -o json\n  \n  # Edit the deployment 'mydeployment' in YAML and save the modified config in its annotation\n  kubectl edit deployment/mydeployment -o yaml --save-config\n  \n  # Edit the 'status' subresource for the 'mydeployment' deployment\n  kubectl edit deployment mydeployment --subresource='status'"
+  "text": "# Edit the service named 'registry'\n  kubectl edit svc/registry\n  \n  # Use an alternative editor\n  KUBE_EDITOR=\"nano\" kubectl edit svc/registry\n  \n  # Edit the job 'myjob' in JSON using the v1 API format\n  kubectl edit job.v1.batch/myjob -o json\n  \n  # Edit the deployment 'mydeployment' in YAML and save the modified config in its annotation\n  kubectl edit deployment/mydeployment -o yaml --save-config\n  \n  # Edit the 'status' subresource for the 'mydeployment' deployment\n  kubectl edit deployment mydeployment --subresource='status'",
+  "failure_classes": []
 }

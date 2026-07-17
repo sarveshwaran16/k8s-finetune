@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Managing Secrets using kubectl — Use raw data",
   "source_url": "https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#use-raw-data",
-  "text": "Run the following command:\nkubectl create secret generic db-user-pass\n\\\n--from-literal\n=\nusername\n=\nadmin\n\\\n--from-literal\n=\npassword\n=\n'S!B\\*d$zDsb='\nYou must use single quotes\n''\nto escape special characters such as\n$\n,\n\\\n,\n*\n,\n=\n, and\n!\nin your strings. If you don't, your shell will interpret these\ncharacters."
+  "text": "Run the following command:\nkubectl create secret generic db-user-pass\n\\\n--from-literal\n=\nusername\n=\nadmin\n\\\n--from-literal\n=\npassword\n=\n'S!B\\*d$zDsb='\nYou must use single quotes\n''\nto escape special characters such as\n$\n,\n\\\n,\n*\n,\n=\n, and\n!\nin your strings. If you don't, your shell will interpret these\ncharacters.",
+  "failure_classes": []
 }

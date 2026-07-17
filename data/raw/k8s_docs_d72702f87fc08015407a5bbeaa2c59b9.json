@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/change-cause",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#change-cause",
-  "text": "Type: Annotation\nExample:\nkubernetes.io/change-cause: \"kubectl edit --record deployment foo\"\nUsed on: All Objects\nThis annotation is a best guess at why something was changed.\nIt is populated when adding\n--record\nto a\nkubectl\ncommand that may change an object.\n\nType: Annotation\nExample:\nkubernetes.io/description: \"Description of K8s object.\"\nUsed on: All Objects\nThis annotation is used for describing specific behaviour of given object."
+  "text": "Type: Annotation\nExample:\nkubernetes.io/change-cause: \"kubectl edit --record deployment foo\"\nUsed on: All Objects\nThis annotation is a best guess at why something was changed.\nIt is populated when adding\n--record\nto a\nkubectl\ncommand that may change an object.\n\nType: Annotation\nExample:\nkubernetes.io/description: \"Description of K8s object.\"\nUsed on: All Objects\nThis annotation is used for describing specific behaviour of given object.",
+  "failure_classes": []
 }

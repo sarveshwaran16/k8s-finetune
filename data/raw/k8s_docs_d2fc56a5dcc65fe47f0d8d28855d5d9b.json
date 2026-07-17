@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Role Based Access Control Good Practices — Escalate verb",
   "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#escalate-verb",
-  "text": "Generally, the RBAC system prevents users from creating clusterroles with more rights than the user possesses.\nThe exception to this is the\nescalate\nverb. As noted in the\nRBAC documentation\n,\nusers with this right can effectively escalate their privileges.\n\nSimilar to the\nescalate\nverb, granting users this right allows for the bypass of Kubernetes\nin-built protections against privilege escalation, allowing users to create bindings to\nroles with rights they do not already have."
+  "text": "Generally, the RBAC system prevents users from creating clusterroles with more rights than the user possesses.\nThe exception to this is the\nescalate\nverb. As noted in the\nRBAC documentation\n,\nusers with this right can effectively escalate their privileges.\n\nSimilar to the\nescalate\nverb, granting users this right allows for the bypass of Kubernetes\nin-built protections against privilege escalation, allowing users to create bindings to\nroles with rights they do not already have.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

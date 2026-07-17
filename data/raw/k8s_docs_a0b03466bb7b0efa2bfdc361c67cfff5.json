@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl config set — Examples",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_set/#examples",
-  "text": "# Set the server field on the my-cluster cluster to https://1.2.3.4\n  kubectl config set clusters.my-cluster.server https://1.2.3.4\n  \n  # Set the certificate-authority-data field on the my-cluster cluster\n  kubectl config set clusters.my-cluster.certificate-authority-data $(echo \"cert_data_here\" | base64 -i -)\n  \n  # Set the cluster field in the my-context context to my-cluster\n  kubectl config set contexts.my-context.cluster my-cluster\n  \n  # Set the client-key-data field in the cluster-admin user using --set-raw-bytes option\n  kubectl config set users.cluster-admin.client-key-data cert_data_here --set-raw-bytes=true"
+  "text": "# Set the server field on the my-cluster cluster to https://1.2.3.4\n  kubectl config set clusters.my-cluster.server https://1.2.3.4\n  \n  # Set the certificate-authority-data field on the my-cluster cluster\n  kubectl config set clusters.my-cluster.certificate-authority-data $(echo \"cert_data_here\" | base64 -i -)\n  \n  # Set the cluster field in the my-context context to my-cluster\n  kubectl config set contexts.my-context.cluster my-cluster\n  \n  # Set the client-key-data field in the cluster-admin user using --set-raw-bytes option\n  kubectl config set users.cluster-admin.client-key-data cert_data_here --set-raw-bytes=true",
+  "failure_classes": []
 }

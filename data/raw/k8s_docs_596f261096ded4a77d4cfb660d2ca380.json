@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Horizontal Manual Scaling for a Deployment — When to use manual versus automatic scaling",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/scale-deployment/#when-to-use-manual-versus-automatic-scaling",
-  "text": "Aspect\nManual scaling\nAutomatic scaling (HPA)\nBest for\nPredictable, scheduled, or one-off load changes\nVariable or unpredictable demand\nHow it works\nYou set\n.spec.replicas\ndirectly\nHPA adjusts replicas based on observed metrics\nResponse time\nImmediate when you run the command\nReacts to metrics with a short delay\nMetrics awareness\nNone — you decide the replica count\nMonitors CPU, memory, or custom metrics\nMaintenance\nRequires manual intervention to adjust\nRuns autonomously after configuration"
+  "text": "Aspect\nManual scaling\nAutomatic scaling (HPA)\nBest for\nPredictable, scheduled, or one-off load changes\nVariable or unpredictable demand\nHow it works\nYou set\n.spec.replicas\ndirectly\nHPA adjusts replicas based on observed metrics\nResponse time\nImmediate when you run the command\nReacts to metrics with a short delay\nMetrics awareness\nNone — you decide the replica count\nMonitors CPU, memory, or custom metrics\nMaintenance\nRequires manual intervention to adjust\nRuns autonomously after configuration",
+  "failure_classes": []
 }

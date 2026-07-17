@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extend kubectl with plugins — Source code",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/#distributing-source-code",
-  "text": "You can publish the source code; for example, as a Git repository. If you\nchoose this option, someone who wants to use that plugin must fetch the code,\nset up a build environment (if it needs compiling), and deploy the plugin.\nIf you also make compiled packages available, or use Krew, that will make\ninstalls easier."
+  "text": "You can publish the source code; for example, as a Git repository. If you\nchoose this option, someone who wants to use that plugin must fetch the code,\nset up a build environment (if it needs compiling), and deploy the plugin.\nIf you also make compiled packages available, or use Krew, that will make\ninstalls easier.",
+  "failure_classes": []
 }

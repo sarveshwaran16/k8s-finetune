@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Tutorials — Stateful Applications",
   "source_url": "https://kubernetes.io/docs/tutorials/#stateful-applications",
-  "text": "StatefulSet Basics\nExample: WordPress and MySQL with Persistent Volumes\nExample: Deploying Cassandra with Stateful Sets\nRunning ZooKeeper, A CP Distributed System\n\nConnecting Applications with Services\nUsing Source IP\n\nApply Pod Security Standards at Cluster level\nApply Pod Security Standards at Namespace level\nRestrict a Container's Access to Resources with AppArmor\nSeccomp"
+  "text": "StatefulSet Basics\nExample: WordPress and MySQL with Persistent Volumes\nExample: Deploying Cassandra with Stateful Sets\nRunning ZooKeeper, A CP Distributed System\n\nConnecting Applications with Services\nUsing Source IP\n\nApply Pod Security Standards at Cluster level\nApply Pod Security Standards at Namespace level\nRestrict a Container's Access to Resources with AppArmor\nSeccomp",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Namespaces — Automatic labelling",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#automatic-labelling",
-  "text": "The Kubernetes control plane sets an immutable\nlabel\nkubernetes.io/metadata.name\non all namespaces.\nThe value of the label is the namespace name.\n\nLearn more about\ncreating a new namespace\n.\nLearn more about\ndeleting a namespace\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "The Kubernetes control plane sets an immutable\nlabel\nkubernetes.io/metadata.name\non all namespaces.\nThe value of the label is the namespace name.\n\nLearn more about\ncreating a new namespace\n.\nLearn more about\ndeleting a namespace\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

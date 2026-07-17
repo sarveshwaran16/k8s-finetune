@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_certs/kubeadm_certs_renew/#synopsis",
-  "text": "Renew certificates for a Kubernetes cluster\nkubeadm certs renew [flags]\n\n-h, --help\nhelp for renew\nhelp for renew\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "Renew certificates for a Kubernetes cluster\nkubeadm certs renew [flags]\n\n-h, --help\nhelp for renew\nhelp for renew\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": []
 }

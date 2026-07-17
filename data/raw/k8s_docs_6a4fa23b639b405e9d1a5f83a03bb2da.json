@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Client Authentication (v1beta1) — Resource Types",
   "source_url": "https://kubernetes.io/docs/reference/config-api/client-authentication.v1beta1/#resource-types",
-  "text": "ExecCredential\n\nExecCredential is used by exec-based plugins to communicate credentials to\nHTTP transports.\nField\nDescription\napiVersion\nstring\nclient.authentication.k8s.io/v1beta1\nkind\nstring\nExecCredential\nspec\n[Required]\nExecCredentialSpec\nSpec holds information passed to the plugin by the transport.\nstatus\nExecCredentialStatus\nStatus is filled in by the plugin and holds the credentials that the transport\nshould use to contact the API.\nSpec holds information passed to the plugin by the transport.\nStatus is filled in by the plugin and holds the credentials that the transport\nshould use to contact the API."
+  "text": "ExecCredential\n\nExecCredential is used by exec-based plugins to communicate credentials to\nHTTP transports.\nField\nDescription\napiVersion\nstring\nclient.authentication.k8s.io/v1beta1\nkind\nstring\nExecCredential\nspec\n[Required]\nExecCredentialSpec\nSpec holds information passed to the plugin by the transport.\nstatus\nExecCredentialStatus\nStatus is filled in by the plugin and holds the credentials that the transport\nshould use to contact the API.\nSpec holds information passed to the plugin by the transport.\nStatus is filled in by the plugin and holds the credentials that the transport\nshould use to contact the API.",
+  "failure_classes": []
 }

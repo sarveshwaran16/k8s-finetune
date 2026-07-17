@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Custom Resources — API server aggregation",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#api-server-aggregation",
-  "text": "Usually, each resource in the Kubernetes API requires code that handles REST requests and manages\npersistent storage of objects. The main Kubernetes API server handles built-in resources like\npods\nand\nservices\n, and can also generically handle custom resources through\nCRDs\n.\nThe\naggregation layer\nallows you to provide specialized implementations for your custom resources by writing and\ndeploying your own API server.\nThe main API server delegates requests to your API server for the custom resources that you handle,\nmaking them available to all of its clients."
+  "text": "Usually, each resource in the Kubernetes API requires code that handles REST requests and manages\npersistent storage of objects. The main Kubernetes API server handles built-in resources like\npods\nand\nservices\n, and can also generically handle custom resources through\nCRDs\n.\nThe\naggregation layer\nallows you to provide specialized implementations for your custom resources by writing and\ndeploying your own API server.\nThe main API server delegates requests to your API server for the custom resources that you handle,\nmaking them available to all of its clients.",
+  "failure_classes": []
 }

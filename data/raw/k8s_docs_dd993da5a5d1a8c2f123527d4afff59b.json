@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Storage Classes — Mount options",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/#mount-options",
-  "text": "PersistentVolumes that are dynamically created by a StorageClass will have the\nmount options specified in the\nmountOptions\nfield of the class.\nIf the volume plugin does not support mount options but mount options are\nspecified, provisioning will fail. Mount options are\nnot\nvalidated on either\nthe class or PV. If a mount option is invalid, the PV mount fails."
+  "text": "PersistentVolumes that are dynamically created by a StorageClass will have the\nmount options specified in the\nmountOptions\nfield of the class.\nIf the volume plugin does not support mount options but mount options are\nspecified, provisioning will fail. Mount options are\nnot\nvalidated on either\nthe class or PV. If a mount option is invalid, the PV mount fails.",
+  "failure_classes": []
 }

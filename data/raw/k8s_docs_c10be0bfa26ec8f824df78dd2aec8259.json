@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Limit Storage Consumption — LimitRange to limit requests for storage",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/limit-storage-consumption/#limitrange-to-limit-requests-for-storage",
-  "text": "Adding a\nLimitRange\nto a namespace enforces storage request sizes to a minimum and maximum. Storage is requested\nvia\nPersistentVolumeClaim\n. The admission controller that enforces limit ranges will reject any PVC that is above or below\nthe values set by the admin.\nIn this example, a PVC requesting 10Gi of storage would be rejected because it exceeds the 2Gi max.\napiVersion\n:\nv1\nkind\n:\nLimitRange\nmetadata\n:\nname\n:\nstoragelimits\nspec\n:\nlimits\n:\n-\ntype\n:\nPersistentVolumeClaim\nmax\n:\nstorage\n:\n2Gi\nmin\n:\nstorage\n:\n1Gi\nMinimum storage requests are used when the underlying storage provider requires certain minimums. For example,\nAWS EBS volumes have a 1Gi minimum requirement."
+  "text": "Adding a\nLimitRange\nto a namespace enforces storage request sizes to a minimum and maximum. Storage is requested\nvia\nPersistentVolumeClaim\n. The admission controller that enforces limit ranges will reject any PVC that is above or below\nthe values set by the admin.\nIn this example, a PVC requesting 10Gi of storage would be rejected because it exceeds the 2Gi max.\napiVersion\n:\nv1\nkind\n:\nLimitRange\nmetadata\n:\nname\n:\nstoragelimits\nspec\n:\nlimits\n:\n-\ntype\n:\nPersistentVolumeClaim\nmax\n:\nstorage\n:\n2Gi\nmin\n:\nstorage\n:\n1Gi\nMinimum storage requests are used when the underlying storage provider requires certain minimums. For example,\nAWS EBS volumes have a 1Gi minimum requirement.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

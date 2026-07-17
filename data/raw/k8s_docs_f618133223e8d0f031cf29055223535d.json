@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl Usage Conventions",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/conventions/",
-  "text": "Recommended usage conventions for\nkubectl\n.\n\nFor a stable output in a script:\nRequest one of the machine-oriented output forms, such as\n-o name\n,\n-o json\n,\n-o yaml\n,\n-o go-template\n, or\n-o jsonpath\n.\nFully-qualify the version. For example,\njobs.v1.batch/myjob\n. This will ensure that kubectl does not use its default version that can change over time.\nDon't rely on context, preferences, or other implicit states."
+  "text": "Recommended usage conventions for\nkubectl\n.\n\nFor a stable output in a script:\nRequest one of the machine-oriented output forms, such as\n-o name\n,\n-o json\n,\n-o yaml\n,\n-o go-template\n, or\n-o jsonpath\n.\nFully-qualify the version. For example,\njobs.v1.batch/myjob\n. This will ensure that kubectl does not use its default version that can change over time.\nDon't rely on context, preferences, or other implicit states.",
+  "failure_classes": []
 }

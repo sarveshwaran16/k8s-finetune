@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Switching from Polling to CRI Event-based Updates to Container Status",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/switch-to-evented-pleg/",
-  "text": "This page shows how to migrate nodes to use event based updates for container status. The event-based\nimplementation reduces node resource consumption by the kubelet, compared to the legacy approach\nthat relies on polling.\nYou may know this feature as\nevented Pod lifecycle event generator (PLEG)\n. That's the name used\ninternally within the Kubernetes project for a key implementation detail.\nThe polling based approach is referred to as\ngeneric PLEG\n."
+  "text": "This page shows how to migrate nodes to use event based updates for container status. The event-based\nimplementation reduces node resource consumption by the kubelet, compared to the legacy approach\nthat relies on polling.\nYou may know this feature as\nevented Pod lifecycle event generator (PLEG)\n. That's the name used\ninternally within the Kubernetes project for a key implementation detail.\nThe polling based approach is referred to as\ngeneric PLEG\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

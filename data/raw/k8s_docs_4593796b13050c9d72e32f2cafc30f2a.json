@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Guaranteed Scheduling For Critical Add-On Pods — Marking pod as critical",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/guaranteed-scheduling-critical-addon-pods/#marking-pod-as-critical",
-  "text": "To mark a Pod as critical, set priorityClassName for that Pod to\nsystem-cluster-critical\nor\nsystem-node-critical\n.\nsystem-node-critical\nis the highest available priority, even higher than\nsystem-cluster-critical\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "To mark a Pod as critical, set priorityClassName for that Pod to\nsystem-cluster-critical\nor\nsystem-node-critical\n.\nsystem-node-critical\nis the highest available priority, even higher than\nsystem-cluster-critical\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

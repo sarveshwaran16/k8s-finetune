@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Migrate from PodSecurityPolicy to the Built-In PodSecurity Admission Controller — 2. Simplify & standardize PodSecurityPolicies",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/migrate-from-psp/#simplify-psps",
-  "text": "In this section, you will reduce mutating PodSecurityPolicies and remove options that are outside\nthe scope of the Pod Security Standards. You should make the changes recommended here to an offline\ncopy of the original PodSecurityPolicy being modified. The cloned PSP should have a different\nname that is alphabetically before the original (for example, prepend a\n0\nto it). Do not create the\nnew policies in Kubernetes yet - that will be covered in the\nRollout the updated\npolicies\nsection below."
+  "text": "In this section, you will reduce mutating PodSecurityPolicies and remove options that are outside\nthe scope of the Pod Security Standards. You should make the changes recommended here to an offline\ncopy of the original PodSecurityPolicy being modified. The cloned PSP should have a different\nname that is alphabetically before the original (for example, prepend a\n0\nto it). Do not create the\nnew policies in Kubernetes yet - that will be covered in the\nRollout the updated\npolicies\nsection below.",
+  "failure_classes": []
 }

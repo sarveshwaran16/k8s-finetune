@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Connecting Applications with Services — What's next",
   "source_url": "https://kubernetes.io/docs/tutorials/services/connect-applications-service/#what-s-next",
-  "text": "Learn more about\nUsing a Service to Access an Application in a Cluster\nLearn more about\nConnecting a Front End to a Back End Using a Service\nLearn more about\nCreating an External Load Balancer\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Learn more about\nUsing a Service to Access an Application in a Cluster\nLearn more about\nConnecting a Front End to a Back End Using a Service\nLearn more about\nCreating an External Load Balancer\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

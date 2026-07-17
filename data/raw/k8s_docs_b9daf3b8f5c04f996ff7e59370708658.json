@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Declare Network Policy — Limit access to thenginxservice",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/#limit-access-to-the-nginx-service",
-  "text": "To limit the access to the\nnginx\nservice so that only Pods with the label\naccess: true\ncan query it, create a NetworkPolicy object as follows:\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nNetworkPolicy\nmetadata\n:\nname\n:\naccess-nginx\nspec\n:\npodSelector\n:\nmatchLabels\n:\napp\n:\nnginx\ningress\n:\n-\nfrom\n:\n-\npodSelector\n:\nmatchLabels\n:\naccess\n:\n\"true\"\nThe name of a NetworkPolicy object must be a valid\nDNS subdomain name\n."
+  "text": "To limit the access to the\nnginx\nservice so that only Pods with the label\naccess: true\ncan query it, create a NetworkPolicy object as follows:\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nNetworkPolicy\nmetadata\n:\nname\n:\naccess-nginx\nspec\n:\npodSelector\n:\nmatchLabels\n:\napp\n:\nnginx\ningress\n:\n-\nfrom\n:\n-\npodSelector\n:\nmatchLabels\n:\naccess\n:\n\"true\"\nThe name of a NetworkPolicy object must be a valid\nDNS subdomain name\n.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

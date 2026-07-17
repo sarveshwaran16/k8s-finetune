@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Concepts — resourceVersionfields in metadata",
   "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#resourceversion-in-metadata",
-  "text": "Clients find resource versions in resources, including the resources from the response\nstream for a\nwatch\n, or when using\nlist\nto enumerate resources.\nv1.meta/ObjectMeta\n-\nThe\nmetadata.resourceVersion\nof a resource instance identifies the resource version the instance was last modified at.\nv1.meta/ListMeta\n-\nThe\nmetadata.resourceVersion\nof a resource collection (the response to a\nlist\n) identifies the\nresource version at which the collection was constructed."
+  "text": "Clients find resource versions in resources, including the resources from the response\nstream for a\nwatch\n, or when using\nlist\nto enumerate resources.\nv1.meta/ObjectMeta\n-\nThe\nmetadata.resourceVersion\nof a resource instance identifies the resource version the instance was last modified at.\nv1.meta/ListMeta\n-\nThe\nmetadata.resourceVersion\nof a resource collection (the response to a\nlist\n) identifies the\nresource version at which the collection was constructed.",
+  "failure_classes": []
 }

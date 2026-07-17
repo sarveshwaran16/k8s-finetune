@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Use a SOCKS5 Proxy to Access the Kubernetes API — Clean up",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/socks5-proxy-access-api/#clean-up",
-  "text": "Stop the ssh port-forwarding process by pressing\nCTRL+C\non the terminal where it is running.\nType\nunset https_proxy\nin a terminal to stop forwarding http traffic through the proxy.\n\nOpenSSH remote login client\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Stop the ssh port-forwarding process by pressing\nCTRL+C\non the terminal where it is running.\nType\nunset https_proxy\nin a terminal to stop forwarding http traffic through the proxy.\n\nOpenSSH remote login client\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

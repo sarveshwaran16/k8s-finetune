@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Linux Kernel Version Requirements — Other kernel requirements",
   "source_url": "https://kubernetes.io/docs/reference/node/kernel-version-requirements/#requirements-other",
-  "text": "Some features may depend on new kernel functionalities and have specific kernel requirements:\nRecursive read only mount\n:\nThis is implemented by applying the\nMOUNT_ATTR_RDONLY\nattribute with the\nAT_RECURSIVE\nflag\nusing\nmount_setattr\n(2) added in Linux kernel v5.12.\nPod user namespace support requires minimal kernel version 6.5+, according to\nKEP-127\n.\nFor\nnode system swap\n, tmpfs set to\nnoswap\nis not supported until kernel 6.3."
+  "text": "Some features may depend on new kernel functionalities and have specific kernel requirements:\nRecursive read only mount\n:\nThis is implemented by applying the\nMOUNT_ATTR_RDONLY\nattribute with the\nAT_RECURSIVE\nflag\nusing\nmount_setattr\n(2) added in Linux kernel v5.12.\nPod user namespace support requires minimal kernel version 6.5+, according to\nKEP-127\n.\nFor\nnode system swap\n, tmpfs set to\nnoswap\nis not supported until kernel 6.3.",
+  "failure_classes": []
 }

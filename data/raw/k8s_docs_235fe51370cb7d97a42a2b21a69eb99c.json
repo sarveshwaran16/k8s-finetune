@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure a Pod to Use a ConfigMap — Interim cleanup",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#interim-cleanup",
-  "text": "Before proceeding, clean up some of the ConfigMaps you made:\nkubectl delete configmap special-config\nkubectl delete configmap env-config\nkubectl delete configmap -l\n'game-config in (config-4,config-5)'\nNow that you have learned to define ConfigMaps, you can move on to the next\nsection, and learn how to use these objects with Pods."
+  "text": "Before proceeding, clean up some of the ConfigMaps you made:\nkubectl delete configmap special-config\nkubectl delete configmap env-config\nkubectl delete configmap -l\n'game-config in (config-4,config-5)'\nNow that you have learned to define ConfigMaps, you can move on to the next\nsection, and learn how to use these objects with Pods.",
+  "failure_classes": []
 }

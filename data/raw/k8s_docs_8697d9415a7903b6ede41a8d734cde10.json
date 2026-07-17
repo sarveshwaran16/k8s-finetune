@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Expose Pod Information to Containers Through Files",
   "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/downward-api-volume-expose-pod-information/",
-  "text": "This page shows how a Pod can use a\ndownwardAPI\nvolume\n,\nto expose information about itself to containers running in the Pod.\nA\ndownwardAPI\nvolume can expose Pod fields and container fields.\nIn Kubernetes, there are two ways to expose Pod and container fields to a running container:\nEnvironment variables\nVolume files, as explained in this task\nTogether, these two ways of exposing Pod and container fields are called the\ndownward API\n."
+  "text": "This page shows how a Pod can use a\ndownwardAPI\nvolume\n,\nto expose information about itself to containers running in the Pod.\nA\ndownwardAPI\nvolume can expose Pod fields and container fields.\nIn Kubernetes, there are two ways to expose Pod and container fields to a running container:\nEnvironment variables\nVolume files, as explained in this task\nTogether, these two ways of exposing Pod and container fields are called the\ndownward API\n.",
+  "failure_classes": []
 }

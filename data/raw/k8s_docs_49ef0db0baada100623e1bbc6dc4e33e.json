@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Pods — Resource requests and limits",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#resource-requests-and-limits",
-  "text": "When you specify a Pod, you can optionally specify how much of each resource\na container needs. The most common resources to specify are CPU and memory (RAM).\nWhen you specify the resource\nrequest\nfor containers in a Pod, the\nkube-scheduler uses this information to decide which node to place the Pod on.\nWhen you specify a resource\nlimit\nfor a container, the kubelet enforces\nthose limits so that the running container is not allowed to use more of that\nresource than the limit you set.\nCPU limits are enforced by CPU throttling. When a container approaches its\nCPU limit, the kernel restricts its access to CPU. Memory limits are enforced\nby the kernel with out-of-memory (OOM) kills when a container exceeds its limit.\nFor details on resource units, enforcement behavior, and configuration examples,\nsee\nResource Management for Pods and Containers\n."
+  "text": "When you specify a Pod, you can optionally specify how much of each resource\na container needs. The most common resources to specify are CPU and memory (RAM).\nWhen you specify the resource\nrequest\nfor containers in a Pod, the\nkube-scheduler uses this information to decide which node to place the Pod on.\nWhen you specify a resource\nlimit\nfor a container, the kubelet enforces\nthose limits so that the running container is not allowed to use more of that\nresource than the limit you set.\nCPU limits are enforced by CPU throttling. When a container approaches its\nCPU limit, the kernel restricts its access to CPU. Memory limits are enforced\nby the kernel with out-of-memory (OOM) kills when a container exceeds its limit.\nFor details on resource units, enforcement behavior, and configuration examples,\nsee\nResource Management for Pods and Containers\n.",
+  "failure_classes": [
+    "OOMKilled",
+    "NodeNotReady"
+  ]
 }

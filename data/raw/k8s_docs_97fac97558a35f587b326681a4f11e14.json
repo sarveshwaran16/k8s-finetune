@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Create a Windows HostProcess Pod — Before you begin",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/#before-you-begin",
-  "text": "This task guide is specific to Kubernetes v1.36.\nIf you are not running Kubernetes v1.36, check the documentation for\nthat version of Kubernetes.\nIn Kubernetes 1.36, the HostProcess container feature is enabled by default. The kubelet will\ncommunicate with containerd directly by passing the hostprocess flag via CRI. You can use the\nlatest version of containerd (v1.6+) to run HostProcess containers.\nHow to install containerd."
+  "text": "This task guide is specific to Kubernetes v1.36.\nIf you are not running Kubernetes v1.36, check the documentation for\nthat version of Kubernetes.\nIn Kubernetes 1.36, the HostProcess container feature is enabled by default. The kubelet will\ncommunicate with containerd directly by passing the hostprocess flag via CRI. You can use the\nlatest version of containerd (v1.6+) to run HostProcess containers.\nHow to install containerd.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

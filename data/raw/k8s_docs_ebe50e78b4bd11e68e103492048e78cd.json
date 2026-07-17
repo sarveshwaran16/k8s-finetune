@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Learning environment — Using online playgrounds",
   "source_url": "https://kubernetes.io/docs/setup/learning-environment/#using-online-playgrounds",
-  "text": "Online Kubernetes playgrounds let you try Kubernetes without installing anything on your computer. These environments run in your web browser:\nKillercoda\nprovides interactive Kubernetes scenarios and a playground environment\nThese platforms are useful for quick experiments and following tutorials without local setup."
+  "text": "Online Kubernetes playgrounds let you try Kubernetes without installing anything on your computer. These environments run in your web browser:\nKillercoda\nprovides interactive Kubernetes scenarios and a playground environment\nThese platforms are useful for quick experiments and following tutorials without local setup.",
+  "failure_classes": []
 }

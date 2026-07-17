@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Upgrade A Cluster",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/",
-  "text": "This page provides an overview of the steps you should follow to upgrade a\nKubernetes cluster.\nThe Kubernetes project recommends upgrading to the latest patch releases promptly, and\nto ensure that you are running a supported minor release of Kubernetes.\nFollowing this recommendation helps you to stay secure.\nThe way that you upgrade a cluster depends on how you initially deployed it\nand on any subsequent changes.\nAt a high level, the steps you perform are:\nUpgrade the\ncontrol plane\nUpgrade the nodes in your cluster\nUpgrade clients such as\nkubectl\nAdjust manifests and other resources based on the API changes that accompany the\nnew Kubernetes version"
+  "text": "This page provides an overview of the steps you should follow to upgrade a\nKubernetes cluster.\nThe Kubernetes project recommends upgrading to the latest patch releases promptly, and\nto ensure that you are running a supported minor release of Kubernetes.\nFollowing this recommendation helps you to stay secure.\nThe way that you upgrade a cluster depends on how you initially deployed it\nand on any subsequent changes.\nAt a high level, the steps you perform are:\nUpgrade the\ncontrol plane\nUpgrade the nodes in your cluster\nUpgrade clients such as\nkubectl\nAdjust manifests and other resources based on the API changes that accompany the\nnew Kubernetes version",
+  "failure_classes": []
 }

@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Device Plugins — Handling kubelet restarts",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/#handling-kubelet-restarts",
-  "text": "A device plugin is expected to detect kubelet restarts and re-register itself with the new\nkubelet instance. A new kubelet instance deletes all the existing Unix sockets under\n/var/lib/kubelet/device-plugins\n(the hardcoded path for device plugins) when it starts. A device plugin can monitor the deletion\nof its Unix socket and re-register itself upon such an event."
+  "text": "A device plugin is expected to detect kubelet restarts and re-register itself with the new\nkubelet instance. A new kubelet instance deletes all the existing Unix sockets under\n/var/lib/kubelet/device-plugins\n(the hardcoded path for device plugins) when it starts. A device plugin can monitor the deletion\nof its Unix socket and re-register itself upon such an event.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

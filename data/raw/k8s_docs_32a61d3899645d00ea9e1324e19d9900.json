@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure a Pod to Use a Volume for Storage",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/",
-  "text": "This page shows how to configure a Pod to use a Volume for storage.\nA Container's file system lives only as long as the Container does. So when a\nContainer terminates and restarts, filesystem changes are lost. For more\nconsistent storage that is independent of the Container, you can use a\nVolume\n. This is especially important for stateful\napplications, such as key-value stores (such as Redis) and databases."
+  "text": "This page shows how to configure a Pod to use a Volume for storage.\nA Container's file system lives only as long as the Container does. So when a\nContainer terminates and restarts, filesystem changes are lost. For more\nconsistent storage that is independent of the Container, you can use a\nVolume\n. This is especially important for stateful\napplications, such as key-value stores (such as Redis) and databases.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

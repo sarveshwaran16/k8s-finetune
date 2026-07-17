@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Ports and Protocols — Worker node(s)",
   "source_url": "https://kubernetes.io/docs/reference/networking/ports-and-protocols/#node",
-  "text": "Protocol\nDirection\nPort Range\nPurpose\nUsed By\nTCP\nInbound\n10250\nKubelet API\nSelf, Control plane\nTCP\nInbound\n10256\nkube-proxy\nSelf, Load balancers\nTCP\nInbound\n30000-32767\nNodePort Services†\nAll\nUDP\nInbound\n30000-32767\nNodePort Services†\nAll\n† Default port range for\nNodePort Services\n.\nAll default port numbers can be overridden. When custom ports are used those\nports need to be open instead of defaults mentioned here.\nOne common example is API server port that is sometimes switched\nto 443. Alternatively, the default port is kept as is and API server is put\nbehind a load balancer that listens on 443 and routes the requests to API server\non the default port."
+  "text": "Protocol\nDirection\nPort Range\nPurpose\nUsed By\nTCP\nInbound\n10250\nKubelet API\nSelf, Control plane\nTCP\nInbound\n10256\nkube-proxy\nSelf, Load balancers\nTCP\nInbound\n30000-32767\nNodePort Services†\nAll\nUDP\nInbound\n30000-32767\nNodePort Services†\nAll\n† Default port range for\nNodePort Services\n.\nAll default port numbers can be overridden. When custom ports are used those\nports need to be open instead of defaults mentioned here.\nOne common example is API server port that is sometimes switched\nto 443. Alternatively, the default port is kept as is and API server is put\nbehind a load balancer that listens on 443 and routes the requests to API server\non the default port.",
+  "failure_classes": [
+    "NodeNotReady",
+    "Ingress"
+  ]
 }

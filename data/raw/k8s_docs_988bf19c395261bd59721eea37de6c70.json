@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Troubleshooting kubeadm — kubeadm upgrade planprints outcontext deadline exceedederror message",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/#kubeadm-upgrade-plan-prints-out-context-deadline-exceeded-error-message",
-  "text": "This error message is shown when upgrading a Kubernetes cluster with\nkubeadm\nin\nthe case of running an external etcd. This is not a critical bug and happens because\nolder versions of kubeadm perform a version check on the external etcd cluster.\nYou can proceed with\nkubeadm upgrade apply ...\n.\nThis issue is fixed as of version 1.19."
+  "text": "This error message is shown when upgrading a Kubernetes cluster with\nkubeadm\nin\nthe case of running an external etcd. This is not a critical bug and happens because\nolder versions of kubeadm perform a version check on the external etcd cluster.\nYou can proceed with\nkubeadm upgrade apply ...\n.\nThis issue is fixed as of version 1.19.",
+  "failure_classes": []
 }

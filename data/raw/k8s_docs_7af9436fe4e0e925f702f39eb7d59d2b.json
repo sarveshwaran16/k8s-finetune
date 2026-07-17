@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Run a Single-Instance Stateful Application",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/",
-  "text": "This page shows you how to run a single-instance stateful application\nin Kubernetes using a PersistentVolume and a Deployment. The\napplication is MySQL.\n\nCreate a PersistentVolume referencing a disk in your environment.\nCreate a MySQL Deployment.\nExpose MySQL to other pods in the cluster at a known DNS name."
+  "text": "This page shows you how to run a single-instance stateful application\nin Kubernetes using a PersistentVolume and a Deployment. The\napplication is MySQL.\n\nCreate a PersistentVolume referencing a disk in your environment.\nCreate a MySQL Deployment.\nExpose MySQL to other pods in the cluster at a known DNS name.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Storage Classes",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/",
-  "text": "This document describes the concept of a StorageClass in Kubernetes. Familiarity\nwith\nvolumes\nand\npersistent volumes\nis suggested.\nA StorageClass provides a way for administrators to describe the\nclasses\nof\nstorage they offer. Different classes might map to quality-of-service levels,\nor to backup policies, or to arbitrary policies determined by the cluster\nadministrators. Kubernetes itself is unopinionated about what classes\nrepresent.\nThe Kubernetes concept of a storage class is similar to “profiles” in some other\nstorage system designs."
+  "text": "This document describes the concept of a StorageClass in Kubernetes. Familiarity\nwith\nvolumes\nand\npersistent volumes\nis suggested.\nA StorageClass provides a way for administrators to describe the\nclasses\nof\nstorage they offer. Different classes might map to quality-of-service levels,\nor to backup policies, or to arbitrary policies determined by the cluster\nadministrators. Kubernetes itself is unopinionated about what classes\nrepresent.\nThe Kubernetes concept of a storage class is similar to “profiles” in some other\nstorage system designs.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

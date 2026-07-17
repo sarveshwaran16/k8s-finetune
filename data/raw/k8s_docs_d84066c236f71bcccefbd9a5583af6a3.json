@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "What Happens After A Node Restart — What's next",
   "source_url": "https://kubernetes.io/docs/reference/node/what-happens-on-restart/#what-s-next",
-  "text": "Learn about the kubelet's\nsync loop\n.\nRead about\nPod lifecycle\n.\nRead about\nnode-pressure eviction\n.\nLearn how to\nsafely drain a node\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Learn about the kubelet's\nsync loop\n.\nRead about\nPod lifecycle\n.\nRead about\nnode-pressure eviction\n.\nLearn how to\nsafely drain a node\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

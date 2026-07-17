@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debug Pods — Debugging Replication Controllers",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/#debugging-replication-controllers",
-  "text": "Replication controllers are fairly straightforward. They can either create Pods or they can't.\nIf they can't create pods, then please refer to the\ninstructions above\nto debug your pods.\nYou can also use\nkubectl describe rc ${CONTROLLER_NAME}\nto introspect events\nrelated to the replication controller."
+  "text": "Replication controllers are fairly straightforward. They can either create Pods or they can't.\nIf they can't create pods, then please refer to the\ninstructions above\nto debug your pods.\nYou can also use\nkubectl describe rc ${CONTROLLER_NAME}\nto introspect events\nrelated to the replication controller.",
+  "failure_classes": []
 }

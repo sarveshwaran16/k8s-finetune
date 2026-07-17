@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Set up a High Availability etcd Cluster with kubeadm",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-etcd-with-kubeadm/",
-  "text": "By default, kubeadm runs a local etcd instance on each control plane node.\nIt is also possible to treat the etcd cluster as external and provision\netcd instances on separate hosts. The differences between the two approaches are covered in the\nOptions for Highly Available topology\npage.\nThis task walks through the process of creating a high availability external\netcd cluster of three members that can be used by kubeadm during cluster creation."
+  "text": "By default, kubeadm runs a local etcd instance on each control plane node.\nIt is also possible to treat the etcd cluster as external and provision\netcd instances on separate hosts. The differences between the two approaches are covered in the\nOptions for Highly Available topology\npage.\nThis task walks through the process of creating a high availability external\netcd cluster of three members that can be used by kubeadm during cluster creation.",
+  "failure_classes": []
 }

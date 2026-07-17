@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Delete a StatefulSet — Persistent Volumes",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/delete-stateful-set/#persistent-volumes",
-  "text": "Deleting the Pods in a StatefulSet will not delete the associated volumes.\nThis is to ensure that you have the chance to copy data off the volume before\ndeleting it. Deleting the PVC after the pods have terminated might trigger\ndeletion of the backing Persistent Volumes depending on the storage class\nand reclaim policy. You should never assume ability to access a volume\nafter claim deletion."
+  "text": "Deleting the Pods in a StatefulSet will not delete the associated volumes.\nThis is to ensure that you have the chance to copy data off the volume before\ndeleting it. Deleting the PVC after the pods have terminated might trigger\ndeletion of the backing Persistent Volumes depending on the storage class\nand reclaim policy. You should never assume ability to access a volume\nafter claim deletion.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cloud Controller Manager — Route controller",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/cloud-controller/#route-controller",
-  "text": "The route controller is responsible for configuring routes in the cloud\nappropriately so that containers on different nodes in your Kubernetes\ncluster can communicate with each other.\nDepending on the cloud provider, the route controller might also allocate blocks\nof IP addresses for the Pod network."
+  "text": "The route controller is responsible for configuring routes in the cloud\nappropriately so that containers on different nodes in your Kubernetes\ncluster can communicate with each other.\nDepending on the cloud provider, the route controller might also allocate blocks\nof IP addresses for the Pod network.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PriorityLevelConfiguration — PriorityLevelConfigurationCondition",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/flowcontrol/priority-level-configuration-v1/#PriorityLevelConfigurationCondition",
-  "text": "PriorityLevelConfigurationCondition defines the condition of priority level.\nField\nDescription\nlastTransitionTime\nTime\n`lastTransitionTime` is the last time the condition transitioned from one status to another.\nmessage\nstring\n`message` is a human-readable message indicating details about last transition.\nreason\nstring\n`reason` is a unique, one-word, CamelCase reason for the condition's last transition.\nstatus\nstring\n`status` is the status of the condition. Can be True, False, Unknown. Required.\ntype\nstring\n`type` is the type of the condition. Required."
+  "text": "PriorityLevelConfigurationCondition defines the condition of priority level.\nField\nDescription\nlastTransitionTime\nTime\n`lastTransitionTime` is the last time the condition transitioned from one status to another.\nmessage\nstring\n`message` is a human-readable message indicating details about last transition.\nreason\nstring\n`reason` is a unique, one-word, CamelCase reason for the condition's last transition.\nstatus\nstring\n`status` is the status of the condition. Can be True, False, Unknown. Required.\ntype\nstring\n`type` is the type of the condition. Required.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — Why do I need them?",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#why-do-i-need-them",
-  "text": "Several important features of Kubernetes require an admission controller to be enabled in order\nto properly support the feature. As a result, a Kubernetes API server that is not properly\nconfigured with the right set of admission controllers is an incomplete server and will not\nsupport all the features you expect."
+  "text": "Several important features of Kubernetes require an admission controller to be enabled in order\nto properly support the feature. As a result, a Kubernetes API server that is not properly\nconfigured with the right set of admission controllers is an incomplete server and will not\nsupport all the features you expect.",
+  "failure_classes": []
 }

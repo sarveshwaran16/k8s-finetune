@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — endpoints.kubernetes.io/over-capacity (deprecated)",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#endpoints-kubernetes-io-over-capacity",
-  "text": "Type: Annotation\nExample:\nendpoints.kubernetes.io/over-capacity: truncated\nUsed on: Endpoints\nThe\ncontrol plane\nadds this annotation to\nan\nEndpoints\nobject if the associated\nService\nhas more than 1000 backing endpoints.\nThe annotation indicates that the Endpoints object is over capacity and the number of endpoints\nhas been truncated to 1000.\nIf the number of backend endpoints falls below 1000, the control plane removes this annotation."
+  "text": "Type: Annotation\nExample:\nendpoints.kubernetes.io/over-capacity: truncated\nUsed on: Endpoints\nThe\ncontrol plane\nadds this annotation to\nan\nEndpoints\nobject if the associated\nService\nhas more than 1000 backing endpoints.\nThe annotation indicates that the Endpoints object is over capacity and the number of endpoints\nhas been truncated to 1000.\nIf the number of backend endpoints falls below 1000, the control plane removes this annotation.",
+  "failure_classes": []
 }

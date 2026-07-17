@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Verify Signed Kubernetes Artifacts — Verifying image signatures",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/verify-signed-artifacts/#verifying-image-signatures",
-  "text": "For a complete list of images that are signed please refer\nto\nReleases\n.\nPick one image from this list and verify its signature using\nthe\ncosign verify\ncommand:\ncosign verify registry.k8s.io/kube-apiserver-amd64:v1.36.0\n\\\n--certificate-identity krel-trust@k8s-releng-prod.iam.gserviceaccount.com\n\\\n--certificate-oidc-issuer https://accounts.google.com\n\\\n|\njq ."
+  "text": "For a complete list of images that are signed please refer\nto\nReleases\n.\nPick one image from this list and verify its signature using\nthe\ncosign verify\ncommand:\ncosign verify registry.k8s.io/kube-apiserver-amd64:v1.36.0\n\\\n--certificate-identity krel-trust@k8s-releng-prod.iam.gserviceaccount.com\n\\\n--certificate-oidc-issuer https://accounts.google.com\n\\\n|\njq .",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

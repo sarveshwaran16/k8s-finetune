@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Authorization — Authorization mode configuration",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authorization/#choice-of-authz-config",
-  "text": "You can configure the Kubernetes API server's authorizer chain using either\na\nconfiguration file\nonly or\ncommand line arguments\n.\nYou have to pick one of the two configuration approaches; setting both\n--authorization-config\npath and configuring an authorization webhook using the\n--authorization-mode\nand\n--authorization-webhook-*\ncommand line arguments is not allowed.\nIf you try this, the API server reports an error message during startup, then exits immediately."
+  "text": "You can configure the Kubernetes API server's authorizer chain using either\na\nconfiguration file\nonly or\ncommand line arguments\n.\nYou have to pick one of the two configuration approaches; setting both\n--authorization-config\npath and configuring an authorization webhook using the\n--authorization-mode\nand\n--authorization-webhook-*\ncommand line arguments is not allowed.\nIf you try this, the API server reports an error message during startup, then exits immediately.",
+  "failure_classes": []
 }

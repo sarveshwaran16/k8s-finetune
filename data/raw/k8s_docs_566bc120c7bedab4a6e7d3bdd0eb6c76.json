@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Local Files And Paths Used By The Kubelet — Manifests",
   "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#manifests",
-  "text": "Manifests for static pods are typically located in\n/etc/kubernetes/manifests\n.\nLocation can be configured using the\nstaticPodPath\nkubelet configuration option.\n\nWhen kubelet is running as a systemd unit, some kubelet configuration may be declared\nin systemd unit settings file. Typically it includes:\ncommand line arguments to\nrun kubelet\nenvironment variables, used by kubelet or\nconfiguring golang runtime"
+  "text": "Manifests for static pods are typically located in\n/etc/kubernetes/manifests\n.\nLocation can be configured using the\nstaticPodPath\nkubelet configuration option.\n\nWhen kubelet is running as a systemd unit, some kubelet configuration may be declared\nin systemd unit settings file. Typically it includes:\ncommand line arguments to\nrun kubelet\nenvironment variables, used by kubelet or\nconfiguring golang runtime",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

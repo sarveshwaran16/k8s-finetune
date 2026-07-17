@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Validating Admission Policy",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/",
-  "text": "This page provides an overview of Validating Admission Policy.\n\nValidating admission policies offer a declarative, in-process alternative to validating admission webhooks.\nValidating admission policies use the Common Expression Language (CEL) to declare the validation\nrules of a policy.\nValidation admission policies are highly configurable, enabling policy authors to define policies\nthat can be parameterized and scoped to resources as needed by cluster administrators."
+  "text": "This page provides an overview of Validating Admission Policy.\n\nValidating admission policies offer a declarative, in-process alternative to validating admission webhooks.\nValidating admission policies use the Common Expression Language (CEL) to declare the validation\nrules of a policy.\nValidation admission policies are highly configurable, enabling policy authors to define policies\nthat can be parameterized and scoped to resources as needed by cluster administrators.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Images — SpecifyingimagePullSecretson a Pod",
   "source_url": "https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod",
-  "text": "Kubernetes supports specifying container image registry keys on a Pod.\nAll\nimagePullSecrets\nmust be Secrets that exist in the same\nNamespace\nas the\nPod. These Secrets must be of type\nkubernetes.io/dockercfg\nor\nkubernetes.io/dockerconfigjson\n.\n\nSpecific instructions for setting credentials depends on the container runtime and registry you\nchose to use. You should refer to your solution's documentation for the most accurate information.\nFor an example of configuring a private container image registry, see the\nPull an Image from a Private Registry\ntask. That example uses a private registry in Docker Hub."
+  "text": "Kubernetes supports specifying container image registry keys on a Pod.\nAll\nimagePullSecrets\nmust be Secrets that exist in the same\nNamespace\nas the\nPod. These Secrets must be of type\nkubernetes.io/dockercfg\nor\nkubernetes.io/dockerconfigjson\n.\n\nSpecific instructions for setting credentials depends on the container runtime and registry you\nchose to use. You should refer to your solution's documentation for the most accurate information.\nFor an example of configuring a private container image registry, see the\nPull an Image from a Private Registry\ntask. That example uses a private registry in Docker Hub.",
+  "failure_classes": []
 }

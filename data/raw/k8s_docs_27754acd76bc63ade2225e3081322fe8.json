@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Parallel Processing using Expansions",
   "source_url": "https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/",
-  "text": "This task demonstrates running multiple\nJobs\nbased on a common template. You can use this approach to process batches of work in\nparallel.\nFor this example there are only three items:\napple\n,\nbanana\n, and\ncherry\n.\nThe sample Jobs process each item by printing a string then pausing.\nSee\nusing Jobs in real workloads\nto learn about how\nthis pattern fits more realistic use cases."
+  "text": "This task demonstrates running multiple\nJobs\nbased on a common template. You can use this approach to process batches of work in\nparallel.\nFor this example there are only three items:\napple\n,\nbanana\n, and\ncherry\n.\nThe sample Jobs process each item by printing a string then pausing.\nSee\nusing Jobs in real workloads\nto learn about how\nthis pattern fits more realistic use cases.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ReplicationController — Isolating pods from a ReplicationController",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#isolating-pods-from-a-replicationcontroller",
-  "text": "Pods may be removed from a ReplicationController's target set by changing their labels. This technique may be used to remove pods from service for debugging and data recovery. Pods that are removed in this way will be replaced automatically (assuming that the number of replicas is not also changed)."
+  "text": "Pods may be removed from a ReplicationController's target set by changing their labels. This technique may be used to remove pods from service for debugging and data recovery. Pods that are removed in this way will be replaced automatically (assuming that the number of replicas is not also changed).",
+  "failure_classes": []
 }

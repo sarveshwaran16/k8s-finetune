@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "NodeHighNumberConntrackEntriesUsed#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/node/nodehighnumberconntrackentriesused/",
-  "text": "Node High Number Conntrack Entries Used\nNodeHighNumberConntrackEntriesUsed\n#\nMeaning\n#\nNumber of conntrack are getting close to the limit.\nImpact\n#\nWhen reached the limit then some connections will be dropped, degrading service quality.\nDiagnosis\n#\nCheck current conntrack value on the node.\nCheck which apps are generating a lot of connections.\nMitigation\n#\nMigrate some pods to another nodes.\nBump conntrack limit directly on the node, remembering to make it persistent across node reboots."
+  "text": "Node High Number Conntrack Entries Used\nNodeHighNumberConntrackEntriesUsed\n#\nMeaning\n#\nNumber of conntrack are getting close to the limit.\nImpact\n#\nWhen reached the limit then some connections will be dropped, degrading service quality.\nDiagnosis\n#\nCheck current conntrack value on the node.\nCheck which apps are generating a lot of connections.\nMitigation\n#\nMigrate some pods to another nodes.\nBump conntrack limit directly on the node, remembering to make it persistent across node reboots.",
+  "failure_classes": []
 }

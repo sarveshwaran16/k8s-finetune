@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — kustomize",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#kustomize",
-  "text": "Build the current working directory\nkubectl kustomize\nBuild some shared configuration directory\nkubectl kustomize /\nhome\n/\nconfig\n/production\nBuild from github\nkubectl kustomize https:\n//gi\nthub.com\n/kubernetes-sigs/\nkustomize.git\n/examples/\nhelloWorld?ref=v1.\n0.6\nBuild a set of KRM resources using a 'kustomization.yaml' file. The DIR argument must be a path to a directory containing 'kustomization.yaml', or a git repository URL with a path suffix specifying same with respect to the repository root. If DIR is omitted, '.' is assumed."
+  "text": "Build the current working directory\nkubectl kustomize\nBuild some shared configuration directory\nkubectl kustomize /\nhome\n/\nconfig\n/production\nBuild from github\nkubectl kustomize https:\n//gi\nthub.com\n/kubernetes-sigs/\nkustomize.git\n/examples/\nhelloWorld?ref=v1.\n0.6\nBuild a set of KRM resources using a 'kustomization.yaml' file. The DIR argument must be a path to a directory containing 'kustomization.yaml', or a git repository URL with a path suffix specifying same with respect to the repository root. If DIR is omitted, '.' is assumed.",
+  "failure_classes": []
 }

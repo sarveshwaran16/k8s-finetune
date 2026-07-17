@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Feature Gates — What's next",
   "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/#what-s-next",
-  "text": "The\ndeprecation policy\nfor Kubernetes explains\nthe project's approach to removing features and components.\nSince Kubernetes 1.24, new beta APIs are not enabled by default. When enabling a beta\nfeature, you will also need to enable any associated API resources.\nFor example, to enable a particular resource like\nstorage.k8s.io/v1beta1/csistoragecapacities\n, set\n--runtime-config=storage.k8s.io/v1beta1/csistoragecapacities\n.\nSee\nAPI Versioning\nfor more details on the command line flags.\nSee\nConfigure Feature Gates\nfor step-by-step guidance on enabling feature gates."
+  "text": "The\ndeprecation policy\nfor Kubernetes explains\nthe project's approach to removing features and components.\nSince Kubernetes 1.24, new beta APIs are not enabled by default. When enabling a beta\nfeature, you will also need to enable any associated API resources.\nFor example, to enable a particular resource like\nstorage.k8s.io/v1beta1/csistoragecapacities\n, set\n--runtime-config=storage.k8s.io/v1beta1/csistoragecapacities\n.\nSee\nAPI Versioning\nfor more details on the command line flags.\nSee\nConfigure Feature Gates\nfor step-by-step guidance on enabling feature gates.",
+  "failure_classes": []
 }

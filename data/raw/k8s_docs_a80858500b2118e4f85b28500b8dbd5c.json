@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Resource managers — Device manager",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/resource-managers/#device-manager",
-  "text": "Device Manager\nis a kubelet component that allocates hardware devices to pods\nusing the device plugin API. It consults with the Topology Manager, using\ntopology information provided by device plugins, to make resource assignment\ndecisions. To learn more, read\nDevice Plugin Integration with the Topology Manager\n."
+  "text": "Device Manager\nis a kubelet component that allocates hardware devices to pods\nusing the device plugin API. It consults with the Topology Manager, using\ntopology information provided by device plugins, to make resource assignment\ndecisions. To learn more, read\nDevice Plugin Integration with the Topology Manager\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

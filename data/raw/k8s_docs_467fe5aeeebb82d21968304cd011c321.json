@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling Group — Behavior",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/scheduling-group/#behavior",
-  "text": "When you set\nspec.schedulingGroup\n, the scheduler looks up the referenced\nPodGroup\nand applies the\nscheduling policy\ndefined in it:\nIf the\nPodGroup\nuses the\nbasic\npolicy, each\nPod\nis scheduled independently using\nstandard Kubernetes behavior. The grouping is used as group-level label.\nIf the\nPodGroup\nuses the\ngang\npolicy, the\nPod\nenters an \"all-or-nothing\" scheduling\nlifecycle. The scheduler tries to place at least\nminCount\nPods\nin the group\nsimultaneously; none of them bind to nodes unless the minimum is met."
+  "text": "When you set\nspec.schedulingGroup\n, the scheduler looks up the referenced\nPodGroup\nand applies the\nscheduling policy\ndefined in it:\nIf the\nPodGroup\nuses the\nbasic\npolicy, each\nPod\nis scheduled independently using\nstandard Kubernetes behavior. The grouping is used as group-level label.\nIf the\nPodGroup\nuses the\ngang\npolicy, the\nPod\nenters an \"all-or-nothing\" scheduling\nlifecycle. The scheduler tries to place at least\nminCount\nPods\nin the group\nsimultaneously; none of them bind to nodes unless the minimum is met.",
+  "failure_classes": []
 }

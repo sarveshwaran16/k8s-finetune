@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "PrometheusOperatorReconcileErrors#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus-operator/prometheusoperatorreconcileerrors/",
-  "text": "Prometheus Operator Reconcile Errors\nPrometheusOperatorReconcileErrors\n#\nMeaning\n#\nErrors while reconciling controller.\nImpact\n#\nPrometheus Operator will not be able to manage Prometheuses/Alertmanagers.\nDiagnosis\n#\nCheck logs of Prometheus Operator pod.\nCheck service account tokens.\nMitigation\n#"
+  "text": "Prometheus Operator Reconcile Errors\nPrometheusOperatorReconcileErrors\n#\nMeaning\n#\nErrors while reconciling controller.\nImpact\n#\nPrometheus Operator will not be able to manage Prometheuses/Alertmanagers.\nDiagnosis\n#\nCheck logs of Prometheus Operator pod.\nCheck service account tokens.\nMitigation\n#",
+  "failure_classes": []
 }

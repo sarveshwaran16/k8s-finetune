@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Node-specific Volume Limits",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-limits/",
-  "text": "This page describes the maximum number of volumes that can be attached\nto a Node for various cloud providers.\nCloud providers like Google, Amazon, and Microsoft typically have a limit on\nhow many volumes can be attached to a Node. It is important for Kubernetes to\nrespect those limits. Otherwise, Pods scheduled on a Node could get stuck\nwaiting for volumes to attach."
+  "text": "This page describes the maximum number of volumes that can be attached\nto a Node for various cloud providers.\nCloud providers like Google, Amazon, and Microsoft typically have a limit on\nhow many volumes can be attached to a Node. It is important for Kubernetes to\nrespect those limits. Otherwise, Pods scheduled on a Node could get stuck\nwaiting for volumes to attach.",
+  "failure_classes": []
 }

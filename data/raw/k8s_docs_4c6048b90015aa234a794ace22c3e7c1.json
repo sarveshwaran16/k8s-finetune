@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Share a Cluster with Namespaces — Understanding namespaces and DNS",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/namespaces/#understanding-namespaces-and-dns",
-  "text": "When you create a\nService\n, it creates a corresponding\nDNS entry\n.\nThis entry is of the form\n<service-name>.<namespace-name>.svc.cluster.local\n, which means\nthat if a container uses\n<service-name>\nit will resolve to the service which\nis local to a namespace. This is useful for using the same configuration across\nmultiple namespaces such as Development, Staging and Production. If you want to reach\nacross namespaces, you need to use the fully qualified domain name (FQDN)."
+  "text": "When you create a\nService\n, it creates a corresponding\nDNS entry\n.\nThis entry is of the form\n<service-name>.<namespace-name>.svc.cluster.local\n, which means\nthat if a container uses\n<service-name>\nit will resolve to the service which\nis local to a namespace. This is useful for using the same configuration across\nmultiple namespaces such as Development, Staging and Production. If you want to reach\nacross namespaces, you need to use the fully qualified domain name (FQDN).",
+  "failure_classes": []
 }

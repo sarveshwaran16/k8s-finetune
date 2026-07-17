@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ResourceQuota",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/resource-quota-v1/",
-  "text": "Resource Quotas\nHow Kubernetes ResourceQuotas work\nEnabling Resource Quota\nTypes of resource quota\nViewing and Setting Quotas\nQuota and Cluster Capacity\nQuota scopes\nWhat's next\nHow Kubernetes ResourceQuotas work\nEnabling Resource Quota\nTypes of resource quota\nViewing and Setting Quotas\nQuota and Cluster Capacity\nQuota scopes\nWhat's next\napiVersion: v1\nimport \"k8s.io/api/core/v1\""
+  "text": "Resource Quotas\nHow Kubernetes ResourceQuotas work\nEnabling Resource Quota\nTypes of resource quota\nViewing and Setting Quotas\nQuota and Cluster Capacity\nQuota scopes\nWhat's next\nHow Kubernetes ResourceQuotas work\nEnabling Resource Quota\nTypes of resource quota\nViewing and Setting Quotas\nQuota and Cluster Capacity\nQuota scopes\nWhat's next\napiVersion: v1\nimport \"k8s.io/api/core/v1\"",
+  "failure_classes": []
 }

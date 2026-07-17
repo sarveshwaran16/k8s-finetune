@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl Quick Reference",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/quick-reference/",
-  "text": "This page contains a list of commonly used\nkubectl\ncommands and flags.\n\nsource\n<\n(\nkubectl completion bash\n)\n# set up autocomplete in bash into the current shell, bash-completion package should be installed first.\necho\n\"source <(kubectl completion bash)\"\n>> ~/.bashrc\n# add autocomplete permanently to your bash shell.\nYou can also use a shorthand alias for\nkubectl\nthat also works with completion:\nalias\nk\n=\nkubectl\ncomplete\n-o default -F __start_kubectl k"
+  "text": "This page contains a list of commonly used\nkubectl\ncommands and flags.\n\nsource\n<\n(\nkubectl completion bash\n)\n# set up autocomplete in bash into the current shell, bash-completion package should be installed first.\necho\n\"source <(kubectl completion bash)\"\n>> ~/.bashrc\n# add autocomplete permanently to your bash shell.\nYou can also use a shorthand alias for\nkubectl\nthat also works with completion:\nalias\nk\n=\nkubectl\ncomplete\n-o default -F __start_kubectl k",
+  "failure_classes": []
 }

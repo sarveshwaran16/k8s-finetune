@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl events — Examples",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/#examples",
-  "text": "# List recent events in the default namespace\n  kubectl events\n  \n  # List recent events in all namespaces\n  kubectl events --all-namespaces\n  \n  # List recent events for the specified pod, then wait for more events and list them as they arrive\n  kubectl events --for pod/web-pod-13je7 --watch\n  \n  # List recent events in YAML format\n  kubectl events -oyaml\n  \n  # List recent only events of type 'Warning' or 'Normal'\n  kubectl events --types=Warning,Normal"
+  "text": "# List recent events in the default namespace\n  kubectl events\n  \n  # List recent events in all namespaces\n  kubectl events --all-namespaces\n  \n  # List recent events for the specified pod, then wait for more events and list them as they arrive\n  kubectl events --for pod/web-pod-13je7 --watch\n  \n  # List recent events in YAML format\n  kubectl events -oyaml\n  \n  # List recent only events of type 'Warning' or 'Normal'\n  kubectl events --types=Warning,Normal",
+  "failure_classes": []
 }

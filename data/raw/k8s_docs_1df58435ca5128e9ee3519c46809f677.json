@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dynamic Admission Control — Experimenting with admission webhooks",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#experimenting-with-admission-webhooks",
-  "text": "Admission webhooks are essentially part of the cluster control-plane. You should\nwrite and deploy them with great caution. Please read the\nuser guides\nfor instructions if you intend to write/deploy production-grade admission webhooks.\nIn the following, we describe how to quickly experiment with admission webhooks."
+  "text": "Admission webhooks are essentially part of the cluster control-plane. You should\nwrite and deploy them with great caution. Please read the\nuser guides\nfor instructions if you intend to write/deploy production-grade admission webhooks.\nIn the following, we describe how to quickly experiment with admission webhooks.",
+  "failure_classes": []
 }

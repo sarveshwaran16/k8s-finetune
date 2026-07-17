@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "About cgroup v2 — Deprecation of cgroup v1",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/cgroups/#deprecation-of-cgroup-v1",
-  "text": "Kubernetes has deprecated cgroup v1.\nRemoval will follow\nKubernetes deprecation policy\n.\nKubelet will no longer start on a cgroup v1 node by default.\nTo disable this setting a cluster admin should set\nfailCgroupV1\nto false in the\nkubelet configuration file\n.\n\nLearn more about\ncgroups\nLearn more about\ncontainer runtime\nLearn more about\ncgroup drivers"
+  "text": "Kubernetes has deprecated cgroup v1.\nRemoval will follow\nKubernetes deprecation policy\n.\nKubelet will no longer start on a cgroup v1 node by default.\nTo disable this setting a cluster admin should set\nfailCgroupV1\nto false in the\nkubelet configuration file\n.\n\nLearn more about\ncgroups\nLearn more about\ncontainer runtime\nLearn more about\ncgroup drivers",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Changing the Container Runtime on a Node from Docker Engine to containerd — Restart the kubelet",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/change-runtime-containerd/#restart-the-kubelet",
-  "text": "systemctl start kubelet\n\nRun\nkubectl get nodes -o wide\nand containerd appears as the runtime for the node we just changed.\n\nIf the node appears healthy, remove Docker.\nCentOS\nDebian\nFedora\nUbuntu\nsudo yum remove docker-ce docker-ce-cli\nsudo apt-get purge docker-ce docker-ce-cli\nsudo dnf remove docker-ce docker-ce-cli\nsudo apt-get purge docker-ce docker-ce-cli\nThe preceding commands don't remove images, containers, volumes, or customized configuration files on your host.\nTo delete them, follow Docker's instructions to\nUninstall Docker Engine\n."
+  "text": "systemctl start kubelet\n\nRun\nkubectl get nodes -o wide\nand containerd appears as the runtime for the node we just changed.\n\nIf the node appears healthy, remove Docker.\nCentOS\nDebian\nFedora\nUbuntu\nsudo yum remove docker-ce docker-ce-cli\nsudo apt-get purge docker-ce docker-ce-cli\nsudo dnf remove docker-ce docker-ce-cli\nsudo apt-get purge docker-ce docker-ce-cli\nThe preceding commands don't remove images, containers, volumes, or customized configuration files on your host.\nTo delete them, follow Docker's instructions to\nUninstall Docker Engine\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Versions in CustomResourceDefinitions — Contacting the webhook",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definition-versioning/#contacting-the-webhook",
-  "text": "Once the API server has determined a request should be sent to a conversion webhook,\nit needs to know how to contact the webhook. This is specified in the\nwebhookClientConfig\nstanza of the webhook configuration.\nConversion webhooks can either be called via a URL or a service reference,\nand can optionally include a custom CA bundle to use to verify the TLS connection."
+  "text": "Once the API server has determined a request should be sent to a conversion webhook,\nit needs to know how to contact the webhook. This is specified in the\nwebhookClientConfig\nstanza of the webhook configuration.\nConversion webhooks can either be called via a URL or a service reference,\nand can optionally include a custom CA bundle to use to verify the TLS connection.",
+  "failure_classes": []
 }

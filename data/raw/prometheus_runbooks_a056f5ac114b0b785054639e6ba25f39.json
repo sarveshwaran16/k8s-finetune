@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubeJobFailed#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubejobfailed/",
-  "text": "Kube Job Failed\nKubeJobFailed\n#\nMeaning\n#\nJob failed complete.\nImpact\n#\nFailure of processing of a scheduled task.\nDiagnosis\n#\nCheck job via\nkubectl -n $NAMESPACE describe jobs $JOB\n.\nCheck pod events via\nkubectl -n $NAMESPACE describe pod $POD_FROM_JOB\n.\nCheck pod logs via\nkubectl -n $NAMESPACE log pod $POD_FROM_JOB\n.\nMitigation\n#\nSee\nDebugging Pods\nSee\nJob patterns\nredesign job so that it is idempotent (can be re-run many times which will\nalways produce the same output even if input differs)"
+  "text": "Kube Job Failed\nKubeJobFailed\n#\nMeaning\n#\nJob failed complete.\nImpact\n#\nFailure of processing of a scheduled task.\nDiagnosis\n#\nCheck job via\nkubectl -n $NAMESPACE describe jobs $JOB\n.\nCheck pod events via\nkubectl -n $NAMESPACE describe pod $POD_FROM_JOB\n.\nCheck pod logs via\nkubectl -n $NAMESPACE log pod $POD_FROM_JOB\n.\nMitigation\n#\nSee\nDebugging Pods\nSee\nJob patterns\nredesign job so that it is idempotent (can be re-run many times which will\nalways produce the same output even if input differs)",
+  "failure_classes": []
 }

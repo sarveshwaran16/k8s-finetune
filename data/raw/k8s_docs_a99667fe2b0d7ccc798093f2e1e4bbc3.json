@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "API Groups",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/group-versions/",
-  "text": "The API Groups and their versions are summarized in the following table.\nGroup\nVersions\nadmissionregistration.k8s.io\nv1, v1beta1, v1alpha1\napiextensions.k8s.io\nv1\napiregistration.k8s.io\nv1\napps\nv1\nauthentication.k8s.io\nv1\nauthorization.k8s.io\nv1\nautoscaling\nv2, v1\nbatch\nv1\ncertificates.k8s.io\nv1, v1beta1, v1alpha1\ncoordination.k8s.io\nv1, v1beta1, v1alpha2\ncore\nv1\ndiscovery.k8s.io\nv1\nevents.k8s.io\nv1\nflowcontrol.apiserver.k8s.io\nv1\ninternal.apiserver.k8s.io\nv1alpha1\nnetworking.k8s.io\nv1, v1beta1\nnode.k8s.io\nv1\npolicy\nv1\nrbac.authorization.k8s.io\nv1\nresource.k8s.io\nv1, v1beta2, v1beta1, v1alpha3\nscheduling.k8s.io\nv1, v1alpha2\nstorage.k8s.io\nv1, v1beta1\nstoragemigration.k8s.io\nv1beta1"
+  "text": "The API Groups and their versions are summarized in the following table.\nGroup\nVersions\nadmissionregistration.k8s.io\nv1, v1beta1, v1alpha1\napiextensions.k8s.io\nv1\napiregistration.k8s.io\nv1\napps\nv1\nauthentication.k8s.io\nv1\nauthorization.k8s.io\nv1\nautoscaling\nv2, v1\nbatch\nv1\ncertificates.k8s.io\nv1, v1beta1, v1alpha1\ncoordination.k8s.io\nv1, v1beta1, v1alpha2\ncore\nv1\ndiscovery.k8s.io\nv1\nevents.k8s.io\nv1\nflowcontrol.apiserver.k8s.io\nv1\ninternal.apiserver.k8s.io\nv1alpha1\nnetworking.k8s.io\nv1, v1beta1\nnode.k8s.io\nv1\npolicy\nv1\nrbac.authorization.k8s.io\nv1\nresource.k8s.io\nv1, v1beta2, v1beta1, v1alpha3\nscheduling.k8s.io\nv1, v1alpha2\nstorage.k8s.io\nv1, v1beta1\nstoragemigration.k8s.io\nv1beta1",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Creating Highly Available Clusters with kubeadm — Steps for the rest of the control plane nodes",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/#steps-for-the-rest-of-the-control-plane-nodes-1",
-  "text": "The steps are the same as for the stacked etcd setup:\nMake sure the first control plane node is fully initialized.\nJoin each control plane node with the join command you saved to a text file. It's recommended\nto join the control plane nodes one at a time.\nDon't forget that the decryption key from\n--certificate-key\nexpires after two hours, by default."
+  "text": "The steps are the same as for the stacked etcd setup:\nMake sure the first control plane node is fully initialized.\nJoin each control plane node with the join command you saved to a text file. It's recommended\nto join the control plane nodes one at a time.\nDon't forget that the decryption key from\n--certificate-key\nexpires after two hours, by default.",
+  "failure_classes": []
 }

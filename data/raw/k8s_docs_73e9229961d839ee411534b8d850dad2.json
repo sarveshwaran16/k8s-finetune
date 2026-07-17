@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Horizontal Pod Autoscaling — Scaling on multiple metrics",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#scaling-on-multiple-metrics",
-  "text": "(the\nautoscaling/v2beta2\nAPI version previously provided this ability as a beta feature)\nProvided that you use the\nautoscaling/v2\nAPI version, you can specify multiple metrics for a\nHorizontalPodAutoscaler to scale on. Then, the HorizontalPodAutoscaler controller evaluates each metric,\nand proposes a new scale based on that metric. The HorizontalPodAutoscaler takes the maximum scale\nrecommended for each metric and sets the workload to that size (provided that this isn't larger than the\noverall maximum that you configured)."
+  "text": "(the\nautoscaling/v2beta2\nAPI version previously provided this ability as a beta feature)\nProvided that you use the\nautoscaling/v2\nAPI version, you can specify multiple metrics for a\nHorizontalPodAutoscaler to scale on. Then, the HorizontalPodAutoscaler controller evaluates each metric,\nand proposes a new scale based on that metric. The HorizontalPodAutoscaler takes the maximum scale\nrecommended for each metric and sets the workload to that size (provided that this isn't larger than the\noverall maximum that you configured).",
+  "failure_classes": []
 }

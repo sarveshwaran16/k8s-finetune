@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Developing and debugging services locally using telepresence — Before you begin",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/local-debugging/#before-you-begin",
-  "text": "Kubernetes cluster is installed\nkubectl\nis configured to communicate with the cluster\nTelepresence\nis installed\n\nAfter installing\ntelepresence\n, run\ntelepresence connect\nto launch\nits Daemon and connect your local workstation to the cluster.\n$ telepresence connect\n \nLaunching Telepresence Daemon\n...\nConnected to context default (https://<cluster public IP>)\nYou can curl services using the Kubernetes syntax e.g.\ncurl -ik https://kubernetes.default"
+  "text": "Kubernetes cluster is installed\nkubectl\nis configured to communicate with the cluster\nTelepresence\nis installed\n\nAfter installing\ntelepresence\n, run\ntelepresence connect\nto launch\nits Daemon and connect your local workstation to the cluster.\n$ telepresence connect\n \nLaunching Telepresence Daemon\n...\nConnected to context default (https://<cluster public IP>)\nYou can curl services using the Kubernetes syntax e.g.\ncurl -ik https://kubernetes.default",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Define Environment Variable Values Using An Init Container — Env file syntax",
   "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-via-file/#env-file-syntax",
-  "text": "The env file format used by Kubernetes is a well-defined subset of the environment variable semantics for POSIX-compliant bash. Any env file supported by Kubernetes will produce the same environment variables as when interpreted by a POSIX-compliant bash. However, POSIX-compliant bash supports some additional formats that Kubernetes does not accept.\nExample:\nMY_VAR='my-literal-value'"
+  "text": "The env file format used by Kubernetes is a well-defined subset of the environment variable semantics for POSIX-compliant bash. Any env file supported by Kubernetes will produce the same environment variables as when interpreted by a POSIX-compliant bash. However, POSIX-compliant bash supports some additional formats that Kubernetes does not accept.\nExample:\nMY_VAR='my-literal-value'",
+  "failure_classes": []
 }

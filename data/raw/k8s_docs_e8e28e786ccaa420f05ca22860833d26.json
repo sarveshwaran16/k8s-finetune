@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Authenticating — CLI access to authentication information",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#self-subject-review-cli",
-  "text": "For convenience, the\nkubectl auth whoami\nsubcommand is also available:\nkubectl auth whoami\nThe output is similar to:\nATTRIBUTE         VALUE\nUsername          george.boole\nGroups            [system:authenticated]\nSee\nkubectl auth whoami\nfor more details.\n\nTo learn about issuing certificates for users, read\nIssue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest\nRead the\nclient authentication reference (v1)\nRead the\nclient authentication reference (v1beta1)"
+  "text": "For convenience, the\nkubectl auth whoami\nsubcommand is also available:\nkubectl auth whoami\nThe output is similar to:\nATTRIBUTE         VALUE\nUsername          george.boole\nGroups            [system:authenticated]\nSee\nkubectl auth whoami\nfor more details.\n\nTo learn about issuing certificates for users, read\nIssue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest\nRead the\nclient authentication reference (v1)\nRead the\nclient authentication reference (v1beta1)",
+  "failure_classes": []
 }

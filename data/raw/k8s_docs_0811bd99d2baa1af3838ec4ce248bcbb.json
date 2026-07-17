@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Attach Handlers to Container Lifecycle Events",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/",
-  "text": "This page shows how to attach handlers to Container lifecycle events. Kubernetes supports\nthe postStart and preStop events. Kubernetes sends the postStart event immediately\nafter a Container is started, and it sends the preStop event immediately before the\nContainer is terminated. A Container may specify one handler per event."
+  "text": "This page shows how to attach handlers to Container lifecycle events. Kubernetes supports\nthe postStart and preStop events. Kubernetes sends the postStart event immediately\nafter a Container is started, and it sends the preStop event immediately before the\nContainer is terminated. A Container may specify one handler per event.",
+  "failure_classes": []
 }

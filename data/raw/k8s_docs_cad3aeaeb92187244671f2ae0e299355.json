@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Control Memory Management Policies on a Node — Resource alignment prerequisites",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/memory-manager/#resource-alignment-prerequisites",
-  "text": "To align memory resources with other requested resources in a Pod spec:\nthe CPU Manager should be enabled and proper CPU Manager policy should be configured on a Node.\nSee\ncontrol CPU Management Policies\n;\nthe Topology Manager should be enabled and proper Topology Manager policy should be configured on a Node.\nSee\ncontrol Topology Management Policies\n."
+  "text": "To align memory resources with other requested resources in a Pod spec:\nthe CPU Manager should be enabled and proper CPU Manager policy should be configured on a Node.\nSee\ncontrol CPU Management Policies\n;\nthe Topology Manager should be enabled and proper Topology Manager policy should be configured on a Node.\nSee\ncontrol Topology Management Policies\n.",
+  "failure_classes": []
 }

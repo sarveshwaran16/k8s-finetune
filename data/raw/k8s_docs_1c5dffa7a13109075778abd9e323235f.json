@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Audit Annotations — pod-security.kubernetes.io/enforce-policy",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/#pod-security-kubernetes-io-enforce-policy",
-  "text": "Example:\npod-security.kubernetes.io/enforce-policy: restricted:latest\nValue\nmust\nbe\nprivileged:<version>\n,\nbaseline:<version>\n,\nrestricted:<version>\nwhich correspond to\nPod Security\nStandard\nlevels accompanied by\na version which\nmust\nbe\nlatest\nor a valid Kubernetes version in the format\nv<MAJOR>.<MINOR>\n. This annotations informs about the enforcement level that\nallowed or denied the pod during PodSecurity admission.\nSee\nPod Security Standards\nfor more information."
+  "text": "Example:\npod-security.kubernetes.io/enforce-policy: restricted:latest\nValue\nmust\nbe\nprivileged:<version>\n,\nbaseline:<version>\n,\nrestricted:<version>\nwhich correspond to\nPod Security\nStandard\nlevels accompanied by\na version which\nmust\nbe\nlatest\nor a valid Kubernetes version in the format\nv<MAJOR>.<MINOR>\n. This annotations informs about the enforcement level that\nallowed or denied the pod during PodSecurity admission.\nSee\nPod Security Standards\nfor more information.",
+  "failure_classes": []
 }

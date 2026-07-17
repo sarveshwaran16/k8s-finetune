@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Declarative API Validation — +k8s:maxItems",
   "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-maxItems",
-  "text": "Description:\nIndicates that a list field has a limit on its size.\nStability Level:\nStable\nPayload:\n<non-negative integer>\n: This field must be no more than X items long.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:maxItems=5\nMyList\n[]\nstring\n`json:\"myList\"`\n}\nIn this example,\nMyList\ncannot contain more than 5 items."
+  "text": "Description:\nIndicates that a list field has a limit on its size.\nStability Level:\nStable\nPayload:\n<non-negative integer>\n: This field must be no more than X items long.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:maxItems=5\nMyList\n[]\nstring\n`json:\"myList\"`\n}\nIn this example,\nMyList\ncannot contain more than 5 items.",
+  "failure_classes": []
 }

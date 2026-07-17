@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Feature Gates (removed)",
   "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates-removed/",
-  "text": "This page contains list of feature gates that have been removed. The information on this page is for reference.\nA removed feature gate is different from a GA'ed or deprecated one in that a removed one is\nno longer recognized as a valid feature gate.\nHowever, a GA'ed or a deprecated feature gate is still recognized by the corresponding Kubernetes\ncomponents although they are unable to cause any behavior differences in a cluster.\nFor feature gates that are still recognized by the Kubernetes components, please refer to\nthe\nAlpha/Beta feature gate table\nor the\nGraduated/Deprecated feature gate table"
+  "text": "This page contains list of feature gates that have been removed. The information on this page is for reference.\nA removed feature gate is different from a GA'ed or deprecated one in that a removed one is\nno longer recognized as a valid feature gate.\nHowever, a GA'ed or a deprecated feature gate is still recognized by the corresponding Kubernetes\ncomponents although they are unable to cause any behavior differences in a cluster.\nFor feature gates that are still recognized by the Kubernetes components, please refer to\nthe\nAlpha/Beta feature gate table\nor the\nGraduated/Deprecated feature gate table",
+  "failure_classes": []
 }

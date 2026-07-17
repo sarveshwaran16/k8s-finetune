@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Operating etcd clusters for Kubernetes — Scaling out etcd clusters",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#scaling-out-etcd-clusters",
-  "text": "Scaling out etcd clusters increases availability by trading off performance.\nScaling does not increase cluster performance nor capability. A general rule\nis not to scale out or in etcd clusters. Do not configure any auto scaling\ngroups for etcd clusters. It is strongly recommended to always run a static\nfive-member etcd cluster for production Kubernetes clusters at any officially\nsupported scale.\nA reasonable scaling is to upgrade a three-member cluster to a five-member\none, when more reliability is desired. See\netcd reconfiguration documentation\nfor information on how to add members into an existing cluster."
+  "text": "Scaling out etcd clusters increases availability by trading off performance.\nScaling does not increase cluster performance nor capability. A general rule\nis not to scale out or in etcd clusters. Do not configure any auto scaling\ngroups for etcd clusters. It is strongly recommended to always run a static\nfive-member etcd cluster for production Kubernetes clusters at any officially\nsupported scale.\nA reasonable scaling is to upgrade a three-member cluster to a five-member\none, when more reliability is desired. See\netcd reconfiguration documentation\nfor information on how to add members into an existing cluster.",
+  "failure_classes": []
 }

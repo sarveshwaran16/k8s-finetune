@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Autoscaling Workloads — Scaling cluster infrastructure",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/#scaling-cluster-infrastructure",
-  "text": "If scaling workloads isn't enough to meet your needs, you can also scale your cluster infrastructure itself.\nScaling the cluster infrastructure normally means adding or removing\nnodes\n.\nRead\nNode autoscaling\nfor more information.\n\nLearn more about scaling horizontally\nScale a StatefulSet\nHorizontalPodAutoscaler Walkthrough\nResize Container Resources In-Place\nAutoscale the DNS Service in a Cluster\nLearn about\nNode autoscaling\nScale a StatefulSet\nHorizontalPodAutoscaler Walkthrough"
+  "text": "If scaling workloads isn't enough to meet your needs, you can also scale your cluster infrastructure itself.\nScaling the cluster infrastructure normally means adding or removing\nnodes\n.\nRead\nNode autoscaling\nfor more information.\n\nLearn more about scaling horizontally\nScale a StatefulSet\nHorizontalPodAutoscaler Walkthrough\nResize Container Resources In-Place\nAutoscale the DNS Service in a Cluster\nLearn about\nNode autoscaling\nScale a StatefulSet\nHorizontalPodAutoscaler Walkthrough",
+  "failure_classes": []
 }

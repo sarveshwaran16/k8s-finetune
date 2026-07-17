@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Other Tools",
   "source_url": "https://kubernetes.io/docs/reference/tools/",
-  "text": "Kubernetes contains several tools to help you work with the Kubernetes system.\n\ncrictl\nis a command-line\ninterface for inspecting and debugging\nCRI\n-compatible\ncontainer runtimes.\n\nDashboard\n, the web-based user interface of Kubernetes, allows you to deploy containerized applications\nto a Kubernetes cluster, troubleshoot them, and manage the cluster and its\nresources itself."
+  "text": "Kubernetes contains several tools to help you work with the Kubernetes system.\n\ncrictl\nis a command-line\ninterface for inspecting and debugging\nCRI\n-compatible\ncontainer runtimes.\n\nDashboard\n, the web-based user interface of Kubernetes, allows you to deploy containerized applications\nto a Kubernetes cluster, troubleshoot them, and manage the cluster and its\nresources itself.",
+  "failure_classes": []
 }

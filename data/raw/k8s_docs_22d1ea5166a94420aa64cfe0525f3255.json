@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Migrating from dockershim — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/#what-s-next",
-  "text": "Check out\ncontainer runtimes\nto understand your options for an alternative.\nIf you find a defect or other technical concern relating to migrating away from dockershim,\nyou can\nreport an issue\nto the Kubernetes project.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Check out\ncontainer runtimes\nto understand your options for an alternative.\nIf you find a defect or other technical concern relating to migrating away from dockershim,\nyou can\nreport an issue\nto the Kubernetes project.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

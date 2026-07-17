@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ReplicaSet — ReplicationController",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#replicationcontroller",
-  "text": "ReplicaSets are the successors to\nReplicationControllers\n.\nThe two serve the same purpose, and behave similarly, except that a ReplicationController does not support set-based\nselector requirements as described in the\nlabels user guide\n.\nAs such, ReplicaSets are preferred over ReplicationControllers"
+  "text": "ReplicaSets are the successors to\nReplicationControllers\n.\nThe two serve the same purpose, and behave similarly, except that a ReplicationController does not support set-based\nselector requirements as described in the\nlabels user guide\n.\nAs such, ReplicaSets are preferred over ReplicationControllers",
+  "failure_classes": []
 }

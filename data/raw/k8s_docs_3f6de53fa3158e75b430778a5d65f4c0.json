@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Using Minikube to Create a Cluster — Create a minikube cluster",
   "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/#create-a-minikube-cluster",
-  "text": "To start a minikube cluster:\nminikube start\nTo verify the cluster status:\nminikube status\nFor a complete walkthrough including deploying your first app and exploring the Kubernetes dashboard, see the\nHello Minikube\ntutorial.\n\nTutorial\nDeploy an App\n.\nLearn more about\nCluster Architecture\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "To start a minikube cluster:\nminikube start\nTo verify the cluster status:\nminikube status\nFor a complete walkthrough including deploying your first app and exploring the Kubernetes dashboard, see the\nHello Minikube\ntutorial.\n\nTutorial\nDeploy an App\n.\nLearn more about\nCluster Architecture\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

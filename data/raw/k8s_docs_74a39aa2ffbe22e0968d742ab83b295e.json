@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Audit Annotations",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/",
-  "text": "This page serves as a reference for the audit annotations of the kubernetes.io\nnamespace. These annotations apply to\nEvent\nobject from API group\naudit.k8s.io\n.\n\nExample:\nk8s.io/deprecated: \"true\"\nValue\nmust\nbe \"true\" or \"false\". The value \"true\" indicates that the\nrequest used a deprecated API version."
+  "text": "This page serves as a reference for the audit annotations of the kubernetes.io\nnamespace. These annotations apply to\nEvent\nobject from API group\naudit.k8s.io\n.\n\nExample:\nk8s.io/deprecated: \"true\"\nValue\nmust\nbe \"true\" or \"false\". The value \"true\" indicates that the\nrequest used a deprecated API version.",
+  "failure_classes": []
 }

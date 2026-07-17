@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Running in multiple zones",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/multiple-zones/",
-  "text": "This page describes running Kubernetes across multiple zones.\n\nKubernetes is designed so that a single Kubernetes cluster can run\nacross multiple failure zones, typically where these zones fit within\na logical grouping called a\nregion\n. Major cloud providers define a region\nas a set of failure zones (also called\navailability zones\n) that provide\na consistent set of features: within a region, each zone offers the same\nAPIs and services.\nTypical cloud architectures aim to minimize the chance that a failure in\none zone also impairs services in another zone."
+  "text": "This page describes running Kubernetes across multiple zones.\n\nKubernetes is designed so that a single Kubernetes cluster can run\nacross multiple failure zones, typically where these zones fit within\na logical grouping called a\nregion\n. Major cloud providers define a region\nas a set of failure zones (also called\navailability zones\n) that provide\na consistent set of features: within a region, each zone offers the same\nAPIs and services.\nTypical cloud architectures aim to minimize the chance that a failure in\none zone also impairs services in another zone.",
+  "failure_classes": []
 }

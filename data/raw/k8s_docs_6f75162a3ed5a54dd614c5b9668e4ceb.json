@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Specifying a Disruption Budget for your Application",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/configure-pdb/",
-  "text": "This page shows how to limit the number of concurrent disruptions\nthat your application experiences, allowing for higher availability\nwhile permitting the cluster administrator to manage the clusters\nnodes.\n\nTo check the version, enter\nkubectl version\n.\nYou are the owner of an application running on a Kubernetes cluster that requires\nhigh availability.\nYou should know how to deploy\nReplicated Stateless Applications\nand/or\nReplicated Stateful Applications\n.\nYou should have read about\nPod Disruptions\n.\nYou should confirm with your cluster owner or service provider that they respect\nPod Disruption Budgets."
+  "text": "This page shows how to limit the number of concurrent disruptions\nthat your application experiences, allowing for higher availability\nwhile permitting the cluster administrator to manage the clusters\nnodes.\n\nTo check the version, enter\nkubectl version\n.\nYou are the owner of an application running on a Kubernetes cluster that requires\nhigh availability.\nYou should know how to deploy\nReplicated Stateless Applications\nand/or\nReplicated Stateful Applications\n.\nYou should have read about\nPod Disruptions\n.\nYou should confirm with your cluster owner or service provider that they respect\nPod Disruption Budgets.",
+  "failure_classes": []
 }

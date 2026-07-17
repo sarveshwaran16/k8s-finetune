@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_upload-config/#synopsis",
-  "text": "Upload the kubeadm and kubelet configuration to a ConfigMap\nkubeadm init phase upload-config [flags]\n\n-h, --help\nhelp for upload-config\nhelp for upload-config\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "Upload the kubeadm and kubelet configuration to a ConfigMap\nkubeadm init phase upload-config [flags]\n\n-h, --help\nhelp for upload-config\nhelp for upload-config\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

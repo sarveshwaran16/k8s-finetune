@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure Access to Multiple Clusters — Append $HOME/.kube/config to your KUBECONFIG environment variable",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/#append-home-kube-config-to-your-kubeconfig-environment-variable",
-  "text": "If you have a\n$HOME/.kube/config\nfile, and it's not already listed in your\nKUBECONFIG\nenvironment variable, append it to your\nKUBECONFIG\nenvironment variable now.\nFor example:\n\nexport\nKUBECONFIG\n=\n\"\n${\nKUBECONFIG\n}\n:\n${\nHOME\n}\n/.kube/config\"\n\n$Env:KUBECONFIG\n=\n\"\n$Env:KUBECONFIG\n;\n$HOME\n\\.kube\\config\"\nView configuration information merged from all the files that are now listed\nin your\nKUBECONFIG\nenvironment variable. In your config-exercise directory, enter:\nkubectl config view"
+  "text": "If you have a\n$HOME/.kube/config\nfile, and it's not already listed in your\nKUBECONFIG\nenvironment variable, append it to your\nKUBECONFIG\nenvironment variable now.\nFor example:\n\nexport\nKUBECONFIG\n=\n\"\n${\nKUBECONFIG\n}\n:\n${\nHOME\n}\n/.kube/config\"\n\n$Env:KUBECONFIG\n=\n\"\n$Env:KUBECONFIG\n;\n$HOME\n\\.kube\\config\"\nView configuration information merged from all the files that are now listed\nin your\nKUBECONFIG\nenvironment variable. In your config-exercise directory, enter:\nkubectl config view",
+  "failure_classes": []
 }

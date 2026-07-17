@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Enforce Pod Security Standards by Configuring the Built-in Admission Controller",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/enforce-standards-admission-controller/",
-  "text": "Kubernetes provides a built-in\nadmission controller\nto enforce the\nPod Security Standards\n.\nYou can configure this admission controller to set cluster-wide defaults and\nexemptions\n.\n\nFollowing an alpha release in Kubernetes v1.22,\nPod Security Admission became available by default in Kubernetes v1.23, as\na beta. From version 1.25 onwards, Pod Security Admission is generally\navailable.\nTo check the version, enter\nkubectl version\n.\nIf you are not running Kubernetes 1.36, you can switch\nto viewing this page in the documentation for the Kubernetes version that you\nare running."
+  "text": "Kubernetes provides a built-in\nadmission controller\nto enforce the\nPod Security Standards\n.\nYou can configure this admission controller to set cluster-wide defaults and\nexemptions\n.\n\nFollowing an alpha release in Kubernetes v1.22,\nPod Security Admission became available by default in Kubernetes v1.23, as\na beta. From version 1.25 onwards, Pod Security Admission is generally\navailable.\nTo check the version, enter\nkubectl version\n.\nIf you are not running Kubernetes 1.36, you can switch\nto viewing this page in the documentation for the Kubernetes version that you\nare running.",
+  "failure_classes": []
 }

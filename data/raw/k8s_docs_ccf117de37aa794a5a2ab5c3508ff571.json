@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Communication between Nodes and the Control Plane — Konnectivity service",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/control-plane-node-communication/#konnectivity-service",
-  "text": "As a replacement to the SSH tunnels, the Konnectivity service provides TCP level proxy for the\ncontrol plane to cluster communication. The Konnectivity service consists of two parts: the\nKonnectivity server in the control plane network and the Konnectivity agents in the nodes network.\nThe Konnectivity agents initiate connections to the Konnectivity server and maintain the network\nconnections.\nAfter enabling the Konnectivity service, all control plane to nodes traffic goes through these\nconnections.\nFollow the\nKonnectivity service task\nto set\nup the Konnectivity service in your cluster."
+  "text": "As a replacement to the SSH tunnels, the Konnectivity service provides TCP level proxy for the\ncontrol plane to cluster communication. The Konnectivity service consists of two parts: the\nKonnectivity server in the control plane network and the Konnectivity agents in the nodes network.\nThe Konnectivity agents initiate connections to the Konnectivity server and maintain the network\nconnections.\nAfter enabling the Konnectivity service, all control plane to nodes traffic goes through these\nconnections.\nFollow the\nKonnectivity service task\nto set\nup the Konnectivity service in your cluster.",
+  "failure_classes": []
 }

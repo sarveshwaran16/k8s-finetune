@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "API Priority and Fairness — Concepts",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/flow-control/#concepts",
-  "text": "There are several distinct features involved in the API Priority and Fairness\nfeature. Incoming requests are classified by attributes of the request using\nFlowSchemas\n, and assigned to priority levels. Priority levels add a degree of\nisolation by maintaining separate concurrency limits, so that requests assigned\nto different priority levels cannot starve each other. Within a priority level,\na fair-queuing algorithm prevents requests from different\nflows\nfrom starving\neach other, and allows for requests to be queued to prevent bursty traffic from\ncausing failed requests when the average load is acceptably low."
+  "text": "There are several distinct features involved in the API Priority and Fairness\nfeature. Incoming requests are classified by attributes of the request using\nFlowSchemas\n, and assigned to priority levels. Priority levels add a degree of\nisolation by maintaining separate concurrency limits, so that requests assigned\nto different priority levels cannot starve each other. Within a priority level,\na fair-queuing algorithm prevents requests from different\nflows\nfrom starving\neach other, and allows for requests to be queued to prevent bursty traffic from\ncausing failed requests when the average load is acceptably low.",
+  "failure_classes": []
 }

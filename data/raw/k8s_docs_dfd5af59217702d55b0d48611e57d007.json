@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Priority and Preemption — How to use priority and preemption",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#how-to-use-priority-and-preemption",
-  "text": "To use priority and preemption:\nAdd one or more\nPriorityClasses\n.\nCreate Pods with\npriorityClassName\nset to one of the added\nPriorityClasses. Of course you do not need to create the Pods directly;\nnormally you would add\npriorityClassName\nto the Pod template of a\ncollection object like a Deployment.\nAdd one or more\nPriorityClasses\n.\nCreate Pods with\npriorityClassName\nset to one of the added\nPriorityClasses. Of course you do not need to create the Pods directly;\nnormally you would add\npriorityClassName\nto the Pod template of a\ncollection object like a Deployment.\nKeep reading for more information about these steps."
+  "text": "To use priority and preemption:\nAdd one or more\nPriorityClasses\n.\nCreate Pods with\npriorityClassName\nset to one of the added\nPriorityClasses. Of course you do not need to create the Pods directly;\nnormally you would add\npriorityClassName\nto the Pod template of a\ncollection object like a Deployment.\nAdd one or more\nPriorityClasses\n.\nCreate Pods with\npriorityClassName\nset to one of the added\nPriorityClasses. Of course you do not need to create the Pods directly;\nnormally you would add\npriorityClassName\nto the Pod template of a\ncollection object like a Deployment.\nKeep reading for more information about these steps.",
+  "failure_classes": []
 }

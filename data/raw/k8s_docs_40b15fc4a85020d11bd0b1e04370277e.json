@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Overview",
   "source_url": "https://kubernetes.io/docs/concepts/overview/",
-  "text": "This page is an overview of Kubernetes.\nThe name Kubernetes originates from Greek, meaning helmsman or pilot. K8s as an abbreviation\nresults from counting the eight letters between the \"K\" and the \"s\". Google open sourced the\nKubernetes project in 2014. Kubernetes combines\nover 15 years of Google's experience\nrunning\nproduction workloads at scale with best-of-breed ideas and practices from the community."
+  "text": "This page is an overview of Kubernetes.\nThe name Kubernetes originates from Greek, meaning helmsman or pilot. K8s as an abbreviation\nresults from counting the eight letters between the \"K\" and the \"s\". Google open sourced the\nKubernetes project in 2014. Kubernetes combines\nover 15 years of Google's experience\nrunning\nproduction workloads at scale with best-of-breed ideas and practices from the community.",
+  "failure_classes": []
 }

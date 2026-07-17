@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm Configuration (v1beta3) — Networking",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta3/#kubeadm-k8s-io-v1beta3-Networking",
-  "text": "Appears in:\nClusterConfiguration\nNetworking contains elements describing cluster's networking configuration.\nField\nDescription\nserviceSubnet\nstring\nserviceSubnet\nis the subnet used by Kubernetes Services. Defaults to \"10.96.0.0/12\".\npodSubnet\nstring\npodSubnet\nis the subnet used by Pods.\ndnsDomain\nstring\ndnsDomain\nis the DNS domain used by Kubernetes Services. Defaults to \"cluster.local\".\nserviceSubnet\nis the subnet used by Kubernetes Services. Defaults to \"10.96.0.0/12\".\npodSubnet\nis the subnet used by Pods.\ndnsDomain\nis the DNS domain used by Kubernetes Services. Defaults to \"cluster.local\"."
+  "text": "Appears in:\nClusterConfiguration\nNetworking contains elements describing cluster's networking configuration.\nField\nDescription\nserviceSubnet\nstring\nserviceSubnet\nis the subnet used by Kubernetes Services. Defaults to \"10.96.0.0/12\".\npodSubnet\nstring\npodSubnet\nis the subnet used by Pods.\ndnsDomain\nstring\ndnsDomain\nis the DNS domain used by Kubernetes Services. Defaults to \"cluster.local\".\nserviceSubnet\nis the subnet used by Kubernetes Services. Defaults to \"10.96.0.0/12\".\npodSubnet\nis the subnet used by Pods.\ndnsDomain\nis the DNS domain used by Kubernetes Services. Defaults to \"cluster.local\".",
+  "failure_classes": []
 }

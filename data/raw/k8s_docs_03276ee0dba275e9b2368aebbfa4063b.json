@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Field Selectors — Supported fields",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/#supported-fields",
-  "text": "Supported field selectors vary by Kubernetes resource type. All resource types support the\nmetadata.name\nand\nmetadata.namespace\nfields. Using unsupported field selectors produces an error. For example:\nkubectl get ingress --field-selector foo.bar\n=\nbaz\nError from server (BadRequest): Unable to find \"ingresses\" that match label selector \"\", field selector \"foo.bar=baz\": \"foo.bar\" is not a known field selector: only \"metadata.name\", \"metadata.namespace\""
+  "text": "Supported field selectors vary by Kubernetes resource type. All resource types support the\nmetadata.name\nand\nmetadata.namespace\nfields. Using unsupported field selectors produces an error. For example:\nkubectl get ingress --field-selector foo.bar\n=\nbaz\nError from server (BadRequest): Unable to find \"ingresses\" that match label selector \"\", field selector \"foo.bar=baz\": \"foo.bar\" is not a known field selector: only \"metadata.name\", \"metadata.namespace\"",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

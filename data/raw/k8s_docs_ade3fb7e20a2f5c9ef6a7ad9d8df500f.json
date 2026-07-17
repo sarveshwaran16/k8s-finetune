@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubelet Configuration (v1beta1) — JSONOptions",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#JSONOptions",
-  "text": "Appears in:\nFormatOptions\nJSONOptions contains options for logging format \"json\".\nField\nDescription\nOutputRoutingOptions\n[Required]\nOutputRoutingOptions\n(Members of\nOutputRoutingOptions\nare embedded into this type.)\nNo description provided.\n\nLogFormatFactory provides support for a certain additional,\nnon-default log format."
+  "text": "Appears in:\nFormatOptions\nJSONOptions contains options for logging format \"json\".\nField\nDescription\nOutputRoutingOptions\n[Required]\nOutputRoutingOptions\n(Members of\nOutputRoutingOptions\nare embedded into this type.)\nNo description provided.\n\nLogFormatFactory provides support for a certain additional,\nnon-default log format.",
+  "failure_classes": []
 }

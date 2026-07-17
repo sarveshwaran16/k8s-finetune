@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Tutorials — Basics",
   "source_url": "https://kubernetes.io/docs/tutorials/#basics",
-  "text": "Kubernetes Basics\nis an in-depth interactive tutorial that helps you understand the Kubernetes system and try out some basic Kubernetes features.\nIntroduction to Kubernetes (edX)\nHello Minikube\n\nConfiguring Redis Using a ConfigMap\n\nAdopting Sidecar Containers\n\nExposing an External IP Address to Access an Application in a Cluster\nExample: Deploying PHP Guestbook application with Redis"
+  "text": "Kubernetes Basics\nis an in-depth interactive tutorial that helps you understand the Kubernetes system and try out some basic Kubernetes features.\nIntroduction to Kubernetes (edX)\nHello Minikube\n\nConfiguring Redis Using a ConfigMap\n\nAdopting Sidecar Containers\n\nExposing an External IP Address to Access an Application in a Cluster\nExample: Deploying PHP Guestbook application with Redis",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Logging in Kubernetes",
   "source_url": "https://kubernetes.io/docs/tasks/debug/logging/",
-  "text": "This page provides resources that describe logging in Kubernetes. You can learn how to collect, access, and analyze logs using built-in tools and popular logging stacks:\nLogging Architecture\nSystem Logs\nA Practical Guide to Kubernetes Logging\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "This page provides resources that describe logging in Kubernetes. You can learn how to collect, access, and analyze logs using built-in tools and popular logging stacks:\nLogging Architecture\nSystem Logs\nA Practical Guide to Kubernetes Logging\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Harden Dynamic Resource Allocation in Your Cluster — Bind roles to explicit identities",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/hardening-dra/#bind-roles-to-explicit-identities",
-  "text": "Create\nClusterRoleBinding\nobjects for each component identity, and avoid\nsharing a broad role across unrelated DRA components.\nRestrict\nresourceclaims/driver\nrules with\nresourceNames\nwhere possible so\nan identity can only write status for the specific DRA driver it operates.\n\nVerify each identity has only the required verbs and subresources.\nConfirm DRA status updates work after rollout.\nWatch API server audit events for denied\nresourceclaims/binding\nand\nresourceclaims/driver\nrequests."
+  "text": "Create\nClusterRoleBinding\nobjects for each component identity, and avoid\nsharing a broad role across unrelated DRA components.\nRestrict\nresourceclaims/driver\nrules with\nresourceNames\nwhere possible so\nan identity can only write status for the specific DRA driver it operates.\n\nVerify each identity has only the required verbs and subresources.\nConfirm DRA status updates work after rollout.\nWatch API server audit events for denied\nresourceclaims/binding\nand\nresourceclaims/driver\nrequests.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

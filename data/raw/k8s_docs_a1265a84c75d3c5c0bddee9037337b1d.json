@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Local ephemeral storage — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/storage/ephemeral-storage/#what-s-next",
-  "text": "Read about\nproject quotas\nin XFS\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Read about\nproject quotas\nin XFS\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "ReplicationController — Deleting a ReplicationController and its Pods",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#deleting-a-replicationcontroller-and-its-pods",
-  "text": "To delete a ReplicationController and all its pods, use\nkubectl delete\n. Kubectl will scale the ReplicationController to zero and wait\nfor it to delete each pod before deleting the ReplicationController itself. If this kubectl\ncommand is interrupted, it can be restarted.\nWhen using the REST API or\nclient library\n, you need to do the steps explicitly (scale replicas to\n0, wait for pod deletions, then delete the ReplicationController)."
+  "text": "To delete a ReplicationController and all its pods, use\nkubectl delete\n. Kubectl will scale the ReplicationController to zero and wait\nfor it to delete each pod before deleting the ReplicationController itself. If this kubectl\ncommand is interrupted, it can be restarted.\nWhen using the REST API or\nclient library\n, you need to do the steps explicitly (scale replicas to\n0, wait for pod deletions, then delete the ReplicationController).",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

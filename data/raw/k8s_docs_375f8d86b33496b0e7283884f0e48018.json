@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/aws-load-balancer-target-group-attributes (beta)",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-io-aws-load-balancer-target-group-attributes",
-  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-target-group-attributes: \"stickiness.enabled=true,stickiness.type=source_ip\"\nUsed on: Service\nThe\nAWS load balancer controller\nuses this annotation.\nSee\nannotations\nin the AWS load balancer controller documentation.\n\nExample:\nservice.beta.kubernetes.io/aws-load-balancer-target-node-labels: \"kubernetes.io/os=Linux,topology.kubernetes.io/region=us-east-2\"\nKubernetes' official integration with AWS uses this annotation to determine which\nnodes in your cluster should be considered as valid targets for the load balancer."
+  "text": "Example:\nservice.beta.kubernetes.io/aws-load-balancer-target-group-attributes: \"stickiness.enabled=true,stickiness.type=source_ip\"\nUsed on: Service\nThe\nAWS load balancer controller\nuses this annotation.\nSee\nannotations\nin the AWS load balancer controller documentation.\n\nExample:\nservice.beta.kubernetes.io/aws-load-balancer-target-node-labels: \"kubernetes.io/os=Linux,topology.kubernetes.io/region=us-east-2\"\nKubernetes' official integration with AWS uses this annotation to determine which\nnodes in your cluster should be considered as valid targets for the load balancer.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

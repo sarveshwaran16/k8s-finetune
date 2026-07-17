@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GroupVersionForDiscovery",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/group-version-for-discovery-v1-meta/",
-  "text": "apiVersion: meta/v1\nimport \"k8s.io/apimachinery/pkg/apis/meta/v1\"\n\nGroupVersion contains the \"group/version\" and \"version\" string of a version. It is made a struct to keep extensibility.\nField\nDescription\ngroupVersion\n*\nstring\ngroupVersion specifies the API group and version in the form \"group/version\"\nversion\n*\nstring\nversion specifies the version in the form of \"version\". This is to save the clients the trouble of splitting the GroupVersion."
+  "text": "apiVersion: meta/v1\nimport \"k8s.io/apimachinery/pkg/apis/meta/v1\"\n\nGroupVersion contains the \"group/version\" and \"version\" string of a version. It is made a struct to keep extensibility.\nField\nDescription\ngroupVersion\n*\nstring\ngroupVersion specifies the API group and version in the form \"group/version\"\nversion\n*\nstring\nversion specifies the version in the form of \"version\". This is to save the clients the trouble of splitting the GroupVersion.",
+  "failure_classes": []
 }

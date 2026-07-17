@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm reset phase",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-reset-phase/",
-  "text": "kubeadm reset phase\nenables you to invoke atomic steps of the node reset process.\nHence, you can let kubeadm do some of the work and you can fill in the gaps\nif you wish to apply customization.\nkubeadm reset phase\nis consistent with the\nkubeadm reset workflow\n,\nand behind the scene both use the same code."
+  "text": "kubeadm reset phase\nenables you to invoke atomic steps of the node reset process.\nHence, you can let kubeadm do some of the work and you can fill in the gaps\nif you wish to apply customization.\nkubeadm reset phase\nis consistent with the\nkubeadm reset workflow\n,\nand behind the scene both use the same code.",
+  "failure_classes": []
 }

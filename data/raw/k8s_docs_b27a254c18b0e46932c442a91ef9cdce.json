@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Field Selectors — Custom resources fields",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/#custom-resources-fields",
-  "text": "All custom resource types support the\nmetadata.name\nand\nmetadata.namespace\nfields.\nAdditionally, the\nspec.versions[*].selectableFields\nfield of a\nCustomResourceDefinition\ndeclares which other fields in a custom resource may be used in field selectors. See\nselectable fields for custom resources\nfor more information about how to use field selectors with CustomResourceDefinitions."
+  "text": "All custom resource types support the\nmetadata.name\nand\nmetadata.namespace\nfields.\nAdditionally, the\nspec.versions[*].selectableFields\nfield of a\nCustomResourceDefinition\ndeclares which other fields in a custom resource may be used in field selectors. See\nselectable fields for custom resources\nfor more information about how to use field selectors with CustomResourceDefinitions.",
+  "failure_classes": []
 }

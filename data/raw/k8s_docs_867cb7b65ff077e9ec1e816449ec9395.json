@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Leases",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/leases/",
-  "text": "Distributed systems often have a need for\nleases\n, which provide a mechanism to lock shared resources\nand coordinate activity between members of a set.\nIn Kubernetes, the lease concept is represented by\nLease\nobjects in the\ncoordination.k8s.io\nAPI Group\n,\nwhich are used for system-critical capabilities such as node heartbeats and component-level leader election."
+  "text": "Distributed systems often have a need for\nleases\n, which provide a mechanism to lock shared resources\nand coordinate activity between members of a set.\nIn Kubernetes, the lease concept is represented by\nLease\nobjects in the\ncoordination.k8s.io\nAPI Group\n,\nwhich are used for system-critical capabilities such as node heartbeats and component-level leader election.",
+  "failure_classes": []
 }

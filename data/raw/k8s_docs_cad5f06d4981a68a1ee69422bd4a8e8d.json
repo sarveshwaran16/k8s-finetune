@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extend kubectl with plugins — Checking for plugin warnings",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/#checking-for-plugin-warnings",
-  "text": "You can use the aforementioned\nkubectl plugin list\ncommand to ensure that your plugin is visible by\nkubectl\n, and verify that there are no warnings preventing it from being called as a\nkubectl\ncommand.\nkubectl plugin list\nThe following kubectl-compatible plugins are available:\n\ntest/fixtures/pkg/kubectl/plugins/kubectl-foo\n/usr/local/bin/kubectl-foo\n  - warning: /usr/local/bin/kubectl-foo is overshadowed by a similarly named plugin: test/fixtures/pkg/kubectl/plugins/kubectl-foo\nplugins/kubectl-invalid\n  - warning: plugins/kubectl-invalid identified as a kubectl plugin, but it is not executable\n\nerror: 2 plugin warnings were found"
+  "text": "You can use the aforementioned\nkubectl plugin list\ncommand to ensure that your plugin is visible by\nkubectl\n, and verify that there are no warnings preventing it from being called as a\nkubectl\ncommand.\nkubectl plugin list\nThe following kubectl-compatible plugins are available:\n\ntest/fixtures/pkg/kubectl/plugins/kubectl-foo\n/usr/local/bin/kubectl-foo\n  - warning: /usr/local/bin/kubectl-foo is overshadowed by a similarly named plugin: test/fixtures/pkg/kubectl/plugins/kubectl-foo\nplugins/kubectl-invalid\n  - warning: plugins/kubectl-invalid identified as a kubectl plugin, but it is not executable\n\nerror: 2 plugin warnings were found",
+  "failure_classes": []
 }

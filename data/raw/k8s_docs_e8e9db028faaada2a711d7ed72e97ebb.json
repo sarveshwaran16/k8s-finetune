@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Romana for NetworkPolicy",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/romana-network-policy/",
-  "text": "This page shows how to use Romana for NetworkPolicy.\n\nComplete steps 1, 2, and 3 of the\nkubeadm getting started guide\n.\n\nFollow the\ncontainerized installation guide\nfor kubeadm.\n\nTo apply network policies use one of the following:\nRomana network policies\n.\nExample of Romana network policy\n.\nThe NetworkPolicy API.\nExample of Romana network policy\n."
+  "text": "This page shows how to use Romana for NetworkPolicy.\n\nComplete steps 1, 2, and 3 of the\nkubeadm getting started guide\n.\n\nFollow the\ncontainerized installation guide\nfor kubeadm.\n\nTo apply network policies use one of the following:\nRomana network policies\n.\nExample of Romana network policy\n.\nThe NetworkPolicy API.\nExample of Romana network policy\n.",
+  "failure_classes": []
 }

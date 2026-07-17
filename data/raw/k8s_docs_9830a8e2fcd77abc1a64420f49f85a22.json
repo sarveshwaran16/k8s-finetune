@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_certs/#synopsis",
-  "text": "Commands related to handling Kubernetes certificates\nkubeadm certs [flags]\n\n-h, --help\nhelp for certs\nhelp for certs\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "Commands related to handling Kubernetes certificates\nkubeadm certs [flags]\n\n-h, --help\nhelp for certs\nhelp for certs\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": []
 }

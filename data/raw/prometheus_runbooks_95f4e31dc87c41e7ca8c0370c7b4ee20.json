@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubeJobCompletion#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubejobcompletion/",
-  "text": "Kube Job Completion\nKubeJobCompletion\n#\nMeaning\n#\nJob is taking more than 1h to complete.\nImpact\n#\nLong processing of batch jobs.\nPossible issues with scheduling next Job\nDiagnosis\n#\nCheck job via\nkubectl -n $NAMESPACE describe jobs $JOB\n.\nCheck pod events via\nkubectl -n $NAMESPACE describe job $JOB\n.\nMitigation\n#\nGive it more resources so it finishes faster, if applicable.\nSee\nJob patterns"
+  "text": "Kube Job Completion\nKubeJobCompletion\n#\nMeaning\n#\nJob is taking more than 1h to complete.\nImpact\n#\nLong processing of batch jobs.\nPossible issues with scheduling next Job\nDiagnosis\n#\nCheck job via\nkubectl -n $NAMESPACE describe jobs $JOB\n.\nCheck pod events via\nkubectl -n $NAMESPACE describe job $JOB\n.\nMitigation\n#\nGive it more resources so it finishes faster, if applicable.\nSee\nJob patterns",
+  "failure_classes": []
 }

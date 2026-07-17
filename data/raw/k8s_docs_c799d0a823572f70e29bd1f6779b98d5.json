@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Job",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/",
-  "text": "Jobs\nJobs represent one-off tasks that run to completion and then stop.\nRunning an example Job\nWriting a Job spec\nIntegrate with Workload APIs\nHandling Pod and container failures\nSuccess policy\nJob termination and cleanup\nClean up finished jobs automatically\nJob patterns\nAdvanced usage\nAlternatives\nWhat's next\nJobs represent one-off tasks that run to completion and then stop.\nRunning an example Job\nWriting a Job spec\nIntegrate with Workload APIs\nHandling Pod and container failures\nSuccess policy\nJob termination and cleanup\nClean up finished jobs automatically\nJob patterns\nAdvanced usage\nAlternatives\nWhat's next\napiVersion: batch/v1\nimport \"k8s.io/api/batch/v1\""
+  "text": "Jobs\nJobs represent one-off tasks that run to completion and then stop.\nRunning an example Job\nWriting a Job spec\nIntegrate with Workload APIs\nHandling Pod and container failures\nSuccess policy\nJob termination and cleanup\nClean up finished jobs automatically\nJob patterns\nAdvanced usage\nAlternatives\nWhat's next\nJobs represent one-off tasks that run to completion and then stop.\nRunning an example Job\nWriting a Job spec\nIntegrate with Workload APIs\nHandling Pod and container failures\nSuccess policy\nJob termination and cleanup\nClean up finished jobs automatically\nJob patterns\nAdvanced usage\nAlternatives\nWhat's next\napiVersion: batch/v1\nimport \"k8s.io/api/batch/v1\"",
+  "failure_classes": []
 }

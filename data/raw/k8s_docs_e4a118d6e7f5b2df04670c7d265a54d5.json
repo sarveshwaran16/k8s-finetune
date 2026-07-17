@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Changing the Container Runtime on a Node from Docker Engine to containerd — Before you begin",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/change-runtime-containerd/#before-you-begin",
-  "text": "Install containerd. For more information see\ncontainerd's installation documentation\nand for specific prerequisite follow\nthe containerd guide\n.\n\nkubectl drain <node-to-drain> --ignore-daemonsets\nReplace\n<node-to-drain>\nwith the name of your node you are draining.\n\nsystemctl stop kubelet\nsystemctl disable docker.service --now"
+  "text": "Install containerd. For more information see\ncontainerd's installation documentation\nand for specific prerequisite follow\nthe containerd guide\n.\n\nkubectl drain <node-to-drain> --ignore-daemonsets\nReplace\n<node-to-drain>\nwith the name of your node you are draining.\n\nsystemctl stop kubelet\nsystemctl disable docker.service --now",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

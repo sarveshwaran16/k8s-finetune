@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Hardening Guide - Authentication Mechanisms — Bootstrap tokens",
   "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/authentication-mechanisms/#bootstrap-tokens",
-  "text": "Bootstrap tokens\nare used for joining\nnodes to clusters and are not recommended for user authentication due to several reasons:\nThey have hard-coded group memberships that are not suitable for general use, making them\nunsuitable for authentication purposes.\nManually generating bootstrap tokens can lead to weak tokens that can be guessed by an attacker,\nwhich can be a security risk.\nThere is no lockout mechanism available to prevent brute-force attacks, making it easier for\nattackers to guess or crack the token."
+  "text": "Bootstrap tokens\nare used for joining\nnodes to clusters and are not recommended for user authentication due to several reasons:\nThey have hard-coded group memberships that are not suitable for general use, making them\nunsuitable for authentication purposes.\nManually generating bootstrap tokens can lead to weak tokens that can be guessed by an attacker,\nwhich can be a security risk.\nThere is no lockout mechanism available to prevent brute-force attacks, making it easier for\nattackers to guess or crack the token.",
+  "failure_classes": []
 }

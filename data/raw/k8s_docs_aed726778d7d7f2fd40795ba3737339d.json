@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Restrict a Container's Syscalls with seccomp",
   "source_url": "https://kubernetes.io/docs/tutorials/security/seccomp/",
-  "text": "Seccomp stands for secure computing mode and has been a feature of the Linux\nkernel since version 2.6.12. It can be used to sandbox the privileges of a\nprocess, restricting the calls it is able to make from userspace into the\nkernel. Kubernetes lets you automatically apply seccomp profiles loaded onto a\nnode\nto your Pods and containers.\nIdentifying the privileges required for your workloads can be difficult. In this\ntutorial, you will go through how to load seccomp profiles into a local\nKubernetes cluster, how to apply them to a Pod, and how you can begin to craft\nprofiles that give only the necessary privileges to your container processes."
+  "text": "Seccomp stands for secure computing mode and has been a feature of the Linux\nkernel since version 2.6.12. It can be used to sandbox the privileges of a\nprocess, restricting the calls it is able to make from userspace into the\nkernel. Kubernetes lets you automatically apply seccomp profiles loaded onto a\nnode\nto your Pods and containers.\nIdentifying the privileges required for your workloads can be difficult. In this\ntutorial, you will go through how to load seccomp profiles into a local\nKubernetes cluster, how to apply them to a Pod, and how you can begin to craft\nprofiles that give only the necessary privileges to your container processes.",
+  "failure_classes": []
 }

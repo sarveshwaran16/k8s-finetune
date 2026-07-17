@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Using CoreDNS for Service Discovery — About CoreDNS",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/coredns/#about-coredns",
-  "text": "CoreDNS\nis a flexible, extensible DNS server\nthat can serve as the Kubernetes cluster DNS.\nLike Kubernetes, the CoreDNS project is hosted by the\nCNCF\n.\nYou can use CoreDNS instead of kube-dns in your cluster by replacing\nkube-dns in an existing deployment, or by using tools like kubeadm\nthat will deploy and upgrade the cluster for you."
+  "text": "CoreDNS\nis a flexible, extensible DNS server\nthat can serve as the Kubernetes cluster DNS.\nLike Kubernetes, the CoreDNS project is hosted by the\nCNCF\n.\nYou can use CoreDNS instead of kube-dns in your cluster by replacing\nkube-dns in an existing deployment, or by using tools like kubeadm\nthat will deploy and upgrade the cluster for you.",
+  "failure_classes": []
 }

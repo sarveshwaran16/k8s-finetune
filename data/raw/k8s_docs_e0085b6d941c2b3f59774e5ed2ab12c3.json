@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Native Histogram Support for Kubernetes Metrics — References",
   "source_url": "https://kubernetes.io/docs/reference/instrumentation/native-histograms/#references",
-  "text": "Read the\nPrometheus Native Histograms documentation\nfor details on the native histogram format and query functions.\nSee the\nKubernetes metrics reference\nfor the full list of metrics exposed by Kubernetes components.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Read the\nPrometheus Native Histograms documentation\nfor details on the native histogram format and query functions.\nSee the\nKubernetes metrics reference\nfor the full list of metrics exposed by Kubernetes components.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

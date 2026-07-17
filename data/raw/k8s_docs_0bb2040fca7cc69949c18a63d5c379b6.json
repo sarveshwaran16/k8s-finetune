@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Garbage Collection — Background cascading deletion",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/garbage-collection/#background-deletion",
-  "text": "In background cascading deletion, the Kubernetes API server deletes the owner\nobject immediately and the garbage collector controller (custom or default)\ncleans up the dependent objects in the background.\nIf a finalizer exists, it ensures that objects are not deleted until all necessary clean-up tasks are completed.\nBy default, Kubernetes uses background cascading deletion unless\nyou manually use foreground deletion or choose to orphan the dependent objects.\nSee\nUse background cascading deletion\nto learn more."
+  "text": "In background cascading deletion, the Kubernetes API server deletes the owner\nobject immediately and the garbage collector controller (custom or default)\ncleans up the dependent objects in the background.\nIf a finalizer exists, it ensures that objects are not deleted until all necessary clean-up tasks are completed.\nBy default, Kubernetes uses background cascading deletion unless\nyou manually use foreground deletion or choose to orphan the dependent objects.\nSee\nUse background cascading deletion\nto learn more.",
+  "failure_classes": []
 }

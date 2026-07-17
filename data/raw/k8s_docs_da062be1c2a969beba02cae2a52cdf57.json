@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Volume Snapshots — Provisioning Volumes from Snapshots",
   "source_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/#provisioning-volumes-from-snapshots",
-  "text": "You can provision a new volume, pre-populated with data from a snapshot, by using\nthe\ndataSource\nfield in the\nPersistentVolumeClaim\nobject.\nFor more details, see\nVolume Snapshot and Restore Volume from Snapshot\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "You can provision a new volume, pre-populated with data from a snapshot, by using\nthe\ndataSource\nfield in the\nPersistentVolumeClaim\nobject.\nFor more details, see\nVolume Snapshot and Restore Volume from Snapshot\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

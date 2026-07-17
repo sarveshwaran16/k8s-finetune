@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — OwnerReferencesPermissionEnforcement",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#ownerreferencespermissionenforcement",
-  "text": "Type\n: Validating.\nThis admission controller protects the access to the\nmetadata.ownerReferences\nof an object\nso that only users with\ndelete\npermission to the object can change it.\nThis admission controller also protects the access to\nmetadata.ownerReferences[x].blockOwnerDeletion\nof an object, so that only users with\nupdate\npermission to the\nfinalizers\nsubresource of the referenced\nowner\ncan change it."
+  "text": "Type\n: Validating.\nThis admission controller protects the access to the\nmetadata.ownerReferences\nof an object\nso that only users with\ndelete\npermission to the object can change it.\nThis admission controller also protects the access to\nmetadata.ownerReferences[x].blockOwnerDeletion\nof an object, so that only users with\nupdate\npermission to the\nfinalizers\nsubresource of the referenced\nowner\ncan change it.",
+  "failure_classes": []
 }

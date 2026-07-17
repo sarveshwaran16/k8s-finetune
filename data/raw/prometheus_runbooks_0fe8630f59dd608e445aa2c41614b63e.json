@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubeStateMetricsShardingMismatch#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kube-state-metrics/kubestatemetricsshardingmismatch/",
-  "text": "Kube State Metrics Sharding Mismatch\nKubeStateMetricsShardingMismatch\n#\nMeaning\n#\nkube-state-metrics sharding is misconfigured.\nImpact\n#\nUnable to get metrics for certain resources.\nSome metrics can be unavailable.\nDiagnosis\n#\nCheck kube-state-metric container logs for each shard.\nCheck service account token.\nCheck networking rules and network policies.\nMitigation\n#\nTODO"
+  "text": "Kube State Metrics Sharding Mismatch\nKubeStateMetricsShardingMismatch\n#\nMeaning\n#\nkube-state-metrics sharding is misconfigured.\nImpact\n#\nUnable to get metrics for certain resources.\nSome metrics can be unavailable.\nDiagnosis\n#\nCheck kube-state-metric container logs for each shard.\nCheck service account token.\nCheck networking rules and network policies.\nMitigation\n#\nTODO",
+  "failure_classes": []
 }

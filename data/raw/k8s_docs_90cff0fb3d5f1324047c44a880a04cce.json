@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ingress Controllers",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/",
-  "text": "The Kubernetes project recommends using\nGateway\ninstead of\nIngress\n.\nThe Ingress API has been frozen.\nThis means that:\nThe Ingress API is generally available, and is subject to the\nstability guarantees\nfor generally available APIs.\nThe Kubernetes project has no plans to remove Ingress from Kubernetes.\nThe Ingress API is no longer being developed, and will have no further changes\nor updates made to it."
+  "text": "The Kubernetes project recommends using\nGateway\ninstead of\nIngress\n.\nThe Ingress API has been frozen.\nThis means that:\nThe Ingress API is generally available, and is subject to the\nstability guarantees\nfor generally available APIs.\nThe Kubernetes project has no plans to remove Ingress from Kubernetes.\nThe Ingress API is no longer being developed, and will have no further changes\nor updates made to it.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

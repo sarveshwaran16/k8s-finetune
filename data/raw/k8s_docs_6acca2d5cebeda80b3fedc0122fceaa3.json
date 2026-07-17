@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Creating a cluster with kubeadm — Clean up the control plane",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#clean-up-the-control-plane",
-  "text": "You can use\nkubeadm reset\non the control plane host to trigger a best-effort\nclean up.\nSee the\nkubeadm reset\nreference documentation for more information about this subcommand and its\noptions.\n\nWhile kubeadm allows version skew against some components that it manages, it is recommended that you\nmatch the kubeadm version with the versions of the control plane components, kube-proxy and kubelet."
+  "text": "You can use\nkubeadm reset\non the control plane host to trigger a best-effort\nclean up.\nSee the\nkubeadm reset\nreference documentation for more information about this subcommand and its\noptions.\n\nWhile kubeadm allows version skew against some components that it manages, it is recommended that you\nmatch the kubeadm version with the versions of the control plane components, kube-proxy and kubelet.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

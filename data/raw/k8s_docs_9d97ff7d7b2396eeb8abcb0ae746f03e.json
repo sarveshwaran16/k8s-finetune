@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Upgrade A Cluster — Other deployments",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/#upgrade-other",
-  "text": "Refer to the documentation for your cluster deployment tool to learn the recommended set\nup steps for maintenance.\n\nThe objects that are serialized into etcd for a cluster's internal\nrepresentation of the Kubernetes resources active in the cluster are\nwritten using a particular version of the API.\nWhen the supported API changes, these objects may need to be rewritten\nin the newer API. Failure to do this will eventually result in resources\nthat are no longer decodable or usable by the Kubernetes API server.\nFor each affected object, fetch it using the latest supported API and then\nwrite it back also using the latest supported API."
+  "text": "Refer to the documentation for your cluster deployment tool to learn the recommended set\nup steps for maintenance.\n\nThe objects that are serialized into etcd for a cluster's internal\nrepresentation of the Kubernetes resources active in the cluster are\nwritten using a particular version of the API.\nWhen the supported API changes, these objects may need to be rewritten\nin the newer API. Failure to do this will eventually result in resources\nthat are no longer decodable or usable by the Kubernetes API server.\nFor each affected object, fetch it using the latest supported API and then\nwrite it back also using the latest supported API.",
+  "failure_classes": []
 }

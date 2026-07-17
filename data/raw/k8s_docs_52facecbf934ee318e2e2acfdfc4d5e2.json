@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Coordinated Leader Election",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/coordinated-leader-election/",
-  "text": "Kubernetes 1.36 includes a beta feature that allows\ncontrol plane\ncomponents to\ndeterministically select a leader via\ncoordinated leader election\n.\nThis is useful to satisfy Kubernetes version skew constraints during cluster upgrades.\nCurrently, the only builtin selection strategy is\nOldestEmulationVersion\n,\npreferring the leader with the lowest emulation version, followed by binary\nversion, followed by creation timestamp."
+  "text": "Kubernetes 1.36 includes a beta feature that allows\ncontrol plane\ncomponents to\ndeterministically select a leader via\ncoordinated leader election\n.\nThis is useful to satisfy Kubernetes version skew constraints during cluster upgrades.\nCurrently, the only builtin selection strategy is\nOldestEmulationVersion\n,\npreferring the leader with the lowest emulation version, followed by binary\nversion, followed by creation timestamp.",
+  "failure_classes": []
 }

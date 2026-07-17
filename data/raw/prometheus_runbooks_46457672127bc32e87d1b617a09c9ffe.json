@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "PrometheusErrorSendingAlertsToSomeAlertmanagers#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/prometheus/prometheuserrorsendingalertstosomealertmanagers/",
-  "text": "Prometheus Error Sending Alerts To Some Alertmanagers\nPrometheusErrorSendingAlertsToSomeAlertmanagers\n#\nMeaning\n#\nPrometheus has encountered more than 1% errors sending alerts to a specific Alertmanager.\nImpact\n#\nSome alerts may be lost.\nDiagnosis\n#\nCheck connectivity issues between Prometheus and AlertManager.\nCheck NetworkPolicies, network saturation.\nCheck if AlertManager is not overloaded or has not enough resources.\nMitigation\n#\nSet multiple AlertManager instances, spread them across nodes."
+  "text": "Prometheus Error Sending Alerts To Some Alertmanagers\nPrometheusErrorSendingAlertsToSomeAlertmanagers\n#\nMeaning\n#\nPrometheus has encountered more than 1% errors sending alerts to a specific Alertmanager.\nImpact\n#\nSome alerts may be lost.\nDiagnosis\n#\nCheck connectivity issues between Prometheus and AlertManager.\nCheck NetworkPolicies, network saturation.\nCheck if AlertManager is not overloaded or has not enough resources.\nMitigation\n#\nSet multiple AlertManager instances, spread them across nodes.",
+  "failure_classes": []
 }

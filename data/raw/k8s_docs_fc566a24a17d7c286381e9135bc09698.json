@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Field Selectors — Multiple resource types",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/#multiple-resource-types",
-  "text": "You can use field selectors across multiple resource types. This\nkubectl\ncommand selects all Statefulsets and Services that are not in the\ndefault\nnamespace:\nkubectl get statefulsets,services --all-namespaces --field-selector metadata.namespace!\n=\ndefault\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "You can use field selectors across multiple resource types. This\nkubectl\ncommand selects all Statefulsets and Services that are not in the\ndefault\nnamespace:\nkubectl get statefulsets,services --all-namespaces --field-selector metadata.namespace!\n=\ndefault\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

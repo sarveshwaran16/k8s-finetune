@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ingress — IngressLoadBalancerIngress",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/networking/ingress-v1/#IngressLoadBalancerIngress",
-  "text": "IngressLoadBalancerIngress represents the status of a load-balancer ingress point.\nField\nDescription\nhostname\nstring\nhostname is set for load-balancer ingress points that are DNS based.\nip\nstring\nip is set for load-balancer ingress points that are IP based.\nports\nIngressPortStatus array\nports provides information about the ports exposed by this LoadBalancer."
+  "text": "IngressLoadBalancerIngress represents the status of a load-balancer ingress point.\nField\nDescription\nhostname\nstring\nhostname is set for load-balancer ingress points that are DNS based.\nip\nstring\nip is set for load-balancer ingress points that are IP based.\nports\nIngressPortStatus array\nports provides information about the ports exposed by this LoadBalancer.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Liveness, Readiness, and Startup Probes — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#what-s-next",
-  "text": "Learn how to\nConfigure Liveness, Readiness and Startup Probes\n.\nFor the full specification of probe-related fields, see the API reference:\nPod\n,\nContainer\n,\nProbe\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Learn how to\nConfigure Liveness, Readiness and Startup Probes\n.\nFor the full specification of probe-related fields, see the API reference:\nPod\n,\nContainer\n,\nProbe\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

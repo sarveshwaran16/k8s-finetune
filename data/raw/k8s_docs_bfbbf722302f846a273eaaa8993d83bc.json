@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — node.kubernetes.io/unreachable",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#node-kubernetes-io-unreachable",
-  "text": "Type: Taint\nExample:\nnode.kubernetes.io/unreachable: \"NoExecute\"\nUsed on: Node\nThe Node controller adds the taint to a Node corresponding to the\nNodeCondition\nReady\nbeing\nUnknown\n.\n\nType: Taint\nExample:\nnode.kubernetes.io/unschedulable: \"NoSchedule\"\nUsed on: Node\nThe taint will be added to a node when initializing the node to avoid race condition."
+  "text": "Type: Taint\nExample:\nnode.kubernetes.io/unreachable: \"NoExecute\"\nUsed on: Node\nThe Node controller adds the taint to a Node corresponding to the\nNodeCondition\nReady\nbeing\nUnknown\n.\n\nType: Taint\nExample:\nnode.kubernetes.io/unschedulable: \"NoSchedule\"\nUsed on: Node\nThe taint will be added to a node when initializing the node to avoid race condition.",
+  "failure_classes": []
 }

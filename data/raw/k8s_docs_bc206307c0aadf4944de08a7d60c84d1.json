@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Overprovision Node Capacity For A Cluster",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/node-overprovisioning/",
-  "text": "This page guides you through configuring\nNode\noverprovisioning in your Kubernetes cluster. Node overprovisioning is a strategy that proactively\nreserves a portion of your cluster's compute resources. This reservation helps reduce the time\nrequired to schedule new pods during scaling events, enhancing your cluster's responsiveness\nto sudden spikes in traffic or workload demands.\nBy maintaining some unused capacity, you ensure that resources are immediately available when\nnew pods are created, preventing them from entering a pending state while the cluster scales up."
+  "text": "This page guides you through configuring\nNode\noverprovisioning in your Kubernetes cluster. Node overprovisioning is a strategy that proactively\nreserves a portion of your cluster's compute resources. This reservation helps reduce the time\nrequired to schedule new pods during scaling events, enhancing your cluster's responsiveness\nto sudden spikes in traffic or workload demands.\nBy maintaining some unused capacity, you ensure that resources are immediately available when\nnew pods are created, preventing them from entering a pending state while the cluster scales up.",
+  "failure_classes": []
 }

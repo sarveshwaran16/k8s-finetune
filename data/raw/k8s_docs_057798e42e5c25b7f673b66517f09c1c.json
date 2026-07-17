@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pull an Image from a Private Registry — Create a Secret by providing credentials on the command line",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/#create-a-secret-by-providing-credentials-on-the-command-line",
-  "text": "Create this Secret, naming it\nregcred\n:\nkubectl create secret docker-registry regcred --docker-server\n=\n<your-registry-server> --docker-username\n=\n<your-name> --docker-password\n=\n<your-pword> --docker-email\n=\n<your-email>\nwhere:\n<your-registry-server>\nis your Private Docker Registry FQDN.\nUse\nhttps://index.docker.io/v1/\nfor DockerHub.\n<your-name>\nis your Docker username.\n<your-pword>\nis your Docker password.\n<your-email>\nis your Docker email.\nYou have successfully set your Docker credentials in the cluster as a Secret called\nregcred\n."
+  "text": "Create this Secret, naming it\nregcred\n:\nkubectl create secret docker-registry regcred --docker-server\n=\n<your-registry-server> --docker-username\n=\n<your-name> --docker-password\n=\n<your-pword> --docker-email\n=\n<your-email>\nwhere:\n<your-registry-server>\nis your Private Docker Registry FQDN.\nUse\nhttps://index.docker.io/v1/\nfor DockerHub.\n<your-name>\nis your Docker username.\n<your-pword>\nis your Docker password.\n<your-email>\nis your Docker email.\nYou have successfully set your Docker credentials in the cluster as a Secret called\nregcred\n.",
+  "failure_classes": []
 }

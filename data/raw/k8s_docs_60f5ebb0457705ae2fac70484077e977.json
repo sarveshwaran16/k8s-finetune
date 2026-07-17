@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Resource Quotas — Enabling Resource Quota",
   "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#enabling-resource-quota",
-  "text": "ResourceQuota support is enabled by default for many Kubernetes distributions. It is\nenabled when the\nAPI server\n--enable-admission-plugins=\nflag has\nResourceQuota\nas\none of its arguments.\nA resource quota is enforced in a particular namespace when there is a\nResourceQuota in that namespace.\n\nThe ResourceQuota mechanism lets you enforce different kinds of limits. This\nsection describes the types of limit that you can enforce."
+  "text": "ResourceQuota support is enabled by default for many Kubernetes distributions. It is\nenabled when the\nAPI server\n--enable-admission-plugins=\nflag has\nResourceQuota\nas\none of its arguments.\nA resource quota is enforced in a particular namespace when there is a\nResourceQuota in that namespace.\n\nThe ResourceQuota mechanism lets you enforce different kinds of limits. This\nsection describes the types of limit that you can enforce.",
+  "failure_classes": []
 }

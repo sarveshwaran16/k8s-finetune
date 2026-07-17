@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_config/kubeadm_config_validate/",
-  "text": "Read a file containing the kubeadm configuration API and report any validation problems\n\nThis command lets you validate a kubeadm configuration API file and report any warnings and errors.\nIf there are no errors the exit status will be zero, otherwise it will be non-zero.\nAny unmarshaling problems such as unknown API fields will trigger errors. Unknown API versions and\nfields with invalid values will also trigger errors. Any other errors or warnings may be reported\ndepending on contents of the input file.\nIn this version of kubeadm, the following API versions are supported:\nkubeadm.k8s.io/v1beta4\nkubeadm config validate [flags]"
+  "text": "Read a file containing the kubeadm configuration API and report any validation problems\n\nThis command lets you validate a kubeadm configuration API file and report any warnings and errors.\nIf there are no errors the exit status will be zero, otherwise it will be non-zero.\nAny unmarshaling problems such as unknown API fields will trigger errors. Unknown API versions and\nfields with invalid values will also trigger errors. Any other errors or warnings may be reported\ndepending on contents of the input file.\nIn this version of kubeadm, the following API versions are supported:\nkubeadm.k8s.io/v1beta4\nkubeadm config validate [flags]",
+  "failure_classes": []
 }

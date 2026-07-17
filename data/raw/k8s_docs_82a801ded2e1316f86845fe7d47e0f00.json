@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Container Runtime Interface (CRI)",
   "source_url": "https://kubernetes.io/docs/concepts/containers/cri/",
-  "text": "The CRI is a plugin interface which enables the kubelet to use a wide variety of\ncontainer runtimes, without having a need to recompile the cluster components.\nYou need a working\ncontainer runtime\non\neach Node in your cluster, so that the\nkubelet\ncan launch\nPods\nand their containers.\nThe Container Runtime Interface (CRI) is the main protocol for the communication between the\nkubelet\nand Container Runtime.\nThe Container Runtime Interface (CRI) is the main protocol for the communication between the\nkubelet\nand Container Runtime.\nThe Kubernetes Container Runtime Interface (CRI) defines the main\ngRPC\nprotocol for the communication between the\nnode components\nkubelet\nand\ncontainer runtime\n."
+  "text": "The CRI is a plugin interface which enables the kubelet to use a wide variety of\ncontainer runtimes, without having a need to recompile the cluster components.\nYou need a working\ncontainer runtime\non\neach Node in your cluster, so that the\nkubelet\ncan launch\nPods\nand their containers.\nThe Container Runtime Interface (CRI) is the main protocol for the communication between the\nkubelet\nand Container Runtime.\nThe Container Runtime Interface (CRI) is the main protocol for the communication between the\nkubelet\nand Container Runtime.\nThe Kubernetes Container Runtime Interface (CRI) defines the main\ngRPC\nprotocol for the communication between the\nnode components\nkubelet\nand\ncontainer runtime\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

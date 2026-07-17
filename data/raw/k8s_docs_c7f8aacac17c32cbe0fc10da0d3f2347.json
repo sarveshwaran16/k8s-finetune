@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Managing Service Accounts — Before you begin",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#before-you-begin",
-  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nTo be able to follow these steps exactly, ensure you have a namespace named\nexamplens\n.\nIf you don't, create one by running:\nkubectl create namespace examplens"
+  "text": "You need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud\nTo be able to follow these steps exactly, ensure you have a namespace named\nexamplens\n.\nIf you don't, create one by running:\nkubectl create namespace examplens",
+  "failure_classes": []
 }

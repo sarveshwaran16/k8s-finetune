@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubectl for Docker Users — docker ps",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/#docker-ps",
-  "text": "To list what is currently running, see\nkubectl get\n.\ndocker:\ndocker ps -a\nCONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                     PORTS                NAMES\n14636241935f        ubuntu:16.04        \"echo test\"              5 seconds ago        Exited (0) 5 seconds ago                        cocky_fermi\n55c103fa1296        nginx               \"nginx -g 'daemon of…\"   About a minute ago   Up About a minute          0.0.0.0:80->80/tcp   nginx-app\nkubectl:\nkubectl get po\nNAME                        READY     STATUS      RESTARTS   AGE\nnginx-app-8df569cb7-4gd89   1/1       Running     0          3m\nubuntu                      0/1       Completed   0          20s"
+  "text": "To list what is currently running, see\nkubectl get\n.\ndocker:\ndocker ps -a\nCONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                     PORTS                NAMES\n14636241935f        ubuntu:16.04        \"echo test\"              5 seconds ago        Exited (0) 5 seconds ago                        cocky_fermi\n55c103fa1296        nginx               \"nginx -g 'daemon of…\"   About a minute ago   Up About a minute          0.0.0.0:80->80/tcp   nginx-app\nkubectl:\nkubectl get po\nNAME                        READY     STATUS      RESTARTS   AGE\nnginx-app-8df569cb7-4gd89   1/1       Running     0          3m\nubuntu                      0/1       Completed   0          20s",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

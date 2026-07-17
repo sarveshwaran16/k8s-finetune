@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Versions in CustomResourceDefinitions",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definition-versioning/",
-  "text": "This page explains how to add versioning information to\nCustomResourceDefinitions\n, to indicate the stability\nlevel of your CustomResourceDefinitions or advance your API to a new version with conversion between API representations. It also describes how to upgrade an object from one version to another."
+  "text": "This page explains how to add versioning information to\nCustomResourceDefinitions\n, to indicate the stability\nlevel of your CustomResourceDefinitions or advance your API to a new version with conversion between API representations. It also describes how to upgrade an object from one version to another.",
+  "failure_classes": []
 }

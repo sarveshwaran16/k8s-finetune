@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "CSI Volume Cloning — Usage",
   "source_url": "https://kubernetes.io/docs/concepts/storage/volume-pvc-datasource/#usage",
-  "text": "Upon availability of the new PVC, the cloned PVC is consumed the same as other PVC.\nIt's also expected at this point that the newly created PVC is an independent object.\nIt can be consumed, cloned, snapshotted, or deleted independently and without\nconsideration for it's original dataSource PVC. This also implies that the source\nis not linked in any way to the newly created clone, it may also be modified or\ndeleted without affecting the newly created clone."
+  "text": "Upon availability of the new PVC, the cloned PVC is consumed the same as other PVC.\nIt's also expected at this point that the newly created PVC is an independent object.\nIt can be consumed, cloned, snapshotted, or deleted independently and without\nconsideration for it's original dataSource PVC. This also implies that the source\nis not linked in any way to the newly created clone, it may also be modified or\ndeleted without affecting the newly created clone.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

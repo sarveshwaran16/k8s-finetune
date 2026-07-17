@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Custom Resources — Accessing a custom resource",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#accessing-a-custom-resource",
-  "text": "Kubernetes\nclient libraries\ncan be used to access\ncustom resources. Not all client libraries support custom resources. The\nGo\nand\nPython\nclient\nlibraries do.\nWhen you add a custom resource, you can access it using:\nkubectl\nThe Kubernetes dynamic client.\nA REST client that you write.\nA client generated using\nKubernetes client generation tools\n(generating one is an advanced undertaking, but some projects may provide a client along with\nthe CRD or AA)."
+  "text": "Kubernetes\nclient libraries\ncan be used to access\ncustom resources. Not all client libraries support custom resources. The\nGo\nand\nPython\nclient\nlibraries do.\nWhen you add a custom resource, you can access it using:\nkubectl\nThe Kubernetes dynamic client.\nA REST client that you write.\nA client generated using\nKubernetes client generation tools\n(generating one is an advanced undertaking, but some projects may provide a client along with\nthe CRD or AA).",
+  "failure_classes": []
 }

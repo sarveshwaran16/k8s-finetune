@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Use Calico for NetworkPolicy — Creating a local Calico cluster with kubeadm",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/calico-network-policy/#creating-a-local-calico-cluster-with-kubeadm",
-  "text": "To get a local single-host Calico cluster in fifteen minutes using kubeadm, refer to the\nCalico Quickstart\n.\n\nOnce your cluster is running, you can follow the\nDeclare Network Policy\nto try out Kubernetes NetworkPolicy.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "To get a local single-host Calico cluster in fifteen minutes using kubeadm, refer to the\nCalico Quickstart\n.\n\nOnce your cluster is running, you can follow the\nDeclare Network Policy\nto try out Kubernetes NetworkPolicy.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

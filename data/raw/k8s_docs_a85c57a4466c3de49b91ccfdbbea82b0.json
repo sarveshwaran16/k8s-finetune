@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices — Mutation testing and validation",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#mutation-testing-validation",
-  "text": "This section provides recommendations for testing your mutating webhooks and\nvalidating mutated objects. In summary, these are as follows:\nTest webhooks in staging environments.\nAvoid mutations that violate validations.\nTest minor version upgrades for regressions and conflicts.\nValidate mutated objects before admission."
+  "text": "This section provides recommendations for testing your mutating webhooks and\nvalidating mutated objects. In summary, these are as follows:\nTest webhooks in staging environments.\nAvoid mutations that violate validations.\nTest minor version upgrades for regressions and conflicts.\nValidate mutated objects before admission.",
+  "failure_classes": []
 }

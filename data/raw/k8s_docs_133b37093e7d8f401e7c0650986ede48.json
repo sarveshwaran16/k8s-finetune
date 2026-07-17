@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ServerAddressByClientCIDR",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/server-address-by-client-cidr-v1-meta/",
-  "text": "apiVersion: meta/v1\nimport \"k8s.io/apimachinery/pkg/apis/meta/v1\"\n\nServerAddressByClientCIDR helps the client to determine the server address that they should use, depending on the clientCIDR that they match.\nField\nDescription\nclientCIDR\n*\nstring\nThe CIDR with which clients can match their IP to figure out the server address that they should use.\nserverAddress\n*\nstring\nAddress of this server, suitable for a client that matches the above CIDR. This can be a hostname, hostname:port, IP or IP:port."
+  "text": "apiVersion: meta/v1\nimport \"k8s.io/apimachinery/pkg/apis/meta/v1\"\n\nServerAddressByClientCIDR helps the client to determine the server address that they should use, depending on the clientCIDR that they match.\nField\nDescription\nclientCIDR\n*\nstring\nThe CIDR with which clients can match their IP to figure out the server address that they should use.\nserverAddress\n*\nstring\nAddress of this server, suitable for a client that matches the above CIDR. This can be a hostname, hostname:port, IP or IP:port.",
+  "failure_classes": []
 }

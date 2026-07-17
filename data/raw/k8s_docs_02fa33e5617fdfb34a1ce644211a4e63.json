@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod — EnvFromSource",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#EnvFromSource",
-  "text": "EnvFromSource represents the source of a set of ConfigMaps or Secrets\nField\nDescription\nconfigMapRef\nConfigMapEnvSource\nThe ConfigMap to select from\nprefix\nstring\nOptional text to prepend to the name of each environment variable. May consist of any printable ASCII characters except '='.\nsecretRef\nSecretEnvSource\nThe Secret to select from"
+  "text": "EnvFromSource represents the source of a set of ConfigMaps or Secrets\nField\nDescription\nconfigMapRef\nConfigMapEnvSource\nThe ConfigMap to select from\nprefix\nstring\nOptional text to prepend to the name of each environment variable. May consist of any printable ASCII characters except '='.\nsecretRef\nSecretEnvSource\nThe Secret to select from",
+  "failure_classes": []
 }

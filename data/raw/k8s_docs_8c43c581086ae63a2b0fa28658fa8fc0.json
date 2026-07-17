@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubernetes Scheduler",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/",
-  "text": "In Kubernetes,\nscheduling\nrefers to making sure that\nPods\nare matched to\nNodes\nso that\nKubelet\ncan run them.\n\nA scheduler watches for newly created Pods that have no Node assigned. For\nevery Pod that the scheduler discovers, the scheduler becomes responsible\nfor finding the best Node for that Pod to run on. The scheduler reaches\nthis placement decision taking into account the scheduling principles\ndescribed below.\nIf you want to understand why Pods are placed onto a particular Node,\nor if you're planning to implement a custom scheduler yourself, this\npage will help you learn about scheduling."
+  "text": "In Kubernetes,\nscheduling\nrefers to making sure that\nPods\nare matched to\nNodes\nso that\nKubelet\ncan run them.\n\nA scheduler watches for newly created Pods that have no Node assigned. For\nevery Pod that the scheduler discovers, the scheduler becomes responsible\nfor finding the best Node for that Pod to run on. The scheduler reaches\nthis placement decision taking into account the scheduling principles\ndescribed below.\nIf you want to understand why Pods are placed onto a particular Node,\nor if you're planning to implement a custom scheduler yourself, this\npage will help you learn about scheduling.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

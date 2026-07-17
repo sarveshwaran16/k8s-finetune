@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure GMSA for Windows Pods and containers — Authenticating to network shares using hostname or FQDN",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-gmsa/#authenticating-to-network-shares-using-hostname-or-fqdn",
-  "text": "If you are experiencing issues connecting to SMB shares from Pods using hostname or FQDN,\nbut are able to access the shares via their IPv4 address then make sure the following registry key is set on the Windows nodes.\nreg add\n\"HKLM\\SYSTEM\\CurrentControlSet\\Services\\hns\\State\"\n/v EnableCompartmentNamespace /t REG_DWORD /d 1\nRunning Pods will then need to be recreated to pick up the behavior changes.\nMore information on how this registry key is used can be found\nhere"
+  "text": "If you are experiencing issues connecting to SMB shares from Pods using hostname or FQDN,\nbut are able to access the shares via their IPv4 address then make sure the following registry key is set on the Windows nodes.\nreg add\n\"HKLM\\SYSTEM\\CurrentControlSet\\Services\\hns\\State\"\n/v EnableCompartmentNamespace /t REG_DWORD /d 1\nRunning Pods will then need to be recreated to pick up the behavior changes.\nMore information on how this registry key is used can be found\nhere",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "User Namespaces — Limitations",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/user-namespaces/#limitations",
-  "text": "When using a user namespace for the pod, it is disallowed to use other host\nnamespaces. In particular, if you set\nhostUsers: false\nthen you are not\nallowed to set any of:\nhostNetwork: true\nhostIPC: true\nhostPID: true\nNo container can use\nvolumeDevices\n(raw block volumes, like /dev/sda) either.\nThis includes all the container arrays in the pod spec:\ncontainers\ninitContainers\nephemeralContainers"
+  "text": "When using a user namespace for the pod, it is disallowed to use other host\nnamespaces. In particular, if you set\nhostUsers: false\nthen you are not\nallowed to set any of:\nhostNetwork: true\nhostIPC: true\nhostPID: true\nNo container can use\nvolumeDevices\n(raw block volumes, like /dev/sda) either.\nThis includes all the container arrays in the pod spec:\ncontainers\ninitContainers\nephemeralContainers",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extend the Kubernetes API with CustomResourceDefinitions — Delete a CustomResourceDefinition",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#delete-a-customresourcedefinition",
-  "text": "When you delete a CustomResourceDefinition, the server will uninstall the RESTful API endpoint\nand delete all custom objects stored in it.\nkubectl delete -f resourcedefinition.yaml\nkubectl get crontabs\nError from server (NotFound): Unable to list {\"stable.example.com\" \"v1\" \"crontabs\"}: the server could not\nfind the requested resource (get crontabs.stable.example.com)\nIf you later recreate the same CustomResourceDefinition, it will start out empty."
+  "text": "When you delete a CustomResourceDefinition, the server will uninstall the RESTful API endpoint\nand delete all custom objects stored in it.\nkubectl delete -f resourcedefinition.yaml\nkubectl get crontabs\nError from server (NotFound): Unable to list {\"stable.example.com\" \"v1\" \"crontabs\"}: the server could not\nfind the requested resource (get crontabs.stable.example.com)\nIf you later recreate the same CustomResourceDefinition, it will start out empty.",
+  "failure_classes": []
 }

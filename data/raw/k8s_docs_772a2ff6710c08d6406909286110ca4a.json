@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ingress",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/",
-  "text": "FEATURE STATE:\nKubernetes v1.19 [stable]\nAn API object that manages external access to the services in a cluster, typically HTTP.\nIngress may provide load balancing, SSL termination and name-based virtual hosting.\nAn API object that manages external access to the services in a cluster, typically HTTP.\nIngress may provide load balancing, SSL termination and name-based virtual hosting.\nThe Kubernetes project recommends using\nGateway\ninstead of\nIngress\n.\nThe Ingress API has been frozen.\nThis means that:\nThe Ingress API is generally available, and is subject to the\nstability guarantees\nfor generally available APIs.\nThe Kubernetes project has no plans to remove Ingress from Kubernetes.\nThe Ingress API is no longer being developed, and will have no further changes\nor updates made to it."
+  "text": "FEATURE STATE:\nKubernetes v1.19 [stable]\nAn API object that manages external access to the services in a cluster, typically HTTP.\nIngress may provide load balancing, SSL termination and name-based virtual hosting.\nAn API object that manages external access to the services in a cluster, typically HTTP.\nIngress may provide load balancing, SSL termination and name-based virtual hosting.\nThe Kubernetes project recommends using\nGateway\ninstead of\nIngress\n.\nThe Ingress API has been frozen.\nThis means that:\nThe Ingress API is generally available, and is subject to the\nstability guarantees\nfor generally available APIs.\nThe Kubernetes project has no plans to remove Ingress from Kubernetes.\nThe Ingress API is no longer being developed, and will have no further changes\nor updates made to it.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

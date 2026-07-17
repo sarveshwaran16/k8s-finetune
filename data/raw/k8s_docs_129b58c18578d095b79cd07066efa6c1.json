@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubeadm upgrade phases — kubeadm upgrade apply phase",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade-phase/#cmd-apply-phase",
-  "text": "Using the phases of\nkubeadm upgrade apply\n, you can choose to execute the separate steps of the initial upgrade\nof a control plane node.\nphase\npreflight\ncontrol-plane\nupload-config\nkubelet-config\nbootstrap-token\naddon\npost-upgrade\n\nUse this command to invoke single phase of the \"apply\" workflow\nkubeadm upgrade apply phase [flags]"
+  "text": "Using the phases of\nkubeadm upgrade apply\n, you can choose to execute the separate steps of the initial upgrade\nof a control plane node.\nphase\npreflight\ncontrol-plane\nupload-config\nkubelet-config\nbootstrap-token\naddon\npost-upgrade\n\nUse this command to invoke single phase of the \"apply\" workflow\nkubeadm upgrade apply phase [flags]",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

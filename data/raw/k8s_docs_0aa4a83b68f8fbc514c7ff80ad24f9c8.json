@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ServiceReference",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/service-reference-v1-admissionregistration/",
-  "text": "apiVersion: admissionregistration.k8s.io/v1\nimport \"k8s.io/api/admissionregistration/v1\"\n\nServiceReference holds a reference to Service.legacy.k8s.io\nField\nDescription\nname\n*\nstring\nname is the name of the service. Required\nnamespace\n*\nstring\nnamespace is the namespace of the service. Required\npath\nstring\npath is an optional URL path which will be sent in any request to this service.\nport\ninteger\nport is the port on the service that hosts the webhook. Default to 443 for backward compatibility. `port` should be a valid port number (1-65535, inclusive)."
+  "text": "apiVersion: admissionregistration.k8s.io/v1\nimport \"k8s.io/api/admissionregistration/v1\"\n\nServiceReference holds a reference to Service.legacy.k8s.io\nField\nDescription\nname\n*\nstring\nname is the name of the service. Required\nnamespace\n*\nstring\nnamespace is the namespace of the service. Required\npath\nstring\npath is an optional URL path which will be sent in any request to this service.\nport\ninteger\nport is the port on the service that hosts the webhook. Default to 443 for backward compatibility. `port` should be a valid port number (1-65535, inclusive).",
+  "failure_classes": []
 }

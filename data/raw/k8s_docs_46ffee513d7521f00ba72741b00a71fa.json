@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Security",
   "source_url": "https://kubernetes.io/docs/concepts/security/",
-  "text": "This section of the Kubernetes documentation aims to help you learn to run\nworkloads more securely, and about the essential aspects of keeping a\nKubernetes cluster secure.\nKubernetes is based on a cloud-native architecture, and draws on advice from the\nCNCF\nabout good practice for\ncloud native information security.\nRead\nCloud Native Security and Kubernetes\nfor the broader context about how to secure your cluster and the applications that\nyou're running on it."
+  "text": "This section of the Kubernetes documentation aims to help you learn to run\nworkloads more securely, and about the essential aspects of keeping a\nKubernetes cluster secure.\nKubernetes is based on a cloud-native architecture, and draws on advice from the\nCNCF\nabout good practice for\ncloud native information security.\nRead\nCloud Native Security and Kubernetes\nfor the broader context about how to secure your cluster and the applications that\nyou're running on it.",
+  "failure_classes": []
 }

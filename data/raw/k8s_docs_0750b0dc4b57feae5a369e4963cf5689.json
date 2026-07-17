@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubeadm join — Using join phases with kubeadm",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join/#join-phases",
-  "text": "Kubeadm allows you join a node to the cluster in phases using\nkubeadm join phase\n.\nTo view the ordered list of phases and sub-phases you can call\nkubeadm join --help\n. The list will be located\nat the top of the help screen and each phase will have a description next to it.\nNote that by calling\nkubeadm join\nall of the phases and sub-phases will be executed in this exact order.\nSome phases have unique flags, so if you want to have a look at the list of available options add\n--help\n, for example:\nkubeadm join phase kubelet-start --help\nSimilar to the\nkubeadm init phase\ncommand,\nkubeadm join phase\nallows you to skip a list of phases using the\n--skip-phases\nflag.\nFor example:\nsudo kubeadm join --skip-phases\n=\npreflight --config\n=\nconfig.yaml\nAlternatively, you can use the\nskipPhases\nfield in\nJoinConfiguration\n."
+  "text": "Kubeadm allows you join a node to the cluster in phases using\nkubeadm join phase\n.\nTo view the ordered list of phases and sub-phases you can call\nkubeadm join --help\n. The list will be located\nat the top of the help screen and each phase will have a description next to it.\nNote that by calling\nkubeadm join\nall of the phases and sub-phases will be executed in this exact order.\nSome phases have unique flags, so if you want to have a look at the list of available options add\n--help\n, for example:\nkubeadm join phase kubelet-start --help\nSimilar to the\nkubeadm init phase\ncommand,\nkubeadm join phase\nallows you to skip a list of phases using the\n--skip-phases\nflag.\nFor example:\nsudo kubeadm join --skip-phases\n=\npreflight --config\n=\nconfig.yaml\nAlternatively, you can use the\nskipPhases\nfield in\nJoinConfiguration\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

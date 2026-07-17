@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm init phase — Options inherited from parent commands",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init-phase/#options-inherited-from-parent-commands",
-  "text": "--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\n\nShows a command that can be used with\nkubeadm join\n.\nshow-join-command\n\nShow the join command for control-plane and worker node\nkubeadm init phase show-join-command [flags]"
+  "text": "--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\n\nShows a command that can be used with\nkubeadm join\n.\nshow-join-command\n\nShow the join command for control-plane and worker node\nkubeadm init phase show-join-command [flags]",
+  "failure_classes": []
 }

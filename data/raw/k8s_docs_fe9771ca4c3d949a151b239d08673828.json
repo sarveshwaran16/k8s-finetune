@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure Multiple Schedulers — Run the second scheduler in the cluster",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/#run-the-second-scheduler-in-the-cluster",
-  "text": "In order to run your scheduler in a Kubernetes cluster, create the deployment\nspecified in the config above in a Kubernetes cluster:\nkubectl create -f my-scheduler.yaml\nVerify that the scheduler pod is running:\nkubectl get pods --namespace\n=\nkube-system\nNAME                                           READY     STATUS    RESTARTS   AGE\n....\nmy-scheduler-lnf4s-4744f                       1/1       Running   0          2m\n...\nYou should see a \"Running\" my-scheduler pod, in addition to the default kube-scheduler\npod in this list."
+  "text": "In order to run your scheduler in a Kubernetes cluster, create the deployment\nspecified in the config above in a Kubernetes cluster:\nkubectl create -f my-scheduler.yaml\nVerify that the scheduler pod is running:\nkubectl get pods --namespace\n=\nkube-system\nNAME                                           READY     STATUS    RESTARTS   AGE\n....\nmy-scheduler-lnf4s-4744f                       1/1       Running   0          2m\n...\nYou should see a \"Running\" my-scheduler pod, in addition to the default kube-scheduler\npod in this list.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

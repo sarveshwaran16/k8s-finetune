@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — NodeDeclaredFeatureValidator",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#nodedeclaredfeaturevalidator",
-  "text": "Type\n: Validating.\nThis admission controller intercepts writes to bound Pods, to ensure that the\nchanges are compatible with the features declared by the node where the Pod is\ncurrently running. It uses the\n.status.declaredFeatures\nfield of the Node to\ndetermine the set of enabled features. If a Pod update requires a feature that\nis not listed in the features of its current node, the admission controller\nwill reject the update request. This prevents runtime failures due to feature\nmismatch after a Pod has been scheduled.\nThis admission controller is enabled by\ndefault if the\nNodeDeclaredFeatures\nfeature gate is enabled."
+  "text": "Type\n: Validating.\nThis admission controller intercepts writes to bound Pods, to ensure that the\nchanges are compatible with the features declared by the node where the Pod is\ncurrently running. It uses the\n.status.declaredFeatures\nfield of the Node to\ndetermine the set of enabled features. If a Pod update requires a feature that\nis not listed in the features of its current node, the admission controller\nwill reject the update request. This prevents runtime failures due to feature\nmismatch after a Pod has been scheduled.\nThis admission controller is enabled by\ndefault if the\nNodeDeclaredFeatures\nfeature gate is enabled.",
+  "failure_classes": []
 }

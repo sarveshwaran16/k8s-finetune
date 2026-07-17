@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Cluster Architecture — kube-controller-manager",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/#kube-controller-manager",
-  "text": "Control plane component that runs\ncontroller\nprocesses.\nLogically, each\ncontroller\nis a separate process, but to reduce complexity, they are all compiled into a single binary and run in a single process.\nThere are many different types of controllers. Some examples of them are:\nNode controller: Responsible for noticing and responding when nodes go down.\nJob controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.\nEndpointSlice controller: Populates EndpointSlice objects (to provide a link between Services and Pods).\nServiceAccount controller: Create default ServiceAccounts for new namespaces.\nThe above is not an exhaustive list."
+  "text": "Control plane component that runs\ncontroller\nprocesses.\nLogically, each\ncontroller\nis a separate process, but to reduce complexity, they are all compiled into a single binary and run in a single process.\nThere are many different types of controllers. Some examples of them are:\nNode controller: Responsible for noticing and responding when nodes go down.\nJob controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.\nEndpointSlice controller: Populates EndpointSlice objects (to provide a link between Services and Pods).\nServiceAccount controller: Create default ServiceAccounts for new namespaces.\nThe above is not an exhaustive list.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

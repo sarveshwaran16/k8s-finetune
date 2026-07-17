@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure a Pod to Use a ConfigMap — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#what-s-next",
-  "text": "Follow a real world example of\nConfiguring Redis using a ConfigMap\n.\nFollow an example of\nUpdating configuration via a ConfigMap\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Follow a real world example of\nConfiguring Redis using a ConfigMap\n.\nFollow an example of\nUpdating configuration via a ConfigMap\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

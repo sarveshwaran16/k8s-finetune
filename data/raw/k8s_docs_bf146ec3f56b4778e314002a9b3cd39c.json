@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Node Labels Populated By The Kubelet",
   "source_url": "https://kubernetes.io/docs/reference/node/node-labels/",
-  "text": "Kubernetes\nnodes\ncome pre-populated\nwith a standard set of\nlabels\n.\nYou can also set your own labels on nodes, either through the kubelet configuration or\nusing the Kubernetes API.\n\nThe preset labels that Kubernetes sets on nodes are:\nkubernetes.io/arch\nkubernetes.io/hostname\nkubernetes.io/os\nnode.kubernetes.io/instance-type\n(if known to the kubelet – Kubernetes may not have this information to set the label)\ntopology.kubernetes.io/region\n(if known to the kubelet – Kubernetes may not have this information to set the label)\ntopology.kubernetes.io/zone\n(if known to the kubelet – Kubernetes may not have this information to set the label)"
+  "text": "Kubernetes\nnodes\ncome pre-populated\nwith a standard set of\nlabels\n.\nYou can also set your own labels on nodes, either through the kubelet configuration or\nusing the Kubernetes API.\n\nThe preset labels that Kubernetes sets on nodes are:\nkubernetes.io/arch\nkubernetes.io/hostname\nkubernetes.io/os\nnode.kubernetes.io/instance-type\n(if known to the kubelet – Kubernetes may not have this information to set the label)\ntopology.kubernetes.io/region\n(if known to the kubelet – Kubernetes may not have this information to set the label)\ntopology.kubernetes.io/zone\n(if known to the kubelet – Kubernetes may not have this information to set the label)",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

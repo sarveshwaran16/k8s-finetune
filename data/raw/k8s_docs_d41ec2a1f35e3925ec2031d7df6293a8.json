@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl rollout undo — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_rollout/kubectl_rollout_undo/#synopsis",
-  "text": "Roll back to a previous rollout.\nkubectl rollout undo (TYPE NAME | TYPE/NAME) [flags]\n\n# Roll back to the previous deployment\n  kubectl rollout undo deployment/abc\n  \n  # Roll back to daemonset revision 3\n  kubectl rollout undo daemonset/abc --to-revision=3\n  \n  # Roll back to the previous deployment with dry-run\n  kubectl rollout undo --dry-run=server deployment/abc"
+  "text": "Roll back to a previous rollout.\nkubectl rollout undo (TYPE NAME | TYPE/NAME) [flags]\n\n# Roll back to the previous deployment\n  kubectl rollout undo deployment/abc\n  \n  # Roll back to daemonset revision 3\n  kubectl rollout undo daemonset/abc --to-revision=3\n  \n  # Roll back to the previous deployment with dry-run\n  kubectl rollout undo --dry-run=server deployment/abc",
+  "failure_classes": []
 }

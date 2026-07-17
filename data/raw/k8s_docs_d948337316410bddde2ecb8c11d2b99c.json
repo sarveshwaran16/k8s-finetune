@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl Usage Conventions — kubectl apply",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/conventions/#kubectl-apply",
-  "text": "You can use\nkubectl apply\nto create or update resources. For more information about using kubectl apply to update resources, see\nKubectl Book\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "You can use\nkubectl apply\nto create or update resources. For more information about using kubectl apply to update resources, see\nKubectl Book\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

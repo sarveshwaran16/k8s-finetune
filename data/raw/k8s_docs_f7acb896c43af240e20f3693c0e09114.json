@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cluster Management",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/",
-  "text": "Use declarative admission policies to validate or mutate resources at admission time using Common Expression Language (CEL).\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Use declarative admission policies to validate or mutate resources at admission time using Common Expression Language (CEL).\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

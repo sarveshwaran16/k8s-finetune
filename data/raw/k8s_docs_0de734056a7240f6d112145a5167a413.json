@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — role",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-role-em-",
-  "text": "Create a role named \"pod-reader\" that allows user to perform \"get\", \"watch\" and \"list\" on pods\nkubectl create role pod-reader\n--verb\n=get\n--verb\n=list\n--verb\n=watch\n--resource\n=pods\nCreate a role named \"pod-reader\" with ResourceName specified\nkubectl create role pod-reader\n--verb\n=get\n--resource\n=pods\n--resource-name\n=readablepod\n--resource-name\n=anotherpod\nCreate a role named \"foo\" with API Group specified\nkubectl create role foo\n--verb\n=get,list,watch\n--resource\n=rs.apps\nCreate a role named \"foo\" with SubResource specified\nkubectl create role foo\n--verb\n=get,list,watch\n--resource\n=pods,pods/status\nCreate a role with single rule."
+  "text": "Create a role named \"pod-reader\" that allows user to perform \"get\", \"watch\" and \"list\" on pods\nkubectl create role pod-reader\n--verb\n=get\n--verb\n=list\n--verb\n=watch\n--resource\n=pods\nCreate a role named \"pod-reader\" with ResourceName specified\nkubectl create role pod-reader\n--verb\n=get\n--resource\n=pods\n--resource-name\n=readablepod\n--resource-name\n=anotherpod\nCreate a role named \"foo\" with API Group specified\nkubectl create role foo\n--verb\n=get,list,watch\n--resource\n=rs.apps\nCreate a role named \"foo\" with SubResource specified\nkubectl create role foo\n--verb\n=get,list,watch\n--resource\n=pods,pods/status\nCreate a role with single rule.",
+  "failure_classes": []
 }

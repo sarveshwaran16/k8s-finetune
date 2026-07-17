@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Manifest-Based Admission Control — Upgrade and downgrade",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/manifest-admission-control/#upgrade-downgrade",
-  "text": "Upgrade\n: Enabling the feature and providing manifest configuration is\nopt-in. Existing clusters without manifest configuration see no behavioral\nchange.\nDowngrade\n: Before downgrading to a version without this feature:\nRemove\nstaticManifestsDir\nentries from the\nAdmissionConfiguration\nfile.\nIf relying on manifest-based policies, recreate them as API objects where\npossible.\nRestart the kube-apiserver."
+  "text": "Upgrade\n: Enabling the feature and providing manifest configuration is\nopt-in. Existing clusters without manifest configuration see no behavioral\nchange.\nDowngrade\n: Before downgrading to a version without this feature:\nRemove\nstaticManifestsDir\nentries from the\nAdmissionConfiguration\nfile.\nIf relying on manifest-based policies, recreate them as API objects where\npossible.\nRestart the kube-apiserver.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

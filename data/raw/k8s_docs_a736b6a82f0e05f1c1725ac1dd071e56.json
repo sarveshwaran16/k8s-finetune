@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Run a Stateless Application Using a Deployment — Deleting a deployment",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/#deleting-a-deployment",
-  "text": "Delete the deployment by name:\nkubectl delete deployment nginx-deployment\n\nThe preferred way to create a replicated application is to use a Deployment,\nwhich in turn uses a ReplicaSet. Before the Deployment and ReplicaSet were\nadded to Kubernetes, replicated applications were configured using a\nReplicationController\n."
+  "text": "Delete the deployment by name:\nkubectl delete deployment nginx-deployment\n\nThe preferred way to create a replicated application is to use a Deployment,\nwhich in turn uses a ReplicaSet. Before the Deployment and ReplicaSet were\nadded to Kubernetes, replicated applications were configured using a\nReplicationController\n.",
+  "failure_classes": []
 }

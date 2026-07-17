@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl explain — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_explain/#synopsis",
-  "text": "Describe fields and structure of various resources.\nThis command describes the fields associated with each supported API resource. Fields are identified via a simple JSONPath identifier:\n&lt;type&gt;.&lt;fieldName&gt;[.&lt;fieldName&gt;]\nInformation about each field is retrieved from the server in OpenAPI format.\nUse \"kubectl api-resources\" for a complete list of supported resources.\nkubectl explain TYPE [--recursive=FALSE|TRUE] [--api-version=api-version-group] [-o|--output=plaintext|plaintext-openapiv2]"
+  "text": "Describe fields and structure of various resources.\nThis command describes the fields associated with each supported API resource. Fields are identified via a simple JSONPath identifier:\n&lt;type&gt;.&lt;fieldName&gt;[.&lt;fieldName&gt;]\nInformation about each field is retrieved from the server in OpenAPI format.\nUse \"kubectl api-resources\" for a complete list of supported resources.\nkubectl explain TYPE [--recursive=FALSE|TRUE] [--api-version=api-version-group] [-o|--output=plaintext|plaintext-openapiv2]",
+  "failure_classes": []
 }

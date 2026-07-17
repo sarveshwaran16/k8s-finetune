@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices — Use a high-availability deployment model",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#ha-deployment",
-  "text": "Consider your cluster's availability requirements when designing your webhook.\nFor example, during node downtime or zonal outages, Kubernetes marks Pods as\nNotReady\nto allow load balancers to reroute traffic to available zones and\nnodes. These updates to Pods might trigger your mutating webhooks. Depending on\nthe number of affected Pods, the mutating webhook server has a risk of timing\nout or causing delays in Pod processing. As a result, traffic won't get\nrerouted as quickly as you need.\nConsider situations like the preceding example when writing your webhooks.\nExclude operations that are a result of Kubernetes responding to unavoidable\nincidents."
+  "text": "Consider your cluster's availability requirements when designing your webhook.\nFor example, during node downtime or zonal outages, Kubernetes marks Pods as\nNotReady\nto allow load balancers to reroute traffic to available zones and\nnodes. These updates to Pods might trigger your mutating webhooks. Depending on\nthe number of affected Pods, the mutating webhook server has a risk of timing\nout or causing delays in Pod processing. As a result, traffic won't get\nrerouted as quickly as you need.\nConsider situations like the preceding example when writing your webhooks.\nExclude operations that are a result of Kubernetes responding to unavoidable\nincidents.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

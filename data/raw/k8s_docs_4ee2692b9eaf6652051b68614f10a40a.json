@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Object Names and IDs",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/names/",
-  "text": "Each\nobject\nin your cluster has a\nName\nthat is unique for that type of resource.\nEvery Kubernetes object also has a\nUID\nthat is unique across your whole cluster.\nFor example, you can only have one Pod named\nmyapp-1234\nwithin the same\nnamespace\n, but you can have one Pod and one Deployment that are each named\nmyapp-1234\n.\nFor non-unique user-provided attributes, Kubernetes provides\nlabels\nand\nannotations\n."
+  "text": "Each\nobject\nin your cluster has a\nName\nthat is unique for that type of resource.\nEvery Kubernetes object also has a\nUID\nthat is unique across your whole cluster.\nFor example, you can only have one Pod named\nmyapp-1234\nwithin the same\nnamespace\n, but you can have one Pod and one Deployment that are each named\nmyapp-1234\n.\nFor non-unique user-provided attributes, Kubernetes provides\nlabels\nand\nannotations\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — service.beta.kubernetes.io/azure-load-balancer-disable-tcp-reset (deprecated)",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#service-beta-kubernetes-azure-load-balancer-disble-tcp-reset",
-  "text": "Example:\nservice.beta.kubernetes.io/azure-load-balancer-disable-tcp-reset: \"false\"\nUsed on: Service\nThis annotation only works for Azure standard load balancer backed service.\nThis annotation is used on the Service to specify whether the load balancer\nshould disable or enable TCP reset on idle timeout. If enabled, it helps\napplications to behave more predictably, to detect the termination of a connection,\nremove expired connections and initiate new connections.\nYou can set the value to be either true or false.\nSee\nLoad Balancer TCP Reset\nfor more information."
+  "text": "Example:\nservice.beta.kubernetes.io/azure-load-balancer-disable-tcp-reset: \"false\"\nUsed on: Service\nThis annotation only works for Azure standard load balancer backed service.\nThis annotation is used on the Service to specify whether the load balancer\nshould disable or enable TCP reset on idle timeout. If enabled, it helps\napplications to behave more predictably, to detect the termination of a connection,\nremove expired connections and initiate new connections.\nYou can set the value to be either true or false.\nSee\nLoad Balancer TCP Reset\nfor more information.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

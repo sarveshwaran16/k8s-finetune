@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure the Aggregation Layer — Extension Apiserver Authorizes the Request",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-aggregation-layer/#extension-apiserver-authorizes-the-request",
-  "text": "The extension apiserver now can validate that the user/group retrieved from\nthe headers are authorized to execute the given request. It does so by sending\na standard\nSubjectAccessReview\nrequest to the Kubernetes apiserver.\nIn order for the extension apiserver to be authorized itself to submit the\nSubjectAccessReview\nrequest to the Kubernetes apiserver, it needs the correct permissions.\nKubernetes includes a default\nClusterRole\nnamed\nsystem:auth-delegator\nthat\nhas the appropriate permissions. It can be granted to the extension apiserver's service account."
+  "text": "The extension apiserver now can validate that the user/group retrieved from\nthe headers are authorized to execute the given request. It does so by sending\na standard\nSubjectAccessReview\nrequest to the Kubernetes apiserver.\nIn order for the extension apiserver to be authorized itself to submit the\nSubjectAccessReview\nrequest to the Kubernetes apiserver, it needs the correct permissions.\nKubernetes includes a default\nClusterRole\nnamed\nsystem:auth-delegator\nthat\nhas the appropriate permissions. It can be granted to the extension apiserver's service account.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Topology Spread Constraints",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/",
-  "text": "You can use\ntopology spread constraints\nto control how\nPods\nare spread across your cluster\namong failure-domains such as regions, zones, nodes, and other user-defined topology\ndomains. This can help to achieve high availability as well as efficient resource\nutilization.\nYou can set\ncluster-level constraints\nas a default,\nor configure topology spread constraints for individual workloads."
+  "text": "You can use\ntopology spread constraints\nto control how\nPods\nare spread across your cluster\namong failure-domains such as regions, zones, nodes, and other user-defined topology\ndomains. This can help to achieve high availability as well as efficient resource\nutilization.\nYou can set\ncluster-level constraints\nas a default,\nor configure topology spread constraints for individual workloads.",
+  "failure_classes": []
 }

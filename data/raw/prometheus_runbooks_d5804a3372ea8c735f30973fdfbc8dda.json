@@ -3,5 +3,8 @@
   "source": "prometheus_runbooks",
   "title": "AlertmanagerClusterCrashlooping#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerclustercrashlooping/",
-  "text": "Alertmanager Cluster Crashlooping\nAlertmanagerClusterCrashlooping\n#\nMeaning\n#\nHalf or more of the Alertmanager instances within the same cluster are crashlooping.\nImpact\n#\nAlerts could be notified multiple time unless pods are crashing to fast and no alerts can be sent.\nDiagnosis\n#\nkubectl get pod -l app\n=\nalertmanager\n\nNAMESPACE   NAME                    READY   STATUS              RESTARTS    AGE\ndefault     alertmanager-main-0     1/2     CrashLoopBackOff\n37107\n2d\ndefault     alertmanager-main-1     2/2     Running\n0\n43d\ndefault     alertmanager-main-2     2/2     Running\n0\n43d\nFind the root cause by looking to events for a given pod/deployement\nkubectl get events --field-selector involvedObject.name\n=\nalertmanager-main-0\nMitigation\n#\nMake sure pods have enough resources (CPU, MEM) to work correctly."
+  "text": "Alertmanager Cluster Crashlooping\nAlertmanagerClusterCrashlooping\n#\nMeaning\n#\nHalf or more of the Alertmanager instances within the same cluster are crashlooping.\nImpact\n#\nAlerts could be notified multiple time unless pods are crashing to fast and no alerts can be sent.\nDiagnosis\n#\nkubectl get pod -l app\n=\nalertmanager\n\nNAMESPACE   NAME                    READY   STATUS              RESTARTS    AGE\ndefault     alertmanager-main-0     1/2     CrashLoopBackOff\n37107\n2d\ndefault     alertmanager-main-1     2/2     Running\n0\n43d\ndefault     alertmanager-main-2     2/2     Running\n0\n43d\nFind the root cause by looking to events for a given pod/deployement\nkubectl get events --field-selector involvedObject.name\n=\nalertmanager-main-0\nMitigation\n#\nMake sure pods have enough resources (CPU, MEM) to work correctly.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

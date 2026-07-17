@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dynamic Admission Control — Prerequisites",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#prerequisites",
-  "text": "Ensure that MutatingAdmissionWebhook and ValidatingAdmissionWebhook\nadmission controllers are enabled.\nHere\nis a recommended set of admission controllers to enable in general.\nEnsure that the\nadmissionregistration.k8s.io/v1\nAPI is enabled.\nEnsure that MutatingAdmissionWebhook and ValidatingAdmissionWebhook\nadmission controllers are enabled.\nHere\nis a recommended set of admission controllers to enable in general.\nEnsure that the\nadmissionregistration.k8s.io/v1\nAPI is enabled."
+  "text": "Ensure that MutatingAdmissionWebhook and ValidatingAdmissionWebhook\nadmission controllers are enabled.\nHere\nis a recommended set of admission controllers to enable in general.\nEnsure that the\nadmissionregistration.k8s.io/v1\nAPI is enabled.\nEnsure that MutatingAdmissionWebhook and ValidatingAdmissionWebhook\nadmission controllers are enabled.\nHere\nis a recommended set of admission controllers to enable in general.\nEnsure that the\nadmissionregistration.k8s.io/v1\nAPI is enabled.",
+  "failure_classes": []
 }

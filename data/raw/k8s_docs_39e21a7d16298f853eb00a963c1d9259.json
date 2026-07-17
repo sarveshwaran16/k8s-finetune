@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "TLS bootstrapping — Client and serving certificates",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/#client-and-serving-certificates",
-  "text": "All of the above relate to kubelet\nclient\ncertificates, specifically, the certificates a kubelet\nuses to authenticate to kube-apiserver.\nA kubelet also can use\nserving\ncertificates. The kubelet itself exposes an https endpoint for certain features.\nTo secure these, the kubelet can do one of:\nuse provided key and certificate, via the\n--tls-private-key-file\nand\n--tls-cert-file\nflags\ncreate self-signed key and certificate, if a key and certificate are not provided\nrequest serving certificates from the cluster server, via the CSR API\nThe client certificate provided by TLS bootstrapping is signed, by default, for\nclient auth\nonly, and thus cannot\nbe used as serving certificates, or\nserver auth\n.\nHowever, you\ncan\nenable its server certificate, at least partially, via certificate rotation."
+  "text": "All of the above relate to kubelet\nclient\ncertificates, specifically, the certificates a kubelet\nuses to authenticate to kube-apiserver.\nA kubelet also can use\nserving\ncertificates. The kubelet itself exposes an https endpoint for certain features.\nTo secure these, the kubelet can do one of:\nuse provided key and certificate, via the\n--tls-private-key-file\nand\n--tls-cert-file\nflags\ncreate self-signed key and certificate, if a key and certificate are not provided\nrequest serving certificates from the cluster server, via the CSR API\nThe client certificate provided by TLS bootstrapping is signed, by default, for\nclient auth\nonly, and thus cannot\nbe used as serving certificates, or\nserver auth\n.\nHowever, you\ncan\nenable its server certificate, at least partially, via certificate rotation.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

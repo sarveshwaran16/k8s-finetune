@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Pod behavior during kubelet restarts",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#kubelet-restarts",
-  "text": "If you restart the kubelet, Pods (and their containers) continue to run\neven during the restart.\nWhen there are running Pods on a node, stopping or restarting the kubelet\non that node does\nnot\ncause the kubelet to stop all local Pods\nbefore the kubelet itself stops.\nTo stop the Pods on a node, you can use\nkubectl drain\n."
+  "text": "If you restart the kubelet, Pods (and their containers) continue to run\neven during the restart.\nWhen there are running Pods on a node, stopping or restarting the kubelet\non that node does\nnot\ncause the kubelet to stop all local Pods\nbefore the kubelet itself stops.\nTo stop the Pods on a node, you can use\nkubectl drain\n.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

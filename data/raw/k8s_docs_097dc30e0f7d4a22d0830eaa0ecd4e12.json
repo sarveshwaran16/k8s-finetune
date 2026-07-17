@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure Multiple Schedulers",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/configure-multiple-schedulers/",
-  "text": "Kubernetes ships with a default scheduler that is described\nhere\n.\nIf the default scheduler does not suit your needs you can implement your own scheduler.\nMoreover, you can even run multiple schedulers simultaneously alongside the default\nscheduler and instruct Kubernetes what scheduler to use for each of your pods. Let's\nlearn how to run multiple schedulers in Kubernetes with an example.\nA detailed description of how to implement a scheduler is outside the scope of this\ndocument. Please refer to the kube-scheduler implementation in\npkg/scheduler\nin the Kubernetes source directory for a canonical example."
+  "text": "Kubernetes ships with a default scheduler that is described\nhere\n.\nIf the default scheduler does not suit your needs you can implement your own scheduler.\nMoreover, you can even run multiple schedulers simultaneously alongside the default\nscheduler and instruct Kubernetes what scheduler to use for each of your pods. Let's\nlearn how to run multiple schedulers in Kubernetes with an example.\nA detailed description of how to implement a scheduler is outside the scope of this\ndocument. Please refer to the kube-scheduler implementation in\npkg/scheduler\nin the Kubernetes source directory for a canonical example.",
+  "failure_classes": []
 }

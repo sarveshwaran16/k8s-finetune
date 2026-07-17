@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configuring a cgroup driver — Migrating to thesystemddriver",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/#migrating-to-the-systemd-driver",
-  "text": "To change the cgroup driver of an existing kubeadm cluster from\ncgroupfs\nto\nsystemd\nin-place,\na similar procedure to a kubelet upgrade is required. This must include both\nsteps outlined below.\n\nCall\nkubectl edit cm kubelet-config -n kube-system\n.\nEither modify the existing\ncgroupDriver\nvalue or add a new field that looks like this:\ncgroupDriver\n:\nsystemd\nThis field must be present under the\nkubelet:\nsection of the ConfigMap.\nCall\nkubectl edit cm kubelet-config -n kube-system\n.\nEither modify the existing\ncgroupDriver\nvalue or add a new field that looks like this:\ncgroupDriver\n:\nsystemd\nThis field must be present under the\nkubelet:\nsection of the ConfigMap."
+  "text": "To change the cgroup driver of an existing kubeadm cluster from\ncgroupfs\nto\nsystemd\nin-place,\na similar procedure to a kubelet upgrade is required. This must include both\nsteps outlined below.\n\nCall\nkubectl edit cm kubelet-config -n kube-system\n.\nEither modify the existing\ncgroupDriver\nvalue or add a new field that looks like this:\ncgroupDriver\n:\nsystemd\nThis field must be present under the\nkubelet:\nsection of the ConfigMap.\nCall\nkubectl edit cm kubelet-config -n kube-system\n.\nEither modify the existing\ncgroupDriver\nvalue or add a new field that looks like this:\ncgroupDriver\n:\nsystemd\nThis field must be present under the\nkubelet:\nsection of the ConfigMap.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

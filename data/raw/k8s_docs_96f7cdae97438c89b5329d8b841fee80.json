@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm Configuration (v1beta3) — BootstrapTokenString",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta3/#BootstrapTokenString",
-  "text": "Appears in:\nBootstrapToken\nBootstrapTokenString is a token of the format\nabcdef.abcdef0123456789\nthat is used\nfor both validation of the practically of the API server from a joining node's point\nof view and as an authentication method for the node in the bootstrap phase of\n\"kubeadm join\". This token is and should be short-lived.\nField\nDescription\n-\n[Required]\nstring\nNo description provided.\n-\n[Required]\nstring\nNo description provided."
+  "text": "Appears in:\nBootstrapToken\nBootstrapTokenString is a token of the format\nabcdef.abcdef0123456789\nthat is used\nfor both validation of the practically of the API server from a joining node's point\nof view and as an authentication method for the node in the bootstrap phase of\n\"kubeadm join\". This token is and should be short-lived.\nField\nDescription\n-\n[Required]\nstring\nNo description provided.\n-\n[Required]\nstring\nNo description provided.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Common Expression Language in Kubernetes",
   "source_url": "https://kubernetes.io/docs/reference/using-api/cel/",
-  "text": "The\nCommon Expression Language (CEL)\nis used\nin the Kubernetes API to declare validation rules, policy rules, and other\nconstraints or conditions.\nCEL expressions are evaluated directly in the\nAPI server\n, making CEL a\nconvenient alternative to out-of-process mechanisms, such as webhooks, for many\nextensibility use cases. Your CEL expressions continue to execute so long as the\ncontrol plane's API server component remains available."
+  "text": "The\nCommon Expression Language (CEL)\nis used\nin the Kubernetes API to declare validation rules, policy rules, and other\nconstraints or conditions.\nCEL expressions are evaluated directly in the\nAPI server\n, making CEL a\nconvenient alternative to out-of-process mechanisms, such as webhooks, for many\nextensibility use cases. Your CEL expressions continue to execute so long as the\ncontrol plane's API server component remains available.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "HorizontalPodAutoscaler — MetricValueStatus",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#MetricValueStatus",
-  "text": "MetricValueStatus holds the current value for a metric\nField\nDescription\naverageUtilization\ninteger\ncurrentAverageUtilization is the current value of the average of the resource metric across all relevant pods, represented as a percentage of the requested value of the resource for the pods.\naverageValue\nQuantity\naverageValue is the current value of the average of the metric across all relevant pods (as a quantity)\nvalue\nQuantity\nvalue is the current value of the metric (as a quantity)."
+  "text": "MetricValueStatus holds the current value for a metric\nField\nDescription\naverageUtilization\ninteger\ncurrentAverageUtilization is the current value of the average of the resource metric across all relevant pods, represented as a percentage of the requested value of the resource for the pods.\naverageValue\nQuantity\naverageValue is the current value of the average of the metric across all relevant pods (as a quantity)\nvalue\nQuantity\nvalue is the current value of the metric (as a quantity).",
+  "failure_classes": []
 }

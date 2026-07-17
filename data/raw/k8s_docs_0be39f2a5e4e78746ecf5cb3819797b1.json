@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — version",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#version",
-  "text": "Print the client and server versions for the current context\nkubectl\nversion\nPrint the client and server version information for the current context.\n\n$ kubectl version\n\nName\nShorthand\nDefault\nUsage\nclient\nfalse\nIf true, shows client version only (no server required).\noutput\no\nOne of 'yaml' or 'json'.\nshort\nfalse\nIf true, print just the version number."
+  "text": "Print the client and server versions for the current context\nkubectl\nversion\nPrint the client and server version information for the current context.\n\n$ kubectl version\n\nName\nShorthand\nDefault\nUsage\nclient\nfalse\nIf true, shows client version only (no server required).\noutput\no\nOne of 'yaml' or 'json'.\nshort\nfalse\nIf true, print just the version number.",
+  "failure_classes": []
 }

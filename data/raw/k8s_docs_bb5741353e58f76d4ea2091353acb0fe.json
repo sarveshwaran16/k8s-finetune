@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Declarative API Validation — +k8s:ifEnabled",
   "source_url": "https://kubernetes.io/docs/reference/using-api/declarative-validation/#tag-ifEnabled",
-  "text": "Description:\nDeclares a validation that only applies when an option is enabled.\nStability Level:\nAlpha\nArguments:\n<option>\n(string, required): The name of the option.\nPayload:\n<validation-tag>\n: This validation tag will be evaluated only if the validation option is enabled.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:ifEnabled(\"my-feature\")=+k8s:required\nMyField\nstring\n`json:\"myField\"`\n}\nIn this example,\nMyField\nis required only if the \"my-feature\" option is enabled."
+  "text": "Description:\nDeclares a validation that only applies when an option is enabled.\nStability Level:\nAlpha\nArguments:\n<option>\n(string, required): The name of the option.\nPayload:\n<validation-tag>\n: This validation tag will be evaluated only if the validation option is enabled.\nUsage Example:\ntype\nMyStruct\nstruct\n{\n// +k8s:ifEnabled(\"my-feature\")=+k8s:required\nMyField\nstring\n`json:\"myField\"`\n}\nIn this example,\nMyField\nis required only if the \"my-feature\" option is enabled.",
+  "failure_classes": []
 }

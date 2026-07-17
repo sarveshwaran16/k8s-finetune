@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Readiness probe",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#readiness-probe",
-  "text": "Readiness probes determine when a container is ready to accept traffic.\nThis is useful when waiting for an application to perform time-consuming initial\ntasks, such as establishing network connections, loading files, and warming\ncaches.\nReadiness probes can also be useful later in the container's lifecycle,\nfor example, when recovering from temporary faults or overloads.\nIf the readiness probe returns a failed state, the\nEndpointSlice\ncontroller removes the Pod's IP address from the EndpointSlices of all Services\nthat match the Pod.\nReadiness probes run on the container during its whole lifecycle."
+  "text": "Readiness probes determine when a container is ready to accept traffic.\nThis is useful when waiting for an application to perform time-consuming initial\ntasks, such as establishing network connections, loading files, and warming\ncaches.\nReadiness probes can also be useful later in the container's lifecycle,\nfor example, when recovering from temporary faults or overloads.\nIf the readiness probe returns a failed state, the\nEndpointSlice\ncontroller removes the Pod's IP address from the EndpointSlices of all Services\nthat match the Pod.\nReadiness probes run on the container during its whole lifecycle.",
+  "failure_classes": []
 }

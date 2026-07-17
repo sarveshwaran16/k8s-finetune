@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Node Autoscaling — Vertical workload autoscaling",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/#vertical-workload-autoscaling",
-  "text": "When using Node autoscaling, it's important to set Pod resource requests correctly. If the requests\nof a given Pod are too low, provisioning a new Node for it might not help the Pod actually run.\nIf the requests of a given Pod are too high, it might incorrectly prevent consolidating its Node.\nVertical workload autoscaling\nautomatically adjusts the resource requests of your Pods based on their historical resource usage.\nYou can use Node autoscaling together with vertical workload autoscaling in order to adjust the\nresource requests of your Pods while preserving Node autoscaling capabilities in your cluster."
+  "text": "When using Node autoscaling, it's important to set Pod resource requests correctly. If the requests\nof a given Pod are too low, provisioning a new Node for it might not help the Pod actually run.\nIf the requests of a given Pod are too high, it might incorrectly prevent consolidating its Node.\nVertical workload autoscaling\nautomatically adjusts the resource requests of your Pods based on their historical resource usage.\nYou can use Node autoscaling together with vertical workload autoscaling in order to adjust the\nresource requests of your Pods while preserving Node autoscaling capabilities in your cluster.",
+  "failure_classes": []
 }

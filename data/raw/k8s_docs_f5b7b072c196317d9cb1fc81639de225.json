@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Resize CPU and Memory Resources assigned to Containers — How kubelet retries Deferred resizes",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/#how-kubelet-retries-deferred-resizes",
-  "text": "If the requested resize is\nDeferred\n, the kubelet will periodically re-attempt the resize,\nfor example when another pod is removed or scaled down. If there are multiple deferred\nresizes, they are retried according to the following priority:\nPods with a higher Priority (based on PriorityClass) will have their resize request retried first.\nIf two pods have the same Priority, resize of guaranteed pods will be retried before the resize of burstable pods.\nIf all else is the same, pods that have been in the Deferred state longer will be prioritized.\nA higher priority resize being marked as pending will not block the remaining pending resizes from being attempted;\nall remaining pending resizes will still be retried even if a higher-priority resize gets deferred again."
+  "text": "If the requested resize is\nDeferred\n, the kubelet will periodically re-attempt the resize,\nfor example when another pod is removed or scaled down. If there are multiple deferred\nresizes, they are retried according to the following priority:\nPods with a higher Priority (based on PriorityClass) will have their resize request retried first.\nIf two pods have the same Priority, resize of guaranteed pods will be retried before the resize of burstable pods.\nIf all else is the same, pods that have been in the Deferred state longer will be prioritized.\nA higher priority resize being marked as pending will not block the remaining pending resizes from being attempted;\nall remaining pending resizes will still be retried even if a higher-priority resize gets deferred again.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

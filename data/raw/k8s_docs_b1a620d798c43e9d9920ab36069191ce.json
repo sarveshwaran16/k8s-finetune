@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Hardening Guide - Scheduler Configuration",
   "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/scheduler/",
-  "text": "The Kubernetes\nscheduler\nis\none of the critical components of the\ncontrol plane\n.\nThis document covers how to improve the security posture of the Scheduler.\nA misconfigured scheduler can have security implications.\nSuch a scheduler can target specific nodes and evict the workloads or applications that are sharing the node and its resources.\nThis can aid an attacker with a\nYo-Yo attack\n: an attack on a vulnerable autoscaler."
+  "text": "The Kubernetes\nscheduler\nis\none of the critical components of the\ncontrol plane\n.\nThis document covers how to improve the security posture of the Scheduler.\nA misconfigured scheduler can have security implications.\nSuch a scheduler can target specific nodes and evict the workloads or applications that are sharing the node and its resources.\nThis can aid an attacker with a\nYo-Yo attack\n: an attack on a vulnerable autoscaler.",
+  "failure_classes": []
 }

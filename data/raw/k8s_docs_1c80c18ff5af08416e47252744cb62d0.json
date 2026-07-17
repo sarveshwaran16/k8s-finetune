@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Install and Set Up kubectl on Windows — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#what-s-next",
-  "text": "Learn about\nkubectl\nand its role in the Kubernetes ecosystem.\nInstall Minikube\nSee the\ngetting started guides\nfor more about creating clusters.\nLearn how to launch and expose your application.\nIf you need access to a cluster you didn't create, see the\nSharing Cluster Access document\n.\nRead the\nkubectl reference docs"
+  "text": "Learn about\nkubectl\nand its role in the Kubernetes ecosystem.\nInstall Minikube\nSee the\ngetting started guides\nfor more about creating clusters.\nLearn how to launch and expose your application.\nIf you need access to a cluster you didn't create, see the\nSharing Cluster Access document\n.\nRead the\nkubectl reference docs",
+  "failure_classes": []
 }

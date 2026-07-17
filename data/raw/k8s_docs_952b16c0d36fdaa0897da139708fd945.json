@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/hostname",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetesiohostname",
-  "text": "Type: Label\nExample:\nkubernetes.io/hostname: \"ip-172-20-114-199.ec2.internal\"\nUsed on: Node\nThe Kubelet populates this label with the hostname of the node. Note that the hostname\ncan be changed from the \"actual\" hostname by passing the\n--hostname-override\nflag to\nthe\nkubelet\n.\nThis label is also used as part of the topology hierarchy.\nSee\ntopology.kubernetes.io/zone\nfor more information."
+  "text": "Type: Label\nExample:\nkubernetes.io/hostname: \"ip-172-20-114-199.ec2.internal\"\nUsed on: Node\nThe Kubelet populates this label with the hostname of the node. Note that the hostname\ncan be changed from the \"actual\" hostname by passing the\n--hostname-override\nflag to\nthe\nkubelet\n.\nThis label is also used as part of the topology hierarchy.\nSee\ntopology.kubernetes.io/zone\nfor more information.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

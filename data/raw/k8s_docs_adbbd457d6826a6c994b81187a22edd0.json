@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Horizontal Manual Scaling for a Deployment",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/scale-deployment/",
-  "text": "This page shows how to manually scale a Deployment horizontally, by changing its replica count.\nManual scaling lets you directly control the number of running Pods for predictable load changes or cost management.\nThis is different from\nvertical scaling\n: leaving the replica count the same, but adjusting\nthe amount of resources available to each Pod."
+  "text": "This page shows how to manually scale a Deployment horizontally, by changing its replica count.\nManual scaling lets you directly control the number of running Pods for predictable load changes or cost management.\nThis is different from\nvertical scaling\n: leaving the replica count the same, but adjusting\nthe amount of resources available to each Pod.",
+  "failure_classes": []
 }

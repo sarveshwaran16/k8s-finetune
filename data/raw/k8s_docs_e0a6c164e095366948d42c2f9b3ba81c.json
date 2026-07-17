@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Container Runtimes — Mirantis Container Runtime",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/#mcr",
-  "text": "Mirantis Container Runtime\n(MCR) is a commercially\navailable container runtime that was formerly known as Docker Enterprise Edition.\nYou can use Mirantis Container Runtime with Kubernetes using the open source\ncri-dockerd\ncomponent, included with MCR.\nTo learn more about how to install Mirantis Container Runtime,\nvisit\nMCR Deployment Guide\n.\nCheck the systemd unit named\ncri-docker.socket\nto find out the path to the CRI\nsocket.\nThe\ncri-dockerd\nadapter accepts a command line argument for\nspecifying which container image to use as the Pod infrastructure container (“pause image”).\nThe command line argument to use is\n--pod-infra-container-image\n."
+  "text": "Mirantis Container Runtime\n(MCR) is a commercially\navailable container runtime that was formerly known as Docker Enterprise Edition.\nYou can use Mirantis Container Runtime with Kubernetes using the open source\ncri-dockerd\ncomponent, included with MCR.\nTo learn more about how to install Mirantis Container Runtime,\nvisit\nMCR Deployment Guide\n.\nCheck the systemd unit named\ncri-docker.socket\nto find out the path to the CRI\nsocket.\nThe\ncri-dockerd\nadapter accepts a command line argument for\nspecifying which container image to use as the Pod infrastructure container (“pause image”).\nThe command line argument to use is\n--pod-infra-container-image\n.",
+  "failure_classes": []
 }

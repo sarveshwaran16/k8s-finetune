@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Examples",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_certs/kubeadm_certs_generate-csr/#examples",
-  "text": "# The following command will generate keys and CSRs for all control-plane certificates and kubeconfig files:\n  kubeadm certs generate-csr --kubeconfig-dir /tmp/etc-k8s --cert-dir /tmp/etc-k8s/pki\n\n--cert-dir string\nThe path where to save the certificates\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for generate-csr\n--kubeconfig-dir string     Default: \"/etc/kubernetes\"\nThe path where to save the kubeconfig file.\nThe path where to save the certificates\nPath to a kubeadm configuration file.\nhelp for generate-csr\nThe path where to save the kubeconfig file."
+  "text": "# The following command will generate keys and CSRs for all control-plane certificates and kubeconfig files:\n  kubeadm certs generate-csr --kubeconfig-dir /tmp/etc-k8s --cert-dir /tmp/etc-k8s/pki\n\n--cert-dir string\nThe path where to save the certificates\n--config string\nPath to a kubeadm configuration file.\n-h, --help\nhelp for generate-csr\n--kubeconfig-dir string     Default: \"/etc/kubernetes\"\nThe path where to save the kubeconfig file.\nThe path where to save the certificates\nPath to a kubeadm configuration file.\nhelp for generate-csr\nThe path where to save the kubeconfig file.",
+  "failure_classes": []
 }

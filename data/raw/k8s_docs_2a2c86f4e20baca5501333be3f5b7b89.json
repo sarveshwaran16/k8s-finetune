@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "API Overview — API groups",
   "source_url": "https://kubernetes.io/docs/reference/using-api/#api-groups",
-  "text": "API groups\nmake it easier to extend the Kubernetes API.\nThe API group is specified in a REST path and in the\napiVersion\nfield of a\nserialized object.\nThere are several API groups in Kubernetes:\nThe\ncore\n(also called\nlegacy\n) group is found at REST path\n/api/v1\n.\nThe core group is not specified as part of the\napiVersion\nfield, for\nexample,\napiVersion: v1\n.\nThe named groups are at REST path\n/apis/$GROUP_NAME/$VERSION\nand use\napiVersion: $GROUP_NAME/$VERSION\n(for example,\napiVersion: batch/v1\n).\nYou can find the full list of supported API groups in\nKubernetes API reference\n."
+  "text": "API groups\nmake it easier to extend the Kubernetes API.\nThe API group is specified in a REST path and in the\napiVersion\nfield of a\nserialized object.\nThere are several API groups in Kubernetes:\nThe\ncore\n(also called\nlegacy\n) group is found at REST path\n/api/v1\n.\nThe core group is not specified as part of the\napiVersion\nfield, for\nexample,\napiVersion: v1\n.\nThe named groups are at REST path\n/apis/$GROUP_NAME/$VERSION\nand use\napiVersion: $GROUP_NAME/$VERSION\n(for example,\napiVersion: batch/v1\n).\nYou can find the full list of supported API groups in\nKubernetes API reference\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — resume",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-resume-em-",
-  "text": "Resume an already paused deployment\nkubectl rollout\nresume\ndeployment/nginx\nResume a paused resource.\nPaused resources will not be reconciled by a controller. By resuming a resource, we allow it to be reconciled again. Currently only deployments support being resumed.\n\n$ kubectl rollout resume RESOURCE"
+  "text": "Resume an already paused deployment\nkubectl rollout\nresume\ndeployment/nginx\nResume a paused resource.\nPaused resources will not be reconciled by a controller. By resuming a resource, we allow it to be reconciled again. Currently only deployments support being resumed.\n\n$ kubectl rollout resume RESOURCE",
+  "failure_classes": []
 }

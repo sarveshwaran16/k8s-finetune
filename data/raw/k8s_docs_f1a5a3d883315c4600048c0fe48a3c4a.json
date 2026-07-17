@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "TLS bootstrapping — kube-controller-manager configuration",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/#kube-controller-manager-configuration",
-  "text": "While the apiserver receives the requests for certificates from the kubelet and authenticates those requests,\nthe controller-manager is responsible for issuing actual signed certificates.\nThe controller-manager performs this function via a certificate-issuing control loop.\nThis takes the form of a\ncfssl\nlocal signer using\nassets on disk. Currently, all certificates issued have one year validity and a\ndefault set of key usages.\nIn order for the controller-manager to sign certificates, it needs the following:\naccess to the \"Kubernetes CA key and certificate\" that you created and distributed\nenabling CSR signing"
+  "text": "While the apiserver receives the requests for certificates from the kubelet and authenticates those requests,\nthe controller-manager is responsible for issuing actual signed certificates.\nThe controller-manager performs this function via a certificate-issuing control loop.\nThis takes the form of a\ncfssl\nlocal signer using\nassets on disk. Currently, all certificates issued have one year validity and a\ndefault set of key usages.\nIn order for the controller-manager to sign certificates, it needs the following:\naccess to the \"Kubernetes CA key and certificate\" that you created and distributed\nenabling CSR signing",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

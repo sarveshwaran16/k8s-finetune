@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "TLS bootstrapping — Certificate Authority",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/kubelet-tls-bootstrapping/#certificate-authority",
-  "text": "As without bootstrapping, you will need a Certificate Authority (CA) key and certificate.\nAs without bootstrapping, these will be used to sign the kubelet certificate. As before,\nit is your responsibility to distribute them to control plane nodes.\nFor the purposes of this document, we will assume these have been distributed to control\nplane nodes at\n/var/lib/kubernetes/ca.pem\n(certificate) and\n/var/lib/kubernetes/ca-key.pem\n(key).\nWe will refer to these as \"Kubernetes CA certificate and key\".\nAll Kubernetes components that use these certificates - kubelet, kube-apiserver,\nkube-controller-manager - assume the key and certificate to be PEM-encoded."
+  "text": "As without bootstrapping, you will need a Certificate Authority (CA) key and certificate.\nAs without bootstrapping, these will be used to sign the kubelet certificate. As before,\nit is your responsibility to distribute them to control plane nodes.\nFor the purposes of this document, we will assume these have been distributed to control\nplane nodes at\n/var/lib/kubernetes/ca.pem\n(certificate) and\n/var/lib/kubernetes/ca-key.pem\n(key).\nWe will refer to these as \"Kubernetes CA certificate and key\".\nAll Kubernetes components that use these certificates - kubelet, kube-apiserver,\nkube-controller-manager - assume the key and certificate to be PEM-encoded.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

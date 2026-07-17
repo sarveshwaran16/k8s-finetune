@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Safely Drain a Node",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/",
-  "text": "This page shows how to safely drain a\nnode\n,\noptionally respecting the PodDisruptionBudget you have defined.\n\nThis task assumes that you have met the following prerequisites:\nYou do not require your applications to be highly available during the\nnode drain, or\nYou have read about the\nPodDisruptionBudget\nconcept,\nand have\nconfigured PodDisruptionBudgets\nfor\napplications that need them."
+  "text": "This page shows how to safely drain a\nnode\n,\noptionally respecting the PodDisruptionBudget you have defined.\n\nThis task assumes that you have met the following prerequisites:\nYou do not require your applications to be highly available during the\nnode drain, or\nYou have read about the\nPodDisruptionBudget\nconcept,\nand have\nconfigured PodDisruptionBudgets\nfor\napplications that need them.",
+  "failure_classes": []
 }

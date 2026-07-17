@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — ExtendedResourceToleration",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#extendedresourcetoleration",
-  "text": "Type\n: Mutating.\nThis plug-in facilitates creation of dedicated nodes with extended resources.\nIf operators want to create dedicated nodes with extended resources (like GPUs, FPGAs etc.), they are expected to\ntaint the node\nwith the extended resource\nname as the key. This admission controller, if enabled, automatically\nadds tolerations for such taints to pods requesting extended resources, so users don't have to manually\nadd these tolerations.\nThis admission controller is disabled by default."
+  "text": "Type\n: Mutating.\nThis plug-in facilitates creation of dedicated nodes with extended resources.\nIf operators want to create dedicated nodes with extended resources (like GPUs, FPGAs etc.), they are expected to\ntaint the node\nwith the extended resource\nname as the key. This admission controller, if enabled, automatically\nadds tolerations for such taints to pods requesting extended resources, so users don't have to manually\nadd these tolerations.\nThis admission controller is disabled by default.",
+  "failure_classes": []
 }

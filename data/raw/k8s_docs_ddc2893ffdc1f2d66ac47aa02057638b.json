@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure Minimum and Maximum CPU Constraints for a Namespace — For app developers",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-constraint-namespace/#for-app-developers",
-  "text": "Assign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods"
+  "text": "Assign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nConfigure Quality of Service for Pods",
+  "failure_classes": []
 }

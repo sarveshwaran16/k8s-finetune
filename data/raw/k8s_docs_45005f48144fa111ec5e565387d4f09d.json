@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Sidecar Containers",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/",
-  "text": "Sidecar containers are the secondary containers that run along with the main\napplication container within the same\nPod\n.\nThese containers are used to enhance or to extend the functionality of the primary\napp\ncontainer\nby providing additional services, or functionality such as logging, monitoring,\nsecurity, or data synchronization, without directly altering the primary application code.\nTypically, you only have one app container in a Pod. For example, if you have a web\napplication that requires a local webserver, the local webserver is a sidecar and the\nweb application itself is the app container."
+  "text": "Sidecar containers are the secondary containers that run along with the main\napplication container within the same\nPod\n.\nThese containers are used to enhance or to extend the functionality of the primary\napp\ncontainer\nby providing additional services, or functionality such as logging, monitoring,\nsecurity, or data synchronization, without directly altering the primary application code.\nTypically, you only have one app container in a Pod. For example, if you have a web\napplication that requires a local webserver, the local webserver is a sidecar and the\nweb application itself is the app container.",
+  "failure_classes": []
 }

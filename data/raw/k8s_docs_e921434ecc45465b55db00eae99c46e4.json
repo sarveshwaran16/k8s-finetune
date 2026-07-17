@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Resource metrics pipeline — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/#what-s-next",
-  "text": "To learn more about the metrics-server, see the\nmetrics-server repository\n.\nYou can also check out the following:\nmetrics-server design\nmetrics-server FAQ\nmetrics-server known issues\nmetrics-server releases\nHorizontal Pod Autoscaling\nTo learn about how the kubelet serves node metrics, and how you can access those via\nthe Kubernetes API, read\nNode Metrics Data\n."
+  "text": "To learn more about the metrics-server, see the\nmetrics-server repository\n.\nYou can also check out the following:\nmetrics-server design\nmetrics-server FAQ\nmetrics-server known issues\nmetrics-server releases\nHorizontal Pod Autoscaling\nTo learn about how the kubelet serves node metrics, and how you can access those via\nthe Kubernetes API, read\nNode Metrics Data\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

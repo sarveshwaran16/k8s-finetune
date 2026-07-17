@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Deprecated API Migration Guide — Test with deprecated APIs disabled",
   "source_url": "https://kubernetes.io/docs/reference/using-api/deprecation-guide/#test-with-deprecated-apis-disabled",
-  "text": "You can test your clusters by starting an API server with specific API versions disabled\nto simulate upcoming removals. Add the following flag to the API server startup arguments:\n--runtime-config=<group>/<version>=false\nFor example:\n--runtime-config=admissionregistration.k8s.io/v1beta1=false,apiextensions.k8s.io/v1beta1,..."
+  "text": "You can test your clusters by starting an API server with specific API versions disabled\nto simulate upcoming removals. Add the following flag to the API server startup arguments:\n--runtime-config=<group>/<version>=false\nFor example:\n--runtime-config=admissionregistration.k8s.io/v1beta1=false,apiextensions.k8s.io/v1beta1,...",
+  "failure_classes": []
 }

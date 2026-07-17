@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Storage Versions — Storage version to resource mapping",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/storage-version/#storage-version-to-resource-mapping",
-  "text": "Every resource will have 1 active storage version at any point in time, meaning\nthat any write to an object will store the object at that storage version. The\nstorage version can be updated however, making it so that objects can be stored\nat differing versions. One object will only be stored at one storage version at\nany time.\nReads from the API Server will convert the stored data to the API representation\nof the object. This makes it so that old storage versions can sit indefinitely\nas long as no updates occur to the object. Writes, on the other hand, will\nconvert the stored object to the new representation upon update."
+  "text": "Every resource will have 1 active storage version at any point in time, meaning\nthat any write to an object will store the object at that storage version. The\nstorage version can be updated however, making it so that objects can be stored\nat differing versions. One object will only be stored at one storage version at\nany time.\nReads from the API Server will convert the stored data to the API representation\nof the object. This makes it so that old storage versions can sit indefinitely\nas long as no updates occur to the object. Writes, on the other hand, will\nconvert the stored object to the new representation upon update.",
+  "failure_classes": []
 }

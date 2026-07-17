@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl certificate deny — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_certificate/kubectl_certificate_deny/#synopsis",
-  "text": "Deny a certificate signing request.\nkubectl certificate deny allows a cluster admin to deny a certificate signing request (CSR). This action tells a certificate signing controller to not to issue a certificate to the requester.\nkubectl certificate deny (-f FILENAME | NAME)\n\n# Deny CSR 'csr-sqgzp'\n  kubectl certificate deny csr-sqgzp"
+  "text": "Deny a certificate signing request.\nkubectl certificate deny allows a cluster admin to deny a certificate signing request (CSR). This action tells a certificate signing controller to not to issue a certificate to the requester.\nkubectl certificate deny (-f FILENAME | NAME)\n\n# Deny CSR 'csr-sqgzp'\n  kubectl certificate deny csr-sqgzp",
+  "failure_classes": []
 }

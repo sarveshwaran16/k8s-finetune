@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "System Logs",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-logs/",
-  "text": "System component logs record events happening in cluster, which can be very useful for debugging.\nYou can configure log verbosity to see more or less detail.\nLogs can be as coarse-grained as showing errors within a component, or as fine-grained as showing\nstep-by-step traces of events (like HTTP access logs, pod state changes, controller actions, or\nscheduler decisions)."
+  "text": "System component logs record events happening in cluster, which can be very useful for debugging.\nYou can configure log verbosity to see more or less detail.\nLogs can be as coarse-grained as showing errors within a component, or as fine-grained as showing\nstep-by-step traces of events (like HTTP access logs, pod state changes, controller actions, or\nscheduler decisions).",
+  "failure_classes": []
 }

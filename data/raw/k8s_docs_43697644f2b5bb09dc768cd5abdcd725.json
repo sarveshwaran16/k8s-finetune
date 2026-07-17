@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Container Environment — Cluster information",
   "source_url": "https://kubernetes.io/docs/concepts/containers/container-environment/#cluster-information",
-  "text": "A list of all services that were running when a Container was created is available to that Container as environment variables.\nThis list is limited to services within the same namespace as the new Container's Pod and Kubernetes control plane services.\nFor a service named\nfoo\nthat exposes a set of Pods, each running a container named\nbar\n,\nthe following variables are defined:\nFOO_SERVICE_HOST\n=\n<the host the service is running on>\nFOO_SERVICE_PORT\n=\n<the port the service is running on>\nServices have dedicated IP addresses and are available to the Container via DNS,\nif\nDNS addon\nis enabled."
+  "text": "A list of all services that were running when a Container was created is available to that Container as environment variables.\nThis list is limited to services within the same namespace as the new Container's Pod and Kubernetes control plane services.\nFor a service named\nfoo\nthat exposes a set of Pods, each running a container named\nbar\n,\nthe following variables are defined:\nFOO_SERVICE_HOST\n=\n<the host the service is running on>\nFOO_SERVICE_PORT\n=\n<the port the service is running on>\nServices have dedicated IP addresses and are available to the Container via DNS,\nif\nDNS addon\nis enabled.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — cluster-autoscaler.kubernetes.io/safe-to-evict",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#cluster-autoscaler-kubernetes-io-safe-to-evict",
-  "text": "Type: Annotation\nExample:\ncluster-autoscaler.kubernetes.io/safe-to-evict: \"true\"\nUsed on: Pod\nWhen this annotation is set to\n\"true\"\n, the cluster autoscaler is allowed to evict a Pod\neven if other rules would normally prevent that.\nThe cluster autoscaler never evicts Pods that have this annotation explicitly set to\n\"false\"\n; you could set that on an important Pod that you want to keep running.\nIf this annotation is not set then the cluster autoscaler follows its Pod-level behavior."
+  "text": "Type: Annotation\nExample:\ncluster-autoscaler.kubernetes.io/safe-to-evict: \"true\"\nUsed on: Pod\nWhen this annotation is set to\n\"true\"\n, the cluster autoscaler is allowed to evict a Pod\neven if other rules would normally prevent that.\nThe cluster autoscaler never evicts Pods that have this annotation explicitly set to\n\"false\"\n; you could set that on an important Pod that you want to keep running.\nIf this annotation is not set then the cluster autoscaler follows its Pod-level behavior.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure RunAsUserName for Windows pods and containers",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-runasusername/",
-  "text": "This page shows how to use the\nrunAsUserName\nsetting for Pods and containers that will run on Windows nodes. This is roughly equivalent of the Linux-specific\nrunAsUser\nsetting, allowing you to run applications in a container as a different username than the default.\n\nYou need to have a Kubernetes cluster and the kubectl command-line tool must be configured to communicate with your cluster. The cluster is expected to have Windows worker nodes where pods with containers running Windows workloads will get scheduled."
+  "text": "This page shows how to use the\nrunAsUserName\nsetting for Pods and containers that will run on Windows nodes. This is roughly equivalent of the Linux-specific\nrunAsUser\nsetting, allowing you to run applications in a container as a different username than the default.\n\nYou need to have a Kubernetes cluster and the kubectl command-line tool must be configured to communicate with your cluster. The cluster is expected to have Windows worker nodes where pods with containers running Windows workloads will get scheduled.",
+  "failure_classes": []
 }

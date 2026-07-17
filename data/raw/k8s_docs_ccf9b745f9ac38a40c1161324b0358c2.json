@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "StatefulSets — Pod Identity",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#pod-identity",
-  "text": "StatefulSet Pods have a unique identity that consists of an ordinal, a\nstable network identity, and stable storage. The identity sticks to the Pod,\nregardless of which node it's (re)scheduled on.\n\nFor a StatefulSet with N\nreplicas\n, each Pod in the StatefulSet\nwill be assigned an integer ordinal, that is unique over the Set. By default,\npods will be assigned ordinals from 0 up through N-1. The StatefulSet controller\nwill also add a pod label with this index:\napps.kubernetes.io/pod-index\n."
+  "text": "StatefulSet Pods have a unique identity that consists of an ordinal, a\nstable network identity, and stable storage. The identity sticks to the Pod,\nregardless of which node it's (re)scheduled on.\n\nFor a StatefulSet with N\nreplicas\n, each Pod in the StatefulSet\nwill be assigned an integer ordinal, that is unique over the Set. By default,\npods will be assigned ordinals from 0 up through N-1. The StatefulSet controller\nwill also add a pod label with this index:\napps.kubernetes.io/pod-index\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl auth whoami — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_auth/kubectl_auth_whoami/#synopsis",
-  "text": "Experimental: Check who you are and your attributes (groups, extra).\nThis command is helpful to get yourself aware of the current user attributes,\n    especially when dynamic authentication, e.g., token webhook, auth proxy, or OIDC provider,\n    is enabled in the Kubernetes cluster.\nkubectl auth whoami"
+  "text": "Experimental: Check who you are and your attributes (groups, extra).\nThis command is helpful to get yourself aware of the current user attributes,\n    especially when dynamic authentication, e.g., token webhook, auth proxy, or OIDC provider,\n    is enabled in the Kubernetes cluster.\nkubectl auth whoami",
+  "failure_classes": []
 }

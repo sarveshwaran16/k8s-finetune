@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Changing the Container Runtime on a Node from Docker Engine to containerd",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/change-runtime-containerd/",
-  "text": "This task outlines the steps needed to update your container runtime to containerd from Docker. It\nis applicable for cluster operators running Kubernetes 1.23 or earlier. This also covers an\nexample scenario for migrating from dockershim to containerd. Alternative container runtimes\ncan be picked from this\npage\n."
+  "text": "This task outlines the steps needed to update your container runtime to containerd from Docker. It\nis applicable for cluster operators running Kubernetes 1.23 or earlier. This also covers an\nexample scenario for migrating from dockershim to containerd. Alternative container runtimes\ncan be picked from this\npage\n.",
+  "failure_classes": []
 }

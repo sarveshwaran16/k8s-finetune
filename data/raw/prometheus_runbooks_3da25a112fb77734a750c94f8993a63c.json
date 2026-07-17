@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubeContainerWaiting#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kubernetes/kubecontainerwaiting/",
-  "text": "Kube Container Waiting\nKubeContainerWaiting\n#\nMeaning\n#\nContainer in pod is in Waiting state for too long.\nImpact\n#\nService degradation or unavailability.\nDiagnosis\n#\nCheck pod events via\nkubectl -n $NAMESPACE describe pod $POD\n.\nCheck pod logs via\nkubectl -n $NAMESPACE logs $POD -c $CONTAINER\nCheck for missing files such as configmaps/secrets/volumes\nCheck for pod requests, especially special ones such as GPU.\nCheck for node taints and capabilities.\nMitigation\n#\nSee\nContainer waiting"
+  "text": "Kube Container Waiting\nKubeContainerWaiting\n#\nMeaning\n#\nContainer in pod is in Waiting state for too long.\nImpact\n#\nService degradation or unavailability.\nDiagnosis\n#\nCheck pod events via\nkubectl -n $NAMESPACE describe pod $POD\n.\nCheck pod logs via\nkubectl -n $NAMESPACE logs $POD -c $CONTAINER\nCheck for missing files such as configmaps/secrets/volumes\nCheck for pod requests, especially special ones such as GPU.\nCheck for node taints and capabilities.\nMitigation\n#\nSee\nContainer waiting",
+  "failure_classes": []
 }

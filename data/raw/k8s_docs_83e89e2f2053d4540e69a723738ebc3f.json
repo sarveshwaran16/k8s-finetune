@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "The Kubernetes API — OpenAPI interface definition",
   "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/#openapi-interface-definition",
-  "text": "For details about the OpenAPI specifications, see the\nOpenAPI documentation\n.\nKubernetes serves both OpenAPI v2.0 and OpenAPI v3.0. OpenAPI v3 is the\npreferred method of accessing the OpenAPI because it offers a more comprehensive\n(lossless) representation of Kubernetes resources. Due to limitations of OpenAPI\nversion 2, certain fields are dropped from the published OpenAPI including but not\nlimited to\ndefault\n,\nnullable\n,\noneOf\n."
+  "text": "For details about the OpenAPI specifications, see the\nOpenAPI documentation\n.\nKubernetes serves both OpenAPI v2.0 and OpenAPI v3.0. OpenAPI v3 is the\npreferred method of accessing the OpenAPI because it offers a more comprehensive\n(lossless) representation of Kubernetes resources. Due to limitations of OpenAPI\nversion 2, certain fields are dropped from the published OpenAPI including but not\nlimited to\ndefault\n,\nnullable\n,\noneOf\n.",
+  "failure_classes": []
 }

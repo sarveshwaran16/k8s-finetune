@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Seccomp and Kubernetes — Further reading",
   "source_url": "https://kubernetes.io/docs/reference/node/seccomp/#further-reading",
-  "text": "Restrict a Container's Syscalls with seccomp\nPod Security Standards\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Restrict a Container's Syscalls with seccomp\nPod Security Standards\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

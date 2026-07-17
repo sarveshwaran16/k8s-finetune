@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Authenticating with Bootstrap Tokens — Token Format",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/#token-format",
-  "text": "Bootstrap Tokens take the form of\nabcdef.0123456789abcdef\n.\nMore formally, they must match the regular expression\n[a-z0-9]{6}\\.[a-z0-9]{16}\n.\nThe first part of the token is the \"Token ID\" and is considered public\ninformation. It is used when referring to a token without leaking the secret\npart used for authentication. The second part is the \"Token Secret\" and should\nonly be shared with trusted parties."
+  "text": "Bootstrap Tokens take the form of\nabcdef.0123456789abcdef\n.\nMore formally, they must match the regular expression\n[a-z0-9]{6}\\.[a-z0-9]{16}\n.\nThe first part of the token is the \"Token ID\" and is considered public\ninformation. It is used when referring to a token without leaking the secret\npart used for authentication. The second part is the \"Token Secret\" and should\nonly be shared with trusted parties.",
+  "failure_classes": []
 }

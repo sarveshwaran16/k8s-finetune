@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — volume.beta.kubernetes.io/mount-options (deprecated)",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#mount-options",
-  "text": "Type: Annotation\nExample :\nvolume.beta.kubernetes.io/mount-options: \"ro,soft\"\nUsed on: PersistentVolume\nA Kubernetes administrator can specify additional\nmount options\nfor when a PersistentVolume is mounted on a node.\n\nType: Annotation\nUsed on: PersistentVolumeClaim\nThis annotation is added to a PVC that is supposed to be dynamically provisioned.\nIts value is the name of a volume plugin that is supposed to provision a volume\nfor this PVC."
+  "text": "Type: Annotation\nExample :\nvolume.beta.kubernetes.io/mount-options: \"ro,soft\"\nUsed on: PersistentVolume\nA Kubernetes administrator can specify additional\nmount options\nfor when a PersistentVolume is mounted on a node.\n\nType: Annotation\nUsed on: PersistentVolumeClaim\nThis annotation is added to a PVC that is supposed to be dynamically provisioned.\nIts value is the name of a volume plugin that is supposed to provision a volume\nfor this PVC.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

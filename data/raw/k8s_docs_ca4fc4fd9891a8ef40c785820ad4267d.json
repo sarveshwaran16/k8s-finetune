@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Securing a Cluster — Receiving alerts for security updates and reporting vulnerabilities",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#receiving-alerts-for-security-updates-and-reporting-vulnerabilities",
-  "text": "Join the\nkubernetes-announce\ngroup for emails about security announcements. See the\nsecurity reporting\npage for more on how to report vulnerabilities.\n\nSecurity Checklist\nfor additional information on Kubernetes security guidance.\nSeccomp Node Reference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Join the\nkubernetes-announce\ngroup for emails about security announcements. See the\nsecurity reporting\npage for more on how to report vulnerabilities.\n\nSecurity Checklist\nfor additional information on Kubernetes security guidance.\nSeccomp Node Reference\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

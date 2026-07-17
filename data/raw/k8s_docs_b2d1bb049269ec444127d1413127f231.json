@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Audit Annotations — pod-security.kubernetes.io/audit-violations",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/#pod-security-kubernetes-io-audit-violations",
-  "text": "Example:\npod-security.kubernetes.io/audit-violations: would violate PodSecurity \"restricted:latest\": allowPrivilegeEscalation != false (container \"example\" must set securityContext.allowPrivilegeEscalation=false), ...\nValue details an audit policy violation, it contains the\nPod Security Standard\nlevel\nthat was transgressed as well as the specific policies on the fields that were\nviolated from the PodSecurity enforcement.\nSee\nPod Security Standards\nfor more information."
+  "text": "Example:\npod-security.kubernetes.io/audit-violations: would violate PodSecurity \"restricted:latest\": allowPrivilegeEscalation != false (container \"example\" must set securityContext.allowPrivilegeEscalation=false), ...\nValue details an audit policy violation, it contains the\nPod Security Standard\nlevel\nthat was transgressed as well as the specific policies on the fields that were\nviolated from the PodSecurity enforcement.\nSee\nPod Security Standards\nfor more information.",
+  "failure_classes": []
 }

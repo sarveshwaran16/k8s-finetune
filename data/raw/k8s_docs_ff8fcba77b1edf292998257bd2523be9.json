@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Component SLI Metrics",
   "source_url": "https://kubernetes.io/docs/reference/instrumentation/slis/",
-  "text": "By default, Kubernetes 1.36 publishes Service Level Indicator (SLI) metrics\nfor each Kubernetes component binary. This metric endpoint is exposed on the serving\nHTTPS port of each component, at the path\n/metrics/slis\n. The\nComponentSLIs\nfeature gate\ndefaults to enabled for each Kubernetes component as of v1.27."
+  "text": "By default, Kubernetes 1.36 publishes Service Level Indicator (SLI) metrics\nfor each Kubernetes component binary. This metric endpoint is exposed on the serving\nHTTPS port of each component, at the path\n/metrics/slis\n. The\nComponentSLIs\nfeature gate\ndefaults to enabled for each Kubernetes component as of v1.27.",
+  "failure_classes": []
 }

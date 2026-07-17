@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Nodes — Node topology",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/nodes/#node-topology",
-  "text": "If you have enabled the\nTopologyManager\nfeature gate\n, then\nthe kubelet can use topology hints when making resource assignment decisions.\nSee\nControl Topology Management Policies on a Node\nfor more information.\n\nLearn more about the following:\nComponents\nthat make up a node.\nAPI definition for Node\n.\nNode\nsection of the architecture design document.\nGraceful/non-graceful node shutdown\n.\nNode autoscaling\nto\nmanage the number and size of nodes in your cluster.\nTaints and Tolerations\n.\nNode Resource Managers\n.\nResource Management for Windows nodes\n."
+  "text": "If you have enabled the\nTopologyManager\nfeature gate\n, then\nthe kubelet can use topology hints when making resource assignment decisions.\nSee\nControl Topology Management Policies on a Node\nfor more information.\n\nLearn more about the following:\nComponents\nthat make up a node.\nAPI definition for Node\n.\nNode\nsection of the architecture design document.\nGraceful/non-graceful node shutdown\n.\nNode autoscaling\nto\nmanage the number and size of nodes in your cluster.\nTaints and Tolerations\n.\nNode Resource Managers\n.\nResource Management for Windows nodes\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

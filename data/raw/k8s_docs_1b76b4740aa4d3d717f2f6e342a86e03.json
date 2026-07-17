@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Parallel Processing using Expansions — Labels on Jobs and Pods",
   "source_url": "https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/#labels-on-jobs-and-pods",
-  "text": "After you create a Job, Kubernetes automatically adds additional\nlabels\nthat\ndistinguish one Job's pods from another Job's pods.\nIn this example, each Job and its Pod template have a label:\njobgroup=jobexample\n.\nKubernetes itself pays no attention to labels named\njobgroup\n. Setting a label\nfor all the Jobs you create from a template makes it convenient to operate on all\nthose Jobs at once.\nIn the\nfirst example\nyou used a template to\ncreate several Jobs. The template ensures that each Pod also gets the same label, so\nyou can check on all Pods for these templated Jobs with a single command."
+  "text": "After you create a Job, Kubernetes automatically adds additional\nlabels\nthat\ndistinguish one Job's pods from another Job's pods.\nIn this example, each Job and its Pod template have a label:\njobgroup=jobexample\n.\nKubernetes itself pays no attention to labels named\njobgroup\n. Setting a label\nfor all the Jobs you create from a template makes it convenient to operate on all\nthose Jobs at once.\nIn the\nfirst example\nyou used a template to\ncreate several Jobs. The template ensures that each Pod also gets the same label, so\nyou can check on all Pods for these templated Jobs with a single command.",
+  "failure_classes": []
 }

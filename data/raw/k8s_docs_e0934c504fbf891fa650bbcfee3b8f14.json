@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Using ABAC Authorization — A quick note on service accounts",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/abac/#a-quick-note-on-service-accounts",
-  "text": "Every service account has a corresponding ABAC username, and that service account's username is generated\naccording to the naming convention:\nsystem:serviceaccount:<namespace>:<serviceaccountname>\nCreating a new namespace leads to the creation of a new service account in the following format:\nsystem:serviceaccount:<namespace>:default\nFor example, if you wanted to grant the default service account (in the\nkube-system\nnamespace) full\nprivilege to the API using ABAC, you would add this line to your policy file:\n{\n\"apiVersion\"\n:\n\"abac.authorization.kubernetes.io/v1beta1\"\n,\n\"kind\"\n:\n\"Policy\"\n,\n\"spec\"\n:{\n\"user\"\n:\n\"system:serviceaccount:kube-system:default\"\n,\n\"namespace\"\n:\n\"*\"\n,\n\"resource\"\n:\n\"*\"\n,\n\"apiGroup\"\n:\n\"*\"\n}}\nThe apiserver will need to be restarted to pick up the new policy lines."
+  "text": "Every service account has a corresponding ABAC username, and that service account's username is generated\naccording to the naming convention:\nsystem:serviceaccount:<namespace>:<serviceaccountname>\nCreating a new namespace leads to the creation of a new service account in the following format:\nsystem:serviceaccount:<namespace>:default\nFor example, if you wanted to grant the default service account (in the\nkube-system\nnamespace) full\nprivilege to the API using ABAC, you would add this line to your policy file:\n{\n\"apiVersion\"\n:\n\"abac.authorization.kubernetes.io/v1beta1\"\n,\n\"kind\"\n:\n\"Policy\"\n,\n\"spec\"\n:{\n\"user\"\n:\n\"system:serviceaccount:kube-system:default\"\n,\n\"namespace\"\n:\n\"*\"\n,\n\"resource\"\n:\n\"*\"\n,\n\"apiGroup\"\n:\n\"*\"\n}}\nThe apiserver will need to be restarted to pick up the new policy lines.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "RBAC"
+  ]
 }

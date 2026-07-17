@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure GMSA for Windows Pods and containers — Assign role to service accounts to use specific GMSA credspecs",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-gmsa/#assign-role-to-service-accounts-to-use-specific-gmsa-credspecs",
-  "text": "A service account (that Pods will be configured with) needs to be bound to the\ncluster role create above. This authorizes the service account to use the desired\nGMSA credential spec resource. The following shows the default service account\nbeing bound to a cluster role\nwebapp1-role\nto use\ngmsa-WebApp1\ncredential spec resource created above.\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nRoleBinding\nmetadata\n:\nname\n:\nallow-default-svc-account-read-on-gmsa-WebApp1\nnamespace\n:\ndefault\nsubjects\n:\n-\nkind\n:\nServiceAccount\nname\n:\ndefault\nnamespace\n:\ndefault\nroleRef\n:\nkind\n:\nClusterRole\nname\n:\nwebapp1-role\napiGroup\n:\nrbac.authorization.k8s.io"
+  "text": "A service account (that Pods will be configured with) needs to be bound to the\ncluster role create above. This authorizes the service account to use the desired\nGMSA credential spec resource. The following shows the default service account\nbeing bound to a cluster role\nwebapp1-role\nto use\ngmsa-WebApp1\ncredential spec resource created above.\napiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nRoleBinding\nmetadata\n:\nname\n:\nallow-default-svc-account-read-on-gmsa-WebApp1\nnamespace\n:\ndefault\nsubjects\n:\n-\nkind\n:\nServiceAccount\nname\n:\ndefault\nnamespace\n:\ndefault\nroleRef\n:\nkind\n:\nClusterRole\nname\n:\nwebapp1-role\napiGroup\n:\nrbac.authorization.k8s.io",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

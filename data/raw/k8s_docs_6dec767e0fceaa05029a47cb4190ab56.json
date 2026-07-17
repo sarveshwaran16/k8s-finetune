@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Tutorials",
   "source_url": "https://kubernetes.io/docs/tutorials/",
-  "text": "This section of the Kubernetes documentation contains tutorials.\nA tutorial shows how to accomplish a goal that is larger than a single\ntask\n. Typically a tutorial has several sections,\neach of which has a sequence of steps.\nBefore walking through each tutorial, you may want to bookmark the\nStandardized Glossary\npage for later references."
+  "text": "This section of the Kubernetes documentation contains tutorials.\nA tutorial shows how to accomplish a goal that is larger than a single\ntask\n. Typically a tutorial has several sections,\neach of which has a sequence of steps.\nBefore walking through each tutorial, you may want to bookmark the\nStandardized Glossary\npage for later references.",
+  "failure_classes": []
 }

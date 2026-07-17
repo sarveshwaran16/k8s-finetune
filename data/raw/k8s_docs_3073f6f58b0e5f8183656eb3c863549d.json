@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dynamic Admission Control — Webhook configuration",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#webhook-configuration",
-  "text": "To register admission webhooks, create\nMutatingWebhookConfiguration\nor\nValidatingWebhookConfiguration\nAPI objects.\nThe name of a\nMutatingWebhookConfiguration\nor a\nValidatingWebhookConfiguration\nobject must be a valid\nDNS subdomain name\n.\nEach configuration can contain one or more webhooks.\nIf multiple webhooks are specified in a single configuration, each must be given a unique name.\nThis is required in order to make resulting audit logs and metrics easier to match up to active\nconfigurations.\nEach webhook defines the following things."
+  "text": "To register admission webhooks, create\nMutatingWebhookConfiguration\nor\nValidatingWebhookConfiguration\nAPI objects.\nThe name of a\nMutatingWebhookConfiguration\nor a\nValidatingWebhookConfiguration\nobject must be a valid\nDNS subdomain name\n.\nEach configuration can contain one or more webhooks.\nIf multiple webhooks are specified in a single configuration, each must be given a unique name.\nThis is required in order to make resulting audit logs and metrics easier to match up to active\nconfigurations.\nEach webhook defines the following things.",
+  "failure_classes": []
 }

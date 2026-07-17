@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "NonResourceAttributes",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/non-resource-attributes-v1-authorization/",
-  "text": "apiVersion: authorization.k8s.io/v1\nimport \"k8s.io/api/authorization/v1\"\n\nNonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface\nField\nDescription\npath\nstring\npath is the URL path of the request\nverb\nstring\nverb is the standard HTTP verb"
+  "text": "apiVersion: authorization.k8s.io/v1\nimport \"k8s.io/api/authorization/v1\"\n\nNonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface\nField\nDescription\npath\nstring\npath is the URL path of the request\nverb\nstring\nverb is the standard HTTP verb",
+  "failure_classes": []
 }

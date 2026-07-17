@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Running Kubelet in Standalone Mode — Run a Pod in the kubelet",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/#run-a-pod-in-the-kubelet",
-  "text": "In standalone mode, you can run Pods using Pod manifests. The manifests can either\nbe on the local filesystem, or fetched via HTTP from a configuration source.\nCreate a manifest for a Pod:\ncat\n<<EOF > static-web.yaml\napiVersion: v1\nkind: Pod\nmetadata:\nname: static-web\nspec:\ncontainers:\n- name: web\nimage: nginx\nports:\n- name: web\ncontainerPort: 80\nprotocol: TCP\nEOF\nCopy the\nstatic-web.yaml\nmanifest file to the\n/etc/kubernetes/manifests\ndirectory.\nsudo cp static-web.yaml /etc/kubernetes/manifests/"
+  "text": "In standalone mode, you can run Pods using Pod manifests. The manifests can either\nbe on the local filesystem, or fetched via HTTP from a configuration source.\nCreate a manifest for a Pod:\ncat\n<<EOF > static-web.yaml\napiVersion: v1\nkind: Pod\nmetadata:\nname: static-web\nspec:\ncontainers:\n- name: web\nimage: nginx\nports:\n- name: web\ncontainerPort: 80\nprotocol: TCP\nEOF\nCopy the\nstatic-web.yaml\nmanifest file to the\n/etc/kubernetes/manifests\ndirectory.\nsudo cp static-web.yaml /etc/kubernetes/manifests/",
+  "failure_classes": []
 }

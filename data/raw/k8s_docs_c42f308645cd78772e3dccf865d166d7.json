@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Priority and Preemption",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/",
-  "text": "Pods\ncan have\npriority\n. Priority indicates the\nimportance of a Pod relative to other Pods. If a Pod cannot be scheduled, the\nscheduler tries to preempt (evict) lower priority Pods to make scheduling of the\npending Pod possible.\nIn a cluster where not all users are trusted, a malicious user could create Pods\nat the highest possible priorities, causing other Pods to be evicted/not get\nscheduled.\nAn administrator can use ResourceQuota to prevent users from creating pods at\nhigh priorities.\nSee\nlimit Priority Class consumption by default\nfor details."
+  "text": "Pods\ncan have\npriority\n. Priority indicates the\nimportance of a Pod relative to other Pods. If a Pod cannot be scheduled, the\nscheduler tries to preempt (evict) lower priority Pods to make scheduling of the\npending Pod possible.\nIn a cluster where not all users are trusted, a malicious user could create Pods\nat the highest possible priorities, causing other Pods to be evicted/not get\nscheduled.\nAn administrator can use ResourceQuota to prevent users from creating pods at\nhigh priorities.\nSee\nlimit Priority Class consumption by default\nfor details.",
+  "failure_classes": []
 }

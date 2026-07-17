@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubelet Pod Info gRPC API — Endpoint",
   "source_url": "https://kubernetes.io/docs/reference/node/kubelet-pod-info-grpc-api/#endpoint",
-  "text": "The API listens on a UNIX socket at:\n/var/lib/kubelet/pods/kubelet.sock\n\nThe API provides the following gRPC methods:\n\nReturns a list of all pods currently managed by the kubelet on the node.\n\nReturns a stream of pod updates. Whenever a pod's state changes locally, the kubelet sends the updated pod information through the stream."
+  "text": "The API listens on a UNIX socket at:\n/var/lib/kubelet/pods/kubelet.sock\n\nThe API provides the following gRPC methods:\n\nReturns a list of all pods currently managed by the kubelet on the node.\n\nReturns a stream of pod updates. Whenever a pod's state changes locally, the kubelet sends the updated pod information through the stream.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

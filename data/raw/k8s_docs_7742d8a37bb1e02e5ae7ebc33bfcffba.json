@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices — Don't rely on mutating webhook invocation order",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#dont-rely-webhook-order",
-  "text": "Mutating admission webhooks don't run in a consistent order. Various factors\nmight change when a specific webhook is called. Don't rely on your webhook\nrunning at a specific point in the admission process. Other webhooks could still\nmutate your modified object.\nThe following recommendations might help to minimize the risk of unintended\nchanges:\nValidate mutations before admission\nUse a reinvocation policy to observe changes to an object by other plugins\nand re-run the webhook as needed. For details, see\nReinvocation policy\n."
+  "text": "Mutating admission webhooks don't run in a consistent order. Various factors\nmight change when a specific webhook is called. Don't rely on your webhook\nrunning at a specific point in the admission process. Other webhooks could still\nmutate your modified object.\nThe following recommendations might help to minimize the risk of unintended\nchanges:\nValidate mutations before admission\nUse a reinvocation policy to observe changes to an object by other plugins\nand re-run the webhook as needed. For details, see\nReinvocation policy\n.",
+  "failure_classes": []
 }

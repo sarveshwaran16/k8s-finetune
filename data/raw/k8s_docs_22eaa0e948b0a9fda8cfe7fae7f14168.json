@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ReplicationController — Deleting only a ReplicationController",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#deleting-only-a-replicationcontroller",
-  "text": "You can delete a ReplicationController without affecting any of its pods.\nUsing kubectl, specify the\n--cascade=orphan\noption to\nkubectl delete\n.\nWhen using the REST API or\nclient library\n, you can delete the ReplicationController object.\nOnce the original is deleted, you can create a new ReplicationController to replace it. As long\nas the old and new\n.spec.selector\nare the same, then the new one will adopt the old pods.\nHowever, it will not make any effort to make existing pods match a new, different pod template.\nTo update pods to a new spec in a controlled way, use a\nrolling update\n."
+  "text": "You can delete a ReplicationController without affecting any of its pods.\nUsing kubectl, specify the\n--cascade=orphan\noption to\nkubectl delete\n.\nWhen using the REST API or\nclient library\n, you can delete the ReplicationController object.\nOnce the original is deleted, you can create a new ReplicationController to replace it. As long\nas the old and new\n.spec.selector\nare the same, then the new one will adopt the old pods.\nHowever, it will not make any effort to make existing pods match a new, different pod template.\nTo update pods to a new spec in a controlled way, use a\nrolling update\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Concepts — Dry-run",
   "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#dry-run",
-  "text": "When you use HTTP verbs that can modify resources (\nPOST\n,\nPUT\n,\nPATCH\n, and\nDELETE\n), you can submit your request in a\ndry run\nmode. Dry run mode helps to\nevaluate a request through the typical request stages (admission chain, validation,\nmerge conflicts) up until persisting objects to storage. The response body for the\nrequest is as close as possible to a non-dry-run response. Kubernetes guarantees that\ndry-run requests will not be persisted in storage or have any other side effects."
+  "text": "When you use HTTP verbs that can modify resources (\nPOST\n,\nPUT\n,\nPATCH\n, and\nDELETE\n), you can submit your request in a\ndry run\nmode. Dry run mode helps to\nevaluate a request through the typical request stages (admission chain, validation,\nmerge conflicts) up until persisting objects to storage. The response body for the\nrequest is as close as possible to a non-dry-run response. Kubernetes guarantees that\ndry-run requests will not be persisted in storage or have any other side effects.",
+  "failure_classes": []
 }

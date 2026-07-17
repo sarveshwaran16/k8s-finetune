@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-apiserver Configuration (v1) — AESConfiguration",
   "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-AESConfiguration",
-  "text": "Appears in:\nProviderConfiguration\nAESConfiguration contains the API configuration for an AES transformer.\nField\nDescription\nkeys\n[Required]\n[]Key\nkeys is a list of keys to be used for creating the AES transformer.\nEach key has to be 32 bytes long for AES-CBC and 16, 24 or 32 bytes for AES-GCM.\nkeys is a list of keys to be used for creating the AES transformer.\nEach key has to be 32 bytes long for AES-CBC and 16, 24 or 32 bytes for AES-GCM."
+  "text": "Appears in:\nProviderConfiguration\nAESConfiguration contains the API configuration for an AES transformer.\nField\nDescription\nkeys\n[Required]\n[]Key\nkeys is a list of keys to be used for creating the AES transformer.\nEach key has to be 32 bytes long for AES-CBC and 16, 24 or 32 bytes for AES-GCM.\nkeys is a list of keys to be used for creating the AES transformer.\nEach key has to be 32 bytes long for AES-CBC and 16, 24 or 32 bytes for AES-GCM.",
+  "failure_classes": []
 }

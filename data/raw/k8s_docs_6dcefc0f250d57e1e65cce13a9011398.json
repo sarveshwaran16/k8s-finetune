@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices — Identify whether you use admission webhooks",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#identify-admission-webhooks",
-  "text": "Even if you don't run your own admission webhooks, some third-party applications\nthat you run in your clusters might use mutating or validating admission\nwebhooks.\nTo check whether your cluster has any mutating admission webhooks, run the\nfollowing command:\nkubectl get mutatingwebhookconfigurations\nThe output lists any mutating admission controllers in the cluster.\nTo check whether your cluster has any validating admission webhooks, run the\nfollowing command:\nkubectl get validatingwebhookconfigurations\nThe output lists any validating admission controllers in the cluster."
+  "text": "Even if you don't run your own admission webhooks, some third-party applications\nthat you run in your clusters might use mutating or validating admission\nwebhooks.\nTo check whether your cluster has any mutating admission webhooks, run the\nfollowing command:\nkubectl get mutatingwebhookconfigurations\nThe output lists any mutating admission controllers in the cluster.\nTo check whether your cluster has any validating admission webhooks, run the\nfollowing command:\nkubectl get validatingwebhookconfigurations\nThe output lists any validating admission controllers in the cluster.",
+  "failure_classes": []
 }

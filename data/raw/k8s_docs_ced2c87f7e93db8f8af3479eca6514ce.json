@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Priority and Preemption — Preemption",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#preemption",
-  "text": "When Pods are created, they go to a queue and wait to be scheduled. The\nscheduler picks a Pod from the queue and tries to schedule it on a Node. If no\nNode is found that satisfies all the specified requirements of the Pod,\npreemption logic is triggered for the pending Pod. Let's call the pending Pod P.\nPreemption logic tries to find a Node where removal of one or more Pods with\nlower priority than P would enable P to be scheduled on that Node. If such a\nNode is found, one or more lower priority Pods get evicted from the Node. After\nthe Pods are gone, P can be scheduled on the Node."
+  "text": "When Pods are created, they go to a queue and wait to be scheduled. The\nscheduler picks a Pod from the queue and tries to schedule it on a Node. If no\nNode is found that satisfies all the specified requirements of the Pod,\npreemption logic is triggered for the pending Pod. Let's call the pending Pod P.\nPreemption logic tries to find a Node where removal of one or more Pods with\nlower priority than P would enable P to be scheduled on that Node. If such a\nNode is found, one or more lower priority Pods get evicted from the Node. After\nthe Pods are gone, P can be scheduled on the Node.",
+  "failure_classes": []
 }

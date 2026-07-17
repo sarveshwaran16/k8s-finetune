@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Linux Node Swap Behaviors",
   "source_url": "https://kubernetes.io/docs/reference/node/swap-behavior/",
-  "text": "To allow Kubernetes workloads to use swap, on a Linux node,\nyou must disable the kubelet's default behavior of failing when swap is detected,\nand specify memory-swap behavior as\nLimitedSwap\n:\nThe available choices for swap behavior are:\nTo learn more, read\nswap memory management\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "To allow Kubernetes workloads to use swap, on a Linux node,\nyou must disable the kubelet's default behavior of failing when swap is detected,\nand specify memory-swap behavior as\nLimitedSwap\n:\nThe available choices for swap behavior are:\nTo learn more, read\nswap memory management\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — RuntimeClass",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#runtimeclass",
-  "text": "Type\n: Mutating and Validating.\nIf you define a RuntimeClass with\nPod overhead\nconfigured, this admission controller checks incoming Pods.\nWhen enabled, this admission controller rejects any Pod create requests\nthat have the overhead already set.\nFor Pods that have a RuntimeClass configured and selected in their\n.spec\n,\nthis admission controller sets\n.spec.overhead\nin the Pod based on the value\ndefined in the corresponding RuntimeClass.\nSee also\nPod Overhead\nfor more information."
+  "text": "Type\n: Mutating and Validating.\nIf you define a RuntimeClass with\nPod overhead\nconfigured, this admission controller checks incoming Pods.\nWhen enabled, this admission controller rejects any Pod create requests\nthat have the overhead already set.\nFor Pods that have a RuntimeClass configured and selected in their\n.spec\n,\nthis admission controller sets\n.spec.overhead\nin the Pod based on the value\ndefined in the corresponding RuntimeClass.\nSee also\nPod Overhead\nfor more information.",
+  "failure_classes": []
 }

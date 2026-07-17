@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Enable Or Disable Feature Gates — During cluster initialization",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-feature-gates/#during-cluster-initialization",
-  "text": "Create a configuration file to enable feature gates across relevant components:\napiVersion\n:\nkubeadm.k8s.io/v1beta4\nkind\n:\nClusterConfiguration\napiServer\n:\nextraArgs\n:\nfeature-gates\n:\n\"FeatureName=true\"\ncontrollerManager\n:\nextraArgs\n:\nfeature-gates\n:\n\"FeatureName=true\"\nscheduler\n:\nextraArgs\n:\nfeature-gates\n:\n\"FeatureName=true\"\n---\napiVersion\n:\nkubelet.config.k8s.io/v1beta1\nkind\n:\nKubeletConfiguration\nfeatureGates\n:\nFeatureName\n:\ntrue\nInitialize the cluster:\nkubeadm init --config kubeadm-config.yaml"
+  "text": "Create a configuration file to enable feature gates across relevant components:\napiVersion\n:\nkubeadm.k8s.io/v1beta4\nkind\n:\nClusterConfiguration\napiServer\n:\nextraArgs\n:\nfeature-gates\n:\n\"FeatureName=true\"\ncontrollerManager\n:\nextraArgs\n:\nfeature-gates\n:\n\"FeatureName=true\"\nscheduler\n:\nextraArgs\n:\nfeature-gates\n:\n\"FeatureName=true\"\n---\napiVersion\n:\nkubelet.config.k8s.io/v1beta1\nkind\n:\nKubeletConfiguration\nfeatureGates\n:\nFeatureName\n:\ntrue\nInitialize the cluster:\nkubeadm init --config kubeadm-config.yaml",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

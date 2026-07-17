@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Assigning Pods to Nodes — nodeSelector",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector",
-  "text": "nodeSelector\nis the simplest recommended form of node selection constraint.\nYou can add the\nnodeSelector\nfield to your Pod specification and specify the\nnode labels\nyou want the target node to have.\nKubernetes only schedules the Pod onto nodes that have each of the labels you\nspecify.\nSee\nAssign Pods to Nodes\nfor more\ninformation."
+  "text": "nodeSelector\nis the simplest recommended form of node selection constraint.\nYou can add the\nnodeSelector\nfield to your Pod specification and specify the\nnode labels\nyou want the target node to have.\nKubernetes only schedules the Pod onto nodes that have each of the labels you\nspecify.\nSee\nAssign Pods to Nodes\nfor more\ninformation.",
+  "failure_classes": []
 }

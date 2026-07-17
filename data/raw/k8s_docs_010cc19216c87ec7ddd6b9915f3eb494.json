@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dynamic Admission Control — Deploy the admission webhook service",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#deploy-the-admission-webhook-service",
-  "text": "The webhook server in the e2e test is deployed in the Kubernetes cluster, via\nthe\ndeployment API\n.\nThe test also creates a\nservice\nas the front-end of the webhook server. See\ncode\n.\nYou may also deploy your webhooks outside of the cluster. You will need to update\nyour webhook configurations accordingly."
+  "text": "The webhook server in the e2e test is deployed in the Kubernetes cluster, via\nthe\ndeployment API\n.\nThe test also creates a\nservice\nas the front-end of the webhook server. See\ncode\n.\nYou may also deploy your webhooks outside of the cluster. You will need to update\nyour webhook configurations accordingly.",
+  "failure_classes": []
 }

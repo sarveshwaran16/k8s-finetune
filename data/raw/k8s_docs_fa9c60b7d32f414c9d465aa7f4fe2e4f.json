@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Topology-Aware Workload Scheduling",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/topology-aware-scheduling/",
-  "text": "Topology-Aware Scheduling\n(TAS) is a feature of the Workload API that optimizes the placement of\npods within the cluster.\nTAS ensures that all pods within a PodGroup are co-located into a specific topology domain,\nsuch as a single server rack or zone. This minimizes inter-pod communication latency and prevents\nworkload fragmentation across the cluster infrastructure."
+  "text": "Topology-Aware Scheduling\n(TAS) is a feature of the Workload API that optimizes the placement of\npods within the cluster.\nTAS ensures that all pods within a PodGroup are co-located into a specific topology domain,\nsuch as a single server rack or zone. This minimizes inter-pod communication latency and prevents\nworkload fragmentation across the cluster infrastructure.",
+  "failure_classes": []
 }

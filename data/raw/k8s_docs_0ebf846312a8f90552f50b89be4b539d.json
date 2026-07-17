@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Metrics For Kubernetes System Components",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-metrics/",
-  "text": "System component metrics can give a better look into what is happening inside them. Metrics are\nparticularly useful for building dashboards and alerts.\nKubernetes components emit metrics in\nPrometheus format\n.\nThis format is structured plain text, designed so that people and machines can both read it."
+  "text": "System component metrics can give a better look into what is happening inside them. Metrics are\nparticularly useful for building dashboards and alerts.\nKubernetes components emit metrics in\nPrometheus format\n.\nThis format is structured plain text, designed so that people and machines can both read it.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Advanced Pod Configuration — Built-in PriorityClasses",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/advanced-pod-config/#built-in-priorityclasses",
-  "text": "Kubernetes provides two built-in PriorityClasses:\nsystem-cluster-critical\n: For system components that are critical to the cluster\nsystem-node-critical\n: For system components that are critical to individual nodes. This is the highest priority that Pods can have in Kubernetes.\nFor more information, see\nPod Priority and Preemption\n."
+  "text": "Kubernetes provides two built-in PriorityClasses:\nsystem-cluster-critical\n: For system components that are critical to the cluster\nsystem-node-critical\n: For system components that are critical to individual nodes. This is the highest priority that Pods can have in Kubernetes.\nFor more information, see\nPod Priority and Preemption\n.",
+  "failure_classes": []
 }

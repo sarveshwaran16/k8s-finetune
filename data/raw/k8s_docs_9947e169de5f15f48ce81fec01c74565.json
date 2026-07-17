@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl config rename-context — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_rename-context/#synopsis",
-  "text": "Renames a context from the kubeconfig file.\nCONTEXT_NAME is the context name that you want to change.\nNEW_NAME is the new name you want to set.\nNote: If the context being renamed is the 'current-context', this field will also be updated.\nkubectl config rename-context CONTEXT_NAME NEW_NAME\n\n# Rename the context 'old-name' to 'new-name' in your kubeconfig file\n  kubectl config rename-context old-name new-name"
+  "text": "Renames a context from the kubeconfig file.\nCONTEXT_NAME is the context name that you want to change.\nNEW_NAME is the new name you want to set.\nNote: If the context being renamed is the 'current-context', this field will also be updated.\nkubectl config rename-context CONTEXT_NAME NEW_NAME\n\n# Rename the context 'old-name' to 'new-name' in your kubeconfig file\n  kubectl config rename-context old-name new-name",
+  "failure_classes": []
 }

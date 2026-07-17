@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Hardening Guide - Scheduler Configuration — Scheduler TLS command line options",
   "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/scheduler/#scheduler-tls-command-line-options",
-  "text": "tls-cipher-suites\n: Always provide a list of preferred cipher suites.\nThis ensures encryption never happens with insecure cipher suites.\n\nWhen using custom schedulers based on the Kubernetes scheduling code, cluster administrators need to be careful with\nplugins that use the\nqueueSort\n,\nprefilter\n,\nfilter\n, or\npermit\nextension points\n.\nThese extension points control various stages of a scheduling process,\nand the wrong configuration can impact the kube-scheduler's behavior in your cluster."
+  "text": "tls-cipher-suites\n: Always provide a list of preferred cipher suites.\nThis ensures encryption never happens with insecure cipher suites.\n\nWhen using custom schedulers based on the Kubernetes scheduling code, cluster administrators need to be careful with\nplugins that use the\nqueueSort\n,\nprefilter\n,\nfilter\n, or\npermit\nextension points\n.\nThese extension points control various stages of a scheduling process,\nand the wrong configuration can impact the kube-scheduler's behavior in your cluster.",
+  "failure_classes": []
 }

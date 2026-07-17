@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Policies",
   "source_url": "https://kubernetes.io/docs/concepts/policy/",
-  "text": "Kubernetes policies are configurations that manage other configurations or runtime behaviors. Kubernetes offers various forms of policies, described below:\n\nSome API objects act as policies. Here are some examples:\nNetworkPolicies\ncan be used to restrict ingress and egress traffic for a workload.\nLimitRanges\nmanage resource allocation constraints across different object kinds.\nResourceQuotas\nlimit resource consumption for a\nnamespace\n."
+  "text": "Kubernetes policies are configurations that manage other configurations or runtime behaviors. Kubernetes offers various forms of policies, described below:\n\nSome API objects act as policies. Here are some examples:\nNetworkPolicies\ncan be used to restrict ingress and egress traffic for a workload.\nLimitRanges\nmanage resource allocation constraints across different object kinds.\nResourceQuotas\nlimit resource consumption for a\nnamespace\n.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

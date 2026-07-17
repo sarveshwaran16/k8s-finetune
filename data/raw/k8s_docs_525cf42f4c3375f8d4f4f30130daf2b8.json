@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Introduction to kubectl — Command Families",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/introduction/#command-families",
-  "text": "Most kubectl commands typically fall into one of a few categories:\nType\nUsed For\nDescription\nDeclarative Resource Management\nDeployment and operations (e.g. GitOps)\nDeclaratively manage Kubernetes workloads using resource configuration\nImperative Resource Management\nDevelopment Only\nRun commands to manage Kubernetes workloads using Command Line arguments and flags\nPrinting Workload State\nDebugging\nPrint information about workloads\nInteracting with Containers\nDebugging\nExec, attach, cp, logs\nCluster Management\nCluster operations\nDrain and cordon Nodes"
+  "text": "Most kubectl commands typically fall into one of a few categories:\nType\nUsed For\nDescription\nDeclarative Resource Management\nDeployment and operations (e.g. GitOps)\nDeclaratively manage Kubernetes workloads using resource configuration\nImperative Resource Management\nDevelopment Only\nRun commands to manage Kubernetes workloads using Command Line arguments and flags\nPrinting Workload State\nDebugging\nPrint information about workloads\nInteracting with Containers\nDebugging\nExec, attach, cp, logs\nCluster Management\nCluster operations\nDrain and cordon Nodes",
+  "failure_classes": []
 }

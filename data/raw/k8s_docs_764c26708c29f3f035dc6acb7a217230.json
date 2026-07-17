@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubelet Configuration (v1beta1) — UserNamespaces",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-UserNamespaces",
-  "text": "Appears in:\nKubeletConfiguration\nUserNamespaces contains User Namespace configurations.\nField\nDescription\nidsPerPod\nint64\nIDsPerPod is the mapping length of UIDs and GIDs.\nThe length must be a multiple of 65536, and must be less than 1<<32.\nOn non-linux such as windows, only null / absent is allowed.\nChanging the value may require recreating all containers on the node.\nDefault: 65536\nIDsPerPod is the mapping length of UIDs and GIDs.\nThe length must be a multiple of 65536, and must be less than 1<<32.\nOn non-linux such as windows, only null / absent is allowed.\nChanging the value may require recreating all containers on the node.\nDefault: 65536"
+  "text": "Appears in:\nKubeletConfiguration\nUserNamespaces contains User Namespace configurations.\nField\nDescription\nidsPerPod\nint64\nIDsPerPod is the mapping length of UIDs and GIDs.\nThe length must be a multiple of 65536, and must be less than 1<<32.\nOn non-linux such as windows, only null / absent is allowed.\nChanging the value may require recreating all containers on the node.\nDefault: 65536\nIDsPerPod is the mapping length of UIDs and GIDs.\nThe length must be a multiple of 65536, and must be less than 1<<32.\nOn non-linux such as windows, only null / absent is allowed.\nChanging the value may require recreating all containers on the node.\nDefault: 65536",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

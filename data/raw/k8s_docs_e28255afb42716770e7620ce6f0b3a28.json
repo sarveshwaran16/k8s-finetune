@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Running Kubernetes Node Components as a Non-root User — Before you begin",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/#before-you-begin",
-  "text": "Your Kubernetes server must be at or later than version 1.22.\nTo check the version, enter\nkubectl version\n.\nEnable Cgroup v2\nEnable systemd with user session\nConfigure several sysctl values, depending on host Linux distribution\nEnsure that your unprivileged user is listed in\n/etc/subuid\nand\n/etc/subgid\nEnable the\nKubeletInUserNamespace\nfeature gate"
+  "text": "Your Kubernetes server must be at or later than version 1.22.\nTo check the version, enter\nkubectl version\n.\nEnable Cgroup v2\nEnable systemd with user session\nConfigure several sysctl values, depending on host Linux distribution\nEnsure that your unprivileged user is listed in\n/etc/subuid\nand\n/etc/subgid\nEnable the\nKubeletInUserNamespace\nfeature gate",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

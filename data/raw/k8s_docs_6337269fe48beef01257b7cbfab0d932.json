@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Kubelet Configuration (v1beta1) — CrashLoopBackOffConfig",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-CrashLoopBackOffConfig",
-  "text": "Appears in:\nKubeletConfiguration\nField\nDescription\nmaxContainerRestartPeriod\nmeta/v1.Duration\nmaxContainerRestartPeriod is the maximum duration the backoff delay can accrue\nto for container restarts, minimum 1 second, maximum 300 seconds. If not set,\ndefaults to the internal crashloopbackoff maximum (300s).\nmaxContainerRestartPeriod is the maximum duration the backoff delay can accrue\nto for container restarts, minimum 1 second, maximum 300 seconds. If not set,\ndefaults to the internal crashloopbackoff maximum (300s)."
+  "text": "Appears in:\nKubeletConfiguration\nField\nDescription\nmaxContainerRestartPeriod\nmeta/v1.Duration\nmaxContainerRestartPeriod is the maximum duration the backoff delay can accrue\nto for container restarts, minimum 1 second, maximum 300 seconds. If not set,\ndefaults to the internal crashloopbackoff maximum (300s).\nmaxContainerRestartPeriod is the maximum duration the backoff delay can accrue\nto for container restarts, minimum 1 second, maximum 300 seconds. If not set,\ndefaults to the internal crashloopbackoff maximum (300s).",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "CronJob — Job template",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#job-template",
-  "text": "The\n.spec.jobTemplate\ndefines a template for the Jobs that the CronJob creates, and it is required.\nIt has exactly the same schema as a\nJob\n, except that\nit is nested and does not have an\napiVersion\nor\nkind\n.\nYou can specify common metadata for the templated Jobs, such as\nlabels\nor\nannotations\n.\nFor information about writing a Job\n.spec\n, see\nWriting a Job Spec\n."
+  "text": "The\n.spec.jobTemplate\ndefines a template for the Jobs that the CronJob creates, and it is required.\nIt has exactly the same schema as a\nJob\n, except that\nit is nested and does not have an\napiVersion\nor\nkind\n.\nYou can specify common metadata for the templated Jobs, such as\nlabels\nor\nannotations\n.\nFor information about writing a Job\n.spec\n, see\nWriting a Job Spec\n.",
+  "failure_classes": []
 }

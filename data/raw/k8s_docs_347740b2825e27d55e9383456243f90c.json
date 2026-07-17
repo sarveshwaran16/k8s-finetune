@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debug Services — Seek help",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/#seek-help",
-  "text": "If you get this far, something very strange is happening. Your Service is\nrunning, has EndpointSlices, and your Pods are actually serving. You have DNS\nworking, and\nkube-proxy\ndoes not seem to be misbehaving. And yet your\nService is not working. Please let us know what is going on, so we can help\ninvestigate!\nContact us on\nSlack\nor\nForum\nor\nGitHub\n."
+  "text": "If you get this far, something very strange is happening. Your Service is\nrunning, has EndpointSlices, and your Pods are actually serving. You have DNS\nworking, and\nkube-proxy\ndoes not seem to be misbehaving. And yet your\nService is not working. Please let us know what is going on, so we can help\ninvestigate!\nContact us on\nSlack\nor\nForum\nor\nGitHub\n.",
+  "failure_classes": []
 }

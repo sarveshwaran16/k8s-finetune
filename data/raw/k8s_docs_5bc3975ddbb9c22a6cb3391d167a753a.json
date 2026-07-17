@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Traces For Kubernetes System Components — Stability",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/system-traces/#stability",
-  "text": "Tracing instrumentation is still under active development, and may change\nin a variety of ways. This includes span names, attached attributes,\ninstrumented endpoints, etc. Until this feature graduates to stable,\nthere are no guarantees of backwards compatibility for tracing instrumentation.\n\nRead about\nGetting Started with the OpenTelemetry Collector\nRead about\nOTLP Exporter Configuration"
+  "text": "Tracing instrumentation is still under active development, and may change\nin a variety of ways. This includes span names, attached attributes,\ninstrumented endpoints, etc. Until this feature graduates to stable,\nthere are no guarantees of backwards compatibility for tracing instrumentation.\n\nRead about\nGetting Started with the OpenTelemetry Collector\nRead about\nOTLP Exporter Configuration",
+  "failure_classes": []
 }

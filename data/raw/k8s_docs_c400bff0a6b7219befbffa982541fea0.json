@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Jobs — Job tracking with finalizers",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#job-tracking-with-finalizers",
-  "text": "The control plane keeps track of the Pods that belong to any Job and notices if\nany such Pod is removed from the API server. To do that, the Job controller\ncreates Pods with the finalizer\nbatch.kubernetes.io/job-tracking\n. The\ncontroller removes the finalizer only after the Pod has been accounted for in\nthe Job status, allowing the Pod to be removed by other controllers or users."
+  "text": "The control plane keeps track of the Pods that belong to any Job and notices if\nany such Pod is removed from the API server. To do that, the Job controller\ncreates Pods with the finalizer\nbatch.kubernetes.io/job-tracking\n. The\ncontroller removes the finalizer only after the Pod has been accounted for in\nthe Job status, allowing the Pod to be removed by other controllers or users.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure a Pod to Use a PersistentVolume for Storage",
   "source_url": "https://kubernetes.io/docs/tutorials/configuration/configure-persistent-volume-storage/",
-  "text": "This page shows you how to configure a Pod to use a\nPersistentVolumeClaim\nfor storage.\nHere is a summary of the process:\nYou, as cluster administrator, create a PersistentVolume backed by physical\nstorage. You do not associate the volume with any Pod.\nYou, now taking the role of a developer / cluster user, create a\nPersistentVolumeClaim that is automatically bound to a suitable\nPersistentVolume.\nYou create a Pod that uses the above PersistentVolumeClaim for storage.\nYou, as cluster administrator, create a PersistentVolume backed by physical\nstorage. You do not associate the volume with any Pod.\nYou, now taking the role of a developer / cluster user, create a\nPersistentVolumeClaim that is automatically bound to a suitable\nPersistentVolume.\nYou create a Pod that uses the above PersistentVolumeClaim for storage."
+  "text": "This page shows you how to configure a Pod to use a\nPersistentVolumeClaim\nfor storage.\nHere is a summary of the process:\nYou, as cluster administrator, create a PersistentVolume backed by physical\nstorage. You do not associate the volume with any Pod.\nYou, now taking the role of a developer / cluster user, create a\nPersistentVolumeClaim that is automatically bound to a suitable\nPersistentVolume.\nYou create a Pod that uses the above PersistentVolumeClaim for storage.\nYou, as cluster administrator, create a PersistentVolume backed by physical\nstorage. You do not associate the volume with any Pod.\nYou, now taking the role of a developer / cluster user, create a\nPersistentVolumeClaim that is automatically bound to a suitable\nPersistentVolume.\nYou create a Pod that uses the above PersistentVolumeClaim for storage.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

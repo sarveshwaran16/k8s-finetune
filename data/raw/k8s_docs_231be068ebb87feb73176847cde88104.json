@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Local Files And Paths Used By The Kubelet — Checkpoint files for resource managers",
   "source_url": "https://kubernetes.io/docs/reference/node/kubelet-files/#resource-managers-state",
-  "text": "All resource managers keep the mapping of Pods to allocated resources in state files.\nState files are located in the kubelet's base directory, also termed the\nroot directory\n(but not the same as\n/\n, the node root directory). You can configure the base directory\nfor the kubelet\nusing the kubelet command line argument\n--root-dir\n.\nNames of files:\nmemory_manager_state\nfor the\nMemory Manager\ncpu_manager_state\nfor the\nCPU Manager\ndra_manager_state\nfor\nDRA"
+  "text": "All resource managers keep the mapping of Pods to allocated resources in state files.\nState files are located in the kubelet's base directory, also termed the\nroot directory\n(but not the same as\n/\n, the node root directory). You can configure the base directory\nfor the kubelet\nusing the kubelet command line argument\n--root-dir\n.\nNames of files:\nmemory_manager_state\nfor the\nMemory Manager\ncpu_manager_state\nfor the\nCPU Manager\ndra_manager_state\nfor\nDRA",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

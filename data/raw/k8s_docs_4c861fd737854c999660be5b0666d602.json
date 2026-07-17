@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Garbage Collection — Cascading deletion",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/garbage-collection/#cascading-deletion",
-  "text": "Kubernetes checks for and deletes objects that no longer have owner\nreferences, like the pods left behind when you delete a ReplicaSet. When you\ndelete an object, you can control whether Kubernetes deletes the object's\ndependents automatically, in a process called\ncascading deletion\n. There are\ntwo types of cascading deletion, as follows:\nForeground cascading deletion\nBackground cascading deletion\nYou can also control how and when garbage collection deletes resources that have\nowner references using Kubernetes\nfinalizers\n."
+  "text": "Kubernetes checks for and deletes objects that no longer have owner\nreferences, like the pods left behind when you delete a ReplicaSet. When you\ndelete an object, you can control whether Kubernetes deletes the object's\ndependents automatically, in a process called\ncascading deletion\n. There are\ntwo types of cascading deletion, as follows:\nForeground cascading deletion\nBackground cascading deletion\nYou can also control how and when garbage collection deletes resources that have\nowner references using Kubernetes\nfinalizers\n.",
+  "failure_classes": []
 }

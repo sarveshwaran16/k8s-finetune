@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubelet Configuration (v1beta1) — KubeletAuthentication",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-KubeletAuthentication",
-  "text": "Appears in:\nKubeletConfiguration\nField\nDescription\nx509\nKubeletX509Authentication\nx509 contains settings related to x509 client certificate authentication.\nwebhook\nKubeletWebhookAuthentication\nwebhook contains settings related to webhook bearer token authentication.\nanonymous\nKubeletAnonymousAuthentication\nanonymous contains settings related to anonymous authentication.\nx509 contains settings related to x509 client certificate authentication.\nwebhook contains settings related to webhook bearer token authentication.\nanonymous contains settings related to anonymous authentication."
+  "text": "Appears in:\nKubeletConfiguration\nField\nDescription\nx509\nKubeletX509Authentication\nx509 contains settings related to x509 client certificate authentication.\nwebhook\nKubeletWebhookAuthentication\nwebhook contains settings related to webhook bearer token authentication.\nanonymous\nKubeletAnonymousAuthentication\nanonymous contains settings related to anonymous authentication.\nx509 contains settings related to x509 client certificate authentication.\nwebhook contains settings related to webhook bearer token authentication.\nanonymous contains settings related to anonymous authentication.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

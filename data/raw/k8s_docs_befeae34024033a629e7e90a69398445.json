@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — Phase",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#phase",
-  "text": "A PersistentVolume will be in one of the following phases:\nYou can see the name of the PVC bound to the PV using\nkubectl describe persistentvolume <name>\n.\nThe\n.status\nfield for a PersistentVolume can include an alpha\nlastPhaseTransitionTime\nfield. This field records\nthe timestamp of when the volume last transitioned its phase. For newly created\nvolumes the phase is set to\nPending\nand\nlastPhaseTransitionTime\nis set to\nthe current time."
+  "text": "A PersistentVolume will be in one of the following phases:\nYou can see the name of the PVC bound to the PV using\nkubectl describe persistentvolume <name>\n.\nThe\n.status\nfield for a PersistentVolume can include an alpha\nlastPhaseTransitionTime\nfield. This field records\nthe timestamp of when the volume last transitioned its phase. For newly created\nvolumes the phase is set to\nPending\nand\nlastPhaseTransitionTime\nis set to\nthe current time.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/legacy-token-invalid-since",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-legacy-token-invalid-since",
-  "text": "Type: Label\nExample:\nkubernetes.io/legacy-token-invalid-since: 2023-10-27\nUsed on: Secret\nThe control plane automatically adds this label to auto-generated Secrets that\nhave the type\nkubernetes.io/service-account-token\n. This label marks the\nSecret-based token as invalid for authentication. The value of this label\nrecords the date (ISO 8601 format, UTC time zone) when the control plane detects\nthat the auto-generated Secret has not been used for a specified duration\n(defaults to one year)."
+  "text": "Type: Label\nExample:\nkubernetes.io/legacy-token-invalid-since: 2023-10-27\nUsed on: Secret\nThe control plane automatically adds this label to auto-generated Secrets that\nhave the type\nkubernetes.io/service-account-token\n. This label marks the\nSecret-based token as invalid for authentication. The value of this label\nrecords the date (ISO 8601 format, UTC time zone) when the control plane detects\nthat the auto-generated Secret has not been used for a specified duration\n(defaults to one year).",
+  "failure_classes": []
 }

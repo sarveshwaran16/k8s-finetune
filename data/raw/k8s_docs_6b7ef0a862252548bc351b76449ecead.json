@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — Using",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#using",
-  "text": "Pods use claims as volumes. The cluster inspects the claim to find the bound\nvolume and mounts that volume for a Pod. For volumes that support multiple\naccess modes, the user specifies which mode is desired when using their claim\nas a volume in a Pod.\nOnce a user has a claim and that claim is bound, the bound PV belongs to the\nuser for as long as they need it. Users schedule Pods and access their claimed\nPVs by including a\npersistentVolumeClaim\nsection in a Pod's\nvolumes\nblock.\nSee\nClaims As Volumes\nfor more details on this."
+  "text": "Pods use claims as volumes. The cluster inspects the claim to find the bound\nvolume and mounts that volume for a Pod. For volumes that support multiple\naccess modes, the user specifies which mode is desired when using their claim\nas a volume in a Pod.\nOnce a user has a claim and that claim is bound, the bound PV belongs to the\nuser for as long as they need it. Users schedule Pods and access their claimed\nPVs by including a\npersistentVolumeClaim\nsection in a Pod's\nvolumes\nblock.\nSee\nClaims As Volumes\nfor more details on this.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

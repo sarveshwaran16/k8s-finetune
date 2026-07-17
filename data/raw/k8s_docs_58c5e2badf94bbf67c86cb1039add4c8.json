@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/#what-s-next",
-  "text": "Read\nManage TLS Certificates in a Cluster\nFor details of X.509 itself, refer to\nRFC 5280\nsection 3.1\nFor information on the syntax of PKCS#10 certificate signing requests, refer to\nRFC 2986\nRead about\nClusterTrustBundles\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Read\nManage TLS Certificates in a Cluster\nFor details of X.509 itself, refer to\nRFC 5280\nsection 3.1\nFor information on the syntax of PKCS#10 certificate signing requests, refer to\nRFC 2986\nRead about\nClusterTrustBundles\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

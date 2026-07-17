@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Getting started — What's next",
   "source_url": "https://kubernetes.io/docs/setup/#what-s-next",
-  "text": "Download Kubernetes\nDownload and\ninstall tools\nincluding\nkubectl\nSelect a\ncontainer runtime\nfor your new cluster\nLearn about\nbest practices\nfor cluster setup\nKubernetes is designed for its\ncontrol plane\nto\nrun on Linux. Within your cluster you can run applications on Linux or other operating systems, including\nWindows.\nLearn to\nset up clusters with Windows nodes"
+  "text": "Download Kubernetes\nDownload and\ninstall tools\nincluding\nkubectl\nSelect a\ncontainer runtime\nfor your new cluster\nLearn about\nbest practices\nfor cluster setup\nKubernetes is designed for its\ncontrol plane\nto\nrun on Linux. Within your cluster you can run applications on Linux or other operating systems, including\nWindows.\nLearn to\nset up clusters with Windows nodes",
+  "failure_classes": []
 }

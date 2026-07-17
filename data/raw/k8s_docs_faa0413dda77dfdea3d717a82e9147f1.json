@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Deprecation Policy — Fields of REST resources",
   "source_url": "https://kubernetes.io/docs/reference/using-api/deprecation-policy/#fields-of-rest-resources",
-  "text": "As with whole REST resources, an individual field which was present in API v1\nmust exist and function until API v1 is removed. Unlike whole resources, the\nv2 APIs may choose a different representation for the field, as long as it can\nbe round-tripped. For example a v1 field named \"magnitude\" which was\ndeprecated might be named \"deprecatedMagnitude\" in API v2. When v1 is\neventually removed, the deprecated field can be removed from v2."
+  "text": "As with whole REST resources, an individual field which was present in API v1\nmust exist and function until API v1 is removed. Unlike whole resources, the\nv2 APIs may choose a different representation for the field, as long as it can\nbe round-tripped. For example a v1 field named \"magnitude\" which was\ndeprecated might be named \"deprecatedMagnitude\" in API v2. When v1 is\neventually removed, the deprecated field can be removed from v2.",
+  "failure_classes": []
 }

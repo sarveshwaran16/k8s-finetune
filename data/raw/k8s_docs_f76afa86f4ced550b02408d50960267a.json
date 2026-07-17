@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubelet Configuration (v1beta1) — KubeletWebhookAuthorization",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-KubeletWebhookAuthorization",
-  "text": "Appears in:\nKubeletAuthorization\nField\nDescription\ncacheAuthorizedTTL\nmeta/v1.Duration\ncacheAuthorizedTTL is the duration to cache 'authorized' responses from the\nwebhook authorizer.\ncacheUnauthorizedTTL\nmeta/v1.Duration\ncacheUnauthorizedTTL is the duration to cache 'unauthorized' responses from\nthe webhook authorizer.\ncacheAuthorizedTTL is the duration to cache 'authorized' responses from the\nwebhook authorizer.\ncacheUnauthorizedTTL is the duration to cache 'unauthorized' responses from\nthe webhook authorizer."
+  "text": "Appears in:\nKubeletAuthorization\nField\nDescription\ncacheAuthorizedTTL\nmeta/v1.Duration\ncacheAuthorizedTTL is the duration to cache 'authorized' responses from the\nwebhook authorizer.\ncacheUnauthorizedTTL\nmeta/v1.Duration\ncacheUnauthorizedTTL is the duration to cache 'unauthorized' responses from\nthe webhook authorizer.\ncacheAuthorizedTTL is the duration to cache 'authorized' responses from the\nwebhook authorizer.\ncacheUnauthorizedTTL is the duration to cache 'unauthorized' responses from\nthe webhook authorizer.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

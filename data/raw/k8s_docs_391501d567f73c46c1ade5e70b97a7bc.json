@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Migrating telemetry and security agents from dockershim — Falco",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/migrating-telemetry-and-security-agents/#falco",
-  "text": "How to migrate:\nMigrate Falco from dockershim\nFalco supports any CRI-compatible runtime (containerd is used in the default configuration); the documentation explains all details.\nThe pod accessing Docker may have name containing:\nfalco\n\nCheck\ndocumentation for Prisma Cloud\n,\nunder the \"Install Prisma Cloud on a CRI (non-Docker) cluster\" section.\nThe pod accessing Docker may be named like:\ntwistlock-defender-ds"
+  "text": "How to migrate:\nMigrate Falco from dockershim\nFalco supports any CRI-compatible runtime (containerd is used in the default configuration); the documentation explains all details.\nThe pod accessing Docker may have name containing:\nfalco\n\nCheck\ndocumentation for Prisma Cloud\n,\nunder the \"Install Prisma Cloud on a CRI (non-Docker) cluster\" section.\nThe pod accessing Docker may be named like:\ntwistlock-defender-ds",
+  "failure_classes": []
 }

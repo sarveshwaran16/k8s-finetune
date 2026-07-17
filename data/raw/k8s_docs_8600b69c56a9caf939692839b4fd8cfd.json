@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Using a KMS provider for data encryption",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/",
-  "text": "This page shows how to configure a Key Management Service (KMS) provider and plugin to enable secret data encryption.\nIn Kubernetes 1.36 there are two versions of KMS at-rest encryption.\nYou should use KMS v2 if feasible because KMS v1 is deprecated (since Kubernetes v1.28) and disabled by default (since Kubernetes v1.29).\nKMS v2 offers significantly better performance characteristics than KMS v1."
+  "text": "This page shows how to configure a Key Management Service (KMS) provider and plugin to enable secret data encryption.\nIn Kubernetes 1.36 there are two versions of KMS at-rest encryption.\nYou should use KMS v2 if feasible because KMS v1 is deprecated (since Kubernetes v1.28) and disabled by default (since Kubernetes v1.29).\nKMS v2 offers significantly better performance characteristics than KMS v1.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure DNS for a Cluster",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/configure-dns-cluster/",
-  "text": "Kubernetes offers a DNS cluster addon, which most of the supported environments enable by default. In Kubernetes version 1.11 and later, CoreDNS is recommended and is installed by default with kubeadm.\nFor more information on how to configure CoreDNS for a Kubernetes cluster, see the\nCustomizing DNS Service\n."
+  "text": "Kubernetes offers a DNS cluster addon, which most of the supported environments enable by default. In Kubernetes version 1.11 and later, CoreDNS is recommended and is installed by default with kubeadm.\nFor more information on how to configure CoreDNS for a Kubernetes cluster, see the\nCustomizing DNS Service\n.",
+  "failure_classes": []
 }

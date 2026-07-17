@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Certificates and Certificate Signing Requests",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/",
-  "text": "Kubernetes certificate and trust bundle APIs enable automation of\nX.509\ncredential provisioning by providing\na programmatic interface for clients of the Kubernetes API to request and obtain\nX.509\ncertificates\nfrom a Certificate Authority (CA).\nThere is also experimental (alpha) support for distributing\ntrust bundles\n."
+  "text": "Kubernetes certificate and trust bundle APIs enable automation of\nX.509\ncredential provisioning by providing\na programmatic interface for clients of the Kubernetes API to request and obtain\nX.509\ncertificates\nfrom a Certificate Authority (CA).\nThere is also experimental (alpha) support for distributing\ntrust bundles\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Liveness, Readiness, and Startup Probes — Check mechanisms",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#check-mechanisms",
-  "text": "There are four different ways to check a container using a probe. Each probe\nmust define exactly one of these four mechanisms:\n\nThe kubelet evaluates the result of each probe execution and takes action\naccordingly. Each probe has one of three results:\nIf a container does not provide a particular probe, the kubelet always\nconsiders the result as\nSuccess\n. For readiness probes specifically,\nthe result is considered\nFailure\nbefore the initial delay."
+  "text": "There are four different ways to check a container using a probe. Each probe\nmust define exactly one of these four mechanisms:\n\nThe kubelet evaluates the result of each probe execution and takes action\naccordingly. Each probe has one of three results:\nIf a container does not provide a particular probe, the kubelet always\nconsiders the result as\nSuccess\n. For readiness probes specifically,\nthe result is considered\nFailure\nbefore the initial delay.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

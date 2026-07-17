@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Resize CPU and Memory Resources assigned to Containers — Clean up",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/#clean-up",
-  "text": "Delete your namespace. This deletes all the Pods that you created for this task:\nkubectl delete namespace qos-example\n\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources"
+  "text": "Delete your namespace. This deletes all the Pods that you created for this task:\nkubectl delete namespace qos-example\n\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources\nAssign Memory Resources to Containers and Pods\nAssign CPU Resources to Containers and Pods\nAssign Pod-level CPU and memory resources",
+  "failure_classes": []
 }

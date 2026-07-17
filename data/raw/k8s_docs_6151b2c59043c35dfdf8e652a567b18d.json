@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Enforce Pod Security Standards with Namespace Labels",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/enforce-standards-namespace-labels/",
-  "text": "Namespaces can be labeled to enforce the\nPod Security Standards\n. The three policies\nprivileged\n,\nbaseline\nand\nrestricted\nbroadly cover the security spectrum\nand are implemented by the\nPod Security\nadmission controller\n.\n\nPod Security Admission was available by default in Kubernetes v1.23, as\na beta. From version 1.25 onwards, Pod Security Admission is generally\navailable.\nTo check the version, enter\nkubectl version\n."
+  "text": "Namespaces can be labeled to enforce the\nPod Security Standards\n. The three policies\nprivileged\n,\nbaseline\nand\nrestricted\nbroadly cover the security spectrum\nand are implemented by the\nPod Security\nadmission controller\n.\n\nPod Security Admission was available by default in Kubernetes v1.23, as\na beta. From version 1.25 onwards, Pod Security Admission is generally\navailable.\nTo check the version, enter\nkubectl version\n.",
+  "failure_classes": []
 }

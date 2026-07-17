@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Good practices for Dynamic Resource Allocation as a Cluster Admin — kubeletmetrics",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/dra/#kubelet-metrics",
-  "text": "When a Pod bound to a node must have a ResourceClaim satisfied, kubelet calls\nthe\nNodePrepareResources\nand\nNodeUnprepareResources\nmethods of the DRA\ndriver. You can observe this behavior from the kubelet's point of view with the\nfollowing metrics.\nKubelet NodePrepareResources: Monitor\nhistogram_quantile\n(\n0.99\n,\nsum\n(\nrate\n(\ndra_operations_duration_seconds_bucket\n{\noperation_name\n=\n\"\nPrepareResources\n\"}[\n5m\n]\n))\nby\n(\nle\n))\n.\nKubelet NodeUnprepareResources: Track\nhistogram_quantile\n(\n0.99\n,\nsum\n(\nrate\n(\ndra_operations_duration_seconds_bucket\n{\noperation_name\n=\n\"\nUnprepareResources\n\"}[\n5m\n]\n))\nby\n(\nle\n))\n."
+  "text": "When a Pod bound to a node must have a ResourceClaim satisfied, kubelet calls\nthe\nNodePrepareResources\nand\nNodeUnprepareResources\nmethods of the DRA\ndriver. You can observe this behavior from the kubelet's point of view with the\nfollowing metrics.\nKubelet NodePrepareResources: Monitor\nhistogram_quantile\n(\n0.99\n,\nsum\n(\nrate\n(\ndra_operations_duration_seconds_bucket\n{\noperation_name\n=\n\"\nPrepareResources\n\"}[\n5m\n]\n))\nby\n(\nle\n))\n.\nKubelet NodeUnprepareResources: Track\nhistogram_quantile\n(\n0.99\n,\nsum\n(\nrate\n(\ndra_operations_duration_seconds_bucket\n{\noperation_name\n=\n\"\nUnprepareResources\n\"}[\n5m\n]\n))\nby\n(\nle\n))\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — Usage",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#usage",
-  "text": "$ kubectl plugin [flags]\n\nList all available plugins\nkubectl\nplugin\nlist\nList all available plugin files on a user's PATH.\nAvailable plugin files are those that are: - executable - anywhere on the user's PATH - begin with \"kubectl-\"\n\n$ kubectl plugin list\n\nName\nShorthand\nDefault\nUsage\nname-only\nfalse\nIf true, display only the binary name of each plugin, rather than its full path"
+  "text": "$ kubectl plugin [flags]\n\nList all available plugins\nkubectl\nplugin\nlist\nList all available plugin files on a user's PATH.\nAvailable plugin files are those that are: - executable - anywhere on the user's PATH - begin with \"kubectl-\"\n\n$ kubectl plugin list\n\nName\nShorthand\nDefault\nUsage\nname-only\nfalse\nIf true, display only the binary name of each plugin, rather than its full path",
+  "failure_classes": []
 }

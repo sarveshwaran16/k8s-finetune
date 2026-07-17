@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl cluster-info dump — Examples",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_cluster-info/kubectl_cluster-info_dump/#examples",
-  "text": "# Dump current cluster state to stdout\n  kubectl cluster-info dump\n  \n  # Dump current cluster state to /path/to/cluster-state\n  kubectl cluster-info dump --output-directory=/path/to/cluster-state\n  \n  # Dump all namespaces to stdout\n  kubectl cluster-info dump --all-namespaces\n  \n  # Dump a set of namespaces to /path/to/cluster-state\n  kubectl cluster-info dump --namespaces default,kube-system --output-directory=/path/to/cluster-state"
+  "text": "# Dump current cluster state to stdout\n  kubectl cluster-info dump\n  \n  # Dump current cluster state to /path/to/cluster-state\n  kubectl cluster-info dump --output-directory=/path/to/cluster-state\n  \n  # Dump all namespaces to stdout\n  kubectl cluster-info dump --all-namespaces\n  \n  # Dump a set of namespaces to /path/to/cluster-state\n  kubectl cluster-info dump --namespaces default,kube-system --output-directory=/path/to/cluster-state",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "CronJob — CronJobStatus",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/cron-job-v1/#CronJobStatus",
-  "text": "CronJobStatus represents the current state of a cron job.\nField\nDescription\nactive\nObjectReference array\nA list of pointers to currently running jobs.\nlastScheduleTime\nTime\nInformation when was the last time the job was successfully scheduled.\nlastSuccessfulTime\nTime\nInformation when was the last time the job successfully completed."
+  "text": "CronJobStatus represents the current state of a cron job.\nField\nDescription\nactive\nObjectReference array\nA list of pointers to currently running jobs.\nlastScheduleTime\nTime\nInformation when was the last time the job was successfully scheduled.\nlastSuccessfulTime\nTime\nInformation when was the last time the job successfully completed.",
+  "failure_classes": []
 }

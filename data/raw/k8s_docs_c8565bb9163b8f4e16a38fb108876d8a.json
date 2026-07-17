@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Decrypt Confidential Data that is Already Encrypted at Rest — Reconfigure other control plane hosts",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/decrypt-data/#api-server-config-update-more-1",
-  "text": "If you have multiple API servers in your cluster, you should deploy the changes in turn to each API server.\nMake sure that you use the same encryption configuration on each control plane host.\n\nThen run the following command to force decryption of all Secrets:\n# If you are decrypting a different kind of object, change \"secrets\" to match.\nkubectl get secrets --all-namespaces -o json\n|\nkubectl replace -f -\nOnce you have replaced\nall\nexisting encrypted resources with backing data that\ndon't use encryption, you can remove the encryption settings from the\nkube-apiserver\n.\nThe command line options to remove are:\n--encryption-provider-config\n--encryption-provider-config-automatic-reload\nRestart the kube-apiserver Pod again to apply the new configuration."
+  "text": "If you have multiple API servers in your cluster, you should deploy the changes in turn to each API server.\nMake sure that you use the same encryption configuration on each control plane host.\n\nThen run the following command to force decryption of all Secrets:\n# If you are decrypting a different kind of object, change \"secrets\" to match.\nkubectl get secrets --all-namespaces -o json\n|\nkubectl replace -f -\nOnce you have replaced\nall\nexisting encrypted resources with backing data that\ndon't use encryption, you can remove the encryption settings from the\nkube-apiserver\n.\nThe command line options to remove are:\n--encryption-provider-config\n--encryption-provider-config-automatic-reload\nRestart the kube-apiserver Pod again to apply the new configuration.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

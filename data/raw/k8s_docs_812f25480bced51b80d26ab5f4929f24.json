@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Implementation details — Wait for the control plane to come up",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/#wait-for-the-control-plane-to-come-up",
-  "text": "On control plane nodes, kubeadm waits up to 4 minutes for the control plane components\nand the kubelet to be available. It does that by performing a health check on the respective\ncomponent\n/healthz\nor\n/livez\nendpoints.\nAfter the control plane is up, kubeadm completes the tasks described in following paragraphs."
+  "text": "On control plane nodes, kubeadm waits up to 4 minutes for the control plane components\nand the kubelet to be available. It does that by performing a health check on the respective\ncomponent\n/healthz\nor\n/livez\nendpoints.\nAfter the control plane is up, kubeadm completes the tasks described in following paragraphs.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

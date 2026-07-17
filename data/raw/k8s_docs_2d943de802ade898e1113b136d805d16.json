@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debug Services",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/",
-  "text": "An issue that comes up rather frequently for new installations of Kubernetes is\nthat a Service is not working properly. You've run your Pods through a\nDeployment (or other workload controller) and created a Service, but you\nget no response when you try to access it. This document will hopefully help\nyou to figure out what's going wrong."
+  "text": "An issue that comes up rather frequently for new installations of Kubernetes is\nthat a Service is not working properly. You've run your Pods through a\nDeployment (or other workload controller) and created a Service, but you\nget no response when you try to access it. This document will hopefully help\nyou to figure out what's going wrong.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Running Kubernetes Node Components as a Non-root User — Creating a delegated cgroup tree",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/#creating-a-delegated-cgroup-tree",
-  "text": "In addition to the user namespace, you also need to have a writable cgroup tree with cgroup v2.\nIf you are trying to run Kubernetes in Rootless Docker/Podman or LXC/LXD on a systemd-based host, you are all set.\nOtherwise you have to create a systemd unit with\nDelegate=yes\nproperty to delegate a cgroup tree with writable permission.\nOn your node, systemd must already be configured to allow delegation; for more details, see\ncgroup v2\nin the Rootless\nContainers documentation."
+  "text": "In addition to the user namespace, you also need to have a writable cgroup tree with cgroup v2.\nIf you are trying to run Kubernetes in Rootless Docker/Podman or LXC/LXD on a systemd-based host, you are all set.\nOtherwise you have to create a systemd unit with\nDelegate=yes\nproperty to delegate a cgroup tree with writable permission.\nOn your node, systemd must already be configured to allow delegation; for more details, see\ncgroup v2\nin the Rootless\nContainers documentation.",
+  "failure_classes": []
 }

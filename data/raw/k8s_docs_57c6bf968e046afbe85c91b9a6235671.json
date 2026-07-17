@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cluster Architecture — Container runtime",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/#container-runtime",
-  "text": "A fundamental component that empowers Kubernetes to run containers effectively.\nIt is responsible for managing the execution and lifecycle of containers within the Kubernetes environment.\nKubernetes supports container runtimes such as\ncontainerd\n,\nCRI-O\n,\nand any other implementation of the\nKubernetes CRI (Container Runtime\nInterface)\n."
+  "text": "A fundamental component that empowers Kubernetes to run containers effectively.\nIt is responsible for managing the execution and lifecycle of containers within the Kubernetes environment.\nKubernetes supports container runtimes such as\ncontainerd\n,\nCRI-O\n,\nand any other implementation of the\nKubernetes CRI (Container Runtime\nInterface)\n.",
+  "failure_classes": []
 }

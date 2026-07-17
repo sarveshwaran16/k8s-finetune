@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Quality of Service Classes",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/",
-  "text": "This page introduces\nQuality of Service (QoS) classes\nin Kubernetes, and explains\nhow Kubernetes assigns a QoS class to each Pod as a consequence of the resource\nconstraints that you specify for the containers in that Pod. Kubernetes relies on this\nclassification to make decisions about which Pods to evict when there are not enough\navailable resources on a Node."
+  "text": "This page introduces\nQuality of Service (QoS) classes\nin Kubernetes, and explains\nhow Kubernetes assigns a QoS class to each Pod as a consequence of the resource\nconstraints that you specify for the containers in that Pod. Kubernetes relies on this\nclassification to make decisions about which Pods to evict when there are not enough\navailable resources on a Node.",
+  "failure_classes": []
 }

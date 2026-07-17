@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Container Runtime Interface (CRI) — The API",
   "source_url": "https://kubernetes.io/docs/concepts/containers/cri/#api",
-  "text": "The kubelet acts as a client when connecting to the container runtime via gRPC.\nThe runtime and image service endpoints have to be available in the container\nruntime, which can be configured separately within the kubelet by using the\n--container-runtime-endpoint\ncommand line flag\n.\nFor Kubernetes v1.26 and later, the kubelet requires that the container runtime\nsupports the\nv1\nCRI API. If a container runtime does not support the\nv1\nAPI,\nthe kubelet will not register the node."
+  "text": "The kubelet acts as a client when connecting to the container runtime via gRPC.\nThe runtime and image service endpoints have to be available in the container\nruntime, which can be configured separately within the kubelet by using the\n--container-runtime-endpoint\ncommand line flag\n.\nFor Kubernetes v1.26 and later, the kubelet requires that the container runtime\nsupports the\nv1\nCRI API. If a container runtime does not support the\nv1\nAPI,\nthe kubelet will not register the node.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "KYAML Reference — Getting started with KYAML",
   "source_url": "https://kubernetes.io/docs/reference/encodings/kyaml/#getting-started-with-kyaml",
-  "text": "YAML’s reliance on indentation and implicit type coercion often leads to configuration errors, especially in CI/CD pipelines and templating systems like Helm. KYAML eliminates these issues by enforcing explicit syntax and structure, making configurations more reliable and easier to debug.\n\nKYAML uses\nflow style\nsyntax with\n{}\nfor objects and\n[]\nfor arrays. All string values must be\ndouble-quoted\n.\n---\n{\napiVersion\n:\n\"v1\"\n,\nkind\n:\n\"Pod\"\n,\nmetadata\n:\n{\nname\n:\n\"my-pod\"\n,\nlabels\n:\n{\napp\n:\n\"demo\"\n}\n,\n}\n,\nspec\n:\n{\ncontainers\n:\n[\n{\nname\n:\n\"nginx\"\n,\nimage\n:\n\"nginx:1.20\"\n}\n]\n}\n}"
+  "text": "YAML’s reliance on indentation and implicit type coercion often leads to configuration errors, especially in CI/CD pipelines and templating systems like Helm. KYAML eliminates these issues by enforcing explicit syntax and structure, making configurations more reliable and easier to debug.\n\nKYAML uses\nflow style\nsyntax with\n{}\nfor objects and\n[]\nfor arrays. All string values must be\ndouble-quoted\n.\n---\n{\napiVersion\n:\n\"v1\"\n,\nkind\n:\n\"Pod\"\n,\nmetadata\n:\n{\nname\n:\n\"my-pod\"\n,\nlabels\n:\n{\napp\n:\n\"demo\"\n}\n,\n}\n,\nspec\n:\n{\ncontainers\n:\n[\n{\nname\n:\n\"nginx\"\n,\nimage\n:\n\"nginx:1.20\"\n}\n]\n}\n}",
+  "failure_classes": []
 }

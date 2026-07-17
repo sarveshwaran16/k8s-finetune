@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "StatefulSet Basics — OnDelete",
   "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#on-delete",
-  "text": "You select this update strategy for a StatefulSet by setting the\n.spec.updateStrategy.type\nto\nOnDelete\n.\nPatch the\nweb\nStatefulSet to use the\nOnDelete\nupdate strategy:\nkubectl patch statefulset web -p\n'{\"spec\":{\"updateStrategy\":{\"type\":\"OnDelete\", \"rollingUpdate\": null}}}'\nstatefulset.apps/web patched\nWhen you select this update strategy, the StatefulSet controller does not\nautomatically update Pods when a modification is made to the StatefulSet's\n.spec.template\nfield. You need to manage the rollout yourself - either\nmanually, or using separate automation."
+  "text": "You select this update strategy for a StatefulSet by setting the\n.spec.updateStrategy.type\nto\nOnDelete\n.\nPatch the\nweb\nStatefulSet to use the\nOnDelete\nupdate strategy:\nkubectl patch statefulset web -p\n'{\"spec\":{\"updateStrategy\":{\"type\":\"OnDelete\", \"rollingUpdate\": null}}}'\nstatefulset.apps/web patched\nWhen you select this update strategy, the StatefulSet controller does not\nautomatically update Pods when a modification is made to the StatefulSet's\n.spec.template\nfield. You need to manage the rollout yourself - either\nmanually, or using separate automation.",
+  "failure_classes": []
 }

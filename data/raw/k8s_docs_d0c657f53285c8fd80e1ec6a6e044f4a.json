@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Container states",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-states",
-  "text": "As well as the\nphase\nof the Pod overall, Kubernetes tracks the state of\neach container inside a Pod. You can use\ncontainer lifecycle hooks\nto\ntrigger events to run at certain points in a container's lifecycle.\nOnce the\nscheduler\nassigns a Pod to a Node, the kubelet starts creating containers for that Pod\nusing a\ncontainer runtime\n.\nThere are three possible container states:\nWaiting\n,\nRunning\n, and\nTerminated\n.\nTo check the state of a Pod's containers, you can use\nkubectl describe pod <name-of-pod>\n. The output shows the state for each container\nwithin that Pod.\nEach state has a specific meaning:"
+  "text": "As well as the\nphase\nof the Pod overall, Kubernetes tracks the state of\neach container inside a Pod. You can use\ncontainer lifecycle hooks\nto\ntrigger events to run at certain points in a container's lifecycle.\nOnce the\nscheduler\nassigns a Pod to a Node, the kubelet starts creating containers for that Pod\nusing a\ncontainer runtime\n.\nThere are three possible container states:\nWaiting\n,\nRunning\n, and\nTerminated\n.\nTo check the state of a Pod's containers, you can use\nkubectl describe pod <name-of-pod>\n. The output shows the state for each container\nwithin that Pod.\nEach state has a specific meaning:",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

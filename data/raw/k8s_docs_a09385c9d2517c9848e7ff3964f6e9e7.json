@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Validate node setup — Node Conformance Test",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/node-conformance/#node-conformance-test",
-  "text": "Node conformance test\nis a containerized test framework that provides a system\nverification and functionality test for a node. The test validates whether the\nnode meets the minimum requirements for Kubernetes; a node that passes the test\nis qualified to join a Kubernetes cluster.\n\nTo run node conformance test, a node must satisfy the same prerequisites as a\nstandard Kubernetes node. At a minimum, the node should have the following\ndaemons installed:\nCRI-compatible container runtimes such as Docker, containerd and CRI-O\nkubelet"
+  "text": "Node conformance test\nis a containerized test framework that provides a system\nverification and functionality test for a node. The test validates whether the\nnode meets the minimum requirements for Kubernetes; a node that passes the test\nis qualified to join a Kubernetes cluster.\n\nTo run node conformance test, a node must satisfy the same prerequisites as a\nstandard Kubernetes node. At a minimum, the node should have the following\ndaemons installed:\nCRI-compatible container runtimes such as Docker, containerd and CRI-O\nkubelet",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

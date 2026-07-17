@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Reserve Compute Resources for System Daemons",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/",
-  "text": "Kubernetes nodes can be scheduled to\nCapacity\n. Pods can consume all the\navailable capacity on a node by default. This is an issue because nodes\ntypically run quite a few system daemons that power the OS and Kubernetes\nitself. Unless resources are set aside for these system daemons, pods and system\ndaemons compete for resources and lead to resource starvation issues on the\nnode.\nThe\nkubelet\nexposes a feature named 'Node Allocatable' that helps to reserve\ncompute resources for system daemons. Kubernetes recommends cluster\nadministrators to configure 'Node Allocatable' based on their workload density\non each node."
+  "text": "Kubernetes nodes can be scheduled to\nCapacity\n. Pods can consume all the\navailable capacity on a node by default. This is an issue because nodes\ntypically run quite a few system daemons that power the OS and Kubernetes\nitself. Unless resources are set aside for these system daemons, pods and system\ndaemons compete for resources and lead to resource starvation issues on the\nnode.\nThe\nkubelet\nexposes a feature named 'Node Allocatable' that helps to reserve\ncompute resources for system daemons. Kubernetes recommends cluster\nadministrators to configure 'Node Allocatable' based on their workload density\non each node.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

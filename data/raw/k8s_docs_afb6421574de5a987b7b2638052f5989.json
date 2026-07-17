@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm init phase — Options",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init-phase/#options",
-  "text": "-h, --help\nhelp for show-join-command\nhelp for show-join-command\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFor more details on each field in the\nv1beta4\nconfiguration you can navigate to our\nAPI reference pages."
+  "text": "-h, --help\nhelp for show-join-command\nhelp for show-join-command\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nFor more details on each field in the\nv1beta4\nconfiguration you can navigate to our\nAPI reference pages.",
+  "failure_classes": []
 }

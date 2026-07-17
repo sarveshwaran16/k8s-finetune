@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Pods — Pod subresources",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#pod-subresources",
-  "text": "The above update rules apply to regular pod updates, but other pod fields can be updated through\nsubresources\n.\nResize:\nThe\nresize\nsubresource allows container resources (\nspec.containers[*].resources\n) to be updated.\nSee\nResize Container Resources\nfor more details.\nEphemeral Containers:\nThe\nephemeralContainers\nsubresource allows\nephemeral containers\nto be added to a Pod.\nSee\nEphemeral Containers\nfor more details.\nStatus:\nThe\nstatus\nsubresource allows the pod status to be updated.\nThis is typically only used by the Kubelet and other system controllers.\nBinding:\nThe\nbinding\nsubresource allows setting the pod's\nspec.nodeName\nvia a\nBinding\nrequest.\nThis is typically only used by the\nscheduler\n."
+  "text": "The above update rules apply to regular pod updates, but other pod fields can be updated through\nsubresources\n.\nResize:\nThe\nresize\nsubresource allows container resources (\nspec.containers[*].resources\n) to be updated.\nSee\nResize Container Resources\nfor more details.\nEphemeral Containers:\nThe\nephemeralContainers\nsubresource allows\nephemeral containers\nto be added to a Pod.\nSee\nEphemeral Containers\nfor more details.\nStatus:\nThe\nstatus\nsubresource allows the pod status to be updated.\nThis is typically only used by the Kubelet and other system controllers.\nBinding:\nThe\nbinding\nsubresource allows setting the pod's\nspec.nodeName\nvia a\nBinding\nrequest.\nThis is typically only used by the\nscheduler\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

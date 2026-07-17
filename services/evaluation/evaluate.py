@@ -4,19 +4,18 @@ import time
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import torch
 
-MERGED_MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "models", "k8s-tinyllama-merged")
+MERGED_MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "models", "k8s-qwen-merged")
 
+# One question per actual PRD-scoped failure class (dropped CPU throttling
+# and DNS failures -- neither is one of the 7 target classes).
 EVAL_QUERIES = [
-    "Why is my pod in CrashLoopBackOff?",
-    "What causes OOMKilled errors?",
-    "How do I troubleshoot NodeNotReady?",
-    "Why is my PVC stuck in Pending?",
-    "How do I diagnose Kubernetes DNS failures?",
-    "Why is my deployment continuously restarting?",
-    "How can I investigate CPU throttling?",
-    "What are common causes of 5XX errors in Kubernetes?",
-    "How do I debug image pull failures?",
-    "What should I check when a service is unreachable?",
+    "What causes OOMKilled errors?",                                   # OOMKilled
+    "Why is my pod in CrashLoopBackOff?",                               # CrashLoopBackOff
+    "How do I debug image pull failures?",                              # ImagePullBackOff
+    "How do I troubleshoot NodeNotReady?",                              # NodeNotReady
+    "Why am I getting a Forbidden error when accessing the API?",       # RBAC
+    "Why is my Ingress returning 503 errors?",                          # Ingress/Service
+    "Why is my PVC stuck in Pending?",                                  # PVC
 ]
 
 def load_model():
@@ -51,10 +50,11 @@ def run():
     pipe = load_model()
     results = []
 
-    print(f"\nRunning {len(EVAL_QUERIES)} evaluation queries...\n")
+    total = len(EVAL_QUERIES)
+    print(f"\nRunning {total} evaluation queries...\n")
 
     for i, query in enumerate(EVAL_QUERIES, 1):
-        print(f"[{i:02d}/10] {query}")
+        print(f"[{i:02d}/{total}] {query}")
         answer, elapsed = ask(pipe, query)
         print(f"       Time: {elapsed}s")
         print(f"       Answer: {answer[:200]}")
@@ -66,6 +66,7 @@ def run():
         })
 
     output_path = os.path.join(os.path.dirname(__file__), "..", "..", "evaluation", "finetuned_results.json")
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
 

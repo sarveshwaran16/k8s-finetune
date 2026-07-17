@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubelet Configuration (v1beta1) — LoggingOptions",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#LoggingOptions",
-  "text": "LoggingOptions can be used with ValidateAndApplyWithOptions to override\ncertain global defaults.\nField\nDescription\nErrorStream\n[Required]\nio.Writer\nErrorStream can be used to override the os.Stderr default.\nInfoStream\n[Required]\nio.Writer\nInfoStream can be used to override the os.Stdout default.\nErrorStream can be used to override the os.Stderr default.\nInfoStream can be used to override the os.Stdout default."
+  "text": "LoggingOptions can be used with ValidateAndApplyWithOptions to override\ncertain global defaults.\nField\nDescription\nErrorStream\n[Required]\nio.Writer\nErrorStream can be used to override the os.Stderr default.\nInfoStream\n[Required]\nio.Writer\nInfoStream can be used to override the os.Stdout default.\nErrorStream can be used to override the os.Stderr default.\nInfoStream can be used to override the os.Stdout default.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "DNS for Services and Pods — DNS Records",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#dns-records",
-  "text": "What objects get DNS records?\nServices\nPods\nThe following sections detail the supported DNS record types and layout that is\nsupported. Any other layout or names or queries that happen to work are\nconsidered implementation details and are subject to change without warning.\nFor more up-to-date specification, see\nKubernetes DNS-Based Service Discovery\n."
+  "text": "What objects get DNS records?\nServices\nPods\nThe following sections detail the supported DNS record types and layout that is\nsupported. Any other layout or names or queries that happen to work are\nconsidered implementation details and are subject to change without warning.\nFor more up-to-date specification, see\nKubernetes DNS-Based Service Discovery\n.",
+  "failure_classes": []
 }

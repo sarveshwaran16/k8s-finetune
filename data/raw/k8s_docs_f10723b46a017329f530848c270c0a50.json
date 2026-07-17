@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_bootstrap-token/",
-  "text": "Generates bootstrap tokens used to join a node to a cluster\n\nBootstrap tokens are used for establishing bidirectional trust between a node joining the cluster and a control-plane node.\nThis command makes all the configurations required to make bootstrap tokens works and then creates an initial token.\nkubeadm init phase bootstrap-token [flags]"
+  "text": "Generates bootstrap tokens used to join a node to a cluster\n\nBootstrap tokens are used for establishing bidirectional trust between a node joining the cluster and a control-plane node.\nThis command makes all the configurations required to make bootstrap tokens works and then creates an initial token.\nkubeadm init phase bootstrap-token [flags]",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Install Drivers and Allocate Devices with DRA — Delete a Pod that has a claim",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/install-use-dra/#delete-pod-claim",
-  "text": "When a Pod with a claim is deleted, the DRA driver deallocates the resource so\nit can be available for future scheduling. To validate this behavior, delete the\nPod that you created in the previous steps and watch the corresponding changes\nto the ResourceClaim and driver.\nDelete the\npod0\nPod:\nkubectl delete pod pod0 -n dra-tutorial\nThe output is similar to this:\npod \"pod0\" deleted\nDelete the\npod0\nPod:\nkubectl delete pod pod0 -n dra-tutorial\nThe output is similar to this:\npod \"pod0\" deleted"
+  "text": "When a Pod with a claim is deleted, the DRA driver deallocates the resource so\nit can be available for future scheduling. To validate this behavior, delete the\nPod that you created in the previous steps and watch the corresponding changes\nto the ResourceClaim and driver.\nDelete the\npod0\nPod:\nkubectl delete pod pod0 -n dra-tutorial\nThe output is similar to this:\npod \"pod0\" deleted\nDelete the\npod0\nPod:\nkubectl delete pod pod0 -n dra-tutorial\nThe output is similar to this:\npod \"pod0\" deleted",
+  "failure_classes": []
 }

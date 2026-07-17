@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PodGroup Scheduling Policies — Gang policy",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/policies/#gang-policy",
-  "text": "The\ngang\npolicy enforces \"all-or-nothing\" scheduling. This is essential for tightly-coupled\nworkloads where partial startup results in deadlocks or wasted resources.\nThis can be used for\nJobs\nor any other batch process where all workers must run concurrently to make progress.\nThe\ngang\npolicy requires a\nminCount\nfield, which is the minimum number of Pods that must be\nschedulable simultaneously for the group to be feasible:\nschedulingPolicy\n:\ngang\n:\n# The number of Pods that must be schedulable simultaneously\n# for the group to be admitted.\nminCount\n:\n4"
+  "text": "The\ngang\npolicy enforces \"all-or-nothing\" scheduling. This is essential for tightly-coupled\nworkloads where partial startup results in deadlocks or wasted resources.\nThis can be used for\nJobs\nor any other batch process where all workers must run concurrently to make progress.\nThe\ngang\npolicy requires a\nminCount\nfield, which is the minimum number of Pods that must be\nschedulable simultaneously for the group to be feasible:\nschedulingPolicy\n:\ngang\n:\n# The number of Pods that must be schedulable simultaneously\n# for the group to be admitted.\nminCount\n:\n4",
+  "failure_classes": []
 }

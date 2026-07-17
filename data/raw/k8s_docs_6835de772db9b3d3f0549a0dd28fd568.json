@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Operating etcd clusters for Kubernetes — Resource requirements for etcd",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#resource-requirements-for-etcd",
-  "text": "Operating etcd with limited resources is suitable only for testing purposes.\nFor deploying in production, advanced hardware configuration is required.\nBefore deploying etcd in production, see\nresource requirement reference\n.\nKeeping etcd clusters stable is critical to the stability of Kubernetes\nclusters. Therefore, run etcd clusters on dedicated machines or isolated\nenvironments for\nguaranteed resource requirements\n."
+  "text": "Operating etcd with limited resources is suitable only for testing purposes.\nFor deploying in production, advanced hardware configuration is required.\nBefore deploying etcd in production, see\nresource requirement reference\n.\nKeeping etcd clusters stable is critical to the stability of Kubernetes\nclusters. Therefore, run etcd clusters on dedicated machines or isolated\nenvironments for\nguaranteed resource requirements\n.",
+  "failure_classes": []
 }

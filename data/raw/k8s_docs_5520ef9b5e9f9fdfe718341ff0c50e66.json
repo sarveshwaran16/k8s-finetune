@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubectl for Docker Users — docker exec",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/#docker-exec",
-  "text": "To execute a command in a container, see\nkubectl exec\n.\ndocker:\ndocker ps\nCONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                NAMES\n55c103fa1296        nginx               \"nginx -g 'daemon of…\"   6 minutes ago       Up 6 minutes        0.0.0.0:80->80/tcp   nginx-app\ndocker\nexec\n55c103fa1296 cat /etc/hostname\n55c103fa1296\nkubectl:\nkubectl get po\nNAME              READY     STATUS    RESTARTS   AGE\nnginx-app-5jyvm   1/1       Running   0          10m\nkubectl\nexec\nnginx-app-5jyvm -- cat /etc/hostname\nnginx-app-5jyvm\nTo use interactive commands.\ndocker:\ndocker\nexec\n-ti 55c103fa1296 /bin/sh\n# exit\nkubectl:\nkubectl\nexec\n-ti nginx-app-5jyvm -- /bin/sh\n# exit\nFor more information, see\nGet a Shell to a Running Container\n."
+  "text": "To execute a command in a container, see\nkubectl exec\n.\ndocker:\ndocker ps\nCONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                NAMES\n55c103fa1296        nginx               \"nginx -g 'daemon of…\"   6 minutes ago       Up 6 minutes        0.0.0.0:80->80/tcp   nginx-app\ndocker\nexec\n55c103fa1296 cat /etc/hostname\n55c103fa1296\nkubectl:\nkubectl get po\nNAME              READY     STATUS    RESTARTS   AGE\nnginx-app-5jyvm   1/1       Running   0          10m\nkubectl\nexec\nnginx-app-5jyvm -- cat /etc/hostname\nnginx-app-5jyvm\nTo use interactive commands.\ndocker:\ndocker\nexec\n-ti 55c103fa1296 /bin/sh\n# exit\nkubectl:\nkubectl\nexec\n-ti nginx-app-5jyvm -- /bin/sh\n# exit\nFor more information, see\nGet a Shell to a Running Container\n.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

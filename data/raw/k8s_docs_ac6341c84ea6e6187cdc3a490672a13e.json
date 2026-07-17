@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Mixed Version Proxy — Mixed version proxying",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/mixed-version-proxy/#mixed-version-proxying",
-  "text": "When you enable mixed version proxying, the\naggregation layer\nloads a special filter that does the following:\nWhen a resource request reaches an API server that cannot serve that API\n(either because it is at a version pre-dating the introduction of the API or the API is turned off on the API server)\nthe API server attempts to send the request to a peer API server that can serve the requested API.\nIt does so by identifying API groups / versions / resources that the local server doesn't recognise,\nand tries to proxy those requests to a peer API server that is capable of handling the request.\nIf the peer API server fails to respond, the\nsource\nAPI server responds with 503 (\"Service Unavailable\") error."
+  "text": "When you enable mixed version proxying, the\naggregation layer\nloads a special filter that does the following:\nWhen a resource request reaches an API server that cannot serve that API\n(either because it is at a version pre-dating the introduction of the API or the API is turned off on the API server)\nthe API server attempts to send the request to a peer API server that can serve the requested API.\nIt does so by identifying API groups / versions / resources that the local server doesn't recognise,\nand tries to proxy those requests to a peer API server that is capable of handling the request.\nIf the peer API server fails to respond, the\nsource\nAPI server responds with 503 (\"Service Unavailable\") error.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

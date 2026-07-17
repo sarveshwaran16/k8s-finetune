@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Container Runtimes — Migrating to thesystemddriver in kubeadm managed clusters",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/#migrating-to-the-systemd-driver-in-kubeadm-managed-clusters",
-  "text": "If you wish to migrate to the\nsystemd\ncgroup driver in existing kubeadm managed clusters,\nfollow\nconfiguring a cgroup driver\n.\n\nYour container runtime must support v1 of the container runtime interface.\nKubernetes\nstarting v1.26\nonly works\nwith v1 of the CRI API. If a container runtime does not support the v1 API,\nthe kubelet will not register as a node."
+  "text": "If you wish to migrate to the\nsystemd\ncgroup driver in existing kubeadm managed clusters,\nfollow\nconfiguring a cgroup driver\n.\n\nYour container runtime must support v1 of the container runtime interface.\nKubernetes\nstarting v1.26\nonly works\nwith v1 of the CRI API. If a container runtime does not support the v1 API,\nthe kubelet will not register as a node.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

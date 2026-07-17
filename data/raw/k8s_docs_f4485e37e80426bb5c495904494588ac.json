@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Node — NodeDaemonEndpoints",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/node-v1/#NodeDaemonEndpoints",
-  "text": "NodeDaemonEndpoints lists ports opened by daemons running on the Node.\nField\nDescription\nkubeletEndpoint\nDaemonEndpoint\nEndpoint on which Kubelet is listening.\n\nNodeFeatures describes the set of features implemented by the CRI implementation. The features contained in the NodeFeatures should depend only on the cri implementation independent of runtime handlers.\nField\nDescription\nsupplementalGroupsPolicy\nboolean\nSupplementalGroupsPolicy is set to true if the runtime supports SupplementalGroupsPolicy and ContainerUser."
+  "text": "NodeDaemonEndpoints lists ports opened by daemons running on the Node.\nField\nDescription\nkubeletEndpoint\nDaemonEndpoint\nEndpoint on which Kubelet is listening.\n\nNodeFeatures describes the set of features implemented by the CRI implementation. The features contained in the NodeFeatures should depend only on the cri implementation independent of runtime handlers.\nField\nDescription\nsupplementalGroupsPolicy\nboolean\nSupplementalGroupsPolicy is set to true if the runtime supports SupplementalGroupsPolicy and ContainerUser.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

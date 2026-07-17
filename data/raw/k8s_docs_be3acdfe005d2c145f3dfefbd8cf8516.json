@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ingress — IngressServiceBackend",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/networking/ingress-v1/#IngressServiceBackend",
-  "text": "IngressServiceBackend references a Kubernetes Service as a Backend.\nField\nDescription\nname\n*\nstring\nname is the referenced service. The service must exist in the same namespace as the Ingress object.\nport\nServiceBackendPort\nport of the referenced service. A port name or port number is required for a IngressServiceBackend."
+  "text": "IngressServiceBackend references a Kubernetes Service as a Backend.\nField\nDescription\nname\n*\nstring\nname is the referenced service. The service must exist in the same namespace as the Ingress object.\nport\nServiceBackendPort\nport of the referenced service. A port name or port number is required for a IngressServiceBackend.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

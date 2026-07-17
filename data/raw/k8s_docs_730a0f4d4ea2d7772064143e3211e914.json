@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure Service Accounts for Pods",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/",
-  "text": "Kubernetes offers two distinct ways for clients that run within your\ncluster, or that otherwise have a relationship to your cluster's\ncontrol plane\nto authenticate to the\nAPI server\n.\nA\nservice account\nprovides an identity for processes that run in a Pod,\nand maps to a ServiceAccount object. When you authenticate to the API\nserver, you identify yourself as a particular\nuser\n. Kubernetes recognises\nthe concept of a user, however, Kubernetes itself does\nnot\nhave a User\nAPI.\nThis task guide is about ServiceAccounts, which do exist in the Kubernetes\nAPI. The guide shows you some ways to configure ServiceAccounts for Pods."
+  "text": "Kubernetes offers two distinct ways for clients that run within your\ncluster, or that otherwise have a relationship to your cluster's\ncontrol plane\nto authenticate to the\nAPI server\n.\nA\nservice account\nprovides an identity for processes that run in a Pod,\nand maps to a ServiceAccount object. When you authenticate to the API\nserver, you identify yourself as a particular\nuser\n. Kubernetes recognises\nthe concept of a user, however, Kubernetes itself does\nnot\nhave a User\nAPI.\nThis task guide is about ServiceAccounts, which do exist in the Kubernetes\nAPI. The guide shows you some ways to configure ServiceAccounts for Pods.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

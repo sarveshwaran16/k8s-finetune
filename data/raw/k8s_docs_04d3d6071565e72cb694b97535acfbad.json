@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "About cgroup v2 — Identify the cgroup version on Linux Nodes",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/cgroups/#check-cgroup-version",
-  "text": "The cgroup version depends on the Linux distribution being used and the\ndefault cgroup version configured on the OS. To check which cgroup version your\ndistribution uses, run the\nstat -fc %T /sys/fs/cgroup/\ncommand on\nthe node:\nstat -fc %T /sys/fs/cgroup/\nFor cgroup v2, the output is\ncgroup2fs\n.\nFor cgroup v1, the output is\ntmpfs."
+  "text": "The cgroup version depends on the Linux distribution being used and the\ndefault cgroup version configured on the OS. To check which cgroup version your\ndistribution uses, run the\nstat -fc %T /sys/fs/cgroup/\ncommand on\nthe node:\nstat -fc %T /sys/fs/cgroup/\nFor cgroup v2, the output is\ncgroup2fs\n.\nFor cgroup v1, the output is\ntmpfs.",
+  "failure_classes": []
 }

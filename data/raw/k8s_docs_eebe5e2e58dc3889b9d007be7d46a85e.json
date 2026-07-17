@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ResourceClaim — ResourceClaimConsumerReference",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/resource/resource-claim-v1/#ResourceClaimConsumerReference",
-  "text": "ResourceClaimConsumerReference contains enough information to let you locate the consumer of a ResourceClaim. The user must be a resource in the same namespace as the ResourceClaim.\nField\nDescription\napiGroup\nstring\nAPIGroup is the group for the resource being referenced. It is empty for the core API. This matches the group in the APIVersion that is used when creating the resources.\nname\n*\nstring\nName is the name of resource being referenced.\nresource\n*\nstring\nResource is the type of resource being referenced, for example \"pods\".\nuid\n*\nstring\nUID identifies exactly one incarnation of the resource."
+  "text": "ResourceClaimConsumerReference contains enough information to let you locate the consumer of a ResourceClaim. The user must be a resource in the same namespace as the ResourceClaim.\nField\nDescription\napiGroup\nstring\nAPIGroup is the group for the resource being referenced. It is empty for the core API. This matches the group in the APIVersion that is used when creating the resources.\nname\n*\nstring\nName is the name of resource being referenced.\nresource\n*\nstring\nResource is the type of resource being referenced, for example \"pods\".\nuid\n*\nstring\nUID identifies exactly one incarnation of the resource.",
+  "failure_classes": []
 }

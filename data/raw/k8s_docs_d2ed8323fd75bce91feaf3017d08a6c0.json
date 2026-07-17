@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Service — ClientIPConfig",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/service-v1/#ClientIPConfig",
-  "text": "ClientIPConfig represents the configurations of Client IP based session affinity.\nField\nDescription\ntimeoutSeconds\ninteger\ntimeoutSeconds specifies the seconds of ClientIP type session sticky time. The value must be >0 && \\<=86400(for 1 day) if ServiceAffinity == \"ClientIP\". Default value is 10800(for 3 hours)."
+  "text": "ClientIPConfig represents the configurations of Client IP based session affinity.\nField\nDescription\ntimeoutSeconds\ninteger\ntimeoutSeconds specifies the seconds of ClientIP type session sticky time. The value must be >0 && \\<=86400(for 1 day) if ServiceAffinity == \"ClientIP\". Default value is 10800(for 3 hours).",
+  "failure_classes": []
 }

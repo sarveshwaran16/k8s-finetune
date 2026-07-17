@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Horizontal Pod Autoscaling — Key behaviors for pod readiness",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#pod-readiness-key-behaviors",
-  "text": "If a Pod is\nReady\nand remains\nReady\n, it can be counted as contributing metrics even within the delay.\nIf a Pod rapidly toggles between\nReady\nand\nUnready\n, metrics are ignored until it’s considered stably\nReady\n.\n\nConfigure a\nstartupProbe\nthat doesn't pass until the high CPU usage has passed, or\nEnsure your\nreadinessProbe\nonly reports\nReady\nafter\nthe CPU spike subsides, using\ninitialDelaySeconds\n.\nAnd ideally also set\n--horizontal-pod-autoscaler-cpu-initialization-period\nto\ncover the startup duration\n."
+  "text": "If a Pod is\nReady\nand remains\nReady\n, it can be counted as contributing metrics even within the delay.\nIf a Pod rapidly toggles between\nReady\nand\nUnready\n, metrics are ignored until it’s considered stably\nReady\n.\n\nConfigure a\nstartupProbe\nthat doesn't pass until the high CPU usage has passed, or\nEnsure your\nreadinessProbe\nonly reports\nReady\nafter\nthe CPU spike subsides, using\ninitialDelaySeconds\n.\nAnd ideally also set\n--horizontal-pod-autoscaler-cpu-initialization-period\nto\ncover the startup duration\n.",
+  "failure_classes": []
 }

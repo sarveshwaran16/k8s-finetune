@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — alpha.jobset.sigs.k8s.io/exclusive-topology",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#alpha-jobset-sigs-k8s-io-exclusive-topology",
-  "text": "Type: Annotation\nExample:\nalpha.jobset.sigs.k8s.io/exclusive-topology: \"zone\"\nUsed on: JobSets, Jobs\nYou can set this label/annotation on a\nJobSet\nto ensure exclusive Job\nplacement per topology group. You can also define this label or annotation on a replicated job\ntemplate. Read the documentation for JobSet to learn more."
+  "text": "Type: Annotation\nExample:\nalpha.jobset.sigs.k8s.io/exclusive-topology: \"zone\"\nUsed on: JobSets, Jobs\nYou can set this label/annotation on a\nJobSet\nto ensure exclusive Job\nplacement per topology group. You can also define this label or annotation on a replicated job\ntemplate. Read the documentation for JobSet to learn more.",
+  "failure_classes": []
 }

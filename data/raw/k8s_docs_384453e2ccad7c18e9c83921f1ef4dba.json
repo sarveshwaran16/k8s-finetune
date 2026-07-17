@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — Volume Cloning",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#volume-cloning",
-  "text": "Volume Cloning\nonly available for CSI volume plugins.\n\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\ncloned-pvc\nspec\n:\nstorageClassName\n:\nmy-csi-plugin\ndataSource\n:\nname\n:\nexisting-src-pvc-name\nkind\n:\nPersistentVolumeClaim\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n10Gi"
+  "text": "Volume Cloning\nonly available for CSI volume plugins.\n\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\ncloned-pvc\nspec\n:\nstorageClassName\n:\nmy-csi-plugin\ndataSource\n:\nname\n:\nexisting-src-pvc-name\nkind\n:\nPersistentVolumeClaim\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n10Gi",
+  "failure_classes": [
+    "PVC"
+  ]
 }

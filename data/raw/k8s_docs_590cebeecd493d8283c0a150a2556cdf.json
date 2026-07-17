@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Using CoreDNS for Service Discovery — Upgrading CoreDNS",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/coredns/#upgrading-coredns",
-  "text": "You can check the version of CoreDNS that kubeadm installs for each version of\nKubernetes in the page\nCoreDNS version in Kubernetes\n.\nCoreDNS can be upgraded manually in case you want to only upgrade CoreDNS\nor use your own custom image.\nThere is a helpful\nguideline and walkthrough\navailable to ensure a smooth upgrade.\nMake sure the existing CoreDNS configuration (\"Corefile\") is retained when\nupgrading your cluster.\nIf you are upgrading your cluster using the\nkubeadm\ntool,\nkubeadm\ncan take care of retaining the existing CoreDNS configuration automatically."
+  "text": "You can check the version of CoreDNS that kubeadm installs for each version of\nKubernetes in the page\nCoreDNS version in Kubernetes\n.\nCoreDNS can be upgraded manually in case you want to only upgrade CoreDNS\nor use your own custom image.\nThere is a helpful\nguideline and walkthrough\navailable to ensure a smooth upgrade.\nMake sure the existing CoreDNS configuration (\"Corefile\") is retained when\nupgrading your cluster.\nIf you are upgrading your cluster using the\nkubeadm\ntool,\nkubeadm\ncan take care of retaining the existing CoreDNS configuration automatically.",
+  "failure_classes": []
 }

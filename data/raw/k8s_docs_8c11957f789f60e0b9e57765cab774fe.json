@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Storage Capacity",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-capacity/",
-  "text": "Storage capacity is limited and may vary depending on the node on\nwhich a pod runs: network-attached storage might not be accessible by\nall nodes, or storage is local to a node to begin with.\nThis page describes how Kubernetes keeps track of storage capacity and\nhow the scheduler uses that information to\nschedule Pods\nonto nodes\nthat have access to enough storage capacity for the remaining missing\nvolumes. Without storage capacity tracking, the scheduler may choose a\nnode that doesn't have enough capacity to provision a volume and\nmultiple scheduling retries will be needed."
+  "text": "Storage capacity is limited and may vary depending on the node on\nwhich a pod runs: network-attached storage might not be accessible by\nall nodes, or storage is local to a node to begin with.\nThis page describes how Kubernetes keeps track of storage capacity and\nhow the scheduler uses that information to\nschedule Pods\nonto nodes\nthat have access to enough storage capacity for the remaining missing\nvolumes. Without storage capacity tracking, the scheduler may choose a\nnode that doesn't have enough capacity to provision a volume and\nmultiple scheduling retries will be needed.",
+  "failure_classes": []
 }

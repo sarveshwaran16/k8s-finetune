@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Liveness, Readiness, and Startup Probes — Types of probe",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/#types-of-probe",
-  "text": "The kubelet can optionally perform and react to three kinds of probes on running\ncontainers, each serving a different purpose:\nStartup probe\nLiveness probe\nReadiness probe\n\nStartup probes verify whether the application within a container is started.\nIf a startup probe is configured, Kubernetes does not execute liveness or\nreadiness probes until the startup probe succeeds, allowing the application\ntime to finish its initialization.\nThis type of probe is only executed at startup, unlike liveness and readiness\nprobes, which are run periodically.\nIf the startup probe fails, the kubelet kills the container, and the container\nis subjected to its\nrestart policy\n."
+  "text": "The kubelet can optionally perform and react to three kinds of probes on running\ncontainers, each serving a different purpose:\nStartup probe\nLiveness probe\nReadiness probe\n\nStartup probes verify whether the application within a container is started.\nIf a startup probe is configured, Kubernetes does not execute liveness or\nreadiness probes until the startup probe succeeds, allowing the application\ntime to finish its initialization.\nThis type of probe is only executed at startup, unlike liveness and readiness\nprobes, which are run periodically.\nIf the startup probe fails, the kubelet kills the container, and the container\nis subjected to its\nrestart policy\n.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

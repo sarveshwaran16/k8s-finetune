@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Images — Updating images",
   "source_url": "https://kubernetes.io/docs/concepts/containers/images/#updating-images",
-  "text": "When you first create a\nDeployment\n,\nStatefulSet\n, Pod, or other\nobject that includes a PodTemplate, and a pull policy was not explicitly specified,\nthen by default the pull policy of all containers in that Pod will be set to\nIfNotPresent\n. This policy causes the\nkubelet\nto skip pulling an\nimage if it already exists."
+  "text": "When you first create a\nDeployment\n,\nStatefulSet\n, Pod, or other\nobject that includes a PodTemplate, and a pull policy was not explicitly specified,\nthen by default the pull policy of all containers in that Pod will be set to\nIfNotPresent\n. This policy causes the\nkubelet\nto skip pulling an\nimage if it already exists.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

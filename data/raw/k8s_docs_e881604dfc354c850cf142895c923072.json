@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Windows containers in Kubernetes — Deployment tools",
   "source_url": "https://kubernetes.io/docs/concepts/windows/intro/#deployment-tools",
-  "text": "The kubeadm tool helps you to deploy a Kubernetes cluster, providing the control\nplane to manage the cluster it, and nodes to run your workloads.\nThe Kubernetes\ncluster API\nproject also provides means to automate deployment of Windows nodes.\n\nFor a detailed explanation of Windows distribution channels see the\nMicrosoft documentation\n.\nInformation on the different Windows Server servicing channels\nincluding their support models can be found at\nWindows Server servicing channels\n."
+  "text": "The kubeadm tool helps you to deploy a Kubernetes cluster, providing the control\nplane to manage the cluster it, and nodes to run your workloads.\nThe Kubernetes\ncluster API\nproject also provides means to automate deployment of Windows nodes.\n\nFor a detailed explanation of Windows distribution channels see the\nMicrosoft documentation\n.\nInformation on the different Windows Server servicing channels\nincluding their support models can be found at\nWindows Server servicing channels\n.",
+  "failure_classes": []
 }

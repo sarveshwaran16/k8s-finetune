@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "AlertmanagerClusterFailedToSendAlerts#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerclusterfailedtosendalerts/",
-  "text": "Alertmanager Cluster Failed To Send Alerts\nAlertmanagerClusterFailedToSendAlerts\n#\nMeaning\n#\nAll instances failed to send notification to an integration.\nImpact\n#\nYou will not receive a notification when an alert is raised.\nDiagnosis\n#\nNo alerts are received at the integration level from the cluster.\nMitigation\n#\nDepending on the integration, correct the integration with the faulty instance (network, authorization token, firewall…)"
+  "text": "Alertmanager Cluster Failed To Send Alerts\nAlertmanagerClusterFailedToSendAlerts\n#\nMeaning\n#\nAll instances failed to send notification to an integration.\nImpact\n#\nYou will not receive a notification when an alert is raised.\nDiagnosis\n#\nNo alerts are received at the integration level from the cluster.\nMitigation\n#\nDepending on the integration, correct the integration with the faulty instance (network, authorization token, firewall…)",
+  "failure_classes": []
 }

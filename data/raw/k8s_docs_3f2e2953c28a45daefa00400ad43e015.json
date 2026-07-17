@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Taints and Tolerations — Device taints and tolerations",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#device-taints-and-tolerations",
-  "text": "Instead of tainting entire nodes, administrators can also\ntaint individual devices\nwhen the cluster uses\ndynamic resource allocation\nto manage special hardware. The advantage is that tainting can be targeted towards exactly the hardware that\nis faulty or needs maintenance. Tolerations are also supported and can be specified when requesting\ndevices. Like taints they apply to all pods which share the same allocated device."
+  "text": "Instead of tainting entire nodes, administrators can also\ntaint individual devices\nwhen the cluster uses\ndynamic resource allocation\nto manage special hardware. The advantage is that tainting can be targeted towards exactly the hardware that\nis faulty or needs maintenance. Tolerations are also supported and can be specified when requesting\ndevices. Like taints they apply to all pods which share the same allocated device.",
+  "failure_classes": []
 }

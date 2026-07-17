@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl config get-contexts — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_get-contexts/#synopsis",
-  "text": "Display one or many contexts from the kubeconfig file.\nkubectl config get-contexts [(-o|--output=)name)]\n\n# List all the contexts in your kubeconfig file\n  kubectl config get-contexts\n  \n  # Describe one context in your kubeconfig file\n  kubectl config get-contexts my-context\n\n-h, --help\nhelp for get-contexts\n--no-headers\nWhen using the default or custom-column output format, don't print headers (default print headers).\n-o, --output string\nOutput format. One of: (name).\nhelp for get-contexts\nWhen using the default or custom-column output format, don't print headers (default print headers).\nOutput format. One of: (name)."
+  "text": "Display one or many contexts from the kubeconfig file.\nkubectl config get-contexts [(-o|--output=)name)]\n\n# List all the contexts in your kubeconfig file\n  kubectl config get-contexts\n  \n  # Describe one context in your kubeconfig file\n  kubectl config get-contexts my-context\n\n-h, --help\nhelp for get-contexts\n--no-headers\nWhen using the default or custom-column output format, don't print headers (default print headers).\n-o, --output string\nOutput format. One of: (name).\nhelp for get-contexts\nWhen using the default or custom-column output format, don't print headers (default print headers).\nOutput format. One of: (name).",
+  "failure_classes": []
 }

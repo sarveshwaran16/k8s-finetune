@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Install and Set Up kubectl on macOS — Install with Homebrew on macOS",
   "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/#install-with-homebrew-on-macos",
-  "text": "If you are on macOS and using\nHomebrew\npackage manager,\nyou can install kubectl with Homebrew.\nRun the installation command:\nbrew install kubectl\nor\nbrew install kubernetes-cli\nTest to ensure the version you installed is up-to-date:\nkubectl version --client\nRun the installation command:\nbrew install kubectl\nor\nbrew install kubernetes-cli\nTest to ensure the version you installed is up-to-date:\nkubectl version --client"
+  "text": "If you are on macOS and using\nHomebrew\npackage manager,\nyou can install kubectl with Homebrew.\nRun the installation command:\nbrew install kubectl\nor\nbrew install kubernetes-cli\nTest to ensure the version you installed is up-to-date:\nkubectl version --client\nRun the installation command:\nbrew install kubectl\nor\nbrew install kubernetes-cli\nTest to ensure the version you installed is up-to-date:\nkubectl version --client",
+  "failure_classes": []
 }

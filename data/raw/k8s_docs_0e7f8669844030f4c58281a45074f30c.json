@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Application Security Checklist — Advanced security hardening",
   "source_url": "https://kubernetes.io/docs/concepts/security/application-security-checklist/#advanced",
-  "text": "This section of this guide covers some advanced security hardening points\nwhich might be valuable based on different Kubernetes environment setup.\n\nConfigure\nSecurity Context\nfor the pod-container.\nSet the Seccomp Profile for a Container\n.\nRestrict a Container's Access to Resources with AppArmor\n.\nAssign SELinux Labels to a Container\n."
+  "text": "This section of this guide covers some advanced security hardening points\nwhich might be valuable based on different Kubernetes environment setup.\n\nConfigure\nSecurity Context\nfor the pod-container.\nSet the Seccomp Profile for a Container\n.\nRestrict a Container's Access to Resources with AppArmor\n.\nAssign SELinux Labels to a Container\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Assign Memory Resources to Containers and Pods — Motivation for memory requests and limits",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/#motivation-for-memory-requests-and-limits",
-  "text": "By configuring memory requests and limits for the Containers that run in your\ncluster, you can make efficient use of the memory resources available on your cluster's\nNodes. By keeping a Pod's memory request low, you give the Pod a good chance of being\nscheduled. By having a memory limit that is greater than the memory request, you accomplish two things:\nThe Pod can have bursts of activity where it makes use of memory that happens to be available.\nThe amount of memory a Pod can use during a burst is limited to some reasonable amount."
+  "text": "By configuring memory requests and limits for the Containers that run in your\ncluster, you can make efficient use of the memory resources available on your cluster's\nNodes. By keeping a Pod's memory request low, you give the Pod a good chance of being\nscheduled. By having a memory limit that is greater than the memory request, you accomplish two things:\nThe Pod can have bursts of activity where it makes use of memory that happens to be available.\nThe amount of memory a Pod can use during a burst is limited to some reasonable amount.",
+  "failure_classes": [
+    "OOMKilled"
+  ]
 }

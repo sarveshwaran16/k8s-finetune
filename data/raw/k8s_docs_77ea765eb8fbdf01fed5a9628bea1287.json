@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Cloud Controller Manager — Service controller",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/cloud-controller/#service-controller",
-  "text": "Services\nintegrate with cloud\ninfrastructure components such as managed load balancers, IP addresses, network\npacket filtering, and target health checking. The service controller interacts with your\ncloud provider's APIs to set up load balancers and other infrastructure components\nwhen you declare a Service resource that requires them."
+  "text": "Services\nintegrate with cloud\ninfrastructure components such as managed load balancers, IP addresses, network\npacket filtering, and target health checking. The service controller interacts with your\ncloud provider's APIs to set up load balancers and other infrastructure components\nwhen you declare a Service resource that requires them.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

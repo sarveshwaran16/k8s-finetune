@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extending Kubernetes — Custom resource definitions",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#custom-resource-definitions",
-  "text": "Consider adding a\nCustom Resource\nto Kubernetes if you want to define new controllers, application\nconfiguration objects or other declarative APIs, and to manage them using Kubernetes tools, such\nas\nkubectl\n.\nFor more about Custom Resources, see the\nCustom Resources\nconcept guide.\n\nYou can use Kubernetes'\nAPI Aggregation Layer\nto integrate the Kubernetes API with additional services such as for\nmetrics\n."
+  "text": "Consider adding a\nCustom Resource\nto Kubernetes if you want to define new controllers, application\nconfiguration objects or other declarative APIs, and to manage them using Kubernetes tools, such\nas\nkubectl\n.\nFor more about Custom Resources, see the\nCustom Resources\nconcept guide.\n\nYou can use Kubernetes'\nAPI Aggregation Layer\nto integrate the Kubernetes API with additional services such as for\nmetrics\n.",
+  "failure_classes": []
 }

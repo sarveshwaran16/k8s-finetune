@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "PersistentVolumeClaim",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-claim-v1/",
-  "text": "Persistent Volumes\nIntroduction\nLifecycle of a volume and claim\nTypes of Persistent Volumes\nPersistent Volumes\nPersistentVolumeClaims\nClaims As Volumes\nRaw Block Volume Support\nVolume Snapshot and Restore Volume from Snapshot Support\nVolume Cloning\nVolume populators and data sources\nWriting Portable Configuration\nWhat's next\nIntroduction\nLifecycle of a volume and claim\nTypes of Persistent Volumes\nPersistent Volumes\nPersistentVolumeClaims\nClaims As Volumes\nRaw Block Volume Support\nVolume Snapshot and Restore Volume from Snapshot Support\nVolume Cloning\nVolume populators and data sources\nWriting Portable Configuration\nWhat's next\napiVersion: v1\nimport \"k8s.io/api/core/v1\""
+  "text": "Persistent Volumes\nIntroduction\nLifecycle of a volume and claim\nTypes of Persistent Volumes\nPersistent Volumes\nPersistentVolumeClaims\nClaims As Volumes\nRaw Block Volume Support\nVolume Snapshot and Restore Volume from Snapshot Support\nVolume Cloning\nVolume populators and data sources\nWriting Portable Configuration\nWhat's next\nIntroduction\nLifecycle of a volume and claim\nTypes of Persistent Volumes\nPersistent Volumes\nPersistentVolumeClaims\nClaims As Volumes\nRaw Block Volume Support\nVolume Snapshot and Restore Volume from Snapshot Support\nVolume Cloning\nVolume populators and data sources\nWriting Portable Configuration\nWhat's next\napiVersion: v1\nimport \"k8s.io/api/core/v1\"",
+  "failure_classes": [
+    "PVC"
+  ]
 }

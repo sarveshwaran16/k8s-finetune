@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Network Policies — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/#what-s-next",
-  "text": "See the\nDeclare Network Policy\nwalkthrough for further examples.\nSee more\nrecipes\nfor common\nscenarios enabled by the NetworkPolicy resource.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "See the\nDeclare Network Policy\nwalkthrough for further examples.\nSee more\nrecipes\nfor common\nscenarios enabled by the NetworkPolicy resource.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

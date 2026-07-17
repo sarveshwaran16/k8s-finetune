@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Group Disruption and Priority",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/workload-api/disruption-and-priority/",
-  "text": "PodGroup can declare a disruption mode. This mode dictates how\nthe scheduler can disrupt a running PodGroup, for example to accommodate\na higher priority PodGroup. A PodGroup also has a priority,\nwhich overrides the priority of the individual pods from the group\nfor\nworkload-aware preemption\nevents."
+  "text": "PodGroup can declare a disruption mode. This mode dictates how\nthe scheduler can disrupt a running PodGroup, for example to accommodate\na higher priority PodGroup. A PodGroup also has a priority,\nwhich overrides the priority of the individual pods from the group\nfor\nworkload-aware preemption\nevents.",
+  "failure_classes": []
 }

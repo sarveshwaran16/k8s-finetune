@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Role Based Access Control Good Practices",
   "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
-  "text": "Kubernetes\nRBAC\nis a key security control\nto ensure that cluster users and workloads have only the access to resources required to\nexecute their roles. It is important to ensure that, when designing permissions for cluster\nusers, the cluster administrator understands the areas where privilege escalation could occur,\nto reduce the risk of excessive access leading to security incidents.\nThe good practices laid out here should be read in conjunction with the general\nRBAC documentation\n."
+  "text": "Kubernetes\nRBAC\nis a key security control\nto ensure that cluster users and workloads have only the access to resources required to\nexecute their roles. It is important to ensure that, when designing permissions for cluster\nusers, the cluster administrator understands the areas where privilege escalation could occur,\nto reduce the risk of excessive access leading to security incidents.\nThe good practices laid out here should be read in conjunction with the general\nRBAC documentation\n.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

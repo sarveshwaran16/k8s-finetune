@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl version — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_version/#synopsis",
-  "text": "Print the client and server version information for the current context.\nkubectl version [flags]\n\n# Print the client and server versions for the current context\n  kubectl version\n\n--client\nIf true, shows client version only (no server required).\n-h, --help\nhelp for version\n-o, --output string\nOne of 'yaml' or 'json'.\nIf true, shows client version only (no server required).\nhelp for version\nOne of 'yaml' or 'json'."
+  "text": "Print the client and server version information for the current context.\nkubectl version [flags]\n\n# Print the client and server versions for the current context\n  kubectl version\n\n--client\nIf true, shows client version only (no server required).\n-h, --help\nhelp for version\n-o, --output string\nOne of 'yaml' or 'json'.\nIf true, shows client version only (no server required).\nhelp for version\nOne of 'yaml' or 'json'.",
+  "failure_classes": []
 }

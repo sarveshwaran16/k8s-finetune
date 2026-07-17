@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Container Runtimes — cgroupfs driver",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/#cgroupfs-cgroup-driver",
-  "text": "The\ncgroupfs\ndriver is the\ndefault cgroup driver in the kubelet\n.\nWhen the\ncgroupfs\ndriver is used, the kubelet and the container runtime directly interface with\nthe cgroup filesystem to configure cgroups.\nThe\ncgroupfs\ndriver is\nnot\nrecommended when\nsystemd\nis the\ninit system because systemd expects a single cgroup manager on\nthe system. Additionally, if you use\ncgroup v2\n, use the\nsystemd\ncgroup driver instead of\ncgroupfs\n."
+  "text": "The\ncgroupfs\ndriver is the\ndefault cgroup driver in the kubelet\n.\nWhen the\ncgroupfs\ndriver is used, the kubelet and the container runtime directly interface with\nthe cgroup filesystem to configure cgroups.\nThe\ncgroupfs\ndriver is\nnot\nrecommended when\nsystemd\nis the\ninit system because systemd expects a single cgroup manager on\nthe system. Additionally, if you use\ncgroup v2\n, use the\nsystemd\ncgroup driver instead of\ncgroupfs\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

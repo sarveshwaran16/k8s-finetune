@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl cluster-info — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_cluster-info/#synopsis",
-  "text": "Display addresses of the control plane and services with label kubernetes.io/cluster-service=true. To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.\nkubectl cluster-info [flags]\n\n# Print the address of the control plane and cluster services\n  kubectl cluster-info\n\n-h, --help\nhelp for cluster-info\nhelp for cluster-info"
+  "text": "Display addresses of the control plane and services with label kubernetes.io/cluster-service=true. To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.\nkubectl cluster-info [flags]\n\n# Print the address of the control plane and cluster services\n  kubectl cluster-info\n\n-h, --help\nhelp for cluster-info\nhelp for cluster-info",
+  "failure_classes": []
 }

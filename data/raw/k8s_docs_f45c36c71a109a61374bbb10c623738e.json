@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — DefaultTolerationSeconds",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#defaulttolerationseconds",
-  "text": "Type\n: Mutating.\nThis admission controller sets the default forgiveness toleration for pods to tolerate\nthe taints\nnotready:NoExecute\nand\nunreachable:NoExecute\nbased on the k8s-apiserver input parameters\ndefault-not-ready-toleration-seconds\nand\ndefault-unreachable-toleration-seconds\nif the pods don't already\nhave toleration for taints\nnode.kubernetes.io/not-ready:NoExecute\nor\nnode.kubernetes.io/unreachable:NoExecute\n.\nThe default value for\ndefault-not-ready-toleration-seconds\nand\ndefault-unreachable-toleration-seconds\nis 5 minutes."
+  "text": "Type\n: Mutating.\nThis admission controller sets the default forgiveness toleration for pods to tolerate\nthe taints\nnotready:NoExecute\nand\nunreachable:NoExecute\nbased on the k8s-apiserver input parameters\ndefault-not-ready-toleration-seconds\nand\ndefault-unreachable-toleration-seconds\nif the pods don't already\nhave toleration for taints\nnode.kubernetes.io/not-ready:NoExecute\nor\nnode.kubernetes.io/unreachable:NoExecute\n.\nThe default value for\ndefault-not-ready-toleration-seconds\nand\ndefault-unreachable-toleration-seconds\nis 5 minutes.",
+  "failure_classes": []
 }

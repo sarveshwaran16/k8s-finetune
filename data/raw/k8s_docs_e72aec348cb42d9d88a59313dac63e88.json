@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Upgrade A Cluster — kubeadm",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/#upgrade-kubeadm",
-  "text": "If your cluster was deployed using the\nkubeadm\ntool, refer to\nUpgrading kubeadm clusters\nfor detailed information on how to upgrade the cluster.\nOnce you have upgraded the cluster, remember to\ninstall the latest version of\nkubectl\n.\n\nYou should manually update the control plane following this sequence:\netcd (all instances)\nkube-apiserver (all control plane hosts)\nkube-controller-manager\nkube-scheduler\ncloud controller manager, if you use one\nAt this point you should\ninstall the latest version of\nkubectl\n.\nFor each node in your cluster,\ndrain\nthat node and then either replace it with a new node that uses the 1.36\nkubelet, or upgrade the kubelet on that node and bring the node back into service."
+  "text": "If your cluster was deployed using the\nkubeadm\ntool, refer to\nUpgrading kubeadm clusters\nfor detailed information on how to upgrade the cluster.\nOnce you have upgraded the cluster, remember to\ninstall the latest version of\nkubectl\n.\n\nYou should manually update the control plane following this sequence:\netcd (all instances)\nkube-apiserver (all control plane hosts)\nkube-controller-manager\nkube-scheduler\ncloud controller manager, if you use one\nAt this point you should\ninstall the latest version of\nkubectl\n.\nFor each node in your cluster,\ndrain\nthat node and then either replace it with a new node that uses the 1.36\nkubelet, or upgrade the kubelet on that node and bring the node back into service.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

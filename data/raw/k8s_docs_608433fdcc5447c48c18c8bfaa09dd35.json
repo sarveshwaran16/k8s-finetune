@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Resource Management for Pods and Containers",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
-  "text": "When you specify a\nPod\n, you can optionally specify how much of each resource a\ncontainer\nneeds. The most common resources to specify are CPU and memory\n(RAM); there are others.\nWhen you specify the resource\nrequest\nfor containers in a Pod, the\nkube-scheduler\nuses this information to decide which node to place the Pod on.\nWhen you specify a resource\nlimit\nfor a container, the\nkubelet\nenforces those\nlimits so that the running container is not allowed to use more of that resource\nthan the limit you set. The kubelet also reserves at least the\nrequest\namount of\nthat system resource specifically for that container to use."
+  "text": "When you specify a\nPod\n, you can optionally specify how much of each resource a\ncontainer\nneeds. The most common resources to specify are CPU and memory\n(RAM); there are others.\nWhen you specify the resource\nrequest\nfor containers in a Pod, the\nkube-scheduler\nuses this information to decide which node to place the Pod on.\nWhen you specify a resource\nlimit\nfor a container, the\nkubelet\nenforces those\nlimits so that the running container is not allowed to use more of that resource\nthan the limit you set. The kubelet also reserves at least the\nrequest\namount of\nthat system resource specifically for that container to use.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl set image — Examples",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_set/kubectl_set_image/#examples",
-  "text": "# Set a deployment's nginx container image to 'nginx:1.9.1', and its busybox container image to 'busybox'\n  kubectl set image deployment/nginx busybox=busybox nginx=nginx:1.9.1\n  \n  # Update all deployments' and rc's nginx container's image to 'nginx:1.9.1'\n  kubectl set image deployments,rc nginx=nginx:1.9.1 --all\n  \n  # Update image of all containers of daemonset abc to 'nginx:1.9.1'\n  kubectl set image daemonset abc *=nginx:1.9.1\n  \n  # Print result (in yaml format) of updating nginx container image from local file, without hitting the server\n  kubectl set image -f path/to/file.yaml nginx=nginx:1.9.1 --local -o yaml"
+  "text": "# Set a deployment's nginx container image to 'nginx:1.9.1', and its busybox container image to 'busybox'\n  kubectl set image deployment/nginx busybox=busybox nginx=nginx:1.9.1\n  \n  # Update all deployments' and rc's nginx container's image to 'nginx:1.9.1'\n  kubectl set image deployments,rc nginx=nginx:1.9.1 --all\n  \n  # Update image of all containers of daemonset abc to 'nginx:1.9.1'\n  kubectl set image daemonset abc *=nginx:1.9.1\n  \n  # Print result (in yaml format) of updating nginx container image from local file, without hitting the server\n  kubectl set image -f path/to/file.yaml nginx=nginx:1.9.1 --local -o yaml",
+  "failure_classes": []
 }

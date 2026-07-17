@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Feature Gates",
   "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/",
-  "text": "This page contains an overview of the various feature gates an administrator\ncan specify on different Kubernetes components.\nSee\nfeature stages\nfor an explanation of the stages for a feature.\n\nFeature gates are a set of key=value pairs that describe Kubernetes features.\nYou can turn these features on or off using the\n--feature-gates\ncommand line flag\non each Kubernetes component."
+  "text": "This page contains an overview of the various feature gates an administrator\ncan specify on different Kubernetes components.\nSee\nfeature stages\nfor an explanation of the stages for a feature.\n\nFeature gates are a set of key=value pairs that describe Kubernetes features.\nYou can turn these features on or off using the\n--feature-gates\ncommand line flag\non each Kubernetes component.",
+  "failure_classes": []
 }

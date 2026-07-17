@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Running Kubelet in Standalone Mode",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/kubelet-standalone/",
-  "text": "This tutorial shows you how to run a standalone kubelet instance.\nYou may have different motivations for running a standalone kubelet.\nThis tutorial is aimed at introducing you to Kubernetes, even if you don't have\nmuch experience with it. You can follow this tutorial and learn about node setup,\nbasic (static) Pods, and how Kubernetes manages containers.\nOnce you have followed this tutorial, you could try using a cluster that has a\ncontrol plane\nto manage pods\nand nodes, and other types of objects. For example,\nHello, minikube\n.\nYou can also run the kubelet in standalone mode to suit production use cases, such as\nto run the control plane for a highly available, resiliently deployed cluster. This\ntutorial does not cover the details you need for running a resilient control plane."
+  "text": "This tutorial shows you how to run a standalone kubelet instance.\nYou may have different motivations for running a standalone kubelet.\nThis tutorial is aimed at introducing you to Kubernetes, even if you don't have\nmuch experience with it. You can follow this tutorial and learn about node setup,\nbasic (static) Pods, and how Kubernetes manages containers.\nOnce you have followed this tutorial, you could try using a cluster that has a\ncontrol plane\nto manage pods\nand nodes, and other types of objects. For example,\nHello, minikube\n.\nYou can also run the kubelet in standalone mode to suit production use cases, such as\nto run the control plane for a highly available, resiliently deployed cluster. This\ntutorial does not cover the details you need for running a resilient control plane.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

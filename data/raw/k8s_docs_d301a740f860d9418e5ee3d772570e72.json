@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Apply Pod Security Standards at the Namespace Level",
   "source_url": "https://kubernetes.io/docs/tutorials/security/ns-level-pss/",
-  "text": "Pod Security Admission is an admission controller that applies\nPod Security Standards\nwhen pods are created. It is a feature GA'ed in v1.25.\nIn this tutorial, you will enforce the\nbaseline\nPod Security Standard,\none namespace at a time.\nYou can also apply Pod Security Standards to multiple namespaces at once at the cluster\nlevel. For instructions, refer to\nApply Pod Security Standards at the cluster level\n."
+  "text": "Pod Security Admission is an admission controller that applies\nPod Security Standards\nwhen pods are created. It is a feature GA'ed in v1.25.\nIn this tutorial, you will enforce the\nbaseline\nPod Security Standard,\none namespace at a time.\nYou can also apply Pod Security Standards to multiple namespaces at once at the cluster\nlevel. For instructions, refer to\nApply Pod Security Standards at the cluster level\n.",
+  "failure_classes": []
 }

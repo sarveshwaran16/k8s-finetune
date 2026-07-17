@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Authenticating — User impersonation",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#user-impersonation",
-  "text": "User impersonation\nprovides\na method that a user can act as another user through impersonation headers\n\nYou can configure Kubernetes authentication either using\ncommand line arguments\n, or using a\nconfiguration file\n.\nTypically, you use a mix of these approaches.\n\nYou can use the following command line arguments to configure how your cluster's control plane authenticates clients.\nThe\ncommand line reference\nfor the API server\ndescribes all of the relevant command line arguments in more detail."
+  "text": "User impersonation\nprovides\na method that a user can act as another user through impersonation headers\n\nYou can configure Kubernetes authentication either using\ncommand line arguments\n, or using a\nconfiguration file\n.\nTypically, you use a mix of these approaches.\n\nYou can use the following command line arguments to configure how your cluster's control plane authenticates clients.\nThe\ncommand line reference\nfor the API server\ndescribes all of the relevant command line arguments in more detail.",
+  "failure_classes": []
 }

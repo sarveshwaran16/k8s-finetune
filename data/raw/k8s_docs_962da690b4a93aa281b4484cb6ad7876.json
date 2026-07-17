@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Explore Termination Behavior for Pods And Their Endpoints",
   "source_url": "https://kubernetes.io/docs/tutorials/services/pods-and-endpoint-termination-flow/",
-  "text": "Once you connected your Application with Service following steps\nlike those outlined in\nConnecting Applications with Services\n,\nyou have a continuously running, replicated application, that is exposed on a network.\nThis tutorial helps you look at the termination flow for Pods and to explore ways to implement\ngraceful connection draining."
+  "text": "Once you connected your Application with Service following steps\nlike those outlined in\nConnecting Applications with Services\n,\nyou have a continuously running, replicated application, that is exposed on a network.\nThis tutorial helps you look at the termination flow for Pods and to explore ways to implement\ngraceful connection draining.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Using Source IP — Cleaning up",
   "source_url": "https://kubernetes.io/docs/tutorials/services/source-ip/#cleaning-up",
-  "text": "Delete the Services:\nkubectl delete svc -l\napp\n=\nsource-ip-app\nDelete the Deployment, ReplicaSet and Pod:\nkubectl delete deployment source-ip-app\n\nLearn more about\nconnecting applications via services\nRead how to\nCreate an External Load Balancer\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Delete the Services:\nkubectl delete svc -l\napp\n=\nsource-ip-app\nDelete the Deployment, ReplicaSet and Pod:\nkubectl delete deployment source-ip-app\n\nLearn more about\nconnecting applications via services\nRead how to\nCreate an External Load Balancer\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ConfigMaps",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
-  "text": "A ConfigMap is an API object used to store non-confidential data in key-value pairs.\nPods\ncan consume ConfigMaps as\nenvironment variables, command-line arguments, or as configuration files in a\nvolume\n.\nA ConfigMap is an API object used to store non-confidential data in key-value pairs.\nPods\ncan consume ConfigMaps as\nenvironment variables, command-line arguments, or as configuration files in a\nvolume\n.\nA ConfigMap allows you to decouple environment-specific configuration from your\ncontainer images\n, so that your applications are easily portable."
+  "text": "A ConfigMap is an API object used to store non-confidential data in key-value pairs.\nPods\ncan consume ConfigMaps as\nenvironment variables, command-line arguments, or as configuration files in a\nvolume\n.\nA ConfigMap is an API object used to store non-confidential data in key-value pairs.\nPods\ncan consume ConfigMaps as\nenvironment variables, command-line arguments, or as configuration files in a\nvolume\n.\nA ConfigMap allows you to decouple environment-specific configuration from your\ncontainer images\n, so that your applications are easily portable.",
+  "failure_classes": []
 }

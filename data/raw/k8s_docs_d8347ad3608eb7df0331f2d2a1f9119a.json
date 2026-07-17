@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Communication between Nodes and the Control Plane — SSH tunnels",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/control-plane-node-communication/#ssh-tunnels",
-  "text": "Kubernetes supports\nSSH tunnels\nto protect the control plane to nodes communication paths. In this\nconfiguration, the API server initiates an SSH tunnel to each node in the cluster (connecting to\nthe SSH server listening on port 22) and passes all traffic destined for a kubelet, node, pod, or\nservice through the tunnel.\nThis tunnel ensures that the traffic is not exposed outside of the network in which the nodes are\nrunning."
+  "text": "Kubernetes supports\nSSH tunnels\nto protect the control plane to nodes communication paths. In this\nconfiguration, the API server initiates an SSH tunnel to each node in the cluster (connecting to\nthe SSH server listening on port 22) and passes all traffic destined for a kubelet, node, pod, or\nservice through the tunnel.\nThis tunnel ensures that the traffic is not exposed outside of the network in which the nodes are\nrunning.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

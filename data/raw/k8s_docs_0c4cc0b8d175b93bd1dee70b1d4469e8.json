@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — jobset.sigs.k8s.io/job-index",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#jobset-sigs-k8s-io-job-index",
-  "text": "Type: Label, Annotation\nExample:\njobset.sigs.k8s.io/job-index: \"0\"\nUsed on: Jobs, Pods\nThis label/annotation is set by the JobSet controller on child Jobs and Pods. It contains the index of the Job replica within its parent ReplicatedJob.\n\nType: Label, Annotation\nExample:\njobset.sigs.k8s.io/job-key: \"0f1e93893c4cb372080804ddb9153093cb0d20cefdd37f653e739c232d363feb\"\nUsed on: Jobs, Pods\nThe JobSet controller sets this label (and also an annotation with the same key) on child Jobs and\nPods of a JobSet. The value is the SHA256 hash of the namespaced Job name."
+  "text": "Type: Label, Annotation\nExample:\njobset.sigs.k8s.io/job-index: \"0\"\nUsed on: Jobs, Pods\nThis label/annotation is set by the JobSet controller on child Jobs and Pods. It contains the index of the Job replica within its parent ReplicatedJob.\n\nType: Label, Annotation\nExample:\njobset.sigs.k8s.io/job-key: \"0f1e93893c4cb372080804ddb9153093cb0d20cefdd37f653e739c232d363feb\"\nUsed on: Jobs, Pods\nThe JobSet controller sets this label (and also an annotation with the same key) on child Jobs and\nPods of a JobSet. The value is the SHA256 hash of the namespaced Job name.",
+  "failure_classes": []
 }

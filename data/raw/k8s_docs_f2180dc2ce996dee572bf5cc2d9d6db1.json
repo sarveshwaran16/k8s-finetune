@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Create a Windows HostProcess Pod — Resource limits",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/#resource-limits",
-  "text": "Resource limits (disk, memory, cpu count) are applied to the job and are job wide.\nFor example, with a limit of 10MB set, the memory allocated for any HostProcess job object\nwill be capped at 10MB. This is the same behavior as other Windows container types.\nThese limits would be specified the same way they are currently for whatever orchestrator\nor runtime is being used. The only difference is in the disk resource usage calculation\nused for resource tracking due to the difference in how HostProcess containers are bootstrapped."
+  "text": "Resource limits (disk, memory, cpu count) are applied to the job and are job wide.\nFor example, with a limit of 10MB set, the memory allocated for any HostProcess job object\nwill be capped at 10MB. This is the same behavior as other Windows container types.\nThese limits would be specified the same way they are currently for whatever orchestrator\nor runtime is being used. The only difference is in the disk resource usage calculation\nused for resource tracking due to the difference in how HostProcess containers are bootstrapped.",
+  "failure_classes": []
 }

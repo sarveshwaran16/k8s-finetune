@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Storage Capacity — Before you begin",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-capacity/#before-you-begin",
-  "text": "Kubernetes v1.36 includes cluster-level API support for\nstorage capacity tracking. To use this you must also be using a CSI driver that\nsupports capacity tracking. Consult the documentation for the CSI drivers that\nyou use to find out whether this support is available and, if so, how to use\nit. If you are not running Kubernetes v1.36, check the\ndocumentation for that version of Kubernetes."
+  "text": "Kubernetes v1.36 includes cluster-level API support for\nstorage capacity tracking. To use this you must also be using a CSI driver that\nsupports capacity tracking. Consult the documentation for the CSI drivers that\nyou use to find out whether this support is available and, if so, how to use\nit. If you are not running Kubernetes v1.36, check the\ndocumentation for that version of Kubernetes.",
+  "failure_classes": []
 }

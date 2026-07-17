@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Installing kubeadm",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/",
-  "text": "This page shows how to install the\nkubeadm\ntoolbox.\nFor information on how to create a cluster with kubeadm once you have performed this installation process,\nsee the\nCreating a cluster with kubeadm\npage.\nThis installation guide is for Kubernetes v1.36. If you want to use a different Kubernetes version, please refer to the following pages instead:\nInstalling kubeadm (Kubernetes v1.35)\nInstalling kubeadm (Kubernetes v1.34)\nInstalling kubeadm (Kubernetes v1.33)\nInstalling kubeadm (Kubernetes v1.32)"
+  "text": "This page shows how to install the\nkubeadm\ntoolbox.\nFor information on how to create a cluster with kubeadm once you have performed this installation process,\nsee the\nCreating a cluster with kubeadm\npage.\nThis installation guide is for Kubernetes v1.36. If you want to use a different Kubernetes version, please refer to the following pages instead:\nInstalling kubeadm (Kubernetes v1.35)\nInstalling kubeadm (Kubernetes v1.34)\nInstalling kubeadm (Kubernetes v1.33)\nInstalling kubeadm (Kubernetes v1.32)",
+  "failure_classes": []
 }

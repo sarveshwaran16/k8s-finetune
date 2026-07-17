@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configuring a cgroup driver",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/",
-  "text": "This page explains how to configure the kubelet's cgroup driver to match the container\nruntime cgroup driver for kubeadm clusters.\n\nYou should be familiar with the Kubernetes\ncontainer runtime requirements\n.\n\nThe\nContainer runtimes\npage\nexplains that the\nsystemd\ndriver is recommended for kubeadm based setups instead\nof the kubelet's\ndefault\ncgroupfs\ndriver,\nbecause kubeadm manages the kubelet as a\nsystemd service\n.\nThe page also provides details on how to set up a number of different container runtimes with the\nsystemd\ndriver by default."
+  "text": "This page explains how to configure the kubelet's cgroup driver to match the container\nruntime cgroup driver for kubeadm clusters.\n\nYou should be familiar with the Kubernetes\ncontainer runtime requirements\n.\n\nThe\nContainer runtimes\npage\nexplains that the\nsystemd\ndriver is recommended for kubeadm based setups instead\nof the kubelet's\ndefault\ncgroupfs\ndriver,\nbecause kubeadm manages the kubelet as a\nsystemd service\n.\nThe page also provides details on how to set up a number of different container runtimes with the\nsystemd\ndriver by default.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

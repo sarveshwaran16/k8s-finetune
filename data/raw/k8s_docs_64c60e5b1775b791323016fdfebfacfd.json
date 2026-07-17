@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debug Running Pods",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/",
-  "text": "This page explains how to debug Pods running (or crashing) on a Node.\n\nYour\nPod\nshould already be\nscheduled and running. If your Pod is not yet running, start with\nDebugging\nPods\n.\nFor some of the advanced debugging steps you need to know on which Node the\nPod is running and have shell access to run commands on that Node. You don't\nneed that access to run the standard debug steps that use\nkubectl\n."
+  "text": "This page explains how to debug Pods running (or crashing) on a Node.\n\nYour\nPod\nshould already be\nscheduled and running. If your Pod is not yet running, start with\nDebugging\nPods\n.\nFor some of the advanced debugging steps you need to know on which Node the\nPod is running and have shell access to run commands on that Node. You don't\nneed that access to run the standard debug steps that use\nkubectl\n.",
+  "failure_classes": []
 }

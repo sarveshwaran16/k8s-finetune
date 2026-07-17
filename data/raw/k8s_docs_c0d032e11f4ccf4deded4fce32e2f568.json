@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Secrets — Editing a Secret",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/secret/#editing-a-secret",
-  "text": "You can edit an existing Secret unless it is\nimmutable\n. To\nedit a Secret, use one of the following methods:\nUse\nkubectl\nUse a configuration file\nYou can also edit the data in a Secret using the\nKustomize tool\n. However, this\nmethod creates a new\nSecret\nobject with the edited data.\nDepending on how you created the Secret, as well as how the Secret is used in\nyour Pods, updates to existing\nSecret\nobjects are propagated automatically to\nPods that use the data. For more information, refer to\nUsing Secrets as files from a Pod\nsection."
+  "text": "You can edit an existing Secret unless it is\nimmutable\n. To\nedit a Secret, use one of the following methods:\nUse\nkubectl\nUse a configuration file\nYou can also edit the data in a Secret using the\nKustomize tool\n. However, this\nmethod creates a new\nSecret\nobject with the edited data.\nDepending on how you created the Secret, as well as how the Secret is used in\nyour Pods, updates to existing\nSecret\nobjects are propagated automatically to\nPods that use the data. For more information, refer to\nUsing Secrets as files from a Pod\nsection.",
+  "failure_classes": []
 }

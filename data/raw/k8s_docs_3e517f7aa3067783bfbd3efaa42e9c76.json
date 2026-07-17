@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Managing Secrets using Kustomize",
   "source_url": "https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kustomize/",
-  "text": "kubectl\nsupports using the\nKustomize object management tool\nto manage Secrets\nand ConfigMaps. You create a\nresource generator\nusing Kustomize, which\ngenerates a Secret that you can apply to the API server using\nkubectl\n.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud"
+  "text": "kubectl\nsupports using the\nKustomize object management tool\nto manage Secrets\nand ConfigMaps. You create a\nresource generator\nusing Kustomize, which\ngenerates a Secret that you can apply to the API server using\nkubectl\n.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts. If you do not already have a\ncluster, you can create one by using\nminikube\nor you can use one of these Kubernetes playgrounds:\niximiuz Labs\nKillercoda\nKodeKloud",
+  "failure_classes": []
 }

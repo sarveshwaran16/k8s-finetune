@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure a Pod to Use a ConfigMap — Add ConfigMap data to a Volume",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume",
-  "text": "As explained in\nCreate ConfigMaps from files\n, when you create\na ConfigMap using\n--from-file\n, the filename becomes a key stored in the\ndata\nsection of\nthe ConfigMap. The file contents become the key's value.\nThe examples in this section refer to a ConfigMap named\nspecial-config\n:\napiVersion\n:\nv1\nkind\n:\nConfigMap\nmetadata\n:\nname\n:\nspecial-config\nnamespace\n:\ndefault\ndata\n:\nSPECIAL_LEVEL\n:\nvery\nSPECIAL_TYPE\n:\ncharm\nCreate the ConfigMap:\nkubectl create -f https://kubernetes.io/examples/configmap/configmap-multikeys.yaml"
+  "text": "As explained in\nCreate ConfigMaps from files\n, when you create\na ConfigMap using\n--from-file\n, the filename becomes a key stored in the\ndata\nsection of\nthe ConfigMap. The file contents become the key's value.\nThe examples in this section refer to a ConfigMap named\nspecial-config\n:\napiVersion\n:\nv1\nkind\n:\nConfigMap\nmetadata\n:\nname\n:\nspecial-config\nnamespace\n:\ndefault\ndata\n:\nSPECIAL_LEVEL\n:\nvery\nSPECIAL_TYPE\n:\ncharm\nCreate the ConfigMap:\nkubectl create -f https://kubernetes.io/examples/configmap/configmap-multikeys.yaml",
+  "failure_classes": []
 }

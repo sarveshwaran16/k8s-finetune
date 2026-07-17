@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Declarative Management of Kubernetes Objects Using Configuration Files",
   "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/",
-  "text": "Kubernetes objects can be created, updated, and deleted by storing multiple\nobject configuration files in a directory and using\nkubectl apply\nto\nrecursively create and update those objects as needed. This method\nretains writes made to live objects without merging the changes\nback into the object configuration files.\nkubectl diff\nalso gives you a\npreview of what changes\napply\nwill make."
+  "text": "Kubernetes objects can be created, updated, and deleted by storing multiple\nobject configuration files in a directory and using\nkubectl apply\nto\nrecursively create and update those objects as needed. This method\nretains writes made to live objects without merging the changes\nback into the object configuration files.\nkubectl diff\nalso gives you a\npreview of what changes\napply\nwill make.",
+  "failure_classes": []
 }

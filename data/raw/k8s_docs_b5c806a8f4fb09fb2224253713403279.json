@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — cronjob",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-cronjob-em-",
-  "text": "Create a cron job\nkubectl create cronjob my-job\n--image\n=busybox\n--schedule\n=\n\"*/1 * * * *\"\nCreate a cron job with a command\nkubectl create cronjob my-job\n--image\n=busybox\n--schedule\n=\n\"*/1 * * * *\"\n-- date\nCreate a cron job with the specified name.\n\n$ kubectl create cronjob NAME --image=image --schedule='0/5 * * * ?' -- [COMMAND] [args...]"
+  "text": "Create a cron job\nkubectl create cronjob my-job\n--image\n=busybox\n--schedule\n=\n\"*/1 * * * *\"\nCreate a cron job with a command\nkubectl create cronjob my-job\n--image\n=busybox\n--schedule\n=\n\"*/1 * * * *\"\n-- date\nCreate a cron job with the specified name.\n\n$ kubectl create cronjob NAME --image=image --schedule='0/5 * * * ?' -- [COMMAND] [args...]",
+  "failure_classes": []
 }

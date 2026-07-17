@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-controller-manager Configuration (v1alpha1) — CSRSigningConfiguration",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kube-controller-manager-config.v1alpha1/#kubecontrollermanager-config-k8s-io-v1alpha1-CSRSigningConfiguration",
-  "text": "Appears in:\nCSRSigningControllerConfiguration\nCSRSigningConfiguration holds information about a particular CSR signer\nField\nDescription\nCertFile\n[Required]\nstring\ncertFile is the filename containing a PEM-encoded\nX509 CA certificate used to issue certificates\nKeyFile\n[Required]\nstring\nkeyFile is the filename containing a PEM-encoded\nRSA or ECDSA private key used to issue certificates\ncertFile is the filename containing a PEM-encoded\nX509 CA certificate used to issue certificates\nkeyFile is the filename containing a PEM-encoded\nRSA or ECDSA private key used to issue certificates"
+  "text": "Appears in:\nCSRSigningControllerConfiguration\nCSRSigningConfiguration holds information about a particular CSR signer\nField\nDescription\nCertFile\n[Required]\nstring\ncertFile is the filename containing a PEM-encoded\nX509 CA certificate used to issue certificates\nKeyFile\n[Required]\nstring\nkeyFile is the filename containing a PEM-encoded\nRSA or ECDSA private key used to issue certificates\ncertFile is the filename containing a PEM-encoded\nX509 CA certificate used to issue certificates\nkeyFile is the filename containing a PEM-encoded\nRSA or ECDSA private key used to issue certificates",
+  "failure_classes": []
 }

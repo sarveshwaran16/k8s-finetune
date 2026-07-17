@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Apply Pod Security Standards at the Cluster Level",
   "source_url": "https://kubernetes.io/docs/tutorials/security/cluster-level-pss/",
-  "text": "Pod Security is an admission controller that carries out checks against the Kubernetes\nPod Security Standards\nwhen new pods are\ncreated. It is a feature GA'ed in v1.25.\nThis tutorial shows you how to enforce the\nbaseline\nPod Security\nStandard at the cluster level which applies a standard configuration\nto all namespaces in a cluster.\nTo apply Pod Security Standards to specific namespaces, refer to\nApply Pod Security Standards at the namespace level\n.\nIf you are running a version of Kubernetes other than v1.36,\ncheck the documentation for that version."
+  "text": "Pod Security is an admission controller that carries out checks against the Kubernetes\nPod Security Standards\nwhen new pods are\ncreated. It is a feature GA'ed in v1.25.\nThis tutorial shows you how to enforce the\nbaseline\nPod Security\nStandard at the cluster level which applies a standard configuration\nto all namespaces in a cluster.\nTo apply Pod Security Standards to specific namespaces, refer to\nApply Pod Security Standards at the namespace level\n.\nIf you are running a version of Kubernetes other than v1.36,\ncheck the documentation for that version.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Authorization",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authorization/",
-  "text": "Kubernetes authorization takes place following\nauthentication\n.\nUsually, a client making a request must be authenticated (logged in) before its\nrequest can be allowed; however, Kubernetes also allows anonymous requests in\nsome circumstances.\nFor an overview of how authorization fits into the wider context of API access\ncontrol, read\nControlling Access to the Kubernetes API\n."
+  "text": "Kubernetes authorization takes place following\nauthentication\n.\nUsually, a client making a request must be authenticated (logged in) before its\nrequest can be allowed; however, Kubernetes also allows anonymous requests in\nsome circumstances.\nFor an overview of how authorization fits into the wider context of API access\ncontrol, read\nControlling Access to the Kubernetes API\n.",
+  "failure_classes": []
 }

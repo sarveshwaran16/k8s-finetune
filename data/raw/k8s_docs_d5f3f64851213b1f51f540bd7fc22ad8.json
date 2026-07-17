@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Control Topology Management Policies on a node",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/",
-  "text": "An increasing number of systems leverage a combination of CPUs and hardware accelerators to\nsupport latency-critical execution and high-throughput parallel computation. These include\nworkloads in fields such as telecommunications, scientific computing, machine learning, financial\nservices and data analytics. Such hybrid systems comprise a high performance environment.\nIn order to extract the best performance, optimizations related to CPU isolation, memory and\ndevice locality are required. However, in Kubernetes, these optimizations are handled by a\ndisjoint set of components.\nTopology Manager\nis a kubelet component that aims to coordinate the set of components that are\nresponsible for these optimizations."
+  "text": "An increasing number of systems leverage a combination of CPUs and hardware accelerators to\nsupport latency-critical execution and high-throughput parallel computation. These include\nworkloads in fields such as telecommunications, scientific computing, machine learning, financial\nservices and data analytics. Such hybrid systems comprise a high performance environment.\nIn order to extract the best performance, optimizations related to CPU isolation, memory and\ndevice locality are required. However, in Kubernetes, these optimizations are handled by a\ndisjoint set of components.\nTopology Manager\nis a kubelet component that aims to coordinate the set of components that are\nresponsible for these optimizations.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

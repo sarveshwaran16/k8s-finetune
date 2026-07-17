@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Windows containers in Kubernetes — Mirantis Container Runtime",
   "source_url": "https://kubernetes.io/docs/concepts/windows/intro/#mcr",
-  "text": "Mirantis Container Runtime\n(MCR)\nis available as a container runtime for all Windows Server 2019 and later versions.\nSee\nInstall MCR on Windows Servers\nfor more information.\n\nOn Windows nodes, strict compatibility rules apply where the host OS version must\nmatch the container base image OS version.\nFor Kubernetes v1.36, operating system compatibility for Windows nodes (and Pods)\nis as follows:\nThe Kubernetes\nversion-skew policy\nalso applies."
+  "text": "Mirantis Container Runtime\n(MCR)\nis available as a container runtime for all Windows Server 2019 and later versions.\nSee\nInstall MCR on Windows Servers\nfor more information.\n\nOn Windows nodes, strict compatibility rules apply where the host OS version must\nmatch the container base image OS version.\nFor Kubernetes v1.36, operating system compatibility for Windows nodes (and Pods)\nis as follows:\nThe Kubernetes\nversion-skew policy\nalso applies.",
+  "failure_classes": []
 }

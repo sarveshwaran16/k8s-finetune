@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubelet Configuration (v1beta1) — KubeletX509Authentication",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/#kubelet-config-k8s-io-v1beta1-KubeletX509Authentication",
-  "text": "Appears in:\nKubeletAuthentication\nField\nDescription\nclientCAFile\nstring\nclientCAFile is the path to a PEM-encoded certificate bundle. If set, any request\npresenting a client certificate signed by one of the authorities in the bundle\nis authenticated with a username corresponding to the CommonName,\nand groups corresponding to the Organization in the client certificate.\nclientCAFile is the path to a PEM-encoded certificate bundle. If set, any request\npresenting a client certificate signed by one of the authorities in the bundle\nis authenticated with a username corresponding to the CommonName,\nand groups corresponding to the Organization in the client certificate."
+  "text": "Appears in:\nKubeletAuthentication\nField\nDescription\nclientCAFile\nstring\nclientCAFile is the path to a PEM-encoded certificate bundle. If set, any request\npresenting a client certificate signed by one of the authorities in the bundle\nis authenticated with a username corresponding to the CommonName,\nand groups corresponding to the Organization in the client certificate.\nclientCAFile is the path to a PEM-encoded certificate bundle. If set, any request\npresenting a client certificate signed by one of the authorities in the bundle\nis authenticated with a username corresponding to the CommonName,\nand groups corresponding to the Organization in the client certificate.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

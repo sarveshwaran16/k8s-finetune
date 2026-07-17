@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Service Internal Traffic Policy",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/service-traffic-policy/",
-  "text": "Service Internal Traffic Policy\nenables internal traffic restrictions to only route\ninternal traffic to endpoints within the node the traffic originated from. The\n\"internal\" traffic here refers to traffic originated from Pods in the current\ncluster. This can help to reduce costs and improve performance."
+  "text": "Service Internal Traffic Policy\nenables internal traffic restrictions to only route\ninternal traffic to endpoints within the node the traffic originated from. The\n\"internal\" traffic here refers to traffic originated from Pods in the current\ncluster. This can help to reduce costs and improve performance.",
+  "failure_classes": []
 }

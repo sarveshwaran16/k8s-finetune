@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Configure GMSA for Windows Pods and containers — Configure GMSAs and Windows nodes in Active Directory",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-gmsa/#configure-gmsas-and-windows-nodes-in-active-directory",
-  "text": "Before Pods in Kubernetes can be configured to use GMSAs, the desired GMSAs need\nto be provisioned in Active Directory as described in the\nWindows GMSA documentation\n.\nWindows worker nodes (that are part of the Kubernetes cluster) need to be configured\nin Active Directory to access the secret credentials associated with the desired GMSA as described in the\nWindows GMSA documentation\n."
+  "text": "Before Pods in Kubernetes can be configured to use GMSAs, the desired GMSAs need\nto be provisioned in Active Directory as described in the\nWindows GMSA documentation\n.\nWindows worker nodes (that are part of the Kubernetes cluster) need to be configured\nin Active Directory to access the secret credentials associated with the desired GMSA as described in the\nWindows GMSA documentation\n.",
+  "failure_classes": []
 }

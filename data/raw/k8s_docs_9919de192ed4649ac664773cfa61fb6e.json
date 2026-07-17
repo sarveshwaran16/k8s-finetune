@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Networking on Windows — IP address management (IPAM)",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/windows-networking/#ipam",
-  "text": "The following IPAM options are supported on Windows:\nhost-local\nazure-vnet-ipam\n(for azure-cni only)\nWindows Server IPAM\n(fallback option if no IPAM is set)\n\nLoad balancing mode where the IP address fixups and the LBNAT occurs at the container vSwitch port directly;\nservice traffic arrives with the source IP set as the originating pod IP.\nThis provides performance optimizations by allowing the return traffic routed through load balancers\nto bypass the load balancer and respond directly to the client;\nreducing load on the load balancer and also reducing overall latency.\nFor more information, read\nDirect Server Return (DSR) in a nutshell\n."
+  "text": "The following IPAM options are supported on Windows:\nhost-local\nazure-vnet-ipam\n(for azure-cni only)\nWindows Server IPAM\n(fallback option if no IPAM is set)\n\nLoad balancing mode where the IP address fixups and the LBNAT occurs at the container vSwitch port directly;\nservice traffic arrives with the source IP set as the originating pod IP.\nThis provides performance optimizations by allowing the return traffic routed through load balancers\nto bypass the load balancer and respond directly to the client;\nreducing load on the load balancer and also reducing overall latency.\nFor more information, read\nDirect Server Return (DSR) in a nutshell\n.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

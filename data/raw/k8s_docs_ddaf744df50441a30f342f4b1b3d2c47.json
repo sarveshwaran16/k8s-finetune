@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure Service Accounts for Pods — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#what-s-next",
-  "text": "See also:\nRead the\nCluster Admin Guide to Service Accounts\nRead about\nAuthorization in Kubernetes\nRead about\nSecrets\nor learn to\ndistribute credentials securely using Secrets\nbut also bear in mind that using Secrets for authenticating as a ServiceAccount\nis deprecated. The recommended alternative is\nServiceAccount token volume projection\n.\nRead about\nprojected volumes\n.\nFor background on OIDC discovery, read the\nServiceAccount signing key retrieval\nKubernetes Enhancement Proposal\nRead the\nOIDC Discovery Spec\nor learn to\ndistribute credentials securely using Secrets\nbut also bear in mind that using Secrets for authenticating as a ServiceAccount\nis deprecated. The recommended alternative is\nServiceAccount token volume projection\n."
+  "text": "See also:\nRead the\nCluster Admin Guide to Service Accounts\nRead about\nAuthorization in Kubernetes\nRead about\nSecrets\nor learn to\ndistribute credentials securely using Secrets\nbut also bear in mind that using Secrets for authenticating as a ServiceAccount\nis deprecated. The recommended alternative is\nServiceAccount token volume projection\n.\nRead about\nprojected volumes\n.\nFor background on OIDC discovery, read the\nServiceAccount signing key retrieval\nKubernetes Enhancement Proposal\nRead the\nOIDC Discovery Spec\nor learn to\ndistribute credentials securely using Secrets\nbut also bear in mind that using Secrets for authenticating as a ServiceAccount\nis deprecated. The recommended alternative is\nServiceAccount token volume projection\n.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

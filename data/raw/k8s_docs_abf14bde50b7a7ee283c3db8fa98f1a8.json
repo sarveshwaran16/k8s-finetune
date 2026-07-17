@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Reserve Compute Resources for System Daemons — Node Allocatable",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/#node-allocatable",
-  "text": "'Allocatable' on a Kubernetes node is defined as the amount of compute resources\nthat are available for pods. The scheduler does not over-subscribe\n'Allocatable'. 'CPU', 'memory' and 'ephemeral-storage' are supported as of now.\nNode Allocatable is exposed as part of\nv1.Node\nobject in the API and as part\nof\nkubectl describe node\nin the CLI.\nResources can be reserved for two categories of system daemons in the\nkubelet\n."
+  "text": "'Allocatable' on a Kubernetes node is defined as the amount of compute resources\nthat are available for pods. The scheduler does not over-subscribe\n'Allocatable'. 'CPU', 'memory' and 'ephemeral-storage' are supported as of now.\nNode Allocatable is exposed as part of\nv1.Node\nobject in the API and as part\nof\nkubectl describe node\nin the CLI.\nResources can be reserved for two categories of system daemons in the\nkubelet\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

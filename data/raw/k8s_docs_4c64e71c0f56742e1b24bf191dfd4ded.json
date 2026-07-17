@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Pods — Static Pods",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#static-pods",
-  "text": "Static Pods\nare managed directly by the kubelet daemon on a specific node,\nwithout the\nAPI server\nobserving them.\nWhereas most Pods are managed by the control plane (for example, a\nDeployment\n), for static\nPods, the kubelet directly supervises each static Pod (and restarts it if it fails).\nStatic Pods are always bound to one\nKubelet\non a specific node.\nThe main use for static Pods is to run a self-hosted control plane: in other words,\nusing the kubelet to supervise the individual\ncontrol plane components\n.\nFor details, see\nStatic Pods\n."
+  "text": "Static Pods\nare managed directly by the kubelet daemon on a specific node,\nwithout the\nAPI server\nobserving them.\nWhereas most Pods are managed by the control plane (for example, a\nDeployment\n), for static\nPods, the kubelet directly supervises each static Pod (and restarts it if it fails).\nStatic Pods are always bound to one\nKubelet\non a specific node.\nThe main use for static Pods is to run a self-hosted control plane: in other words,\nusing the kubelet to supervise the individual\ncontrol plane components\n.\nFor details, see\nStatic Pods\n.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Audit Annotations — k8s.io/removed-release",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/audit-annotations/#k8s-io-removed-release",
-  "text": "Example:\nk8s.io/removed-release: \"1.22\"\nValue\nmust\nbe in the format \"<MAJOR>.<MINOR>\". It is set to target the removal release\non requests made to deprecated API versions with a target removal release.\n\nExample:\npod-security.kubernetes.io/exempt: namespace\nValue\nmust\nbe one of\nuser\n,\nnamespace\n, or\nruntimeClass\nwhich correspond to\nPod Security Exemption\ndimensions. This annotation indicates on which dimension was based the exemption\nfrom the PodSecurity enforcement."
+  "text": "Example:\nk8s.io/removed-release: \"1.22\"\nValue\nmust\nbe in the format \"<MAJOR>.<MINOR>\". It is set to target the removal release\non requests made to deprecated API versions with a target removal release.\n\nExample:\npod-security.kubernetes.io/exempt: namespace\nValue\nmust\nbe one of\nuser\n,\nnamespace\n, or\nruntimeClass\nwhich correspond to\nPod Security Exemption\ndimensions. This annotation indicates on which dimension was based the exemption\nfrom the PodSecurity enforcement.",
+  "failure_classes": []
 }

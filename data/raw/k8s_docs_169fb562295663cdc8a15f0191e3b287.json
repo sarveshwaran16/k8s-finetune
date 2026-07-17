@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm join — What's next",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join/#what-s-next",
-  "text": "kubeadm init\nto bootstrap a Kubernetes control-plane node.\nkubeadm token\nto manage tokens for\nkubeadm join\n.\nkubeadm reset\nto revert any changes made to this host by\nkubeadm init\nor\nkubeadm join\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "kubeadm init\nto bootstrap a Kubernetes control-plane node.\nkubeadm token\nto manage tokens for\nkubeadm join\n.\nkubeadm reset\nto revert any changes made to this host by\nkubeadm init\nor\nkubeadm join\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

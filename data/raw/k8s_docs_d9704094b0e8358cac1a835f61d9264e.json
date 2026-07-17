@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Resizing Pods",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-resize",
-  "text": "FEATURE STATE:\nKubernetes v1.35 [stable]\n(enabled by default)\nFEATURE STATE:\nKubernetes v1.36 [beta]\n(enabled by default)\nKubernetes supports changing the CPU and memory resources allocated to Pods\nafter they are created. (For other infrastructure resources, you would need to\nuse different techniques specific to those resources.) There are two main\napproaches to resizing CPU and memory:"
+  "text": "FEATURE STATE:\nKubernetes v1.35 [stable]\n(enabled by default)\nFEATURE STATE:\nKubernetes v1.36 [beta]\n(enabled by default)\nKubernetes supports changing the CPU and memory resources allocated to Pods\nafter they are created. (For other infrastructure resources, you would need to\nuse different techniques specific to those resources.) There are two main\napproaches to resizing CPU and memory:",
+  "failure_classes": []
 }

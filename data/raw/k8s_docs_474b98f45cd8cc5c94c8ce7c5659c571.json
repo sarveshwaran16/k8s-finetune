@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — scheduler.alpha.kubernetes.io/tolerationsWhitelist",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#schedulerkubernetestolerations-whitelist",
-  "text": "Type: Annotation\nExample:\nscheduler.alpha.kubernetes.io/tolerationsWhitelist: '[{\"operator\": \"Exists\", \"effect\": \"NoSchedule\", \"key\": \"dedicated-node\"}]'\nUsed on: Namespace\nThis annotation is only useful when the (Alpha)\nPodTolerationRestriction\nadmission controller is enabled. The annotation value is a JSON document that defines a list of\nallowed tolerations for the namespace it annotates. When you create a Pod or modify its\ntolerations, the API server checks the tolerations to see if they are mentioned in the allow list.\nThe pod is admitted only if the check succeeds."
+  "text": "Type: Annotation\nExample:\nscheduler.alpha.kubernetes.io/tolerationsWhitelist: '[{\"operator\": \"Exists\", \"effect\": \"NoSchedule\", \"key\": \"dedicated-node\"}]'\nUsed on: Namespace\nThis annotation is only useful when the (Alpha)\nPodTolerationRestriction\nadmission controller is enabled. The annotation value is a JSON document that defines a list of\nallowed tolerations for the namespace it annotates. When you create a Pod or modify its\ntolerations, the API server checks the tolerations to see if they are mentioned in the allow list.\nThe pod is admitted only if the check succeeds.",
+  "failure_classes": []
 }

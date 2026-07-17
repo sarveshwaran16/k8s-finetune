@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Runtime Class — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/containers/runtime-class/#what-s-next",
-  "text": "RuntimeClass Design\nRuntimeClass Scheduling Design\nRuntimeClass API reference\nRead about the\nPod Overhead\nconcept\nPodOverhead Feature Design\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "RuntimeClass Design\nRuntimeClass Scheduling Design\nRuntimeClass API reference\nRead about the\nPod Overhead\nconcept\nPodOverhead Feature Design\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

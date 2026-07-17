@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Install and Set Up kubectl on Linux — Install using other package management",
   "source_url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-using-other-package-management",
-  "text": "Snap\nHomebrew\nIf you are on Ubuntu or another Linux distribution that supports the\nsnap\npackage manager, kubectl\nis available as a\nsnap\napplication.\nsnap install kubectl --classic\nkubectl version --client\nIf you are on Linux and using\nHomebrew\npackage manager, kubectl is available for\ninstallation\n.\nbrew install kubectl\nkubectl version --client"
+  "text": "Snap\nHomebrew\nIf you are on Ubuntu or another Linux distribution that supports the\nsnap\npackage manager, kubectl\nis available as a\nsnap\napplication.\nsnap install kubectl --classic\nkubectl version --client\nIf you are on Linux and using\nHomebrew\npackage manager, kubectl is available for\ninstallation\n.\nbrew install kubectl\nkubectl version --client",
+  "failure_classes": []
 }

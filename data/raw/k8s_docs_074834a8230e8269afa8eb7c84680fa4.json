@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Running Kubernetes Node Components as a Non-root User — Configuring network",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/#configuring-network",
-  "text": "The network namespace of the Node components has to have a non-loopback interface, which can be for example configured with\nslirp4netns\n,\nVPNKit\n, or\nlxc-user-nic(1)\n.\nThe network namespaces of the Pods can be configured with regular CNI plugins.\nFor multi-node networking, Flannel (VXLAN, 8472/UDP) is known to work.\nPorts such as the kubelet port (10250/TCP) and\nNodePort\nservice ports have to be exposed from the Node network namespace to\nthe host with an external port forwarder, such as RootlessKit, slirp4netns, or\nsocat(1)\n.\nYou can use the port forwarder from K3s.\nSee\nRunning K3s in Rootless Mode\nfor more details.\nThe implementation can be found in\nthe\npkg/rootlessports\npackage\nof k3s."
+  "text": "The network namespace of the Node components has to have a non-loopback interface, which can be for example configured with\nslirp4netns\n,\nVPNKit\n, or\nlxc-user-nic(1)\n.\nThe network namespaces of the Pods can be configured with regular CNI plugins.\nFor multi-node networking, Flannel (VXLAN, 8472/UDP) is known to work.\nPorts such as the kubelet port (10250/TCP) and\nNodePort\nservice ports have to be exposed from the Node network namespace to\nthe host with an external port forwarder, such as RootlessKit, slirp4netns, or\nsocat(1)\n.\nYou can use the port forwarder from K3s.\nSee\nRunning K3s in Rootless Mode\nfor more details.\nThe implementation can be found in\nthe\npkg/rootlessports\npackage\nof k3s.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

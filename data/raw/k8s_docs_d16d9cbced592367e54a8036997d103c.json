@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Cloud Controller Manager Administration — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/#what-s-next",
-  "text": "To build and develop your own cloud controller manager, read\nDeveloping Cloud Controller Manager\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "To build and develop your own cloud controller manager, read\nDeveloping Cloud Controller Manager\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Hello Minikube — Conclusion",
   "source_url": "https://kubernetes.io/docs/tutorials/hello-minikube/#conclusion",
-  "text": "This page covered the basic aspects to get a minikube cluster up and running. You are now ready to deploy applications.\n\nTutorial to\ndeploy your first app on Kubernetes with kubectl\n.\nLearn more about\nDeployment objects\n.\nLearn more about\nDeploying applications\n.\nLearn more about\nService objects\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "This page covered the basic aspects to get a minikube cluster up and running. You are now ready to deploy applications.\n\nTutorial to\ndeploy your first app on Kubernetes with kubectl\n.\nLearn more about\nDeployment objects\n.\nLearn more about\nDeploying applications\n.\nLearn more about\nService objects\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

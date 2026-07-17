@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ReplicationController — Rescheduling",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#rescheduling",
-  "text": "As mentioned above, whether you have 1 pod you want to keep running, or 1000, a ReplicationController will ensure that the specified number of pods exists, even in the event of node failure or pod termination (for example, due to an action by another control agent).\n\nThe ReplicationController enables scaling the number of replicas up or down, either manually or by an auto-scaling control agent, by updating the\nreplicas\nfield."
+  "text": "As mentioned above, whether you have 1 pod you want to keep running, or 1000, a ReplicationController will ensure that the specified number of pods exists, even in the event of node failure or pod termination (for example, due to an action by another control agent).\n\nThe ReplicationController enables scaling the number of replicas up or down, either manually or by an auto-scaling control agent, by updating the\nreplicas\nfield.",
+  "failure_classes": []
 }

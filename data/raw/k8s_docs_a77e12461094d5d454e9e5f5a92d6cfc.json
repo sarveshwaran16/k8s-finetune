@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Production environment — What's next",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/#what-s-next",
-  "text": "Decide if you want to build your own production Kubernetes or obtain one from\navailable\nTurnkey Cloud Solutions\nor\nKubernetes Partners\n.\nIf you choose to build your own cluster, plan how you want to\nhandle\ncertificates\nand set up high availability for features such as\netcd\nand the\nAPI server\n.\nChoose from\nkubeadm\n,\nkops\nor\nKubespray\ndeployment methods.\nConfigure user management by determining your\nAuthentication\nand\nAuthorization\nmethods.\nPrepare for application workloads by setting up\nresource limits\n,\nDNS autoscaling\nand\nservice accounts\n."
+  "text": "Decide if you want to build your own production Kubernetes or obtain one from\navailable\nTurnkey Cloud Solutions\nor\nKubernetes Partners\n.\nIf you choose to build your own cluster, plan how you want to\nhandle\ncertificates\nand set up high availability for features such as\netcd\nand the\nAPI server\n.\nChoose from\nkubeadm\n,\nkops\nor\nKubespray\ndeployment methods.\nConfigure user management by determining your\nAuthentication\nand\nAuthorization\nmethods.\nPrepare for application workloads by setting up\nresource limits\n,\nDNS autoscaling\nand\nservice accounts\n.",
+  "failure_classes": []
 }

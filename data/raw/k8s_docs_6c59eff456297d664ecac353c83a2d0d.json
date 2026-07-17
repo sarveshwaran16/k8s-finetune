@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kube-scheduler-simulator.sigs.k8s.io/selected-node",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kube-scheduler-simulator-sigs-k8s-io-selected-node",
-  "text": "Type: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/selected-node: node-282x7\nUsed on: Pod\nThis annotation records the node that is selected by the scheduling cycle, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n.\n\nType: Label\nExample:\nkubernetes.io/arch: \"amd64\"\nUsed on: Node\nThe Kubelet populates this with\nruntime.GOARCH\nas defined by Go.\nThis can be handy if you are mixing ARM and x86 nodes."
+  "text": "Type: Annotation\nExample:\nkube-scheduler-simulator.sigs.k8s.io/selected-node: node-282x7\nUsed on: Pod\nThis annotation records the node that is selected by the scheduling cycle, used by\nhttps://sigs.k8s.io/kube-scheduler-simulator\n.\n\nType: Label\nExample:\nkubernetes.io/arch: \"amd64\"\nUsed on: Node\nThe Kubelet populates this with\nruntime.GOARCH\nas defined by Go.\nThis can be handy if you are mixing ARM and x86 nodes.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

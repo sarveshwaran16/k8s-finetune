@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Good practices for Dynamic Resource Allocation as a Cluster Admin",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/dra/",
-  "text": "This page describes good practices when configuring a Kubernetes cluster\nutilizing Dynamic Resource Allocation (DRA). These instructions are for cluster\nadministrators.\n\nDRA is orchestrated through a number of different APIs. Use authorization tools\n(like RBAC, or another solution) to control access to the right APIs depending\non the persona of your user.\nIn general, DeviceClasses and ResourceSlices should be restricted to admins and\nthe DRA drivers. Cluster operators that will be deploying Pods with claims will\nneed access to ResourceClaim and ResourceClaimTemplate APIs; both of these APIs\nare namespace scoped."
+  "text": "This page describes good practices when configuring a Kubernetes cluster\nutilizing Dynamic Resource Allocation (DRA). These instructions are for cluster\nadministrators.\n\nDRA is orchestrated through a number of different APIs. Use authorization tools\n(like RBAC, or another solution) to control access to the right APIs depending\non the persona of your user.\nIn general, DeviceClasses and ResourceSlices should be restricted to admins and\nthe DRA drivers. Cluster operators that will be deploying Pods with claims will\nneed access to ResourceClaim and ResourceClaimTemplate APIs; both of these APIs\nare namespace scoped.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

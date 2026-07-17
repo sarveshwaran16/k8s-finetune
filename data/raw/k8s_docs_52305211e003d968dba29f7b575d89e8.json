@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-scheduler Configuration (v1) — ExtenderManagedResource",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kube-scheduler-config.v1/#kubescheduler-config-k8s-io-v1-ExtenderManagedResource",
-  "text": "Appears in:\nExtender\nExtenderManagedResource describes the arguments of extended resources\nmanaged by an extender.\nField\nDescription\nname\n[Required]\nstring\nName is the extended resource name.\nignoredByScheduler\n[Required]\nbool\nIgnoredByScheduler indicates whether kube-scheduler should ignore this\nresource when applying predicates.\nName is the extended resource name.\nIgnoredByScheduler indicates whether kube-scheduler should ignore this\nresource when applying predicates."
+  "text": "Appears in:\nExtender\nExtenderManagedResource describes the arguments of extended resources\nmanaged by an extender.\nField\nDescription\nname\n[Required]\nstring\nName is the extended resource name.\nignoredByScheduler\n[Required]\nbool\nIgnoredByScheduler indicates whether kube-scheduler should ignore this\nresource when applying predicates.\nName is the extended resource name.\nIgnoredByScheduler indicates whether kube-scheduler should ignore this\nresource when applying predicates.",
+  "failure_classes": []
 }

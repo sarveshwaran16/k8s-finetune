@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Guide for Running Windows Containers in Kubernetes",
   "source_url": "https://kubernetes.io/docs/concepts/windows/user-guide/",
-  "text": "This page provides a walkthrough for some steps you can follow to run\nWindows containers using Kubernetes.\nThe page also highlights some Windows specific functionality within Kubernetes.\nIt is important to note that creating and deploying services and workloads on Kubernetes\nbehaves in much the same way for Linux and Windows containers.\nThe\nkubectl commands\nto interface with the cluster are identical.\nThe examples in this page are provided to jumpstart your experience with Windows containers."
+  "text": "This page provides a walkthrough for some steps you can follow to run\nWindows containers using Kubernetes.\nThe page also highlights some Windows specific functionality within Kubernetes.\nIt is important to note that creating and deploying services and workloads on Kubernetes\nbehaves in much the same way for Linux and Windows containers.\nThe\nkubectl commands\nto interface with the cluster are identical.\nThe examples in this page are provided to jumpstart your experience with Windows containers.",
+  "failure_classes": []
 }

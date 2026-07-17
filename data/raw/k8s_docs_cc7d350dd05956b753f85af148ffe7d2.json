@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Init Containers",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/init-containers/",
-  "text": "This page provides an overview of init containers: specialized containers that run\nbefore app containers in a\nPod\n.\nInit containers can contain utilities or setup scripts not present in an app image.\nYou can specify init containers in the Pod specification alongside the\ncontainers\narray (which describes app containers).\nIn Kubernetes, a\nsidecar container\nis a container that\nstarts before the main application container and\ncontinues to run\n. This document is about init containers:\ncontainers that run to completion during Pod initialization."
+  "text": "This page provides an overview of init containers: specialized containers that run\nbefore app containers in a\nPod\n.\nInit containers can contain utilities or setup scripts not present in an app image.\nYou can specify init containers in the Pod specification alongside the\ncontainers\narray (which describes app containers).\nIn Kubernetes, a\nsidecar container\nis a container that\nstarts before the main application container and\ncontinues to run\n. This document is about init containers:\ncontainers that run to completion during Pod initialization.",
+  "failure_classes": []
 }

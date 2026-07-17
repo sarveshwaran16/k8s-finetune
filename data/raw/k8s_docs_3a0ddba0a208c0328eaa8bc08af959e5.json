@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Managing Service Accounts — Manual Secret management for ServiceAccounts",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#manual-secret-management-for-serviceaccounts",
-  "text": "Versions of Kubernetes before v1.22 automatically created credentials for accessing\nthe Kubernetes API. This older mechanism was based on creating token Secrets that\ncould then be mounted into running Pods.\nIn more recent versions, including Kubernetes v1.36, API credentials\nare\nobtained directly\nusing the\nTokenRequest\nAPI,\nand are mounted into Pods using a projected volume.\nThe tokens obtained using this method have bounded lifetimes, and are automatically\ninvalidated when the Pod they are mounted into is deleted.\nYou can still\nmanually create\na Secret to hold a service account token; for example, if you need a token that never expires.\nOnce you manually create a Secret and link it to a ServiceAccount,\nthe Kubernetes control plane automatically populates the token into that Secret."
+  "text": "Versions of Kubernetes before v1.22 automatically created credentials for accessing\nthe Kubernetes API. This older mechanism was based on creating token Secrets that\ncould then be mounted into running Pods.\nIn more recent versions, including Kubernetes v1.36, API credentials\nare\nobtained directly\nusing the\nTokenRequest\nAPI,\nand are mounted into Pods using a projected volume.\nThe tokens obtained using this method have bounded lifetimes, and are automatically\ninvalidated when the Pod they are mounted into is deleted.\nYou can still\nmanually create\na Secret to hold a service account token; for example, if you need a token that never expires.\nOnce you manually create a Secret and link it to a ServiceAccount,\nthe Kubernetes control plane automatically populates the token into that Secret.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

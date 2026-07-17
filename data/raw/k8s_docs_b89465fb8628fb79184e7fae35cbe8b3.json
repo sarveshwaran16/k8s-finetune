@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Good practices for Dynamic Resource Allocation as a Cluster Admin — DRA kubeletplugin operations",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/dra/#dra-kubeletplugin-operations",
-  "text": "DRA drivers implement the\nkubeletplugin\npackage\ninterface\nwhich surfaces its own metric for the underlying gRPC operation\nNodePrepareResources\nand\nNodeUnprepareResources\n. You can observe this\nbehavior from the point of view of the internal kubeletplugin with the following\nmetrics.\nDRA kubeletplugin gRPC NodePrepareResources operation: Observe\nhistogram_quantile\n(\n0.99\n,\nsum\n(\nrate\n(\ndra_grpc_operations_duration_seconds_bucket\n{\nmethod_name\n=~\n\"\n.*NodePrepareResources\n\"}[\n5m\n]\n))\nby\n(\nle\n))\n.\nDRA kubeletplugin gRPC NodeUnprepareResources operation: Observe\nhistogram_quantile\n(\n0.99\n,\nsum\n(\nrate\n(\ndra_grpc_operations_duration_seconds_bucket\n{\nmethod_name\n=~\n\"\n.*NodeUnprepareResources\n\"}[\n5m\n]\n))\nby\n(\nle\n))\n."
+  "text": "DRA drivers implement the\nkubeletplugin\npackage\ninterface\nwhich surfaces its own metric for the underlying gRPC operation\nNodePrepareResources\nand\nNodeUnprepareResources\n. You can observe this\nbehavior from the point of view of the internal kubeletplugin with the following\nmetrics.\nDRA kubeletplugin gRPC NodePrepareResources operation: Observe\nhistogram_quantile\n(\n0.99\n,\nsum\n(\nrate\n(\ndra_grpc_operations_duration_seconds_bucket\n{\nmethod_name\n=~\n\"\n.*NodePrepareResources\n\"}[\n5m\n]\n))\nby\n(\nle\n))\n.\nDRA kubeletplugin gRPC NodeUnprepareResources operation: Observe\nhistogram_quantile\n(\n0.99\n,\nsum\n(\nrate\n(\ndra_grpc_operations_duration_seconds_bucket\n{\nmethod_name\n=~\n\"\n.*NodeUnprepareResources\n\"}[\n5m\n]\n))\nby\n(\nle\n))\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

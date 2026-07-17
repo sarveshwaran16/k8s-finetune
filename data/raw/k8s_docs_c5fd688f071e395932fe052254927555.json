@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Running Kubernetes Node Components as a Non-root User",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/",
-  "text": "This document describes how to run Kubernetes Node components such as kubelet, CRI, OCI, and CNI\nwithout root privileges, by using a\nuser namespace\n.\nThis technique is also known as\nrootless mode\n.\nThis document describes how to run Kubernetes Node components (and hence pods) as a non-root user.\nIf you are just looking for how to run a pod as a non-root user, see\nSecurityContext\n."
+  "text": "This document describes how to run Kubernetes Node components such as kubelet, CRI, OCI, and CNI\nwithout root privileges, by using a\nuser namespace\n.\nThis technique is also known as\nrootless mode\n.\nThis document describes how to run Kubernetes Node components (and hence pods) as a non-root user.\nIf you are just looking for how to run a pod as a non-root user, see\nSecurityContext\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

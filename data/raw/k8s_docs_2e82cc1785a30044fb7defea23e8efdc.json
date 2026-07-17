@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — cordon",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#cordon",
-  "text": "Mark node \"foo\" as unschedulable\nkubectl cordon foo\nMark node as unschedulable.\n\n$ kubectl cordon NODE\n\nName\nShorthand\nDefault\nUsage\ndry-run\nnone\nMust be \"none\", \"server\", or \"client\". If client strategy, only print the object that would be sent, without sending it. If server strategy, submit server-side request without persisting the resource.\nselector\nl\nSelector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2). Matching objects must satisfy all of the specified label constraints."
+  "text": "Mark node \"foo\" as unschedulable\nkubectl cordon foo\nMark node as unschedulable.\n\n$ kubectl cordon NODE\n\nName\nShorthand\nDefault\nUsage\ndry-run\nnone\nMust be \"none\", \"server\", or \"client\". If client strategy, only print the object that would be sent, without sending it. If server strategy, submit server-side request without persisting the resource.\nselector\nl\nSelector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2). Matching objects must satisfy all of the specified label constraints.",
+  "failure_classes": []
 }

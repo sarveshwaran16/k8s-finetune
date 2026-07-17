@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Change the Reclaim Policy of a PersistentVolume — Why change reclaim policy of a PersistentVolume",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/change-pv-reclaim-policy/#why-change-reclaim-policy-of-a-persistentvolume",
-  "text": "PersistentVolumes can have various reclaim policies, including \"Retain\",\n\"Recycle\", and \"Delete\". For dynamically provisioned PersistentVolumes,\nthe default reclaim policy is \"Delete\". This means that a dynamically provisioned\nvolume is automatically deleted when a user deletes the corresponding\nPersistentVolumeClaim. This automatic behavior might be inappropriate if the volume\ncontains precious data. In that case, it is more appropriate to use the \"Retain\"\npolicy. With the \"Retain\" policy, if a user deletes a PersistentVolumeClaim,\nthe corresponding PersistentVolume will not be deleted. Instead, it is moved to the\nReleased phase, where all of its data can be manually recovered."
+  "text": "PersistentVolumes can have various reclaim policies, including \"Retain\",\n\"Recycle\", and \"Delete\". For dynamically provisioned PersistentVolumes,\nthe default reclaim policy is \"Delete\". This means that a dynamically provisioned\nvolume is automatically deleted when a user deletes the corresponding\nPersistentVolumeClaim. This automatic behavior might be inappropriate if the volume\ncontains precious data. In that case, it is more appropriate to use the \"Retain\"\npolicy. With the \"Retain\" policy, if a user deletes a PersistentVolumeClaim,\nthe corresponding PersistentVolume will not be deleted. Instead, it is moved to the\nReleased phase, where all of its data can be manually recovered.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

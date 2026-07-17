@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm init phase",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init-phase/",
-  "text": "kubeadm init phase\nenables you to invoke atomic steps of the bootstrap process.\nHence, you can let kubeadm do some of the work and you can fill in the gaps\nif you wish to apply customization.\nkubeadm init phase\nis consistent with the\nkubeadm init workflow\n,\nand behind the scene both use the same code."
+  "text": "kubeadm init phase\nenables you to invoke atomic steps of the bootstrap process.\nHence, you can let kubeadm do some of the work and you can fill in the gaps\nif you wish to apply customization.\nkubeadm init phase\nis consistent with the\nkubeadm init workflow\n,\nand behind the scene both use the same code.",
+  "failure_classes": []
 }

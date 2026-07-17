@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Explore Termination Behavior for Pods And Their Endpoints — Termination process for Pods and their endpoints",
   "source_url": "https://kubernetes.io/docs/tutorials/services/pods-and-endpoint-termination-flow/#termination-process-for-pods-and-their-endpoints",
-  "text": "There are often cases when you need to terminate a Pod - be it to upgrade or scale down.\nIn order to improve application availability, it may be important to implement\na proper active connections draining.\nThis tutorial explains the flow of Pod termination in connection with the\ncorresponding endpoint state and removal by using\na simple nginx web server to demonstrate the concept."
+  "text": "There are often cases when you need to terminate a Pod - be it to upgrade or scale down.\nIn order to improve application availability, it may be important to implement\na proper active connections draining.\nThis tutorial explains the flow of Pod termination in connection with the\ncorresponding endpoint state and removal by using\na simple nginx web server to demonstrate the concept.",
+  "failure_classes": []
 }

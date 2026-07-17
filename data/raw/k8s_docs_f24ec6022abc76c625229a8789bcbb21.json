@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Node-pressure Eviction — Deprecated kubelet garbage collection features",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/#deprecated-kubelet-garbage-collection-features",
-  "text": "Some kubelet garbage collection features are deprecated in favor of eviction:\nExisting Flag\nRationale\n--maximum-dead-containers\ndeprecated once old logs are stored outside of container's context\n--maximum-dead-containers-per-container\ndeprecated once old logs are stored outside of container's context\n--minimum-container-ttl-duration\ndeprecated once old logs are stored outside of container's context"
+  "text": "Some kubelet garbage collection features are deprecated in favor of eviction:\nExisting Flag\nRationale\n--maximum-dead-containers\ndeprecated once old logs are stored outside of container's context\n--maximum-dead-containers-per-container\ndeprecated once old logs are stored outside of container's context\n--minimum-container-ttl-duration\ndeprecated once old logs are stored outside of container's context",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

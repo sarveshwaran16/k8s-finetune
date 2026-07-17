@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Network Plugins — Loopback CNI",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/#loopback-cni",
-  "text": "In addition to the CNI plugin installed on the nodes for implementing the Kubernetes network\nmodel, Kubernetes also requires the container runtimes to provide a loopback interface\nlo\n, which\nis used for each sandbox (pod sandboxes, vm sandboxes, ...).\nImplementing the loopback interface can be accomplished by re-using the\nCNI loopback plugin.\nor by developing your own code to achieve this (see\nthis example from CRI-O\n)."
+  "text": "In addition to the CNI plugin installed on the nodes for implementing the Kubernetes network\nmodel, Kubernetes also requires the container runtimes to provide a loopback interface\nlo\n, which\nis used for each sandbox (pod sandboxes, vm sandboxes, ...).\nImplementing the loopback interface can be accomplished by re-using the\nCNI loopback plugin.\nor by developing your own code to achieve this (see\nthis example from CRI-O\n).",
+  "failure_classes": []
 }

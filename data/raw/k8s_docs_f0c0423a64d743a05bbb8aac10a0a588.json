@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Hardening Guide - Dynamic Resource Allocation — Scheduler and allocation controller permissions",
   "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/dynamic-resource-allocation/#scheduler-and-allocation-controller-permissions",
-  "text": "apiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\ndra-binding-updater\nrules\n:\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/status\"\n]\nverbs\n:\n[\n\"get\"\n,\n\"patch\"\n,\n\"update\"\n]\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/binding\"\n]\nverbs\n:\n[\n\"patch\"\n,\n\"update\"\n]"
+  "text": "apiVersion\n:\nrbac.authorization.k8s.io/v1\nkind\n:\nClusterRole\nmetadata\n:\nname\n:\ndra-binding-updater\nrules\n:\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/status\"\n]\nverbs\n:\n[\n\"get\"\n,\n\"patch\"\n,\n\"update\"\n]\n-\napiGroups\n:\n[\n\"resource.k8s.io\"\n]\nresources\n:\n[\n\"resourceclaims/binding\"\n]\nverbs\n:\n[\n\"patch\"\n,\n\"update\"\n]",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

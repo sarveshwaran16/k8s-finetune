@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Managing Service Accounts",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/",
-  "text": "A\nServiceAccount\nprovides an identity for processes that run in a Pod.\nA process inside a Pod can use the identity of its associated service account to\nauthenticate to the cluster's API server.\nFor an introduction to service accounts, read\nconfigure service accounts\n.\nThis task guide explains some of the concepts behind ServiceAccounts. The\nguide also explains how to obtain or revoke tokens that represent\nServiceAccounts, and how to (optionally) bind a ServiceAccount's validity to\nthe lifetime of an API object."
+  "text": "A\nServiceAccount\nprovides an identity for processes that run in a Pod.\nA process inside a Pod can use the identity of its associated service account to\nauthenticate to the cluster's API server.\nFor an introduction to service accounts, read\nconfigure service accounts\n.\nThis task guide explains some of the concepts behind ServiceAccounts. The\nguide also explains how to obtain or revoke tokens that represent\nServiceAccounts, and how to (optionally) bind a ServiceAccount's validity to\nthe lifetime of an API object.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — pause",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-pause-em-",
-  "text": "Mark the nginx deployment as paused # Any current state of the deployment will continue its function; new updates # to the deployment will not have an effect as long as the deployment is paused\nkubectl rollout\npause\ndeployment/nginx\nMark the provided resource as paused.\nPaused resources will not be reconciled by a controller. Use \"kubectl rollout resume\" to resume a paused resource. Currently only deployments support being paused."
+  "text": "Mark the nginx deployment as paused # Any current state of the deployment will continue its function; new updates # to the deployment will not have an effect as long as the deployment is paused\nkubectl rollout\npause\ndeployment/nginx\nMark the provided resource as paused.\nPaused resources will not be reconciled by a controller. Use \"kubectl rollout resume\" to resume a paused resource. Currently only deployments support being paused.",
+  "failure_classes": []
 }

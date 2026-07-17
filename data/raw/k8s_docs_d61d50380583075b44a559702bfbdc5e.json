@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl config unset — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_unset/#synopsis",
-  "text": "Unset an individual value in a kubeconfig file.\nPROPERTY_NAME is a dot delimited name where each token represents either an attribute name or a map key. Map keys may not contain dots.\nkubectl config unset PROPERTY_NAME\n\n# Unset the current-context\n  kubectl config unset current-context\n  \n  # Unset namespace in foo context\n  kubectl config unset contexts.foo.namespace"
+  "text": "Unset an individual value in a kubeconfig file.\nPROPERTY_NAME is a dot delimited name where each token represents either an attribute name or a map key. Map keys may not contain dots.\nkubectl config unset PROPERTY_NAME\n\n# Unset the current-context\n  kubectl config unset current-context\n  \n  # Unset namespace in foo context\n  kubectl config unset contexts.foo.namespace",
+  "failure_classes": []
 }

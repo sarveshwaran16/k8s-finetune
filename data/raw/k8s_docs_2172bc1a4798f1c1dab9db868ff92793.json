@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Set up a High Availability etcd Cluster with kubeadm — Before you begin",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-etcd-with-kubeadm/#before-you-begin",
-  "text": "Three hosts that can talk to each other over TCP ports 2379 and 2380. This\ndocument assumes these default ports. However, they are configurable through\nthe kubeadm config file.\nEach host must have systemd and a bash compatible shell installed.\nEach host must\nhave a container runtime, kubelet, and kubeadm installed\n.\nEach host should have access to the Kubernetes container image registry (\nregistry.k8s.io\n) or list/pull the required etcd image using\nkubeadm config images list/pull\n. This guide will set up etcd instances as\nstatic pods\nmanaged by a kubelet.\nSome infrastructure to copy files between hosts. For example\nssh\nand\nscp\ncan satisfy this requirement."
+  "text": "Three hosts that can talk to each other over TCP ports 2379 and 2380. This\ndocument assumes these default ports. However, they are configurable through\nthe kubeadm config file.\nEach host must have systemd and a bash compatible shell installed.\nEach host must\nhave a container runtime, kubelet, and kubeadm installed\n.\nEach host should have access to the Kubernetes container image registry (\nregistry.k8s.io\n) or list/pull the required etcd image using\nkubeadm config images list/pull\n. This guide will set up etcd instances as\nstatic pods\nmanaged by a kubelet.\nSome infrastructure to copy files between hosts. For example\nssh\nand\nscp\ncan satisfy this requirement.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

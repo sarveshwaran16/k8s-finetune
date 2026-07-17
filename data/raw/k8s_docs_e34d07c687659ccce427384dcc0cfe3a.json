@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Force Delete StatefulSet Pods",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/",
-  "text": "This page shows how to delete Pods which are part of a\nstateful set\n,\nand explains the considerations to keep in mind when doing so.\n\nThis is a fairly advanced task and has the potential to violate some of the properties\ninherent to StatefulSet.\nBefore proceeding, make yourself familiar with the considerations enumerated below."
+  "text": "This page shows how to delete Pods which are part of a\nstateful set\n,\nand explains the considerations to keep in mind when doing so.\n\nThis is a fairly advanced task and has the potential to violate some of the properties\ninherent to StatefulSet.\nBefore proceeding, make yourself familiar with the considerations enumerated below.",
+  "failure_classes": []
 }

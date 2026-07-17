@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extend kubectl with plugins",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/",
-  "text": "This guide demonstrates how to install and write extensions for\nkubectl\n.\nBy thinking of core\nkubectl\ncommands as essential building blocks for interacting with a Kubernetes cluster,\na cluster administrator can think of plugins as a means of utilizing these building blocks to create more complex behavior.\nPlugins extend\nkubectl\nwith new sub-commands, allowing for new and custom features not included in the main distribution of\nkubectl\n."
+  "text": "This guide demonstrates how to install and write extensions for\nkubectl\n.\nBy thinking of core\nkubectl\ncommands as essential building blocks for interacting with a Kubernetes cluster,\na cluster administrator can think of plugins as a means of utilizing these building blocks to create more complex behavior.\nPlugins extend\nkubectl\nwith new sub-commands, allowing for new and custom features not included in the main distribution of\nkubectl\n.",
+  "failure_classes": []
 }

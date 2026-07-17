@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Seccomp and Kubernetes",
   "source_url": "https://kubernetes.io/docs/reference/node/seccomp/",
-  "text": "Seccomp stands for secure computing mode and has been a feature of the Linux\nkernel since version 2.6.12. It can be used to sandbox the privileges of a\nprocess, restricting the calls it is able to make from userspace into the\nkernel. Kubernetes lets you automatically apply seccomp profiles loaded onto a\nnode\nto your Pods and containers."
+  "text": "Seccomp stands for secure computing mode and has been a feature of the Linux\nkernel since version 2.6.12. It can be used to sandbox the privileges of a\nprocess, restricting the calls it is able to make from userspace into the\nkernel. Kubernetes lets you automatically apply seccomp profiles loaded onto a\nnode\nto your Pods and containers.",
+  "failure_classes": []
 }

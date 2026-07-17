@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Running in multiple zones — Networking",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/multiple-zones/#networking",
-  "text": "By itself, Kubernetes does not include zone-aware networking. You can use a\nnetwork plugin\nto configure cluster networking, and that network solution might have zone-specific\nelements. For example, if your cloud provider supports Services with\ntype=LoadBalancer\n, the load balancer might only send traffic to Pods running in the\nsame zone as the load balancer element processing a given connection.\nCheck your cloud provider's documentation for details.\nFor custom or on-premises deployments, similar considerations apply.\nService\nand\nIngress\nbehavior, including handling\nof different failure zones, does vary depending on exactly how your cluster is set up."
+  "text": "By itself, Kubernetes does not include zone-aware networking. You can use a\nnetwork plugin\nto configure cluster networking, and that network solution might have zone-specific\nelements. For example, if your cloud provider supports Services with\ntype=LoadBalancer\n, the load balancer might only send traffic to Pods running in the\nsame zone as the load balancer element processing a given connection.\nCheck your cloud provider's documentation for details.\nFor custom or on-premises deployments, similar considerations apply.\nService\nand\nIngress\nbehavior, including handling\nof different failure zones, does vary depending on exactly how your cluster is set up.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

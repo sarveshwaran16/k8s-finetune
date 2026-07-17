@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Disruptions — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/disruptions/#what-s-next",
-  "text": "Follow steps to protect your application by\nconfiguring a Pod Disruption Budget\n.\nLearn more about\ndraining nodes\nLearn about\nupdating a deployment\nincluding steps to maintain its availability during the rollout.\nFollow steps to protect your application by\nconfiguring a Pod Disruption Budget\n.\nLearn more about\ndraining nodes\nLearn about\nupdating a deployment\nincluding steps to maintain its availability during the rollout."
+  "text": "Follow steps to protect your application by\nconfiguring a Pod Disruption Budget\n.\nLearn more about\ndraining nodes\nLearn about\nupdating a deployment\nincluding steps to maintain its availability during the rollout.\nFollow steps to protect your application by\nconfiguring a Pod Disruption Budget\n.\nLearn more about\ndraining nodes\nLearn about\nupdating a deployment\nincluding steps to maintain its availability during the rollout.",
+  "failure_classes": []
 }

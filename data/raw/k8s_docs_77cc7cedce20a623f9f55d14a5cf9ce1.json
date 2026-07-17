@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Running Pods on Only Some Nodes — Step 2: Create the manifest",
   "source_url": "https://kubernetes.io/docs/tasks/manage-daemon/pods-some-nodes/#step-2-create-the-manifest",
-  "text": "Let's create a\nDaemonSet\nwhich will provision the daemon pods on the SSD labeled\nnodes\nonly.\nNext, use a\nnodeSelector\nto ensure that the DaemonSet only runs Pods on nodes\nwith the\nssd\nlabel set to\n\"true\"\n.\napiVersion\n:\napps/v1\nkind\n:\nDaemonSet\nmetadata\n:\nname\n:\nssd-driver\nlabels\n:\napp\n:\nnginx\nspec\n:\nselector\n:\nmatchLabels\n:\napp\n:\nssd-driver-pod\ntemplate\n:\nmetadata\n:\nlabels\n:\napp\n:\nssd-driver-pod\nspec\n:\nnodeSelector\n:\nssd\n:\n\"true\"\ncontainers\n:\n-\nname\n:\nexample-container\nimage\n:\nexample-image"
+  "text": "Let's create a\nDaemonSet\nwhich will provision the daemon pods on the SSD labeled\nnodes\nonly.\nNext, use a\nnodeSelector\nto ensure that the DaemonSet only runs Pods on nodes\nwith the\nssd\nlabel set to\n\"true\"\n.\napiVersion\n:\napps/v1\nkind\n:\nDaemonSet\nmetadata\n:\nname\n:\nssd-driver\nlabels\n:\napp\n:\nnginx\nspec\n:\nselector\n:\nmatchLabels\n:\napp\n:\nssd-driver-pod\ntemplate\n:\nmetadata\n:\nlabels\n:\napp\n:\nssd-driver-pod\nspec\n:\nnodeSelector\n:\nssd\n:\n\"true\"\ncontainers\n:\n-\nname\n:\nexample-container\nimage\n:\nexample-image",
+  "failure_classes": []
 }

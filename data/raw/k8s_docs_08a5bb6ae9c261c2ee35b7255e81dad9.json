@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Policies — Apply policies using ValidatingAdmissionPolicy",
   "source_url": "https://kubernetes.io/docs/concepts/policy/#apply-policies-using-validatingadmissionpolicy",
-  "text": "Validating admission policies allow configurable validation checks to be executed in the API server using the Common Expression Language (CEL). For example, a\nValidatingAdmissionPolicy\ncan be used to disallow use of the\nlatest\nimage tag.\nA\nValidatingAdmissionPolicy\noperates on an API request and can be used to block, audit, and warn users about non-compliant configurations.\nDetails on the\nValidatingAdmissionPolicy\nAPI, with examples, are documented in a dedicated section:\nValidating Admission Policy"
+  "text": "Validating admission policies allow configurable validation checks to be executed in the API server using the Common Expression Language (CEL). For example, a\nValidatingAdmissionPolicy\ncan be used to disallow use of the\nlatest\nimage tag.\nA\nValidatingAdmissionPolicy\noperates on an API request and can be used to block, audit, and warn users about non-compliant configurations.\nDetails on the\nValidatingAdmissionPolicy\nAPI, with examples, are documented in a dedicated section:\nValidating Admission Policy",
+  "failure_classes": []
 }

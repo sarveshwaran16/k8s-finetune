@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — view-last-applied",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-view-last-applied-em-",
-  "text": "View the last-applied-configuration annotations by type/name in YAML\nkubectl\napply\nview\n-\nlast\n-applied deployment/nginx\nView the last-applied-configuration annotations by file in JSON\nkubectl\napply\nview\n-\nlast\n-applied -f deploy.yaml -o json\nView the latest last-applied-configuration annotations by type/name or file.\nThe default output will be printed to stdout in YAML format. You can use the -o option to change the output format."
+  "text": "View the last-applied-configuration annotations by type/name in YAML\nkubectl\napply\nview\n-\nlast\n-applied deployment/nginx\nView the last-applied-configuration annotations by file in JSON\nkubectl\napply\nview\n-\nlast\n-applied -f deploy.yaml -o json\nView the latest last-applied-configuration annotations by type/name or file.\nThe default output will be printed to stdout in YAML format. You can use the -o option to change the output format.",
+  "failure_classes": []
 }

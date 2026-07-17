@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Object Management — Trade-offs",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#trade-offs-2",
-  "text": "Advantages compared to imperative object configuration:\nChanges made directly to live objects are retained, even if they are not merged back into the configuration files.\nDeclarative object configuration has better support for operating on directories and automatically detecting operation types (create, patch, delete) per-object.\nDisadvantages compared to imperative object configuration:\nDeclarative object configuration is harder to debug and understand results when they are unexpected.\nPartial updates using diffs create complex merge and patch operations."
+  "text": "Advantages compared to imperative object configuration:\nChanges made directly to live objects are retained, even if they are not merged back into the configuration files.\nDeclarative object configuration has better support for operating on directories and automatically detecting operation types (create, patch, delete) per-object.\nDisadvantages compared to imperative object configuration:\nDeclarative object configuration is harder to debug and understand results when they are unexpected.\nPartial updates using diffs create complex merge and patch operations.",
+  "failure_classes": []
 }

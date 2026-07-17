@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dynamic Resource Allocation — DRA beta features",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#beta-features",
-  "text": "The following sections describe DRA features that support advanced use\ncases. Usage of them is optional and may only be relevant with DRA\ndrivers that support them.\nSome of them are available in the Alpha or Beta\nfeature stage\n.\nThose depend on feature gates and may depend on additional\nAPI groups\n.\nFor more information, see\nSet up DRA in the cluster\n."
+  "text": "The following sections describe DRA features that support advanced use\ncases. Usage of them is optional and may only be relevant with DRA\ndrivers that support them.\nSome of them are available in the Alpha or Beta\nfeature stage\n.\nThose depend on feature gates and may depend on additional\nAPI groups\n.\nFor more information, see\nSet up DRA in the cluster\n.",
+  "failure_classes": []
 }

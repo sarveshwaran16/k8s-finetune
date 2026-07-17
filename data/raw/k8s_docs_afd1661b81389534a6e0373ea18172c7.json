@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest",
   "source_url": "https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/",
-  "text": "Kubernetes lets you use a public key infrastructure (PKI) to authenticate to your cluster\nas a client.\nA few steps are required in order to get a normal user to be able to\nauthenticate and invoke an API. First, this user must have an\nX.509\ncertificate\nissued by an authority that your Kubernetes cluster trusts. The client must then present that certificate to the Kubernetes API.\nYou use a\nCertificateSigningRequest\nas part of this process, and either you or some other principal must approve the request.\nYou will create a private key, and then get a certificate issued, and finally configure\nthat private key for a client."
+  "text": "Kubernetes lets you use a public key infrastructure (PKI) to authenticate to your cluster\nas a client.\nA few steps are required in order to get a normal user to be able to\nauthenticate and invoke an API. First, this user must have an\nX.509\ncertificate\nissued by an authority that your Kubernetes cluster trusts. The client must then present that certificate to the Kubernetes API.\nYou use a\nCertificateSigningRequest\nas part of this process, and either you or some other principal must approve the request.\nYou will create a private key, and then get a certificate issued, and finally configure\nthat private key for a client.",
+  "failure_classes": []
 }

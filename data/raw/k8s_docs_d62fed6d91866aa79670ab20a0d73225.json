@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Custom Metrics (v1beta2)",
   "source_url": "https://kubernetes.io/docs/reference/external-api/custom-metrics.v1beta2/",
-  "text": "Package v1beta2 is the v1beta2 version of the custom_metrics API.\n\nMetricListOptions\nMetricValue\nMetricValueList\n\nMetricListOptions is used to select metrics by their label selectors\nField\nDescription\napiVersion\nstring\ncustom.metrics.k8s.io/v1beta2\nkind\nstring\nMetricListOptions\nlabelSelector\nstring\nA selector to restrict the list of returned objects by their labels.\nDefaults to everything.\nmetricLabelSelector\nstring\nA selector to restrict the list of returned metrics by their labels\nA selector to restrict the list of returned objects by their labels.\nDefaults to everything.\nA selector to restrict the list of returned metrics by their labels"
+  "text": "Package v1beta2 is the v1beta2 version of the custom_metrics API.\n\nMetricListOptions\nMetricValue\nMetricValueList\n\nMetricListOptions is used to select metrics by their label selectors\nField\nDescription\napiVersion\nstring\ncustom.metrics.k8s.io/v1beta2\nkind\nstring\nMetricListOptions\nlabelSelector\nstring\nA selector to restrict the list of returned objects by their labels.\nDefaults to everything.\nmetricLabelSelector\nstring\nA selector to restrict the list of returned metrics by their labels\nA selector to restrict the list of returned objects by their labels.\nDefaults to everything.\nA selector to restrict the list of returned metrics by their labels",
+  "failure_classes": []
 }

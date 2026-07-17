@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Controllers",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/controller/",
-  "text": "In robotics and automation, a\ncontrol loop\nis\na non-terminating loop that regulates the state of a system.\nHere is one example of a control loop: a thermostat in a room.\nWhen you set the temperature, that's telling the thermostat\nabout your\ndesired state\n. The actual room temperature is the\ncurrent state\n. The thermostat acts to bring the current state\ncloser to the desired state, by turning equipment on or off."
+  "text": "In robotics and automation, a\ncontrol loop\nis\na non-terminating loop that regulates the state of a system.\nHere is one example of a control loop: a thermostat in a room.\nWhen you set the temperature, that's telling the thermostat\nabout your\ndesired state\n. The actual room temperature is the\ncurrent state\n. The thermostat acts to bring the current state\ncloser to the desired state, by turning equipment on or off.",
+  "failure_classes": []
 }

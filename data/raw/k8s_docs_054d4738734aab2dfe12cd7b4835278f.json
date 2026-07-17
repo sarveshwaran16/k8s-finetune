@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_upgrade/#synopsis",
-  "text": "Upgrade your cluster smoothly to a newer version with this command\nkubeadm upgrade [flags]\n\n-h, --help\nhelp for upgrade\nhelp for upgrade\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "Upgrade your cluster smoothly to a newer version with this command\nkubeadm upgrade [flags]\n\n-h, --help\nhelp for upgrade\nhelp for upgrade\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": []
 }

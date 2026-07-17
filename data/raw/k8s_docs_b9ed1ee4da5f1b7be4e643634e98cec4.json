@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PodGroup API — API structure",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/podgroup-api/#api-structure",
-  "text": "A PodGroup consists of a\nspec\nthat defines the desired scheduling behavior and\na\nstatus\nthat reflects the current scheduling state.\n\nEach PodGroup carries a\nscheduling policy\n(\nbasic\nor\ngang\n) in\nspec.schedulingPolicy\n. When a workload controller creates\nthe PodGroup, this policy is copied from the Workload's PodGroupTemplate at creation time.\nFor standalone PodGroups, you set the policy directly.\nspec\n:\nschedulingPolicy\n:\ngang\n:\nminCount\n:\n4"
+  "text": "A PodGroup consists of a\nspec\nthat defines the desired scheduling behavior and\na\nstatus\nthat reflects the current scheduling state.\n\nEach PodGroup carries a\nscheduling policy\n(\nbasic\nor\ngang\n) in\nspec.schedulingPolicy\n. When a workload controller creates\nthe PodGroup, this policy is copied from the Workload's PodGroupTemplate at creation time.\nFor standalone PodGroups, you set the policy directly.\nspec\n:\nschedulingPolicy\n:\ngang\n:\nminCount\n:\n4",
+  "failure_classes": []
 }

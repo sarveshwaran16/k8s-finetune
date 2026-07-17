@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Role Based Access Control Good Practices — Access toproxysubresource of Nodes",
   "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#access-to-proxy-subresource-of-nodes",
-  "text": "Users with access to the\nnodes/proxy\nsub-resource have rights to the Kubelet API,\nwhich allows for command execution on every pod on the node(s) to which they have rights.\nThis access bypasses audit logging and admission control, so care should be taken before\ngranting any rights to this resource.\nThese APIs can be exercised via websocket HTTP\nGET\nrequests, which only requires authorization of the\nget\nverb.\nThis means that\nget\npermission on\nnodes/proxy\nis not a read-only permission.\nFor example, permission to\nget\nnodes/proxy\nprovides access to privileged kubelet\nAPIs that can retrieve container logs or execute and attach to pod processes,\neven when a caller does not have the equivalent permissions through the\nKubernetes API.\nSee\nKubelet authentication/authorization\nfor more information."
+  "text": "Users with access to the\nnodes/proxy\nsub-resource have rights to the Kubelet API,\nwhich allows for command execution on every pod on the node(s) to which they have rights.\nThis access bypasses audit logging and admission control, so care should be taken before\ngranting any rights to this resource.\nThese APIs can be exercised via websocket HTTP\nGET\nrequests, which only requires authorization of the\nget\nverb.\nThis means that\nget\npermission on\nnodes/proxy\nis not a read-only permission.\nFor example, permission to\nget\nnodes/proxy\nprovides access to privileged kubelet\nAPIs that can retrieve container logs or execute and attach to pod processes,\neven when a caller does not have the equivalent permissions through the\nKubernetes API.\nSee\nKubelet authentication/authorization\nfor more information.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

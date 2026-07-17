@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Overhead — Observability",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-overhead/#observability",
-  "text": "Some\nkube_pod_overhead_*\nmetrics are available in\nkube-state-metrics\nto help identify when Pod overhead is being utilized and to help observe stability of workloads\nrunning with a defined overhead.\n\nLearn more about\nRuntimeClass\nRead the\nPodOverhead Design\nenhancement proposal for extra context\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Some\nkube_pod_overhead_*\nmetrics are available in\nkube-state-metrics\nto help identify when Pod overhead is being utilized and to help observe stability of workloads\nrunning with a defined overhead.\n\nLearn more about\nRuntimeClass\nRead the\nPodOverhead Design\nenhancement proposal for extra context\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

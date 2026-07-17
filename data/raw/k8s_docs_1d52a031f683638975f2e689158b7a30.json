@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Namespaces — Initial namespaces",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#initial-namespaces",
-  "text": "Kubernetes starts with four initial namespaces:\n\nCreation and deletion of namespaces are described in the\nAdmin Guide documentation for namespaces\n.\n\nYou can list the current namespaces in a cluster using:\nkubectl get namespace\nNAME              STATUS   AGE\ndefault           Active   1d\nkube-node-lease   Active   1d\nkube-public       Active   1d\nkube-system       Active   1d"
+  "text": "Kubernetes starts with four initial namespaces:\n\nCreation and deletion of namespaces are described in the\nAdmin Guide documentation for namespaces\n.\n\nYou can list the current namespaces in a cluster using:\nkubectl get namespace\nNAME              STATUS   AGE\ndefault           Active   1d\nkube-node-lease   Active   1d\nkube-public       Active   1d\nkube-system       Active   1d",
+  "failure_classes": []
 }

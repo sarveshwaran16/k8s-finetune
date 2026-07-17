@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dynamic Resource Allocation — Limitations",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/#limitations",
-  "text": "The Kubernetes scheduler doesn't support\npreemption\nfor\nDRA resources. This means that an existing Pod that's running on a node and is\nusing DRA resources can't be preempted by a higher-priority Pod that also needs\nDRA resources. The high-priority Pod will remain in a pending state until the device\nbecomes available, which happens when the conflicting Pod terminates or is\nmanually deleted."
+  "text": "The Kubernetes scheduler doesn't support\npreemption\nfor\nDRA resources. This means that an existing Pod that's running on a node and is\nusing DRA resources can't be preempted by a higher-priority Pod that also needs\nDRA resources. The high-priority Pod will remain in a pending state until the device\nbecomes available, which happens when the conflicting Pod terminates or is\nmanually deleted.",
+  "failure_classes": []
 }

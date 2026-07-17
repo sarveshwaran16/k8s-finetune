@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Native Histogram Support for Kubernetes Metrics",
   "source_url": "https://kubernetes.io/docs/reference/instrumentation/native-histograms/",
-  "text": "Kubernetes components can expose histogram metrics in\nPrometheus Native Histogram\nformat,\nalongside the classic histogram format. Native histograms use exponential bucket boundaries\ninstead of fixed boundaries, providing significant storage efficiency, improved query\nperformance, and finer-grained visibility into distributions."
+  "text": "Kubernetes components can expose histogram metrics in\nPrometheus Native Histogram\nformat,\nalongside the classic histogram format. Native histograms use exponential bucket boundaries\ninstead of fixed boundaries, providing significant storage efficiency, improved query\nperformance, and finer-grained visibility into distributions.",
+  "failure_classes": []
 }

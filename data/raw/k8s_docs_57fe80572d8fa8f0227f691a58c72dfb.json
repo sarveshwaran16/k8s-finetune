@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ingress — Ingress class",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#ingress-class",
-  "text": "Ingresses can be implemented by different controllers, often with different\nconfiguration. Each Ingress should specify a class, a reference to an\nIngressClass resource that contains additional configuration including the name\nof the controller that should implement the class.\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nIngressClass\nmetadata\n:\nname\n:\nexternal-lb\nspec\n:\ncontroller\n:\nexample.com/ingress-controller\nparameters\n:\napiGroup\n:\nk8s.example.com\nkind\n:\nIngressParameters\nname\n:\nexternal-lb\nThe\n.spec.parameters\nfield of an IngressClass lets you reference another\nresource that provides configuration related to that IngressClass.\nThe specific type of parameters to use depends on the ingress controller\nthat you specify in the\n.spec.controller\nfield of the IngressClass."
+  "text": "Ingresses can be implemented by different controllers, often with different\nconfiguration. Each Ingress should specify a class, a reference to an\nIngressClass resource that contains additional configuration including the name\nof the controller that should implement the class.\napiVersion\n:\nnetworking.k8s.io/v1\nkind\n:\nIngressClass\nmetadata\n:\nname\n:\nexternal-lb\nspec\n:\ncontroller\n:\nexample.com/ingress-controller\nparameters\n:\napiGroup\n:\nk8s.example.com\nkind\n:\nIngressParameters\nname\n:\nexternal-lb\nThe\n.spec.parameters\nfield of an IngressClass lets you reference another\nresource that provides configuration related to that IngressClass.\nThe specific type of parameters to use depends on the ingress controller\nthat you specify in the\n.spec.controller\nfield of the IngressClass.",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

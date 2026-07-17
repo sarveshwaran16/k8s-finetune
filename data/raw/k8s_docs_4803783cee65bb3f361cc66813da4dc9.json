@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Linux kernel security constraints for Pods and containers",
   "source_url": "https://kubernetes.io/docs/concepts/security/linux-kernel-security-constraints/",
-  "text": "This page describes some of the security features that are built into the Linux\nkernel that you can use in your Kubernetes workloads. To learn how to apply\nthese features to your Pods and containers, refer to\nConfigure a SecurityContext for a Pod or Container\n.\nYou should already be familiar with Linux and with the basics of Kubernetes\nworkloads."
+  "text": "This page describes some of the security features that are built into the Linux\nkernel that you can use in your Kubernetes workloads. To learn how to apply\nthese features to your Pods and containers, refer to\nConfigure a SecurityContext for a Pod or Container\n.\nYou should already be familiar with Linux and with the basics of Kubernetes\nworkloads.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Gateway API — Conformance",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/gateway/#conformance",
-  "text": "Gateway API covers a broad set of features and is widely implemented. This combination requires\nclear conformance definitions and tests to ensure that the API provides a consistent experience\nwherever it is used.\nSee the\nconformance\ndocumentation to\nunderstand details such as release channels, support levels, and running conformance tests."
+  "text": "Gateway API covers a broad set of features and is widely implemented. This combination requires\nclear conformance definitions and tests to ensure that the API provides a consistent experience\nwherever it is used.\nSee the\nconformance\ndocumentation to\nunderstand details such as release channels, support levels, and running conformance tests.",
+  "failure_classes": []
 }

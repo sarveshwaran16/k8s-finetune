@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Protocols for Services — Supported protocols",
   "source_url": "https://kubernetes.io/docs/reference/networking/service-protocols/#protocol-support",
-  "text": "There are 3 valid values for the\nprotocol\nof a port for a Service:\n\nWhen using a network plugin that supports SCTP traffic, you can use SCTP for\nmost Services. For\ntype: LoadBalancer\nServices, SCTP support depends on the cloud\nprovider offering this facility. (Most do not).\nSCTP is not supported on nodes that run Windows.\nThe support of multihomed SCTP associations requires that the CNI plugin can support the assignment of multiple interfaces and IP addresses to a Pod.\nNAT for multihomed SCTP associations requires special logic in the corresponding kernel modules."
+  "text": "There are 3 valid values for the\nprotocol\nof a port for a Service:\n\nWhen using a network plugin that supports SCTP traffic, you can use SCTP for\nmost Services. For\ntype: LoadBalancer\nServices, SCTP support depends on the cloud\nprovider offering this facility. (Most do not).\nSCTP is not supported on nodes that run Windows.\nThe support of multihomed SCTP associations requires that the CNI plugin can support the assignment of multiple interfaces and IP addresses to a Pod.\nNAT for multihomed SCTP associations requires special logic in the corresponding kernel modules.",
+  "failure_classes": []
 }

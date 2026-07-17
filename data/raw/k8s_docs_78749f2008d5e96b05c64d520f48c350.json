@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Job — PodFailurePolicyOnPodConditionsPattern",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/#PodFailurePolicyOnPodConditionsPattern",
-  "text": "PodFailurePolicyOnPodConditionsPattern describes a pattern for matching an actual pod condition type.\nField\nDescription\nstatus\nstring\nSpecifies the required Pod condition status. To match a pod condition it is required that the specified status equals the pod condition status. Defaults to True.\ntype\n*\nstring\nSpecifies the required Pod condition type. To match a pod condition it is required that specified type equals the pod condition type."
+  "text": "PodFailurePolicyOnPodConditionsPattern describes a pattern for matching an actual pod condition type.\nField\nDescription\nstatus\nstring\nSpecifies the required Pod condition status. To match a pod condition it is required that the specified status equals the pod condition status. Defaults to True.\ntype\n*\nstring\nSpecifies the required Pod condition type. To match a pod condition it is required that specified type equals the pod condition type.",
+  "failure_classes": []
 }

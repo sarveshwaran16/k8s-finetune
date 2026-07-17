@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Conditions — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-condition/#what-s-next",
-  "text": "Learn about the\nPod Lifecycle\n.\nLearn about\nDisruptions\n.\nLearn about\ncontainer probes\nand how they affect Pod readiness.\nLearn how to\nresize Pod resources in-place\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Learn about the\nPod Lifecycle\n.\nLearn about\nDisruptions\n.\nLearn about\ncontainer probes\nand how they affect Pod readiness.\nLearn how to\nresize Pod resources in-place\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

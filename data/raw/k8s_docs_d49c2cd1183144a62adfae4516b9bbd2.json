@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Encrypting Confidential Data at Rest — Write an encryption configuration file",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#write-an-encryption-configuration-file",
-  "text": "Create a new encryption configuration file. The contents should be similar to:\n---\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nEncryptionConfiguration\nresources\n:\n-\nresources\n:\n-\nsecrets\n-\nconfigmaps\n-\npandas.awesome.bears.example\nproviders\n:\n-\naescbc\n:\nkeys\n:\n-\nname\n:\nkey1\n# See the following text for more details about the secret value\nsecret\n:\n<BASE 64 ENCODED SECRET>\n-\nidentity\n:\n{}\n# this fallback allows reading unencrypted secrets;\n# for example, during initial migration\nTo create a new encryption key (that does not use KMS), see\nGenerate the encryption key\n."
+  "text": "Create a new encryption configuration file. The contents should be similar to:\n---\napiVersion\n:\napiserver.config.k8s.io/v1\nkind\n:\nEncryptionConfiguration\nresources\n:\n-\nresources\n:\n-\nsecrets\n-\nconfigmaps\n-\npandas.awesome.bears.example\nproviders\n:\n-\naescbc\n:\nkeys\n:\n-\nname\n:\nkey1\n# See the following text for more details about the secret value\nsecret\n:\n<BASE 64 ENCODED SECRET>\n-\nidentity\n:\n{}\n# this fallback allows reading unencrypted secrets;\n# for example, during initial migration\nTo create a new encryption key (that does not use KMS), see\nGenerate the encryption key\n.",
+  "failure_classes": []
 }

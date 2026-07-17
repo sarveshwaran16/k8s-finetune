@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kube-controller-manager — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/#synopsis",
-  "text": "The Kubernetes controller manager is a daemon that embeds\nthe core control loops shipped with Kubernetes. In applications of robotics and\nautomation, a control loop is a non-terminating loop that regulates the state of\nthe system. In Kubernetes, a controller is a control loop that watches the shared\nstate of the cluster through the apiserver and makes changes attempting to move the\ncurrent state towards the desired state. Examples of controllers that ship with\nKubernetes today are the replication controller, endpoints controller, namespace\ncontroller, and serviceaccounts controller.\nkube-controller-manager [flags]"
+  "text": "The Kubernetes controller manager is a daemon that embeds\nthe core control loops shipped with Kubernetes. In applications of robotics and\nautomation, a control loop is a non-terminating loop that regulates the state of\nthe system. In Kubernetes, a controller is a control loop that watches the shared\nstate of the cluster through the apiserver and makes changes attempting to move the\ncurrent state towards the desired state. Examples of controllers that ship with\nKubernetes today are the replication controller, endpoints controller, namespace\ncontroller, and serviceaccounts controller.\nkube-controller-manager [flags]",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

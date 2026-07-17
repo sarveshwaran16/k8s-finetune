@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Access Clusters Using the Kubernetes API — Accessing for the first time with kubectl",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-api/#accessing-for-the-first-time-with-kubectl",
-  "text": "When accessing the Kubernetes API for the first time, use the\nKubernetes command-line tool,\nkubectl\n.\nTo access a cluster, you need to know the location of the cluster and have credentials\nto access it. Typically, this is automatically set-up when you work through\na\nGetting started guide\n,\nor someone else set up the cluster and provided you with credentials and a location.\nCheck the location and credentials that kubectl knows about with this command:\nkubectl config view\nMany of the\nexamples\nprovide an introduction to using\nkubectl. Complete documentation is found in the\nkubectl manual\n."
+  "text": "When accessing the Kubernetes API for the first time, use the\nKubernetes command-line tool,\nkubectl\n.\nTo access a cluster, you need to know the location of the cluster and have credentials\nto access it. Typically, this is automatically set-up when you work through\na\nGetting started guide\n,\nor someone else set up the cluster and provided you with credentials and a location.\nCheck the location and credentials that kubectl knows about with this command:\nkubectl config view\nMany of the\nexamples\nprovide an introduction to using\nkubectl. Complete documentation is found in the\nkubectl manual\n.",
+  "failure_classes": []
 }

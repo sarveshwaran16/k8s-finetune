@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Pods — Container probes",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/#container-probes",
-  "text": "A\nprobe\nis a diagnostic performed periodically by the kubelet on a container.\nTo perform a diagnostic, the kubelet can invoke different actions:\nExecAction\n(performed with the help of the container runtime)\nTCPSocketAction\n(checked directly by the kubelet)\nHTTPGetAction\n(checked directly by the kubelet)\nYou can read more about\nprobes\nin the Pod Lifecycle documentation."
+  "text": "A\nprobe\nis a diagnostic performed periodically by the kubelet on a container.\nTo perform a diagnostic, the kubelet can invoke different actions:\nExecAction\n(performed with the help of the container runtime)\nTCPSocketAction\n(checked directly by the kubelet)\nHTTPGetAction\n(checked directly by the kubelet)\nYou can read more about\nprobes\nin the Pod Lifecycle documentation.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

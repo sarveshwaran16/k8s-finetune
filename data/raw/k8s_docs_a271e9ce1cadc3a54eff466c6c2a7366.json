@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extend kubectl with plugins — Using the command line runtime package",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/#using-the-command-line-runtime-package",
-  "text": "If you're writing a plugin for kubectl and you're using Go, you can make use\nof the\ncli-runtime\nutility libraries.\nThese libraries provide helpers for parsing or updating a user's\nkubeconfig\nfile, for making REST-style requests to the API server, or to bind flags\nassociated with configuration and printing.\nSee the\nSample CLI Plugin\nfor\nan example usage of the tools provided in the CLI Runtime repo."
+  "text": "If you're writing a plugin for kubectl and you're using Go, you can make use\nof the\ncli-runtime\nutility libraries.\nThese libraries provide helpers for parsing or updating a user's\nkubeconfig\nfile, for making REST-style requests to the API server, or to bind flags\nassociated with configuration and printing.\nSee the\nSample CLI Plugin\nfor\nan example usage of the tools provided in the CLI Runtime repo.",
+  "failure_classes": []
 }

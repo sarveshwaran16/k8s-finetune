@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling Framework — QueueSort",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#queue-sort",
-  "text": "These plugins are used to sort Pods in the scheduling queue. A queue sort plugin\nessentially provides a\nLess(Pod1, Pod2)\nfunction. Only one queue sort\nplugin may be enabled at a time.\n\nThese plugins are used to pre-process info about the Pod, or to check certain\nconditions that the cluster or the Pod must meet. If a PreFilter plugin returns\nan error, the scheduling cycle is aborted."
+  "text": "These plugins are used to sort Pods in the scheduling queue. A queue sort plugin\nessentially provides a\nLess(Pod1, Pod2)\nfunction. Only one queue sort\nplugin may be enabled at a time.\n\nThese plugins are used to pre-process info about the Pod, or to check certain\nconditions that the cluster or the Pod must meet. If a PreFilter plugin returns\nan error, the scheduling cycle is aborted.",
+  "failure_classes": []
 }

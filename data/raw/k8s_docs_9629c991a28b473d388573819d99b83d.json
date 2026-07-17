@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Images — Kubelet credential provider for authenticated image pulls",
   "source_url": "https://kubernetes.io/docs/concepts/containers/images/#kubelet-credential-provider",
-  "text": "You can configure the kubelet to invoke a plugin binary to dynamically fetch\nregistry credentials for a container image. This is the most robust and versatile\nway to fetch credentials for private registries, but also requires kubelet-level\nconfiguration to enable.\nThis technique can be especially useful for running\nstatic Pods\nthat require container images hosted in a private registry.\nUsing a\nServiceAccount\nor a\nSecret\nto provide private registry credentials\nis not possible in the specification of a static Pod, because it\ncannot\nhave references to other API resources in its specification.\nSee\nConfigure a kubelet image credential provider\nfor more details."
+  "text": "You can configure the kubelet to invoke a plugin binary to dynamically fetch\nregistry credentials for a container image. This is the most robust and versatile\nway to fetch credentials for private registries, but also requires kubelet-level\nconfiguration to enable.\nThis technique can be especially useful for running\nstatic Pods\nthat require container images hosted in a private registry.\nUsing a\nServiceAccount\nor a\nSecret\nto provide private registry credentials\nis not possible in the specification of a static Pod, because it\ncannot\nhave references to other API resources in its specification.\nSee\nConfigure a kubelet image credential provider\nfor more details.",
+  "failure_classes": [
+    "NodeNotReady",
+    "RBAC"
+  ]
 }

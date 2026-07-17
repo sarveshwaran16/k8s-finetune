@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Cluster Architecture — Node components",
   "source_url": "https://kubernetes.io/docs/concepts/architecture/#node-components",
-  "text": "Node components run on every node, maintaining running pods and providing the Kubernetes runtime environment.\n\nAn agent that runs on each\nnode\nin the cluster. It makes sure that\ncontainers\nare running in a\nPod\n.\nThe\nkubelet\ntakes a set of PodSpecs that\nare provided through various mechanisms and ensures that the containers described in those\nPodSpecs are running and healthy. The kubelet doesn't manage containers which were not created by\nKubernetes."
+  "text": "Node components run on every node, maintaining running pods and providing the Kubernetes runtime environment.\n\nAn agent that runs on each\nnode\nin the cluster. It makes sure that\ncontainers\nare running in a\nPod\n.\nThe\nkubelet\ntakes a set of PodSpecs that\nare provided through various mechanisms and ensures that the containers described in those\nPodSpecs are running and healthy. The kubelet doesn't manage containers which were not created by\nKubernetes.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

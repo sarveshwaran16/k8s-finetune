@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "ReplicationController — Pod Template",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#pod-template",
-  "text": "The\n.spec.template\nis the only required field of the\n.spec\n.\nThe\n.spec.template\nis a\npod template\n. It has exactly the same schema as a\nPod\n, except it is nested and does not have an\napiVersion\nor\nkind\n.\nIn addition to required fields for a Pod, a pod template in a ReplicationController must specify appropriate\nlabels and an appropriate restart policy. For labels, make sure not to overlap with other controllers. See\npod selector\n.\nOnly a\n.spec.template.spec.restartPolicy\nequal to\nAlways\nis allowed, which is the default if not specified.\nFor local container restarts, ReplicationControllers delegate to an agent on the node,\nfor example the\nKubelet\n."
+  "text": "The\n.spec.template\nis the only required field of the\n.spec\n.\nThe\n.spec.template\nis a\npod template\n. It has exactly the same schema as a\nPod\n, except it is nested and does not have an\napiVersion\nor\nkind\n.\nIn addition to required fields for a Pod, a pod template in a ReplicationController must specify appropriate\nlabels and an appropriate restart policy. For labels, make sure not to overlap with other controllers. See\npod selector\n.\nOnly a\n.spec.template.spec.restartPolicy\nequal to\nAlways\nis allowed, which is the default if not specified.\nFor local container restarts, ReplicationControllers delegate to an agent on the node,\nfor example the\nKubelet\n.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

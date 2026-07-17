@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "KYAML Reference",
   "source_url": "https://kubernetes.io/docs/reference/encodings/kyaml/",
-  "text": "KYAML\nis a safer and less ambiguous subset of YAML, initially introduced in Kubernetes v1.34 (alpha) and enabled by default in v1.35 (beta). Designed specifically for Kubernetes, KYAML addresses common YAML pitfalls such as whitespace sensitivity and implicit type coercion while maintaining full compatibility with existing YAML parsers and tooling.\nThis reference describes KYAML syntax."
+  "text": "KYAML\nis a safer and less ambiguous subset of YAML, initially introduced in Kubernetes v1.34 (alpha) and enabled by default in v1.35 (beta). Designed specifically for Kubernetes, KYAML addresses common YAML pitfalls such as whitespace sensitivity and implicit type coercion while maintaining full compatibility with existing YAML parsers and tooling.\nThis reference describes KYAML syntax.",
+  "failure_classes": []
 }

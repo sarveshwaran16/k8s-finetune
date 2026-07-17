@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Resource Quotas — Terminating Pods scope",
   "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/#quota-scope-terminating",
-  "text": "This scope only tracks quota consumed by Pods that are terminating. The\noperator\nfor a\nscopeSelector\nmust be\nExists\n.\nA Pod is considered as\nterminating\nif the\n.spec.activeDeadlineSeconds\nfield is set to any number.\nYou can use a ResourceQuota with this scope to manage the following resources:\ncount.pods\npods\ncpu\nmemory\nrequests.cpu\nrequests.memory\nlimits.cpu\nlimits.memory"
+  "text": "This scope only tracks quota consumed by Pods that are terminating. The\noperator\nfor a\nscopeSelector\nmust be\nExists\n.\nA Pod is considered as\nterminating\nif the\n.spec.activeDeadlineSeconds\nfield is set to any number.\nYou can use a ResourceQuota with this scope to manage the following resources:\ncount.pods\npods\ncpu\nmemory\nrequests.cpu\nrequests.memory\nlimits.cpu\nlimits.memory",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm join phase",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-join-phase/",
-  "text": "kubeadm join phase\nenables you to invoke atomic steps of the join process.\nHence, you can let kubeadm do some of the work and you can fill in the gaps\nif you wish to apply customization.\nkubeadm join phase\nis consistent with the\nkubeadm join workflow\n,\nand behind the scene both use the same code.\n\nphase"
+  "text": "kubeadm join phase\nenables you to invoke atomic steps of the join process.\nHence, you can let kubeadm do some of the work and you can fill in the gaps\nif you wish to apply customization.\nkubeadm join phase\nis consistent with the\nkubeadm join workflow\n,\nand behind the scene both use the same code.\n\nphase",
+  "failure_classes": []
 }

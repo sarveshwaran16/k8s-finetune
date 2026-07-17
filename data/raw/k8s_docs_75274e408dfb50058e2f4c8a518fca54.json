@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — kubernetes.io/legacy-token-last-used",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#kubernetes-io-legacy-token-last-used",
-  "text": "Type: Label\nExample:\nkubernetes.io/legacy-token-last-used: 2022-10-24\nUsed on: Secret\nThe control plane only adds this label to Secrets that have the type\nkubernetes.io/service-account-token\n.\nThe value of this label records the date (ISO 8601 format, UTC time zone) when the control plane\nlast saw a request where the client authenticated using the service account token.\nIf a legacy token was last used before the cluster gained the feature (added in Kubernetes v1.26),\nthen the label isn't set."
+  "text": "Type: Label\nExample:\nkubernetes.io/legacy-token-last-used: 2022-10-24\nUsed on: Secret\nThe control plane only adds this label to Secrets that have the type\nkubernetes.io/service-account-token\n.\nThe value of this label records the date (ISO 8601 format, UTC time zone) when the control plane\nlast saw a request where the client authenticated using the service account token.\nIf a legacy token was last used before the cluster gained the feature (added in Kubernetes v1.26),\nthen the label isn't set.",
+  "failure_classes": []
 }

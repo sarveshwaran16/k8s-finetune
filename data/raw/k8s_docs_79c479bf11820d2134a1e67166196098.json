@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Enforce Pod Security Standards with Namespace Labels — Applying to a single namespace",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/enforce-standards-namespace-labels/#applying-to-a-single-namespace",
-  "text": "You can update a specific namespace as well. This command adds the\nenforce=restricted\npolicy to\nmy-existing-namespace\n, pinning the restricted policy version to v1.36.\nkubectl label --overwrite ns my-existing-namespace\n\\\npod-security.kubernetes.io/enforce\n=\nrestricted\n\\\npod-security.kubernetes.io/enforce-version\n=\nv1.36"
+  "text": "You can update a specific namespace as well. This command adds the\nenforce=restricted\npolicy to\nmy-existing-namespace\n, pinning the restricted policy version to v1.36.\nkubectl label --overwrite ns my-existing-namespace\n\\\npod-security.kubernetes.io/enforce\n=\nrestricted\n\\\npod-security.kubernetes.io/enforce-version\n=\nv1.36",
+  "failure_classes": []
 }

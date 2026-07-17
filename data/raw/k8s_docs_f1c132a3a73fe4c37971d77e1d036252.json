@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Change the Access Mode of a PersistentVolume to ReadWriteOncePod — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/change-pv-access-mode-readwriteoncepod/#what-s-next",
-  "text": "Learn more about\nPersistentVolumes\n.\nLearn more about\nPersistentVolumeClaims\n.\nLearn more about\nConfiguring a Pod to Use a PersistentVolume for Storage\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Learn more about\nPersistentVolumes\n.\nLearn more about\nPersistentVolumeClaims\n.\nLearn more about\nConfiguring a Pod to Use a PersistentVolume for Storage\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

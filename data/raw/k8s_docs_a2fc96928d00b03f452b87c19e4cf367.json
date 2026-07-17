@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubeadm init — Certificate management with kubeadm",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/#certificate-management-with-kubeadm",
-  "text": "For detailed information on certificate management with kubeadm see\nCertificate Management with kubeadm\n.\nThe document includes information about using external CA, custom certificates\nand certificate renewal.\n\nThe\nkubeadm\npackage ships with a configuration file for running the\nkubelet\nby\nsystemd\n.\nNote that the kubeadm CLI never touches this drop-in file. This drop-in file is part of the kubeadm\nDEB/RPM package.\nFor further information, see\nManaging the kubeadm drop-in file for systemd\n."
+  "text": "For detailed information on certificate management with kubeadm see\nCertificate Management with kubeadm\n.\nThe document includes information about using external CA, custom certificates\nand certificate renewal.\n\nThe\nkubeadm\npackage ships with a configuration file for running the\nkubelet\nby\nsystemd\n.\nNote that the kubeadm CLI never touches this drop-in file. This drop-in file is part of the kubeadm\nDEB/RPM package.\nFor further information, see\nManaging the kubeadm drop-in file for systemd\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

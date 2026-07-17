@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Create static Pods — Dynamic addition and removal of static pods",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/#dynamic-addition-and-removal-of-static-pods",
-  "text": "The running kubelet periodically scans the configured directory\n(\n/etc/kubernetes/manifests\nin our example) for changes and\nadds/removes Pods as files appear/disappear in this directory.\n# This assumes you are using filesystem-hosted static Pod configuration\n# Run these commands on the node where the container is running\n#\nmv /etc/kubernetes/manifests/static-web.yaml /tmp\nsleep\n20\ncrictl ps\n# You see that no nginx container is running\nmv /tmp/static-web.yaml  /etc/kubernetes/manifests/\nsleep\n20\ncrictl ps\nCONTAINER       IMAGE                                 CREATED           STATE      NAME    ATTEMPT    POD ID\nf427638871c35   docker.io/library/nginx@sha256:...    19 seconds ago    Running    web     1          34533c6729106"
+  "text": "The running kubelet periodically scans the configured directory\n(\n/etc/kubernetes/manifests\nin our example) for changes and\nadds/removes Pods as files appear/disappear in this directory.\n# This assumes you are using filesystem-hosted static Pod configuration\n# Run these commands on the node where the container is running\n#\nmv /etc/kubernetes/manifests/static-web.yaml /tmp\nsleep\n20\ncrictl ps\n# You see that no nginx container is running\nmv /tmp/static-web.yaml  /etc/kubernetes/manifests/\nsleep\n20\ncrictl ps\nCONTAINER       IMAGE                                 CREATED           STATE      NAME    ATTEMPT    POD ID\nf427638871c35   docker.io/library/nginx@sha256:...    19 seconds ago    Running    web     1          34533c6729106",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

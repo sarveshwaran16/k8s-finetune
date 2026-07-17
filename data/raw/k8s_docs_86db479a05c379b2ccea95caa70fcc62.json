@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ServiceCIDR — getRead Status",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/networking/service-cidr-v1/#get-read-status",
-  "text": "GET /apis/networking.k8s.io/v1/servicecidrs/{name}/status\nName\nType\nDescription\nname\nstring\nname of the ServiceCIDR\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nServiceCIDR"
+  "text": "GET /apis/networking.k8s.io/v1/servicecidrs/{name}/status\nName\nType\nDescription\nname\nstring\nname of the ServiceCIDR\nName\nType\nDescription\npretty\nstring\nIf 'true', then the output is pretty printed. Defaults to 'false' unless the user-agent indicates a browser or command-line HTTP tool (curl and wget).\nStatus\nDescription\nResponse\n200\nOK\nServiceCIDR",
+  "failure_classes": []
 }

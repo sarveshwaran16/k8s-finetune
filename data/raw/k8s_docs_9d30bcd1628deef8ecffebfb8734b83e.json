@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Role Based Access Control Good Practices — Kubernetes RBAC - privilege escalation risks",
   "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#privilege-escalation-risks",
-  "text": "Within Kubernetes RBAC there are a number of privileges which, if granted, can allow a user or a service account\nto escalate their privileges in the cluster or affect systems outside the cluster.\nThis section is intended to provide visibility of the areas where cluster operators\nshould take care, to ensure that they do not inadvertently allow for more access to clusters than intended."
+  "text": "Within Kubernetes RBAC there are a number of privileges which, if granted, can allow a user or a service account\nto escalate their privileges in the cluster or affect systems outside the cluster.\nThis section is intended to provide visibility of the areas where cluster operators\nshould take care, to ensure that they do not inadvertently allow for more access to clusters than intended.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

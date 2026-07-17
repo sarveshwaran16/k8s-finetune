@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "NodeNetworkInterfaceFlapping#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/general/nodenetworkinterfaceflapping/",
-  "text": "Node Network Interface Flapping\nNodeNetworkInterfaceFlapping\n#\nMeaning\n#\nNetwork interface is often changing its status\nImpact\n#\nApplications on the node may no longer be able to operate with other services.\nNetwork attached storage performance issues or even data loss.\nDiagnosis\n#\nInvestigate networking issues on the node and to connected hardware.\nCheck physical cables, check networking firewall rules and so on.\nMitigation\n#\nCordon and drain node to migrate apps from it."
+  "text": "Node Network Interface Flapping\nNodeNetworkInterfaceFlapping\n#\nMeaning\n#\nNetwork interface is often changing its status\nImpact\n#\nApplications on the node may no longer be able to operate with other services.\nNetwork attached storage performance issues or even data loss.\nDiagnosis\n#\nInvestigate networking issues on the node and to connected hardware.\nCheck physical cables, check networking firewall rules and so on.\nMitigation\n#\nCordon and drain node to migrate apps from it.",
+  "failure_classes": []
 }

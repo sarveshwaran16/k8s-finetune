@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm Configuration (v1beta4) — EncryptionAlgorithmType",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta4/#kubeadm-k8s-io-v1beta4-EncryptionAlgorithmType",
-  "text": "(Alias of\nstring\n)\nAppears in:\nClusterConfiguration\nEncryptionAlgorithmType can define an asymmetric encryption algorithm type.\n\nAppears in:\nControlPlaneComponent\nLocalEtcd\nControlPlaneComponent\nLocalEtcd\nEnvVar represents an environment variable present in a Container.\nField\nDescription\nEnvVar\n[Required]\ncore/v1.EnvVar\n(Members of\nEnvVar\nare embedded into this type.)\nNo description provided."
+  "text": "(Alias of\nstring\n)\nAppears in:\nClusterConfiguration\nEncryptionAlgorithmType can define an asymmetric encryption algorithm type.\n\nAppears in:\nControlPlaneComponent\nLocalEtcd\nControlPlaneComponent\nLocalEtcd\nEnvVar represents an environment variable present in a Container.\nField\nDescription\nEnvVar\n[Required]\ncore/v1.EnvVar\n(Members of\nEnvVar\nare embedded into this type.)\nNo description provided.",
+  "failure_classes": []
 }

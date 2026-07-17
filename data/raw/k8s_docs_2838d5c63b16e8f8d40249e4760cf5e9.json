@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl port-forward — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_port-forward/#synopsis",
-  "text": "Forward one or more local ports to a pod.\nUse resource type/name such as deployment/mydeployment to select a pod. Resource type defaults to 'pod' if omitted.\nIf there are multiple pods matching the criteria, a pod will be selected automatically. The forwarding session ends when the selected pod terminates, and a rerun of the command is needed to resume forwarding.\nkubectl port-forward TYPE/NAME [options] [LOCAL_PORT:]REMOTE_PORT [...[LOCAL_PORT_N:]REMOTE_PORT_N]"
+  "text": "Forward one or more local ports to a pod.\nUse resource type/name such as deployment/mydeployment to select a pod. Resource type defaults to 'pod' if omitted.\nIf there are multiple pods matching the criteria, a pod will be selected automatically. The forwarding session ends when the selected pod terminates, and a rerun of the command is needed to resume forwarding.\nkubectl port-forward TYPE/NAME [options] [LOCAL_PORT:]REMOTE_PORT [...[LOCAL_PORT_N:]REMOTE_PORT_N]",
+  "failure_classes": []
 }

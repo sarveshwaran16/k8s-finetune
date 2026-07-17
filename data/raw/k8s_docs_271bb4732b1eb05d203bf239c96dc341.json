@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Accessing Clusters — Using kubectl proxy",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/access-cluster/#using-kubectl-proxy",
-  "text": "The following command runs kubectl in a mode where it acts as a reverse proxy. It handles\nlocating the apiserver and authenticating.\nRun it like this:\nkubectl proxy --port\n=\n8080\nSee\nkubectl proxy\nfor more details.\nThen you can explore the API with curl, wget, or a browser, replacing localhost\nwith [::1] for IPv6, like so:\ncurl http://localhost:8080/api/\nThe output is similar to this:\n{\n\"kind\"\n:\n\"APIVersions\"\n,\n\"versions\"\n:\n[\n\"v1\"\n],\n\"serverAddressByClientCIDRs\"\n:\n[\n{\n\"clientCIDR\"\n:\n\"0.0.0.0/0\"\n,\n\"serverAddress\"\n:\n\"10.0.1.149:443\"\n}\n]\n}"
+  "text": "The following command runs kubectl in a mode where it acts as a reverse proxy. It handles\nlocating the apiserver and authenticating.\nRun it like this:\nkubectl proxy --port\n=\n8080\nSee\nkubectl proxy\nfor more details.\nThen you can explore the API with curl, wget, or a browser, replacing localhost\nwith [::1] for IPv6, like so:\ncurl http://localhost:8080/api/\nThe output is similar to this:\n{\n\"kind\"\n:\n\"APIVersions\"\n,\n\"versions\"\n:\n[\n\"v1\"\n],\n\"serverAddressByClientCIDRs\"\n:\n[\n{\n\"clientCIDR\"\n:\n\"0.0.0.0/0\"\n,\n\"serverAddress\"\n:\n\"10.0.1.149:443\"\n}\n]\n}",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Autoscaling Workloads",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/",
-  "text": "In Kubernetes, you can\nscale\na workload depending on the current demand of resources.\nThis allows your cluster to react to changes in resource demand more elastically and efficiently.\nWhen you scale a workload, you can either increase or decrease the number of replicas managed by\nthe workload, or adjust the resources available to the replicas in-place.\nThe first approach is referred to as\nhorizontal scaling\n, while the second is referred to as\nvertical scaling\n.\nThere are manual and automatic ways to scale your workloads, depending on your use case."
+  "text": "In Kubernetes, you can\nscale\na workload depending on the current demand of resources.\nThis allows your cluster to react to changes in resource demand more elastically and efficiently.\nWhen you scale a workload, you can either increase or decrease the number of replicas managed by\nthe workload, or adjust the resources available to the replicas in-place.\nThe first approach is referred to as\nhorizontal scaling\n, while the second is referred to as\nvertical scaling\n.\nThere are manual and automatic ways to scale your workloads, depending on your use case.",
+  "failure_classes": []
 }

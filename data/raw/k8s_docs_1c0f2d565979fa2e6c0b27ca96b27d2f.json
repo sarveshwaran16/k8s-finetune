@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Developing and debugging services locally using telepresence — How does Telepresence work?",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/local-debugging/#how-does-telepresence-work",
-  "text": "Telepresence installs a traffic-agent sidecar next to your existing\napplication's container running in the remote cluster. It then captures\nall traffic requests going into the Pod, and instead of forwarding this\nto the application in the remote cluster, it routes all traffic (when you\ncreate a\nglobal intercept\nor a subset of the traffic (when you create a\npersonal intercept\n)\nto your local development environment."
+  "text": "Telepresence installs a traffic-agent sidecar next to your existing\napplication's container running in the remote cluster. It then captures\nall traffic requests going into the Pod, and instead of forwarding this\nto the application in the remote cluster, it routes all traffic (when you\ncreate a\nglobal intercept\nor a subset of the traffic (when you create a\npersonal intercept\n)\nto your local development environment.",
+  "failure_classes": []
 }

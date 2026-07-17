@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Create a Windows HostProcess Pod — Example manifest (excerpt)",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/#manifest-example",
-  "text": "spec\n:\nsecurityContext\n:\nwindowsOptions\n:\nhostProcess\n:\ntrue\nrunAsUserName\n:\n\"NT AUTHORITY\\\\Local service\"\nhostNetwork\n:\ntrue\ncontainers\n:\n-\nname\n:\ntest\nimage\n:\nimage1:latest\ncommand\n:\n-\nping\n- -\nt\n-\n127.0.0.1\nnodeSelector\n:\n\"kubernetes.io/os\":\nwindows\n\nHostProcess containers support the ability to mount volumes within the container volume space.\nVolume mount behavior differs depending on the version of containerd runtime used by on the node."
+  "text": "spec\n:\nsecurityContext\n:\nwindowsOptions\n:\nhostProcess\n:\ntrue\nrunAsUserName\n:\n\"NT AUTHORITY\\\\Local service\"\nhostNetwork\n:\ntrue\ncontainers\n:\n-\nname\n:\ntest\nimage\n:\nimage1:latest\ncommand\n:\n-\nping\n- -\nt\n-\n127.0.0.1\nnodeSelector\n:\n\"kubernetes.io/os\":\nwindows\n\nHostProcess containers support the ability to mount volumes within the container volume space.\nVolume mount behavior differs depending on the version of containerd runtime used by on the node.",
+  "failure_classes": []
 }

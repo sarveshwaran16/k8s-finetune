@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Migrating telemetry and security agents from dockershim — Aqua",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/migrating-telemetry-and-security-agents/#aqua",
-  "text": "No changes are needed: everything should work seamlessly on the runtime switch.\n\nHow to migrate:\nDocker deprecation in Kubernetes\nThe pod that accesses Docker Engine may have a name containing any of:\ndatadog-agent\ndatadog\ndd-agent\n\nHow to migrate:\nMigrating from Docker-only to generic container metrics in Dynatrace\nContainerd support announcement:\nGet automated full-stack visibility into\ncontainerd-based Kubernetes\nenvironments\nCRI-O support announcement:\nGet automated full-stack visibility into your CRI-O Kubernetes containers (Beta)\nThe pod accessing Docker may have name containing:\ndynatrace-oneagent"
+  "text": "No changes are needed: everything should work seamlessly on the runtime switch.\n\nHow to migrate:\nDocker deprecation in Kubernetes\nThe pod that accesses Docker Engine may have a name containing any of:\ndatadog-agent\ndatadog\ndd-agent\n\nHow to migrate:\nMigrating from Docker-only to generic container metrics in Dynatrace\nContainerd support announcement:\nGet automated full-stack visibility into\ncontainerd-based Kubernetes\nenvironments\nCRI-O support announcement:\nGet automated full-stack visibility into your CRI-O Kubernetes containers (Beta)\nThe pod accessing Docker may have name containing:\ndynatrace-oneagent",
+  "failure_classes": []
 }

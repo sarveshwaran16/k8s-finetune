@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PodGroup Scheduling — Phase 1: Candidate placement generation",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/podgroup-scheduling/#phase-1-candidate-placement-generation",
-  "text": "Generates candidate\nplacements\n(subsets of nodes, that are theoretically feasible for PodGroup\nassignment), for example based on the PodGroup's scheduling constraints (which can be defined\nin the PodGroup object).\nThis phase executes as extension point:\nPlacementGeneratePlugin\n.\n\nValidates each proposed placement, by running a default PodGroup scheduling algorithm, to see if\nthe required number of Pods from the PodGroup can fit. If they can, the placement is marked as feasible."
+  "text": "Generates candidate\nplacements\n(subsets of nodes, that are theoretically feasible for PodGroup\nassignment), for example based on the PodGroup's scheduling constraints (which can be defined\nin the PodGroup object).\nThis phase executes as extension point:\nPlacementGeneratePlugin\n.\n\nValidates each proposed placement, by running a default PodGroup scheduling algorithm, to see if\nthe required number of Pods from the PodGroup can fit. If they can, the placement is marked as feasible.",
+  "failure_classes": []
 }

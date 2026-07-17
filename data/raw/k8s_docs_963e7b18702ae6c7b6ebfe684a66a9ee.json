@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Monitor Node Health",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/monitor-node-health/",
-  "text": "Node Problem Detector\nis a daemon for monitoring and reporting about a node's health.\nYou can run Node Problem Detector as a\nDaemonSet\nor as a standalone daemon.\nNode Problem Detector collects information about node problems from various daemons\nand reports these conditions to the API server as Node\nCondition\ns\nor as\nEvent\ns.\nTo learn how to install and use Node Problem Detector, see\nNode Problem Detector project documentation\n."
+  "text": "Node Problem Detector\nis a daemon for monitoring and reporting about a node's health.\nYou can run Node Problem Detector as a\nDaemonSet\nor as a standalone daemon.\nNode Problem Detector collects information about node problems from various daemons\nand reports these conditions to the API server as Node\nCondition\ns\nor as\nEvent\ns.\nTo learn how to install and use Node Problem Detector, see\nNode Problem Detector project documentation\n.",
+  "failure_classes": []
 }

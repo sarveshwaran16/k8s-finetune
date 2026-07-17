@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl create secret docker-registry — Examples",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_create/kubectl_create_secret_docker-registry/#examples",
-  "text": "# If you do not already have a .dockercfg file, create a dockercfg secret directly\n  kubectl create secret docker-registry my-secret --docker-server=DOCKER_REGISTRY_SERVER --docker-username=DOCKER_USER --docker-password=DOCKER_PASSWORD --docker-email=DOCKER_EMAIL\n  \n  # Create a new secret named my-secret from ~/.docker/config.json\n  kubectl create secret docker-registry my-secret --from-file=path/to/.docker/config.json"
+  "text": "# If you do not already have a .dockercfg file, create a dockercfg secret directly\n  kubectl create secret docker-registry my-secret --docker-server=DOCKER_REGISTRY_SERVER --docker-username=DOCKER_USER --docker-password=DOCKER_PASSWORD --docker-email=DOCKER_EMAIL\n  \n  # Create a new secret named my-secret from ~/.docker/config.json\n  kubectl create secret docker-registry my-secret --from-file=path/to/.docker/config.json",
+  "failure_classes": []
 }

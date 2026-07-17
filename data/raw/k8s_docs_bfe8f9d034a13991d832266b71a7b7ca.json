@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Deploy and Access the Kubernetes Dashboard — Welcome view",
   "source_url": "https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#welcome-view",
-  "text": "When you access Dashboard on an empty cluster, you'll see the welcome page.\nThis page contains a link to this document as well as a button to deploy your first application.\nIn addition, you can view which system applications are running by default in the\nkube-system\nnamespace\nof your cluster, for example the Dashboard itself."
+  "text": "When you access Dashboard on an empty cluster, you'll see the welcome page.\nThis page contains a link to this document as well as a button to deploy your first application.\nIn addition, you can view which system applications are running by default in the\nkube-system\nnamespace\nof your cluster, for example the Dashboard itself.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest — Configure the certificate into kubeconfig",
   "source_url": "https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/#configure-the-certificate-into-kubeconfig",
-  "text": "The next step is to add this user into the kubeconfig file.\nFirst, you need to add new credentials:\nkubectl config set-credentials myuser --client-key\n=\nmyuser.key --client-certificate\n=\nmyuser.crt --embed-certs\n=\ntrue\nThen, you need to add the context:\nkubectl config set-context myuser --cluster\n=\nkubernetes --user\n=\nmyuser\nTo test it:\nkubectl --context myuser auth whoami\nYou should see output confirming that you are “myuser“."
+  "text": "The next step is to add this user into the kubeconfig file.\nFirst, you need to add new credentials:\nkubectl config set-credentials myuser --client-key\n=\nmyuser.key --client-certificate\n=\nmyuser.crt --embed-certs\n=\ntrue\nThen, you need to add the context:\nkubectl config set-context myuser --cluster\n=\nkubernetes --user\n=\nmyuser\nTo test it:\nkubectl --context myuser auth whoami\nYou should see output confirming that you are “myuser“.",
+  "failure_classes": []
 }

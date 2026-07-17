@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Disruptions — Separating Cluster Owner and Application Owner Roles",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/disruptions/#separating-cluster-owner-and-application-owner-roles",
-  "text": "Often, it is useful to think of the Cluster Manager\nand Application Owner as separate roles with limited knowledge\nof each other. This separation of responsibilities\nmay make sense in these scenarios:\nwhen there are many application teams sharing a Kubernetes cluster, and\nthere is natural specialization of roles\nwhen third-party tools or services are used to automate cluster management\nPod Disruption Budgets support this separation of roles by providing an\ninterface between the roles.\nIf you do not have such a separation of responsibilities in your organization,\nyou may not need to use Pod Disruption Budgets."
+  "text": "Often, it is useful to think of the Cluster Manager\nand Application Owner as separate roles with limited knowledge\nof each other. This separation of responsibilities\nmay make sense in these scenarios:\nwhen there are many application teams sharing a Kubernetes cluster, and\nthere is natural specialization of roles\nwhen third-party tools or services are used to automate cluster management\nPod Disruption Budgets support this separation of roles by providing an\ninterface between the roles.\nIf you do not have such a separation of responsibilities in your organization,\nyou may not need to use Pod Disruption Budgets.",
+  "failure_classes": []
 }

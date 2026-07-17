@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Concepts — resourceVersionparameters in query strings",
   "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#the-resourceversion-parameter",
-  "text": "The\nget\n,\nlist\n, and\nwatch\noperations support the\nresourceVersion\nparameter.\nFrom version v1.19, Kubernetes API servers also support the\nresourceVersionMatch\nparameter on\nlist\nrequests.\nThe API server interprets the\nresourceVersion\nparameter differently depending\non the operation you request, and on the value of\nresourceVersion\n. If you set\nresourceVersionMatch\nthen this also affects the way matching happens."
+  "text": "The\nget\n,\nlist\n, and\nwatch\noperations support the\nresourceVersion\nparameter.\nFrom version v1.19, Kubernetes API servers also support the\nresourceVersionMatch\nparameter on\nlist\nrequests.\nThe API server interprets the\nresourceVersion\nparameter differently depending\non the operation you request, and on the value of\nresourceVersion\n. If you set\nresourceVersionMatch\nthen this also affects the way matching happens.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "CronJob — Modifying a CronJob",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#modifying-a-cronjob",
-  "text": "By design, a CronJob contains a template for\nnew\nJobs.\nIf you modify an existing CronJob, the changes you make will apply to new Jobs that\nstart to run after your modification is complete. Jobs (and their Pods) that have already\nstarted continue to run without changes.\nThat is, the CronJob does\nnot\nupdate existing Jobs, even if those remain running."
+  "text": "By design, a CronJob contains a template for\nnew\nJobs.\nIf you modify an existing CronJob, the changes you make will apply to new Jobs that\nstart to run after your modification is complete. Jobs (and their Pods) that have already\nstarted continue to run without changes.\nThat is, the CronJob does\nnot\nupdate existing Jobs, even if those remain running.",
+  "failure_classes": []
 }

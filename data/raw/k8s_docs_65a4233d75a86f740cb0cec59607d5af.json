@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Administration with kubeadm",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/",
-  "text": "If you don't yet have a cluster, visit\nbootstrapping clusters with\nkubeadm\n.\nThe tasks in this section are aimed at people administering an existing cluster:\nAdding Linux worker nodes\nAdding Windows worker nodes\nUpgrading kubeadm clusters\nUpgrading Linux nodes\nUpgrading Windows nodes\nConfiguring a cgroup driver\nCertificate Management with kubeadm\nReconfiguring a kubeadm cluster\nChanging The Kubernetes Package Repository"
+  "text": "If you don't yet have a cluster, visit\nbootstrapping clusters with\nkubeadm\n.\nThe tasks in this section are aimed at people administering an existing cluster:\nAdding Linux worker nodes\nAdding Windows worker nodes\nUpgrading kubeadm clusters\nUpgrading Linux nodes\nUpgrading Windows nodes\nConfiguring a cgroup driver\nCertificate Management with kubeadm\nReconfiguring a kubeadm cluster\nChanging The Kubernetes Package Repository",
+  "failure_classes": []
 }

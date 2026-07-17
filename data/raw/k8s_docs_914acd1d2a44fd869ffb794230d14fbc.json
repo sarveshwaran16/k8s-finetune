@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Dual-stack support with kubeadm",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/dual-stack-support/",
-  "text": "Your Kubernetes cluster includes\ndual-stack\nnetworking, which means that cluster networking lets you use either address family.\nIn a cluster, the control plane can assign both an IPv4 address and an IPv6 address to a single\nPod\nor a\nService\n.\n\nYou need to have installed the\nkubeadm\ntool,\nfollowing the steps from\nInstalling kubeadm\n.\nFor each server that you want to use as a\nnode\n,\nmake sure it allows IPv6 forwarding."
+  "text": "Your Kubernetes cluster includes\ndual-stack\nnetworking, which means that cluster networking lets you use either address family.\nIn a cluster, the control plane can assign both an IPv4 address and an IPv6 address to a single\nPod\nor a\nService\n.\n\nYou need to have installed the\nkubeadm\ntool,\nfollowing the steps from\nInstalling kubeadm\n.\nFor each server that you want to use as a\nnode\n,\nmake sure it allows IPv6 forwarding.",
+  "failure_classes": []
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_init/kubeadm_init_phase_certs_apiserver-kubelet-client/#synopsis",
-  "text": "Generate the certificate for the API server to connect to kubelet, and save them into apiserver-kubelet-client.crt and apiserver-kubelet-client.key files.\nIf both files already exist, kubeadm skips the generation step and existing files will be used.\nkubeadm init phase certs apiserver-kubelet-client [flags]"
+  "text": "Generate the certificate for the API server to connect to kubelet, and save them into apiserver-kubelet-client.crt and apiserver-kubelet-client.key files.\nIf both files already exist, kubeadm skips the generation step and existing files will be used.\nkubeadm init phase certs apiserver-kubelet-client [flags]",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

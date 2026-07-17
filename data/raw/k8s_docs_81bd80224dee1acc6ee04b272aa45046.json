@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "The kubectl command-line tool — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/overview/kubectl/#what-s-next",
-  "text": "Read the\nkubectl reference\nfor syntax and command details.\nInstall kubectl\non your machine.\nLearn about\nThe Kubernetes API\nthat\nkubectl\nuses.\nReview\nKubernetes Components\nthat make up a cluster.\nExplore\nObject Management\nand declarative configuration.\nCheck the\nversion skew policy\nfor supported version combinations."
+  "text": "Read the\nkubectl reference\nfor syntax and command details.\nInstall kubectl\non your machine.\nLearn about\nThe Kubernetes API\nthat\nkubectl\nuses.\nReview\nKubernetes Components\nthat make up a cluster.\nExplore\nObject Management\nand declarative configuration.\nCheck the\nversion skew policy\nfor supported version combinations.",
+  "failure_classes": []
 }

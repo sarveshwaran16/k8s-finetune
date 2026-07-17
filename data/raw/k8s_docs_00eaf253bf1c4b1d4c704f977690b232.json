@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Jobs — Single Job starts controller Pod",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#single-job-starts-controller-pod",
-  "text": "Another pattern is for a single Job to create a Pod which then creates other Pods, acting as a sort\nof custom controller for those Pods. This allows the most flexibility, but may be somewhat\ncomplicated to get started with and offers less integration with Kubernetes.\nAn advantage of this approach is that the overall process gets the completion guarantee of a Job\nobject, but maintains complete control over what Pods are created and how work is assigned to them."
+  "text": "Another pattern is for a single Job to create a Pod which then creates other Pods, acting as a sort\nof custom controller for those Pods. This allows the most flexibility, but may be somewhat\ncomplicated to get started with and offers less integration with Kubernetes.\nAn advantage of this approach is that the overall process gets the completion guarantee of a Job\nobject, but maintains complete control over what Pods are created and how work is assigned to them.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling Framework — Interfaces",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/#interfaces",
-  "text": "The following picture shows the scheduling context of a Pod and the interfaces\nthat the scheduling framework exposes.\nOne plugin may implement multiple interfaces to perform more complex or\nstateful tasks.\nSome interfaces match the scheduler extension points which can be configured through\nScheduler Configuration\n."
+  "text": "The following picture shows the scheduling context of a Pod and the interfaces\nthat the scheduling framework exposes.\nOne plugin may implement multiple interfaces to perform more complex or\nstateful tasks.\nSome interfaces match the scheduler extension points which can be configured through\nScheduler Configuration\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Metrics (v1beta1) — PodMetricsList",
   "source_url": "https://kubernetes.io/docs/reference/external-api/metrics.v1beta1/#metrics-k8s-io-v1beta1-PodMetricsList",
-  "text": "PodMetricsList is a list of PodMetrics.\nField\nDescription\napiVersion\nstring\nmetrics.k8s.io/v1beta1\nkind\nstring\nPodMetricsList\nmetadata\n[Required]\nmeta/v1.ListMeta\nStandard list metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nitems\n[Required]\n[]PodMetrics\nList of pod metrics.\nStandard list metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nList of pod metrics."
+  "text": "PodMetricsList is a list of PodMetrics.\nField\nDescription\napiVersion\nstring\nmetrics.k8s.io/v1beta1\nkind\nstring\nPodMetricsList\nmetadata\n[Required]\nmeta/v1.ListMeta\nStandard list metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nitems\n[Required]\n[]PodMetrics\nList of pod metrics.\nStandard list metadata.\nMore info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds\nList of pod metrics.",
+  "failure_classes": []
 }

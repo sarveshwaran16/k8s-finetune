@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Managing Secrets using Kustomize — Edit a Secret",
   "source_url": "https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kustomize/#edit-secret",
-  "text": "In your\nkustomization.yaml\nfile, modify the data, such as the\npassword\n.\nApply the directory that contains the kustomization file:\nkubectl apply -k <directory-path>\nThe output is similar to:\nsecret/db-user-pass-6f24b56cc8 created\nIn your\nkustomization.yaml\nfile, modify the data, such as the\npassword\n.\nApply the directory that contains the kustomization file:\nkubectl apply -k <directory-path>\nThe output is similar to:\nsecret/db-user-pass-6f24b56cc8 created\nThe edited Secret is created as a new\nSecret\nobject, instead of updating the\nexisting\nSecret\nobject. You might need to update references to the Secret in\nyour Pods."
+  "text": "In your\nkustomization.yaml\nfile, modify the data, such as the\npassword\n.\nApply the directory that contains the kustomization file:\nkubectl apply -k <directory-path>\nThe output is similar to:\nsecret/db-user-pass-6f24b56cc8 created\nIn your\nkustomization.yaml\nfile, modify the data, such as the\npassword\n.\nApply the directory that contains the kustomization file:\nkubectl apply -k <directory-path>\nThe output is similar to:\nsecret/db-user-pass-6f24b56cc8 created\nThe edited Secret is created as a new\nSecret\nobject, instead of updating the\nexisting\nSecret\nobject. You might need to update references to the Secret in\nyour Pods.",
+  "failure_classes": []
 }

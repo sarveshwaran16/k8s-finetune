@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Delete a StatefulSet — Force deletion of StatefulSet pods",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/delete-stateful-set/#force-deletion-of-statefulset-pods",
-  "text": "If you find that some pods in your StatefulSet are stuck in the 'Terminating'\nor 'Unknown' states for an extended period of time, you may need to manually\nintervene to forcefully delete the pods from the apiserver.\nThis is a potentially dangerous task. Refer to\nForce Delete StatefulSet Pods\nfor details."
+  "text": "If you find that some pods in your StatefulSet are stuck in the 'Terminating'\nor 'Unknown' states for an extended period of time, you may need to manually\nintervene to forcefully delete the pods from the apiserver.\nThis is a potentially dangerous task. Refer to\nForce Delete StatefulSet Pods\nfor details.",
+  "failure_classes": []
 }

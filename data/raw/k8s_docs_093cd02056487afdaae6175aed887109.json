@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Object Management — Examples",
   "source_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/#examples-2",
-  "text": "Process all object configuration files in the\nconfigs\ndirectory, and create or\npatch the live objects. You can first\ndiff\nto see what changes are going to be\nmade, and then apply:\nkubectl diff -f configs/\nkubectl apply -f configs/\nRecursively process directories:\nkubectl diff -R -f configs/\nkubectl apply -R -f configs/"
+  "text": "Process all object configuration files in the\nconfigs\ndirectory, and create or\npatch the live objects. You can first\ndiff\nto see what changes are going to be\nmade, and then apply:\nkubectl diff -f configs/\nkubectl apply -f configs/\nRecursively process directories:\nkubectl diff -R -f configs/\nkubectl apply -R -f configs/",
+  "failure_classes": []
 }

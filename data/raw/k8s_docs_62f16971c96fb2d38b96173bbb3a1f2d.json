@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Authenticating — client-go credential plugins",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#client-go-credential-plugins",
-  "text": "k8s.io/client-go\nand tools using it such as\nkubectl\nand\nkubelet\nare able to execute an\nexternal command to receive user credentials.\nThis feature is intended for client side integrations with authentication protocols not natively\nsupported by\nk8s.io/client-go\n(LDAP, Kerberos, OAuth2, SAML, etc.). The plugin implements the\nprotocol specific logic, then returns opaque credentials to use. Almost all credential plugin\nuse cases require a server side component with support for the\nwebhook token authenticator\nto interpret the credential format produced by the client plugin."
+  "text": "k8s.io/client-go\nand tools using it such as\nkubectl\nand\nkubelet\nare able to execute an\nexternal command to receive user credentials.\nThis feature is intended for client side integrations with authentication protocols not natively\nsupported by\nk8s.io/client-go\n(LDAP, Kerberos, OAuth2, SAML, etc.). The plugin implements the\nprotocol specific logic, then returns opaque credentials to use. Almost all credential plugin\nuse cases require a server side component with support for the\nwebhook token authenticator\nto interpret the credential format produced by the client plugin.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

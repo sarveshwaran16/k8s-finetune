@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Generate Certificates Manually — Certificates API",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/certificates/#certificates-api",
-  "text": "You can use the\ncertificates.k8s.io\nAPI to provision\nx509 certificates to use for authentication as documented\nin the\nManaging TLS in a cluster\ntask page.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "You can use the\ncertificates.k8s.io\nAPI to provision\nx509 certificates to use for authentication as documented\nin the\nManaging TLS in a cluster\ntask page.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

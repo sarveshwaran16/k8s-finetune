@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "What Happens After A Node Restart",
   "source_url": "https://kubernetes.io/docs/reference/node/what-happens-on-restart/",
-  "text": "System components on a node sometimes restart, either because of an upgrade, a\ncrash, or an explicit operator action. This page describes what happens to Pods\nand to the node when the\nkubelet\n,\nthe\ncontainer runtime\n,\nor the node as a whole restarts.\nIn a healthy cluster these restarts are usually safe and do not break running\nworkloads. The sections below describe the effects to be aware of, which become\nmore pronounced on large or heavily loaded nodes. The most disruptive case is a\nnode reboot\n, which encompasses both a container\nruntime restart and a kubelet restart, but with more consequences because every\ncontainer on the node stops first."
+  "text": "System components on a node sometimes restart, either because of an upgrade, a\ncrash, or an explicit operator action. This page describes what happens to Pods\nand to the node when the\nkubelet\n,\nthe\ncontainer runtime\n,\nor the node as a whole restarts.\nIn a healthy cluster these restarts are usually safe and do not break running\nworkloads. The sections below describe the effects to be aware of, which become\nmore pronounced on large or heavily loaded nodes. The most disruptive case is a\nnode reboot\n, which encompasses both a container\nruntime restart and a kubelet restart, but with more consequences because every\ncontainer on the node stops first.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

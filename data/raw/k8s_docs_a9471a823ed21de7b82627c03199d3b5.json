@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm token — kubeadm token generate",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/#cmd-token-generate",
-  "text": "Generate and print a bootstrap token, but do not create it on the server\n\nThis command will print out a randomly-generated bootstrap token that can be used with\nthe \"init\" and \"join\" commands.\nYou don't have to use this command in order to generate a token. You can do so\nyourself as long as it is in the format \"[a-z0-9]{6}.[a-z0-9]{16}\". This\ncommand is provided for convenience to generate tokens in the given format.\nYou can also use \"kubeadm init\" without specifying a token and it will\ngenerate and print one for you.\nkubeadm token generate [flags]"
+  "text": "Generate and print a bootstrap token, but do not create it on the server\n\nThis command will print out a randomly-generated bootstrap token that can be used with\nthe \"init\" and \"join\" commands.\nYou don't have to use this command in order to generate a token. You can do so\nyourself as long as it is in the format \"[a-z0-9]{6}.[a-z0-9]{16}\". This\ncommand is provided for convenience to generate tokens in the given format.\nYou can also use \"kubeadm init\" without specifying a token and it will\ngenerate and print one for you.\nkubeadm token generate [flags]",
+  "failure_classes": []
 }

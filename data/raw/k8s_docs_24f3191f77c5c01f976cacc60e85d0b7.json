@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — TaintNodesByCondition",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#taintnodesbycondition",
-  "text": "Type\n: Mutating.\nThis admission controller\ntaints\nnewly created\nNodes as\nNotReady\nand\nNoSchedule\n. That tainting avoids a race condition that could cause Pods\nto be scheduled on new Nodes before their taints were updated to accurately reflect their reported\nconditions.\n\nType\n: Validating.\nThis admission controller\nimplements the CEL validation for incoming matched requests.\nIt is enabled when both feature gate\nvalidatingadmissionpolicy\nand\nadmissionregistration.k8s.io/v1alpha1\ngroup/version are enabled.\nIf any of the ValidatingAdmissionPolicy fails, the request fails."
+  "text": "Type\n: Mutating.\nThis admission controller\ntaints\nnewly created\nNodes as\nNotReady\nand\nNoSchedule\n. That tainting avoids a race condition that could cause Pods\nto be scheduled on new Nodes before their taints were updated to accurately reflect their reported\nconditions.\n\nType\n: Validating.\nThis admission controller\nimplements the CEL validation for incoming matched requests.\nIt is enabled when both feature gate\nvalidatingadmissionpolicy\nand\nadmissionregistration.k8s.io/v1alpha1\ngroup/version are enabled.\nIf any of the ValidatingAdmissionPolicy fails, the request fails.",
+  "failure_classes": []
 }

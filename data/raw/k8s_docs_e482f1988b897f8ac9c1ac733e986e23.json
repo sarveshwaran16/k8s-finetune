@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Install Drivers and Allocate Devices with DRA — Cleaning up",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/install-use-dra/#cleaning-up",
-  "text": "To clean up the resources that you created in this tutorial, follow these steps:\nkubectl delete namespace dra-tutorial\nkubectl delete deviceclass gpu.example.com\nkubectl delete clusterrole dra-example-driver-role\nkubectl delete clusterrolebinding dra-example-driver-role-binding\nkubectl delete priorityclass dra-driver-high-priority"
+  "text": "To clean up the resources that you created in this tutorial, follow these steps:\nkubectl delete namespace dra-tutorial\nkubectl delete deviceclass gpu.example.com\nkubectl delete clusterrole dra-example-driver-role\nkubectl delete clusterrolebinding dra-example-driver-role-binding\nkubectl delete priorityclass dra-driver-high-priority",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

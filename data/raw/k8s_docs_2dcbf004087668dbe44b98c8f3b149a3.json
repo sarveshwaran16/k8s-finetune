@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "CronJob — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#what-s-next",
-  "text": "Learn about\nPods\nand\nJobs\n, two concepts\nthat CronJobs rely upon.\nRead about the detailed\nformat\nof CronJob\n.spec.schedule\nfields.\nFor instructions on creating and working with CronJobs, and for an example\nof a CronJob manifest,\nsee\nRunning automated tasks with CronJobs\n.\nCronJob\nis part of the Kubernetes REST API.\nRead the\nCronJob\nAPI reference for more details."
+  "text": "Learn about\nPods\nand\nJobs\n, two concepts\nthat CronJobs rely upon.\nRead about the detailed\nformat\nof CronJob\n.spec.schedule\nfields.\nFor instructions on creating and working with CronJobs, and for an example\nof a CronJob manifest,\nsee\nRunning automated tasks with CronJobs\n.\nCronJob\nis part of the Kubernetes REST API.\nRead the\nCronJob\nAPI reference for more details.",
+  "failure_classes": []
 }

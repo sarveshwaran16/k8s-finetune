@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Define a Command and Arguments for a Container — Run a command in a shell",
   "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#run-a-command-in-a-shell",
-  "text": "In some cases, you need your command to run in a shell. For example, your\ncommand might consist of several commands piped together, or it might be a shell\nscript. To run your command in a shell, wrap it like this:\ncommand:\n[\n\"/bin/sh\"\n]\nargs:\n[\n\"-c\"\n,\n\"while true; do echo hello; sleep 10;done\"\n]\n\nLearn more about\nconfiguring pods and containers\n.\nLearn more about\nrunning commands in a container\n.\nSee\nContainer\n."
+  "text": "In some cases, you need your command to run in a shell. For example, your\ncommand might consist of several commands piped together, or it might be a shell\nscript. To run your command in a shell, wrap it like this:\ncommand:\n[\n\"/bin/sh\"\n]\nargs:\n[\n\"-c\"\n,\n\"while true; do echo hello; sleep 10;done\"\n]\n\nLearn more about\nconfiguring pods and containers\n.\nLearn more about\nrunning commands in a container\n.\nSee\nContainer\n.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "prometheus_runbooks",
   "title": "KubeStateMetricsWatchErrors#",
   "source_url": "https://runbooks.prometheus-operator.dev/runbooks/kube-state-metrics/kubestatemetricswatcherrors/",
-  "text": "Kube State Metric sWatch Errors\nKubeStateMetricsWatchErrors\n#\nMeaning\n#\nkube-state-metrics is experiencing errors in watch operations.\nImpact\n#\nUnable to get metrics for certain resources\nDiagnosis\n#\nCheck kube-state-metric container logs.\nCheck service account token.\nCheck networking rules and network policies.\nMitigation\n#\nTODO"
+  "text": "Kube State Metric sWatch Errors\nKubeStateMetricsWatchErrors\n#\nMeaning\n#\nkube-state-metrics is experiencing errors in watch operations.\nImpact\n#\nUnable to get metrics for certain resources\nDiagnosis\n#\nCheck kube-state-metric container logs.\nCheck service account token.\nCheck networking rules and network policies.\nMitigation\n#\nTODO",
+  "failure_classes": []
 }

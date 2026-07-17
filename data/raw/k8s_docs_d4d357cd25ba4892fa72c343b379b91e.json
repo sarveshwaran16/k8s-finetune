@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Kubelet Systemd Watchdog",
   "source_url": "https://kubernetes.io/docs/reference/node/systemd-watchdog/",
-  "text": "On Linux nodes, Kubernetes 1.36 supports integrating with\nsystemd\nto allow the operating system supervisor to recover\na failed kubelet. This integration is not enabled by default.\nIt can be used as an alternative to periodically requesting\nthe kubelet's\n/healthz\nendpoint for health checks. If the kubelet\ndoes not respond to the watchdog within the timeout period, the watchdog\nwill kill the kubelet.\nThe systemd watchdog works by requiring the service to periodically send\na\nkeep-alive\nsignal to the systemd process. If the signal is not received\nwithin a specified timeout period, the service is considered unresponsive\nand is terminated. The service can then be restarted according to the configuration."
+  "text": "On Linux nodes, Kubernetes 1.36 supports integrating with\nsystemd\nto allow the operating system supervisor to recover\na failed kubelet. This integration is not enabled by default.\nIt can be used as an alternative to periodically requesting\nthe kubelet's\n/healthz\nendpoint for health checks. If the kubelet\ndoes not respond to the watchdog within the timeout period, the watchdog\nwill kill the kubelet.\nThe systemd watchdog works by requiring the service to periodically send\na\nkeep-alive\nsignal to the systemd process. If the signal is not received\nwithin a specified timeout period, the service is considered unresponsive\nand is terminated. The service can then be restarted according to the configuration.",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

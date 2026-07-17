@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Node Autoscaling — Related components",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/#related-components",
-  "text": "This section describes components providing functionality related to Node autoscaling.\n\nThe\ndescheduler\nis a component providing Node\nconsolidation functionality based on custom policies, as well as other features related to\noptimizing Nodes and Pods (for example deleting frequently restarting Pods)."
+  "text": "This section describes components providing functionality related to Node autoscaling.\n\nThe\ndescheduler\nis a component providing Node\nconsolidation functionality based on custom policies, as well as other features related to\noptimizing Nodes and Pods (for example deleting frequently restarting Pods).",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Considerations for large clusters — Cloud provider resource quotas",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/cluster-large/#quota-issues",
-  "text": "To avoid running into cloud provider quota issues, when creating a cluster with many nodes,\nconsider:\nRequesting a quota increase for cloud resources such as:\nComputer instances\nCPUs\nStorage volumes\nIn-use IP addresses\nPacket filtering rule sets\nNumber of load balancers\nNetwork subnets\nLog streams\nGating the cluster scaling actions to bring up new nodes in batches, with a pause\nbetween batches, because some cloud providers rate limit the creation of new instances.\nComputer instances\nCPUs\nStorage volumes\nIn-use IP addresses\nPacket filtering rule sets\nNumber of load balancers\nNetwork subnets\nLog streams"
+  "text": "To avoid running into cloud provider quota issues, when creating a cluster with many nodes,\nconsider:\nRequesting a quota increase for cloud resources such as:\nComputer instances\nCPUs\nStorage volumes\nIn-use IP addresses\nPacket filtering rule sets\nNumber of load balancers\nNetwork subnets\nLog streams\nGating the cluster scaling actions to bring up new nodes in batches, with a pause\nbetween batches, because some cloud providers rate limit the creation of new instances.\nComputer instances\nCPUs\nStorage volumes\nIn-use IP addresses\nPacket filtering rule sets\nNumber of load balancers\nNetwork subnets\nLog streams",
+  "failure_classes": [
+    "Ingress"
+  ]
 }

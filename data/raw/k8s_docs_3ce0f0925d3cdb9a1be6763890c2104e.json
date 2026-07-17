@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Validate node setup — Caveats",
   "source_url": "https://kubernetes.io/docs/setup/best-practices/node-conformance/#caveats",
-  "text": "The test leaves some docker images on the node, including the node conformance\ntest image and images of containers used in the functionality\ntest.\nThe test leaves dead containers on the node. These containers are created\nduring the functionality test.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "The test leaves some docker images on the node, including the node conformance\ntest image and images of containers used in the functionality\ntest.\nThe test leaves dead containers on the node. These containers are created\nduring the functionality test.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

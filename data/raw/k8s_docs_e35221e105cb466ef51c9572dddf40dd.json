@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Topology Aware Routing — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/topology-aware-routing/#what-s-next",
-  "text": "Follow the\nConnecting Applications with Services\ntutorial\nLearn about the\ntrafficDistribution\nfield, which is closely related to the\nservice.kubernetes.io/topology-mode\nannotation and provides flexible options for traffic routing within\nKubernetes.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Follow the\nConnecting Applications with Services\ntutorial\nLearn about the\ntrafficDistribution\nfield, which is closely related to the\nservice.kubernetes.io/topology-mode\nannotation and provides flexible options for traffic routing within\nKubernetes.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

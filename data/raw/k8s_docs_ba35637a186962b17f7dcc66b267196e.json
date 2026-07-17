@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "LimitRange",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/limit-range-v1/",
-  "text": "Limit Ranges\nConstraints on resource limits and requests\nLimitRange and admission checks for Pods\nExample resource constraints\nWhat's next\nConstraints on resource limits and requests\nLimitRange and admission checks for Pods\nExample resource constraints\nWhat's next\napiVersion: v1\nimport \"k8s.io/api/core/v1\""
+  "text": "Limit Ranges\nConstraints on resource limits and requests\nLimitRange and admission checks for Pods\nExample resource constraints\nWhat's next\nConstraints on resource limits and requests\nLimitRange and admission checks for Pods\nExample resource constraints\nWhat's next\napiVersion: v1\nimport \"k8s.io/api/core/v1\"",
+  "failure_classes": []
 }

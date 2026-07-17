@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Dynamic Resource Allocation",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/",
-  "text": "This page describes\ndynamic resource allocation (DRA)\nin Kubernetes.\n\nDRA is a Kubernetes feature that lets you request and share resources among Pods.\nThese resources are often attached\ndevices\nlike hardware\naccelerators.\nDRA is a Kubernetes feature that lets you request and share resources among Pods.\nThese resources are often attached\ndevices\nlike hardware\naccelerators.\nWith DRA, device drivers and cluster admins define device\nclasses\nthat are\navailable to\nclaim\nin workloads. Kubernetes allocates matching devices to\nspecific claims and places the corresponding Pods on nodes that can access the\nallocated devices.\nAllocating resources with DRA is a similar experience to\ndynamic volume provisioning\n,\nin which you use PersistentVolumeClaims to claim storage capacity from storage classes\nand request the claimed capacity in your Pods."
+  "text": "This page describes\ndynamic resource allocation (DRA)\nin Kubernetes.\n\nDRA is a Kubernetes feature that lets you request and share resources among Pods.\nThese resources are often attached\ndevices\nlike hardware\naccelerators.\nDRA is a Kubernetes feature that lets you request and share resources among Pods.\nThese resources are often attached\ndevices\nlike hardware\naccelerators.\nWith DRA, device drivers and cluster admins define device\nclasses\nthat are\navailable to\nclaim\nin workloads. Kubernetes allocates matching devices to\nspecific claims and places the corresponding Pods on nodes that can access the\nallocated devices.\nAllocating resources with DRA is a similar experience to\ndynamic volume provisioning\n,\nin which you use PersistentVolumeClaims to claim storage capacity from storage classes\nand request the claimed capacity in your Pods.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

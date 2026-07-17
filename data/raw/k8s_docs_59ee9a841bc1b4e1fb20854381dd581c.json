@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "kubectl for Docker Users — docker attach",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/#docker-attach",
-  "text": "To attach a process that is already running in a container, see\nkubectl attach\n.\ndocker:\ndocker ps\nCONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                NAMES\n55c103fa1296        nginx               \"nginx -g 'daemon of…\"   5 minutes ago       Up 5 minutes        0.0.0.0:80->80/tcp   nginx-app\ndocker attach 55c103fa1296\n...\nkubectl:\nkubectl get pods\nNAME              READY     STATUS    RESTARTS   AGE\nnginx-app-5jyvm   1/1       Running   0          10m\nkubectl attach -it nginx-app-5jyvm\n...\nTo detach from the container, you can type the escape sequence Ctrl+P followed by Ctrl+Q."
+  "text": "To attach a process that is already running in a container, see\nkubectl attach\n.\ndocker:\ndocker ps\nCONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                NAMES\n55c103fa1296        nginx               \"nginx -g 'daemon of…\"   5 minutes ago       Up 5 minutes        0.0.0.0:80->80/tcp   nginx-app\ndocker attach 55c103fa1296\n...\nkubectl:\nkubectl get pods\nNAME              READY     STATUS    RESTARTS   AGE\nnginx-app-5jyvm   1/1       Running   0          10m\nkubectl attach -it nginx-app-5jyvm\n...\nTo detach from the container, you can type the escape sequence Ctrl+P followed by Ctrl+Q.",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

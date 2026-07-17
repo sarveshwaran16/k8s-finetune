@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Define a Command and Arguments for a Container — Use environment variables to define arguments",
   "source_url": "https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#use-environment-variables-to-define-arguments",
-  "text": "In the preceding example, you defined the arguments directly by\nproviding strings. As an alternative to providing strings directly,\nyou can define arguments by using environment variables:\nenv\n:\n-\nname\n:\nMESSAGE\nvalue\n:\n\"hello world\"\ncommand\n:\n[\n\"/bin/echo\"\n]\nargs\n:\n[\n\"$(MESSAGE)\"\n]\nThis means you can define an argument for a Pod using any of\nthe techniques available for defining environment variables, including\nConfigMaps\nand\nSecrets\n."
+  "text": "In the preceding example, you defined the arguments directly by\nproviding strings. As an alternative to providing strings directly,\nyou can define arguments by using environment variables:\nenv\n:\n-\nname\n:\nMESSAGE\nvalue\n:\n\"hello world\"\ncommand\n:\n[\n\"/bin/echo\"\n]\nargs\n:\n[\n\"$(MESSAGE)\"\n]\nThis means you can define an argument for a Pod using any of\nthe techniques available for defining environment variables, including\nConfigMaps\nand\nSecrets\n.",
+  "failure_classes": []
 }

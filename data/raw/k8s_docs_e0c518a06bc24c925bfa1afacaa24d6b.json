@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Control Topology Management Policies on a node — Topology manager policies",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/#topology-manager-policies",
-  "text": "The Topology Manager supports four allocation policies. You can set a policy via a kubelet flag,\n--topology-manager-policy\n. There are four supported policies:\nnone\n(default)\nbest-effort\nrestricted\nsingle-numa-node\n\nThis is the default policy and does not perform any topology alignment.\n\nFor each container in a Pod, the kubelet, with\nbest-effort\ntopology management policy, calls\neach Hint Provider to discover their resource availability. Using this information, the Topology\nManager stores the preferred NUMA Node affinity for that container. If the affinity is not\npreferred, the Topology Manager will store this and admit the pod to the node anyway.\nThe\nHint Providers\ncan then use this information when making the\nresource allocation decision."
+  "text": "The Topology Manager supports four allocation policies. You can set a policy via a kubelet flag,\n--topology-manager-policy\n. There are four supported policies:\nnone\n(default)\nbest-effort\nrestricted\nsingle-numa-node\n\nThis is the default policy and does not perform any topology alignment.\n\nFor each container in a Pod, the kubelet, with\nbest-effort\ntopology management policy, calls\neach Hint Provider to discover their resource availability. Using this information, the Topology\nManager stores the preferred NUMA Node affinity for that container. If the affinity is not\npreferred, the Topology Manager will store this and admit the pod to the node anyway.\nThe\nHint Providers\ncan then use this information when making the\nresource allocation decision.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

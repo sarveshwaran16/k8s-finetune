@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl apply — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_apply/#synopsis",
-  "text": "Apply a configuration to a resource by file name or stdin. The resource name must be specified. This resource will be created if it doesn't exist yet. To use 'apply', always create the resource initially with either 'apply' or 'create --save-config'.\nJSON and YAML formats are accepted.\nAlpha Disclaimer: the --prune functionality is not yet complete. Do not use unless you are aware of what the current state is. See\nhttps://issues.k8s.io/34274\n.\nkubectl apply (-f FILENAME | -k DIRECTORY)"
+  "text": "Apply a configuration to a resource by file name or stdin. The resource name must be specified. This resource will be created if it doesn't exist yet. To use 'apply', always create the resource initially with either 'apply' or 'create --save-config'.\nJSON and YAML formats are accepted.\nAlpha Disclaimer: the --prune functionality is not yet complete. Do not use unless you are aware of what the current state is. See\nhttps://issues.k8s.io/34274\n.\nkubectl apply (-f FILENAME | -k DIRECTORY)",
+  "failure_classes": []
 }

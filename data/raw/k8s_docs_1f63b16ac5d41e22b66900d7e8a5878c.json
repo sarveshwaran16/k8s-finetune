@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Issue a Certificate for a Kubernetes API Client Using A CertificateSigningRequest — Approve the CertificateSigningRequest",
   "source_url": "https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/#approve-certificate-signing-request",
-  "text": "Use kubectl to find the CSR you made, and manually approve it.\nGet the list of CSRs:\nkubectl get csr\nApprove the CSR:\nkubectl certificate approve myuser\n\nRetrieve the certificate from the CSR, to check it looks OK.\nkubectl get csr/myuser -o yaml\nThe certificate value is in Base64-encoded format under\n.status.certificate\n.\nExport the issued certificate from the CertificateSigningRequest.\nkubectl get csr myuser -o\njsonpath\n=\n'{.status.certificate}'\n|\nbase64 -d > myuser.crt"
+  "text": "Use kubectl to find the CSR you made, and manually approve it.\nGet the list of CSRs:\nkubectl get csr\nApprove the CSR:\nkubectl certificate approve myuser\n\nRetrieve the certificate from the CSR, to check it looks OK.\nkubectl get csr/myuser -o yaml\nThe certificate value is in Base64-encoded format under\n.status.certificate\n.\nExport the issued certificate from the CertificateSigningRequest.\nkubectl get csr myuser -o\njsonpath\n=\n'{.status.certificate}'\n|\nbase64 -d > myuser.crt",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Resource Management for Pods and Containers — Resource types",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-types",
-  "text": "A\nresource type\nhas a base unit and can be requested, limited, or both.\nKubernetes has the following built-in resource types:\nResource type\nDescription\nBase unit\ncpu\nCompute processing\ncpu (core)\nmemory\nRAM\nBytes\nephemeral-storage\nLocal ephemeral storage\nBytes\nhugepages-<size>\nHuge pages\n(Linux only)\nBytes\nClusters can also provide\nextended resources\n(resources with a custom name, typically exposed by device plugins)."
+  "text": "A\nresource type\nhas a base unit and can be requested, limited, or both.\nKubernetes has the following built-in resource types:\nResource type\nDescription\nBase unit\ncpu\nCompute processing\ncpu (core)\nmemory\nRAM\nBytes\nephemeral-storage\nLocal ephemeral storage\nBytes\nhugepages-<size>\nHuge pages\n(Linux only)\nBytes\nClusters can also provide\nextended resources\n(resources with a custom name, typically exposed by device plugins).",
+  "failure_classes": []
 }

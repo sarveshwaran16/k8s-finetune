@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Hardening Guide - Scheduler Configuration — Scheduler networking command line options",
   "source_url": "https://kubernetes.io/docs/concepts/security/hardening-guide/scheduler/#scheduler-networking-command-line-options",
-  "text": "bind-address\n: In most cases, the kube-scheduler does not need to be externally accessible.\nSetting the bind address to\nlocalhost\nis a secure practice.\npermit-address-sharing\n: Set this to\nfalse\nto disable connection sharing through\nSO_REUSEADDR\n.\nSO_REUSEADDR\ncan lead to reuse of terminated connections that are in\nTIME_WAIT\nstate.\npermit-port-sharing\n: Default\nfalse\n. Use the default unless you are confident you understand the security implications."
+  "text": "bind-address\n: In most cases, the kube-scheduler does not need to be externally accessible.\nSetting the bind address to\nlocalhost\nis a secure practice.\npermit-address-sharing\n: Set this to\nfalse\nto disable connection sharing through\nSO_REUSEADDR\n.\nSO_REUSEADDR\ncan lead to reuse of terminated connections that are in\nTIME_WAIT\nstate.\npermit-port-sharing\n: Default\nfalse\n. Use the default unless you are confident you understand the security implications.",
+  "failure_classes": []
 }

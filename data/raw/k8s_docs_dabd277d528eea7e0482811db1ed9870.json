@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Performing a Rolling Update — Rolling updates overview",
   "source_url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/#rolling-updates-overview",
-  "text": "During a rolling update, this behavior keeps the application available by routing traffic only to Pods that are serving requests.\nRolling updates allow the following actions:\nPromote an application from one environment to another (via container image updates)\nRollback to previous versions\nContinuous Integration and Continuous Delivery of applications with zero downtime\nIn the following interactive tutorial, we'll update our application to a new version,\nand also perform a rollback."
+  "text": "During a rolling update, this behavior keeps the application available by routing traffic only to Pods that are serving requests.\nRolling updates allow the following actions:\nPromote an application from one environment to another (via container image updates)\nRollback to previous versions\nContinuous Integration and Continuous Delivery of applications with zero downtime\nIn the following interactive tutorial, we'll update our application to a new version,\nand also perform a rollback.",
+  "failure_classes": []
 }

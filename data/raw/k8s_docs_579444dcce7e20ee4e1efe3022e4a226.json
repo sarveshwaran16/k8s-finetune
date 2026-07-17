@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — serviceaccount",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-serviceaccount-em--1",
-  "text": "Set deployment nginx-deployment's service account to serviceaccount1\nkubectl\nset\nserviceaccount\ndeployment nginx-deployment serviceaccount1\nPrint the result (in YAML format) of updated nginx deployment with the service account from local file, without hitting the API server\nkubectl\nset\nsa -f nginx-deployment.yaml serviceaccount1 --local\n--dry-run\n=client -o yaml\nUpdate the service account of pod template resources.\nPossible resources (case insensitive) can be:\nreplicationcontroller (rc), deployment (deploy), daemonset (ds), job, replicaset (rs), statefulset"
+  "text": "Set deployment nginx-deployment's service account to serviceaccount1\nkubectl\nset\nserviceaccount\ndeployment nginx-deployment serviceaccount1\nPrint the result (in YAML format) of updated nginx deployment with the service account from local file, without hitting the API server\nkubectl\nset\nsa -f nginx-deployment.yaml serviceaccount1 --local\n--dry-run\n=client -o yaml\nUpdate the service account of pod template resources.\nPossible resources (case insensitive) can be:\nreplicationcontroller (rc), deployment (deploy), daemonset (ds), job, replicaset (rs), statefulset",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

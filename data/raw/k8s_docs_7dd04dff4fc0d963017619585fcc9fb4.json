@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Concepts — Single resource API",
   "source_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/#single-resource-api",
-  "text": "The Kubernetes API verbs\nget\n,\ncreate\n,\nupdate\n,\npatch\n,\ndelete\nand\nproxy\nsupport single resources only.\nThese verbs with single resource support have no support for submitting multiple\nresources together in an ordered or unordered list or transaction.\nWhen clients (including kubectl) act on a set of resources, the client makes a series\nof single-resource API requests, then aggregates the responses if needed.\nBy contrast, the Kubernetes API verbs\nlist\nand\nwatch\nallow getting multiple\nresources, and\ndeletecollection\nallows deleting multiple resources."
+  "text": "The Kubernetes API verbs\nget\n,\ncreate\n,\nupdate\n,\npatch\n,\ndelete\nand\nproxy\nsupport single resources only.\nThese verbs with single resource support have no support for submitting multiple\nresources together in an ordered or unordered list or transaction.\nWhen clients (including kubectl) act on a set of resources, the client makes a series\nof single-resource API requests, then aggregates the responses if needed.\nBy contrast, the Kubernetes API verbs\nlist\nand\nwatch\nallow getting multiple\nresources, and\ndeletecollection\nallows deleting multiple resources.",
+  "failure_classes": []
 }

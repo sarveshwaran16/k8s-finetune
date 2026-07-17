@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — Volume populators and data sources",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#volume-populators-and-data-sources",
-  "text": "Volume cloning\nand\nsnapshot restore\npre-populate\na new volume from a built-in\ndata source\n.\nVolume populators\nextend this mechanism so that\na PersistentVolumeClaim can be pre-populated from other kinds of source (a custom resource),\nreferenced through its\ndataSourceRef\nfield:\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\npopulated-pvc\nspec\n:\ndataSourceRef\n:\nname\n:\nexample-name\nkind\n:\nExampleDataSource\napiGroup\n:\nexample.storage.k8s.io\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n10Gi\nFor details, including cross-namespace data sources, see\nVolume Populators and Data Sources\n."
+  "text": "Volume cloning\nand\nsnapshot restore\npre-populate\na new volume from a built-in\ndata source\n.\nVolume populators\nextend this mechanism so that\na PersistentVolumeClaim can be pre-populated from other kinds of source (a custom resource),\nreferenced through its\ndataSourceRef\nfield:\napiVersion\n:\nv1\nkind\n:\nPersistentVolumeClaim\nmetadata\n:\nname\n:\npopulated-pvc\nspec\n:\ndataSourceRef\n:\nname\n:\nexample-name\nkind\n:\nExampleDataSource\napiGroup\n:\nexample.storage.k8s.io\naccessModes\n:\n-\nReadWriteOnce\nresources\n:\nrequests\n:\nstorage\n:\n10Gi\nFor details, including cross-namespace data sources, see\nVolume Populators and Data Sources\n.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

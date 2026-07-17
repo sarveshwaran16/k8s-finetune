@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod — HTTPHeader",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#HTTPHeader",
-  "text": "HTTPHeader describes a custom header to be used in HTTP probes\nField\nDescription\nname\n*\nstring\nThe header field name. This will be canonicalized upon output, so case-variant names will be understood as the same header.\nvalue\n*\nstring\nThe header field value\n\nHostAlias holds the mapping between IP and hostnames that will be injected as an entry in the pod's hosts file.\nField\nDescription\nhostnames\nstring array\nHostnames for the above IP address.\nip\n*\nstring\nIP address of the host file entry."
+  "text": "HTTPHeader describes a custom header to be used in HTTP probes\nField\nDescription\nname\n*\nstring\nThe header field name. This will be canonicalized upon output, so case-variant names will be understood as the same header.\nvalue\n*\nstring\nThe header field value\n\nHostAlias holds the mapping between IP and hostnames that will be injected as an entry in the pod's hosts file.\nField\nDescription\nhostnames\nstring array\nHostnames for the above IP address.\nip\n*\nstring\nIP address of the host file entry.",
+  "failure_classes": []
 }

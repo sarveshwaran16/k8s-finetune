@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Service — Traffic distribution control",
   "source_url": "https://kubernetes.io/docs/concepts/services-networking/service/#traffic-distribution",
-  "text": "The\n.spec.trafficDistribution\nfield provides another way to influence traffic\nrouting within a Kubernetes Service. While traffic policies focus on strict\nsemantic guarantees, traffic distribution allows you to express\npreferences\n(such as routing to topologically closer endpoints). This can help optimize for\nperformance, cost, or reliability. In Kubernetes 1.36, the\nfollowing values are supported:\nIf the field is not set, the implementation will apply its default routing strategy.\nSee\nTraffic\nDistribution\nfor\nmore details"
+  "text": "The\n.spec.trafficDistribution\nfield provides another way to influence traffic\nrouting within a Kubernetes Service. While traffic policies focus on strict\nsemantic guarantees, traffic distribution allows you to express\npreferences\n(such as routing to topologically closer endpoints). This can help optimize for\nperformance, cost, or reliability. In Kubernetes 1.36, the\nfollowing values are supported:\nIf the field is not set, the implementation will apply its default routing strategy.\nSee\nTraffic\nDistribution\nfor\nmore details",
+  "failure_classes": []
 }

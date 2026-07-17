@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Reconfiguring a kubeadm cluster — Applying kubelet configuration changes",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-reconfigure/#applying-kubelet-configuration-changes",
-  "text": "During cluster creation and upgrade, kubeadm writes its\nKubeletConfiguration\nin a ConfigMap called\nkubelet-config\nin the\nkube-system\nnamespace.\nYou can edit the ConfigMap with this command:\nkubectl edit cm -n kube-system kubelet-config\nThe configuration is located under the\ndata.kubelet\nkey.\nTo reflect the change on kubeadm nodes you must do the following:\nLog in to a kubeadm node\nRun\nkubeadm upgrade node phase kubelet-config\nto download the latest\nkubelet-config\nConfigMap contents into the local file\n/var/lib/kubelet/config.yaml\nEdit the file\n/var/lib/kubelet/kubeadm-flags.env\nto apply additional configuration with\nflags\nRestart the kubelet service with\nsystemctl restart kubelet"
+  "text": "During cluster creation and upgrade, kubeadm writes its\nKubeletConfiguration\nin a ConfigMap called\nkubelet-config\nin the\nkube-system\nnamespace.\nYou can edit the ConfigMap with this command:\nkubectl edit cm -n kube-system kubelet-config\nThe configuration is located under the\ndata.kubelet\nkey.\nTo reflect the change on kubeadm nodes you must do the following:\nLog in to a kubeadm node\nRun\nkubeadm upgrade node phase kubelet-config\nto download the latest\nkubelet-config\nConfigMap contents into the local file\n/var/lib/kubelet/config.yaml\nEdit the file\n/var/lib/kubelet/kubeadm-flags.env\nto apply additional configuration with\nflags\nRestart the kubelet service with\nsystemctl restart kubelet",
+  "failure_classes": [
+    "CrashLoopBackOff",
+    "NodeNotReady"
+  ]
 }

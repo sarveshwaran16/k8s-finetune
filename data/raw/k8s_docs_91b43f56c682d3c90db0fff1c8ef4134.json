@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Weave Net for NetworkPolicy",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/network-policy-provider/weave-network-policy/",
-  "text": "This page shows how to use Weave Net for NetworkPolicy.\n\nYou need to have a Kubernetes cluster. Follow the\nkubeadm getting started guide\nto bootstrap one.\n\nFollow the\nIntegrating Kubernetes via the Addon\nguide.\nThe Weave Net addon for Kubernetes comes with a\nNetwork Policy Controller\nthat automatically monitors Kubernetes for any NetworkPolicy annotations on all\nnamespaces and configures\niptables\nrules to allow or block traffic as directed by the policies."
+  "text": "This page shows how to use Weave Net for NetworkPolicy.\n\nYou need to have a Kubernetes cluster. Follow the\nkubeadm getting started guide\nto bootstrap one.\n\nFollow the\nIntegrating Kubernetes via the Addon\nguide.\nThe Weave Net addon for Kubernetes comes with a\nNetwork Policy Controller\nthat automatically monitors Kubernetes for any NetworkPolicy annotations on all\nnamespaces and configures\niptables\nrules to allow or block traffic as directed by the policies.",
+  "failure_classes": []
 }

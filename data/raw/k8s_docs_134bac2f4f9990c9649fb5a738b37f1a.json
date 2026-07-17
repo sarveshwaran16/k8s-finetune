@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Share a Cluster with Namespaces — Deleting a namespace",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/namespaces/#deleting-a-namespace",
-  "text": "Delete a namespace with\nkubectl delete namespaces <insert-some-namespace-name>\nThis delete is asynchronous, so for a time you will see the namespace in the\nTerminating\nstate.\n\nBy default, a Kubernetes cluster will instantiate a default namespace when provisioning the\ncluster to hold the default set of Pods, Services, and Deployments used by the cluster.\nAssuming you have a fresh cluster, you can introspect the available namespaces by doing the following:\nkubectl get namespaces\nNAME      STATUS    AGE\ndefault   Active    13m"
+  "text": "Delete a namespace with\nkubectl delete namespaces <insert-some-namespace-name>\nThis delete is asynchronous, so for a time you will see the namespace in the\nTerminating\nstate.\n\nBy default, a Kubernetes cluster will instantiate a default namespace when provisioning the\ncluster to hold the default set of Pods, Services, and Deployments used by the cluster.\nAssuming you have a fresh cluster, you can introspect the available namespaces by doing the following:\nkubectl get namespaces\nNAME      STATUS    AGE\ndefault   Active    13m",
+  "failure_classes": []
 }

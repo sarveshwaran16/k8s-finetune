@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Logging Architecture — Cluster-level logging architectures",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/logging/#cluster-level-logging-architectures",
-  "text": "While Kubernetes does not provide a native solution for cluster-level logging, there are\nseveral common approaches you can consider. Here are some options:\nUse a node-level logging agent that runs on every node.\nInclude a dedicated sidecar container for logging in an application pod.\nPush logs directly to a backend from within an application."
+  "text": "While Kubernetes does not provide a native solution for cluster-level logging, there are\nseveral common approaches you can consider. Here are some options:\nUse a node-level logging agent that runs on every node.\nInclude a dedicated sidecar container for logging in an application pod.\nPush logs directly to a backend from within an application.",
+  "failure_classes": []
 }

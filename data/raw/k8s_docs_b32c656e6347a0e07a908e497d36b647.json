@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm Configuration (v1beta4) — APIEndpoint",
   "source_url": "https://kubernetes.io/docs/reference/config-api/kubeadm-config.v1beta4/#kubeadm-k8s-io-v1beta4-APIEndpoint",
-  "text": "Appears in:\nInitConfiguration\nJoinControlPlane\nInitConfiguration\nJoinControlPlane\nAPIEndpoint struct contains elements of API server instance deployed on a node.\nField\nDescription\nadvertiseAddress\nstring\ndvertiseAddress\nsets the IP address for the API server to advertise.\nbindPort\nint32\nbindPort\nsets the secure port for the API Server to bind to.\nDefaults to 6443.\ndvertiseAddress\nsets the IP address for the API server to advertise.\nbindPort\nsets the secure port for the API Server to bind to.\nDefaults to 6443."
+  "text": "Appears in:\nInitConfiguration\nJoinControlPlane\nInitConfiguration\nJoinControlPlane\nAPIEndpoint struct contains elements of API server instance deployed on a node.\nField\nDescription\nadvertiseAddress\nstring\ndvertiseAddress\nsets the IP address for the API server to advertise.\nbindPort\nint32\nbindPort\nsets the secure port for the API Server to bind to.\nDefaults to 6443.\ndvertiseAddress\nsets the IP address for the API server to advertise.\nbindPort\nsets the secure port for the API Server to bind to.\nDefaults to 6443.",
+  "failure_classes": []
 }

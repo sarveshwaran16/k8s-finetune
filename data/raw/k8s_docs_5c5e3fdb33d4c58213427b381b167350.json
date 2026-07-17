@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Persistent Volumes — Claims As Volumes",
   "source_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/#claims-as-volumes",
-  "text": "Pods access storage by using the claim as a volume. Claims must exist in the\nsame namespace as the Pod using the claim. The cluster finds the claim in the\nPod's namespace and uses it to get the PersistentVolume backing the claim.\nThe volume is then mounted to the host and into the Pod.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmypod\nspec\n:\ncontainers\n:\n-\nname\n:\nmyfrontend\nimage\n:\nnginx\nvolumeMounts\n:\n-\nmountPath\n:\n\"/var/www/html\"\nname\n:\nmypd\nvolumes\n:\n-\nname\n:\nmypd\npersistentVolumeClaim\n:\nclaimName\n:\nmyclaim"
+  "text": "Pods access storage by using the claim as a volume. Claims must exist in the\nsame namespace as the Pod using the claim. The cluster finds the claim in the\nPod's namespace and uses it to get the PersistentVolume backing the claim.\nThe volume is then mounted to the host and into the Pod.\napiVersion\n:\nv1\nkind\n:\nPod\nmetadata\n:\nname\n:\nmypod\nspec\n:\ncontainers\n:\n-\nname\n:\nmyfrontend\nimage\n:\nnginx\nvolumeMounts\n:\n-\nmountPath\n:\n\"/var/www/html\"\nname\n:\nmypd\nvolumes\n:\n-\nname\n:\nmypd\npersistentVolumeClaim\n:\nclaimName\n:\nmyclaim",
+  "failure_classes": [
+    "PVC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": " — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/generated/kubeadm_join/kubeadm_join_phase_control-plane-join/#synopsis",
-  "text": "Join a machine as a control plane instance\nkubeadm join phase control-plane-join [flags]\n\n# Joins a machine as a control plane instance\n  kubeadm join phase control-plane-join all\n\n-h, --help\nhelp for control-plane-join\nhelp for control-plane-join\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path."
+  "text": "Join a machine as a control plane instance\nkubeadm join phase control-plane-join [flags]\n\n# Joins a machine as a control plane instance\n  kubeadm join phase control-plane-join all\n\n-h, --help\nhelp for control-plane-join\nhelp for control-plane-join\n\n--rootfs string\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.\nThe path to the 'real' host root filesystem. This will cause kubeadm to chroot into the provided path.",
+  "failure_classes": []
 }

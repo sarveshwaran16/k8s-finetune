@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Switching from Polling to CRI Event-based Updates to Container Status — Why switch to Evented PLEG?",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/switch-to-evented-pleg/#why-switch-to-evented-pleg",
-  "text": "The\nGeneric PLEG\nincurs non-negligible overhead due to frequent polling of container statuses.\nThis overhead is exacerbated by Kubelet's parallelized polling of container states, thus limiting\nits scalability and causing poor performance and reliability problems.\nThe goal of\nEvented PLEG\nis to reduce unnecessary work during inactivity\nby replacing periodic polling."
+  "text": "The\nGeneric PLEG\nincurs non-negligible overhead due to frequent polling of container statuses.\nThis overhead is exacerbated by Kubelet's parallelized polling of container states, thus limiting\nits scalability and causing poor performance and reliability problems.\nThe goal of\nEvented PLEG\nis to reduce unnecessary work during inactivity\nby replacing periodic polling.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

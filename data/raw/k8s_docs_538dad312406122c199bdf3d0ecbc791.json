@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ReplicaSet — When to use a ReplicaSet",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#when-to-use-a-replicaset",
-  "text": "A ReplicaSet ensures that a specified number of pod replicas are running at any given\ntime. However, a Deployment is a higher-level concept that manages ReplicaSets and\nprovides declarative updates to Pods along with a lot of other useful features.\nTherefore, we recommend using Deployments instead of directly using ReplicaSets, unless\nyou require custom update orchestration or don't require updates at all.\nThis actually means that you may never need to manipulate ReplicaSet objects:\nuse a Deployment instead, and define your application in the spec section."
+  "text": "A ReplicaSet ensures that a specified number of pod replicas are running at any given\ntime. However, a Deployment is a higher-level concept that manages ReplicaSets and\nprovides declarative updates to Pods along with a lot of other useful features.\nTherefore, we recommend using Deployments instead of directly using ReplicaSets, unless\nyou require custom update orchestration or don't require updates at all.\nThis actually means that you may never need to manipulate ReplicaSet objects:\nuse a Deployment instead, and define your application in the spec section.",
+  "failure_classes": []
 }

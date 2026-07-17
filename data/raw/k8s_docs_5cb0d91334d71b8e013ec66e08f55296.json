@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Container Lifecycle Hooks",
   "source_url": "https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/",
-  "text": "This page describes how kubelet managed Containers can use the Container lifecycle hook framework\nto run code triggered by events during their management lifecycle.\n\nAnalogous to many programming language frameworks that have component lifecycle hooks, such as Angular,\nKubernetes provides Containers with lifecycle hooks.\nThe hooks enable Containers to be aware of events in their management lifecycle\nand run code implemented in a handler when the corresponding lifecycle hook is executed."
+  "text": "This page describes how kubelet managed Containers can use the Container lifecycle hook framework\nto run code triggered by events during their management lifecycle.\n\nAnalogous to many programming language frameworks that have component lifecycle hooks, such as Angular,\nKubernetes provides Containers with lifecycle hooks.\nThe hooks enable Containers to be aware of events in their management lifecycle\nand run code implemented in a handler when the corresponding lifecycle hook is executed.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

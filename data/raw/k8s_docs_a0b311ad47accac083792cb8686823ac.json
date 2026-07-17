@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Declarative Management of Kubernetes Objects Using Configuration Files — Merging changes to map fields",
   "source_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/#merging-changes-to-map-fields",
-  "text": "Fields that represent maps are merged by comparing each of the subfields or elements of the map:\nKey in object configuration file\nKey in live object configuration\nField in last-applied-configuration\nAction\nYes\nYes\n-\nCompare sub fields values.\nYes\nNo\n-\nSet live to local configuration.\nNo\n-\nYes\nDelete from live configuration.\nNo\n-\nNo\nDo nothing. Keep live value."
+  "text": "Fields that represent maps are merged by comparing each of the subfields or elements of the map:\nKey in object configuration file\nKey in live object configuration\nField in last-applied-configuration\nAction\nYes\nYes\n-\nCompare sub fields values.\nYes\nNo\n-\nSet live to local configuration.\nNo\n-\nYes\nDelete from live configuration.\nNo\n-\nNo\nDo nothing. Keep live value.",
+  "failure_classes": []
 }

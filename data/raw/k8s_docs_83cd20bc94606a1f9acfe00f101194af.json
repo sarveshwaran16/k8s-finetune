@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Resource Quotas",
   "source_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
-  "text": "When several users or teams share a cluster with a fixed number of nodes,\nthere is a concern that one team could use more than its fair share of resources.\nResource quotas\nare a tool for administrators to address this concern.\nA resource quota, defined by a ResourceQuota object, provides constraints that limit\naggregate resource consumption per\nnamespace\n. A ResourceQuota can also\nlimit the\nquantity of objects that can be created in a namespace\nby API kind, as well as the total\namount of\ninfrastructure resources\nthat may be consumed by\nAPI objects found in that namespace."
+  "text": "When several users or teams share a cluster with a fixed number of nodes,\nthere is a concern that one team could use more than its fair share of resources.\nResource quotas\nare a tool for administrators to address this concern.\nA resource quota, defined by a ResourceQuota object, provides constraints that limit\naggregate resource consumption per\nnamespace\n. A ResourceQuota can also\nlimit the\nquantity of objects that can be created in a namespace\nby API kind, as well as the total\namount of\ninfrastructure resources\nthat may be consumed by\nAPI objects found in that namespace.",
+  "failure_classes": []
 }

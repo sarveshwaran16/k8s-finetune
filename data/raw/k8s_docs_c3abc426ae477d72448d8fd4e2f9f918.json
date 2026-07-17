@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Determine the Reason for Pod Failure",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/determine-reason-pod-failure/",
-  "text": "This page shows how to write and read a Container termination message.\nTermination messages provide a way for containers to write\ninformation about fatal events to a location where it can\nbe easily retrieved and surfaced by tools like dashboards\nand monitoring software. In most cases, information that you\nput in a termination message should also be written to\nthe general\nKubernetes logs\n."
+  "text": "This page shows how to write and read a Container termination message.\nTermination messages provide a way for containers to write\ninformation about fatal events to a location where it can\nbe easily retrieved and surfaced by tools like dashboards\nand monitoring software. In most cases, information that you\nput in a termination message should also be written to\nthe general\nKubernetes logs\n.",
+  "failure_classes": []
 }

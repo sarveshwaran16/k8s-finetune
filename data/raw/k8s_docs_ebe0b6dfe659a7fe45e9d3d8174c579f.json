@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Accessing the Kubernetes API from a Pod — Accessing the API from within a Pod",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/access-api-from-pod/#accessing-the-api-from-within-a-pod",
-  "text": "When accessing the API from within a Pod, locating and authenticating\nto the API server are slightly different to the external client case.\nThe easiest way to use the Kubernetes API from a Pod is to use\none of the official\nclient libraries\n. These\nlibraries can automatically discover the API server and authenticate."
+  "text": "When accessing the API from within a Pod, locating and authenticating\nto the API server are slightly different to the external client case.\nThe easiest way to use the Kubernetes API from a Pod is to use\none of the official\nclient libraries\n. These\nlibraries can automatically discover the API server and authenticate.",
+  "failure_classes": []
 }

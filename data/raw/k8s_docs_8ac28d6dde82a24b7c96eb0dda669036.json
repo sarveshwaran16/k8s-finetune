@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure Quotas for API Objects — Notes",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/quota-api-object/#notes",
-  "text": "These are the strings used to identify API resources that can be constrained\nby quotas:\nString\nAPI Object\n\"pods\"\nPod\n\"services\"\nService\n\"replicationcontrollers\"\nReplicationController\n\"resourcequotas\"\nResourceQuota\n\"secrets\"\nSecret\n\"configmaps\"\nConfigMap\n\"persistentvolumeclaims\"\nPersistentVolumeClaim\n\"services.nodeports\"\nService of type NodePort\n\"services.loadbalancers\"\nService of type LoadBalancer"
+  "text": "These are the strings used to identify API resources that can be constrained\nby quotas:\nString\nAPI Object\n\"pods\"\nPod\n\"services\"\nService\n\"replicationcontrollers\"\nReplicationController\n\"resourcequotas\"\nResourceQuota\n\"secrets\"\nSecret\n\"configmaps\"\nConfigMap\n\"persistentvolumeclaims\"\nPersistentVolumeClaim\n\"services.nodeports\"\nService of type NodePort\n\"services.loadbalancers\"\nService of type LoadBalancer",
+  "failure_classes": [
+    "PVC"
+  ]
 }

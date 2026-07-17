@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Jobs — Clean up finished jobs automatically",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/#clean-up-finished-jobs-automatically",
-  "text": "Finished Jobs are usually no longer needed in the system. Keeping them around in\nthe system will put pressure on the API server. If the Jobs are managed directly\nby a higher level controller, such as\nCronJobs\n, the Jobs can be\ncleaned up by CronJobs based on the specified capacity-based cleanup policy."
+  "text": "Finished Jobs are usually no longer needed in the system. Keeping them around in\nthe system will put pressure on the API server. If the Jobs are managed directly\nby a higher level controller, such as\nCronJobs\n, the Jobs can be\ncleaned up by CronJobs based on the specified capacity-based cleanup policy.",
+  "failure_classes": []
 }

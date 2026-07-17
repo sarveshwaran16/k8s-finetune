@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Kubernetes API Server Bypass Risks — Mitigations",
   "source_url": "https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/#static-pods-mitigations",
-  "text": "Only\nenable the kubelet static Pod manifest functionality\nif required by the node.\nIf a node uses the static Pod functionality, restrict filesystem access to the static Pod manifest directory\nor URL to users who need the access.\nRestrict access to kubelet configuration parameters and files to prevent an attacker setting\na static Pod path or URL.\nRegularly audit and centrally report all access to directories or web storage locations that host\nstatic Pod manifests and kubelet configuration files."
+  "text": "Only\nenable the kubelet static Pod manifest functionality\nif required by the node.\nIf a node uses the static Pod functionality, restrict filesystem access to the static Pod manifest directory\nor URL to users who need the access.\nRestrict access to kubelet configuration parameters and files to prevent an attacker setting\na static Pod path or URL.\nRegularly audit and centrally report all access to directories or web storage locations that host\nstatic Pod manifests and kubelet configuration files.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl Quick Reference — Editing resources",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/quick-reference/#editing-resources",
-  "text": "Edit any API resource in your preferred editor.\nkubectl edit svc/docker-registry\n# Edit the service named docker-registry\nKUBE_EDITOR\n=\n\"nano\"\nkubectl edit svc/docker-registry\n# Use an alternative editor\n\nkubectl scale --replicas\n=\n3\nrs/foo\n# Scale a replicaset named 'foo' to 3\nkubectl scale --replicas\n=\n3\n-f foo.yaml\n# Scale a resource specified in \"foo.yaml\" to 3\nkubectl scale --current-replicas\n=\n2\n--replicas\n=\n3\ndeployment/mysql\n# If the deployment named mysql's current size is 2, scale mysql to 3\nkubectl scale --replicas\n=\n5\nrc/foo rc/bar rc/baz\n# Scale multiple replication controllers"
+  "text": "Edit any API resource in your preferred editor.\nkubectl edit svc/docker-registry\n# Edit the service named docker-registry\nKUBE_EDITOR\n=\n\"nano\"\nkubectl edit svc/docker-registry\n# Use an alternative editor\n\nkubectl scale --replicas\n=\n3\nrs/foo\n# Scale a replicaset named 'foo' to 3\nkubectl scale --replicas\n=\n3\n-f foo.yaml\n# Scale a resource specified in \"foo.yaml\" to 3\nkubectl scale --current-replicas\n=\n2\n--replicas\n=\n3\ndeployment/mysql\n# If the deployment named mysql's current size is 2, scale mysql to 3\nkubectl scale --replicas\n=\n5\nrc/foo rc/bar rc/baz\n# Scale multiple replication controllers",
+  "failure_classes": []
 }

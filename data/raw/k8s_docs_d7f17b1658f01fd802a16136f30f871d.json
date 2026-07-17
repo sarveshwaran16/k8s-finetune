@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Example: Deploying WordPress and MySQL with Persistent Volumes — Add a Secret generator",
   "source_url": "https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/#add-a-secret-generator",
-  "text": "A\nSecret\nis an object that stores a piece\nof sensitive data like a password or key. Since 1.14,\nkubectl\nsupports the\nmanagement of Kubernetes objects using a kustomization file. You can create a Secret\nby generators in\nkustomization.yaml\n.\nAdd a Secret generator in\nkustomization.yaml\nfrom the following command.\nYou will need to replace\nYOUR_PASSWORD\nwith the password you want to use.\ncat\n<<EOF >./kustomization.yaml\nsecretGenerator:\n- name: mysql-pass\nliterals:\n- password=YOUR_PASSWORD\nEOF"
+  "text": "A\nSecret\nis an object that stores a piece\nof sensitive data like a password or key. Since 1.14,\nkubectl\nsupports the\nmanagement of Kubernetes objects using a kustomization file. You can create a Secret\nby generators in\nkustomization.yaml\n.\nAdd a Secret generator in\nkustomization.yaml\nfrom the following command.\nYou will need to replace\nYOUR_PASSWORD\nwith the password you want to use.\ncat\n<<EOF >./kustomization.yaml\nsecretGenerator:\n- name: mysql-pass\nliterals:\n- password=YOUR_PASSWORD\nEOF",
+  "failure_classes": []
 }

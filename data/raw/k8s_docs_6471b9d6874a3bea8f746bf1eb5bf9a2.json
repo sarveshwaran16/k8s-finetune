@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Operating etcd clusters for Kubernetes",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/",
-  "text": "etcd is a consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.\netcd is a consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.\nIf your Kubernetes cluster uses etcd as its backing store, make sure you have a\nback up\nplan\nfor the data.\nYou can find in-depth information about etcd in the official\ndocumentation\n."
+  "text": "etcd is a consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.\netcd is a consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.\nIf your Kubernetes cluster uses etcd as its backing store, make sure you have a\nback up\nplan\nfor the data.\nYou can find in-depth information about etcd in the official\ndocumentation\n.",
+  "failure_classes": []
 }

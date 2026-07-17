@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Images",
   "source_url": "https://kubernetes.io/docs/concepts/containers/images/",
-  "text": "A container image represents binary data that encapsulates an application and all its\nsoftware dependencies. Container images are executable software bundles that can run\nstandalone and that make very well-defined assumptions about their runtime environment.\nYou typically create a container image of your application and push it to a registry\nbefore referring to it in a\nPod\n.\nThis page provides an outline of the container image concept."
+  "text": "A container image represents binary data that encapsulates an application and all its\nsoftware dependencies. Container images are executable software bundles that can run\nstandalone and that make very well-defined assumptions about their runtime environment.\nYou typically create a container image of your application and push it to a registry\nbefore referring to it in a\nPod\n.\nThis page provides an outline of the container image concept.",
+  "failure_classes": []
 }

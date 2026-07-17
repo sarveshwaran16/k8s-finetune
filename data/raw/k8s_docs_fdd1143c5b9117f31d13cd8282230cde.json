@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Control in Kubernetes — CertificateApproval",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#certificateapproval",
-  "text": "Type\n: Validating.\nThis admission controller observes requests to approve CertificateSigningRequest resources and performs additional\nauthorization checks to ensure the approving user has permission to\napprove\ncertificate requests with the\nspec.signerName\nrequested on the CertificateSigningRequest resource.\nSee\nCertificate Signing Requests\nfor more\ninformation on the permissions required to perform different actions on CertificateSigningRequest resources."
+  "text": "Type\n: Validating.\nThis admission controller observes requests to approve CertificateSigningRequest resources and performs additional\nauthorization checks to ensure the approving user has permission to\napprove\ncertificate requests with the\nspec.signerName\nrequested on the CertificateSigningRequest resource.\nSee\nCertificate Signing Requests\nfor more\ninformation on the permissions required to perform different actions on CertificateSigningRequest resources.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PodGroup Scheduling — PodGroupScheduled",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/podgroup-scheduling/#podgroupscheduled",
-  "text": "When the scheduling cycle succeeds, the condition is set to\nTrue\nwith reason\nScheduled\n. For\ngang\npolicy PodGroups, this means at least\nminCount\nPods were\nplaced.\nWhen scheduling fails, the condition is set to\nFalse\nwith one of the following\nreasons:\nUnschedulable\n— the group could not be placed due to resource constraints,\naffinity or anti-affinity rules, or insufficient capacity for the gang.\nSchedulerError\n— scheduling failed because of an internal scheduler error\n(for example, while parsing scheduling constraints such as\nnodeAffinity\n)."
+  "text": "When the scheduling cycle succeeds, the condition is set to\nTrue\nwith reason\nScheduled\n. For\ngang\npolicy PodGroups, this means at least\nminCount\nPods were\nplaced.\nWhen scheduling fails, the condition is set to\nFalse\nwith one of the following\nreasons:\nUnschedulable\n— the group could not be placed due to resource constraints,\naffinity or anti-affinity rules, or insufficient capacity for the gang.\nSchedulerError\n— scheduling failed because of an internal scheduler error\n(for example, while parsing scheduling constraints such as\nnodeAffinity\n).",
+  "failure_classes": []
 }

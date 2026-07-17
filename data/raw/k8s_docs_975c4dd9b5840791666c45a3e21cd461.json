@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PodGroup API — Status",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/podgroup-api/#status",
-  "text": "The scheduler updates\nstatus.conditions\nto report whether the group has been\nsuccessfully scheduled. The primary condition is\nPodGroupScheduled\n, which is\nTrue\nwhen all required Pods have been placed and\nFalse\nwhen scheduling fails.\nSee the\nPodGroup lifecycle\npage for the full list of conditions and reasons."
+  "text": "The scheduler updates\nstatus.conditions\nto report whether the group has been\nsuccessfully scheduled. The primary condition is\nPodGroupScheduled\n, which is\nTrue\nwhen all required Pods have been placed and\nFalse\nwhen scheduling fails.\nSee the\nPodGroup lifecycle\npage for the full list of conditions and reasons.",
+  "failure_classes": []
 }

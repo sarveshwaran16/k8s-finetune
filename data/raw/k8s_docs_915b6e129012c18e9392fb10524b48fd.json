@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Scheduling Policies",
   "source_url": "https://kubernetes.io/docs/reference/scheduling/policies/",
-  "text": "In Kubernetes versions before v1.23, a scheduling policy can be used to specify the\npredicates\nand\npriorities\nprocess. For example, you can set a scheduling policy by\nrunning\nkube-scheduler --policy-config-file <filename>\nor\nkube-scheduler --policy-configmap <ConfigMap>\n.\nThis scheduling policy is not supported since Kubernetes v1.23. Associated flags\npolicy-config-file\n,\npolicy-configmap\n,\npolicy-configmap-namespace\nand\nuse-legacy-policy-config\nare also not supported. Instead, use the\nScheduler Configuration\nto achieve similar behavior."
+  "text": "In Kubernetes versions before v1.23, a scheduling policy can be used to specify the\npredicates\nand\npriorities\nprocess. For example, you can set a scheduling policy by\nrunning\nkube-scheduler --policy-config-file <filename>\nor\nkube-scheduler --policy-configmap <ConfigMap>\n.\nThis scheduling policy is not supported since Kubernetes v1.23. Associated flags\npolicy-config-file\n,\npolicy-configmap\n,\npolicy-configmap-namespace\nand\nuse-legacy-policy-config\nare also not supported. Instead, use the\nScheduler Configuration\nto achieve similar behavior.",
+  "failure_classes": []
 }

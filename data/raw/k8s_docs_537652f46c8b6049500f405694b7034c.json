@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Parallel Processing using Expansions — Create manifests from the template",
   "source_url": "https://kubernetes.io/docs/tasks/job/parallel-processing-expansion/#create-manifests-from-the-template",
-  "text": "The following shell snippet uses\nsed\nto replace the string\n$ITEM\nwith the loop\nvariable, writing into a temporary directory named\njobs\n. Run this now:\n# Expand the template into multiple files, one for each item to be processed.\nmkdir ./jobs\nfor\ni in apple banana cherry\ndo\ncat job-tmpl.yaml\n|\nsed\n\"s/\\$ITEM/\n$i\n/\"\n> ./jobs/job-\n$i\n.yaml\ndone\nCheck if it worked:\nls jobs/\nThe output is similar to this:\njob-apple.yaml\njob-banana.yaml\njob-cherry.yaml\nYou could use any type of template language (for example: Jinja2; ERB), or\nwrite a program to generate the Job manifests."
+  "text": "The following shell snippet uses\nsed\nto replace the string\n$ITEM\nwith the loop\nvariable, writing into a temporary directory named\njobs\n. Run this now:\n# Expand the template into multiple files, one for each item to be processed.\nmkdir ./jobs\nfor\ni in apple banana cherry\ndo\ncat job-tmpl.yaml\n|\nsed\n\"s/\\$ITEM/\n$i\n/\"\n> ./jobs/job-\n$i\n.yaml\ndone\nCheck if it worked:\nls jobs/\nThe output is similar to this:\njob-apple.yaml\njob-banana.yaml\njob-cherry.yaml\nYou could use any type of template language (for example: Jinja2; ERB), or\nwrite a program to generate the Job manifests.",
+  "failure_classes": []
 }

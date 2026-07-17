@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "PodGroup Lifecycle — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/podgroup-api/lifecycle/#what-s-next",
-  "text": "Learn about the\nPodGroup API\noverview and structure.\nLearn about the\nWorkload API\nthat provides\nPodGroupTemplates\n.\nSee how Pods reference their PodGroup via the\nscheduling group\nfield.\nUnderstand the\ngang scheduling\nalgorithm.\nRead\nPodGroup scheduling policies\nfor details on\nbasic\nand\ngang\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "Learn about the\nPodGroup API\noverview and structure.\nLearn about the\nWorkload API\nthat provides\nPodGroupTemplates\n.\nSee how Pods reference their PodGroup via the\nscheduling group\nfield.\nUnderstand the\ngang scheduling\nalgorithm.\nRead\nPodGroup scheduling policies\nfor details on\nbasic\nand\ngang\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": []
 }

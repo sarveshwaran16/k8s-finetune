@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Namespaces Walkthrough",
   "source_url": "https://kubernetes.io/docs/tutorials/cluster-management/namespaces-walkthrough/",
-  "text": "Kubernetes\nnamespaces\nhelp different projects, teams, or customers to share a Kubernetes cluster.\nIt does this by providing the following:\nA scope for\nNames\n.\nA mechanism to attach authorization and policy to a subsection of the cluster.\nUse of multiple namespaces is optional.\nThis example demonstrates how to use Kubernetes namespaces to subdivide your cluster."
+  "text": "Kubernetes\nnamespaces\nhelp different projects, teams, or customers to share a Kubernetes cluster.\nIt does this by providing the following:\nA scope for\nNames\n.\nA mechanism to attach authorization and policy to a subsection of the cluster.\nUse of multiple namespaces is optional.\nThis example demonstrates how to use Kubernetes namespaces to subdivide your cluster.",
+  "failure_classes": []
 }

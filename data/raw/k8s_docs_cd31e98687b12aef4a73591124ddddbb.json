@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Manage TLS Certificates in a Cluster — Sign the CertificateSigningRequest",
   "source_url": "https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/#sign-the-certificate-signing-request",
-  "text": "Next, you'll play the part of a certificate signer, issue the certificate, and upload it to the API.\nA signer would typically watch the CertificateSigningRequest API for objects with its\nsignerName\n,\ncheck that they have been approved, sign certificates for those requests,\nand update the API object status with the issued certificate."
+  "text": "Next, you'll play the part of a certificate signer, issue the certificate, and upload it to the API.\nA signer would typically watch the CertificateSigningRequest API for objects with its\nsignerName\n,\ncheck that they have been approved, sign certificates for those requests,\nand update the API object status with the issued certificate.",
+  "failure_classes": []
 }

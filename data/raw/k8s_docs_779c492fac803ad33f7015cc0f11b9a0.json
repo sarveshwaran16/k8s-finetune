@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Role Based Access Control Good Practices — Periodic review",
   "source_url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/#periodic-review",
-  "text": "It is vital to periodically review the Kubernetes RBAC settings for redundant entries and\npossible privilege escalations.\nIf an attacker is able to create a user account with the same name as a deleted user,\nthey can automatically inherit all the rights of the deleted user, especially the\nrights assigned to that user."
+  "text": "It is vital to periodically review the Kubernetes RBAC settings for redundant entries and\npossible privilege escalations.\nIf an attacker is able to create a user account with the same name as a deleted user,\nthey can automatically inherit all the rights of the deleted user, especially the\nrights assigned to that user.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

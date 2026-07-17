@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Authenticating — API access to authentication information for a client",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/authentication/#self-subject-review",
-  "text": "You can use the SelfSubjectReview API to find out\nhow your Kubernetes cluster maps your authentication information to identify you as a client.\nThis works whether you are authenticating as a user (typically representing\na real person) or as a ServiceAccount.\nIn a typical Kubernetes cluster, all authenticated users can create SelfSubjectReviews.\nAccess to do this is allowed by the built-in\nsystem:basic-user\nClusterRole\n.\nThe ability for a client to learn its own identity is extremely useful when troubleshooting a complicated authentication flow that is used in a Kubernetes cluster;\nfor example, if you use\nwebhook token authentication\nor an\nauthenticating proxy\n.\nIf you want to query this on the command line, see\nCLI access to authentication information\n."
+  "text": "You can use the SelfSubjectReview API to find out\nhow your Kubernetes cluster maps your authentication information to identify you as a client.\nThis works whether you are authenticating as a user (typically representing\na real person) or as a ServiceAccount.\nIn a typical Kubernetes cluster, all authenticated users can create SelfSubjectReviews.\nAccess to do this is allowed by the built-in\nsystem:basic-user\nClusterRole\n.\nThe ability for a client to learn its own identity is extremely useful when troubleshooting a complicated authentication flow that is used in a Kubernetes cluster;\nfor example, if you use\nwebhook token authentication\nor an\nauthenticating proxy\n.\nIf you want to query this on the command line, see\nCLI access to authentication information\n.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

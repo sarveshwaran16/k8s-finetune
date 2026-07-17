@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Associated lifetimes",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#associated-lifetimes",
-  "text": "When something is said to have the same lifetime as a Pod, such as a\nvolume\n,\nthat means that the thing exists as long as that specific Pod (with that exact UID)\nexists. If that Pod is deleted for any reason, and even if an identical replacement\nis created, the related thing (a volume, in this example) is also destroyed and\ncreated anew.\nA multi-container Pod that contains a file puller\nsidecar\nand a web server. The Pod uses an\nephemeral\nemptyDir\nvolume\nfor shared storage between the containers."
+  "text": "When something is said to have the same lifetime as a Pod, such as a\nvolume\n,\nthat means that the thing exists as long as that specific Pod (with that exact UID)\nexists. If that Pod is deleted for any reason, and even if an identical replacement\nis created, the related thing (a volume, in this example) is also destroyed and\ncreated anew.\nA multi-container Pod that contains a file puller\nsidecar\nand a web server. The Pod uses an\nephemeral\nemptyDir\nvolume\nfor shared storage between the containers.",
+  "failure_classes": []
 }

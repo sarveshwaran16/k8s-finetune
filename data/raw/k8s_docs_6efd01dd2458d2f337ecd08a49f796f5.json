@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ReplicaSet — Job",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#job",
-  "text": "Use a\nJob\ninstead of a ReplicaSet for Pods that are\nexpected to terminate on their own (that is, batch jobs).\n\nUse a\nDaemonSet\ninstead of a ReplicaSet for Pods that provide a\nmachine-level function, such as machine monitoring or machine logging. These Pods have a lifetime that is tied\nto a machine lifetime: the Pod needs to be running on the machine before other Pods start, and are\nsafe to terminate when the machine is otherwise ready to be rebooted/shutdown."
+  "text": "Use a\nJob\ninstead of a ReplicaSet for Pods that are\nexpected to terminate on their own (that is, batch jobs).\n\nUse a\nDaemonSet\ninstead of a ReplicaSet for Pods that provide a\nmachine-level function, such as machine monitoring or machine logging. These Pods have a lifetime that is tied\nto a machine lifetime: the Pod needs to be running on the machine before other Pods start, and are\nsafe to terminate when the machine is otherwise ready to be rebooted/shutdown.",
+  "failure_classes": []
 }

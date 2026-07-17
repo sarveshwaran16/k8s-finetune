@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Well-Known Labels, Annotations and Taints — storageclass.kubernetes.io/is-default-class",
   "source_url": "https://kubernetes.io/docs/reference/labels-annotations-taints/#storageclass-kubernetes-io-is-default-class",
-  "text": "Type: Annotation\nExample:\nstorageclass.kubernetes.io/is-default-class: \"true\"\nUsed on: StorageClass\nWhen a single StorageClass resource has this annotation set to\n\"true\"\n, new PersistentVolumeClaim\nresource without a class specified will be assigned this default class.\n\nType: Annotation\nExample:\nalpha.kubernetes.io/provided-node-ip: \"10.0.0.1\"\nUsed on: Node\nThe kubelet can set this annotation on a Node to denote its configured IPv4 and/or IPv6 address.\nWhen kubelet is started with the\n--cloud-provider\nflag set to any value (includes both external\nand legacy in-tree cloud providers), it sets this annotation on the Node to denote an IP address\nset from the command line flag (\n--node-ip\n). This IP is verified with the cloud provider as valid\nby the cloud-controller-manager."
+  "text": "Type: Annotation\nExample:\nstorageclass.kubernetes.io/is-default-class: \"true\"\nUsed on: StorageClass\nWhen a single StorageClass resource has this annotation set to\n\"true\"\n, new PersistentVolumeClaim\nresource without a class specified will be assigned this default class.\n\nType: Annotation\nExample:\nalpha.kubernetes.io/provided-node-ip: \"10.0.0.1\"\nUsed on: Node\nThe kubelet can set this annotation on a Node to denote its configured IPv4 and/or IPv6 address.\nWhen kubelet is started with the\n--cloud-provider\nflag set to any value (includes both external\nand legacy in-tree cloud providers), it sets this annotation on the Node to denote an IP address\nset from the command line flag (\n--node-ip\n). This IP is verified with the cloud provider as valid\nby the cloud-controller-manager.",
+  "failure_classes": [
+    "NodeNotReady",
+    "PVC"
+  ]
 }

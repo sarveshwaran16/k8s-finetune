@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Kubernetes Issue Tracker",
   "source_url": "https://kubernetes.io/docs/reference/issues-security/issues/",
-  "text": "To report a security issue, please follow the\nKubernetes security disclosure process\n.\nWork on Kubernetes code and public issues are tracked using\nGitHub Issues\n.\nOfficial\nlist of known CVEs\n(security vulnerabilities) that have been announced by the\nSecurity Response Committee\nCVE-related GitHub issues\nSecurity-related announcements are sent to the\nkubernetes-security-announce@googlegroups.com\nmailing list."
+  "text": "To report a security issue, please follow the\nKubernetes security disclosure process\n.\nWork on Kubernetes code and public issues are tracked using\nGitHub Issues\n.\nOfficial\nlist of known CVEs\n(security vulnerabilities) that have been announced by the\nSecurity Response Committee\nCVE-related GitHub issues\nSecurity-related announcements are sent to the\nkubernetes-security-announce@googlegroups.com\nmailing list.",
+  "failure_classes": []
 }

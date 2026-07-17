@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Flow control — Response headers",
   "source_url": "https://kubernetes.io/docs/reference/debug-cluster/flow-control/#response-headers",
-  "text": "APF adds the following two headers to each HTTP response message.\nThey won't appear in the audit log. They can be viewed from the client side.\nFor client using\nklog\n, use verbosity\n-v=8\nor higher to view these headers.\nX-Kubernetes-PF-FlowSchema-UID\nholds the UID of the FlowSchema\nobject to which the corresponding request was classified.\nX-Kubernetes-PF-PriorityLevel-UID\nholds the UID of the\nPriorityLevelConfiguration object associated with that FlowSchema."
+  "text": "APF adds the following two headers to each HTTP response message.\nThey won't appear in the audit log. They can be viewed from the client side.\nFor client using\nklog\n, use verbosity\n-v=8\nor higher to view these headers.\nX-Kubernetes-PF-FlowSchema-UID\nholds the UID of the FlowSchema\nobject to which the corresponding request was classified.\nX-Kubernetes-PF-PriorityLevel-UID\nholds the UID of the\nPriorityLevelConfiguration object associated with that FlowSchema.",
+  "failure_classes": []
 }

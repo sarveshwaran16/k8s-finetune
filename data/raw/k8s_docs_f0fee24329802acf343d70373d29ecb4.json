@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl for Docker Users",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/",
-  "text": "You can use the Kubernetes command line tool\nkubectl\nto interact with the API Server. Using kubectl is straightforward if you are familiar with the Docker command line tool. However, there are a few differences between the Docker commands and the kubectl commands. The following sections show a Docker sub-command and describe the equivalent\nkubectl\ncommand."
+  "text": "You can use the Kubernetes command line tool\nkubectl\nto interact with the API Server. Using kubectl is straightforward if you are familiar with the Docker command line tool. However, there are a few differences between the Docker commands and the kubectl commands. The following sections show a Docker sub-command and describe the equivalent\nkubectl\ncommand.",
+  "failure_classes": []
 }

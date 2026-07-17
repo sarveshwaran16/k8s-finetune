@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Managing Service Accounts — Delete/invalidate a short-lived ServiceAccount token",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#delete-short-lived",
-  "text": "Short lived ServiceAccount tokens automatically expire after the time-limit\nspecified during their creation. There is no central record of tokens issued,\nso there is no way to revoke individual tokens.\nIf you have to revoke a short-lived token before its expiration, you\ncan delete and re-create the ServiceAccount it is associated to. This will\nchange its UID and hence invalidate\nall\nServiceAccount tokens that were\ncreated for it."
+  "text": "Short lived ServiceAccount tokens automatically expire after the time-limit\nspecified during their creation. There is no central record of tokens issued,\nso there is no way to revoke individual tokens.\nIf you have to revoke a short-lived token before its expiration, you\ncan delete and re-create the ServiceAccount it is associated to. This will\nchange its UID and hence invalidate\nall\nServiceAccount tokens that were\ncreated for it.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

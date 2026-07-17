@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Authenticating with Bootstrap Tokens — Bootstrap Tokens Overview",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/#bootstrap-tokens-overview",
-  "text": "Bootstrap Tokens are defined with a specific type\n(\nbootstrap.kubernetes.io/token\n) of secrets that lives in the\nkube-system\nnamespace. These Secrets are then read by the Bootstrap Authenticator in the\nAPI Server. Expired tokens are removed with the TokenCleaner controller in the\nController Manager. The tokens are also used to create a signature for a\nspecific ConfigMap used in a \"discovery\" process through a BootstrapSigner\ncontroller."
+  "text": "Bootstrap Tokens are defined with a specific type\n(\nbootstrap.kubernetes.io/token\n) of secrets that lives in the\nkube-system\nnamespace. These Secrets are then read by the Bootstrap Authenticator in the\nAPI Server. Expired tokens are removed with the TokenCleaner controller in the\nController Manager. The tokens are also used to create a signature for a\nspecific ConfigMap used in a \"discovery\" process through a BootstrapSigner\ncontroller.",
+  "failure_classes": []
 }

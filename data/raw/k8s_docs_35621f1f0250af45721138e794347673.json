@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debugging DNS Resolution — Check for errors in the DNS pod",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/#check-for-errors-in-the-dns-pod",
-  "text": "Use the\nkubectl logs\ncommand to see logs for the DNS containers.\nFor CoreDNS:\nkubectl logs --namespace\n=\nkube-system -l k8s-app\n=\nkube-dns\nHere is an example of a healthy CoreDNS log:\n.:53\n2018/08/15 14:37:17 [INFO] CoreDNS-1.2.2\n2018/08/15 14:37:17 [INFO] linux/amd64, go1.10.3, 2e322f6\nCoreDNS-1.2.2\nlinux/amd64, go1.10.3, 2e322f6\n2018/08/15 14:37:17 [INFO] plugin/reload: Running configuration MD5 = 24e6c59e83ce706f07bcc82c31b1ea1c\nSee if there are any suspicious or unexpected messages in the logs."
+  "text": "Use the\nkubectl logs\ncommand to see logs for the DNS containers.\nFor CoreDNS:\nkubectl logs --namespace\n=\nkube-system -l k8s-app\n=\nkube-dns\nHere is an example of a healthy CoreDNS log:\n.:53\n2018/08/15 14:37:17 [INFO] CoreDNS-1.2.2\n2018/08/15 14:37:17 [INFO] linux/amd64, go1.10.3, 2e322f6\nCoreDNS-1.2.2\nlinux/amd64, go1.10.3, 2e322f6\n2018/08/15 14:37:17 [INFO] plugin/reload: Running configuration MD5 = 24e6c59e83ce706f07bcc82c31b1ea1c\nSee if there are any suspicious or unexpected messages in the logs.",
+  "failure_classes": []
 }

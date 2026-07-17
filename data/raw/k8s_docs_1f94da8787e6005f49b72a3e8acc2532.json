@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Enforce Pod Security Standards with Namespace Labels — Applying to all namespaces",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/enforce-standards-namespace-labels/#applying-to-all-namespaces",
-  "text": "If you're just getting started with the Pod Security Standards, a suitable first step would be to\nconfigure all namespaces with audit annotations for a stricter level such as\nbaseline\n:\nkubectl label --overwrite ns --all\n\\\npod-security.kubernetes.io/audit\n=\nbaseline\n\\\npod-security.kubernetes.io/warn\n=\nbaseline\nNote that this is not setting an enforce level, so that namespaces that haven't been explicitly\nevaluated can be distinguished. You can list namespaces without an explicitly set enforce level\nusing this command:\nkubectl get namespaces --selector\n=\n'!pod-security.kubernetes.io/enforce'"
+  "text": "If you're just getting started with the Pod Security Standards, a suitable first step would be to\nconfigure all namespaces with audit annotations for a stricter level such as\nbaseline\n:\nkubectl label --overwrite ns --all\n\\\npod-security.kubernetes.io/audit\n=\nbaseline\n\\\npod-security.kubernetes.io/warn\n=\nbaseline\nNote that this is not setting an enforce level, so that namespaces that haven't been explicitly\nevaluated can be distinguished. You can list namespaces without an explicitly set enforce level\nusing this command:\nkubectl get namespaces --selector\n=\n'!pod-security.kubernetes.io/enforce'",
+  "failure_classes": []
 }

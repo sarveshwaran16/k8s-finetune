@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Customizing components with the kubeadm API — APIServer flags",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/control-plane-flags/#apiserver-flags",
-  "text": "For details, see the\nreference documentation for kube-apiserver\n.\nExample usage:\napiVersion\n:\nkubeadm.k8s.io/v1beta4\nkind\n:\nClusterConfiguration\nkubernetesVersion\n:\nv1.16.0\napiServer\n:\nextraArgs\n:\n-\nname\n:\n\"enable-admission-plugins\"\nvalue\n:\n\"AlwaysPullImages,DefaultStorageClass\"\n-\nname\n:\n\"audit-log-path\"\nvalue\n:\n\"/home/johndoe/audit.log\""
+  "text": "For details, see the\nreference documentation for kube-apiserver\n.\nExample usage:\napiVersion\n:\nkubeadm.k8s.io/v1beta4\nkind\n:\nClusterConfiguration\nkubernetesVersion\n:\nv1.16.0\napiServer\n:\nextraArgs\n:\n-\nname\n:\n\"enable-admission-plugins\"\nvalue\n:\n\"AlwaysPullImages,DefaultStorageClass\"\n-\nname\n:\n\"audit-log-path\"\nvalue\n:\n\"/home/johndoe/audit.log\"",
+  "failure_classes": []
 }

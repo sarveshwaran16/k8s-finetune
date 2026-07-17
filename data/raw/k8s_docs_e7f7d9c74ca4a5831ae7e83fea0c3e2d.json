@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Introduction to kubectl",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/introduction/",
-  "text": "kubectl is a command-line tool for interacting with Kubernetes clusters, using the Kubernetes API.\nUse it to deploy applications, inspect resources, and manage workloads.\nWhile this Book is focused on using kubectl to declaratively manage applications in Kubernetes, it\nalso covers other kubectl functions."
+  "text": "kubectl is a command-line tool for interacting with Kubernetes clusters, using the Kubernetes API.\nUse it to deploy applications, inspect resources, and manage workloads.\nWhile this Book is focused on using kubectl to declaratively manage applications in Kubernetes, it\nalso covers other kubectl functions.",
+  "failure_classes": []
 }

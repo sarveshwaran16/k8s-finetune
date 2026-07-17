@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "HorizontalPodAutoscaler — PodsMetricStatus",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/autoscaling/horizontal-pod-autoscaler-v2/#PodsMetricStatus",
-  "text": "PodsMetricStatus indicates the current value of a metric describing each pod in the current scale target (for example, transactions-processed-per-second).\nField\nDescription\ncurrent\n*\nMetricValueStatus\ncurrent contains the current value for the given metric\nmetric\n*\nMetricIdentifier\nmetric identifies the target metric by name and selector"
+  "text": "PodsMetricStatus indicates the current value of a metric describing each pod in the current scale target (for example, transactions-processed-per-second).\nField\nDescription\ncurrent\n*\nMetricValueStatus\ncurrent contains the current value for the given metric\nmetric\n*\nMetricIdentifier\nmetric identifies the target metric by name and selector",
+  "failure_classes": []
 }

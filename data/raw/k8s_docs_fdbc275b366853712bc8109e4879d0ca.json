@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Pod Lifecycle — Status for Pod readiness",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-readiness-status",
-  "text": "The\nkubectl patch\ncommand does not support patching object status.\nTo set these\nstatus.conditions\nfor the Pod, applications and\noperators\nshould use\nthe\nPATCH\naction.\nYou can use a\nKubernetes client library\nto\nwrite code that sets custom Pod conditions for Pod readiness.\nFor a Pod that uses custom conditions, that Pod is evaluated to be ready\nonly\nwhen both the following statements apply:\nAll containers in the Pod are ready.\nAll conditions specified in\nreadinessGates\nare\nTrue\n.\nWhen a Pod's containers are Ready but at least one custom condition is missing or\nFalse\n, the kubelet sets the Pod's\ncondition\nto\nContainersReady\n."
+  "text": "The\nkubectl patch\ncommand does not support patching object status.\nTo set these\nstatus.conditions\nfor the Pod, applications and\noperators\nshould use\nthe\nPATCH\naction.\nYou can use a\nKubernetes client library\nto\nwrite code that sets custom Pod conditions for Pod readiness.\nFor a Pod that uses custom conditions, that Pod is evaluated to be ready\nonly\nwhen both the following statements apply:\nAll containers in the Pod are ready.\nAll conditions specified in\nreadinessGates\nare\nTrue\n.\nWhen a Pod's containers are Ready but at least one custom condition is missing or\nFalse\n, the kubelet sets the Pod's\ncondition\nto\nContainersReady\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

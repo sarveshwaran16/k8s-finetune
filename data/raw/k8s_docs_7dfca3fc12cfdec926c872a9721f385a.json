@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Allocate Devices to Workloads with DRA",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/allocate-devices-dra/",
-  "text": "This page shows you how to allocate devices to your Pods by using\ndynamic resource allocation (DRA)\n. These instructions are for workload\noperators. Before reading this page, familiarize yourself with how DRA works and\nwith DRA terminology like\nResourceClaims\nand\nResourceClaimTemplates\n.\nFor more information, see\nDynamic Resource Allocation (DRA)\n."
+  "text": "This page shows you how to allocate devices to your Pods by using\ndynamic resource allocation (DRA)\n. These instructions are for workload\noperators. Before reading this page, familiarize yourself with how DRA works and\nwith DRA terminology like\nResourceClaims\nand\nResourceClaimTemplates\n.\nFor more information, see\nDynamic Resource Allocation (DRA)\n.",
+  "failure_classes": []
 }

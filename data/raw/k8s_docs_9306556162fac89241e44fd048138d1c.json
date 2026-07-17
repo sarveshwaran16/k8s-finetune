@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debugging Kubernetes nodes with crictl",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/",
-  "text": "crictl\nis a command-line interface for CRI-compatible container runtimes.\nYou can use it to inspect and debug container runtimes and applications on a\nKubernetes node.\ncrictl\nand its source are hosted in the\ncri-tools\nrepository.\n\ncrictl\nrequires a Linux operating system with a CRI runtime.\n\nYou can download a compressed archive\ncrictl\nfrom the cri-tools\nrelease page\n, for several\ndifferent architectures. Download the version that corresponds to your version\nof Kubernetes. Extract it and move it to a location on your system path, such as\n/usr/local/bin/\n."
+  "text": "crictl\nis a command-line interface for CRI-compatible container runtimes.\nYou can use it to inspect and debug container runtimes and applications on a\nKubernetes node.\ncrictl\nand its source are hosted in the\ncri-tools\nrepository.\n\ncrictl\nrequires a Linux operating system with a CRI runtime.\n\nYou can download a compressed archive\ncrictl\nfrom the cri-tools\nrelease page\n, for several\ndifferent architectures. Download the version that corresponds to your version\nof Kubernetes. Extract it and move it to a location on your system path, such as\n/usr/local/bin/\n.",
+  "failure_classes": []
 }

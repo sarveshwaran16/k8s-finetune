@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Securing a Cluster — Controlling access to the Kubelet",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#controlling-access-to-the-kubelet",
-  "text": "Kubelets expose HTTPS endpoints which grant powerful control over the node and containers.\nBy default Kubelets allow unauthenticated access to this API.\nProduction clusters should enable Kubelet authentication and authorization.\nConsult the\nKubelet authentication/authorization reference\nfor more information."
+  "text": "Kubelets expose HTTPS endpoints which grant powerful control over the node and containers.\nBy default Kubelets allow unauthenticated access to this API.\nProduction clusters should enable Kubelet authentication and authorization.\nConsult the\nKubelet authentication/authorization reference\nfor more information.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

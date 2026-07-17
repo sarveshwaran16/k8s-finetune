@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kube-apiserver Configuration (v1) — AuthorizationConfiguration",
   "source_url": "https://kubernetes.io/docs/reference/config-api/apiserver-config.v1/#apiserver-config-k8s-io-v1-AuthorizationConfiguration",
-  "text": "Field\nDescription\napiVersion\nstring\napiserver.config.k8s.io/v1\nkind\nstring\nAuthorizationConfiguration\nauthorizers\n[Required]\n[]AuthorizerConfiguration\nAuthorizers is an ordered list of authorizers to\nauthorize requests against.\nThis is similar to the --authorization-modes kube-apiserver flag\nMust be at least one.\nAuthorizers is an ordered list of authorizers to\nauthorize requests against.\nThis is similar to the --authorization-modes kube-apiserver flag\nMust be at least one."
+  "text": "Field\nDescription\napiVersion\nstring\napiserver.config.k8s.io/v1\nkind\nstring\nAuthorizationConfiguration\nauthorizers\n[Required]\n[]AuthorizerConfiguration\nAuthorizers is an ordered list of authorizers to\nauthorize requests against.\nThis is similar to the --authorization-modes kube-apiserver flag\nMust be at least one.\nAuthorizers is an ordered list of authorizers to\nauthorize requests against.\nThis is similar to the --authorization-modes kube-apiserver flag\nMust be at least one.",
+  "failure_classes": []
 }

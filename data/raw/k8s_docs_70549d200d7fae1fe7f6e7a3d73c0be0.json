@@ -3,5 +3,9 @@
   "source": "k8s_docs",
   "title": "Using RBAC Authorization — Permissive RBAC permissions",
   "source_url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/#permissive-rbac-permissions",
-  "text": "You can replicate a permissive ABAC policy using RBAC role bindings.\nThe following policy allows\nALL\nservice accounts to act as cluster administrators.\nAny application running in a container receives service account credentials automatically,\nand could perform any action against the API, including viewing secrets and modifying permissions.\nThis is not a recommended policy.\nkubectl create clusterrolebinding permissive-binding\n\\\n--clusterrole\n=\ncluster-admin\n\\\n--user\n=\nadmin\n\\\n--user\n=\nkubelet\n\\\n--group\n=\nsystem:serviceaccounts\nAfter you have transitioned to use RBAC, you should adjust the access controls\nfor your cluster to ensure that these meet your information security needs."
+  "text": "You can replicate a permissive ABAC policy using RBAC role bindings.\nThe following policy allows\nALL\nservice accounts to act as cluster administrators.\nAny application running in a container receives service account credentials automatically,\nand could perform any action against the API, including viewing secrets and modifying permissions.\nThis is not a recommended policy.\nkubectl create clusterrolebinding permissive-binding\n\\\n--clusterrole\n=\ncluster-admin\n\\\n--user\n=\nadmin\n\\\n--user\n=\nkubelet\n\\\n--group\n=\nsystem:serviceaccounts\nAfter you have transitioned to use RBAC, you should adjust the access controls\nfor your cluster to ensure that these meet your information security needs.",
+  "failure_classes": [
+    "NodeNotReady",
+    "RBAC"
+  ]
 }

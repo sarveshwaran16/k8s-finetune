@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Update a Deployment Without Downtime — Pausing and resuming a rollout",
   "source_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/#pausing-and-resuming-a-rollout",
-  "text": "You can pause a rollout to inspect a partial update or to batch multiple changes\ninto a single rollout.\n\nkubectl rollout pause deployment/nginx-deployment\nThe output is similar to:\ndeployment.apps/nginx-deployment paused\n\nWhile the rollout is paused, you can make additional changes. These changes do\nnot trigger a new rollout until you resume:\nkubectl\nset\nimage deployment/nginx-deployment\nnginx\n=\nnginx:1.17.0"
+  "text": "You can pause a rollout to inspect a partial update or to batch multiple changes\ninto a single rollout.\n\nkubectl rollout pause deployment/nginx-deployment\nThe output is similar to:\ndeployment.apps/nginx-deployment paused\n\nWhile the rollout is paused, you can make additional changes. These changes do\nnot trigger a new rollout until you resume:\nkubectl\nset\nimage deployment/nginx-deployment\nnginx\n=\nnginx:1.17.0",
+  "failure_classes": []
 }

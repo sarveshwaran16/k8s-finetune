@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Debug Services — Is the kube-proxy working?",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-service/#is-the-kube-proxy-working",
-  "text": "If you get here, your Service is running, has EndpointSlices, and your Pods\nare actually serving. At this point, the whole Service proxy mechanism is\nsuspect. Let's confirm it, piece by piece.\nThe default implementation of Services, and the one used on most clusters, is\nkube-proxy. This is a program that runs on every node and configures one of a\nsmall set of mechanisms for providing the Service abstraction. If your\ncluster does not use kube-proxy, the following sections will not apply, and you\nwill have to investigate whatever implementation of Services you are using."
+  "text": "If you get here, your Service is running, has EndpointSlices, and your Pods\nare actually serving. At this point, the whole Service proxy mechanism is\nsuspect. Let's confirm it, piece by piece.\nThe default implementation of Services, and the one used on most clusters, is\nkube-proxy. This is a program that runs on every node and configures one of a\nsmall set of mechanisms for providing the Service abstraction. If your\ncluster does not use kube-proxy, the following sections will not apply, and you\nwill have to investigate whatever implementation of Services you are using.",
+  "failure_classes": []
 }

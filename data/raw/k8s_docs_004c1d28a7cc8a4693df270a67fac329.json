@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "NonResourceRule",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/non-resource-rule-v1-authorization/",
-  "text": "apiVersion: authorization.k8s.io/v1\nimport \"k8s.io/api/authorization/v1\"\n\nNonResourceRule holds information that describes a rule for the non-resource\nField\nDescription\nnonResourceURLs\nstring array\nnonResourceURLs is a set of partial urls that a user should have access to. *s are allowed, but only as the full, final step in the path. \"*\" means all.\nverbs\n*\nstring array\nverbs is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch, head, options. \"*\" means all."
+  "text": "apiVersion: authorization.k8s.io/v1\nimport \"k8s.io/api/authorization/v1\"\n\nNonResourceRule holds information that describes a rule for the non-resource\nField\nDescription\nnonResourceURLs\nstring array\nnonResourceURLs is a set of partial urls that a user should have access to. *s are allowed, but only as the full, final step in the path. \"*\" means all.\nverbs\n*\nstring array\nverbs is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch, head, options. \"*\" means all.",
+  "failure_classes": []
 }

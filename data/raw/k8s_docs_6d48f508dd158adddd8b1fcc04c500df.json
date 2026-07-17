@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "StorageClass",
   "source_url": "https://kubernetes.io/docs/reference/kubernetes-api/storage/storage-class-v1/",
-  "text": "StorageClass describes the parameters for a class of storage for which PersistentVolumes can be dynamically provisioned.\nStorageClasses are non-namespaced; the name of the storage class according to etcd is in ObjectMeta.Name.\nStorage Classes\nStorageClass objects\nDefault StorageClass\nProvisioner\nReclaim policy\nVolume expansion\nMount options\nVolume binding mode\nAllowed topologies\nParameters\nStorageClass objects\nDefault StorageClass\nProvisioner\nReclaim policy\nVolume expansion\nMount options\nVolume binding mode\nAllowed topologies\nParameters\napiVersion: storage.k8s.io/v1\nimport \"k8s.io/api/storage/v1\""
+  "text": "StorageClass describes the parameters for a class of storage for which PersistentVolumes can be dynamically provisioned.\nStorageClasses are non-namespaced; the name of the storage class according to etcd is in ObjectMeta.Name.\nStorage Classes\nStorageClass objects\nDefault StorageClass\nProvisioner\nReclaim policy\nVolume expansion\nMount options\nVolume binding mode\nAllowed topologies\nParameters\nStorageClass objects\nDefault StorageClass\nProvisioner\nReclaim policy\nVolume expansion\nMount options\nVolume binding mode\nAllowed topologies\nParameters\napiVersion: storage.k8s.io/v1\nimport \"k8s.io/api/storage/v1\"",
+  "failure_classes": [
+    "PVC"
+  ]
 }

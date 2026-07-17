@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Running Kubernetes Node Components as a Non-root User — K3s",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubelet-in-userns/#k3s",
-  "text": "K3s\nexperimentally supports rootless mode.\nSee\nRunning K3s with Rootless mode\nfor the usage.\n\nUsernetes\nis a reference distribution of Kubernetes that can be installed under\n$HOME\ndirectory without the root privilege.\nUsernetes supports both containerd and CRI-O as CRI runtimes.\nUsernetes supports multi-node clusters using Flannel (VXLAN).\nSee\nthe Usernetes repo\nfor the usage."
+  "text": "K3s\nexperimentally supports rootless mode.\nSee\nRunning K3s with Rootless mode\nfor the usage.\n\nUsernetes\nis a reference distribution of Kubernetes that can be installed under\n$HOME\ndirectory without the root privilege.\nUsernetes supports both containerd and CRI-O as CRI runtimes.\nUsernetes supports multi-node clusters using Flannel (VXLAN).\nSee\nthe Usernetes repo\nfor the usage.",
+  "failure_classes": []
 }

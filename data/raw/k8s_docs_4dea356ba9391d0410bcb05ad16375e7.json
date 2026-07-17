@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "GETTING STARTED — secret tls",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/kubectl-cmds/#-em-secret-tls-em-",
-  "text": "Create a new TLS secret named tls-secret with the given key pair\nkubectl create\nsecret\ntls tls-secret\n--cert\n=path/to/tls.cert\n--key\n=path/to/tls.key\nCreate a TLS secret from the given public/private key pair.\nThe public/private key pair must exist beforehand. The public key certificate must be .PEM encoded and match the given private key."
+  "text": "Create a new TLS secret named tls-secret with the given key pair\nkubectl create\nsecret\ntls tls-secret\n--cert\n=path/to/tls.cert\n--key\n=path/to/tls.key\nCreate a TLS secret from the given public/private key pair.\nThe public/private key pair must exist beforehand. The public key certificate must be .PEM encoded and match the given private key.",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Access DRA Device Metadata — Clean up",
   "source_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/access-dra-device-metadata/#clean-up",
-  "text": "Delete the resources that you created:\nkubectl delete -f https://k8s.io/examples/dra/dra-device-metadata-pod.yaml\nkubectl delete -f https://k8s.io/examples/dra/dra-device-metadata-template-pod.yaml\n\nLearn more about DRA device metadata\nAllocate devices to workloads with DRA\nFor more information on the design, see\nKEP-5304\n."
+  "text": "Delete the resources that you created:\nkubectl delete -f https://k8s.io/examples/dra/dra-device-metadata-pod.yaml\nkubectl delete -f https://k8s.io/examples/dra/dra-device-metadata-template-pod.yaml\n\nLearn more about DRA device metadata\nAllocate devices to workloads with DRA\nFor more information on the design, see\nKEP-5304\n.",
+  "failure_classes": []
 }

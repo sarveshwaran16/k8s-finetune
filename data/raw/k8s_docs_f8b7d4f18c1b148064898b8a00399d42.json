@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Reconfiguring a kubeadm cluster — Applying CoreDNS configuration changes",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-reconfigure/#applying-coredns-configuration-changes",
-  "text": "kubeadm deploys CoreDNS as a Deployment called\ncoredns\nand with a Service\nkube-dns\n,\nboth in the\nkube-system\nnamespace.\nTo update any of the CoreDNS settings, you can edit the Deployment and\nService objects:\nkubectl edit deployment -n kube-system coredns\nkubectl edit service -n kube-system kube-dns\nOnce the CoreDNS changes are applied you can restart the CoreDNS deployment:\nkubectl rollout restart deployment -n kube-system coredns"
+  "text": "kubeadm deploys CoreDNS as a Deployment called\ncoredns\nand with a Service\nkube-dns\n,\nboth in the\nkube-system\nnamespace.\nTo update any of the CoreDNS settings, you can edit the Deployment and\nService objects:\nkubectl edit deployment -n kube-system coredns\nkubectl edit service -n kube-system kube-dns\nOnce the CoreDNS changes are applied you can restart the CoreDNS deployment:\nkubectl rollout restart deployment -n kube-system coredns",
+  "failure_classes": [
+    "CrashLoopBackOff"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Extending Kubernetes — Authorization",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#authorization",
-  "text": "Authorization\ndetermines whether specific\nusers can read, write, and do other operations on API resources. It works at the level of whole\nresources -- it doesn't discriminate based on arbitrary object fields.\nIf the built-in authorization options don't meet your needs, an\nauthorization webhook\nallows calling out to custom code that makes an authorization decision."
+  "text": "Authorization\ndetermines whether specific\nusers can read, write, and do other operations on API resources. It works at the level of whole\nresources -- it doesn't discriminate based on arbitrary object fields.\nIf the built-in authorization options don't meet your needs, an\nauthorization webhook\nallows calling out to custom code that makes an authorization decision.",
+  "failure_classes": []
 }

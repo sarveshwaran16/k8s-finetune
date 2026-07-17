@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Using a KMS provider for data encryption — KMS v1",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#kms-v1",
-  "text": "Kubernetes version 1.10.0 or later is required\nFor version 1.29 and later, the v1 implementation of KMS is disabled by default.\nTo enable the feature, set\n--feature-gates=KMSv1=true\nto configure a KMS v1 provider.\nYour cluster must use etcd v3 or later\nKubernetes version 1.10.0 or later is required\nFor version 1.29 and later, the v1 implementation of KMS is disabled by default.\nTo enable the feature, set\n--feature-gates=KMSv1=true\nto configure a KMS v1 provider.\nYour cluster must use etcd v3 or later"
+  "text": "Kubernetes version 1.10.0 or later is required\nFor version 1.29 and later, the v1 implementation of KMS is disabled by default.\nTo enable the feature, set\n--feature-gates=KMSv1=true\nto configure a KMS v1 provider.\nYour cluster must use etcd v3 or later\nKubernetes version 1.10.0 or later is required\nFor version 1.29 and later, the v1 implementation of KMS is disabled by default.\nTo enable the feature, set\n--feature-gates=KMSv1=true\nto configure a KMS v1 provider.\nYour cluster must use etcd v3 or later",
+  "failure_classes": []
 }

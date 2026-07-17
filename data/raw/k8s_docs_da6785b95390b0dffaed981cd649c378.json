@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices — Ensure that mutations don't violate validations",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#ensure-mutations-dont-violate-validations",
-  "text": "Your mutating webhooks shouldn't break any of the validations that apply to an\nobject before admission. For example, consider a mutating webhook that sets the\ndefault CPU request of a Pod to a specific value. If the CPU limit of that Pod\nis set to a lower value than the mutated request, the Pod fails admission.\nTest every mutating webhook against the validations that run in your cluster."
+  "text": "Your mutating webhooks shouldn't break any of the validations that apply to an\nobject before admission. For example, consider a mutating webhook that sets the\ndefault CPU request of a Pod to a specific value. If the CPU limit of that Pod\nis set to a lower value than the mutated request, the Pod fails admission.\nTest every mutating webhook against the validations that run in your cluster.",
+  "failure_classes": []
 }

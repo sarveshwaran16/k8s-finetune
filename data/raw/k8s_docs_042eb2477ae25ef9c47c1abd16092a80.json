@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Control Memory Management Policies on a Node",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/memory-manager/",
-  "text": "The Kubernetes\nMemory Manager\nenables the feature of guaranteed memory (and hugepages)\nallocation for pods in the\nGuaranteed\nQoS class\n.\nThe Memory Manager employs a hint generation protocol to yield the most suitable NUMA affinity for a pod.\nThe Memory Manager feeds the central manager (\nTopology Manager\n) with these affinity hints.\nBased on both the hints and Topology Manager policy, the pod is rejected or admitted to the node.\nMoreover, the Memory Manager ensures that the memory which a pod requests\nis allocated from a minimum number of NUMA nodes.\nFor background about memory resources for Pods, read\nAssign Memory Resources to Containers and Pods\n."
+  "text": "The Kubernetes\nMemory Manager\nenables the feature of guaranteed memory (and hugepages)\nallocation for pods in the\nGuaranteed\nQoS class\n.\nThe Memory Manager employs a hint generation protocol to yield the most suitable NUMA affinity for a pod.\nThe Memory Manager feeds the central manager (\nTopology Manager\n) with these affinity hints.\nBased on both the hints and Topology Manager policy, the pod is rejected or admitted to the node.\nMoreover, the Memory Manager ensures that the memory which a pod requests\nis allocated from a minimum number of NUMA nodes.\nFor background about memory resources for Pods, read\nAssign Memory Resources to Containers and Pods\n.",
+  "failure_classes": []
 }

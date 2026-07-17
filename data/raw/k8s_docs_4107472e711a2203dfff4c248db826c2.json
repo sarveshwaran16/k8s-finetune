@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Swap memory management — Selecting storage for optimal performance",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/swap-memory-management/#selecting-storage-for-optimal-performance",
-  "text": "The storage device designated for swap space is critical to maintaining system responsiveness\nduring high memory usage.\nRotational hard disk drives (HDDs) are ill-suited for this task as their mechanical nature introduces significant latency,\nleading to severe performance degradation and system thrashing.\nFor modern performance needs, a device such as a Solid State Drive (SSD) is probably the appropriate choice for swap,\nas its low-latency electronic access minimizes the slowdown."
+  "text": "The storage device designated for swap space is critical to maintaining system responsiveness\nduring high memory usage.\nRotational hard disk drives (HDDs) are ill-suited for this task as their mechanical nature introduces significant latency,\nleading to severe performance degradation and system thrashing.\nFor modern performance needs, a device such as a Solid State Drive (SSD) is probably the appropriate choice for swap,\nas its low-latency electronic access minimizes the slowdown.",
+  "failure_classes": []
 }

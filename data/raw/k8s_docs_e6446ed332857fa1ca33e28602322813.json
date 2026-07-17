@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Managing Workloads — External tools",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/management/#external-tools",
-  "text": "This section lists only the most common tools used for managing workloads on Kubernetes. To see a larger list, view\nApplication definition and image build\nin the\nCNCF\nLandscape.\nHelm\nis a tool for managing packages of pre-configured\nKubernetes resources. These packages are known as\nHelm charts\n.\nKustomize\ntraverses a Kubernetes manifest to add, remove or update configuration options.\nIt is available both as a standalone binary and as a\nnative feature\nof kubectl."
+  "text": "This section lists only the most common tools used for managing workloads on Kubernetes. To see a larger list, view\nApplication definition and image build\nin the\nCNCF\nLandscape.\nHelm\nis a tool for managing packages of pre-configured\nKubernetes resources. These packages are known as\nHelm charts\n.\nKustomize\ntraverses a Kubernetes manifest to add, remove or update configuration options.\nIt is available both as a standalone binary and as a\nnative feature\nof kubectl.",
+  "failure_classes": []
 }

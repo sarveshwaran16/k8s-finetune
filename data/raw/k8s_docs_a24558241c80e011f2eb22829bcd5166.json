@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Storage Classes — Local",
   "source_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/#local",
-  "text": "apiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nStorageClass\nmetadata\n:\nname\n:\nlocal-storage\nprovisioner\n:\nkubernetes.io/no-provisioner\n# indicates that this StorageClass does not support automatic provisioning\nvolumeBindingMode\n:\nWaitForFirstConsumer\nLocal volumes do not support dynamic provisioning in Kubernetes 1.36;\nhowever a StorageClass should still be created to delay volume binding until a Pod is actually\nscheduled to the appropriate node. This is specified by the\nWaitForFirstConsumer\nvolume\nbinding mode.\nDelaying volume binding allows the scheduler to consider all of a Pod's\nscheduling constraints when choosing an appropriate PersistentVolume for a\nPersistentVolumeClaim."
+  "text": "apiVersion\n:\nstorage.k8s.io/v1\nkind\n:\nStorageClass\nmetadata\n:\nname\n:\nlocal-storage\nprovisioner\n:\nkubernetes.io/no-provisioner\n# indicates that this StorageClass does not support automatic provisioning\nvolumeBindingMode\n:\nWaitForFirstConsumer\nLocal volumes do not support dynamic provisioning in Kubernetes 1.36;\nhowever a StorageClass should still be created to delay volume binding until a Pod is actually\nscheduled to the appropriate node. This is specified by the\nWaitForFirstConsumer\nvolume\nbinding mode.\nDelaying volume binding allows the scheduler to consider all of a Pod's\nscheduling constraints when choosing an appropriate PersistentVolume for a\nPersistentVolumeClaim.",
+  "failure_classes": [
+    "PVC"
+  ]
 }

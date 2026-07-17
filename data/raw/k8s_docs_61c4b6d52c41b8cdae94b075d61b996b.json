@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "The Kubernetes API — OpenAPI V2",
   "source_url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/#openapi-v2",
-  "text": "The Kubernetes API server serves an aggregated OpenAPI v2 spec via the\n/openapi/v2\nendpoint. You can request the response format using\nrequest headers as follows:\nValid request header values for OpenAPI v2 queries\nHeader\nPossible values\nNotes\nAccept-Encoding\ngzip\nnot supplying this header is also acceptable\nAccept\napplication/com.github.proto-openapi.spec.v2@v1.0+protobuf\nmainly for intra-cluster use\napplication/json\ndefault\n*\nserves\napplication/json"
+  "text": "The Kubernetes API server serves an aggregated OpenAPI v2 spec via the\n/openapi/v2\nendpoint. You can request the response format using\nrequest headers as follows:\nValid request header values for OpenAPI v2 queries\nHeader\nPossible values\nNotes\nAccept-Encoding\ngzip\nnot supplying this header is also acceptable\nAccept\napplication/com.github.proto-openapi.spec.v2@v1.0+protobuf\nmainly for intra-cluster use\napplication/json\ndefault\n*\nserves\napplication/json",
+  "failure_classes": []
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Pod Security Standards",
   "source_url": "https://kubernetes.io/docs/concepts/security/pod-security-standards/",
-  "text": "The Pod Security Standards define three different\npolicies\nto broadly cover the security\nspectrum. These policies are\ncumulative\nand range from highly-permissive to highly-restrictive.\nThis guide outlines the requirements of each policy.\nProfile\nDescription\nPrivileged\nUnrestricted policy, providing the widest possible level of permissions. This policy allows for known privilege escalations.\nBaseline\nMinimally restrictive policy which prevents known privilege escalations. Allows the default (minimally specified) Pod configuration.\nRestricted\nHeavily restricted policy, following current Pod hardening best practices."
+  "text": "The Pod Security Standards define three different\npolicies\nto broadly cover the security\nspectrum. These policies are\ncumulative\nand range from highly-permissive to highly-restrictive.\nThis guide outlines the requirements of each policy.\nProfile\nDescription\nPrivileged\nUnrestricted policy, providing the widest possible level of permissions. This policy allows for known privilege escalations.\nBaseline\nMinimally restrictive policy which prevents known privilege escalations. Allows the default (minimally specified) Pod configuration.\nRestricted\nHeavily restricted policy, following current Pod hardening best practices.",
+  "failure_classes": []
 }

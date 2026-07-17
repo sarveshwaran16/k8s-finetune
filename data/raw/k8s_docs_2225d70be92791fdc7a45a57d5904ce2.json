@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Customizing components with the kubeadm API",
   "source_url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/control-plane-flags/",
-  "text": "This page covers how to customize the components that kubeadm deploys. For control plane components\nyou can use flags in the\nClusterConfiguration\nstructure or patches per-node. For the kubelet\nand kube-proxy you can use\nKubeletConfiguration\nand\nKubeProxyConfiguration\n, accordingly.\nAll of these options are possible via the kubeadm configuration API.\nFor more details on each field in the configuration you can navigate to our\nAPI reference pages\n."
+  "text": "This page covers how to customize the components that kubeadm deploys. For control plane components\nyou can use flags in the\nClusterConfiguration\nstructure or patches per-node. For the kubelet\nand kube-proxy you can use\nKubeletConfiguration\nand\nKubeProxyConfiguration\n, accordingly.\nAll of these options are possible via the kubeadm configuration API.\nFor more details on each field in the configuration you can navigate to our\nAPI reference pages\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

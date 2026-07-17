@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Understand Pressure Stall Information (PSI) Metrics",
   "source_url": "https://kubernetes.io/docs/reference/instrumentation/understand-psi-metrics/",
-  "text": "As a stable feature, Kubernetes lets you configure the kubelet to collect Linux kernel\nPressure Stall Information\n(PSI) for CPU, memory, and I/O usage. The information is collected at node, pod and container level.\nStarting with Kubernetes v.1.36, the\nKubeletPSI\nfeature gate\nis locked to true and cannot be disabled.\nPSI metrics are exposed through two different sources:\nThe kubelet's\nSummary API\n, which provides PSI data at the node, pod, and container level.\nThe\n/metrics/cadvisor\nendpoint on the kubelet, which exposes PSI metrics in the\nPrometheus format\n."
+  "text": "As a stable feature, Kubernetes lets you configure the kubelet to collect Linux kernel\nPressure Stall Information\n(PSI) for CPU, memory, and I/O usage. The information is collected at node, pod and container level.\nStarting with Kubernetes v.1.36, the\nKubeletPSI\nfeature gate\nis locked to true and cannot be disabled.\nPSI metrics are exposed through two different sources:\nThe kubelet's\nSummary API\n, which provides PSI data at the node, pod, and container level.\nThe\n/metrics/cadvisor\nendpoint on the kubelet, which exposes PSI metrics in the\nPrometheus format\n.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

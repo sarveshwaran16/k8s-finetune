@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Organizing Cluster Access Using kubeconfig Files — The KUBECONFIG environment variable",
   "source_url": "https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#the-kubeconfig-environment-variable",
-  "text": "The\nKUBECONFIG\nenvironment variable holds a list of kubeconfig files.\nFor Linux and Mac, the list is colon-delimited. For Windows, the list\nis semicolon-delimited. The\nKUBECONFIG\nenvironment variable is not\nrequired. If the\nKUBECONFIG\nenvironment variable doesn't exist,\nkubectl\nuses the default kubeconfig file,\n$HOME/.kube/config\n.\nIf the\nKUBECONFIG\nenvironment variable does exist,\nkubectl\nuses\nan effective configuration that is the result of merging the files\nlisted in the\nKUBECONFIG\nenvironment variable."
+  "text": "The\nKUBECONFIG\nenvironment variable holds a list of kubeconfig files.\nFor Linux and Mac, the list is colon-delimited. For Windows, the list\nis semicolon-delimited. The\nKUBECONFIG\nenvironment variable is not\nrequired. If the\nKUBECONFIG\nenvironment variable doesn't exist,\nkubectl\nuses the default kubeconfig file,\n$HOME/.kube/config\n.\nIf the\nKUBECONFIG\nenvironment variable does exist,\nkubectl\nuses\nan effective configuration that is the result of merging the files\nlisted in the\nKUBECONFIG\nenvironment variable.",
+  "failure_classes": []
 }

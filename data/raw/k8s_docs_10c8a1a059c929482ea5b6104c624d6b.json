@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Configure Default Memory Requests and Limits for a Namespace",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/",
-  "text": "This page shows how to configure default memory requests and limits for a\nnamespace\n.\nA Kubernetes cluster can be divided into namespaces. Once you have a namespace that\nhas a default memory\nlimit\n,\nand you then try to create a Pod with a container that does not specify its own memory\nlimit, then the\ncontrol plane\nassigns the default\nmemory limit to that container.\nKubernetes assigns a default memory request under certain conditions that are explained later in this topic."
+  "text": "This page shows how to configure default memory requests and limits for a\nnamespace\n.\nA Kubernetes cluster can be divided into namespaces. Once you have a namespace that\nhas a default memory\nlimit\n,\nand you then try to create a Pod with a container that does not specify its own memory\nlimit, then the\ncontrol plane\nassigns the default\nmemory limit to that container.\nKubernetes assigns a default memory request under certain conditions that are explained later in this topic.",
+  "failure_classes": [
+    "OOMKilled"
+  ]
 }

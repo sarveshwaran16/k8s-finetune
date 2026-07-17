@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Determine the Reason for Pod Failure — What's next",
   "source_url": "https://kubernetes.io/docs/tasks/debug/debug-application/determine-reason-pod-failure/#what-s-next",
-  "text": "See the\nterminationMessagePath\nfield in\nContainer\n.\nSee\nImagePullBackOff\nin\nImages\n.\nLearn about\nretrieving logs\n.\nLearn about\nGo templates\n.\nLearn about\nPod status\nand\nPod phase\n.\nLearn about\ncontainer states\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n."
+  "text": "See the\nterminationMessagePath\nfield in\nContainer\n.\nSee\nImagePullBackOff\nin\nImages\n.\nLearn about\nretrieving logs\n.\nLearn about\nGo templates\n.\nLearn about\nPod status\nand\nPod phase\n.\nLearn about\ncontainer states\n.\n\nWas this page helpful?\nThanks for the feedback. If you have a specific, answerable question about how to use Kubernetes, ask it on\nStack Overflow\n.\nOpen an issue in the\nGitHub Repository\nif you want to\nreport a problem\nor\nsuggest an improvement\n.",
+  "failure_classes": [
+    "ImagePullBackOff"
+  ]
 }

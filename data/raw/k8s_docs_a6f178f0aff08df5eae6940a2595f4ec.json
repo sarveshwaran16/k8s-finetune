@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubeadm certs",
   "source_url": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-certs/",
-  "text": "kubeadm certs\nprovides utilities for managing certificates.\nFor more details on how these commands can be used, see\nCertificate Management with kubeadm\n.\n\nA collection of operations for operating Kubernetes certificates.\noverview\n\nCommands related to handling Kubernetes certificates\nkubeadm certs [flags]"
+  "text": "kubeadm certs\nprovides utilities for managing certificates.\nFor more details on how these commands can be used, see\nCertificate Management with kubeadm\n.\n\nA collection of operations for operating Kubernetes certificates.\noverview\n\nCommands related to handling Kubernetes certificates\nkubeadm certs [flags]",
+  "failure_classes": []
 }

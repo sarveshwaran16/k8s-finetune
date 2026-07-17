@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Certificate Management with kubeadm — External CA mode",
   "source_url": "https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/#external-ca-mode",
-  "text": "It is also possible to provide only the\nca.crt\nfile and not the\nca.key\nfile (this is only available for the root CA file, not other cert pairs).\nIf all other certificates and kubeconfig files are in place, kubeadm recognizes\nthis condition and activates the \"External CA\" mode. kubeadm will proceed without the\nCA key on disk.\nInstead, run the controller-manager standalone with\n--controllers=csrsigner\nand\npoint to the CA certificate and key.\nThere are various ways to prepare the component credentials when using external CA mode."
+  "text": "It is also possible to provide only the\nca.crt\nfile and not the\nca.key\nfile (this is only available for the root CA file, not other cert pairs).\nIf all other certificates and kubeconfig files are in place, kubeadm recognizes\nthis condition and activates the \"External CA\" mode. kubeadm will proceed without the\nCA key on disk.\nInstead, run the controller-manager standalone with\n--controllers=csrsigner\nand\npoint to the CA certificate and key.\nThere are various ways to prepare the component credentials when using external CA mode.",
+  "failure_classes": []
 }

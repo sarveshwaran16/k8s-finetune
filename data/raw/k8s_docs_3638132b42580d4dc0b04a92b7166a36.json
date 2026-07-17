@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Operator pattern — Using an operator",
   "source_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/operator/#using-operators",
-  "text": "Once you have an operator deployed, you'd use it by adding, modifying or\ndeleting the kind of resource that the operator uses. Following the above\nexample, you would set up a Deployment for the operator itself, and then:\nkubectl get SampleDB\n# find configured databases\nkubectl edit SampleDB/example-database\n# manually change some settings\n…and that's it! The operator will take care of applying the changes\nas well as keeping the existing service in good shape."
+  "text": "Once you have an operator deployed, you'd use it by adding, modifying or\ndeleting the kind of resource that the operator uses. Following the above\nexample, you would set up a Deployment for the operator itself, and then:\nkubectl get SampleDB\n# find configured databases\nkubectl edit SampleDB/example-database\n# manually change some settings\n…and that's it! The operator will take care of applying the changes\nas well as keeping the existing service in good shape.",
+  "failure_classes": []
 }

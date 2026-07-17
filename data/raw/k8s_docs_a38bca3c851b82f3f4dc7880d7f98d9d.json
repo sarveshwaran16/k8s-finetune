@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Admission Webhook Good Practices — Match all versions of an API",
   "source_url": "https://kubernetes.io/docs/concepts/cluster-administration/admission-webhooks-good-practices/#match-all-versions",
-  "text": "By default, admission webhooks run on any API versions that affect a specified\nresource. The\nmatchPolicy\nfield in the webhook configuration controls this\nbehavior. Specify a value of\nEquivalent\nin the\nmatchPolicy\nfield or omit\nthe field to allow the webhook to run on any API version.\nFor details, see\nMatching requests:\nmatchPolicy\n."
+  "text": "By default, admission webhooks run on any API versions that affect a specified\nresource. The\nmatchPolicy\nfield in the webhook configuration controls this\nbehavior. Specify a value of\nEquivalent\nin the\nmatchPolicy\nfield or omit\nthe field to allow the webhook to run on any API version.\nFor details, see\nMatching requests:\nmatchPolicy\n.",
+  "failure_classes": []
 }

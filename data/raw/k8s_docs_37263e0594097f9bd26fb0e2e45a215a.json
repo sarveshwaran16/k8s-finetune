@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Application Security Checklist",
   "source_url": "https://kubernetes.io/docs/concepts/security/application-security-checklist/",
-  "text": "This checklist aims to provide basic guidelines on securing applications\nrunning in Kubernetes from a developer's perspective.\nThis list is not meant to be exhaustive and is intended to evolve over time.\nOn how to read and use this document:\nThe order of topics does not reflect an order of priority.\nSome checklist items are detailed in the paragraph below the list of each section.\nThis checklist assumes that a\ndeveloper\nis a Kubernetes cluster user who\ninteracts with namespaced scope objects."
+  "text": "This checklist aims to provide basic guidelines on securing applications\nrunning in Kubernetes from a developer's perspective.\nThis list is not meant to be exhaustive and is intended to evolve over time.\nOn how to read and use this document:\nThe order of topics does not reflect an order of priority.\nSome checklist items are detailed in the paragraph below the list of each section.\nThis checklist assumes that a\ndeveloper\nis a Kubernetes cluster user who\ninteracts with namespaced scope objects.",
+  "failure_classes": []
 }

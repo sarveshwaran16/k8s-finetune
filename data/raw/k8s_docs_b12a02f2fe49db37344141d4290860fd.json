@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Ports and Protocols",
   "source_url": "https://kubernetes.io/docs/reference/networking/ports-and-protocols/",
-  "text": "When running Kubernetes in an environment with strict network boundaries, such\nas on-premises datacenter with physical network firewalls or Virtual\nNetworks in Public Cloud, it is useful to be aware of the ports and protocols\nused by Kubernetes components.\n\nProtocol\nDirection\nPort Range\nPurpose\nUsed By\nTCP\nInbound\n6443\nKubernetes API server\nAll\nTCP\nInbound\n2379-2380\netcd server client API\nkube-apiserver, etcd\nTCP\nInbound\n10250\nKubelet API\nSelf, Control plane\nTCP\nInbound\n10259\nkube-scheduler\nSelf\nTCP\nInbound\n10257\nkube-controller-manager\nSelf\nAlthough etcd ports are included in control plane section, you can also host your own\netcd cluster externally or on custom ports."
+  "text": "When running Kubernetes in an environment with strict network boundaries, such\nas on-premises datacenter with physical network firewalls or Virtual\nNetworks in Public Cloud, it is useful to be aware of the ports and protocols\nused by Kubernetes components.\n\nProtocol\nDirection\nPort Range\nPurpose\nUsed By\nTCP\nInbound\n6443\nKubernetes API server\nAll\nTCP\nInbound\n2379-2380\netcd server client API\nkube-apiserver, etcd\nTCP\nInbound\n10250\nKubelet API\nSelf, Control plane\nTCP\nInbound\n10259\nkube-scheduler\nSelf\nTCP\nInbound\n10257\nkube-controller-manager\nSelf\nAlthough etcd ports are included in control plane section, you can also host your own\netcd cluster externally or on custom ports.",
+  "failure_classes": [
+    "NodeNotReady"
+  ]
 }

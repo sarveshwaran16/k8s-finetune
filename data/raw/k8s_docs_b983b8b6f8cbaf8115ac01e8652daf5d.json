@@ -3,5 +3,8 @@
   "source": "k8s_docs",
   "title": "Projected Volumes",
   "source_url": "https://kubernetes.io/docs/concepts/storage/projected-volumes/",
-  "text": "This document describes\nprojected volumes\nin Kubernetes. Familiarity with\nvolumes\nis suggested.\n\nA\nprojected\nvolume maps several existing volume sources into the same directory.\nCurrently, the following types of volume sources can be projected:\nsecret\ndownwardAPI\nconfigMap\nserviceAccountToken\nclusterTrustBundle\npodCertificate\nAll sources are required to be in the same namespace as the Pod. For more details,\nsee the\nall-in-one volume\ndesign document."
+  "text": "This document describes\nprojected volumes\nin Kubernetes. Familiarity with\nvolumes\nis suggested.\n\nA\nprojected\nvolume maps several existing volume sources into the same directory.\nCurrently, the following types of volume sources can be projected:\nsecret\ndownwardAPI\nconfigMap\nserviceAccountToken\nclusterTrustBundle\npodCertificate\nAll sources are required to be in the same namespace as the Pod. For more details,\nsee the\nall-in-one volume\ndesign document.",
+  "failure_classes": [
+    "RBAC"
+  ]
 }

@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "kubectl describe — Synopsis",
   "source_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_describe/#synopsis",
-  "text": "Show details of a specific resource or group of resources.\nPrint a detailed description of the selected resources, including related resources such as events or controllers. You may select a single object by name, all objects of that type, provide a name prefix, or label selector. For example:\n$ kubectl describe TYPE NAME_PREFIX\nwill first check for an exact match on TYPE and NAME_PREFIX. If no such resource exists, it will output details for every resource that has a name prefixed with NAME_PREFIX.\nUse \"kubectl api-resources\" for a complete list of supported resources.\nkubectl describe (-f FILENAME | TYPE [NAME_PREFIX | -l label] | TYPE/NAME)"
+  "text": "Show details of a specific resource or group of resources.\nPrint a detailed description of the selected resources, including related resources such as events or controllers. You may select a single object by name, all objects of that type, provide a name prefix, or label selector. For example:\n$ kubectl describe TYPE NAME_PREFIX\nwill first check for an exact match on TYPE and NAME_PREFIX. If no such resource exists, it will output details for every resource that has a name prefixed with NAME_PREFIX.\nUse \"kubectl api-resources\" for a complete list of supported resources.\nkubectl describe (-f FILENAME | TYPE [NAME_PREFIX | -l label] | TYPE/NAME)",
+  "failure_classes": []
 }

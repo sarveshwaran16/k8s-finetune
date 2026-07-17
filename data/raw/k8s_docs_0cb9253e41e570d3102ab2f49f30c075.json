@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Set up Konnectivity service",
   "source_url": "https://kubernetes.io/docs/tasks/extend-kubernetes/setup-konnectivity/",
-  "text": "The Konnectivity service provides a TCP level proxy for the control plane to cluster\ncommunication.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this\ntutorial on a cluster with at least two nodes that are not acting as control\nplane hosts. If you do not already have a cluster, you can create one by using\nminikube\n."
+  "text": "The Konnectivity service provides a TCP level proxy for the control plane to cluster\ncommunication.\n\nYou need to have a Kubernetes cluster, and the kubectl command-line tool must\nbe configured to communicate with your cluster. It is recommended to run this\ntutorial on a cluster with at least two nodes that are not acting as control\nplane hosts. If you do not already have a cluster, you can create one by using\nminikube\n.",
+  "failure_classes": []
 }

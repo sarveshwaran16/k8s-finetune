@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "ReplicaSet — What's next",
   "source_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#what-s-next",
-  "text": "Learn about\nPods\n.\nLearn about\nDeployments\n.\nRun a Stateless Application Using a Deployment\n,\nwhich relies on ReplicaSets to work.\nReplicaSet\nis a top-level resource in the Kubernetes REST API.\nRead the\nReplicaSet\nobject definition to understand the API for replica sets.\nRead about\nPodDisruptionBudget\nand how\nyou can use it to manage application availability during disruptions."
+  "text": "Learn about\nPods\n.\nLearn about\nDeployments\n.\nRun a Stateless Application Using a Deployment\n,\nwhich relies on ReplicaSets to work.\nReplicaSet\nis a top-level resource in the Kubernetes REST API.\nRead the\nReplicaSet\nobject definition to understand the API for replica sets.\nRead about\nPodDisruptionBudget\nand how\nyou can use it to manage application availability during disruptions.",
+  "failure_classes": []
 }

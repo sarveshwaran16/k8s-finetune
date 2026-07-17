@@ -3,5 +3,6 @@
   "source": "k8s_docs",
   "title": "Gang Scheduling",
   "source_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/gang-scheduling/",
-  "text": "Gang scheduling ensures that a group of Pods are scheduled on an \"all-or-nothing\" basis.\nIf the cluster cannot accommodate the entire group (or a defined minimum number of Pods),\nnone of the Pods are bound to a node.\nThis feature depends on the\nPodGroup API\n.\nEnsure the\nGenericWorkload\nfeature gate and the\nscheduling.k8s.io/v1alpha2\nAPI group\nare enabled in the cluster."
+  "text": "Gang scheduling ensures that a group of Pods are scheduled on an \"all-or-nothing\" basis.\nIf the cluster cannot accommodate the entire group (or a defined minimum number of Pods),\nnone of the Pods are bound to a node.\nThis feature depends on the\nPodGroup API\n.\nEnsure the\nGenericWorkload\nfeature gate and the\nscheduling.k8s.io/v1alpha2\nAPI group\nare enabled in the cluster.",
+  "failure_classes": []
 }
