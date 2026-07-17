@@ -40,11 +40,11 @@ def run():
         "--outtype", "f16",
         "--outfile", fp16_output
     ], check=True)
-    print(f"✅ GGUF (fp16) saved to {fp16_output}")
+    print(f"Done: GGUF (fp16) saved to {fp16_output}")
 
     # Step 4 — quantize to Q4_K_M using the downloaded prebuilt binary
     if not os.path.exists(LLAMA_QUANTIZE_EXE):
-        print(f"❌ llama-quantize.exe not found at {LLAMA_QUANTIZE_EXE}")
+        print(f"ERROR: llama-quantize.exe not found at {LLAMA_QUANTIZE_EXE}")
         print("Double-check the path, or update LLAMA_QUANTIZE_EXE at the top of this script.")
         print(f"fp16 GGUF is at: {fp16_output} (usable directly with Ollama if quantization is skipped)")
         return
@@ -56,7 +56,7 @@ def run():
         OUTPUT_PATH,
         "Q4_K_M"
     ], check=True)
-    print(f"✅ Quantized model saved to {OUTPUT_PATH}")
+    print(f"Done: Quantized model saved to {OUTPUT_PATH}")
 
     # Report final file size -- this is your actual PRD "<300MB GGUF" number
     size_mb = os.path.getsize(OUTPUT_PATH) / (1024 * 1024)

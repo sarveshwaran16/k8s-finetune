@@ -1,0 +1,37 @@
+[
+  {
+    "query": "What causes OOMKilled errors?",
+    "answer": "OOMKilled errors occur when the container's memory usage exceeds the container's memory limit, which can be caused by memory leaks, overprovisioning, or insufficient memory resources.",
+    "response_time_sec": 19.1
+  },
+  {
+    "query": "Why is my pod in CrashLoopBackOff?",
+    "answer": "Your pod is in CrashLoopBackOff because it is unable to start. The error message indicates that the container is not able to access the host filesystem, which is required for the container to run.",
+    "response_time_sec": 18.1
+  },
+  {
+    "query": "How do I debug image pull failures?",
+    "answer": "You can use the `kubectl logs` command to debug image pull failures.",
+    "response_time_sec": 10.0
+  },
+  {
+    "query": "How do I troubleshoot NodeNotReady?",
+    "answer": "To troubleshoot NodeNotReady, check the node's status using `kubectl get nodes <node-name> -o yaml`, and ensure that the node is in a Ready state.",
+    "response_time_sec": 18.8
+  },
+  {
+    "query": "Why am I getting a Forbidden error when accessing the API?",
+    "answer": "You are not authorized to access this resource. Please check your credentials and try again.",
+    "response_time_sec": 10.8
+  },
+  {
+    "query": "Why is my Ingress returning 503 errors?",
+    "answer": "Your Ingress is configured incorrectly. Check the documentation for your Ingress controller to ensure it is configured correctly.",
+    "response_time_sec": 10.9
+  },
+  {
+    "query": "Why is my PVC stuck in Pending?",
+    "answer": "The PVC is stuck in Pending because the PersistentVolumeClaim (PVC) is not bound to a PersistentVolume (PV). This can happen if the PV is not available or if the PVC is not bound to the correct PV.",
+    "response_time_sec": 24.0
+  }
+]

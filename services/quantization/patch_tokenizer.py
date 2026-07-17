@@ -33,7 +33,7 @@ def save_tokenizer_only():
     tokenizer = AutoTokenizer.from_pretrained(ADAPTER_PATH)
     print("Saving tokenizer into merged model folder...")
     tokenizer.save_pretrained(OUTPUT_PATH)
-    print(f"✅ Tokenizer saved to {OUTPUT_PATH}")
+    print(f"Done: Tokenizer saved to {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":

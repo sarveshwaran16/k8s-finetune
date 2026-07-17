@@ -4,7 +4,7 @@ import time
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import torch
 
-MERGED_MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "models", "k8s-qwen-merged")
+MERGED_MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "models", "k8s-tinyllama-merged")
 
 # One question per actual PRD-scoped failure class (dropped CPU throttling
 # and DNS failures -- neither is one of the 7 target classes).
@@ -65,7 +65,7 @@ def run():
             "response_time_sec": elapsed
         })
 
-    output_path = os.path.join(os.path.dirname(__file__), "..", "..", "evaluation", "finetuned_results.json")
+    output_path = os.path.join(os.path.dirname(__file__), "..", "..", "evaluation", "finetuned_results_tinyllama.json")
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
